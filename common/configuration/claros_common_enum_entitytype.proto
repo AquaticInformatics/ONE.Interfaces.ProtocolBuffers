@@ -1,0 +1,6 @@
+syntax = "proto3";
+package claros.common.configuration;
+
+enum EntityType {
+    FormTemplate = 0;
+};
