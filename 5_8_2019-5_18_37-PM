@@ -1,0 +1,267 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20190508171837
+Username: HACH\akrone
+RunAs User: HACH\akrone
+Configuration Name: 
+Machine: EWQLOVLT5599 (Microsoft Windows NT 10.0.17134.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe
+Process ID: 14712
+PSVersion: 5.1.17134.112
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17134.112
+BuildVersion: 10.0.17134.112
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is 5_8_2019-5_18_37-PM
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_datetime.proto
+generated: ./out/claros_common_datetime.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_measurement_data.proto
+generated: ./out/claros_common_measurement_data.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_configuration.proto
+protogen : claros_common_configuration.proto(21,5,21,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_c...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_common_configuration.proto(21,5,21,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_c...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_common_configuration.proto(4,8,4,23): error: unable to find: 'date_time.proto'
+claros_common_configuration.proto(5,8,5,27): error: unable to find: 'common_rights.proto'
+claros_common_configuration.proto(6,8,6,30): error: unable to find: 'common_enum_entitytype'
+claros_common_configuration.proto(11,5,11,13): error: type not found: 'DateTime'
+claros_common_configuration.proto(13,5,13,13): error: type not found: 'DateTime'
+claros_common_configuration.proto(15,5,15,15): error: type not found: 'EntityType'
+claros_common_configuration.proto(4,8,4,23): warning: import not used: 'date_time.proto'
+claros_common_configuration.proto(5,8,5,27): warning: import not used: 'common_rights.proto'
+claros_common_configuration.proto(6,8,6,30): warning: import not used: 'common_enum_entitytype'
+claros_common_configuration.proto(4,8,4,23): error: unable to find: 'date_time.proto'
+claros_common_configuration.proto(5,8,5,27): error: unable to find: 'common_rights.proto'
+claros_common_configuration.proto(6,8,6,30): error: unable to find: 'common_enum_entitytype'
+claros_common_configuration.proto(11,5,11,13): error: type not found: 'DateTime'
+claros_common_configuration.proto(13,5,13,13): error: type not found: 'DateTime'
+claros_common_configuration.proto(15,5,15,15): error: type not found: 'EntityType'
+claros_common_configuration.proto(4,8,4,23): warning: import not used: 'date_time.proto'
+claros_common_configuration.proto(5,8,5,27): warning: import not used: 'common_rights.proto'
+claros_common_configuration.proto(6,8,6,30): warning: import not used: 'common_enum_entitytype'
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_enum_entitytype.proto
+generated: ./out/claros_common_enum_entitytype.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_rights.proto
+generated: ./out/claros_common_rights.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_form_dataentrytype.proto
+generated: ./out/claros_common_form_dataentrytype.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_form_note.proto
+protogen : claros_common_form_note.proto(4,8,4,30): error: unable to find: 'common/date_time.proto'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_f...ate_time.proto':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_common_form_note.proto(4,8,4,30): error: unable to find: 'common/date_time.proto'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_f...ate_time.proto':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_common_form_note.proto(10,5,10,13): error: type not found: 'DateTime'
+claros_common_form_note.proto(4,8,4,30): warning: import not used: 'common/date_time.proto'
+claros_common_form_note.proto(10,5,10,13): error: type not found: 'DateTime'
+claros_common_form_note.proto(4,8,4,30): warning: import not used: 'common/date_time.proto'
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_gis.proto
+protogen : claros_common_gis_multi_point2d.proto(8,14,8,21): error: type not found: 'Point2D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point2D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_common_gis_multi_point2d.proto(8,14,8,21): error: type not found: 'Point2D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point2D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_common_gis_multi_point3d.proto(8,14,8,21): error: type not found: 'Point3D'
+claros_common_gis_multi_point3d.proto(8,14,8,21): error: type not found: 'Point3D'
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_gis_multi_point2d.proto
+protogen : claros_common_gis_multi_point2d.proto(8,14,8,21): error: type not found: 'Point2D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point2D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_common_gis_multi_point2d.proto(8,14,8,21): error: type not found: 'Point2D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point2D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_gis_multi_point3d.proto
+protogen : claros_common_gis_multi_point3d.proto(8,14,8,21): error: type not found: 'Point3D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point3D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_common_gis_multi_point3d.proto(8,14,8,21): error: type not found: 'Point3D'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_common_g...ound: 'Point3D':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_gis_point2d.proto
+generated: ./out/claros_common_gis_point2d.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_common_gis_point3d.proto
+generated: ./out/claros_common_gis_point3d.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_calibration_data.proto
+generated: ./out/claros_instrument_calibration_data.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_data.proto
+protogen : claros_instrument_data.proto(21,49,21,50): error: field 2 is already in use by 'fusionId'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...e by 'fusionId':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_instrument_data.proto(21,49,21,50): error: field 2 is already in use by 'fusionId'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...e by 'fusionId':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_setting_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+claros_instrument_state_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+claros_instrument_setting_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+claros_instrument_state_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_event_data.proto
+generated: ./out/claros_instrument_event_data.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_event_metadata.proto
+generated: ./out/claros_instrument_event_metadata.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_id.proto
+generated: ./out/claros_instrument_id.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_limit_data.proto
+generated: ./out/claros_instrument_limit_data.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_measurement_data.proto
+protogen : claros_instrument_measurement_data.proto(4,8,4,58): error: unable to find: 
+'claros/common/claros_common_measurement_data.proto'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...ent_data.proto':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_instrument_measurement_data.proto(4,8,4,58): error: unable to find: 'claros/common/claros_common_measurement_data.proto'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...ent_data.proto':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_measurement_data.proto(7,8,7,49): error: unable to find: 'claros/common/gis/claros_common_gis.proto'
+claros_instrument_measurement_data.proto(10,5,10,13): error: type not found: 'DateTime'
+claros_instrument_measurement_data.proto(17,17,17,32): error: type not found: 'MeasurementData'
+claros_instrument_measurement_data.proto(19,17,19,20): error: type not found: 'Gis'
+claros_instrument_measurement_data.proto(20,17,20,40): error: type not found: 'ExtendedMeasurementData'
+claros_instrument_measurement_data_extended.proto(5,5,5,13): error: type not found: 'DateTime'
+claros_instrument_measurement_data.proto(4,8,4,58): warning: import not used: 
+'claros/common/claros_common_measurement_data.proto'
+claros_instrument_measurement_data.proto(5,8,5,57): warning: import not used: 
+'claros_instrument_measurement_data_extended.proto'
+claros_instrument_measurement_data.proto(7,8,7,49): warning: import not used: 
+'claros/common/gis/claros_common_gis.proto'
+claros_instrument_measurement_data.proto(7,8,7,49): error: unable to find: 'claros/common/gis/claros_common_gis.proto'
+claros_instrument_measurement_data.proto(10,5,10,13): error: type not found: 'DateTime'
+claros_instrument_measurement_data.proto(17,17,17,32): error: type not found: 'MeasurementData'
+claros_instrument_measurement_data.proto(19,17,19,20): error: type not found: 'Gis'
+claros_instrument_measurement_data.proto(20,17,20,40): error: type not found: 'ExtendedMeasurementData'
+claros_instrument_measurement_data_extended.proto(5,5,5,13): error: type not found: 'DateTime'
+claros_instrument_measurement_data.proto(4,8,4,58): warning: import not used: 'claros/common/claros_common_measurement_data.proto'
+claros_instrument_measurement_data.proto(5,8,5,57): warning: import not used: 'claros_instrument_measurement_data_extended.proto'
+claros_instrument_measurement_data.proto(7,8,7,49): warning: import not used: 'claros/common/gis/claros_common_gis.proto'
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_measurement_data_extended.proto
+protogen : claros_instrument_measurement_data_extended.proto(5,5,5,13): error: type not found: 'DateTime'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...und: 'DateTime':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_instrument_measurement_data_extended.proto(5,5,5,13): error: type not found: 'DateTime'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...und: 'DateTime':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_prognosys_data.proto
+generated: ./out/claros_instrument_prognosys_data.cs
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_setting_data.proto
+protogen : claros_instrument_setting_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_instrument_setting_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\instrument --proto_path=.\common\configuration --proto_path=.\common\form --proto_path=.\common\gis claros_instrument_state_data.proto
+protogen : claros_instrument_state_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protogen : claros_instrument_state_data.proto(5,5,5,13): error: 'repeated' can not be used with 'map'
+At line:1 char:1
++ protogen --csharp_out=./out/ --proto_path=.\common --proto_path=.\ins ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...used with 'map':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+**********************
+Windows PowerShell transcript end
+End time: 20190508171842
+**********************
