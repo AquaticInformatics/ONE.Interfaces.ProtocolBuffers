@@ -1,0 +1,38 @@
+syntax = "proto3";
+package claros.instrument;
+
+message CalibrationData {
+ 
+     message Calibration {
+        string ID = 1;                      // unique identifier of the calibration.  Could be a hash.
+        string userID = 2;                  // User who performed the calibration
+        uint64 time = 3;                    // Calibration Time
+        uint32 status = 4;                  // Status enumeration specific to the device
+        uint32 offsetUnits = 5;             // Unit for the calibration
+        uint32 slopeUnits = 6;              // Unit for the slope
+        float slope = 7;                    // Slope of the Calibration
+        float slopeAux = 8;                 // Auxiliary way of displaying slope.  Used by pH to give the percent of the nominal slope    
+        float offset = 9;                   // offset of the calibration curve
+        float r2 = 10;                       // r-squared of the calibration curve
+        repeated CalibrationStandard calibrationStandard = 11;
+    }
+    message CalibrationStandard {
+        Value knownValue = 1;                       //this is the primary value  (Concentration)
+        Value measuredValue = 2;                    //
+        repeated Value secondaryValue = 4;
+ 
+    }
+ 
+ 
+    message SecondaryValue {
+        repeated Value value = 1;
+    }
+ 
+ 
+    message Value {
+        float value = 1;
+        uint32 unit = 2;
+        uint32 chemicalForm = 3;
+    }
+ 
+}

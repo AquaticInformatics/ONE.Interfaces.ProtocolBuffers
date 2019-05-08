@@ -1,0 +1,28 @@
+syntax = "proto3";
+package claros.instrument;
+ 
+
+import "claros_instrument_event_data.proto";
+import "claros_common_measurement_data.proto";
+import "claros_instrument_setting_data.proto";
+import "claros_instrument_state_data.proto";
+import "claros_instrument_id.proto" ;
+
+message InstrumentData {
+    string tenantId = 1; // In header
+    repeated InstrumentId instrumentIds = 2;
+    repeated Telemetry telemetryData = 3;
+    
+        message Telemetry {
+            int32 shortInstrumentId = 1;
+            string fusionId = 2;
+            
+            oneof response_one_of {
+                EventData instrumentEventData = 2;
+                MeasurementData measurementData = 3;
+                SettingData settingData = 4;
+                StateData stateData = 5;
+            }
+        }
+}
+

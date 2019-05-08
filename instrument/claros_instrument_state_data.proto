@@ -1,0 +1,6 @@
+syntax = "proto3";
+package claros.instrument;
+
+message StateData {
+    repeated map<string, string> states = 1;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.common.gis;
+
+import "claros_common_gis_point2d.proto";
+import "claros_common_gis_point3d.proto";
+import "claros_common_gis_multi_point2d.proto";
+import "claros_common_gis_multi_point3d.proto";
+ 
+message GIS {
+  Point2D point2d = 1;
+  Point3D point3d = 2;
+  MultiPoint2D multi_point2d = 3;
+  MultiPoint3D multi_point3d = 4;
+}

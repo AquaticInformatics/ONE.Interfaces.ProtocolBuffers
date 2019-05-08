@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.gis;
+
+// type: Point
+// coordinates: [x, y]
+ 
+message Point2D {
+  float x = 1;
+  float y = 2;
+}

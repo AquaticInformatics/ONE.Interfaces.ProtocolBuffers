@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.instrument;
+
+message PrognosysData {
+    repeated Prognosys prognoses = 1;
+ 
+    message Prognosys {
+            int32 id = 1;
+			float percent = 2;
+			int32 days = 3;
+        }
+}
+
