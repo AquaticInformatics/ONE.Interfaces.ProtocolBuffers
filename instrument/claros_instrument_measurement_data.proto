@@ -1,10 +1,11 @@
 syntax = "proto3";
 package claros.instrument;
  
-import "claros/common/claros_common_measurement_data.proto";
+import "claros_common_datetime.proto";
+import "claros_common_measurement_data.proto";
 import "claros_instrument_measurement_data_extended.proto";
 import "claros_instrument_event_data.proto";
-import "claros/common/gis/claros_common_gis.proto";
+import "claros_common_gis.proto";
  
 message InstrumentMeasurementData {
     DateTime measurementDateTime = 1;
@@ -17,7 +18,7 @@ message InstrumentMeasurementData {
                 MeasurementData measurement = 4;
                 InstrumentMeasurementData supportingMeasurements = 5;                
                 Gis gis = 6;
-                ExtendedMeasurementData extendedMeasurementData = 7;
+                MeasurementDataExtended measurementDataExtended = 7;
                 EventData measurementEventData = 8; // Clean up
                 // MeasurementType measurementType = 6;  //This is an enum
             }

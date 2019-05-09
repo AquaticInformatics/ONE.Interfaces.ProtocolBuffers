@@ -18,10 +18,10 @@ message InstrumentData {
             string fusionId = 2;
             
             oneof response_one_of {
-                EventData instrumentEventData = 2;
-                MeasurementData measurementData = 3;
-                SettingData settingData = 4;
-                StateData stateData = 5;
+                EventData instrumentEventData = 3;
+                MeasurementData measurementData = 4;
+                Settings settings = 5;
+                States stateData = 6;
             }
         }
 }

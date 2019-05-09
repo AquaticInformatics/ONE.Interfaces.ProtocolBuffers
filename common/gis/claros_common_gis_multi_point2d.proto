@@ -3,6 +3,7 @@ package claros.common.gis;
  
 // type: MultiPoint
 // coordinates: [[x, y], [x, y]]
+import "claros_common_gis_point2d.proto";
  
 message MultiPoint2D {
     repeated Point2D point = 1;

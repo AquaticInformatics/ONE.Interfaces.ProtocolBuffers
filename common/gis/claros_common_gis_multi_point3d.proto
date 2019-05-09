@@ -3,7 +3,8 @@ package claros.common.gis;
 
 // type: MultiPoint
 // coordinates: [[x, y, z], [x, y, z]]
- 
+import "claros_common_gis_point3d.proto"; 
+
 message MultiPoint3D {
     repeated Point3D point = 1;
 }

@@ -1,9 +1,9 @@
 syntax = "proto3";
 package claros.common.configuration;
 
-import "date_time.proto";
-import "common_rights.proto";
-import "common_enum_entitytype";
+import "claros_common_datetime.proto";
+import "claros_common_enum_entitytype.proto";
+import "claros_common_privileges.proto";
  
 message Configuration {
     string id = 1;
@@ -18,5 +18,5 @@ message Configuration {
     string ownerId = 10;
     bool public = 11;
     uint32 version = 12;
-    repeated  map<string, Rights> privileges = 13;
+    repeated Privileges privileges = 13;
 }

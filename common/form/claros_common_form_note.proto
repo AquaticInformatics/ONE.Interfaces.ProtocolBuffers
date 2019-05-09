@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.form;
  
-import "common/date_time.proto";
+import "claros_common_datetime.proto";
  
 message Note {
     string guid = 1;
