@@ -1,0 +1,203 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20190509222038
+Username: HACH\akrone
+RunAs User: HACH\akrone
+Configuration Name: 
+Machine: EWQLOVLT5599 (Microsoft Windows NT 10.0.17134.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe
+Process ID: 4080
+PSVersion: 5.1.17134.112
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17134.112
+BuildVersion: 10.0.17134.112
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is 5_9_2019-10_20_38-PM
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_datetime.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_measurement_data.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_configuration.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_enum_entitytype.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_privileges.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_rights.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_form_dataentrytype.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_form_note.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_gis.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_gis_multi_point2d.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_gis_multi_point3d.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_gis_point2d.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_common_gis_point3d.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_calibration_data.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_data.proto
+protoc : claros_instrument_event_data.proto:11:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protoc : claros_instrument_event_data.proto:11:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_data.proto
+claros_instrument_data.proto
+: Import "claros_instrument_event_data.proto" was not found or had errors.
+claros_instrument_data.proto:
+: Import "claros_instrument_event_data.proto" was not found or had errors.
+claros_instrument_data.proto:
+21
+21
+:17: "EventData" is not defined.
+:17: "EventData" is not defined.
+
+claros_instrument_data.proto:22
+claros_instrument_data.proto:22
+:17: "MeasurementData" is not defined.
+:17: "MeasurementData" is not defined.
+
+claros_instrument_data.proto: warning: Import claros_common_measurement_data.proto but not used.
+claros_instrument_data.proto: warning: Import claros_common_measurement_data.proto but not used.
+
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_event_data.proto
+protoc : claros_instrument_event_data.proto:11:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protoc : claros_instrument_event_data.proto:11:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_event_data.proto: warning: Import claros_common_datetime.proto but not used.
+claros_instrument_event_data.proto: warning: Import claros_common_datetime.proto but not used.
+
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_event_metadata.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_id.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_limit_data.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_measurement_data.proto
+protoc : claros_instrument_measurement_data_extended.proto:7:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protoc : claros_instrument_measurement_data_extended.proto:7:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_event_data.proto
+claros_instrument_event_data.proto
+:11:5: "DateTime" is not defined.
+:11:5: "DateTime" is not defined.
+
+claros_instrument_measurement_data.proto
+claros_instrument_measurement_data.proto
+: Import "claros_instrument_measurement_data_extended.proto" was not found or had errors.
+claros_instrument_measurement_data.proto: Import "claros_instrument_event_data.proto" was not found or had errors.
+: Import "claros_instrument_measurement_data_extended.proto" was not found or had errors.
+claros_instrument_measurement_data.proto: Import "claros_instrument_event_data.proto" was not found or had errors.
+
+claros_instrument_measurement_data.proto:
+claros_instrument_measurement_data.proto:
+18:
+18:
+17
+17
+:
+:
+"MeasurementData" is not defined.
+"MeasurementData" is not defined.
+
+claros_instrument_measurement_data.proto
+claros_instrument_measurement_data.proto
+:20:17: "Gis" is not defined.
+:20:17: "Gis" is not defined.
+
+
+
+claros_instrument_measurement_data.proto
+claros_instrument_measurement_data.proto
+:21:17: "MeasurementDataExtended" is not defined.
+:21:17: "MeasurementDataExtended" is not defined.
+
+claros_instrument_measurement_data.proto
+claros_instrument_measurement_data.proto
+:22:17: "EventData" is not defined.
+:22:17: "EventData" is not defined.
+
+claros_instrument_measurement_data.proto:11:5
+claros_instrument_measurement_data.proto:11:5
+:
+:
+"DateTime" is not defined.
+"DateTime" is not defined.
+
+claros_instrument_measurement_data.proto: warning: Import claros_common_gis.proto but not used.
+claros_instrument_measurement_data.proto: warning: Import claros_common_gis.proto but not used.
+
+claros_instrument_measurement_data.proto: warning: Import claros_common_datetime.proto but not used.
+claros_instrument_measurement_data.proto: warning: Import claros_common_measurement_data.proto but not used.
+claros_instrument_measurement_data.proto: warning: Import claros_common_datetime.proto but not used.
+claros_instrument_measurement_data.proto: warning: Import claros_common_measurement_data.proto but not used.
+
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_measurement_data_extended.proto
+protoc : claros_instrument_measurement_data_extended.proto:7:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+protoc : claros_instrument_measurement_data_extended.proto:7:5: "DateTime" is not defined.
+At line:1 char:1
++ protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js -- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (claros_instrume...is not defined.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+claros_instrument_measurement_data_extended.proto: warning: Import claros_common_datetime.proto but not used.
+claros_instrument_measurement_data_extended.proto: warning: Import claros_common_datetime.proto but not used.
+
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_prognosys_data.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_setting_data.proto
+
+protoc --cpp_out=./out/cpp --java_out=./out/java --js_out=./out/js --objc_out=./out/objc --php_out=./out/php --python_out=./out/python --ruby_out=./out/ruby --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis claros_instrument_state_data.proto
+**********************
+Windows PowerShell transcript end
+End time: 20190509222042
+**********************
