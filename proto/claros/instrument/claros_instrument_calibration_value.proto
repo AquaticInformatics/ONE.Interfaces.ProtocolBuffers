@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.instrument;
+
+message CalibrationValue {
+    float value = 1;
+    uint32 unit = 2;
+    uint32 chemicalForm = 3;
+}
+ 

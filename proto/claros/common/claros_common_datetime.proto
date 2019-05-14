@@ -19,4 +19,5 @@ message DateTime{
     Date dateField   = 1;
     Time timeField   = 2;
     int32 timeZone   = 3;   /* Timezone as offset to UTC */
+    uint64 ticks = 4;
 }

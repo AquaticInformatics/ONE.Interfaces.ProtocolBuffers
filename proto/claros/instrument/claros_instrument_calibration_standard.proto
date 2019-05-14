@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.instrument;
+
+import "claros_instrument_calibration_value.proto";
+
+message CalibrationStandard {
+    CalibrationValue knownValue = 1;                       //this is the primary value  (Concentration)
+    CalibrationValue measuredValue = 2;                    //
+    repeated CalibrationValue secondaryValues = 4;
+}
+ 
+ 

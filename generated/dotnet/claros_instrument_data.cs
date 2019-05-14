@@ -18,64 +18,25 @@ namespace claros.instrument
         public string tenantId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::System.Collections.Generic.List<InstrumentId> instrumentIds { get; } = new global::System.Collections.Generic.List<InstrumentId>();
+        [global::System.ComponentModel.DefaultValue("")]
+        public string fusionId { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(3, Name = @"telemetryData")]
-        public global::System.Collections.Generic.List<Telemetry> telemetryDatas { get; } = new global::System.Collections.Generic.List<Telemetry>();
+        [global::ProtoBuf.ProtoMember(3, Name = @"events")]
+        public InstrumentEvent Events { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
-        public partial class Telemetry : global::ProtoBuf.IExtensible
-        {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::ProtoBuf.ProtoMember(4, Name = @"measurements")]
+        public global::System.Collections.Generic.List<InstrumentMeasurement> Measurements { get; } = new global::System.Collections.Generic.List<InstrumentMeasurement>();
 
-            [global::ProtoBuf.ProtoMember(1)]
-            public int shortInstrumentId { get; set; }
+        [global::ProtoBuf.ProtoMember(5, Name = @"settings")]
+        [global::ProtoBuf.ProtoMap]
+        public global::System.Collections.Generic.Dictionary<string, string> Settings { get; } = new global::System.Collections.Generic.Dictionary<string, string>();
 
-            [global::ProtoBuf.ProtoMember(2)]
-            [global::System.ComponentModel.DefaultValue("")]
-            public string fusionId { get; set; } = "";
+        [global::ProtoBuf.ProtoMember(6, Name = @"states")]
+        [global::ProtoBuf.ProtoMap]
+        public global::System.Collections.Generic.Dictionary<string, string> States { get; } = new global::System.Collections.Generic.Dictionary<string, string>();
 
-            [global::ProtoBuf.ProtoMember(3)]
-            public EventData instrumentEventData
-            {
-                get { return __pbn__response_one_of.Is(3) ? ((EventData)__pbn__response_one_of.Object) : default; }
-                set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(3, value); }
-            }
-            public bool ShouldSerializeinstrumentEventData() => __pbn__response_one_of.Is(3);
-            public void ResetinstrumentEventData() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__response_one_of, 3);
-
-            private global::ProtoBuf.DiscriminatedUnionObject __pbn__response_one_of;
-
-            [global::ProtoBuf.ProtoMember(4)]
-            public global::claros.common.MeasurementData measurementData
-            {
-                get { return __pbn__response_one_of.Is(4) ? ((global::claros.common.MeasurementData)__pbn__response_one_of.Object) : default; }
-                set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(4, value); }
-            }
-            public bool ShouldSerializemeasurementData() => __pbn__response_one_of.Is(4);
-            public void ResetmeasurementData() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__response_one_of, 4);
-
-            [global::ProtoBuf.ProtoMember(5, Name = @"settings")]
-            public Settings Settings
-            {
-                get { return __pbn__response_one_of.Is(5) ? ((Settings)__pbn__response_one_of.Object) : default; }
-                set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(5, value); }
-            }
-            public bool ShouldSerializeSettings() => __pbn__response_one_of.Is(5);
-            public void ResetSettings() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__response_one_of, 5);
-
-            [global::ProtoBuf.ProtoMember(6)]
-            public States stateData
-            {
-                get { return __pbn__response_one_of.Is(6) ? ((States)__pbn__response_one_of.Object) : default; }
-                set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(6, value); }
-            }
-            public bool ShouldSerializestateData() => __pbn__response_one_of.Is(6);
-            public void ResetstateData() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__response_one_of, 6);
-
-        }
+        [global::ProtoBuf.ProtoMember(7)]
+        public global::claros.common.DateTime instrumentDataDateTime { get; set; }
 
     }
 

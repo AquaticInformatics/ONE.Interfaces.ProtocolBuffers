@@ -2,12 +2,8 @@ syntax = "proto3";
 package claros.instrument;
 
 message EventMetaData {
-    repeated MetaData metaData = 1;
-    
-    message MetaData {
-        string i18nDatabaseName = 1;
-        int32 translationIndex = 2;
-        string i18nKey = 3;    
-        int32 status = 4;   
-    }
+    string i18nDatabaseName = 1;
+    int32 translationIndex = 2;
+    string i18nKey = 3;    
+    int32 status = 4;   
 }

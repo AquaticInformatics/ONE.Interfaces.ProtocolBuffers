@@ -1,7 +1,0 @@
-syntax = "proto3";
-package claros.instrument;
- 
-message InstrumentId {
-    int32 shortInstrumentId = 1;
-    string fusionId = 2;
-}

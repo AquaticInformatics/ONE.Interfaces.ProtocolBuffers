@@ -22,6 +22,9 @@ namespace claros.common
         [global::ProtoBuf.ProtoMember(3)]
         public int timeZone { get; set; }
 
+        [global::ProtoBuf.ProtoMember(4, Name = @"ticks")]
+        public ulong Ticks { get; set; }
+
         [global::ProtoBuf.ProtoContract()]
         public partial class Time : global::ProtoBuf.IExtensible
         {

@@ -1,28 +1,18 @@
 syntax = "proto3";
 package claros.instrument;
  
-
-import "claros_instrument_event_data.proto";
-import "claros_common_measurement_data.proto";
-import "claros_instrument_setting_data.proto";
-import "claros_instrument_state_data.proto";
-import "claros_instrument_id.proto" ;
+import "claros_instrument_event.proto";
+import "claros_instrument_measurement.proto";
+import "claros_common_datetime.proto";
 
 message InstrumentData {
     string tenantId = 1; // In header
-    repeated InstrumentId instrumentIds = 2;
-    repeated Telemetry telemetryData = 3;
-    
-        message Telemetry {
-            int32 shortInstrumentId = 1;
-            string fusionId = 2;
-            
-            oneof response_one_of {
-                EventData instrumentEventData = 3;
-                MeasurementData measurementData = 4;
-                Settings settings = 5;
-                States stateData = 6;
-            }
-        }
+    string fusionId = 2;
+
+    InstrumentEvent events = 3;
+    repeated InstrumentMeasurement measurements = 4;
+    map<string,string> settings = 5;
+    map<string,string> states = 6;
+    DateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
 }
 

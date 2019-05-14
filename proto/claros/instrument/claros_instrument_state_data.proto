@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.instrument;
-
-message States {
-    repeated State states = 1;
-}
-message State {
-    map<string, string> state = 1;
-}

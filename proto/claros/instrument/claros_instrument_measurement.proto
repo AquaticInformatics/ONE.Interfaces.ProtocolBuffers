@@ -1,0 +1,17 @@
+syntax = "proto3";
+package claros.instrument;
+ 
+import "claros_common_measurement.proto";
+import "claros_instrument_event.proto";
+import "claros_common_gis.proto";
+ 
+message InstrumentMeasurement {
+    string instrumentMeasurementId = 1;  //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
+    int32 channel = 2;
+    string fusionId = 3; // This is optional and may be populated to
+    Measurement measurement = 4;
+    InstrumentMeasurement supportingMeasurements = 5;                
+    Gis gis = 6;
+    string measurementDataExtended = 7;
+    InstrumentEvent measurementEvent = 8; // Clean up
+}
