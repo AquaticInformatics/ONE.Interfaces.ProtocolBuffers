@@ -1,4 +1,5 @@
-﻿cd $Args[0]
+﻿$originalPath = pwd
+cd $Args[0]
 $currentPath = pwd
 
 $files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {"$_"} 
@@ -36,3 +37,4 @@ foreach($file in $files)
     Invoke-Expression -Command $Command
 }
 Stop-Transcript
+cd $originalPath.Path
