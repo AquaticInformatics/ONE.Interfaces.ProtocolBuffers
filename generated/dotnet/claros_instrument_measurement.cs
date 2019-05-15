@@ -3,7 +3,7 @@
 // Input: claros_instrument_measurement.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument
+namespace Claros.Instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -25,13 +25,13 @@ namespace claros.instrument
         public string fusionId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(4, Name = @"measurement")]
-        public global::claros.common.Measurement Measurement { get; set; }
+        public global::Claros.Common.Measurement Measurement { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
         public InstrumentMeasurement supportingMeasurements { get; set; }
 
         [global::ProtoBuf.ProtoMember(6, Name = @"gis")]
-        public global::claros.common.gis.Gis Gis { get; set; }
+        public global::Claros.Common.Gis.Gis Gis { get; set; }
 
         [global::ProtoBuf.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]

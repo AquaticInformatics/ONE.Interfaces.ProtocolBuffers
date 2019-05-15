@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.form;
+package Claros.Common.Form;
  
 enum DataEntryType {
     DATAENTRYTYPE_UNSPECIFIED = 0;

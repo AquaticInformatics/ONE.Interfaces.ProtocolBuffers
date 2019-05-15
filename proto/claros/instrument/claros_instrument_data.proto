@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.instrument;
+package Claros.Instrument;
  
 import "claros_instrument_event.proto";
 import "claros_instrument_measurement.proto";
@@ -13,6 +13,6 @@ message InstrumentData {
     repeated InstrumentMeasurement measurements = 4;
     map<string,string> settings = 5;
     map<string,string> states = 6;
-    DateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
+    Claros.Common.DateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
 }
 

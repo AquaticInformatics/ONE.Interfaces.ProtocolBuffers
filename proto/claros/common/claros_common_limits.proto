@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common;
+package Claros.Common;
 
 import "claros_common_limit.proto";
 

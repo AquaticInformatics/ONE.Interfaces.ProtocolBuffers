@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.instrument;
+package Claros.Instrument;
 
 message CalibrationValue {
     float value = 1;

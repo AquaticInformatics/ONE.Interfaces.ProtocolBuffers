@@ -3,7 +3,7 @@
 // Input: claros_instrument_data.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument
+namespace Claros.Instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -36,7 +36,7 @@ namespace claros.instrument
         public global::System.Collections.Generic.Dictionary<string, string> States { get; } = new global::System.Collections.Generic.Dictionary<string, string>();
 
         [global::ProtoBuf.ProtoMember(7)]
-        public global::claros.common.DateTime instrumentDataDateTime { get; set; }
+        public global::Claros.Common.DateTime instrumentDataDateTime { get; set; }
 
     }
 

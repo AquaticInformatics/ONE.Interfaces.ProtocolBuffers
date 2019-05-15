@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.gis;
+package Claros.Common.Gis;
 
 // type: MultiPoint
 // coordinates: [[x, y, z], [x, y, z]]

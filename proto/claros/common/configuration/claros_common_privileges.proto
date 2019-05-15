@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.configuration;
+package Claros.Common.Configuration;
 
 import "claros_common_rights.proto";
 

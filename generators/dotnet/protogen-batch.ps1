@@ -1,4 +1,5 @@
-﻿$currentPath = pwd
+﻿cd $Args[0]
+$currentPath = pwd
 #$files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {$_.FullName} 
 $files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {"$_"} 
 $files = $files.Replace($currentPath.Path, ".")
@@ -14,9 +15,10 @@ $logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/"
 Start-Transcript $logName
 foreach($file in $files)
 {
-    $Command = "protogen --csharp_out=./out/ $protoDirsCommand $file"
+    $Command = "protogen --csharp_out=../generated/dotnet $protoDirsCommand $file"
     echo `n$Command
 
     Invoke-Expression -Command $Command
 }
 Stop-Transcript
+cd $currentPath
