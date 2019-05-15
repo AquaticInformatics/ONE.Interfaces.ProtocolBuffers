@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+enum DataEntryType {
+    DATAENTRYTYPE_UNSPECIFIED = 0;
+    DATAENTRYTYPE_INSTRUMENT = 1;
+    DATAENTRYTYPE_TOTALIZER = 2;
+    DATAENTRYTYPE_CONSUMPTION = 3;
+    DATAENTRYTYPE_TEXT = 4;
+}

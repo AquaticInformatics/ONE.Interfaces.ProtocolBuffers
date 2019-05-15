@@ -1,0 +1,35 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "claros_common_form_note.proto";
+import "ledger_column_form_field.proto";
+import "location_parameter_form_field.proto";
+import "claros_common_form_dataentrytype.proto";
+import "Claros/Operations/Ledger/claros_operations_ledger_ledgerlineentry.proto";
+import "Claros/Instrument/instrument_measurement_data.proto";
+ 
+message FormField {
+    string guid = 1;
+    DataEntryType dataEntryType = 2;
+    bool dataEntryMethodLocked = 3;
+    string name = 4;
+    string lastContributor = 5;
+    repeated string contributors = 6;
+    //repeated MeasurementData measurements = 7; //
+    repeated FormFieldEntries entries = 8; // The user entries.
+    repeated Note notes = 9;
+    repeated string attachmentGUID = 10;
+    oneof FormFieldType {
+        LedgerColumnFormField lcFormField = 11;
+        LocationParameterFormField lpFormField = 12;
+    }
+     
+    message FormFieldEntries {
+        string userID = 1; // WHo interacted - PROPOSED - GREEN
+        oneof FormEntryType {
+            LedgerLineEntry ledgerLineEntry = 2;
+            InstrumentMeasurement = 3;
+        }
+         
+    }
+}

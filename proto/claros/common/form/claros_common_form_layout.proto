@@ -1,0 +1,19 @@
+syntax = "proto3";
+ 
+import "DateTime.proto";
+ 
+ 
+ 
+message Column {
+    uint32 number = 1;
+    repeated string formFieldIds = 2;
+}
+ 
+message Section {
+    uint32 number = 1;
+    repeated Column column = 2;
+}
+ 
+message Layout {
+    repeated Section sections = 1;
+}

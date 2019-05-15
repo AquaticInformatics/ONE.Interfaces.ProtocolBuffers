@@ -1,0 +1,20 @@
+syntax = "proto3";
+ 
+import "form_field.proto";
+import "layout.proto";
+import "recurrence.proto";
+ 
+enum FormTemplateType {
+    plant = 0;
+    laboratory = 1;
+    enterprise = 2;
+}
+ 
+message FormTemplateData {
+    string name = 1;
+    FormTemplateType formTemplateType = 2;
+    bool locked = 3;
+    Recurrence recurrence = 4;
+    Layout formLayout = 5;
+    repeated FormField formFields = 6;
+}
