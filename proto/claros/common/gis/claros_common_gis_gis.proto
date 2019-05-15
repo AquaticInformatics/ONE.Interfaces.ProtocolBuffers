@@ -1,5 +1,6 @@
 syntax = "proto3";
-package Claros.Common.Gis;
+
+package claros.common.gis;
 
 import "claros_common_gis_point2d.proto";
 import "claros_common_gis_point3d.proto";

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Instrument;
+package claros.instrument;
 
 message EventMetaData {
     string i18nDatabaseName = 1;

@@ -1,6 +1,6 @@
 syntax = "proto3";
-package Claros.Instrument;
- 
+package claros.instrument;
+
 import "claros_common_measurement.proto";
 import "claros_instrument_event.proto";
 import "claros_common_gis_gis.proto";
@@ -11,7 +11,7 @@ message InstrumentMeasurement {
     string fusionId = 3; // This is optional and may be populated to
     Measurement measurement = 4;
     InstrumentMeasurement supportingMeasurements = 5;                
-    Claros.Common.Gis.GIS gis = 6;
+    claros.common.gis.GIS gis = 6;
     string measurementDataExtended = 7;
     InstrumentEvent measurementEvent = 8; // Clean up
 }

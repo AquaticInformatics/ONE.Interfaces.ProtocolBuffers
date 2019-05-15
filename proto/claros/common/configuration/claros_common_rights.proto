@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Common.Configuration;
+package claros.common.configuration;
  
 message Rights {
     bool view = 2;

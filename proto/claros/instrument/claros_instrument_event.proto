@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Instrument;
+package claros.instrument;
 
 import "claros_common_datetime.proto";
 import "claros_instrument_event_metadata.proto";
@@ -14,5 +14,5 @@ message InstrumentEvent {
     repeated EventMetaData reminders = 5;         
     repeated EventMetaData warnings = 6;
     repeated PrognosysData prognosys = 7;
-    Claros.Common.DateTime eventDateTime = 8;
+    claros.common.DateTime eventDateTime = 8;
 }

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Common;
+package claros.common;
  
 message Limit {
     uint32 severity = 1;

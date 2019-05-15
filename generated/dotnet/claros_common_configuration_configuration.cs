@@ -3,7 +3,7 @@
 // Input: claros_common_configuration_configuration.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace Claros.Common.Configuration
+namespace claros.common.configuration
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -22,14 +22,14 @@ namespace Claros.Common.Configuration
         public string createdById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::Claros.Common.DateTime createdOn { get; set; }
+        public global::claros.common.DateTime createdOn { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string modifiedById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::Claros.Common.DateTime modifiedOn { get; set; }
+        public global::claros.common.DateTime modifiedOn { get; set; }
 
         [global::ProtoBuf.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]

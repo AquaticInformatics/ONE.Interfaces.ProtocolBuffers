@@ -1,10 +1,10 @@
 syntax = "proto3";
-package Claros.Common;
+package claros.common;
 
 import "claros_common_datetime.proto";
 
 message Measurement {
-    DateTime timestamp = 1;
+    claros.common.DateTime timestamp = 1;
     int32 parameterId = 2;
     string parameterGuid = 3;
     int32 unitId = 4;

@@ -3,7 +3,7 @@
 // Input: claros_common_privileges.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace Claros.Common.Configuration
+namespace claros.common.configuration
 {
 
     [global::ProtoBuf.ProtoContract()]

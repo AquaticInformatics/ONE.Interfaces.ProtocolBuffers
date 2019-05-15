@@ -1,5 +1,6 @@
 syntax = "proto3";
-package Claros.Instrument;
+package claros.instrument;
+
 
 import "claros_instrument_calibration_standard.proto";
 

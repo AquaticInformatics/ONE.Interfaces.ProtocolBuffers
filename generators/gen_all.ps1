@@ -1,4 +1,5 @@
-﻿$currentPath = pwd
+﻿cd $Args[0]
+$currentPath = pwd
 
 $files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {"$_"} 
 $files = $files.Replace($currentPath.Path, ".")

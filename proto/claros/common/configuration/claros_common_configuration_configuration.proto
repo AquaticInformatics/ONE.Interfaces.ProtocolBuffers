@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Common.Configuration;
+package claros.common.configuration;
 
 import "claros_common_datetime.proto";
 import "claros_common_enum_entitytype.proto";

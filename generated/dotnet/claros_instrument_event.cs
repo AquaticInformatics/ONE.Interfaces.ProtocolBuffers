@@ -3,7 +3,7 @@
 // Input: claros_instrument_event.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace Claros.Instrument
+namespace claros.instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -32,10 +32,10 @@ namespace Claros.Instrument
         public global::System.Collections.Generic.List<EventMetaData> Warnings { get; } = new global::System.Collections.Generic.List<EventMetaData>();
 
         [global::ProtoBuf.ProtoMember(7, Name = @"prognosys")]
-        public global::System.Collections.Generic.List<global::claros.instrument.PrognosysData> Prognosys { get; } = new global::System.Collections.Generic.List<global::claros.instrument.PrognosysData>();
+        public global::System.Collections.Generic.List<PrognosysData> Prognosys { get; } = new global::System.Collections.Generic.List<PrognosysData>();
 
         [global::ProtoBuf.ProtoMember(8)]
-        public global::Claros.Common.DateTime eventDateTime { get; set; }
+        public global::claros.common.DateTime eventDateTime { get; set; }
 
     }
 

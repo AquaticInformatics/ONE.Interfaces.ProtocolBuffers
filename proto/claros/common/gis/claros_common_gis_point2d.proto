@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Common.Gis;
+package claros.common.gis;
 
 // type: Point
 // coordinates: [x, y]

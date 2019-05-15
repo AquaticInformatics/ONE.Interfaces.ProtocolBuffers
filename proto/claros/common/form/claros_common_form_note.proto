@@ -1,5 +1,5 @@
 syntax = "proto3";
-package Claros.Common.Form;
+package claros.common.form;
  
 import "claros_common_datetime.proto";
  
@@ -7,7 +7,7 @@ message Note {
     string guid = 1;
     string formFieldGUID = 2;
     string formGUID = 3;
-    Claros.Common.DateTime timeStamp = 4;
+    claros.common.DateTime timeStamp = 4;
     string userId = 5;
     string text = 6;
 }
