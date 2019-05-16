@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.common;
+
+import "claros_common_recurrencetype.proto";
+import "claros_common_datetime.proto";
+import "claros_common_dayofweek.proto";
+ 
+message Recurrence {
+    RecurrenceType type = 1;
+    DateTime startDate = 2;
+    uint32 minuteOffset = 3;
+    repeated DayOfWeek daysOfWeek = 4;
+    uint32 duration = 5;
+}

@@ -1,15 +1,21 @@
 syntax = "proto3";
 package claros.common.form;
-import "claros/common/claros_common_form_datetime.proto";
  
+import "claros_common_datetime.proto";
+import "claros_common_note.proto";
+import "claros_common_form_formauditevent.proto";
+import "claros_common_form_formfield.proto";
  
-enum AuditEvents {
-    FormFieldDeleted = 0;
-    FormFieldAdded = 1;
-    FormSent = 2;
-}
- 
-message AuditEvent {
-    DateTime timeStamp = 1;
-    AuditEvents event = 2;
+message Form {
+    string id = 1;  //GUID
+    string templateId = 2;  //GUID
+    uint32 templateVersion = 3;
+    claros.common.DateTime startTime = 4;
+    claros.common.DateTime endTime = 5;
+    string name = 6;
+    repeated FormField templateFormFields = 7; // Form components in the form
+    repeated FormField adhocFormFields = 8;
+    repeated string contributorIds = 9;
+    repeated claros.common.Note notes = 10;
+    repeated FormAuditEvent auditEvents = 11;
 }

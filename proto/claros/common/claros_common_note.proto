@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common;
+ 
+import "claros_common_datetime.proto";
+ 
+message Note {
+    string id = 1;
+    claros.common.DateTime timeStamp = 4;
+    string userId = 5;
+    string text = 6;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "claros_operations_ledger_ledgerlineentry.proto";
+      
+message FormFieldEntry {
+    string userID = 1; // WHo interacted - PROPOSED - GREEN
+    oneof FormEntryType {
+        LedgerLineEntry ledgerLineEntry = 2;        
+    }
+        
+}

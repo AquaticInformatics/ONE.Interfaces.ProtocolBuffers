@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.configuration;
 
-import "claros_common_rights.proto";
+import "claros_common_configuration_rights.proto";
 
 message Privileges {
     map<string, Rights> privilege = 1;

@@ -1,20 +1,14 @@
 syntax = "proto3";
-import "form_template_data.proto";
-import "common_privilege.proto";
- 
+package claros.common.form;
+
+import "claros_common_form_formtemplateconfigurationcontent.proto";
+import "claros_common_configuration_privileges.proto";
  
 message FormTemplateConfiguration {
     string id = 1;  //retrieval only
-    string createdById = 2; //retrieval only
-    DateTime createdOn = 3; //retrieval only
-    string modifiedById = 4; //retrieval only
-    DateTime modifiedOn = 5; //retrieval only
-    // EntityType entityTypeId = 6;  Hardcoded to Form Template
-    string locationId = 6;  //filterById
-    string tenantId = 7; //retrieval only
-    string ownerId = 8; //update and retrieval only
-    bool public = 9;
-    uint32 version = 10; //retrieval only
-    repeated Privilege privileges = 11;
-    FormTemplateData formTemplateData = 12;
+    string ownerId = 2; //update and retrieval only
+    bool public = 3;
+    uint32 version = 4; //retrieval only
+    repeated claros.common.configuration.Privileges privileges = 5;
+    FormTemplateConfigurationContent formTemplateConfiguraitonContent = 6;
 }

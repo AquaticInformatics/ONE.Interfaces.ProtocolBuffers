@@ -1,20 +1,13 @@
 syntax = "proto3";
+package claros.common.form;
+
+import "claros_common_form_formtemplatetype.proto";
+import "claros_common_form_formtemplateconfiguration.proto";
  
-import "form_field.proto";
-import "layout.proto";
-import "recurrence.proto";
- 
-enum FormTemplateType {
-    plant = 0;
-    laboratory = 1;
-    enterprise = 2;
-}
- 
-message FormTemplateData {
-    string name = 1;
-    FormTemplateType formTemplateType = 2;
-    bool locked = 3;
-    Recurrence recurrence = 4;
-    Layout formLayout = 5;
-    repeated FormField formFields = 6;
+message FormTemplate {
+    string id = 1;
+    string name = 2;
+    string description = 3;
+    FormTemplateType formTemplateType = 4;
+    FormTemplateConfiguration formTemplateConfiguration = 5;
 }

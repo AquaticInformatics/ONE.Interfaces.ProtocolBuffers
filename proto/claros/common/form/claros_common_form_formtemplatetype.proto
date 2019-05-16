@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common.form;
+
+enum FormTemplateType {
+    plant = 0;
+    laboratory = 1;
+    enterprise = 2;
+}
+ 
