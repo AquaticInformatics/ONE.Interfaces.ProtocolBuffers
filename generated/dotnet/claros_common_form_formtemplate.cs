@@ -17,19 +17,21 @@ namespace claros.common.form
         [global::System.ComponentModel.DefaultValue("")]
         public string Id { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"name")]
+        [global::ProtoBuf.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
-        public string Name { get; set; } = "";
+        public string ownerId { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(3, Name = @"description")]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string Description { get; set; } = "";
+        [global::ProtoBuf.ProtoMember(3, Name = @"public")]
+        public bool Public { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
-        public FormTemplateType formTemplateType { get; set; }
+        [global::ProtoBuf.ProtoMember(4, Name = @"version")]
+        public uint Version { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
-        public FormTemplateConfiguration formTemplateConfiguration { get; set; }
+        [global::ProtoBuf.ProtoMember(5, Name = @"privileges")]
+        public global::System.Collections.Generic.List<global::claros.common.configuration.Privileges> Privileges { get; } = new global::System.Collections.Generic.List<global::claros.common.configuration.Privileges>();
+
+        [global::ProtoBuf.ProtoMember(6)]
+        public FormTemplateConfigurationContent formTemplateConfiguraitonContent { get; set; }
 
     }
 
