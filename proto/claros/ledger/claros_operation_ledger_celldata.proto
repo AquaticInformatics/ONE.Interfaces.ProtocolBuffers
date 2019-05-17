@@ -1,0 +1,15 @@
+syntax = "proto3";
+package claros.ledger;
+
+import "claros_common_reportablequalifier.proto";
+
+message CellData{
+    double value = 1;
+    claros.common.ReportableQualifier reportableQualifier = 2;
+    bool locked = 3;
+    claros.common.DateTime timeStamp = 4;
+    claros.common.DataSource source = 5;
+    string sourceId = 6;
+    string value = 7;
+
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.ledger;
+
+import ""
+
+message Cell{
+    string note = 1;
+    repeated CellData data = 2;
+    uint32 columnId = 3
+    
+}
