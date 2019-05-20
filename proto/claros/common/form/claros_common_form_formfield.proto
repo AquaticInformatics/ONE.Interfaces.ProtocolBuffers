@@ -20,6 +20,4 @@ message FormField {
     oneof FormFieldType {
         LedgerColumnFormField lcFormField = 11;        
     }
-     
-   
 }

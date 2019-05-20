@@ -31,7 +31,7 @@ namespace claros.common.form
         public global::System.Collections.Generic.List<global::claros.common.configuration.Privileges> Privileges { get; } = new global::System.Collections.Generic.List<global::claros.common.configuration.Privileges>();
 
         [global::ProtoBuf.ProtoMember(6)]
-        public FormTemplateConfigurationContent formTemplateConfiguraitonContent { get; set; }
+        public FormTemplateConfiguration formTemplateConfiguration { get; set; }
 
     }
 

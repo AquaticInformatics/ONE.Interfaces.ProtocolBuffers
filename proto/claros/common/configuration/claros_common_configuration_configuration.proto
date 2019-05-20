@@ -7,16 +7,16 @@ import "claros_common_configuration_privileges.proto";
  
 message Configuration {
     string id = 1;
-    string createdById = 2;
-    claros.common.DateTime createdOn = 3;
-    string modifiedById = 4;
-    claros.common.DateTime modifiedOn = 5;
-    string configurationData = 6;
-    EntityType entityTypeId = 7;
-    string filterById = 8;
-    string tenantId = 9;
-    string ownerId = 10;
-    bool public = 11;
-    uint32 version = 12;
-    repeated Privileges privileges = 13;
+    EntityType entityTypeId = 2;
+    string filterById = 3;
+    uint32 version = 4;
+    string tenantId = 5;
+    string ownerId = 6;
+    bool public = 7;
+    repeated Privileges privileges = 8;
+    string configurationData = 9;    
+    string createdById = 10;
+    claros.common.DateTime createdOn = 11;
+    string modifiedById = 12;
+    claros.common.DateTime modifiedOn = 13;    
 }

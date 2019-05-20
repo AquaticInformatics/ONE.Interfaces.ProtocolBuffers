@@ -6,7 +6,7 @@ import "claros_common_recurrence.proto";
 import "claros_common_form_formlayout.proto";
 import "claros_common_form_formfield.proto";
  
-message FormTemplateConfigurationContent {
+message FormTemplateConfiguration {
     FormTemplateType formTemplateType = 1;
     claros.common.Recurrence recurrence = 2;
     FormLayout formLayout = 3;

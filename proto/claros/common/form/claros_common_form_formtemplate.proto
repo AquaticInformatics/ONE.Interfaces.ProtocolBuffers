@@ -10,5 +10,5 @@ message FormTemplate {
     bool public = 3;
     uint32 version = 4; //retrieval only
     repeated claros.common.configuration.Privileges privileges = 5;
-    FormTemplateConfiguration formTemplateConfigurtion = 6; //This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+    FormTemplateConfiguration formTemplateConfiguration = 6; //This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
 }
