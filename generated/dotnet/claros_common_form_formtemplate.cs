@@ -28,7 +28,8 @@ namespace claros.common.form
         public uint Version { get; set; }
 
         [global::ProtoBuf.ProtoMember(5, Name = @"privileges")]
-        public global::System.Collections.Generic.List<global::claros.common.configuration.Privileges> Privileges { get; } = new global::System.Collections.Generic.List<global::claros.common.configuration.Privileges>();
+        [global::ProtoBuf.ProtoMap]
+        public global::System.Collections.Generic.Dictionary<string, global::claros.common.configuration.Rights> Privileges { get; } = new global::System.Collections.Generic.Dictionary<string, global::claros.common.configuration.Rights>();
 
         [global::ProtoBuf.ProtoMember(6)]
         public FormTemplateConfiguration formTemplateConfiguration { get; set; }

@@ -39,7 +39,8 @@ namespace claros.common.configuration
         public bool Public { get; set; }
 
         [global::ProtoBuf.ProtoMember(8, Name = @"privileges")]
-        public global::System.Collections.Generic.List<Privileges> Privileges { get; } = new global::System.Collections.Generic.List<Privileges>();
+        [global::ProtoBuf.ProtoMap]
+        public global::System.Collections.Generic.Dictionary<string, Rights> Privileges { get; } = new global::System.Collections.Generic.Dictionary<string, Rights>();
 
         [global::ProtoBuf.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
