@@ -17,10 +17,14 @@ namespace claros.operations.spreadsheet
         [global::System.ComponentModel.DefaultValue("")]
         public string Name { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"timeDefinition")]
+        [global::ProtoBuf.ProtoMember(2)]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string locationId { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"timeDefinition")]
         public global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetTimeDefinition> timeDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetTimeDefinition>();
 
-        [global::ProtoBuf.ProtoMember(3, Name = @"worksheet")]
+        [global::ProtoBuf.ProtoMember(4, Name = @"worksheet")]
         public global::System.Collections.Generic.List<Worksheet> Worksheets { get; } = new global::System.Collections.Generic.List<Worksheet>();
 
     }

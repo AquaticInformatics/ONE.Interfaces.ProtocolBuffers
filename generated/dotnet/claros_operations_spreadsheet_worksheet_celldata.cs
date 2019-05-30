@@ -29,19 +29,53 @@ namespace claros.operations.spreadsheet
         [global::ProtoBuf.ProtoMember(5)]
         public uint unitId { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
-        public global::claros.common.DataSourceType dataSourceType { get; set; }
-
-        [global::ProtoBuf.ProtoMember(7)]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string sourceId { get; set; } = "";
-
-        [global::ProtoBuf.ProtoMember(8, Name = @"justification")]
+        [global::ProtoBuf.ProtoMember(6, Name = @"justification")]
         [global::System.ComponentModel.DefaultValue("")]
         public string Justification { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::ProtoBuf.ProtoMember(7)]
         public global::claros.common.ReportableQualifier reportableQualifier { get; set; }
+
+        [global::ProtoBuf.ProtoMember(8)]
+        public global::claros.common.DataSourceType dataSourceType { get; set; }
+
+        [global::ProtoBuf.ProtoMember(9)]
+        public global::claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
+        {
+            get { return __pbn__binding.Is(9) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(9, value); }
+        }
+        public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(9);
+        public void ResetinstrumentMeasurementBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 9);
+
+        private global::ProtoBuf.DiscriminatedUnionObject __pbn__binding;
+
+        [global::ProtoBuf.ProtoMember(10)]
+        public global::claros.common.computation.ComputationBinding computationBinding
+        {
+            get { return __pbn__binding.Is(10) ? ((global::claros.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
+        }
+        public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(10);
+        public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 10);
+
+        [global::ProtoBuf.ProtoMember(11)]
+        public global::claros.common.form.FormBinding formBinding
+        {
+            get { return __pbn__binding.Is(11) ? ((global::claros.common.form.FormBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(11, value); }
+        }
+        public bool ShouldSerializeformBinding() => __pbn__binding.Is(11);
+        public void ResetformBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 11);
+
+        [global::ProtoBuf.ProtoMember(12)]
+        public global::claros.common.computation.SpreadsheetBinding spreadsheetBinding
+        {
+            get { return __pbn__binding.Is(12) ? ((global::claros.common.computation.SpreadsheetBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(12, value); }
+        }
+        public bool ShouldSerializespreadsheetBinding() => __pbn__binding.Is(12);
+        public void ResetspreadsheetBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 12);
 
     }
 

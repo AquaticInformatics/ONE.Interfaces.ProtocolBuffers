@@ -34,12 +34,31 @@ namespace claros.operations.spreadsheet
         [global::ProtoBuf.ProtoMember(6)]
         public bool isActive { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7, Name = @"source")]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string Source { get; set; } = "";
-
-        [global::ProtoBuf.ProtoMember(8, Name = @"limits")]
+        [global::ProtoBuf.ProtoMember(7, Name = @"limits")]
         public global::System.Collections.Generic.List<global::claros.common.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.common.Limit>();
+
+        [global::ProtoBuf.ProtoMember(8)]
+        public global::claros.common.DataSourceType dataSourceType { get; set; }
+
+        [global::ProtoBuf.ProtoMember(9)]
+        public global::claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
+        {
+            get { return __pbn__binding.Is(9) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(9, value); }
+        }
+        public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(9);
+        public void ResetinstrumentMeasurementBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 9);
+
+        private global::ProtoBuf.DiscriminatedUnionObject __pbn__binding;
+
+        [global::ProtoBuf.ProtoMember(10)]
+        public global::claros.common.computation.ComputationBinding computationBinding
+        {
+            get { return __pbn__binding.Is(10) ? ((global::claros.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
+        }
+        public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(10);
+        public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 10);
 
     }
 

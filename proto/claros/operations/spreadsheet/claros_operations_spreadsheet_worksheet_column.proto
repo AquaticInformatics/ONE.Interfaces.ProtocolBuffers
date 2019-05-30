@@ -5,6 +5,8 @@ package claros.operations.spreadsheet;
 import "claros_common_datasource_type.proto";
 import "claros_common_limit.proto";
 import "claros_instrument_measurement_binding.proto";
+import "claros_common_computation_binding.proto";
+
  
 message Column
 {

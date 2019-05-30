@@ -5,6 +5,10 @@ package claros.operations.spreadsheet;
 import "claros_common_clarosdatetime.proto";
 import "claros_common_reportablequalifier.proto";
 import "claros_common_datasource_type.proto";
+import "claros_common_form_binding.proto";
+import "claros_common_computation_binding.proto";
+import "claros_instrument_measurement_binding.proto";
+import "claros_operations_spreadsheet_binding.proto";
  
 message CellData {
    double value = 1;
@@ -12,8 +16,13 @@ message CellData {
    ClarosDateTime timeStamp = 3;
    bool isLocked = 4;
    uint32 unitId = 5;
-   DataSourceType dataSourceType = 6;
-   string sourceId = 7;
-   string justification = 8;
-   ReportableQualifier reportableQualifier = 9;
+   string justification = 6;
+   ReportableQualifier reportableQualifier = 7;
+   DataSourceType dataSourceType = 8;
+   oneof binding {
+       InstrumentMeasurementBinding instrumentMeasurementBinding = 9;
+       ComputationBinding computationBinding = 10;
+       FormBinding formBinding = 11;
+       SpreadsheetBinding spreadsheetBinding = 12;
+   }
 }

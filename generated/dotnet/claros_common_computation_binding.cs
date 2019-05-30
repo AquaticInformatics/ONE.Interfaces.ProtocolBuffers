@@ -17,9 +17,6 @@ namespace claros.common.computation
         [global::System.ComponentModel.DefaultValue("")]
         public string computationId { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(3)]
-        public uint unitId { get; set; }
-
     }
 
 }
