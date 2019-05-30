@@ -30,8 +30,7 @@ namespace claros.operations.spreadsheet
         public uint unitId { get; set; }
 
         [global::ProtoBuf.ProtoMember(6)]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string dataSource { get; set; } = "";
+        public global::claros.common.DataSourceType dataSourceType { get; set; }
 
         [global::ProtoBuf.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]

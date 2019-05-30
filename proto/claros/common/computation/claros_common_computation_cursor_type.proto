@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.computation;
+
+enum ComputationCursorType
+{
+    Unknown = 0;
+    Current = 1;
+    Previous = 2;
+    Next = 4;
+    Last = 5;
+    Absolute = 6;    
+}

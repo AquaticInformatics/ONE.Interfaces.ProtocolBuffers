@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.computation;
+
+enum PropertySelectorType
+{
+    Unknown = 0;
+    MeasurementTime = 1;
+    BeginLineTime = 2;
+    EndLineTime = 3;
+    MeasurementValue = 4;
+}

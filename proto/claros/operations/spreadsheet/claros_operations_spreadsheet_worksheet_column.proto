@@ -2,7 +2,9 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
+import "claros_common_datasource_type.proto";
 import "claros_common_limit.proto";
+import "claros_instrument_measurement_binding.proto";
  
 message Column
 {
@@ -12,6 +14,10 @@ message Column
     uint32 parameterId = 4;
     string locationId = 5;
     bool isActive = 6;
-    string source = 7;
-    repeated claros.common.Limit limits = 8;  
+    repeated claros.common.Limit limits = 7;  
+    DataSourceType dataSourceType = 8;
+    oneof binding {
+        InstrumentMeasurementBinding instrumentMeasurementBinding = 9;
+        ComputationBinding computationBinding = 10;
+    }
 }

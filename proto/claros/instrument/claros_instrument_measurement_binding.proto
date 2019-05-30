@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.instrument;
+
+import "claros_common_aggregate_type.proto";
+
+message InstrumentMeasurementBinding {
+   string instrumentMeasurementId = 1;
+   claros.common.AggregateType aggregateType = 2;
+   uint32 unitId = 3;
+}

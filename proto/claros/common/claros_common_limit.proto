@@ -1,8 +1,11 @@
 syntax = "proto3";
 package claros.common;
  
+import "claros_common_limit_type.proto";
+
 message Limit {
-    uint32 severity = 1;
-    uint32 polarity = 2;
-    string i18nKey = 3;      
+    string i18nKey = 1;     
+    LimitType limitType = 2; 
+    double value = 3;
+    uint32 unitId = 4;
 }

@@ -4,6 +4,7 @@ package claros.operations.spreadsheet;
  
 import "claros_common_clarosdatetime.proto";
 import "claros_common_reportablequalifier.proto";
+import "claros_common_datasource_type.proto";
  
 message CellData {
    double value = 1;
@@ -11,7 +12,7 @@ message CellData {
    ClarosDateTime timeStamp = 3;
    bool isLocked = 4;
    uint32 unitId = 5;
-   string dataSource = 6;
+   DataSourceType dataSourceType = 6;
    string sourceId = 7;
    string justification = 8;
    ReportableQualifier reportableQualifier = 9;

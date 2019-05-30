@@ -6,6 +6,7 @@ import "claros_operations_spreadsheet_worksheet.proto";
  
 message Spreadsheet {
     string name = 1;
-    repeated SpreadsheetTimeDefinition timeDefinition = 2;
-    repeated Worksheet worksheet = 3;
+    string locationId = 2;
+    repeated SpreadsheetTimeDefinition timeDefinition = 3;
+    repeated Worksheet worksheet = 4;
 }

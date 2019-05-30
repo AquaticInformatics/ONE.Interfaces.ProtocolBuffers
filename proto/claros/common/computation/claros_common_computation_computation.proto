@@ -1,0 +1,22 @@
+syntax = "proto3";
+package claros.common.computation;
+
+import "claros_common_computation_variable.proto";
+import "claros_common_computation_expressionline.proto";
+
+message Computation
+{
+    string i18nKey = 1;
+    string name = 2;
+    string description = 3;
+    repeated Variable inputVariables = 4;
+    repeated Variable outputVariables = 5;
+    repeated ExpressionLine expressionLines = 6;
+    bool isActive = 7;
+    bool isValid = 8;
+    oneof binding {
+        string ledgerId = 9;
+        string formId = 10;
+    }
+
+}

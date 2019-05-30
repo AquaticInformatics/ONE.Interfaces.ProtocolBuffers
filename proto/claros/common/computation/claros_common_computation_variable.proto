@@ -1,0 +1,22 @@
+syntax = "proto3";
+package claros.common.computation;
+
+import "claros_common_computation_cursor_type.proto";
+import "claros_common_computation_propertyselector_type.proto";
+
+message Variable
+{
+    string i18nKey = 1;
+    string name = 2;
+    string description = 3;
+    string quantityTypeId = 4;
+    ComputationCursorType cursor = 5;
+    uint32 cursorAbsolute = 6;
+    PropertySelectorType propertySelector = 7;
+    uint32 suggestedParameterId = 8;
+    uint32 suggestedUnitId = 9;    
+    oneof binding {
+        uint32 columnId = 10;
+        uint32 formFieldId = 11;
+    }
+}

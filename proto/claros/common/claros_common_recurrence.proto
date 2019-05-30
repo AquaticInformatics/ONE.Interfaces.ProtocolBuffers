@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common;
 
-import "claros_common_recurrencetype.proto";
+import "claros_common_recurrence_type.proto";
 import "claros_common_clarosdatetime.proto";
 import "claros_common_dayofweek.proto";
  
