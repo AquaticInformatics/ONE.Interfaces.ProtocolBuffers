@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "claros_common_clarosdatetime.proto";
+import "claros_common_reportablequalifier.proto";
+ 
+message CellData {
+   double value = 1;
+   string stringValue = 2;
+   ClarosDateTime timeStamp = 3;
+   bool isLocked = 4;
+   uint32 unitId = 5;
+   string dataSource = 6;
+   string sourceId = 7;
+   string justification = 8;
+   ReportableQualifier reportableQualifier = 9;
+}

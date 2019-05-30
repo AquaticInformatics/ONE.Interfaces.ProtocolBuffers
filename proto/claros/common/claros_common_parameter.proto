@@ -13,7 +13,7 @@ message Parameter {
     string tenantId = 7;
 
     string createdById = 8;
-    DateTime createdOn = 9;
+    ClarosDateTime createdOn = 9;
     string modifiedById = 10;
-    DateTime modifiedOn = 11;
+    ClarosDateTime modifiedOn = 11;
 }

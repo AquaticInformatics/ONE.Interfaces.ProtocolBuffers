@@ -12,7 +12,7 @@ message Unit {
     string description = 6;
     
     string createdById = 7;
-    DateTime createdOn = 8;
+    ClarosDateTime createdOn = 8;
     string modifiedById = 9;
-    DateTime modifiedOn = 10;
+    ClarosDateTime modifiedOn = 10;
 }

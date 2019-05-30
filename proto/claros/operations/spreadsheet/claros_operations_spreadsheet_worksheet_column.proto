@@ -1,0 +1,17 @@
+
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "claros_common_limit.proto";
+ 
+message Column
+{
+    uint32 columnNumber = 1;
+    string name = 2;
+    string description = 3;
+    uint32 parameterId = 4;
+    string locationId = 5;
+    bool isActive = 6;
+    string source = 7;
+    repeated claros.common.Limit limits = 8;  
+}

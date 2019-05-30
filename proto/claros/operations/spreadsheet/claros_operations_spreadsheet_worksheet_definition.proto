@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "claros_operations_spreadsheet_worksheet_column.proto";
+ 
+message WorksheetDefinition {
+    uint32 Version = 1;
+    uint32 startRow = 2;
+    uint32 endRow = 3;
+    repeated Column worksheetColumns = 4;
+}

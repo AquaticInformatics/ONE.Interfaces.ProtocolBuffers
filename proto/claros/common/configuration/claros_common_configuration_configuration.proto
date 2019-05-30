@@ -7,20 +7,6 @@ import "claros_common_configuration_rights.proto";
  
 message Configuration {
     string id = 1;
-<<<<<<< HEAD
-    EntityType entityTypeId = 2;
-    string filterById = 3;
-    uint32 version = 4;
-    string tenantId = 5;
-    string ownerId = 6;
-    bool public = 7;
-    map<string, Rights> privileges = 8;
-    string configurationData = 9;    
-    string createdById = 10;
-    claros.common.DateTime createdOn = 11;
-    string modifiedById = 12;
-    claros.common.DateTime modifiedOn = 13;    
-=======
     string createdById = 2;
     claros.common.ClarosDateTime createdOn = 3;
     string modifiedById = 4;
@@ -32,6 +18,5 @@ message Configuration {
     string ownerId = 10;
     bool public = 11;
     uint32 version = 12;
-    repeated Privileges privileges = 13;
->>>>>>> speed-definition-game
+    map<string, Rights> privilege = 13;
 }
