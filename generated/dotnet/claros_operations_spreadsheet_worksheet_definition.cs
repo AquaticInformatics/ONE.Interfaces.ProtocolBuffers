@@ -22,8 +22,8 @@ namespace claros.operations.spreadsheet
         [global::ProtoBuf.ProtoMember(3)]
         public uint endRow { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
-        public global::System.Collections.Generic.List<Column> worksheetColumns { get; } = new global::System.Collections.Generic.List<Column>();
+        [global::ProtoBuf.ProtoMember(4, Name = @"columns")]
+        public global::System.Collections.Generic.List<Column> Columns { get; } = new global::System.Collections.Generic.List<Column>();
 
     }
 
