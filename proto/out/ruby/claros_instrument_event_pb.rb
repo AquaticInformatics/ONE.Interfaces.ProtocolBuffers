@@ -17,7 +17,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       repeated :reminders, :message, 5, "claros.instrument.EventMetaData"
       repeated :warnings, :message, 6, "claros.instrument.EventMetaData"
       repeated :prognosys, :message, 7, "claros.instrument.PrognosysData"
-      optional :eventDateTime, :message, 8, "claros.common.DateTime"
+      optional :eventDateTime, :message, 8, "claros.common.ClarosDateTime"
     end
   end
 end

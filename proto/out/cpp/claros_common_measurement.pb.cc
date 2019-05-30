@@ -221,7 +221,7 @@ const char* Measurement::_InternalParse(const char* begin, const char* end, void
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .claros.common.DateTime timestamp = 1;
+      // .claros.common.ClarosDateTime timestamp = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -321,7 +321,7 @@ bool Measurement::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .claros.common.DateTime timestamp = 1;
+      // .claros.common.ClarosDateTime timestamp = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -428,7 +428,7 @@ void Measurement::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .claros.common.DateTime timestamp = 1;
+  // .claros.common.ClarosDateTime timestamp = 1;
   if (this->has_timestamp()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::timestamp(this), output);
@@ -482,7 +482,7 @@ void Measurement::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .claros.common.DateTime timestamp = 1;
+  // .claros.common.ClarosDateTime timestamp = 1;
   if (this->has_timestamp()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -561,7 +561,7 @@ size_t Measurement::ByteSizeLong() const {
         this->unitguid());
   }
 
-  // .claros.common.DateTime timestamp = 1;
+  // .claros.common.ClarosDateTime timestamp = 1;
   if (this->has_timestamp()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(

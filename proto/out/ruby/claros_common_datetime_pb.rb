@@ -5,18 +5,18 @@ require 'google/protobuf'
 
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_datetime.proto", :syntax => :proto3) do
-    add_message "claros.common.DateTime" do
-      optional :dateField, :message, 1, "claros.common.DateTime.Date"
-      optional :timeField, :message, 2, "claros.common.DateTime.Time"
+    add_message "claros.common.ClarosDateTime" do
+      optional :dateField, :message, 1, "claros.common.ClarosDateTime.Date"
+      optional :timeField, :message, 2, "claros.common.ClarosDateTime.Time"
       optional :timeZone, :int32, 3
       optional :ticks, :uint64, 4
     end
-    add_message "claros.common.DateTime.Time" do
+    add_message "claros.common.ClarosDateTime.Time" do
       optional :hours, :uint32, 1
       optional :minutes, :uint32, 2
       optional :seconds, :uint32, 3
     end
-    add_message "claros.common.DateTime.Date" do
+    add_message "claros.common.ClarosDateTime.Date" do
       optional :year, :uint32, 1
       optional :month, :uint32, 2
       optional :day, :uint32, 3
@@ -26,8 +26,8 @@ end
 
 module Claros
   module Common
-    DateTime = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.DateTime").msgclass
-    DateTime::Time = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.DateTime.Time").msgclass
-    DateTime::Date = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.DateTime.Date").msgclass
+    DateTime = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.ClarosDateTime").msgclass
+    DateTime::Time = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.ClarosDateTime.Time").msgclass
+    DateTime::Date = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.common.ClarosDateTime.Date").msgclass
   end
 end

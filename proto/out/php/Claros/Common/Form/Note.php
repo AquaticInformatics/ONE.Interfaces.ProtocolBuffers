@@ -26,7 +26,7 @@ class Note extends \Google\Protobuf\Internal\Message
      */
     private $formGUID = '';
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timeStamp = 4;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     private $timeStamp = null;
     /**
@@ -124,7 +124,7 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timeStamp = 4;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      * @return \Claros\Common\DateTime
      */
     public function getTimeStamp()
@@ -133,7 +133,7 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timeStamp = 4;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */

@@ -7,7 +7,7 @@ require 'claros_common_datetime_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_measurement.proto", :syntax => :proto3) do
     add_message "claros.common.Measurement" do
-      optional :timestamp, :message, 1, "claros.common.DateTime"
+      optional :timestamp, :message, 1, "claros.common.ClarosDateTime"
       optional :parameterId, :int32, 2
       optional :parameterGuid, :string, 3
       optional :unitId, :int32, 4

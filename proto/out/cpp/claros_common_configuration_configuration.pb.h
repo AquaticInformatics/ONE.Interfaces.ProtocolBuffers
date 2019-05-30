@@ -276,7 +276,7 @@ class Configuration :
   ::std::string* release_ownerid();
   void set_allocated_ownerid(::std::string* ownerid);
 
-  // .claros.common.DateTime createdOn = 3;
+  // .claros.common.ClarosDateTime createdOn = 3;
   bool has_createdon() const;
   void clear_createdon();
   static const int kCreatedOnFieldNumber = 3;
@@ -285,7 +285,7 @@ class Configuration :
   ::claros::common::DateTime* mutable_createdon();
   void set_allocated_createdon(::claros::common::DateTime* createdon);
 
-  // .claros.common.DateTime modifiedOn = 5;
+  // .claros.common.ClarosDateTime modifiedOn = 5;
   bool has_modifiedon() const;
   void clear_modifiedon();
   static const int kModifiedOnFieldNumber = 5;
@@ -450,7 +450,7 @@ inline void Configuration::set_allocated_createdbyid(::std::string* createdbyid)
   // @@protoc_insertion_point(field_set_allocated:claros.common.configuration.Configuration.createdById)
 }
 
-// .claros.common.DateTime createdOn = 3;
+// .claros.common.ClarosDateTime createdOn = 3;
 inline bool Configuration::has_createdon() const {
   return this != internal_default_instance() && createdon_ != nullptr;
 }
@@ -548,7 +548,7 @@ inline void Configuration::set_allocated_modifiedbyid(::std::string* modifiedbyi
   // @@protoc_insertion_point(field_set_allocated:claros.common.configuration.Configuration.modifiedById)
 }
 
-// .claros.common.DateTime modifiedOn = 5;
+// .claros.common.ClarosDateTime modifiedOn = 5;
 inline bool Configuration::has_modifiedon() const {
   return this != internal_default_instance() && modifiedon_ != nullptr;
 }

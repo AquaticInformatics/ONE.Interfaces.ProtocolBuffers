@@ -136,8 +136,8 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 const char descriptor_table_protodef_claros_5fcommon_5fdatetime_2eproto[] =
   "\n\034claros_common_datetime.proto\022\rclaros.c"
   "ommon\"\370\001\n\010DateTime\022/\n\tdateField\030\001 \001(\0132\034."
-  "claros.common.DateTime.Date\022/\n\ttimeField"
-  "\030\002 \001(\0132\034.claros.common.DateTime.Time\022\020\n\010"
+  "claros.common.ClarosDateTime.Date\022/\n\ttimeField"
+  "\030\002 \001(\0132\034.claros.common.ClarosDateTime.Time\022\020\n\010"
   "timeZone\030\003 \001(\005\022\r\n\005ticks\030\004 \001(\004\0327\n\004Time\022\r\n"
   "\005hours\030\001 \001(\r\022\017\n\007minutes\030\002 \001(\r\022\017\n\007seconds"
   "\030\003 \001(\r\0320\n\004Date\022\014\n\004year\030\001 \001(\r\022\r\n\005month\030\002 "
@@ -178,7 +178,7 @@ const int DateTime_Time::kSecondsFieldNumber;
 DateTime_Time::DateTime_Time()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(constructor:claros.common.ClarosDateTime.Time)
 }
 DateTime_Time::DateTime_Time(const DateTime_Time& from)
   : ::google::protobuf::Message(),
@@ -187,7 +187,7 @@ DateTime_Time::DateTime_Time(const DateTime_Time& from)
   ::memcpy(&hours_, &from.hours_,
     static_cast<size_t>(reinterpret_cast<char*>(&seconds_) -
     reinterpret_cast<char*>(&hours_)) + sizeof(seconds_));
-  // @@protoc_insertion_point(copy_constructor:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(copy_constructor:claros.common.ClarosDateTime.Time)
 }
 
 void DateTime_Time::SharedCtor() {
@@ -197,7 +197,7 @@ void DateTime_Time::SharedCtor() {
 }
 
 DateTime_Time::~DateTime_Time() {
-  // @@protoc_insertion_point(destructor:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(destructor:claros.common.ClarosDateTime.Time)
   SharedDtor();
 }
 
@@ -214,7 +214,7 @@ const DateTime_Time& DateTime_Time::default_instance() {
 
 
 void DateTime_Time::Clear() {
-// @@protoc_insertion_point(message_clear_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(message_clear_start:claros.common.ClarosDateTime.Time)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -280,7 +280,7 @@ bool DateTime_Time::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(parse_start:claros.common.ClarosDateTime.Time)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -337,10 +337,10 @@ bool DateTime_Time::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(parse_success:claros.common.ClarosDateTime.Time)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(parse_failure:claros.common.ClarosDateTime.Time)
   return false;
 #undef DO_
 }
@@ -348,7 +348,7 @@ failure:
 
 void DateTime_Time::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(serialize_start:claros.common.ClarosDateTime.Time)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -371,12 +371,12 @@ void DateTime_Time::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(serialize_end:claros.common.ClarosDateTime.Time)
 }
 
 ::google::protobuf::uint8* DateTime_Time::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(serialize_to_array_start:claros.common.ClarosDateTime.Time)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -399,12 +399,12 @@ void DateTime_Time::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(serialize_to_array_end:claros.common.ClarosDateTime.Time)
   return target;
 }
 
 size_t DateTime_Time::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(message_byte_size_start:claros.common.ClarosDateTime.Time)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -443,22 +443,22 @@ size_t DateTime_Time::ByteSizeLong() const {
 }
 
 void DateTime_Time::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(generalized_merge_from_start:claros.common.ClarosDateTime.Time)
   GOOGLE_DCHECK_NE(&from, this);
   const DateTime_Time* source =
       ::google::protobuf::DynamicCastToGenerated<DateTime_Time>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.ClarosDateTime.Time)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.ClarosDateTime.Time)
     MergeFrom(*source);
   }
 }
 
 void DateTime_Time::MergeFrom(const DateTime_Time& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.ClarosDateTime.Time)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -476,14 +476,14 @@ void DateTime_Time::MergeFrom(const DateTime_Time& from) {
 }
 
 void DateTime_Time::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(generalized_copy_from_start:claros.common.ClarosDateTime.Time)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DateTime_Time::CopyFrom(const DateTime_Time& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.DateTime.Time)
+// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.ClarosDateTime.Time)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -528,7 +528,7 @@ const int DateTime_Date::kDayFieldNumber;
 DateTime_Date::DateTime_Date()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(constructor:claros.common.ClarosDateTime.Date)
 }
 DateTime_Date::DateTime_Date(const DateTime_Date& from)
   : ::google::protobuf::Message(),
@@ -537,7 +537,7 @@ DateTime_Date::DateTime_Date(const DateTime_Date& from)
   ::memcpy(&year_, &from.year_,
     static_cast<size_t>(reinterpret_cast<char*>(&day_) -
     reinterpret_cast<char*>(&year_)) + sizeof(day_));
-  // @@protoc_insertion_point(copy_constructor:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(copy_constructor:claros.common.ClarosDateTime.Date)
 }
 
 void DateTime_Date::SharedCtor() {
@@ -547,7 +547,7 @@ void DateTime_Date::SharedCtor() {
 }
 
 DateTime_Date::~DateTime_Date() {
-  // @@protoc_insertion_point(destructor:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(destructor:claros.common.ClarosDateTime.Date)
   SharedDtor();
 }
 
@@ -564,7 +564,7 @@ const DateTime_Date& DateTime_Date::default_instance() {
 
 
 void DateTime_Date::Clear() {
-// @@protoc_insertion_point(message_clear_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(message_clear_start:claros.common.ClarosDateTime.Date)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -630,7 +630,7 @@ bool DateTime_Date::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(parse_start:claros.common.ClarosDateTime.Date)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -687,10 +687,10 @@ bool DateTime_Date::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(parse_success:claros.common.ClarosDateTime.Date)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(parse_failure:claros.common.ClarosDateTime.Date)
   return false;
 #undef DO_
 }
@@ -698,7 +698,7 @@ failure:
 
 void DateTime_Date::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(serialize_start:claros.common.ClarosDateTime.Date)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -721,12 +721,12 @@ void DateTime_Date::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(serialize_end:claros.common.ClarosDateTime.Date)
 }
 
 ::google::protobuf::uint8* DateTime_Date::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(serialize_to_array_start:claros.common.ClarosDateTime.Date)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -749,12 +749,12 @@ void DateTime_Date::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(serialize_to_array_end:claros.common.ClarosDateTime.Date)
   return target;
 }
 
 size_t DateTime_Date::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(message_byte_size_start:claros.common.ClarosDateTime.Date)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -793,22 +793,22 @@ size_t DateTime_Date::ByteSizeLong() const {
 }
 
 void DateTime_Date::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(generalized_merge_from_start:claros.common.ClarosDateTime.Date)
   GOOGLE_DCHECK_NE(&from, this);
   const DateTime_Date* source =
       ::google::protobuf::DynamicCastToGenerated<DateTime_Date>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.ClarosDateTime.Date)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.ClarosDateTime.Date)
     MergeFrom(*source);
   }
 }
 
 void DateTime_Date::MergeFrom(const DateTime_Date& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.ClarosDateTime.Date)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -826,14 +826,14 @@ void DateTime_Date::MergeFrom(const DateTime_Date& from) {
 }
 
 void DateTime_Date::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(generalized_copy_from_start:claros.common.ClarosDateTime.Date)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DateTime_Date::CopyFrom(const DateTime_Date& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.DateTime.Date)
+// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.ClarosDateTime.Date)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -893,7 +893,7 @@ const int DateTime::kTicksFieldNumber;
 DateTime::DateTime()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:claros.common.DateTime)
+  // @@protoc_insertion_point(constructor:claros.common.ClarosDateTime)
 }
 DateTime::DateTime(const DateTime& from)
   : ::google::protobuf::Message(),
@@ -912,7 +912,7 @@ DateTime::DateTime(const DateTime& from)
   ::memcpy(&ticks_, &from.ticks_,
     static_cast<size_t>(reinterpret_cast<char*>(&timezone_) -
     reinterpret_cast<char*>(&ticks_)) + sizeof(timezone_));
-  // @@protoc_insertion_point(copy_constructor:claros.common.DateTime)
+  // @@protoc_insertion_point(copy_constructor:claros.common.ClarosDateTime)
 }
 
 void DateTime::SharedCtor() {
@@ -924,7 +924,7 @@ void DateTime::SharedCtor() {
 }
 
 DateTime::~DateTime() {
-  // @@protoc_insertion_point(destructor:claros.common.DateTime)
+  // @@protoc_insertion_point(destructor:claros.common.ClarosDateTime)
   SharedDtor();
 }
 
@@ -943,7 +943,7 @@ const DateTime& DateTime::default_instance() {
 
 
 void DateTime::Clear() {
-// @@protoc_insertion_point(message_clear_start:claros.common.DateTime)
+// @@protoc_insertion_point(message_clear_start:claros.common.ClarosDateTime)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -975,7 +975,7 @@ const char* DateTime::_InternalParse(const char* begin, const char* end, void* o
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // .claros.common.DateTime.Date dateField = 1;
+      // .claros.common.ClarosDateTime.Date dateField = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -988,7 +988,7 @@ const char* DateTime::_InternalParse(const char* begin, const char* end, void* o
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // .claros.common.DateTime.Time timeField = 2;
+      // .claros.common.ClarosDateTime.Time timeField = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -1039,13 +1039,13 @@ bool DateTime::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:claros.common.DateTime)
+  // @@protoc_insertion_point(parse_start:claros.common.ClarosDateTime)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .claros.common.DateTime.Date dateField = 1;
+      // .claros.common.ClarosDateTime.Date dateField = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -1056,7 +1056,7 @@ bool DateTime::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime.Time timeField = 2;
+      // .claros.common.ClarosDateTime.Time timeField = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -1105,10 +1105,10 @@ bool DateTime::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:claros.common.DateTime)
+  // @@protoc_insertion_point(parse_success:claros.common.ClarosDateTime)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:claros.common.DateTime)
+  // @@protoc_insertion_point(parse_failure:claros.common.ClarosDateTime)
   return false;
 #undef DO_
 }
@@ -1116,17 +1116,17 @@ failure:
 
 void DateTime::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:claros.common.DateTime)
+  // @@protoc_insertion_point(serialize_start:claros.common.ClarosDateTime)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .claros.common.DateTime.Date dateField = 1;
+  // .claros.common.ClarosDateTime.Date dateField = 1;
   if (this->has_datefield()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::datefield(this), output);
   }
 
-  // .claros.common.DateTime.Time timeField = 2;
+  // .claros.common.ClarosDateTime.Time timeField = 2;
   if (this->has_timefield()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::timefield(this), output);
@@ -1146,23 +1146,23 @@ void DateTime::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:claros.common.DateTime)
+  // @@protoc_insertion_point(serialize_end:claros.common.ClarosDateTime)
 }
 
 ::google::protobuf::uint8* DateTime::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:claros.common.DateTime)
+  // @@protoc_insertion_point(serialize_to_array_start:claros.common.ClarosDateTime)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .claros.common.DateTime.Date dateField = 1;
+  // .claros.common.ClarosDateTime.Date dateField = 1;
   if (this->has_datefield()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::datefield(this), target);
   }
 
-  // .claros.common.DateTime.Time timeField = 2;
+  // .claros.common.ClarosDateTime.Time timeField = 2;
   if (this->has_timefield()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1183,12 +1183,12 @@ void DateTime::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:claros.common.DateTime)
+  // @@protoc_insertion_point(serialize_to_array_end:claros.common.ClarosDateTime)
   return target;
 }
 
 size_t DateTime::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:claros.common.DateTime)
+// @@protoc_insertion_point(message_byte_size_start:claros.common.ClarosDateTime)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1200,14 +1200,14 @@ size_t DateTime::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .claros.common.DateTime.Date dateField = 1;
+  // .claros.common.ClarosDateTime.Date dateField = 1;
   if (this->has_datefield()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *datefield_);
   }
 
-  // .claros.common.DateTime.Time timeField = 2;
+  // .claros.common.ClarosDateTime.Time timeField = 2;
   if (this->has_timefield()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1234,22 +1234,22 @@ size_t DateTime::ByteSizeLong() const {
 }
 
 void DateTime::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:claros.common.DateTime)
+// @@protoc_insertion_point(generalized_merge_from_start:claros.common.ClarosDateTime)
   GOOGLE_DCHECK_NE(&from, this);
   const DateTime* source =
       ::google::protobuf::DynamicCastToGenerated<DateTime>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.DateTime)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.common.ClarosDateTime)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.DateTime)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.common.ClarosDateTime)
     MergeFrom(*source);
   }
 }
 
 void DateTime::MergeFrom(const DateTime& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.DateTime)
+// @@protoc_insertion_point(class_specific_merge_from_start:claros.common.ClarosDateTime)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1270,14 +1270,14 @@ void DateTime::MergeFrom(const DateTime& from) {
 }
 
 void DateTime::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:claros.common.DateTime)
+// @@protoc_insertion_point(generalized_copy_from_start:claros.common.ClarosDateTime)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void DateTime::CopyFrom(const DateTime& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.DateTime)
+// @@protoc_insertion_point(class_specific_copy_from_start:claros.common.ClarosDateTime)
   if (&from == this) return;
   Clear();
   MergeFrom(from);

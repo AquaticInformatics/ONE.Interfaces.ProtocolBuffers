@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1f\x63laros_common_measurement.proto\x12\rclaros.common\x1a\x1c\x63laros_common_datetime.proto\"\x96\x01\n\x0bMeasurement\x12*\n\ttimestamp\x18\x01 \x01(\x0b\x32\x17.claros.common.DateTime\x12\x13\n\x0bparameterId\x18\x02 \x01(\x05\x12\x15\n\rparameterGuid\x18\x03 \x01(\t\x12\x0e\n\x06unitId\x18\x04 \x01(\x05\x12\x10\n\x08unitGuid\x18\x05 \x01(\t\x12\r\n\x05value\x18\x06 \x01(\x02\x62\x06proto3')
+  serialized_pb=_b('\n\x1f\x63laros_common_measurement.proto\x12\rclaros.common\x1a\x1c\x63laros_common_datetime.proto\"\x96\x01\n\x0bMeasurement\x12*\n\ttimestamp\x18\x01 \x01(\x0b\x32\x17.claros.common.ClarosDateTime\x12\x13\n\x0bparameterId\x18\x02 \x01(\x05\x12\x15\n\rparameterGuid\x18\x03 \x01(\t\x12\x0e\n\x06unitId\x18\x04 \x01(\x05\x12\x10\n\x08unitGuid\x18\x05 \x01(\t\x12\r\n\x05value\x18\x06 \x01(\x02\x62\x06proto3')
   ,
   dependencies=[claros__common__datetime__pb2.DESCRIPTOR,])
 

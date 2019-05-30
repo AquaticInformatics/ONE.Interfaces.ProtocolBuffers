@@ -42,7 +42,7 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
      */
     private $prognosys;
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     private $eventDateTime = null;
 
@@ -222,7 +222,7 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      * @return \Claros\Common\DateTime
      */
     public function getEventDateTime()
@@ -231,7 +231,7 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */

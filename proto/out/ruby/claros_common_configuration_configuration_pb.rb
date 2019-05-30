@@ -11,9 +11,9 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
     add_message "claros.common.configuration.Configuration" do
       optional :id, :string, 1
       optional :createdById, :string, 2
-      optional :createdOn, :message, 3, "claros.common.DateTime"
+      optional :createdOn, :message, 3, "claros.common.ClarosDateTime"
       optional :modifiedById, :string, 4
-      optional :modifiedOn, :message, 5, "claros.common.DateTime"
+      optional :modifiedOn, :message, 5, "claros.common.ClarosDateTime"
       optional :configurationData, :string, 6
       optional :entityTypeId, :enum, 7, "claros.common.configuration.EntityType"
       optional :filterById, :string, 8

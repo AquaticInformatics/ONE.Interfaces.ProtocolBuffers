@@ -22,7 +22,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
      */
     private $createdById = '';
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime createdOn = 3;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     private $createdOn = null;
     /**
@@ -30,7 +30,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
      */
     private $modifiedById = '';
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     private $modifiedOn = null;
     /**
@@ -137,7 +137,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime createdOn = 3;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      * @return \Claros\Common\DateTime
      */
     public function getCreatedOn()
@@ -146,7 +146,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime createdOn = 3;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */
@@ -181,7 +181,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      * @return \Claros\Common\DateTime
      */
     public function getModifiedOn()
@@ -190,7 +190,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */

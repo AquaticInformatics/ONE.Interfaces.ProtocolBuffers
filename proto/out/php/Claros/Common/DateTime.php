@@ -9,16 +9,16 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>claros.common.DateTime</code>
+ * Generated from protobuf message <code>claros.common.ClarosDateTime</code>
  */
 class DateTime extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     private $dateField = null;
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     private $timeField = null;
     /**
@@ -51,7 +51,7 @@ class DateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      * @return \Claros\Common\DateTime\Date
      */
     public function getDateField()
@@ -60,7 +60,7 @@ class DateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      * @param \Claros\Common\DateTime\Date $var
      * @return $this
      */
@@ -73,7 +73,7 @@ class DateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      * @return \Claros\Common\DateTime\Time
      */
     public function getTimeField()
@@ -82,7 +82,7 @@ class DateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      * @param \Claros\Common\DateTime\Time $var
      * @return $this
      */

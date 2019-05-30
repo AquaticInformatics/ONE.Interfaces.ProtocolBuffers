@@ -42,7 +42,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     private $instrumentDataDateTime = null;
 
@@ -207,7 +207,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      * @return \Claros\Common\DateTime
      */
     public function getInstrumentDataDateTime()
@@ -218,7 +218,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */

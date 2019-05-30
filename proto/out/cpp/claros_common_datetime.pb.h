@@ -74,7 +74,7 @@ namespace common {
 // ===================================================================
 
 class DateTime_Time :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.DateTime.Time) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.ClarosDateTime.Time) */ {
  public:
   DateTime_Time();
   virtual ~DateTime_Time();
@@ -186,7 +186,7 @@ class DateTime_Time :
   ::google::protobuf::uint32 seconds() const;
   void set_seconds(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:claros.common.DateTime.Time)
+  // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Time)
  private:
   class HasBitSetters;
 
@@ -200,7 +200,7 @@ class DateTime_Time :
 // -------------------------------------------------------------------
 
 class DateTime_Date :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.DateTime.Date) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.ClarosDateTime.Date) */ {
  public:
   DateTime_Date();
   virtual ~DateTime_Date();
@@ -312,7 +312,7 @@ class DateTime_Date :
   ::google::protobuf::uint32 day() const;
   void set_day(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:claros.common.DateTime.Date)
+  // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Date)
  private:
   class HasBitSetters;
 
@@ -326,7 +326,7 @@ class DateTime_Date :
 // -------------------------------------------------------------------
 
 class DateTime :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.DateTime) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.ClarosDateTime) */ {
  public:
   DateTime();
   virtual ~DateTime();
@@ -423,7 +423,7 @@ class DateTime :
 
   // accessors -------------------------------------------------------
 
-  // .claros.common.DateTime.Date dateField = 1;
+  // .claros.common.ClarosDateTime.Date dateField = 1;
   bool has_datefield() const;
   void clear_datefield();
   static const int kDateFieldFieldNumber = 1;
@@ -432,7 +432,7 @@ class DateTime :
   ::claros::common::DateTime_Date* mutable_datefield();
   void set_allocated_datefield(::claros::common::DateTime_Date* datefield);
 
-  // .claros.common.DateTime.Time timeField = 2;
+  // .claros.common.ClarosDateTime.Time timeField = 2;
   bool has_timefield() const;
   void clear_timefield();
   static const int kTimeFieldFieldNumber = 2;
@@ -453,7 +453,7 @@ class DateTime :
   ::google::protobuf::int32 timezone() const;
   void set_timezone(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:claros.common.DateTime)
+  // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime)
  private:
   class HasBitSetters;
 
@@ -481,13 +481,13 @@ inline void DateTime_Time::clear_hours() {
   hours_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Time::hours() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Time.hours)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Time.hours)
   return hours_;
 }
 inline void DateTime_Time::set_hours(::google::protobuf::uint32 value) {
   
   hours_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Time.hours)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Time.hours)
 }
 
 // uint32 minutes = 2;
@@ -495,13 +495,13 @@ inline void DateTime_Time::clear_minutes() {
   minutes_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Time::minutes() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Time.minutes)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Time.minutes)
   return minutes_;
 }
 inline void DateTime_Time::set_minutes(::google::protobuf::uint32 value) {
   
   minutes_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Time.minutes)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Time.minutes)
 }
 
 // uint32 seconds = 3;
@@ -509,13 +509,13 @@ inline void DateTime_Time::clear_seconds() {
   seconds_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Time::seconds() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Time.seconds)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Time.seconds)
   return seconds_;
 }
 inline void DateTime_Time::set_seconds(::google::protobuf::uint32 value) {
   
   seconds_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Time.seconds)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Time.seconds)
 }
 
 // -------------------------------------------------------------------
@@ -527,13 +527,13 @@ inline void DateTime_Date::clear_year() {
   year_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Date::year() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Date.year)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Date.year)
   return year_;
 }
 inline void DateTime_Date::set_year(::google::protobuf::uint32 value) {
   
   year_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Date.year)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Date.year)
 }
 
 // uint32 month = 2;
@@ -541,13 +541,13 @@ inline void DateTime_Date::clear_month() {
   month_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Date::month() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Date.month)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Date.month)
   return month_;
 }
 inline void DateTime_Date::set_month(::google::protobuf::uint32 value) {
   
   month_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Date.month)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Date.month)
 }
 
 // uint32 day = 3;
@@ -555,20 +555,20 @@ inline void DateTime_Date::clear_day() {
   day_ = 0u;
 }
 inline ::google::protobuf::uint32 DateTime_Date::day() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.Date.day)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.Date.day)
   return day_;
 }
 inline void DateTime_Date::set_day(::google::protobuf::uint32 value) {
   
   day_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.Date.day)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.Date.day)
 }
 
 // -------------------------------------------------------------------
 
 // DateTime
 
-// .claros.common.DateTime.Date dateField = 1;
+// .claros.common.ClarosDateTime.Date dateField = 1;
 inline bool DateTime::has_datefield() const {
   return this != internal_default_instance() && datefield_ != nullptr;
 }
@@ -580,12 +580,12 @@ inline void DateTime::clear_datefield() {
 }
 inline const ::claros::common::DateTime_Date& DateTime::datefield() const {
   const ::claros::common::DateTime_Date* p = datefield_;
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.dateField)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.dateField)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime_Date*>(
       &::claros::common::_DateTime_Date_default_instance_);
 }
 inline ::claros::common::DateTime_Date* DateTime::release_datefield() {
-  // @@protoc_insertion_point(field_release:claros.common.DateTime.dateField)
+  // @@protoc_insertion_point(field_release:claros.common.ClarosDateTime.dateField)
   
   ::claros::common::DateTime_Date* temp = datefield_;
   datefield_ = nullptr;
@@ -597,7 +597,7 @@ inline ::claros::common::DateTime_Date* DateTime::mutable_datefield() {
     auto* p = CreateMaybeMessage<::claros::common::DateTime_Date>(GetArenaNoVirtual());
     datefield_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.common.DateTime.dateField)
+  // @@protoc_insertion_point(field_mutable:claros.common.ClarosDateTime.dateField)
   return datefield_;
 }
 inline void DateTime::set_allocated_datefield(::claros::common::DateTime_Date* datefield) {
@@ -616,10 +616,10 @@ inline void DateTime::set_allocated_datefield(::claros::common::DateTime_Date* d
     
   }
   datefield_ = datefield;
-  // @@protoc_insertion_point(field_set_allocated:claros.common.DateTime.dateField)
+  // @@protoc_insertion_point(field_set_allocated:claros.common.ClarosDateTime.dateField)
 }
 
-// .claros.common.DateTime.Time timeField = 2;
+// .claros.common.ClarosDateTime.Time timeField = 2;
 inline bool DateTime::has_timefield() const {
   return this != internal_default_instance() && timefield_ != nullptr;
 }
@@ -631,12 +631,12 @@ inline void DateTime::clear_timefield() {
 }
 inline const ::claros::common::DateTime_Time& DateTime::timefield() const {
   const ::claros::common::DateTime_Time* p = timefield_;
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.timeField)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.timeField)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime_Time*>(
       &::claros::common::_DateTime_Time_default_instance_);
 }
 inline ::claros::common::DateTime_Time* DateTime::release_timefield() {
-  // @@protoc_insertion_point(field_release:claros.common.DateTime.timeField)
+  // @@protoc_insertion_point(field_release:claros.common.ClarosDateTime.timeField)
   
   ::claros::common::DateTime_Time* temp = timefield_;
   timefield_ = nullptr;
@@ -648,7 +648,7 @@ inline ::claros::common::DateTime_Time* DateTime::mutable_timefield() {
     auto* p = CreateMaybeMessage<::claros::common::DateTime_Time>(GetArenaNoVirtual());
     timefield_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.common.DateTime.timeField)
+  // @@protoc_insertion_point(field_mutable:claros.common.ClarosDateTime.timeField)
   return timefield_;
 }
 inline void DateTime::set_allocated_timefield(::claros::common::DateTime_Time* timefield) {
@@ -667,7 +667,7 @@ inline void DateTime::set_allocated_timefield(::claros::common::DateTime_Time* t
     
   }
   timefield_ = timefield;
-  // @@protoc_insertion_point(field_set_allocated:claros.common.DateTime.timeField)
+  // @@protoc_insertion_point(field_set_allocated:claros.common.ClarosDateTime.timeField)
 }
 
 // int32 timeZone = 3;
@@ -675,13 +675,13 @@ inline void DateTime::clear_timezone() {
   timezone_ = 0;
 }
 inline ::google::protobuf::int32 DateTime::timezone() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.timeZone)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.timeZone)
   return timezone_;
 }
 inline void DateTime::set_timezone(::google::protobuf::int32 value) {
   
   timezone_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.timeZone)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.timeZone)
 }
 
 // uint64 ticks = 4;
@@ -689,13 +689,13 @@ inline void DateTime::clear_ticks() {
   ticks_ = PROTOBUF_ULONGLONG(0);
 }
 inline ::google::protobuf::uint64 DateTime::ticks() const {
-  // @@protoc_insertion_point(field_get:claros.common.DateTime.ticks)
+  // @@protoc_insertion_point(field_get:claros.common.ClarosDateTime.ticks)
   return ticks_;
 }
 inline void DateTime::set_ticks(::google::protobuf::uint64 value) {
   
   ticks_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.DateTime.ticks)
+  // @@protoc_insertion_point(field_set:claros.common.ClarosDateTime.ticks)
 }
 
 #ifdef __GNUC__

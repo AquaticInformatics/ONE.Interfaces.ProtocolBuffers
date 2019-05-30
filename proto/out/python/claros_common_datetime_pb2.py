@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1c\x63laros_common_datetime.proto\x12\rclaros.common\"\xf8\x01\n\x08\x44\x61teTime\x12/\n\tdateField\x18\x01 \x01(\x0b\x32\x1c.claros.common.DateTime.Date\x12/\n\ttimeField\x18\x02 \x01(\x0b\x32\x1c.claros.common.DateTime.Time\x12\x10\n\x08timeZone\x18\x03 \x01(\x05\x12\r\n\x05ticks\x18\x04 \x01(\x04\x1a\x37\n\x04Time\x12\r\n\x05hours\x18\x01 \x01(\r\x12\x0f\n\x07minutes\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\x1a\x30\n\x04\x44\x61te\x12\x0c\n\x04year\x18\x01 \x01(\r\x12\r\n\x05month\x18\x02 \x01(\r\x12\x0b\n\x03\x64\x61y\x18\x03 \x01(\rb\x06proto3')
+  serialized_pb=_b('\n\x1c\x63laros_common_datetime.proto\x12\rclaros.common\"\xf8\x01\n\x08\x44\x61teTime\x12/\n\tdateField\x18\x01 \x01(\x0b\x32\x1c.claros.common.ClarosDateTime.Date\x12/\n\ttimeField\x18\x02 \x01(\x0b\x32\x1c.claros.common.ClarosDateTime.Time\x12\x10\n\x08timeZone\x18\x03 \x01(\x05\x12\r\n\x05ticks\x18\x04 \x01(\x04\x1a\x37\n\x04Time\x12\r\n\x05hours\x18\x01 \x01(\r\x12\x0f\n\x07minutes\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\x1a\x30\n\x04\x44\x61te\x12\x0c\n\x04year\x18\x01 \x01(\r\x12\r\n\x05month\x18\x02 \x01(\r\x12\x0b\n\x03\x64\x61y\x18\x03 \x01(\rb\x06proto3')
 )
 
 
@@ -28,27 +28,27 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _DATETIME_TIME = _descriptor.Descriptor(
   name='Time',
-  full_name='claros.common.DateTime.Time',
+  full_name='claros.common.ClarosDateTime.Time',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='hours', full_name='claros.common.DateTime.Time.hours', index=0,
+      name='hours', full_name='claros.common.ClarosDateTime.Time.hours', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='minutes', full_name='claros.common.DateTime.Time.minutes', index=1,
+      name='minutes', full_name='claros.common.ClarosDateTime.Time.minutes', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='seconds', full_name='claros.common.DateTime.Time.seconds', index=2,
+      name='seconds', full_name='claros.common.ClarosDateTime.Time.seconds', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -72,27 +72,27 @@ _DATETIME_TIME = _descriptor.Descriptor(
 
 _DATETIME_DATE = _descriptor.Descriptor(
   name='Date',
-  full_name='claros.common.DateTime.Date',
+  full_name='claros.common.ClarosDateTime.Date',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='year', full_name='claros.common.DateTime.Date.year', index=0,
+      name='year', full_name='claros.common.ClarosDateTime.Date.year', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='month', full_name='claros.common.DateTime.Date.month', index=1,
+      name='month', full_name='claros.common.ClarosDateTime.Date.month', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='day', full_name='claros.common.DateTime.Date.day', index=2,
+      name='day', full_name='claros.common.ClarosDateTime.Date.day', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -116,34 +116,34 @@ _DATETIME_DATE = _descriptor.Descriptor(
 
 _DATETIME = _descriptor.Descriptor(
   name='DateTime',
-  full_name='claros.common.DateTime',
+  full_name='claros.common.ClarosDateTime',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dateField', full_name='claros.common.DateTime.dateField', index=0,
+      name='dateField', full_name='claros.common.ClarosDateTime.dateField', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='timeField', full_name='claros.common.DateTime.timeField', index=1,
+      name='timeField', full_name='claros.common.ClarosDateTime.timeField', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='timeZone', full_name='claros.common.DateTime.timeZone', index=2,
+      name='timeZone', full_name='claros.common.ClarosDateTime.timeZone', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='ticks', full_name='claros.common.DateTime.ticks', index=3,
+      name='ticks', full_name='claros.common.ClarosDateTime.ticks', index=3,
       number=4, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -177,19 +177,19 @@ DateTime = _reflection.GeneratedProtocolMessageType('DateTime', (_message.Messag
   Time = _reflection.GeneratedProtocolMessageType('Time', (_message.Message,), dict(
     DESCRIPTOR = _DATETIME_TIME,
     __module__ = 'claros_common_datetime_pb2'
-    # @@protoc_insertion_point(class_scope:claros.common.DateTime.Time)
+    # @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Time)
     ))
   ,
 
   Date = _reflection.GeneratedProtocolMessageType('Date', (_message.Message,), dict(
     DESCRIPTOR = _DATETIME_DATE,
     __module__ = 'claros_common_datetime_pb2'
-    # @@protoc_insertion_point(class_scope:claros.common.DateTime.Date)
+    # @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Date)
     ))
   ,
   DESCRIPTOR = _DATETIME,
   __module__ = 'claros_common_datetime_pb2'
-  # @@protoc_insertion_point(class_scope:claros.common.DateTime)
+  # @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime)
   ))
 _sym_db.RegisterMessage(DateTime)
 _sym_db.RegisterMessage(DateTime.Time)

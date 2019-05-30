@@ -1,12 +1,13 @@
 syntax = "proto3";
 package claros.common.configuration;
 
-import "claros_common_datetime.proto";
+import "claros_common_clarosdatetime.proto";
 import "claros_common_configuration_entitytype.proto";
 import "claros_common_configuration_rights.proto";
  
 message Configuration {
     string id = 1;
+<<<<<<< HEAD
     EntityType entityTypeId = 2;
     string filterById = 3;
     uint32 version = 4;
@@ -19,4 +20,18 @@ message Configuration {
     claros.common.DateTime createdOn = 11;
     string modifiedById = 12;
     claros.common.DateTime modifiedOn = 13;    
+=======
+    string createdById = 2;
+    claros.common.ClarosDateTime createdOn = 3;
+    string modifiedById = 4;
+    claros.common.ClarosDateTime modifiedOn = 5;
+    string configurationData = 6;
+    EntityType entityTypeId = 7;
+    string filterById = 8;
+    string tenantId = 9;
+    string ownerId = 10;
+    bool public = 11;
+    uint32 version = 12;
+    repeated Privileges privileges = 13;
+>>>>>>> speed-definition-game
 }

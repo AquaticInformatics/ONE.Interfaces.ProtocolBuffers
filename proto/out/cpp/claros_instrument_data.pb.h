@@ -290,7 +290,7 @@ class InstrumentData :
   ::claros::instrument::InstrumentEvent* mutable_events();
   void set_allocated_events(::claros::instrument::InstrumentEvent* events);
 
-  // .claros.common.DateTime instrumentDataDateTime = 7;
+  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
   bool has_instrumentdatadatetime() const;
   void clear_instrumentdatadatetime();
   static const int kInstrumentDataDateTimeFieldNumber = 7;
@@ -553,7 +553,7 @@ InstrumentData::mutable_states() {
   return states_.MutableMap();
 }
 
-// .claros.common.DateTime instrumentDataDateTime = 7;
+// .claros.common.ClarosDateTime instrumentDataDateTime = 7;
 inline bool InstrumentData::has_instrumentdatadatetime() const {
   return this != internal_default_instance() && instrumentdatadatetime_ != nullptr;
 }

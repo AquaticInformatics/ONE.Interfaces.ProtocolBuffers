@@ -234,7 +234,7 @@ class Note :
   ::std::string* release_text();
   void set_allocated_text(::std::string* text);
 
-  // .claros.common.DateTime timeStamp = 4;
+  // .claros.common.ClarosDateTime timeStamp = 4;
   bool has_timestamp() const;
   void clear_timestamp();
   static const int kTimeStampFieldNumber = 4;
@@ -427,7 +427,7 @@ inline void Note::set_allocated_formguid(::std::string* formguid) {
   // @@protoc_insertion_point(field_set_allocated:claros.common.form.Note.formGUID)
 }
 
-// .claros.common.DateTime timeStamp = 4;
+// .claros.common.ClarosDateTime timeStamp = 4;
 inline bool Note::has_timestamp() const {
   return this != internal_default_instance() && timestamp_ != nullptr;
 }

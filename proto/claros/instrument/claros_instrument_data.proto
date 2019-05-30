@@ -3,7 +3,7 @@ package claros.instrument;
  
 import "claros_instrument_event.proto";
 import "claros_instrument_measurement.proto";
-import "claros_common_datetime.proto";
+import "claros_common_clarosdatetime.proto";
 
 message InstrumentData {
     string tenantId = 1; // In header
@@ -13,6 +13,6 @@ message InstrumentData {
     repeated InstrumentMeasurement measurements = 4;
     map<string,string> settings = 5;
     map<string,string> states = 6;
-    claros.common.DateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
+    claros.common.ClarosDateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
 }
 

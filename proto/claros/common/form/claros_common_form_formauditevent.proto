@@ -2,9 +2,9 @@ syntax = "proto3";
 package claros.common.form;
 
 import "claros_common_form_formauditeventtype.proto";
-import "claros_common_datetime.proto";
+import "claros_common_clarosdatetime.proto";
 
 message FormAuditEvent {
-    claros.common.DateTime timeStamp = 1;
+    claros.common.ClarosDateTime timeStamp = 1;
     FormAuditEventType event = 2;
 }

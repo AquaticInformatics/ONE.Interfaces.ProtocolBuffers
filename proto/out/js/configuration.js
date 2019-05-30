@@ -12,7 +12,7 @@ goog.provide('proto.claros.common.configuration.Configuration');
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.DateTime');
+goog.require('proto.claros.common.ClarosDateTime');
 goog.require('proto.claros.common.configuration.Privileges');
 
 goog.forwardDeclare('proto.claros.common.configuration.EntityType');
@@ -76,9 +76,9 @@ proto.claros.common.configuration.Configuration.toObject = function(includeInsta
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, ""),
     createdbyid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    createdon: (f = msg.getCreatedon()) && proto.claros.common.DateTime.toObject(includeInstance, f),
+    createdon: (f = msg.getCreatedon()) && proto.claros.common.ClarosDateTime.toObject(includeInstance, f),
     modifiedbyid: jspb.Message.getFieldWithDefault(msg, 4, ""),
-    modifiedon: (f = msg.getModifiedon()) && proto.claros.common.DateTime.toObject(includeInstance, f),
+    modifiedon: (f = msg.getModifiedon()) && proto.claros.common.ClarosDateTime.toObject(includeInstance, f),
     configurationdata: jspb.Message.getFieldWithDefault(msg, 6, ""),
     entitytypeid: jspb.Message.getFieldWithDefault(msg, 7, 0),
     filterbyid: jspb.Message.getFieldWithDefault(msg, 8, ""),
@@ -133,8 +133,8 @@ proto.claros.common.configuration.Configuration.deserializeBinaryFromReader = fu
       msg.setCreatedbyid(value);
       break;
     case 3:
-      var value = new proto.claros.common.DateTime;
-      reader.readMessage(value,proto.claros.common.DateTime.deserializeBinaryFromReader);
+      var value = new proto.claros.common.ClarosDateTime;
+      reader.readMessage(value,proto.claros.common.ClarosDateTime.deserializeBinaryFromReader);
       msg.setCreatedon(value);
       break;
     case 4:
@@ -142,8 +142,8 @@ proto.claros.common.configuration.Configuration.deserializeBinaryFromReader = fu
       msg.setModifiedbyid(value);
       break;
     case 5:
-      var value = new proto.claros.common.DateTime;
-      reader.readMessage(value,proto.claros.common.DateTime.deserializeBinaryFromReader);
+      var value = new proto.claros.common.ClarosDateTime;
+      reader.readMessage(value,proto.claros.common.ClarosDateTime.deserializeBinaryFromReader);
       msg.setModifiedon(value);
       break;
     case 6:
@@ -227,7 +227,7 @@ proto.claros.common.configuration.Configuration.serializeBinaryToWriter = functi
     writer.writeMessage(
       3,
       f,
-      proto.claros.common.DateTime.serializeBinaryToWriter
+      proto.claros.common.ClarosDateTime.serializeBinaryToWriter
     );
   }
   f = message.getModifiedbyid();
@@ -242,7 +242,7 @@ proto.claros.common.configuration.Configuration.serializeBinaryToWriter = functi
     writer.writeMessage(
       5,
       f,
-      proto.claros.common.DateTime.serializeBinaryToWriter
+      proto.claros.common.ClarosDateTime.serializeBinaryToWriter
     );
   }
   f = message.getConfigurationdata();
@@ -336,16 +336,16 @@ proto.claros.common.configuration.Configuration.prototype.setCreatedbyid = funct
 
 
 /**
- * optional claros.common.DateTime createdOn = 3;
- * @return {?proto.claros.common.DateTime}
+ * optional claros.common.ClarosDateTime createdOn = 3;
+ * @return {?proto.claros.common.ClarosDateTime}
  */
 proto.claros.common.configuration.Configuration.prototype.getCreatedon = function() {
-  return /** @type{?proto.claros.common.DateTime} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.DateTime, 3));
+  return /** @type{?proto.claros.common.ClarosDateTime} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.ClarosDateTime, 3));
 };
 
 
-/** @param {?proto.claros.common.DateTime|undefined} value */
+/** @param {?proto.claros.common.ClarosDateTime|undefined} value */
 proto.claros.common.configuration.Configuration.prototype.setCreatedon = function(value) {
   jspb.Message.setWrapperField(this, 3, value);
 };
@@ -384,16 +384,16 @@ proto.claros.common.configuration.Configuration.prototype.setModifiedbyid = func
 
 
 /**
- * optional claros.common.DateTime modifiedOn = 5;
- * @return {?proto.claros.common.DateTime}
+ * optional claros.common.ClarosDateTime modifiedOn = 5;
+ * @return {?proto.claros.common.ClarosDateTime}
  */
 proto.claros.common.configuration.Configuration.prototype.getModifiedon = function() {
-  return /** @type{?proto.claros.common.DateTime} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.DateTime, 5));
+  return /** @type{?proto.claros.common.ClarosDateTime} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.ClarosDateTime, 5));
 };
 
 
-/** @param {?proto.claros.common.DateTime|undefined} value */
+/** @param {?proto.claros.common.ClarosDateTime|undefined} value */
 proto.claros.common.configuration.Configuration.prototype.setModifiedon = function(value) {
   jspb.Message.setWrapperField(this, 5, value);
 };

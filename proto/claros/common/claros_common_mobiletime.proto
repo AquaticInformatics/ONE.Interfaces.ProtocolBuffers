@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.common;
+
+message MobileTime {
+    uint32 hours   = 1;
+    uint32 minutes = 2;
+    uint32 seconds = 3;
+}
