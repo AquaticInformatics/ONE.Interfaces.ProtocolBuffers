@@ -25,10 +25,10 @@ namespace claros.common.form
         public uint templateVersion { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.DateTime startTime { get; set; }
+        public global::claros.common.ClarosDateTime startTime { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.DateTime endTime { get; set; }
+        public global::claros.common.ClarosDateTime endTime { get; set; }
 
         [global::ProtoBuf.ProtoMember(6, Name = @"name")]
         [global::System.ComponentModel.DefaultValue("")]

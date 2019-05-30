@@ -155,7 +155,7 @@ const char descriptor_table_protodef_claros_5finstrument_5fdata_2eproto[] =
   "trumentData.SettingsEntry\022=\n\006states\030\006 \003("
   "\0132-.claros.instrument.InstrumentData.Sta"
   "tesEntry\0227\n\026instrumentDataDateTime\030\007 \001(\013"
-  "2\027.claros.common.DateTime\032/\n\rSettingsEnt"
+  "2\027.claros.common.ClarosDateTime\032/\n\rSettingsEnt"
   "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013St"
   "atesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028"
   "\001b\006proto3"
@@ -508,7 +508,7 @@ const char* InstrumentData::_InternalParse(const char* begin, const char* end, v
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 50 && (ptr += 1));
         break;
       }
-      // .claros.common.DateTime instrumentDataDateTime = 7;
+      // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
       case 7: {
         if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -659,7 +659,7 @@ bool InstrumentData::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime instrumentDataDateTime = 7;
+      // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -830,7 +830,7 @@ void InstrumentData::SerializeWithCachedSizes(
     }
   }
 
-  // .claros.common.DateTime instrumentDataDateTime = 7;
+  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, HasBitSetters::instrumentdatadatetime(this), output);
@@ -984,7 +984,7 @@ void InstrumentData::SerializeWithCachedSizes(
     }
   }
 
-  // .claros.common.DateTime instrumentDataDateTime = 7;
+  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1072,7 +1072,7 @@ size_t InstrumentData::ByteSizeLong() const {
         *events_);
   }
 
-  // .claros.common.DateTime instrumentDataDateTime = 7;
+  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(

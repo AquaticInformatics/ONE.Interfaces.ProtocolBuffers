@@ -13,7 +13,7 @@ goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Map');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.DateTime');
+goog.require('proto.claros.common.ClarosDateTime');
 goog.require('proto.claros.instrument.InstrumentEvent');
 goog.require('proto.claros.instrument.InstrumentMeasurement');
 
@@ -82,7 +82,7 @@ proto.claros.instrument.InstrumentData.toObject = function(includeInstance, msg)
     proto.claros.instrument.InstrumentMeasurement.toObject, includeInstance),
     settingsMap: (f = msg.getSettingsMap()) ? f.toObject(includeInstance, undefined) : [],
     statesMap: (f = msg.getStatesMap()) ? f.toObject(includeInstance, undefined) : [],
-    instrumentdatadatetime: (f = msg.getInstrumentdatadatetime()) && proto.claros.common.DateTime.toObject(includeInstance, f)
+    instrumentdatadatetime: (f = msg.getInstrumentdatadatetime()) && proto.claros.common.ClarosDateTime.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -150,8 +150,8 @@ proto.claros.instrument.InstrumentData.deserializeBinaryFromReader = function(ms
          });
       break;
     case 7:
-      var value = new proto.claros.common.DateTime;
-      reader.readMessage(value,proto.claros.common.DateTime.deserializeBinaryFromReader);
+      var value = new proto.claros.common.ClarosDateTime;
+      reader.readMessage(value,proto.claros.common.ClarosDateTime.deserializeBinaryFromReader);
       msg.setInstrumentdatadatetime(value);
       break;
     default:
@@ -226,7 +226,7 @@ proto.claros.instrument.InstrumentData.serializeBinaryToWriter = function(messag
     writer.writeMessage(
       7,
       f,
-      proto.claros.common.DateTime.serializeBinaryToWriter
+      proto.claros.common.ClarosDateTime.serializeBinaryToWriter
     );
   }
 };
@@ -372,16 +372,16 @@ proto.claros.instrument.InstrumentData.prototype.clearStatesMap = function() {
 
 
 /**
- * optional claros.common.DateTime instrumentDataDateTime = 7;
- * @return {?proto.claros.common.DateTime}
+ * optional claros.common.ClarosDateTime instrumentDataDateTime = 7;
+ * @return {?proto.claros.common.ClarosDateTime}
  */
 proto.claros.instrument.InstrumentData.prototype.getInstrumentdatadatetime = function() {
-  return /** @type{?proto.claros.common.DateTime} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.DateTime, 7));
+  return /** @type{?proto.claros.common.ClarosDateTime} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.ClarosDateTime, 7));
 };
 
 
-/** @param {?proto.claros.common.DateTime|undefined} value */
+/** @param {?proto.claros.common.ClarosDateTime|undefined} value */
 proto.claros.instrument.InstrumentData.prototype.setInstrumentdatadatetime = function(value) {
   jspb.Message.setWrapperField(this, 7, value);
 };

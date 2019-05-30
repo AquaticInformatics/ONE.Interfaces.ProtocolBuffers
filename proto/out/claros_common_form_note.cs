@@ -26,7 +26,7 @@ namespace claros.common.form
         public string formGUID { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.DateTime timeStamp { get; set; }
+        public global::claros.common.ClarosDateTime timeStamp { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]

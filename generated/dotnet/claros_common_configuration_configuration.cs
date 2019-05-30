@@ -22,14 +22,14 @@ namespace claros.common.configuration
         public string createdById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.DateTime createdOn { get; set; }
+        public global::claros.common.ClarosDateTime createdOn { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string modifiedById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.DateTime modifiedOn { get; set; }
+        public global::claros.common.ClarosDateTime modifiedOn { get; set; }
 
         [global::ProtoBuf.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]

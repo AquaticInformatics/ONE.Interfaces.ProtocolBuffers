@@ -9,7 +9,7 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>claros.common.DateTime.Time</code>
+ * Generated from protobuf message <code>claros.common.ClarosDateTime.Time</code>
  */
 class Time extends \Google\Protobuf\Internal\Message
 {

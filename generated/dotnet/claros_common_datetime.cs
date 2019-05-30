@@ -20,7 +20,7 @@ namespace claros.common
         public Time timeField { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
-        public int timeZone { get; set; }
+        public int timeZoneOffset { get; set; }
 
         [global::ProtoBuf.ProtoMember(4, Name = @"ticks")]
         public ulong Ticks { get; set; }

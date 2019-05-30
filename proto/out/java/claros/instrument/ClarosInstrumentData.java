@@ -156,7 +156,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     boolean hasInstrumentDataDateTime();
     /**
@@ -164,7 +164,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime getInstrumentDataDateTime();
     /**
@@ -172,7 +172,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     claros.common.ClarosCommonDatetime.DateTimeOrBuilder getInstrumentDataDateTimeOrBuilder();
   }
@@ -632,7 +632,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     public boolean hasInstrumentDataDateTime() {
       return instrumentDataDateTime_ != null;
@@ -642,7 +642,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime getInstrumentDataDateTime() {
       return instrumentDataDateTime_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : instrumentDataDateTime_;
@@ -652,7 +652,7 @@ public final class ClarosInstrumentData {
      * this is optionally set if all children share the same time
      * </pre>
      *
-     * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+     * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getInstrumentDataDateTimeOrBuilder() {
       return getInstrumentDataDateTime();
@@ -1945,7 +1945,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public boolean hasInstrumentDataDateTime() {
         return instrumentDataDateTimeBuilder_ != null || instrumentDataDateTime_ != null;
@@ -1955,7 +1955,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime getInstrumentDataDateTime() {
         if (instrumentDataDateTimeBuilder_ == null) {
@@ -1969,7 +1969,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public Builder setInstrumentDataDateTime(claros.common.ClarosCommonDatetime.DateTime value) {
         if (instrumentDataDateTimeBuilder_ == null) {
@@ -1989,7 +1989,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public Builder setInstrumentDataDateTime(
           claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
@@ -2007,7 +2007,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public Builder mergeInstrumentDataDateTime(claros.common.ClarosCommonDatetime.DateTime value) {
         if (instrumentDataDateTimeBuilder_ == null) {
@@ -2029,7 +2029,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public Builder clearInstrumentDataDateTime() {
         if (instrumentDataDateTimeBuilder_ == null) {
@@ -2047,7 +2047,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Builder getInstrumentDataDateTimeBuilder() {
         
@@ -2059,7 +2059,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getInstrumentDataDateTimeOrBuilder() {
         if (instrumentDataDateTimeBuilder_ != null) {
@@ -2074,7 +2074,7 @@ public final class ClarosInstrumentData {
        * this is optionally set if all children share the same time
        * </pre>
        *
-       * <code>.claros.common.DateTime instrumentDataDateTime = 7;</code>
+       * <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
@@ -2178,7 +2178,7 @@ public final class ClarosInstrumentData {
       "trumentData.SettingsEntry\022=\n\006states\030\006 \003(" +
       "\0132-.claros.instrument.InstrumentData.Sta" +
       "tesEntry\0227\n\026instrumentDataDateTime\030\007 \001(\013" +
-      "2\027.claros.common.DateTime\032/\n\rSettingsEnt" +
+      "2\027.claros.common.ClarosDateTime\032/\n\rSettingsEnt" +
       "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013St" +
       "atesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028" +
       "\001b\006proto3"

@@ -14,7 +14,7 @@ namespace claros.common.form
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
         [global::ProtoBuf.ProtoMember(1)]
-        public global::claros.common.DateTime timeStamp { get; set; }
+        public global::claros.common.ClarosDateTime timeStamp { get; set; }
 
         [global::ProtoBuf.ProtoMember(2, Name = @"event")]
         public FormAuditEventType Event { get; set; }

@@ -10,7 +10,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :guid, :string, 1
       optional :formFieldGUID, :string, 2
       optional :formGUID, :string, 3
-      optional :timeStamp, :message, 4, "claros.common.DateTime"
+      optional :timeStamp, :message, 4, "claros.common.ClarosDateTime"
       optional :userId, :string, 5
       optional :text, :string, 6
     end

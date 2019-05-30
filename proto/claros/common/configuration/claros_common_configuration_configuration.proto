@@ -1,16 +1,16 @@
 syntax = "proto3";
 package claros.common.configuration;
 
-import "claros_common_datetime.proto";
+import "claros_common_clarosdatetime.proto";
 import "claros_common_configuration_entitytype.proto";
 import "claros_common_configuration_privileges.proto";
  
 message Configuration {
     string id = 1;
     string createdById = 2;
-    claros.common.DateTime createdOn = 3;
+    claros.common.ClarosDateTime createdOn = 3;
     string modifiedById = 4;
-    claros.common.DateTime modifiedOn = 5;
+    claros.common.ClarosDateTime modifiedOn = 5;
     string configurationData = 6;
     EntityType entityTypeId = 7;
     string filterById = 8;

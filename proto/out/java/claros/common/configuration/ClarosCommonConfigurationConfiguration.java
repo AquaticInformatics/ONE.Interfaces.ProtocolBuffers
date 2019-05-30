@@ -39,15 +39,15 @@ public final class ClarosCommonConfigurationConfiguration {
         getCreatedByIdBytes();
 
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     boolean hasCreatedOn();
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime getCreatedOn();
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder();
 
@@ -62,15 +62,15 @@ public final class ClarosCommonConfigurationConfiguration {
         getModifiedByIdBytes();
 
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     boolean hasModifiedOn();
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime getModifiedOn();
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder();
 
@@ -405,19 +405,19 @@ public final class ClarosCommonConfigurationConfiguration {
     public static final int CREATEDON_FIELD_NUMBER = 3;
     private claros.common.ClarosCommonDatetime.DateTime createdOn_;
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     public boolean hasCreatedOn() {
       return createdOn_ != null;
     }
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime getCreatedOn() {
       return createdOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : createdOn_;
     }
     /**
-     * <code>.claros.common.DateTime createdOn = 3;</code>
+     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder() {
       return getCreatedOn();
@@ -460,19 +460,19 @@ public final class ClarosCommonConfigurationConfiguration {
     public static final int MODIFIEDON_FIELD_NUMBER = 5;
     private claros.common.ClarosCommonDatetime.DateTime modifiedOn_;
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     public boolean hasModifiedOn() {
       return modifiedOn_ != null;
     }
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime getModifiedOn() {
       return modifiedOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : modifiedOn_;
     }
     /**
-     * <code>.claros.common.DateTime modifiedOn = 5;</code>
+     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder() {
       return getModifiedOn();
@@ -1400,13 +1400,13 @@ public final class ClarosCommonConfigurationConfiguration {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> createdOnBuilder_;
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public boolean hasCreatedOn() {
         return createdOnBuilder_ != null || createdOn_ != null;
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime getCreatedOn() {
         if (createdOnBuilder_ == null) {
@@ -1416,7 +1416,7 @@ public final class ClarosCommonConfigurationConfiguration {
         }
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public Builder setCreatedOn(claros.common.ClarosCommonDatetime.DateTime value) {
         if (createdOnBuilder_ == null) {
@@ -1432,7 +1432,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public Builder setCreatedOn(
           claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
@@ -1446,7 +1446,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public Builder mergeCreatedOn(claros.common.ClarosCommonDatetime.DateTime value) {
         if (createdOnBuilder_ == null) {
@@ -1464,7 +1464,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public Builder clearCreatedOn() {
         if (createdOnBuilder_ == null) {
@@ -1478,7 +1478,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Builder getCreatedOnBuilder() {
         
@@ -1486,7 +1486,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return getCreatedOnFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder() {
         if (createdOnBuilder_ != null) {
@@ -1497,7 +1497,7 @@ public final class ClarosCommonConfigurationConfiguration {
         }
       }
       /**
-       * <code>.claros.common.DateTime createdOn = 3;</code>
+       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
@@ -1586,13 +1586,13 @@ public final class ClarosCommonConfigurationConfiguration {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> modifiedOnBuilder_;
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public boolean hasModifiedOn() {
         return modifiedOnBuilder_ != null || modifiedOn_ != null;
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime getModifiedOn() {
         if (modifiedOnBuilder_ == null) {
@@ -1602,7 +1602,7 @@ public final class ClarosCommonConfigurationConfiguration {
         }
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder setModifiedOn(claros.common.ClarosCommonDatetime.DateTime value) {
         if (modifiedOnBuilder_ == null) {
@@ -1618,7 +1618,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder setModifiedOn(
           claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
@@ -1632,7 +1632,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder mergeModifiedOn(claros.common.ClarosCommonDatetime.DateTime value) {
         if (modifiedOnBuilder_ == null) {
@@ -1650,7 +1650,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder clearModifiedOn() {
         if (modifiedOnBuilder_ == null) {
@@ -1664,7 +1664,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Builder getModifiedOnBuilder() {
         
@@ -1672,7 +1672,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return getModifiedOnFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder() {
         if (modifiedOnBuilder_ != null) {
@@ -1683,7 +1683,7 @@ public final class ClarosCommonConfigurationConfiguration {
         }
       }
       /**
-       * <code>.claros.common.DateTime modifiedOn = 5;</code>
+       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
@@ -2384,7 +2384,7 @@ public final class ClarosCommonConfigurationConfiguration {
       "mon_enum_entitytype.proto\032\036claros_common" +
       "_privileges.proto\"\216\003\n\rConfiguration\022\n\n\002i" +
       "d\030\001 \001(\t\022\023\n\013createdById\030\002 \001(\t\022*\n\tcreatedO" +
-      "n\030\003 \001(\0132\027.claros.common.DateTime\022\024\n\014modi" +
+      "n\030\003 \001(\0132\027.claros.common.ClarosDateTime\022\024\n\014modi" +
       "fiedById\030\004 \001(\t\022+\n\nmodifiedOn\030\005 \001(\0132\027.cla" +
       "ros.common.DateTime\022\031\n\021configurationData" +
       "\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001(\0162\'.claros.co" +

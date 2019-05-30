@@ -36,7 +36,7 @@ namespace claros.instrument
         public global::System.Collections.Generic.Dictionary<string, string> States { get; } = new global::System.Collections.Generic.Dictionary<string, string>();
 
         [global::ProtoBuf.ProtoMember(7)]
-        public global::claros.common.DateTime instrumentDataDateTime { get; set; }
+        public global::claros.common.ClarosDateTime instrumentDataDateTime { get; set; }
 
     }
 

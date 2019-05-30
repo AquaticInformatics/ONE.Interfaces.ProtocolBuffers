@@ -14,7 +14,7 @@ namespace claros.common
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
         [global::ProtoBuf.ProtoMember(1, Name = @"timestamp")]
-        public DateTime Timestamp { get; set; }
+        public ClarosDateTime Timestamp { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
         public int parameterId { get; set; }

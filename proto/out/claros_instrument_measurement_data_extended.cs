@@ -14,7 +14,7 @@ namespace claros.instrument
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
         [global::ProtoBuf.ProtoMember(1)]
-        public global::claros.common.DateTime EventDateTime { get; set; }
+        public global::claros.common.ClarosDateTime EventDateTime { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]

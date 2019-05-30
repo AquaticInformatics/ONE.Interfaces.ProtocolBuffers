@@ -35,7 +35,7 @@ namespace claros.instrument
         public global::System.Collections.Generic.List<PrognosysData> Prognosys { get; } = new global::System.Collections.Generic.List<PrognosysData>();
 
         [global::ProtoBuf.ProtoMember(8)]
-        public global::claros.common.DateTime eventDateTime { get; set; }
+        public global::claros.common.ClarosDateTime eventDateTime { get; set; }
 
     }
 

@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class Measurement extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timestamp = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timestamp = 1;</code>
      */
     private $timestamp = null;
     /**
@@ -58,7 +58,7 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timestamp = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timestamp = 1;</code>
      * @return \Claros\Common\DateTime
      */
     public function getTimestamp()
@@ -67,7 +67,7 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.DateTime timestamp = 1;</code>
+     * Generated from protobuf field <code>.claros.common.ClarosDateTime timestamp = 1;</code>
      * @param \Claros\Common\DateTime $var
      * @return $this
      */

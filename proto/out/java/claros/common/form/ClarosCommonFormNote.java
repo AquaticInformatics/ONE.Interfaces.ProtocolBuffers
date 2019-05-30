@@ -49,15 +49,15 @@ public final class ClarosCommonFormNote {
         getFormGUIDBytes();
 
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     boolean hasTimeStamp();
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime getTimeStamp();
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     claros.common.ClarosCommonDatetime.DateTimeOrBuilder getTimeStampOrBuilder();
 
@@ -305,19 +305,19 @@ public final class ClarosCommonFormNote {
     public static final int TIMESTAMP_FIELD_NUMBER = 4;
     private claros.common.ClarosCommonDatetime.DateTime timeStamp_;
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     public boolean hasTimeStamp() {
       return timeStamp_ != null;
     }
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime getTimeStamp() {
       return timeStamp_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : timeStamp_;
     }
     /**
-     * <code>.claros.common.DateTime timeStamp = 4;</code>
+     * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getTimeStampOrBuilder() {
       return getTimeStamp();
@@ -1002,13 +1002,13 @@ public final class ClarosCommonFormNote {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> timeStampBuilder_;
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public boolean hasTimeStamp() {
         return timeStampBuilder_ != null || timeStamp_ != null;
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime getTimeStamp() {
         if (timeStampBuilder_ == null) {
@@ -1018,7 +1018,7 @@ public final class ClarosCommonFormNote {
         }
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder setTimeStamp(claros.common.ClarosCommonDatetime.DateTime value) {
         if (timeStampBuilder_ == null) {
@@ -1034,7 +1034,7 @@ public final class ClarosCommonFormNote {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder setTimeStamp(
           claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
@@ -1048,7 +1048,7 @@ public final class ClarosCommonFormNote {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder mergeTimeStamp(claros.common.ClarosCommonDatetime.DateTime value) {
         if (timeStampBuilder_ == null) {
@@ -1066,7 +1066,7 @@ public final class ClarosCommonFormNote {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder clearTimeStamp() {
         if (timeStampBuilder_ == null) {
@@ -1080,7 +1080,7 @@ public final class ClarosCommonFormNote {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Builder getTimeStampBuilder() {
         
@@ -1088,7 +1088,7 @@ public final class ClarosCommonFormNote {
         return getTimeStampFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getTimeStampOrBuilder() {
         if (timeStampBuilder_ != null) {
@@ -1099,7 +1099,7 @@ public final class ClarosCommonFormNote {
         }
       }
       /**
-       * <code>.claros.common.DateTime timeStamp = 4;</code>
+       * <code>.claros.common.ClarosDateTime timeStamp = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
@@ -1323,7 +1323,7 @@ public final class ClarosCommonFormNote {
       "common.form\032\034claros_common_datetime.prot" +
       "o\"\207\001\n\004Note\022\014\n\004guid\030\001 \001(\t\022\025\n\rformFieldGUI" +
       "D\030\002 \001(\t\022\020\n\010formGUID\030\003 \001(\t\022*\n\ttimeStamp\030\004" +
-      " \001(\0132\027.claros.common.DateTime\022\016\n\006userId\030" +
+      " \001(\0132\027.claros.common.ClarosDateTime\022\016\n\006userId\030" +
       "\005 \001(\t\022\014\n\004text\030\006 \001(\tb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

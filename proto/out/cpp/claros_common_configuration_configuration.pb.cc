@@ -93,7 +93,7 @@ const char descriptor_table_protodef_claros_5fcommon_5fconfiguration_5fconfigura
   "mon_enum_entitytype.proto\032\036claros_common"
   "_privileges.proto\"\216\003\n\rConfiguration\022\n\n\002i"
   "d\030\001 \001(\t\022\023\n\013createdById\030\002 \001(\t\022*\n\tcreatedO"
-  "n\030\003 \001(\0132\027.claros.common.DateTime\022\024\n\014modi"
+  "n\030\003 \001(\0132\027.claros.common.ClarosDateTime\022\024\n\014modi"
   "fiedById\030\004 \001(\t\022+\n\nmodifiedOn\030\005 \001(\0132\027.cla"
   "ros.common.DateTime\022\031\n\021configurationData"
   "\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001(\0162\'.claros.co"
@@ -346,7 +346,7 @@ const char* Configuration::_InternalParse(const char* begin, const char* end, vo
         ptr += size;
         break;
       }
-      // .claros.common.DateTime createdOn = 3;
+      // .claros.common.ClarosDateTime createdOn = 3;
       case 3: {
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -375,7 +375,7 @@ const char* Configuration::_InternalParse(const char* begin, const char* end, vo
         ptr += size;
         break;
       }
-      // .claros.common.DateTime modifiedOn = 5;
+      // .claros.common.ClarosDateTime modifiedOn = 5;
       case 5: {
         if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -554,7 +554,7 @@ bool Configuration::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime createdOn = 3;
+      // .claros.common.ClarosDateTime createdOn = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -580,7 +580,7 @@ bool Configuration::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime modifiedOn = 5;
+      // .claros.common.ClarosDateTime modifiedOn = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -749,7 +749,7 @@ void Configuration::SerializeWithCachedSizes(
       2, this->createdbyid(), output);
   }
 
-  // .claros.common.DateTime createdOn = 3;
+  // .claros.common.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::createdon(this), output);
@@ -765,7 +765,7 @@ void Configuration::SerializeWithCachedSizes(
       4, this->modifiedbyid(), output);
   }
 
-  // .claros.common.DateTime modifiedOn = 5;
+  // .claros.common.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, HasBitSetters::modifiedon(this), output);
@@ -871,7 +871,7 @@ void Configuration::SerializeWithCachedSizes(
         2, this->createdbyid(), target);
   }
 
-  // .claros.common.DateTime createdOn = 3;
+  // .claros.common.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -889,7 +889,7 @@ void Configuration::SerializeWithCachedSizes(
         4, this->modifiedbyid(), target);
   }
 
-  // .claros.common.DateTime modifiedOn = 5;
+  // .claros.common.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1045,14 +1045,14 @@ size_t Configuration::ByteSizeLong() const {
         this->ownerid());
   }
 
-  // .claros.common.DateTime createdOn = 3;
+  // .claros.common.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *createdon_);
   }
 
-  // .claros.common.DateTime modifiedOn = 5;
+  // .claros.common.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(

@@ -187,15 +187,15 @@ public final class ClarosInstrumentEvent {
         int index);
 
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     boolean hasEventDateTime();
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime getEventDateTime();
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     claros.common.ClarosCommonDatetime.DateTimeOrBuilder getEventDateTimeOrBuilder();
   }
@@ -623,19 +623,19 @@ public final class ClarosInstrumentEvent {
     public static final int EVENTDATETIME_FIELD_NUMBER = 8;
     private claros.common.ClarosCommonDatetime.DateTime eventDateTime_;
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     public boolean hasEventDateTime() {
       return eventDateTime_ != null;
     }
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime getEventDateTime() {
       return eventDateTime_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : eventDateTime_;
     }
     /**
-     * <code>.claros.common.DateTime eventDateTime = 8;</code>
+     * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getEventDateTimeOrBuilder() {
       return getEventDateTime();
@@ -3029,13 +3029,13 @@ public final class ClarosInstrumentEvent {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> eventDateTimeBuilder_;
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public boolean hasEventDateTime() {
         return eventDateTimeBuilder_ != null || eventDateTime_ != null;
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime getEventDateTime() {
         if (eventDateTimeBuilder_ == null) {
@@ -3045,7 +3045,7 @@ public final class ClarosInstrumentEvent {
         }
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public Builder setEventDateTime(claros.common.ClarosCommonDatetime.DateTime value) {
         if (eventDateTimeBuilder_ == null) {
@@ -3061,7 +3061,7 @@ public final class ClarosInstrumentEvent {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public Builder setEventDateTime(
           claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
@@ -3075,7 +3075,7 @@ public final class ClarosInstrumentEvent {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public Builder mergeEventDateTime(claros.common.ClarosCommonDatetime.DateTime value) {
         if (eventDateTimeBuilder_ == null) {
@@ -3093,7 +3093,7 @@ public final class ClarosInstrumentEvent {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public Builder clearEventDateTime() {
         if (eventDateTimeBuilder_ == null) {
@@ -3107,7 +3107,7 @@ public final class ClarosInstrumentEvent {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Builder getEventDateTimeBuilder() {
         
@@ -3115,7 +3115,7 @@ public final class ClarosInstrumentEvent {
         return getEventDateTimeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getEventDateTimeOrBuilder() {
         if (eventDateTimeBuilder_ != null) {
@@ -3126,7 +3126,7 @@ public final class ClarosInstrumentEvent {
         }
       }
       /**
-       * <code>.claros.common.DateTime eventDateTime = 8;</code>
+       * <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "claros_operations_spreadsheet_worksheettype.proto";
+ 
+message Worksheet {
+    WorksheetType worksheetType = 1;
+    string locationId = 2;
+    repeated WorksheetDefinition worksheetDefinition = 3;
+    repeated WorksheetRow worksheetRow = 4;
+}

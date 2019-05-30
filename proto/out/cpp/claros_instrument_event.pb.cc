@@ -369,7 +369,7 @@ const char* InstrumentEvent::_InternalParse(const char* begin, const char* end, 
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 58 && (ptr += 1));
         break;
       }
-      // .claros.common.DateTime eventDateTime = 8;
+      // .claros.common.ClarosDateTime eventDateTime = 8;
       case 8: {
         if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -489,7 +489,7 @@ bool InstrumentEvent::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime eventDateTime = 8;
+      // .claros.common.ClarosDateTime eventDateTime = 8;
       case 8: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -590,7 +590,7 @@ void InstrumentEvent::SerializeWithCachedSizes(
       output);
   }
 
-  // .claros.common.DateTime eventDateTime = 8;
+  // .claros.common.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, HasBitSetters::eventdatetime(this), output);
@@ -665,7 +665,7 @@ void InstrumentEvent::SerializeWithCachedSizes(
         7, this->prognosys(static_cast<int>(i)), target);
   }
 
-  // .claros.common.DateTime eventDateTime = 8;
+  // .claros.common.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -770,7 +770,7 @@ size_t InstrumentEvent::ByteSizeLong() const {
     }
   }
 
-  // .claros.common.DateTime eventDateTime = 8;
+  // .claros.common.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(

@@ -15,32 +15,32 @@ public final class ClarosCommonDatetime {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface DateTimeOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:claros.common.DateTime)
+      // @@protoc_insertion_point(interface_extends:claros.common.ClarosDateTime)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     boolean hasDateField();
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime.Date getDateField();
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder getDateFieldOrBuilder();
 
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     boolean hasTimeField();
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime.Time getTimeField();
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder getTimeFieldOrBuilder();
 
@@ -59,11 +59,11 @@ public final class ClarosCommonDatetime {
     long getTicks();
   }
   /**
-   * Protobuf type {@code claros.common.DateTime}
+   * Protobuf type {@code claros.common.ClarosDateTime}
    */
   public  static final class DateTime extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:claros.common.DateTime)
+      // @@protoc_insertion_point(message_implements:claros.common.ClarosDateTime)
       DateTimeOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use DateTime.newBuilder() to construct.
@@ -166,7 +166,7 @@ public final class ClarosCommonDatetime {
     }
 
     public interface TimeOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:claros.common.DateTime.Time)
+        // @@protoc_insertion_point(interface_extends:claros.common.ClarosDateTime.Time)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -185,11 +185,11 @@ public final class ClarosCommonDatetime {
       int getSeconds();
     }
     /**
-     * Protobuf type {@code claros.common.DateTime.Time}
+     * Protobuf type {@code claros.common.ClarosDateTime.Time}
      */
     public  static final class Time extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:claros.common.DateTime.Time)
+        // @@protoc_insertion_point(message_implements:claros.common.ClarosDateTime.Time)
         TimeOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Time.newBuilder() to construct.
@@ -475,11 +475,11 @@ public final class ClarosCommonDatetime {
         return builder;
       }
       /**
-       * Protobuf type {@code claros.common.DateTime.Time}
+       * Protobuf type {@code claros.common.ClarosDateTime.Time}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:claros.common.DateTime.Time)
+          // @@protoc_insertion_point(builder_implements:claros.common.ClarosDateTime.Time)
           claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
@@ -723,10 +723,10 @@ public final class ClarosCommonDatetime {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:claros.common.DateTime.Time)
+        // @@protoc_insertion_point(builder_scope:claros.common.ClarosDateTime.Time)
       }
 
-      // @@protoc_insertion_point(class_scope:claros.common.DateTime.Time)
+      // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Time)
       private static final claros.common.ClarosCommonDatetime.DateTime.Time DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new claros.common.ClarosCommonDatetime.DateTime.Time();
@@ -764,7 +764,7 @@ public final class ClarosCommonDatetime {
     }
 
     public interface DateOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:claros.common.DateTime.Date)
+        // @@protoc_insertion_point(interface_extends:claros.common.ClarosDateTime.Date)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -791,11 +791,11 @@ public final class ClarosCommonDatetime {
       int getDay();
     }
     /**
-     * Protobuf type {@code claros.common.DateTime.Date}
+     * Protobuf type {@code claros.common.ClarosDateTime.Date}
      */
     public  static final class Date extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:claros.common.DateTime.Date)
+        // @@protoc_insertion_point(message_implements:claros.common.ClarosDateTime.Date)
         DateOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Date.newBuilder() to construct.
@@ -1089,11 +1089,11 @@ public final class ClarosCommonDatetime {
         return builder;
       }
       /**
-       * Protobuf type {@code claros.common.DateTime.Date}
+       * Protobuf type {@code claros.common.ClarosDateTime.Date}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:claros.common.DateTime.Date)
+          // @@protoc_insertion_point(builder_implements:claros.common.ClarosDateTime.Date)
           claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
@@ -1361,10 +1361,10 @@ public final class ClarosCommonDatetime {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:claros.common.DateTime.Date)
+        // @@protoc_insertion_point(builder_scope:claros.common.ClarosDateTime.Date)
       }
 
-      // @@protoc_insertion_point(class_scope:claros.common.DateTime.Date)
+      // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime.Date)
       private static final claros.common.ClarosCommonDatetime.DateTime.Date DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new claros.common.ClarosCommonDatetime.DateTime.Date();
@@ -1404,19 +1404,19 @@ public final class ClarosCommonDatetime {
     public static final int DATEFIELD_FIELD_NUMBER = 1;
     private claros.common.ClarosCommonDatetime.DateTime.Date dateField_;
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     public boolean hasDateField() {
       return dateField_ != null;
     }
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime.Date getDateField() {
       return dateField_ == null ? claros.common.ClarosCommonDatetime.DateTime.Date.getDefaultInstance() : dateField_;
     }
     /**
-     * <code>.claros.common.DateTime.Date dateField = 1;</code>
+     * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder getDateFieldOrBuilder() {
       return getDateField();
@@ -1425,19 +1425,19 @@ public final class ClarosCommonDatetime {
     public static final int TIMEFIELD_FIELD_NUMBER = 2;
     private claros.common.ClarosCommonDatetime.DateTime.Time timeField_;
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     public boolean hasTimeField() {
       return timeField_ != null;
     }
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime.Time getTimeField() {
       return timeField_ == null ? claros.common.ClarosCommonDatetime.DateTime.Time.getDefaultInstance() : timeField_;
     }
     /**
-     * <code>.claros.common.DateTime.Time timeField = 2;</code>
+     * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
      */
     public claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder getTimeFieldOrBuilder() {
       return getTimeField();
@@ -1665,11 +1665,11 @@ public final class ClarosCommonDatetime {
       return builder;
     }
     /**
-     * Protobuf type {@code claros.common.DateTime}
+     * Protobuf type {@code claros.common.ClarosDateTime}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:claros.common.DateTime)
+        // @@protoc_insertion_point(builder_implements:claros.common.ClarosDateTime)
         claros.common.ClarosCommonDatetime.DateTimeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -1849,13 +1849,13 @@ public final class ClarosCommonDatetime {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime.Date, claros.common.ClarosCommonDatetime.DateTime.Date.Builder, claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder> dateFieldBuilder_;
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public boolean hasDateField() {
         return dateFieldBuilder_ != null || dateField_ != null;
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Date getDateField() {
         if (dateFieldBuilder_ == null) {
@@ -1865,7 +1865,7 @@ public final class ClarosCommonDatetime {
         }
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public Builder setDateField(claros.common.ClarosCommonDatetime.DateTime.Date value) {
         if (dateFieldBuilder_ == null) {
@@ -1881,7 +1881,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public Builder setDateField(
           claros.common.ClarosCommonDatetime.DateTime.Date.Builder builderForValue) {
@@ -1895,7 +1895,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public Builder mergeDateField(claros.common.ClarosCommonDatetime.DateTime.Date value) {
         if (dateFieldBuilder_ == null) {
@@ -1913,7 +1913,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public Builder clearDateField() {
         if (dateFieldBuilder_ == null) {
@@ -1927,7 +1927,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Date.Builder getDateFieldBuilder() {
         
@@ -1935,7 +1935,7 @@ public final class ClarosCommonDatetime {
         return getDateFieldFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder getDateFieldOrBuilder() {
         if (dateFieldBuilder_ != null) {
@@ -1946,7 +1946,7 @@ public final class ClarosCommonDatetime {
         }
       }
       /**
-       * <code>.claros.common.DateTime.Date dateField = 1;</code>
+       * <code>.claros.common.ClarosDateTime.Date dateField = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime.Date, claros.common.ClarosCommonDatetime.DateTime.Date.Builder, claros.common.ClarosCommonDatetime.DateTime.DateOrBuilder> 
@@ -1966,13 +1966,13 @@ public final class ClarosCommonDatetime {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime.Time, claros.common.ClarosCommonDatetime.DateTime.Time.Builder, claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder> timeFieldBuilder_;
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public boolean hasTimeField() {
         return timeFieldBuilder_ != null || timeField_ != null;
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Time getTimeField() {
         if (timeFieldBuilder_ == null) {
@@ -1982,7 +1982,7 @@ public final class ClarosCommonDatetime {
         }
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public Builder setTimeField(claros.common.ClarosCommonDatetime.DateTime.Time value) {
         if (timeFieldBuilder_ == null) {
@@ -1998,7 +1998,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public Builder setTimeField(
           claros.common.ClarosCommonDatetime.DateTime.Time.Builder builderForValue) {
@@ -2012,7 +2012,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public Builder mergeTimeField(claros.common.ClarosCommonDatetime.DateTime.Time value) {
         if (timeFieldBuilder_ == null) {
@@ -2030,7 +2030,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public Builder clearTimeField() {
         if (timeFieldBuilder_ == null) {
@@ -2044,7 +2044,7 @@ public final class ClarosCommonDatetime {
         return this;
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.Time.Builder getTimeFieldBuilder() {
         
@@ -2052,7 +2052,7 @@ public final class ClarosCommonDatetime {
         return getTimeFieldFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       public claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder getTimeFieldOrBuilder() {
         if (timeFieldBuilder_ != null) {
@@ -2063,7 +2063,7 @@ public final class ClarosCommonDatetime {
         }
       }
       /**
-       * <code>.claros.common.DateTime.Time timeField = 2;</code>
+       * <code>.claros.common.ClarosDateTime.Time timeField = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.ClarosCommonDatetime.DateTime.Time, claros.common.ClarosCommonDatetime.DateTime.Time.Builder, claros.common.ClarosCommonDatetime.DateTime.TimeOrBuilder> 
@@ -2155,10 +2155,10 @@ public final class ClarosCommonDatetime {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:claros.common.DateTime)
+      // @@protoc_insertion_point(builder_scope:claros.common.ClarosDateTime)
     }
 
-    // @@protoc_insertion_point(class_scope:claros.common.DateTime)
+    // @@protoc_insertion_point(class_scope:claros.common.ClarosDateTime)
     private static final claros.common.ClarosCommonDatetime.DateTime DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new claros.common.ClarosCommonDatetime.DateTime();
@@ -2221,8 +2221,8 @@ public final class ClarosCommonDatetime {
     java.lang.String[] descriptorData = {
       "\n\034claros_common_datetime.proto\022\rclaros.c" +
       "ommon\"\370\001\n\010DateTime\022/\n\tdateField\030\001 \001(\0132\034." +
-      "claros.common.DateTime.Date\022/\n\ttimeField" +
-      "\030\002 \001(\0132\034.claros.common.DateTime.Time\022\020\n\010" +
+      "claros.common.ClarosDateTime.Date\022/\n\ttimeField" +
+      "\030\002 \001(\0132\034.claros.common.ClarosDateTime.Time\022\020\n\010" +
       "timeZone\030\003 \001(\005\022\r\n\005ticks\030\004 \001(\004\0327\n\004Time\022\r\n" +
       "\005hours\030\001 \001(\r\022\017\n\007minutes\030\002 \001(\r\022\017\n\007seconds" +
       "\030\003 \001(\r\0320\n\004Date\022\014\n\004year\030\001 \001(\r\022\r\n\005month\030\002 " +

@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.form',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1d\x63laros_common_form_note.proto\x12\x12\x63laros.common.form\x1a\x1c\x63laros_common_datetime.proto\"\x87\x01\n\x04Note\x12\x0c\n\x04guid\x18\x01 \x01(\t\x12\x15\n\rformFieldGUID\x18\x02 \x01(\t\x12\x10\n\x08\x66ormGUID\x18\x03 \x01(\t\x12*\n\ttimeStamp\x18\x04 \x01(\x0b\x32\x17.claros.common.DateTime\x12\x0e\n\x06userId\x18\x05 \x01(\t\x12\x0c\n\x04text\x18\x06 \x01(\tb\x06proto3')
+  serialized_pb=_b('\n\x1d\x63laros_common_form_note.proto\x12\x12\x63laros.common.form\x1a\x1c\x63laros_common_datetime.proto\"\x87\x01\n\x04Note\x12\x0c\n\x04guid\x18\x01 \x01(\t\x12\x15\n\rformFieldGUID\x18\x02 \x01(\t\x12\x10\n\x08\x66ormGUID\x18\x03 \x01(\t\x12*\n\ttimeStamp\x18\x04 \x01(\x0b\x32\x17.claros.common.ClarosDateTime\x12\x0e\n\x06userId\x18\x05 \x01(\t\x12\x0c\n\x04text\x18\x06 \x01(\tb\x06proto3')
   ,
   dependencies=[claros__common__datetime__pb2.DESCRIPTOR,])
 

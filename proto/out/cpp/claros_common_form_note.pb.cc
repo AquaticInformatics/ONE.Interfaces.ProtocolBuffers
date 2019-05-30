@@ -82,7 +82,7 @@ const char descriptor_table_protodef_claros_5fcommon_5fform_5fnote_2eproto[] =
   "common.form\032\034claros_common_datetime.prot"
   "o\"\207\001\n\004Note\022\014\n\004guid\030\001 \001(\t\022\025\n\rformFieldGUI"
   "D\030\002 \001(\t\022\020\n\010formGUID\030\003 \001(\t\022*\n\ttimeStamp\030\004"
-  " \001(\0132\027.claros.common.DateTime\022\016\n\006userId\030"
+  " \001(\0132\027.claros.common.ClarosDateTime\022\016\n\006userId\030"
   "\005 \001(\t\022\014\n\004text\030\006 \001(\tb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fnote_2eproto = {
@@ -285,7 +285,7 @@ const char* Note::_InternalParse(const char* begin, const char* end, void* objec
         ptr += size;
         break;
       }
-      // .claros.common.DateTime timeStamp = 4;
+      // .claros.common.ClarosDateTime timeStamp = 4;
       case 4: {
         if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -409,7 +409,7 @@ bool Note::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.DateTime timeStamp = 4;
+      // .claros.common.ClarosDateTime timeStamp = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -507,7 +507,7 @@ void Note::SerializeWithCachedSizes(
       3, this->formguid(), output);
   }
 
-  // .claros.common.DateTime timeStamp = 4;
+  // .claros.common.ClarosDateTime timeStamp = 4;
   if (this->has_timestamp()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::timestamp(this), output);
@@ -579,7 +579,7 @@ void Note::SerializeWithCachedSizes(
         3, this->formguid(), target);
   }
 
-  // .claros.common.DateTime timeStamp = 4;
+  // .claros.common.ClarosDateTime timeStamp = 4;
   if (this->has_timestamp()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -664,7 +664,7 @@ size_t Note::ByteSizeLong() const {
         this->text());
   }
 
-  // .claros.common.DateTime timeStamp = 4;
+  // .claros.common.ClarosDateTime timeStamp = 4;
   if (this->has_timestamp()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(

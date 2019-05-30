@@ -248,7 +248,7 @@ class InstrumentEvent :
   const ::google::protobuf::RepeatedPtrField< ::claros::instrument::PrognosysData >&
       prognosys() const;
 
-  // .claros.common.DateTime eventDateTime = 8;
+  // .claros.common.ClarosDateTime eventDateTime = 8;
   bool has_eventdatetime() const;
   void clear_eventdatetime();
   static const int kEventDateTimeFieldNumber = 8;
@@ -473,7 +473,7 @@ InstrumentEvent::prognosys() const {
   return prognosys_;
 }
 
-// .claros.common.DateTime eventDateTime = 8;
+// .claros.common.ClarosDateTime eventDateTime = 8;
 inline bool InstrumentEvent::has_eventdatetime() const {
   return this != internal_default_instance() && eventdatetime_ != nullptr;
 }

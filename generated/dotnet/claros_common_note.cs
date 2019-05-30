@@ -18,7 +18,7 @@ namespace claros.common
         public string Id { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(4)]
-        public DateTime timeStamp { get; set; }
+        public ClarosDateTime timeStamp { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]

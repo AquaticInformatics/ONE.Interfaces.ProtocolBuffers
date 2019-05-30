@@ -15,7 +15,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       repeated :measurements, :message, 4, "claros.instrument.InstrumentMeasurement"
       map :settings, :string, :string, 5
       map :states, :string, :string, 6
-      optional :instrumentDataDateTime, :message, 7, "claros.common.DateTime"
+      optional :instrumentDataDateTime, :message, 7, "claros.common.ClarosDateTime"
     end
   end
 end

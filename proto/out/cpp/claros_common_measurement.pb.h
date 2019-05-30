@@ -189,7 +189,7 @@ class Measurement :
   ::std::string* release_unitguid();
   void set_allocated_unitguid(::std::string* unitguid);
 
-  // .claros.common.DateTime timestamp = 1;
+  // .claros.common.ClarosDateTime timestamp = 1;
   bool has_timestamp() const;
   void clear_timestamp();
   static const int kTimestampFieldNumber = 1;
@@ -241,7 +241,7 @@ class Measurement :
 #endif  // __GNUC__
 // Measurement
 
-// .claros.common.DateTime timestamp = 1;
+// .claros.common.ClarosDateTime timestamp = 1;
 inline bool Measurement::has_timestamp() const {
   return this != internal_default_instance() && timestamp_ != nullptr;
 }
