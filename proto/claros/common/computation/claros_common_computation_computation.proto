@@ -18,5 +18,4 @@ message Computation
         string ledgerId = 9;
         string formId = 10;
     }
-
 }

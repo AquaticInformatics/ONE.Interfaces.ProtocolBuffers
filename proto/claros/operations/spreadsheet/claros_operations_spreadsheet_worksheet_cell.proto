@@ -7,6 +7,6 @@ import "claros_operations_spreadsheet_worksheet_celldata.proto";
  
 message Cell {
     uint32 columnId = 1;
-    claros.common.Note note = 2;
+    repeated claros.common.Note notes = 2;
     repeated CellData cellData = 3;
 }

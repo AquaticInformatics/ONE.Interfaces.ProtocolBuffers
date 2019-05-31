@@ -6,6 +6,6 @@ import "claros_operations_spreadsheet_worksheet_cell.proto";
  
 message Row {
     uint32 rowNumber = 1;
-    TimeWindow timeWindow = 2;
+    TimeWindow UTCTimeWindow = 2;
     repeated Cell cells = 3;
 }

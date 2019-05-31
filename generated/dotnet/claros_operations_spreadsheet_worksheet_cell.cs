@@ -16,8 +16,8 @@ namespace claros.operations.spreadsheet
         [global::ProtoBuf.ProtoMember(1)]
         public uint columnId { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"note")]
-        public global::claros.common.Note Note { get; set; }
+        [global::ProtoBuf.ProtoMember(2, Name = @"notes")]
+        public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
 
         [global::ProtoBuf.ProtoMember(3, Name = @"cellData")]
         public global::System.Collections.Generic.List<CellData> cellDatas { get; } = new global::System.Collections.Generic.List<CellData>();

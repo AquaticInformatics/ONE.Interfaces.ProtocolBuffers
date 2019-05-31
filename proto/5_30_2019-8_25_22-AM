@@ -1,0 +1,72 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20190530082522
+Username: HACH\jwatts
+RunAs User: HACH\jwatts
+Configuration Name: 
+Machine: EWQLOVTB071 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2028
+PSVersion: 5.1.17763.316
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.316
+BuildVersion: 10.0.17763.316
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is 5_30_2019-8_25_22-AM
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_clarosdatetime.proto
+claros_common_clarosdatetime.proto(10,9,10,15): error: type not found: 'unit64'
+claros_common_mobiledatetime.proto(8,5,8,15): error: type not found: 'MobileDate'
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_dayofweek.proto
+generated: ../generated/dotnet\claros_common_dayofweek.cs
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_limit.proto
+generated: ../generated/dotnet\claros_common_limit.cs
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_limits.proto
+generated: ../generated/dotnet\claros_common_limits.cs
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_measurement.proto
+claros_common_measurement.proto(4,8,4,36): error: unable to find: 'claros_common_datetime.proto'
+claros_common_measurement.proto(7,5,7,27): error: type not found: 'claros.common.ClarosDateTime'
+claros_common_measurement.proto(4,8,4,36): warning: import not used: 'claros_common_datetime.proto'
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_mobiledate.proto
+generated: ../generated/dotnet\claros_common_mobiledate.cs
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_mobiledatetime.proto
+claros_common_mobiledatetime.proto(8,5,8,15): error: type not found: 'MobileDate'
+claros_common_mobiledatetime.proto(5,8,5,38): warning: import not used: 'claros_common_mobiledate.proto'
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_mobiletime.proto
+generated: ../generated/dotnet\claros_common_mobiletime.cs
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_networkdata.proto
+claros_common_networkdata.proto(6,8,6,36): error: unable to find: 'claros_common_datetime.proto'
+claros_common_form_form.proto(4,8,4,36): error: unable to find: 'claros_common_datetime.proto'
+claros_common_note.proto(4,8,4,36): error: unable to find: 'claros_common_datetime.proto'
+claros_common_networkdata.proto(17,13,17,21): error: type not found: 'DateTime'
+claros_common_form_formtemplate.proto(13,5,13,30): error: type not found: 'FormTemplateConfiguration'
+claros_common_form_form.proto(13,5,13,27): error: type not found: 'claros.common.ClarosDateTime'
+claros_common_form_form.proto(14,5,14,27): error: type not found: 'claros.common.ClarosDateTime'
+claros_common_note.proto(8,5,8,27): error: type not found: 'claros.common.ClarosDateTime'
+claros_common_form_formtemplateconfiguration.proto(10,5,10,21): error: type not found: 'FormTemplateType'
+claros_common_form_formtemplateconfiguration.proto(11,5,11,29): error: type not found: 'claros.common.Recurrence'
+claros_common_form_formtemplateconfiguration.proto(12,5,12,15): error: type not found: 'FormLayout'
+claros_common_configuration_privileges.proto(7,17,7,23): error: type not found: 'Rights'
+claros_common_form_formauditevent.proto(8,5,8,27): error: type not found: 'claros.common.ClarosDateTime'
+claros_common_form_formauditevent.proto(9,5,9,23): error: type not found: 'FormAuditEventType'
+claros_common_form_formfield.proto(11,5,11,22): error: type not found: 'FormDataEntryType'
+claros_common_form_formfield.proto(17,14,17,28): error: type not found: 'FormFieldEntry'
+claros_common_form_formfield.proto(21,9,21,30): error: type not found: 'LedgerColumnFormField'
+claros_common_networkdata.proto(6,8,6,36): warning: import not used: 'claros_common_datetime.proto'
+
+protogen --csharp_out=../generated/dotnet --proto_path=.\claros --proto_path=.\claros\common --proto_path=.\claros\instrument --proto_path=.\claros\ledger --proto_path=.\claros\operations --proto_path=.\claros\common\configuration --proto_path=.\claros\common\form --proto_path=.\claros\common\gis --proto_path=.\claros\common\library --proto_path=.\claros\operations\ledger --proto_path=.\claros\operations\spreadsheet claros_common_note.proto
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
