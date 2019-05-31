@@ -7,6 +7,9 @@ import "claros_common_limit.proto";
 import "claros_instrument_measurement_binding.proto";
 import "claros_common_computation_binding.proto";
 
+
+import "claros_common_reportablequalifierdefinition.proto";
+
  
 message Column
 {
@@ -22,4 +25,5 @@ message Column
         InstrumentMeasurementBinding instrumentMeasurementBinding = 9;
         ComputationBinding computationBinding = 10;
     }
+    repeated claros.common.ReportableQualifierDefinition reportableQualiferDefinition = 11;
 }

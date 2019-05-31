@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common;
+  
+enum ReportableQualifierDefinitionType
+{
+    Unknown = 0;
+    EnteredValue = 1;
+    Zero = 2;
+    HalfEntered = 3;
+    Constant = 4;
+}

@@ -60,6 +60,9 @@ namespace claros.operations.spreadsheet
         public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(10);
         public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 10);
 
+        [global::ProtoBuf.ProtoMember(11, Name = @"reportableQualiferDefinition")]
+        public global::System.Collections.Generic.List<global::claros.common.ReportableQualifierDefinition> reportableQualiferDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.common.ReportableQualifierDefinition>();
+
     }
 
 }
