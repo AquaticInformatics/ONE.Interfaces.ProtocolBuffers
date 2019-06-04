@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.instrument;
+
+import "claros_common_clarosdatetime.proto";
+ 
+message SCSensorBinding
+{
+    uint32 channel = 2;
+    string tag = 3;
+    
+    claros.common.ClarosDateTime validFrom = 4;
+    claros.common.ClarosDateTime validTo = 5;
+}
+

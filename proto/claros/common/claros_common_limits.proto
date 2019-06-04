@@ -1,8 +1,0 @@
-syntax = "proto3";
-package claros.common;
-
-import "claros_common_limit.proto";
-
-message Limits {
-    repeated Limit limits = 1;
-}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.instrument;
+
+import "claros_common_clarosdatetime.proto";
+
+message MilliAmpBinding
+{
+    string cardName = 1;
+    uint32 channel = 2;
+    
+    claros.common.ClarosDateTime validFrom = 3;
+    claros.common.ClarosDateTime validTo = 4;
+}
