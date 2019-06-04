@@ -3,7 +3,7 @@ package claros.common.form;
  
 import "claros_common_timewindow.proto";
 import "claros_common_note.proto";
-import "claros_common_form_formauditevent.proto";
+import "claros_common_auditevent.proto";
 import "claros_common_form_formfield.proto";
  
 message Form {
@@ -14,7 +14,6 @@ message Form {
     string name = 6;
     repeated FormField templateFormFields = 7; // Form components in the form
     repeated FormField adhocFormFields = 8;
-    repeated string contributorIds = 9;
-    repeated claros.common.Note notes = 10;
-    repeated FormAuditEvent auditEvents = 11;
+    repeated claros.common.Note notes = 9;
+    repeated AuditEvent auditEvents = 10;
 }

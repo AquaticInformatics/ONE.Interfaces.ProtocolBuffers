@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common;
+
+import "claros_common_auditevent_type.proto";
+import "claros_common_clarosdatetime.proto";
+
+message AuditEvent {
+    string userId = 1;
+    AuditEventType eventType = 2;
+    claros.common.ClarosDateTime timeStamp = 3;
+}

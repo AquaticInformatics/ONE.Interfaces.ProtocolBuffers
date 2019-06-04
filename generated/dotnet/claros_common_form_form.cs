@@ -37,14 +37,11 @@ namespace claros.common.form
         [global::ProtoBuf.ProtoMember(8)]
         public global::System.Collections.Generic.List<FormField> adhocFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
-        [global::ProtoBuf.ProtoMember(9)]
-        public global::System.Collections.Generic.List<string> contributorIds { get; } = new global::System.Collections.Generic.List<string>();
-
-        [global::ProtoBuf.ProtoMember(10, Name = @"notes")]
+        [global::ProtoBuf.ProtoMember(9, Name = @"notes")]
         public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
 
-        [global::ProtoBuf.ProtoMember(11)]
-        public global::System.Collections.Generic.List<FormAuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<FormAuditEvent>();
+        [global::ProtoBuf.ProtoMember(10)]
+        public global::System.Collections.Generic.List<global::claros.common.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.common.AuditEvent>();
 
     }
 

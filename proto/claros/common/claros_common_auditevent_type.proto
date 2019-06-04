@@ -1,7 +1,7 @@
 syntax = "proto3";
-package claros.common.form;
+package claros.common;
  
-enum FormAuditEventType {
+enum AuditEventType {
     FormFieldDeleted = 0;
     FormFieldAdded = 1;
     FormSent = 2;
