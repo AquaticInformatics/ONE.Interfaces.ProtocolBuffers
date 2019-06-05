@@ -2,10 +2,10 @@ syntax = "proto3";
 package claros.common;
 
 enum ReportableQualifierType {
-    Unknown = 0;
-    NonDetect = 1;
-    Estimate = 2;
-    DetectedNonQualifiable = 3;
-    GreaterThan = 4;
-    LessThan = 5;
+    UNKNOWN = 0;
+    NONDETECT = 1;
+    ESTIMATE = 2;
+    DETECTNONQUALIFIABLE = 3;
+    GREATERTHAN = 4;
+    LESSTHAN = 5;
 }

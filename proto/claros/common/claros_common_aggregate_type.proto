@@ -2,8 +2,8 @@ syntax = "proto3";
 package claros.common;
  
 enum AggregateType {
-    Unknown = 0;
-    Min = 1;
-    Max = 2;
-    Avg = 3;
+    UNKNOWN = 0;
+    MINIMUM = 1;
+    MAXIMUM = 2;
+    AVERAGE = 3;
 }

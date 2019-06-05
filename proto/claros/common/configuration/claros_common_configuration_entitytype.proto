@@ -2,5 +2,6 @@ syntax = "proto3";
 package claros.common.configuration;
 
 enum EntityType {
-    FormTemplate = 0;
+    UNKNOWN = 0;
+    FORMTEMPLATE = 1;
 };

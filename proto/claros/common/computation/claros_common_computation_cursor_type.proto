@@ -3,10 +3,10 @@ package claros.common.computation;
 
 enum ComputationCursorType
 {
-    Unknown = 0;
-    Current = 1;
-    Previous = 2;
-    Next = 4;
-    Last = 5;
-    Absolute = 6;    
+    UNKNOWN = 0;
+    CURRENT = 1;
+    PREVIOUS = 2;
+    NEXT = 4;
+    LAST = 5;
+    ABSOLUTE = 6;    
 }

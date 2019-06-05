@@ -2,6 +2,6 @@ syntax = "proto3";
 package claros.common;
 
 enum TimeZone {
-    Unknown = 1;
-    UTC = 0;
+    UNKNOWN = 0;
+    UTC = 1;
 }

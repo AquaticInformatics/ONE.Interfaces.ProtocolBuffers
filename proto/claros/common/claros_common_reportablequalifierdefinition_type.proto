@@ -3,9 +3,9 @@ package claros.common;
   
 enum ReportableQualifierDefinitionType
 {
-    Unknown = 0;
-    EnteredValue = 1;
-    Zero = 2;
-    HalfEntered = 3;
-    Constant = 4;
+    UNKNOWN = 0;
+    ENTEREDVALUE = 1;
+    ZERO = 2;
+    HALFENTERED = 3;
+    CONSTANT = 4;
 }
