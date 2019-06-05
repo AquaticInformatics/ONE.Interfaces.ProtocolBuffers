@@ -2,7 +2,7 @@ syntax = "proto3";
 package claros.common; 
 
  enum DayOfWeek {
-    UNKNOWN =0;
+    UNKNOWN = 0;
     SUNDAY = 1;
     MONDAY = 2;
     TUESDAY = 3;
