@@ -15,12 +15,12 @@ https://protogen.marcgravell.com/protogen/protogen%202.3.16.zip
 ### Steps
 In powershell, 
 
-''''
+````
 cd \generators\dotnet
  .\protogen-batch.ps1 "C:\work\cpb\claros.interfaces.protocolbuffers\proto\"\
-''''
+````
 
 After the command executes, you will be in the generated folder.
-''''
+````
 cd ..\generators\dotnet
-''''
+````
