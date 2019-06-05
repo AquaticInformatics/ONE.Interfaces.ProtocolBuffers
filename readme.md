@@ -13,11 +13,11 @@ Download and install protoget from https://protogen.marcgravell.com/
 https://protogen.marcgravell.com/protogen/protogen%202.3.16.zip
 
 ### Steps
-In powershell, 
+In powershell, execute script passing in full path to proto directory
 
 ````
 cd \generators\dotnet
- .\protogen-batch.ps1 "C:\work\cpb\claros.interfaces.protocolbuffers\proto\"\
+ .\protogen-batch.ps1 "..\claros.interfaces.protocolbuffers\proto\"
 ````
 
 After the command executes, you will be in the generated folder.
