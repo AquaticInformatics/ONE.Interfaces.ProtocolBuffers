@@ -1,0 +1,15 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+ 
+message Task {
+    // header
+    string id = 1;  //GUID
+    string name = 2;
+
+    // definition
+    //TaskTemplate taskTemplate = 4;
+
+    // data
+    //TaskData taskdata = 4;
+}
