@@ -8,15 +8,19 @@ import "claros_common_form_ledgercolumnformfield.proto";
  
 message FormField {
     string guid = 1;
+    string formFieldDefinitionId = 2;
+
     FormDataEntryType formDataEntryType = 2;
     bool isDataEntryTypeLocked = 3;
     string name = 4;
+
     
-    //repeated MeasurementData measurements = 7; //
-    repeated FormFieldData formFieldDatum = 8; // The user entries.
-    repeated claros.common.Note notes = 9;
-    repeated string attachmentGUID = 10;
-    oneof FormFieldType {
-        LedgerColumnFormField lcFormField = 11;        
+    oneof FormFieldData {
+        // AdHocFormField adHocFormField
+        Cell cell = 11;        
     }
+
+    repeated claros.instrument.InstrumentData instrumentData = 2;
+
+
 }

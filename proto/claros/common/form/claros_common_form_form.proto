@@ -7,11 +7,15 @@ import "claros_common_auditevent.proto";
 import "claros_common_form_formfield.proto";
  
 message Form {
+    // header
     string id = 1;  //GUID
-    string templateId = 2;  //GUID
-    uint32 templateVersion = 3;
-    claros.common.TimeWindow timeWindow = 4;
     string name = 6;
+    claros.common.TimeWindow timeWindow = 4;
+
+    // definition
+    FormTemplate formTemplate = 4;
+
+    // data
     repeated FormField templateFormFields = 7; // Form components in the form
     repeated FormField adhocFormFields = 8;
     repeated claros.common.Note notes = 9;

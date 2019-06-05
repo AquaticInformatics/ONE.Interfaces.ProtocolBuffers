@@ -9,4 +9,5 @@ message WorksheetDefinition {
     uint32 startRow = 2;
     uint32 endRow = 3;
     repeated Column columns = 4;
+    AuditEvent auditEvent = 5;
 }
