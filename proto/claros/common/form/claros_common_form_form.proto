@@ -23,5 +23,5 @@ message Form {
     repeated FormField adhocFormFields = 7;
     repeated claros.common.Note notes = 8;
 
-    repeated AuditEvent auditEvents = 99;
+    repeated claros.common.AuditEvent auditEvents = 99;
 }
