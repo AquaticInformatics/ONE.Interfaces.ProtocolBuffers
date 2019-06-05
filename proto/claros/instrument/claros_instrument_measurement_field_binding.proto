@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.instrument;
+
+import "claros_common_clarosdatetime.proto";
+
+message InstrumentMeasurementFieldBinding {
+   string instrumentMeasurementId = 1;
+   claros.common.ClarosDateTime timestamp = 2;
+   uint32 unitId = 3;
+}

@@ -9,9 +9,18 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum AuditEventType
     {
-        FormFieldDeleted = 0,
-        FormFieldAdded = 1,
-        FormSent = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
+        Unknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"CREATE")]
+        Create = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"READ")]
+        Read = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"UPDATE")]
+        Update = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"DELETE")]
+        Delete = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"SENT")]
+        Sent = 5,
     }
 
 }

@@ -1,8 +1,0 @@
-syntax = "proto3";
-package claros.operations.ledger;
- 
-message LedgerLineEntryversion {
-    string valueText = 1;
-}
-
-// needs full audit fields

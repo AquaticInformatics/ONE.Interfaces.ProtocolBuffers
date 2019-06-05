@@ -2,10 +2,11 @@ syntax = "proto3";
 package claros.common;
  
 enum DataSourceType {
-    Unknown = 0;
-    Form = 1;
-    Computation = 2;
-    Spreadsheet = 3;
-    InstrumentMeasurement = 4;
-    Import = 5;
+    UNKNOWN = 0;
+    FORM = 1;
+    COMPUTATION = 2;
+    SPREADSHEET = 3;
+    INSTRUMENTMEASUREMENT = 4;
+    IMPORT = 5;
+    SPREADSHEET_DEFINITION = 6;
 }

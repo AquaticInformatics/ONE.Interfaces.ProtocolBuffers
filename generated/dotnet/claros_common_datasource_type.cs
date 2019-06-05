@@ -9,12 +9,20 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum DataSourceType
     {
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"FORM")]
         Form = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"COMPUTATION")]
         Computation = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"SPREADSHEET")]
         Spreadsheet = 3,
-        InstrumentMeasurement = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"INSTRUMENTMEASUREMENT")]
+        Instrumentmeasurement = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"IMPORT")]
         Import = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"SPREADSHEET_DEFINITION")]
+        SpreadsheetDefinition = 6,
     }
 
 }
