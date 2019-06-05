@@ -11,5 +11,5 @@ message WorksheetDefinition {
     uint32 endRow = 3;
     repeated Column columns = 4;
 
-    AuditEvent auditEvent = 99;
+    claros.common.AuditEvent auditEvent = 99;
 }

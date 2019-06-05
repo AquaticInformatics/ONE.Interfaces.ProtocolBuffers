@@ -28,12 +28,15 @@ namespace claros.common.form
         public FormTemplate formTemplate { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::System.Collections.Generic.List<FormField> templateFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
+        public global::System.Collections.Generic.List<FormFieldDefinition> adHocFormFieldDefinitions { get; } = new global::System.Collections.Generic.List<FormFieldDefinition>();
 
         [global::ProtoBuf.ProtoMember(6)]
+        public global::System.Collections.Generic.List<FormField> templateFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
+
+        [global::ProtoBuf.ProtoMember(7)]
         public global::System.Collections.Generic.List<FormField> adhocFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
-        [global::ProtoBuf.ProtoMember(7, Name = @"notes")]
+        [global::ProtoBuf.ProtoMember(8, Name = @"notes")]
         public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
 
         [global::ProtoBuf.ProtoMember(99)]

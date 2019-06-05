@@ -27,8 +27,25 @@ namespace claros.common.form
         [global::System.ComponentModel.DefaultValue("")]
         public string Name { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(11, Name = @"column")]
-        public WorksheetColumnUTCFormField Column { get; set; }
+        [global::ProtoBuf.ProtoMember(5, Name = @"column")]
+        public FormFieldWorksheetColumnUTC Column
+        {
+            get { return __pbn__fieldDefinition.Is(5) ? ((FormFieldWorksheetColumnUTC)__pbn__fieldDefinition.Object) : default; }
+            set { __pbn__fieldDefinition = new global::ProtoBuf.DiscriminatedUnionObject(5, value); }
+        }
+        public bool ShouldSerializeColumn() => __pbn__fieldDefinition.Is(5);
+        public void ResetColumn() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__fieldDefinition, 5);
+
+        private global::ProtoBuf.DiscriminatedUnionObject __pbn__fieldDefinition;
+
+        [global::ProtoBuf.ProtoMember(6, Name = @"text")]
+        public FormFieldText Text
+        {
+            get { return __pbn__fieldDefinition.Is(6) ? ((FormFieldText)__pbn__fieldDefinition.Object) : default; }
+            set { __pbn__fieldDefinition = new global::ProtoBuf.DiscriminatedUnionObject(6, value); }
+        }
+        public bool ShouldSerializeText() => __pbn__fieldDefinition.Is(6);
+        public void ResetText() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__fieldDefinition, 6);
 
     }
 

@@ -6,6 +6,7 @@ import "claros_common_note.proto";
 import "claros_common_auditevent.proto";
 import "claros_common_form_formfield.proto";
 import "claros_common_form_formtemplate.proto";
+import "claros_common_form_formfield_definition.proto";
  
 message Form {
     // header
@@ -15,11 +16,12 @@ message Form {
 
     // definition
     FormTemplate formTemplate = 4;
+    repeated FormFieldDefinition adHocFormFieldDefinitions = 5;
 
     // data
-    repeated FormField templateFormFields = 5; // Form components in the form
-    repeated FormField adhocFormFields = 6;
-    repeated claros.common.Note notes = 7;
+    repeated FormField templateFormFields = 6; // Form components in the form
+    repeated FormField adhocFormFields = 7;
+    repeated claros.common.Note notes = 8;
 
     repeated AuditEvent auditEvents = 99;
 }

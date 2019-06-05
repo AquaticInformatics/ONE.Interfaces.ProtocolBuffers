@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+package claros.common.form;
+ 
+import "claros_common_auditevent.proto";
+import "claros_common_note.proto";
+
+message FormFieldText {
+    string value = 1;
+    claros.common.Note note = 2;
+    claros.common.AuditEvent auditEvent = 3;
+}
