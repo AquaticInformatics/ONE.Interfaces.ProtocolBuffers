@@ -9,10 +9,14 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum AggregateType
     {
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
-        Min = 1,
-        Max = 2,
-        Avg = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"MINIMUM")]
+        Minimum = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"MAXIMUM")]
+        Maximum = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"AVERAGE")]
+        Average = 3,
     }
 
 }

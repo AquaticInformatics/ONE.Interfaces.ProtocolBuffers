@@ -9,16 +9,16 @@ namespace claros.common.form
     [global::ProtoBuf.ProtoContract()]
     public enum FormDataEntryType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"DATAENTRYTYPE_UNSPECIFIED")]
-        DataentrytypeUnspecified = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"DATAENTRYTYPE_INSTRUMENT")]
-        DataentrytypeInstrument = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"DATAENTRYTYPE_TOTALIZER")]
-        DataentrytypeTotalizer = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"DATAENTRYTYPE_CONSUMPTION")]
-        DataentrytypeConsumption = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"DATAENTRYTYPE_TEXT")]
-        DataentrytypeText = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"UKNOWN")]
+        Uknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"INSTRUMENT")]
+        Instrument = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"TOTALIZER")]
+        Totalizer = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"CONSUMPTION")]
+        Consumption = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"TEXT")]
+        Text = 4,
     }
 
 }

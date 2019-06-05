@@ -9,11 +9,17 @@ namespace claros.common.computation
     [global::ProtoBuf.ProtoContract()]
     public enum ComputationCursorType
     {
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"CURRENT")]
         Current = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"PREVIOUS")]
         Previous = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"NEXT")]
         Next = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"LAST")]
         Last = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"ABSOLUTE")]
         Absolute = 6,
     }
 

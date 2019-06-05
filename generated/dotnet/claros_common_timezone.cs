@@ -9,9 +9,10 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum TimeZone
     {
-        Unknown = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
+        Unknown = 0,
         [global::ProtoBuf.ProtoEnum(Name = @"UTC")]
-        Utc = 0,
+        Utc = 1,
     }
 
 }

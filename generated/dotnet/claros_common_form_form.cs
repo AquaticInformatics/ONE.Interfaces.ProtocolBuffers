@@ -17,30 +17,26 @@ namespace claros.common.form
         [global::System.ComponentModel.DefaultValue("")]
         public string Id { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(2)]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string templateId { get; set; } = "";
-
-        [global::ProtoBuf.ProtoMember(3)]
-        public uint templateVersion { get; set; }
-
-        [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.TimeWindow timeWindow { get; set; }
-
-        [global::ProtoBuf.ProtoMember(6, Name = @"name")]
+        [global::ProtoBuf.ProtoMember(2, Name = @"name")]
         [global::System.ComponentModel.DefaultValue("")]
         public string Name { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::ProtoBuf.ProtoMember(3)]
+        public global::claros.common.TimeWindow timeWindow { get; set; }
+
+        [global::ProtoBuf.ProtoMember(4)]
+        public FormTemplate formTemplate { get; set; }
+
+        [global::ProtoBuf.ProtoMember(5)]
         public global::System.Collections.Generic.List<FormField> templateFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::ProtoBuf.ProtoMember(6)]
         public global::System.Collections.Generic.List<FormField> adhocFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
-        [global::ProtoBuf.ProtoMember(9, Name = @"notes")]
+        [global::ProtoBuf.ProtoMember(7, Name = @"notes")]
         public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::ProtoBuf.ProtoMember(99)]
         public global::System.Collections.Generic.List<global::claros.common.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.common.AuditEvent>();
 
     }

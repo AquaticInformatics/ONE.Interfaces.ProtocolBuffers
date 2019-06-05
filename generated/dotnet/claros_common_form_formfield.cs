@@ -18,33 +18,24 @@ namespace claros.common.form
         public string Guid { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2)]
-        public FormDataEntryType formDataEntryType { get; set; }
+        [global::System.ComponentModel.DefaultValue("")]
+        public string formFieldDefinitionId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public bool dataEntryMethodLocked { get; set; }
+        public FormDataEntryType formDataEntryType { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4, Name = @"name")]
+        [global::ProtoBuf.ProtoMember(4)]
+        public bool isDataEntryTypeLocked { get; set; }
+
+        [global::ProtoBuf.ProtoMember(5, Name = @"name")]
         [global::System.ComponentModel.DefaultValue("")]
         public string Name { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(5)]
-        [global::System.ComponentModel.DefaultValue("")]
-        public string lastContributor { get; set; } = "";
+        [global::ProtoBuf.ProtoMember(6, Name = @"cell")]
+        public global::claros.operations.spreadsheet.Cell Cell { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6, Name = @"contributors")]
-        public global::System.Collections.Generic.List<string> Contributors { get; } = new global::System.Collections.Generic.List<string>();
-
-        [global::ProtoBuf.ProtoMember(8)]
-        public global::System.Collections.Generic.List<FormFieldEntry> formFieldEntries { get; } = new global::System.Collections.Generic.List<FormFieldEntry>();
-
-        [global::ProtoBuf.ProtoMember(9, Name = @"notes")]
-        public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
-
-        [global::ProtoBuf.ProtoMember(10, Name = @"attachmentGUID")]
-        public global::System.Collections.Generic.List<string> attachmentGUIDs { get; } = new global::System.Collections.Generic.List<string>();
-
-        [global::ProtoBuf.ProtoMember(11)]
-        public LedgerColumnFormField lcFormField { get; set; }
+        [global::ProtoBuf.ProtoMember(7, Name = @"instrumentData")]
+        public global::System.Collections.Generic.List<global::claros.instrument.InstrumentData> instrumentDatas { get; } = new global::System.Collections.Generic.List<global::claros.instrument.InstrumentData>();
 
     }
 

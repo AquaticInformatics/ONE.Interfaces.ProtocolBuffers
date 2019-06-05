@@ -12,10 +12,10 @@ message NetworkData {
  
     message Response {
         oneof response_one_of {
-            FormTemplate formTemplate = 1;
-            Form form = 2;
-            ClarosDateTime dateTime = 3;
-            Note note = 4;
+            FormTemplate formTemplate = 2;
+            Form form = 3;
+            ClarosDateTime dateTime = 4;
+            Note note = 5;
         }
     }
 }

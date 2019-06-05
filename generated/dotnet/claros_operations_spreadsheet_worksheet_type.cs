@@ -9,10 +9,15 @@ namespace claros.operations.spreadsheet
     [global::ProtoBuf.ProtoContract()]
     public enum WorksheetType
     {
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
-        15Minute = 1,
-        4Hour = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"15MINUTE")]
+        15minute = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"4HOUR")]
+        4hour = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"DAILY")]
         Daily = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"MONTHLY")]
         Monthly = 4,
     }
 

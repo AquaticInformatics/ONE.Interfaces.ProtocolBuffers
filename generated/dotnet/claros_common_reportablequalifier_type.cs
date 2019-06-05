@@ -9,12 +9,18 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum ReportableQualifierType
     {
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
-        NonDetect = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"NONDETECT")]
+        Nondetect = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"ESTIMATE")]
         Estimate = 2,
-        DetectedNonQualifiable = 3,
-        GreaterThan = 4,
-        LessThan = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"DETECTNONQUALIFIABLE")]
+        Detectnonqualifiable = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"GREATERTHAN")]
+        Greaterthan = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"LESSTHAN")]
+        Lessthan = 5,
     }
 
 }

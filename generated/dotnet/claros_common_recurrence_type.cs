@@ -9,12 +9,20 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum RecurrenceType
     {
-        FifteenMinute = 0,
-        Hourly = 1,
-        FourHour = 2,
-        Daily = 3,
-        Weekly = 4,
-        DaysOfWeek = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
+        Unknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"FIFTEENMINUTE")]
+        Fifteenminute = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"HOURLY")]
+        Hourly = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"FOURHOUR")]
+        Fourhour = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"DAILY")]
+        Daily = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"WEEKLY")]
+        Weekly = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"DAYSOFWEEK")]
+        Daysofweek = 6,
     }
 
 }

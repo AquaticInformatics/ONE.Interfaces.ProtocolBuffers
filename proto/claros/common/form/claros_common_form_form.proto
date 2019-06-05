@@ -5,19 +5,21 @@ import "claros_common_timewindow.proto";
 import "claros_common_note.proto";
 import "claros_common_auditevent.proto";
 import "claros_common_form_formfield.proto";
+import "claros_common_form_formtemplate.proto";
  
 message Form {
     // header
     string id = 1;  //GUID
-    string name = 6;
-    claros.common.TimeWindow timeWindow = 4;
+    string name = 2;
+    claros.common.TimeWindow timeWindow = 3;
 
     // definition
     FormTemplate formTemplate = 4;
 
     // data
-    repeated FormField templateFormFields = 7; // Form components in the form
-    repeated FormField adhocFormFields = 8;
-    repeated claros.common.Note notes = 9;
-    repeated AuditEvent auditEvents = 10;
+    repeated FormField templateFormFields = 5; // Form components in the form
+    repeated FormField adhocFormFields = 6;
+    repeated claros.common.Note notes = 7;
+
+    repeated AuditEvent auditEvents = 99;
 }

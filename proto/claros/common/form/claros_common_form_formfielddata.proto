@@ -3,7 +3,8 @@ package claros.common.form;
  
 import "claros_operations_spreadsheet_worksheet_cell.proto";
 import "claros_instrument_data.proto";
-      
+import "claros_common_auditevent.proto";
+
 message FormFieldData {
  
     oneof fieldDataBinding {
@@ -12,6 +13,6 @@ message FormFieldData {
 
     claros.instrument.InstrumentData instrumentData = 2;
 
-    AuditEvent auditEvent = 2;
+    AuditEvent auditEvent = 99;
         
 }

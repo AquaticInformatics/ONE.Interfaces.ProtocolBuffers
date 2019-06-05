@@ -23,7 +23,7 @@ namespace claros.common.form
         public FormLayout formLayout { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::System.Collections.Generic.List<FormField> formFields { get; } = new global::System.Collections.Generic.List<FormField>();
+        public global::System.Collections.Generic.List<FormFieldDefinition> formFieldDefinitions { get; } = new global::System.Collections.Generic.List<FormFieldDefinition>();
 
     }
 

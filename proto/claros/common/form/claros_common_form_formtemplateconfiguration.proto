@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.form;
  
-import "claros_common_form_formtemplatetype.proto";
+import "claros_common_form_formtemplate_type.proto";
 import "claros_common_recurrence.proto";
 import "claros_common_form_formlayout.proto";
 import "claros_common_form_formfield_definition.proto";

@@ -3,6 +3,7 @@ package claros.common;
 
 import "claros_common_auditevent_type.proto";
 import "claros_common_clarosdatetime.proto";
+import "claros_common_datasource_type.proto";
 
 message AuditEvent {
     string id = 1;

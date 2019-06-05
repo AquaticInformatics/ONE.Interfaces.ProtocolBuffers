@@ -2,7 +2,7 @@ syntax = "proto3";
 package claros.common.configuration;
 
 import "claros_common_clarosdatetime.proto";
-import "claros_common_configuration_entitytype.proto";
+import "claros_common_configuration_entity_type.proto";
 import "claros_common_configuration_rights.proto";
  
 message Configuration {

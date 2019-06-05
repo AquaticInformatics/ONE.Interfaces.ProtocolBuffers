@@ -9,13 +9,22 @@ namespace claros.common
     [global::ProtoBuf.ProtoContract()]
     public enum DayOfWeek
     {
-        Sunday = 0,
-        Monday = 1,
-        Tuesday = 2,
-        Wednesday = 3,
-        Thursday = 4,
-        Friday = 5,
-        Saturday = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
+        Unknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"SUNDAY")]
+        Sunday = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"MONDAY")]
+        Monday = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"TUESDAY")]
+        Tuesday = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"WEDNESDAY")]
+        Wednesday = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"THURSDAY")]
+        Thursday = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"FRIDAY")]
+        Friday = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"SATURDAY")]
+        Saturday = 7,
     }
 
 }
