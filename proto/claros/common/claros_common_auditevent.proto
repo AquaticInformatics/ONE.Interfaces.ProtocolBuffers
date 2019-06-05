@@ -5,8 +5,9 @@ import "claros_common_auditevent_type.proto";
 import "claros_common_clarosdatetime.proto";
 
 message AuditEvent {
-    string userId = 1;
-    DataSourceType dataSourceType = 2;
-    AuditEventType eventType = 3;
-    claros.common.ClarosDateTime timeStamp = 4;
+    string id = 1;
+    string userId = 2;
+    DataSourceType dataSourceType = 3;
+    AuditEventType eventType = 4;
+    claros.common.ClarosDateTime timeStamp = 5;
 }
