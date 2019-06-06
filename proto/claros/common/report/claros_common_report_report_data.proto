@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.report;
+ 
+include "claros_operation_spreadsheet_spreadsheet.proto";
+
+message ReportData {
+    oneof reportDataSet {
+        Spreadsheet spreadsheet = 1;
+
+    }
+}
