@@ -6,7 +6,8 @@ import "claros_common_auditevent.proto";
 import "claros_common_note.proto";
 
 message FormFieldText {
-    string value = 1;
-    claros.common.Note note = 2;
-    claros.common.AuditEvent auditEvent = 3;
+    string id = 1;
+    string value = 2;
+    claros.common.Note note = 3;
+    claros.common.AuditEvent auditEvent = 4;
 }

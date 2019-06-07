@@ -3,8 +3,8 @@ package claros.operations.spreadsheet;
  
 enum WorksheetType {
     UNKNOWN = 0;
-    15MINUTE = 1;
-    4HOUR = 2;
+    FIFTEEN_MINUTE = 1; 
+    FOUR_HOUR = 2; 
     DAILY = 3;
     MONTHLY = 4;
 }
