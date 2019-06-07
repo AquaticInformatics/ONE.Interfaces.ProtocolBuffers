@@ -10,17 +10,14 @@ Console logging will indicate success or failure for each file.
 
 ### Tools Needed
 Download and install protoget from https://protogen.marcgravell.com/
+
+Direct Link
+
 https://protogen.marcgravell.com/protogen/protogen%202.3.16.zip
 
 ### Steps
-In powershell, execute script passing in full path to proto directory
+In powershell, execute script 
 
 ````
-cd \generators\dotnet
- .\protogen-batch.ps1 "..\claros.interfaces.protocolbuffers\proto\"
-````
-
-After the command executes, you will be in the generated folder.
-````
-cd ..\generators\dotnet
-````
+ .\generators\dotnet\protogen-batch.ps1
+ ````

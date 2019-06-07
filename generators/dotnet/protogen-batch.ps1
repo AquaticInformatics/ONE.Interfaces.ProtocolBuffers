@@ -1,6 +1,4 @@
-﻿cd $Args[0]
-$currentPath = pwd
-#$files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {$_.FullName} 
+﻿$currentPath = pwd
 $files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {"$_"} 
 $files = $files.Replace($currentPath.Path, ".")
 
@@ -21,4 +19,3 @@ foreach($file in $files)
     Invoke-Expression -Command $Command
 }
 #Stop-Transcript
-cd $currentPath
