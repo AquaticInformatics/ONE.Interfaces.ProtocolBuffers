@@ -12,5 +12,5 @@ message Report {
     //ReportTemplate reportTemplate = 3;
     
     // data
-    Repeatable ReportData reportData = 4;
+    repeated ReportData reportData = 4;
 }

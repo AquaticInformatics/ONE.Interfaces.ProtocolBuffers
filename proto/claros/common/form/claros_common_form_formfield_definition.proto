@@ -3,7 +3,7 @@ package claros.common.form;
 
 import "claros_common_form_formdataentry_type.proto"; 
 import "claros_common_form_field_worksheet_column_UTC.proto"; 
-import "claros_common_form_field_text.proto"; 
+import "claros_common_form_field_text_repeated.proto"; 
  
 message FormFieldDefinition {
     string guid = 1;
@@ -13,7 +13,7 @@ message FormFieldDefinition {
 
     oneof fieldDefinition {
         FormFieldWorksheetColumnUTC column = 5;   
-        repeated FormFieldText text = 6;
+        FormFieldTextRepeated textRepeated = 6;
     }
 }
 
