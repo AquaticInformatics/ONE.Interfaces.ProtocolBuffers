@@ -6,7 +6,8 @@ import "claros_common_core_timewindow.proto";
 import "claros_common_core_timezone.proto";
  
 message SpreadsheetDefinition {
-    claros.common.core.TimeWindow timewindow = 1;
-    claros.common.core.TimeZone  timezone = 2;
-    uint32 timeWindowOffset = 3;
+    string version = 1;
+    claros.common.core.TimeWindow timewindow = 2;
+    claros.common.core.TimeZone  timezone = 3;
+    uint32 timeWindowOffset = 4;
 }
