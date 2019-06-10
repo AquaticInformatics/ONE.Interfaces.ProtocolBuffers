@@ -1,12 +1,12 @@
 syntax = "proto3";
 package claros.common.form;
  
-import "common/core/claros_common_core_timewindow.proto";
-import "common/core/claros_common_core_note.proto";
-import "common/core/claros_common_core_auditevent.proto";
-import "common/form/data/claros_common_form_formfield.proto";
-import "common/form/definition/claros_common_form_formtemplate.proto";
-import "common/form/definition/claros_common_form_formfield_definition.proto";
+import "claros_common_core_timewindow.proto";
+import "claros_common_core_note.proto";
+import "claros_common_core_auditevent.proto";
+import "claros_common_form_formfield.proto";
+import "claros_common_form_formtemplate.proto";
+import "claros_common_form_formfield_definition.proto";
  
 message Form {
     // header

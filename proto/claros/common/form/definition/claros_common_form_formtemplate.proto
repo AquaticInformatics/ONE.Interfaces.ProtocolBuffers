@@ -2,7 +2,7 @@ syntax = "proto3";
 package claros.common.form;
 
 import "claros_common_form_formtemplateconfiguration.proto";
-import "common/configuration/claros_common_configuration_rights.proto";
+import "claros_common_configuration_rights.proto";
  
 message FormTemplate {
     string id = 1;  //retrieval only

@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.report;
  
-import "operations/spreadsheet/claros_operations_spreadsheet_spreadsheet.proto";
+import "claros_operations_spreadsheet_spreadsheet.proto";
 
 message ReportData {
     oneof reportDataSet {

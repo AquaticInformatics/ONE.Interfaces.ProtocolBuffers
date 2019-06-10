@@ -2,10 +2,10 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
-import "common/form/claros_common_form_binding.proto";
-import "common/computation/claros_common_computation_binding.proto";
-import "instrument/claros_instrument_measurement_binding.proto";
-import "instrument/claros_instrument_measurement_field_binding.proto";
+import "claros_common_form_binding.proto";
+import "claros_common_computation_binding.proto";
+import "claros_instrument_measurement_binding.proto";
+import "claros_instrument_measurement_field_binding.proto";
 import "claros_operations_spreadsheet_binding.proto";
  
 

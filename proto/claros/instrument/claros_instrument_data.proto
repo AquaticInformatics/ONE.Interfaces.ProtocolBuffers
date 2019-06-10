@@ -3,7 +3,7 @@ package claros.instrument;
  
 import "claros_instrument_event.proto";
 import "claros_instrument_measurement.proto";
-import "common/core/claros_common_core_clarosdatetime.proto";
+import "claros_common_core_clarosdatetime.proto";
 
 message InstrumentData {
     string tenantId = 1; // In header

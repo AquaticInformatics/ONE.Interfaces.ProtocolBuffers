@@ -1,10 +1,10 @@
 syntax = "proto3";
 package claros.instrument;
 
-import "common/core/claros_common_core_clarosdatetime.proto";
+import "claros_common_core_clarosdatetime.proto";
 import "claros_instrument_measurement_milliamp_binding.proto";
 import "claros_instrument_measurement_scsensor_binding.proto";
-import "common/core/claros_common_core_limit.proto";
+import "claros_common_core_limit.proto";
  
 message InstrumentMeasurementDefinition {
     string instrumentMeasurementId = 1;  //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement

@@ -2,9 +2,9 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
-import "common/core/claros_common_core_reportablequalifier.proto";
+import "claros_common_core_reportablequalifier.proto";
 import "claros_operations_spreadsheet_worksheet_celldata_binding.proto";
-import "common/core/claros_common_core_auditevent.proto";
+import "claros_common_core_auditevent.proto";
  
 message CellData {
    double value = 1;

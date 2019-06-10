@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.form;
  
-import "common/core/claros_common_core_timewindow.proto";
+import "claros_common_core_timewindow.proto";
  
 message WorksheetIndex {
     string id = 1;  //GUID

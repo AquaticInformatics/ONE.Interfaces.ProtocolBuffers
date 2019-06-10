@@ -2,8 +2,8 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "common/core/claros_common_core_timewindow.proto";
-import "common/core/claros_common_core_timezone.proto";
+import "claros_common_core_timewindow.proto";
+import "claros_common_core_timezone.proto";
  
 message SpreadsheetDefinition {
     string version = 1;
