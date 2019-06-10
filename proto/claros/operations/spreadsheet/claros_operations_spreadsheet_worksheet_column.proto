@@ -5,10 +5,10 @@ package claros.operations.spreadsheet;
 import "claros_common_core_datasource_type.proto";
 import "claros_common_core_limit.proto";
 import "claros_instrument_measurement_binding.proto";
-import "computation/claros_common_computation_binding.proto";
+import "claros_common_computation_binding.proto";
 
 
-import "common/core/claros_common_core_reportablequalifierdefinition.proto";
+import "claros_common_core_reportablequalifierdefinition.proto";
 
  
 message Column

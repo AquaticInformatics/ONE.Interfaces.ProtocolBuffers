@@ -42,7 +42,7 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
      */
     private $prognosys;
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime eventDateTime = 8;</code>
      */
     private $eventDateTime = null;
 
@@ -59,7 +59,7 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
      *     @type \Claros\Instrument\EventMetaData[]|\Google\Protobuf\Internal\RepeatedField $reminders
      *     @type \Claros\Instrument\EventMetaData[]|\Google\Protobuf\Internal\RepeatedField $warnings
      *     @type \Claros\Instrument\PrognosysData[]|\Google\Protobuf\Internal\RepeatedField $prognosys
-     *     @type \Claros\Common\DateTime $eventDateTime
+     *     @type \Claros\Common\Core\ClarosDateTime $eventDateTime
      * }
      */
     public function __construct($data = NULL) {
@@ -222,8 +222,8 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
-     * @return \Claros\Common\DateTime
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime eventDateTime = 8;</code>
+     * @return \Claros\Common\Core\ClarosDateTime
      */
     public function getEventDateTime()
     {
@@ -231,13 +231,13 @@ class InstrumentEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime eventDateTime = 8;</code>
-     * @param \Claros\Common\DateTime $var
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime eventDateTime = 8;</code>
+     * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
      */
     public function setEventDateTime($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\DateTime::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Core\ClarosDateTime::class);
         $this->eventDateTime = $var;
 
         return $this;

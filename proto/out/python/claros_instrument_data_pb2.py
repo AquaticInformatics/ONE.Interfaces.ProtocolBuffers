@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 import claros_instrument_event_pb2 as claros__instrument__event__pb2
 import claros_instrument_measurement_pb2 as claros__instrument__measurement__pb2
-import claros_common_datetime_pb2 as claros__common__datetime__pb2
+import claros_common_core_clarosdatetime_pb2 as claros__common__core__clarosdatetime__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -23,9 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.instrument',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1c\x63laros_instrument_data.proto\x12\x11\x63laros.instrument\x1a\x1d\x63laros_instrument_event.proto\x1a#claros_instrument_measurement.proto\x1a\x1c\x63laros_common_datetime.proto\"\xc3\x03\n\x0eInstrumentData\x12\x10\n\x08tenantId\x18\x01 \x01(\t\x12\x10\n\x08\x66usionId\x18\x02 \x01(\t\x12\x32\n\x06\x65vents\x18\x03 \x01(\x0b\x32\".claros.instrument.InstrumentEvent\x12>\n\x0cmeasurements\x18\x04 \x03(\x0b\x32(.claros.instrument.InstrumentMeasurement\x12\x41\n\x08settings\x18\x05 \x03(\x0b\x32/.claros.instrument.InstrumentData.SettingsEntry\x12=\n\x06states\x18\x06 \x03(\x0b\x32-.claros.instrument.InstrumentData.StatesEntry\x12\x37\n\x16instrumentDataDateTime\x18\x07 \x01(\x0b\x32\x17.claros.common.ClarosDateTime\x1a/\n\rSettingsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a-\n\x0bStatesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x62\x06proto3')
+  serialized_pb=_b('\n\x1c\x63laros_instrument_data.proto\x12\x11\x63laros.instrument\x1a\x1d\x63laros_instrument_event.proto\x1a#claros_instrument_measurement.proto\x1a\'claros_common_core_clarosdatetime.proto\"\xce\x03\n\x0eInstrumentData\x12\x10\n\x08tenantId\x18\x01 \x01(\t\x12\x10\n\x08\x66usionId\x18\x02 \x01(\t\x12\x32\n\x06\x65vents\x18\x03 \x01(\x0b\x32\".claros.instrument.InstrumentEvent\x12>\n\x0cmeasurements\x18\x04 \x03(\x0b\x32(.claros.instrument.InstrumentMeasurement\x12\x41\n\x08settings\x18\x05 \x03(\x0b\x32/.claros.instrument.InstrumentData.SettingsEntry\x12=\n\x06states\x18\x06 \x03(\x0b\x32-.claros.instrument.InstrumentData.StatesEntry\x12\x42\n\x16instrumentDataDateTime\x18\x07 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x1a/\n\rSettingsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a-\n\x0bStatesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x62\x06proto3')
   ,
-  dependencies=[claros__instrument__event__pb2.DESCRIPTOR,claros__instrument__measurement__pb2.DESCRIPTOR,claros__common__datetime__pb2.DESCRIPTOR,])
+  dependencies=[claros__instrument__event__pb2.DESCRIPTOR,claros__instrument__measurement__pb2.DESCRIPTOR,claros__common__core__clarosdatetime__pb2.DESCRIPTOR,])
 
 
 
@@ -63,8 +63,8 @@ _INSTRUMENTDATA_SETTINGSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=507,
-  serialized_end=554,
+  serialized_start=529,
+  serialized_end=576,
 )
 
 _INSTRUMENTDATA_STATESENTRY = _descriptor.Descriptor(
@@ -100,8 +100,8 @@ _INSTRUMENTDATA_STATESENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=556,
-  serialized_end=601,
+  serialized_start=578,
+  serialized_end=623,
 )
 
 _INSTRUMENTDATA = _descriptor.Descriptor(
@@ -172,8 +172,8 @@ _INSTRUMENTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=150,
-  serialized_end=601,
+  serialized_start=161,
+  serialized_end=623,
 )
 
 _INSTRUMENTDATA_SETTINGSENTRY.containing_type = _INSTRUMENTDATA
@@ -182,7 +182,7 @@ _INSTRUMENTDATA.fields_by_name['events'].message_type = claros__instrument__even
 _INSTRUMENTDATA.fields_by_name['measurements'].message_type = claros__instrument__measurement__pb2._INSTRUMENTMEASUREMENT
 _INSTRUMENTDATA.fields_by_name['settings'].message_type = _INSTRUMENTDATA_SETTINGSENTRY
 _INSTRUMENTDATA.fields_by_name['states'].message_type = _INSTRUMENTDATA_STATESENTRY
-_INSTRUMENTDATA.fields_by_name['instrumentDataDateTime'].message_type = claros__common__datetime__pb2._DATETIME
+_INSTRUMENTDATA.fields_by_name['instrumentDataDateTime'].message_type = claros__common__core__clarosdatetime__pb2._CLAROSDATETIME
 DESCRIPTOR.message_types_by_name['InstrumentData'] = _INSTRUMENTDATA
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

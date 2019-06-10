@@ -28,7 +28,7 @@
 CF_EXTERN_C_BEGIN
 
 @class Calibration;
-@class DateTime;
+@class ClarosDateTime;
 @class EventMetaData;
 @class PrognosysData;
 
@@ -92,7 +92,7 @@ typedef GPB_ENUM(InstrumentEvent_FieldNumber) {
 /** The number of items in @c prognosysArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger prognosysArray_Count;
 
-@property(nonatomic, readwrite, strong, null_resettable) DateTime *eventDateTime;
+@property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *eventDateTime;
 /** Test to see if @c eventDateTime has been set. */
 @property(nonatomic, readwrite) BOOL hasEventDateTime;
 

@@ -3,7 +3,7 @@
 
 require 'google/protobuf'
 
-require 'claros_common_measurement_pb'
+require 'claros_common_core_measurement_pb'
 require 'claros_instrument_event_pb'
 require 'claros_common_gis_gis_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
@@ -12,7 +12,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :instrumentMeasurementId, :string, 1
       optional :channel, :int32, 2
       optional :fusionId, :string, 3
-      optional :measurement, :message, 4, "claros.common.Measurement"
+      optional :measurement, :message, 4, "claros.common.core.Measurement"
       optional :supportingMeasurements, :message, 5, "claros.instrument.InstrumentMeasurement"
       optional :gis, :message, 6, "claros.common.gis.GIS"
       optional :measurementDataExtended, :string, 7

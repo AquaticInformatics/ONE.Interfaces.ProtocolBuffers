@@ -12,7 +12,7 @@ goog.provide('proto.claros.instrument.InstrumentEvent');
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.ClarosDateTime');
+goog.require('proto.claros.common.core.ClarosDateTime');
 goog.require('proto.claros.instrument.Calibration');
 goog.require('proto.claros.instrument.EventMetaData');
 goog.require('proto.claros.instrument.PrognosysData');
@@ -89,7 +89,7 @@ proto.claros.instrument.InstrumentEvent.toObject = function(includeInstance, msg
     proto.claros.instrument.EventMetaData.toObject, includeInstance),
     prognosysList: jspb.Message.toObjectList(msg.getPrognosysList(),
     proto.claros.instrument.PrognosysData.toObject, includeInstance),
-    eventdatetime: (f = msg.getEventdatetime()) && proto.claros.common.ClarosDateTime.toObject(includeInstance, f)
+    eventdatetime: (f = msg.getEventdatetime()) && proto.claros.common.core.ClarosDateTime.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -162,8 +162,8 @@ proto.claros.instrument.InstrumentEvent.deserializeBinaryFromReader = function(m
       msg.addPrognosys(value);
       break;
     case 8:
-      var value = new proto.claros.common.ClarosDateTime;
-      reader.readMessage(value,proto.claros.common.ClarosDateTime.deserializeBinaryFromReader);
+      var value = new proto.claros.common.core.ClarosDateTime;
+      reader.readMessage(value,proto.claros.common.core.ClarosDateTime.deserializeBinaryFromReader);
       msg.setEventdatetime(value);
       break;
     default:
@@ -256,7 +256,7 @@ proto.claros.instrument.InstrumentEvent.serializeBinaryToWriter = function(messa
     writer.writeMessage(
       8,
       f,
-      proto.claros.common.ClarosDateTime.serializeBinaryToWriter
+      proto.claros.common.core.ClarosDateTime.serializeBinaryToWriter
     );
   }
 };
@@ -501,16 +501,16 @@ proto.claros.instrument.InstrumentEvent.prototype.clearPrognosysList = function(
 
 
 /**
- * optional claros.common.ClarosDateTime eventDateTime = 8;
- * @return {?proto.claros.common.ClarosDateTime}
+ * optional claros.common.core.ClarosDateTime eventDateTime = 8;
+ * @return {?proto.claros.common.core.ClarosDateTime}
  */
 proto.claros.instrument.InstrumentEvent.prototype.getEventdatetime = function() {
-  return /** @type{?proto.claros.common.ClarosDateTime} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.ClarosDateTime, 8));
+  return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 8));
 };
 
 
-/** @param {?proto.claros.common.ClarosDateTime|undefined} value */
+/** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
 proto.claros.instrument.InstrumentEvent.prototype.setEventdatetime = function(value) {
   jspb.Message.setWrapperField(this, 8, value);
 };

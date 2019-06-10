@@ -31,7 +31,7 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "claros_common_datetime.pb.h"
+#include "claros_common_core_clarosdatetime.pb.h"
 #include "claros_instrument_event_metadata.pb.h"
 #include "claros_instrument_calibration.pb.h"
 #include "claros_instrument_prognosys.pb.h"
@@ -248,14 +248,14 @@ class InstrumentEvent :
   const ::google::protobuf::RepeatedPtrField< ::claros::instrument::PrognosysData >&
       prognosys() const;
 
-  // .claros.common.ClarosDateTime eventDateTime = 8;
+  // .claros.common.core.ClarosDateTime eventDateTime = 8;
   bool has_eventdatetime() const;
   void clear_eventdatetime();
   static const int kEventDateTimeFieldNumber = 8;
-  const ::claros::common::DateTime& eventdatetime() const;
-  ::claros::common::DateTime* release_eventdatetime();
-  ::claros::common::DateTime* mutable_eventdatetime();
-  void set_allocated_eventdatetime(::claros::common::DateTime* eventdatetime);
+  const ::claros::common::core::ClarosDateTime& eventdatetime() const;
+  ::claros::common::core::ClarosDateTime* release_eventdatetime();
+  ::claros::common::core::ClarosDateTime* mutable_eventdatetime();
+  void set_allocated_eventdatetime(::claros::common::core::ClarosDateTime* eventdatetime);
 
   // @@protoc_insertion_point(class_scope:claros.instrument.InstrumentEvent)
  private:
@@ -269,7 +269,7 @@ class InstrumentEvent :
   ::google::protobuf::RepeatedPtrField< ::claros::instrument::EventMetaData > reminders_;
   ::google::protobuf::RepeatedPtrField< ::claros::instrument::EventMetaData > warnings_;
   ::google::protobuf::RepeatedPtrField< ::claros::instrument::PrognosysData > prognosys_;
-  ::claros::common::DateTime* eventdatetime_;
+  ::claros::common::core::ClarosDateTime* eventdatetime_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_claros_5finstrument_5fevent_2eproto;
 };
@@ -473,33 +473,33 @@ InstrumentEvent::prognosys() const {
   return prognosys_;
 }
 
-// .claros.common.ClarosDateTime eventDateTime = 8;
+// .claros.common.core.ClarosDateTime eventDateTime = 8;
 inline bool InstrumentEvent::has_eventdatetime() const {
   return this != internal_default_instance() && eventdatetime_ != nullptr;
 }
-inline const ::claros::common::DateTime& InstrumentEvent::eventdatetime() const {
-  const ::claros::common::DateTime* p = eventdatetime_;
+inline const ::claros::common::core::ClarosDateTime& InstrumentEvent::eventdatetime() const {
+  const ::claros::common::core::ClarosDateTime* p = eventdatetime_;
   // @@protoc_insertion_point(field_get:claros.instrument.InstrumentEvent.eventDateTime)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime*>(
-      &::claros::common::_DateTime_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
+      &::claros::common::core::_ClarosDateTime_default_instance_);
 }
-inline ::claros::common::DateTime* InstrumentEvent::release_eventdatetime() {
+inline ::claros::common::core::ClarosDateTime* InstrumentEvent::release_eventdatetime() {
   // @@protoc_insertion_point(field_release:claros.instrument.InstrumentEvent.eventDateTime)
   
-  ::claros::common::DateTime* temp = eventdatetime_;
+  ::claros::common::core::ClarosDateTime* temp = eventdatetime_;
   eventdatetime_ = nullptr;
   return temp;
 }
-inline ::claros::common::DateTime* InstrumentEvent::mutable_eventdatetime() {
+inline ::claros::common::core::ClarosDateTime* InstrumentEvent::mutable_eventdatetime() {
   
   if (eventdatetime_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::DateTime>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     eventdatetime_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentEvent.eventDateTime)
   return eventdatetime_;
 }
-inline void InstrumentEvent::set_allocated_eventdatetime(::claros::common::DateTime* eventdatetime) {
+inline void InstrumentEvent::set_allocated_eventdatetime(::claros::common::core::ClarosDateTime* eventdatetime) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(eventdatetime_);

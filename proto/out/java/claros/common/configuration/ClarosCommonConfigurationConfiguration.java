@@ -39,17 +39,17 @@ public final class ClarosCommonConfigurationConfiguration {
         getCreatedByIdBytes();
 
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
     boolean hasCreatedOn();
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
-    claros.common.ClarosCommonDatetime.DateTime getCreatedOn();
+    claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getCreatedOn();
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
-    claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder();
+    claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getCreatedOnOrBuilder();
 
     /**
      * <code>string modifiedById = 4;</code>
@@ -62,17 +62,17 @@ public final class ClarosCommonConfigurationConfiguration {
         getModifiedByIdBytes();
 
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
     boolean hasModifiedOn();
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
-    claros.common.ClarosCommonDatetime.DateTime getModifiedOn();
+    claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getModifiedOn();
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
-    claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder();
+    claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getModifiedOnOrBuilder();
 
     /**
      * <code>string configurationData = 6;</code>
@@ -91,7 +91,7 @@ public final class ClarosCommonConfigurationConfiguration {
     /**
      * <code>.claros.common.configuration.EntityType entityTypeId = 7;</code>
      */
-    claros.common.configuration.ClarosCommonEnumEntitytype.EntityType getEntityTypeId();
+    claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType getEntityTypeId();
 
     /**
      * <code>string filterById = 8;</code>
@@ -134,28 +134,38 @@ public final class ClarosCommonConfigurationConfiguration {
     int getVersion();
 
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges> 
-        getPrivilegesList();
+    int getPrivilegeCount();
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    claros.common.configuration.ClarosCommonPrivileges.Privileges getPrivileges(int index);
+    boolean containsPrivilege(
+        java.lang.String key);
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * Use {@link #getPrivilegeMap()} instead.
      */
-    int getPrivilegesCount();
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+    getPrivilege();
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    java.util.List<? extends claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder> 
-        getPrivilegesOrBuilderList();
+    java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+    getPrivilegeMap();
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder getPrivilegesOrBuilder(
-        int index);
+
+    claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrDefault(
+        java.lang.String key,
+        claros.common.configuration.ClarosCommonConfigurationRights.Rights defaultValue);
+    /**
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
+     */
+
+    claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrThrow(
+        java.lang.String key);
   }
   /**
    * Protobuf type {@code claros.common.configuration.Configuration}
@@ -178,7 +188,6 @@ public final class ClarosCommonConfigurationConfiguration {
       filterById_ = "";
       tenantId_ = "";
       ownerId_ = "";
-      privileges_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -218,11 +227,11 @@ public final class ClarosCommonConfigurationConfiguration {
               break;
             }
             case 26: {
-              claros.common.ClarosCommonDatetime.DateTime.Builder subBuilder = null;
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder subBuilder = null;
               if (createdOn_ != null) {
                 subBuilder = createdOn_.toBuilder();
               }
-              createdOn_ = input.readMessage(claros.common.ClarosCommonDatetime.DateTime.parser(), extensionRegistry);
+              createdOn_ = input.readMessage(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(createdOn_);
                 createdOn_ = subBuilder.buildPartial();
@@ -237,11 +246,11 @@ public final class ClarosCommonConfigurationConfiguration {
               break;
             }
             case 42: {
-              claros.common.ClarosCommonDatetime.DateTime.Builder subBuilder = null;
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder subBuilder = null;
               if (modifiedOn_ != null) {
                 subBuilder = modifiedOn_.toBuilder();
               }
-              modifiedOn_ = input.readMessage(claros.common.ClarosCommonDatetime.DateTime.parser(), extensionRegistry);
+              modifiedOn_ = input.readMessage(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(modifiedOn_);
                 modifiedOn_ = subBuilder.buildPartial();
@@ -291,11 +300,15 @@ public final class ClarosCommonConfigurationConfiguration {
             }
             case 106: {
               if (!((mutable_bitField0_ & 0x00001000) != 0)) {
-                privileges_ = new java.util.ArrayList<claros.common.configuration.ClarosCommonPrivileges.Privileges>();
+                privilege_ = com.google.protobuf.MapField.newMapField(
+                    PrivilegeDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00001000;
               }
-              privileges_.add(
-                  input.readMessage(claros.common.configuration.ClarosCommonPrivileges.Privileges.parser(), extensionRegistry));
+              com.google.protobuf.MapEntry<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+              privilege__ = input.readMessage(
+                  PrivilegeDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              privilege_.getMutableMap().put(
+                  privilege__.getKey(), privilege__.getValue());
               break;
             }
             default: {
@@ -313,9 +326,6 @@ public final class ClarosCommonConfigurationConfiguration {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00001000) != 0)) {
-          privileges_ = java.util.Collections.unmodifiableList(privileges_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -325,6 +335,18 @@ public final class ClarosCommonConfigurationConfiguration {
       return claros.common.configuration.ClarosCommonConfigurationConfiguration.internal_static_claros_common_configuration_Configuration_descriptor;
     }
 
+    @SuppressWarnings({"rawtypes"})
+    @java.lang.Override
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
+      switch (number) {
+        case 13:
+          return internalGetPrivilege();
+        default:
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
+      }
+    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -403,23 +425,23 @@ public final class ClarosCommonConfigurationConfiguration {
     }
 
     public static final int CREATEDON_FIELD_NUMBER = 3;
-    private claros.common.ClarosCommonDatetime.DateTime createdOn_;
+    private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime createdOn_;
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
     public boolean hasCreatedOn() {
       return createdOn_ != null;
     }
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
-    public claros.common.ClarosCommonDatetime.DateTime getCreatedOn() {
-      return createdOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : createdOn_;
+    public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getCreatedOn() {
+      return createdOn_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : createdOn_;
     }
     /**
-     * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
-    public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder() {
+    public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getCreatedOnOrBuilder() {
       return getCreatedOn();
     }
 
@@ -458,23 +480,23 @@ public final class ClarosCommonConfigurationConfiguration {
     }
 
     public static final int MODIFIEDON_FIELD_NUMBER = 5;
-    private claros.common.ClarosCommonDatetime.DateTime modifiedOn_;
+    private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime modifiedOn_;
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
     public boolean hasModifiedOn() {
       return modifiedOn_ != null;
     }
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
-    public claros.common.ClarosCommonDatetime.DateTime getModifiedOn() {
-      return modifiedOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : modifiedOn_;
+    public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getModifiedOn() {
+      return modifiedOn_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : modifiedOn_;
     }
     /**
-     * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
-    public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder() {
+    public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getModifiedOnOrBuilder() {
       return getModifiedOn();
     }
 
@@ -523,10 +545,10 @@ public final class ClarosCommonConfigurationConfiguration {
     /**
      * <code>.claros.common.configuration.EntityType entityTypeId = 7;</code>
      */
-    public claros.common.configuration.ClarosCommonEnumEntitytype.EntityType getEntityTypeId() {
+    public claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType getEntityTypeId() {
       @SuppressWarnings("deprecation")
-      claros.common.configuration.ClarosCommonEnumEntitytype.EntityType result = claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.valueOf(entityTypeId_);
-      return result == null ? claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.UNRECOGNIZED : result;
+      claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType result = claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.valueOf(entityTypeId_);
+      return result == null ? claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.UNRECOGNIZED : result;
     }
 
     public static final int FILTERBYID_FIELD_NUMBER = 8;
@@ -649,39 +671,80 @@ public final class ClarosCommonConfigurationConfiguration {
       return version_;
     }
 
-    public static final int PRIVILEGES_FIELD_NUMBER = 13;
-    private java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges> privileges_;
-    /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-     */
-    public java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges> getPrivilegesList() {
-      return privileges_;
+    public static final int PRIVILEGE_FIELD_NUMBER = 13;
+    private static final class PrivilegeDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>newDefaultInstance(
+                  claros.common.configuration.ClarosCommonConfigurationConfiguration.internal_static_claros_common_configuration_Configuration_PrivilegeEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "",
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  claros.common.configuration.ClarosCommonConfigurationRights.Rights.getDefaultInstance());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> privilege_;
+    private com.google.protobuf.MapField<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+    internalGetPrivilege() {
+      if (privilege_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            PrivilegeDefaultEntryHolder.defaultEntry);
+      }
+      return privilege_;
+    }
+
+    public int getPrivilegeCount() {
+      return internalGetPrivilege().getMap().size();
     }
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    public java.util.List<? extends claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder> 
-        getPrivilegesOrBuilderList() {
-      return privileges_;
+
+    public boolean containsPrivilege(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      return internalGetPrivilege().getMap().containsKey(key);
     }
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * Use {@link #getPrivilegeMap()} instead.
      */
-    public int getPrivilegesCount() {
-      return privileges_.size();
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> getPrivilege() {
+      return getPrivilegeMap();
     }
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    public claros.common.configuration.ClarosCommonPrivileges.Privileges getPrivileges(int index) {
-      return privileges_.get(index);
+
+    public java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> getPrivilegeMap() {
+      return internalGetPrivilege().getMap();
     }
     /**
-     * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
      */
-    public claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder getPrivilegesOrBuilder(
-        int index) {
-      return privileges_.get(index);
+
+    public claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrDefault(
+        java.lang.String key,
+        claros.common.configuration.ClarosCommonConfigurationRights.Rights defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> map =
+          internalGetPrivilege().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
+     */
+
+    public claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> map =
+          internalGetPrivilege().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -716,7 +779,7 @@ public final class ClarosCommonConfigurationConfiguration {
       if (!getConfigurationDataBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, configurationData_);
       }
-      if (entityTypeId_ != claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.FormTemplate.getNumber()) {
+      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ET_UNKNOWN.getNumber()) {
         output.writeEnum(7, entityTypeId_);
       }
       if (!getFilterByIdBytes().isEmpty()) {
@@ -734,9 +797,12 @@ public final class ClarosCommonConfigurationConfiguration {
       if (version_ != 0) {
         output.writeUInt32(12, version_);
       }
-      for (int i = 0; i < privileges_.size(); i++) {
-        output.writeMessage(13, privileges_.get(i));
-      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeStringMapTo(
+          output,
+          internalGetPrivilege(),
+          PrivilegeDefaultEntryHolder.defaultEntry,
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -766,7 +832,7 @@ public final class ClarosCommonConfigurationConfiguration {
       if (!getConfigurationDataBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, configurationData_);
       }
-      if (entityTypeId_ != claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.FormTemplate.getNumber()) {
+      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ET_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, entityTypeId_);
       }
@@ -787,9 +853,15 @@ public final class ClarosCommonConfigurationConfiguration {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, version_);
       }
-      for (int i = 0; i < privileges_.size(); i++) {
+      for (java.util.Map.Entry<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> entry
+           : internalGetPrivilege().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+        privilege__ = PrivilegeDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, privileges_.get(i));
+            .computeMessageSize(13, privilege__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -835,8 +907,8 @@ public final class ClarosCommonConfigurationConfiguration {
           != other.getPublic()) return false;
       if (getVersion()
           != other.getVersion()) return false;
-      if (!getPrivilegesList()
-          .equals(other.getPrivilegesList())) return false;
+      if (!internalGetPrivilege().equals(
+          other.internalGetPrivilege())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -877,9 +949,9 @@ public final class ClarosCommonConfigurationConfiguration {
           getPublic());
       hash = (37 * hash) + VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getVersion();
-      if (getPrivilegesCount() > 0) {
-        hash = (37 * hash) + PRIVILEGES_FIELD_NUMBER;
-        hash = (53 * hash) + getPrivilegesList().hashCode();
+      if (!internalGetPrivilege().getMap().isEmpty()) {
+        hash = (37 * hash) + PRIVILEGE_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetPrivilege().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -988,6 +1060,28 @@ public final class ClarosCommonConfigurationConfiguration {
         return claros.common.configuration.ClarosCommonConfigurationConfiguration.internal_static_claros_common_configuration_Configuration_descriptor;
       }
 
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
+        switch (number) {
+          case 13:
+            return internalGetPrivilege();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
+      @SuppressWarnings({"rawtypes"})
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
+        switch (number) {
+          case 13:
+            return internalGetMutablePrivilege();
+          default:
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
+        }
+      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
@@ -1009,7 +1103,6 @@ public final class ClarosCommonConfigurationConfiguration {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getPrivilegesFieldBuilder();
         }
       }
       @java.lang.Override
@@ -1047,12 +1140,7 @@ public final class ClarosCommonConfigurationConfiguration {
 
         version_ = 0;
 
-        if (privilegesBuilder_ == null) {
-          privileges_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00001000);
-        } else {
-          privilegesBuilder_.clear();
-        }
+        internalGetMutablePrivilege().clear();
         return this;
       }
 
@@ -1101,15 +1189,8 @@ public final class ClarosCommonConfigurationConfiguration {
         result.ownerId_ = ownerId_;
         result.public_ = public_;
         result.version_ = version_;
-        if (privilegesBuilder_ == null) {
-          if (((bitField0_ & 0x00001000) != 0)) {
-            privileges_ = java.util.Collections.unmodifiableList(privileges_);
-            bitField0_ = (bitField0_ & ~0x00001000);
-          }
-          result.privileges_ = privileges_;
-        } else {
-          result.privileges_ = privilegesBuilder_.build();
-        }
+        result.privilege_ = internalGetPrivilege();
+        result.privilege_.makeImmutable();
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1202,32 +1283,8 @@ public final class ClarosCommonConfigurationConfiguration {
         if (other.getVersion() != 0) {
           setVersion(other.getVersion());
         }
-        if (privilegesBuilder_ == null) {
-          if (!other.privileges_.isEmpty()) {
-            if (privileges_.isEmpty()) {
-              privileges_ = other.privileges_;
-              bitField0_ = (bitField0_ & ~0x00001000);
-            } else {
-              ensurePrivilegesIsMutable();
-              privileges_.addAll(other.privileges_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.privileges_.isEmpty()) {
-            if (privilegesBuilder_.isEmpty()) {
-              privilegesBuilder_.dispose();
-              privilegesBuilder_ = null;
-              privileges_ = other.privileges_;
-              bitField0_ = (bitField0_ & ~0x00001000);
-              privilegesBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPrivilegesFieldBuilder() : null;
-            } else {
-              privilegesBuilder_.addAllMessages(other.privileges_);
-            }
-          }
-        }
+        internalGetMutablePrivilege().mergeFrom(
+            other.internalGetPrivilege());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1396,29 +1453,29 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
 
-      private claros.common.ClarosCommonDatetime.DateTime createdOn_;
+      private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime createdOn_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> createdOnBuilder_;
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> createdOnBuilder_;
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
       public boolean hasCreatedOn() {
         return createdOnBuilder_ != null || createdOn_ != null;
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTime getCreatedOn() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getCreatedOn() {
         if (createdOnBuilder_ == null) {
-          return createdOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : createdOn_;
+          return createdOn_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : createdOn_;
         } else {
           return createdOnBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
-      public Builder setCreatedOn(claros.common.ClarosCommonDatetime.DateTime value) {
+      public Builder setCreatedOn(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
         if (createdOnBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1432,10 +1489,10 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
       public Builder setCreatedOn(
-          claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder builderForValue) {
         if (createdOnBuilder_ == null) {
           createdOn_ = builderForValue.build();
           onChanged();
@@ -1446,13 +1503,13 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
-      public Builder mergeCreatedOn(claros.common.ClarosCommonDatetime.DateTime value) {
+      public Builder mergeCreatedOn(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
         if (createdOnBuilder_ == null) {
           if (createdOn_ != null) {
             createdOn_ =
-              claros.common.ClarosCommonDatetime.DateTime.newBuilder(createdOn_).mergeFrom(value).buildPartial();
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.newBuilder(createdOn_).mergeFrom(value).buildPartial();
           } else {
             createdOn_ = value;
           }
@@ -1464,7 +1521,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
       public Builder clearCreatedOn() {
         if (createdOnBuilder_ == null) {
@@ -1478,33 +1535,33 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTime.Builder getCreatedOnBuilder() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder getCreatedOnBuilder() {
         
         onChanged();
         return getCreatedOnFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getCreatedOnOrBuilder() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getCreatedOnOrBuilder() {
         if (createdOnBuilder_ != null) {
           return createdOnBuilder_.getMessageOrBuilder();
         } else {
           return createdOn_ == null ?
-              claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : createdOn_;
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : createdOn_;
         }
       }
       /**
-       * <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+       * <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> 
           getCreatedOnFieldBuilder() {
         if (createdOnBuilder_ == null) {
           createdOnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder>(
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder>(
                   getCreatedOn(),
                   getParentForChildren(),
                   isClean());
@@ -1582,29 +1639,29 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
 
-      private claros.common.ClarosCommonDatetime.DateTime modifiedOn_;
+      private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime modifiedOn_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> modifiedOnBuilder_;
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> modifiedOnBuilder_;
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
       public boolean hasModifiedOn() {
         return modifiedOnBuilder_ != null || modifiedOn_ != null;
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTime getModifiedOn() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getModifiedOn() {
         if (modifiedOnBuilder_ == null) {
-          return modifiedOn_ == null ? claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : modifiedOn_;
+          return modifiedOn_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : modifiedOn_;
         } else {
           return modifiedOnBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
-      public Builder setModifiedOn(claros.common.ClarosCommonDatetime.DateTime value) {
+      public Builder setModifiedOn(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
         if (modifiedOnBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1618,10 +1675,10 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder setModifiedOn(
-          claros.common.ClarosCommonDatetime.DateTime.Builder builderForValue) {
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder builderForValue) {
         if (modifiedOnBuilder_ == null) {
           modifiedOn_ = builderForValue.build();
           onChanged();
@@ -1632,13 +1689,13 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
-      public Builder mergeModifiedOn(claros.common.ClarosCommonDatetime.DateTime value) {
+      public Builder mergeModifiedOn(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
         if (modifiedOnBuilder_ == null) {
           if (modifiedOn_ != null) {
             modifiedOn_ =
-              claros.common.ClarosCommonDatetime.DateTime.newBuilder(modifiedOn_).mergeFrom(value).buildPartial();
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.newBuilder(modifiedOn_).mergeFrom(value).buildPartial();
           } else {
             modifiedOn_ = value;
           }
@@ -1650,7 +1707,7 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
       public Builder clearModifiedOn() {
         if (modifiedOnBuilder_ == null) {
@@ -1664,33 +1721,33 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTime.Builder getModifiedOnBuilder() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder getModifiedOnBuilder() {
         
         onChanged();
         return getModifiedOnFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
-      public claros.common.ClarosCommonDatetime.DateTimeOrBuilder getModifiedOnOrBuilder() {
+      public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getModifiedOnOrBuilder() {
         if (modifiedOnBuilder_ != null) {
           return modifiedOnBuilder_.getMessageOrBuilder();
         } else {
           return modifiedOn_ == null ?
-              claros.common.ClarosCommonDatetime.DateTime.getDefaultInstance() : modifiedOn_;
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : modifiedOn_;
         }
       }
       /**
-       * <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+       * <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder> 
+          claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> 
           getModifiedOnFieldBuilder() {
         if (modifiedOnBuilder_ == null) {
           modifiedOnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.ClarosCommonDatetime.DateTime, claros.common.ClarosCommonDatetime.DateTime.Builder, claros.common.ClarosCommonDatetime.DateTimeOrBuilder>(
+              claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder>(
                   getModifiedOn(),
                   getParentForChildren(),
                   isClean());
@@ -1786,15 +1843,15 @@ public final class ClarosCommonConfigurationConfiguration {
       /**
        * <code>.claros.common.configuration.EntityType entityTypeId = 7;</code>
        */
-      public claros.common.configuration.ClarosCommonEnumEntitytype.EntityType getEntityTypeId() {
+      public claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType getEntityTypeId() {
         @SuppressWarnings("deprecation")
-        claros.common.configuration.ClarosCommonEnumEntitytype.EntityType result = claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.valueOf(entityTypeId_);
-        return result == null ? claros.common.configuration.ClarosCommonEnumEntitytype.EntityType.UNRECOGNIZED : result;
+        claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType result = claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.valueOf(entityTypeId_);
+        return result == null ? claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.UNRECOGNIZED : result;
       }
       /**
        * <code>.claros.common.configuration.EntityType entityTypeId = 7;</code>
        */
-      public Builder setEntityTypeId(claros.common.configuration.ClarosCommonEnumEntitytype.EntityType value) {
+      public Builder setEntityTypeId(claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2072,244 +2129,127 @@ public final class ClarosCommonConfigurationConfiguration {
         return this;
       }
 
-      private java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges> privileges_ =
-        java.util.Collections.emptyList();
-      private void ensurePrivilegesIsMutable() {
-        if (!((bitField0_ & 0x00001000) != 0)) {
-          privileges_ = new java.util.ArrayList<claros.common.configuration.ClarosCommonPrivileges.Privileges>(privileges_);
-          bitField0_ |= 0x00001000;
-         }
+      private com.google.protobuf.MapField<
+          java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> privilege_;
+      private com.google.protobuf.MapField<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+      internalGetPrivilege() {
+        if (privilege_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              PrivilegeDefaultEntryHolder.defaultEntry);
+        }
+        return privilege_;
+      }
+      private com.google.protobuf.MapField<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+      internalGetMutablePrivilege() {
+        onChanged();;
+        if (privilege_ == null) {
+          privilege_ = com.google.protobuf.MapField.newMapField(
+              PrivilegeDefaultEntryHolder.defaultEntry);
+        }
+        if (!privilege_.isMutable()) {
+          privilege_ = privilege_.copy();
+        }
+        return privilege_;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          claros.common.configuration.ClarosCommonPrivileges.Privileges, claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder, claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder> privilegesBuilder_;
+      public int getPrivilegeCount() {
+        return internalGetPrivilege().getMap().size();
+      }
+      /**
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
+       */
 
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges> getPrivilegesList() {
-        if (privilegesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(privileges_);
-        } else {
-          return privilegesBuilder_.getMessageList();
-        }
+      public boolean containsPrivilege(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        return internalGetPrivilege().getMap().containsKey(key);
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * Use {@link #getPrivilegeMap()} instead.
        */
-      public int getPrivilegesCount() {
-        if (privilegesBuilder_ == null) {
-          return privileges_.size();
-        } else {
-          return privilegesBuilder_.getCount();
-        }
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> getPrivilege() {
+        return getPrivilegeMap();
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
        */
-      public claros.common.configuration.ClarosCommonPrivileges.Privileges getPrivileges(int index) {
-        if (privilegesBuilder_ == null) {
-          return privileges_.get(index);
-        } else {
-          return privilegesBuilder_.getMessage(index);
-        }
+
+      public java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> getPrivilegeMap() {
+        return internalGetPrivilege().getMap();
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
        */
-      public Builder setPrivileges(
-          int index, claros.common.configuration.ClarosCommonPrivileges.Privileges value) {
-        if (privilegesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePrivilegesIsMutable();
-          privileges_.set(index, value);
-          onChanged();
-        } else {
-          privilegesBuilder_.setMessage(index, value);
+
+      public claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrDefault(
+          java.lang.String key,
+          claros.common.configuration.ClarosCommonConfigurationRights.Rights defaultValue) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> map =
+            internalGetPrivilege().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
+       */
+
+      public claros.common.configuration.ClarosCommonConfigurationRights.Rights getPrivilegeOrThrow(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> map =
+            internalGetPrivilege().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
         }
+        return map.get(key);
+      }
+
+      public Builder clearPrivilege() {
+        internalGetMutablePrivilege().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
        */
-      public Builder setPrivileges(
-          int index, claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder builderForValue) {
-        if (privilegesBuilder_ == null) {
-          ensurePrivilegesIsMutable();
-          privileges_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          privilegesBuilder_.setMessage(index, builderForValue.build());
-        }
+
+      public Builder removePrivilege(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutablePrivilege().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * Use alternate mutation accessors instead.
        */
-      public Builder addPrivileges(claros.common.configuration.ClarosCommonPrivileges.Privileges value) {
-        if (privilegesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePrivilegesIsMutable();
-          privileges_.add(value);
-          onChanged();
-        } else {
-          privilegesBuilder_.addMessage(value);
-        }
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights>
+      getMutablePrivilege() {
+        return internalGetMutablePrivilege().getMutableMap();
+      }
+      /**
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
+       */
+      public Builder putPrivilege(
+          java.lang.String key,
+          claros.common.configuration.ClarosCommonConfigurationRights.Rights value) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutablePrivilege().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+       * <code>map&lt;string, .claros.common.configuration.Rights&gt; privilege = 13;</code>
        */
-      public Builder addPrivileges(
-          int index, claros.common.configuration.ClarosCommonPrivileges.Privileges value) {
-        if (privilegesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensurePrivilegesIsMutable();
-          privileges_.add(index, value);
-          onChanged();
-        } else {
-          privilegesBuilder_.addMessage(index, value);
-        }
+
+      public Builder putAllPrivilege(
+          java.util.Map<java.lang.String, claros.common.configuration.ClarosCommonConfigurationRights.Rights> values) {
+        internalGetMutablePrivilege().getMutableMap()
+            .putAll(values);
         return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public Builder addPrivileges(
-          claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder builderForValue) {
-        if (privilegesBuilder_ == null) {
-          ensurePrivilegesIsMutable();
-          privileges_.add(builderForValue.build());
-          onChanged();
-        } else {
-          privilegesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public Builder addPrivileges(
-          int index, claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder builderForValue) {
-        if (privilegesBuilder_ == null) {
-          ensurePrivilegesIsMutable();
-          privileges_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          privilegesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public Builder addAllPrivileges(
-          java.lang.Iterable<? extends claros.common.configuration.ClarosCommonPrivileges.Privileges> values) {
-        if (privilegesBuilder_ == null) {
-          ensurePrivilegesIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, privileges_);
-          onChanged();
-        } else {
-          privilegesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public Builder clearPrivileges() {
-        if (privilegesBuilder_ == null) {
-          privileges_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00001000);
-          onChanged();
-        } else {
-          privilegesBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public Builder removePrivileges(int index) {
-        if (privilegesBuilder_ == null) {
-          ensurePrivilegesIsMutable();
-          privileges_.remove(index);
-          onChanged();
-        } else {
-          privilegesBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder getPrivilegesBuilder(
-          int index) {
-        return getPrivilegesFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder getPrivilegesOrBuilder(
-          int index) {
-        if (privilegesBuilder_ == null) {
-          return privileges_.get(index);  } else {
-          return privilegesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public java.util.List<? extends claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder> 
-           getPrivilegesOrBuilderList() {
-        if (privilegesBuilder_ != null) {
-          return privilegesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(privileges_);
-        }
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder addPrivilegesBuilder() {
-        return getPrivilegesFieldBuilder().addBuilder(
-            claros.common.configuration.ClarosCommonPrivileges.Privileges.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder addPrivilegesBuilder(
-          int index) {
-        return getPrivilegesFieldBuilder().addBuilder(
-            index, claros.common.configuration.ClarosCommonPrivileges.Privileges.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-       */
-      public java.util.List<claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder> 
-           getPrivilegesBuilderList() {
-        return getPrivilegesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          claros.common.configuration.ClarosCommonPrivileges.Privileges, claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder, claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder> 
-          getPrivilegesFieldBuilder() {
-        if (privilegesBuilder_ == null) {
-          privilegesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              claros.common.configuration.ClarosCommonPrivileges.Privileges, claros.common.configuration.ClarosCommonPrivileges.Privileges.Builder, claros.common.configuration.ClarosCommonPrivileges.PrivilegesOrBuilder>(
-                  privileges_,
-                  ((bitField0_ & 0x00001000) != 0),
-                  getParentForChildren(),
-                  isClean());
-          privileges_ = null;
-        }
-        return privilegesBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -2369,6 +2309,11 @@ public final class ClarosCommonConfigurationConfiguration {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_claros_common_configuration_Configuration_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_claros_common_configuration_Configuration_PrivilegeEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_claros_common_configuration_Configuration_PrivilegeEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2379,20 +2324,24 @@ public final class ClarosCommonConfigurationConfiguration {
   static {
     java.lang.String[] descriptorData = {
       "\n/claros_common_configuration_configurat" +
-      "ion.proto\022\033claros.common.configuration\032\034" +
-      "claros_common_datetime.proto\032#claros_com" +
-      "mon_enum_entitytype.proto\032\036claros_common" +
-      "_privileges.proto\"\216\003\n\rConfiguration\022\n\n\002i" +
-      "d\030\001 \001(\t\022\023\n\013createdById\030\002 \001(\t\022*\n\tcreatedO" +
-      "n\030\003 \001(\0132\027.claros.common.ClarosDateTime\022\024\n\014modi" +
-      "fiedById\030\004 \001(\t\022+\n\nmodifiedOn\030\005 \001(\0132\027.cla" +
-      "ros.common.DateTime\022\031\n\021configurationData" +
-      "\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001(\0162\'.claros.co" +
-      "mmon.configuration.EntityType\022\022\n\nfilterB" +
-      "yId\030\010 \001(\t\022\020\n\010tenantId\030\t \001(\t\022\017\n\007ownerId\030\n" +
-      " \001(\t\022\016\n\006public\030\013 \001(\010\022\017\n\007version\030\014 \001(\r\022;\n" +
-      "\nprivileges\030\r \003(\0132\'.claros.common.config" +
-      "uration.Privilegesb\006proto3"
+      "ion.proto\022\033claros.common.configuration\032\'" +
+      "claros_common_core_clarosdatetime.proto\032" +
+      "-claros_common_configuration_entity_type" +
+      ".proto\032(claros_common_configuration_righ" +
+      "ts.proto\"\214\004\n\rConfiguration\022\n\n\002id\030\001 \001(\t\022\023" +
+      "\n\013createdById\030\002 \001(\t\0225\n\tcreatedOn\030\003 \001(\0132\"" +
+      ".claros.common.core.ClarosDateTime\022\024\n\014mo" +
+      "difiedById\030\004 \001(\t\0226\n\nmodifiedOn\030\005 \001(\0132\".c" +
+      "laros.common.core.ClarosDateTime\022\031\n\021conf" +
+      "igurationData\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001(" +
+      "\0162\'.claros.common.configuration.EntityTy" +
+      "pe\022\022\n\nfilterById\030\010 \001(\t\022\020\n\010tenantId\030\t \001(\t" +
+      "\022\017\n\007ownerId\030\n \001(\t\022\016\n\006public\030\013 \001(\010\022\017\n\007ver" +
+      "sion\030\014 \001(\r\022L\n\tprivilege\030\r \003(\01329.claros.c" +
+      "ommon.configuration.Configuration.Privil" +
+      "egeEntry\032U\n\016PrivilegeEntry\022\013\n\003key\030\001 \001(\t\022" +
+      "2\n\005value\030\002 \001(\0132#.claros.common.configura" +
+      "tion.Rights:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2405,19 +2354,25 @@ public final class ClarosCommonConfigurationConfiguration {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          claros.common.ClarosCommonDatetime.getDescriptor(),
-          claros.common.configuration.ClarosCommonEnumEntitytype.getDescriptor(),
-          claros.common.configuration.ClarosCommonPrivileges.getDescriptor(),
+          claros.common.core.ClarosCommonCoreClarosdatetime.getDescriptor(),
+          claros.common.configuration.ClarosCommonConfigurationEntityType.getDescriptor(),
+          claros.common.configuration.ClarosCommonConfigurationRights.getDescriptor(),
         }, assigner);
     internal_static_claros_common_configuration_Configuration_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_claros_common_configuration_Configuration_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_configuration_Configuration_descriptor,
-        new java.lang.String[] { "Id", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn", "ConfigurationData", "EntityTypeId", "FilterById", "TenantId", "OwnerId", "Public", "Version", "Privileges", });
-    claros.common.ClarosCommonDatetime.getDescriptor();
-    claros.common.configuration.ClarosCommonEnumEntitytype.getDescriptor();
-    claros.common.configuration.ClarosCommonPrivileges.getDescriptor();
+        new java.lang.String[] { "Id", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn", "ConfigurationData", "EntityTypeId", "FilterById", "TenantId", "OwnerId", "Public", "Version", "Privilege", });
+    internal_static_claros_common_configuration_Configuration_PrivilegeEntry_descriptor =
+      internal_static_claros_common_configuration_Configuration_descriptor.getNestedTypes().get(0);
+    internal_static_claros_common_configuration_Configuration_PrivilegeEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_claros_common_configuration_Configuration_PrivilegeEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    claros.common.core.ClarosCommonCoreClarosdatetime.getDescriptor();
+    claros.common.configuration.ClarosCommonConfigurationEntityType.getDescriptor();
+    claros.common.configuration.ClarosCommonConfigurationRights.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

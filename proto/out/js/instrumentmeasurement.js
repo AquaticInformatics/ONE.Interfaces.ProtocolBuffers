@@ -12,7 +12,7 @@ goog.provide('proto.claros.instrument.InstrumentMeasurement');
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.Measurement');
+goog.require('proto.claros.common.core.Measurement');
 goog.require('proto.claros.common.gis.GIS');
 goog.require('proto.claros.instrument.InstrumentEvent');
 
@@ -70,7 +70,7 @@ proto.claros.instrument.InstrumentMeasurement.toObject = function(includeInstanc
     instrumentmeasurementid: jspb.Message.getFieldWithDefault(msg, 1, ""),
     channel: jspb.Message.getFieldWithDefault(msg, 2, 0),
     fusionid: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    measurement: (f = msg.getMeasurement()) && proto.claros.common.Measurement.toObject(includeInstance, f),
+    measurement: (f = msg.getMeasurement()) && proto.claros.common.core.Measurement.toObject(includeInstance, f),
     supportingmeasurements: (f = msg.getSupportingmeasurements()) && proto.claros.instrument.InstrumentMeasurement.toObject(includeInstance, f),
     gis: (f = msg.getGis()) && proto.claros.common.gis.GIS.toObject(includeInstance, f),
     measurementdataextended: jspb.Message.getFieldWithDefault(msg, 7, ""),
@@ -124,8 +124,8 @@ proto.claros.instrument.InstrumentMeasurement.deserializeBinaryFromReader = func
       msg.setFusionid(value);
       break;
     case 4:
-      var value = new proto.claros.common.Measurement;
-      reader.readMessage(value,proto.claros.common.Measurement.deserializeBinaryFromReader);
+      var value = new proto.claros.common.core.Measurement;
+      reader.readMessage(value,proto.claros.common.core.Measurement.deserializeBinaryFromReader);
       msg.setMeasurement(value);
       break;
     case 5:
@@ -202,7 +202,7 @@ proto.claros.instrument.InstrumentMeasurement.serializeBinaryToWriter = function
     writer.writeMessage(
       4,
       f,
-      proto.claros.common.Measurement.serializeBinaryToWriter
+      proto.claros.common.core.Measurement.serializeBinaryToWriter
     );
   }
   f = message.getSupportingmeasurements();
@@ -285,16 +285,16 @@ proto.claros.instrument.InstrumentMeasurement.prototype.setFusionid = function(v
 
 
 /**
- * optional claros.common.Measurement measurement = 4;
- * @return {?proto.claros.common.Measurement}
+ * optional claros.common.core.Measurement measurement = 4;
+ * @return {?proto.claros.common.core.Measurement}
  */
 proto.claros.instrument.InstrumentMeasurement.prototype.getMeasurement = function() {
-  return /** @type{?proto.claros.common.Measurement} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.Measurement, 4));
+  return /** @type{?proto.claros.common.core.Measurement} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.core.Measurement, 4));
 };
 
 
-/** @param {?proto.claros.common.Measurement|undefined} value */
+/** @param {?proto.claros.common.core.Measurement|undefined} value */
 proto.claros.instrument.InstrumentMeasurement.prototype.setMeasurement = function(value) {
   jspb.Message.setWrapperField(this, 4, value);
 };

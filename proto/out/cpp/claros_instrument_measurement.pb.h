@@ -31,7 +31,7 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "claros_common_measurement.pb.h"
+#include "claros_common_core_measurement.pb.h"
 #include "claros_instrument_event.pb.h"
 #include "claros_common_gis_gis.pb.h"
 // @@protoc_insertion_point(includes)
@@ -205,14 +205,14 @@ class InstrumentMeasurement :
   ::std::string* release_measurementdataextended();
   void set_allocated_measurementdataextended(::std::string* measurementdataextended);
 
-  // .claros.common.Measurement measurement = 4;
+  // .claros.common.core.Measurement measurement = 4;
   bool has_measurement() const;
   void clear_measurement();
   static const int kMeasurementFieldNumber = 4;
-  const ::claros::common::Measurement& measurement() const;
-  ::claros::common::Measurement* release_measurement();
-  ::claros::common::Measurement* mutable_measurement();
-  void set_allocated_measurement(::claros::common::Measurement* measurement);
+  const ::claros::common::core::Measurement& measurement() const;
+  ::claros::common::core::Measurement* release_measurement();
+  ::claros::common::core::Measurement* mutable_measurement();
+  void set_allocated_measurement(::claros::common::core::Measurement* measurement);
 
   // .claros.instrument.InstrumentMeasurement supportingMeasurements = 5;
   bool has_supportingmeasurements() const;
@@ -255,7 +255,7 @@ class InstrumentMeasurement :
   ::google::protobuf::internal::ArenaStringPtr instrumentmeasurementid_;
   ::google::protobuf::internal::ArenaStringPtr fusionid_;
   ::google::protobuf::internal::ArenaStringPtr measurementdataextended_;
-  ::claros::common::Measurement* measurement_;
+  ::claros::common::core::Measurement* measurement_;
   ::claros::instrument::InstrumentMeasurement* supportingmeasurements_;
   ::claros::common::gis::GIS* gis_;
   ::claros::instrument::InstrumentEvent* measurementevent_;
@@ -394,33 +394,33 @@ inline void InstrumentMeasurement::set_allocated_fusionid(::std::string* fusioni
   // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurement.fusionId)
 }
 
-// .claros.common.Measurement measurement = 4;
+// .claros.common.core.Measurement measurement = 4;
 inline bool InstrumentMeasurement::has_measurement() const {
   return this != internal_default_instance() && measurement_ != nullptr;
 }
-inline const ::claros::common::Measurement& InstrumentMeasurement::measurement() const {
-  const ::claros::common::Measurement* p = measurement_;
+inline const ::claros::common::core::Measurement& InstrumentMeasurement::measurement() const {
+  const ::claros::common::core::Measurement* p = measurement_;
   // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurement.measurement)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::Measurement*>(
-      &::claros::common::_Measurement_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::Measurement*>(
+      &::claros::common::core::_Measurement_default_instance_);
 }
-inline ::claros::common::Measurement* InstrumentMeasurement::release_measurement() {
+inline ::claros::common::core::Measurement* InstrumentMeasurement::release_measurement() {
   // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurement.measurement)
   
-  ::claros::common::Measurement* temp = measurement_;
+  ::claros::common::core::Measurement* temp = measurement_;
   measurement_ = nullptr;
   return temp;
 }
-inline ::claros::common::Measurement* InstrumentMeasurement::mutable_measurement() {
+inline ::claros::common::core::Measurement* InstrumentMeasurement::mutable_measurement() {
   
   if (measurement_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::Measurement>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::core::Measurement>(GetArenaNoVirtual());
     measurement_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurement.measurement)
   return measurement_;
 }
-inline void InstrumentMeasurement::set_allocated_measurement(::claros::common::Measurement* measurement) {
+inline void InstrumentMeasurement::set_allocated_measurement(::claros::common::core::Measurement* measurement) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(measurement_);

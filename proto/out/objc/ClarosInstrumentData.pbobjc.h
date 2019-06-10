@@ -27,7 +27,7 @@
 
 CF_EXTERN_C_BEGIN
 
-@class DateTime;
+@class ClarosDateTime;
 @class InstrumentEvent;
 @class InstrumentMeasurement;
 
@@ -84,7 +84,7 @@ typedef GPB_ENUM(InstrumentData_FieldNumber) {
 @property(nonatomic, readonly) NSUInteger states_Count;
 
 /** this is optionally set if all children share the same time */
-@property(nonatomic, readwrite, strong, null_resettable) DateTime *instrumentDataDateTime;
+@property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *instrumentDataDateTime;
 /** Test to see if @c instrumentDataDateTime has been set. */
 @property(nonatomic, readwrite) BOOL hasInstrumentDataDateTime;
 

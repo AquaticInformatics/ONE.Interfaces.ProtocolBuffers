@@ -3,7 +3,7 @@
 
 require 'google/protobuf'
 
-require 'claros_common_datetime_pb'
+require 'claros_common_core_clarosdatetime_pb'
 require 'claros_instrument_event_metadata_pb'
 require 'claros_instrument_calibration_pb'
 require 'claros_instrument_prognosys_pb'
@@ -17,7 +17,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       repeated :reminders, :message, 5, "claros.instrument.EventMetaData"
       repeated :warnings, :message, 6, "claros.instrument.EventMetaData"
       repeated :prognosys, :message, 7, "claros.instrument.PrognosysData"
-      optional :eventDateTime, :message, 8, "claros.common.ClarosDateTime"
+      optional :eventDateTime, :message, 8, "claros.common.core.ClarosDateTime"
     end
   end
 end

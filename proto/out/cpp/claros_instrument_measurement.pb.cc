@@ -16,8 +16,8 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fmeasurement_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Measurement_claros_5fcommon_5fcore_5fmeasurement_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fgis_5fgis_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_GIS_claros_5fcommon_5fgis_5fgis_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fmeasurement_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Measurement_claros_5fcommon_5fmeasurement_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fevent_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_InstrumentEvent_claros_5finstrument_5fevent_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fmeasurement_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_InstrumentMeasurement_claros_5finstrument_5fmeasurement_2eproto;
 namespace claros {
@@ -41,7 +41,7 @@ static void InitDefaultsInstrumentMeasurement_claros_5finstrument_5fmeasurement_
 
 ::google::protobuf::internal::SCCInfo<3> scc_info_InstrumentMeasurement_claros_5finstrument_5fmeasurement_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsInstrumentMeasurement_claros_5finstrument_5fmeasurement_2eproto}, {
-      &scc_info_Measurement_claros_5fcommon_5fmeasurement_2eproto.base,
+      &scc_info_Measurement_claros_5fcommon_5fcore_5fmeasurement_2eproto.base,
       &scc_info_GIS_claros_5fcommon_5fgis_5fgis_2eproto.base,
       &scc_info_InstrumentEvent_claros_5finstrument_5fevent_2eproto.base,}};
 
@@ -84,29 +84,29 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5finstrument_5fmeasurement_2eproto[] =
   "\n#claros_instrument_measurement.proto\022\021c"
-  "laros.instrument\032\037claros_common_measurem"
-  "ent.proto\032\035claros_instrument_event.proto"
-  "\032\033claros_common_gis_gis.proto\"\332\002\n\025Instru"
-  "mentMeasurement\022\037\n\027instrumentMeasurement"
-  "Id\030\001 \001(\t\022\017\n\007channel\030\002 \001(\005\022\020\n\010fusionId\030\003 "
-  "\001(\t\022/\n\013measurement\030\004 \001(\0132\032.claros.common"
-  ".Measurement\022H\n\026supportingMeasurements\030\005"
-  " \001(\0132(.claros.instrument.InstrumentMeasu"
-  "rement\022#\n\003gis\030\006 \001(\0132\026.claros.common.gis."
-  "GIS\022\037\n\027measurementDataExtended\030\007 \001(\t\022<\n\020"
-  "measurementEvent\030\010 \001(\0132\".claros.instrume"
-  "nt.InstrumentEventb\006proto3"
+  "laros.instrument\032$claros_common_core_mea"
+  "surement.proto\032\035claros_instrument_event."
+  "proto\032\033claros_common_gis_gis.proto\"\337\002\n\025I"
+  "nstrumentMeasurement\022\037\n\027instrumentMeasur"
+  "ementId\030\001 \001(\t\022\017\n\007channel\030\002 \001(\005\022\020\n\010fusion"
+  "Id\030\003 \001(\t\0224\n\013measurement\030\004 \001(\0132\037.claros.c"
+  "ommon.core.Measurement\022H\n\026supportingMeas"
+  "urements\030\005 \001(\0132(.claros.instrument.Instr"
+  "umentMeasurement\022#\n\003gis\030\006 \001(\0132\026.claros.c"
+  "ommon.gis.GIS\022\037\n\027measurementDataExtended"
+  "\030\007 \001(\t\022<\n\020measurementEvent\030\010 \001(\0132\".claro"
+  "s.instrument.InstrumentEventb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5finstrument_5fmeasurement_2eproto = {
   false, InitDefaults_claros_5finstrument_5fmeasurement_2eproto, 
   descriptor_table_protodef_claros_5finstrument_5fmeasurement_2eproto,
-  "claros_instrument_measurement.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_2eproto, 506,
+  "claros_instrument_measurement.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_2eproto, 516,
 };
 
 void AddDescriptors_claros_5finstrument_5fmeasurement_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[3] =
   {
-    ::AddDescriptors_claros_5fcommon_5fmeasurement_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fcore_5fmeasurement_2eproto,
     ::AddDescriptors_claros_5finstrument_5fevent_2eproto,
     ::AddDescriptors_claros_5fcommon_5fgis_5fgis_2eproto,
   };
@@ -121,8 +121,8 @@ namespace instrument {
 // ===================================================================
 
 void InstrumentMeasurement::InitAsDefaultInstance() {
-  ::claros::instrument::_InstrumentMeasurement_default_instance_._instance.get_mutable()->measurement_ = const_cast< ::claros::common::Measurement*>(
-      ::claros::common::Measurement::internal_default_instance());
+  ::claros::instrument::_InstrumentMeasurement_default_instance_._instance.get_mutable()->measurement_ = const_cast< ::claros::common::core::Measurement*>(
+      ::claros::common::core::Measurement::internal_default_instance());
   ::claros::instrument::_InstrumentMeasurement_default_instance_._instance.get_mutable()->supportingmeasurements_ = const_cast< ::claros::instrument::InstrumentMeasurement*>(
       ::claros::instrument::InstrumentMeasurement::internal_default_instance());
   ::claros::instrument::_InstrumentMeasurement_default_instance_._instance.get_mutable()->gis_ = const_cast< ::claros::common::gis::GIS*>(
@@ -132,13 +132,13 @@ void InstrumentMeasurement::InitAsDefaultInstance() {
 }
 class InstrumentMeasurement::HasBitSetters {
  public:
-  static const ::claros::common::Measurement& measurement(const InstrumentMeasurement* msg);
+  static const ::claros::common::core::Measurement& measurement(const InstrumentMeasurement* msg);
   static const ::claros::instrument::InstrumentMeasurement& supportingmeasurements(const InstrumentMeasurement* msg);
   static const ::claros::common::gis::GIS& gis(const InstrumentMeasurement* msg);
   static const ::claros::instrument::InstrumentEvent& measurementevent(const InstrumentMeasurement* msg);
 };
 
-const ::claros::common::Measurement&
+const ::claros::common::core::Measurement&
 InstrumentMeasurement::HasBitSetters::measurement(const InstrumentMeasurement* msg) {
   return *msg->measurement_;
 }
@@ -205,7 +205,7 @@ InstrumentMeasurement::InstrumentMeasurement(const InstrumentMeasurement& from)
     measurementdataextended_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.measurementdataextended_);
   }
   if (from.has_measurement()) {
-    measurement_ = new ::claros::common::Measurement(*from.measurement_);
+    measurement_ = new ::claros::common::core::Measurement(*from.measurement_);
   } else {
     measurement_ = nullptr;
   }
@@ -344,12 +344,12 @@ const char* InstrumentMeasurement::_InternalParse(const char* begin, const char*
         ptr += size;
         break;
       }
-      // .claros.common.Measurement measurement = 4;
+      // .claros.common.core.Measurement measurement = 4;
       case 4: {
         if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::Measurement::_InternalParse;
+        parser_till_end = ::claros::common::core::Measurement::_InternalParse;
         object = msg->mutable_measurement();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -489,7 +489,7 @@ bool InstrumentMeasurement::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.Measurement measurement = 4;
+      // .claros.common.core.Measurement measurement = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -600,7 +600,7 @@ void InstrumentMeasurement::SerializeWithCachedSizes(
       3, this->fusionid(), output);
   }
 
-  // .claros.common.Measurement measurement = 4;
+  // .claros.common.core.Measurement measurement = 4;
   if (this->has_measurement()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, HasBitSetters::measurement(this), output);
@@ -674,7 +674,7 @@ void InstrumentMeasurement::SerializeWithCachedSizes(
         3, this->fusionid(), target);
   }
 
-  // .claros.common.Measurement measurement = 4;
+  // .claros.common.core.Measurement measurement = 4;
   if (this->has_measurement()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -755,7 +755,7 @@ size_t InstrumentMeasurement::ByteSizeLong() const {
         this->measurementdataextended());
   }
 
-  // .claros.common.Measurement measurement = 4;
+  // .claros.common.core.Measurement measurement = 4;
   if (this->has_measurement()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -830,7 +830,7 @@ void InstrumentMeasurement::MergeFrom(const InstrumentMeasurement& from) {
     measurementdataextended_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.measurementdataextended_);
   }
   if (from.has_measurement()) {
-    mutable_measurement()->::claros::common::Measurement::MergeFrom(from.measurement());
+    mutable_measurement()->::claros::common::core::Measurement::MergeFrom(from.measurement());
   }
   if (from.has_supportingmeasurements()) {
     mutable_supportingmeasurements()->::claros::instrument::InstrumentMeasurement::MergeFrom(from.supportingmeasurements());

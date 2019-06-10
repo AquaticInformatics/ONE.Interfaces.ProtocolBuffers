@@ -13,7 +13,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import claros_common_measurement_pb2 as claros__common__measurement__pb2
+import claros_common_core_measurement_pb2 as claros__common__core__measurement__pb2
 import claros_instrument_event_pb2 as claros__instrument__event__pb2
 import claros_common_gis_gis_pb2 as claros__common__gis__gis__pb2
 
@@ -23,9 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.instrument',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n#claros_instrument_measurement.proto\x12\x11\x63laros.instrument\x1a\x1f\x63laros_common_measurement.proto\x1a\x1d\x63laros_instrument_event.proto\x1a\x1b\x63laros_common_gis_gis.proto\"\xda\x02\n\x15InstrumentMeasurement\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x0f\n\x07\x63hannel\x18\x02 \x01(\x05\x12\x10\n\x08\x66usionId\x18\x03 \x01(\t\x12/\n\x0bmeasurement\x18\x04 \x01(\x0b\x32\x1a.claros.common.Measurement\x12H\n\x16supportingMeasurements\x18\x05 \x01(\x0b\x32(.claros.instrument.InstrumentMeasurement\x12#\n\x03gis\x18\x06 \x01(\x0b\x32\x16.claros.common.gis.GIS\x12\x1f\n\x17measurementDataExtended\x18\x07 \x01(\t\x12<\n\x10measurementEvent\x18\x08 \x01(\x0b\x32\".claros.instrument.InstrumentEventb\x06proto3')
+  serialized_pb=_b('\n#claros_instrument_measurement.proto\x12\x11\x63laros.instrument\x1a$claros_common_core_measurement.proto\x1a\x1d\x63laros_instrument_event.proto\x1a\x1b\x63laros_common_gis_gis.proto\"\xdf\x02\n\x15InstrumentMeasurement\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x0f\n\x07\x63hannel\x18\x02 \x01(\x05\x12\x10\n\x08\x66usionId\x18\x03 \x01(\t\x12\x34\n\x0bmeasurement\x18\x04 \x01(\x0b\x32\x1f.claros.common.core.Measurement\x12H\n\x16supportingMeasurements\x18\x05 \x01(\x0b\x32(.claros.instrument.InstrumentMeasurement\x12#\n\x03gis\x18\x06 \x01(\x0b\x32\x16.claros.common.gis.GIS\x12\x1f\n\x17measurementDataExtended\x18\x07 \x01(\t\x12<\n\x10measurementEvent\x18\x08 \x01(\x0b\x32\".claros.instrument.InstrumentEventb\x06proto3')
   ,
-  dependencies=[claros__common__measurement__pb2.DESCRIPTOR,claros__instrument__event__pb2.DESCRIPTOR,claros__common__gis__gis__pb2.DESCRIPTOR,])
+  dependencies=[claros__common__core__measurement__pb2.DESCRIPTOR,claros__instrument__event__pb2.DESCRIPTOR,claros__common__gis__gis__pb2.DESCRIPTOR,])
 
 
 
@@ -105,11 +105,11 @@ _INSTRUMENTMEASUREMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=152,
-  serialized_end=498,
+  serialized_start=157,
+  serialized_end=508,
 )
 
-_INSTRUMENTMEASUREMENT.fields_by_name['measurement'].message_type = claros__common__measurement__pb2._MEASUREMENT
+_INSTRUMENTMEASUREMENT.fields_by_name['measurement'].message_type = claros__common__core__measurement__pb2._MEASUREMENT
 _INSTRUMENTMEASUREMENT.fields_by_name['supportingMeasurements'].message_type = _INSTRUMENTMEASUREMENT
 _INSTRUMENTMEASUREMENT.fields_by_name['gis'].message_type = claros__common__gis__gis__pb2._GIS
 _INSTRUMENTMEASUREMENT.fields_by_name['measurementEvent'].message_type = claros__instrument__event__pb2._INSTRUMENTEVENT
