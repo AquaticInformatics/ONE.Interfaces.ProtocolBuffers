@@ -3,9 +3,9 @@ package claros.common.computation;
 
 enum PropertySelectorType
 {
-    UNKNOWN = 0;
-    MEASUREMENTTIME = 1;
-    BEGINLINETIME = 2;
-    ENDLINETIME = 3;
-    MEASURMENTVALUE = 4;
+    PS_UNKNOWN = 0;
+    PS_MEASUREMENTTIME = 1;
+    PS_BEGINLINETIME = 2;
+    PS_ENDLINETIME = 3;
+    PS_MEASURMENTVALUE = 4;
 }

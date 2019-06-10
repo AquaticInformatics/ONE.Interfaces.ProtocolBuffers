@@ -5,7 +5,7 @@ import "claros_common_core_clarosdatetime.proto";
  
 message Note {
     string id = 1;
-    claros.common.core.ClarosDateTime timeStamp = 4;
+    ClarosDateTime timeStamp = 4;
     string userId = 5;
     string text = 6;
 }

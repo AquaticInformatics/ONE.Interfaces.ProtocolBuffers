@@ -5,7 +5,7 @@ import "claros_common_core_mobiletime.proto";
 import "claros_common_core_mobiledate.proto";
 
 message MobileDateTime {
-    MobileDate MobileDate = 1;
+    MobileDate mobileDate = 1;
     MobileTime mobileTime = 2;
     int32 timeZone = 3;
 }

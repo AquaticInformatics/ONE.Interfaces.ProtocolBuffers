@@ -10,5 +10,5 @@ message AuditEvent {
     string userId = 2;
     DataSourceType dataSourceType = 3;
     AuditEventType eventType = 4;
-    claros.common.core.ClarosDateTime timeStamp = 5;
+    ClarosDateTime timeStamp = 5;
 }

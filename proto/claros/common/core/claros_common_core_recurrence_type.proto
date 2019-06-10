@@ -2,12 +2,12 @@ syntax = "proto3";
 package claros.common.core;
  
 enum RecurrenceType {
-    UNKNOWN = 0;
-    FIFTEENMINUTE = 1;
-    HOURLY = 2;
-    FOURHOUR = 3;
-    DAILY = 4;
-    WEEKLY = 5;
-    DAYSOFWEEK = 6;
+    R_UNKNOWN = 0;
+    R_FIFTEENMINUTE = 1;
+    R_HOURLY = 2;
+    R_FOURHOUR = 3;
+    R_DAILY = 4;
+    R_WEEKLY = 5;
+    R_DAYSOFWEEK = 6;
 }
  

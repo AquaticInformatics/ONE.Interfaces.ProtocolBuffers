@@ -4,7 +4,7 @@ package claros.common.core;
 import "claros_common_core_clarosdatetime.proto";
 
 message Measurement {
-    claros.common.core.ClarosDateTime timestamp = 1;
+    ClarosDateTime timestamp = 1;
     int32 parameterId = 2;
     string parameterGuid = 3;
     int32 unitId = 4;

@@ -2,13 +2,12 @@ syntax = "proto3";
 package claros.common.core; 
 
  enum DayOfWeek {
-    UNKNOWN = 0;
-    SUNDAY = 1;
-    MONDAY = 2;
-    TUESDAY = 3;
-    WEDNESDAY = 4;
-    THURSDAY = 5;
-    FRIDAY = 6;
-    SATURDAY = 7;
-}
- 
+    DOW_UNKNOWN = 0;
+    DOW_SUNDAY = 1;
+    DOW_MONDAY = 2;
+    DOW_TUESDAY = 3;
+    DOW_WEDNESDAY = 4;
+    DOW_THURSDAY = 5;
+    DOW_FRIDAY = 6;
+    DOW_SATURDAY = 7;
+} 

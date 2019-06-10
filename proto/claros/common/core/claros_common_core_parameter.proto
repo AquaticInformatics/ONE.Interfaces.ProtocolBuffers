@@ -13,7 +13,7 @@ message Parameter {
     string tenantId = 7;
 
     string createdById = 8;
-    claros.common.core.ClarosDateTime createdOn = 9;
+    ClarosDateTime createdOn = 9;
     string modifiedById = 10;
-    claros.common.core.ClarosDateTime modifiedOn = 11;
+    ClarosDateTime modifiedOn = 11;
 }

@@ -3,7 +3,7 @@ package claros.common.computation;
 
 enum ComputationCursorType
 {
-    UNKNOWN = 0;
+    COMPUTATIONCURSORTYPE_UNKNOWN = 0;
     CURRENT = 1;
     PREVIOUS = 2;
     NEXT = 4;
