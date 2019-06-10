@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "claros_common_timewindow.proto";
+import "claros_common_clarosdatetime.proto";
+ 
+message WorksheetIndex {
+    string id = 1;  //GUID
+    uint32 worksheetVersion = 3;
+    claros.common.TimeWindow timeWindow = 4;
+    claros.common.TimeWindow utcTimeWindows = 4;
+    bool isInSpeed = 8;
+}
