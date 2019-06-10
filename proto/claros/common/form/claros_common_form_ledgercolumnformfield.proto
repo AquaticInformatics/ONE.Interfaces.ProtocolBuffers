@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.form;
 
-import "claros_common_core_recurrence.proto";
+import "common/core/claros_common_core_recurrence.proto";
  
 message LedgerColumnFormField {
     string ledgerColumnGUID = 1;

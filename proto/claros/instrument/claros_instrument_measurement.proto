@@ -1,9 +1,9 @@
 syntax = "proto3";
 package claros.instrument;
 
-import "claros_common_core_measurement.proto";
+import "common/core/claros_common_core_measurement.proto";
 import "claros_instrument_event.proto";
-import "claros_common_gis_gis.proto";
+import "common/gis/claros_common_gis_gis.proto";
  
 message InstrumentMeasurement {
     string instrumentMeasurementId = 1;  //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement

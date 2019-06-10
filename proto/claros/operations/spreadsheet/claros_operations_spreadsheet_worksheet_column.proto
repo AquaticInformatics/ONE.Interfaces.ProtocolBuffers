@@ -2,13 +2,13 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "claros_common_core_datasource_type.proto";
-import "claros_common_core_limit.proto";
-import "claros_instrument_measurement_binding.proto";
-import "claros_common_computation_binding.proto";
+import "common/core/claros_common_core_datasource_type.proto";
+import "common/core/claros_common_core_limit.proto";
+import "instrument/claros_instrument_measurement_binding.proto";
+import "common/computation/claros_common_computation_binding.proto";
 
 
-import "claros_common_core_reportablequalifierdefinition.proto";
+import "common/core/claros_common_core_reportablequalifierdefinition.proto";
 
  
 message Column
@@ -23,8 +23,8 @@ message Column
     repeated claros.common.core.Limit limits = 8;  
     claros.common.core.DataSourceType dataSourceType = 9;
     oneof binding {
-        InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
-        ComputationBinding computationBinding = 11;
+        claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+        claros.common.computation.ComputationBinding computationBinding = 11;
     }
     repeated claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;
 }

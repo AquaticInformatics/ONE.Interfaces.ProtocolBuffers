@@ -1,8 +1,8 @@
 syntax = "proto3";
 package claros.common.form;
  
-import "claros_common_core_timewindow.proto";
-import "claros_common_core_clarosdatetime.proto";
+import "common/core/claros_common_core_timewindow.proto";
+import "common/core/claros_common_core_clarosdatetime.proto";
  
 message FormIndex {
     string id = 1;  //GUID

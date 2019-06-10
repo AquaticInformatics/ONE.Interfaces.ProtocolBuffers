@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.instrument;
 
-import "claros_common_core_aggregate_type.proto";
+import "common/core/claros_common_core_aggregate_type.proto";
 
 message InstrumentMeasurementBinding {
    string instrumentMeasurementId = 1;

@@ -2,7 +2,7 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "claros_common_core_note.proto";
+import "common/core/claros_common_core_note.proto";
 import "claros_operations_spreadsheet_worksheet_celldata.proto";
  
 message Cell {

@@ -2,19 +2,19 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
-import "claros_common_form_binding.proto";
-import "claros_common_computation_binding.proto";
-import "claros_instrument_measurement_binding.proto";
-import "claros_instrument_measurement_field_binding.proto";
+import "common/form/claros_common_form_binding.proto";
+import "common/computation/claros_common_computation_binding.proto";
+import "instrument/claros_instrument_measurement_binding.proto";
+import "instrument/claros_instrument_measurement_field_binding.proto";
 import "claros_operations_spreadsheet_binding.proto";
  
 
 message CellDataBinding {
     oneof binding {
-        InstrumentMeasurementBinding instrumentMeasurementBinding = 7;
-        ComputationBinding computationBinding = 8;
-        FormBinding formBinding = 9;
-        SpreadsheetBinding spreadsheetBinding = 10;
-        InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;
+        claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;
+        claros.common.computation.ComputationBinding computationBinding = 8;
+        claros.common.form.FormBinding formBinding = 9;
+        claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;
+        claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;
     }
 }
