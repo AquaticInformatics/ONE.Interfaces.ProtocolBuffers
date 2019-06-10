@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+enum RecurrenceType {
+    UNKNOWN = 0;
+    FIFTEENMINUTE = 1;
+    HOURLY = 2;
+    FOURHOUR = 3;
+    DAILY = 4;
+    WEEKLY = 5;
+    DAYSOFWEEK = 6;
+}
+ 

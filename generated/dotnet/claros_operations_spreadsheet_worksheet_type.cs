@@ -11,10 +11,10 @@ namespace claros.operations.spreadsheet
     {
         [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
         Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"15MINUTE")]
-        15minute = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"4HOUR")]
-        4hour = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"FIFTEEN_MINUTE")]
+        FifteenMinute = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"FOUR_HOUR")]
+        FourHour = 2,
         [global::ProtoBuf.ProtoEnum(Name = @"DAILY")]
         Daily = 3,
         [global::ProtoBuf.ProtoEnum(Name = @"MONTHLY")]

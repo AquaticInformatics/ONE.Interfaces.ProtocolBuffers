@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.common;
-
-import "claros_common_clarosdatetime.proto";
-
-message TimeWindow {
-    ClarosDateTime startTime = 1;
-    ClarosDateTime endTime = 2;
-}

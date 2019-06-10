@@ -13,15 +13,19 @@ namespace claros.common.form
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, Name = @"value")]
+        [global::ProtoBuf.ProtoMember(1, Name = @"id")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Id { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"value")]
         [global::System.ComponentModel.DefaultValue("")]
         public string Value { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"note")]
-        public global::claros.common.Note Note { get; set; }
+        [global::ProtoBuf.ProtoMember(3, Name = @"note")]
+        public global::claros.common.core.Note Note { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.AuditEvent auditEvent { get; set; }
+        [global::ProtoBuf.ProtoMember(4)]
+        public global::claros.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

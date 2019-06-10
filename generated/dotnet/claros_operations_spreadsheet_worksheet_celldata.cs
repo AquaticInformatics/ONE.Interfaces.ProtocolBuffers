@@ -31,13 +31,13 @@ namespace claros.operations.spreadsheet
         public string Justification { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(6)]
-        public global::claros.common.ReportableQualifier reportableQualifier { get; set; }
+        public global::claros.common.core.ReportableQualifier reportableQualifier { get; set; }
 
         [global::ProtoBuf.ProtoMember(7)]
         public global::System.Collections.Generic.List<CellDataBinding> cellDataBindings { get; } = new global::System.Collections.Generic.List<CellDataBinding>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::claros.common.AuditEvent auditEvent { get; set; }
+        public global::claros.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

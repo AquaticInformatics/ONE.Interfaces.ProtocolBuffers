@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.core;
+  
+import "claros_common_core_reportablequalifier_type.proto";
+import "claros_common_core_reportablequalifierdefinition_type.proto";
+  
+message ReportableQualifierDefinition
+{
+    ReportableQualifierType reportableQualifierType = 1;
+    ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;
+    double constantValue = 3; 
+}

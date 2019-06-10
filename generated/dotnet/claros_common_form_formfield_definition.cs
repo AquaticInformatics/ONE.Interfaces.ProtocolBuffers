@@ -38,14 +38,14 @@ namespace claros.common.form
 
         private global::ProtoBuf.DiscriminatedUnionObject __pbn__fieldDefinition;
 
-        [global::ProtoBuf.ProtoMember(6, Name = @"text")]
-        public FormFieldText Text
+        [global::ProtoBuf.ProtoMember(6)]
+        public FormFieldTextRepeated textRepeated
         {
-            get { return __pbn__fieldDefinition.Is(6) ? ((FormFieldText)__pbn__fieldDefinition.Object) : default; }
+            get { return __pbn__fieldDefinition.Is(6) ? ((FormFieldTextRepeated)__pbn__fieldDefinition.Object) : default; }
             set { __pbn__fieldDefinition = new global::ProtoBuf.DiscriminatedUnionObject(6, value); }
         }
-        public bool ShouldSerializeText() => __pbn__fieldDefinition.Is(6);
-        public void ResetText() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__fieldDefinition, 6);
+        public bool ShouldSerializetextRepeated() => __pbn__fieldDefinition.Is(6);
+        public void ResettextRepeated() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__fieldDefinition, 6);
 
     }
 

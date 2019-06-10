@@ -21,6 +21,8 @@ namespace claros.common
         Greaterthan = 4,
         [global::ProtoBuf.ProtoEnum(Name = @"LESSTHAN")]
         Lessthan = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"TOO_NUMEROUS_TO_COUNT")]
+        TooNumerousToCount = 6,
     }
 
 }

@@ -18,7 +18,7 @@ namespace claros.instrument
         public string instrumentMeasurementId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.common.AggregateType aggregateType { get; set; }
+        public global::claros.common.core.AggregateType aggregateType { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
         public uint unitId { get; set; }

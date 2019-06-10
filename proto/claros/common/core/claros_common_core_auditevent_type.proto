@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+enum AuditEventType {
+    UNKNOWN = 0;
+    CREATE = 1;
+    READ = 2;
+    UPDATE = 3;
+    DELETE = 4;
+    SENT = 5;
+}
+ 

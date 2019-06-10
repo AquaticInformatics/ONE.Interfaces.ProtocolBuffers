@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+enum DataSourceType {
+    UNKNOWN = 0;
+    FORM = 1;
+    COMPUTATION = 2;
+    SPREADSHEET = 3;
+    INSTRUMENTMEASUREMENT = 4;
+    IMPORT = 5;
+    SPREADSHEET_DEFINITION = 6;
+}

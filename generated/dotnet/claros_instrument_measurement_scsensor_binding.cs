@@ -21,10 +21,10 @@ namespace claros.instrument
         public string Tag { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.ClarosDateTime validFrom { get; set; }
+        public global::claros.common.core.ClarosDateTime validFrom { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.ClarosDateTime validTo { get; set; }
+        public global::claros.common.core.ClarosDateTime validTo { get; set; }
 
     }
 

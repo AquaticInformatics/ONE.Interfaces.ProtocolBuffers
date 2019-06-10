@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.common;
- 
-enum AggregateType {
-    UNKNOWN = 0;
-    MINIMUM = 1;
-    MAXIMUM = 2;
-    AVERAGE = 3;
-}

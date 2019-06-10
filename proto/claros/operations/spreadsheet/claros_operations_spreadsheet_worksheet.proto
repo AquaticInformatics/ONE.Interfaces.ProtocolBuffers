@@ -6,7 +6,10 @@ import "claros_operations_spreadsheet_worksheet_definition.proto";
 import "claros_operations_spreadsheet_worksheet_row.proto";
  
 message Worksheet {
+    // header
     WorksheetType worksheetType = 1;
+    // definition
     repeated WorksheetDefinition worksheetDefinitions = 2;
+    // data
     repeated Row rows = 3;
 }

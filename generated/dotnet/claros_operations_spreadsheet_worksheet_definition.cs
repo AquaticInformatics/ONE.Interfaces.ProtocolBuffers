@@ -26,7 +26,7 @@ namespace claros.operations.spreadsheet
         public global::System.Collections.Generic.List<Column> Columns { get; } = new global::System.Collections.Generic.List<Column>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::claros.common.AuditEvent auditEvent { get; set; }
+        public global::claros.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

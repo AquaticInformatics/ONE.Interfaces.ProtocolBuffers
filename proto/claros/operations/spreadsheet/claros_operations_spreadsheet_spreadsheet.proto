@@ -1,12 +1,14 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "claros_operations_spreadsheet_timedefinition.proto";
+import "claros_operations_spreadsheet_spreadsheet_definition.proto";
 import "claros_operations_spreadsheet_worksheet.proto";
  
 message Spreadsheet {
+    // header
     string name = 1;
     string locationId = 2;
-    repeated SpreadsheetTimeDefinition timeDefinition = 3;
+    // definition 
+    repeated SpreadsheetDefinition timeDefinition = 3;
     repeated Worksheet worksheet = 4;
 }

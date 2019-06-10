@@ -22,7 +22,7 @@ namespace claros.operations.spreadsheet
         public string locationId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3, Name = @"timeDefinition")]
-        public global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetTimeDefinition> timeDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetTimeDefinition>();
+        public global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetDefinition> timeDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.instrument.spreadsheet.SpreadsheetDefinition>();
 
         [global::ProtoBuf.ProtoMember(4, Name = @"worksheet")]
         public global::System.Collections.Generic.List<Worksheet> Worksheets { get; } = new global::System.Collections.Generic.List<Worksheet>();

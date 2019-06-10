@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.core;
+
+enum ReportableQualifierType {
+    UNKNOWN = 0;
+    NONDETECT = 1;
+    ESTIMATE = 2;
+    DETECTNONQUALIFIABLE = 3;
+    GREATERTHAN = 4;
+    LESSTHAN = 5;
+    TOO_NUMEROUS_TO_COUNT = 6;
+}

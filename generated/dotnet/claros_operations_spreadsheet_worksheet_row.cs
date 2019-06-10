@@ -17,7 +17,7 @@ namespace claros.operations.spreadsheet
         public uint rowNumber { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.common.TimeWindow UTCTimeWindow { get; set; }
+        public global::claros.common.core.TimeWindow UTCTimeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(3, Name = @"cells")]
         public global::System.Collections.Generic.List<Cell> Cells { get; } = new global::System.Collections.Generic.List<Cell>();

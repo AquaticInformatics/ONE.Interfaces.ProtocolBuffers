@@ -22,7 +22,7 @@ namespace claros.common.form
         public string Name { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.TimeWindow timeWindow { get; set; }
+        public global::claros.common.core.TimeWindow timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
         public FormTemplate formTemplate { get; set; }
@@ -37,10 +37,10 @@ namespace claros.common.form
         public global::System.Collections.Generic.List<FormField> adhocFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
         [global::ProtoBuf.ProtoMember(8, Name = @"notes")]
-        public global::System.Collections.Generic.List<global::claros.common.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.Note>();
+        public global::System.Collections.Generic.List<global::claros.common.core.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Note>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::System.Collections.Generic.List<global::claros.common.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.common.AuditEvent>();
+        public global::System.Collections.Generic.List<global::claros.common.core.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.common.core.AuditEvent>();
 
     }
 

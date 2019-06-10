@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+enum LimitType {
+    UNKNOWN = 0;
+    HIGHALARM = 1;
+    HIGHNEAR = 2;
+    LOWNEAR = 3;
+    LOWALARM = 4;
+}

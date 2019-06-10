@@ -2,9 +2,9 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
-import "claros_common_reportablequalifier.proto";
+import "claros_common_core_reportablequalifier.proto";
 import "claros_operations_spreadsheet_worksheet_celldata_binding.proto";
-import "claros_common_auditevent.proto";
+import "claros_common_core_auditevent.proto";
  
 message CellData {
    double value = 1;
@@ -12,9 +12,9 @@ message CellData {
    bool isLocked = 3;
    uint32 unitId = 4;
    string justification = 5;
-   ReportableQualifier reportableQualifier = 6;
+   claros.common.core.ReportableQualifier reportableQualifier = 6;
    repeated CellDataBinding cellDataBindings = 7;
 
-   AuditEvent auditEvent = 99;
+   claros.common.core.AuditEvent auditEvent = 99;
 }
 

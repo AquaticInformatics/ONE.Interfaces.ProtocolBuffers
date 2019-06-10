@@ -18,7 +18,7 @@ namespace claros.instrument
         public string instrumentMeasurementId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2, Name = @"timestamp")]
-        public global::claros.common.ClarosDateTime Timestamp { get; set; }
+        public global::claros.common.core.ClarosDateTime Timestamp { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
         public uint unitId { get; set; }

@@ -25,7 +25,7 @@ namespace claros.instrument
         public string fusionId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(4, Name = @"measurement")]
-        public global::claros.common.Measurement Measurement { get; set; }
+        public global::claros.common.core.Measurement Measurement { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
         public InstrumentMeasurement supportingMeasurements { get; set; }

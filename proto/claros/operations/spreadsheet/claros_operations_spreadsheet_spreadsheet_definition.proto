@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+package claros.instrument.spreadsheet;
+ 
+import "claros_common_core_timewindow.proto";
+import "claros_common_core_timezone.proto";
+ 
+message SpreadsheetDefinition {
+    claros.common.core.TimeWindow timewindow = 1;
+    claros.common.core.TimeZone  timezone = 2;
+    uint32 timeWindowOffset = 3;
+}

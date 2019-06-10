@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+import "claros_common_core_limit_type.proto";
+import "claros_common_core_recurrence.proto";
+
+message Limit {
+    string i18nKey = 1;     
+    LimitType limitType = 2; 
+    double value = 3;
+    uint32 unitId = 4;
+    Recurrence recurrence = 5;
+}

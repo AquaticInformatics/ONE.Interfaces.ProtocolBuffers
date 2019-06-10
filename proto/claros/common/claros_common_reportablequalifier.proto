@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.common;
-
-import "claros_common_reportablequalifier_type.proto";
-
-message ReportableQualifier{
-    ReportableQualifierType reportableQualifierType = 1;
-    string qualifiedValue = 2;
-}

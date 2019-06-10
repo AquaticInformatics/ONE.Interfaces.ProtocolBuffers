@@ -1,10 +1,10 @@
 syntax = "proto3";
 package claros.instrument;
 
-import "claros_common_clarosdatetime.proto";
+import "claros_common_core_clarosdatetime.proto";
 import "claros_instrument_measurement_milliamp_binding.proto";
 import "claros_instrument_measurement_scsensor_binding.proto";
-import "claros_common_limit.proto";
+import "claros_common_core_limit.proto";
  
 message InstrumentMeasurementDefinition {
     string instrumentMeasurementId = 1;  //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
@@ -20,10 +20,10 @@ message InstrumentMeasurementDefinition {
         MilliAmpBinding milliAmpBinding = 9;
     }
 
-    repeated claros.common.Limit limits = 10;
+    repeated claros.common.core.Limit limits = 10;
 
     string createdById = 11;
-    claros.common.ClarosDateTime createdOn = 12;
+    claros.common.core.ClarosDateTime createdOn = 12;
     string modifiedById = 13;
-    claros.common.ClarosDateTime modifiedOn = 14;
+    claros.common.core.ClarosDateTime modifiedOn = 14;
 }

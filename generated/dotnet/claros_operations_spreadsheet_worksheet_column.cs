@@ -28,40 +28,43 @@ namespace claros.operations.spreadsheet
         public uint parameterId { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
+        public uint displayUnitId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string locationId { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::ProtoBuf.ProtoMember(7)]
         public bool isActive { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7, Name = @"limits")]
-        public global::System.Collections.Generic.List<global::claros.common.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.common.Limit>();
-
-        [global::ProtoBuf.ProtoMember(8)]
-        public global::claros.common.DataSourceType dataSourceType { get; set; }
+        [global::ProtoBuf.ProtoMember(8, Name = @"limits")]
+        public global::System.Collections.Generic.List<global::claros.common.core.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Limit>();
 
         [global::ProtoBuf.ProtoMember(9)]
+        public global::claros.common.core.DataSourceType dataSourceType { get; set; }
+
+        [global::ProtoBuf.ProtoMember(10)]
         public global::claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
         {
-            get { return __pbn__binding.Is(9) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
-            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(9, value); }
+            get { return __pbn__binding.Is(10) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
         }
-        public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(9);
-        public void ResetinstrumentMeasurementBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 9);
+        public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(10);
+        public void ResetinstrumentMeasurementBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 10);
 
         private global::ProtoBuf.DiscriminatedUnionObject __pbn__binding;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::ProtoBuf.ProtoMember(11)]
         public global::claros.common.computation.ComputationBinding computationBinding
         {
-            get { return __pbn__binding.Is(10) ? ((global::claros.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
-            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
+            get { return __pbn__binding.Is(11) ? ((global::claros.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
+            set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(11, value); }
         }
-        public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(10);
-        public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 10);
+        public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(11);
+        public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 11);
 
-        [global::ProtoBuf.ProtoMember(11, Name = @"reportableQualiferDefinition")]
-        public global::System.Collections.Generic.List<global::claros.common.ReportableQualifierDefinition> reportableQualiferDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.common.ReportableQualifierDefinition>();
+        [global::ProtoBuf.ProtoMember(12, Name = @"reportableQualiferDefinition")]
+        public global::System.Collections.Generic.List<global::claros.common.core.ReportableQualifierDefinition> reportableQualiferDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.common.core.ReportableQualifierDefinition>();
 
     }
 

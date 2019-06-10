@@ -3,7 +3,7 @@ syntax = "proto3";
 package claros.operations.spreadsheet;
  
 import "claros_operations_spreadsheet_worksheet_column.proto";
-import "claros_common_auditevent.proto";
+import "claros_common_core_auditevent.proto";
  
 message WorksheetDefinition {
     uint32 version = 1;
@@ -11,5 +11,5 @@ message WorksheetDefinition {
     uint32 endRow = 3;
     repeated Column columns = 4;
 
-    claros.common.AuditEvent auditEvent = 99;
+    claros.common.core.AuditEvent auditEvent = 99;
 }
