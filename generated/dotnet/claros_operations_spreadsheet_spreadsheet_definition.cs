@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_spreadsheet_definition.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument.spreadsheet
+namespace claros.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -13,13 +13,17 @@ namespace claros.instrument.spreadsheet
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, Name = @"timewindow")]
+        [global::ProtoBuf.ProtoMember(1, Name = @"version")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Version { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"timewindow")]
         public global::claros.common.core.TimeWindow Timewindow { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"timezone")]
+        [global::ProtoBuf.ProtoMember(3, Name = @"timezone")]
         public global::claros.common.core.TimeZone Timezone { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::ProtoBuf.ProtoMember(4)]
         public uint timeWindowOffset { get; set; }
 
     }

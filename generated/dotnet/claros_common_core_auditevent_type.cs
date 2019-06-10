@@ -9,18 +9,18 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum AuditEventType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"CREATE")]
-        Create = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"READ")]
-        Read = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"UPDATE")]
-        Update = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"DELETE")]
-        Delete = 4,
-        [global::ProtoBuf.ProtoEnum(Name = @"SENT")]
-        Sent = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_UNKNOWN")]
+        AeUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_CREATE")]
+        AeCreate = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_READ")]
+        AeRead = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_UPDATE")]
+        AeUpdate = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_DELETE")]
+        AeDelete = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"AE_SENT")]
+        AeSent = 5,
     }
 
 }
