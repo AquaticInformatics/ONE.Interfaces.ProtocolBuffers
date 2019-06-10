@@ -2,9 +2,8 @@ syntax = "proto3";
 package claros.common.form;
 
 enum FormTemplateType {
-    UNKNOWN = 0;
-    PLANT = 1;
-    LABORATORY = 2;
-    ENTERPRISE = 3;
-}
- 
+    FT_UNKNOWN = 0;
+    FT_PLANT = 1;
+    FT_LABORATORY = 2;
+    FT_ENTERPRISE = 3;
+} 

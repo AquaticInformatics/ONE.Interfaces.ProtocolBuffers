@@ -2,9 +2,9 @@ syntax = "proto3";
 package claros.common.core;
  
 enum LimitType {
-    LT_UNKNOWN = 0;
-    LT_HIGHALARM = 1;
-    LT_HIGHNEAR = 2;
-    LT_LOWNEAR = 3;
-    LT_LOWALARM = 4;
+    L_UNKNOWN = 0;
+    L_HIGHALARM = 1;
+    L_HIGHNEAR = 2;
+    L_LOWNEAR = 3;
+    L_LOWALARM = 4;
 }
