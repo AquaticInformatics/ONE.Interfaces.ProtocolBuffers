@@ -9,16 +9,16 @@ namespace claros.common.computation
     [global::ProtoBuf.ProtoContract()]
     public enum PropertySelectorType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"PS_UNKNOWN")]
-        PsUnknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"PS_MEASUREMENTTIME")]
-        PsMeasurementtime = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"PS_BEGINLINETIME")]
-        PsBeginlinetime = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"PS_ENDLINETIME")]
-        PsEndlinetime = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"PS_MEASURMENTVALUE")]
-        PsMeasurmentvalue = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"PROPERTY_SELECTOR_UNKNOWN")]
+        PropertySelectorUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"PROPERTY_SELECTOR_MEASUREMENTTIME")]
+        PropertySelectorMeasurementtime = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"PROPERTY_SELECTOR_BEGINLINETIME")]
+        PropertySelectorBeginlinetime = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"PROPERTY_SELECTOR_ENDLINETIME")]
+        PropertySelectorEndlinetime = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"PROPERTY_SELECTOR_MEASURMENTVALUE")]
+        PropertySelectorMeasurmentvalue = 4,
     }
 
 }

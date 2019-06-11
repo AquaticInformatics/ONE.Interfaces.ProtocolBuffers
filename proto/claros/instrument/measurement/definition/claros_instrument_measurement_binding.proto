@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.instrument;
+package claros.instrument.measurement;
 
 import "claros_common_core_aggregate_type.proto";
 

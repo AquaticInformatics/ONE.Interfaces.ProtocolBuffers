@@ -1,10 +1,9 @@
 syntax = "proto3";
-package claros.instrument;
+package claros.instrument.event;
 
+import "claros_instrument_event_data_calibration_standard.proto";
 
-import "claros_instrument_calibration_standard.proto";
-
-message Calibration {
+message EventDataCalibration {
     string ID = 1;                      // unique identifier of the calibration.  Could be a hash.
     string userID = 2;                  // User who performed the calibration
     uint64 time = 3;                    // Calibration Time
@@ -15,5 +14,5 @@ message Calibration {
     float slopeAux = 8;                 // Auxiliary way of displaying slope.  Used by pH to give the percent of the nominal slope    
     float offset = 9;                   // offset of the calibration curve
     float r2 = 10;                       // r-squared of the calibration curve
-    repeated CalibrationStandard calibrationStandards = 11;
+    repeated EventDataCalibrationStandard calibrationStandards = 11;
 }

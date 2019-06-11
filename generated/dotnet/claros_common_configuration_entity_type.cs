@@ -9,10 +9,10 @@ namespace claros.common.configuration
     [global::ProtoBuf.ProtoContract()]
     public enum EntityType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"ET_UNKNOWN")]
-        EtUnknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"ET_FORMTEMPLATE")]
-        EtFormtemplate = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"ENTITY_UNKNOWN")]
+        EntityUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"ENTITY_FORMTEMPLATE")]
+        EntityFormtemplate = 1,
     }
 
 }

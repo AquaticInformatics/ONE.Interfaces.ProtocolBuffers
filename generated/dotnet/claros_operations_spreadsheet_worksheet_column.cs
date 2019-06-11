@@ -44,9 +44,9 @@ namespace claros.operations.spreadsheet
         public global::claros.common.core.DataSourceType dataSourceType { get; set; }
 
         [global::ProtoBuf.ProtoMember(10)]
-        public global::claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
+        public global::claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding
         {
-            get { return __pbn__binding.Is(10) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
+            get { return __pbn__binding.Is(10) ? ((global::claros.instrument.measurement.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
             set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
         }
         public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(10);

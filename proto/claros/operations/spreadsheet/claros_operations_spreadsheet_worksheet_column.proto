@@ -24,7 +24,7 @@ message Column
     repeated claros.common.core.Limit limits = 8;                   // Collection of limits related to the column
     claros.common.core.DataSourceType dataSourceType = 9;           // The expected place where the data will be received into the column
     oneof binding {
-        claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           // Column comes from aggregated instrument measurments
+        claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           // Column comes from aggregated instrument measurments
         claros.common.computation.ComputationBinding computationBinding = 11;                       // Column comes as a result of a computation
     }
     repeated claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;    // This determines how qualifers are interpreted for this column

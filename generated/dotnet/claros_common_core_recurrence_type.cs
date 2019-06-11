@@ -9,20 +9,20 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum RecurrenceType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"R_UNKNOWN")]
-        RUnknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_FIFTEENMINUTE")]
-        RFifteenminute = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_HOURLY")]
-        RHourly = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_FOURHOUR")]
-        RFourhour = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_DAILY")]
-        RDaily = 4,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_WEEKLY")]
-        RWeekly = 5,
-        [global::ProtoBuf.ProtoEnum(Name = @"R_DAYSOFWEEK")]
-        RDaysofweek = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_UNKNOWN")]
+        RecurrenceUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_FIFTEENMINUTE")]
+        RecurrenceFifteenminute = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_HOURLY")]
+        RecurrenceHourly = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_FOURHOUR")]
+        RecurrenceFourhour = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_DAILY")]
+        RecurrenceDaily = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_WEEKLY")]
+        RecurrenceWeekly = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"RECURRENCE_DAYSOFWEEK")]
+        RecurrenceDaysofweek = 6,
     }
 
 }
