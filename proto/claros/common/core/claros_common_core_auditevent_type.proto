@@ -2,11 +2,11 @@ syntax = "proto3";
 package claros.common.core;
  
 enum AuditEventType {
-    AE_UNKNOWN = 0;
-    AE_CREATE = 1;
-    AE_READ = 2;
-    AE_UPDATE = 3;
-    AE_DELETE = 4;
-    AE_SENT = 5;
+    AUDIT_EVENT_TYPE_UNKNOWN = 0;
+    AUDIT_EVENT_TYPE_CREATE = 1;
+    AUDIT_EVENT_TYPE_READ = 2;
+    AUDIT_EVENT_TYPE_UPDATE = 3;
+    AUDIT_EVENT_TYPE_DELETE = 4;
+    AUDIT_EVENT_TYPE_SENT = 5;
 }
  
