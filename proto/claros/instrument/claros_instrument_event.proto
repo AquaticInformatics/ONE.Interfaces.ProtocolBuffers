@@ -7,12 +7,12 @@ import "claros_instrument_calibration.proto";
 import "claros_instrument_prognosys.proto";
  
 message InstrumentEvent {
-    repeated Calibration calibrations = 1;
-    repeated EventMetaData errors = 2;
-    repeated EventMetaData info = 3;
-    repeated EventMetaData limits = 4;
-    repeated EventMetaData reminders = 5;         
-    repeated EventMetaData warnings = 6;
-    repeated PrognosysData prognosys = 7;
-    claros.common.core.ClarosDateTime eventDateTime = 8;
+    repeated Calibration calibrations = 1;                  // Collection of Calibrarion Events
+    repeated EventMetaData errors = 2;                      // Collection of Errors
+    repeated EventMetaData info = 3;                        // Collection of Information about an Instrument
+    repeated EventMetaData limits = 4;                      // Collection of limit violations coming from an insturment
+    repeated EventMetaData reminders = 5;                   // Collection of maintenance reminders coming from an instrument
+    repeated EventMetaData warnings = 6;                    // Collection of warnings coming from an instrument
+    repeated PrognosysData prognosys = 7;                   // Collection of prognosys (tm) events coming from prognosys enabled instruments
+    claros.common.core.ClarosDateTime eventDateTime = 8;    // The time of the event
 }
