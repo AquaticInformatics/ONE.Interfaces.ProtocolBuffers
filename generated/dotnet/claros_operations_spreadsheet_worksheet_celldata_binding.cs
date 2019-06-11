@@ -43,9 +43,9 @@ namespace claros.operations.spreadsheet
         public void ResetformBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 9);
 
         [global::ProtoBuf.ProtoMember(10)]
-        public global::claros.common.computation.SpreadsheetBinding spreadsheetBinding
+        public SpreadsheetBinding spreadsheetBinding
         {
-            get { return __pbn__binding.Is(10) ? ((global::claros.common.computation.SpreadsheetBinding)__pbn__binding.Object) : default; }
+            get { return __pbn__binding.Is(10) ? ((SpreadsheetBinding)__pbn__binding.Object) : default; }
             set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
         }
         public bool ShouldSerializespreadsheetBinding() => __pbn__binding.Is(10);

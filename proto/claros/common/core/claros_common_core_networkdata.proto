@@ -14,7 +14,7 @@ message NetworkData {
         oneof response_one_of {
             claros.common.form.FormTemplate formTemplate = 2;
             claros.common.form.Form form = 3;
-            claros.common.core.ClarosDateTime dateTime = 4;
+            ClarosDateTime dateTime = 4;
             Note note = 5;
         }
     }

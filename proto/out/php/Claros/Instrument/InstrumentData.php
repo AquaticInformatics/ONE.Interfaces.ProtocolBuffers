@@ -42,7 +42,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime instrumentDataDateTime = 7;</code>
      */
     private $instrumentDataDateTime = null;
 
@@ -59,7 +59,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
      *     @type \Claros\Instrument\InstrumentMeasurement[]|\Google\Protobuf\Internal\RepeatedField $measurements
      *     @type array|\Google\Protobuf\Internal\MapField $settings
      *     @type array|\Google\Protobuf\Internal\MapField $states
-     *     @type \Claros\Common\DateTime $instrumentDataDateTime
+     *     @type \Claros\Common\Core\ClarosDateTime $instrumentDataDateTime
      *           this is optionally set if all children share the same time
      * }
      */
@@ -207,8 +207,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
-     * @return \Claros\Common\DateTime
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime instrumentDataDateTime = 7;</code>
+     * @return \Claros\Common\Core\ClarosDateTime
      */
     public function getInstrumentDataDateTime()
     {
@@ -218,13 +218,13 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     /**
      * this is optionally set if all children share the same time
      *
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime instrumentDataDateTime = 7;</code>
-     * @param \Claros\Common\DateTime $var
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime instrumentDataDateTime = 7;</code>
+     * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
      */
     public function setInstrumentDataDateTime($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\DateTime::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Core\ClarosDateTime::class);
         $this->instrumentDataDateTime = $var;
 
         return $this;

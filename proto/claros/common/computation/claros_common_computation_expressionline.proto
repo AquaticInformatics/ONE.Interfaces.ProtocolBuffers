@@ -1,8 +1,7 @@
 syntax = "proto3";
 package claros.common.computation;
 
-message ExpressionLine
-{
+message ExpressionLine {
     string i18nKey = 1;
     string name = 2;
     string expression = 3;

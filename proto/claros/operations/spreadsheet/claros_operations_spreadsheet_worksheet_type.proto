@@ -2,9 +2,9 @@ syntax = "proto3";
 package claros.operations.spreadsheet;
  
 enum WorksheetType {
-    UNKNOWN = 0;
-    FIFTEEN_MINUTE = 1;
-    HOURLY = 2; 
-    FOUR_HOUR = 3; 
-    DAILY = 4;
+    WORKSHEET_UNKNOWN = 0;
+    WORKSHEET_FIFTEEN_MINUTE = 1; 
+    WORKSHEET_HOUR = 2; 
+    WORKSHEET_FOUR_HOUR = 3; 
+    WORKSHEET_DAILY = 4;
 }

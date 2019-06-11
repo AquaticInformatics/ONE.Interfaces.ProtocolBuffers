@@ -16,7 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fdatetime_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fclarosdatetime_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_InstrumentData_SettingsEntry_DoNotUse_claros_5finstrument_5fdata_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fdata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_InstrumentData_StatesEntry_DoNotUse_claros_5finstrument_5fdata_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fevent_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_InstrumentEvent_claros_5finstrument_5fevent_2eproto;
@@ -80,7 +80,7 @@ static void InitDefaultsInstrumentData_claros_5finstrument_5fdata_2eproto() {
       &scc_info_InstrumentMeasurement_claros_5finstrument_5fmeasurement_2eproto.base,
       &scc_info_InstrumentData_SettingsEntry_DoNotUse_claros_5finstrument_5fdata_2eproto.base,
       &scc_info_InstrumentData_StatesEntry_DoNotUse_claros_5finstrument_5fdata_2eproto.base,
-      &scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto.base,}};
+      &scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto.base,}};
 
 void InitDefaults_claros_5finstrument_5fdata_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_InstrumentData_SettingsEntry_DoNotUse_claros_5finstrument_5fdata_2eproto.base);
@@ -145,25 +145,25 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 const char descriptor_table_protodef_claros_5finstrument_5fdata_2eproto[] =
   "\n\034claros_instrument_data.proto\022\021claros.i"
   "nstrument\032\035claros_instrument_event.proto"
-  "\032#claros_instrument_measurement.proto\032\034c"
-  "laros_common_datetime.proto\"\303\003\n\016Instrume"
-  "ntData\022\020\n\010tenantId\030\001 \001(\t\022\020\n\010fusionId\030\002 \001"
-  "(\t\0222\n\006events\030\003 \001(\0132\".claros.instrument.I"
-  "nstrumentEvent\022>\n\014measurements\030\004 \003(\0132(.c"
-  "laros.instrument.InstrumentMeasurement\022A"
-  "\n\010settings\030\005 \003(\0132/.claros.instrument.Ins"
-  "trumentData.SettingsEntry\022=\n\006states\030\006 \003("
-  "\0132-.claros.instrument.InstrumentData.Sta"
-  "tesEntry\0227\n\026instrumentDataDateTime\030\007 \001(\013"
-  "2\027.claros.common.ClarosDateTime\032/\n\rSettingsEnt"
-  "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013St"
-  "atesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028"
-  "\001b\006proto3"
+  "\032#claros_instrument_measurement.proto\032\'c"
+  "laros_common_core_clarosdatetime.proto\"\316"
+  "\003\n\016InstrumentData\022\020\n\010tenantId\030\001 \001(\t\022\020\n\010f"
+  "usionId\030\002 \001(\t\0222\n\006events\030\003 \001(\0132\".claros.i"
+  "nstrument.InstrumentEvent\022>\n\014measurement"
+  "s\030\004 \003(\0132(.claros.instrument.InstrumentMe"
+  "asurement\022A\n\010settings\030\005 \003(\0132/.claros.ins"
+  "trument.InstrumentData.SettingsEntry\022=\n\006"
+  "states\030\006 \003(\0132-.claros.instrument.Instrum"
+  "entData.StatesEntry\022B\n\026instrumentDataDat"
+  "eTime\030\007 \001(\0132\".claros.common.core.ClarosD"
+  "ateTime\032/\n\rSettingsEntry\022\013\n\003key\030\001 \001(\t\022\r\n"
+  "\005value\030\002 \001(\t:\0028\001\032-\n\013StatesEntry\022\013\n\003key\030\001"
+  " \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5finstrument_5fdata_2eproto = {
   false, InitDefaults_claros_5finstrument_5fdata_2eproto, 
   descriptor_table_protodef_claros_5finstrument_5fdata_2eproto,
-  "claros_instrument_data.proto", &assign_descriptors_table_claros_5finstrument_5fdata_2eproto, 609,
+  "claros_instrument_data.proto", &assign_descriptors_table_claros_5finstrument_5fdata_2eproto, 631,
 };
 
 void AddDescriptors_claros_5finstrument_5fdata_2eproto() {
@@ -171,7 +171,7 @@ void AddDescriptors_claros_5finstrument_5fdata_2eproto() {
   {
     ::AddDescriptors_claros_5finstrument_5fevent_2eproto,
     ::AddDescriptors_claros_5finstrument_5fmeasurement_2eproto,
-    ::AddDescriptors_claros_5fcommon_5fdatetime_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fcore_5fclarosdatetime_2eproto,
   };
  ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5finstrument_5fdata_2eproto, deps, 3);
 }
@@ -268,20 +268,20 @@ bool InstrumentData_StatesEntry_DoNotUse::_ParseMap(const char* begin, const cha
 void InstrumentData::InitAsDefaultInstance() {
   ::claros::instrument::_InstrumentData_default_instance_._instance.get_mutable()->events_ = const_cast< ::claros::instrument::InstrumentEvent*>(
       ::claros::instrument::InstrumentEvent::internal_default_instance());
-  ::claros::instrument::_InstrumentData_default_instance_._instance.get_mutable()->instrumentdatadatetime_ = const_cast< ::claros::common::DateTime*>(
-      ::claros::common::DateTime::internal_default_instance());
+  ::claros::instrument::_InstrumentData_default_instance_._instance.get_mutable()->instrumentdatadatetime_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+      ::claros::common::core::ClarosDateTime::internal_default_instance());
 }
 class InstrumentData::HasBitSetters {
  public:
   static const ::claros::instrument::InstrumentEvent& events(const InstrumentData* msg);
-  static const ::claros::common::DateTime& instrumentdatadatetime(const InstrumentData* msg);
+  static const ::claros::common::core::ClarosDateTime& instrumentdatadatetime(const InstrumentData* msg);
 };
 
 const ::claros::instrument::InstrumentEvent&
 InstrumentData::HasBitSetters::events(const InstrumentData* msg) {
   return *msg->events_;
 }
-const ::claros::common::DateTime&
+const ::claros::common::core::ClarosDateTime&
 InstrumentData::HasBitSetters::instrumentdatadatetime(const InstrumentData* msg) {
   return *msg->instrumentdatadatetime_;
 }
@@ -336,7 +336,7 @@ InstrumentData::InstrumentData(const InstrumentData& from)
     events_ = nullptr;
   }
   if (from.has_instrumentdatadatetime()) {
-    instrumentdatadatetime_ = new ::claros::common::DateTime(*from.instrumentdatadatetime_);
+    instrumentdatadatetime_ = new ::claros::common::core::ClarosDateTime(*from.instrumentdatadatetime_);
   } else {
     instrumentdatadatetime_ = nullptr;
   }
@@ -508,12 +508,12 @@ const char* InstrumentData::_InternalParse(const char* begin, const char* end, v
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 50 && (ptr += 1));
         break;
       }
-      // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+      // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
       case 7: {
         if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::DateTime::_InternalParse;
+        parser_till_end = ::claros::common::core::ClarosDateTime::_InternalParse;
         object = msg->mutable_instrumentdatadatetime();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -659,7 +659,7 @@ bool InstrumentData::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+      // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -830,7 +830,7 @@ void InstrumentData::SerializeWithCachedSizes(
     }
   }
 
-  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+  // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, HasBitSetters::instrumentdatadatetime(this), output);
@@ -984,7 +984,7 @@ void InstrumentData::SerializeWithCachedSizes(
     }
   }
 
-  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+  // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -1072,7 +1072,7 @@ size_t InstrumentData::ByteSizeLong() const {
         *events_);
   }
 
-  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+  // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
   if (this->has_instrumentdatadatetime()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1121,7 +1121,7 @@ void InstrumentData::MergeFrom(const InstrumentData& from) {
     mutable_events()->::claros::instrument::InstrumentEvent::MergeFrom(from.events());
   }
   if (from.has_instrumentdatadatetime()) {
-    mutable_instrumentdatadatetime()->::claros::common::DateTime::MergeFrom(from.instrumentdatadatetime());
+    mutable_instrumentdatadatetime()->::claros::common::core::ClarosDateTime::MergeFrom(from.instrumentdatadatetime());
   }
 }
 

@@ -6,13 +6,14 @@ import "claros_instrument_measurement.proto";
 import "claros_common_core_clarosdatetime.proto";
 
 message InstrumentData {
-    string tenantId = 1; // In header
-    string fusionId = 2;
+    // Header Information
+    string tenantId = 1;                                            // Tenant related to instrument
+    string fusionId = 2;                                            // Unique id of an instrument
 
-    InstrumentEvent events = 3;
-    repeated InstrumentMeasurement measurements = 4;
-    map<string,string> settings = 5;
-    map<string,string> states = 6;
-    claros.common.core.ClarosDateTime instrumentDataDateTime = 7; // this is optionally set if all children share the same time
+    InstrumentEvent events = 3;                                     // Events related to what has happened to an instrument
+    repeated InstrumentMeasurement measurements = 4;                // Measurements related to an instrument
+    map<string,string> settings = 5;                                // Settings of an instrument
+    map<string,string> states = 6;                                  // State informantion of an instrument
+    claros.common.core.ClarosDateTime instrumentDataDateTime = 7;   // this is optionally set if all children share the same time
 }
 

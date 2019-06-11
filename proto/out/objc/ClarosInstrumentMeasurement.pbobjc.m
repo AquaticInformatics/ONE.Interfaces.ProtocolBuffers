@@ -14,7 +14,7 @@
 #endif
 
 #import "ClarosInstrumentMeasurement.pbobjc.h"
-#import "ClarosCommonMeasurement.pbobjc.h"
+#import "ClarosCommonCoreMeasurement.pbobjc.h"
 #import "ClarosInstrumentEvent.pbobjc.h"
 #import "ClarosCommonGisGis.pbobjc.h"
 // @@protoc_insertion_point(imports)

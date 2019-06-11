@@ -14,9 +14,9 @@
 #endif
 
 #import "ClarosCommonConfigurationConfiguration.pbobjc.h"
-#import "ClarosCommonDatetime.pbobjc.h"
-#import "ClarosCommonEnumEntitytype.pbobjc.h"
-#import "ClarosCommonPrivileges.pbobjc.h"
+#import "ClarosCommonCoreClarosdatetime.pbobjc.h"
+#import "ClarosCommonConfigurationEntityType.pbobjc.h"
+#import "ClarosCommonConfigurationRights.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
 #pragma clang diagnostic push
@@ -61,7 +61,7 @@ static GPBFileDescriptor *ClarosCommonConfigurationConfigurationRoot_FileDescrip
 @dynamic ownerId;
 @dynamic public_p;
 @dynamic version;
-@dynamic privilegesArray, privilegesArray_Count;
+@dynamic privilege, privilege_Count;
 
 typedef struct Configuration__storage_ {
   uint32_t _has_storage_[1];
@@ -69,14 +69,14 @@ typedef struct Configuration__storage_ {
   uint32_t version;
   NSString *id_p;
   NSString *createdById;
-  DateTime *createdOn;
+  ClarosDateTime *createdOn;
   NSString *modifiedById;
-  DateTime *modifiedOn;
+  ClarosDateTime *modifiedOn;
   NSString *configurationData;
   NSString *filterById;
   NSString *tenantId;
   NSString *ownerId;
-  NSMutableArray *privilegesArray;
+  NSMutableDictionary *privilege;
 } Configuration__storage_;
 
 // This method is threadsafe because it is initially called
@@ -105,7 +105,7 @@ typedef struct Configuration__storage_ {
       },
       {
         .name = "createdOn",
-        .dataTypeSpecific.className = GPBStringifySymbol(DateTime),
+        .dataTypeSpecific.className = GPBStringifySymbol(ClarosDateTime),
         .number = Configuration_FieldNumber_CreatedOn,
         .hasIndex = 2,
         .offset = (uint32_t)offsetof(Configuration__storage_, createdOn),
@@ -123,7 +123,7 @@ typedef struct Configuration__storage_ {
       },
       {
         .name = "modifiedOn",
-        .dataTypeSpecific.className = GPBStringifySymbol(DateTime),
+        .dataTypeSpecific.className = GPBStringifySymbol(ClarosDateTime),
         .number = Configuration_FieldNumber_ModifiedOn,
         .hasIndex = 4,
         .offset = (uint32_t)offsetof(Configuration__storage_, modifiedOn),
@@ -194,12 +194,12 @@ typedef struct Configuration__storage_ {
         .dataType = GPBDataTypeUInt32,
       },
       {
-        .name = "privilegesArray",
-        .dataTypeSpecific.className = GPBStringifySymbol(Privileges),
-        .number = Configuration_FieldNumber_PrivilegesArray,
+        .name = "privilege",
+        .dataTypeSpecific.className = GPBStringifySymbol(Rights),
+        .number = Configuration_FieldNumber_Privilege,
         .hasIndex = GPBNoHasBit,
-        .offset = (uint32_t)offsetof(Configuration__storage_, privilegesArray),
-        .flags = GPBFieldRepeated,
+        .offset = (uint32_t)offsetof(Configuration__storage_, privilege),
+        .flags = GPBFieldMapKeyString,
         .dataType = GPBDataTypeMessage,
       },
     };

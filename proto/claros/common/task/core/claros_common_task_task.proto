@@ -1,0 +1,20 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "claros_common_task_definition.proto";
+import "claros_common_task_data.proto";
+
+
+message Task {
+    // header
+    string id = 1;                      // GUID
+    string name = 2;                    // User Defined Name for the Task
+    string assignee = 3;                // GUID of the User that the task is assigned
+    // Source                           // From where did the task come?
+
+    // definition
+    TaskDefinition taskDefinition = 4;  // Definition of the Task
+    
+    // data
+    TaskData taskdata = 4;            // Data Stored related to the Task
+}

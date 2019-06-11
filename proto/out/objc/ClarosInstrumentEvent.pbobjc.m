@@ -14,7 +14,7 @@
 #endif
 
 #import "ClarosInstrumentEvent.pbobjc.h"
-#import "ClarosCommonDatetime.pbobjc.h"
+#import "ClarosCommonCoreClarosdatetime.pbobjc.h"
 #import "ClarosInstrumentEventMetadata.pbobjc.h"
 #import "ClarosInstrumentCalibration.pbobjc.h"
 #import "ClarosInstrumentPrognosys.pbobjc.h"
@@ -68,7 +68,7 @@ typedef struct InstrumentEvent__storage_ {
   NSMutableArray *remindersArray;
   NSMutableArray *warningsArray;
   NSMutableArray *prognosysArray;
-  DateTime *eventDateTime;
+  ClarosDateTime *eventDateTime;
 } InstrumentEvent__storage_;
 
 // This method is threadsafe because it is initially called
@@ -142,7 +142,7 @@ typedef struct InstrumentEvent__storage_ {
       },
       {
         .name = "eventDateTime",
-        .dataTypeSpecific.className = GPBStringifySymbol(DateTime),
+        .dataTypeSpecific.className = GPBStringifySymbol(ClarosDateTime),
         .number = InstrumentEvent_FieldNumber_EventDateTime,
         .hasIndex = 0,
         .offset = (uint32_t)offsetof(InstrumentEvent__storage_, eventDateTime),

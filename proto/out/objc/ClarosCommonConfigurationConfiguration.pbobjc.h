@@ -27,8 +27,8 @@
 
 CF_EXTERN_C_BEGIN
 
-@class DateTime;
-@class Privileges;
+@class ClarosDateTime;
+@class Rights;
 GPB_ENUM_FWD_DECLARE(EntityType);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -63,7 +63,7 @@ typedef GPB_ENUM(Configuration_FieldNumber) {
   Configuration_FieldNumber_OwnerId = 10,
   Configuration_FieldNumber_Public_p = 11,
   Configuration_FieldNumber_Version = 12,
-  Configuration_FieldNumber_PrivilegesArray = 13,
+  Configuration_FieldNumber_Privilege = 13,
 };
 
 @interface Configuration : GPBMessage
@@ -72,13 +72,13 @@ typedef GPB_ENUM(Configuration_FieldNumber) {
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *createdById;
 
-@property(nonatomic, readwrite, strong, null_resettable) DateTime *createdOn;
+@property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *createdOn;
 /** Test to see if @c createdOn has been set. */
 @property(nonatomic, readwrite) BOOL hasCreatedOn;
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *modifiedById;
 
-@property(nonatomic, readwrite, strong, null_resettable) DateTime *modifiedOn;
+@property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *modifiedOn;
 /** Test to see if @c modifiedOn has been set. */
 @property(nonatomic, readwrite) BOOL hasModifiedOn;
 
@@ -96,9 +96,9 @@ typedef GPB_ENUM(Configuration_FieldNumber) {
 
 @property(nonatomic, readwrite) uint32_t version;
 
-@property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Privileges*> *privilegesArray;
-/** The number of items in @c privilegesArray without causing the array to be created. */
-@property(nonatomic, readonly) NSUInteger privilegesArray_Count;
+@property(nonatomic, readwrite, strong, null_resettable) NSMutableDictionary<NSString*, Rights*> *privilege;
+/** The number of items in @c privilege without causing the array to be created. */
+@property(nonatomic, readonly) NSUInteger privilege_Count;
 
 @end
 

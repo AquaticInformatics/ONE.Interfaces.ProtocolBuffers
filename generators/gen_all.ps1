@@ -1,6 +1,6 @@
-﻿$originalPath = pwd
+﻿$originalPath = `pwd
 cd $Args[0]
-$currentPath = pwd
+$currentPath = `pwd
 
 $files = Get-ChildItem -Path . -Filter *.proto -Recurse | ForEach-Object {"$_"} 
 $files = $files.Replace($currentPath.Path, ".")
@@ -11,7 +11,7 @@ $protoDirs = $protoDirs.Replace($currentPath.Path, ".") | ForEach-Object {"--pro
 $protoDirsCommand = [String]::Join(" ", $protoDirs)
 
 
-$dirs = "cpp", "java", "js", "objc", "php", "python", "ruby"
+$dirs = "cpp", "java", "js", "objc", "php", "python", "ruby", "csharp"
 
 # Create Output Directories
 foreach($dir in $dirs) {
@@ -25,7 +25,7 @@ foreach ($dir in $dirs){
 $flags = [String]::Join(" ", $flags)
 $flags
 
-$logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/","_").Replace(" ", "-")
+$logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/","_").Replace(" ", "-")+".log"
 
 Start-Transcript $logName
 foreach($file in $files)

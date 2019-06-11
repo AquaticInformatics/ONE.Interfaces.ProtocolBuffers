@@ -30,7 +30,7 @@ class InstrumentMeasurement extends \Google\Protobuf\Internal\Message
      */
     private $fusionId = '';
     /**
-     * Generated from protobuf field <code>.claros.common.Measurement measurement = 4;</code>
+     * Generated from protobuf field <code>.claros.common.core.Measurement measurement = 4;</code>
      */
     private $measurement = null;
     /**
@@ -63,7 +63,7 @@ class InstrumentMeasurement extends \Google\Protobuf\Internal\Message
      *     @type int $channel
      *     @type string $fusionId
      *           This is optional and may be populated to
-     *     @type \Claros\Common\Measurement $measurement
+     *     @type \Claros\Common\Core\Measurement $measurement
      *     @type \Claros\Instrument\InstrumentMeasurement $supportingMeasurements
      *     @type \Claros\Common\Gis\GIS $gis
      *     @type string $measurementDataExtended
@@ -151,8 +151,8 @@ class InstrumentMeasurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.Measurement measurement = 4;</code>
-     * @return \Claros\Common\Measurement
+     * Generated from protobuf field <code>.claros.common.core.Measurement measurement = 4;</code>
+     * @return \Claros\Common\Core\Measurement
      */
     public function getMeasurement()
     {
@@ -160,13 +160,13 @@ class InstrumentMeasurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.Measurement measurement = 4;</code>
-     * @param \Claros\Common\Measurement $var
+     * Generated from protobuf field <code>.claros.common.core.Measurement measurement = 4;</code>
+     * @param \Claros\Common\Core\Measurement $var
      * @return $this
      */
     public function setMeasurement($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\Measurement::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Core\Measurement::class);
         $this->measurement = $var;
 
         return $this;

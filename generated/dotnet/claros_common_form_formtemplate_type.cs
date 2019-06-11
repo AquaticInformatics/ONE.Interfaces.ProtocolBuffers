@@ -9,14 +9,14 @@ namespace claros.common.form
     [global::ProtoBuf.ProtoContract()]
     public enum FormTemplateType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"PLANT")]
-        Plant = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"LABORATORY")]
-        Laboratory = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"ENTERPRISE")]
-        Enterprise = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"FT_UNKNOWN")]
+        FtUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"FT_PLANT")]
+        FtPlant = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"FT_LABORATORY")]
+        FtLaboratory = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"FT_ENTERPRISE")]
+        FtEnterprise = 3,
     }
 
 }

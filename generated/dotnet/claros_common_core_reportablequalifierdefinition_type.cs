@@ -9,16 +9,16 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum ReportableQualifierDefinitionType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"ENTEREDVALUE")]
-        Enteredvalue = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"ZERO")]
-        Zero = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"HALFENTERED")]
-        Halfentered = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"CONSTANT")]
-        Constant = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQD_UNKNOWN")]
+        RqdUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQD_ENTEREDVALUE")]
+        RqdEnteredvalue = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQD_ZERO")]
+        RqdZero = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQD_HALFENTERED")]
+        RqdHalfentered = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQD_CONSTANT")]
+        RqdConstant = 4,
     }
 
 }

@@ -16,7 +16,7 @@
 #import "ClarosInstrumentData.pbobjc.h"
 #import "ClarosInstrumentEvent.pbobjc.h"
 #import "ClarosInstrumentMeasurement.pbobjc.h"
-#import "ClarosCommonDatetime.pbobjc.h"
+#import "ClarosCommonCoreClarosdatetime.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
 #pragma clang diagnostic push
@@ -65,7 +65,7 @@ typedef struct InstrumentData__storage_ {
   NSMutableArray *measurementsArray;
   NSMutableDictionary *settings;
   NSMutableDictionary *states;
-  DateTime *instrumentDataDateTime;
+  ClarosDateTime *instrumentDataDateTime;
 } InstrumentData__storage_;
 
 // This method is threadsafe because it is initially called
@@ -130,7 +130,7 @@ typedef struct InstrumentData__storage_ {
       },
       {
         .name = "instrumentDataDateTime",
-        .dataTypeSpecific.className = GPBStringifySymbol(DateTime),
+        .dataTypeSpecific.className = GPBStringifySymbol(ClarosDateTime),
         .number = InstrumentData_FieldNumber_InstrumentDataDateTime,
         .hasIndex = 3,
         .offset = (uint32_t)offsetof(InstrumentData__storage_, instrumentDataDateTime),

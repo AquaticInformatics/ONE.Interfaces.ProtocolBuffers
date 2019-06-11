@@ -60,17 +60,17 @@ public final class ClarosInstrumentMeasurement {
         getFusionIdBytes();
 
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
     boolean hasMeasurement();
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
-    claros.common.ClarosCommonMeasurement.Measurement getMeasurement();
+    claros.common.core.ClarosCommonCoreMeasurement.Measurement getMeasurement();
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
-    claros.common.ClarosCommonMeasurement.MeasurementOrBuilder getMeasurementOrBuilder();
+    claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder getMeasurementOrBuilder();
 
     /**
      * <code>.claros.instrument.InstrumentMeasurement supportingMeasurements = 5;</code>
@@ -193,11 +193,11 @@ public final class ClarosInstrumentMeasurement {
               break;
             }
             case 34: {
-              claros.common.ClarosCommonMeasurement.Measurement.Builder subBuilder = null;
+              claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder subBuilder = null;
               if (measurement_ != null) {
                 subBuilder = measurement_.toBuilder();
               }
-              measurement_ = input.readMessage(claros.common.ClarosCommonMeasurement.Measurement.parser(), extensionRegistry);
+              measurement_ = input.readMessage(claros.common.core.ClarosCommonCoreMeasurement.Measurement.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(measurement_);
                 measurement_ = subBuilder.buildPartial();
@@ -376,23 +376,23 @@ public final class ClarosInstrumentMeasurement {
     }
 
     public static final int MEASUREMENT_FIELD_NUMBER = 4;
-    private claros.common.ClarosCommonMeasurement.Measurement measurement_;
+    private claros.common.core.ClarosCommonCoreMeasurement.Measurement measurement_;
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
     public boolean hasMeasurement() {
       return measurement_ != null;
     }
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
-    public claros.common.ClarosCommonMeasurement.Measurement getMeasurement() {
-      return measurement_ == null ? claros.common.ClarosCommonMeasurement.Measurement.getDefaultInstance() : measurement_;
+    public claros.common.core.ClarosCommonCoreMeasurement.Measurement getMeasurement() {
+      return measurement_ == null ? claros.common.core.ClarosCommonCoreMeasurement.Measurement.getDefaultInstance() : measurement_;
     }
     /**
-     * <code>.claros.common.Measurement measurement = 4;</code>
+     * <code>.claros.common.core.Measurement measurement = 4;</code>
      */
-    public claros.common.ClarosCommonMeasurement.MeasurementOrBuilder getMeasurementOrBuilder() {
+    public claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder getMeasurementOrBuilder() {
       return getMeasurement();
     }
 
@@ -1182,29 +1182,29 @@ public final class ClarosInstrumentMeasurement {
         return this;
       }
 
-      private claros.common.ClarosCommonMeasurement.Measurement measurement_;
+      private claros.common.core.ClarosCommonCoreMeasurement.Measurement measurement_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonMeasurement.Measurement, claros.common.ClarosCommonMeasurement.Measurement.Builder, claros.common.ClarosCommonMeasurement.MeasurementOrBuilder> measurementBuilder_;
+          claros.common.core.ClarosCommonCoreMeasurement.Measurement, claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder, claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder> measurementBuilder_;
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
       public boolean hasMeasurement() {
         return measurementBuilder_ != null || measurement_ != null;
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
-      public claros.common.ClarosCommonMeasurement.Measurement getMeasurement() {
+      public claros.common.core.ClarosCommonCoreMeasurement.Measurement getMeasurement() {
         if (measurementBuilder_ == null) {
-          return measurement_ == null ? claros.common.ClarosCommonMeasurement.Measurement.getDefaultInstance() : measurement_;
+          return measurement_ == null ? claros.common.core.ClarosCommonCoreMeasurement.Measurement.getDefaultInstance() : measurement_;
         } else {
           return measurementBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
-      public Builder setMeasurement(claros.common.ClarosCommonMeasurement.Measurement value) {
+      public Builder setMeasurement(claros.common.core.ClarosCommonCoreMeasurement.Measurement value) {
         if (measurementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1218,10 +1218,10 @@ public final class ClarosInstrumentMeasurement {
         return this;
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
       public Builder setMeasurement(
-          claros.common.ClarosCommonMeasurement.Measurement.Builder builderForValue) {
+          claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder builderForValue) {
         if (measurementBuilder_ == null) {
           measurement_ = builderForValue.build();
           onChanged();
@@ -1232,13 +1232,13 @@ public final class ClarosInstrumentMeasurement {
         return this;
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
-      public Builder mergeMeasurement(claros.common.ClarosCommonMeasurement.Measurement value) {
+      public Builder mergeMeasurement(claros.common.core.ClarosCommonCoreMeasurement.Measurement value) {
         if (measurementBuilder_ == null) {
           if (measurement_ != null) {
             measurement_ =
-              claros.common.ClarosCommonMeasurement.Measurement.newBuilder(measurement_).mergeFrom(value).buildPartial();
+              claros.common.core.ClarosCommonCoreMeasurement.Measurement.newBuilder(measurement_).mergeFrom(value).buildPartial();
           } else {
             measurement_ = value;
           }
@@ -1250,7 +1250,7 @@ public final class ClarosInstrumentMeasurement {
         return this;
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
       public Builder clearMeasurement() {
         if (measurementBuilder_ == null) {
@@ -1264,33 +1264,33 @@ public final class ClarosInstrumentMeasurement {
         return this;
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
-      public claros.common.ClarosCommonMeasurement.Measurement.Builder getMeasurementBuilder() {
+      public claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder getMeasurementBuilder() {
         
         onChanged();
         return getMeasurementFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
-      public claros.common.ClarosCommonMeasurement.MeasurementOrBuilder getMeasurementOrBuilder() {
+      public claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder getMeasurementOrBuilder() {
         if (measurementBuilder_ != null) {
           return measurementBuilder_.getMessageOrBuilder();
         } else {
           return measurement_ == null ?
-              claros.common.ClarosCommonMeasurement.Measurement.getDefaultInstance() : measurement_;
+              claros.common.core.ClarosCommonCoreMeasurement.Measurement.getDefaultInstance() : measurement_;
         }
       }
       /**
-       * <code>.claros.common.Measurement measurement = 4;</code>
+       * <code>.claros.common.core.Measurement measurement = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.ClarosCommonMeasurement.Measurement, claros.common.ClarosCommonMeasurement.Measurement.Builder, claros.common.ClarosCommonMeasurement.MeasurementOrBuilder> 
+          claros.common.core.ClarosCommonCoreMeasurement.Measurement, claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder, claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder> 
           getMeasurementFieldBuilder() {
         if (measurementBuilder_ == null) {
           measurementBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.ClarosCommonMeasurement.Measurement, claros.common.ClarosCommonMeasurement.Measurement.Builder, claros.common.ClarosCommonMeasurement.MeasurementOrBuilder>(
+              claros.common.core.ClarosCommonCoreMeasurement.Measurement, claros.common.core.ClarosCommonCoreMeasurement.Measurement.Builder, claros.common.core.ClarosCommonCoreMeasurement.MeasurementOrBuilder>(
                   getMeasurement(),
                   getParentForChildren(),
                   isClean());
@@ -1822,18 +1822,18 @@ public final class ClarosInstrumentMeasurement {
   static {
     java.lang.String[] descriptorData = {
       "\n#claros_instrument_measurement.proto\022\021c" +
-      "laros.instrument\032\037claros_common_measurem" +
-      "ent.proto\032\035claros_instrument_event.proto" +
-      "\032\033claros_common_gis_gis.proto\"\332\002\n\025Instru" +
-      "mentMeasurement\022\037\n\027instrumentMeasurement" +
-      "Id\030\001 \001(\t\022\017\n\007channel\030\002 \001(\005\022\020\n\010fusionId\030\003 " +
-      "\001(\t\022/\n\013measurement\030\004 \001(\0132\032.claros.common" +
-      ".Measurement\022H\n\026supportingMeasurements\030\005" +
-      " \001(\0132(.claros.instrument.InstrumentMeasu" +
-      "rement\022#\n\003gis\030\006 \001(\0132\026.claros.common.gis." +
-      "GIS\022\037\n\027measurementDataExtended\030\007 \001(\t\022<\n\020" +
-      "measurementEvent\030\010 \001(\0132\".claros.instrume" +
-      "nt.InstrumentEventb\006proto3"
+      "laros.instrument\032$claros_common_core_mea" +
+      "surement.proto\032\035claros_instrument_event." +
+      "proto\032\033claros_common_gis_gis.proto\"\337\002\n\025I" +
+      "nstrumentMeasurement\022\037\n\027instrumentMeasur" +
+      "ementId\030\001 \001(\t\022\017\n\007channel\030\002 \001(\005\022\020\n\010fusion" +
+      "Id\030\003 \001(\t\0224\n\013measurement\030\004 \001(\0132\037.claros.c" +
+      "ommon.core.Measurement\022H\n\026supportingMeas" +
+      "urements\030\005 \001(\0132(.claros.instrument.Instr" +
+      "umentMeasurement\022#\n\003gis\030\006 \001(\0132\026.claros.c" +
+      "ommon.gis.GIS\022\037\n\027measurementDataExtended" +
+      "\030\007 \001(\t\022<\n\020measurementEvent\030\010 \001(\0132\".claro" +
+      "s.instrument.InstrumentEventb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1846,7 +1846,7 @@ public final class ClarosInstrumentMeasurement {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          claros.common.ClarosCommonMeasurement.getDescriptor(),
+          claros.common.core.ClarosCommonCoreMeasurement.getDescriptor(),
           claros.instrument.ClarosInstrumentEvent.getDescriptor(),
           claros.common.gis.ClarosCommonGisGis.getDescriptor(),
         }, assigner);
@@ -1856,7 +1856,7 @@ public final class ClarosInstrumentMeasurement {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_instrument_InstrumentMeasurement_descriptor,
         new java.lang.String[] { "InstrumentMeasurementId", "Channel", "FusionId", "Measurement", "SupportingMeasurements", "Gis", "MeasurementDataExtended", "MeasurementEvent", });
-    claros.common.ClarosCommonMeasurement.getDescriptor();
+    claros.common.core.ClarosCommonCoreMeasurement.getDescriptor();
     claros.instrument.ClarosInstrumentEvent.getDescriptor();
     claros.common.gis.ClarosCommonGisGis.getDescriptor();
   }

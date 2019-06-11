@@ -8,9 +8,9 @@ $protoDirs = $protoDirs.Replace($currentPath.Path, ".") | ForEach-Object {"--pro
 
 $protoDirsCommand = [String]::Join(" ", $protoDirs)
 
-$logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/","_").Replace(" ", "-")
+$logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/","_").Replace(" ", "-")+".log"
 
-#Start-Transcript $logName
+Start-Transcript $logName
 foreach($file in $files)
 {
     $Command = "protogen --csharp_out=../generated/dotnet $protoDirsCommand $file"
@@ -18,4 +18,4 @@ foreach($file in $files)
 
     Invoke-Expression -Command $Command
 }
-#Stop-Transcript
+Stop-Transcript

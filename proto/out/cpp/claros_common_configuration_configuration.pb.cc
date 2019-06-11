@@ -16,11 +16,16 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fdatetime_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fprivileges_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Privileges_claros_5fcommon_5fprivileges_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Configuration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fconfiguration_5frights_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Rights_claros_5fcommon_5fconfiguration_5frights_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fclarosdatetime_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto;
 namespace claros {
 namespace common {
 namespace configuration {
+class Configuration_PrivilegeEntry_DoNotUseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<Configuration_PrivilegeEntry_DoNotUse> _instance;
+} _Configuration_PrivilegeEntry_DoNotUse_default_instance_;
 class ConfigurationDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Configuration> _instance;
@@ -28,6 +33,20 @@ class ConfigurationDefaultTypeInternal {
 }  // namespace configuration
 }  // namespace common
 }  // namespace claros
+static void InitDefaultsConfiguration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::claros::common::configuration::_Configuration_PrivilegeEntry_DoNotUse_default_instance_;
+    new (ptr) ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse();
+  }
+  ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_Configuration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsConfiguration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto}, {
+      &scc_info_Rights_claros_5fcommon_5fconfiguration_5frights_2eproto.base,}};
+
 static void InitDefaultsConfiguration_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -41,18 +60,28 @@ static void InitDefaultsConfiguration_claros_5fcommon_5fconfiguration_5fconfigur
 
 ::google::protobuf::internal::SCCInfo<2> scc_info_Configuration_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsConfiguration_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto}, {
-      &scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto.base,
-      &scc_info_Privileges_claros_5fcommon_5fprivileges_2eproto.base,}};
+      &scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto.base,
+      &scc_info_Configuration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto.base,}};
 
 void InitDefaults_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Configuration_PrivilegeEntry_DoNotUse_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Configuration_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto[1];
+::google::protobuf::Metadata file_level_metadata_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto[2];
 constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto = nullptr;
 constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto = nullptr;
 
 const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse, key_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse, value_),
+  0,
+  1,
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -70,51 +99,57 @@ const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5fconfiguration_5fc
   PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, ownerid_),
   PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, public__),
   PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, version_),
-  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, privileges_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::configuration::Configuration, privilege_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::claros::common::configuration::Configuration)},
+  { 0, 7, sizeof(::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse)},
+  { 9, -1, sizeof(::claros::common::configuration::Configuration)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&::claros::common::configuration::_Configuration_PrivilegeEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::claros::common::configuration::_Configuration_default_instance_),
 };
 
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto = {
   {}, AddDescriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, "claros_common_configuration_configuration.proto", schemas,
   file_default_instances, TableStruct_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto::offsets,
-  file_level_metadata_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, 1, file_level_enum_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, file_level_service_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto,
+  file_level_metadata_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, 2, file_level_enum_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, file_level_service_descriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto,
 };
 
 const char descriptor_table_protodef_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto[] =
   "\n/claros_common_configuration_configurat"
-  "ion.proto\022\033claros.common.configuration\032\034"
-  "claros_common_datetime.proto\032#claros_com"
-  "mon_enum_entitytype.proto\032\036claros_common"
-  "_privileges.proto\"\216\003\n\rConfiguration\022\n\n\002i"
-  "d\030\001 \001(\t\022\023\n\013createdById\030\002 \001(\t\022*\n\tcreatedO"
-  "n\030\003 \001(\0132\027.claros.common.ClarosDateTime\022\024\n\014modi"
-  "fiedById\030\004 \001(\t\022+\n\nmodifiedOn\030\005 \001(\0132\027.cla"
-  "ros.common.DateTime\022\031\n\021configurationData"
-  "\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001(\0162\'.claros.co"
-  "mmon.configuration.EntityType\022\022\n\nfilterB"
-  "yId\030\010 \001(\t\022\020\n\010tenantId\030\t \001(\t\022\017\n\007ownerId\030\n"
-  " \001(\t\022\016\n\006public\030\013 \001(\010\022\017\n\007version\030\014 \001(\r\022;\n"
-  "\nprivileges\030\r \003(\0132\'.claros.common.config"
-  "uration.Privilegesb\006proto3"
+  "ion.proto\022\033claros.common.configuration\032\'"
+  "claros_common_core_clarosdatetime.proto\032"
+  "-claros_common_configuration_entity_type"
+  ".proto\032(claros_common_configuration_righ"
+  "ts.proto\"\214\004\n\rConfiguration\022\n\n\002id\030\001 \001(\t\022\023"
+  "\n\013createdById\030\002 \001(\t\0225\n\tcreatedOn\030\003 \001(\0132\""
+  ".claros.common.core.ClarosDateTime\022\024\n\014mo"
+  "difiedById\030\004 \001(\t\0226\n\nmodifiedOn\030\005 \001(\0132\".c"
+  "laros.common.core.ClarosDateTime\022\031\n\021conf"
+  "igurationData\030\006 \001(\t\022=\n\014entityTypeId\030\007 \001("
+  "\0162\'.claros.common.configuration.EntityTy"
+  "pe\022\022\n\nfilterById\030\010 \001(\t\022\020\n\010tenantId\030\t \001(\t"
+  "\022\017\n\007ownerId\030\n \001(\t\022\016\n\006public\030\013 \001(\010\022\017\n\007ver"
+  "sion\030\014 \001(\r\022L\n\tprivilege\030\r \003(\01329.claros.c"
+  "ommon.configuration.Configuration.Privil"
+  "egeEntry\032U\n\016PrivilegeEntry\022\013\n\003key\030\001 \001(\t\022"
+  "2\n\005value\030\002 \001(\0132#.claros.common.configura"
+  "tion.Rights:\0028\001b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto = {
   false, InitDefaults_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto,
-  "claros_common_configuration_configuration.proto", &assign_descriptors_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, 586,
+  "claros_common_configuration_configuration.proto", &assign_descriptors_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, 743,
 };
 
 void AddDescriptors_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[3] =
   {
-    ::AddDescriptors_claros_5fcommon_5fdatetime_2eproto,
-    ::AddDescriptors_claros_5fcommon_5fenum_5fentitytype_2eproto,
-    ::AddDescriptors_claros_5fcommon_5fprivileges_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fcore_5fclarosdatetime_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fconfiguration_5frights_2eproto,
   };
  ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto, deps, 3);
 }
@@ -127,23 +162,60 @@ namespace configuration {
 
 // ===================================================================
 
+Configuration_PrivilegeEntry_DoNotUse::Configuration_PrivilegeEntry_DoNotUse() {}
+Configuration_PrivilegeEntry_DoNotUse::Configuration_PrivilegeEntry_DoNotUse(::google::protobuf::Arena* arena)
+    : SuperType(arena) {}
+void Configuration_PrivilegeEntry_DoNotUse::MergeFrom(const Configuration_PrivilegeEntry_DoNotUse& other) {
+  MergeFromInternal(other);
+}
+::google::protobuf::Metadata Configuration_PrivilegeEntry_DoNotUse::GetMetadata() const {
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto);
+  return ::file_level_metadata_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto[0];
+}
+void Configuration_PrivilegeEntry_DoNotUse::MergeFrom(
+    const ::google::protobuf::Message& other) {
+  ::google::protobuf::Message::MergeFrom(other);
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Configuration_PrivilegeEntry_DoNotUse::_ParseMap(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx) {
+  using MF = ::google::protobuf::internal::MapField<
+      Configuration_PrivilegeEntry_DoNotUse, EntryKeyType, EntryValueType,
+      kEntryKeyFieldType, kEntryValueFieldType,
+      kEntryDefaultEnumValue>;
+  auto mf = static_cast<MF*>(object);
+  Parser<MF, ::google::protobuf::Map<EntryKeyType, EntryValueType>> parser(mf);
+#define DO_(x) if (!(x)) return false
+  DO_(parser.ParseMap(begin, end));
+  DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    parser.key().data(), static_cast<int>(parser.key().length()),
+    ::google::protobuf::internal::WireFormatLite::PARSE,
+    "claros.common.configuration.Configuration.PrivilegeEntry.key"));
+#undef DO_
+  return true;
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+
+// ===================================================================
+
 void Configuration::InitAsDefaultInstance() {
-  ::claros::common::configuration::_Configuration_default_instance_._instance.get_mutable()->createdon_ = const_cast< ::claros::common::DateTime*>(
-      ::claros::common::DateTime::internal_default_instance());
-  ::claros::common::configuration::_Configuration_default_instance_._instance.get_mutable()->modifiedon_ = const_cast< ::claros::common::DateTime*>(
-      ::claros::common::DateTime::internal_default_instance());
+  ::claros::common::configuration::_Configuration_default_instance_._instance.get_mutable()->createdon_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+      ::claros::common::core::ClarosDateTime::internal_default_instance());
+  ::claros::common::configuration::_Configuration_default_instance_._instance.get_mutable()->modifiedon_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+      ::claros::common::core::ClarosDateTime::internal_default_instance());
 }
 class Configuration::HasBitSetters {
  public:
-  static const ::claros::common::DateTime& createdon(const Configuration* msg);
-  static const ::claros::common::DateTime& modifiedon(const Configuration* msg);
+  static const ::claros::common::core::ClarosDateTime& createdon(const Configuration* msg);
+  static const ::claros::common::core::ClarosDateTime& modifiedon(const Configuration* msg);
 };
 
-const ::claros::common::DateTime&
+const ::claros::common::core::ClarosDateTime&
 Configuration::HasBitSetters::createdon(const Configuration* msg) {
   return *msg->createdon_;
 }
-const ::claros::common::DateTime&
+const ::claros::common::core::ClarosDateTime&
 Configuration::HasBitSetters::modifiedon(const Configuration* msg) {
   return *msg->modifiedon_;
 }
@@ -159,8 +231,8 @@ void Configuration::clear_modifiedon() {
   }
   modifiedon_ = nullptr;
 }
-void Configuration::clear_privileges() {
-  privileges_.Clear();
+void Configuration::clear_privilege() {
+  privilege_.Clear();
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Configuration::kIdFieldNumber;
@@ -175,7 +247,7 @@ const int Configuration::kTenantIdFieldNumber;
 const int Configuration::kOwnerIdFieldNumber;
 const int Configuration::kPublicFieldNumber;
 const int Configuration::kVersionFieldNumber;
-const int Configuration::kPrivilegesFieldNumber;
+const int Configuration::kPrivilegeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Configuration::Configuration()
@@ -185,9 +257,9 @@ Configuration::Configuration()
 }
 Configuration::Configuration(const Configuration& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr),
-      privileges_(from.privileges_) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  privilege_.MergeFrom(from.privilege_);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
     id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
@@ -217,12 +289,12 @@ Configuration::Configuration(const Configuration& from)
     ownerid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ownerid_);
   }
   if (from.has_createdon()) {
-    createdon_ = new ::claros::common::DateTime(*from.createdon_);
+    createdon_ = new ::claros::common::core::ClarosDateTime(*from.createdon_);
   } else {
     createdon_ = nullptr;
   }
   if (from.has_modifiedon()) {
-    modifiedon_ = new ::claros::common::DateTime(*from.modifiedon_);
+    modifiedon_ = new ::claros::common::core::ClarosDateTime(*from.modifiedon_);
   } else {
     modifiedon_ = nullptr;
   }
@@ -279,7 +351,7 @@ void Configuration::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  privileges_.Clear();
+  privilege_.Clear();
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   createdbyid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   modifiedbyid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -346,12 +418,12 @@ const char* Configuration::_InternalParse(const char* begin, const char* end, vo
         ptr += size;
         break;
       }
-      // .claros.common.ClarosDateTime createdOn = 3;
+      // .claros.common.core.ClarosDateTime createdOn = 3;
       case 3: {
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::DateTime::_InternalParse;
+        parser_till_end = ::claros::common::core::ClarosDateTime::_InternalParse;
         object = msg->mutable_createdon();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -375,12 +447,12 @@ const char* Configuration::_InternalParse(const char* begin, const char* end, vo
         ptr += size;
         break;
       }
-      // .claros.common.ClarosDateTime modifiedOn = 5;
+      // .claros.common.core.ClarosDateTime modifiedOn = 5;
       case 5: {
         if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::DateTime::_InternalParse;
+        parser_till_end = ::claros::common::core::ClarosDateTime::_InternalParse;
         object = msg->mutable_modifiedon();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -474,18 +546,21 @@ const char* Configuration::_InternalParse(const char* begin, const char* end, vo
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // repeated .claros.common.configuration.Privileges privileges = 13;
+      // map<string, .claros.common.configuration.Rights> privilege = 13;
       case 13: {
         if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
         do {
           ptr = ::google::protobuf::io::ReadSize(ptr, &size);
           GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          parser_till_end = ::claros::common::configuration::Privileges::_InternalParse;
-          object = msg->add_privileges();
+          parser_till_end = ::google::protobuf::internal::SlowMapEntryParser;
+          auto parse_map = ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse::_ParseMap;
+          ctx->extra_parse_data().payload.clear();
+          ctx->extra_parse_data().parse_map = parse_map;
+          object = &msg->privilege_;
           if (size > end - ptr) goto len_delim_till_end;
-          ptr += size;
-          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
-              {parser_till_end, object}, ptr - size, ptr));
+          auto newend = ptr + size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(parse_map(ptr, newend, object, ctx));
+          ptr = newend;
           if (ptr >= end) break;
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 106 && (ptr += 1));
         break;
@@ -554,7 +629,7 @@ bool Configuration::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.ClarosDateTime createdOn = 3;
+      // .claros.common.core.ClarosDateTime createdOn = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -580,7 +655,7 @@ bool Configuration::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.ClarosDateTime modifiedOn = 5;
+      // .claros.common.core.ClarosDateTime modifiedOn = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -691,11 +766,22 @@ bool Configuration::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .claros.common.configuration.Privileges privileges = 13;
+      // map<string, .claros.common.configuration.Rights> privilege = 13;
       case 13: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_privileges()));
+          Configuration_PrivilegeEntry_DoNotUse::Parser< ::google::protobuf::internal::MapField<
+              Configuration_PrivilegeEntry_DoNotUse,
+              ::std::string, ::claros::common::configuration::Rights,
+              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+              ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
+              0 >,
+            ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights > > parser(&privilege_);
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.configuration.Configuration.PrivilegeEntry.key"));
         } else {
           goto handle_unusual;
         }
@@ -749,7 +835,7 @@ void Configuration::SerializeWithCachedSizes(
       2, this->createdbyid(), output);
   }
 
-  // .claros.common.ClarosDateTime createdOn = 3;
+  // .claros.common.core.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::createdon(this), output);
@@ -765,7 +851,7 @@ void Configuration::SerializeWithCachedSizes(
       4, this->modifiedbyid(), output);
   }
 
-  // .claros.common.ClarosDateTime modifiedOn = 5;
+  // .claros.common.core.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, HasBitSetters::modifiedon(this), output);
@@ -827,13 +913,49 @@ void Configuration::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->version(), output);
   }
 
-  // repeated .claros.common.configuration.Privileges privileges = 13;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->privileges_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13,
-      this->privileges(static_cast<int>(i)),
-      output);
+  // map<string, .claros.common.configuration.Rights> privilege = 13;
+  if (!this->privilege().empty()) {
+    typedef ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "claros.common.configuration.Configuration.PrivilegeEntry.key");
+      }
+    };
+
+    if (output->IsSerializationDeterministic() &&
+        this->privilege().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->privilege().size()]);
+      typedef ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_iterator
+          it = this->privilege().begin();
+          it != this->privilege().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      ::std::unique_ptr<Configuration_PrivilegeEntry_DoNotUse> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(privilege_.NewEntryWrapper(items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(13, *entry, output);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      ::std::unique_ptr<Configuration_PrivilegeEntry_DoNotUse> entry;
+      for (::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_iterator
+          it = this->privilege().begin();
+          it != this->privilege().end(); ++it) {
+        entry.reset(privilege_.NewEntryWrapper(it->first, it->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(13, *entry, output);
+        Utf8Check::Check(&(*it));
+      }
+    }
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -871,7 +993,7 @@ void Configuration::SerializeWithCachedSizes(
         2, this->createdbyid(), target);
   }
 
-  // .claros.common.ClarosDateTime createdOn = 3;
+  // .claros.common.core.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -889,7 +1011,7 @@ void Configuration::SerializeWithCachedSizes(
         4, this->modifiedbyid(), target);
   }
 
-  // .claros.common.ClarosDateTime modifiedOn = 5;
+  // .claros.common.core.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -956,12 +1078,49 @@ void Configuration::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->version(), target);
   }
 
-  // repeated .claros.common.configuration.Privileges privileges = 13;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->privileges_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        13, this->privileges(static_cast<int>(i)), target);
+  // map<string, .claros.common.configuration.Rights> privilege = 13;
+  if (!this->privilege().empty()) {
+    typedef ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "claros.common.configuration.Configuration.PrivilegeEntry.key");
+      }
+    };
+
+    if (false &&
+        this->privilege().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->privilege().size()]);
+      typedef ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_iterator
+          it = this->privilege().begin();
+          it != this->privilege().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      ::std::unique_ptr<Configuration_PrivilegeEntry_DoNotUse> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(privilege_.NewEntryWrapper(items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
+        target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(13, *entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      ::std::unique_ptr<Configuration_PrivilegeEntry_DoNotUse> entry;
+      for (::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_iterator
+          it = this->privilege().begin();
+          it != this->privilege().end(); ++it) {
+        entry.reset(privilege_.NewEntryWrapper(it->first, it->second));
+        target = ::google::protobuf::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(13, *entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -985,14 +1144,17 @@ size_t Configuration::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .claros.common.configuration.Privileges privileges = 13;
+  // map<string, .claros.common.configuration.Rights> privilege = 13;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->privilege_size());
   {
-    unsigned int count = static_cast<unsigned int>(this->privileges_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->privileges(static_cast<int>(i)));
+    ::std::unique_ptr<Configuration_PrivilegeEntry_DoNotUse> entry;
+    for (::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >::const_iterator
+        it = this->privilege().begin();
+        it != this->privilege().end(); ++it) {
+      entry.reset(privilege_.NewEntryWrapper(it->first, it->second));
+      total_size += ::google::protobuf::internal::WireFormatLite::
+          MessageSizeNoVirtual(*entry);
     }
   }
 
@@ -1045,14 +1207,14 @@ size_t Configuration::ByteSizeLong() const {
         this->ownerid());
   }
 
-  // .claros.common.ClarosDateTime createdOn = 3;
+  // .claros.common.core.ClarosDateTime createdOn = 3;
   if (this->has_createdon()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *createdon_);
   }
 
-  // .claros.common.ClarosDateTime modifiedOn = 5;
+  // .claros.common.core.ClarosDateTime modifiedOn = 5;
   if (this->has_modifiedon()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1104,7 +1266,7 @@ void Configuration::MergeFrom(const Configuration& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  privileges_.MergeFrom(from.privileges_);
+  privilege_.MergeFrom(from.privilege_);
   if (from.id().size() > 0) {
 
     id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
@@ -1134,10 +1296,10 @@ void Configuration::MergeFrom(const Configuration& from) {
     ownerid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ownerid_);
   }
   if (from.has_createdon()) {
-    mutable_createdon()->::claros::common::DateTime::MergeFrom(from.createdon());
+    mutable_createdon()->::claros::common::core::ClarosDateTime::MergeFrom(from.createdon());
   }
   if (from.has_modifiedon()) {
-    mutable_modifiedon()->::claros::common::DateTime::MergeFrom(from.modifiedon());
+    mutable_modifiedon()->::claros::common::core::ClarosDateTime::MergeFrom(from.modifiedon());
   }
   if (from.entitytypeid() != 0) {
     set_entitytypeid(from.entitytypeid());
@@ -1175,7 +1337,7 @@ void Configuration::Swap(Configuration* other) {
 void Configuration::InternalSwap(Configuration* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&privileges_)->InternalSwap(CastToBase(&other->privileges_));
+  privilege_.Swap(&other->privilege_);
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   createdbyid_.Swap(&other->createdbyid_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -1209,6 +1371,9 @@ void Configuration::InternalSwap(Configuration* other) {
 }  // namespace claros
 namespace google {
 namespace protobuf {
+template<> PROTOBUF_NOINLINE ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse* Arena::CreateMaybeMessage< ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse >(arena);
+}
 template<> PROTOBUF_NOINLINE ::claros::common::configuration::Configuration* Arena::CreateMaybeMessage< ::claros::common::configuration::Configuration >(Arena* arena) {
   return Arena::CreateInternal< ::claros::common::configuration::Configuration >(arena);
 }

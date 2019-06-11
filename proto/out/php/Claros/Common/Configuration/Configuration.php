@@ -22,7 +22,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
      */
     private $createdById = '';
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
      */
     private $createdOn = null;
     /**
@@ -30,7 +30,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
      */
     private $modifiedById = '';
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
      */
     private $modifiedOn = null;
     /**
@@ -62,9 +62,9 @@ class Configuration extends \Google\Protobuf\Internal\Message
      */
     private $version = 0;
     /**
-     * Generated from protobuf field <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
+     * Generated from protobuf field <code>map<string, .claros.common.configuration.Rights> privilege = 13;</code>
      */
-    private $privileges;
+    private $privilege;
 
     /**
      * Constructor.
@@ -74,9 +74,9 @@ class Configuration extends \Google\Protobuf\Internal\Message
      *
      *     @type string $id
      *     @type string $createdById
-     *     @type \Claros\Common\DateTime $createdOn
+     *     @type \Claros\Common\Core\ClarosDateTime $createdOn
      *     @type string $modifiedById
-     *     @type \Claros\Common\DateTime $modifiedOn
+     *     @type \Claros\Common\Core\ClarosDateTime $modifiedOn
      *     @type string $configurationData
      *     @type int $entityTypeId
      *     @type string $filterById
@@ -84,7 +84,7 @@ class Configuration extends \Google\Protobuf\Internal\Message
      *     @type string $ownerId
      *     @type bool $public
      *     @type int $version
-     *     @type \Claros\Common\Configuration\Privileges[]|\Google\Protobuf\Internal\RepeatedField $privileges
+     *     @type array|\Google\Protobuf\Internal\MapField $privilege
      * }
      */
     public function __construct($data = NULL) {
@@ -137,8 +137,8 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
-     * @return \Claros\Common\DateTime
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
+     * @return \Claros\Common\Core\ClarosDateTime
      */
     public function getCreatedOn()
     {
@@ -146,13 +146,13 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime createdOn = 3;</code>
-     * @param \Claros\Common\DateTime $var
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime createdOn = 3;</code>
+     * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
      */
     public function setCreatedOn($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\DateTime::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Core\ClarosDateTime::class);
         $this->createdOn = $var;
 
         return $this;
@@ -181,8 +181,8 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
-     * @return \Claros\Common\DateTime
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
+     * @return \Claros\Common\Core\ClarosDateTime
      */
     public function getModifiedOn()
     {
@@ -190,13 +190,13 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.ClarosDateTime modifiedOn = 5;</code>
-     * @param \Claros\Common\DateTime $var
+     * Generated from protobuf field <code>.claros.common.core.ClarosDateTime modifiedOn = 5;</code>
+     * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
      */
     public function setModifiedOn($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\DateTime::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Core\ClarosDateTime::class);
         $this->modifiedOn = $var;
 
         return $this;
@@ -357,23 +357,23 @@ class Configuration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * Generated from protobuf field <code>map<string, .claros.common.configuration.Rights> privilege = 13;</code>
+     * @return \Google\Protobuf\Internal\MapField
      */
-    public function getPrivileges()
+    public function getPrivilege()
     {
-        return $this->privileges;
+        return $this->privilege;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .claros.common.configuration.Privileges privileges = 13;</code>
-     * @param \Claros\Common\Configuration\Privileges[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>map<string, .claros.common.configuration.Rights> privilege = 13;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setPrivileges($var)
+    public function setPrivilege($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Claros\Common\Configuration\Privileges::class);
-        $this->privileges = $arr;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Claros\Common\Configuration\Rights::class);
+        $this->privilege = $arr;
 
         return $this;
     }

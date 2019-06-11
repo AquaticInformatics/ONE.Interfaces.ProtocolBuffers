@@ -14,7 +14,7 @@ namespace claros.common.core
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
         [global::ProtoBuf.ProtoMember(1)]
-        public MobileDate MobileDate { get; set; }
+        public MobileDate mobileDate { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
         public MobileTime mobileTime { get; set; }

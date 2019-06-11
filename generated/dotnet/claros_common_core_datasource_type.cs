@@ -9,20 +9,20 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum DataSourceType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"FORM")]
-        Form = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"COMPUTATION")]
-        Computation = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"SPREADSHEET")]
-        Spreadsheet = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"INSTRUMENTMEASUREMENT")]
-        Instrumentmeasurement = 4,
-        [global::ProtoBuf.ProtoEnum(Name = @"IMPORT")]
-        Import = 5,
-        [global::ProtoBuf.ProtoEnum(Name = @"SPREADSHEET_DEFINITION")]
-        SpreadsheetDefinition = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_UNKNOWN")]
+        DsUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_FORM")]
+        DsForm = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_COMPUTATION")]
+        DsComputation = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_SPREADSHEET")]
+        DsSpreadsheet = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_INSTRUMENTMEASUREMENT")]
+        DsInstrumentmeasurement = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_IMPORT")]
+        DsImport = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"DS_SPREADSHEET_DEFINITION")]
+        DsSpreadsheetDefinition = 6,
     }
 
 }

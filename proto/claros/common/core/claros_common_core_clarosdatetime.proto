@@ -5,11 +5,9 @@ import "claros_common_core_mobiledatetime.proto";
 
 message ClarosDateTime
 {
-  
     oneof clarosDateTime {
-        claros.common.core.MobileDateTime mobileDateTime = 1;
-        string jsonDateTime = 2;
-        uint64 ticks = 3;
+        MobileDateTime mobileDateTime = 1;  // Used for data collected from Mobile Devices
+        string jsonDateTime = 2;            // 
+        uint64 ticks = 3;                   // 
     }
-
 }

@@ -30,10 +30,13 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/map.h>  // IWYU pragma: export
+#include <google/protobuf/map_entry.h>
+#include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
-#include "claros_common_datetime.pb.h"
-#include "claros_common_enum_entitytype.pb.h"
-#include "claros_common_privileges.pb.h"
+#include "claros_common_core_clarosdatetime.pb.h"
+#include "claros_common_configuration_entity_type.pb.h"
+#include "claros_common_configuration_rights.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto
@@ -44,7 +47,7 @@ struct TableStruct_claros_5fcommon_5fconfiguration_5fconfiguration_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[1]
+  static const ::google::protobuf::internal::ParseTable schema[2]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -57,12 +60,16 @@ namespace configuration {
 class Configuration;
 class ConfigurationDefaultTypeInternal;
 extern ConfigurationDefaultTypeInternal _Configuration_default_instance_;
+class Configuration_PrivilegeEntry_DoNotUse;
+class Configuration_PrivilegeEntry_DoNotUseDefaultTypeInternal;
+extern Configuration_PrivilegeEntry_DoNotUseDefaultTypeInternal _Configuration_PrivilegeEntry_DoNotUse_default_instance_;
 }  // namespace configuration
 }  // namespace common
 }  // namespace claros
 namespace google {
 namespace protobuf {
 template<> ::claros::common::configuration::Configuration* Arena::CreateMaybeMessage<::claros::common::configuration::Configuration>(Arena*);
+template<> ::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse* Arena::CreateMaybeMessage<::claros::common::configuration::Configuration_PrivilegeEntry_DoNotUse>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace claros {
@@ -70,6 +77,30 @@ namespace common {
 namespace configuration {
 
 // ===================================================================
+
+class Configuration_PrivilegeEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<Configuration_PrivilegeEntry_DoNotUse, 
+    ::std::string, ::claros::common::configuration::Rights,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
+    0 > {
+public:
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+static bool _ParseMap(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  typedef ::google::protobuf::internal::MapEntry<Configuration_PrivilegeEntry_DoNotUse, 
+    ::std::string, ::claros::common::configuration::Rights,
+    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+    ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
+    0 > SuperType;
+  Configuration_PrivilegeEntry_DoNotUse();
+  Configuration_PrivilegeEntry_DoNotUse(::google::protobuf::Arena* arena);
+  void MergeFrom(const Configuration_PrivilegeEntry_DoNotUse& other);
+  static const Configuration_PrivilegeEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const Configuration_PrivilegeEntry_DoNotUse*>(&_Configuration_PrivilegeEntry_DoNotUse_default_instance_); }
+  void MergeFrom(const ::google::protobuf::Message& other) final;
+  ::google::protobuf::Metadata GetMetadata() const;
+};
+
+// -------------------------------------------------------------------
 
 class Configuration :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.common.configuration.Configuration) */ {
@@ -109,7 +140,7 @@ class Configuration :
                &_Configuration_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   void Swap(Configuration* other);
   friend void swap(Configuration& a, Configuration& b) {
@@ -164,19 +195,17 @@ class Configuration :
 
   // nested types ----------------------------------------------------
 
+
   // accessors -------------------------------------------------------
 
-  // repeated .claros.common.configuration.Privileges privileges = 13;
-  int privileges_size() const;
-  void clear_privileges();
-  static const int kPrivilegesFieldNumber = 13;
-  ::claros::common::configuration::Privileges* mutable_privileges(int index);
-  ::google::protobuf::RepeatedPtrField< ::claros::common::configuration::Privileges >*
-      mutable_privileges();
-  const ::claros::common::configuration::Privileges& privileges(int index) const;
-  ::claros::common::configuration::Privileges* add_privileges();
-  const ::google::protobuf::RepeatedPtrField< ::claros::common::configuration::Privileges >&
-      privileges() const;
+  // map<string, .claros.common.configuration.Rights> privilege = 13;
+  int privilege_size() const;
+  void clear_privilege();
+  static const int kPrivilegeFieldNumber = 13;
+  const ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >&
+      privilege() const;
+  ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >*
+      mutable_privilege();
 
   // string id = 1;
   void clear_id();
@@ -276,23 +305,23 @@ class Configuration :
   ::std::string* release_ownerid();
   void set_allocated_ownerid(::std::string* ownerid);
 
-  // .claros.common.ClarosDateTime createdOn = 3;
+  // .claros.common.core.ClarosDateTime createdOn = 3;
   bool has_createdon() const;
   void clear_createdon();
   static const int kCreatedOnFieldNumber = 3;
-  const ::claros::common::DateTime& createdon() const;
-  ::claros::common::DateTime* release_createdon();
-  ::claros::common::DateTime* mutable_createdon();
-  void set_allocated_createdon(::claros::common::DateTime* createdon);
+  const ::claros::common::core::ClarosDateTime& createdon() const;
+  ::claros::common::core::ClarosDateTime* release_createdon();
+  ::claros::common::core::ClarosDateTime* mutable_createdon();
+  void set_allocated_createdon(::claros::common::core::ClarosDateTime* createdon);
 
-  // .claros.common.ClarosDateTime modifiedOn = 5;
+  // .claros.common.core.ClarosDateTime modifiedOn = 5;
   bool has_modifiedon() const;
   void clear_modifiedon();
   static const int kModifiedOnFieldNumber = 5;
-  const ::claros::common::DateTime& modifiedon() const;
-  ::claros::common::DateTime* release_modifiedon();
-  ::claros::common::DateTime* mutable_modifiedon();
-  void set_allocated_modifiedon(::claros::common::DateTime* modifiedon);
+  const ::claros::common::core::ClarosDateTime& modifiedon() const;
+  ::claros::common::core::ClarosDateTime* release_modifiedon();
+  ::claros::common::core::ClarosDateTime* mutable_modifiedon();
+  void set_allocated_modifiedon(::claros::common::core::ClarosDateTime* modifiedon);
 
   // .claros.common.configuration.EntityType entityTypeId = 7;
   void clear_entitytypeid();
@@ -317,7 +346,12 @@ class Configuration :
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::claros::common::configuration::Privileges > privileges_;
+  ::google::protobuf::internal::MapField<
+      Configuration_PrivilegeEntry_DoNotUse,
+      ::std::string, ::claros::common::configuration::Rights,
+      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+      ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
+      0 > privilege_;
   ::google::protobuf::internal::ArenaStringPtr id_;
   ::google::protobuf::internal::ArenaStringPtr createdbyid_;
   ::google::protobuf::internal::ArenaStringPtr modifiedbyid_;
@@ -325,8 +359,8 @@ class Configuration :
   ::google::protobuf::internal::ArenaStringPtr filterbyid_;
   ::google::protobuf::internal::ArenaStringPtr tenantid_;
   ::google::protobuf::internal::ArenaStringPtr ownerid_;
-  ::claros::common::DateTime* createdon_;
-  ::claros::common::DateTime* modifiedon_;
+  ::claros::common::core::ClarosDateTime* createdon_;
+  ::claros::common::core::ClarosDateTime* modifiedon_;
   int entitytypeid_;
   bool public__;
   ::google::protobuf::uint32 version_;
@@ -342,6 +376,8 @@ class Configuration :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // Configuration
 
 // string id = 1;
@@ -450,33 +486,33 @@ inline void Configuration::set_allocated_createdbyid(::std::string* createdbyid)
   // @@protoc_insertion_point(field_set_allocated:claros.common.configuration.Configuration.createdById)
 }
 
-// .claros.common.ClarosDateTime createdOn = 3;
+// .claros.common.core.ClarosDateTime createdOn = 3;
 inline bool Configuration::has_createdon() const {
   return this != internal_default_instance() && createdon_ != nullptr;
 }
-inline const ::claros::common::DateTime& Configuration::createdon() const {
-  const ::claros::common::DateTime* p = createdon_;
+inline const ::claros::common::core::ClarosDateTime& Configuration::createdon() const {
+  const ::claros::common::core::ClarosDateTime* p = createdon_;
   // @@protoc_insertion_point(field_get:claros.common.configuration.Configuration.createdOn)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime*>(
-      &::claros::common::_DateTime_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
+      &::claros::common::core::_ClarosDateTime_default_instance_);
 }
-inline ::claros::common::DateTime* Configuration::release_createdon() {
+inline ::claros::common::core::ClarosDateTime* Configuration::release_createdon() {
   // @@protoc_insertion_point(field_release:claros.common.configuration.Configuration.createdOn)
   
-  ::claros::common::DateTime* temp = createdon_;
+  ::claros::common::core::ClarosDateTime* temp = createdon_;
   createdon_ = nullptr;
   return temp;
 }
-inline ::claros::common::DateTime* Configuration::mutable_createdon() {
+inline ::claros::common::core::ClarosDateTime* Configuration::mutable_createdon() {
   
   if (createdon_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::DateTime>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     createdon_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.common.configuration.Configuration.createdOn)
   return createdon_;
 }
-inline void Configuration::set_allocated_createdon(::claros::common::DateTime* createdon) {
+inline void Configuration::set_allocated_createdon(::claros::common::core::ClarosDateTime* createdon) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(createdon_);
@@ -548,33 +584,33 @@ inline void Configuration::set_allocated_modifiedbyid(::std::string* modifiedbyi
   // @@protoc_insertion_point(field_set_allocated:claros.common.configuration.Configuration.modifiedById)
 }
 
-// .claros.common.ClarosDateTime modifiedOn = 5;
+// .claros.common.core.ClarosDateTime modifiedOn = 5;
 inline bool Configuration::has_modifiedon() const {
   return this != internal_default_instance() && modifiedon_ != nullptr;
 }
-inline const ::claros::common::DateTime& Configuration::modifiedon() const {
-  const ::claros::common::DateTime* p = modifiedon_;
+inline const ::claros::common::core::ClarosDateTime& Configuration::modifiedon() const {
+  const ::claros::common::core::ClarosDateTime* p = modifiedon_;
   // @@protoc_insertion_point(field_get:claros.common.configuration.Configuration.modifiedOn)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime*>(
-      &::claros::common::_DateTime_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
+      &::claros::common::core::_ClarosDateTime_default_instance_);
 }
-inline ::claros::common::DateTime* Configuration::release_modifiedon() {
+inline ::claros::common::core::ClarosDateTime* Configuration::release_modifiedon() {
   // @@protoc_insertion_point(field_release:claros.common.configuration.Configuration.modifiedOn)
   
-  ::claros::common::DateTime* temp = modifiedon_;
+  ::claros::common::core::ClarosDateTime* temp = modifiedon_;
   modifiedon_ = nullptr;
   return temp;
 }
-inline ::claros::common::DateTime* Configuration::mutable_modifiedon() {
+inline ::claros::common::core::ClarosDateTime* Configuration::mutable_modifiedon() {
   
   if (modifiedon_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::DateTime>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     modifiedon_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.common.configuration.Configuration.modifiedOn)
   return modifiedon_;
 }
-inline void Configuration::set_allocated_modifiedon(::claros::common::DateTime* modifiedon) {
+inline void Configuration::set_allocated_modifiedon(::claros::common::core::ClarosDateTime* modifiedon) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(modifiedon_);
@@ -847,36 +883,26 @@ inline void Configuration::set_version(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:claros.common.configuration.Configuration.version)
 }
 
-// repeated .claros.common.configuration.Privileges privileges = 13;
-inline int Configuration::privileges_size() const {
-  return privileges_.size();
+// map<string, .claros.common.configuration.Rights> privilege = 13;
+inline int Configuration::privilege_size() const {
+  return privilege_.size();
 }
-inline ::claros::common::configuration::Privileges* Configuration::mutable_privileges(int index) {
-  // @@protoc_insertion_point(field_mutable:claros.common.configuration.Configuration.privileges)
-  return privileges_.Mutable(index);
+inline const ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >&
+Configuration::privilege() const {
+  // @@protoc_insertion_point(field_map:claros.common.configuration.Configuration.privilege)
+  return privilege_.GetMap();
 }
-inline ::google::protobuf::RepeatedPtrField< ::claros::common::configuration::Privileges >*
-Configuration::mutable_privileges() {
-  // @@protoc_insertion_point(field_mutable_list:claros.common.configuration.Configuration.privileges)
-  return &privileges_;
-}
-inline const ::claros::common::configuration::Privileges& Configuration::privileges(int index) const {
-  // @@protoc_insertion_point(field_get:claros.common.configuration.Configuration.privileges)
-  return privileges_.Get(index);
-}
-inline ::claros::common::configuration::Privileges* Configuration::add_privileges() {
-  // @@protoc_insertion_point(field_add:claros.common.configuration.Configuration.privileges)
-  return privileges_.Add();
-}
-inline const ::google::protobuf::RepeatedPtrField< ::claros::common::configuration::Privileges >&
-Configuration::privileges() const {
-  // @@protoc_insertion_point(field_list:claros.common.configuration.Configuration.privileges)
-  return privileges_;
+inline ::google::protobuf::Map< ::std::string, ::claros::common::configuration::Rights >*
+Configuration::mutable_privilege() {
+  // @@protoc_insertion_point(field_mutable_map:claros.common.configuration.Configuration.privilege)
+  return privilege_.MutableMap();
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 

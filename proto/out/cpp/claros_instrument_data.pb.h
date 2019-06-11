@@ -36,7 +36,7 @@
 #include <google/protobuf/unknown_field_set.h>
 #include "claros_instrument_event.pb.h"
 #include "claros_instrument_measurement.pb.h"
-#include "claros_common_datetime.pb.h"
+#include "claros_common_core_clarosdatetime.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fdata_2eproto
@@ -290,14 +290,14 @@ class InstrumentData :
   ::claros::instrument::InstrumentEvent* mutable_events();
   void set_allocated_events(::claros::instrument::InstrumentEvent* events);
 
-  // .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+  // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
   bool has_instrumentdatadatetime() const;
   void clear_instrumentdatadatetime();
   static const int kInstrumentDataDateTimeFieldNumber = 7;
-  const ::claros::common::DateTime& instrumentdatadatetime() const;
-  ::claros::common::DateTime* release_instrumentdatadatetime();
-  ::claros::common::DateTime* mutable_instrumentdatadatetime();
-  void set_allocated_instrumentdatadatetime(::claros::common::DateTime* instrumentdatadatetime);
+  const ::claros::common::core::ClarosDateTime& instrumentdatadatetime() const;
+  ::claros::common::core::ClarosDateTime* release_instrumentdatadatetime();
+  ::claros::common::core::ClarosDateTime* mutable_instrumentdatadatetime();
+  void set_allocated_instrumentdatadatetime(::claros::common::core::ClarosDateTime* instrumentdatadatetime);
 
   // @@protoc_insertion_point(class_scope:claros.instrument.InstrumentData)
  private:
@@ -320,7 +320,7 @@ class InstrumentData :
   ::google::protobuf::internal::ArenaStringPtr tenantid_;
   ::google::protobuf::internal::ArenaStringPtr fusionid_;
   ::claros::instrument::InstrumentEvent* events_;
-  ::claros::common::DateTime* instrumentdatadatetime_;
+  ::claros::common::core::ClarosDateTime* instrumentdatadatetime_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_claros_5finstrument_5fdata_2eproto;
 };
@@ -553,33 +553,33 @@ InstrumentData::mutable_states() {
   return states_.MutableMap();
 }
 
-// .claros.common.ClarosDateTime instrumentDataDateTime = 7;
+// .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
 inline bool InstrumentData::has_instrumentdatadatetime() const {
   return this != internal_default_instance() && instrumentdatadatetime_ != nullptr;
 }
-inline const ::claros::common::DateTime& InstrumentData::instrumentdatadatetime() const {
-  const ::claros::common::DateTime* p = instrumentdatadatetime_;
+inline const ::claros::common::core::ClarosDateTime& InstrumentData::instrumentdatadatetime() const {
+  const ::claros::common::core::ClarosDateTime* p = instrumentdatadatetime_;
   // @@protoc_insertion_point(field_get:claros.instrument.InstrumentData.instrumentDataDateTime)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::DateTime*>(
-      &::claros::common::_DateTime_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
+      &::claros::common::core::_ClarosDateTime_default_instance_);
 }
-inline ::claros::common::DateTime* InstrumentData::release_instrumentdatadatetime() {
+inline ::claros::common::core::ClarosDateTime* InstrumentData::release_instrumentdatadatetime() {
   // @@protoc_insertion_point(field_release:claros.instrument.InstrumentData.instrumentDataDateTime)
   
-  ::claros::common::DateTime* temp = instrumentdatadatetime_;
+  ::claros::common::core::ClarosDateTime* temp = instrumentdatadatetime_;
   instrumentdatadatetime_ = nullptr;
   return temp;
 }
-inline ::claros::common::DateTime* InstrumentData::mutable_instrumentdatadatetime() {
+inline ::claros::common::core::ClarosDateTime* InstrumentData::mutable_instrumentdatadatetime() {
   
   if (instrumentdatadatetime_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::DateTime>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     instrumentdatadatetime_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentData.instrumentDataDateTime)
   return instrumentdatadatetime_;
 }
-inline void InstrumentData::set_allocated_instrumentdatadatetime(::claros::common::DateTime* instrumentdatadatetime) {
+inline void InstrumentData::set_allocated_instrumentdatadatetime(::claros::common::core::ClarosDateTime* instrumentdatadatetime) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(instrumentdatadatetime_);

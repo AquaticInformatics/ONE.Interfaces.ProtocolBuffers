@@ -13,6 +13,7 @@ goog.provide('proto.claros.common.configuration.EntityType');
  * @enum {number}
  */
 proto.claros.common.configuration.EntityType = {
-  FORMTEMPLATE: 0
+  ET_UNKNOWN: 0,
+  ET_FORMTEMPLATE: 1
 };
 

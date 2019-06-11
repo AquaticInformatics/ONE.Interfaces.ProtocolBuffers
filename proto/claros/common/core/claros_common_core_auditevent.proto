@@ -6,9 +6,10 @@ import "claros_common_core_clarosdatetime.proto";
 import "claros_common_core_datasource_type.proto";
 
 message AuditEvent {
-    string id = 1;
-    string userId = 2;
-    DataSourceType dataSourceType = 3;
-    AuditEventType eventType = 4;
-    claros.common.core.ClarosDateTime timeStamp = 5;
+    string id = 1;                      // A GUID that uniquely identifies the audit event
+    string userId = 2;                  // The id of the user related to this audit event
+    DataSourceType dataSourceType = 3;  // What system generated the audit event
+    AuditEventType eventType = 4;       // The type of event
+    ClarosDateTime timeStamp = 5;       // The time in which this event occurred
+    string details = 6;                 // Text details that can provide more clarification to the audit
 }

@@ -9,20 +9,20 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum ReportableQualifierType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"NONDETECT")]
-        Nondetect = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"ESTIMATE")]
-        Estimate = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"DETECTNONQUALIFIABLE")]
-        Detectnonqualifiable = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"GREATERTHAN")]
-        Greaterthan = 4,
-        [global::ProtoBuf.ProtoEnum(Name = @"LESSTHAN")]
-        Lessthan = 5,
-        [global::ProtoBuf.ProtoEnum(Name = @"TOO_NUMEROUS_TO_COUNT")]
-        TooNumerousToCount = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_UNKNOWN")]
+        RqUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_NONDETECT")]
+        RqNondetect = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_ESTIMATE")]
+        RqEstimate = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_DETECTNONQUALIFIABLE")]
+        RqDetectnonqualifiable = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_GREATERTHAN")]
+        RqGreaterthan = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_LESSTHAN")]
+        RqLessthan = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"RQ_TOO_NUMEROUS_TO_COUNT")]
+        RqTooNumerousToCount = 6,
     }
 
 }

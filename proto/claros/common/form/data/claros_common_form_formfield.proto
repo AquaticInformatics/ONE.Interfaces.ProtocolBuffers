@@ -16,7 +16,7 @@ message FormField {
     
     oneof FormFieldData {
         // AdHocFormField adHocFormField
-        Cell cell = 6;        
+        claros.operations.spreadsheet.Cell cell = 6;        
     }
 
     repeated claros.instrument.InstrumentData instrumentData = 7;

@@ -9,22 +9,22 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum DayOfWeek
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"UNKNOWN")]
-        Unknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"SUNDAY")]
-        Sunday = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"MONDAY")]
-        Monday = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"TUESDAY")]
-        Tuesday = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"WEDNESDAY")]
-        Wednesday = 4,
-        [global::ProtoBuf.ProtoEnum(Name = @"THURSDAY")]
-        Thursday = 5,
-        [global::ProtoBuf.ProtoEnum(Name = @"FRIDAY")]
-        Friday = 6,
-        [global::ProtoBuf.ProtoEnum(Name = @"SATURDAY")]
-        Saturday = 7,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_UNKNOWN")]
+        DowUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_SUNDAY")]
+        DowSunday = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_MONDAY")]
+        DowMonday = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_TUESDAY")]
+        DowTuesday = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_WEDNESDAY")]
+        DowWednesday = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_THURSDAY")]
+        DowThursday = 5,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_FRIDAY")]
+        DowFriday = 6,
+        [global::ProtoBuf.ProtoEnum(Name = @"DOW_SATURDAY")]
+        DowSaturday = 7,
     }
 
 }

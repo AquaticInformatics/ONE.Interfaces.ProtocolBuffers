@@ -16,7 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fdatetime_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fclarosdatetime_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fcalibration_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Calibration_claros_5finstrument_5fcalibration_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fevent_5fmetadata_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EventMetaData_claros_5finstrument_5fevent_5fmetadata_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5finstrument_5fprognosys_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_PrognosysData_claros_5finstrument_5fprognosys_2eproto;
@@ -44,7 +44,7 @@ static void InitDefaultsInstrumentEvent_claros_5finstrument_5fevent_2eproto() {
       &scc_info_Calibration_claros_5finstrument_5fcalibration_2eproto.base,
       &scc_info_EventMetaData_claros_5finstrument_5fevent_5fmetadata_2eproto.base,
       &scc_info_PrognosysData_claros_5finstrument_5fprognosys_2eproto.base,
-      &scc_info_DateTime_claros_5fcommon_5fdatetime_2eproto.base,}};
+      &scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto.base,}};
 
 void InitDefaults_claros_5finstrument_5fevent_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_InstrumentEvent_claros_5finstrument_5fevent_2eproto.base);
@@ -85,32 +85,33 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5finstrument_5fevent_2eproto[] =
   "\n\035claros_instrument_event.proto\022\021claros."
-  "instrument\032\034claros_common_datetime.proto"
-  "\032&claros_instrument_event_metadata.proto"
-  "\032#claros_instrument_calibration.proto\032!c"
-  "laros_instrument_prognosys.proto\"\251\003\n\017Ins"
-  "trumentEvent\0224\n\014calibrations\030\001 \003(\0132\036.cla"
-  "ros.instrument.Calibration\0220\n\006errors\030\002 \003"
-  "(\0132 .claros.instrument.EventMetaData\022.\n\004"
-  "info\030\003 \003(\0132 .claros.instrument.EventMeta"
-  "Data\0220\n\006limits\030\004 \003(\0132 .claros.instrument"
-  ".EventMetaData\0223\n\treminders\030\005 \003(\0132 .clar"
-  "os.instrument.EventMetaData\0222\n\010warnings\030"
-  "\006 \003(\0132 .claros.instrument.EventMetaData\022"
-  "3\n\tprognosys\030\007 \003(\0132 .claros.instrument.P"
-  "rognosysData\022.\n\reventDateTime\030\010 \001(\0132\027.cl"
-  "aros.common.DateTimeb\006proto3"
+  "instrument\032\'claros_common_core_clarosdat"
+  "etime.proto\032&claros_instrument_event_met"
+  "adata.proto\032#claros_instrument_calibrati"
+  "on.proto\032!claros_instrument_prognosys.pr"
+  "oto\"\264\003\n\017InstrumentEvent\0224\n\014calibrations\030"
+  "\001 \003(\0132\036.claros.instrument.Calibration\0220\n"
+  "\006errors\030\002 \003(\0132 .claros.instrument.EventM"
+  "etaData\022.\n\004info\030\003 \003(\0132 .claros.instrumen"
+  "t.EventMetaData\0220\n\006limits\030\004 \003(\0132 .claros"
+  ".instrument.EventMetaData\0223\n\treminders\030\005"
+  " \003(\0132 .claros.instrument.EventMetaData\0222"
+  "\n\010warnings\030\006 \003(\0132 .claros.instrument.Eve"
+  "ntMetaData\0223\n\tprognosys\030\007 \003(\0132 .claros.i"
+  "nstrument.PrognosysData\0229\n\reventDateTime"
+  "\030\010 \001(\0132\".claros.common.core.ClarosDateTi"
+  "meb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5finstrument_5fevent_2eproto = {
   false, InitDefaults_claros_5finstrument_5fevent_2eproto, 
   descriptor_table_protodef_claros_5finstrument_5fevent_2eproto,
-  "claros_instrument_event.proto", &assign_descriptors_table_claros_5finstrument_5fevent_2eproto, 628,
+  "claros_instrument_event.proto", &assign_descriptors_table_claros_5finstrument_5fevent_2eproto, 650,
 };
 
 void AddDescriptors_claros_5finstrument_5fevent_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[4] =
   {
-    ::AddDescriptors_claros_5fcommon_5fdatetime_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fcore_5fclarosdatetime_2eproto,
     ::AddDescriptors_claros_5finstrument_5fevent_5fmetadata_2eproto,
     ::AddDescriptors_claros_5finstrument_5fcalibration_2eproto,
     ::AddDescriptors_claros_5finstrument_5fprognosys_2eproto,
@@ -126,15 +127,15 @@ namespace instrument {
 // ===================================================================
 
 void InstrumentEvent::InitAsDefaultInstance() {
-  ::claros::instrument::_InstrumentEvent_default_instance_._instance.get_mutable()->eventdatetime_ = const_cast< ::claros::common::DateTime*>(
-      ::claros::common::DateTime::internal_default_instance());
+  ::claros::instrument::_InstrumentEvent_default_instance_._instance.get_mutable()->eventdatetime_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+      ::claros::common::core::ClarosDateTime::internal_default_instance());
 }
 class InstrumentEvent::HasBitSetters {
  public:
-  static const ::claros::common::DateTime& eventdatetime(const InstrumentEvent* msg);
+  static const ::claros::common::core::ClarosDateTime& eventdatetime(const InstrumentEvent* msg);
 };
 
-const ::claros::common::DateTime&
+const ::claros::common::core::ClarosDateTime&
 InstrumentEvent::HasBitSetters::eventdatetime(const InstrumentEvent* msg) {
   return *msg->eventdatetime_;
 }
@@ -193,7 +194,7 @@ InstrumentEvent::InstrumentEvent(const InstrumentEvent& from)
       prognosys_(from.prognosys_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_eventdatetime()) {
-    eventdatetime_ = new ::claros::common::DateTime(*from.eventdatetime_);
+    eventdatetime_ = new ::claros::common::core::ClarosDateTime(*from.eventdatetime_);
   } else {
     eventdatetime_ = nullptr;
   }
@@ -369,12 +370,12 @@ const char* InstrumentEvent::_InternalParse(const char* begin, const char* end, 
         } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 58 && (ptr += 1));
         break;
       }
-      // .claros.common.ClarosDateTime eventDateTime = 8;
+      // .claros.common.core.ClarosDateTime eventDateTime = 8;
       case 8: {
         if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::DateTime::_InternalParse;
+        parser_till_end = ::claros::common::core::ClarosDateTime::_InternalParse;
         object = msg->mutable_eventdatetime();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -489,7 +490,7 @@ bool InstrumentEvent::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.ClarosDateTime eventDateTime = 8;
+      // .claros.common.core.ClarosDateTime eventDateTime = 8;
       case 8: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -590,7 +591,7 @@ void InstrumentEvent::SerializeWithCachedSizes(
       output);
   }
 
-  // .claros.common.ClarosDateTime eventDateTime = 8;
+  // .claros.common.core.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, HasBitSetters::eventdatetime(this), output);
@@ -665,7 +666,7 @@ void InstrumentEvent::SerializeWithCachedSizes(
         7, this->prognosys(static_cast<int>(i)), target);
   }
 
-  // .claros.common.ClarosDateTime eventDateTime = 8;
+  // .claros.common.core.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -770,7 +771,7 @@ size_t InstrumentEvent::ByteSizeLong() const {
     }
   }
 
-  // .claros.common.ClarosDateTime eventDateTime = 8;
+  // .claros.common.core.ClarosDateTime eventDateTime = 8;
   if (this->has_eventdatetime()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -812,7 +813,7 @@ void InstrumentEvent::MergeFrom(const InstrumentEvent& from) {
   warnings_.MergeFrom(from.warnings_);
   prognosys_.MergeFrom(from.prognosys_);
   if (from.has_eventdatetime()) {
-    mutable_eventdatetime()->::claros::common::DateTime::MergeFrom(from.eventdatetime());
+    mutable_eventdatetime()->::claros::common::core::ClarosDateTime::MergeFrom(from.eventdatetime());
   }
 }
 

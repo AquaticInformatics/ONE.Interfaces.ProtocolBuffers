@@ -3,6 +3,8 @@ package claros.common.core;
 
 import "claros_common_core_clarosdatetime.proto";
 
+// Often there is a need for a Time Span that includes a begin and end time
+
 message TimeWindow {
     ClarosDateTime startTime = 1;
     ClarosDateTime endTime = 2;
