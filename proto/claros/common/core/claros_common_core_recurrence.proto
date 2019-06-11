@@ -6,9 +6,9 @@ import "claros_common_core_clarosdatetime.proto";
 import "claros_common_core_dayofweek.proto";
  
 message Recurrence {
-    RecurrenceType type = 1;
-    ClarosDateTime startDate = 2;
-    uint32 minuteOffset = 3;
-    repeated DayOfWeek daysOfWeek = 4;
-    uint32 duration = 5;
+    RecurrenceType type = 1;            //
+    ClarosDateTime startDate = 2;       //
+    uint32 minuteOffset = 3;            //
+    repeated DayOfWeek daysOfWeek = 4;  //
+    uint32 duration = 5;                //
 }
