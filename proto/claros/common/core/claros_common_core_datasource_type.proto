@@ -3,10 +3,10 @@ package claros.common.core;
  
 enum DataSourceType {
     DATASOURCE_UNKNOWN = 0;
-    DATASOURCE_FORM = 1;
-    DATASOURCE_COMPUTATION = 2;
-    DATASOURCE_SPREADSHEET = 3;
-    DATASOURCE_INSTRUMENTMEASUREMENT = 4;
-    DATASOURCE_IMPORT = 5;
-    DATASOURCE_SPREADSHEET_DEFINITION = 6;
+    DATASOURCE_FORM = 1;                    // Data related to Claros.Common.Form
+    DATASOURCE_COMPUTATION = 2;             // Data related to Claros.Common.Computation
+    DATASOURCE_SPREADSHEET = 3;             // Data related to Claros.Common.Spreadsheet
+    DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Claros.Instrument.Measurement
+    DATASOURCE_IMPORT = 5;                  // Data related to imports
+    DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Claros.Common.Spreadsheet.Definition
 }
