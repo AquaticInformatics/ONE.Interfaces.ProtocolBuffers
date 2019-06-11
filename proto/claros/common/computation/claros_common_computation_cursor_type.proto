@@ -1,6 +1,7 @@
 syntax = "proto3";
 package claros.common.computation;
 
+// Allows for navigating to adjacent rows.
 enum ComputationCursorType
 {
     COMPUTATION_CURSOR_UNKNOWN = 0;
@@ -8,5 +9,5 @@ enum ComputationCursorType
     COMPUTATION_CURSOR_PREVIOUS = 2;
     COMPUTATION_CURSOR_NEXT = 4;
     COMPUTATION_CURSOR_LAST = 5;
-    COMPUTATION_CURSOR_ABSOLUTE = 6;    
+    COMPUTATION_CURSOR_ABSOLUTE = 6;    // should this be relative?
 }

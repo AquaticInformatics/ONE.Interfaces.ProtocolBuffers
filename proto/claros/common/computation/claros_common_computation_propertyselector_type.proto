@@ -1,6 +1,7 @@
 syntax = "proto3";
 package claros.common.computation;
 
+// What attribute of the row or cell is included in the expression
 enum PropertySelectorType
 {
     PROPERTY_SELECTOR_UNKNOWN = 0;
