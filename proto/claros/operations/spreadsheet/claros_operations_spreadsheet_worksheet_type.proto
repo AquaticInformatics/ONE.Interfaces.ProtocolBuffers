@@ -4,7 +4,7 @@ package claros.operations.spreadsheet;
 enum WorksheetType {
     WORKSHEET_UNKNOWN = 0;
     WORKSHEET_FIFTEEN_MINUTE = 1; 
-    WORKSHEET_FOUR_HOUR = 2; 
-    WORKSHEET_DAILY = 3;
-    WORKSHEET_MONTHLY = 4;
-}
+    WORKSHEET_HOUR = 2; 
+    WORKSHEET_FOUR_HOUR = 3; 
+    WORKSHEET_DAILY = 4;
+ 
