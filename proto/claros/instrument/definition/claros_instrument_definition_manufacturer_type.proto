@@ -1,0 +1,21 @@
+syntax = "proto3";
+package claros.instrument.event;
+
+import "claros_instrument_event_data_calibration_value.proto";
+
+enum InstrumentManufactureType {
+    HACH_US_HL000 = 0;
+    HACH_HL001 = 1;
+    AMERICAN_SIGMA_HL002 = 2;
+    PACIFIC_SCIENTIFIC_HL003 = 3;
+    POLYMETRON_HL004 = 4;
+    ASTRO_HL005 = 5;
+    WIRELESS_SYSTEMS_HL006 = 6;
+    ACROMAG_HL007 = 7;
+    HACH_ULTRA_ANALYTICS = 8;
+    ZUELLIG_HL009 = 9;
+    AQUAFINE_HL010 = 10;
+    TROJAN_HL011 = 11;   
+}
+ 
+ 

@@ -4,5 +4,5 @@ package claros.common.task;
  
 enum TaskType {
     TASKTYPE_UNKNOWN = 0;
-    TASKTYPE_PROGNOSYS = 1;
+    TASKTYPE_INSTRUMENT_MAINTENANCE = 1;
 }
