@@ -3,7 +3,7 @@ package claros.instrument.event;
 
 import "claros_instrument_event_data_calibration_value.proto";
 
-enum InstrumentManufactureType {
+enum InstrumentDefinitionManufactureType {
     HACH_US_HL000 = 0;
     HACH_HL001 = 1;
     AMERICAN_SIGMA_HL002 = 2;

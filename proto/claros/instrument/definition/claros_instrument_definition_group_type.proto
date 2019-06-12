@@ -3,7 +3,7 @@ package claros.instrument.event;
 
 import "claros_instrument_event_data_calibration_value.proto";
 
-enum InstrumentGroupType {
+enum InstrumentDefinitionGroupType {
     INSTURMENT_GROUP_TYPE_UNKNOWN = 0;
     INSTURMENT_GROUP_TYPE_AQUAFINE_UVSYSTEMS = 1;
     INSTURMENT_GROUP_TYPE_HACH_ANALOG_INPUT = 2;

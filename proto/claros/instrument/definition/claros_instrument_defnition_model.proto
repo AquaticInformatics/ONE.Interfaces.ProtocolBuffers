@@ -4,7 +4,7 @@ package claros.instrument;
 import "claros_instrument_type.proto";
 import "claros_instrument_definition_instrument_group_type.proto";
 
-message InstrumentModel {
+message InstrumentDefnitionModel {
     string id = 1;
     string i18NKeyName = 2;
     InstrumentGroupType instrumentGroupType = 3;
