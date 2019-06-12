@@ -19,6 +19,9 @@ for P in `find . -name "*.proto"` ; do PROTO=`basename ${P}`; echo "=== ${P} :: 
   --proto_path=./claros/common \
   --proto_path=./claros/common/core \
   --proto_path=./claros/common/task \
+  --proto_path=./claros/common/task/core \
+  --proto_path=./claros/common/task/data \
+  --proto_path=./claros/common/task/definition \
   --proto_path=./claros/common/configuration \
   --proto_path=./claros/common/form \
   --proto_path=./claros/common/form/definition \
@@ -26,7 +29,13 @@ for P in `find . -name "*.proto"` ; do PROTO=`basename ${P}`; echo "=== ${P} :: 
   --proto_path=./claros/common/gis \
   --proto_path=./claros/common/computation \
   --proto_path=./claros/common/report \
+  --proto_path=./claros/common/report/core \
+  --proto_path=./claros/common/report/data \
   --proto_path=./claros/instrument \
+  --proto_path=./claros/instrument/data \
+  --proto_path=./claros/instrument/event/data \
+  --proto_path=./claros/instrument/measurement/data \
+  --proto_path=./claros/instrument/measurement/definition \
   --proto_path=./claros/operations/spreadsheet \
   ${PROTO}; 
 done
