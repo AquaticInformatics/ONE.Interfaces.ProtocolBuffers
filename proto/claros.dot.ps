@@ -1,0 +1,3225 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.38.0 (20140413.2041)
+%%Title: claros
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 5831 4094
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 5795 4058 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% claros_common_task_task
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1860.89 3962 104.78 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1788.39 3958.3 moveto 145 (claros_common_task_task) alignedtext
+grestore
+% claros_common_core_measurement
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1031.89 1145 139.98 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+932.39 1141.3 moveto 199 (claros_common_core_measurement) alignedtext
+grestore
+% claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1672.89 792 143.77 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1570.39 788.3 moveto 205 (claros_common_core_clarosdatetime) alignedtext
+grestore
+% claros_common_core_measurement->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1062.37 1127.31 moveto
+1167.51 1069.74 1514.95 879.49 1633.13 814.77 curveto
+stroke
+0 0 0 edgecolor
+newpath 1635.13 817.67 moveto
+1642.22 809.8 lineto
+1631.76 811.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1635.13 817.67 moveto
+1642.22 809.8 lineto
+1631.76 811.53 lineto
+closepath stroke
+grestore
+% claros_common_core_mobiledatetime
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1672.89 440 147.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1567.39 436.3 moveto 211 (claros_common_core_mobiledatetime) alignedtext
+grestore
+% claros_common_core_clarosdatetime->claros_common_core_mobiledatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1672.89 773.64 moveto
+1672.89 716.95 1672.89 536.92 1672.89 468.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 1676.39 468.05 moveto
+1672.89 458.05 lineto
+1669.39 468.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1676.39 468.05 moveto
+1672.89 458.05 lineto
+1669.39 468.05 lineto
+closepath stroke
+grestore
+% claros_common_core_limit_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5233.89 1145 128.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5143.39 1141.3 moveto 181 (claros_common_core_limit_type) alignedtext
+grestore
+% claros_common_core_datasource_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4793.89 792 148.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4687.39 788.3 moveto 213 (claros_common_core_datasource_type) alignedtext
+grestore
+% claros_common_core_reportablequalifier_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4433.89 1145 176.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4305.89 1141.3 moveto 256 (claros_common_core_reportablequalifier_type) alignedtext
+grestore
+% claros_common_core_mobiledate
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1813.89 88 131.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1720.89 84.3 moveto 186 (claros_common_core_mobiledate) alignedtext
+grestore
+% claros_common_core_mobiledatetime->claros_common_core_mobiledate
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1679.88 421.64 moveto
+1702.77 364.83 1775.55 184.18 1803.14 115.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 1806.53 116.63 moveto
+1807.02 106.05 lineto
+1800.04 114.02 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1806.53 116.63 moveto
+1807.02 106.05 lineto
+1800.04 114.02 lineto
+closepath stroke
+grestore
+% claros_common_core_mobiletime
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1531.89 88 132.68 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1437.89 84.3 moveto 188 (claros_common_core_mobiletime) alignedtext
+grestore
+% claros_common_core_mobiledatetime->claros_common_core_mobiletime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1665.9 421.64 moveto
+1643.01 364.83 1570.23 184.18 1542.64 115.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 1545.74 114.02 moveto
+1538.76 106.05 lineto
+1539.25 116.63 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1545.74 114.02 moveto
+1538.76 106.05 lineto
+1539.25 116.63 lineto
+closepath stroke
+grestore
+% claros_common_core_reportablequalifier
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4266.89 1497 157.07 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4153.89 1493.3 moveto 226 (claros_common_core_reportablequalifier) alignedtext
+grestore
+% claros_common_core_reportablequalifier->claros_common_core_reportablequalifier_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4275.17 1478.64 moveto
+4302.33 1421.72 4388.83 1240.43 4421.36 1172.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 4424.61 1173.58 moveto
+4425.75 1163.05 lineto
+4418.29 1170.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4424.61 1173.58 moveto
+4425.75 1163.05 lineto
+4418.29 1170.57 lineto
+closepath stroke
+grestore
+% claros_common_core_note
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1546.89 1145 106.68 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1472.89 1141.3 moveto 148 (claros_common_core_note) alignedtext
+grestore
+% claros_common_core_note->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1553.14 1126.59 moveto
+1573.59 1069.62 1638.62 888.45 1663.28 819.75 curveto
+stroke
+0 0 0 edgecolor
+newpath 1666.67 820.69 moveto
+1666.75 810.1 lineto
+1660.08 818.33 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1666.67 820.69 moveto
+1666.75 810.1 lineto
+1660.08 818.33 lineto
+closepath stroke
+grestore
+% claros_common_core_unit
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+768.89 1145 105.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+695.89 1141.3 moveto 146 (claros_common_core_unit) alignedtext
+grestore
+% claros_common_core_unit->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 809.19 1128.35 moveto
+955.43 1071.57 1458.06 876.41 1621.26 813.05 curveto
+stroke
+0 0 0 edgecolor
+newpath 1623.01 816.12 moveto
+1631.06 809.24 lineto
+1620.47 809.6 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1623.01 816.12 moveto
+1631.06 809.24 lineto
+1620.47 809.6 lineto
+closepath stroke
+grestore
+% claros_common_core_dayofweek
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5656.89 792 129.98 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5564.89 788.3 moveto 184 (claros_common_core_dayofweek) alignedtext
+grestore
+% claros_common_core_recurrence_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5360.89 792 148.37 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5254.89 788.3 moveto 212 (claros_common_core_recurrence_type) alignedtext
+grestore
+% claros_common_core_auditevent_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3464.89 792 147.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3359.39 788.3 moveto 211 (claros_common_core_auditevent_type) alignedtext
+grestore
+% claros_common_core_recurrence
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5508.89 1145 128.88 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5417.89 1141.3 moveto 182 (claros_common_core_recurrence) alignedtext
+grestore
+% claros_common_core_recurrence->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5417.26 1132.29 moveto
+5401.79 1130.43 5385.89 1128.6 5370.89 1127 curveto
+3974.23 977.94 2276.09 840.66 1801.48 803.09 curveto
+stroke
+0 0 0 edgecolor
+newpath 1801.42 799.58 moveto
+1791.17 802.28 lineto
+1800.86 806.55 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1801.42 799.58 moveto
+1791.17 802.28 lineto
+1800.86 806.55 lineto
+closepath stroke
+grestore
+% claros_common_core_recurrence->claros_common_core_dayofweek
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5516.23 1126.59 moveto
+5540.3 1069.5 5616.96 887.7 5645.78 819.33 curveto
+stroke
+0 0 0 edgecolor
+newpath 5649.02 820.67 moveto
+5649.68 810.1 lineto
+5642.57 817.95 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5649.02 820.67 moveto
+5649.68 810.1 lineto
+5642.57 817.95 lineto
+closepath stroke
+grestore
+% claros_common_core_recurrence->claros_common_core_recurrence_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5501.55 1126.59 moveto
+5477.48 1069.5 5400.82 887.7 5371.99 819.33 curveto
+stroke
+0 0 0 edgecolor
+newpath 5375.21 817.95 moveto
+5368.1 810.1 lineto
+5368.76 820.67 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5375.21 817.95 moveto
+5368.1 810.1 lineto
+5368.76 820.67 lineto
+closepath stroke
+grestore
+% claros_common_core_limit
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5214.89 1497 108.58 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5139.39 1493.3 moveto 151 (claros_common_core_limit) alignedtext
+grestore
+% claros_common_core_limit->claros_common_core_limit_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5215.83 1478.64 moveto
+5218.91 1421.95 5228.68 1241.92 5232.42 1173.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 5235.92 1173.22 moveto
+5232.96 1163.05 lineto
+5228.93 1172.84 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5235.92 1173.22 moveto
+5232.96 1163.05 lineto
+5228.93 1172.84 lineto
+closepath stroke
+grestore
+% claros_common_core_limit->claros_common_core_recurrence
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5229.07 1479.12 moveto
+5276.7 1422.42 5431.12 1238.58 5487.79 1171.12 curveto
+stroke
+0 0 0 edgecolor
+newpath 5490.75 1173.03 moveto
+5494.51 1163.12 lineto
+5485.39 1168.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5490.75 1173.03 moveto
+5494.51 1163.12 lineto
+5485.39 1168.53 lineto
+closepath stroke
+grestore
+% claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3464.89 1145 128.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3374.39 1141.3 moveto 181 (claros_common_core_auditevent) alignedtext
+grestore
+% claros_common_core_auditevent->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3393.53 1130.02 moveto
+3109.85 1074.46 2062.49 869.31 1757.03 809.48 curveto
+stroke
+0 0 0 edgecolor
+newpath 1757.4 805.99 moveto
+1746.91 807.5 lineto
+1756.05 812.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1757.4 805.99 moveto
+1746.91 807.5 lineto
+1756.05 812.86 lineto
+closepath stroke
+grestore
+% claros_common_core_auditevent->claros_common_core_datasource_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3522.42 1128.81 moveto
+3737.3 1072.05 4492.42 872.62 4725.11 811.17 curveto
+stroke
+0 0 0 edgecolor
+newpath 4726.03 814.54 moveto
+4734.81 808.6 lineto
+4724.24 807.77 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4726.03 814.54 moveto
+4734.81 808.6 lineto
+4724.24 807.77 lineto
+closepath stroke
+grestore
+% claros_common_core_auditevent->claros_common_core_auditevent_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3464.89 1126.59 moveto
+3464.89 1069.74 3464.89 889.19 3464.89 820.18 curveto
+stroke
+0 0 0 edgecolor
+newpath 3468.39 820.1 moveto
+3464.89 810.1 lineto
+3461.39 820.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3468.39 820.1 moveto
+3464.89 810.1 lineto
+3461.39 820.1 lineto
+closepath stroke
+grestore
+% claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+947.89 2201 135.68 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+851.39 2197.3 moveto 193 (claros_common_core_timewindow) alignedtext
+grestore
+% claros_common_core_timewindow->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 933.72 2183.04 moveto
+846.25 2076.27 392.08 1489.82 654.89 1127 curveto
+766.97 972.26 1354.79 850.77 1582.58 808.83 curveto
+stroke
+0 0 0 edgecolor
+newpath 1583.3 812.26 moveto
+1592.5 807.01 lineto
+1582.03 805.37 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1583.3 812.26 moveto
+1592.5 807.01 lineto
+1582.03 805.37 lineto
+closepath stroke
+grestore
+% claros_common_core_networkdata
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1399.89 3610 135.38 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1303.89 3606.3 moveto 192 (claros_common_core_networkdata) alignedtext
+grestore
+% claros_common_core_networkdata->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1342.14 3593.65 moveto
+1147.09 3537.98 524.89 3327.43 524.89 2907 curveto
+524.89 2907 524.89 2907 524.89 1496 curveto
+524.89 1328.1 492.45 1250.79 605.89 1127 curveto
+845.74 865.24 1287.53 807.02 1520.26 795.12 curveto
+stroke
+0 0 0 edgecolor
+newpath 1520.69 798.6 moveto
+1530.5 794.62 lineto
+1520.35 791.61 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1520.69 798.6 moveto
+1530.5 794.62 lineto
+1520.35 791.61 lineto
+closepath stroke
+grestore
+% claros_common_core_networkdata->claros_common_core_note
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1398.11 3591.79 moveto
+1384.55 3456.76 1300.42 2553.72 1397.89 1831 curveto
+1432.9 1571.41 1514.36 1264.13 1539.42 1172.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 1542.84 1173.6 moveto
+1542.12 1163.03 lineto
+1536.09 1171.74 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1542.84 1173.6 moveto
+1542.12 1163.03 lineto
+1536.09 1171.74 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplate
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3774.89 2906 142.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3673.39 2902.3 moveto 203 (claros_common_form_formtemplate) alignedtext
+grestore
+% claros_common_core_networkdata->claros_common_form_formtemplate
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1452.82 3593.35 moveto
+1765.86 3500.83 3372.56 3025.92 3711.9 2925.62 curveto
+stroke
+0 0 0 edgecolor
+newpath 3712.97 2928.95 moveto
+3721.57 2922.76 lineto
+3710.99 2922.24 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3712.97 2928.95 moveto
+3721.57 2922.76 lineto
+3710.99 2922.24 lineto
+closepath stroke
+grestore
+% claros_common_form_form
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1496.89 3258 111.58 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1418.89 3254.3 moveto 156 (claros_common_form_form) alignedtext
+grestore
+% claros_common_core_networkdata->claros_common_form_form
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1404.7 3591.64 moveto
+1420.41 3534.95 1470.31 3354.92 1489.38 3286.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 1492.87 3286.62 moveto
+1492.16 3276.05 lineto
+1486.12 3284.75 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1492.87 3286.62 moveto
+1492.16 3276.05 lineto
+1486.12 3284.75 lineto
+closepath stroke
+grestore
+% claros_common_configuration_rights
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4108.89 2553 143.77 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4006.39 2549.3 moveto 205 (claros_common_configuration_rights) alignedtext
+grestore
+% claros_common_form_formtemplate->claros_common_configuration_rights
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3791 2888.07 moveto
+3845.22 2831.09 4021.26 2646.09 4085.31 2578.78 curveto
+stroke
+0 0 0 edgecolor
+newpath 4088.19 2580.83 moveto
+4092.55 2571.17 lineto
+4083.12 2576 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4088.19 2580.83 moveto
+4092.55 2571.17 lineto
+4083.12 2576 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplateconfiguration
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3680.89 2553 189.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3542.89 2549.3 moveto 276 (claros_common_form_formtemplateconfiguration) alignedtext
+grestore
+% claros_common_form_formtemplate->claros_common_form_formtemplateconfiguration
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3770.23 2887.59 moveto
+3755 2830.74 3706.65 2650.19 3688.17 2581.18 curveto
+stroke
+0 0 0 edgecolor
+newpath 3691.43 2579.85 moveto
+3685.47 2571.1 lineto
+3684.67 2581.66 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3691.43 2579.85 moveto
+3685.47 2571.1 lineto
+3684.67 2581.66 lineto
+closepath stroke
+grestore
+% claros_common_form_form->claros_common_core_note
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1490.18 3239.92 moveto
+1460.33 3162.24 1340.89 2834.04 1340.89 2554 curveto
+1340.89 2554 1340.89 2554 1340.89 1848 curveto
+1340.89 1683.65 1319.06 1636.83 1364.89 1479 curveto
+1401 1354.64 1488.95 1224.94 1527.85 1171.41 curveto
+stroke
+0 0 0 edgecolor
+newpath 1530.78 1173.33 moveto
+1533.87 1163.19 lineto
+1525.14 1169.19 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1530.78 1173.33 moveto
+1533.87 1163.19 lineto
+1525.14 1169.19 lineto
+closepath stroke
+grestore
+% claros_common_form_form->claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1603.19 3252.37 moveto
+2088.95 3230.17 4081.74 3127.15 4261.89 2924 curveto
+4376.6 2794.65 4333.1 2692.54 4261.89 2535 curveto
+4174.34 2341.3 4025.28 2392.79 3902.89 2219 curveto
+3699.11 1929.66 3744.47 1805.89 3608.89 1479 curveto
+3561.31 1364.29 3501.6 1228.75 3476.67 1172.51 curveto
+stroke
+0 0 0 edgecolor
+newpath 3479.82 1170.98 moveto
+3472.57 1163.26 lineto
+3473.42 1173.82 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3479.82 1170.98 moveto
+3472.57 1163.26 lineto
+3473.42 1173.82 lineto
+closepath stroke
+grestore
+% claros_common_form_form->claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1471.17 3240.31 moveto
+1369.19 3172.34 992.43 2904.19 861.89 2571 curveto
+813.39 2447.21 895.08 2288.87 931.62 2227.7 curveto
+stroke
+0 0 0 edgecolor
+newpath 934.66 2229.43 moveto
+936.87 2219.07 lineto
+928.68 2225.8 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 934.66 2229.43 moveto
+936.87 2219.07 lineto
+928.68 2225.8 lineto
+closepath stroke
+grestore
+% claros_common_form_form->claros_common_form_formtemplate
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1574.64 3245.05 moveto
+1918.12 3192.28 3299.12 2980.1 3678.2 2921.85 curveto
+stroke
+0 0 0 edgecolor
+newpath 3678.97 2925.28 moveto
+3688.32 2920.3 lineto
+3677.9 2918.36 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3678.97 2925.28 moveto
+3688.32 2920.3 lineto
+3677.9 2918.36 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1496.89 2553 128.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1406.39 2549.3 moveto 181 (claros_common_form_formfield) alignedtext
+grestore
+% claros_common_form_form->claros_common_form_formfield
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1496.89 3239.97 moveto
+1496.89 3146.63 1496.89 2697.08 1496.89 2581.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 1500.39 2581.12 moveto
+1496.89 2571.12 lineto
+1493.39 2581.12 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1500.39 2581.12 moveto
+1496.89 2571.12 lineto
+1493.39 2581.12 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield_definition
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2258.89 2201 166.27 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2138.89 2197.3 moveto 240 (claros_common_form_formfield_definition) alignedtext
+grestore
+% claros_common_form_form->claros_common_form_formfield_definition
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1502.4 3239.68 moveto
+1521.36 3182.52 1588.98 2997.37 1701.89 2888 curveto
+1923.05 2673.77 2157.54 2833.85 2317.89 2571 curveto
+2386.66 2458.26 2308.77 2291.52 2273.96 2227.92 curveto
+stroke
+0 0 0 edgecolor
+newpath 2276.9 2226 moveto
+2268.97 2218.97 lineto
+2270.78 2229.41 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2276.9 2226 moveto
+2268.97 2218.97 lineto
+2270.78 2229.41 lineto
+closepath stroke
+grestore
+% claros_common_core_aggregate_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4081.89 792 145.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3977.89 788.3 moveto 208 (claros_common_core_aggregate_type) alignedtext
+grestore
+% claros_common_core_reportablequalifierdefinition_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4838.89 1145 210.66 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4684.89 1141.3 moveto 308 (claros_common_core_reportablequalifierdefinition_type) alignedtext
+grestore
+% claros_common_core_timezone
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2488.89 2553 124.28 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2401.39 2549.3 moveto 175 (claros_common_core_timezone) alignedtext
+grestore
+% claros_common_core_parameter
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1798.89 1145 127.28 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1708.89 1141.3 moveto 180 (claros_common_core_parameter) alignedtext
+grestore
+% claros_common_core_parameter->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1792.64 1126.59 moveto
+1772.19 1069.62 1707.15 888.45 1682.49 819.75 curveto
+stroke
+0 0 0 edgecolor
+newpath 1685.7 818.33 moveto
+1679.03 810.1 lineto
+1679.11 820.69 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1685.7 818.33 moveto
+1679.03 810.1 lineto
+1679.11 820.69 lineto
+closepath stroke
+grestore
+% claros_common_core_reportablequalifierdefinition
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4632.89 1497 191.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4493.89 1493.3 moveto 278 (claros_common_core_reportablequalifierdefinition) alignedtext
+grestore
+% claros_common_core_reportablequalifierdefinition->claros_common_core_reportablequalifier_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4623.02 1478.64 moveto
+4590.59 1421.6 4487.16 1239.69 4448.58 1171.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 4451.57 1170.01 moveto
+4443.58 1163.05 lineto
+4445.48 1173.47 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4451.57 1170.01 moveto
+4443.58 1163.05 lineto
+4445.48 1173.47 lineto
+closepath stroke
+grestore
+% claros_common_core_reportablequalifierdefinition->claros_common_core_reportablequalifierdefinition_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4643.1 1478.64 moveto
+4676.68 1421.6 4783.75 1239.69 4823.68 1171.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 4826.8 1173.44 moveto
+4828.85 1163.05 lineto
+4820.77 1169.89 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4826.8 1173.44 moveto
+4828.85 1163.05 lineto
+4820.77 1169.89 lineto
+closepath stroke
+grestore
+% claros_common_configuration_entity_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3309.89 2553 163.27 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3192.39 2549.3 moveto 235 (claros_common_configuration_entity_type) alignedtext
+grestore
+% claros_common_configuration_configuration
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3443.89 2906 170.87 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3320.39 2902.3 moveto 247 (claros_common_configuration_configuration) alignedtext
+grestore
+% claros_common_configuration_configuration->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3423.26 2888.06 moveto
+3306.88 2792.21 2722.11 2306.47 2284.89 1867 curveto
+2137.45 1718.8 2056.49 1706.61 1972.89 1515 curveto
+1903.59 1356.19 1999.38 1287.82 1934.89 1127 curveto
+1881.03 992.7 1755.67 867.93 1700.17 817.08 curveto
+stroke
+0 0 0 edgecolor
+newpath 1702.26 814.25 moveto
+1692.5 810.12 lineto
+1697.55 819.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1702.26 814.25 moveto
+1692.5 810.12 lineto
+1697.55 819.43 lineto
+closepath stroke
+grestore
+% claros_common_configuration_configuration->claros_common_configuration_rights
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3475.52 2888.31 moveto
+3584.82 2830.61 3946.59 2639.67 4068.43 2575.35 curveto
+stroke
+0 0 0 edgecolor
+newpath 4070.24 2578.35 moveto
+4077.45 2570.59 lineto
+4066.98 2572.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4070.24 2578.35 moveto
+4077.45 2570.59 lineto
+4066.98 2572.16 lineto
+closepath stroke
+grestore
+% claros_common_configuration_configuration->claros_common_configuration_entity_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3437.24 2887.59 moveto
+3415.49 2830.62 3346.33 2649.45 3320.1 2580.75 curveto
+stroke
+0 0 0 edgecolor
+newpath 3323.25 2579.19 moveto
+3316.42 2571.1 lineto
+3316.71 2581.69 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3323.25 2579.19 moveto
+3316.42 2571.1 lineto
+3316.71 2581.69 lineto
+closepath stroke
+grestore
+% claros_common_configuration_privileges
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4093.89 2906 158.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3979.89 2902.3 moveto 228 (claros_common_configuration_privileges) alignedtext
+grestore
+% claros_common_configuration_privileges->claros_common_configuration_rights
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4094.63 2887.59 moveto
+4097.06 2830.74 4104.78 2650.19 4107.73 2581.18 curveto
+stroke
+0 0 0 edgecolor
+newpath 4111.23 2581.24 moveto
+4108.16 2571.1 lineto
+4104.23 2580.94 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4111.23 2581.24 moveto
+4108.16 2571.1 lineto
+4104.23 2580.94 lineto
+closepath stroke
+grestore
+% claros_common_gis_point3d
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2989.89 3962 113.98 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2910.39 3958.3 moveto 159 (claros_common_gis_point3d) alignedtext
+grestore
+% claros_common_gis_point2d
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3553.89 3962 113.98 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3474.39 3958.3 moveto 159 (claros_common_gis_point2d) alignedtext
+grestore
+% claros_common_gis_multi_point2d
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3981.89 3962 137.28 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3884.39 3958.3 moveto 195 (claros_common_gis_multi_point2d) alignedtext
+grestore
+% claros_common_gis_multi_point3d
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4353.89 3962 137.28 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4256.39 3958.3 moveto 195 (claros_common_gis_multi_point3d) alignedtext
+grestore
+% claros_common_gis_gis
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1286.89 1145 96.68 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1220.39 1141.3 moveto 133 (claros_common_gis_gis) alignedtext
+grestore
+% claros_common_form_ledgercolumnformfield
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5556.89 1497 176.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5428.89 1493.3 moveto 256 (claros_common_form_ledgercolumnformfield) alignedtext
+grestore
+% claros_common_form_ledgercolumnformfield->claros_common_core_recurrence
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5554.51 1478.64 moveto
+5546.73 1421.95 5522.04 1241.92 5512.6 1173.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 5516.05 1172.48 moveto
+5511.23 1163.05 lineto
+5509.12 1173.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5516.05 1172.48 moveto
+5511.23 1163.05 lineto
+5509.12 1173.43 lineto
+closepath stroke
+grestore
+% claros_common_form_formdataentry_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1570.89 1849 163.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1452.89 1845.3 moveto 236 (claros_common_form_formdataentry_type) alignedtext
+grestore
+% claros_common_form_formfield->claros_common_form_formdataentry_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1498.68 2534.99 moveto
+1508.51 2441.79 1555.83 1992.88 1568.02 1877.22 curveto
+stroke
+0 0 0 edgecolor
+newpath 1571.52 1877.41 moveto
+1569.09 1867.09 lineto
+1564.56 1876.67 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1571.52 1877.41 moveto
+1569.09 1867.09 lineto
+1564.56 1876.67 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_cell
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1819.89 2201 175.47 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1692.89 2197.3 moveto 254 (claros_operations_spreadsheet_worksheet_cell) alignedtext
+grestore
+% claros_common_form_formfield->claros_operations_spreadsheet_worksheet_cell
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1512.47 2535.12 moveto
+1564.9 2478.3 1735.14 2293.83 1797.09 2226.71 curveto
+stroke
+0 0 0 edgecolor
+newpath 1799.88 2228.84 moveto
+1804.09 2219.12 lineto
+1794.73 2224.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1799.88 2228.84 moveto
+1804.09 2219.12 lineto
+1794.73 2224.1 lineto
+closepath stroke
+grestore
+% claros_instrument_data
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1219.89 1849 92.88 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1156.39 1845.3 moveto 127 (claros_instrument_data) alignedtext
+grestore
+% claros_common_form_formfield->claros_instrument_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1490.18 2534.99 moveto
+1453.33 2441.6 1275.55 1991.06 1230.36 1876.53 curveto
+stroke
+0 0 0 edgecolor
+newpath 1233.56 1875.11 moveto
+1226.63 1867.09 lineto
+1227.05 1877.68 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1233.56 1875.11 moveto
+1226.63 1867.09 lineto
+1227.05 1877.68 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_cell->claros_common_core_note
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1816.86 2182.98 moveto
+1807.41 2130.34 1777.06 1965.64 1743.89 1831 curveto
+1680.11 1572.14 1584.15 1263.82 1555.35 1172.63 curveto
+stroke
+0 0 0 edgecolor
+newpath 1558.68 1171.55 moveto
+1552.33 1163.07 lineto
+1552.01 1173.66 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1558.68 1171.55 moveto
+1552.33 1163.07 lineto
+1552.01 1173.66 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3360.89 1849 190.37 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3222.39 1845.3 moveto 277 (claros_operations_spreadsheet_worksheet_celldata) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_cell->claros_operations_spreadsheet_worksheet_celldata
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1888.59 2184.4 moveto
+2140.45 2127.19 3012.37 1929.16 3281.29 1868.08 curveto
+stroke
+0 0 0 edgecolor
+newpath 3282.38 1871.42 moveto
+3291.36 1865.79 lineto
+3280.83 1864.59 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3282.38 1871.42 moveto
+3291.36 1865.79 lineto
+3280.83 1864.59 lineto
+closepath stroke
+grestore
+% claros_instrument_data->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1222.63 1830.97 moveto
+1236.24 1749.32 1301.07 1390.91 1430.89 1127 curveto
+1493.27 1000.18 1603.31 870.38 1650.44 817.58 curveto
+stroke
+0 0 0 edgecolor
+newpath 1653.11 819.84 moveto
+1657.18 810.07 lineto
+1647.9 815.17 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1653.11 819.84 moveto
+1657.18 810.07 lineto
+1647.9 815.17 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1091.89 1497 126.18 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1002.89 1493.3 moveto 178 (claros_instrument_measurement) alignedtext
+grestore
+% claros_instrument_data->claros_instrument_measurement
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1213.54 1830.64 moveto
+1192.76 1773.83 1126.7 1593.18 1101.64 1524.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 1104.84 1523.24 moveto
+1098.12 1515.05 lineto
+1098.27 1525.64 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1104.84 1523.24 moveto
+1098.12 1515.05 lineto
+1098.27 1525.64 lineto
+closepath stroke
+grestore
+% claros_instrument_event
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+399.89 1145 97.48 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+332.89 1141.3 moveto 134 (claros_instrument_event) alignedtext
+grestore
+% claros_instrument_data->claros_instrument_event
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1200.43 1831.34 moveto
+1091.26 1737.88 555.32 1279.06 427.36 1169.52 curveto
+stroke
+0 0 0 edgecolor
+newpath 429.4 1166.66 moveto
+419.53 1162.82 lineto
+424.85 1171.98 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 429.4 1166.66 moveto
+419.53 1162.82 lineto
+424.85 1171.98 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield_data
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2161.89 2553 146.77 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2056.89 2549.3 moveto 210 (claros_common_form_formfield_data) alignedtext
+grestore
+% claros_common_form_formfield_data->claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2250.52 2538.59 moveto
+2504.96 2498.55 3230.85 2373.04 3408.89 2219 curveto
+3665.1 1997.33 3653.27 1812.19 3591.89 1479 curveto
+3569.84 1359.31 3506.7 1226.97 3478.63 1172.07 curveto
+stroke
+0 0 0 edgecolor
+newpath 3481.66 1170.32 moveto
+3473.97 1163.04 lineto
+3475.44 1173.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3481.66 1170.32 moveto
+3473.97 1163.04 lineto
+3475.44 1173.53 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield_data->claros_operations_spreadsheet_worksheet_cell
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2144.93 2534.64 moveto
+2088.85 2477.25 1909.25 2293.45 1843.93 2226.6 curveto
+stroke
+0 0 0 edgecolor
+newpath 1846.04 2223.75 moveto
+1836.55 2219.05 lineto
+1841.03 2228.65 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1846.04 2223.75 moveto
+1836.55 2219.05 lineto
+1841.03 2228.65 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield_data->claros_instrument_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2132 2535.36 moveto
+2049.93 2489.19 1815.32 2353.99 1635.89 2219 curveto
+1477.94 2100.17 1306.55 1935.39 1244.24 1874.16 curveto
+stroke
+0 0 0 edgecolor
+newpath 1246.44 1871.41 moveto
+1236.86 1866.89 lineto
+1241.53 1876.4 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1246.44 1871.41 moveto
+1236.86 1866.89 lineto
+1241.53 1876.4 lineto
+closepath stroke
+grestore
+% claros_common_form_formcolumn
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2119.89 1497 138.38 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2021.39 1493.3 moveto 197 (claros_common_form_formcolumn) alignedtext
+grestore
+% claros_common_form_field_text
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1797.89 1497 128.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1707.39 1493.3 moveto 181 (claros_common_form_field_text) alignedtext
+grestore
+% claros_common_form_field_text->claros_common_core_note
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1785.44 1478.64 moveto
+1744.45 1421.48 1613.54 1238.95 1565.12 1171.43 curveto
+stroke
+0 0 0 edgecolor
+newpath 1567.79 1169.14 moveto
+1559.11 1163.05 lineto
+1562.1 1173.21 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1567.79 1169.14 moveto
+1559.11 1163.05 lineto
+1562.1 1173.21 lineto
+closepath stroke
+grestore
+% claros_common_form_field_text->claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1865.82 1481.74 moveto
+2131.94 1425.86 3102.76 1222.03 3386.51 1162.46 curveto
+stroke
+0 0 0 edgecolor
+newpath 3387.64 1165.79 moveto
+3396.71 1160.31 lineto
+3386.2 1158.94 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3387.64 1165.79 moveto
+3396.71 1160.31 lineto
+3386.2 1158.94 lineto
+closepath stroke
+grestore
+% claros_common_form_formsection
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2429.89 1849 136.48 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2332.89 1845.3 moveto 194 (claros_common_form_formsection) alignedtext
+grestore
+% claros_common_form_formsection->claros_common_form_formcolumn
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2414.52 1830.64 moveto
+2363.68 1773.25 2200.89 1589.45 2141.68 1522.6 curveto
+stroke
+0 0 0 edgecolor
+newpath 2144.24 1520.21 moveto
+2134.99 1515.05 lineto
+2139 1524.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2144.24 1520.21 moveto
+2134.99 1515.05 lineto
+2139 1524.86 lineto
+closepath stroke
+grestore
+% claros_common_form_formfield_definition->claros_common_form_formdataentry_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2225.7 2183.12 moveto
+2112.05 2125.3 1738.57 1935.3 1612.71 1871.28 curveto
+stroke
+0 0 0 edgecolor
+newpath 1614.24 1868.13 moveto
+1603.74 1866.71 lineto
+1611.06 1874.37 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1614.24 1868.13 moveto
+1603.74 1866.71 lineto
+1611.06 1874.37 lineto
+closepath stroke
+grestore
+% claros_common_form_field_text_repeated
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1967.89 1849 161.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1851.39 1845.3 moveto 233 (claros_common_form_field_text_repeated) alignedtext
+grestore
+% claros_common_form_formfield_definition->claros_common_form_field_text_repeated
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2244.46 2182.64 moveto
+2196.84 2125.37 2044.55 1942.2 1988.69 1875.01 curveto
+stroke
+0 0 0 edgecolor
+newpath 1991.15 1872.5 moveto
+1982.06 1867.05 lineto
+1985.76 1876.98 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1991.15 1872.5 moveto
+1982.06 1867.05 lineto
+1985.76 1876.98 lineto
+closepath stroke
+grestore
+% claros_common_form_field_text_repeated->claros_common_form_field_text
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1959.46 1830.64 moveto
+1931.81 1773.72 1843.76 1592.43 1810.64 1524.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 1813.69 1522.51 moveto
+1806.17 1515.05 lineto
+1807.39 1525.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1813.69 1522.51 moveto
+1806.17 1515.05 lineto
+1807.39 1525.57 lineto
+closepath stroke
+grestore
+% claros_common_form_formlayout
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3265.89 2201 133.78 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3170.89 2197.3 moveto 190 (claros_common_form_formlayout) alignedtext
+grestore
+% claros_common_form_formlayout->claros_common_form_formsection
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3226.97 2183.7 moveto
+3089.92 2126.33 2629.84 1933.71 2478.56 1870.38 curveto
+stroke
+0 0 0 edgecolor
+newpath 2479.62 1867.03 moveto
+2469.05 1866.39 lineto
+2476.92 1873.48 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2479.62 1867.03 moveto
+2469.05 1866.39 lineto
+2476.92 1873.48 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplateconfiguration->claros_common_core_recurrence
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3726.32 2535.45 moveto
+3938.12 2456.15 4839.18 2094.76 5332.89 1515 curveto
+5426.17 1405.46 5482.08 1238.02 5501.31 1173.07 curveto
+stroke
+0 0 0 edgecolor
+newpath 5504.75 1173.78 moveto
+5504.18 1163.2 lineto
+5498.03 1171.82 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5504.75 1173.78 moveto
+5504.18 1163.2 lineto
+5498.03 1171.82 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplateconfiguration->claros_common_form_formfield_definition
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3616.09 2536.05 moveto
+3381.9 2478.41 2580.16 2281.08 2332.42 2220.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 2332.99 2216.63 moveto
+2322.44 2217.64 lineto
+2331.31 2223.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2332.99 2216.63 moveto
+2322.44 2217.64 lineto
+2331.31 2223.43 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplateconfiguration->claros_common_form_formlayout
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3660.59 2534.88 moveto
+3592.6 2477.54 3372.77 2292.14 3294.16 2225.85 curveto
+stroke
+0 0 0 edgecolor
+newpath 3296.05 2222.86 moveto
+3286.15 2219.09 lineto
+3291.53 2228.21 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3296.05 2222.86 moveto
+3286.15 2219.09 lineto
+3291.53 2228.21 lineto
+closepath stroke
+grestore
+% claros_common_form_formtemplate_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3693.89 2201 161.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3577.39 2197.3 moveto 233 (claros_common_form_formtemplate_type) alignedtext
+grestore
+% claros_common_form_formtemplateconfiguration->claros_common_form_formtemplate_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3681.53 2534.64 moveto
+3683.64 2477.95 3690.33 2297.92 3692.88 2229.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 3696.38 2229.17 moveto
+3693.25 2219.05 lineto
+3689.39 2228.91 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3696.38 2229.17 moveto
+3693.25 2219.05 lineto
+3689.39 2228.91 lineto
+closepath stroke
+grestore
+% claros_common_form_field_worksheet_column_UTC
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3050.89 2906 204.16 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2901.89 2902.3 moveto 298 (claros_common_form_field_worksheet_column_UTC) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_column
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4333.89 1849 189.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4195.89 1845.3 moveto 276 (claros_operations_spreadsheet_worksheet_column) alignedtext
+grestore
+% claros_common_form_field_worksheet_column_UTC->claros_operations_spreadsheet_worksheet_column
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3112.95 2888.8 moveto
+3258.96 2849.04 3632.74 2737.57 3908.89 2571 curveto
+3934.45 2555.58 4301.8 2245.83 4314.89 2219 curveto
+4371.53 2102.92 4350.83 1941.17 4339.4 1877.4 curveto
+stroke
+0 0 0 edgecolor
+newpath 4342.8 1876.53 moveto
+4337.53 1867.34 lineto
+4335.92 1877.81 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4342.8 1876.53 moveto
+4337.53 1867.34 lineto
+4335.92 1877.81 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2808.89 2553 178.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2679.89 2549.3 moveto 258 (claros_operations_spreadsheet_worksheet_type) alignedtext
+grestore
+% claros_common_form_field_worksheet_column_UTC->claros_operations_spreadsheet_worksheet_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3038.89 2887.59 moveto
+2999.37 2830.27 2873.15 2647.21 2826.47 2579.5 curveto
+stroke
+0 0 0 edgecolor
+newpath 2829.23 2577.34 moveto
+2820.68 2571.1 lineto
+2823.47 2581.32 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2829.23 2577.34 moveto
+2820.68 2571.1 lineto
+2823.47 2581.32 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_column->claros_common_core_datasource_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4368.54 1831.28 moveto
+4454.97 1788.33 4683.8 1666.75 4832.89 1515 curveto
+4963.18 1382.38 5006.55 1341.39 5058.89 1163 curveto
+5103.74 1010.11 4913.51 868.51 4830.71 815.28 curveto
+stroke
+0 0 0 edgecolor
+newpath 4832.42 812.22 moveto
+4822.11 809.81 lineto
+4828.67 818.13 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4832.42 812.22 moveto
+4822.11 809.81 lineto
+4828.67 818.13 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_column->claros_common_core_limit
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4375.79 1831.35 moveto
+4521.82 1773.34 5008.02 1580.18 5165.32 1517.69 curveto
+stroke
+0 0 0 edgecolor
+newpath 5166.77 1520.88 moveto
+5174.77 1513.94 lineto
+5164.18 1514.38 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5166.77 1520.88 moveto
+5174.77 1513.94 lineto
+5164.18 1514.38 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_column->claros_common_core_reportablequalifierdefinition
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4348.72 1830.64 moveto
+4397.65 1773.37 4554.12 1590.2 4611.52 1523.01 curveto
+stroke
+0 0 0 edgecolor
+newpath 4614.49 1524.93 moveto
+4618.32 1515.05 lineto
+4609.17 1520.38 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4614.49 1524.93 moveto
+4618.32 1515.05 lineto
+4609.17 1520.38 lineto
+closepath stroke
+grestore
+% claros_common_computation_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3758.89 1145 147.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3653.39 1141.3 moveto 211 (claros_common_computation_binding) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_column->claros_common_computation_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4319.96 1830.99 moveto
+4243.15 1737.22 3871.46 1283.43 3779.5 1171.16 curveto
+stroke
+0 0 0 edgecolor
+newpath 3781.93 1168.61 moveto
+3772.89 1163.09 lineto
+3776.52 1173.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3781.93 1168.61 moveto
+3772.89 1163.09 lineto
+3776.52 1173.05 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4081.89 1145 157.07 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3968.89 1141.3 moveto 226 (claros_instrument_measurement_binding) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_column->claros_instrument_measurement_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4316.43 1830.92 moveto
+4270.81 1784.96 4148.24 1652.8 4100.89 1515 curveto
+4059.1 1393.39 4071.11 1235.97 4078.28 1173.39 curveto
+stroke
+0 0 0 edgecolor
+newpath 4081.79 1173.52 moveto
+4079.51 1163.18 lineto
+4074.84 1172.69 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4081.79 1173.52 moveto
+4079.51 1163.18 lineto
+4074.84 1172.69 lineto
+closepath stroke
+grestore
+% claros_common_form_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2506.89 1145 120.78 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2421.89 1141.3 moveto 170 (claros_common_form_binding) alignedtext
+grestore
+% claros_common_form_formindex
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+683.89 2553 131.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+590.89 2549.3 moveto 186 (claros_common_form_formindex) alignedtext
+grestore
+% claros_common_form_formindex->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 678.69 2534.82 moveto
+655.53 2456.73 562.89 2127.03 562.89 1850 curveto
+562.89 1850 562.89 1850 562.89 1496 curveto
+562.89 1329.08 522.35 1252.08 632.89 1127 curveto
+861.96 867.79 1292.62 808.4 1521.28 795.67 curveto
+stroke
+0 0 0 edgecolor
+newpath 1521.54 799.16 moveto
+1531.34 795.14 lineto
+1521.17 792.17 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1521.54 799.16 moveto
+1531.34 795.14 lineto
+1521.17 792.17 lineto
+closepath stroke
+grestore
+% claros_common_form_formindex->claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 696.98 2534.64 moveto
+740.09 2477.48 877.78 2294.95 928.71 2227.43 curveto
+stroke
+0 0 0 edgecolor
+newpath 931.8 2229.14 moveto
+935.03 2219.05 lineto
+926.21 2224.92 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 931.8 2229.14 moveto
+935.03 2219.05 lineto
+926.21 2224.92 lineto
+closepath stroke
+grestore
+% claros_common_report_report
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2101.89 3962 118.08 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2018.89 3958.3 moveto 166 (claros_common_report_report) alignedtext
+grestore
+% claros_common_report_report_data
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2101.89 3610 137.58 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2003.89 3606.3 moveto 196 (claros_common_report_report_data) alignedtext
+grestore
+% claros_common_report_report->claros_common_report_report_data
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2101.89 3943.64 moveto
+2101.89 3886.95 2101.89 3706.92 2101.89 3638.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 2105.39 3638.05 moveto
+2101.89 3628.05 lineto
+2098.39 3638.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2105.39 3638.05 moveto
+2101.89 3628.05 lineto
+2098.39 3638.05 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_spreadsheet
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2101.89 3258 163.27 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1984.39 3254.3 moveto 235 (claros_operations_spreadsheet_spreadsheet) alignedtext
+grestore
+% claros_common_report_report_data->claros_operations_spreadsheet_spreadsheet
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2101.89 3591.64 moveto
+2101.89 3534.95 2101.89 3354.92 2101.89 3286.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 2105.39 3286.05 moveto
+2101.89 3276.05 lineto
+2098.39 3286.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2105.39 3286.05 moveto
+2101.89 3276.05 lineto
+2098.39 3286.05 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_spreadsheet_definition
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1912.89 2906 202.26 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1765.39 2902.3 moveto 295 (claros_operations_spreadsheet_spreadsheet_definition) alignedtext
+grestore
+% claros_operations_spreadsheet_spreadsheet->claros_operations_spreadsheet_spreadsheet_definition
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2092.52 3239.64 moveto
+2061.78 3182.72 1963.88 3001.43 1927.07 2933.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 1929.93 2931.18 moveto
+1922.09 2924.05 lineto
+1923.77 2934.51 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1929.93 2931.18 moveto
+1922.09 2924.05 lineto
+1923.77 2934.51 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2291.89 2906 158.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2177.89 2902.3 moveto 228 (claros_operations_spreadsheet_worksheet) alignedtext
+grestore
+% claros_operations_spreadsheet_spreadsheet->claros_operations_spreadsheet_worksheet
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2111.31 3239.64 moveto
+2142.28 3182.6 2241.03 3000.69 2277.86 2932.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 2280.94 2934.51 moveto
+2282.63 2924.05 lineto
+2274.79 2931.17 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2280.94 2934.51 moveto
+2282.63 2924.05 lineto
+2274.79 2931.17 lineto
+closepath stroke
+grestore
+% claros_common_computation_propertyselector_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4185.89 3258 197.66 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4041.89 3254.3 moveto 288 (claros_common_computation_propertyselector_type) alignedtext
+grestore
+% claros_common_computation_cursor_type
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4563.89 3258 162.47 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4446.89 3254.3 moveto 234 (claros_common_computation_cursor_type) alignedtext
+grestore
+% claros_common_computation_computation
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4713.89 3962 165.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4594.89 3958.3 moveto 238 (claros_common_computation_computation) alignedtext
+grestore
+% claros_common_computation_variable
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4543.89 3610 149.47 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4436.89 3606.3 moveto 214 (claros_common_computation_variable) alignedtext
+grestore
+% claros_common_computation_computation->claros_common_computation_variable
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4705.46 3943.64 moveto
+4677.81 3886.72 4589.76 3705.43 4556.64 3637.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 4559.69 3635.51 moveto
+4552.17 3628.05 lineto
+4553.39 3638.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4559.69 3635.51 moveto
+4552.17 3628.05 lineto
+4553.39 3638.57 lineto
+closepath stroke
+grestore
+% claros_common_computation_expressionline
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4882.89 3610 171.67 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4758.89 3606.3 moveto 248 (claros_common_computation_expressionline) alignedtext
+grestore
+% claros_common_computation_computation->claros_common_computation_expressionline
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4722.27 3943.64 moveto
+4749.76 3886.72 4837.29 3705.43 4870.21 3637.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 4873.46 3638.58 moveto
+4874.66 3628.05 lineto
+4867.16 3635.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4873.46 3638.58 moveto
+4874.66 3628.05 lineto
+4867.16 3635.53 lineto
+closepath stroke
+grestore
+% claros_common_computation_variable->claros_common_computation_propertyselector_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4526.62 3592.12 moveto
+4468.39 3535.19 4279.05 3350.08 4210.74 3283.3 curveto
+stroke
+0 0 0 edgecolor
+newpath 4213 3280.61 moveto
+4203.4 3276.12 lineto
+4208.11 3285.62 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4213 3280.61 moveto
+4203.4 3276.12 lineto
+4208.11 3285.62 lineto
+closepath stroke
+grestore
+% claros_common_computation_variable->claros_common_computation_cursor_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4544.88 3591.64 moveto
+4548.12 3534.95 4558.41 3354.92 4562.34 3286.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 4565.84 3286.23 moveto
+4562.91 3276.05 lineto
+4558.85 3285.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4565.84 3286.23 moveto
+4562.91 3276.05 lineto
+4558.85 3285.83 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_spreadsheet_definition->claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1880.38 2888.15 moveto
+1792.91 2842.23 1546.54 2709.07 1359.89 2571 curveto
+1201.83 2454.09 1033.06 2288.15 971.81 2226.39 curveto
+stroke
+0 0 0 edgecolor
+newpath 974.08 2223.7 moveto
+964.56 2219.05 lineto
+969.1 2228.62 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 974.08 2223.7 moveto
+964.56 2219.05 lineto
+969.1 2228.62 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_spreadsheet_definition->claros_common_core_timezone
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1940.67 2888.07 moveto
+2035.44 2830.32 2346.01 2641.07 2452.6 2576.12 curveto
+stroke
+0 0 0 edgecolor
+newpath 2454.67 2578.95 moveto
+2461.39 2570.76 lineto
+2451.02 2572.97 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2454.67 2578.95 moveto
+2461.39 2570.76 lineto
+2451.02 2572.97 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_binding->claros_common_core_aggregate_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4081.89 1126.59 moveto
+4081.89 1069.74 4081.89 889.19 4081.89 820.18 curveto
+stroke
+0 0 0 edgecolor
+newpath 4085.39 820.1 moveto
+4081.89 810.1 lineto
+4078.39 820.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4085.39 820.1 moveto
+4081.89 810.1 lineto
+4078.39 820.1 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3342.89 1497 221.76 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3180.39 1493.3 moveto 325 (claros_operations_spreadsheet_worksheet_celldata_binding) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding->claros_common_form_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3302.85 1479.24 moveto
+3164.21 1421.2 2704.96 1228.92 2554.83 1166.07 curveto
+stroke
+0 0 0 edgecolor
+newpath 2555.97 1162.76 moveto
+2545.4 1162.12 lineto
+2553.27 1169.21 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2555.97 1162.76 moveto
+2545.4 1162.12 lineto
+2553.27 1169.21 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding->claros_common_computation_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3363.23 1478.88 moveto
+3431.38 1421.54 3651.75 1236.14 3730.55 1169.85 curveto
+stroke
+0 0 0 edgecolor
+newpath 3733.18 1172.2 moveto
+3738.58 1163.09 lineto
+3728.68 1166.85 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3733.18 1172.2 moveto
+3738.58 1163.09 lineto
+3728.68 1166.85 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding->claros_instrument_measurement_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3378.53 1479.12 moveto
+3500.73 1421.24 3902.58 1230.92 4037.37 1167.09 curveto
+stroke
+0 0 0 edgecolor
+newpath 4039.06 1170.16 moveto
+4046.6 1162.71 lineto
+4036.07 1163.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4039.06 1170.16 moveto
+4046.6 1162.71 lineto
+4036.07 1163.83 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_field_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3140.89 1145 178.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3011.89 1141.3 moveto 258 (claros_instrument_measurement_field_binding) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding->claros_instrument_measurement_field_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3332.87 1478.64 moveto
+3299.95 1421.6 3194.96 1239.69 3155.8 1171.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 3158.76 1169.96 moveto
+3150.73 1163.05 lineto
+3152.69 1173.46 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3158.76 1169.96 moveto
+3150.73 1163.05 lineto
+3152.69 1173.46 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2794.89 1145 149.47 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2687.89 1141.3 moveto 214 (claros_operations_spreadsheet_binding) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_celldata_binding->claros_operations_spreadsheet_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3316.46 1479.12 moveto
+3226.49 1421.66 2932.1 1233.63 2830.08 1168.47 curveto
+stroke
+0 0 0 edgecolor
+newpath 2831.69 1165.35 moveto
+2821.37 1162.92 lineto
+2827.92 1171.25 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2831.69 1165.35 moveto
+2821.37 1162.92 lineto
+2827.92 1171.25 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_field_binding->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3074.96 1128.24 moveto
+2833.68 1070.55 1999.67 871.13 1746.4 810.58 curveto
+stroke
+0 0 0 edgecolor
+newpath 1747.1 807.15 moveto
+1736.56 808.22 lineto
+1745.47 813.95 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1747.1 807.15 moveto
+1736.56 808.22 lineto
+1745.47 813.95 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata->claros_common_core_reportablequalifier
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3403.98 1831.35 moveto
+3553.81 1773.47 4051.86 1581.07 4214.8 1518.12 curveto
+stroke
+0 0 0 edgecolor
+newpath 4216.52 1521.21 moveto
+4224.59 1514.34 lineto
+4214 1514.68 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4216.52 1521.21 moveto
+4224.59 1514.34 lineto
+4214 1514.68 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata->claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3376.93 1831.06 moveto
+3419.36 1784.92 3534.01 1651.35 3573.89 1515 curveto
+3611.61 1386.02 3522.73 1231.88 3482.94 1171.78 curveto
+stroke
+0 0 0 edgecolor
+newpath 3485.71 1169.62 moveto
+3477.22 1163.28 lineto
+3479.9 1173.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3485.71 1169.62 moveto
+3477.22 1163.28 lineto
+3479.9 1173.53 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_celldata->claros_operations_spreadsheet_worksheet_celldata_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3360 1830.64 moveto
+3357.08 1773.95 3347.82 1593.92 3344.28 1525.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 3347.77 1524.86 moveto
+3343.76 1515.05 lineto
+3340.78 1525.22 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3347.77 1524.86 moveto
+3343.76 1515.05 lineto
+3340.78 1525.22 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_view
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2648.89 2906 180.07 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2518.39 2902.3 moveto 261 (claros_operations_spreadsheet_worksheet_view) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_view->claros_operations_spreadsheet_worksheet_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2656.82 2887.59 moveto
+2682.85 2830.5 2765.72 2648.7 2796.88 2580.33 curveto
+stroke
+0 0 0 edgecolor
+newpath 2800.13 2581.65 moveto
+2801.09 2571.1 lineto
+2793.76 2578.74 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2800.13 2581.65 moveto
+2801.09 2571.1 lineto
+2793.76 2578.74 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_definition
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4108.89 2201 196.87 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3965.39 2197.3 moveto 287 (claros_operations_spreadsheet_worksheet_definition) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_definition->claros_common_core_auditevent
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4107.75 2182.92 moveto
+4101.42 2098.77 4064.49 1722.55 3897.89 1479 curveto
+3793.02 1325.69 3595.15 1212.05 3507.98 1167.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 3509.4 1163.91 moveto
+3498.9 1162.48 lineto
+3506.22 1170.14 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 3509.4 1163.91 moveto
+3498.9 1162.48 lineto
+3506.22 1170.14 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_definition->claros_operations_spreadsheet_worksheet_column
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4120.05 2182.64 moveto
+4156.72 2125.6 4273.66 1943.69 4317.28 1875.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 4320.46 1877.35 moveto
+4322.93 1867.05 lineto
+4314.58 1873.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4320.46 1877.35 moveto
+4322.93 1867.05 lineto
+4314.58 1873.57 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet->claros_operations_spreadsheet_worksheet_type
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2316.82 2888.07 moveto
+2401.62 2830.5 2678.88 2642.26 2775.4 2576.74 curveto
+stroke
+0 0 0 edgecolor
+newpath 2777.59 2579.48 moveto
+2783.9 2570.96 lineto
+2773.66 2573.69 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2777.59 2579.48 moveto
+2783.9 2570.96 lineto
+2773.66 2573.69 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet->claros_operations_spreadsheet_worksheet_definition
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2402.67 2893.1 moveto
+2722.07 2857.05 3637.36 2740.99 3879.89 2571 curveto
+3945.02 2525.35 4058.33 2304.32 4096.17 2227.99 curveto
+stroke
+0 0 0 edgecolor
+newpath 4099.32 2229.53 moveto
+4100.61 2219.01 lineto
+4093.04 2226.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 4099.32 2229.53 moveto
+4100.61 2219.01 lineto
+4093.04 2226.43 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_row
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1819.89 2553 176.57 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1691.89 2549.3 moveto 256 (claros_operations_spreadsheet_worksheet_row) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet->claros_operations_spreadsheet_worksheet_row
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2269.12 2888.07 moveto
+2191.79 2830.56 1939.09 2642.64 1850.73 2576.93 curveto
+stroke
+0 0 0 edgecolor
+newpath 1852.81 2574.12 moveto
+1842.7 2570.96 lineto
+1848.64 2579.74 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1852.81 2574.12 moveto
+1842.7 2570.96 lineto
+1848.64 2579.74 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_row->claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1778.71 2535.47 moveto
+1634.79 2477.7 1154.51 2284.93 997.8 2222.04 curveto
+stroke
+0 0 0 edgecolor
+newpath 998.98 2218.73 moveto
+988.39 2218.26 lineto
+996.37 2225.23 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 998.98 2218.73 moveto
+988.39 2218.26 lineto
+996.37 2225.23 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_row->claros_operations_spreadsheet_worksheet_cell
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1819.89 2534.64 moveto
+1819.89 2477.95 1819.89 2297.92 1819.89 2229.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 1823.39 2229.05 moveto
+1819.89 2219.05 lineto
+1816.39 2229.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1823.39 2229.05 moveto
+1819.89 2219.05 lineto
+1816.39 2229.05 lineto
+closepath stroke
+grestore
+% claros_operations_spreadsheet_worksheet_index
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1053.89 2553 182.77 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+921.39 2549.3 moveto 265 (claros_operations_spreadsheet_worksheet_index) alignedtext
+grestore
+% claros_operations_spreadsheet_worksheet_index->claros_common_core_timewindow
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1048.63 2534.64 moveto
+1031.43 2477.83 976.71 2297.18 955.97 2228.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 959.3 2227.6 moveto
+953.05 2219.05 lineto
+952.6 2229.63 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 959.3 2227.6 moveto
+953.05 2219.05 lineto
+952.6 2229.63 lineto
+closepath stroke
+grestore
+% claros_instrument_calibration
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+648.89 792 116.18 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+567.39 788.3 moveto 163 (claros_instrument_calibration) alignedtext
+grestore
+% claros_instrument_calibration_standard
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+648.89 440 150.27 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+541.39 436.3 moveto 215 (claros_instrument_calibration_standard) alignedtext
+grestore
+% claros_instrument_calibration->claros_instrument_calibration_standard
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 648.89 773.64 moveto
+648.89 716.95 648.89 536.92 648.89 468.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 652.39 468.05 moveto
+648.89 458.05 lineto
+645.39 468.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 652.39 468.05 moveto
+648.89 458.05 lineto
+645.39 468.05 lineto
+closepath stroke
+grestore
+% claros_instrument_calibration_value
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+648.89 88 139.98 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+549.39 84.3 moveto 199 (claros_instrument_calibration_value) alignedtext
+grestore
+% claros_instrument_calibration_standard->claros_instrument_calibration_value
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 648.89 421.64 moveto
+648.89 364.95 648.89 184.92 648.89 116.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 652.39 116.05 moveto
+648.89 106.05 lineto
+645.39 116.05 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 652.39 116.05 moveto
+648.89 106.05 lineto
+645.39 116.05 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement->claros_common_core_measurement
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1088.91 1478.64 moveto
+1079.19 1421.95 1048.33 1241.92 1036.53 1173.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 1039.95 1172.31 moveto
+1034.81 1163.05 lineto
+1033.05 1173.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1039.95 1172.31 moveto
+1034.81 1163.05 lineto
+1033.05 1173.5 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement->claros_common_gis_gis
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1101.56 1478.64 moveto
+1133.34 1421.6 1234.69 1239.69 1272.49 1171.84 curveto
+stroke
+0 0 0 edgecolor
+newpath 1275.58 1173.49 moveto
+1277.39 1163.05 lineto
+1269.47 1170.08 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1275.58 1173.49 moveto
+1277.39 1163.05 lineto
+1269.47 1170.08 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement->claros_instrument_event
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1059.44 1479.59 moveto
+945.91 1422.17 566.63 1230.34 440.83 1166.71 curveto
+stroke
+0 0 0 edgecolor
+newpath 442.37 1163.56 moveto
+431.87 1162.17 lineto
+439.21 1169.81 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 442.37 1163.56 moveto
+431.87 1162.17 lineto
+439.21 1169.81 lineto
+closepath stroke
+grestore
+% claros_instrument_event->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 451.77 1129.7 moveto
+652.99 1074.21 1381.84 873.25 1606.5 811.31 curveto
+stroke
+0 0 0 edgecolor
+newpath 1607.47 814.67 moveto
+1616.18 808.64 lineto
+1605.61 807.92 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1607.47 814.67 moveto
+1616.18 808.64 lineto
+1605.61 807.92 lineto
+closepath stroke
+grestore
+% claros_instrument_event->claros_instrument_calibration
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 411.9 1127.07 moveto
+452.15 1070.32 582.49 886.59 630.72 818.61 curveto
+stroke
+0 0 0 edgecolor
+newpath 633.78 820.35 moveto
+636.71 810.17 lineto
+628.07 816.3 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 633.78 820.35 moveto
+636.71 810.17 lineto
+628.07 816.3 lineto
+closepath stroke
+grestore
+% claros_instrument_event_metadata
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+133.89 792 133.78 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+38.89 788.3 moveto 190 (claros_instrument_event_metadata) alignedtext
+grestore
+% claros_instrument_event->claros_instrument_event_metadata
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 387.06 1127.07 moveto
+343.97 1070.21 204.25 885.84 152.98 818.19 curveto
+stroke
+0 0 0 edgecolor
+newpath 155.73 816.03 moveto
+146.9 810.17 lineto
+150.15 820.25 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 155.73 816.03 moveto
+146.9 810.17 lineto
+150.15 820.25 lineto
+closepath stroke
+grestore
+% claros_instrument_prognosys
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+399.89 792 114.28 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+319.89 788.3 moveto 160 (claros_instrument_prognosys) alignedtext
+grestore
+% claros_instrument_event->claros_instrument_prognosys
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 399.89 1126.59 moveto
+399.89 1069.74 399.89 889.19 399.89 820.18 curveto
+stroke
+0 0 0 edgecolor
+newpath 403.39 820.1 moveto
+399.89 810.1 lineto
+396.39 820.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 403.39 820.1 moveto
+399.89 810.1 lineto
+396.39 820.1 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_milliamp_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2507.89 1497 194.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2366.39 1493.3 moveto 283 (claros_instrument_measurement_milliamp_binding) alignedtext
+grestore
+% claros_instrument_measurement_milliamp_binding->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2501.94 1478.76 moveto
+2481.59 1421.86 2409.58 1237.4 2295.89 1127 curveto
+2123.98 960.06 1851.87 853.47 1732.43 812.29 curveto
+stroke
+0 0 0 edgecolor
+newpath 1733.31 808.9 moveto
+1722.72 808.97 lineto
+1731.05 815.52 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1733.31 808.9 moveto
+1722.72 808.97 lineto
+1731.05 815.52 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_scsensor_binding
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2911.89 1497 191.97 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2772.39 1493.3 moveto 279 (claros_instrument_measurement_scsensor_binding) alignedtext
+grestore
+% claros_instrument_measurement_scsensor_binding->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2883.39 1479.06 moveto
+2802.88 1431.02 2567.2 1289.25 2376.89 1163 curveto
+2353.77 1147.66 2349.63 1141.35 2325.89 1127 curveto
+2106.13 994.15 1827.38 863.34 1718.95 813.8 curveto
+stroke
+0 0 0 edgecolor
+newpath 1720.16 810.5 moveto
+1709.61 809.54 lineto
+1717.25 816.87 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1720.16 810.5 moveto
+1709.61 809.54 lineto
+1717.25 816.87 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_definition
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2767.89 1849 165.17 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2648.89 1845.3 moveto 238 (claros_instrument_measurement_definition) alignedtext
+grestore
+% claros_instrument_measurement_definition->claros_common_core_clarosdatetime
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2740.14 1831.25 moveto
+2665.57 1785.6 2456.3 1653.13 2304.89 1515 curveto
+2220.52 1438.03 2043.13 1212.91 1967.89 1127 curveto
+1866.1 1010.79 1743.63 872.66 1694.66 817.51 curveto
+stroke
+0 0 0 edgecolor
+newpath 1697.24 815.14 moveto
+1687.98 809.99 lineto
+1692 819.79 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1697.24 815.14 moveto
+1687.98 809.99 lineto
+1692 819.79 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_definition->claros_common_core_limit
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2863.81 1834.28 moveto
+3257.2 1778.01 4744.02 1565.35 5125.34 1510.81 curveto
+stroke
+0 0 0 edgecolor
+newpath 5126.09 1514.24 moveto
+5135.49 1509.36 lineto
+5125.09 1507.31 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5126.09 1514.24 moveto
+5135.49 1509.36 lineto
+5125.09 1507.31 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_definition->claros_instrument_measurement_milliamp_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2754.99 1830.64 moveto
+2712.53 1773.48 2576.93 1590.95 2526.78 1523.43 curveto
+stroke
+0 0 0 edgecolor
+newpath 2529.33 1520.99 moveto
+2520.55 1515.05 lineto
+2523.71 1525.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2529.33 1520.99 moveto
+2520.55 1515.05 lineto
+2523.71 1525.16 lineto
+closepath stroke
+grestore
+% claros_instrument_measurement_definition->claros_instrument_measurement_scsensor_binding
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2775.03 1830.64 moveto
+2798.4 1773.83 2872.73 1593.18 2900.91 1524.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 2904.31 1525.63 moveto
+2904.87 1515.05 lineto
+2897.83 1522.96 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2904.31 1525.63 moveto
+2904.87 1515.05 lineto
+2897.83 1522.96 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 5831 4094
+end
+restore
+%%EOF
