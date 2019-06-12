@@ -16,5 +16,5 @@ message Task {
     TaskDefinition taskDefinition = 4;  // Definition of the Task
     
     // data
-    TaskData taskdata = 4;            // Data Stored related to the Task
+    TaskData taskdata = 5;            // Data Stored related to the Task
 }
