@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.instrument.event;
+
+import "";
+
+message InstrumentDefnition {
+    string fusionId = 1;                       //this is the primary value  (Concentration)
+    
+}
+ 
+ 

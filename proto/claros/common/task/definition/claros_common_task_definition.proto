@@ -4,7 +4,8 @@ package claros.common.task;
  
 message TaskDefinition {
     // What is the source of the Task?
-
+    repeated TaskDefinitionSource taskSource = 1;
+    
     // What are the notifications required?
 
     // What are the escalations?
