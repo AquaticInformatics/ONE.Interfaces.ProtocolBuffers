@@ -6,13 +6,13 @@ import "claros_common_computation_propertyselector_type.proto";
 
 message Variable
 {
-    string i18nKey = 1;
-    string name = 2;
-    string description = 3;
-    string quantityTypeId = 4;
-    ComputationCursorType cursor = 5;
-    uint32 cursorAbsolute = 6;
-    PropertySelectorType propertySelector = 7;
+    string i18nKey = 1;                         // Use for translations of a global computation
+    string name = 2;                            // Tenant entered name
+    string description = 3;                     // Tenant entered description
+    string quantityTypeId = 4;                  // FK to QuantityType
+    ComputationCursorType cursorType = 5;       // References adjacent rows
+    uint32 cursorAbsolute = 6;                  // ??? is this meant to be relative???
+    PropertySelectorType propertySelector = 7;  // What attribute of the cell or row??
     uint32 suggestedParameterId = 8;
     uint32 suggestedUnitId = 9;    
     oneof binding {

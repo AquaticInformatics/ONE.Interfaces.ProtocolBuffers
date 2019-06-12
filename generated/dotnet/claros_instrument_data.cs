@@ -22,10 +22,10 @@ namespace claros.instrument
         public string fusionId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3, Name = @"events")]
-        public InstrumentEvent Events { get; set; }
+        public global::claros.instrument.event.InstrumentEventData Events { get; set; }
 
         [global::ProtoBuf.ProtoMember(4, Name = @"measurements")]
-        public global::System.Collections.Generic.List<InstrumentMeasurement> Measurements { get; } = new global::System.Collections.Generic.List<InstrumentMeasurement>();
+        public global::System.Collections.Generic.List<global::claros.instrument.measurement.InstrumentMeasurementData> Measurements { get; } = new global::System.Collections.Generic.List<global::claros.instrument.measurement.InstrumentMeasurementData>();
 
         [global::ProtoBuf.ProtoMember(5, Name = @"settings")]
         [global::ProtoBuf.ProtoMap]

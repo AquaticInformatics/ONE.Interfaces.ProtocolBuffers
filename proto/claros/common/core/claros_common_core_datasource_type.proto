@@ -2,11 +2,11 @@ syntax = "proto3";
 package claros.common.core;
  
 enum DataSourceType {
-    DS_UNKNOWN = 0;
-    DS_FORM = 1;
-    DS_COMPUTATION = 2;
-    DS_SPREADSHEET = 3;
-    DS_INSTRUMENTMEASUREMENT = 4;
-    DS_IMPORT = 5;
-    DS_SPREADSHEET_DEFINITION = 6;
+    DATASOURCE_UNKNOWN = 0;
+    DATASOURCE_FORM = 1;                    // Data related to Claros.Common.Form
+    DATASOURCE_COMPUTATION = 2;             // Data related to Claros.Common.Computation
+    DATASOURCE_SPREADSHEET = 3;             // Data related to Claros.Common.Spreadsheet
+    DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Claros.Instrument.Measurement
+    DATASOURCE_IMPORT = 5;                  // Data related to imports
+    DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Claros.Common.Spreadsheet.Definition
 }

@@ -9,16 +9,16 @@ namespace claros.common.core
     [global::ProtoBuf.ProtoContract()]
     public enum LimitType
     {
-        [global::ProtoBuf.ProtoEnum(Name = @"L_UNKNOWN")]
-        LUnknown = 0,
-        [global::ProtoBuf.ProtoEnum(Name = @"L_HIGHALARM")]
-        LHighalarm = 1,
-        [global::ProtoBuf.ProtoEnum(Name = @"L_HIGHNEAR")]
-        LHighnear = 2,
-        [global::ProtoBuf.ProtoEnum(Name = @"L_LOWNEAR")]
-        LLownear = 3,
-        [global::ProtoBuf.ProtoEnum(Name = @"L_LOWALARM")]
-        LLowalarm = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"LIMIT_UNKNOWN")]
+        LimitUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"LIMIT_HIGHALARM")]
+        LimitHighalarm = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"LIMIT__HIGHNEAR")]
+        Limit_Highnear = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"LIMIT_LOWNEAR")]
+        LimitLownear = 3,
+        [global::ProtoBuf.ProtoEnum(Name = @"LIMIT_LOWALARM")]
+        LimitLowalarm = 4,
     }
 
 }

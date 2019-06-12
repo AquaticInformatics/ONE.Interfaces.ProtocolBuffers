@@ -5,9 +5,9 @@ import "claros_common_core_limit_type.proto";
 import "claros_common_core_recurrence.proto";
 
 message Limit {
-    string i18nKey = 1;     
-    LimitType limitType = 2; 
-    double value = 3;
-    uint32 unitId = 4;
-    Recurrence recurrence = 5;
+    string i18nKey = 1;         // Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+    LimitType limitType = 2;    // Type of Limit
+    double value = 3;           // Value that will trigger the limit ???? is this inclusive or exclusive
+    uint32 unitId = 4;          // The unit used to compare the value with the limit
+    Recurrence recurrence = 5;  // Used for seasonal limits
 }

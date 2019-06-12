@@ -6,6 +6,8 @@ import "claros_common_gis_point2d.proto";
 import "claros_common_gis_point3d.proto";
 import "claros_common_gis_multi_point2d.proto";
 import "claros_common_gis_multi_point3d.proto";
+
+// https://pypi.org/project/protobuf-gis/
  
 message GIS {
   Point2D point2d = 1;

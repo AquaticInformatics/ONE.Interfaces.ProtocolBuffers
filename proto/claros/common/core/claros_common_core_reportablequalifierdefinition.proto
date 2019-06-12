@@ -3,10 +3,12 @@ package claros.common.core;
   
 import "claros_common_core_reportablequalifier_type.proto";
 import "claros_common_core_reportablequalifierdefinition_type.proto";
-  
+ 
+// The reportable qualifier definition determines how reportable qualifier is interpreted for the defined parameter
+
 message ReportableQualifierDefinition
 {
-    ReportableQualifierType reportableQualifierType = 1;
-    ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;
-    double constantValue = 3; 
+    ReportableQualifierType reportableQualifierType = 1;                        // The type of reportable qualifer
+    ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;    // How to interpret the qualifer
+    double constantValue = 3;                                                   // The value if the interpretation is a constant
 }

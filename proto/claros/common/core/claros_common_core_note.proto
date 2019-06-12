@@ -4,8 +4,8 @@ package claros.common.core;
 import "claros_common_core_clarosdatetime.proto";
  
 message Note {
-    string id = 1;
-    ClarosDateTime timeStamp = 4;
-    string userId = 5;
-    string text = 6;
+    string id = 1;                  // Unique GUID that identifies the note
+    ClarosDateTime timeStamp = 4;   // The UTC time when the note was taken
+    string userId = 5;              // The GUID of the user who entered the note
+    string text = 6;                // The content of the note
 }

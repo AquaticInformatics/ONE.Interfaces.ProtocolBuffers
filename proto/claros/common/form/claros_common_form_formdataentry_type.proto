@@ -2,9 +2,9 @@ syntax = "proto3";
 package claros.common.form;
  
 enum FormDataEntryType {
-    FDE_UNKNOWN = 0;
-    FDE_INSTRUMENT = 1;
-    FDE_TOTALIZER = 2;
-    FDE_CONSUMPTION = 3;
-    FDE_TEXT = 4;
+    FORM_DATE_ENTRY_UNKNOWN = 0;
+    FORM_DATE_ENTRY_INSTRUMENT = 1;
+    FORM_DATE_ENTRY_TOTALIZER = 2;
+    FORM_DATE_ENTRY_CONSUMPTION = 3;
+    FORM_DATE_ENTRY_TEXT = 4;
 }

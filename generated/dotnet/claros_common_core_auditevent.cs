@@ -30,6 +30,10 @@ namespace claros.common.core
         [global::ProtoBuf.ProtoMember(5)]
         public ClarosDateTime timeStamp { get; set; }
 
+        [global::ProtoBuf.ProtoMember(6, Name = @"details")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Details { get; set; } = "";
+
     }
 
 }

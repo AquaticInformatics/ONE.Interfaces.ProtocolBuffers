@@ -2,11 +2,11 @@ syntax = "proto3";
 package claros.common.core;
 
 enum ReportableQualifierType {
-    RQ_UNKNOWN = 0;
-    RQ_NONDETECT = 1;
-    RQ_ESTIMATE = 2;
-    RQ_DETECTNONQUALIFIABLE = 3;
-    RQ_GREATERTHAN = 4;
-    RQ_LESSTHAN = 5;
-    RQ_TOO_NUMEROUS_TO_COUNT = 6;
+    REPORTABLE_QUALIFIER_UNKNOWN = 0;                   
+    REPORTABLE_QUALIFIER_NONDETECT = 1;                 // Non-Detect. Most states now require the < detection limit and this should no longer be used
+    REPORTABLE_QUALIFIER_ESTIMATE = 2;                  // Estimated.
+    REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3;      // Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California.
+    REPORTABLE_QUALIFIER_GREATERTHAN = 4;               // Result is greater than xxxx. Used instead of TNTC.
+    REPORTABLE_QUALIFIER_LESSTHAN = 5;                  // Result was below the detection limit of YYYY.
+    REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;     // Too many colonies were present (TNTC); the numeric value represents the filtration volume.
 }

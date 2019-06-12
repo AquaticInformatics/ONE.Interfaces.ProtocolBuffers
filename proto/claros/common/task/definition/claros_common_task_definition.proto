@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+ 
+message TaskDefinition {
+    // What is the source of the Task?
+
+    // What are the notifications required?
+
+    // What are the escalations?
+}

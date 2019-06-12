@@ -4,10 +4,10 @@ package claros.common.core;
 import "claros_common_core_clarosdatetime.proto";
 
 message Measurement {
-    ClarosDateTime timestamp = 1;
-    int32 parameterId = 2;
-    string parameterGuid = 3;
-    int32 unitId = 4;
-    string unitGuid = 5;
-    float value = 6;    
+    ClarosDateTime timestamp = 1;   // When the measurement was taken (UTC)
+    int32 parameterId = 2;          // The parameter related to the measurement as an integer
+    string parameterGuid = 3;       // The parameter related to the measurement as a GUID
+    int32 unitId = 4;               // The unit related to the measurement as an integer
+    string unitGuid = 5;            // The unit related to the measurement as a GUID
+    float value = 6;                // the value of the measurement ????? should this be decimal?
 }
