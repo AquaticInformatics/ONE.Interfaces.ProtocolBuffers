@@ -7,12 +7,10 @@ import "enum_ordinal_type.proto";
 // Used by Recurrence pattern
 // Recurrence can happen on a specific day of the month every interval number of months
 // or on a specific weekday
-
 message Monthly {
     message DayOfMonthInterval {
         // Specific day of every month
         uint32 dayNumber = 1;
-        // 
         uint32 monthInterval = 2;
     }
 
