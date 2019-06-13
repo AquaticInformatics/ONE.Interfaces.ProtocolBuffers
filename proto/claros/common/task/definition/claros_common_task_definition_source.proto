@@ -1,9 +1,10 @@
 syntax = "proto3";
 package claros.common.task;
  
+import "claros_common_task_definition_source_instrument_maintenance.proto";
  
 message TaskDefinitionSource {
-    taskSource oneof {
+    oneof taskSource  {
         TaskDefinitionSourceInstrumentMaintenance taskDefinitionSourceInstrumentMaintenance = 1;
     }
 }

@@ -3,8 +3,9 @@ package claros.instrument;
 
 import "claros_instrument_type.proto";
 import "claros_instrument_definition_instrument_group_type.proto";
+import "claros_instrument_definition_instrument_manufacturer_type.proto";
 
-message InstrumentDefnitionModel {
+message InstrumentDefinitionModel {
     string id = 1;
     string i18NKeyName = 2;
     InstrumentGroupType instrumentGroupType = 3;
@@ -21,7 +22,7 @@ message InstrumentDefnitionModel {
     bool guidedWorkflowSupport = 14;
     uint32 TransmissionInterval = 15;
     string description = 16;
-    RecordAuditInfo recordAuditInfo = 17;
+    // RecordAuditInfo recordAuditInfo = 17;
     InstrumentType instrumentType = 18;
 }
  
