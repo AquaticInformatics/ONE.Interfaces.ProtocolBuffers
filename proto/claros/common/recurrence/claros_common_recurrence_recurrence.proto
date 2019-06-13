@@ -10,17 +10,23 @@ import "claros_common_recurrence_pattern_yearly.proto";
 // Root message for recurrence pattern
 message Recurrence {
  
+    // Allows selection of one of four difference recurrence patterns
     oneof recurrencePattern {       
-        Daily daily = 1;
-        Weekly weekly = 2;
-        Monthly monthly = 3;
-        Yearly yearly = 4;
+        PatternDaily daily = 1;
+        PatternWeekly weekly = 2;
+        PatternMonthly monthly = 3;
+        PatternYearly yearly = 4;
     }
  
+    // Date recurrence starts
     claros.common.core.ClarosDateTime recurrenceStartDate = 5;
+    // Allows selection of one of three different recurrence end options
     oneof recurrenceEnd {
+        // Recurrence doesn't end
         bool noEnd = 6;
+        // Recurrence ends after this many occurences
         uint32 numberOfOccurances = 7;
+        // Recurrence ends on this date. Use inclusive comparison
         claros.common.core.ClarosDateTime endDate = 8;
     }
 }

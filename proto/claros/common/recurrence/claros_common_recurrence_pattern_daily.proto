@@ -1,8 +1,8 @@
 syntax = "proto3";
 package claros.common.recurrence;
 
-message Daily {
-    oneof dailyPattern {
+message PatternDaily {
+    oneof patternDaily {
         // Every x number of days
         uint32 interval = 1;
         // Recurrance every Monday through Friday
