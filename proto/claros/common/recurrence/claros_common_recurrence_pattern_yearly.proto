@@ -1,0 +1,34 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "claros_common_core_clarosdatetime.proto";
+import "enum_day_type.proto";
+import "enum_month_type.proto";
+import "enum_ordinal_type.proto";
+
+
+// Used by Recurrence pattern
+// Recurrence can happen every interval number of years on a specific date or a specific weekday
+
+
+message Yearly {
+
+    // 
+    message MonthDay {
+        MonthType monthType = 1;
+        uint32 dayOfMonth = 2; 
+    }
+
+    message OrdinalDayOfMonth {
+        OrdinalType ordinalType = 1;
+        DayType dayType = 2;
+        MonthType monthType = 3;
+    }
+
+    // Recurr every x years
+    uint32 yearlyInterval = 1;
+    oneof yearlyPattern {
+        MonthDay monthDay = 2;
+        OrdinalDayOfMonth ordinalDayOfMonth = 3;
+    }
+}
