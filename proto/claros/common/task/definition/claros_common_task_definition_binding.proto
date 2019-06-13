@@ -3,5 +3,5 @@ package claros.common.task;
  
  
 message TaskDefinitionBinding {
-    
+    InstrumentMaintenaceBinding instrumentMaintenanceBinding = 1;   
 }

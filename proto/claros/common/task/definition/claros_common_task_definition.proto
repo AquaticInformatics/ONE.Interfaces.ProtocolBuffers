@@ -6,6 +6,30 @@ message TaskDefinition {
     // What is the source of the Task?
     repeated TaskDefinitionSource taskSource = 1;
     
+    string i18nKey
+    string name
+    string linkTo
+
+    string workflowDefinitionId ??
+    
+    message MaintenanceTriggerType {
+        MAINTENANCE_TRIGGER_UNKNOWN = 0;
+        MAINTENANCE_TRIGGER_SCHEDULED = 1;
+        MAINTENANCE_TRIGGER_PROGNOSYS = 2;
+        MAINTENANCE_TRIGGER_MANUAL = 3;
+    }
+
+    TriggerType triggerType = 4;
+
+    oneof binding
+    {
+        InstrumentMaintenanceBinding instrumentMaintenanceBinding = 1;
+        FormsBinding
+        ManuallyCreatedTasks
+    }
+    //
+    Recurrence recurrence 
+
     // What are the notifications required?
 
     // What are the escalations?

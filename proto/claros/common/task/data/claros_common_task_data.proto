@@ -4,4 +4,8 @@ package claros.common.task;
  
 message TaskData {
     
+    oneof binding
+    {
+        InstrumentMaintenanceBinding instrumentMaintenanceBinding = 1;
+    }
 }
