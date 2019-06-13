@@ -1,4 +1,5 @@
 syntax = "proto3";
+package claros.common;
 
 enum MonthType {
     MONTH_UNKNOWN = 0;

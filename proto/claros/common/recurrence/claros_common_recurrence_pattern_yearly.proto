@@ -1,28 +1,29 @@
 syntax = "proto3";
 package claros.common.recurrence;
 
-import "enum_day_type.proto";
-import "enum_month_type.proto";
-import "enum_ordinal_type.proto";
+import "claros_common_enum_day_type.proto";
+import "claros_common_enum_month_type.proto";
+import "claros_common_enum_ordinal_type.proto";
 
-// Used by Recurrence pattern
 // Recurrence can happen every interval number of years on a specific date or a specific weekday
-message Yearly {
+message PatternYearly {
 
+    // Allows selection of month and day of month
     message MonthDay {
-        MonthType monthType = 1;
+        claros.common.MonthType monthType = 1;
         uint32 dayOfMonth = 2; 
     }
 
+    // Allows selection of ordinal position of day of week, day of week, and month
     message OrdinalDayOfMonth {
-        OrdinalType ordinalType = 1;
-        DayType dayType = 2;
-        MonthType monthType = 3;
+        claros.common.OrdinalType ordinalType = 1;
+        claros.common.DayType dayType = 2;
+        claros.common.MonthType monthType = 3;
     }
 
     // Recurr every x years
     uint32 yearlyInterval = 1;
-    oneof yearlyPattern {
+    oneof patternYeary {
         MonthDay monthDay = 2;
         OrdinalDayOfMonth ordinalDayOfMonth = 3;
     }

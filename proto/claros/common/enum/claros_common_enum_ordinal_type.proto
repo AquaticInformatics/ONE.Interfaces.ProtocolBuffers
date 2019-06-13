@@ -1,4 +1,5 @@
 syntax = "proto3";
+package claros.common;
 
 // Allows for the specifying of ordinal position
 // Used in recurrence

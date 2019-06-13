@@ -11,10 +11,10 @@ import "claros_common_recurrence_pattern_yearly.proto";
 message Recurrence {
  
     oneof recurrencePattern {       
-        Daily daily = 1;
-        Weekly weekly = 2;
-        Monthly monthly = 3;
-        Yearly yearly = 4;
+        PatternDaily daily = 1;
+        PatternWeekly weekly = 2;
+        PatternMonthly monthly = 3;
+        PatternYearly yearly = 4;
     }
  
     claros.common.core.ClarosDateTime recurrenceStartDate = 5;
