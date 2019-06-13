@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// Allows for the specifying of ordinal position
+// Used in recurrence
+enum OrdinalType {
+    ORDINAL_UNKNOWN = 0;
+    ORDINAL_FIRST = 1;
+    ORDINAL_SECOND = 2;
+    ORDINAL_THIRD = 3;
+    ORDINAL_FOURTH = 4;
+    ORDINAL_LAST = 5;
+}
