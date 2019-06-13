@@ -1,28 +1,26 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common.recurrence;
 
 import "claros_common_core_clarosdatetime.proto";
 import "claros_common_recurrence_pattern_daily.proto";
-import "claros_common_recurrence_pattern_daily.proto";
-import "enum_day_type.proto";
-import "enum_month_type.proto";
-import "enum_ordinal_type.proto";
-
+import "claros_common_recurrence_pattern_weekly.proto";
+import "claros_common_recurrence_pattern_monthly.proto";
+import "claros_common_recurrence_pattern_yearly.proto";
 
 // Root message for recurrence pattern
 message Recurrence {
  
-    oneof recurrencePattern {       // 
+    oneof recurrencePattern {       
         Daily daily = 1;
         Weekly weekly = 2;
         Monthly monthly = 3;
         Yearly yearly = 4;
     }
  
-    ClarosDateTime recurrenceStartDate = 1;
+    claros.common.core.ClarosDateTime recurrenceStartDate = 5;
     oneof recurrenceEnd {
-        bool noEnd = 2;
-        uint32 numberOfOccurances = 3;
-        ClarosDateTime endDate = 4;
+        bool noEnd = 6;
+        uint32 numberOfOccurances = 7;
+        claros.common.core.ClarosDateTime endDate = 8;
     }
 }

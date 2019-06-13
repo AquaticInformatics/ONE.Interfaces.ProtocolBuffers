@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common.recurrence;
 
 import "claros_common_core_clarosdatetime.proto";
 import "enum_day_type.proto";

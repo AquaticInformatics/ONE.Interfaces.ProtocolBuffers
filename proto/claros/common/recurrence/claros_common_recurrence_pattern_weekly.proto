@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common.recurrence;
 
 import "enum_day_type.proto";
 
@@ -9,5 +9,5 @@ message Weekly {
     // Recurrance occurs every x number of weeks defined here 
     uint32 interval = 1;               
    // Days of week the recurrence happens
-    repeated DayOfWeek daysOfWeek = 2;  
+    repeated DayType daysOfWeek = 2;  
 }
