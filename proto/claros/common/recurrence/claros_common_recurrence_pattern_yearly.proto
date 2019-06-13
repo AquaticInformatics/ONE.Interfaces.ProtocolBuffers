@@ -21,9 +21,10 @@ message PatternYearly {
         claros.common.MonthType monthType = 3;
     }
 
-    // Recurr every x years
+    // Recurrence every x years
     uint32 yearlyInterval = 1;
-    oneof patternYeary {
+    // Allow selection of one of two yearly patterns
+    oneof patternYearly {
         MonthDay monthDay = 2;
         OrdinalDayOfMonth ordinalDayOfMonth = 3;
     }

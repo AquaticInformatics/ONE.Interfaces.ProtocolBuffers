@@ -3,7 +3,6 @@ package claros.common.recurrence;
 
 import "claros_common_enum_day_type.proto";
 
-// Used by Recurrence pattern
 // Recurrence can happen every interval number of weeks on the days specified
 message PatternWeekly {
     // Recurrance occurs every x number of weeks defined here 
