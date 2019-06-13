@@ -1,7 +1,0 @@
-syntax = "proto3";
-package claros.common.task;
- 
- 
-message TaskDefinitionBinding {
-    
-}

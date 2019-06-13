@@ -1,0 +1,33 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "claros_common_task_definition.proto";
+import "claros_common_task_data.proto";
+import "claros_common_core_auditevent.proto";
+
+message Task {
+    // header
+    string id = 1;                              // GUID
+    string name = 2;                            // User Defined Name for the Task
+    string description = 3;                     // Desciption of the work to do in this task
+    string assignee = 4;                        // GUID of the User that the task is assigned
+    string reporter = 5;                        // GUID of the user that created the task
+    // TaskSeverity severity = 6;                  // Enumeration of common severities
+    uint32 priority = 7;                        // Numerical priority level
+
+    // Source                                   // From where did the task come?
+    //string id = 8;                      // GUID
+    //string name = 9;                    // User Defined Name for the Task
+    //string assignee = 10;                // GUID of the User that the task is assigned
+    // Source                           // From where did the task come?
+    string instrumentId = 11; 
+
+
+    // definition
+    TaskDefinition taskDefinition = 12;          // Definition of the Task
+    
+    // data
+    TaskData taskdata = 13;                      // Data Stored related to the Task
+    claros.common.core.AuditEvent auditEvent = 14;    // Audit Events related to to the Task
+
+}

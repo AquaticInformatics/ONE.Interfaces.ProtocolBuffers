@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.task;
  
  
-message TaskType {
-    
+enum TaskType {
+    TASKTYPE_UNKNOWN = 0;
+    TASKTYPE_INSTRUMENT_MAINTENANCE = 1;
 }

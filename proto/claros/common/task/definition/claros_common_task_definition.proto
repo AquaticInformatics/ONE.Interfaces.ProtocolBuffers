@@ -1,9 +1,39 @@
 syntax = "proto3";
 package claros.common.task;
  
+import "claros_common_task_definition_binding_instrument_maintenance.proto";
+// import "claros_common_recurrence_recurrence.proto";
+import "claros_common_task_definition_source.proto";
  
 message TaskDefinition {
     // What is the source of the Task?
+    repeated TaskDefinitionSource taskSource = 1;
+    
+    /*
+    string i18nKey
+    string name
+    string linkTo
+
+    string workflowDefinitionId ??
+    */
+    
+    enum MaintenanceTriggerType {
+        MAINTENANCE_TRIGGER_UNKNOWN = 0;
+        MAINTENANCE_TRIGGER_SCHEDULED = 1;
+        MAINTENANCE_TRIGGER_PROGNOSYS = 2;
+        MAINTENANCE_TRIGGER_MANUAL = 3;
+    }
+
+    MaintenanceTriggerType triggerType = 2;
+
+    oneof binding
+    {
+        BindingInstrumentMaintenance bindingInstrumentMaintenance = 3;
+        // BindingForms
+        // BindingManuallyCreatedTasks
+    }
+    //
+    // claros.common.recurrence.Recurrence recurrence = 4;
 
     // What are the notifications required?
 

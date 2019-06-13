@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "claros_common_core_clarosdatetime.proto";
+
+// Often there is a need for a Time Span that includes a begin and end time
+
+message RecordAuditInfo {
+    string createdById = 1;
+    ClarosDateTime createdOn = 2;
+    string modifiedById = 3;
+    ClarosDateTime modifiedOn = 4;
+}
