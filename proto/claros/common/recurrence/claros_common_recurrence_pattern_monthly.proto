@@ -10,15 +10,15 @@ message PatternMonthly {
 
     // Allow specification of day of month and interval
     message DayOfMonthInterval {
-        uint32 dayNumber = 1;
-        uint32 monthInterval = 2;
+        uint32 dayOfMonth = 1;
+        uint32 monthlyInterval = 2;
     }
 
     // Allows selection of ordinal position of day of week, day of week, and month interval
     message OrdinalDayOfWeekInterval {
         claros.common.OrdinalType ordinalType = 1;
         claros.common.DayType dayType = 2;
-        uint32 monthInterval = 3;
+        uint32 monthlyInterval = 3;
     }
 
     // Allow selection of one of two yearly recurrance patterns

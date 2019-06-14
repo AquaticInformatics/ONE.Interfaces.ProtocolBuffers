@@ -3,9 +3,9 @@ package claros.common.recurrence;
 
 message PatternDaily {
     oneof patternDaily {
-        // Every x number of days
-        uint32 interval = 1;
-        // Recurrance every Monday through Friday
+        // how many days between each occurance
+        uint32 dailyInterval = 1;
+        // occurs every Monday through Friday
         bool everyWeekday = 2;
     }
 }
