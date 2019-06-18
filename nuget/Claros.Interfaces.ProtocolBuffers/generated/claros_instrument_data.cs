@@ -25,7 +25,7 @@ namespace Claros.Instrument
         public global::Claros.Instrument.Event.InstrumentEventData Events { get; set; }
 
         [global::ProtoBuf.ProtoMember(4, Name = @"measurements")]
-        public global::System.Collections.Generic.List<global::Claros.Instrument.Measurement.InstrumentMeasurementData> Measurements { get; } = new System.Collections.Generic.List<Measurement.InstrumentMeasurementData>();
+        public global::System.Collections.Generic.List<global::Claros.Instrument.Measurement.InstrumentMeasurementData> Measurements { get; } = new global::System.Collections.Generic.List<global::Claros.Instrument.Measurement.InstrumentMeasurementData>();
 
         [global::ProtoBuf.ProtoMember(5, Name = @"settings")]
         [global::ProtoBuf.ProtoMap]
