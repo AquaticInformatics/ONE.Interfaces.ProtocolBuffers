@@ -4,11 +4,27 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Company>Hach</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.2-pre</Version>
     <Authors>Hach Claros Team</Authors>
     <PackageTags>protocol buffer, protobuf, claros</PackageTags>
     <Copyright>2019</Copyright>
     <Description>.NET Classes for use with Claros Protocol Buffer data contracts.</Description>
+    <PackageReleaseNotes>Added:
+- Claros.Common.Core.MobileDateTime
+- Claros.Common.Task.ResolutionType
+- Claros.Instrument.Measurement.
+- Claros.Common.Task.StatusType
+
+
+Removed Claros.Common.Core.RecurrenceType
+
+Modified:
+- Claros.Common.Gis.Gis
+- Claros.Common.Recurrence.PatternDaily
+- Claros.Common.Recurrence.PatternMonthly
+- Claros.Common.Recurrence.PatternWeekly
+- Claros.Instrument.Claros.Instrument
+</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -41,10 +41,10 @@ namespace Claros.Common.Recurrence
                 => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
             [global::ProtoBuf.ProtoMember(1)]
-            public uint dayNumber { get; set; }
+            public uint dayOfMonth { get; set; }
 
             [global::ProtoBuf.ProtoMember(2)]
-            public uint monthInterval { get; set; }
+            public uint monthlyInterval { get; set; }
 
         }
 
@@ -62,7 +62,7 @@ namespace Claros.Common.Recurrence
             public global::Claros.Common.DayType dayType { get; set; }
 
             [global::ProtoBuf.ProtoMember(3)]
-            public uint monthInterval { get; set; }
+            public uint monthlyInterval { get; set; }
 
         }
 
