@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.task;
+
+// Similar to JIRA statuses
+enum StatusType {
+    TASK_STATUS_UNKNOWN = 0;
+    TASK_STATUS_COMPLETED = 1;
+    TASK_STATUS_CANCELLED = 2;
+    TASK_STATUS_SKIPPED = 3;
+    TASK_STATUS_IN_PROGRESS = 4;
+}

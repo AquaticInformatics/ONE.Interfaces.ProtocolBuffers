@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common.task;
+
+// Similar to JIRA resolution
+enum ResolutionType {
+    TASK_RESOLUTION_STATUS_UNKNOWN = 0;
+    TASK_RESOLUTION_STATUS_COMPLETED = 1;
+    TASK_RESOLUTION_STATUS_CANCELLED = 2;
+}
