@@ -11,7 +11,7 @@ $protoDirs = $protoDirs.Replace($currentPath.Path, ".") | ForEach-Object {"--pro
 $protoDirsCommand = [String]::Join(" ", $protoDirs)
 
 
-$dirs = "cpp", "java", "js", "objc", "php", "python", "ruby", "csharp"
+$dirs = "cpp", "java", "js", "objc", "php", "python", "ruby"
 
 # Create Output Directories
 foreach($dir in $dirs) {
