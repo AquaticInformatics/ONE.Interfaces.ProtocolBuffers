@@ -13,14 +13,14 @@ namespace claros.common.recurrence
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, Name = @"interval")]
-        public uint Interval
+        [global::ProtoBuf.ProtoMember(1)]
+        public uint dailyInterval
         {
             get { return __pbn__patternDaily.Is(1) ? __pbn__patternDaily.UInt32 : default; }
             set { __pbn__patternDaily = new global::ProtoBuf.DiscriminatedUnion32(1, value); }
         }
-        public bool ShouldSerializeInterval() => __pbn__patternDaily.Is(1);
-        public void ResetInterval() => global::ProtoBuf.DiscriminatedUnion32.Reset(ref __pbn__patternDaily, 1);
+        public bool ShouldSerializedailyInterval() => __pbn__patternDaily.Is(1);
+        public void ResetdailyInterval() => global::ProtoBuf.DiscriminatedUnion32.Reset(ref __pbn__patternDaily, 1);
 
         private global::ProtoBuf.DiscriminatedUnion32 __pbn__patternDaily;
 

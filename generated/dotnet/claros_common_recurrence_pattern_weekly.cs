@@ -13,8 +13,8 @@ namespace claros.common.recurrence
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, Name = @"interval")]
-        public uint Interval { get; set; }
+        [global::ProtoBuf.ProtoMember(1)]
+        public uint weeklyInterval { get; set; }
 
         [global::ProtoBuf.ProtoMember(2, Name = @"daysOfWeek", IsPacked = true)]
         public global::System.Collections.Generic.List<global::claros.common.DayType> daysOfWeeks { get; } = new global::System.Collections.Generic.List<global::claros.common.DayType>();

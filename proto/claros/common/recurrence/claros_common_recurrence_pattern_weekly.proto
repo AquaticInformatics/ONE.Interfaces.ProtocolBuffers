@@ -5,8 +5,8 @@ import "claros_common_enum_day_type.proto";
 
 // Recurrence can happen every interval number of weeks on the days specified
 message PatternWeekly {
-    // Recurrance occurs every x number of weeks defined here 
-    uint32 interval = 1;               
-   // Days of week the recurrence happens
+    // How many weeks between each occurance
+    uint32 weeklyInterval = 1;               
+    // Days of week the ocurrence happens
     repeated claros.common.DayType daysOfWeek = 2;  
 }
