@@ -14,14 +14,20 @@ use Google\Protobuf\Internal\GPBUtil;
 class Cell extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The column id related to the cell
+     *
      * Generated from protobuf field <code>uint32 columnId = 1;</code>
      */
     private $columnId = 0;
     /**
+     * A collection of notes that are related to a cell.
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     private $notes;
     /**
+     * The current and past data that has been entered into a cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     private $cellData;
@@ -33,8 +39,11 @@ class Cell extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $columnId
+     *           The column id related to the cell
      *     @type \Claros\Common\Core\Note[]|\Google\Protobuf\Internal\RepeatedField $notes
+     *           A collection of notes that are related to a cell.
      *     @type \Claros\Operations\Spreadsheet\CellData[]|\Google\Protobuf\Internal\RepeatedField $cellData
+     *           The current and past data that has been entered into a cell
      * }
      */
     public function __construct($data = NULL) {
@@ -43,6 +52,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The column id related to the cell
+     *
      * Generated from protobuf field <code>uint32 columnId = 1;</code>
      * @return int
      */
@@ -52,6 +63,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The column id related to the cell
+     *
      * Generated from protobuf field <code>uint32 columnId = 1;</code>
      * @param int $var
      * @return $this
@@ -65,6 +78,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A collection of notes that are related to a cell.
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Note notes = 2;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -74,6 +89,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A collection of notes that are related to a cell.
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Note notes = 2;</code>
      * @param \Claros\Common\Core\Note[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
@@ -87,6 +104,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The current and past data that has been entered into a cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -96,6 +115,8 @@ class Cell extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The current and past data that has been entered into a cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      * @param \Claros\Operations\Spreadsheet\CellData[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this

@@ -26,18 +26,18 @@ namespace Claros.Common.Form {
           string.Concat(
             "CjJjbGFyb3NfY29tbW9uX2Zvcm1fZm9ybXRlbXBsYXRlY29uZmlndXJhdGlv",
             "bi5wcm90bxISY2xhcm9zLmNvbW1vbi5mb3JtGipjbGFyb3NfY29tbW9uX2Zv",
-            "cm1fZm9ybXRlbXBsYXRlX3R5cGUucHJvdG8aI2NsYXJvc19jb21tb25fY29y",
-            "ZV9yZWN1cnJlbmNlLnByb3RvGiNjbGFyb3NfY29tbW9uX2Zvcm1fZm9ybWxh",
-            "eW91dC5wcm90bxotY2xhcm9zX2NvbW1vbl9mb3JtX2Zvcm1maWVsZF9kZWZp",
-            "bml0aW9uLnByb3RvIooCChlGb3JtVGVtcGxhdGVDb25maWd1cmF0aW9uEj4K",
-            "EGZvcm1UZW1wbGF0ZVR5cGUYASABKA4yJC5jbGFyb3MuY29tbW9uLmZvcm0u",
-            "Rm9ybVRlbXBsYXRlVHlwZRIyCgpyZWN1cnJlbmNlGAIgASgLMh4uY2xhcm9z",
-            "LmNvbW1vbi5jb3JlLlJlY3VycmVuY2USMgoKZm9ybUxheW91dBgDIAEoCzIe",
-            "LmNsYXJvcy5jb21tb24uZm9ybS5Gb3JtTGF5b3V0EkUKFGZvcm1GaWVsZERl",
-            "ZmluaXRpb25zGAQgAygLMicuY2xhcm9zLmNvbW1vbi5mb3JtLkZvcm1GaWVs",
-            "ZERlZmluaXRpb25iBnByb3RvMw=="));
+            "cm1fZm9ybXRlbXBsYXRlX3R5cGUucHJvdG8aKWNsYXJvc19jb21tb25fcmVj",
+            "dXJyZW5jZV9yZWN1cnJlbmNlLnByb3RvGiNjbGFyb3NfY29tbW9uX2Zvcm1f",
+            "Zm9ybWxheW91dC5wcm90bxotY2xhcm9zX2NvbW1vbl9mb3JtX2Zvcm1maWVs",
+            "ZF9kZWZpbml0aW9uLnByb3RvIpACChlGb3JtVGVtcGxhdGVDb25maWd1cmF0",
+            "aW9uEj4KEGZvcm1UZW1wbGF0ZVR5cGUYASABKA4yJC5jbGFyb3MuY29tbW9u",
+            "LmZvcm0uRm9ybVRlbXBsYXRlVHlwZRI4CgpyZWN1cnJlbmNlGAIgASgLMiQu",
+            "Y2xhcm9zLmNvbW1vbi5yZWN1cnJlbmNlLlJlY3VycmVuY2USMgoKZm9ybUxh",
+            "eW91dBgDIAEoCzIeLmNsYXJvcy5jb21tb24uZm9ybS5Gb3JtTGF5b3V0EkUK",
+            "FGZvcm1GaWVsZERlZmluaXRpb25zGAQgAygLMicuY2xhcm9zLmNvbW1vbi5m",
+            "b3JtLkZvcm1GaWVsZERlZmluaXRpb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormtemplateTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormtemplateTypeReflection.Descriptor, global::Claros.Common.Recurrence.ClarosCommonRecurrenceRecurrenceReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormTemplateConfiguration), global::Claros.Common.Form.FormTemplateConfiguration.Parser, new[]{ "FormTemplateType", "Recurrence", "FormLayout", "FormFieldDefinitions" }, null, null, null)
           }));
@@ -96,9 +96,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "recurrence" field.</summary>
     public const int RecurrenceFieldNumber = 2;
-    private global::Claros.Common.Core.Recurrence recurrence_;
+    private global::Claros.Common.Recurrence.Recurrence recurrence_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence Recurrence {
+    public global::Claros.Common.Recurrence.Recurrence Recurrence {
       get { return recurrence_; }
       set {
         recurrence_ = value;
@@ -213,7 +213,7 @@ namespace Claros.Common.Form {
       }
       if (other.recurrence_ != null) {
         if (recurrence_ == null) {
-          Recurrence = new global::Claros.Common.Core.Recurrence();
+          Recurrence = new global::Claros.Common.Recurrence.Recurrence();
         }
         Recurrence.MergeFrom(other.Recurrence);
       }
@@ -241,7 +241,7 @@ namespace Claros.Common.Form {
           }
           case 18: {
             if (recurrence_ == null) {
-              Recurrence = new global::Claros.Common.Core.Recurrence();
+              Recurrence = new global::Claros.Common.Recurrence.Recurrence();
             }
             input.ReadMessage(Recurrence);
             break;

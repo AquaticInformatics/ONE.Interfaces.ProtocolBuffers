@@ -25,10 +25,11 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihjbGFyb3NfY29tbW9uX2NvcmVfcmVjdXJyZW5jZV90eXBlLnByb3RvEhJj",
-            "bGFyb3MuY29tbW9uLmNvcmUqfwoOUmVjdXJyZW5jZVR5cGUSDQoJUl9VTktO",
-            "T1dOEAASEwoPUl9GSUZURUVOTUlOVVRFEAESDAoIUl9IT1VSTFkQAhIOCgpS",
-            "X0ZPVVJIT1VSEAMSCwoHUl9EQUlMWRAEEgwKCFJfV0VFS0xZEAUSEAoMUl9E",
-            "QVlTT0ZXRUVLEAZiBnByb3RvMw=="));
+            "bGFyb3MuY29tbW9uLmNvcmUqvgEKDlJlY3VycmVuY2VUeXBlEhYKElJFQ1VS",
+            "UkVOQ0VfVU5LTk9XThAAEhwKGFJFQ1VSUkVOQ0VfRklGVEVFTk1JTlVURRAB",
+            "EhUKEVJFQ1VSUkVOQ0VfSE9VUkxZEAISFwoTUkVDVVJSRU5DRV9GT1VSSE9V",
+            "UhADEhQKEFJFQ1VSUkVOQ0VfREFJTFkQBBIVChFSRUNVUlJFTkNFX1dFRUtM",
+            "WRAFEhkKFVJFQ1VSUkVOQ0VfREFZU09GV0VFSxAGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.RecurrenceType), }, null));
@@ -38,13 +39,13 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum RecurrenceType {
-    [pbr::OriginalName("R_UNKNOWN")] RUnknown = 0,
-    [pbr::OriginalName("R_FIFTEENMINUTE")] RFifteenminute = 1,
-    [pbr::OriginalName("R_HOURLY")] RHourly = 2,
-    [pbr::OriginalName("R_FOURHOUR")] RFourhour = 3,
-    [pbr::OriginalName("R_DAILY")] RDaily = 4,
-    [pbr::OriginalName("R_WEEKLY")] RWeekly = 5,
-    [pbr::OriginalName("R_DAYSOFWEEK")] RDaysofweek = 6,
+    [pbr::OriginalName("RECURRENCE_UNKNOWN")] RecurrenceUnknown = 0,
+    [pbr::OriginalName("RECURRENCE_FIFTEENMINUTE")] RecurrenceFifteenminute = 1,
+    [pbr::OriginalName("RECURRENCE_HOURLY")] RecurrenceHourly = 2,
+    [pbr::OriginalName("RECURRENCE_FOURHOUR")] RecurrenceFourhour = 3,
+    [pbr::OriginalName("RECURRENCE_DAILY")] RecurrenceDaily = 4,
+    [pbr::OriginalName("RECURRENCE_WEEKLY")] RecurrenceWeekly = 5,
+    [pbr::OriginalName("RECURRENCE_DAYSOFWEEK")] RecurrenceDaysofweek = 6,
   }
 
   #endregion

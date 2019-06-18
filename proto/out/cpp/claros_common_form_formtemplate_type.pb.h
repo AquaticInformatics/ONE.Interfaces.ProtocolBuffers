@@ -56,16 +56,16 @@ namespace common {
 namespace form {
 
 enum FormTemplateType {
-  FT_UNKNOWN = 0,
-  FT_PLANT = 1,
-  FT_LABORATORY = 2,
-  FT_ENTERPRISE = 3,
+  FORM_TEMPLATE_UNKNOWN = 0,
+  FORM_TEMPLATE_PLANT = 1,
+  FORM_TEMPLATE_LABORATORY = 2,
+  FORM_TEMPLATE_ENTERPRISE = 3,
   FormTemplateType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   FormTemplateType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool FormTemplateType_IsValid(int value);
-const FormTemplateType FormTemplateType_MIN = FT_UNKNOWN;
-const FormTemplateType FormTemplateType_MAX = FT_ENTERPRISE;
+const FormTemplateType FormTemplateType_MIN = FORM_TEMPLATE_UNKNOWN;
+const FormTemplateType FormTemplateType_MAX = FORM_TEMPLATE_ENTERPRISE;
 const int FormTemplateType_ARRAYSIZE = FormTemplateType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* FormTemplateType_descriptor();

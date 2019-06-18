@@ -14,30 +14,44 @@ use Google\Protobuf\Internal\GPBUtil;
 class Parameter extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The GUID for the parameter
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      */
     private $Id = '';
     /**
+     * The integer used to globally identify the parameter
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      */
     private $IntId = 0;
     /**
+     * The locationization string used for i18 lookup for this parameter
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      */
     private $i18nKey = '';
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string parameterTypeId = 4;</code>
      */
     private $parameterTypeId = '';
     /**
+     * The GUID of the Quantity Type related to the parameter
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      */
     private $quantityTypeId = '';
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      */
     private $description = '';
     /**
+     * The GUID of the tenant that is ?????
+     *
      * Generated from protobuf field <code>string tenantId = 7;</code>
      */
     private $tenantId = '';
@@ -65,12 +79,19 @@ class Parameter extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $Id
+     *           The GUID for the parameter
      *     @type int $IntId
+     *           The integer used to globally identify the parameter
      *     @type string $i18nKey
+     *           The locationization string used for i18 lookup for this parameter
      *     @type string $parameterTypeId
+     *           ?????
      *     @type string $quantityTypeId
+     *           The GUID of the Quantity Type related to the parameter
      *     @type string $description
+     *           ?????
      *     @type string $tenantId
+     *           The GUID of the tenant that is ?????
      *     @type string $createdById
      *     @type \Claros\Common\Core\ClarosDateTime $createdOn
      *     @type string $modifiedById
@@ -83,6 +104,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID for the parameter
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      * @return string
      */
@@ -92,6 +115,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID for the parameter
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      * @param string $var
      * @return $this
@@ -105,6 +130,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The integer used to globally identify the parameter
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      * @return int
      */
@@ -114,6 +141,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The integer used to globally identify the parameter
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      * @param int $var
      * @return $this
@@ -127,6 +156,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The locationization string used for i18 lookup for this parameter
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      * @return string
      */
@@ -136,6 +167,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The locationization string used for i18 lookup for this parameter
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      * @param string $var
      * @return $this
@@ -149,6 +182,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string parameterTypeId = 4;</code>
      * @return string
      */
@@ -158,6 +193,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string parameterTypeId = 4;</code>
      * @param string $var
      * @return $this
@@ -171,6 +208,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the Quantity Type related to the parameter
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      * @return string
      */
@@ -180,6 +219,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the Quantity Type related to the parameter
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      * @param string $var
      * @return $this
@@ -193,6 +234,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      * @return string
      */
@@ -202,6 +245,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      * @param string $var
      * @return $this
@@ -215,6 +260,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the tenant that is ?????
+     *
      * Generated from protobuf field <code>string tenantId = 7;</code>
      * @return string
      */
@@ -224,6 +271,8 @@ class Parameter extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the tenant that is ?????
+     *
      * Generated from protobuf field <code>string tenantId = 7;</code>
      * @param string $var
      * @return $this

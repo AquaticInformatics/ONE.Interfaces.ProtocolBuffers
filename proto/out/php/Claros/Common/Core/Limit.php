@@ -14,23 +14,33 @@ use Google\Protobuf\Internal\GPBUtil;
 class Limit extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      */
     private $i18nKey = '';
     /**
+     * Type of Limit
+     *
      * Generated from protobuf field <code>.claros.common.core.LimitType limitType = 2;</code>
      */
     private $limitType = 0;
     /**
+     * Value that will trigger the limit ???? is this inclusive or exclusive
+     *
      * Generated from protobuf field <code>double value = 3;</code>
      */
     private $value = 0.0;
     /**
+     * The unit used to compare the value with the limit
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      */
     private $unitId = 0;
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * Used for seasonal limits
+     *
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
     private $recurrence = null;
 
@@ -41,10 +51,15 @@ class Limit extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $i18nKey
+     *           Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
      *     @type int $limitType
+     *           Type of Limit
      *     @type float $value
+     *           Value that will trigger the limit ???? is this inclusive or exclusive
      *     @type int $unitId
-     *     @type \Claros\Common\Core\Recurrence $recurrence
+     *           The unit used to compare the value with the limit
+     *     @type \Claros\Common\Recurrence\Recurrence $recurrence
+     *           Used for seasonal limits
      * }
      */
     public function __construct($data = NULL) {
@@ -53,6 +68,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      * @return string
      */
@@ -62,6 +79,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      * @param string $var
      * @return $this
@@ -75,6 +94,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Type of Limit
+     *
      * Generated from protobuf field <code>.claros.common.core.LimitType limitType = 2;</code>
      * @return int
      */
@@ -84,6 +105,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Type of Limit
+     *
      * Generated from protobuf field <code>.claros.common.core.LimitType limitType = 2;</code>
      * @param int $var
      * @return $this
@@ -97,6 +120,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Value that will trigger the limit ???? is this inclusive or exclusive
+     *
      * Generated from protobuf field <code>double value = 3;</code>
      * @return float
      */
@@ -106,6 +131,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Value that will trigger the limit ???? is this inclusive or exclusive
+     *
      * Generated from protobuf field <code>double value = 3;</code>
      * @param float $var
      * @return $this
@@ -119,6 +146,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit used to compare the value with the limit
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      * @return int
      */
@@ -128,6 +157,8 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit used to compare the value with the limit
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      * @param int $var
      * @return $this
@@ -141,8 +172,10 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 5;</code>
-     * @return \Claros\Common\Core\Recurrence
+     * Used for seasonal limits
+     *
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
+     * @return \Claros\Common\Recurrence\Recurrence
      */
     public function getRecurrence()
     {
@@ -150,13 +183,15 @@ class Limit extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 5;</code>
-     * @param \Claros\Common\Core\Recurrence $var
+     * Used for seasonal limits
+     *
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
+     * @param \Claros\Common\Recurrence\Recurrence $var
      * @return $this
      */
     public function setRecurrence($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\Core\Recurrence::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Recurrence\Recurrence::class);
         $this->recurrence = $var;
 
         return $this;

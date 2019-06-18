@@ -6,7 +6,7 @@ require 'google/protobuf'
 require 'claros_common_core_clarosdatetime_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_instrument_measurement_scsensor_binding.proto", :syntax => :proto3) do
-    add_message "claros.instrument.SCSensorBinding" do
+    add_message "claros.instrument.measurement.SCSensorBinding" do
       optional :channel, :uint32, 2
       optional :tag, :string, 3
       optional :validFrom, :message, 4, "claros.common.core.ClarosDateTime"
@@ -17,6 +17,8 @@ end
 
 module Claros
   module Instrument
-    SCSensorBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.SCSensorBinding").msgclass
+    module Measurement
+      SCSensorBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.measurement.SCSensorBinding").msgclass
+    end
   end
 end

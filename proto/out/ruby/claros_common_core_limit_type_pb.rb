@@ -6,11 +6,11 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_limit_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.LimitType" do
-      value :L_UNKNOWN, 0
-      value :L_HIGHALARM, 1
-      value :L_HIGHNEAR, 2
-      value :L_LOWNEAR, 3
-      value :L_LOWALARM, 4
+      value :LIMIT_UNKNOWN, 0
+      value :LIMIT_HIGHALARM, 1
+      value :LIMIT__HIGHNEAR, 2
+      value :LIMIT_LOWNEAR, 3
+      value :LIMIT_LOWALARM, 4
     end
   end
 end

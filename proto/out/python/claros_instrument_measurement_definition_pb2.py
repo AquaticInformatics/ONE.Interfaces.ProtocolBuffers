@@ -21,10 +21,10 @@ import claros_common_core_limit_pb2 as claros__common__core__limit__pb2
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='claros_instrument_measurement_definition.proto',
-  package='claros.instrument',
+  package='claros.instrument.measurement',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n.claros_instrument_measurement_definition.proto\x12\x11\x63laros.instrument\x1a\'claros_common_core_clarosdatetime.proto\x1a\x34\x63laros_instrument_measurement_milliamp_binding.proto\x1a\x34\x63laros_instrument_measurement_scsensor_binding.proto\x1a\x1e\x63laros_common_core_limit.proto\"\x83\x04\n\x1fInstrumentMeasurementDefinition\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x10\n\x08\x66usionId\x18\x03 \x01(\t\x12\x12\n\nlocationId\x18\x04 \x01(\t\x12\x13\n\x0bparameterId\x18\x05 \x01(\r\x12\x15\n\rdisplayUnitId\x18\x06 \x01(\r\x12\x11\n\tisVisible\x18\x07 \x01(\x08\x12=\n\x0fscSensorBinding\x18\x08 \x01(\x0b\x32\".claros.instrument.SCSensorBindingH\x00\x12=\n\x0fmilliAmpBinding\x18\t \x01(\x0b\x32\".claros.instrument.MilliAmpBindingH\x00\x12)\n\x06limits\x18\n \x03(\x0b\x32\x19.claros.common.core.Limit\x12\x13\n\x0b\x63reatedById\x18\x0b \x01(\t\x12\x35\n\tcreatedOn\x18\x0c \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x14\n\x0cmodifiedById\x18\r \x01(\t\x12\x36\n\nmodifiedOn\x18\x0e \x01(\x0b\x32\".claros.common.core.ClarosDateTimeB\t\n\x07\x62indingb\x06proto3')
+  serialized_pb=_b('\n.claros_instrument_measurement_definition.proto\x12\x1d\x63laros.instrument.measurement\x1a\'claros_common_core_clarosdatetime.proto\x1a\x34\x63laros_instrument_measurement_milliamp_binding.proto\x1a\x34\x63laros_instrument_measurement_scsensor_binding.proto\x1a\x1e\x63laros_common_core_limit.proto\"\x9b\x04\n\x1fInstrumentMeasurementDefinition\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x10\n\x08\x66usionId\x18\x03 \x01(\t\x12\x12\n\nlocationId\x18\x04 \x01(\t\x12\x13\n\x0bparameterId\x18\x05 \x01(\r\x12\x15\n\rdisplayUnitId\x18\x06 \x01(\r\x12\x11\n\tisVisible\x18\x07 \x01(\x08\x12I\n\x0fscSensorBinding\x18\x08 \x01(\x0b\x32..claros.instrument.measurement.SCSensorBindingH\x00\x12I\n\x0fmilliAmpBinding\x18\t \x01(\x0b\x32..claros.instrument.measurement.MilliAmpBindingH\x00\x12)\n\x06limits\x18\n \x03(\x0b\x32\x19.claros.common.core.Limit\x12\x13\n\x0b\x63reatedById\x18\x0b \x01(\t\x12\x35\n\tcreatedOn\x18\x0c \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x14\n\x0cmodifiedById\x18\r \x01(\t\x12\x36\n\nmodifiedOn\x18\x0e \x01(\x0b\x32\".claros.common.core.ClarosDateTimeB\t\n\x07\x62indingb\x06proto3')
   ,
   dependencies=[claros__common__core__clarosdatetime__pb2.DESCRIPTOR,claros__instrument__measurement__milliamp__binding__pb2.DESCRIPTOR,claros__instrument__measurement__scsensor__binding__pb2.DESCRIPTOR,claros__common__core__limit__pb2.DESCRIPTOR,])
 
@@ -33,104 +33,104 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _INSTRUMENTMEASUREMENTDEFINITION = _descriptor.Descriptor(
   name='InstrumentMeasurementDefinition',
-  full_name='claros.instrument.InstrumentMeasurementDefinition',
+  full_name='claros.instrument.measurement.InstrumentMeasurementDefinition',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='instrumentMeasurementId', full_name='claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId', index=0,
+      name='instrumentMeasurementId', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='name', full_name='claros.instrument.InstrumentMeasurementDefinition.name', index=1,
+      name='name', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='fusionId', full_name='claros.instrument.InstrumentMeasurementDefinition.fusionId', index=2,
+      name='fusionId', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='locationId', full_name='claros.instrument.InstrumentMeasurementDefinition.locationId', index=3,
+      name='locationId', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.locationId', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='parameterId', full_name='claros.instrument.InstrumentMeasurementDefinition.parameterId', index=4,
+      name='parameterId', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.parameterId', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='displayUnitId', full_name='claros.instrument.InstrumentMeasurementDefinition.displayUnitId', index=5,
+      name='displayUnitId', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.displayUnitId', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='isVisible', full_name='claros.instrument.InstrumentMeasurementDefinition.isVisible', index=6,
+      name='isVisible', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.isVisible', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='scSensorBinding', full_name='claros.instrument.InstrumentMeasurementDefinition.scSensorBinding', index=7,
+      name='scSensorBinding', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.scSensorBinding', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='milliAmpBinding', full_name='claros.instrument.InstrumentMeasurementDefinition.milliAmpBinding', index=8,
+      name='milliAmpBinding', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.milliAmpBinding', index=8,
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='limits', full_name='claros.instrument.InstrumentMeasurementDefinition.limits', index=9,
+      name='limits', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.limits', index=9,
       number=10, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='createdById', full_name='claros.instrument.InstrumentMeasurementDefinition.createdById', index=10,
+      name='createdById', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.createdById', index=10,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='createdOn', full_name='claros.instrument.InstrumentMeasurementDefinition.createdOn', index=11,
+      name='createdOn', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.createdOn', index=11,
       number=12, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='modifiedById', full_name='claros.instrument.InstrumentMeasurementDefinition.modifiedById', index=12,
+      name='modifiedById', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById', index=12,
       number=13, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='modifiedOn', full_name='claros.instrument.InstrumentMeasurementDefinition.modifiedOn', index=13,
+      name='modifiedOn', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedOn', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -148,11 +148,11 @@ _INSTRUMENTMEASUREMENTDEFINITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='binding', full_name='claros.instrument.InstrumentMeasurementDefinition.binding',
+      name='binding', full_name='claros.instrument.measurement.InstrumentMeasurementDefinition.binding',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=251,
-  serialized_end=766,
+  serialized_start=263,
+  serialized_end=802,
 )
 
 _INSTRUMENTMEASUREMENTDEFINITION.fields_by_name['scSensorBinding'].message_type = claros__instrument__measurement__scsensor__binding__pb2._SCSENSORBINDING
@@ -172,7 +172,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 InstrumentMeasurementDefinition = _reflection.GeneratedProtocolMessageType('InstrumentMeasurementDefinition', (_message.Message,), dict(
   DESCRIPTOR = _INSTRUMENTMEASUREMENTDEFINITION,
   __module__ = 'claros_instrument_measurement_definition_pb2'
-  # @@protoc_insertion_point(class_scope:claros.instrument.InstrumentMeasurementDefinition)
+  # @@protoc_insertion_point(class_scope:claros.instrument.measurement.InstrumentMeasurementDefinition)
   ))
 _sym_db.RegisterMessage(InstrumentMeasurementDefinition)
 

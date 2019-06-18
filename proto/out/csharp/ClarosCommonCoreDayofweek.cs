@@ -25,10 +25,12 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJjbGFyb3NfY29tbW9uX2NvcmVfZGF5b2Z3ZWVrLnByb3RvEhJjbGFyb3Mu",
-            "Y29tbW9uLmNvcmUqlAEKCURheU9mV2VlaxIPCgtET1dfVU5LTk9XThAAEg4K",
-            "CkRPV19TVU5EQVkQARIOCgpET1dfTU9OREFZEAISDwoLRE9XX1RVRVNEQVkQ",
-            "AxIRCg1ET1dfV0VETkVTREFZEAQSEAoMRE9XX1RIVVJTREFZEAUSDgoKRE9X",
-            "X0ZSSURBWRAGEhAKDERPV19TQVRVUkRBWRAHYgZwcm90bzM="));
+            "Y29tbW9uLmNvcmUq1AEKCURheU9mV2VlaxIXChNEQVlfT0ZfV0VFS19VTktO",
+            "T1dOEAASFgoSREFZX09GX1dFRUtfU1VOREFZEAESFgoSREFZX09GX1dFRUtf",
+            "TU9OREFZEAISFwoTREFZX09GX1dFRUtfVFVFU0RBWRADEhkKFURBWV9PRl9X",
+            "RUVLX1dFRE5FU0RBWRAEEhgKFERBWV9PRl9XRUVLX1RIVVJTREFZEAUSFgoS",
+            "REFZX09GX1dFRUtfRlJJREFZEAYSGAoUREFZX09GX1dFRUtfU0FUVVJEQVkQ",
+            "B2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.DayOfWeek), }, null));
@@ -38,14 +40,14 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum DayOfWeek {
-    [pbr::OriginalName("DOW_UNKNOWN")] DowUnknown = 0,
-    [pbr::OriginalName("DOW_SUNDAY")] DowSunday = 1,
-    [pbr::OriginalName("DOW_MONDAY")] DowMonday = 2,
-    [pbr::OriginalName("DOW_TUESDAY")] DowTuesday = 3,
-    [pbr::OriginalName("DOW_WEDNESDAY")] DowWednesday = 4,
-    [pbr::OriginalName("DOW_THURSDAY")] DowThursday = 5,
-    [pbr::OriginalName("DOW_FRIDAY")] DowFriday = 6,
-    [pbr::OriginalName("DOW_SATURDAY")] DowSaturday = 7,
+    [pbr::OriginalName("DAY_OF_WEEK_UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("DAY_OF_WEEK_SUNDAY")] Sunday = 1,
+    [pbr::OriginalName("DAY_OF_WEEK_MONDAY")] Monday = 2,
+    [pbr::OriginalName("DAY_OF_WEEK_TUESDAY")] Tuesday = 3,
+    [pbr::OriginalName("DAY_OF_WEEK_WEDNESDAY")] Wednesday = 4,
+    [pbr::OriginalName("DAY_OF_WEEK_THURSDAY")] Thursday = 5,
+    [pbr::OriginalName("DAY_OF_WEEK_FRIDAY")] Friday = 6,
+    [pbr::OriginalName("DAY_OF_WEEK_SATURDAY")] Saturday = 7,
   }
 
   #endregion

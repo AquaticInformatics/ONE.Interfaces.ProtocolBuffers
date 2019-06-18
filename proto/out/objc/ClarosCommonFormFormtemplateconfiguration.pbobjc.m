@@ -15,7 +15,7 @@
 
 #import "ClarosCommonFormFormtemplateconfiguration.pbobjc.h"
 #import "ClarosCommonFormFormtemplateType.pbobjc.h"
-#import "ClarosCommonCoreRecurrence.pbobjc.h"
+#import "ClarosCommonRecurrenceRecurrence.pbobjc.h"
 #import "ClarosCommonFormFormlayout.pbobjc.h"
 #import "ClarosCommonFormFormfieldDefinition.pbobjc.h"
 // @@protoc_insertion_point(imports)

@@ -19,65 +19,117 @@ public final class ClarosCommonCoreParameter {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The GUID for the parameter
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     java.lang.String getId();
     /**
+     * <pre>
+     * The GUID for the parameter
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     com.google.protobuf.ByteString
         getIdBytes();
 
     /**
+     * <pre>
+     * The integer used to globally identify the parameter
+     * </pre>
+     *
      * <code>uint32 IntId = 2;</code>
      */
     int getIntId();
 
     /**
+     * <pre>
+     * The locationization string used for i18 lookup for this parameter
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     java.lang.String getI18NKey();
     /**
+     * <pre>
+     * The locationization string used for i18 lookup for this parameter
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     com.google.protobuf.ByteString
         getI18NKeyBytes();
 
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string parameterTypeId = 4;</code>
      */
     java.lang.String getParameterTypeId();
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string parameterTypeId = 4;</code>
      */
     com.google.protobuf.ByteString
         getParameterTypeIdBytes();
 
     /**
+     * <pre>
+     * The GUID of the Quantity Type related to the parameter
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     java.lang.String getQuantityTypeId();
     /**
+     * <pre>
+     * The GUID of the Quantity Type related to the parameter
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     com.google.protobuf.ByteString
         getQuantityTypeIdBytes();
 
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     java.lang.String getDescription();
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
     /**
+     * <pre>
+     * The GUID of the tenant that is ?????
+     * </pre>
+     *
      * <code>string tenantId = 7;</code>
      */
     java.lang.String getTenantId();
     /**
+     * <pre>
+     * The GUID of the tenant that is ?????
+     * </pre>
+     *
      * <code>string tenantId = 7;</code>
      */
     com.google.protobuf.ByteString
@@ -290,6 +342,10 @@ public final class ClarosCommonCoreParameter {
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
+     * <pre>
+     * The GUID for the parameter
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     public java.lang.String getId() {
@@ -305,6 +361,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * The GUID for the parameter
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -324,6 +384,10 @@ public final class ClarosCommonCoreParameter {
     public static final int INTID_FIELD_NUMBER = 2;
     private int intId_;
     /**
+     * <pre>
+     * The integer used to globally identify the parameter
+     * </pre>
+     *
      * <code>uint32 IntId = 2;</code>
      */
     public int getIntId() {
@@ -333,6 +397,10 @@ public final class ClarosCommonCoreParameter {
     public static final int I18NKEY_FIELD_NUMBER = 3;
     private volatile java.lang.Object i18NKey_;
     /**
+     * <pre>
+     * The locationization string used for i18 lookup for this parameter
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     public java.lang.String getI18NKey() {
@@ -348,6 +416,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * The locationization string used for i18 lookup for this parameter
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -367,6 +439,10 @@ public final class ClarosCommonCoreParameter {
     public static final int PARAMETERTYPEID_FIELD_NUMBER = 4;
     private volatile java.lang.Object parameterTypeId_;
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string parameterTypeId = 4;</code>
      */
     public java.lang.String getParameterTypeId() {
@@ -382,6 +458,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string parameterTypeId = 4;</code>
      */
     public com.google.protobuf.ByteString
@@ -401,6 +481,10 @@ public final class ClarosCommonCoreParameter {
     public static final int QUANTITYTYPEID_FIELD_NUMBER = 5;
     private volatile java.lang.Object quantityTypeId_;
     /**
+     * <pre>
+     * The GUID of the Quantity Type related to the parameter
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     public java.lang.String getQuantityTypeId() {
@@ -416,6 +500,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * The GUID of the Quantity Type related to the parameter
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -435,6 +523,10 @@ public final class ClarosCommonCoreParameter {
     public static final int DESCRIPTION_FIELD_NUMBER = 6;
     private volatile java.lang.Object description_;
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     public java.lang.String getDescription() {
@@ -450,6 +542,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -469,6 +565,10 @@ public final class ClarosCommonCoreParameter {
     public static final int TENANTID_FIELD_NUMBER = 7;
     private volatile java.lang.Object tenantId_;
     /**
+     * <pre>
+     * The GUID of the tenant that is ?????
+     * </pre>
+     *
      * <code>string tenantId = 7;</code>
      */
     public java.lang.String getTenantId() {
@@ -484,6 +584,10 @@ public final class ClarosCommonCoreParameter {
       }
     }
     /**
+     * <pre>
+     * The GUID of the tenant that is ?????
+     * </pre>
+     *
      * <code>string tenantId = 7;</code>
      */
     public com.google.protobuf.ByteString
@@ -1110,6 +1214,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object id_ = "";
       /**
+       * <pre>
+       * The GUID for the parameter
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public java.lang.String getId() {
@@ -1125,6 +1233,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID for the parameter
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -1141,6 +1253,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID for the parameter
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder setId(
@@ -1154,6 +1270,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID for the parameter
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder clearId() {
@@ -1163,6 +1283,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID for the parameter
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder setIdBytes(
@@ -1179,12 +1303,20 @@ public final class ClarosCommonCoreParameter {
 
       private int intId_ ;
       /**
+       * <pre>
+       * The integer used to globally identify the parameter
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public int getIntId() {
         return intId_;
       }
       /**
+       * <pre>
+       * The integer used to globally identify the parameter
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public Builder setIntId(int value) {
@@ -1194,6 +1326,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The integer used to globally identify the parameter
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public Builder clearIntId() {
@@ -1205,6 +1341,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object i18NKey_ = "";
       /**
+       * <pre>
+       * The locationization string used for i18 lookup for this parameter
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public java.lang.String getI18NKey() {
@@ -1220,6 +1360,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The locationization string used for i18 lookup for this parameter
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -1236,6 +1380,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The locationization string used for i18 lookup for this parameter
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder setI18NKey(
@@ -1249,6 +1397,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The locationization string used for i18 lookup for this parameter
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder clearI18NKey() {
@@ -1258,6 +1410,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The locationization string used for i18 lookup for this parameter
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder setI18NKeyBytes(
@@ -1274,6 +1430,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object parameterTypeId_ = "";
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string parameterTypeId = 4;</code>
        */
       public java.lang.String getParameterTypeId() {
@@ -1289,6 +1449,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string parameterTypeId = 4;</code>
        */
       public com.google.protobuf.ByteString
@@ -1305,6 +1469,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string parameterTypeId = 4;</code>
        */
       public Builder setParameterTypeId(
@@ -1318,6 +1486,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string parameterTypeId = 4;</code>
        */
       public Builder clearParameterTypeId() {
@@ -1327,6 +1499,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string parameterTypeId = 4;</code>
        */
       public Builder setParameterTypeIdBytes(
@@ -1343,6 +1519,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object quantityTypeId_ = "";
       /**
+       * <pre>
+       * The GUID of the Quantity Type related to the parameter
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public java.lang.String getQuantityTypeId() {
@@ -1358,6 +1538,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID of the Quantity Type related to the parameter
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -1374,6 +1558,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID of the Quantity Type related to the parameter
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder setQuantityTypeId(
@@ -1387,6 +1575,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the Quantity Type related to the parameter
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder clearQuantityTypeId() {
@@ -1396,6 +1588,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the Quantity Type related to the parameter
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder setQuantityTypeIdBytes(
@@ -1412,6 +1608,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object description_ = "";
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public java.lang.String getDescription() {
@@ -1427,6 +1627,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -1443,6 +1647,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder setDescription(
@@ -1456,6 +1664,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder clearDescription() {
@@ -1465,6 +1677,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder setDescriptionBytes(
@@ -1481,6 +1697,10 @@ public final class ClarosCommonCoreParameter {
 
       private java.lang.Object tenantId_ = "";
       /**
+       * <pre>
+       * The GUID of the tenant that is ?????
+       * </pre>
+       *
        * <code>string tenantId = 7;</code>
        */
       public java.lang.String getTenantId() {
@@ -1496,6 +1716,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID of the tenant that is ?????
+       * </pre>
+       *
        * <code>string tenantId = 7;</code>
        */
       public com.google.protobuf.ByteString
@@ -1512,6 +1736,10 @@ public final class ClarosCommonCoreParameter {
         }
       }
       /**
+       * <pre>
+       * The GUID of the tenant that is ?????
+       * </pre>
+       *
        * <code>string tenantId = 7;</code>
        */
       public Builder setTenantId(
@@ -1525,6 +1753,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the tenant that is ?????
+       * </pre>
+       *
        * <code>string tenantId = 7;</code>
        */
       public Builder clearTenantId() {
@@ -1534,6 +1766,10 @@ public final class ClarosCommonCoreParameter {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the tenant that is ?????
+       * </pre>
+       *
        * <code>string tenantId = 7;</code>
        */
       public Builder setTenantIdBytes(

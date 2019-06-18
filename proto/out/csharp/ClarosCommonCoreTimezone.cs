@@ -25,8 +25,8 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFjbGFyb3NfY29tbW9uX2NvcmVfdGltZXpvbmUucHJvdG8SEmNsYXJvcy5j",
-            "b21tb24uY29yZSomCghUaW1lWm9uZRIOCgpUWl9VTktOT1dOEAASCgoGVFpf",
-            "VVRDEAFiBnByb3RvMw=="));
+            "b21tb24uY29yZSoyCghUaW1lWm9uZRIUChBUSU1FWk9ORV9VTktOT1dOEAAS",
+            "EAoMVElNRVpPTkVfVVRDEAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.TimeZone), }, null));
@@ -36,8 +36,8 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum TimeZone {
-    [pbr::OriginalName("TZ_UNKNOWN")] TzUnknown = 0,
-    [pbr::OriginalName("TZ_UTC")] TzUtc = 1,
+    [pbr::OriginalName("TIMEZONE_UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("TIMEZONE_UTC")] Utc = 1,
   }
 
   #endregion

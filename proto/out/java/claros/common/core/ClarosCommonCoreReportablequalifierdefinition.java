@@ -19,24 +19,44 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The type of reportable qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     int getReportableQualifierTypeValue();
     /**
+     * <pre>
+     * The type of reportable qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType();
 
     /**
+     * <pre>
+     * How to interpret the qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      */
     int getReportableQualifierDefinitionTypeValue();
     /**
+     * <pre>
+     * How to interpret the qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType getReportableQualifierDefinitionType();
 
     /**
+     * <pre>
+     * The value if the interpretation is a constant
+     * </pre>
+     *
      * <code>double constantValue = 3;</code>
      */
     double getConstantValue();
@@ -134,12 +154,20 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
     public static final int REPORTABLEQUALIFIERTYPE_FIELD_NUMBER = 1;
     private int reportableQualifierType_;
     /**
+     * <pre>
+     * The type of reportable qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     public int getReportableQualifierTypeValue() {
       return reportableQualifierType_;
     }
     /**
+     * <pre>
+     * The type of reportable qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType() {
@@ -151,12 +179,20 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
     public static final int REPORTABLEQUALIFIERDEFINITIONTYPE_FIELD_NUMBER = 2;
     private int reportableQualifierDefinitionType_;
     /**
+     * <pre>
+     * How to interpret the qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      */
     public int getReportableQualifierDefinitionTypeValue() {
       return reportableQualifierDefinitionType_;
     }
     /**
+     * <pre>
+     * How to interpret the qualifer
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType getReportableQualifierDefinitionType() {
@@ -168,6 +204,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
     public static final int CONSTANTVALUE_FIELD_NUMBER = 3;
     private double constantValue_;
     /**
+     * <pre>
+     * The value if the interpretation is a constant
+     * </pre>
+     *
      * <code>double constantValue = 3;</code>
      */
     public double getConstantValue() {
@@ -188,10 +228,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.RQ_UNKNOWN.getNumber()) {
+      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.REPORTABLE_QUALIFIER_UNKNOWN.getNumber()) {
         output.writeEnum(1, reportableQualifierType_);
       }
-      if (reportableQualifierDefinitionType_ != claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType.RQD_UNKNOWN.getNumber()) {
+      if (reportableQualifierDefinitionType_ != claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType.REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN.getNumber()) {
         output.writeEnum(2, reportableQualifierDefinitionType_);
       }
       if (constantValue_ != 0D) {
@@ -206,11 +246,11 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
       if (size != -1) return size;
 
       size = 0;
-      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.RQ_UNKNOWN.getNumber()) {
+      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.REPORTABLE_QUALIFIER_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, reportableQualifierType_);
       }
-      if (reportableQualifierDefinitionType_ != claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType.RQD_UNKNOWN.getNumber()) {
+      if (reportableQualifierDefinitionType_ != claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType.REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, reportableQualifierDefinitionType_);
       }
@@ -512,12 +552,20 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
 
       private int reportableQualifierType_ = 0;
       /**
+       * <pre>
+       * The type of reportable qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public int getReportableQualifierTypeValue() {
         return reportableQualifierType_;
       }
       /**
+       * <pre>
+       * The type of reportable qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder setReportableQualifierTypeValue(int value) {
@@ -526,6 +574,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return this;
       }
       /**
+       * <pre>
+       * The type of reportable qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType() {
@@ -534,6 +586,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return result == null ? claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * The type of reportable qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder setReportableQualifierType(claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType value) {
@@ -546,6 +602,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return this;
       }
       /**
+       * <pre>
+       * The type of reportable qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder clearReportableQualifierType() {
@@ -557,12 +617,20 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
 
       private int reportableQualifierDefinitionType_ = 0;
       /**
+       * <pre>
+       * How to interpret the qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
        */
       public int getReportableQualifierDefinitionTypeValue() {
         return reportableQualifierDefinitionType_;
       }
       /**
+       * <pre>
+       * How to interpret the qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
        */
       public Builder setReportableQualifierDefinitionTypeValue(int value) {
@@ -571,6 +639,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return this;
       }
       /**
+       * <pre>
+       * How to interpret the qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType getReportableQualifierDefinitionType() {
@@ -579,6 +651,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return result == null ? claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * How to interpret the qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
        */
       public Builder setReportableQualifierDefinitionType(claros.common.core.ClarosCommonCoreReportablequalifierdefinitionType.ReportableQualifierDefinitionType value) {
@@ -591,6 +667,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return this;
       }
       /**
+       * <pre>
+       * How to interpret the qualifer
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
        */
       public Builder clearReportableQualifierDefinitionType() {
@@ -602,12 +682,20 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
 
       private double constantValue_ ;
       /**
+       * <pre>
+       * The value if the interpretation is a constant
+       * </pre>
+       *
        * <code>double constantValue = 3;</code>
        */
       public double getConstantValue() {
         return constantValue_;
       }
       /**
+       * <pre>
+       * The value if the interpretation is a constant
+       * </pre>
+       *
        * <code>double constantValue = 3;</code>
        */
       public Builder setConstantValue(double value) {
@@ -617,6 +705,10 @@ public final class ClarosCommonCoreReportablequalifierdefinition {
         return this;
       }
       /**
+       * <pre>
+       * The value if the interpretation is a constant
+       * </pre>
+       *
        * <code>double constantValue = 3;</code>
        */
       public Builder clearConstantValue() {

@@ -3,7 +3,7 @@
 
 require 'google/protobuf'
 
-require 'claros_common_core_recurrence_pb'
+require 'claros_common_recurrence_recurrence_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_form_ledgercolumnformfield.proto", :syntax => :proto3) do
     add_message "claros.common.form.LedgerColumnFormField" do
@@ -11,7 +11,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :unit, :string, 2
       optional :upLimit, :string, 3
       optional :lowLimit, :string, 4
-      optional :timeWindow, :message, 5, "claros.common.core.Recurrence"
+      optional :timeWindow, :message, 5, "claros.common.recurrence.Recurrence"
       optional :parameter, :string, 6
     end
   end

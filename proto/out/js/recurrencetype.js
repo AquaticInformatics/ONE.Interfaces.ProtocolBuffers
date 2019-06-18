@@ -13,12 +13,12 @@ goog.provide('proto.claros.common.core.RecurrenceType');
  * @enum {number}
  */
 proto.claros.common.core.RecurrenceType = {
-  R_UNKNOWN: 0,
-  R_FIFTEENMINUTE: 1,
-  R_HOURLY: 2,
-  R_FOURHOUR: 3,
-  R_DAILY: 4,
-  R_WEEKLY: 5,
-  R_DAYSOFWEEK: 6
+  RECURRENCE_UNKNOWN: 0,
+  RECURRENCE_FIFTEENMINUTE: 1,
+  RECURRENCE_HOURLY: 2,
+  RECURRENCE_FOURHOUR: 3,
+  RECURRENCE_DAILY: 4,
+  RECURRENCE_WEEKLY: 5,
+  RECURRENCE_DAYSOFWEEK: 6
 };
 

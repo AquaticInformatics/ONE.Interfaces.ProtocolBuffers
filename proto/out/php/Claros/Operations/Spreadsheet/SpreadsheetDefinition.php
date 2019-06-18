@@ -14,18 +14,26 @@ use Google\Protobuf\Internal\GPBUtil;
 class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     *
      * Generated from protobuf field <code>string version = 1;</code>
      */
     private $version = '';
     /**
+     * The Time window of when this configuration was valid
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     private $timewindow = null;
     /**
+     * The time zone related to the spreadsheet
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeZone timezone = 3;</code>
      */
     private $timezone = 0;
     /**
+     * The number of hours offset to the start of day
+     *
      * Generated from protobuf field <code>uint32 timeWindowOffset = 4;</code>
      */
     private $timeWindowOffset = 0;
@@ -37,9 +45,13 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $version
+     *           Numerical version of the spreadsheet definition.  This increments with eash new version
      *     @type \Claros\Common\Core\TimeWindow $timewindow
+     *           The Time window of when this configuration was valid
      *     @type int $timezone
+     *           The time zone related to the spreadsheet
      *     @type int $timeWindowOffset
+     *           The number of hours offset to the start of day
      * }
      */
     public function __construct($data = NULL) {
@@ -48,6 +60,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     *
      * Generated from protobuf field <code>string version = 1;</code>
      * @return string
      */
@@ -57,6 +71,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     *
      * Generated from protobuf field <code>string version = 1;</code>
      * @param string $var
      * @return $this
@@ -70,6 +86,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The Time window of when this configuration was valid
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      * @return \Claros\Common\Core\TimeWindow
      */
@@ -79,6 +97,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The Time window of when this configuration was valid
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      * @param \Claros\Common\Core\TimeWindow $var
      * @return $this
@@ -92,6 +112,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The time zone related to the spreadsheet
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeZone timezone = 3;</code>
      * @return int
      */
@@ -101,6 +123,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The time zone related to the spreadsheet
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeZone timezone = 3;</code>
      * @param int $var
      * @return $this
@@ -114,6 +138,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The number of hours offset to the start of day
+     *
      * Generated from protobuf field <code>uint32 timeWindowOffset = 4;</code>
      * @return int
      */
@@ -123,6 +149,8 @@ class SpreadsheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The number of hours offset to the start of day
+     *
      * Generated from protobuf field <code>uint32 timeWindowOffset = 4;</code>
      * @param int $var
      * @return $this

@@ -4,7 +4,7 @@
 require 'google/protobuf'
 
 require 'claros_common_core_limit_type_pb'
-require 'claros_common_core_recurrence_pb'
+require 'claros_common_recurrence_recurrence_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_limit.proto", :syntax => :proto3) do
     add_message "claros.common.core.Limit" do
@@ -12,7 +12,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :limitType, :enum, 2, "claros.common.core.LimitType"
       optional :value, :double, 3
       optional :unitId, :uint32, 4
-      optional :recurrence, :message, 5, "claros.common.core.Recurrence"
+      optional :recurrence, :message, 5, "claros.common.recurrence.Recurrence"
     end
   end
 end

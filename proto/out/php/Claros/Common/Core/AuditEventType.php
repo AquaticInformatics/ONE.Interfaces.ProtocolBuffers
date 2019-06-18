@@ -12,37 +12,47 @@ use UnexpectedValueException;
 class AuditEventType
 {
     /**
-     * Generated from protobuf enum <code>AE_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>AUDIT_EVENT_UNKNOWN = 0;</code>
      */
-    const AE_UNKNOWN = 0;
+    const AUDIT_EVENT_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>AE_CREATE = 1;</code>
+     * Information has been created
+     *
+     * Generated from protobuf enum <code>AUDIT_EVENT_CREATE = 1;</code>
      */
-    const AE_CREATE = 1;
+    const AUDIT_EVENT_CREATE = 1;
     /**
-     * Generated from protobuf enum <code>AE_READ = 2;</code>
+     * Information has been read
+     *
+     * Generated from protobuf enum <code>AUDIT_EVENT_READ = 2;</code>
      */
-    const AE_READ = 2;
+    const AUDIT_EVENT_READ = 2;
     /**
-     * Generated from protobuf enum <code>AE_UPDATE = 3;</code>
+     * Information has been updated
+     *
+     * Generated from protobuf enum <code>AUDIT_EVENT_UPDATE = 3;</code>
      */
-    const AE_UPDATE = 3;
+    const AUDIT_EVENT_UPDATE = 3;
     /**
-     * Generated from protobuf enum <code>AE_DELETE = 4;</code>
+     * Information has been deleted
+     *
+     * Generated from protobuf enum <code>AUDIT_EVENT_DELETE = 4;</code>
      */
-    const AE_DELETE = 4;
+    const AUDIT_EVENT_DELETE = 4;
     /**
-     * Generated from protobuf enum <code>AE_SENT = 5;</code>
+     * Information has been sent to another system
+     *
+     * Generated from protobuf enum <code>AUDIT_EVENT_SENT = 5;</code>
      */
-    const AE_SENT = 5;
+    const AUDIT_EVENT_SENT = 5;
 
     private static $valueToName = [
-        self::AE_UNKNOWN => 'AE_UNKNOWN',
-        self::AE_CREATE => 'AE_CREATE',
-        self::AE_READ => 'AE_READ',
-        self::AE_UPDATE => 'AE_UPDATE',
-        self::AE_DELETE => 'AE_DELETE',
-        self::AE_SENT => 'AE_SENT',
+        self::AUDIT_EVENT_UNKNOWN => 'AUDIT_EVENT_UNKNOWN',
+        self::AUDIT_EVENT_CREATE => 'AUDIT_EVENT_CREATE',
+        self::AUDIT_EVENT_READ => 'AUDIT_EVENT_READ',
+        self::AUDIT_EVENT_UPDATE => 'AUDIT_EVENT_UPDATE',
+        self::AUDIT_EVENT_DELETE => 'AUDIT_EVENT_DELETE',
+        self::AUDIT_EVENT_SENT => 'AUDIT_EVENT_SENT',
     ];
 
     public static function name($value)

@@ -55,8 +55,10 @@ typedef GPB_ENUM(ReportableQualifier_FieldNumber) {
 
 @interface ReportableQualifier : GPBMessage
 
+/** The type of Qualifier */
 @property(nonatomic, readwrite) enum ReportableQualifierType reportableQualifierType;
 
+/** What the user has entered as the qualifer */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *qualifiedValue;
 
 @end

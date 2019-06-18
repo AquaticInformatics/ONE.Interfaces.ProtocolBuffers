@@ -12,32 +12,32 @@ use UnexpectedValueException;
 class WorksheetType
 {
     /**
-     * Generated from protobuf enum <code>W_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>WORKSHEET_UNKNOWN = 0;</code>
      */
-    const W_UNKNOWN = 0;
+    const WORKSHEET_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>W_FIFTEEN_MINUTE = 1;</code>
+     * Generated from protobuf enum <code>WORKSHEET_FIFTEEN_MINUTE = 1;</code>
      */
-    const W_FIFTEEN_MINUTE = 1;
+    const WORKSHEET_FIFTEEN_MINUTE = 1;
     /**
-     * Generated from protobuf enum <code>W_FOUR_HOUR = 2;</code>
+     * Generated from protobuf enum <code>WORKSHEET_HOUR = 2;</code>
      */
-    const W_FOUR_HOUR = 2;
+    const WORKSHEET_HOUR = 2;
     /**
-     * Generated from protobuf enum <code>W_DAILY = 3;</code>
+     * Generated from protobuf enum <code>WORKSHEET_FOUR_HOUR = 3;</code>
      */
-    const W_DAILY = 3;
+    const WORKSHEET_FOUR_HOUR = 3;
     /**
-     * Generated from protobuf enum <code>W_MONTHLY = 4;</code>
+     * Generated from protobuf enum <code>WORKSHEET_DAILY = 4;</code>
      */
-    const W_MONTHLY = 4;
+    const WORKSHEET_DAILY = 4;
 
     private static $valueToName = [
-        self::W_UNKNOWN => 'W_UNKNOWN',
-        self::W_FIFTEEN_MINUTE => 'W_FIFTEEN_MINUTE',
-        self::W_FOUR_HOUR => 'W_FOUR_HOUR',
-        self::W_DAILY => 'W_DAILY',
-        self::W_MONTHLY => 'W_MONTHLY',
+        self::WORKSHEET_UNKNOWN => 'WORKSHEET_UNKNOWN',
+        self::WORKSHEET_FIFTEEN_MINUTE => 'WORKSHEET_FIFTEEN_MINUTE',
+        self::WORKSHEET_HOUR => 'WORKSHEET_HOUR',
+        self::WORKSHEET_FOUR_HOUR => 'WORKSHEET_FOUR_HOUR',
+        self::WORKSHEET_DAILY => 'WORKSHEET_DAILY',
     ];
 
     public static function name($value)

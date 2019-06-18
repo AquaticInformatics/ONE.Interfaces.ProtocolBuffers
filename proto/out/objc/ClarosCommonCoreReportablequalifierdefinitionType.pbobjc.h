@@ -38,11 +38,19 @@ typedef GPB_ENUM(ReportableQualifierDefinitionType) {
    * of the field.
    **/
   ReportableQualifierDefinitionType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  ReportableQualifierDefinitionType_RqdUnknown = 0,
-  ReportableQualifierDefinitionType_RqdEnteredvalue = 1,
-  ReportableQualifierDefinitionType_RqdZero = 2,
-  ReportableQualifierDefinitionType_RqdHalfentered = 3,
-  ReportableQualifierDefinitionType_RqdConstant = 4,
+  ReportableQualifierDefinitionType_ReportableQualifierDefinitionUnknown = 0,
+
+  /** The value is taken from the qualified value.  Example < 2 becomes 2 */
+  ReportableQualifierDefinitionType_ReportableQualifierDefinitionEnteredvalue = 1,
+
+  /** The value is set to zero (0) in this case */
+  ReportableQualifierDefinitionType_ReportableQualifierDefinitionZero = 2,
+
+  /** The value is set to half of the entered value.  Example < 2 becomes 1 */
+  ReportableQualifierDefinitionType_ReportableQualifierDefinitionHalfentered = 3,
+
+  /** The value is set to a constant value that is entered by the customer.  For example < 2 may be set to a customer value of 1.5 */
+  ReportableQualifierDefinitionType_ReportableQualifierDefinitionConstant = 4,
 };
 
 GPBEnumDescriptor *ReportableQualifierDefinitionType_EnumDescriptor(void);

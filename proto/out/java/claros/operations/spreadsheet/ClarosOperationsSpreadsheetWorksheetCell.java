@@ -19,53 +19,97 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The column id related to the cell
+     * </pre>
+     *
      * <code>uint32 columnId = 1;</code>
      */
     int getColumnId();
 
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     java.util.List<claros.common.core.ClarosCommonCoreNote.Note> 
         getNotesList();
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     claros.common.core.ClarosCommonCoreNote.Note getNotes(int index);
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     int getNotesCount();
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     java.util.List<? extends claros.common.core.ClarosCommonCoreNote.NoteOrBuilder> 
         getNotesOrBuilderList();
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     claros.common.core.ClarosCommonCoreNote.NoteOrBuilder getNotesOrBuilder(
         int index);
 
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData> 
         getCellDataList();
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData getCellData(int index);
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     int getCellDataCount();
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder> 
         getCellDataOrBuilderList();
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder getCellDataOrBuilder(
@@ -177,6 +221,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
     public static final int COLUMNID_FIELD_NUMBER = 1;
     private int columnId_;
     /**
+     * <pre>
+     * The column id related to the cell
+     * </pre>
+     *
      * <code>uint32 columnId = 1;</code>
      */
     public int getColumnId() {
@@ -186,12 +234,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
     public static final int NOTES_FIELD_NUMBER = 2;
     private java.util.List<claros.common.core.ClarosCommonCoreNote.Note> notes_;
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     public java.util.List<claros.common.core.ClarosCommonCoreNote.Note> getNotesList() {
       return notes_;
     }
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     public java.util.List<? extends claros.common.core.ClarosCommonCoreNote.NoteOrBuilder> 
@@ -199,18 +255,30 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
       return notes_;
     }
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     public int getNotesCount() {
       return notes_.size();
     }
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreNote.Note getNotes(int index) {
       return notes_.get(index);
     }
     /**
+     * <pre>
+     * A collection of notes that are related to a cell.
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Note notes = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreNote.NoteOrBuilder getNotesOrBuilder(
@@ -221,12 +289,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
     public static final int CELLDATA_FIELD_NUMBER = 3;
     private java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData> cellData_;
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData> getCellDataList() {
       return cellData_;
     }
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder> 
@@ -234,18 +310,30 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
       return cellData_;
     }
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     public int getCellDataCount() {
       return cellData_.size();
     }
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData getCellData(int index) {
       return cellData_.get(index);
     }
     /**
+     * <pre>
+     * The current and past data that has been entered into a cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder getCellDataOrBuilder(
@@ -671,12 +759,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
 
       private int columnId_ ;
       /**
+       * <pre>
+       * The column id related to the cell
+       * </pre>
+       *
        * <code>uint32 columnId = 1;</code>
        */
       public int getColumnId() {
         return columnId_;
       }
       /**
+       * <pre>
+       * The column id related to the cell
+       * </pre>
+       *
        * <code>uint32 columnId = 1;</code>
        */
       public Builder setColumnId(int value) {
@@ -686,6 +782,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The column id related to the cell
+       * </pre>
+       *
        * <code>uint32 columnId = 1;</code>
        */
       public Builder clearColumnId() {
@@ -708,6 +808,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
           claros.common.core.ClarosCommonCoreNote.Note, claros.common.core.ClarosCommonCoreNote.Note.Builder, claros.common.core.ClarosCommonCoreNote.NoteOrBuilder> notesBuilder_;
 
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreNote.Note> getNotesList() {
@@ -718,6 +822,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public int getNotesCount() {
@@ -728,6 +836,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreNote.Note getNotes(int index) {
@@ -738,6 +850,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder setNotes(
@@ -755,6 +871,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder setNotes(
@@ -769,6 +889,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder addNotes(claros.common.core.ClarosCommonCoreNote.Note value) {
@@ -785,6 +909,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder addNotes(
@@ -802,6 +930,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder addNotes(
@@ -816,6 +948,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder addNotes(
@@ -830,6 +966,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder addAllNotes(
@@ -845,6 +985,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder clearNotes() {
@@ -858,6 +1002,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public Builder removeNotes(int index) {
@@ -871,6 +1019,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreNote.Note.Builder getNotesBuilder(
@@ -878,6 +1030,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return getNotesFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreNote.NoteOrBuilder getNotesOrBuilder(
@@ -888,6 +1044,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public java.util.List<? extends claros.common.core.ClarosCommonCoreNote.NoteOrBuilder> 
@@ -899,6 +1059,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreNote.Note.Builder addNotesBuilder() {
@@ -906,6 +1070,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
             claros.common.core.ClarosCommonCoreNote.Note.getDefaultInstance());
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreNote.Note.Builder addNotesBuilder(
@@ -914,6 +1082,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
             index, claros.common.core.ClarosCommonCoreNote.Note.getDefaultInstance());
       }
       /**
+       * <pre>
+       * A collection of notes that are related to a cell.
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Note notes = 2;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreNote.Note.Builder> 
@@ -948,6 +1120,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder> cellDataBuilder_;
 
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData> getCellDataList() {
@@ -958,6 +1134,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public int getCellDataCount() {
@@ -968,6 +1148,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData getCellData(int index) {
@@ -978,6 +1162,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder setCellData(
@@ -995,6 +1183,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder setCellData(
@@ -1009,6 +1201,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder addCellData(claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData value) {
@@ -1025,6 +1221,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder addCellData(
@@ -1042,6 +1242,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder addCellData(
@@ -1056,6 +1260,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder addCellData(
@@ -1070,6 +1278,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder addAllCellData(
@@ -1085,6 +1297,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder clearCellData() {
@@ -1098,6 +1314,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public Builder removeCellData(int index) {
@@ -1111,6 +1331,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return this;
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.Builder getCellDataBuilder(
@@ -1118,6 +1342,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         return getCellDataFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder getCellDataOrBuilder(
@@ -1128,6 +1356,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellDataOrBuilder> 
@@ -1139,6 +1371,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
         }
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.Builder addCellDataBuilder() {
@@ -1146,6 +1382,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
             claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.getDefaultInstance());
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.Builder addCellDataBuilder(
@@ -1154,6 +1394,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCell {
             index, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.getDefaultInstance());
       }
       /**
+       * <pre>
+       * The current and past data that has been entered into a cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellData cellData = 3;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldata.CellData.Builder> 

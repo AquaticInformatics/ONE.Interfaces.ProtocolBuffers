@@ -61,6 +61,7 @@ const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5fcore_5fauditevent
   PROTOBUF_FIELD_OFFSET(::claros::common::core::AuditEvent, datasourcetype_),
   PROTOBUF_FIELD_OFFSET(::claros::common::core::AuditEvent, eventtype_),
   PROTOBUF_FIELD_OFFSET(::claros::common::core::AuditEvent, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::core::AuditEvent, details_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::claros::common::core::AuditEvent)},
@@ -81,18 +82,18 @@ const char descriptor_table_protodef_claros_5fcommon_5fcore_5fauditevent_2eproto
   "laros.common.core\032(claros_common_core_au"
   "ditevent_type.proto\032\'claros_common_core_"
   "clarosdatetime.proto\032(claros_common_core"
-  "_datasource_type.proto\"\322\001\n\nAuditEvent\022\n\n"
+  "_datasource_type.proto\"\343\001\n\nAuditEvent\022\n\n"
   "\002id\030\001 \001(\t\022\016\n\006userId\030\002 \001(\t\022:\n\016dataSourceT"
   "ype\030\003 \001(\0162\".claros.common.core.DataSourc"
   "eType\0225\n\teventType\030\004 \001(\0162\".claros.common"
   ".core.AuditEventType\0225\n\ttimeStamp\030\005 \001(\0132"
-  "\".claros.common.core.ClarosDateTimeb\006pro"
-  "to3"
+  "\".claros.common.core.ClarosDateTime\022\017\n\007d"
+  "etails\030\006 \001(\tb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5fauditevent_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5fauditevent_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5fauditevent_2eproto,
-  "claros_common_core_auditevent.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fauditevent_2eproto, 403,
+  "claros_common_core_auditevent.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fauditevent_2eproto, 420,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5fauditevent_2eproto() {
@@ -138,6 +139,7 @@ const int AuditEvent::kUserIdFieldNumber;
 const int AuditEvent::kDataSourceTypeFieldNumber;
 const int AuditEvent::kEventTypeFieldNumber;
 const int AuditEvent::kTimeStampFieldNumber;
+const int AuditEvent::kDetailsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AuditEvent::AuditEvent()
@@ -157,6 +159,10 @@ AuditEvent::AuditEvent(const AuditEvent& from)
   if (from.userid().size() > 0) {
     userid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.userid_);
   }
+  details_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.details().size() > 0) {
+    details_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.details_);
+  }
   if (from.has_timestamp()) {
     timestamp_ = new ::claros::common::core::ClarosDateTime(*from.timestamp_);
   } else {
@@ -173,6 +179,7 @@ void AuditEvent::SharedCtor() {
       &scc_info_AuditEvent_claros_5fcommon_5fcore_5fauditevent_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   userid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  details_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&timestamp_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&eventtype_) -
       reinterpret_cast<char*>(&timestamp_)) + sizeof(eventtype_));
@@ -186,6 +193,7 @@ AuditEvent::~AuditEvent() {
 void AuditEvent::SharedDtor() {
   id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   userid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  details_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete timestamp_;
 }
 
@@ -206,6 +214,7 @@ void AuditEvent::Clear() {
 
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   userid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  details_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == nullptr && timestamp_ != nullptr) {
     delete timestamp_;
   }
@@ -288,6 +297,22 @@ const char* AuditEvent::_InternalParse(const char* begin, const char* end, void*
         ptr += size;
         GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
             {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // string details = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.core.AuditEvent.details");
+        object = msg->mutable_details();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
         break;
       }
       default: {
@@ -393,6 +418,21 @@ bool AuditEvent::MergePartialFromCodedStream(
         break;
       }
 
+      // string details = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_details()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->details().data(), static_cast<int>(this->details().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.core.AuditEvent.details"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -458,6 +498,16 @@ void AuditEvent::SerializeWithCachedSizes(
       5, HasBitSetters::timestamp(this), output);
   }
 
+  // string details = 6;
+  if (this->details().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->details().data(), static_cast<int>(this->details().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.core.AuditEvent.details");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      6, this->details(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -512,6 +562,17 @@ void AuditEvent::SerializeWithCachedSizes(
         5, HasBitSetters::timestamp(this), target);
   }
 
+  // string details = 6;
+  if (this->details().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->details().data(), static_cast<int>(this->details().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.core.AuditEvent.details");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        6, this->details(), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -545,6 +606,13 @@ size_t AuditEvent::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->userid());
+  }
+
+  // string details = 6;
+  if (this->details().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->details());
   }
 
   // .claros.common.core.ClarosDateTime timeStamp = 5;
@@ -601,6 +669,10 @@ void AuditEvent::MergeFrom(const AuditEvent& from) {
 
     userid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.userid_);
   }
+  if (from.details().size() > 0) {
+
+    details_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.details_);
+  }
   if (from.has_timestamp()) {
     mutable_timestamp()->::claros::common::core::ClarosDateTime::MergeFrom(from.timestamp());
   }
@@ -640,6 +712,8 @@ void AuditEvent::InternalSwap(AuditEvent* other) {
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   userid_.Swap(&other->userid_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  details_.Swap(&other->details_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(timestamp_, other->timestamp_);
   swap(datasourcetype_, other->datasourcetype_);

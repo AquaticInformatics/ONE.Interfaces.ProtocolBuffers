@@ -97,6 +97,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "locationId" field.</summary>
     public const int LocationIdFieldNumber = 2;
     private string locationId_ = "";
+    /// <summary>
+    /// Where this spreadsheet is bound.  I.e. the PlantId
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string LocationId {
       get { return locationId_; }
@@ -123,6 +126,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Worksheet> _repeated_worksheet_codec
         = pb::FieldCodec.ForMessage(34, global::Claros.Operations.Spreadsheet.Worksheet.Parser);
     private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet> worksheet_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet>();
+    /// <summary>
+    /// definition and data for worksheets.  Data and definition will be split up within the worksheets
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet> Worksheet {
       get { return worksheet_; }

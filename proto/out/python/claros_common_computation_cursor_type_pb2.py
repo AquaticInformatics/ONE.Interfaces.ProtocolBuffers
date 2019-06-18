@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.computation',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n+claros_common_computation_cursor_type.proto\x12\x19\x63laros.common.computation*s\n\x15\x43omputationCursorType\x12\x0e\n\nCC_UNKNOWN\x10\x00\x12\x0e\n\nCC_CURRENT\x10\x01\x12\x0f\n\x0b\x43\x43_PREVIOUS\x10\x02\x12\x0b\n\x07\x43\x43_NEXT\x10\x04\x12\x0b\n\x07\x43\x43_LAST\x10\x05\x12\x0f\n\x0b\x43\x43_ABSOLUTE\x10\x06\x62\x06proto3')
+  serialized_pb=_b('\n+claros_common_computation_cursor_type.proto\x12\x19\x63laros.common.computation*\xd3\x01\n\x15\x43omputationCursorType\x12\x1e\n\x1a\x43OMPUTATION_CURSOR_UNKNOWN\x10\x00\x12\x1e\n\x1a\x43OMPUTATION_CURSOR_CURRENT\x10\x01\x12\x1f\n\x1b\x43OMPUTATION_CURSOR_PREVIOUS\x10\x02\x12\x1b\n\x17\x43OMPUTATION_CURSOR_NEXT\x10\x04\x12\x1b\n\x17\x43OMPUTATION_CURSOR_LAST\x10\x05\x12\x1f\n\x1b\x43OMPUTATION_CURSOR_ABSOLUTE\x10\x06\x62\x06proto3')
 )
 
 _COMPUTATIONCURSORTYPE = _descriptor.EnumDescriptor(
@@ -31,44 +31,44 @@ _COMPUTATIONCURSORTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='CC_UNKNOWN', index=0, number=0,
+      name='COMPUTATION_CURSOR_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CC_CURRENT', index=1, number=1,
+      name='COMPUTATION_CURSOR_CURRENT', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CC_PREVIOUS', index=2, number=2,
+      name='COMPUTATION_CURSOR_PREVIOUS', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CC_NEXT', index=3, number=4,
+      name='COMPUTATION_CURSOR_NEXT', index=3, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CC_LAST', index=4, number=5,
+      name='COMPUTATION_CURSOR_LAST', index=4, number=5,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CC_ABSOLUTE', index=5, number=6,
+      name='COMPUTATION_CURSOR_ABSOLUTE', index=5, number=6,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=74,
-  serialized_end=189,
+  serialized_start=75,
+  serialized_end=286,
 )
 _sym_db.RegisterEnumDescriptor(_COMPUTATIONCURSORTYPE)
 
 ComputationCursorType = enum_type_wrapper.EnumTypeWrapper(_COMPUTATIONCURSORTYPE)
-CC_UNKNOWN = 0
-CC_CURRENT = 1
-CC_PREVIOUS = 2
-CC_NEXT = 4
-CC_LAST = 5
-CC_ABSOLUTE = 6
+COMPUTATION_CURSOR_UNKNOWN = 0
+COMPUTATION_CURSOR_CURRENT = 1
+COMPUTATION_CURSOR_PREVIOUS = 2
+COMPUTATION_CURSOR_NEXT = 4
+COMPUTATION_CURSOR_LAST = 5
+COMPUTATION_CURSOR_ABSOLUTE = 6
 
 
 DESCRIPTOR.enum_types_by_name['ComputationCursorType'] = _COMPUTATIONCURSORTYPE

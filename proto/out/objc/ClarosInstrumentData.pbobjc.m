@@ -14,8 +14,8 @@
 #endif
 
 #import "ClarosInstrumentData.pbobjc.h"
-#import "ClarosInstrumentEvent.pbobjc.h"
-#import "ClarosInstrumentMeasurement.pbobjc.h"
+#import "ClarosInstrumentEventData.pbobjc.h"
+#import "ClarosInstrumentMeasurementData.pbobjc.h"
 #import "ClarosCommonCoreClarosdatetime.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
@@ -61,7 +61,7 @@ typedef struct InstrumentData__storage_ {
   uint32_t _has_storage_[1];
   NSString *tenantId;
   NSString *fusionId;
-  InstrumentEvent *events;
+  InstrumentEventData *events;
   NSMutableArray *measurementsArray;
   NSMutableDictionary *settings;
   NSMutableDictionary *states;
@@ -94,7 +94,7 @@ typedef struct InstrumentData__storage_ {
       },
       {
         .name = "events",
-        .dataTypeSpecific.className = GPBStringifySymbol(InstrumentEvent),
+        .dataTypeSpecific.className = GPBStringifySymbol(InstrumentEventData),
         .number = InstrumentData_FieldNumber_Events,
         .hasIndex = 2,
         .offset = (uint32_t)offsetof(InstrumentData__storage_, events),
@@ -103,7 +103,7 @@ typedef struct InstrumentData__storage_ {
       },
       {
         .name = "measurementsArray",
-        .dataTypeSpecific.className = GPBStringifySymbol(InstrumentMeasurement),
+        .dataTypeSpecific.className = GPBStringifySymbol(InstrumentMeasurementData),
         .number = InstrumentData_FieldNumber_MeasurementsArray,
         .hasIndex = GPBNoHasBit,
         .offset = (uint32_t)offsetof(InstrumentData__storage_, measurementsArray),

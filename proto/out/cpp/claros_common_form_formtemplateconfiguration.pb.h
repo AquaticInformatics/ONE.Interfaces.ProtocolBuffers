@@ -32,7 +32,7 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
 #include "claros_common_form_formtemplate_type.pb.h"
-#include "claros_common_core_recurrence.pb.h"
+#include "claros_common_recurrence_recurrence.pb.h"
 #include "claros_common_form_formlayout.pb.h"
 #include "claros_common_form_formfield_definition.pb.h"
 // @@protoc_insertion_point(includes)
@@ -179,14 +179,14 @@ class FormTemplateConfiguration :
   const ::google::protobuf::RepeatedPtrField< ::claros::common::form::FormFieldDefinition >&
       formfielddefinitions() const;
 
-  // .claros.common.core.Recurrence recurrence = 2;
+  // .claros.common.recurrence.Recurrence recurrence = 2;
   bool has_recurrence() const;
   void clear_recurrence();
   static const int kRecurrenceFieldNumber = 2;
-  const ::claros::common::core::Recurrence& recurrence() const;
-  ::claros::common::core::Recurrence* release_recurrence();
-  ::claros::common::core::Recurrence* mutable_recurrence();
-  void set_allocated_recurrence(::claros::common::core::Recurrence* recurrence);
+  const ::claros::common::recurrence::Recurrence& recurrence() const;
+  ::claros::common::recurrence::Recurrence* release_recurrence();
+  ::claros::common::recurrence::Recurrence* mutable_recurrence();
+  void set_allocated_recurrence(::claros::common::recurrence::Recurrence* recurrence);
 
   // .claros.common.form.FormLayout formLayout = 3;
   bool has_formlayout() const;
@@ -209,7 +209,7 @@ class FormTemplateConfiguration :
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::claros::common::form::FormFieldDefinition > formfielddefinitions_;
-  ::claros::common::core::Recurrence* recurrence_;
+  ::claros::common::recurrence::Recurrence* recurrence_;
   ::claros::common::form::FormLayout* formlayout_;
   int formtemplatetype_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -240,33 +240,33 @@ inline void FormTemplateConfiguration::set_formtemplatetype(::claros::common::fo
   // @@protoc_insertion_point(field_set:claros.common.form.FormTemplateConfiguration.formTemplateType)
 }
 
-// .claros.common.core.Recurrence recurrence = 2;
+// .claros.common.recurrence.Recurrence recurrence = 2;
 inline bool FormTemplateConfiguration::has_recurrence() const {
   return this != internal_default_instance() && recurrence_ != nullptr;
 }
-inline const ::claros::common::core::Recurrence& FormTemplateConfiguration::recurrence() const {
-  const ::claros::common::core::Recurrence* p = recurrence_;
+inline const ::claros::common::recurrence::Recurrence& FormTemplateConfiguration::recurrence() const {
+  const ::claros::common::recurrence::Recurrence* p = recurrence_;
   // @@protoc_insertion_point(field_get:claros.common.form.FormTemplateConfiguration.recurrence)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::Recurrence*>(
-      &::claros::common::core::_Recurrence_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::recurrence::Recurrence*>(
+      &::claros::common::recurrence::_Recurrence_default_instance_);
 }
-inline ::claros::common::core::Recurrence* FormTemplateConfiguration::release_recurrence() {
+inline ::claros::common::recurrence::Recurrence* FormTemplateConfiguration::release_recurrence() {
   // @@protoc_insertion_point(field_release:claros.common.form.FormTemplateConfiguration.recurrence)
   
-  ::claros::common::core::Recurrence* temp = recurrence_;
+  ::claros::common::recurrence::Recurrence* temp = recurrence_;
   recurrence_ = nullptr;
   return temp;
 }
-inline ::claros::common::core::Recurrence* FormTemplateConfiguration::mutable_recurrence() {
+inline ::claros::common::recurrence::Recurrence* FormTemplateConfiguration::mutable_recurrence() {
   
   if (recurrence_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::core::Recurrence>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::recurrence::Recurrence>(GetArenaNoVirtual());
     recurrence_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.common.form.FormTemplateConfiguration.recurrence)
   return recurrence_;
 }
-inline void FormTemplateConfiguration::set_allocated_recurrence(::claros::common::core::Recurrence* recurrence) {
+inline void FormTemplateConfiguration::set_allocated_recurrence(::claros::common::recurrence::Recurrence* recurrence) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(recurrence_);

@@ -12,47 +12,47 @@ use UnexpectedValueException;
 class DayOfWeek
 {
     /**
-     * Generated from protobuf enum <code>DOW_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_UNKNOWN = 0;</code>
      */
-    const DOW_UNKNOWN = 0;
+    const DAY_OF_WEEK_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>DOW_SUNDAY = 1;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_SUNDAY = 1;</code>
      */
-    const DOW_SUNDAY = 1;
+    const DAY_OF_WEEK_SUNDAY = 1;
     /**
-     * Generated from protobuf enum <code>DOW_MONDAY = 2;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_MONDAY = 2;</code>
      */
-    const DOW_MONDAY = 2;
+    const DAY_OF_WEEK_MONDAY = 2;
     /**
-     * Generated from protobuf enum <code>DOW_TUESDAY = 3;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_TUESDAY = 3;</code>
      */
-    const DOW_TUESDAY = 3;
+    const DAY_OF_WEEK_TUESDAY = 3;
     /**
-     * Generated from protobuf enum <code>DOW_WEDNESDAY = 4;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_WEDNESDAY = 4;</code>
      */
-    const DOW_WEDNESDAY = 4;
+    const DAY_OF_WEEK_WEDNESDAY = 4;
     /**
-     * Generated from protobuf enum <code>DOW_THURSDAY = 5;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_THURSDAY = 5;</code>
      */
-    const DOW_THURSDAY = 5;
+    const DAY_OF_WEEK_THURSDAY = 5;
     /**
-     * Generated from protobuf enum <code>DOW_FRIDAY = 6;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_FRIDAY = 6;</code>
      */
-    const DOW_FRIDAY = 6;
+    const DAY_OF_WEEK_FRIDAY = 6;
     /**
-     * Generated from protobuf enum <code>DOW_SATURDAY = 7;</code>
+     * Generated from protobuf enum <code>DAY_OF_WEEK_SATURDAY = 7;</code>
      */
-    const DOW_SATURDAY = 7;
+    const DAY_OF_WEEK_SATURDAY = 7;
 
     private static $valueToName = [
-        self::DOW_UNKNOWN => 'DOW_UNKNOWN',
-        self::DOW_SUNDAY => 'DOW_SUNDAY',
-        self::DOW_MONDAY => 'DOW_MONDAY',
-        self::DOW_TUESDAY => 'DOW_TUESDAY',
-        self::DOW_WEDNESDAY => 'DOW_WEDNESDAY',
-        self::DOW_THURSDAY => 'DOW_THURSDAY',
-        self::DOW_FRIDAY => 'DOW_FRIDAY',
-        self::DOW_SATURDAY => 'DOW_SATURDAY',
+        self::DAY_OF_WEEK_UNKNOWN => 'DAY_OF_WEEK_UNKNOWN',
+        self::DAY_OF_WEEK_SUNDAY => 'DAY_OF_WEEK_SUNDAY',
+        self::DAY_OF_WEEK_MONDAY => 'DAY_OF_WEEK_MONDAY',
+        self::DAY_OF_WEEK_TUESDAY => 'DAY_OF_WEEK_TUESDAY',
+        self::DAY_OF_WEEK_WEDNESDAY => 'DAY_OF_WEEK_WEDNESDAY',
+        self::DAY_OF_WEEK_THURSDAY => 'DAY_OF_WEEK_THURSDAY',
+        self::DAY_OF_WEEK_FRIDAY => 'DAY_OF_WEEK_FRIDAY',
+        self::DAY_OF_WEEK_SATURDAY => 'DAY_OF_WEEK_SATURDAY',
     ];
 
     public static function name($value)

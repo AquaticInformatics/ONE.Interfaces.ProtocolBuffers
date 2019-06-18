@@ -59,17 +59,17 @@ public final class ClarosCommonFormLedgercolumnformfield {
         getLowLimitBytes();
 
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
     boolean hasTimeWindow();
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.Recurrence getTimeWindow();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getTimeWindow();
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder();
 
     /**
      * <code>string parameter = 6;</code>
@@ -150,11 +150,11 @@ public final class ClarosCommonFormLedgercolumnformfield {
               break;
             }
             case 42: {
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder subBuilder = null;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder subBuilder = null;
               if (timeWindow_ != null) {
                 subBuilder = timeWindow_.toBuilder();
               }
-              timeWindow_ = input.readMessage(claros.common.core.ClarosCommonCoreRecurrence.Recurrence.parser(), extensionRegistry);
+              timeWindow_ = input.readMessage(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(timeWindow_);
                 timeWindow_ = subBuilder.buildPartial();
@@ -337,23 +337,23 @@ public final class ClarosCommonFormLedgercolumnformfield {
     }
 
     public static final int TIMEWINDOW_FIELD_NUMBER = 5;
-    private claros.common.core.ClarosCommonCoreRecurrence.Recurrence timeWindow_;
+    private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence timeWindow_;
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
     public boolean hasTimeWindow() {
       return timeWindow_ != null;
     }
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getTimeWindow() {
-      return timeWindow_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getTimeWindow() {
+      return timeWindow_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
     }
     /**
-     * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder() {
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder() {
       return getTimeWindow();
     }
 
@@ -1067,29 +1067,29 @@ public final class ClarosCommonFormLedgercolumnformfield {
         return this;
       }
 
-      private claros.common.core.ClarosCommonCoreRecurrence.Recurrence timeWindow_;
+      private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence timeWindow_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> timeWindowBuilder_;
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> timeWindowBuilder_;
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
       public boolean hasTimeWindow() {
         return timeWindowBuilder_ != null || timeWindow_ != null;
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getTimeWindow() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getTimeWindow() {
         if (timeWindowBuilder_ == null) {
-          return timeWindow_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
+          return timeWindow_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
         } else {
           return timeWindowBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
-      public Builder setTimeWindow(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder setTimeWindow(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (timeWindowBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1103,10 +1103,10 @@ public final class ClarosCommonFormLedgercolumnformfield {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
       public Builder setTimeWindow(
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder builderForValue) {
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder builderForValue) {
         if (timeWindowBuilder_ == null) {
           timeWindow_ = builderForValue.build();
           onChanged();
@@ -1117,13 +1117,13 @@ public final class ClarosCommonFormLedgercolumnformfield {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
-      public Builder mergeTimeWindow(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder mergeTimeWindow(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (timeWindowBuilder_ == null) {
           if (timeWindow_ != null) {
             timeWindow_ =
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.newBuilder(timeWindow_).mergeFrom(value).buildPartial();
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.newBuilder(timeWindow_).mergeFrom(value).buildPartial();
           } else {
             timeWindow_ = value;
           }
@@ -1135,7 +1135,7 @@ public final class ClarosCommonFormLedgercolumnformfield {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
       public Builder clearTimeWindow() {
         if (timeWindowBuilder_ == null) {
@@ -1149,33 +1149,33 @@ public final class ClarosCommonFormLedgercolumnformfield {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder getTimeWindowBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder getTimeWindowBuilder() {
         
         onChanged();
         return getTimeWindowFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getTimeWindowOrBuilder() {
         if (timeWindowBuilder_ != null) {
           return timeWindowBuilder_.getMessageOrBuilder();
         } else {
           return timeWindow_ == null ?
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : timeWindow_;
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+       * <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> 
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> 
           getTimeWindowFieldBuilder() {
         if (timeWindowBuilder_ == null) {
           timeWindowBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder>(
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder>(
                   getTimeWindow(),
                   getParentForChildren(),
                   isClean());
@@ -1320,13 +1320,13 @@ public final class ClarosCommonFormLedgercolumnformfield {
   static {
     java.lang.String[] descriptorData = {
       "\n.claros_common_form_ledgercolumnformfie" +
-      "ld.proto\022\022claros.common.form\032#claros_com" +
-      "mon_core_recurrence.proto\"\251\001\n\025LedgerColu" +
-      "mnFormField\022\030\n\020ledgerColumnGUID\030\001 \001(\t\022\014\n" +
-      "\004unit\030\002 \001(\t\022\017\n\007upLimit\030\003 \001(\t\022\020\n\010lowLimit" +
-      "\030\004 \001(\t\0222\n\ntimeWindow\030\005 \001(\0132\036.claros.comm" +
-      "on.core.Recurrence\022\021\n\tparameter\030\006 \001(\tb\006p" +
-      "roto3"
+      "ld.proto\022\022claros.common.form\032)claros_com" +
+      "mon_recurrence_recurrence.proto\"\257\001\n\025Ledg" +
+      "erColumnFormField\022\030\n\020ledgerColumnGUID\030\001 " +
+      "\001(\t\022\014\n\004unit\030\002 \001(\t\022\017\n\007upLimit\030\003 \001(\t\022\020\n\010lo" +
+      "wLimit\030\004 \001(\t\0228\n\ntimeWindow\030\005 \001(\0132$.claro" +
+      "s.common.recurrence.Recurrence\022\021\n\tparame" +
+      "ter\030\006 \001(\tb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1339,7 +1339,7 @@ public final class ClarosCommonFormLedgercolumnformfield {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          claros.common.core.ClarosCommonCoreRecurrence.getDescriptor(),
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor(),
         }, assigner);
     internal_static_claros_common_form_LedgerColumnFormField_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1347,7 +1347,7 @@ public final class ClarosCommonFormLedgercolumnformfield {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_form_LedgerColumnFormField_descriptor,
         new java.lang.String[] { "LedgerColumnGUID", "Unit", "UpLimit", "LowLimit", "TimeWindow", "Parameter", });
-    claros.common.core.ClarosCommonCoreRecurrence.getDescriptor();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

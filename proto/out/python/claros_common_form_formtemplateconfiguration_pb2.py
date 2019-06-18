@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 import claros_common_form_formtemplate_type_pb2 as claros__common__form__formtemplate__type__pb2
-import claros_common_core_recurrence_pb2 as claros__common__core__recurrence__pb2
+import claros_common_recurrence_recurrence_pb2 as claros__common__recurrence__recurrence__pb2
 import claros_common_form_formlayout_pb2 as claros__common__form__formlayout__pb2
 import claros_common_form_formfield_definition_pb2 as claros__common__form__formfield__definition__pb2
 
@@ -24,9 +24,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.form',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n2claros_common_form_formtemplateconfiguration.proto\x12\x12\x63laros.common.form\x1a*claros_common_form_formtemplate_type.proto\x1a#claros_common_core_recurrence.proto\x1a#claros_common_form_formlayout.proto\x1a-claros_common_form_formfield_definition.proto\"\x8a\x02\n\x19\x46ormTemplateConfiguration\x12>\n\x10\x66ormTemplateType\x18\x01 \x01(\x0e\x32$.claros.common.form.FormTemplateType\x12\x32\n\nrecurrence\x18\x02 \x01(\x0b\x32\x1e.claros.common.core.Recurrence\x12\x32\n\nformLayout\x18\x03 \x01(\x0b\x32\x1e.claros.common.form.FormLayout\x12\x45\n\x14\x66ormFieldDefinitions\x18\x04 \x03(\x0b\x32\'.claros.common.form.FormFieldDefinitionb\x06proto3')
+  serialized_pb=_b('\n2claros_common_form_formtemplateconfiguration.proto\x12\x12\x63laros.common.form\x1a*claros_common_form_formtemplate_type.proto\x1a)claros_common_recurrence_recurrence.proto\x1a#claros_common_form_formlayout.proto\x1a-claros_common_form_formfield_definition.proto\"\x90\x02\n\x19\x46ormTemplateConfiguration\x12>\n\x10\x66ormTemplateType\x18\x01 \x01(\x0e\x32$.claros.common.form.FormTemplateType\x12\x38\n\nrecurrence\x18\x02 \x01(\x0b\x32$.claros.common.recurrence.Recurrence\x12\x32\n\nformLayout\x18\x03 \x01(\x0b\x32\x1e.claros.common.form.FormLayout\x12\x45\n\x14\x66ormFieldDefinitions\x18\x04 \x03(\x0b\x32\'.claros.common.form.FormFieldDefinitionb\x06proto3')
   ,
-  dependencies=[claros__common__form__formtemplate__type__pb2.DESCRIPTOR,claros__common__core__recurrence__pb2.DESCRIPTOR,claros__common__form__formlayout__pb2.DESCRIPTOR,claros__common__form__formfield__definition__pb2.DESCRIPTOR,])
+  dependencies=[claros__common__form__formtemplate__type__pb2.DESCRIPTOR,claros__common__recurrence__recurrence__pb2.DESCRIPTOR,claros__common__form__formlayout__pb2.DESCRIPTOR,claros__common__form__formfield__definition__pb2.DESCRIPTOR,])
 
 
 
@@ -78,12 +78,12 @@ _FORMTEMPLATECONFIGURATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=240,
-  serialized_end=506,
+  serialized_start=246,
+  serialized_end=518,
 )
 
 _FORMTEMPLATECONFIGURATION.fields_by_name['formTemplateType'].enum_type = claros__common__form__formtemplate__type__pb2._FORMTEMPLATETYPE
-_FORMTEMPLATECONFIGURATION.fields_by_name['recurrence'].message_type = claros__common__core__recurrence__pb2._RECURRENCE
+_FORMTEMPLATECONFIGURATION.fields_by_name['recurrence'].message_type = claros__common__recurrence__recurrence__pb2._RECURRENCE
 _FORMTEMPLATECONFIGURATION.fields_by_name['formLayout'].message_type = claros__common__form__formlayout__pb2._FORMLAYOUT
 _FORMTEMPLATECONFIGURATION.fields_by_name['formFieldDefinitions'].message_type = claros__common__form__formfield__definition__pb2._FORMFIELDDEFINITION
 DESCRIPTOR.message_types_by_name['FormTemplateConfiguration'] = _FORMTEMPLATECONFIGURATION

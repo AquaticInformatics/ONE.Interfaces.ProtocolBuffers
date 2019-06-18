@@ -14,18 +14,26 @@ use Google\Protobuf\Internal\GPBUtil;
 class Note extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Unique GUID that identifies the note
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      */
     private $id = '';
     /**
+     * The UTC time when the note was taken
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     private $timeStamp = null;
     /**
+     * The GUID of the user who entered the note
+     *
      * Generated from protobuf field <code>string userId = 5;</code>
      */
     private $userId = '';
     /**
+     * The content of the note
+     *
      * Generated from protobuf field <code>string text = 6;</code>
      */
     private $text = '';
@@ -37,9 +45,13 @@ class Note extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $id
+     *           Unique GUID that identifies the note
      *     @type \Claros\Common\Core\ClarosDateTime $timeStamp
+     *           The UTC time when the note was taken
      *     @type string $userId
+     *           The GUID of the user who entered the note
      *     @type string $text
+     *           The content of the note
      * }
      */
     public function __construct($data = NULL) {
@@ -48,6 +60,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Unique GUID that identifies the note
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      * @return string
      */
@@ -57,6 +71,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Unique GUID that identifies the note
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      * @param string $var
      * @return $this
@@ -70,6 +86,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The UTC time when the note was taken
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      * @return \Claros\Common\Core\ClarosDateTime
      */
@@ -79,6 +97,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The UTC time when the note was taken
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
@@ -92,6 +112,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the user who entered the note
+     *
      * Generated from protobuf field <code>string userId = 5;</code>
      * @return string
      */
@@ -101,6 +123,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The GUID of the user who entered the note
+     *
      * Generated from protobuf field <code>string userId = 5;</code>
      * @param string $var
      * @return $this
@@ -114,6 +138,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The content of the note
+     *
      * Generated from protobuf field <code>string text = 6;</code>
      * @return string
      */
@@ -123,6 +149,8 @@ class Note extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The content of the note
+     *
      * Generated from protobuf field <code>string text = 6;</code>
      * @param string $var
      * @return $this

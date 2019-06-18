@@ -96,7 +96,7 @@ proto.claros.common.computation.Variable.toObject = function(includeInstance, ms
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
     description: jspb.Message.getFieldWithDefault(msg, 3, ""),
     quantitytypeid: jspb.Message.getFieldWithDefault(msg, 4, ""),
-    cursor: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    cursortype: jspb.Message.getFieldWithDefault(msg, 5, 0),
     cursorabsolute: jspb.Message.getFieldWithDefault(msg, 6, 0),
     propertyselector: jspb.Message.getFieldWithDefault(msg, 7, 0),
     suggestedparameterid: jspb.Message.getFieldWithDefault(msg, 8, 0),
@@ -157,7 +157,7 @@ proto.claros.common.computation.Variable.deserializeBinaryFromReader = function(
       break;
     case 5:
       var value = /** @type {!proto.claros.common.computation.ComputationCursorType} */ (reader.readEnum());
-      msg.setCursor(value);
+      msg.setCursortype(value);
       break;
     case 6:
       var value = /** @type {number} */ (reader.readUint32());
@@ -240,7 +240,7 @@ proto.claros.common.computation.Variable.serializeBinaryToWriter = function(mess
       f
     );
   }
-  f = message.getCursor();
+  f = message.getCursortype();
   if (f !== 0.0) {
     writer.writeEnum(
       5,
@@ -353,16 +353,16 @@ proto.claros.common.computation.Variable.prototype.setQuantitytypeid = function(
 
 
 /**
- * optional ComputationCursorType cursor = 5;
+ * optional ComputationCursorType cursorType = 5;
  * @return {!proto.claros.common.computation.ComputationCursorType}
  */
-proto.claros.common.computation.Variable.prototype.getCursor = function() {
+proto.claros.common.computation.Variable.prototype.getCursortype = function() {
   return /** @type {!proto.claros.common.computation.ComputationCursorType} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {!proto.claros.common.computation.ComputationCursorType} value */
-proto.claros.common.computation.Variable.prototype.setCursor = function(value) {
+proto.claros.common.computation.Variable.prototype.setCursortype = function(value) {
   jspb.Message.setProto3EnumField(this, 5, value);
 };
 

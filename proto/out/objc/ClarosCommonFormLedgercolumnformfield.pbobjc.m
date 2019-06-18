@@ -14,7 +14,7 @@
 #endif
 
 #import "ClarosCommonFormLedgercolumnformfield.pbobjc.h"
-#import "ClarosCommonCoreRecurrence.pbobjc.h"
+#import "ClarosCommonRecurrenceRecurrence.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
 #pragma clang diagnostic push

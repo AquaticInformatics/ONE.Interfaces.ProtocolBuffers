@@ -14,25 +14,41 @@ use Google\Protobuf\Internal\GPBUtil;
 class AuditEvent extends \Google\Protobuf\Internal\Message
 {
     /**
+     * A GUID that uniquely identifies the audit event
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      */
     private $id = '';
     /**
+     * The id of the user related to this audit event
+     *
      * Generated from protobuf field <code>string userId = 2;</code>
      */
     private $userId = '';
     /**
+     * What system generated the audit event
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      */
     private $dataSourceType = 0;
     /**
+     * The type of event
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEventType eventType = 4;</code>
      */
     private $eventType = 0;
     /**
+     * The time in which this event occurred
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     private $timeStamp = null;
+    /**
+     * Text details that can provide more clarification to the audit
+     *
+     * Generated from protobuf field <code>string details = 6;</code>
+     */
+    private $details = '';
 
     /**
      * Constructor.
@@ -41,10 +57,17 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $id
+     *           A GUID that uniquely identifies the audit event
      *     @type string $userId
+     *           The id of the user related to this audit event
      *     @type int $dataSourceType
+     *           What system generated the audit event
      *     @type int $eventType
+     *           The type of event
      *     @type \Claros\Common\Core\ClarosDateTime $timeStamp
+     *           The time in which this event occurred
+     *     @type string $details
+     *           Text details that can provide more clarification to the audit
      * }
      */
     public function __construct($data = NULL) {
@@ -53,6 +76,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A GUID that uniquely identifies the audit event
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      * @return string
      */
@@ -62,6 +87,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A GUID that uniquely identifies the audit event
+     *
      * Generated from protobuf field <code>string id = 1;</code>
      * @param string $var
      * @return $this
@@ -75,6 +102,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The id of the user related to this audit event
+     *
      * Generated from protobuf field <code>string userId = 2;</code>
      * @return string
      */
@@ -84,6 +113,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The id of the user related to this audit event
+     *
      * Generated from protobuf field <code>string userId = 2;</code>
      * @param string $var
      * @return $this
@@ -97,6 +128,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What system generated the audit event
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      * @return int
      */
@@ -106,6 +139,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What system generated the audit event
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      * @param int $var
      * @return $this
@@ -119,6 +154,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of event
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEventType eventType = 4;</code>
      * @return int
      */
@@ -128,6 +165,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of event
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEventType eventType = 4;</code>
      * @param int $var
      * @return $this
@@ -141,6 +180,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The time in which this event occurred
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      * @return \Claros\Common\Core\ClarosDateTime
      */
@@ -150,6 +191,8 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The time in which this event occurred
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
@@ -158,6 +201,32 @@ class AuditEvent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Claros\Common\Core\ClarosDateTime::class);
         $this->timeStamp = $var;
+
+        return $this;
+    }
+
+    /**
+     * Text details that can provide more clarification to the audit
+     *
+     * Generated from protobuf field <code>string details = 6;</code>
+     * @return string
+     */
+    public function getDetails()
+    {
+        return $this->details;
+    }
+
+    /**
+     * Text details that can provide more clarification to the audit
+     *
+     * Generated from protobuf field <code>string details = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDetails($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->details = $var;
 
         return $this;
     }

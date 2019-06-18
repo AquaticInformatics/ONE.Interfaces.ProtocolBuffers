@@ -34,8 +34,8 @@
 #include <google/protobuf/map_entry.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
-#include "claros_instrument_event.pb.h"
-#include "claros_instrument_measurement.pb.h"
+#include "claros_instrument_event_data.pb.h"
+#include "claros_instrument_measurement_data.pb.h"
 #include "claros_common_core_clarosdatetime.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
@@ -223,16 +223,16 @@ class InstrumentData :
 
   // accessors -------------------------------------------------------
 
-  // repeated .claros.instrument.InstrumentMeasurement measurements = 4;
+  // repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;
   int measurements_size() const;
   void clear_measurements();
   static const int kMeasurementsFieldNumber = 4;
-  ::claros::instrument::InstrumentMeasurement* mutable_measurements(int index);
-  ::google::protobuf::RepeatedPtrField< ::claros::instrument::InstrumentMeasurement >*
+  ::claros::instrument::measurement::InstrumentMeasurementData* mutable_measurements(int index);
+  ::google::protobuf::RepeatedPtrField< ::claros::instrument::measurement::InstrumentMeasurementData >*
       mutable_measurements();
-  const ::claros::instrument::InstrumentMeasurement& measurements(int index) const;
-  ::claros::instrument::InstrumentMeasurement* add_measurements();
-  const ::google::protobuf::RepeatedPtrField< ::claros::instrument::InstrumentMeasurement >&
+  const ::claros::instrument::measurement::InstrumentMeasurementData& measurements(int index) const;
+  ::claros::instrument::measurement::InstrumentMeasurementData* add_measurements();
+  const ::google::protobuf::RepeatedPtrField< ::claros::instrument::measurement::InstrumentMeasurementData >&
       measurements() const;
 
   // map<string, string> settings = 5;
@@ -281,14 +281,14 @@ class InstrumentData :
   ::std::string* release_fusionid();
   void set_allocated_fusionid(::std::string* fusionid);
 
-  // .claros.instrument.InstrumentEvent events = 3;
+  // .claros.instrument.event.InstrumentEventData events = 3;
   bool has_events() const;
   void clear_events();
   static const int kEventsFieldNumber = 3;
-  const ::claros::instrument::InstrumentEvent& events() const;
-  ::claros::instrument::InstrumentEvent* release_events();
-  ::claros::instrument::InstrumentEvent* mutable_events();
-  void set_allocated_events(::claros::instrument::InstrumentEvent* events);
+  const ::claros::instrument::event::InstrumentEventData& events() const;
+  ::claros::instrument::event::InstrumentEventData* release_events();
+  ::claros::instrument::event::InstrumentEventData* mutable_events();
+  void set_allocated_events(::claros::instrument::event::InstrumentEventData* events);
 
   // .claros.common.core.ClarosDateTime instrumentDataDateTime = 7;
   bool has_instrumentdatadatetime() const;
@@ -304,7 +304,7 @@ class InstrumentData :
   class HasBitSetters;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::claros::instrument::InstrumentMeasurement > measurements_;
+  ::google::protobuf::RepeatedPtrField< ::claros::instrument::measurement::InstrumentMeasurementData > measurements_;
   ::google::protobuf::internal::MapField<
       InstrumentData_SettingsEntry_DoNotUse,
       ::std::string, ::std::string,
@@ -319,7 +319,7 @@ class InstrumentData :
       0 > states_;
   ::google::protobuf::internal::ArenaStringPtr tenantid_;
   ::google::protobuf::internal::ArenaStringPtr fusionid_;
-  ::claros::instrument::InstrumentEvent* events_;
+  ::claros::instrument::event::InstrumentEventData* events_;
   ::claros::common::core::ClarosDateTime* instrumentdatadatetime_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_claros_5finstrument_5fdata_2eproto;
@@ -445,33 +445,33 @@ inline void InstrumentData::set_allocated_fusionid(::std::string* fusionid) {
   // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentData.fusionId)
 }
 
-// .claros.instrument.InstrumentEvent events = 3;
+// .claros.instrument.event.InstrumentEventData events = 3;
 inline bool InstrumentData::has_events() const {
   return this != internal_default_instance() && events_ != nullptr;
 }
-inline const ::claros::instrument::InstrumentEvent& InstrumentData::events() const {
-  const ::claros::instrument::InstrumentEvent* p = events_;
+inline const ::claros::instrument::event::InstrumentEventData& InstrumentData::events() const {
+  const ::claros::instrument::event::InstrumentEventData* p = events_;
   // @@protoc_insertion_point(field_get:claros.instrument.InstrumentData.events)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::instrument::InstrumentEvent*>(
-      &::claros::instrument::_InstrumentEvent_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::instrument::event::InstrumentEventData*>(
+      &::claros::instrument::event::_InstrumentEventData_default_instance_);
 }
-inline ::claros::instrument::InstrumentEvent* InstrumentData::release_events() {
+inline ::claros::instrument::event::InstrumentEventData* InstrumentData::release_events() {
   // @@protoc_insertion_point(field_release:claros.instrument.InstrumentData.events)
   
-  ::claros::instrument::InstrumentEvent* temp = events_;
+  ::claros::instrument::event::InstrumentEventData* temp = events_;
   events_ = nullptr;
   return temp;
 }
-inline ::claros::instrument::InstrumentEvent* InstrumentData::mutable_events() {
+inline ::claros::instrument::event::InstrumentEventData* InstrumentData::mutable_events() {
   
   if (events_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::instrument::InstrumentEvent>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::instrument::event::InstrumentEventData>(GetArenaNoVirtual());
     events_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentData.events)
   return events_;
 }
-inline void InstrumentData::set_allocated_events(::claros::instrument::InstrumentEvent* events) {
+inline void InstrumentData::set_allocated_events(::claros::instrument::event::InstrumentEventData* events) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(events_);
@@ -490,28 +490,28 @@ inline void InstrumentData::set_allocated_events(::claros::instrument::Instrumen
   // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentData.events)
 }
 
-// repeated .claros.instrument.InstrumentMeasurement measurements = 4;
+// repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;
 inline int InstrumentData::measurements_size() const {
   return measurements_.size();
 }
-inline ::claros::instrument::InstrumentMeasurement* InstrumentData::mutable_measurements(int index) {
+inline ::claros::instrument::measurement::InstrumentMeasurementData* InstrumentData::mutable_measurements(int index) {
   // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentData.measurements)
   return measurements_.Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField< ::claros::instrument::InstrumentMeasurement >*
+inline ::google::protobuf::RepeatedPtrField< ::claros::instrument::measurement::InstrumentMeasurementData >*
 InstrumentData::mutable_measurements() {
   // @@protoc_insertion_point(field_mutable_list:claros.instrument.InstrumentData.measurements)
   return &measurements_;
 }
-inline const ::claros::instrument::InstrumentMeasurement& InstrumentData::measurements(int index) const {
+inline const ::claros::instrument::measurement::InstrumentMeasurementData& InstrumentData::measurements(int index) const {
   // @@protoc_insertion_point(field_get:claros.instrument.InstrumentData.measurements)
   return measurements_.Get(index);
 }
-inline ::claros::instrument::InstrumentMeasurement* InstrumentData::add_measurements() {
+inline ::claros::instrument::measurement::InstrumentMeasurementData* InstrumentData::add_measurements() {
   // @@protoc_insertion_point(field_add:claros.instrument.InstrumentData.measurements)
   return measurements_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::claros::instrument::InstrumentMeasurement >&
+inline const ::google::protobuf::RepeatedPtrField< ::claros::instrument::measurement::InstrumentMeasurementData >&
 InstrumentData::measurements() const {
   // @@protoc_insertion_point(field_list:claros.instrument.InstrumentData.measurements)
   return measurements_;

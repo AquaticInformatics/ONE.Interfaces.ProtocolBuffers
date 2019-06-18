@@ -56,16 +56,16 @@ namespace common {
 namespace core {
 
 enum AggregateType {
-  A_UNKNOWN = 0,
-  A_MINIMUM = 1,
-  A_MAXIMUM = 2,
-  A_AVERAGE = 3,
+  AGGREGATE_UNKNOWN = 0,
+  AGGREGATE_MINIMUM = 1,
+  AGGREGATE_MAXIMUM = 2,
+  AGGREGATE_AVERAGE = 3,
   AggregateType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   AggregateType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool AggregateType_IsValid(int value);
-const AggregateType AggregateType_MIN = A_UNKNOWN;
-const AggregateType AggregateType_MAX = A_AVERAGE;
+const AggregateType AggregateType_MIN = AGGREGATE_UNKNOWN;
+const AggregateType AggregateType_MAX = AGGREGATE_AVERAGE;
 const int AggregateType_ARRAYSIZE = AggregateType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* AggregateType_descriptor();

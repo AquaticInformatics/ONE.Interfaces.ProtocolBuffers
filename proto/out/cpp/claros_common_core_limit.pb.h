@@ -32,7 +32,7 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
 #include "claros_common_core_limit_type.pb.h"
-#include "claros_common_core_recurrence.pb.h"
+#include "claros_common_recurrence_recurrence.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5flimit_2eproto
@@ -179,14 +179,14 @@ class Limit :
   ::std::string* release_i18nkey();
   void set_allocated_i18nkey(::std::string* i18nkey);
 
-  // .claros.common.core.Recurrence recurrence = 5;
+  // .claros.common.recurrence.Recurrence recurrence = 5;
   bool has_recurrence() const;
   void clear_recurrence();
   static const int kRecurrenceFieldNumber = 5;
-  const ::claros::common::core::Recurrence& recurrence() const;
-  ::claros::common::core::Recurrence* release_recurrence();
-  ::claros::common::core::Recurrence* mutable_recurrence();
-  void set_allocated_recurrence(::claros::common::core::Recurrence* recurrence);
+  const ::claros::common::recurrence::Recurrence& recurrence() const;
+  ::claros::common::recurrence::Recurrence* release_recurrence();
+  ::claros::common::recurrence::Recurrence* mutable_recurrence();
+  void set_allocated_recurrence(::claros::common::recurrence::Recurrence* recurrence);
 
   // double value = 3;
   void clear_value();
@@ -212,7 +212,7 @@ class Limit :
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr i18nkey_;
-  ::claros::common::core::Recurrence* recurrence_;
+  ::claros::common::recurrence::Recurrence* recurrence_;
   double value_;
   int limittype_;
   ::google::protobuf::uint32 unitid_;
@@ -325,33 +325,33 @@ inline void Limit::set_unitid(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:claros.common.core.Limit.unitId)
 }
 
-// .claros.common.core.Recurrence recurrence = 5;
+// .claros.common.recurrence.Recurrence recurrence = 5;
 inline bool Limit::has_recurrence() const {
   return this != internal_default_instance() && recurrence_ != nullptr;
 }
-inline const ::claros::common::core::Recurrence& Limit::recurrence() const {
-  const ::claros::common::core::Recurrence* p = recurrence_;
+inline const ::claros::common::recurrence::Recurrence& Limit::recurrence() const {
+  const ::claros::common::recurrence::Recurrence* p = recurrence_;
   // @@protoc_insertion_point(field_get:claros.common.core.Limit.recurrence)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::Recurrence*>(
-      &::claros::common::core::_Recurrence_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::recurrence::Recurrence*>(
+      &::claros::common::recurrence::_Recurrence_default_instance_);
 }
-inline ::claros::common::core::Recurrence* Limit::release_recurrence() {
+inline ::claros::common::recurrence::Recurrence* Limit::release_recurrence() {
   // @@protoc_insertion_point(field_release:claros.common.core.Limit.recurrence)
   
-  ::claros::common::core::Recurrence* temp = recurrence_;
+  ::claros::common::recurrence::Recurrence* temp = recurrence_;
   recurrence_ = nullptr;
   return temp;
 }
-inline ::claros::common::core::Recurrence* Limit::mutable_recurrence() {
+inline ::claros::common::recurrence::Recurrence* Limit::mutable_recurrence() {
   
   if (recurrence_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::core::Recurrence>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::recurrence::Recurrence>(GetArenaNoVirtual());
     recurrence_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.common.core.Limit.recurrence)
   return recurrence_;
 }
-inline void Limit::set_allocated_recurrence(::claros::common::core::Recurrence* recurrence) {
+inline void Limit::set_allocated_recurrence(::claros::common::recurrence::Recurrence* recurrence) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(recurrence_);

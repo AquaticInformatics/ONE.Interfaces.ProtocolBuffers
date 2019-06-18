@@ -20,64 +20,112 @@ public final class ClarosCommonCoreReportablequalifierType {
   public enum ReportableQualifierType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RQ_UNKNOWN = 0;</code>
+     * <code>REPORTABLE_QUALIFIER_UNKNOWN = 0;</code>
      */
-    RQ_UNKNOWN(0),
+    REPORTABLE_QUALIFIER_UNKNOWN(0),
     /**
-     * <code>RQ_NONDETECT = 1;</code>
+     * <pre>
+     * Non-Detect. Most states now require the &lt; detection limit and this should no longer be used
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_NONDETECT = 1;</code>
      */
-    RQ_NONDETECT(1),
+    REPORTABLE_QUALIFIER_NONDETECT(1),
     /**
-     * <code>RQ_ESTIMATE = 2;</code>
+     * <pre>
+     * Estimated.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_ESTIMATE = 2;</code>
      */
-    RQ_ESTIMATE(2),
+    REPORTABLE_QUALIFIER_ESTIMATE(2),
     /**
-     * <code>RQ_DETECTNONQUALIFIABLE = 3;</code>
+     * <pre>
+     * Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3;</code>
      */
-    RQ_DETECTNONQUALIFIABLE(3),
+    REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE(3),
     /**
-     * <code>RQ_GREATERTHAN = 4;</code>
+     * <pre>
+     * Result is greater than xxxx. Used instead of TNTC.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_GREATERTHAN = 4;</code>
      */
-    RQ_GREATERTHAN(4),
+    REPORTABLE_QUALIFIER_GREATERTHAN(4),
     /**
-     * <code>RQ_LESSTHAN = 5;</code>
+     * <pre>
+     * Result was below the detection limit of YYYY.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_LESSTHAN = 5;</code>
      */
-    RQ_LESSTHAN(5),
+    REPORTABLE_QUALIFIER_LESSTHAN(5),
     /**
-     * <code>RQ_TOO_NUMEROUS_TO_COUNT = 6;</code>
+     * <pre>
+     * Too many colonies were present (TNTC); the numeric value represents the filtration volume.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;</code>
      */
-    RQ_TOO_NUMEROUS_TO_COUNT(6),
+    REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RQ_UNKNOWN = 0;</code>
+     * <code>REPORTABLE_QUALIFIER_UNKNOWN = 0;</code>
      */
-    public static final int RQ_UNKNOWN_VALUE = 0;
+    public static final int REPORTABLE_QUALIFIER_UNKNOWN_VALUE = 0;
     /**
-     * <code>RQ_NONDETECT = 1;</code>
+     * <pre>
+     * Non-Detect. Most states now require the &lt; detection limit and this should no longer be used
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_NONDETECT = 1;</code>
      */
-    public static final int RQ_NONDETECT_VALUE = 1;
+    public static final int REPORTABLE_QUALIFIER_NONDETECT_VALUE = 1;
     /**
-     * <code>RQ_ESTIMATE = 2;</code>
+     * <pre>
+     * Estimated.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_ESTIMATE = 2;</code>
      */
-    public static final int RQ_ESTIMATE_VALUE = 2;
+    public static final int REPORTABLE_QUALIFIER_ESTIMATE_VALUE = 2;
     /**
-     * <code>RQ_DETECTNONQUALIFIABLE = 3;</code>
+     * <pre>
+     * Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3;</code>
      */
-    public static final int RQ_DETECTNONQUALIFIABLE_VALUE = 3;
+    public static final int REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE_VALUE = 3;
     /**
-     * <code>RQ_GREATERTHAN = 4;</code>
+     * <pre>
+     * Result is greater than xxxx. Used instead of TNTC.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_GREATERTHAN = 4;</code>
      */
-    public static final int RQ_GREATERTHAN_VALUE = 4;
+    public static final int REPORTABLE_QUALIFIER_GREATERTHAN_VALUE = 4;
     /**
-     * <code>RQ_LESSTHAN = 5;</code>
+     * <pre>
+     * Result was below the detection limit of YYYY.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_LESSTHAN = 5;</code>
      */
-    public static final int RQ_LESSTHAN_VALUE = 5;
+    public static final int REPORTABLE_QUALIFIER_LESSTHAN_VALUE = 5;
     /**
-     * <code>RQ_TOO_NUMEROUS_TO_COUNT = 6;</code>
+     * <pre>
+     * Too many colonies were present (TNTC); the numeric value represents the filtration volume.
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;</code>
      */
-    public static final int RQ_TOO_NUMEROUS_TO_COUNT_VALUE = 6;
+    public static final int REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT_VALUE = 6;
 
 
     public final int getNumber() {
@@ -98,13 +146,13 @@ public final class ClarosCommonCoreReportablequalifierType {
 
     public static ReportableQualifierType forNumber(int value) {
       switch (value) {
-        case 0: return RQ_UNKNOWN;
-        case 1: return RQ_NONDETECT;
-        case 2: return RQ_ESTIMATE;
-        case 3: return RQ_DETECTNONQUALIFIABLE;
-        case 4: return RQ_GREATERTHAN;
-        case 5: return RQ_LESSTHAN;
-        case 6: return RQ_TOO_NUMEROUS_TO_COUNT;
+        case 0: return REPORTABLE_QUALIFIER_UNKNOWN;
+        case 1: return REPORTABLE_QUALIFIER_NONDETECT;
+        case 2: return REPORTABLE_QUALIFIER_ESTIMATE;
+        case 3: return REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE;
+        case 4: return REPORTABLE_QUALIFIER_GREATERTHAN;
+        case 5: return REPORTABLE_QUALIFIER_LESSTHAN;
+        case 6: return REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT;
         default: return null;
       }
     }
@@ -167,12 +215,15 @@ public final class ClarosCommonCoreReportablequalifierType {
   static {
     java.lang.String[] descriptorData = {
       "\n1claros_common_core_reportablequalifier" +
-      "_type.proto\022\022claros.common.core*\254\001\n\027Repo" +
-      "rtableQualifierType\022\016\n\nRQ_UNKNOWN\020\000\022\020\n\014R" +
-      "Q_NONDETECT\020\001\022\017\n\013RQ_ESTIMATE\020\002\022\033\n\027RQ_DET" +
-      "ECTNONQUALIFIABLE\020\003\022\022\n\016RQ_GREATERTHAN\020\004\022" +
-      "\017\n\013RQ_LESSTHAN\020\005\022\034\n\030RQ_TOO_NUMEROUS_TO_C" +
-      "OUNT\020\006b\006proto3"
+      "_type.proto\022\022claros.common.core*\252\002\n\027Repo" +
+      "rtableQualifierType\022 \n\034REPORTABLE_QUALIF" +
+      "IER_UNKNOWN\020\000\022\"\n\036REPORTABLE_QUALIFIER_NO" +
+      "NDETECT\020\001\022!\n\035REPORTABLE_QUALIFIER_ESTIMA" +
+      "TE\020\002\022-\n)REPORTABLE_QUALIFIER_DETECTNONQU" +
+      "ALIFIABLE\020\003\022$\n REPORTABLE_QUALIFIER_GREA" +
+      "TERTHAN\020\004\022!\n\035REPORTABLE_QUALIFIER_LESSTH" +
+      "AN\020\005\022.\n*REPORTABLE_QUALIFIER_TOO_NUMEROU" +
+      "S_TO_COUNT\020\006b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -60,7 +60,7 @@ const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5fcomputation_5fvar
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, name_),
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, description_),
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, quantitytypeid_),
-  PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, cursor_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, cursortype_),
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, cursorabsolute_),
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, propertyselector_),
   PROTOBUF_FIELD_OFFSET(::claros::common::computation::Variable, suggestedparameterid_),
@@ -88,21 +88,21 @@ const char descriptor_table_protodef_claros_5fcommon_5fcomputation_5fvariable_2e
   "to\022\031claros.common.computation\032+claros_co"
   "mmon_computation_cursor_type.proto\0325clar"
   "os_common_computation_propertyselector_t"
-  "ype.proto\"\350\002\n\010Variable\022\017\n\007i18nKey\030\001 \001(\t\022"
+  "ype.proto\"\354\002\n\010Variable\022\017\n\007i18nKey\030\001 \001(\t\022"
   "\014\n\004name\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\026\n\016qu"
-  "antityTypeId\030\004 \001(\t\022@\n\006cursor\030\005 \001(\01620.cla"
-  "ros.common.computation.ComputationCursor"
-  "Type\022\026\n\016cursorAbsolute\030\006 \001(\r\022I\n\020property"
-  "Selector\030\007 \001(\0162/.claros.common.computati"
-  "on.PropertySelectorType\022\034\n\024suggestedPara"
-  "meterId\030\010 \001(\r\022\027\n\017suggestedUnitId\030\t \001(\r\022\022"
-  "\n\010columnId\030\n \001(\rH\000\022\025\n\013formFieldId\030\013 \001(\rH"
-  "\000B\t\n\007bindingb\006proto3"
+  "antityTypeId\030\004 \001(\t\022D\n\ncursorType\030\005 \001(\01620"
+  ".claros.common.computation.ComputationCu"
+  "rsorType\022\026\n\016cursorAbsolute\030\006 \001(\r\022I\n\020prop"
+  "ertySelector\030\007 \001(\0162/.claros.common.compu"
+  "tation.PropertySelectorType\022\034\n\024suggested"
+  "ParameterId\030\010 \001(\r\022\027\n\017suggestedUnitId\030\t \001"
+  "(\r\022\022\n\010columnId\030\n \001(\rH\000\022\025\n\013formFieldId\030\013 "
+  "\001(\rH\000B\t\n\007bindingb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcomputation_5fvariable_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcomputation_5fvariable_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcomputation_5fvariable_2eproto,
-  "claros_common_computation_variable.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fvariable_2eproto, 540,
+  "claros_common_computation_variable.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fvariable_2eproto, 544,
 };
 
 void AddDescriptors_claros_5fcommon_5fcomputation_5fvariable_2eproto() {
@@ -135,7 +135,7 @@ const int Variable::kI18NKeyFieldNumber;
 const int Variable::kNameFieldNumber;
 const int Variable::kDescriptionFieldNumber;
 const int Variable::kQuantityTypeIdFieldNumber;
-const int Variable::kCursorFieldNumber;
+const int Variable::kCursorTypeFieldNumber;
 const int Variable::kCursorAbsoluteFieldNumber;
 const int Variable::kPropertySelectorFieldNumber;
 const int Variable::kSuggestedParameterIdFieldNumber;
@@ -169,9 +169,9 @@ Variable::Variable(const Variable& from)
   if (from.quantitytypeid().size() > 0) {
     quantitytypeid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.quantitytypeid_);
   }
-  ::memcpy(&cursor_, &from.cursor_,
+  ::memcpy(&cursortype_, &from.cursortype_,
     static_cast<size_t>(reinterpret_cast<char*>(&suggestedunitid_) -
-    reinterpret_cast<char*>(&cursor_)) + sizeof(suggestedunitid_));
+    reinterpret_cast<char*>(&cursortype_)) + sizeof(suggestedunitid_));
   clear_has_binding();
   switch (from.binding_case()) {
     case kColumnId: {
@@ -196,9 +196,9 @@ void Variable::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   quantitytypeid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&cursor_, 0, static_cast<size_t>(
+  ::memset(&cursortype_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&suggestedunitid_) -
-      reinterpret_cast<char*>(&cursor_)) + sizeof(suggestedunitid_));
+      reinterpret_cast<char*>(&cursortype_)) + sizeof(suggestedunitid_));
   clear_has_binding();
 }
 
@@ -255,9 +255,9 @@ void Variable::Clear() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   quantitytypeid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&cursor_, 0, static_cast<size_t>(
+  ::memset(&cursortype_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&suggestedunitid_) -
-      reinterpret_cast<char*>(&cursor_)) + sizeof(suggestedunitid_));
+      reinterpret_cast<char*>(&cursortype_)) + sizeof(suggestedunitid_));
   clear_binding();
   _internal_metadata_.Clear();
 }
@@ -339,11 +339,11 @@ const char* Variable::_InternalParse(const char* begin, const char* end, void* o
         ptr += size;
         break;
       }
-      // .claros.common.computation.ComputationCursorType cursor = 5;
+      // .claros.common.computation.ComputationCursorType cursorType = 5;
       case 5: {
         if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
         ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
-        msg->set_cursor(static_cast<::claros::common::computation::ComputationCursorType>(val));
+        msg->set_cursortype(static_cast<::claros::common::computation::ComputationCursorType>(val));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -484,14 +484,14 @@ bool Variable::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.computation.ComputationCursorType cursor = 5;
+      // .claros.common.computation.ComputationCursorType cursorType = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
           int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          set_cursor(static_cast< ::claros::common::computation::ComputationCursorType >(value));
+          set_cursortype(static_cast< ::claros::common::computation::ComputationCursorType >(value));
         } else {
           goto handle_unusual;
         }
@@ -646,10 +646,10 @@ void Variable::SerializeWithCachedSizes(
       4, this->quantitytypeid(), output);
   }
 
-  // .claros.common.computation.ComputationCursorType cursor = 5;
-  if (this->cursor() != 0) {
+  // .claros.common.computation.ComputationCursorType cursorType = 5;
+  if (this->cursortype() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->cursor(), output);
+      5, this->cursortype(), output);
   }
 
   // uint32 cursorAbsolute = 6;
@@ -740,10 +740,10 @@ void Variable::SerializeWithCachedSizes(
         4, this->quantitytypeid(), target);
   }
 
-  // .claros.common.computation.ComputationCursorType cursor = 5;
-  if (this->cursor() != 0) {
+  // .claros.common.computation.ComputationCursorType cursorType = 5;
+  if (this->cursortype() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->cursor(), target);
+      5, this->cursortype(), target);
   }
 
   // uint32 cursorAbsolute = 6;
@@ -826,10 +826,10 @@ size_t Variable::ByteSizeLong() const {
         this->quantitytypeid());
   }
 
-  // .claros.common.computation.ComputationCursorType cursor = 5;
-  if (this->cursor() != 0) {
+  // .claros.common.computation.ComputationCursorType cursorType = 5;
+  if (this->cursortype() != 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->cursor());
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->cursortype());
   }
 
   // uint32 cursorAbsolute = 6;
@@ -921,8 +921,8 @@ void Variable::MergeFrom(const Variable& from) {
 
     quantitytypeid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.quantitytypeid_);
   }
-  if (from.cursor() != 0) {
-    set_cursor(from.cursor());
+  if (from.cursortype() != 0) {
+    set_cursortype(from.cursortype());
   }
   if (from.cursorabsolute() != 0) {
     set_cursorabsolute(from.cursorabsolute());
@@ -984,7 +984,7 @@ void Variable::InternalSwap(Variable* other) {
     GetArenaNoVirtual());
   quantitytypeid_.Swap(&other->quantitytypeid_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(cursor_, other->cursor_);
+  swap(cursortype_, other->cursortype_);
   swap(cursorabsolute_, other->cursorabsolute_);
   swap(propertyselector_, other->propertyselector_);
   swap(suggestedparameterid_, other->suggestedparameterid_);

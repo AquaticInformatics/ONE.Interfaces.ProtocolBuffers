@@ -26,7 +26,7 @@ namespace spreadsheet {
 class ColumnDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Column> _instance;
-  const ::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
+  const ::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
   const ::claros::common::computation::ComputationBinding* computationbinding_;
 } _Column_default_instance_;
 }  // namespace spreadsheet
@@ -100,25 +100,25 @@ const char descriptor_table_protodef_claros_5foperations_5fspreadsheet_5fworkshe
   "+claros_instrument_measurement_binding.p"
   "roto\032\'claros_common_computation_binding."
   "proto\0326claros_common_core_reportablequal"
-  "ifierdefinition.proto\"\204\004\n\006Column\022\024\n\014colu"
+  "ifierdefinition.proto\"\220\004\n\006Column\022\024\n\014colu"
   "mnNumber\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\023\n\013descript"
   "ion\030\003 \001(\t\022\023\n\013parameterId\030\004 \001(\r\022\025\n\rdispla"
   "yUnitId\030\005 \001(\r\022\022\n\nlocationId\030\006 \001(\t\022\020\n\010isA"
   "ctive\030\007 \001(\010\022)\n\006limits\030\010 \003(\0132\031.claros.com"
   "mon.core.Limit\022:\n\016dataSourceType\030\t \001(\0162\""
-  ".claros.common.core.DataSourceType\022W\n\034in"
-  "strumentMeasurementBinding\030\n \001(\0132/.claro"
-  "s.instrument.InstrumentMeasurementBindin"
-  "gH\000\022K\n\022computationBinding\030\013 \001(\0132-.claros"
-  ".common.computation.ComputationBindingH\000"
-  "\022W\n\034reportableQualiferDefinition\030\014 \003(\01321"
-  ".claros.common.core.ReportableQualifierD"
-  "efinitionB\t\n\007bindingb\006proto3"
+  ".claros.common.core.DataSourceType\022c\n\034in"
+  "strumentMeasurementBinding\030\n \001(\0132;.claro"
+  "s.instrument.measurement.InstrumentMeasu"
+  "rementBindingH\000\022K\n\022computationBinding\030\013 "
+  "\001(\0132-.claros.common.computation.Computat"
+  "ionBindingH\000\022W\n\034reportableQualiferDefini"
+  "tion\030\014 \003(\01321.claros.common.core.Reportab"
+  "leQualifierDefinitionB\t\n\007bindingb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto = {
   false, InitDefaults_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto, 
   descriptor_table_protodef_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto,
-  "claros_operations_spreadsheet_worksheet_column.proto", &assign_descriptors_table_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto, 828,
+  "claros_operations_spreadsheet_worksheet_column.proto", &assign_descriptors_table_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto, 840,
 };
 
 void AddDescriptors_claros_5foperations_5fspreadsheet_5fworksheet_5fcolumn_2eproto() {
@@ -142,18 +142,18 @@ namespace spreadsheet {
 // ===================================================================
 
 void Column::InitAsDefaultInstance() {
-  ::claros::operations::spreadsheet::_Column_default_instance_.instrumentmeasurementbinding_ = const_cast< ::claros::instrument::InstrumentMeasurementBinding*>(
-      ::claros::instrument::InstrumentMeasurementBinding::internal_default_instance());
+  ::claros::operations::spreadsheet::_Column_default_instance_.instrumentmeasurementbinding_ = const_cast< ::claros::instrument::measurement::InstrumentMeasurementBinding*>(
+      ::claros::instrument::measurement::InstrumentMeasurementBinding::internal_default_instance());
   ::claros::operations::spreadsheet::_Column_default_instance_.computationbinding_ = const_cast< ::claros::common::computation::ComputationBinding*>(
       ::claros::common::computation::ComputationBinding::internal_default_instance());
 }
 class Column::HasBitSetters {
  public:
-  static const ::claros::instrument::InstrumentMeasurementBinding& instrumentmeasurementbinding(const Column* msg);
+  static const ::claros::instrument::measurement::InstrumentMeasurementBinding& instrumentmeasurementbinding(const Column* msg);
   static const ::claros::common::computation::ComputationBinding& computationbinding(const Column* msg);
 };
 
-const ::claros::instrument::InstrumentMeasurementBinding&
+const ::claros::instrument::measurement::InstrumentMeasurementBinding&
 Column::HasBitSetters::instrumentmeasurementbinding(const Column* msg) {
   return *msg->binding_.instrumentmeasurementbinding_;
 }
@@ -164,7 +164,7 @@ Column::HasBitSetters::computationbinding(const Column* msg) {
 void Column::clear_limits() {
   limits_.Clear();
 }
-void Column::set_allocated_instrumentmeasurementbinding(::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding) {
+void Column::set_allocated_instrumentmeasurementbinding(::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   clear_binding();
   if (instrumentmeasurementbinding) {
@@ -251,7 +251,7 @@ Column::Column(const Column& from)
   clear_has_binding();
   switch (from.binding_case()) {
     case kInstrumentMeasurementBinding: {
-      mutable_instrumentmeasurementbinding()->::claros::instrument::InstrumentMeasurementBinding::MergeFrom(from.instrumentmeasurementbinding());
+      mutable_instrumentmeasurementbinding()->::claros::instrument::measurement::InstrumentMeasurementBinding::MergeFrom(from.instrumentmeasurementbinding());
       break;
     }
     case kComputationBinding: {
@@ -450,12 +450,12 @@ const char* Column::_InternalParse(const char* begin, const char* end, void* obj
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+      // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
       case 10: {
         if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::instrument::InstrumentMeasurementBinding::_InternalParse;
+        parser_till_end = ::claros::instrument::measurement::InstrumentMeasurementBinding::_InternalParse;
         object = msg->mutable_instrumentmeasurementbinding();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -648,7 +648,7 @@ bool Column::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+      // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
       case 10: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -773,7 +773,7 @@ void Column::SerializeWithCachedSizes(
       9, this->datasourcetype(), output);
   }
 
-  // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+  // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
   if (has_instrumentmeasurementbinding()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       10, HasBitSetters::instrumentmeasurementbinding(this), output);
@@ -874,7 +874,7 @@ void Column::SerializeWithCachedSizes(
       9, this->datasourcetype(), target);
   }
 
-  // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+  // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
   if (has_instrumentmeasurementbinding()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -993,7 +993,7 @@ size_t Column::ByteSizeLong() const {
   }
 
   switch (binding_case()) {
-    // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+    // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
     case kInstrumentMeasurementBinding: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -1069,7 +1069,7 @@ void Column::MergeFrom(const Column& from) {
   }
   switch (from.binding_case()) {
     case kInstrumentMeasurementBinding: {
-      mutable_instrumentmeasurementbinding()->::claros::instrument::InstrumentMeasurementBinding::MergeFrom(from.instrumentmeasurementbinding());
+      mutable_instrumentmeasurementbinding()->::claros::instrument::measurement::InstrumentMeasurementBinding::MergeFrom(from.instrumentmeasurementbinding());
       break;
     }
     case kComputationBinding: {

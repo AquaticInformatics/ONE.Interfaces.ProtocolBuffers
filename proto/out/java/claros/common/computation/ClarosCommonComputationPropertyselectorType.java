@@ -15,53 +15,57 @@ public final class ClarosCommonComputationPropertyselectorType {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * What attribute of the row or cell is included in the expression
+   * </pre>
+   *
    * Protobuf enum {@code claros.common.computation.PropertySelectorType}
    */
   public enum PropertySelectorType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>PS_UNKNOWN = 0;</code>
+     * <code>PROPERTY_SELECTOR_UNKNOWN = 0;</code>
      */
-    PS_UNKNOWN(0),
+    PROPERTY_SELECTOR_UNKNOWN(0),
     /**
-     * <code>PS_MEASUREMENTTIME = 1;</code>
+     * <code>PROPERTY_SELECTOR_MEASUREMENTTIME = 1;</code>
      */
-    PS_MEASUREMENTTIME(1),
+    PROPERTY_SELECTOR_MEASUREMENTTIME(1),
     /**
-     * <code>PS_BEGINLINETIME = 2;</code>
+     * <code>PROPERTY_SELECTOR_BEGINLINETIME = 2;</code>
      */
-    PS_BEGINLINETIME(2),
+    PROPERTY_SELECTOR_BEGINLINETIME(2),
     /**
-     * <code>PS_ENDLINETIME = 3;</code>
+     * <code>PROPERTY_SELECTOR_ENDLINETIME = 3;</code>
      */
-    PS_ENDLINETIME(3),
+    PROPERTY_SELECTOR_ENDLINETIME(3),
     /**
-     * <code>PS_MEASURMENTVALUE = 4;</code>
+     * <code>PROPERTY_SELECTOR_MEASURMENTVALUE = 4;</code>
      */
-    PS_MEASURMENTVALUE(4),
+    PROPERTY_SELECTOR_MEASURMENTVALUE(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>PS_UNKNOWN = 0;</code>
+     * <code>PROPERTY_SELECTOR_UNKNOWN = 0;</code>
      */
-    public static final int PS_UNKNOWN_VALUE = 0;
+    public static final int PROPERTY_SELECTOR_UNKNOWN_VALUE = 0;
     /**
-     * <code>PS_MEASUREMENTTIME = 1;</code>
+     * <code>PROPERTY_SELECTOR_MEASUREMENTTIME = 1;</code>
      */
-    public static final int PS_MEASUREMENTTIME_VALUE = 1;
+    public static final int PROPERTY_SELECTOR_MEASUREMENTTIME_VALUE = 1;
     /**
-     * <code>PS_BEGINLINETIME = 2;</code>
+     * <code>PROPERTY_SELECTOR_BEGINLINETIME = 2;</code>
      */
-    public static final int PS_BEGINLINETIME_VALUE = 2;
+    public static final int PROPERTY_SELECTOR_BEGINLINETIME_VALUE = 2;
     /**
-     * <code>PS_ENDLINETIME = 3;</code>
+     * <code>PROPERTY_SELECTOR_ENDLINETIME = 3;</code>
      */
-    public static final int PS_ENDLINETIME_VALUE = 3;
+    public static final int PROPERTY_SELECTOR_ENDLINETIME_VALUE = 3;
     /**
-     * <code>PS_MEASURMENTVALUE = 4;</code>
+     * <code>PROPERTY_SELECTOR_MEASURMENTVALUE = 4;</code>
      */
-    public static final int PS_MEASURMENTVALUE_VALUE = 4;
+    public static final int PROPERTY_SELECTOR_MEASURMENTVALUE_VALUE = 4;
 
 
     public final int getNumber() {
@@ -82,11 +86,11 @@ public final class ClarosCommonComputationPropertyselectorType {
 
     public static PropertySelectorType forNumber(int value) {
       switch (value) {
-        case 0: return PS_UNKNOWN;
-        case 1: return PS_MEASUREMENTTIME;
-        case 2: return PS_BEGINLINETIME;
-        case 3: return PS_ENDLINETIME;
-        case 4: return PS_MEASURMENTVALUE;
+        case 0: return PROPERTY_SELECTOR_UNKNOWN;
+        case 1: return PROPERTY_SELECTOR_MEASUREMENTTIME;
+        case 2: return PROPERTY_SELECTOR_BEGINLINETIME;
+        case 3: return PROPERTY_SELECTOR_ENDLINETIME;
+        case 4: return PROPERTY_SELECTOR_MEASURMENTVALUE;
         default: return null;
       }
     }
@@ -150,10 +154,12 @@ public final class ClarosCommonComputationPropertyselectorType {
     java.lang.String[] descriptorData = {
       "\n5claros_common_computation_propertysele" +
       "ctor_type.proto\022\031claros.common.computati" +
-      "on*\200\001\n\024PropertySelectorType\022\016\n\nPS_UNKNOW" +
-      "N\020\000\022\026\n\022PS_MEASUREMENTTIME\020\001\022\024\n\020PS_BEGINL" +
-      "INETIME\020\002\022\022\n\016PS_ENDLINETIME\020\003\022\026\n\022PS_MEAS" +
-      "URMENTVALUE\020\004b\006proto3"
+      "on*\313\001\n\024PropertySelectorType\022\035\n\031PROPERTY_" +
+      "SELECTOR_UNKNOWN\020\000\022%\n!PROPERTY_SELECTOR_" +
+      "MEASUREMENTTIME\020\001\022#\n\037PROPERTY_SELECTOR_B" +
+      "EGINLINETIME\020\002\022!\n\035PROPERTY_SELECTOR_ENDL" +
+      "INETIME\020\003\022%\n!PROPERTY_SELECTOR_MEASURMEN" +
+      "TVALUE\020\004b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

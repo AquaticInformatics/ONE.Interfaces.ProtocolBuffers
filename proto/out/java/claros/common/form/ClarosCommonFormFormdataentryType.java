@@ -20,48 +20,48 @@ public final class ClarosCommonFormFormdataentryType {
   public enum FormDataEntryType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FDE_UNKNOWN = 0;</code>
+     * <code>FORM_DATE_ENTRY_UNKNOWN = 0;</code>
      */
-    FDE_UNKNOWN(0),
+    FORM_DATE_ENTRY_UNKNOWN(0),
     /**
-     * <code>FDE_INSTRUMENT = 1;</code>
+     * <code>FORM_DATE_ENTRY_INSTRUMENT = 1;</code>
      */
-    FDE_INSTRUMENT(1),
+    FORM_DATE_ENTRY_INSTRUMENT(1),
     /**
-     * <code>FDE_TOTALIZER = 2;</code>
+     * <code>FORM_DATE_ENTRY_TOTALIZER = 2;</code>
      */
-    FDE_TOTALIZER(2),
+    FORM_DATE_ENTRY_TOTALIZER(2),
     /**
-     * <code>FDE_CONSUMPTION = 3;</code>
+     * <code>FORM_DATE_ENTRY_CONSUMPTION = 3;</code>
      */
-    FDE_CONSUMPTION(3),
+    FORM_DATE_ENTRY_CONSUMPTION(3),
     /**
-     * <code>FDE_TEXT = 4;</code>
+     * <code>FORM_DATE_ENTRY_TEXT = 4;</code>
      */
-    FDE_TEXT(4),
+    FORM_DATE_ENTRY_TEXT(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FDE_UNKNOWN = 0;</code>
+     * <code>FORM_DATE_ENTRY_UNKNOWN = 0;</code>
      */
-    public static final int FDE_UNKNOWN_VALUE = 0;
+    public static final int FORM_DATE_ENTRY_UNKNOWN_VALUE = 0;
     /**
-     * <code>FDE_INSTRUMENT = 1;</code>
+     * <code>FORM_DATE_ENTRY_INSTRUMENT = 1;</code>
      */
-    public static final int FDE_INSTRUMENT_VALUE = 1;
+    public static final int FORM_DATE_ENTRY_INSTRUMENT_VALUE = 1;
     /**
-     * <code>FDE_TOTALIZER = 2;</code>
+     * <code>FORM_DATE_ENTRY_TOTALIZER = 2;</code>
      */
-    public static final int FDE_TOTALIZER_VALUE = 2;
+    public static final int FORM_DATE_ENTRY_TOTALIZER_VALUE = 2;
     /**
-     * <code>FDE_CONSUMPTION = 3;</code>
+     * <code>FORM_DATE_ENTRY_CONSUMPTION = 3;</code>
      */
-    public static final int FDE_CONSUMPTION_VALUE = 3;
+    public static final int FORM_DATE_ENTRY_CONSUMPTION_VALUE = 3;
     /**
-     * <code>FDE_TEXT = 4;</code>
+     * <code>FORM_DATE_ENTRY_TEXT = 4;</code>
      */
-    public static final int FDE_TEXT_VALUE = 4;
+    public static final int FORM_DATE_ENTRY_TEXT_VALUE = 4;
 
 
     public final int getNumber() {
@@ -82,11 +82,11 @@ public final class ClarosCommonFormFormdataentryType {
 
     public static FormDataEntryType forNumber(int value) {
       switch (value) {
-        case 0: return FDE_UNKNOWN;
-        case 1: return FDE_INSTRUMENT;
-        case 2: return FDE_TOTALIZER;
-        case 3: return FDE_CONSUMPTION;
-        case 4: return FDE_TEXT;
+        case 0: return FORM_DATE_ENTRY_UNKNOWN;
+        case 1: return FORM_DATE_ENTRY_INSTRUMENT;
+        case 2: return FORM_DATE_ENTRY_TOTALIZER;
+        case 3: return FORM_DATE_ENTRY_CONSUMPTION;
+        case 4: return FORM_DATE_ENTRY_TEXT;
         default: return null;
       }
     }
@@ -149,10 +149,12 @@ public final class ClarosCommonFormFormdataentryType {
   static {
     java.lang.String[] descriptorData = {
       "\n+claros_common_form_formdataentry_type." +
-      "proto\022\022claros.common.form*n\n\021FormDataEnt" +
-      "ryType\022\017\n\013FDE_UNKNOWN\020\000\022\022\n\016FDE_INSTRUMEN" +
-      "T\020\001\022\021\n\rFDE_TOTALIZER\020\002\022\023\n\017FDE_CONSUMPTIO" +
-      "N\020\003\022\014\n\010FDE_TEXT\020\004b\006proto3"
+      "proto\022\022claros.common.form*\252\001\n\021FormDataEn" +
+      "tryType\022\033\n\027FORM_DATE_ENTRY_UNKNOWN\020\000\022\036\n\032" +
+      "FORM_DATE_ENTRY_INSTRUMENT\020\001\022\035\n\031FORM_DAT" +
+      "E_ENTRY_TOTALIZER\020\002\022\037\n\033FORM_DATE_ENTRY_C" +
+      "ONSUMPTION\020\003\022\030\n\024FORM_DATE_ENTRY_TEXT\020\004b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

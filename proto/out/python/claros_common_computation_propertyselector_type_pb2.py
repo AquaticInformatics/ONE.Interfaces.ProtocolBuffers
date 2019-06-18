@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.computation',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n5claros_common_computation_propertyselector_type.proto\x12\x19\x63laros.common.computation*\x80\x01\n\x14PropertySelectorType\x12\x0e\n\nPS_UNKNOWN\x10\x00\x12\x16\n\x12PS_MEASUREMENTTIME\x10\x01\x12\x14\n\x10PS_BEGINLINETIME\x10\x02\x12\x12\n\x0ePS_ENDLINETIME\x10\x03\x12\x16\n\x12PS_MEASURMENTVALUE\x10\x04\x62\x06proto3')
+  serialized_pb=_b('\n5claros_common_computation_propertyselector_type.proto\x12\x19\x63laros.common.computation*\xcb\x01\n\x14PropertySelectorType\x12\x1d\n\x19PROPERTY_SELECTOR_UNKNOWN\x10\x00\x12%\n!PROPERTY_SELECTOR_MEASUREMENTTIME\x10\x01\x12#\n\x1fPROPERTY_SELECTOR_BEGINLINETIME\x10\x02\x12!\n\x1dPROPERTY_SELECTOR_ENDLINETIME\x10\x03\x12%\n!PROPERTY_SELECTOR_MEASURMENTVALUE\x10\x04\x62\x06proto3')
 )
 
 _PROPERTYSELECTORTYPE = _descriptor.EnumDescriptor(
@@ -31,39 +31,39 @@ _PROPERTYSELECTORTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='PS_UNKNOWN', index=0, number=0,
+      name='PROPERTY_SELECTOR_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PS_MEASUREMENTTIME', index=1, number=1,
+      name='PROPERTY_SELECTOR_MEASUREMENTTIME', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PS_BEGINLINETIME', index=2, number=2,
+      name='PROPERTY_SELECTOR_BEGINLINETIME', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PS_ENDLINETIME', index=3, number=3,
+      name='PROPERTY_SELECTOR_ENDLINETIME', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PS_MEASURMENTVALUE', index=4, number=4,
+      name='PROPERTY_SELECTOR_MEASURMENTVALUE', index=4, number=4,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=85,
-  serialized_end=213,
+  serialized_end=288,
 )
 _sym_db.RegisterEnumDescriptor(_PROPERTYSELECTORTYPE)
 
 PropertySelectorType = enum_type_wrapper.EnumTypeWrapper(_PROPERTYSELECTORTYPE)
-PS_UNKNOWN = 0
-PS_MEASUREMENTTIME = 1
-PS_BEGINLINETIME = 2
-PS_ENDLINETIME = 3
-PS_MEASURMENTVALUE = 4
+PROPERTY_SELECTOR_UNKNOWN = 0
+PROPERTY_SELECTOR_MEASUREMENTTIME = 1
+PROPERTY_SELECTOR_BEGINLINETIME = 2
+PROPERTY_SELECTOR_ENDLINETIME = 3
+PROPERTY_SELECTOR_MEASURMENTVALUE = 4
 
 
 DESCRIPTOR.enum_types_by_name['PropertySelectorType'] = _PROPERTYSELECTORTYPE

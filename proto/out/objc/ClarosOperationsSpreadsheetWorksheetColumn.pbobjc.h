@@ -75,32 +75,44 @@ typedef GPB_ENUM(Column_Binding_OneOfCase) {
 
 @interface Column : GPBMessage
 
+/** The number of the column */
 @property(nonatomic, readwrite) uint32_t columnNumber;
 
+/** The name of the column */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *name;
 
+/** The description of the column */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *description_p;
 
+/** The parameter associated with the column */
 @property(nonatomic, readwrite) uint32_t parameterId;
 
+/** The default unit to display the column */
 @property(nonatomic, readwrite) uint32_t displayUnitId;
 
+/** The location associated to the data in the column */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *locationId;
 
+/** Soft Delete of the column */
 @property(nonatomic, readwrite) BOOL isActive;
 
+/** Collection of limits related to the column */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Limit*> *limitsArray;
 /** The number of items in @c limitsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger limitsArray_Count;
 
+/** The expected place where the data will be received into the column */
 @property(nonatomic, readwrite) enum DataSourceType dataSourceType;
 
 @property(nonatomic, readonly) Column_Binding_OneOfCase bindingOneOfCase;
 
+/** Column comes from aggregated instrument measurments */
 @property(nonatomic, readwrite, strong, null_resettable) InstrumentMeasurementBinding *instrumentMeasurementBinding;
 
+/** Column comes as a result of a computation */
 @property(nonatomic, readwrite, strong, null_resettable) ComputationBinding *computationBinding;
 
+/** This determines how qualifers are interpreted for this column */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<ReportableQualifierDefinition*> *reportableQualiferDefinitionArray;
 /** The number of items in @c reportableQualiferDefinitionArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger reportableQualiferDefinitionArray_Count;

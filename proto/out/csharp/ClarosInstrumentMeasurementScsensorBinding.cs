@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace Claros.Instrument.Measurement {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_scsensor_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementScsensorBindingReflection {
@@ -25,16 +25,16 @@ namespace Claros.Instrument {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRjbGFyb3NfaW5zdHJ1bWVudF9tZWFzdXJlbWVudF9zY3NlbnNvcl9iaW5k",
-            "aW5nLnByb3RvEhFjbGFyb3MuaW5zdHJ1bWVudBonY2xhcm9zX2NvbW1vbl9j",
-            "b3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvIpsBCg9TQ1NlbnNvckJpbmRpbmcS",
-            "DwoHY2hhbm5lbBgCIAEoDRILCgN0YWcYAyABKAkSNQoJdmFsaWRGcm9tGAQg",
-            "ASgLMiIuY2xhcm9zLmNvbW1vbi5jb3JlLkNsYXJvc0RhdGVUaW1lEjMKB3Zh",
-            "bGlkVG8YBSABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRp",
-            "bWViBnByb3RvMw=="));
+            "aW5nLnByb3RvEh1jbGFyb3MuaW5zdHJ1bWVudC5tZWFzdXJlbWVudBonY2xh",
+            "cm9zX2NvbW1vbl9jb3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvIpsBCg9TQ1Nl",
+            "bnNvckJpbmRpbmcSDwoHY2hhbm5lbBgCIAEoDRILCgN0YWcYAyABKAkSNQoJ",
+            "dmFsaWRGcm9tGAQgASgLMiIuY2xhcm9zLmNvbW1vbi5jb3JlLkNsYXJvc0Rh",
+            "dGVUaW1lEjMKB3ZhbGlkVG8YBSABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUu",
+            "Q2xhcm9zRGF0ZVRpbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.SCSensorBinding), global::Claros.Instrument.SCSensorBinding.Parser, new[]{ "Channel", "Tag", "ValidFrom", "ValidTo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.Measurement.SCSensorBinding), global::Claros.Instrument.Measurement.SCSensorBinding.Parser, new[]{ "Channel", "Tag", "ValidFrom", "ValidTo" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -103,6 +103,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "validFrom" field.</summary>
     public const int ValidFromFieldNumber = 4;
     private global::Claros.Common.Core.ClarosDateTime validFrom_;
+    /// <summary>
+    /// Should this be Timespan validTimeSpan? ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ClarosDateTime ValidFrom {
       get { return validFrom_; }

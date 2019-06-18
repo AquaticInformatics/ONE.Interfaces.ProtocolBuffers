@@ -20,40 +20,64 @@ public final class ClarosCommonCoreAggregateType {
   public enum AggregateType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>A_UNKNOWN = 0;</code>
+     * <code>AGGREGATE_UNKNOWN = 0;</code>
      */
-    A_UNKNOWN(0),
+    AGGREGATE_UNKNOWN(0),
     /**
-     * <code>A_MINIMUM = 1;</code>
+     * <pre>
+     * Mimimum value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_MINIMUM = 1;</code>
      */
-    A_MINIMUM(1),
+    AGGREGATE_MINIMUM(1),
     /**
-     * <code>A_MAXIMUM = 2;</code>
+     * <pre>
+     * Maximim value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_MAXIMUM = 2;</code>
      */
-    A_MAXIMUM(2),
+    AGGREGATE_MAXIMUM(2),
     /**
-     * <code>A_AVERAGE = 3;</code>
+     * <pre>
+     * Average value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_AVERAGE = 3;</code>
      */
-    A_AVERAGE(3),
+    AGGREGATE_AVERAGE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>A_UNKNOWN = 0;</code>
+     * <code>AGGREGATE_UNKNOWN = 0;</code>
      */
-    public static final int A_UNKNOWN_VALUE = 0;
+    public static final int AGGREGATE_UNKNOWN_VALUE = 0;
     /**
-     * <code>A_MINIMUM = 1;</code>
+     * <pre>
+     * Mimimum value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_MINIMUM = 1;</code>
      */
-    public static final int A_MINIMUM_VALUE = 1;
+    public static final int AGGREGATE_MINIMUM_VALUE = 1;
     /**
-     * <code>A_MAXIMUM = 2;</code>
+     * <pre>
+     * Maximim value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_MAXIMUM = 2;</code>
      */
-    public static final int A_MAXIMUM_VALUE = 2;
+    public static final int AGGREGATE_MAXIMUM_VALUE = 2;
     /**
-     * <code>A_AVERAGE = 3;</code>
+     * <pre>
+     * Average value for the aggregate range
+     * </pre>
+     *
+     * <code>AGGREGATE_AVERAGE = 3;</code>
      */
-    public static final int A_AVERAGE_VALUE = 3;
+    public static final int AGGREGATE_AVERAGE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -74,10 +98,10 @@ public final class ClarosCommonCoreAggregateType {
 
     public static AggregateType forNumber(int value) {
       switch (value) {
-        case 0: return A_UNKNOWN;
-        case 1: return A_MINIMUM;
-        case 2: return A_MAXIMUM;
-        case 3: return A_AVERAGE;
+        case 0: return AGGREGATE_UNKNOWN;
+        case 1: return AGGREGATE_MINIMUM;
+        case 2: return AGGREGATE_MAXIMUM;
+        case 3: return AGGREGATE_AVERAGE;
         default: return null;
       }
     }
@@ -140,9 +164,10 @@ public final class ClarosCommonCoreAggregateType {
   static {
     java.lang.String[] descriptorData = {
       "\n\'claros_common_core_aggregate_type.prot" +
-      "o\022\022claros.common.core*K\n\rAggregateType\022\r" +
-      "\n\tA_UNKNOWN\020\000\022\r\n\tA_MINIMUM\020\001\022\r\n\tA_MAXIMU" +
-      "M\020\002\022\r\n\tA_AVERAGE\020\003b\006proto3"
+      "o\022\022claros.common.core*k\n\rAggregateType\022\025" +
+      "\n\021AGGREGATE_UNKNOWN\020\000\022\025\n\021AGGREGATE_MINIM" +
+      "UM\020\001\022\025\n\021AGGREGATE_MAXIMUM\020\002\022\025\n\021AGGREGATE" +
+      "_AVERAGE\020\003b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

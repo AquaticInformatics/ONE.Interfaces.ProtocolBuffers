@@ -6,14 +6,14 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_dayofweek.proto", :syntax => :proto3) do
     add_enum "claros.common.core.DayOfWeek" do
-      value :DOW_UNKNOWN, 0
-      value :DOW_SUNDAY, 1
-      value :DOW_MONDAY, 2
-      value :DOW_TUESDAY, 3
-      value :DOW_WEDNESDAY, 4
-      value :DOW_THURSDAY, 5
-      value :DOW_FRIDAY, 6
-      value :DOW_SATURDAY, 7
+      value :DAY_OF_WEEK_UNKNOWN, 0
+      value :DAY_OF_WEEK_SUNDAY, 1
+      value :DAY_OF_WEEK_MONDAY, 2
+      value :DAY_OF_WEEK_TUESDAY, 3
+      value :DAY_OF_WEEK_WEDNESDAY, 4
+      value :DAY_OF_WEEK_THURSDAY, 5
+      value :DAY_OF_WEEK_FRIDAY, 6
+      value :DAY_OF_WEEK_SATURDAY, 7
     end
   end
 end

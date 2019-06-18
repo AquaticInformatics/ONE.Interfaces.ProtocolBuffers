@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.form',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n*claros_common_form_formtemplate_type.proto\x12\x12\x63laros.common.form*V\n\x10\x46ormTemplateType\x12\x0e\n\nFT_UNKNOWN\x10\x00\x12\x0c\n\x08\x46T_PLANT\x10\x01\x12\x11\n\rFT_LABORATORY\x10\x02\x12\x11\n\rFT_ENTERPRISE\x10\x03\x62\x06proto3')
+  serialized_pb=_b('\n*claros_common_form_formtemplate_type.proto\x12\x12\x63laros.common.form*\x82\x01\n\x10\x46ormTemplateType\x12\x19\n\x15\x46ORM_TEMPLATE_UNKNOWN\x10\x00\x12\x17\n\x13\x46ORM_TEMPLATE_PLANT\x10\x01\x12\x1c\n\x18\x46ORM_TEMPLATE_LABORATORY\x10\x02\x12\x1c\n\x18\x46ORM_TEMPLATE_ENTERPRISE\x10\x03\x62\x06proto3')
 )
 
 _FORMTEMPLATETYPE = _descriptor.EnumDescriptor(
@@ -31,34 +31,34 @@ _FORMTEMPLATETYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='FT_UNKNOWN', index=0, number=0,
+      name='FORM_TEMPLATE_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FT_PLANT', index=1, number=1,
+      name='FORM_TEMPLATE_PLANT', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FT_LABORATORY', index=2, number=2,
+      name='FORM_TEMPLATE_LABORATORY', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FT_ENTERPRISE', index=3, number=3,
+      name='FORM_TEMPLATE_ENTERPRISE', index=3, number=3,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=66,
-  serialized_end=152,
+  serialized_start=67,
+  serialized_end=197,
 )
 _sym_db.RegisterEnumDescriptor(_FORMTEMPLATETYPE)
 
 FormTemplateType = enum_type_wrapper.EnumTypeWrapper(_FORMTEMPLATETYPE)
-FT_UNKNOWN = 0
-FT_PLANT = 1
-FT_LABORATORY = 2
-FT_ENTERPRISE = 3
+FORM_TEMPLATE_UNKNOWN = 0
+FORM_TEMPLATE_PLANT = 1
+FORM_TEMPLATE_LABORATORY = 2
+FORM_TEMPLATE_ENTERPRISE = 3
 
 
 DESCRIPTOR.enum_types_by_name['FormTemplateType'] = _FORMTEMPLATETYPE

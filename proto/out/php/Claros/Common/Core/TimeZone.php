@@ -12,17 +12,17 @@ use UnexpectedValueException;
 class TimeZone
 {
     /**
-     * Generated from protobuf enum <code>TZ_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>TIMEZONE_UNKNOWN = 0;</code>
      */
-    const TZ_UNKNOWN = 0;
+    const TIMEZONE_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>TZ_UTC = 1;</code>
+     * Generated from protobuf enum <code>TIMEZONE_UTC = 1;</code>
      */
-    const TZ_UTC = 1;
+    const TIMEZONE_UTC = 1;
 
     private static $valueToName = [
-        self::TZ_UNKNOWN => 'TZ_UNKNOWN',
-        self::TZ_UTC => 'TZ_UTC',
+        self::TIMEZONE_UNKNOWN => 'TIMEZONE_UNKNOWN',
+        self::TIMEZONE_UTC => 'TIMEZONE_UTC',
     ];
 
     public static function name($value)

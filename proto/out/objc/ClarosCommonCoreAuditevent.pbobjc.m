@@ -54,6 +54,7 @@ static GPBFileDescriptor *ClarosCommonCoreAuditeventRoot_FileDescriptor(void) {
 @dynamic dataSourceType;
 @dynamic eventType;
 @dynamic hasTimeStamp, timeStamp;
+@dynamic details;
 
 typedef struct AuditEvent__storage_ {
   uint32_t _has_storage_[1];
@@ -62,6 +63,7 @@ typedef struct AuditEvent__storage_ {
   NSString *id_p;
   NSString *userId;
   ClarosDateTime *timeStamp;
+  NSString *details;
 } AuditEvent__storage_;
 
 // This method is threadsafe because it is initially called
@@ -114,6 +116,15 @@ typedef struct AuditEvent__storage_ {
         .offset = (uint32_t)offsetof(AuditEvent__storage_, timeStamp),
         .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
         .dataType = GPBDataTypeMessage,
+      },
+      {
+        .name = "details",
+        .dataTypeSpecific.className = NULL,
+        .number = AuditEvent_FieldNumber_Details,
+        .hasIndex = 5,
+        .offset = (uint32_t)offsetof(AuditEvent__storage_, details),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeString,
       },
     };
     GPBDescriptor *localDescriptor =

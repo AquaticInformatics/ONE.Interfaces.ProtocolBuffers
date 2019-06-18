@@ -25,10 +25,11 @@ namespace Claros.Operations.Spreadsheet {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJjbGFyb3Nfb3BlcmF0aW9uc19zcHJlYWRzaGVldF93b3Jrc2hlZXRfdHlw",
-            "ZS5wcm90bxIdY2xhcm9zLm9wZXJhdGlvbnMuc3ByZWFkc2hlZXQqYQoNV29y",
-            "a3NoZWV0VHlwZRINCglXX1VOS05PV04QABIUChBXX0ZJRlRFRU5fTUlOVVRF",
-            "EAESDwoLV19GT1VSX0hPVVIQAhILCgdXX0RBSUxZEAMSDQoJV19NT05USExZ",
-            "EARiBnByb3RvMw=="));
+            "ZS5wcm90bxIdY2xhcm9zLm9wZXJhdGlvbnMuc3ByZWFkc2hlZXQqhgEKDVdv",
+            "cmtzaGVldFR5cGUSFQoRV09SS1NIRUVUX1VOS05PV04QABIcChhXT1JLU0hF",
+            "RVRfRklGVEVFTl9NSU5VVEUQARISCg5XT1JLU0hFRVRfSE9VUhACEhcKE1dP",
+            "UktTSEVFVF9GT1VSX0hPVVIQAxITCg9XT1JLU0hFRVRfREFJTFkQBGIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Operations.Spreadsheet.WorksheetType), }, null));
@@ -38,11 +39,11 @@ namespace Claros.Operations.Spreadsheet {
   }
   #region Enums
   public enum WorksheetType {
-    [pbr::OriginalName("W_UNKNOWN")] WUnknown = 0,
-    [pbr::OriginalName("W_FIFTEEN_MINUTE")] WFifteenMinute = 1,
-    [pbr::OriginalName("W_FOUR_HOUR")] WFourHour = 2,
-    [pbr::OriginalName("W_DAILY")] WDaily = 3,
-    [pbr::OriginalName("W_MONTHLY")] WMonthly = 4,
+    [pbr::OriginalName("WORKSHEET_UNKNOWN")] WorksheetUnknown = 0,
+    [pbr::OriginalName("WORKSHEET_FIFTEEN_MINUTE")] WorksheetFifteenMinute = 1,
+    [pbr::OriginalName("WORKSHEET_HOUR")] WorksheetHour = 2,
+    [pbr::OriginalName("WORKSHEET_FOUR_HOUR")] WorksheetFourHour = 3,
+    [pbr::OriginalName("WORKSHEET_DAILY")] WorksheetDaily = 4,
   }
 
   #endregion

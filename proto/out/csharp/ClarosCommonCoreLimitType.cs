@@ -25,9 +25,9 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNjbGFyb3NfY29tbW9uX2NvcmVfbGltaXRfdHlwZS5wcm90bxISY2xhcm9z",
-            "LmNvbW1vbi5jb3JlKloKCUxpbWl0VHlwZRINCglMX1VOS05PV04QABIPCgtM",
-            "X0hJR0hBTEFSTRABEg4KCkxfSElHSE5FQVIQAhINCglMX0xPV05FQVIQAxIO",
-            "CgpMX0xPV0FMQVJNEARiBnByb3RvMw=="));
+            "LmNvbW1vbi5jb3JlKm8KCUxpbWl0VHlwZRIRCg1MSU1JVF9VTktOT1dOEAAS",
+            "EwoPTElNSVRfSElHSEFMQVJNEAESEwoPTElNSVRfX0hJR0hORUFSEAISEQoN",
+            "TElNSVRfTE9XTkVBUhADEhIKDkxJTUlUX0xPV0FMQVJNEARiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.LimitType), }, null));
@@ -37,11 +37,19 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum LimitType {
-    [pbr::OriginalName("L_UNKNOWN")] LUnknown = 0,
-    [pbr::OriginalName("L_HIGHALARM")] LHighalarm = 1,
-    [pbr::OriginalName("L_HIGHNEAR")] LHighnear = 2,
-    [pbr::OriginalName("L_LOWNEAR")] LLownear = 3,
-    [pbr::OriginalName("L_LOWALARM")] LLowalarm = 4,
+    [pbr::OriginalName("LIMIT_UNKNOWN")] LimitUnknown = 0,
+    /// <summary>
+    /// </summary>
+    [pbr::OriginalName("LIMIT_HIGHALARM")] LimitHighalarm = 1,
+    /// <summary>
+    /// </summary>
+    [pbr::OriginalName("LIMIT__HIGHNEAR")] LimitHighnear = 2,
+    /// <summary>
+    /// </summary>
+    [pbr::OriginalName("LIMIT_LOWNEAR")] LimitLownear = 3,
+    /// <summary>
+    /// </summary>
+    [pbr::OriginalName("LIMIT_LOWALARM")] LimitLowalarm = 4,
   }
 
   #endregion

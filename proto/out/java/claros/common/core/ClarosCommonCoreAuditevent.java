@@ -19,55 +19,117 @@ public final class ClarosCommonCoreAuditevent {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * A GUID that uniquely identifies the audit event
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     java.lang.String getId();
     /**
+     * <pre>
+     * A GUID that uniquely identifies the audit event
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     com.google.protobuf.ByteString
         getIdBytes();
 
     /**
+     * <pre>
+     * The id of the user related to this audit event
+     * </pre>
+     *
      * <code>string userId = 2;</code>
      */
     java.lang.String getUserId();
     /**
+     * <pre>
+     * The id of the user related to this audit event
+     * </pre>
+     *
      * <code>string userId = 2;</code>
      */
     com.google.protobuf.ByteString
         getUserIdBytes();
 
     /**
+     * <pre>
+     * What system generated the audit event
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      */
     int getDataSourceTypeValue();
     /**
+     * <pre>
+     * What system generated the audit event
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      */
     claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType();
 
     /**
+     * <pre>
+     * The type of event
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEventType eventType = 4;</code>
      */
     int getEventTypeValue();
     /**
+     * <pre>
+     * The type of event
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEventType eventType = 4;</code>
      */
     claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType getEventType();
 
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     boolean hasTimeStamp();
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp();
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder();
+
+    /**
+     * <pre>
+     * Text details that can provide more clarification to the audit
+     * </pre>
+     *
+     * <code>string details = 6;</code>
+     */
+    java.lang.String getDetails();
+    /**
+     * <pre>
+     * Text details that can provide more clarification to the audit
+     * </pre>
+     *
+     * <code>string details = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getDetailsBytes();
   }
   /**
    * Protobuf type {@code claros.common.core.AuditEvent}
@@ -86,6 +148,7 @@ public final class ClarosCommonCoreAuditevent {
       userId_ = "";
       dataSourceType_ = 0;
       eventType_ = 0;
+      details_ = "";
     }
 
     @java.lang.Override
@@ -149,6 +212,12 @@ public final class ClarosCommonCoreAuditevent {
 
               break;
             }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              details_ = s;
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -184,6 +253,10 @@ public final class ClarosCommonCoreAuditevent {
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
+     * <pre>
+     * A GUID that uniquely identifies the audit event
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     public java.lang.String getId() {
@@ -199,6 +272,10 @@ public final class ClarosCommonCoreAuditevent {
       }
     }
     /**
+     * <pre>
+     * A GUID that uniquely identifies the audit event
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -218,6 +295,10 @@ public final class ClarosCommonCoreAuditevent {
     public static final int USERID_FIELD_NUMBER = 2;
     private volatile java.lang.Object userId_;
     /**
+     * <pre>
+     * The id of the user related to this audit event
+     * </pre>
+     *
      * <code>string userId = 2;</code>
      */
     public java.lang.String getUserId() {
@@ -233,6 +314,10 @@ public final class ClarosCommonCoreAuditevent {
       }
     }
     /**
+     * <pre>
+     * The id of the user related to this audit event
+     * </pre>
+     *
      * <code>string userId = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -252,12 +337,20 @@ public final class ClarosCommonCoreAuditevent {
     public static final int DATASOURCETYPE_FIELD_NUMBER = 3;
     private int dataSourceType_;
     /**
+     * <pre>
+     * What system generated the audit event
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      */
     public int getDataSourceTypeValue() {
       return dataSourceType_;
     }
     /**
+     * <pre>
+     * What system generated the audit event
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
      */
     public claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType() {
@@ -269,12 +362,20 @@ public final class ClarosCommonCoreAuditevent {
     public static final int EVENTTYPE_FIELD_NUMBER = 4;
     private int eventType_;
     /**
+     * <pre>
+     * The type of event
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEventType eventType = 4;</code>
      */
     public int getEventTypeValue() {
       return eventType_;
     }
     /**
+     * <pre>
+     * The type of event
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEventType eventType = 4;</code>
      */
     public claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType getEventType() {
@@ -286,22 +387,76 @@ public final class ClarosCommonCoreAuditevent {
     public static final int TIMESTAMP_FIELD_NUMBER = 5;
     private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime timeStamp_;
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     public boolean hasTimeStamp() {
       return timeStamp_ != null;
     }
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp() {
       return timeStamp_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : timeStamp_;
     }
     /**
+     * <pre>
+     * The time in which this event occurred
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder() {
       return getTimeStamp();
+    }
+
+    public static final int DETAILS_FIELD_NUMBER = 6;
+    private volatile java.lang.Object details_;
+    /**
+     * <pre>
+     * Text details that can provide more clarification to the audit
+     * </pre>
+     *
+     * <code>string details = 6;</code>
+     */
+    public java.lang.String getDetails() {
+      java.lang.Object ref = details_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        details_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * Text details that can provide more clarification to the audit
+     * </pre>
+     *
+     * <code>string details = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDetailsBytes() {
+      java.lang.Object ref = details_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        details_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -324,14 +479,17 @@ public final class ClarosCommonCoreAuditevent {
       if (!getUserIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, userId_);
       }
-      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DS_UNKNOWN.getNumber()) {
+      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DATASOURCE_UNKNOWN.getNumber()) {
         output.writeEnum(3, dataSourceType_);
       }
-      if (eventType_ != claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType.AE_UNKNOWN.getNumber()) {
+      if (eventType_ != claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType.AUDIT_EVENT_UNKNOWN.getNumber()) {
         output.writeEnum(4, eventType_);
       }
       if (timeStamp_ != null) {
         output.writeMessage(5, getTimeStamp());
+      }
+      if (!getDetailsBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, details_);
       }
       unknownFields.writeTo(output);
     }
@@ -348,17 +506,20 @@ public final class ClarosCommonCoreAuditevent {
       if (!getUserIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, userId_);
       }
-      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DS_UNKNOWN.getNumber()) {
+      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DATASOURCE_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, dataSourceType_);
       }
-      if (eventType_ != claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType.AE_UNKNOWN.getNumber()) {
+      if (eventType_ != claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType.AUDIT_EVENT_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(4, eventType_);
       }
       if (timeStamp_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getTimeStamp());
+      }
+      if (!getDetailsBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, details_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -386,6 +547,8 @@ public final class ClarosCommonCoreAuditevent {
         if (!getTimeStamp()
             .equals(other.getTimeStamp())) return false;
       }
+      if (!getDetails()
+          .equals(other.getDetails())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -409,6 +572,8 @@ public final class ClarosCommonCoreAuditevent {
         hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
         hash = (53 * hash) + getTimeStamp().hashCode();
       }
+      hash = (37 * hash) + DETAILS_FIELD_NUMBER;
+      hash = (53 * hash) + getDetails().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -556,6 +721,8 @@ public final class ClarosCommonCoreAuditevent {
           timeStamp_ = null;
           timeStampBuilder_ = null;
         }
+        details_ = "";
+
         return this;
       }
 
@@ -591,6 +758,7 @@ public final class ClarosCommonCoreAuditevent {
         } else {
           result.timeStamp_ = timeStampBuilder_.build();
         }
+        result.details_ = details_;
         onBuilt();
         return result;
       }
@@ -656,6 +824,10 @@ public final class ClarosCommonCoreAuditevent {
         if (other.hasTimeStamp()) {
           mergeTimeStamp(other.getTimeStamp());
         }
+        if (!other.getDetails().isEmpty()) {
+          details_ = other.details_;
+          onChanged();
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -687,6 +859,10 @@ public final class ClarosCommonCoreAuditevent {
 
       private java.lang.Object id_ = "";
       /**
+       * <pre>
+       * A GUID that uniquely identifies the audit event
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public java.lang.String getId() {
@@ -702,6 +878,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * A GUID that uniquely identifies the audit event
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -718,6 +898,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * A GUID that uniquely identifies the audit event
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder setId(
@@ -731,6 +915,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * A GUID that uniquely identifies the audit event
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder clearId() {
@@ -740,6 +928,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * A GUID that uniquely identifies the audit event
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder setIdBytes(
@@ -756,6 +948,10 @@ public final class ClarosCommonCoreAuditevent {
 
       private java.lang.Object userId_ = "";
       /**
+       * <pre>
+       * The id of the user related to this audit event
+       * </pre>
+       *
        * <code>string userId = 2;</code>
        */
       public java.lang.String getUserId() {
@@ -771,6 +967,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * The id of the user related to this audit event
+       * </pre>
+       *
        * <code>string userId = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -787,6 +987,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * The id of the user related to this audit event
+       * </pre>
+       *
        * <code>string userId = 2;</code>
        */
       public Builder setUserId(
@@ -800,6 +1004,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The id of the user related to this audit event
+       * </pre>
+       *
        * <code>string userId = 2;</code>
        */
       public Builder clearUserId() {
@@ -809,6 +1017,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The id of the user related to this audit event
+       * </pre>
+       *
        * <code>string userId = 2;</code>
        */
       public Builder setUserIdBytes(
@@ -825,12 +1037,20 @@ public final class ClarosCommonCoreAuditevent {
 
       private int dataSourceType_ = 0;
       /**
+       * <pre>
+       * What system generated the audit event
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
        */
       public int getDataSourceTypeValue() {
         return dataSourceType_;
       }
       /**
+       * <pre>
+       * What system generated the audit event
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
        */
       public Builder setDataSourceTypeValue(int value) {
@@ -839,6 +1059,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * What system generated the audit event
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
        */
       public claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType() {
@@ -847,6 +1071,10 @@ public final class ClarosCommonCoreAuditevent {
         return result == null ? claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * What system generated the audit event
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
        */
       public Builder setDataSourceType(claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType value) {
@@ -859,6 +1087,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * What system generated the audit event
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 3;</code>
        */
       public Builder clearDataSourceType() {
@@ -870,12 +1102,20 @@ public final class ClarosCommonCoreAuditevent {
 
       private int eventType_ = 0;
       /**
+       * <pre>
+       * The type of event
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEventType eventType = 4;</code>
        */
       public int getEventTypeValue() {
         return eventType_;
       }
       /**
+       * <pre>
+       * The type of event
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEventType eventType = 4;</code>
        */
       public Builder setEventTypeValue(int value) {
@@ -884,6 +1124,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The type of event
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEventType eventType = 4;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType getEventType() {
@@ -892,6 +1136,10 @@ public final class ClarosCommonCoreAuditevent {
         return result == null ? claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * The type of event
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEventType eventType = 4;</code>
        */
       public Builder setEventType(claros.common.core.ClarosCommonCoreAuditeventType.AuditEventType value) {
@@ -904,6 +1152,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The type of event
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEventType eventType = 4;</code>
        */
       public Builder clearEventType() {
@@ -917,12 +1169,20 @@ public final class ClarosCommonCoreAuditevent {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> timeStampBuilder_;
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public boolean hasTimeStamp() {
         return timeStampBuilder_ != null || timeStamp_ != null;
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp() {
@@ -933,6 +1193,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public Builder setTimeStamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -949,6 +1213,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public Builder setTimeStamp(
@@ -963,6 +1231,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public Builder mergeTimeStamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -981,6 +1253,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public Builder clearTimeStamp() {
@@ -995,6 +1271,10 @@ public final class ClarosCommonCoreAuditevent {
         return this;
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder getTimeStampBuilder() {
@@ -1003,6 +1283,10 @@ public final class ClarosCommonCoreAuditevent {
         return getTimeStampFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder() {
@@ -1014,6 +1298,10 @@ public final class ClarosCommonCoreAuditevent {
         }
       }
       /**
+       * <pre>
+       * The time in which this event occurred
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1028,6 +1316,95 @@ public final class ClarosCommonCoreAuditevent {
           timeStamp_ = null;
         }
         return timeStampBuilder_;
+      }
+
+      private java.lang.Object details_ = "";
+      /**
+       * <pre>
+       * Text details that can provide more clarification to the audit
+       * </pre>
+       *
+       * <code>string details = 6;</code>
+       */
+      public java.lang.String getDetails() {
+        java.lang.Object ref = details_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          details_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Text details that can provide more clarification to the audit
+       * </pre>
+       *
+       * <code>string details = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDetailsBytes() {
+        java.lang.Object ref = details_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          details_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Text details that can provide more clarification to the audit
+       * </pre>
+       *
+       * <code>string details = 6;</code>
+       */
+      public Builder setDetails(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        details_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Text details that can provide more clarification to the audit
+       * </pre>
+       *
+       * <code>string details = 6;</code>
+       */
+      public Builder clearDetails() {
+        
+        details_ = getDefaultInstance().getDetails();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Text details that can provide more clarification to the audit
+       * </pre>
+       *
+       * <code>string details = 6;</code>
+       */
+      public Builder setDetailsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        details_ = value;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1100,13 +1477,13 @@ public final class ClarosCommonCoreAuditevent {
       "laros.common.core\032(claros_common_core_au" +
       "ditevent_type.proto\032\'claros_common_core_" +
       "clarosdatetime.proto\032(claros_common_core" +
-      "_datasource_type.proto\"\322\001\n\nAuditEvent\022\n\n" +
+      "_datasource_type.proto\"\343\001\n\nAuditEvent\022\n\n" +
       "\002id\030\001 \001(\t\022\016\n\006userId\030\002 \001(\t\022:\n\016dataSourceT" +
       "ype\030\003 \001(\0162\".claros.common.core.DataSourc" +
       "eType\0225\n\teventType\030\004 \001(\0162\".claros.common" +
       ".core.AuditEventType\0225\n\ttimeStamp\030\005 \001(\0132" +
-      "\".claros.common.core.ClarosDateTimeb\006pro" +
-      "to3"
+      "\".claros.common.core.ClarosDateTime\022\017\n\007d" +
+      "etails\030\006 \001(\tb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1128,7 +1505,7 @@ public final class ClarosCommonCoreAuditevent {
     internal_static_claros_common_core_AuditEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_core_AuditEvent_descriptor,
-        new java.lang.String[] { "Id", "UserId", "DataSourceType", "EventType", "TimeStamp", });
+        new java.lang.String[] { "Id", "UserId", "DataSourceType", "EventType", "TimeStamp", "Details", });
     claros.common.core.ClarosCommonCoreAuditeventType.getDescriptor();
     claros.common.core.ClarosCommonCoreClarosdatetime.getDescriptor();
     claros.common.core.ClarosCommonCoreDatasourceType.getDescriptor();

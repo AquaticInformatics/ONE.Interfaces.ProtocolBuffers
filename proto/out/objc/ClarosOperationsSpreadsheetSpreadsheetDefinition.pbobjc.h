@@ -58,14 +58,18 @@ typedef GPB_ENUM(SpreadsheetDefinition_FieldNumber) {
 
 @interface SpreadsheetDefinition : GPBMessage
 
+/** Numerical version of the spreadsheet definition.  This increments with eash new version */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *version;
 
+/** The Time window of when this configuration was valid */
 @property(nonatomic, readwrite, strong, null_resettable) TimeWindow *timewindow;
 /** Test to see if @c timewindow has been set. */
 @property(nonatomic, readwrite) BOOL hasTimewindow;
 
+/** The time zone related to the spreadsheet */
 @property(nonatomic, readwrite) enum TimeZone timezone;
 
+/** The number of hours offset to the start of day */
 @property(nonatomic, readwrite) uint32_t timeWindowOffset;
 
 @end

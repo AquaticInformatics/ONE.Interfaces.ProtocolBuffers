@@ -25,8 +25,9 @@ namespace Claros.Common.Configuration {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1jbGFyb3NfY29tbW9uX2NvbmZpZ3VyYXRpb25fZW50aXR5X3R5cGUucHJv",
-            "dG8SG2NsYXJvcy5jb21tb24uY29uZmlndXJhdGlvbioxCgpFbnRpdHlUeXBl",
-            "Eg4KCkVUX1VOS05PV04QABITCg9FVF9GT1JNVEVNUExBVEUQAWIGcHJvdG8z"));
+            "dG8SG2NsYXJvcy5jb21tb24uY29uZmlndXJhdGlvbio5CgpFbnRpdHlUeXBl",
+            "EhIKDkVOVElUWV9VTktOT1dOEAASFwoTRU5USVRZX0ZPUk1URU1QTEFURRAB",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Configuration.EntityType), }, null));
@@ -36,8 +37,8 @@ namespace Claros.Common.Configuration {
   }
   #region Enums
   public enum EntityType {
-    [pbr::OriginalName("ET_UNKNOWN")] EtUnknown = 0,
-    [pbr::OriginalName("ET_FORMTEMPLATE")] EtFormtemplate = 1,
+    [pbr::OriginalName("ENTITY_UNKNOWN")] EntityUnknown = 0,
+    [pbr::OriginalName("ENTITY_FORMTEMPLATE")] EntityFormtemplate = 1,
   }
 
   #endregion

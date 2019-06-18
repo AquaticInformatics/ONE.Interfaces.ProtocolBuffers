@@ -18,10 +18,10 @@ import claros_common_core_clarosdatetime_pb2 as claros__common__core__clarosdate
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='claros_instrument_measurement_field_binding.proto',
-  package='claros.instrument',
+  package='claros.instrument.measurement',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n1claros_instrument_measurement_field_binding.proto\x12\x11\x63laros.instrument\x1a\'claros_common_core_clarosdatetime.proto\"\x8b\x01\n!InstrumentMeasurementFieldBinding\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x35\n\ttimestamp\x18\x02 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x0e\n\x06unitId\x18\x03 \x01(\rb\x06proto3')
+  serialized_pb=_b('\n1claros_instrument_measurement_field_binding.proto\x12\x1d\x63laros.instrument.measurement\x1a\'claros_common_core_clarosdatetime.proto\"\x8b\x01\n!InstrumentMeasurementFieldBinding\x12\x1f\n\x17instrumentMeasurementId\x18\x01 \x01(\t\x12\x35\n\ttimestamp\x18\x02 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x0e\n\x06unitId\x18\x03 \x01(\rb\x06proto3')
   ,
   dependencies=[claros__common__core__clarosdatetime__pb2.DESCRIPTOR,])
 
@@ -30,27 +30,27 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _INSTRUMENTMEASUREMENTFIELDBINDING = _descriptor.Descriptor(
   name='InstrumentMeasurementFieldBinding',
-  full_name='claros.instrument.InstrumentMeasurementFieldBinding',
+  full_name='claros.instrument.measurement.InstrumentMeasurementFieldBinding',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='instrumentMeasurementId', full_name='claros.instrument.InstrumentMeasurementFieldBinding.instrumentMeasurementId', index=0,
+      name='instrumentMeasurementId', full_name='claros.instrument.measurement.InstrumentMeasurementFieldBinding.instrumentMeasurementId', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='timestamp', full_name='claros.instrument.InstrumentMeasurementFieldBinding.timestamp', index=1,
+      name='timestamp', full_name='claros.instrument.measurement.InstrumentMeasurementFieldBinding.timestamp', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='unitId', full_name='claros.instrument.InstrumentMeasurementFieldBinding.unitId', index=2,
+      name='unitId', full_name='claros.instrument.measurement.InstrumentMeasurementFieldBinding.unitId', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -68,8 +68,8 @@ _INSTRUMENTMEASUREMENTFIELDBINDING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=114,
-  serialized_end=253,
+  serialized_start=126,
+  serialized_end=265,
 )
 
 _INSTRUMENTMEASUREMENTFIELDBINDING.fields_by_name['timestamp'].message_type = claros__common__core__clarosdatetime__pb2._CLAROSDATETIME
@@ -79,7 +79,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 InstrumentMeasurementFieldBinding = _reflection.GeneratedProtocolMessageType('InstrumentMeasurementFieldBinding', (_message.Message,), dict(
   DESCRIPTOR = _INSTRUMENTMEASUREMENTFIELDBINDING,
   __module__ = 'claros_instrument_measurement_field_binding_pb2'
-  # @@protoc_insertion_point(class_scope:claros.instrument.InstrumentMeasurementFieldBinding)
+  # @@protoc_insertion_point(class_scope:claros.instrument.measurement.InstrumentMeasurementFieldBinding)
   ))
 _sym_db.RegisterMessage(InstrumentMeasurementFieldBinding)
 

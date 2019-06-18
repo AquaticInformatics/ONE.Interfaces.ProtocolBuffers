@@ -194,6 +194,20 @@ class AuditEvent :
   ::std::string* release_userid();
   void set_allocated_userid(::std::string* userid);
 
+  // string details = 6;
+  void clear_details();
+  static const int kDetailsFieldNumber = 6;
+  const ::std::string& details() const;
+  void set_details(const ::std::string& value);
+  #if LANG_CXX11
+  void set_details(::std::string&& value);
+  #endif
+  void set_details(const char* value);
+  void set_details(const char* value, size_t size);
+  ::std::string* mutable_details();
+  ::std::string* release_details();
+  void set_allocated_details(::std::string* details);
+
   // .claros.common.core.ClarosDateTime timeStamp = 5;
   bool has_timestamp() const;
   void clear_timestamp();
@@ -222,6 +236,7 @@ class AuditEvent :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr id_;
   ::google::protobuf::internal::ArenaStringPtr userid_;
+  ::google::protobuf::internal::ArenaStringPtr details_;
   ::claros::common::core::ClarosDateTime* timestamp_;
   int datasourcetype_;
   int eventtype_;
@@ -416,6 +431,59 @@ inline void AuditEvent::set_allocated_timestamp(::claros::common::core::ClarosDa
   }
   timestamp_ = timestamp;
   // @@protoc_insertion_point(field_set_allocated:claros.common.core.AuditEvent.timeStamp)
+}
+
+// string details = 6;
+inline void AuditEvent::clear_details() {
+  details_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& AuditEvent::details() const {
+  // @@protoc_insertion_point(field_get:claros.common.core.AuditEvent.details)
+  return details_.GetNoArena();
+}
+inline void AuditEvent::set_details(const ::std::string& value) {
+  
+  details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.core.AuditEvent.details)
+}
+#if LANG_CXX11
+inline void AuditEvent::set_details(::std::string&& value) {
+  
+  details_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.core.AuditEvent.details)
+}
+#endif
+inline void AuditEvent::set_details(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.core.AuditEvent.details)
+}
+inline void AuditEvent::set_details(const char* value, size_t size) {
+  
+  details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.core.AuditEvent.details)
+}
+inline ::std::string* AuditEvent::mutable_details() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.core.AuditEvent.details)
+  return details_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* AuditEvent::release_details() {
+  // @@protoc_insertion_point(field_release:claros.common.core.AuditEvent.details)
+  
+  return details_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void AuditEvent::set_allocated_details(::std::string* details) {
+  if (details != nullptr) {
+    
+  } else {
+    
+  }
+  details_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), details);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.core.AuditEvent.details)
 }
 
 #ifdef __GNUC__

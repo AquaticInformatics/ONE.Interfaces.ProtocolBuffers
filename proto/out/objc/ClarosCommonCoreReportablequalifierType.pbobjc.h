@@ -38,13 +38,25 @@ typedef GPB_ENUM(ReportableQualifierType) {
    * of the field.
    **/
   ReportableQualifierType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  ReportableQualifierType_RqUnknown = 0,
-  ReportableQualifierType_RqNondetect = 1,
-  ReportableQualifierType_RqEstimate = 2,
-  ReportableQualifierType_RqDetectnonqualifiable = 3,
-  ReportableQualifierType_RqGreaterthan = 4,
-  ReportableQualifierType_RqLessthan = 5,
-  ReportableQualifierType_RqTooNumerousToCount = 6,
+  ReportableQualifierType_ReportableQualifierUnknown = 0,
+
+  /** Non-Detect. Most states now require the < detection limit and this should no longer be used */
+  ReportableQualifierType_ReportableQualifierNondetect = 1,
+
+  /** Estimated. */
+  ReportableQualifierType_ReportableQualifierEstimate = 2,
+
+  /** Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California. */
+  ReportableQualifierType_ReportableQualifierDetectnonqualifiable = 3,
+
+  /** Result is greater than xxxx. Used instead of TNTC. */
+  ReportableQualifierType_ReportableQualifierGreaterthan = 4,
+
+  /** Result was below the detection limit of YYYY. */
+  ReportableQualifierType_ReportableQualifierLessthan = 5,
+
+  /** Too many colonies were present (TNTC); the numeric value represents the filtration volume. */
+  ReportableQualifierType_ReportableQualifierTooNumerousToCount = 6,
 };
 
 GPBEnumDescriptor *ReportableQualifierType_EnumDescriptor(void);

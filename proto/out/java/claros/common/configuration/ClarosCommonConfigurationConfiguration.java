@@ -779,7 +779,7 @@ public final class ClarosCommonConfigurationConfiguration {
       if (!getConfigurationDataBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, configurationData_);
       }
-      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ET_UNKNOWN.getNumber()) {
+      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ENTITY_UNKNOWN.getNumber()) {
         output.writeEnum(7, entityTypeId_);
       }
       if (!getFilterByIdBytes().isEmpty()) {
@@ -832,7 +832,7 @@ public final class ClarosCommonConfigurationConfiguration {
       if (!getConfigurationDataBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, configurationData_);
       }
-      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ET_UNKNOWN.getNumber()) {
+      if (entityTypeId_ != claros.common.configuration.ClarosCommonConfigurationEntityType.EntityType.ENTITY_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, entityTypeId_);
       }

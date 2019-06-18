@@ -41,15 +41,18 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto[] =
   "\n;claros_common_core_reportablequalifier"
   "definition_type.proto\022\022claros.common.cor"
-  "e*\177\n!ReportableQualifierDefinitionType\022\017"
-  "\n\013RQD_UNKNOWN\020\000\022\024\n\020RQD_ENTEREDVALUE\020\001\022\014\n"
-  "\010RQD_ZERO\020\002\022\023\n\017RQD_HALFENTERED\020\003\022\020\n\014RQD_"
-  "CONSTANT\020\004b\006proto3"
+  "e*\213\002\n!ReportableQualifierDefinitionType\022"
+  "+\n\'REPORTABLE_QUALIFIER_DEFINITION_UNKNO"
+  "WN\020\000\0220\n,REPORTABLE_QUALIFIER_DEFINITION_"
+  "ENTEREDVALUE\020\001\022(\n$REPORTABLE_QUALIFIER_D"
+  "EFINITION_ZERO\020\002\022/\n+REPORTABLE_QUALIFIER"
+  "_DEFINITION_HALFENTERED\020\003\022,\n(REPORTABLE_"
+  "QUALIFIER_DEFINITION_CONSTANT\020\004b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto,
-  "claros_common_core_reportablequalifierdefinition_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto, 218,
+  "claros_common_core_reportablequalifierdefinition_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto, 359,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5freportablequalifierdefinition_5ftype_2eproto() {

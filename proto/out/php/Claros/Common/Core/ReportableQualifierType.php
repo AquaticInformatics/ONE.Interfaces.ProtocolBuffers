@@ -12,42 +12,54 @@ use UnexpectedValueException;
 class ReportableQualifierType
 {
     /**
-     * Generated from protobuf enum <code>RQ_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_UNKNOWN = 0;</code>
      */
-    const RQ_UNKNOWN = 0;
+    const REPORTABLE_QUALIFIER_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>RQ_NONDETECT = 1;</code>
+     * Non-Detect. Most states now require the < detection limit and this should no longer be used
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_NONDETECT = 1;</code>
      */
-    const RQ_NONDETECT = 1;
+    const REPORTABLE_QUALIFIER_NONDETECT = 1;
     /**
-     * Generated from protobuf enum <code>RQ_ESTIMATE = 2;</code>
+     * Estimated.
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_ESTIMATE = 2;</code>
      */
-    const RQ_ESTIMATE = 2;
+    const REPORTABLE_QUALIFIER_ESTIMATE = 2;
     /**
-     * Generated from protobuf enum <code>RQ_DETECTNONQUALIFIABLE = 3;</code>
+     * Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California.
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3;</code>
      */
-    const RQ_DETECTNONQUALIFIABLE = 3;
+    const REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3;
     /**
-     * Generated from protobuf enum <code>RQ_GREATERTHAN = 4;</code>
+     * Result is greater than xxxx. Used instead of TNTC.
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_GREATERTHAN = 4;</code>
      */
-    const RQ_GREATERTHAN = 4;
+    const REPORTABLE_QUALIFIER_GREATERTHAN = 4;
     /**
-     * Generated from protobuf enum <code>RQ_LESSTHAN = 5;</code>
+     * Result was below the detection limit of YYYY.
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_LESSTHAN = 5;</code>
      */
-    const RQ_LESSTHAN = 5;
+    const REPORTABLE_QUALIFIER_LESSTHAN = 5;
     /**
-     * Generated from protobuf enum <code>RQ_TOO_NUMEROUS_TO_COUNT = 6;</code>
+     * Too many colonies were present (TNTC); the numeric value represents the filtration volume.
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;</code>
      */
-    const RQ_TOO_NUMEROUS_TO_COUNT = 6;
+    const REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;
 
     private static $valueToName = [
-        self::RQ_UNKNOWN => 'RQ_UNKNOWN',
-        self::RQ_NONDETECT => 'RQ_NONDETECT',
-        self::RQ_ESTIMATE => 'RQ_ESTIMATE',
-        self::RQ_DETECTNONQUALIFIABLE => 'RQ_DETECTNONQUALIFIABLE',
-        self::RQ_GREATERTHAN => 'RQ_GREATERTHAN',
-        self::RQ_LESSTHAN => 'RQ_LESSTHAN',
-        self::RQ_TOO_NUMEROUS_TO_COUNT => 'RQ_TOO_NUMEROUS_TO_COUNT',
+        self::REPORTABLE_QUALIFIER_UNKNOWN => 'REPORTABLE_QUALIFIER_UNKNOWN',
+        self::REPORTABLE_QUALIFIER_NONDETECT => 'REPORTABLE_QUALIFIER_NONDETECT',
+        self::REPORTABLE_QUALIFIER_ESTIMATE => 'REPORTABLE_QUALIFIER_ESTIMATE',
+        self::REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE => 'REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE',
+        self::REPORTABLE_QUALIFIER_GREATERTHAN => 'REPORTABLE_QUALIFIER_GREATERTHAN',
+        self::REPORTABLE_QUALIFIER_LESSTHAN => 'REPORTABLE_QUALIFIER_LESSTHAN',
+        self::REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT => 'REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT',
     ];
 
     public static function name($value)

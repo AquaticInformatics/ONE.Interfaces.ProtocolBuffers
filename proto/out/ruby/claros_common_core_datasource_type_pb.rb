@@ -6,13 +6,13 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_datasource_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.DataSourceType" do
-      value :DS_UNKNOWN, 0
-      value :DS_FORM, 1
-      value :DS_COMPUTATION, 2
-      value :DS_SPREADSHEET, 3
-      value :DS_INSTRUMENTMEASUREMENT, 4
-      value :DS_IMPORT, 5
-      value :DS_SPREADSHEET_DEFINITION, 6
+      value :DATASOURCE_UNKNOWN, 0
+      value :DATASOURCE_FORM, 1
+      value :DATASOURCE_COMPUTATION, 2
+      value :DATASOURCE_SPREADSHEET, 3
+      value :DATASOURCE_INSTRUMENTMEASUREMENT, 4
+      value :DATASOURCE_IMPORT, 5
+      value :DATASOURCE_SPREADSHEET_DEFINITION, 6
     end
   end
 end

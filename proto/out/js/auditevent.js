@@ -71,7 +71,8 @@ proto.claros.common.core.AuditEvent.toObject = function(includeInstance, msg) {
     userid: jspb.Message.getFieldWithDefault(msg, 2, ""),
     datasourcetype: jspb.Message.getFieldWithDefault(msg, 3, 0),
     eventtype: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    timestamp: (f = msg.getTimestamp()) && proto.claros.common.core.ClarosDateTime.toObject(includeInstance, f)
+    timestamp: (f = msg.getTimestamp()) && proto.claros.common.core.ClarosDateTime.toObject(includeInstance, f),
+    details: jspb.Message.getFieldWithDefault(msg, 6, "")
   };
 
   if (includeInstance) {
@@ -128,6 +129,10 @@ proto.claros.common.core.AuditEvent.deserializeBinaryFromReader = function(msg, 
       var value = new proto.claros.common.core.ClarosDateTime;
       reader.readMessage(value,proto.claros.common.core.ClarosDateTime.deserializeBinaryFromReader);
       msg.setTimestamp(value);
+      break;
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDetails(value);
       break;
     default:
       reader.skipField();
@@ -192,6 +197,13 @@ proto.claros.common.core.AuditEvent.serializeBinaryToWriter = function(message, 
       5,
       f,
       proto.claros.common.core.ClarosDateTime.serializeBinaryToWriter
+    );
+  }
+  f = message.getDetails();
+  if (f.length > 0) {
+    writer.writeString(
+      6,
+      f
     );
   }
 };
@@ -287,6 +299,21 @@ proto.claros.common.core.AuditEvent.prototype.clearTimestamp = function() {
  */
 proto.claros.common.core.AuditEvent.prototype.hasTimestamp = function() {
   return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional string details = 6;
+ * @return {string}
+ */
+proto.claros.common.core.AuditEvent.prototype.getDetails = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/** @param {string} value */
+proto.claros.common.core.AuditEvent.prototype.setDetails = function(value) {
+  jspb.Message.setProto3StringField(this, 6, value);
 };
 
 

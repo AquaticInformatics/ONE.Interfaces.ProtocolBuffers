@@ -14,8 +14,8 @@ goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
 goog.require('proto.claros.common.computation.ComputationBinding');
 goog.require('proto.claros.common.form.FormBinding');
-goog.require('proto.claros.instrument.InstrumentMeasurementBinding');
-goog.require('proto.claros.instrument.InstrumentMeasurementFieldBinding');
+goog.require('proto.claros.instrument.measurement.InstrumentMeasurementBinding');
+goog.require('proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding');
 goog.require('proto.claros.operations.spreadsheet.SpreadsheetBinding');
 
 /**
@@ -48,18 +48,18 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_ = [[7,8,9,10,11]];
+proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_ = [[1,2,3,4,5]];
 
 /**
  * @enum {number}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.BindingCase = {
   BINDING_NOT_SET: 0,
-  INSTRUMENTMEASUREMENTBINDING: 7,
-  COMPUTATIONBINDING: 8,
-  FORMBINDING: 9,
-  SPREADSHEETBINDING: 10,
-  FIELDINSTRUMENTMEASUREMENTBINDING: 11
+  INSTRUMENTMEASUREMENTBINDING: 1,
+  COMPUTATIONBINDING: 2,
+  FORMBINDING: 3,
+  SPREADSHEETBINDING: 4,
+  FIELDINSTRUMENTMEASUREMENTBINDING: 5
 };
 
 /**
@@ -98,11 +98,11 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.toObject = functio
  */
 proto.claros.operations.spreadsheet.CellDataBinding.toObject = function(includeInstance, msg) {
   var f, obj = {
-    instrumentmeasurementbinding: (f = msg.getInstrumentmeasurementbinding()) && proto.claros.instrument.InstrumentMeasurementBinding.toObject(includeInstance, f),
+    instrumentmeasurementbinding: (f = msg.getInstrumentmeasurementbinding()) && proto.claros.instrument.measurement.InstrumentMeasurementBinding.toObject(includeInstance, f),
     computationbinding: (f = msg.getComputationbinding()) && proto.claros.common.computation.ComputationBinding.toObject(includeInstance, f),
     formbinding: (f = msg.getFormbinding()) && proto.claros.common.form.FormBinding.toObject(includeInstance, f),
     spreadsheetbinding: (f = msg.getSpreadsheetbinding()) && proto.claros.operations.spreadsheet.SpreadsheetBinding.toObject(includeInstance, f),
-    fieldinstrumentmeasurementbinding: (f = msg.getFieldinstrumentmeasurementbinding()) && proto.claros.instrument.InstrumentMeasurementFieldBinding.toObject(includeInstance, f)
+    fieldinstrumentmeasurementbinding: (f = msg.getFieldinstrumentmeasurementbinding()) && proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -139,29 +139,29 @@ proto.claros.operations.spreadsheet.CellDataBinding.deserializeBinaryFromReader 
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 7:
-      var value = new proto.claros.instrument.InstrumentMeasurementBinding;
-      reader.readMessage(value,proto.claros.instrument.InstrumentMeasurementBinding.deserializeBinaryFromReader);
+    case 1:
+      var value = new proto.claros.instrument.measurement.InstrumentMeasurementBinding;
+      reader.readMessage(value,proto.claros.instrument.measurement.InstrumentMeasurementBinding.deserializeBinaryFromReader);
       msg.setInstrumentmeasurementbinding(value);
       break;
-    case 8:
+    case 2:
       var value = new proto.claros.common.computation.ComputationBinding;
       reader.readMessage(value,proto.claros.common.computation.ComputationBinding.deserializeBinaryFromReader);
       msg.setComputationbinding(value);
       break;
-    case 9:
+    case 3:
       var value = new proto.claros.common.form.FormBinding;
       reader.readMessage(value,proto.claros.common.form.FormBinding.deserializeBinaryFromReader);
       msg.setFormbinding(value);
       break;
-    case 10:
+    case 4:
       var value = new proto.claros.operations.spreadsheet.SpreadsheetBinding;
       reader.readMessage(value,proto.claros.operations.spreadsheet.SpreadsheetBinding.deserializeBinaryFromReader);
       msg.setSpreadsheetbinding(value);
       break;
-    case 11:
-      var value = new proto.claros.instrument.InstrumentMeasurementFieldBinding;
-      reader.readMessage(value,proto.claros.instrument.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader);
+    case 5:
+      var value = new proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding;
+      reader.readMessage(value,proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader);
       msg.setFieldinstrumentmeasurementbinding(value);
       break;
     default:
@@ -196,15 +196,15 @@ proto.claros.operations.spreadsheet.CellDataBinding.serializeBinaryToWriter = fu
   f = message.getInstrumentmeasurementbinding();
   if (f != null) {
     writer.writeMessage(
-      7,
+      1,
       f,
-      proto.claros.instrument.InstrumentMeasurementBinding.serializeBinaryToWriter
+      proto.claros.instrument.measurement.InstrumentMeasurementBinding.serializeBinaryToWriter
     );
   }
   f = message.getComputationbinding();
   if (f != null) {
     writer.writeMessage(
-      8,
+      2,
       f,
       proto.claros.common.computation.ComputationBinding.serializeBinaryToWriter
     );
@@ -212,7 +212,7 @@ proto.claros.operations.spreadsheet.CellDataBinding.serializeBinaryToWriter = fu
   f = message.getFormbinding();
   if (f != null) {
     writer.writeMessage(
-      9,
+      3,
       f,
       proto.claros.common.form.FormBinding.serializeBinaryToWriter
     );
@@ -220,7 +220,7 @@ proto.claros.operations.spreadsheet.CellDataBinding.serializeBinaryToWriter = fu
   f = message.getSpreadsheetbinding();
   if (f != null) {
     writer.writeMessage(
-      10,
+      4,
       f,
       proto.claros.operations.spreadsheet.SpreadsheetBinding.serializeBinaryToWriter
     );
@@ -228,27 +228,27 @@ proto.claros.operations.spreadsheet.CellDataBinding.serializeBinaryToWriter = fu
   f = message.getFieldinstrumentmeasurementbinding();
   if (f != null) {
     writer.writeMessage(
-      11,
+      5,
       f,
-      proto.claros.instrument.InstrumentMeasurementFieldBinding.serializeBinaryToWriter
+      proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.serializeBinaryToWriter
     );
   }
 };
 
 
 /**
- * optional claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;
- * @return {?proto.claros.instrument.InstrumentMeasurementBinding}
+ * optional claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;
+ * @return {?proto.claros.instrument.measurement.InstrumentMeasurementBinding}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.getInstrumentmeasurementbinding = function() {
-  return /** @type{?proto.claros.instrument.InstrumentMeasurementBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.instrument.InstrumentMeasurementBinding, 7));
+  return /** @type{?proto.claros.instrument.measurement.InstrumentMeasurementBinding} */ (
+    jspb.Message.getWrapperField(this, proto.claros.instrument.measurement.InstrumentMeasurementBinding, 1));
 };
 
 
-/** @param {?proto.claros.instrument.InstrumentMeasurementBinding|undefined} value */
+/** @param {?proto.claros.instrument.measurement.InstrumentMeasurementBinding|undefined} value */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.setInstrumentmeasurementbinding = function(value) {
-  jspb.Message.setOneofWrapperField(this, 7, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
+  jspb.Message.setOneofWrapperField(this, 1, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
 };
 
 
@@ -265,23 +265,23 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.clearInstrumentmea
  * @return {boolean}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.hasInstrumentmeasurementbinding = function() {
-  return jspb.Message.getField(this, 7) != null;
+  return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
- * optional claros.common.computation.ComputationBinding computationBinding = 8;
+ * optional claros.common.computation.ComputationBinding computationBinding = 2;
  * @return {?proto.claros.common.computation.ComputationBinding}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.getComputationbinding = function() {
   return /** @type{?proto.claros.common.computation.ComputationBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.computation.ComputationBinding, 8));
+    jspb.Message.getWrapperField(this, proto.claros.common.computation.ComputationBinding, 2));
 };
 
 
 /** @param {?proto.claros.common.computation.ComputationBinding|undefined} value */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.setComputationbinding = function(value) {
-  jspb.Message.setOneofWrapperField(this, 8, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
+  jspb.Message.setOneofWrapperField(this, 2, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
 };
 
 
@@ -298,23 +298,23 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.clearComputationbi
  * @return {boolean}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.hasComputationbinding = function() {
-  return jspb.Message.getField(this, 8) != null;
+  return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
- * optional claros.common.form.FormBinding formBinding = 9;
+ * optional claros.common.form.FormBinding formBinding = 3;
  * @return {?proto.claros.common.form.FormBinding}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.getFormbinding = function() {
   return /** @type{?proto.claros.common.form.FormBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.form.FormBinding, 9));
+    jspb.Message.getWrapperField(this, proto.claros.common.form.FormBinding, 3));
 };
 
 
 /** @param {?proto.claros.common.form.FormBinding|undefined} value */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.setFormbinding = function(value) {
-  jspb.Message.setOneofWrapperField(this, 9, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
+  jspb.Message.setOneofWrapperField(this, 3, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
 };
 
 
@@ -331,23 +331,23 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.clearFormbinding =
  * @return {boolean}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.hasFormbinding = function() {
-  return jspb.Message.getField(this, 9) != null;
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
 /**
- * optional SpreadsheetBinding spreadsheetBinding = 10;
+ * optional SpreadsheetBinding spreadsheetBinding = 4;
  * @return {?proto.claros.operations.spreadsheet.SpreadsheetBinding}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.getSpreadsheetbinding = function() {
   return /** @type{?proto.claros.operations.spreadsheet.SpreadsheetBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.operations.spreadsheet.SpreadsheetBinding, 10));
+    jspb.Message.getWrapperField(this, proto.claros.operations.spreadsheet.SpreadsheetBinding, 4));
 };
 
 
 /** @param {?proto.claros.operations.spreadsheet.SpreadsheetBinding|undefined} value */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.setSpreadsheetbinding = function(value) {
-  jspb.Message.setOneofWrapperField(this, 10, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
+  jspb.Message.setOneofWrapperField(this, 4, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
 };
 
 
@@ -364,23 +364,23 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.clearSpreadsheetbi
  * @return {boolean}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.hasSpreadsheetbinding = function() {
-  return jspb.Message.getField(this, 10) != null;
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
 /**
- * optional claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;
- * @return {?proto.claros.instrument.InstrumentMeasurementFieldBinding}
+ * optional claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;
+ * @return {?proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.getFieldinstrumentmeasurementbinding = function() {
-  return /** @type{?proto.claros.instrument.InstrumentMeasurementFieldBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.instrument.InstrumentMeasurementFieldBinding, 11));
+  return /** @type{?proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding} */ (
+    jspb.Message.getWrapperField(this, proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding, 5));
 };
 
 
-/** @param {?proto.claros.instrument.InstrumentMeasurementFieldBinding|undefined} value */
+/** @param {?proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding|undefined} value */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.setFieldinstrumentmeasurementbinding = function(value) {
-  jspb.Message.setOneofWrapperField(this, 11, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
+  jspb.Message.setOneofWrapperField(this, 5, proto.claros.operations.spreadsheet.CellDataBinding.oneofGroups_[0], value);
 };
 
 
@@ -397,7 +397,7 @@ proto.claros.operations.spreadsheet.CellDataBinding.prototype.clearFieldinstrume
  * @return {boolean}
  */
 proto.claros.operations.spreadsheet.CellDataBinding.prototype.hasFieldinstrumentmeasurementbinding = function() {
-  return jspb.Message.getField(this, 11) != null;
+  return jspb.Message.getField(this, 5) != null;
 };
 
 

@@ -7,42 +7,46 @@ namespace Claros\Common\Computation;
 use UnexpectedValueException;
 
 /**
+ * Allows for navigating to adjacent rows.
+ *
  * Protobuf type <code>claros.common.computation.ComputationCursorType</code>
  */
 class ComputationCursorType
 {
     /**
-     * Generated from protobuf enum <code>CC_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_UNKNOWN = 0;</code>
      */
-    const CC_UNKNOWN = 0;
+    const COMPUTATION_CURSOR_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>CC_CURRENT = 1;</code>
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_CURRENT = 1;</code>
      */
-    const CC_CURRENT = 1;
+    const COMPUTATION_CURSOR_CURRENT = 1;
     /**
-     * Generated from protobuf enum <code>CC_PREVIOUS = 2;</code>
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_PREVIOUS = 2;</code>
      */
-    const CC_PREVIOUS = 2;
+    const COMPUTATION_CURSOR_PREVIOUS = 2;
     /**
-     * Generated from protobuf enum <code>CC_NEXT = 4;</code>
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_NEXT = 4;</code>
      */
-    const CC_NEXT = 4;
+    const COMPUTATION_CURSOR_NEXT = 4;
     /**
-     * Generated from protobuf enum <code>CC_LAST = 5;</code>
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_LAST = 5;</code>
      */
-    const CC_LAST = 5;
+    const COMPUTATION_CURSOR_LAST = 5;
     /**
-     * Generated from protobuf enum <code>CC_ABSOLUTE = 6;</code>
+     * should this be relative?
+     *
+     * Generated from protobuf enum <code>COMPUTATION_CURSOR_ABSOLUTE = 6;</code>
      */
-    const CC_ABSOLUTE = 6;
+    const COMPUTATION_CURSOR_ABSOLUTE = 6;
 
     private static $valueToName = [
-        self::CC_UNKNOWN => 'CC_UNKNOWN',
-        self::CC_CURRENT => 'CC_CURRENT',
-        self::CC_PREVIOUS => 'CC_PREVIOUS',
-        self::CC_NEXT => 'CC_NEXT',
-        self::CC_LAST => 'CC_LAST',
-        self::CC_ABSOLUTE => 'CC_ABSOLUTE',
+        self::COMPUTATION_CURSOR_UNKNOWN => 'COMPUTATION_CURSOR_UNKNOWN',
+        self::COMPUTATION_CURSOR_CURRENT => 'COMPUTATION_CURSOR_CURRENT',
+        self::COMPUTATION_CURSOR_PREVIOUS => 'COMPUTATION_CURSOR_PREVIOUS',
+        self::COMPUTATION_CURSOR_NEXT => 'COMPUTATION_CURSOR_NEXT',
+        self::COMPUTATION_CURSOR_LAST => 'COMPUTATION_CURSOR_LAST',
+        self::COMPUTATION_CURSOR_ABSOLUTE => 'COMPUTATION_CURSOR_ABSOLUTE',
     ];
 
     public static function name($value)

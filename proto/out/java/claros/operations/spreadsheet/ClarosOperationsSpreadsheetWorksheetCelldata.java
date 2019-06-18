@@ -19,86 +19,158 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The value that was entered by the user as a number
+     * </pre>
+     *
      * <code>double value = 1;</code>
      */
     double getValue();
 
     /**
+     * <pre>
+     * The value represented as a string
+     * </pre>
+     *
      * <code>string stringValue = 2;</code>
      */
     java.lang.String getStringValue();
     /**
+     * <pre>
+     * The value represented as a string
+     * </pre>
+     *
      * <code>string stringValue = 2;</code>
      */
     com.google.protobuf.ByteString
         getStringValueBytes();
 
     /**
+     * <pre>
+     * Whether the cell has been locked to prevent unautorized update of just this cell
+     * </pre>
+     *
      * <code>bool isLocked = 3;</code>
      */
     boolean getIsLocked();
 
     /**
+     * <pre>
+     * The unit that relates to the value
+     * </pre>
+     *
      * <code>uint32 unitId = 4;</code>
      */
     int getUnitId();
 
     /**
+     * <pre>
+     * Textual note to explain why the data was changed
+     * </pre>
+     *
      * <code>string justification = 5;</code>
      */
     java.lang.String getJustification();
     /**
+     * <pre>
+     * Textual note to explain why the data was changed
+     * </pre>
+     *
      * <code>string justification = 5;</code>
      */
     com.google.protobuf.ByteString
         getJustificationBytes();
 
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     boolean hasReportableQualifier();
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier getReportableQualifier();
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifierOrBuilder getReportableQualifierOrBuilder();
 
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding> 
         getCellDataBindingsList();
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding getCellDataBindings(int index);
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     int getCellDataBindingsCount();
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder> 
         getCellDataBindingsOrBuilderList();
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder getCellDataBindingsOrBuilder(
         int index);
 
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     boolean hasAuditEvent();
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent();
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder();
@@ -246,6 +318,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int VALUE_FIELD_NUMBER = 1;
     private double value_;
     /**
+     * <pre>
+     * The value that was entered by the user as a number
+     * </pre>
+     *
      * <code>double value = 1;</code>
      */
     public double getValue() {
@@ -255,6 +331,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int STRINGVALUE_FIELD_NUMBER = 2;
     private volatile java.lang.Object stringValue_;
     /**
+     * <pre>
+     * The value represented as a string
+     * </pre>
+     *
      * <code>string stringValue = 2;</code>
      */
     public java.lang.String getStringValue() {
@@ -270,6 +350,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       }
     }
     /**
+     * <pre>
+     * The value represented as a string
+     * </pre>
+     *
      * <code>string stringValue = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -289,6 +373,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int ISLOCKED_FIELD_NUMBER = 3;
     private boolean isLocked_;
     /**
+     * <pre>
+     * Whether the cell has been locked to prevent unautorized update of just this cell
+     * </pre>
+     *
      * <code>bool isLocked = 3;</code>
      */
     public boolean getIsLocked() {
@@ -298,6 +386,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int UNITID_FIELD_NUMBER = 4;
     private int unitId_;
     /**
+     * <pre>
+     * The unit that relates to the value
+     * </pre>
+     *
      * <code>uint32 unitId = 4;</code>
      */
     public int getUnitId() {
@@ -307,6 +399,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int JUSTIFICATION_FIELD_NUMBER = 5;
     private volatile java.lang.Object justification_;
     /**
+     * <pre>
+     * Textual note to explain why the data was changed
+     * </pre>
+     *
      * <code>string justification = 5;</code>
      */
     public java.lang.String getJustification() {
@@ -322,6 +418,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       }
     }
     /**
+     * <pre>
+     * Textual note to explain why the data was changed
+     * </pre>
+     *
      * <code>string justification = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -341,18 +441,30 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int REPORTABLEQUALIFIER_FIELD_NUMBER = 6;
     private claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier reportableQualifier_;
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     public boolean hasReportableQualifier() {
       return reportableQualifier_ != null;
     }
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier getReportableQualifier() {
       return reportableQualifier_ == null ? claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier.getDefaultInstance() : reportableQualifier_;
     }
     /**
+     * <pre>
+     * If the data was entered as a qualified value, the qualified properties
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifierOrBuilder getReportableQualifierOrBuilder() {
@@ -362,12 +474,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int CELLDATABINDINGS_FIELD_NUMBER = 7;
     private java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding> cellDataBindings_;
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding> getCellDataBindingsList() {
       return cellDataBindings_;
     }
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder> 
@@ -375,18 +495,30 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       return cellDataBindings_;
     }
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     public int getCellDataBindingsCount() {
       return cellDataBindings_.size();
     }
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding getCellDataBindings(int index) {
       return cellDataBindings_.get(index);
     }
     /**
+     * <pre>
+     * Where the data came from that went into the cell
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder getCellDataBindingsOrBuilder(
@@ -397,18 +529,30 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
     public static final int AUDITEVENT_FIELD_NUMBER = 99;
     private claros.common.core.ClarosCommonCoreAuditevent.AuditEvent auditEvent_;
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public boolean hasAuditEvent() {
       return auditEvent_ != null;
     }
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
       return auditEvent_ == null ? claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.getDefaultInstance() : auditEvent_;
     }
     /**
+     * <pre>
+     * Audit information for this cell entry
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
@@ -909,12 +1053,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
 
       private double value_ ;
       /**
+       * <pre>
+       * The value that was entered by the user as a number
+       * </pre>
+       *
        * <code>double value = 1;</code>
        */
       public double getValue() {
         return value_;
       }
       /**
+       * <pre>
+       * The value that was entered by the user as a number
+       * </pre>
+       *
        * <code>double value = 1;</code>
        */
       public Builder setValue(double value) {
@@ -924,6 +1076,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * The value that was entered by the user as a number
+       * </pre>
+       *
        * <code>double value = 1;</code>
        */
       public Builder clearValue() {
@@ -935,6 +1091,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
 
       private java.lang.Object stringValue_ = "";
       /**
+       * <pre>
+       * The value represented as a string
+       * </pre>
+       *
        * <code>string stringValue = 2;</code>
        */
       public java.lang.String getStringValue() {
@@ -950,6 +1110,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * The value represented as a string
+       * </pre>
+       *
        * <code>string stringValue = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -966,6 +1130,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * The value represented as a string
+       * </pre>
+       *
        * <code>string stringValue = 2;</code>
        */
       public Builder setStringValue(
@@ -979,6 +1147,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * The value represented as a string
+       * </pre>
+       *
        * <code>string stringValue = 2;</code>
        */
       public Builder clearStringValue() {
@@ -988,6 +1160,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * The value represented as a string
+       * </pre>
+       *
        * <code>string stringValue = 2;</code>
        */
       public Builder setStringValueBytes(
@@ -1004,12 +1180,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
 
       private boolean isLocked_ ;
       /**
+       * <pre>
+       * Whether the cell has been locked to prevent unautorized update of just this cell
+       * </pre>
+       *
        * <code>bool isLocked = 3;</code>
        */
       public boolean getIsLocked() {
         return isLocked_;
       }
       /**
+       * <pre>
+       * Whether the cell has been locked to prevent unautorized update of just this cell
+       * </pre>
+       *
        * <code>bool isLocked = 3;</code>
        */
       public Builder setIsLocked(boolean value) {
@@ -1019,6 +1203,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Whether the cell has been locked to prevent unautorized update of just this cell
+       * </pre>
+       *
        * <code>bool isLocked = 3;</code>
        */
       public Builder clearIsLocked() {
@@ -1030,12 +1218,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
 
       private int unitId_ ;
       /**
+       * <pre>
+       * The unit that relates to the value
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public int getUnitId() {
         return unitId_;
       }
       /**
+       * <pre>
+       * The unit that relates to the value
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public Builder setUnitId(int value) {
@@ -1045,6 +1241,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * The unit that relates to the value
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public Builder clearUnitId() {
@@ -1056,6 +1256,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
 
       private java.lang.Object justification_ = "";
       /**
+       * <pre>
+       * Textual note to explain why the data was changed
+       * </pre>
+       *
        * <code>string justification = 5;</code>
        */
       public java.lang.String getJustification() {
@@ -1071,6 +1275,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Textual note to explain why the data was changed
+       * </pre>
+       *
        * <code>string justification = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -1087,6 +1295,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Textual note to explain why the data was changed
+       * </pre>
+       *
        * <code>string justification = 5;</code>
        */
       public Builder setJustification(
@@ -1100,6 +1312,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Textual note to explain why the data was changed
+       * </pre>
+       *
        * <code>string justification = 5;</code>
        */
       public Builder clearJustification() {
@@ -1109,6 +1325,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Textual note to explain why the data was changed
+       * </pre>
+       *
        * <code>string justification = 5;</code>
        */
       public Builder setJustificationBytes(
@@ -1127,12 +1347,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier, claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier.Builder, claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifierOrBuilder> reportableQualifierBuilder_;
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public boolean hasReportableQualifier() {
         return reportableQualifierBuilder_ != null || reportableQualifier_ != null;
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier getReportableQualifier() {
@@ -1143,6 +1371,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public Builder setReportableQualifier(claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier value) {
@@ -1159,6 +1391,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public Builder setReportableQualifier(
@@ -1173,6 +1409,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public Builder mergeReportableQualifier(claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier value) {
@@ -1191,6 +1431,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public Builder clearReportableQualifier() {
@@ -1205,6 +1449,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifier.Builder getReportableQualifierBuilder() {
@@ -1213,6 +1461,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return getReportableQualifierFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifier.ReportableQualifierOrBuilder getReportableQualifierOrBuilder() {
@@ -1224,6 +1476,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * If the data was entered as a qualified value, the qualified properties
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1253,6 +1509,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder> cellDataBindingsBuilder_;
 
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding> getCellDataBindingsList() {
@@ -1263,6 +1523,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public int getCellDataBindingsCount() {
@@ -1273,6 +1537,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding getCellDataBindings(int index) {
@@ -1283,6 +1551,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder setCellDataBindings(
@@ -1300,6 +1572,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder setCellDataBindings(
@@ -1314,6 +1590,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder addCellDataBindings(claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding value) {
@@ -1330,6 +1610,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder addCellDataBindings(
@@ -1347,6 +1631,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder addCellDataBindings(
@@ -1361,6 +1649,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder addCellDataBindings(
@@ -1375,6 +1667,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder addAllCellDataBindings(
@@ -1390,6 +1686,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder clearCellDataBindings() {
@@ -1403,6 +1703,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public Builder removeCellDataBindings(int index) {
@@ -1416,6 +1720,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.Builder getCellDataBindingsBuilder(
@@ -1423,6 +1731,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return getCellDataBindingsFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder getCellDataBindingsOrBuilder(
@@ -1433,6 +1745,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBindingOrBuilder> 
@@ -1444,6 +1760,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.Builder addCellDataBindingsBuilder() {
@@ -1451,6 +1771,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
             claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.Builder addCellDataBindingsBuilder(
@@ -1459,6 +1783,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
             index, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Where the data came from that went into the cell
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.Builder> 
@@ -1484,12 +1812,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreAuditevent.AuditEvent, claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder, claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder> auditEventBuilder_;
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public boolean hasAuditEvent() {
         return auditEventBuilder_ != null || auditEvent_ != null;
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
@@ -1500,6 +1836,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder setAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
@@ -1516,6 +1856,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder setAuditEvent(
@@ -1530,6 +1874,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder mergeAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
@@ -1548,6 +1896,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder clearAuditEvent() {
@@ -1562,6 +1914,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return this;
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder getAuditEventBuilder() {
@@ -1570,6 +1926,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         return getAuditEventFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
@@ -1581,6 +1941,10 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldata {
         }
       }
       /**
+       * <pre>
+       * Audit information for this cell entry
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

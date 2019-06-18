@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n(claros_common_core_auditevent_type.proto\x12\x12\x63laros.common.core*g\n\x0e\x41uditEventType\x12\x0e\n\nAE_UNKNOWN\x10\x00\x12\r\n\tAE_CREATE\x10\x01\x12\x0b\n\x07\x41\x45_READ\x10\x02\x12\r\n\tAE_UPDATE\x10\x03\x12\r\n\tAE_DELETE\x10\x04\x12\x0b\n\x07\x41\x45_SENT\x10\x05\x62\x06proto3')
+  serialized_pb=_b('\n(claros_common_core_auditevent_type.proto\x12\x12\x63laros.common.core*\x9d\x01\n\x0e\x41uditEventType\x12\x17\n\x13\x41UDIT_EVENT_UNKNOWN\x10\x00\x12\x16\n\x12\x41UDIT_EVENT_CREATE\x10\x01\x12\x14\n\x10\x41UDIT_EVENT_READ\x10\x02\x12\x16\n\x12\x41UDIT_EVENT_UPDATE\x10\x03\x12\x16\n\x12\x41UDIT_EVENT_DELETE\x10\x04\x12\x14\n\x10\x41UDIT_EVENT_SENT\x10\x05\x62\x06proto3')
 )
 
 _AUDITEVENTTYPE = _descriptor.EnumDescriptor(
@@ -31,44 +31,44 @@ _AUDITEVENTTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='AE_UNKNOWN', index=0, number=0,
+      name='AUDIT_EVENT_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AE_CREATE', index=1, number=1,
+      name='AUDIT_EVENT_CREATE', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AE_READ', index=2, number=2,
+      name='AUDIT_EVENT_READ', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AE_UPDATE', index=3, number=3,
+      name='AUDIT_EVENT_UPDATE', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AE_DELETE', index=4, number=4,
+      name='AUDIT_EVENT_DELETE', index=4, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AE_SENT', index=5, number=5,
+      name='AUDIT_EVENT_SENT', index=5, number=5,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=64,
-  serialized_end=167,
+  serialized_start=65,
+  serialized_end=222,
 )
 _sym_db.RegisterEnumDescriptor(_AUDITEVENTTYPE)
 
 AuditEventType = enum_type_wrapper.EnumTypeWrapper(_AUDITEVENTTYPE)
-AE_UNKNOWN = 0
-AE_CREATE = 1
-AE_READ = 2
-AE_UPDATE = 3
-AE_DELETE = 4
-AE_SENT = 5
+AUDIT_EVENT_UNKNOWN = 0
+AUDIT_EVENT_CREATE = 1
+AUDIT_EVENT_READ = 2
+AUDIT_EVENT_UPDATE = 3
+AUDIT_EVENT_DELETE = 4
+AUDIT_EVENT_SENT = 5
 
 
 DESCRIPTOR.enum_types_by_name['AuditEventType'] = _AUDITEVENTTYPE

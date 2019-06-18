@@ -15,10 +15,10 @@ class ClarosCommonCoreTimezone
           return;
         }
         $pool->internalAddGeneratedFile(hex2bin(
-            "0a670a21636c61726f735f636f6d6d6f6e5f636f72655f74696d657a6f6e" .
-            "652e70726f746f1212636c61726f732e636f6d6d6f6e2e636f72652a260a" .
-            "0854696d655a6f6e65120e0a0a545a5f554e4b4e4f574e1000120a0a0654" .
-            "5a5f5554431001620670726f746f33"
+            "0a730a21636c61726f735f636f6d6d6f6e5f636f72655f74696d657a6f6e" .
+            "652e70726f746f1212636c61726f732e636f6d6d6f6e2e636f72652a320a" .
+            "0854696d655a6f6e6512140a1054494d455a4f4e455f554e4b4e4f574e10" .
+            "0012100a0c54494d455a4f4e455f5554431001620670726f746f33"
         ), true);
 
         static::$is_initialized = true;

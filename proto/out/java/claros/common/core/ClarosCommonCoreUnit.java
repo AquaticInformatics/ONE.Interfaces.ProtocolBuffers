@@ -19,65 +19,117 @@ public final class ClarosCommonCoreUnit {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * GUID for the Unit
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     java.lang.String getId();
     /**
+     * <pre>
+     * GUID for the Unit
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     com.google.protobuf.ByteString
         getIdBytes();
 
     /**
+     * <pre>
+     * Integer equivalent that uniquely describes the unit
+     * </pre>
+     *
      * <code>uint32 IntId = 2;</code>
      */
     int getIntId();
 
     /**
+     * <pre>
+     * Localization key for the unit
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     java.lang.String getI18NKey();
     /**
+     * <pre>
+     * Localization key for the unit
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     com.google.protobuf.ByteString
         getI18NKeyBytes();
 
     /**
+     * <pre>
+     * The untranslated unit name
+     * </pre>
+     *
      * <code>string unitName = 4;</code>
      */
     java.lang.String getUnitName();
     /**
+     * <pre>
+     * The untranslated unit name
+     * </pre>
+     *
      * <code>string unitName = 4;</code>
      */
     com.google.protobuf.ByteString
         getUnitNameBytes();
 
     /**
+     * <pre>
+     * The quantity type related to the unit
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     java.lang.String getQuantityTypeId();
     /**
+     * <pre>
+     * The quantity type related to the unit
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     com.google.protobuf.ByteString
         getQuantityTypeIdBytes();
 
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     java.lang.String getDescription();
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
     /**
+     * <pre>
+     * ????? Do we need these audit fields
+     * </pre>
+     *
      * <code>string createdById = 7;</code>
      */
     java.lang.String getCreatedById();
     /**
+     * <pre>
+     * ????? Do we need these audit fields
+     * </pre>
+     *
      * <code>string createdById = 7;</code>
      */
     com.google.protobuf.ByteString
@@ -273,6 +325,10 @@ public final class ClarosCommonCoreUnit {
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
+     * <pre>
+     * GUID for the Unit
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     public java.lang.String getId() {
@@ -288,6 +344,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * GUID for the Unit
+     * </pre>
+     *
      * <code>string Id = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -307,6 +367,10 @@ public final class ClarosCommonCoreUnit {
     public static final int INTID_FIELD_NUMBER = 2;
     private int intId_;
     /**
+     * <pre>
+     * Integer equivalent that uniquely describes the unit
+     * </pre>
+     *
      * <code>uint32 IntId = 2;</code>
      */
     public int getIntId() {
@@ -316,6 +380,10 @@ public final class ClarosCommonCoreUnit {
     public static final int I18NKEY_FIELD_NUMBER = 3;
     private volatile java.lang.Object i18NKey_;
     /**
+     * <pre>
+     * Localization key for the unit
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     public java.lang.String getI18NKey() {
@@ -331,6 +399,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * Localization key for the unit
+     * </pre>
+     *
      * <code>string i18nKey = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -350,6 +422,10 @@ public final class ClarosCommonCoreUnit {
     public static final int UNITNAME_FIELD_NUMBER = 4;
     private volatile java.lang.Object unitName_;
     /**
+     * <pre>
+     * The untranslated unit name
+     * </pre>
+     *
      * <code>string unitName = 4;</code>
      */
     public java.lang.String getUnitName() {
@@ -365,6 +441,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * The untranslated unit name
+     * </pre>
+     *
      * <code>string unitName = 4;</code>
      */
     public com.google.protobuf.ByteString
@@ -384,6 +464,10 @@ public final class ClarosCommonCoreUnit {
     public static final int QUANTITYTYPEID_FIELD_NUMBER = 5;
     private volatile java.lang.Object quantityTypeId_;
     /**
+     * <pre>
+     * The quantity type related to the unit
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     public java.lang.String getQuantityTypeId() {
@@ -399,6 +483,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * The quantity type related to the unit
+     * </pre>
+     *
      * <code>string quantityTypeId = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -418,6 +506,10 @@ public final class ClarosCommonCoreUnit {
     public static final int DESCRIPTION_FIELD_NUMBER = 6;
     private volatile java.lang.Object description_;
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     public java.lang.String getDescription() {
@@ -433,6 +525,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * ?????
+     * </pre>
+     *
      * <code>string description = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -452,6 +548,10 @@ public final class ClarosCommonCoreUnit {
     public static final int CREATEDBYID_FIELD_NUMBER = 7;
     private volatile java.lang.Object createdById_;
     /**
+     * <pre>
+     * ????? Do we need these audit fields
+     * </pre>
+     *
      * <code>string createdById = 7;</code>
      */
     public java.lang.String getCreatedById() {
@@ -467,6 +567,10 @@ public final class ClarosCommonCoreUnit {
       }
     }
     /**
+     * <pre>
+     * ????? Do we need these audit fields
+     * </pre>
+     *
      * <code>string createdById = 7;</code>
      */
     public com.google.protobuf.ByteString
@@ -1042,6 +1146,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object id_ = "";
       /**
+       * <pre>
+       * GUID for the Unit
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public java.lang.String getId() {
@@ -1057,6 +1165,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * GUID for the Unit
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -1073,6 +1185,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * GUID for the Unit
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder setId(
@@ -1086,6 +1202,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * GUID for the Unit
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder clearId() {
@@ -1095,6 +1215,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * GUID for the Unit
+       * </pre>
+       *
        * <code>string Id = 1;</code>
        */
       public Builder setIdBytes(
@@ -1111,12 +1235,20 @@ public final class ClarosCommonCoreUnit {
 
       private int intId_ ;
       /**
+       * <pre>
+       * Integer equivalent that uniquely describes the unit
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public int getIntId() {
         return intId_;
       }
       /**
+       * <pre>
+       * Integer equivalent that uniquely describes the unit
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public Builder setIntId(int value) {
@@ -1126,6 +1258,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * Integer equivalent that uniquely describes the unit
+       * </pre>
+       *
        * <code>uint32 IntId = 2;</code>
        */
       public Builder clearIntId() {
@@ -1137,6 +1273,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object i18NKey_ = "";
       /**
+       * <pre>
+       * Localization key for the unit
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public java.lang.String getI18NKey() {
@@ -1152,6 +1292,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * Localization key for the unit
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -1168,6 +1312,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * Localization key for the unit
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder setI18NKey(
@@ -1181,6 +1329,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * Localization key for the unit
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder clearI18NKey() {
@@ -1190,6 +1342,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * Localization key for the unit
+       * </pre>
+       *
        * <code>string i18nKey = 3;</code>
        */
       public Builder setI18NKeyBytes(
@@ -1206,6 +1362,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object unitName_ = "";
       /**
+       * <pre>
+       * The untranslated unit name
+       * </pre>
+       *
        * <code>string unitName = 4;</code>
        */
       public java.lang.String getUnitName() {
@@ -1221,6 +1381,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * The untranslated unit name
+       * </pre>
+       *
        * <code>string unitName = 4;</code>
        */
       public com.google.protobuf.ByteString
@@ -1237,6 +1401,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * The untranslated unit name
+       * </pre>
+       *
        * <code>string unitName = 4;</code>
        */
       public Builder setUnitName(
@@ -1250,6 +1418,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * The untranslated unit name
+       * </pre>
+       *
        * <code>string unitName = 4;</code>
        */
       public Builder clearUnitName() {
@@ -1259,6 +1431,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * The untranslated unit name
+       * </pre>
+       *
        * <code>string unitName = 4;</code>
        */
       public Builder setUnitNameBytes(
@@ -1275,6 +1451,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object quantityTypeId_ = "";
       /**
+       * <pre>
+       * The quantity type related to the unit
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public java.lang.String getQuantityTypeId() {
@@ -1290,6 +1470,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * The quantity type related to the unit
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -1306,6 +1490,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * The quantity type related to the unit
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder setQuantityTypeId(
@@ -1319,6 +1507,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * The quantity type related to the unit
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder clearQuantityTypeId() {
@@ -1328,6 +1520,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * The quantity type related to the unit
+       * </pre>
+       *
        * <code>string quantityTypeId = 5;</code>
        */
       public Builder setQuantityTypeIdBytes(
@@ -1344,6 +1540,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object description_ = "";
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public java.lang.String getDescription() {
@@ -1359,6 +1559,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -1375,6 +1579,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder setDescription(
@@ -1388,6 +1596,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder clearDescription() {
@@ -1397,6 +1609,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * ?????
+       * </pre>
+       *
        * <code>string description = 6;</code>
        */
       public Builder setDescriptionBytes(
@@ -1413,6 +1629,10 @@ public final class ClarosCommonCoreUnit {
 
       private java.lang.Object createdById_ = "";
       /**
+       * <pre>
+       * ????? Do we need these audit fields
+       * </pre>
+       *
        * <code>string createdById = 7;</code>
        */
       public java.lang.String getCreatedById() {
@@ -1428,6 +1648,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * ????? Do we need these audit fields
+       * </pre>
+       *
        * <code>string createdById = 7;</code>
        */
       public com.google.protobuf.ByteString
@@ -1444,6 +1668,10 @@ public final class ClarosCommonCoreUnit {
         }
       }
       /**
+       * <pre>
+       * ????? Do we need these audit fields
+       * </pre>
+       *
        * <code>string createdById = 7;</code>
        */
       public Builder setCreatedById(
@@ -1457,6 +1685,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * ????? Do we need these audit fields
+       * </pre>
+       *
        * <code>string createdById = 7;</code>
        */
       public Builder clearCreatedById() {
@@ -1466,6 +1698,10 @@ public final class ClarosCommonCoreUnit {
         return this;
       }
       /**
+       * <pre>
+       * ????? Do we need these audit fields
+       * </pre>
+       *
        * <code>string createdById = 7;</code>
        */
       public Builder setCreatedByIdBytes(

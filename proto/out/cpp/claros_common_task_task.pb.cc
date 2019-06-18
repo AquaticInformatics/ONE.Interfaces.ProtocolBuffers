@@ -16,6 +16,9 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fauditevent_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_AuditEvent_claros_5fcommon_5fcore_5fauditevent_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5ftask_5fdata_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TaskData_claros_5fcommon_5ftask_5fdata_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5ftask_5fdefinition_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_TaskDefinition_claros_5fcommon_5ftask_5fdefinition_2eproto;
 namespace claros {
 namespace common {
 namespace task {
@@ -37,8 +40,11 @@ static void InitDefaultsTask_claros_5fcommon_5ftask_5ftask_2eproto() {
   ::claros::common::task::Task::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_Task_claros_5fcommon_5ftask_5ftask_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTask_claros_5fcommon_5ftask_5ftask_2eproto}, {}};
+::google::protobuf::internal::SCCInfo<3> scc_info_Task_claros_5fcommon_5ftask_5ftask_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsTask_claros_5fcommon_5ftask_5ftask_2eproto}, {
+      &scc_info_TaskDefinition_claros_5fcommon_5ftask_5fdefinition_2eproto.base,
+      &scc_info_TaskData_claros_5fcommon_5ftask_5fdata_2eproto.base,
+      &scc_info_AuditEvent_claros_5fcommon_5fcore_5fauditevent_2eproto.base,}};
 
 void InitDefaults_claros_5fcommon_5ftask_5ftask_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_Task_claros_5fcommon_5ftask_5ftask_2eproto.base);
@@ -56,6 +62,14 @@ const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5ftask_5ftask_2epro
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, id_),
   PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, name_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, description_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, assignee_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, reporter_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, priority_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, instrumentid_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, taskdefinition_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, taskdata_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::task::Task, auditevent_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::claros::common::task::Task)},
@@ -73,20 +87,32 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5fcommon_5ftask_5ftask_2eproto[] =
   "\n\035claros_common_task_task.proto\022\022claros."
-  "common.task\" \n\004Task\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030"
-  "\002 \001(\tb\006proto3"
+  "common.task\032#claros_common_task_definiti"
+  "on.proto\032\035claros_common_task_data.proto\032"
+  "#claros_common_core_auditevent.proto\"\241\002\n"
+  "\004Task\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\023\n\013descr"
+  "iption\030\003 \001(\t\022\020\n\010assignee\030\004 \001(\t\022\020\n\010report"
+  "er\030\005 \001(\t\022\020\n\010priority\030\006 \001(\r\022\024\n\014instrument"
+  "Id\030\007 \001(\t\022:\n\016taskDefinition\030\010 \001(\0132\".claro"
+  "s.common.task.TaskDefinition\022.\n\010taskdata"
+  "\030\t \001(\0132\034.claros.common.task.TaskData\0222\n\n"
+  "auditEvent\030\n \001(\0132\036.claros.common.core.Au"
+  "ditEventb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5ftask_5ftask_2eproto = {
   false, InitDefaults_claros_5fcommon_5ftask_5ftask_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5ftask_5ftask_2eproto,
-  "claros_common_task_task.proto", &assign_descriptors_table_claros_5fcommon_5ftask_5ftask_2eproto, 93,
+  "claros_common_task_task.proto", &assign_descriptors_table_claros_5fcommon_5ftask_5ftask_2eproto, 456,
 };
 
 void AddDescriptors_claros_5fcommon_5ftask_5ftask_2eproto() {
-  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  static constexpr ::google::protobuf::internal::InitFunc deps[3] =
   {
+    ::AddDescriptors_claros_5fcommon_5ftask_5fdefinition_2eproto,
+    ::AddDescriptors_claros_5fcommon_5ftask_5fdata_2eproto,
+    ::AddDescriptors_claros_5fcommon_5fcore_5fauditevent_2eproto,
   };
- ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5fcommon_5ftask_5ftask_2eproto, deps, 0);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5fcommon_5ftask_5ftask_2eproto, deps, 3);
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -98,14 +124,61 @@ namespace task {
 // ===================================================================
 
 void Task::InitAsDefaultInstance() {
+  ::claros::common::task::_Task_default_instance_._instance.get_mutable()->taskdefinition_ = const_cast< ::claros::common::task::TaskDefinition*>(
+      ::claros::common::task::TaskDefinition::internal_default_instance());
+  ::claros::common::task::_Task_default_instance_._instance.get_mutable()->taskdata_ = const_cast< ::claros::common::task::TaskData*>(
+      ::claros::common::task::TaskData::internal_default_instance());
+  ::claros::common::task::_Task_default_instance_._instance.get_mutable()->auditevent_ = const_cast< ::claros::common::core::AuditEvent*>(
+      ::claros::common::core::AuditEvent::internal_default_instance());
 }
 class Task::HasBitSetters {
  public:
+  static const ::claros::common::task::TaskDefinition& taskdefinition(const Task* msg);
+  static const ::claros::common::task::TaskData& taskdata(const Task* msg);
+  static const ::claros::common::core::AuditEvent& auditevent(const Task* msg);
 };
 
+const ::claros::common::task::TaskDefinition&
+Task::HasBitSetters::taskdefinition(const Task* msg) {
+  return *msg->taskdefinition_;
+}
+const ::claros::common::task::TaskData&
+Task::HasBitSetters::taskdata(const Task* msg) {
+  return *msg->taskdata_;
+}
+const ::claros::common::core::AuditEvent&
+Task::HasBitSetters::auditevent(const Task* msg) {
+  return *msg->auditevent_;
+}
+void Task::clear_taskdefinition() {
+  if (GetArenaNoVirtual() == nullptr && taskdefinition_ != nullptr) {
+    delete taskdefinition_;
+  }
+  taskdefinition_ = nullptr;
+}
+void Task::clear_taskdata() {
+  if (GetArenaNoVirtual() == nullptr && taskdata_ != nullptr) {
+    delete taskdata_;
+  }
+  taskdata_ = nullptr;
+}
+void Task::clear_auditevent() {
+  if (GetArenaNoVirtual() == nullptr && auditevent_ != nullptr) {
+    delete auditevent_;
+  }
+  auditevent_ = nullptr;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Task::kIdFieldNumber;
 const int Task::kNameFieldNumber;
+const int Task::kDescriptionFieldNumber;
+const int Task::kAssigneeFieldNumber;
+const int Task::kReporterFieldNumber;
+const int Task::kPriorityFieldNumber;
+const int Task::kInstrumentIdFieldNumber;
+const int Task::kTaskDefinitionFieldNumber;
+const int Task::kTaskdataFieldNumber;
+const int Task::kAuditEventFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Task::Task()
@@ -125,6 +198,38 @@ Task::Task(const Task& from)
   if (from.name().size() > 0) {
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
+  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.description().size() > 0) {
+    description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
+  }
+  assignee_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.assignee().size() > 0) {
+    assignee_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.assignee_);
+  }
+  reporter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.reporter().size() > 0) {
+    reporter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reporter_);
+  }
+  instrumentid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.instrumentid().size() > 0) {
+    instrumentid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instrumentid_);
+  }
+  if (from.has_taskdefinition()) {
+    taskdefinition_ = new ::claros::common::task::TaskDefinition(*from.taskdefinition_);
+  } else {
+    taskdefinition_ = nullptr;
+  }
+  if (from.has_taskdata()) {
+    taskdata_ = new ::claros::common::task::TaskData(*from.taskdata_);
+  } else {
+    taskdata_ = nullptr;
+  }
+  if (from.has_auditevent()) {
+    auditevent_ = new ::claros::common::core::AuditEvent(*from.auditevent_);
+  } else {
+    auditevent_ = nullptr;
+  }
+  priority_ = from.priority_;
   // @@protoc_insertion_point(copy_constructor:claros.common.task.Task)
 }
 
@@ -133,6 +238,13 @@ void Task::SharedCtor() {
       &scc_info_Task_claros_5fcommon_5ftask_5ftask_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  assignee_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  reporter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  instrumentid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&taskdefinition_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&priority_) -
+      reinterpret_cast<char*>(&taskdefinition_)) + sizeof(priority_));
 }
 
 Task::~Task() {
@@ -143,6 +255,13 @@ Task::~Task() {
 void Task::SharedDtor() {
   id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  assignee_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  reporter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  instrumentid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete taskdefinition_;
+  if (this != internal_default_instance()) delete taskdata_;
+  if (this != internal_default_instance()) delete auditevent_;
 }
 
 void Task::SetCachedSize(int size) const {
@@ -162,6 +281,23 @@ void Task::Clear() {
 
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  assignee_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  reporter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  instrumentid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && taskdefinition_ != nullptr) {
+    delete taskdefinition_;
+  }
+  taskdefinition_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && taskdata_ != nullptr) {
+    delete taskdata_;
+  }
+  taskdata_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && auditevent_ != nullptr) {
+    delete auditevent_;
+  }
+  auditevent_ = nullptr;
+  priority_ = 0u;
   _internal_metadata_.Clear();
 }
 
@@ -208,6 +344,116 @@ const char* Task::_InternalParse(const char* begin, const char* end, void* objec
         GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
         ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
         ptr += size;
+        break;
+      }
+      // string description = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.task.Task.description");
+        object = msg->mutable_description();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // string assignee = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.task.Task.assignee");
+        object = msg->mutable_assignee();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // string reporter = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.task.Task.reporter");
+        object = msg->mutable_reporter();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // uint32 priority = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_priority(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // string instrumentId = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.task.Task.instrumentId");
+        object = msg->mutable_instrumentid();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // .claros.common.task.TaskDefinition taskDefinition = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::claros::common::task::TaskDefinition::_InternalParse;
+        object = msg->mutable_taskdefinition();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .claros.common.task.TaskData taskdata = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::claros::common::task::TaskData::_InternalParse;
+        object = msg->mutable_taskdata();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .claros.common.core.AuditEvent auditEvent = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::claros::common::core::AuditEvent::_InternalParse;
+        object = msg->mutable_auditevent();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
         break;
       }
       default: {
@@ -274,6 +520,112 @@ bool Task::MergePartialFromCodedStream(
         break;
       }
 
+      // string description = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_description()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->description().data(), static_cast<int>(this->description().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.task.Task.description"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string assignee = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_assignee()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->assignee().data(), static_cast<int>(this->assignee().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.task.Task.assignee"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string reporter = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_reporter()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->reporter().data(), static_cast<int>(this->reporter().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.task.Task.reporter"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 priority = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &priority_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string instrumentId = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_instrumentid()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->instrumentid().data(), static_cast<int>(this->instrumentid().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.task.Task.instrumentId"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .claros.common.task.TaskDefinition taskDefinition = 8;
+      case 8: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_taskdefinition()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .claros.common.task.TaskData taskdata = 9;
+      case 9: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_taskdata()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .claros.common.core.AuditEvent auditEvent = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_auditevent()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -321,6 +673,69 @@ void Task::SerializeWithCachedSizes(
       2, this->name(), output);
   }
 
+  // string description = 3;
+  if (this->description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->description().data(), static_cast<int>(this->description().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.description");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->description(), output);
+  }
+
+  // string assignee = 4;
+  if (this->assignee().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->assignee().data(), static_cast<int>(this->assignee().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.assignee");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->assignee(), output);
+  }
+
+  // string reporter = 5;
+  if (this->reporter().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->reporter().data(), static_cast<int>(this->reporter().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.reporter");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->reporter(), output);
+  }
+
+  // uint32 priority = 6;
+  if (this->priority() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->priority(), output);
+  }
+
+  // string instrumentId = 7;
+  if (this->instrumentid().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->instrumentid().data(), static_cast<int>(this->instrumentid().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.instrumentId");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->instrumentid(), output);
+  }
+
+  // .claros.common.task.TaskDefinition taskDefinition = 8;
+  if (this->has_taskdefinition()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, HasBitSetters::taskdefinition(this), output);
+  }
+
+  // .claros.common.task.TaskData taskdata = 9;
+  if (this->has_taskdata()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, HasBitSetters::taskdata(this), output);
+  }
+
+  // .claros.common.core.AuditEvent auditEvent = 10;
+  if (this->has_auditevent()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10, HasBitSetters::auditevent(this), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -354,6 +769,76 @@ void Task::SerializeWithCachedSizes(
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->name(), target);
+  }
+
+  // string description = 3;
+  if (this->description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->description().data(), static_cast<int>(this->description().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.description");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->description(), target);
+  }
+
+  // string assignee = 4;
+  if (this->assignee().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->assignee().data(), static_cast<int>(this->assignee().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.assignee");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->assignee(), target);
+  }
+
+  // string reporter = 5;
+  if (this->reporter().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->reporter().data(), static_cast<int>(this->reporter().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.reporter");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        5, this->reporter(), target);
+  }
+
+  // uint32 priority = 6;
+  if (this->priority() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->priority(), target);
+  }
+
+  // string instrumentId = 7;
+  if (this->instrumentid().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->instrumentid().data(), static_cast<int>(this->instrumentid().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.task.Task.instrumentId");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        7, this->instrumentid(), target);
+  }
+
+  // .claros.common.task.TaskDefinition taskDefinition = 8;
+  if (this->has_taskdefinition()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        8, HasBitSetters::taskdefinition(this), target);
+  }
+
+  // .claros.common.task.TaskData taskdata = 9;
+  if (this->has_taskdata()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        9, HasBitSetters::taskdata(this), target);
+  }
+
+  // .claros.common.core.AuditEvent auditEvent = 10;
+  if (this->has_auditevent()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        10, HasBitSetters::auditevent(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -391,6 +876,62 @@ size_t Task::ByteSizeLong() const {
         this->name());
   }
 
+  // string description = 3;
+  if (this->description().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->description());
+  }
+
+  // string assignee = 4;
+  if (this->assignee().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->assignee());
+  }
+
+  // string reporter = 5;
+  if (this->reporter().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->reporter());
+  }
+
+  // string instrumentId = 7;
+  if (this->instrumentid().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->instrumentid());
+  }
+
+  // .claros.common.task.TaskDefinition taskDefinition = 8;
+  if (this->has_taskdefinition()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *taskdefinition_);
+  }
+
+  // .claros.common.task.TaskData taskdata = 9;
+  if (this->has_taskdata()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *taskdata_);
+  }
+
+  // .claros.common.core.AuditEvent auditEvent = 10;
+  if (this->has_auditevent()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *auditevent_);
+  }
+
+  // uint32 priority = 6;
+  if (this->priority() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->priority());
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -426,6 +967,34 @@ void Task::MergeFrom(const Task& from) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
+  if (from.description().size() > 0) {
+
+    description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
+  }
+  if (from.assignee().size() > 0) {
+
+    assignee_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.assignee_);
+  }
+  if (from.reporter().size() > 0) {
+
+    reporter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reporter_);
+  }
+  if (from.instrumentid().size() > 0) {
+
+    instrumentid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instrumentid_);
+  }
+  if (from.has_taskdefinition()) {
+    mutable_taskdefinition()->::claros::common::task::TaskDefinition::MergeFrom(from.taskdefinition());
+  }
+  if (from.has_taskdata()) {
+    mutable_taskdata()->::claros::common::task::TaskData::MergeFrom(from.taskdata());
+  }
+  if (from.has_auditevent()) {
+    mutable_auditevent()->::claros::common::core::AuditEvent::MergeFrom(from.auditevent());
+  }
+  if (from.priority() != 0) {
+    set_priority(from.priority());
+  }
 }
 
 void Task::CopyFrom(const ::google::protobuf::Message& from) {
@@ -457,6 +1026,18 @@ void Task::InternalSwap(Task* other) {
     GetArenaNoVirtual());
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  description_.Swap(&other->description_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  assignee_.Swap(&other->assignee_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  reporter_.Swap(&other->reporter_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  instrumentid_.Swap(&other->instrumentid_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(taskdefinition_, other->taskdefinition_);
+  swap(taskdata_, other->taskdata_);
+  swap(auditevent_, other->auditevent_);
+  swap(priority_, other->priority_);
 }
 
 ::google::protobuf::Metadata Task::GetMetadata() const {

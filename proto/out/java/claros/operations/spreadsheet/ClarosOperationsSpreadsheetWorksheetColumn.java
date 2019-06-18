@@ -19,133 +19,245 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The number of the column
+     * </pre>
+     *
      * <code>uint32 columnNumber = 1;</code>
      */
     int getColumnNumber();
 
     /**
+     * <pre>
+     * The name of the column
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     java.lang.String getName();
     /**
+     * <pre>
+     * The name of the column
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
+     * <pre>
+     * The description of the column
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     java.lang.String getDescription();
     /**
+     * <pre>
+     * The description of the column
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
     /**
+     * <pre>
+     * The parameter associated with the column
+     * </pre>
+     *
      * <code>uint32 parameterId = 4;</code>
      */
     int getParameterId();
 
     /**
+     * <pre>
+     * The default unit to display the column
+     * </pre>
+     *
      * <code>uint32 displayUnitId = 5;</code>
      */
     int getDisplayUnitId();
 
     /**
+     * <pre>
+     * The location associated to the data in the column
+     * </pre>
+     *
      * <code>string locationId = 6;</code>
      */
     java.lang.String getLocationId();
     /**
+     * <pre>
+     * The location associated to the data in the column
+     * </pre>
+     *
      * <code>string locationId = 6;</code>
      */
     com.google.protobuf.ByteString
         getLocationIdBytes();
 
     /**
+     * <pre>
+     * Soft Delete of the column
+     * </pre>
+     *
      * <code>bool isActive = 7;</code>
      */
     boolean getIsActive();
 
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     java.util.List<claros.common.core.ClarosCommonCoreLimit.Limit> 
         getLimitsList();
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     claros.common.core.ClarosCommonCoreLimit.Limit getLimits(int index);
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     int getLimitsCount();
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     java.util.List<? extends claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder> 
         getLimitsOrBuilderList();
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder getLimitsOrBuilder(
         int index);
 
     /**
+     * <pre>
+     * The expected place where the data will be received into the column
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      */
     int getDataSourceTypeValue();
     /**
+     * <pre>
+     * The expected place where the data will be received into the column
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      */
     claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType();
 
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
     boolean hasInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder();
 
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     boolean hasComputationBinding();
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding();
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder();
 
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     java.util.List<claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition> 
         getReportableQualiferDefinitionList();
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition getReportableQualiferDefinition(int index);
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     int getReportableQualiferDefinitionCount();
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     java.util.List<? extends claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder> 
         getReportableQualiferDefinitionOrBuilderList();
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder getReportableQualiferDefinitionOrBuilder(
@@ -252,14 +364,14 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
               break;
             }
             case 82: {
-              claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder subBuilder = null;
+              claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder subBuilder = null;
               if (bindingCase_ == 10) {
-                subBuilder = ((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_).toBuilder();
+                subBuilder = ((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_).toBuilder();
               }
               binding_ =
-                  input.readMessage(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.parser(), extensionRegistry);
+                  input.readMessage(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+                subBuilder.mergeFrom((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
               bindingCase_ = 10;
@@ -368,6 +480,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int COLUMNNUMBER_FIELD_NUMBER = 1;
     private int columnNumber_;
     /**
+     * <pre>
+     * The number of the column
+     * </pre>
+     *
      * <code>uint32 columnNumber = 1;</code>
      */
     public int getColumnNumber() {
@@ -377,6 +493,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int NAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object name_;
     /**
+     * <pre>
+     * The name of the column
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
@@ -392,6 +512,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       }
     }
     /**
+     * <pre>
+     * The name of the column
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -411,6 +535,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int DESCRIPTION_FIELD_NUMBER = 3;
     private volatile java.lang.Object description_;
     /**
+     * <pre>
+     * The description of the column
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     public java.lang.String getDescription() {
@@ -426,6 +554,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       }
     }
     /**
+     * <pre>
+     * The description of the column
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -445,6 +577,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int PARAMETERID_FIELD_NUMBER = 4;
     private int parameterId_;
     /**
+     * <pre>
+     * The parameter associated with the column
+     * </pre>
+     *
      * <code>uint32 parameterId = 4;</code>
      */
     public int getParameterId() {
@@ -454,6 +590,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int DISPLAYUNITID_FIELD_NUMBER = 5;
     private int displayUnitId_;
     /**
+     * <pre>
+     * The default unit to display the column
+     * </pre>
+     *
      * <code>uint32 displayUnitId = 5;</code>
      */
     public int getDisplayUnitId() {
@@ -463,6 +603,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int LOCATIONID_FIELD_NUMBER = 6;
     private volatile java.lang.Object locationId_;
     /**
+     * <pre>
+     * The location associated to the data in the column
+     * </pre>
+     *
      * <code>string locationId = 6;</code>
      */
     public java.lang.String getLocationId() {
@@ -478,6 +622,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       }
     }
     /**
+     * <pre>
+     * The location associated to the data in the column
+     * </pre>
+     *
      * <code>string locationId = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -497,6 +645,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int ISACTIVE_FIELD_NUMBER = 7;
     private boolean isActive_;
     /**
+     * <pre>
+     * Soft Delete of the column
+     * </pre>
+     *
      * <code>bool isActive = 7;</code>
      */
     public boolean getIsActive() {
@@ -506,12 +658,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int LIMITS_FIELD_NUMBER = 8;
     private java.util.List<claros.common.core.ClarosCommonCoreLimit.Limit> limits_;
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     public java.util.List<claros.common.core.ClarosCommonCoreLimit.Limit> getLimitsList() {
       return limits_;
     }
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     public java.util.List<? extends claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder> 
@@ -519,18 +679,30 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       return limits_;
     }
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     public int getLimitsCount() {
       return limits_.size();
     }
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     public claros.common.core.ClarosCommonCoreLimit.Limit getLimits(int index) {
       return limits_.get(index);
     }
     /**
+     * <pre>
+     * Collection of limits related to the column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     public claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder getLimitsOrBuilder(
@@ -541,12 +713,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int DATASOURCETYPE_FIELD_NUMBER = 9;
     private int dataSourceType_;
     /**
+     * <pre>
+     * The expected place where the data will be received into the column
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      */
     public int getDataSourceTypeValue() {
       return dataSourceType_;
     }
     /**
+     * <pre>
+     * The expected place where the data will be received into the column
+     * </pre>
+     *
      * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      */
     public claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType() {
@@ -557,38 +737,58 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
     public static final int INSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER = 10;
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
     public boolean hasInstrumentMeasurementBinding() {
       return bindingCase_ == 10;
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
+    public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
       if (bindingCase_ == 10) {
-         return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * <pre>
+     * Column comes from aggregated instrument measurments
+     * </pre>
+     *
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
+    public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
       if (bindingCase_ == 10) {
-         return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
     }
 
     public static final int COMPUTATIONBINDING_FIELD_NUMBER = 11;
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     public boolean hasComputationBinding() {
       return bindingCase_ == 11;
     }
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding() {
@@ -598,6 +798,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
     }
     /**
+     * <pre>
+     * Column comes as a result of a computation
+     * </pre>
+     *
      * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      */
     public claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder() {
@@ -610,12 +814,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
     public static final int REPORTABLEQUALIFERDEFINITION_FIELD_NUMBER = 12;
     private java.util.List<claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition> reportableQualiferDefinition_;
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     public java.util.List<claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition> getReportableQualiferDefinitionList() {
       return reportableQualiferDefinition_;
     }
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     public java.util.List<? extends claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder> 
@@ -623,18 +835,30 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       return reportableQualiferDefinition_;
     }
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     public int getReportableQualiferDefinitionCount() {
       return reportableQualiferDefinition_.size();
     }
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition getReportableQualiferDefinition(int index) {
       return reportableQualiferDefinition_.get(index);
     }
     /**
+     * <pre>
+     * This determines how qualifers are interpreted for this column
+     * </pre>
+     *
      * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder getReportableQualiferDefinitionOrBuilder(
@@ -680,11 +904,11 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       for (int i = 0; i < limits_.size(); i++) {
         output.writeMessage(8, limits_.get(i));
       }
-      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DS_UNKNOWN.getNumber()) {
+      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DATASOURCE_UNKNOWN.getNumber()) {
         output.writeEnum(9, dataSourceType_);
       }
       if (bindingCase_ == 10) {
-        output.writeMessage(10, (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+        output.writeMessage(10, (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
       }
       if (bindingCase_ == 11) {
         output.writeMessage(11, (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
@@ -730,13 +954,13 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, limits_.get(i));
       }
-      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DS_UNKNOWN.getNumber()) {
+      if (dataSourceType_ != claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.DATASOURCE_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(9, dataSourceType_);
       }
       if (bindingCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+          .computeMessageSize(10, (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
       }
       if (bindingCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
@@ -1263,12 +1487,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private int columnNumber_ ;
       /**
+       * <pre>
+       * The number of the column
+       * </pre>
+       *
        * <code>uint32 columnNumber = 1;</code>
        */
       public int getColumnNumber() {
         return columnNumber_;
       }
       /**
+       * <pre>
+       * The number of the column
+       * </pre>
+       *
        * <code>uint32 columnNumber = 1;</code>
        */
       public Builder setColumnNumber(int value) {
@@ -1278,6 +1510,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The number of the column
+       * </pre>
+       *
        * <code>uint32 columnNumber = 1;</code>
        */
       public Builder clearColumnNumber() {
@@ -1289,6 +1525,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private java.lang.Object name_ = "";
       /**
+       * <pre>
+       * The name of the column
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public java.lang.String getName() {
@@ -1304,6 +1544,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The name of the column
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -1320,6 +1564,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The name of the column
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setName(
@@ -1333,6 +1581,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The name of the column
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder clearName() {
@@ -1342,6 +1594,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The name of the column
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setNameBytes(
@@ -1358,6 +1614,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private java.lang.Object description_ = "";
       /**
+       * <pre>
+       * The description of the column
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public java.lang.String getDescription() {
@@ -1373,6 +1633,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The description of the column
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -1389,6 +1653,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The description of the column
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder setDescription(
@@ -1402,6 +1670,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The description of the column
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder clearDescription() {
@@ -1411,6 +1683,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The description of the column
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder setDescriptionBytes(
@@ -1427,12 +1703,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private int parameterId_ ;
       /**
+       * <pre>
+       * The parameter associated with the column
+       * </pre>
+       *
        * <code>uint32 parameterId = 4;</code>
        */
       public int getParameterId() {
         return parameterId_;
       }
       /**
+       * <pre>
+       * The parameter associated with the column
+       * </pre>
+       *
        * <code>uint32 parameterId = 4;</code>
        */
       public Builder setParameterId(int value) {
@@ -1442,6 +1726,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The parameter associated with the column
+       * </pre>
+       *
        * <code>uint32 parameterId = 4;</code>
        */
       public Builder clearParameterId() {
@@ -1453,12 +1741,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private int displayUnitId_ ;
       /**
+       * <pre>
+       * The default unit to display the column
+       * </pre>
+       *
        * <code>uint32 displayUnitId = 5;</code>
        */
       public int getDisplayUnitId() {
         return displayUnitId_;
       }
       /**
+       * <pre>
+       * The default unit to display the column
+       * </pre>
+       *
        * <code>uint32 displayUnitId = 5;</code>
        */
       public Builder setDisplayUnitId(int value) {
@@ -1468,6 +1764,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The default unit to display the column
+       * </pre>
+       *
        * <code>uint32 displayUnitId = 5;</code>
        */
       public Builder clearDisplayUnitId() {
@@ -1479,6 +1779,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private java.lang.Object locationId_ = "";
       /**
+       * <pre>
+       * The location associated to the data in the column
+       * </pre>
+       *
        * <code>string locationId = 6;</code>
        */
       public java.lang.String getLocationId() {
@@ -1494,6 +1798,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The location associated to the data in the column
+       * </pre>
+       *
        * <code>string locationId = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -1510,6 +1818,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * The location associated to the data in the column
+       * </pre>
+       *
        * <code>string locationId = 6;</code>
        */
       public Builder setLocationId(
@@ -1523,6 +1835,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The location associated to the data in the column
+       * </pre>
+       *
        * <code>string locationId = 6;</code>
        */
       public Builder clearLocationId() {
@@ -1532,6 +1848,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The location associated to the data in the column
+       * </pre>
+       *
        * <code>string locationId = 6;</code>
        */
       public Builder setLocationIdBytes(
@@ -1548,12 +1868,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private boolean isActive_ ;
       /**
+       * <pre>
+       * Soft Delete of the column
+       * </pre>
+       *
        * <code>bool isActive = 7;</code>
        */
       public boolean getIsActive() {
         return isActive_;
       }
       /**
+       * <pre>
+       * Soft Delete of the column
+       * </pre>
+       *
        * <code>bool isActive = 7;</code>
        */
       public Builder setIsActive(boolean value) {
@@ -1563,6 +1891,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Soft Delete of the column
+       * </pre>
+       *
        * <code>bool isActive = 7;</code>
        */
       public Builder clearIsActive() {
@@ -1585,6 +1917,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
           claros.common.core.ClarosCommonCoreLimit.Limit, claros.common.core.ClarosCommonCoreLimit.Limit.Builder, claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder> limitsBuilder_;
 
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreLimit.Limit> getLimitsList() {
@@ -1595,6 +1931,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public int getLimitsCount() {
@@ -1605,6 +1945,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public claros.common.core.ClarosCommonCoreLimit.Limit getLimits(int index) {
@@ -1615,6 +1959,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder setLimits(
@@ -1632,6 +1980,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder setLimits(
@@ -1646,6 +1998,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder addLimits(claros.common.core.ClarosCommonCoreLimit.Limit value) {
@@ -1662,6 +2018,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder addLimits(
@@ -1679,6 +2039,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder addLimits(
@@ -1693,6 +2057,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder addLimits(
@@ -1707,6 +2075,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder addAllLimits(
@@ -1722,6 +2094,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder clearLimits() {
@@ -1735,6 +2111,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public Builder removeLimits(int index) {
@@ -1748,6 +2128,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public claros.common.core.ClarosCommonCoreLimit.Limit.Builder getLimitsBuilder(
@@ -1755,6 +2139,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return getLimitsFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder getLimitsOrBuilder(
@@ -1765,6 +2153,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public java.util.List<? extends claros.common.core.ClarosCommonCoreLimit.LimitOrBuilder> 
@@ -1776,6 +2168,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public claros.common.core.ClarosCommonCoreLimit.Limit.Builder addLimitsBuilder() {
@@ -1783,6 +2179,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
             claros.common.core.ClarosCommonCoreLimit.Limit.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public claros.common.core.ClarosCommonCoreLimit.Limit.Builder addLimitsBuilder(
@@ -1791,6 +2191,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
             index, claros.common.core.ClarosCommonCoreLimit.Limit.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Collection of limits related to the column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.Limit limits = 8;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreLimit.Limit.Builder> 
@@ -1814,12 +2218,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
 
       private int dataSourceType_ = 0;
       /**
+       * <pre>
+       * The expected place where the data will be received into the column
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
        */
       public int getDataSourceTypeValue() {
         return dataSourceType_;
       }
       /**
+       * <pre>
+       * The expected place where the data will be received into the column
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
        */
       public Builder setDataSourceTypeValue(int value) {
@@ -1828,6 +2240,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The expected place where the data will be received into the column
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
        */
       public claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType getDataSourceType() {
@@ -1836,6 +2252,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return result == null ? claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * The expected place where the data will be received into the column
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
        */
       public Builder setDataSourceType(claros.common.core.ClarosCommonCoreDatasourceType.DataSourceType value) {
@@ -1848,6 +2268,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * The expected place where the data will be received into the column
+       * </pre>
+       *
        * <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
        */
       public Builder clearDataSourceType() {
@@ -1858,33 +2282,45 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> instrumentMeasurementBindingBuilder_;
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> instrumentMeasurementBindingBuilder_;
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
       public boolean hasInstrumentMeasurementBinding() {
         return bindingCase_ == 10;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
         if (instrumentMeasurementBindingBuilder_ == null) {
           if (bindingCase_ == 10) {
-            return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         } else {
           if (bindingCase_ == 10) {
             return instrumentMeasurementBindingBuilder_.getMessage();
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
-      public Builder setInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
+      public Builder setInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
         if (instrumentMeasurementBindingBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1898,10 +2334,14 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
       public Builder setInstrumentMeasurementBinding(
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder builderForValue) {
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder builderForValue) {
         if (instrumentMeasurementBindingBuilder_ == null) {
           binding_ = builderForValue.build();
           onChanged();
@@ -1912,13 +2352,17 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
-      public Builder mergeInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
+      public Builder mergeInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
         if (instrumentMeasurementBindingBuilder_ == null) {
           if (bindingCase_ == 10 &&
-              binding_ != claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance()) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.newBuilder((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_)
+              binding_ != claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance()) {
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.newBuilder((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_)
                 .mergeFrom(value).buildPartial();
           } else {
             binding_ = value;
@@ -1934,7 +2378,11 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
       public Builder clearInstrumentMeasurementBinding() {
         if (instrumentMeasurementBindingBuilder_ == null) {
@@ -1953,37 +2401,49 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder getInstrumentMeasurementBindingBuilder() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder getInstrumentMeasurementBindingBuilder() {
         return getInstrumentMeasurementBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
         if ((bindingCase_ == 10) && (instrumentMeasurementBindingBuilder_ != null)) {
           return instrumentMeasurementBindingBuilder_.getMessageOrBuilder();
         } else {
           if (bindingCase_ == 10) {
-            return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+       * <pre>
+       * Column comes from aggregated instrument measurments
+       * </pre>
+       *
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> 
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> 
           getInstrumentMeasurementBindingFieldBuilder() {
         if (instrumentMeasurementBindingBuilder_ == null) {
           if (!(bindingCase_ == 10)) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
           }
           instrumentMeasurementBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder>(
-                  (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_,
+              claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder>(
+                  (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_,
                   getParentForChildren(),
                   isClean());
           binding_ = null;
@@ -1996,12 +2456,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.computation.ClarosCommonComputationBinding.ComputationBinding, claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder, claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder> computationBindingBuilder_;
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public boolean hasComputationBinding() {
         return bindingCase_ == 11;
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding() {
@@ -2018,6 +2486,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public Builder setComputationBinding(claros.common.computation.ClarosCommonComputationBinding.ComputationBinding value) {
@@ -2034,6 +2506,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public Builder setComputationBinding(
@@ -2048,6 +2524,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public Builder mergeComputationBinding(claros.common.computation.ClarosCommonComputationBinding.ComputationBinding value) {
@@ -2070,6 +2550,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public Builder clearComputationBinding() {
@@ -2089,12 +2573,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder getComputationBindingBuilder() {
         return getComputationBindingFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder() {
@@ -2108,6 +2600,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * Column comes as a result of a computation
+       * </pre>
+       *
        * <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -2142,6 +2638,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
           claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition, claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.Builder, claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder> reportableQualiferDefinitionBuilder_;
 
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition> getReportableQualiferDefinitionList() {
@@ -2152,6 +2652,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public int getReportableQualiferDefinitionCount() {
@@ -2162,6 +2666,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition getReportableQualiferDefinition(int index) {
@@ -2172,6 +2680,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder setReportableQualiferDefinition(
@@ -2189,6 +2701,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder setReportableQualiferDefinition(
@@ -2203,6 +2719,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder addReportableQualiferDefinition(claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition value) {
@@ -2219,6 +2739,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder addReportableQualiferDefinition(
@@ -2236,6 +2760,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder addReportableQualiferDefinition(
@@ -2250,6 +2778,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder addReportableQualiferDefinition(
@@ -2264,6 +2796,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder addAllReportableQualiferDefinition(
@@ -2279,6 +2815,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder clearReportableQualiferDefinition() {
@@ -2292,6 +2832,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public Builder removeReportableQualiferDefinition(int index) {
@@ -2305,6 +2849,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return this;
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.Builder getReportableQualiferDefinitionBuilder(
@@ -2312,6 +2860,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         return getReportableQualiferDefinitionFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder getReportableQualiferDefinitionOrBuilder(
@@ -2322,6 +2874,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public java.util.List<? extends claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinitionOrBuilder> 
@@ -2333,6 +2889,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         }
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.Builder addReportableQualiferDefinitionBuilder() {
@@ -2340,6 +2900,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
             claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.getDefaultInstance());
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.Builder addReportableQualiferDefinitionBuilder(
@@ -2348,6 +2912,10 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
             index, claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.getDefaultInstance());
       }
       /**
+       * <pre>
+       * This determines how qualifers are interpreted for this column
+       * </pre>
+       *
        * <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
        */
       public java.util.List<claros.common.core.ClarosCommonCoreReportablequalifierdefinition.ReportableQualifierDefinition.Builder> 
@@ -2442,20 +3010,20 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
       "+claros_instrument_measurement_binding.p" +
       "roto\032\'claros_common_computation_binding." +
       "proto\0326claros_common_core_reportablequal" +
-      "ifierdefinition.proto\"\204\004\n\006Column\022\024\n\014colu" +
+      "ifierdefinition.proto\"\220\004\n\006Column\022\024\n\014colu" +
       "mnNumber\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\023\n\013descript" +
       "ion\030\003 \001(\t\022\023\n\013parameterId\030\004 \001(\r\022\025\n\rdispla" +
       "yUnitId\030\005 \001(\r\022\022\n\nlocationId\030\006 \001(\t\022\020\n\010isA" +
       "ctive\030\007 \001(\010\022)\n\006limits\030\010 \003(\0132\031.claros.com" +
       "mon.core.Limit\022:\n\016dataSourceType\030\t \001(\0162\"" +
-      ".claros.common.core.DataSourceType\022W\n\034in" +
-      "strumentMeasurementBinding\030\n \001(\0132/.claro" +
-      "s.instrument.InstrumentMeasurementBindin" +
-      "gH\000\022K\n\022computationBinding\030\013 \001(\0132-.claros" +
-      ".common.computation.ComputationBindingH\000" +
-      "\022W\n\034reportableQualiferDefinition\030\014 \003(\01321" +
-      ".claros.common.core.ReportableQualifierD" +
-      "efinitionB\t\n\007bindingb\006proto3"
+      ".claros.common.core.DataSourceType\022c\n\034in" +
+      "strumentMeasurementBinding\030\n \001(\0132;.claro" +
+      "s.instrument.measurement.InstrumentMeasu" +
+      "rementBindingH\000\022K\n\022computationBinding\030\013 " +
+      "\001(\0132-.claros.common.computation.Computat" +
+      "ionBindingH\000\022W\n\034reportableQualiferDefini" +
+      "tion\030\014 \003(\01321.claros.common.core.Reportab" +
+      "leQualifierDefinitionB\t\n\007bindingb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2470,7 +3038,7 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           claros.common.core.ClarosCommonCoreDatasourceType.getDescriptor(),
           claros.common.core.ClarosCommonCoreLimit.getDescriptor(),
-          claros.instrument.ClarosInstrumentMeasurementBinding.getDescriptor(),
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.getDescriptor(),
           claros.common.computation.ClarosCommonComputationBinding.getDescriptor(),
           claros.common.core.ClarosCommonCoreReportablequalifierdefinition.getDescriptor(),
         }, assigner);
@@ -2482,7 +3050,7 @@ public final class ClarosOperationsSpreadsheetWorksheetColumn {
         new java.lang.String[] { "ColumnNumber", "Name", "Description", "ParameterId", "DisplayUnitId", "LocationId", "IsActive", "Limits", "DataSourceType", "InstrumentMeasurementBinding", "ComputationBinding", "ReportableQualiferDefinition", "Binding", });
     claros.common.core.ClarosCommonCoreDatasourceType.getDescriptor();
     claros.common.core.ClarosCommonCoreLimit.getDescriptor();
-    claros.instrument.ClarosInstrumentMeasurementBinding.getDescriptor();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.getDescriptor();
     claros.common.computation.ClarosCommonComputationBinding.getDescriptor();
     claros.common.core.ClarosCommonCoreReportablequalifierdefinition.getDescriptor();
   }

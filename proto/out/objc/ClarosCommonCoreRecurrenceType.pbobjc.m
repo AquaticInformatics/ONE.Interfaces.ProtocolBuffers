@@ -36,16 +36,18 @@ GPBEnumDescriptor *RecurrenceType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "RUnknown\000RFifteenminute\000RHourly\000RFourhou"
-        "r\000RDaily\000RWeekly\000RDaysofweek\000";
+        "RecurrenceUnknown\000RecurrenceFifteenminut"
+        "e\000RecurrenceHourly\000RecurrenceFourhour\000Re"
+        "currenceDaily\000RecurrenceWeekly\000Recurrenc"
+        "eDaysofweek\000";
     static const int32_t values[] = {
-        RecurrenceType_RUnknown,
-        RecurrenceType_RFifteenminute,
-        RecurrenceType_RHourly,
-        RecurrenceType_RFourhour,
-        RecurrenceType_RDaily,
-        RecurrenceType_RWeekly,
-        RecurrenceType_RDaysofweek,
+        RecurrenceType_RecurrenceUnknown,
+        RecurrenceType_RecurrenceFifteenminute,
+        RecurrenceType_RecurrenceHourly,
+        RecurrenceType_RecurrenceFourhour,
+        RecurrenceType_RecurrenceDaily,
+        RecurrenceType_RecurrenceWeekly,
+        RecurrenceType_RecurrenceDaysofweek,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(RecurrenceType)
@@ -63,13 +65,13 @@ GPBEnumDescriptor *RecurrenceType_EnumDescriptor(void) {
 
 BOOL RecurrenceType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case RecurrenceType_RUnknown:
-    case RecurrenceType_RFifteenminute:
-    case RecurrenceType_RHourly:
-    case RecurrenceType_RFourhour:
-    case RecurrenceType_RDaily:
-    case RecurrenceType_RWeekly:
-    case RecurrenceType_RDaysofweek:
+    case RecurrenceType_RecurrenceUnknown:
+    case RecurrenceType_RecurrenceFifteenminute:
+    case RecurrenceType_RecurrenceHourly:
+    case RecurrenceType_RecurrenceFourhour:
+    case RecurrenceType_RecurrenceDaily:
+    case RecurrenceType_RecurrenceWeekly:
+    case RecurrenceType_RecurrenceDaysofweek:
       return YES;
     default:
       return NO;

@@ -12,11 +12,11 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_operations_spreadsheet_worksheet_celldata_binding.proto", :syntax => :proto3) do
     add_message "claros.operations.spreadsheet.CellDataBinding" do
       oneof :binding do
-        optional :instrumentMeasurementBinding, :message, 7, "claros.instrument.InstrumentMeasurementBinding"
-        optional :computationBinding, :message, 8, "claros.common.computation.ComputationBinding"
-        optional :formBinding, :message, 9, "claros.common.form.FormBinding"
-        optional :spreadsheetBinding, :message, 10, "claros.operations.spreadsheet.SpreadsheetBinding"
-        optional :fieldInstrumentMeasurementBinding, :message, 11, "claros.instrument.InstrumentMeasurementFieldBinding"
+        optional :instrumentMeasurementBinding, :message, 1, "claros.instrument.measurement.InstrumentMeasurementBinding"
+        optional :computationBinding, :message, 2, "claros.common.computation.ComputationBinding"
+        optional :formBinding, :message, 3, "claros.common.form.FormBinding"
+        optional :spreadsheetBinding, :message, 4, "claros.operations.spreadsheet.SpreadsheetBinding"
+        optional :fieldInstrumentMeasurementBinding, :message, 5, "claros.instrument.measurement.InstrumentMeasurementFieldBinding"
       end
     end
   end

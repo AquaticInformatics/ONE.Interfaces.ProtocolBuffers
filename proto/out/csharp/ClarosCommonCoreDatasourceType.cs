@@ -25,11 +25,12 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihjbGFyb3NfY29tbW9uX2NvcmVfZGF0YXNvdXJjZV90eXBlLnByb3RvEhJj",
-            "bGFyb3MuY29tbW9uLmNvcmUqoQEKDkRhdGFTb3VyY2VUeXBlEg4KCkRTX1VO",
-            "S05PV04QABILCgdEU19GT1JNEAESEgoORFNfQ09NUFVUQVRJT04QAhISCg5E",
-            "U19TUFJFQURTSEVFVBADEhwKGERTX0lOU1RSVU1FTlRNRUFTVVJFTUVOVBAE",
-            "Eg0KCURTX0lNUE9SVBAFEh0KGURTX1NQUkVBRFNIRUVUX0RFRklOSVRJT04Q",
-            "BmIGcHJvdG8z"));
+            "bGFyb3MuY29tbW9uLmNvcmUq2QEKDkRhdGFTb3VyY2VUeXBlEhYKEkRBVEFT",
+            "T1VSQ0VfVU5LTk9XThAAEhMKD0RBVEFTT1VSQ0VfRk9STRABEhoKFkRBVEFT",
+            "T1VSQ0VfQ09NUFVUQVRJT04QAhIaChZEQVRBU09VUkNFX1NQUkVBRFNIRUVU",
+            "EAMSJAogREFUQVNPVVJDRV9JTlNUUlVNRU5UTUVBU1VSRU1FTlQQBBIVChFE",
+            "QVRBU09VUkNFX0lNUE9SVBAFEiUKIURBVEFTT1VSQ0VfU1BSRUFEU0hFRVRf",
+            "REVGSU5JVElPThAGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.DataSourceType), }, null));
@@ -39,13 +40,31 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum DataSourceType {
-    [pbr::OriginalName("DS_UNKNOWN")] DsUnknown = 0,
-    [pbr::OriginalName("DS_FORM")] DsForm = 1,
-    [pbr::OriginalName("DS_COMPUTATION")] DsComputation = 2,
-    [pbr::OriginalName("DS_SPREADSHEET")] DsSpreadsheet = 3,
-    [pbr::OriginalName("DS_INSTRUMENTMEASUREMENT")] DsInstrumentmeasurement = 4,
-    [pbr::OriginalName("DS_IMPORT")] DsImport = 5,
-    [pbr::OriginalName("DS_SPREADSHEET_DEFINITION")] DsSpreadsheetDefinition = 6,
+    [pbr::OriginalName("DATASOURCE_UNKNOWN")] DatasourceUnknown = 0,
+    /// <summary>
+    /// Data related to Claros.Common.Form
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_FORM")] DatasourceForm = 1,
+    /// <summary>
+    /// Data related to Claros.Common.Computation
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_COMPUTATION")] DatasourceComputation = 2,
+    /// <summary>
+    /// Data related to Claros.Common.Spreadsheet
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_SPREADSHEET")] DatasourceSpreadsheet = 3,
+    /// <summary>
+    /// Data related to Claros.Instrument.Measurement
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_INSTRUMENTMEASUREMENT")] DatasourceInstrumentmeasurement = 4,
+    /// <summary>
+    /// Data related to imports
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_IMPORT")] DatasourceImport = 5,
+    /// <summary>
+    /// Data related to Claros.Common.Spreadsheet.Definition
+    /// </summary>
+    [pbr::OriginalName("DATASOURCE_SPREADSHEET_DEFINITION")] DatasourceSpreadsheetDefinition = 6,
   }
 
   #endregion

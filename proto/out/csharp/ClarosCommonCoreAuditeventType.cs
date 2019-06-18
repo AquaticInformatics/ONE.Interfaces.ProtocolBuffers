@@ -25,9 +25,11 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihjbGFyb3NfY29tbW9uX2NvcmVfYXVkaXRldmVudF90eXBlLnByb3RvEhJj",
-            "bGFyb3MuY29tbW9uLmNvcmUqZwoOQXVkaXRFdmVudFR5cGUSDgoKQUVfVU5L",
-            "Tk9XThAAEg0KCUFFX0NSRUFURRABEgsKB0FFX1JFQUQQAhINCglBRV9VUERB",
-            "VEUQAxINCglBRV9ERUxFVEUQBBILCgdBRV9TRU5UEAViBnByb3RvMw=="));
+            "bGFyb3MuY29tbW9uLmNvcmUqnQEKDkF1ZGl0RXZlbnRUeXBlEhcKE0FVRElU",
+            "X0VWRU5UX1VOS05PV04QABIWChJBVURJVF9FVkVOVF9DUkVBVEUQARIUChBB",
+            "VURJVF9FVkVOVF9SRUFEEAISFgoSQVVESVRfRVZFTlRfVVBEQVRFEAMSFgoS",
+            "QVVESVRfRVZFTlRfREVMRVRFEAQSFAoQQVVESVRfRVZFTlRfU0VOVBAFYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.AuditEventType), }, null));
@@ -37,12 +39,27 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum AuditEventType {
-    [pbr::OriginalName("AE_UNKNOWN")] AeUnknown = 0,
-    [pbr::OriginalName("AE_CREATE")] AeCreate = 1,
-    [pbr::OriginalName("AE_READ")] AeRead = 2,
-    [pbr::OriginalName("AE_UPDATE")] AeUpdate = 3,
-    [pbr::OriginalName("AE_DELETE")] AeDelete = 4,
-    [pbr::OriginalName("AE_SENT")] AeSent = 5,
+    [pbr::OriginalName("AUDIT_EVENT_UNKNOWN")] AuditEventUnknown = 0,
+    /// <summary>
+    /// Information has been created
+    /// </summary>
+    [pbr::OriginalName("AUDIT_EVENT_CREATE")] AuditEventCreate = 1,
+    /// <summary>
+    /// Information has been read
+    /// </summary>
+    [pbr::OriginalName("AUDIT_EVENT_READ")] AuditEventRead = 2,
+    /// <summary>
+    /// Information has been updated
+    /// </summary>
+    [pbr::OriginalName("AUDIT_EVENT_UPDATE")] AuditEventUpdate = 3,
+    /// <summary>
+    /// Information has been deleted
+    /// </summary>
+    [pbr::OriginalName("AUDIT_EVENT_DELETE")] AuditEventDelete = 4,
+    /// <summary>
+    /// Information has been sent to another system
+    /// </summary>
+    [pbr::OriginalName("AUDIT_EVENT_SENT")] AuditEventSent = 5,
   }
 
   #endregion

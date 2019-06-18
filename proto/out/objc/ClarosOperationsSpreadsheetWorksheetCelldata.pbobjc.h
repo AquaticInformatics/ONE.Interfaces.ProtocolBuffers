@@ -63,24 +63,32 @@ typedef GPB_ENUM(CellData_FieldNumber) {
 
 @interface CellData : GPBMessage
 
+/** The value that was entered by the user as a number */
 @property(nonatomic, readwrite) double value;
 
+/** The value represented as a string */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *stringValue;
 
+/** Whether the cell has been locked to prevent unautorized update of just this cell */
 @property(nonatomic, readwrite) BOOL isLocked;
 
+/** The unit that relates to the value */
 @property(nonatomic, readwrite) uint32_t unitId;
 
+/** Textual note to explain why the data was changed */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *justification;
 
+/** If the data was entered as a qualified value, the qualified properties */
 @property(nonatomic, readwrite, strong, null_resettable) ReportableQualifier *reportableQualifier;
 /** Test to see if @c reportableQualifier has been set. */
 @property(nonatomic, readwrite) BOOL hasReportableQualifier;
 
+/** Where the data came from that went into the cell */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<CellDataBinding*> *cellDataBindingsArray;
 /** The number of items in @c cellDataBindingsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger cellDataBindingsArray_Count;
 
+/** Audit information for this cell entry */
 @property(nonatomic, readwrite, strong, null_resettable) AuditEvent *auditEvent;
 /** Test to see if @c auditEvent has been set. */
 @property(nonatomic, readwrite) BOOL hasAuditEvent;

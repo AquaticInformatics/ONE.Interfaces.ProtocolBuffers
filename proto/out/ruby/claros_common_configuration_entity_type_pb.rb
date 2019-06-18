@@ -6,8 +6,8 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_configuration_entity_type.proto", :syntax => :proto3) do
     add_enum "claros.common.configuration.EntityType" do
-      value :ET_UNKNOWN, 0
-      value :ET_FORMTEMPLATE, 1
+      value :ENTITY_UNKNOWN, 0
+      value :ENTITY_FORMTEMPLATE, 1
     end
   end
 end

@@ -13,6 +13,9 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+import claros_common_task_definition_pb2 as claros__common__task__definition__pb2
+import claros_common_task_data_pb2 as claros__common__task__data__pb2
+import claros_common_core_auditevent_pb2 as claros__common__core__auditevent__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,8 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.task',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1d\x63laros_common_task_task.proto\x12\x12\x63laros.common.task\" \n\x04Task\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\tb\x06proto3')
-)
+  serialized_pb=_b('\n\x1d\x63laros_common_task_task.proto\x12\x12\x63laros.common.task\x1a#claros_common_task_definition.proto\x1a\x1d\x63laros_common_task_data.proto\x1a#claros_common_core_auditevent.proto\"\xa1\x02\n\x04Task\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x10\n\x08\x61ssignee\x18\x04 \x01(\t\x12\x10\n\x08reporter\x18\x05 \x01(\t\x12\x10\n\x08priority\x18\x06 \x01(\r\x12\x14\n\x0cinstrumentId\x18\x07 \x01(\t\x12:\n\x0etaskDefinition\x18\x08 \x01(\x0b\x32\".claros.common.task.TaskDefinition\x12.\n\x08taskdata\x18\t \x01(\x0b\x32\x1c.claros.common.task.TaskData\x12\x32\n\nauditEvent\x18\n \x01(\x0b\x32\x1e.claros.common.core.AuditEventb\x06proto3')
+  ,
+  dependencies=[claros__common__task__definition__pb2.DESCRIPTOR,claros__common__task__data__pb2.DESCRIPTOR,claros__common__core__auditevent__pb2.DESCRIPTOR,])
 
 
 
@@ -47,6 +51,62 @@ _TASK = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='description', full_name='claros.common.task.Task.description', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='assignee', full_name='claros.common.task.Task.assignee', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='reporter', full_name='claros.common.task.Task.reporter', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='priority', full_name='claros.common.task.Task.priority', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='instrumentId', full_name='claros.common.task.Task.instrumentId', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='taskDefinition', full_name='claros.common.task.Task.taskDefinition', index=7,
+      number=8, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='taskdata', full_name='claros.common.task.Task.taskdata', index=8,
+      number=9, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='auditEvent', full_name='claros.common.task.Task.auditEvent', index=9,
+      number=10, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -59,10 +119,13 @@ _TASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=53,
-  serialized_end=85,
+  serialized_start=159,
+  serialized_end=448,
 )
 
+_TASK.fields_by_name['taskDefinition'].message_type = claros__common__task__definition__pb2._TASKDEFINITION
+_TASK.fields_by_name['taskdata'].message_type = claros__common__task__data__pb2._TASKDATA
+_TASK.fields_by_name['auditEvent'].message_type = claros__common__core__auditevent__pb2._AUDITEVENT
 DESCRIPTOR.message_types_by_name['Task'] = _TASK
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

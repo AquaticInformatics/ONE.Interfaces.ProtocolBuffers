@@ -12,27 +12,33 @@ use UnexpectedValueException;
 class AggregateType
 {
     /**
-     * Generated from protobuf enum <code>A_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>AGGREGATE_UNKNOWN = 0;</code>
      */
-    const A_UNKNOWN = 0;
+    const AGGREGATE_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>A_MINIMUM = 1;</code>
+     * Mimimum value for the aggregate range
+     *
+     * Generated from protobuf enum <code>AGGREGATE_MINIMUM = 1;</code>
      */
-    const A_MINIMUM = 1;
+    const AGGREGATE_MINIMUM = 1;
     /**
-     * Generated from protobuf enum <code>A_MAXIMUM = 2;</code>
+     * Maximim value for the aggregate range
+     *
+     * Generated from protobuf enum <code>AGGREGATE_MAXIMUM = 2;</code>
      */
-    const A_MAXIMUM = 2;
+    const AGGREGATE_MAXIMUM = 2;
     /**
-     * Generated from protobuf enum <code>A_AVERAGE = 3;</code>
+     * Average value for the aggregate range
+     *
+     * Generated from protobuf enum <code>AGGREGATE_AVERAGE = 3;</code>
      */
-    const A_AVERAGE = 3;
+    const AGGREGATE_AVERAGE = 3;
 
     private static $valueToName = [
-        self::A_UNKNOWN => 'A_UNKNOWN',
-        self::A_MINIMUM => 'A_MINIMUM',
-        self::A_MAXIMUM => 'A_MAXIMUM',
-        self::A_AVERAGE => 'A_AVERAGE',
+        self::AGGREGATE_UNKNOWN => 'AGGREGATE_UNKNOWN',
+        self::AGGREGATE_MINIMUM => 'AGGREGATE_MINIMUM',
+        self::AGGREGATE_MAXIMUM => 'AGGREGATE_MAXIMUM',
+        self::AGGREGATE_AVERAGE => 'AGGREGATE_AVERAGE',
     ];
 
     public static function name($value)

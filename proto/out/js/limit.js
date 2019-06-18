@@ -12,7 +12,7 @@ goog.provide('proto.claros.common.core.Limit');
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.core.Recurrence');
+goog.require('proto.claros.common.recurrence.Recurrence');
 
 goog.forwardDeclare('proto.claros.common.core.LimitType');
 /**
@@ -70,7 +70,7 @@ proto.claros.common.core.Limit.toObject = function(includeInstance, msg) {
     limittype: jspb.Message.getFieldWithDefault(msg, 2, 0),
     value: +jspb.Message.getFieldWithDefault(msg, 3, 0.0),
     unitid: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    recurrence: (f = msg.getRecurrence()) && proto.claros.common.core.Recurrence.toObject(includeInstance, f)
+    recurrence: (f = msg.getRecurrence()) && proto.claros.common.recurrence.Recurrence.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -124,8 +124,8 @@ proto.claros.common.core.Limit.deserializeBinaryFromReader = function(msg, reade
       msg.setUnitid(value);
       break;
     case 5:
-      var value = new proto.claros.common.core.Recurrence;
-      reader.readMessage(value,proto.claros.common.core.Recurrence.deserializeBinaryFromReader);
+      var value = new proto.claros.common.recurrence.Recurrence;
+      reader.readMessage(value,proto.claros.common.recurrence.Recurrence.deserializeBinaryFromReader);
       msg.setRecurrence(value);
       break;
     default:
@@ -190,7 +190,7 @@ proto.claros.common.core.Limit.serializeBinaryToWriter = function(message, write
     writer.writeMessage(
       5,
       f,
-      proto.claros.common.core.Recurrence.serializeBinaryToWriter
+      proto.claros.common.recurrence.Recurrence.serializeBinaryToWriter
     );
   }
 };
@@ -257,16 +257,16 @@ proto.claros.common.core.Limit.prototype.setUnitid = function(value) {
 
 
 /**
- * optional Recurrence recurrence = 5;
- * @return {?proto.claros.common.core.Recurrence}
+ * optional claros.common.recurrence.Recurrence recurrence = 5;
+ * @return {?proto.claros.common.recurrence.Recurrence}
  */
 proto.claros.common.core.Limit.prototype.getRecurrence = function() {
-  return /** @type{?proto.claros.common.core.Recurrence} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.core.Recurrence, 5));
+  return /** @type{?proto.claros.common.recurrence.Recurrence} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.recurrence.Recurrence, 5));
 };
 
 
-/** @param {?proto.claros.common.core.Recurrence|undefined} value */
+/** @param {?proto.claros.common.recurrence.Recurrence|undefined} value */
 proto.claros.common.core.Limit.prototype.setRecurrence = function(value) {
   jspb.Message.setWrapperField(this, 5, value);
 };

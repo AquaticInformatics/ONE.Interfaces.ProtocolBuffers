@@ -106,11 +106,11 @@ class CellDataBinding :
   static const CellDataBinding& default_instance();
 
   enum BindingCase {
-    kInstrumentMeasurementBinding = 7,
-    kComputationBinding = 8,
-    kFormBinding = 9,
-    kSpreadsheetBinding = 10,
-    kFieldInstrumentMeasurementBinding = 11,
+    kInstrumentMeasurementBinding = 1,
+    kComputationBinding = 2,
+    kFormBinding = 3,
+    kSpreadsheetBinding = 4,
+    kFieldInstrumentMeasurementBinding = 5,
     BINDING_NOT_SET = 0,
   };
 
@@ -177,50 +177,50 @@ class CellDataBinding :
 
   // accessors -------------------------------------------------------
 
-  // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;
+  // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;
   bool has_instrumentmeasurementbinding() const;
   void clear_instrumentmeasurementbinding();
-  static const int kInstrumentMeasurementBindingFieldNumber = 7;
-  const ::claros::instrument::InstrumentMeasurementBinding& instrumentmeasurementbinding() const;
-  ::claros::instrument::InstrumentMeasurementBinding* release_instrumentmeasurementbinding();
-  ::claros::instrument::InstrumentMeasurementBinding* mutable_instrumentmeasurementbinding();
-  void set_allocated_instrumentmeasurementbinding(::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding);
+  static const int kInstrumentMeasurementBindingFieldNumber = 1;
+  const ::claros::instrument::measurement::InstrumentMeasurementBinding& instrumentmeasurementbinding() const;
+  ::claros::instrument::measurement::InstrumentMeasurementBinding* release_instrumentmeasurementbinding();
+  ::claros::instrument::measurement::InstrumentMeasurementBinding* mutable_instrumentmeasurementbinding();
+  void set_allocated_instrumentmeasurementbinding(::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding);
 
-  // .claros.common.computation.ComputationBinding computationBinding = 8;
+  // .claros.common.computation.ComputationBinding computationBinding = 2;
   bool has_computationbinding() const;
   void clear_computationbinding();
-  static const int kComputationBindingFieldNumber = 8;
+  static const int kComputationBindingFieldNumber = 2;
   const ::claros::common::computation::ComputationBinding& computationbinding() const;
   ::claros::common::computation::ComputationBinding* release_computationbinding();
   ::claros::common::computation::ComputationBinding* mutable_computationbinding();
   void set_allocated_computationbinding(::claros::common::computation::ComputationBinding* computationbinding);
 
-  // .claros.common.form.FormBinding formBinding = 9;
+  // .claros.common.form.FormBinding formBinding = 3;
   bool has_formbinding() const;
   void clear_formbinding();
-  static const int kFormBindingFieldNumber = 9;
+  static const int kFormBindingFieldNumber = 3;
   const ::claros::common::form::FormBinding& formbinding() const;
   ::claros::common::form::FormBinding* release_formbinding();
   ::claros::common::form::FormBinding* mutable_formbinding();
   void set_allocated_formbinding(::claros::common::form::FormBinding* formbinding);
 
-  // .claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;
+  // .claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;
   bool has_spreadsheetbinding() const;
   void clear_spreadsheetbinding();
-  static const int kSpreadsheetBindingFieldNumber = 10;
+  static const int kSpreadsheetBindingFieldNumber = 4;
   const ::claros::operations::spreadsheet::SpreadsheetBinding& spreadsheetbinding() const;
   ::claros::operations::spreadsheet::SpreadsheetBinding* release_spreadsheetbinding();
   ::claros::operations::spreadsheet::SpreadsheetBinding* mutable_spreadsheetbinding();
   void set_allocated_spreadsheetbinding(::claros::operations::spreadsheet::SpreadsheetBinding* spreadsheetbinding);
 
-  // .claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;
+  // .claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;
   bool has_fieldinstrumentmeasurementbinding() const;
   void clear_fieldinstrumentmeasurementbinding();
-  static const int kFieldInstrumentMeasurementBindingFieldNumber = 11;
-  const ::claros::instrument::InstrumentMeasurementFieldBinding& fieldinstrumentmeasurementbinding() const;
-  ::claros::instrument::InstrumentMeasurementFieldBinding* release_fieldinstrumentmeasurementbinding();
-  ::claros::instrument::InstrumentMeasurementFieldBinding* mutable_fieldinstrumentmeasurementbinding();
-  void set_allocated_fieldinstrumentmeasurementbinding(::claros::instrument::InstrumentMeasurementFieldBinding* fieldinstrumentmeasurementbinding);
+  static const int kFieldInstrumentMeasurementBindingFieldNumber = 5;
+  const ::claros::instrument::measurement::InstrumentMeasurementFieldBinding& fieldinstrumentmeasurementbinding() const;
+  ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* release_fieldinstrumentmeasurementbinding();
+  ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* mutable_fieldinstrumentmeasurementbinding();
+  void set_allocated_fieldinstrumentmeasurementbinding(::claros::instrument::measurement::InstrumentMeasurementFieldBinding* fieldinstrumentmeasurementbinding);
 
   void clear_binding();
   BindingCase binding_case() const;
@@ -239,11 +239,11 @@ class CellDataBinding :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   union BindingUnion {
     BindingUnion() {}
-    ::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
+    ::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
     ::claros::common::computation::ComputationBinding* computationbinding_;
     ::claros::common::form::FormBinding* formbinding_;
     ::claros::operations::spreadsheet::SpreadsheetBinding* spreadsheetbinding_;
-    ::claros::instrument::InstrumentMeasurementFieldBinding* fieldinstrumentmeasurementbinding_;
+    ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* fieldinstrumentmeasurementbinding_;
   } binding_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -261,42 +261,42 @@ class CellDataBinding :
 #endif  // __GNUC__
 // CellDataBinding
 
-// .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;
+// .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;
 inline bool CellDataBinding::has_instrumentmeasurementbinding() const {
   return binding_case() == kInstrumentMeasurementBinding;
 }
 inline void CellDataBinding::set_has_instrumentmeasurementbinding() {
   _oneof_case_[0] = kInstrumentMeasurementBinding;
 }
-inline ::claros::instrument::InstrumentMeasurementBinding* CellDataBinding::release_instrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementBinding* CellDataBinding::release_instrumentmeasurementbinding() {
   // @@protoc_insertion_point(field_release:claros.operations.spreadsheet.CellDataBinding.instrumentMeasurementBinding)
   if (has_instrumentmeasurementbinding()) {
     clear_has_binding();
-      ::claros::instrument::InstrumentMeasurementBinding* temp = binding_.instrumentmeasurementbinding_;
+      ::claros::instrument::measurement::InstrumentMeasurementBinding* temp = binding_.instrumentmeasurementbinding_;
     binding_.instrumentmeasurementbinding_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline const ::claros::instrument::InstrumentMeasurementBinding& CellDataBinding::instrumentmeasurementbinding() const {
+inline const ::claros::instrument::measurement::InstrumentMeasurementBinding& CellDataBinding::instrumentmeasurementbinding() const {
   // @@protoc_insertion_point(field_get:claros.operations.spreadsheet.CellDataBinding.instrumentMeasurementBinding)
   return has_instrumentmeasurementbinding()
       ? *binding_.instrumentmeasurementbinding_
-      : *reinterpret_cast< ::claros::instrument::InstrumentMeasurementBinding*>(&::claros::instrument::_InstrumentMeasurementBinding_default_instance_);
+      : *reinterpret_cast< ::claros::instrument::measurement::InstrumentMeasurementBinding*>(&::claros::instrument::measurement::_InstrumentMeasurementBinding_default_instance_);
 }
-inline ::claros::instrument::InstrumentMeasurementBinding* CellDataBinding::mutable_instrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementBinding* CellDataBinding::mutable_instrumentmeasurementbinding() {
   if (!has_instrumentmeasurementbinding()) {
     clear_binding();
     set_has_instrumentmeasurementbinding();
-    binding_.instrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::InstrumentMeasurementBinding >(
+    binding_.instrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::measurement::InstrumentMeasurementBinding >(
         GetArenaNoVirtual());
   }
   // @@protoc_insertion_point(field_mutable:claros.operations.spreadsheet.CellDataBinding.instrumentMeasurementBinding)
   return binding_.instrumentmeasurementbinding_;
 }
 
-// .claros.common.computation.ComputationBinding computationBinding = 8;
+// .claros.common.computation.ComputationBinding computationBinding = 2;
 inline bool CellDataBinding::has_computationbinding() const {
   return binding_case() == kComputationBinding;
 }
@@ -331,7 +331,7 @@ inline ::claros::common::computation::ComputationBinding* CellDataBinding::mutab
   return binding_.computationbinding_;
 }
 
-// .claros.common.form.FormBinding formBinding = 9;
+// .claros.common.form.FormBinding formBinding = 3;
 inline bool CellDataBinding::has_formbinding() const {
   return binding_case() == kFormBinding;
 }
@@ -366,7 +366,7 @@ inline ::claros::common::form::FormBinding* CellDataBinding::mutable_formbinding
   return binding_.formbinding_;
 }
 
-// .claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;
+// .claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;
 inline bool CellDataBinding::has_spreadsheetbinding() const {
   return binding_case() == kSpreadsheetBinding;
 }
@@ -401,35 +401,35 @@ inline ::claros::operations::spreadsheet::SpreadsheetBinding* CellDataBinding::m
   return binding_.spreadsheetbinding_;
 }
 
-// .claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;
+// .claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;
 inline bool CellDataBinding::has_fieldinstrumentmeasurementbinding() const {
   return binding_case() == kFieldInstrumentMeasurementBinding;
 }
 inline void CellDataBinding::set_has_fieldinstrumentmeasurementbinding() {
   _oneof_case_[0] = kFieldInstrumentMeasurementBinding;
 }
-inline ::claros::instrument::InstrumentMeasurementFieldBinding* CellDataBinding::release_fieldinstrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* CellDataBinding::release_fieldinstrumentmeasurementbinding() {
   // @@protoc_insertion_point(field_release:claros.operations.spreadsheet.CellDataBinding.fieldInstrumentMeasurementBinding)
   if (has_fieldinstrumentmeasurementbinding()) {
     clear_has_binding();
-      ::claros::instrument::InstrumentMeasurementFieldBinding* temp = binding_.fieldinstrumentmeasurementbinding_;
+      ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* temp = binding_.fieldinstrumentmeasurementbinding_;
     binding_.fieldinstrumentmeasurementbinding_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline const ::claros::instrument::InstrumentMeasurementFieldBinding& CellDataBinding::fieldinstrumentmeasurementbinding() const {
+inline const ::claros::instrument::measurement::InstrumentMeasurementFieldBinding& CellDataBinding::fieldinstrumentmeasurementbinding() const {
   // @@protoc_insertion_point(field_get:claros.operations.spreadsheet.CellDataBinding.fieldInstrumentMeasurementBinding)
   return has_fieldinstrumentmeasurementbinding()
       ? *binding_.fieldinstrumentmeasurementbinding_
-      : *reinterpret_cast< ::claros::instrument::InstrumentMeasurementFieldBinding*>(&::claros::instrument::_InstrumentMeasurementFieldBinding_default_instance_);
+      : *reinterpret_cast< ::claros::instrument::measurement::InstrumentMeasurementFieldBinding*>(&::claros::instrument::measurement::_InstrumentMeasurementFieldBinding_default_instance_);
 }
-inline ::claros::instrument::InstrumentMeasurementFieldBinding* CellDataBinding::mutable_fieldinstrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementFieldBinding* CellDataBinding::mutable_fieldinstrumentmeasurementbinding() {
   if (!has_fieldinstrumentmeasurementbinding()) {
     clear_binding();
     set_has_fieldinstrumentmeasurementbinding();
-    binding_.fieldinstrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::InstrumentMeasurementFieldBinding >(
+    binding_.fieldinstrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::measurement::InstrumentMeasurementFieldBinding >(
         GetArenaNoVirtual());
   }
   // @@protoc_insertion_point(field_mutable:claros.operations.spreadsheet.CellDataBinding.fieldInstrumentMeasurementBinding)

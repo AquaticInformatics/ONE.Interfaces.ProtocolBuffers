@@ -12,9 +12,9 @@ goog.provide('proto.claros.common.form.FormTemplateConfiguration');
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
 goog.require('jspb.Message');
-goog.require('proto.claros.common.core.Recurrence');
 goog.require('proto.claros.common.form.FormFieldDefinition');
 goog.require('proto.claros.common.form.FormLayout');
+goog.require('proto.claros.common.recurrence.Recurrence');
 
 goog.forwardDeclare('proto.claros.common.form.FormTemplateType');
 /**
@@ -76,7 +76,7 @@ proto.claros.common.form.FormTemplateConfiguration.prototype.toObject = function
 proto.claros.common.form.FormTemplateConfiguration.toObject = function(includeInstance, msg) {
   var f, obj = {
     formtemplatetype: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    recurrence: (f = msg.getRecurrence()) && proto.claros.common.core.Recurrence.toObject(includeInstance, f),
+    recurrence: (f = msg.getRecurrence()) && proto.claros.common.recurrence.Recurrence.toObject(includeInstance, f),
     formlayout: (f = msg.getFormlayout()) && proto.claros.common.form.FormLayout.toObject(includeInstance, f),
     formfielddefinitionsList: jspb.Message.toObjectList(msg.getFormfielddefinitionsList(),
     proto.claros.common.form.FormFieldDefinition.toObject, includeInstance)
@@ -121,8 +121,8 @@ proto.claros.common.form.FormTemplateConfiguration.deserializeBinaryFromReader =
       msg.setFormtemplatetype(value);
       break;
     case 2:
-      var value = new proto.claros.common.core.Recurrence;
-      reader.readMessage(value,proto.claros.common.core.Recurrence.deserializeBinaryFromReader);
+      var value = new proto.claros.common.recurrence.Recurrence;
+      reader.readMessage(value,proto.claros.common.recurrence.Recurrence.deserializeBinaryFromReader);
       msg.setRecurrence(value);
       break;
     case 3:
@@ -176,7 +176,7 @@ proto.claros.common.form.FormTemplateConfiguration.serializeBinaryToWriter = fun
     writer.writeMessage(
       2,
       f,
-      proto.claros.common.core.Recurrence.serializeBinaryToWriter
+      proto.claros.common.recurrence.Recurrence.serializeBinaryToWriter
     );
   }
   f = message.getFormlayout();
@@ -214,16 +214,16 @@ proto.claros.common.form.FormTemplateConfiguration.prototype.setFormtemplatetype
 
 
 /**
- * optional claros.common.core.Recurrence recurrence = 2;
- * @return {?proto.claros.common.core.Recurrence}
+ * optional claros.common.recurrence.Recurrence recurrence = 2;
+ * @return {?proto.claros.common.recurrence.Recurrence}
  */
 proto.claros.common.form.FormTemplateConfiguration.prototype.getRecurrence = function() {
-  return /** @type{?proto.claros.common.core.Recurrence} */ (
-    jspb.Message.getWrapperField(this, proto.claros.common.core.Recurrence, 2));
+  return /** @type{?proto.claros.common.recurrence.Recurrence} */ (
+    jspb.Message.getWrapperField(this, proto.claros.common.recurrence.Recurrence, 2));
 };
 
 
-/** @param {?proto.claros.common.core.Recurrence|undefined} value */
+/** @param {?proto.claros.common.recurrence.Recurrence|undefined} value */
 proto.claros.common.form.FormTemplateConfiguration.prototype.setRecurrence = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };

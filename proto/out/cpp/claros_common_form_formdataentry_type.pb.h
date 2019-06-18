@@ -56,17 +56,17 @@ namespace common {
 namespace form {
 
 enum FormDataEntryType {
-  FDE_UNKNOWN = 0,
-  FDE_INSTRUMENT = 1,
-  FDE_TOTALIZER = 2,
-  FDE_CONSUMPTION = 3,
-  FDE_TEXT = 4,
+  FORM_DATE_ENTRY_UNKNOWN = 0,
+  FORM_DATE_ENTRY_INSTRUMENT = 1,
+  FORM_DATE_ENTRY_TOTALIZER = 2,
+  FORM_DATE_ENTRY_CONSUMPTION = 3,
+  FORM_DATE_ENTRY_TEXT = 4,
   FormDataEntryType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   FormDataEntryType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool FormDataEntryType_IsValid(int value);
-const FormDataEntryType FormDataEntryType_MIN = FDE_UNKNOWN;
-const FormDataEntryType FormDataEntryType_MAX = FDE_TEXT;
+const FormDataEntryType FormDataEntryType_MIN = FORM_DATE_ENTRY_UNKNOWN;
+const FormDataEntryType FormDataEntryType_MAX = FORM_DATE_ENTRY_TEXT;
 const int FormDataEntryType_ARRAYSIZE = FormDataEntryType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* FormDataEntryType_descriptor();

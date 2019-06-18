@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.computation',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n(claros_common_computation_variable.proto\x12\x19\x63laros.common.computation\x1a+claros_common_computation_cursor_type.proto\x1a\x35\x63laros_common_computation_propertyselector_type.proto\"\xe8\x02\n\x08Variable\x12\x0f\n\x07i18nKey\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x16\n\x0equantityTypeId\x18\x04 \x01(\t\x12@\n\x06\x63ursor\x18\x05 \x01(\x0e\x32\x30.claros.common.computation.ComputationCursorType\x12\x16\n\x0e\x63ursorAbsolute\x18\x06 \x01(\r\x12I\n\x10propertySelector\x18\x07 \x01(\x0e\x32/.claros.common.computation.PropertySelectorType\x12\x1c\n\x14suggestedParameterId\x18\x08 \x01(\r\x12\x17\n\x0fsuggestedUnitId\x18\t \x01(\r\x12\x12\n\x08\x63olumnId\x18\n \x01(\rH\x00\x12\x15\n\x0b\x66ormFieldId\x18\x0b \x01(\rH\x00\x42\t\n\x07\x62indingb\x06proto3')
+  serialized_pb=_b('\n(claros_common_computation_variable.proto\x12\x19\x63laros.common.computation\x1a+claros_common_computation_cursor_type.proto\x1a\x35\x63laros_common_computation_propertyselector_type.proto\"\xec\x02\n\x08Variable\x12\x0f\n\x07i18nKey\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x16\n\x0equantityTypeId\x18\x04 \x01(\t\x12\x44\n\ncursorType\x18\x05 \x01(\x0e\x32\x30.claros.common.computation.ComputationCursorType\x12\x16\n\x0e\x63ursorAbsolute\x18\x06 \x01(\r\x12I\n\x10propertySelector\x18\x07 \x01(\x0e\x32/.claros.common.computation.PropertySelectorType\x12\x1c\n\x14suggestedParameterId\x18\x08 \x01(\r\x12\x17\n\x0fsuggestedUnitId\x18\t \x01(\r\x12\x12\n\x08\x63olumnId\x18\n \x01(\rH\x00\x12\x15\n\x0b\x66ormFieldId\x18\x0b \x01(\rH\x00\x42\t\n\x07\x62indingb\x06proto3')
   ,
   dependencies=[claros__common__computation__cursor__type__pb2.DESCRIPTOR,claros__common__computation__propertyselector__type__pb2.DESCRIPTOR,])
 
@@ -65,7 +65,7 @@ _VARIABLE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='cursor', full_name='claros.common.computation.Variable.cursor', index=4,
+      name='cursorType', full_name='claros.common.computation.Variable.cursorType', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -129,10 +129,10 @@ _VARIABLE = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=172,
-  serialized_end=532,
+  serialized_end=536,
 )
 
-_VARIABLE.fields_by_name['cursor'].enum_type = claros__common__computation__cursor__type__pb2._COMPUTATIONCURSORTYPE
+_VARIABLE.fields_by_name['cursorType'].enum_type = claros__common__computation__cursor__type__pb2._COMPUTATIONCURSORTYPE
 _VARIABLE.fields_by_name['propertySelector'].enum_type = claros__common__computation__propertyselector__type__pb2._PROPERTYSELECTORTYPE
 _VARIABLE.oneofs_by_name['binding'].fields.append(
   _VARIABLE.fields_by_name['columnId'])

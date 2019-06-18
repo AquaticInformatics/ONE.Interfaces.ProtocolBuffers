@@ -14,10 +14,14 @@ use Google\Protobuf\Internal\GPBUtil;
 class ReportableQualifier extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The type of Qualifier
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     private $reportableQualifierType = 0;
     /**
+     * What the user has entered as the qualifer
+     *
      * Generated from protobuf field <code>string qualifiedValue = 2;</code>
      */
     private $qualifiedValue = '';
@@ -29,7 +33,9 @@ class ReportableQualifier extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $reportableQualifierType
+     *           The type of Qualifier
      *     @type string $qualifiedValue
+     *           What the user has entered as the qualifer
      * }
      */
     public function __construct($data = NULL) {
@@ -38,6 +44,8 @@ class ReportableQualifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of Qualifier
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      * @return int
      */
@@ -47,6 +55,8 @@ class ReportableQualifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of Qualifier
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      * @param int $var
      * @return $this
@@ -60,6 +70,8 @@ class ReportableQualifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What the user has entered as the qualifer
+     *
      * Generated from protobuf field <code>string qualifiedValue = 2;</code>
      * @return string
      */
@@ -69,6 +81,8 @@ class ReportableQualifier extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What the user has entered as the qualifer
+     *
      * Generated from protobuf field <code>string qualifiedValue = 2;</code>
      * @param string $var
      * @return $this

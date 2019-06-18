@@ -61,6 +61,7 @@ typedef GPB_ENUM(Spreadsheet_FieldNumber) {
 /** header */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *name;
 
+/** Where this spreadsheet is bound.  I.e. the PlantId */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *locationId;
 
 /** definition */
@@ -68,6 +69,7 @@ typedef GPB_ENUM(Spreadsheet_FieldNumber) {
 /** The number of items in @c timeDefinitionArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger timeDefinitionArray_Count;
 
+/** definition and data for worksheets.  Data and definition will be split up within the worksheets */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Worksheet*> *worksheetArray;
 /** The number of items in @c worksheetArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger worksheetArray_Count;

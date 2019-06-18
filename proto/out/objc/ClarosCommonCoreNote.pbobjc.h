@@ -57,14 +57,18 @@ typedef GPB_ENUM(Note_FieldNumber) {
 
 @interface Note : GPBMessage
 
+/** Unique GUID that identifies the note */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *id_p;
 
+/** The UTC time when the note was taken */
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *timeStamp;
 /** Test to see if @c timeStamp has been set. */
 @property(nonatomic, readwrite) BOOL hasTimeStamp;
 
+/** The GUID of the user who entered the note */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *userId;
 
+/** The content of the note */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *text;
 
 @end

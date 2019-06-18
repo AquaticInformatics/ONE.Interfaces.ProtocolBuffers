@@ -16,7 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5frecurrence_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto;
 namespace claros {
 namespace common {
 namespace form {
@@ -40,7 +40,7 @@ static void InitDefaultsLedgerColumnFormField_claros_5fcommon_5fform_5fledgercol
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_LedgerColumnFormField_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLedgerColumnFormField_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto}, {
-      &scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto.base,}};
+      &scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto.base,}};
 
 void InitDefaults_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_LedgerColumnFormField_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto.base);
@@ -79,24 +79,24 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto[] =
   "\n.claros_common_form_ledgercolumnformfie"
-  "ld.proto\022\022claros.common.form\032#claros_com"
-  "mon_core_recurrence.proto\"\251\001\n\025LedgerColu"
-  "mnFormField\022\030\n\020ledgerColumnGUID\030\001 \001(\t\022\014\n"
-  "\004unit\030\002 \001(\t\022\017\n\007upLimit\030\003 \001(\t\022\020\n\010lowLimit"
-  "\030\004 \001(\t\0222\n\ntimeWindow\030\005 \001(\0132\036.claros.comm"
-  "on.core.Recurrence\022\021\n\tparameter\030\006 \001(\tb\006p"
-  "roto3"
+  "ld.proto\022\022claros.common.form\032)claros_com"
+  "mon_recurrence_recurrence.proto\"\257\001\n\025Ledg"
+  "erColumnFormField\022\030\n\020ledgerColumnGUID\030\001 "
+  "\001(\t\022\014\n\004unit\030\002 \001(\t\022\017\n\007upLimit\030\003 \001(\t\022\020\n\010lo"
+  "wLimit\030\004 \001(\t\0228\n\ntimeWindow\030\005 \001(\0132$.claro"
+  "s.common.recurrence.Recurrence\022\021\n\tparame"
+  "ter\030\006 \001(\tb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto = {
   false, InitDefaults_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto,
-  "claros_common_form_ledgercolumnformfield.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto, 285,
+  "claros_common_form_ledgercolumnformfield.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto, 297,
 };
 
 void AddDescriptors_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[1] =
   {
-    ::AddDescriptors_claros_5fcommon_5fcore_5frecurrence_2eproto,
+    ::AddDescriptors_claros_5fcommon_5frecurrence_5frecurrence_2eproto,
   };
  ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto, deps, 1);
 }
@@ -110,15 +110,15 @@ namespace form {
 // ===================================================================
 
 void LedgerColumnFormField::InitAsDefaultInstance() {
-  ::claros::common::form::_LedgerColumnFormField_default_instance_._instance.get_mutable()->timewindow_ = const_cast< ::claros::common::core::Recurrence*>(
-      ::claros::common::core::Recurrence::internal_default_instance());
+  ::claros::common::form::_LedgerColumnFormField_default_instance_._instance.get_mutable()->timewindow_ = const_cast< ::claros::common::recurrence::Recurrence*>(
+      ::claros::common::recurrence::Recurrence::internal_default_instance());
 }
 class LedgerColumnFormField::HasBitSetters {
  public:
-  static const ::claros::common::core::Recurrence& timewindow(const LedgerColumnFormField* msg);
+  static const ::claros::common::recurrence::Recurrence& timewindow(const LedgerColumnFormField* msg);
 };
 
-const ::claros::common::core::Recurrence&
+const ::claros::common::recurrence::Recurrence&
 LedgerColumnFormField::HasBitSetters::timewindow(const LedgerColumnFormField* msg) {
   return *msg->timewindow_;
 }
@@ -167,7 +167,7 @@ LedgerColumnFormField::LedgerColumnFormField(const LedgerColumnFormField& from)
     parameter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_);
   }
   if (from.has_timewindow()) {
-    timewindow_ = new ::claros::common::core::Recurrence(*from.timewindow_);
+    timewindow_ = new ::claros::common::recurrence::Recurrence(*from.timewindow_);
   } else {
     timewindow_ = nullptr;
   }
@@ -303,12 +303,12 @@ const char* LedgerColumnFormField::_InternalParse(const char* begin, const char*
         ptr += size;
         break;
       }
-      // .claros.common.core.Recurrence timeWindow = 5;
+      // .claros.common.recurrence.Recurrence timeWindow = 5;
       case 5: {
         if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::core::Recurrence::_InternalParse;
+        parser_till_end = ::claros::common::recurrence::Recurrence::_InternalParse;
         object = msg->mutable_timewindow();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -426,7 +426,7 @@ bool LedgerColumnFormField::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.core.Recurrence timeWindow = 5;
+      // .claros.common.recurrence.Recurrence timeWindow = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -519,7 +519,7 @@ void LedgerColumnFormField::SerializeWithCachedSizes(
       4, this->lowlimit(), output);
   }
 
-  // .claros.common.core.Recurrence timeWindow = 5;
+  // .claros.common.recurrence.Recurrence timeWindow = 5;
   if (this->has_timewindow()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, HasBitSetters::timewindow(this), output);
@@ -592,7 +592,7 @@ void LedgerColumnFormField::SerializeWithCachedSizes(
         4, this->lowlimit(), target);
   }
 
-  // .claros.common.core.Recurrence timeWindow = 5;
+  // .claros.common.recurrence.Recurrence timeWindow = 5;
   if (this->has_timewindow()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -666,7 +666,7 @@ size_t LedgerColumnFormField::ByteSizeLong() const {
         this->parameter());
   }
 
-  // .claros.common.core.Recurrence timeWindow = 5;
+  // .claros.common.recurrence.Recurrence timeWindow = 5;
   if (this->has_timewindow()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -721,7 +721,7 @@ void LedgerColumnFormField::MergeFrom(const LedgerColumnFormField& from) {
     parameter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_);
   }
   if (from.has_timewindow()) {
-    mutable_timewindow()->::claros::common::core::Recurrence::MergeFrom(from.timewindow());
+    mutable_timewindow()->::claros::common::recurrence::Recurrence::MergeFrom(from.timewindow());
   }
 }
 

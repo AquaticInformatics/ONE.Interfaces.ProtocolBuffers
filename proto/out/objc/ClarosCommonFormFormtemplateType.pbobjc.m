@@ -36,13 +36,14 @@ GPBEnumDescriptor *FormTemplateType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "FtUnknown\000FtPlant\000FtLaboratory\000FtEnterpr"
+        "FormTemplateUnknown\000FormTemplatePlant\000Fo"
+        "rmTemplateLaboratory\000FormTemplateEnterpr"
         "ise\000";
     static const int32_t values[] = {
-        FormTemplateType_FtUnknown,
-        FormTemplateType_FtPlant,
-        FormTemplateType_FtLaboratory,
-        FormTemplateType_FtEnterprise,
+        FormTemplateType_FormTemplateUnknown,
+        FormTemplateType_FormTemplatePlant,
+        FormTemplateType_FormTemplateLaboratory,
+        FormTemplateType_FormTemplateEnterprise,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(FormTemplateType)
@@ -60,10 +61,10 @@ GPBEnumDescriptor *FormTemplateType_EnumDescriptor(void) {
 
 BOOL FormTemplateType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case FormTemplateType_FtUnknown:
-    case FormTemplateType_FtPlant:
-    case FormTemplateType_FtLaboratory:
-    case FormTemplateType_FtEnterprise:
+    case FormTemplateType_FormTemplateUnknown:
+    case FormTemplateType_FormTemplatePlant:
+    case FormTemplateType_FormTemplateLaboratory:
+    case FormTemplateType_FormTemplateEnterprise:
       return YES;
     default:
       return NO;

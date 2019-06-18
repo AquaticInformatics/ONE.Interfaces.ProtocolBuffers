@@ -38,14 +38,14 @@ typedef GPB_ENUM(DayOfWeek) {
    * of the field.
    **/
   DayOfWeek_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  DayOfWeek_DowUnknown = 0,
-  DayOfWeek_DowSunday = 1,
-  DayOfWeek_DowMonday = 2,
-  DayOfWeek_DowTuesday = 3,
-  DayOfWeek_DowWednesday = 4,
-  DayOfWeek_DowThursday = 5,
-  DayOfWeek_DowFriday = 6,
-  DayOfWeek_DowSaturday = 7,
+  DayOfWeek_DayOfWeekUnknown = 0,
+  DayOfWeek_DayOfWeekSunday = 1,
+  DayOfWeek_DayOfWeekMonday = 2,
+  DayOfWeek_DayOfWeekTuesday = 3,
+  DayOfWeek_DayOfWeekWednesday = 4,
+  DayOfWeek_DayOfWeekThursday = 5,
+  DayOfWeek_DayOfWeekFriday = 6,
+  DayOfWeek_DayOfWeekSaturday = 7,
 };
 
 GPBEnumDescriptor *DayOfWeek_EnumDescriptor(void);

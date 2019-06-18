@@ -20,7 +20,7 @@ public final class ClarosInstrumentData {
 
     /**
      * <pre>
-     * In header
+     * Header Information
      * </pre>
      *
      * <code>string tenantId = 1;</code>
@@ -28,7 +28,7 @@ public final class ClarosInstrumentData {
     java.lang.String getTenantId();
     /**
      * <pre>
-     * In header
+     * Header Information
      * </pre>
      *
      * <code>string tenantId = 1;</code>
@@ -37,57 +37,105 @@ public final class ClarosInstrumentData {
         getTenantIdBytes();
 
     /**
+     * <pre>
+     * Unique id of an instrument
+     * </pre>
+     *
      * <code>string fusionId = 2;</code>
      */
     java.lang.String getFusionId();
     /**
+     * <pre>
+     * Unique id of an instrument
+     * </pre>
+     *
      * <code>string fusionId = 2;</code>
      */
     com.google.protobuf.ByteString
         getFusionIdBytes();
 
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
     boolean hasEvents();
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
-    claros.instrument.ClarosInstrumentEvent.InstrumentEvent getEvents();
+    claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData getEvents();
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
-    claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder getEventsOrBuilder();
+    claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder getEventsOrBuilder();
 
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> 
+    java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> 
         getMeasurementsList();
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement getMeasurements(int index);
+    claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData getMeasurements(int index);
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
     int getMeasurementsCount();
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    java.util.List<? extends claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder> 
+    java.util.List<? extends claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder> 
         getMeasurementsOrBuilderList();
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder getMeasurementsOrBuilder(
+    claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder getMeasurementsOrBuilder(
         int index);
 
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
     int getSettingsCount();
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
     boolean containsSettings(
@@ -99,11 +147,19 @@ public final class ClarosInstrumentData {
     java.util.Map<java.lang.String, java.lang.String>
     getSettings();
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
     java.util.Map<java.lang.String, java.lang.String>
     getSettingsMap();
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -111,6 +167,10 @@ public final class ClarosInstrumentData {
         java.lang.String key,
         java.lang.String defaultValue);
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -118,10 +178,18 @@ public final class ClarosInstrumentData {
         java.lang.String key);
 
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
     int getStatesCount();
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
     boolean containsStates(
@@ -133,11 +201,19 @@ public final class ClarosInstrumentData {
     java.util.Map<java.lang.String, java.lang.String>
     getStates();
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
     java.util.Map<java.lang.String, java.lang.String>
     getStatesMap();
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -145,6 +221,10 @@ public final class ClarosInstrumentData {
         java.lang.String key,
         java.lang.String defaultValue);
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -231,11 +311,11 @@ public final class ClarosInstrumentData {
               break;
             }
             case 26: {
-              claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder subBuilder = null;
+              claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder subBuilder = null;
               if (events_ != null) {
                 subBuilder = events_.toBuilder();
               }
-              events_ = input.readMessage(claros.instrument.ClarosInstrumentEvent.InstrumentEvent.parser(), extensionRegistry);
+              events_ = input.readMessage(claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(events_);
                 events_ = subBuilder.buildPartial();
@@ -245,11 +325,11 @@ public final class ClarosInstrumentData {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                measurements_ = new java.util.ArrayList<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement>();
+                measurements_ = new java.util.ArrayList<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData>();
                 mutable_bitField0_ |= 0x00000008;
               }
               measurements_.add(
-                  input.readMessage(claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.parser(), extensionRegistry));
+                  input.readMessage(claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.parser(), extensionRegistry));
               break;
             }
             case 42: {
@@ -345,7 +425,7 @@ public final class ClarosInstrumentData {
     private volatile java.lang.Object tenantId_;
     /**
      * <pre>
-     * In header
+     * Header Information
      * </pre>
      *
      * <code>string tenantId = 1;</code>
@@ -364,7 +444,7 @@ public final class ClarosInstrumentData {
     }
     /**
      * <pre>
-     * In header
+     * Header Information
      * </pre>
      *
      * <code>string tenantId = 1;</code>
@@ -386,6 +466,10 @@ public final class ClarosInstrumentData {
     public static final int FUSIONID_FIELD_NUMBER = 2;
     private volatile java.lang.Object fusionId_;
     /**
+     * <pre>
+     * Unique id of an instrument
+     * </pre>
+     *
      * <code>string fusionId = 2;</code>
      */
     public java.lang.String getFusionId() {
@@ -401,6 +485,10 @@ public final class ClarosInstrumentData {
       }
     }
     /**
+     * <pre>
+     * Unique id of an instrument
+     * </pre>
+     *
      * <code>string fusionId = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -418,57 +506,89 @@ public final class ClarosInstrumentData {
     }
 
     public static final int EVENTS_FIELD_NUMBER = 3;
-    private claros.instrument.ClarosInstrumentEvent.InstrumentEvent events_;
+    private claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData events_;
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
     public boolean hasEvents() {
       return events_ != null;
     }
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
-    public claros.instrument.ClarosInstrumentEvent.InstrumentEvent getEvents() {
-      return events_ == null ? claros.instrument.ClarosInstrumentEvent.InstrumentEvent.getDefaultInstance() : events_;
+    public claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData getEvents() {
+      return events_ == null ? claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.getDefaultInstance() : events_;
     }
     /**
-     * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * <pre>
+     * Events related to what has happened to an instrument
+     * </pre>
+     *
+     * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
-    public claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder getEventsOrBuilder() {
+    public claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder getEventsOrBuilder() {
       return getEvents();
     }
 
     public static final int MEASUREMENTS_FIELD_NUMBER = 4;
-    private java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> measurements_;
+    private java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> measurements_;
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    public java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> getMeasurementsList() {
+    public java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> getMeasurementsList() {
       return measurements_;
     }
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    public java.util.List<? extends claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder> 
+    public java.util.List<? extends claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder> 
         getMeasurementsOrBuilderList() {
       return measurements_;
     }
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
     public int getMeasurementsCount() {
       return measurements_.size();
     }
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement getMeasurements(int index) {
+    public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData getMeasurements(int index) {
       return measurements_.get(index);
     }
     /**
-     * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * <pre>
+     * Measurements related to an instrument
+     * </pre>
+     *
+     * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder getMeasurementsOrBuilder(
+    public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder getMeasurementsOrBuilder(
         int index) {
       return measurements_.get(index);
     }
@@ -500,6 +620,10 @@ public final class ClarosInstrumentData {
       return internalGetSettings().getMap().size();
     }
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -516,6 +640,10 @@ public final class ClarosInstrumentData {
       return getSettingsMap();
     }
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -523,6 +651,10 @@ public final class ClarosInstrumentData {
       return internalGetSettings().getMap();
     }
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -535,6 +667,10 @@ public final class ClarosInstrumentData {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     * Settings of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; settings = 5;</code>
      */
 
@@ -576,6 +712,10 @@ public final class ClarosInstrumentData {
       return internalGetStates().getMap().size();
     }
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -592,6 +732,10 @@ public final class ClarosInstrumentData {
       return getStatesMap();
     }
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -599,6 +743,10 @@ public final class ClarosInstrumentData {
       return internalGetStates().getMap();
     }
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -611,6 +759,10 @@ public final class ClarosInstrumentData {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     * State informantion of an instrument
+     * </pre>
+     *
      * <code>map&lt;string, string&gt; states = 6;</code>
      */
 
@@ -1179,7 +1331,7 @@ public final class ClarosInstrumentData {
       private java.lang.Object tenantId_ = "";
       /**
        * <pre>
-       * In header
+       * Header Information
        * </pre>
        *
        * <code>string tenantId = 1;</code>
@@ -1198,7 +1350,7 @@ public final class ClarosInstrumentData {
       }
       /**
        * <pre>
-       * In header
+       * Header Information
        * </pre>
        *
        * <code>string tenantId = 1;</code>
@@ -1218,7 +1370,7 @@ public final class ClarosInstrumentData {
       }
       /**
        * <pre>
-       * In header
+       * Header Information
        * </pre>
        *
        * <code>string tenantId = 1;</code>
@@ -1235,7 +1387,7 @@ public final class ClarosInstrumentData {
       }
       /**
        * <pre>
-       * In header
+       * Header Information
        * </pre>
        *
        * <code>string tenantId = 1;</code>
@@ -1248,7 +1400,7 @@ public final class ClarosInstrumentData {
       }
       /**
        * <pre>
-       * In header
+       * Header Information
        * </pre>
        *
        * <code>string tenantId = 1;</code>
@@ -1267,6 +1419,10 @@ public final class ClarosInstrumentData {
 
       private java.lang.Object fusionId_ = "";
       /**
+       * <pre>
+       * Unique id of an instrument
+       * </pre>
+       *
        * <code>string fusionId = 2;</code>
        */
       public java.lang.String getFusionId() {
@@ -1282,6 +1438,10 @@ public final class ClarosInstrumentData {
         }
       }
       /**
+       * <pre>
+       * Unique id of an instrument
+       * </pre>
+       *
        * <code>string fusionId = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -1298,6 +1458,10 @@ public final class ClarosInstrumentData {
         }
       }
       /**
+       * <pre>
+       * Unique id of an instrument
+       * </pre>
+       *
        * <code>string fusionId = 2;</code>
        */
       public Builder setFusionId(
@@ -1311,6 +1475,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * Unique id of an instrument
+       * </pre>
+       *
        * <code>string fusionId = 2;</code>
        */
       public Builder clearFusionId() {
@@ -1320,6 +1488,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * Unique id of an instrument
+       * </pre>
+       *
        * <code>string fusionId = 2;</code>
        */
       public Builder setFusionIdBytes(
@@ -1334,29 +1506,41 @@ public final class ClarosInstrumentData {
         return this;
       }
 
-      private claros.instrument.ClarosInstrumentEvent.InstrumentEvent events_;
+      private claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData events_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentEvent.InstrumentEvent, claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder, claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder> eventsBuilder_;
+          claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder> eventsBuilder_;
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
       public boolean hasEvents() {
         return eventsBuilder_ != null || events_ != null;
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
-      public claros.instrument.ClarosInstrumentEvent.InstrumentEvent getEvents() {
+      public claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData getEvents() {
         if (eventsBuilder_ == null) {
-          return events_ == null ? claros.instrument.ClarosInstrumentEvent.InstrumentEvent.getDefaultInstance() : events_;
+          return events_ == null ? claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.getDefaultInstance() : events_;
         } else {
           return eventsBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
-      public Builder setEvents(claros.instrument.ClarosInstrumentEvent.InstrumentEvent value) {
+      public Builder setEvents(claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData value) {
         if (eventsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1370,10 +1554,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
       public Builder setEvents(
-          claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder builderForValue) {
+          claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder builderForValue) {
         if (eventsBuilder_ == null) {
           events_ = builderForValue.build();
           onChanged();
@@ -1384,13 +1572,17 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
-      public Builder mergeEvents(claros.instrument.ClarosInstrumentEvent.InstrumentEvent value) {
+      public Builder mergeEvents(claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData value) {
         if (eventsBuilder_ == null) {
           if (events_ != null) {
             events_ =
-              claros.instrument.ClarosInstrumentEvent.InstrumentEvent.newBuilder(events_).mergeFrom(value).buildPartial();
+              claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.newBuilder(events_).mergeFrom(value).buildPartial();
           } else {
             events_ = value;
           }
@@ -1402,7 +1594,11 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
       public Builder clearEvents() {
         if (eventsBuilder_ == null) {
@@ -1416,33 +1612,45 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
-      public claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder getEventsBuilder() {
+      public claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder getEventsBuilder() {
         
         onChanged();
         return getEventsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
-      public claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder getEventsOrBuilder() {
+      public claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder getEventsOrBuilder() {
         if (eventsBuilder_ != null) {
           return eventsBuilder_.getMessageOrBuilder();
         } else {
           return events_ == null ?
-              claros.instrument.ClarosInstrumentEvent.InstrumentEvent.getDefaultInstance() : events_;
+              claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.getDefaultInstance() : events_;
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentEvent events = 3;</code>
+       * <pre>
+       * Events related to what has happened to an instrument
+       * </pre>
+       *
+       * <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentEvent.InstrumentEvent, claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder, claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder> 
+          claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder> 
           getEventsFieldBuilder() {
         if (eventsBuilder_ == null) {
           eventsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.instrument.ClarosInstrumentEvent.InstrumentEvent, claros.instrument.ClarosInstrumentEvent.InstrumentEvent.Builder, claros.instrument.ClarosInstrumentEvent.InstrumentEventOrBuilder>(
+              claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventData.Builder, claros.instrument.event.ClarosInstrumentEventData.InstrumentEventDataOrBuilder>(
                   getEvents(),
                   getParentForChildren(),
                   isClean());
@@ -1451,22 +1659,26 @@ public final class ClarosInstrumentData {
         return eventsBuilder_;
       }
 
-      private java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> measurements_ =
+      private java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> measurements_ =
         java.util.Collections.emptyList();
       private void ensureMeasurementsIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          measurements_ = new java.util.ArrayList<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement>(measurements_);
+          measurements_ = new java.util.ArrayList<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData>(measurements_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder> measurementsBuilder_;
+          claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder> measurementsBuilder_;
 
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> getMeasurementsList() {
+      public java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> getMeasurementsList() {
         if (measurementsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(measurements_);
         } else {
@@ -1474,7 +1686,11 @@ public final class ClarosInstrumentData {
         }
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public int getMeasurementsCount() {
         if (measurementsBuilder_ == null) {
@@ -1484,9 +1700,13 @@ public final class ClarosInstrumentData {
         }
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement getMeasurements(int index) {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData getMeasurements(int index) {
         if (measurementsBuilder_ == null) {
           return measurements_.get(index);
         } else {
@@ -1494,10 +1714,14 @@ public final class ClarosInstrumentData {
         }
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder setMeasurements(
-          int index, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement value) {
+          int index, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData value) {
         if (measurementsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1511,10 +1735,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder setMeasurements(
-          int index, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder builderForValue) {
+          int index, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder builderForValue) {
         if (measurementsBuilder_ == null) {
           ensureMeasurementsIsMutable();
           measurements_.set(index, builderForValue.build());
@@ -1525,9 +1753,13 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public Builder addMeasurements(claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement value) {
+      public Builder addMeasurements(claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData value) {
         if (measurementsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1541,10 +1773,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder addMeasurements(
-          int index, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement value) {
+          int index, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData value) {
         if (measurementsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1558,10 +1794,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder addMeasurements(
-          claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder builderForValue) {
+          claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder builderForValue) {
         if (measurementsBuilder_ == null) {
           ensureMeasurementsIsMutable();
           measurements_.add(builderForValue.build());
@@ -1572,10 +1812,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder addMeasurements(
-          int index, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder builderForValue) {
+          int index, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder builderForValue) {
         if (measurementsBuilder_ == null) {
           ensureMeasurementsIsMutable();
           measurements_.add(index, builderForValue.build());
@@ -1586,10 +1830,14 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder addAllMeasurements(
-          java.lang.Iterable<? extends claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement> values) {
+          java.lang.Iterable<? extends claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData> values) {
         if (measurementsBuilder_ == null) {
           ensureMeasurementsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1601,7 +1849,11 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder clearMeasurements() {
         if (measurementsBuilder_ == null) {
@@ -1614,7 +1866,11 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
       public Builder removeMeasurements(int index) {
         if (measurementsBuilder_ == null) {
@@ -1627,16 +1883,24 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder getMeasurementsBuilder(
+      public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder getMeasurementsBuilder(
           int index) {
         return getMeasurementsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder getMeasurementsOrBuilder(
+      public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder getMeasurementsOrBuilder(
           int index) {
         if (measurementsBuilder_ == null) {
           return measurements_.get(index);  } else {
@@ -1644,9 +1908,13 @@ public final class ClarosInstrumentData {
         }
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public java.util.List<? extends claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder> 
+      public java.util.List<? extends claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder> 
            getMeasurementsOrBuilderList() {
         if (measurementsBuilder_ != null) {
           return measurementsBuilder_.getMessageOrBuilderList();
@@ -1655,33 +1923,45 @@ public final class ClarosInstrumentData {
         }
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder addMeasurementsBuilder() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder addMeasurementsBuilder() {
         return getMeasurementsFieldBuilder().addBuilder(
-            claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.getDefaultInstance());
+            claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.getDefaultInstance());
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder addMeasurementsBuilder(
+      public claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder addMeasurementsBuilder(
           int index) {
         return getMeasurementsFieldBuilder().addBuilder(
-            index, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.getDefaultInstance());
+            index, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.getDefaultInstance());
       }
       /**
-       * <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+       * <pre>
+       * Measurements related to an instrument
+       * </pre>
+       *
+       * <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
        */
-      public java.util.List<claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder> 
+      public java.util.List<claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder> 
            getMeasurementsBuilderList() {
         return getMeasurementsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder> 
+          claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder> 
           getMeasurementsFieldBuilder() {
         if (measurementsBuilder_ == null) {
           measurementsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurement.Builder, claros.instrument.ClarosInstrumentMeasurement.InstrumentMeasurementOrBuilder>(
+              claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementData.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementData.InstrumentMeasurementDataOrBuilder>(
                   measurements_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -1718,6 +1998,10 @@ public final class ClarosInstrumentData {
         return internalGetSettings().getMap().size();
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1734,6 +2018,10 @@ public final class ClarosInstrumentData {
         return getSettingsMap();
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1741,6 +2029,10 @@ public final class ClarosInstrumentData {
         return internalGetSettings().getMap();
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1753,6 +2045,10 @@ public final class ClarosInstrumentData {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1773,6 +2069,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1792,6 +2092,10 @@ public final class ClarosInstrumentData {
         return internalGetMutableSettings().getMutableMap();
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
       public Builder putSettings(
@@ -1804,6 +2108,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * Settings of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; settings = 5;</code>
        */
 
@@ -1841,6 +2149,10 @@ public final class ClarosInstrumentData {
         return internalGetStates().getMap().size();
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -1857,6 +2169,10 @@ public final class ClarosInstrumentData {
         return getStatesMap();
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -1864,6 +2180,10 @@ public final class ClarosInstrumentData {
         return internalGetStates().getMap();
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -1876,6 +2196,10 @@ public final class ClarosInstrumentData {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -1896,6 +2220,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -1915,6 +2243,10 @@ public final class ClarosInstrumentData {
         return internalGetMutableStates().getMutableMap();
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
       public Builder putStates(
@@ -1927,6 +2259,10 @@ public final class ClarosInstrumentData {
         return this;
       }
       /**
+       * <pre>
+       * State informantion of an instrument
+       * </pre>
+       *
        * <code>map&lt;string, string&gt; states = 6;</code>
        */
 
@@ -2167,21 +2503,22 @@ public final class ClarosInstrumentData {
   static {
     java.lang.String[] descriptorData = {
       "\n\034claros_instrument_data.proto\022\021claros.i" +
-      "nstrument\032\035claros_instrument_event.proto" +
-      "\032#claros_instrument_measurement.proto\032\'c" +
-      "laros_common_core_clarosdatetime.proto\"\316" +
-      "\003\n\016InstrumentData\022\020\n\010tenantId\030\001 \001(\t\022\020\n\010f" +
-      "usionId\030\002 \001(\t\0222\n\006events\030\003 \001(\0132\".claros.i" +
-      "nstrument.InstrumentEvent\022>\n\014measurement" +
-      "s\030\004 \003(\0132(.claros.instrument.InstrumentMe" +
-      "asurement\022A\n\010settings\030\005 \003(\0132/.claros.ins" +
-      "trument.InstrumentData.SettingsEntry\022=\n\006" +
-      "states\030\006 \003(\0132-.claros.instrument.Instrum" +
-      "entData.StatesEntry\022B\n\026instrumentDataDat" +
-      "eTime\030\007 \001(\0132\".claros.common.core.ClarosD" +
-      "ateTime\032/\n\rSettingsEntry\022\013\n\003key\030\001 \001(\t\022\r\n" +
-      "\005value\030\002 \001(\t:\0028\001\032-\n\013StatesEntry\022\013\n\003key\030\001" +
-      " \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001b\006proto3"
+      "nstrument\032\"claros_instrument_event_data." +
+      "proto\032(claros_instrument_measurement_dat" +
+      "a.proto\032\'claros_common_core_clarosdateti" +
+      "me.proto\"\350\003\n\016InstrumentData\022\020\n\010tenantId\030" +
+      "\001 \001(\t\022\020\n\010fusionId\030\002 \001(\t\022<\n\006events\030\003 \001(\0132" +
+      ",.claros.instrument.event.InstrumentEven" +
+      "tData\022N\n\014measurements\030\004 \003(\01328.claros.ins" +
+      "trument.measurement.InstrumentMeasuremen" +
+      "tData\022A\n\010settings\030\005 \003(\0132/.claros.instrum" +
+      "ent.InstrumentData.SettingsEntry\022=\n\006stat" +
+      "es\030\006 \003(\0132-.claros.instrument.InstrumentD" +
+      "ata.StatesEntry\022B\n\026instrumentDataDateTim" +
+      "e\030\007 \001(\0132\".claros.common.core.ClarosDateT" +
+      "ime\032/\n\rSettingsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
+      "ue\030\002 \001(\t:\0028\001\032-\n\013StatesEntry\022\013\n\003key\030\001 \001(\t" +
+      "\022\r\n\005value\030\002 \001(\t:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2194,8 +2531,8 @@ public final class ClarosInstrumentData {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          claros.instrument.ClarosInstrumentEvent.getDescriptor(),
-          claros.instrument.ClarosInstrumentMeasurement.getDescriptor(),
+          claros.instrument.event.ClarosInstrumentEventData.getDescriptor(),
+          claros.instrument.measurement.ClarosInstrumentMeasurementData.getDescriptor(),
           claros.common.core.ClarosCommonCoreClarosdatetime.getDescriptor(),
         }, assigner);
     internal_static_claros_instrument_InstrumentData_descriptor =
@@ -2216,8 +2553,8 @@ public final class ClarosInstrumentData {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_instrument_InstrumentData_StatesEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    claros.instrument.ClarosInstrumentEvent.getDescriptor();
-    claros.instrument.ClarosInstrumentMeasurement.getDescriptor();
+    claros.instrument.event.ClarosInstrumentEventData.getDescriptor();
+    claros.instrument.measurement.ClarosInstrumentMeasurementData.getDescriptor();
     claros.common.core.ClarosCommonCoreClarosdatetime.getDescriptor();
   }
 

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 import claros_common_core_limit_type_pb2 as claros__common__core__limit__type__pb2
-import claros_common_core_recurrence_pb2 as claros__common__core__recurrence__pb2
+import claros_common_recurrence_recurrence_pb2 as claros__common__recurrence__recurrence__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -22,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1e\x63laros_common_core_limit.proto\x12\x12\x63laros.common.core\x1a#claros_common_core_limit_type.proto\x1a#claros_common_core_recurrence.proto\"\x9d\x01\n\x05Limit\x12\x0f\n\x07i18nKey\x18\x01 \x01(\t\x12\x30\n\tlimitType\x18\x02 \x01(\x0e\x32\x1d.claros.common.core.LimitType\x12\r\n\x05value\x18\x03 \x01(\x01\x12\x0e\n\x06unitId\x18\x04 \x01(\r\x12\x32\n\nrecurrence\x18\x05 \x01(\x0b\x32\x1e.claros.common.core.Recurrenceb\x06proto3')
+  serialized_pb=_b('\n\x1e\x63laros_common_core_limit.proto\x12\x12\x63laros.common.core\x1a#claros_common_core_limit_type.proto\x1a)claros_common_recurrence_recurrence.proto\"\xa3\x01\n\x05Limit\x12\x0f\n\x07i18nKey\x18\x01 \x01(\t\x12\x30\n\tlimitType\x18\x02 \x01(\x0e\x32\x1d.claros.common.core.LimitType\x12\r\n\x05value\x18\x03 \x01(\x01\x12\x0e\n\x06unitId\x18\x04 \x01(\r\x12\x38\n\nrecurrence\x18\x05 \x01(\x0b\x32$.claros.common.recurrence.Recurrenceb\x06proto3')
   ,
-  dependencies=[claros__common__core__limit__type__pb2.DESCRIPTOR,claros__common__core__recurrence__pb2.DESCRIPTOR,])
+  dependencies=[claros__common__core__limit__type__pb2.DESCRIPTOR,claros__common__recurrence__recurrence__pb2.DESCRIPTOR,])
 
 
 
@@ -83,12 +83,12 @@ _LIMIT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=129,
-  serialized_end=286,
+  serialized_start=135,
+  serialized_end=298,
 )
 
 _LIMIT.fields_by_name['limitType'].enum_type = claros__common__core__limit__type__pb2._LIMITTYPE
-_LIMIT.fields_by_name['recurrence'].message_type = claros__common__core__recurrence__pb2._RECURRENCE
+_LIMIT.fields_by_name['recurrence'].message_type = claros__common__recurrence__recurrence__pb2._RECURRENCE
 DESCRIPTOR.message_types_by_name['Limit'] = _LIMIT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

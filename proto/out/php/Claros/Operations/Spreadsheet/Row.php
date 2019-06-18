@@ -14,14 +14,20 @@ use Google\Protobuf\Internal\GPBUtil;
 class Row extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Row number - Based on 01-01-1900
+     *
      * Generated from protobuf field <code>uint32 rowNumber = 1;</code>
      */
     private $rowNumber = 0;
     /**
+     * UTC time window related to the row.
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     private $UTCTimeWindow = null;
     /**
+     * Cells that are stored within the row.
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     private $cells;
@@ -33,8 +39,11 @@ class Row extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $rowNumber
+     *           Row number - Based on 01-01-1900
      *     @type \Claros\Common\Core\TimeWindow $UTCTimeWindow
+     *           UTC time window related to the row.
      *     @type \Claros\Operations\Spreadsheet\Cell[]|\Google\Protobuf\Internal\RepeatedField $cells
+     *           Cells that are stored within the row.
      * }
      */
     public function __construct($data = NULL) {
@@ -43,6 +52,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Row number - Based on 01-01-1900
+     *
      * Generated from protobuf field <code>uint32 rowNumber = 1;</code>
      * @return int
      */
@@ -52,6 +63,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Row number - Based on 01-01-1900
+     *
      * Generated from protobuf field <code>uint32 rowNumber = 1;</code>
      * @param int $var
      * @return $this
@@ -65,6 +78,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * UTC time window related to the row.
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      * @return \Claros\Common\Core\TimeWindow
      */
@@ -74,6 +89,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * UTC time window related to the row.
+     *
      * Generated from protobuf field <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      * @param \Claros\Common\Core\TimeWindow $var
      * @return $this
@@ -87,6 +104,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Cells that are stored within the row.
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -96,6 +115,8 @@ class Row extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Cells that are stored within the row.
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      * @param \Claros\Operations\Spreadsheet\Cell[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this

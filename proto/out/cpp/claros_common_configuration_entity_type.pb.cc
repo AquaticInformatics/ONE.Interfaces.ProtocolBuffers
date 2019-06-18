@@ -40,14 +40,14 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto[] =
   "\n-claros_common_configuration_entity_typ"
-  "e.proto\022\033claros.common.configuration*1\n\n"
-  "EntityType\022\016\n\nET_UNKNOWN\020\000\022\023\n\017ET_FORMTEM"
-  "PLATE\020\001b\006proto3"
+  "e.proto\022\033claros.common.configuration*9\n\n"
+  "EntityType\022\022\n\016ENTITY_UNKNOWN\020\000\022\027\n\023ENTITY"
+  "_FORMTEMPLATE\020\001b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto,
-  "claros_common_configuration_entity_type.proto", &assign_descriptors_table_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto, 135,
+  "claros_common_configuration_entity_type.proto", &assign_descriptors_table_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto, 143,
 };
 
 void AddDescriptors_claros_5fcommon_5fconfiguration_5fentity_5ftype_2eproto() {

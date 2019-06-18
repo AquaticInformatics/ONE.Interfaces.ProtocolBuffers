@@ -25,10 +25,13 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjtjbGFyb3NfY29tbW9uX2NvcmVfcmVwb3J0YWJsZXF1YWxpZmllcmRlZmlu",
-            "aXRpb25fdHlwZS5wcm90bxISY2xhcm9zLmNvbW1vbi5jb3JlKn8KIVJlcG9y",
-            "dGFibGVRdWFsaWZpZXJEZWZpbml0aW9uVHlwZRIPCgtSUURfVU5LTk9XThAA",
-            "EhQKEFJRRF9FTlRFUkVEVkFMVUUQARIMCghSUURfWkVSTxACEhMKD1JRRF9I",
-            "QUxGRU5URVJFRBADEhAKDFJRRF9DT05TVEFOVBAEYgZwcm90bzM="));
+            "aXRpb25fdHlwZS5wcm90bxISY2xhcm9zLmNvbW1vbi5jb3JlKosCCiFSZXBv",
+            "cnRhYmxlUXVhbGlmaWVyRGVmaW5pdGlvblR5cGUSKwonUkVQT1JUQUJMRV9R",
+            "VUFMSUZJRVJfREVGSU5JVElPTl9VTktOT1dOEAASMAosUkVQT1JUQUJMRV9R",
+            "VUFMSUZJRVJfREVGSU5JVElPTl9FTlRFUkVEVkFMVUUQARIoCiRSRVBPUlRB",
+            "QkxFX1FVQUxJRklFUl9ERUZJTklUSU9OX1pFUk8QAhIvCitSRVBPUlRBQkxF",
+            "X1FVQUxJRklFUl9ERUZJTklUSU9OX0hBTEZFTlRFUkVEEAMSLAooUkVQT1JU",
+            "QUJMRV9RVUFMSUZJRVJfREVGSU5JVElPTl9DT05TVEFOVBAEYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.ReportableQualifierDefinitionType), }, null));
@@ -38,11 +41,23 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum ReportableQualifierDefinitionType {
-    [pbr::OriginalName("RQD_UNKNOWN")] RqdUnknown = 0,
-    [pbr::OriginalName("RQD_ENTEREDVALUE")] RqdEnteredvalue = 1,
-    [pbr::OriginalName("RQD_ZERO")] RqdZero = 2,
-    [pbr::OriginalName("RQD_HALFENTERED")] RqdHalfentered = 3,
-    [pbr::OriginalName("RQD_CONSTANT")] RqdConstant = 4,
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN")] ReportableQualifierDefinitionUnknown = 0,
+    /// <summary>
+    /// The value is taken from the qualified value.  Example &lt; 2 becomes 2
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE")] ReportableQualifierDefinitionEnteredvalue = 1,
+    /// <summary>
+    /// The value is set to zero (0) in this case
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DEFINITION_ZERO")] ReportableQualifierDefinitionZero = 2,
+    /// <summary>
+    /// The value is set to half of the entered value.  Example &lt; 2 becomes 1
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED")] ReportableQualifierDefinitionHalfentered = 3,
+    /// <summary>
+    /// The value is set to a constant value that is entered by the customer.  For example &lt; 2 may be set to a customer value of 1.5
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DEFINITION_CONSTANT")] ReportableQualifierDefinitionConstant = 4,
   }
 
   #endregion

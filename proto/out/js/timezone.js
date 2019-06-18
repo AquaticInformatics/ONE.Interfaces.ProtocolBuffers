@@ -13,7 +13,7 @@ goog.provide('proto.claros.common.core.TimeZone');
  * @enum {number}
  */
 proto.claros.common.core.TimeZone = {
-  TZ_UNKNOWN: 0,
-  TZ_UTC: 1
+  TIMEZONE_UNKNOWN: 0,
+  TIMEZONE_UTC: 1
 };
 

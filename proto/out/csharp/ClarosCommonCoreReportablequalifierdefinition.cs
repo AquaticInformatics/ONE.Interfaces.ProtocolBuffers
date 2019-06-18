@@ -83,6 +83,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "reportableQualifierType" field.</summary>
     public const int ReportableQualifierTypeFieldNumber = 1;
     private global::Claros.Common.Core.ReportableQualifierType reportableQualifierType_ = 0;
+    /// <summary>
+    /// The type of reportable qualifer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ReportableQualifierType ReportableQualifierType {
       get { return reportableQualifierType_; }
@@ -94,6 +97,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "reportableQualifierDefinitionType" field.</summary>
     public const int ReportableQualifierDefinitionTypeFieldNumber = 2;
     private global::Claros.Common.Core.ReportableQualifierDefinitionType reportableQualifierDefinitionType_ = 0;
+    /// <summary>
+    /// How to interpret the qualifer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ReportableQualifierDefinitionType ReportableQualifierDefinitionType {
       get { return reportableQualifierDefinitionType_; }
@@ -105,6 +111,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "constantValue" field.</summary>
     public const int ConstantValueFieldNumber = 3;
     private double constantValue_;
+    /// <summary>
+    /// The value if the interpretation is a constant
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double ConstantValue {
       get { return constantValue_; }

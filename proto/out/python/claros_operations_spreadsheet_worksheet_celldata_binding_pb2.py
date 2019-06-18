@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.operations.spreadsheet',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n>claros_operations_spreadsheet_worksheet_celldata_binding.proto\x12\x1d\x63laros.operations.spreadsheet\x1a claros_common_form_binding.proto\x1a\'claros_common_computation_binding.proto\x1a+claros_instrument_measurement_binding.proto\x1a\x31\x63laros_instrument_measurement_field_binding.proto\x1a+claros_operations_spreadsheet_binding.proto\"\xae\x03\n\x0f\x43\x65llDataBinding\x12W\n\x1cinstrumentMeasurementBinding\x18\x07 \x01(\x0b\x32/.claros.instrument.InstrumentMeasurementBindingH\x00\x12K\n\x12\x63omputationBinding\x18\x08 \x01(\x0b\x32-.claros.common.computation.ComputationBindingH\x00\x12\x36\n\x0b\x66ormBinding\x18\t \x01(\x0b\x32\x1f.claros.common.form.FormBindingH\x00\x12O\n\x12spreadsheetBinding\x18\n \x01(\x0b\x32\x31.claros.operations.spreadsheet.SpreadsheetBindingH\x00\x12\x61\n!fieldInstrumentMeasurementBinding\x18\x0b \x01(\x0b\x32\x34.claros.instrument.InstrumentMeasurementFieldBindingH\x00\x42\t\n\x07\x62indingb\x06proto3')
+  serialized_pb=_b('\n>claros_operations_spreadsheet_worksheet_celldata_binding.proto\x12\x1d\x63laros.operations.spreadsheet\x1a claros_common_form_binding.proto\x1a\'claros_common_computation_binding.proto\x1a+claros_instrument_measurement_binding.proto\x1a\x31\x63laros_instrument_measurement_field_binding.proto\x1a+claros_operations_spreadsheet_binding.proto\"\xc6\x03\n\x0f\x43\x65llDataBinding\x12\x63\n\x1cinstrumentMeasurementBinding\x18\x01 \x01(\x0b\x32;.claros.instrument.measurement.InstrumentMeasurementBindingH\x00\x12K\n\x12\x63omputationBinding\x18\x02 \x01(\x0b\x32-.claros.common.computation.ComputationBindingH\x00\x12\x36\n\x0b\x66ormBinding\x18\x03 \x01(\x0b\x32\x1f.claros.common.form.FormBindingH\x00\x12O\n\x12spreadsheetBinding\x18\x04 \x01(\x0b\x32\x31.claros.operations.spreadsheet.SpreadsheetBindingH\x00\x12m\n!fieldInstrumentMeasurementBinding\x18\x05 \x01(\x0b\x32@.claros.instrument.measurement.InstrumentMeasurementFieldBindingH\x00\x42\t\n\x07\x62indingb\x06proto3')
   ,
   dependencies=[claros__common__form__binding__pb2.DESCRIPTOR,claros__common__computation__binding__pb2.DESCRIPTOR,claros__instrument__measurement__binding__pb2.DESCRIPTOR,claros__instrument__measurement__field__binding__pb2.DESCRIPTOR,claros__operations__spreadsheet__binding__pb2.DESCRIPTOR,])
 
@@ -41,35 +41,35 @@ _CELLDATABINDING = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='instrumentMeasurementBinding', full_name='claros.operations.spreadsheet.CellDataBinding.instrumentMeasurementBinding', index=0,
-      number=7, type=11, cpp_type=10, label=1,
+      number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='computationBinding', full_name='claros.operations.spreadsheet.CellDataBinding.computationBinding', index=1,
-      number=8, type=11, cpp_type=10, label=1,
+      number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='formBinding', full_name='claros.operations.spreadsheet.CellDataBinding.formBinding', index=2,
-      number=9, type=11, cpp_type=10, label=1,
+      number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='spreadsheetBinding', full_name='claros.operations.spreadsheet.CellDataBinding.spreadsheetBinding', index=3,
-      number=10, type=11, cpp_type=10, label=1,
+      number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='fieldInstrumentMeasurementBinding', full_name='claros.operations.spreadsheet.CellDataBinding.fieldInstrumentMeasurementBinding', index=4,
-      number=11, type=11, cpp_type=10, label=1,
+      number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -90,7 +90,7 @@ _CELLDATABINDING = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=314,
-  serialized_end=744,
+  serialized_end=768,
 )
 
 _CELLDATABINDING.fields_by_name['instrumentMeasurementBinding'].message_type = claros__instrument__measurement__binding__pb2._INSTRUMENTMEASUREMENTBINDING

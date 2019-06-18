@@ -18,10 +18,10 @@ import claros_common_core_clarosdatetime_pb2 as claros__common__core__clarosdate
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='claros_instrument_measurement_scsensor_binding.proto',
-  package='claros.instrument',
+  package='claros.instrument.measurement',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n4claros_instrument_measurement_scsensor_binding.proto\x12\x11\x63laros.instrument\x1a\'claros_common_core_clarosdatetime.proto\"\x9b\x01\n\x0fSCSensorBinding\x12\x0f\n\x07\x63hannel\x18\x02 \x01(\r\x12\x0b\n\x03tag\x18\x03 \x01(\t\x12\x35\n\tvalidFrom\x18\x04 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x33\n\x07validTo\x18\x05 \x01(\x0b\x32\".claros.common.core.ClarosDateTimeb\x06proto3')
+  serialized_pb=_b('\n4claros_instrument_measurement_scsensor_binding.proto\x12\x1d\x63laros.instrument.measurement\x1a\'claros_common_core_clarosdatetime.proto\"\x9b\x01\n\x0fSCSensorBinding\x12\x0f\n\x07\x63hannel\x18\x02 \x01(\r\x12\x0b\n\x03tag\x18\x03 \x01(\t\x12\x35\n\tvalidFrom\x18\x04 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x33\n\x07validTo\x18\x05 \x01(\x0b\x32\".claros.common.core.ClarosDateTimeb\x06proto3')
   ,
   dependencies=[claros__common__core__clarosdatetime__pb2.DESCRIPTOR,])
 
@@ -30,34 +30,34 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SCSENSORBINDING = _descriptor.Descriptor(
   name='SCSensorBinding',
-  full_name='claros.instrument.SCSensorBinding',
+  full_name='claros.instrument.measurement.SCSensorBinding',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='channel', full_name='claros.instrument.SCSensorBinding.channel', index=0,
+      name='channel', full_name='claros.instrument.measurement.SCSensorBinding.channel', index=0,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='tag', full_name='claros.instrument.SCSensorBinding.tag', index=1,
+      name='tag', full_name='claros.instrument.measurement.SCSensorBinding.tag', index=1,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='validFrom', full_name='claros.instrument.SCSensorBinding.validFrom', index=2,
+      name='validFrom', full_name='claros.instrument.measurement.SCSensorBinding.validFrom', index=2,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='validTo', full_name='claros.instrument.SCSensorBinding.validTo', index=3,
+      name='validTo', full_name='claros.instrument.measurement.SCSensorBinding.validTo', index=3,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -75,8 +75,8 @@ _SCSENSORBINDING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=117,
-  serialized_end=272,
+  serialized_start=129,
+  serialized_end=284,
 )
 
 _SCSENSORBINDING.fields_by_name['validFrom'].message_type = claros__common__core__clarosdatetime__pb2._CLAROSDATETIME
@@ -87,7 +87,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SCSensorBinding = _reflection.GeneratedProtocolMessageType('SCSensorBinding', (_message.Message,), dict(
   DESCRIPTOR = _SCSENSORBINDING,
   __module__ = 'claros_instrument_measurement_scsensor_binding_pb2'
-  # @@protoc_insertion_point(class_scope:claros.instrument.SCSensorBinding)
+  # @@protoc_insertion_point(class_scope:claros.instrument.measurement.SCSensorBinding)
   ))
 _sym_db.RegisterMessage(SCSensorBinding)
 

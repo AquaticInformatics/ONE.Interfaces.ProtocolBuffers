@@ -7,12 +7,12 @@ namespace claros.common.task
 {
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class TaskType : global::ProtoBuf.IExtensible
+    public enum TaskType
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-
+        [global::ProtoBuf.ProtoEnum(Name = @"TASKTYPE_UNKNOWN")]
+        TasktypeUnknown = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"TASKTYPE_INSTRUMENT_MAINTENANCE")]
+        TasktypeInstrumentMaintenance = 1,
     }
 
 }

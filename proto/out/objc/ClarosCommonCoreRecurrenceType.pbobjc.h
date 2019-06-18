@@ -38,13 +38,13 @@ typedef GPB_ENUM(RecurrenceType) {
    * of the field.
    **/
   RecurrenceType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  RecurrenceType_RUnknown = 0,
-  RecurrenceType_RFifteenminute = 1,
-  RecurrenceType_RHourly = 2,
-  RecurrenceType_RFourhour = 3,
-  RecurrenceType_RDaily = 4,
-  RecurrenceType_RWeekly = 5,
-  RecurrenceType_RDaysofweek = 6,
+  RecurrenceType_RecurrenceUnknown = 0,
+  RecurrenceType_RecurrenceFifteenminute = 1,
+  RecurrenceType_RecurrenceHourly = 2,
+  RecurrenceType_RecurrenceFourhour = 3,
+  RecurrenceType_RecurrenceDaily = 4,
+  RecurrenceType_RecurrenceWeekly = 5,
+  RecurrenceType_RecurrenceDaysofweek = 6,
 };
 
 GPBEnumDescriptor *RecurrenceType_EnumDescriptor(void);

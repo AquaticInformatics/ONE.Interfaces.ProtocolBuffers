@@ -90,6 +90,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "Id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// The GUID for the parameter
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Id {
       get { return id_; }
@@ -101,6 +104,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "IntId" field.</summary>
     public const int IntIdFieldNumber = 2;
     private uint intId_;
+    /// <summary>
+    /// The integer used to globally identify the parameter
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint IntId {
       get { return intId_; }
@@ -112,6 +118,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "i18nKey" field.</summary>
     public const int I18NKeyFieldNumber = 3;
     private string i18NKey_ = "";
+    /// <summary>
+    /// The locationization string used for i18 lookup for this parameter
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string I18NKey {
       get { return i18NKey_; }
@@ -123,6 +132,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "parameterTypeId" field.</summary>
     public const int ParameterTypeIdFieldNumber = 4;
     private string parameterTypeId_ = "";
+    /// <summary>
+    /// ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ParameterTypeId {
       get { return parameterTypeId_; }
@@ -134,6 +146,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "quantityTypeId" field.</summary>
     public const int QuantityTypeIdFieldNumber = 5;
     private string quantityTypeId_ = "";
+    /// <summary>
+    /// The GUID of the Quantity Type related to the parameter
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string QuantityTypeId {
       get { return quantityTypeId_; }
@@ -145,6 +160,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 6;
     private string description_ = "";
+    /// <summary>
+    /// ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Description {
       get { return description_; }
@@ -156,6 +174,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "tenantId" field.</summary>
     public const int TenantIdFieldNumber = 7;
     private string tenantId_ = "";
+    /// <summary>
+    /// The GUID of the tenant that is ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string TenantId {
       get { return tenantId_; }

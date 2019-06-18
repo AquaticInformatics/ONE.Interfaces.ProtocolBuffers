@@ -83,6 +83,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "timestamp" field.</summary>
     public const int TimestampFieldNumber = 1;
     private global::Claros.Common.Core.ClarosDateTime timestamp_;
+    /// <summary>
+    /// When the measurement was taken (UTC)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ClarosDateTime Timestamp {
       get { return timestamp_; }
@@ -94,6 +97,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "parameterId" field.</summary>
     public const int ParameterIdFieldNumber = 2;
     private int parameterId_;
+    /// <summary>
+    /// The parameter related to the measurement as an integer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ParameterId {
       get { return parameterId_; }
@@ -105,6 +111,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "parameterGuid" field.</summary>
     public const int ParameterGuidFieldNumber = 3;
     private string parameterGuid_ = "";
+    /// <summary>
+    /// The parameter related to the measurement as a GUID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ParameterGuid {
       get { return parameterGuid_; }
@@ -116,6 +125,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "unitId" field.</summary>
     public const int UnitIdFieldNumber = 4;
     private int unitId_;
+    /// <summary>
+    /// The unit related to the measurement as an integer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int UnitId {
       get { return unitId_; }
@@ -127,6 +139,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "unitGuid" field.</summary>
     public const int UnitGuidFieldNumber = 5;
     private string unitGuid_ = "";
+    /// <summary>
+    /// The unit related to the measurement as a GUID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UnitGuid {
       get { return unitGuid_; }
@@ -138,6 +153,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 6;
     private float value_;
+    /// <summary>
+    /// the value of the measurement ????? should this be decimal?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public float Value {
       get { return value_; }

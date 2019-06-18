@@ -31,6 +31,9 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
+#include "claros_common_task_definition.pb.h"
+#include "claros_common_task_data.pb.h"
+#include "claros_common_core_auditevent.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5ftask_5ftask_2eproto
@@ -191,6 +194,95 @@ class Task :
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
+  // string description = 3;
+  void clear_description();
+  static const int kDescriptionFieldNumber = 3;
+  const ::std::string& description() const;
+  void set_description(const ::std::string& value);
+  #if LANG_CXX11
+  void set_description(::std::string&& value);
+  #endif
+  void set_description(const char* value);
+  void set_description(const char* value, size_t size);
+  ::std::string* mutable_description();
+  ::std::string* release_description();
+  void set_allocated_description(::std::string* description);
+
+  // string assignee = 4;
+  void clear_assignee();
+  static const int kAssigneeFieldNumber = 4;
+  const ::std::string& assignee() const;
+  void set_assignee(const ::std::string& value);
+  #if LANG_CXX11
+  void set_assignee(::std::string&& value);
+  #endif
+  void set_assignee(const char* value);
+  void set_assignee(const char* value, size_t size);
+  ::std::string* mutable_assignee();
+  ::std::string* release_assignee();
+  void set_allocated_assignee(::std::string* assignee);
+
+  // string reporter = 5;
+  void clear_reporter();
+  static const int kReporterFieldNumber = 5;
+  const ::std::string& reporter() const;
+  void set_reporter(const ::std::string& value);
+  #if LANG_CXX11
+  void set_reporter(::std::string&& value);
+  #endif
+  void set_reporter(const char* value);
+  void set_reporter(const char* value, size_t size);
+  ::std::string* mutable_reporter();
+  ::std::string* release_reporter();
+  void set_allocated_reporter(::std::string* reporter);
+
+  // string instrumentId = 7;
+  void clear_instrumentid();
+  static const int kInstrumentIdFieldNumber = 7;
+  const ::std::string& instrumentid() const;
+  void set_instrumentid(const ::std::string& value);
+  #if LANG_CXX11
+  void set_instrumentid(::std::string&& value);
+  #endif
+  void set_instrumentid(const char* value);
+  void set_instrumentid(const char* value, size_t size);
+  ::std::string* mutable_instrumentid();
+  ::std::string* release_instrumentid();
+  void set_allocated_instrumentid(::std::string* instrumentid);
+
+  // .claros.common.task.TaskDefinition taskDefinition = 8;
+  bool has_taskdefinition() const;
+  void clear_taskdefinition();
+  static const int kTaskDefinitionFieldNumber = 8;
+  const ::claros::common::task::TaskDefinition& taskdefinition() const;
+  ::claros::common::task::TaskDefinition* release_taskdefinition();
+  ::claros::common::task::TaskDefinition* mutable_taskdefinition();
+  void set_allocated_taskdefinition(::claros::common::task::TaskDefinition* taskdefinition);
+
+  // .claros.common.task.TaskData taskdata = 9;
+  bool has_taskdata() const;
+  void clear_taskdata();
+  static const int kTaskdataFieldNumber = 9;
+  const ::claros::common::task::TaskData& taskdata() const;
+  ::claros::common::task::TaskData* release_taskdata();
+  ::claros::common::task::TaskData* mutable_taskdata();
+  void set_allocated_taskdata(::claros::common::task::TaskData* taskdata);
+
+  // .claros.common.core.AuditEvent auditEvent = 10;
+  bool has_auditevent() const;
+  void clear_auditevent();
+  static const int kAuditEventFieldNumber = 10;
+  const ::claros::common::core::AuditEvent& auditevent() const;
+  ::claros::common::core::AuditEvent* release_auditevent();
+  ::claros::common::core::AuditEvent* mutable_auditevent();
+  void set_allocated_auditevent(::claros::common::core::AuditEvent* auditevent);
+
+  // uint32 priority = 6;
+  void clear_priority();
+  static const int kPriorityFieldNumber = 6;
+  ::google::protobuf::uint32 priority() const;
+  void set_priority(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:claros.common.task.Task)
  private:
   class HasBitSetters;
@@ -198,6 +290,14 @@ class Task :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::ArenaStringPtr id_;
   ::google::protobuf::internal::ArenaStringPtr name_;
+  ::google::protobuf::internal::ArenaStringPtr description_;
+  ::google::protobuf::internal::ArenaStringPtr assignee_;
+  ::google::protobuf::internal::ArenaStringPtr reporter_;
+  ::google::protobuf::internal::ArenaStringPtr instrumentid_;
+  ::claros::common::task::TaskDefinition* taskdefinition_;
+  ::claros::common::task::TaskData* taskdata_;
+  ::claros::common::core::AuditEvent* auditevent_;
+  ::google::protobuf::uint32 priority_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_claros_5fcommon_5ftask_5ftask_2eproto;
 };
@@ -316,6 +416,367 @@ inline void Task::set_allocated_name(::std::string* name) {
   }
   name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.name)
+}
+
+// string description = 3;
+inline void Task::clear_description() {
+  description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Task::description() const {
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.description)
+  return description_.GetNoArena();
+}
+inline void Task::set_description(const ::std::string& value) {
+  
+  description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.task.Task.description)
+}
+#if LANG_CXX11
+inline void Task::set_description(::std::string&& value) {
+  
+  description_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.task.Task.description)
+}
+#endif
+inline void Task::set_description(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.task.Task.description)
+}
+inline void Task::set_description(const char* value, size_t size) {
+  
+  description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.task.Task.description)
+}
+inline ::std::string* Task::mutable_description() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.description)
+  return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Task::release_description() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.description)
+  
+  return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Task::set_allocated_description(::std::string* description) {
+  if (description != nullptr) {
+    
+  } else {
+    
+  }
+  description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.description)
+}
+
+// string assignee = 4;
+inline void Task::clear_assignee() {
+  assignee_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Task::assignee() const {
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.assignee)
+  return assignee_.GetNoArena();
+}
+inline void Task::set_assignee(const ::std::string& value) {
+  
+  assignee_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.task.Task.assignee)
+}
+#if LANG_CXX11
+inline void Task::set_assignee(::std::string&& value) {
+  
+  assignee_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.task.Task.assignee)
+}
+#endif
+inline void Task::set_assignee(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  assignee_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.task.Task.assignee)
+}
+inline void Task::set_assignee(const char* value, size_t size) {
+  
+  assignee_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.task.Task.assignee)
+}
+inline ::std::string* Task::mutable_assignee() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.assignee)
+  return assignee_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Task::release_assignee() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.assignee)
+  
+  return assignee_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Task::set_allocated_assignee(::std::string* assignee) {
+  if (assignee != nullptr) {
+    
+  } else {
+    
+  }
+  assignee_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), assignee);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.assignee)
+}
+
+// string reporter = 5;
+inline void Task::clear_reporter() {
+  reporter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Task::reporter() const {
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.reporter)
+  return reporter_.GetNoArena();
+}
+inline void Task::set_reporter(const ::std::string& value) {
+  
+  reporter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.task.Task.reporter)
+}
+#if LANG_CXX11
+inline void Task::set_reporter(::std::string&& value) {
+  
+  reporter_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.task.Task.reporter)
+}
+#endif
+inline void Task::set_reporter(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  reporter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.task.Task.reporter)
+}
+inline void Task::set_reporter(const char* value, size_t size) {
+  
+  reporter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.task.Task.reporter)
+}
+inline ::std::string* Task::mutable_reporter() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.reporter)
+  return reporter_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Task::release_reporter() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.reporter)
+  
+  return reporter_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Task::set_allocated_reporter(::std::string* reporter) {
+  if (reporter != nullptr) {
+    
+  } else {
+    
+  }
+  reporter_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), reporter);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.reporter)
+}
+
+// uint32 priority = 6;
+inline void Task::clear_priority() {
+  priority_ = 0u;
+}
+inline ::google::protobuf::uint32 Task::priority() const {
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.priority)
+  return priority_;
+}
+inline void Task::set_priority(::google::protobuf::uint32 value) {
+  
+  priority_ = value;
+  // @@protoc_insertion_point(field_set:claros.common.task.Task.priority)
+}
+
+// string instrumentId = 7;
+inline void Task::clear_instrumentid() {
+  instrumentid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Task::instrumentid() const {
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.instrumentId)
+  return instrumentid_.GetNoArena();
+}
+inline void Task::set_instrumentid(const ::std::string& value) {
+  
+  instrumentid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.task.Task.instrumentId)
+}
+#if LANG_CXX11
+inline void Task::set_instrumentid(::std::string&& value) {
+  
+  instrumentid_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.task.Task.instrumentId)
+}
+#endif
+inline void Task::set_instrumentid(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  instrumentid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.task.Task.instrumentId)
+}
+inline void Task::set_instrumentid(const char* value, size_t size) {
+  
+  instrumentid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.task.Task.instrumentId)
+}
+inline ::std::string* Task::mutable_instrumentid() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.instrumentId)
+  return instrumentid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Task::release_instrumentid() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.instrumentId)
+  
+  return instrumentid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Task::set_allocated_instrumentid(::std::string* instrumentid) {
+  if (instrumentid != nullptr) {
+    
+  } else {
+    
+  }
+  instrumentid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), instrumentid);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.instrumentId)
+}
+
+// .claros.common.task.TaskDefinition taskDefinition = 8;
+inline bool Task::has_taskdefinition() const {
+  return this != internal_default_instance() && taskdefinition_ != nullptr;
+}
+inline const ::claros::common::task::TaskDefinition& Task::taskdefinition() const {
+  const ::claros::common::task::TaskDefinition* p = taskdefinition_;
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.taskDefinition)
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::task::TaskDefinition*>(
+      &::claros::common::task::_TaskDefinition_default_instance_);
+}
+inline ::claros::common::task::TaskDefinition* Task::release_taskdefinition() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.taskDefinition)
+  
+  ::claros::common::task::TaskDefinition* temp = taskdefinition_;
+  taskdefinition_ = nullptr;
+  return temp;
+}
+inline ::claros::common::task::TaskDefinition* Task::mutable_taskdefinition() {
+  
+  if (taskdefinition_ == nullptr) {
+    auto* p = CreateMaybeMessage<::claros::common::task::TaskDefinition>(GetArenaNoVirtual());
+    taskdefinition_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.taskDefinition)
+  return taskdefinition_;
+}
+inline void Task::set_allocated_taskdefinition(::claros::common::task::TaskDefinition* taskdefinition) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(taskdefinition_);
+  }
+  if (taskdefinition) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      taskdefinition = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, taskdefinition, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  taskdefinition_ = taskdefinition;
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.taskDefinition)
+}
+
+// .claros.common.task.TaskData taskdata = 9;
+inline bool Task::has_taskdata() const {
+  return this != internal_default_instance() && taskdata_ != nullptr;
+}
+inline const ::claros::common::task::TaskData& Task::taskdata() const {
+  const ::claros::common::task::TaskData* p = taskdata_;
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.taskdata)
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::task::TaskData*>(
+      &::claros::common::task::_TaskData_default_instance_);
+}
+inline ::claros::common::task::TaskData* Task::release_taskdata() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.taskdata)
+  
+  ::claros::common::task::TaskData* temp = taskdata_;
+  taskdata_ = nullptr;
+  return temp;
+}
+inline ::claros::common::task::TaskData* Task::mutable_taskdata() {
+  
+  if (taskdata_ == nullptr) {
+    auto* p = CreateMaybeMessage<::claros::common::task::TaskData>(GetArenaNoVirtual());
+    taskdata_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.taskdata)
+  return taskdata_;
+}
+inline void Task::set_allocated_taskdata(::claros::common::task::TaskData* taskdata) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(taskdata_);
+  }
+  if (taskdata) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      taskdata = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, taskdata, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  taskdata_ = taskdata;
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.taskdata)
+}
+
+// .claros.common.core.AuditEvent auditEvent = 10;
+inline bool Task::has_auditevent() const {
+  return this != internal_default_instance() && auditevent_ != nullptr;
+}
+inline const ::claros::common::core::AuditEvent& Task::auditevent() const {
+  const ::claros::common::core::AuditEvent* p = auditevent_;
+  // @@protoc_insertion_point(field_get:claros.common.task.Task.auditEvent)
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::AuditEvent*>(
+      &::claros::common::core::_AuditEvent_default_instance_);
+}
+inline ::claros::common::core::AuditEvent* Task::release_auditevent() {
+  // @@protoc_insertion_point(field_release:claros.common.task.Task.auditEvent)
+  
+  ::claros::common::core::AuditEvent* temp = auditevent_;
+  auditevent_ = nullptr;
+  return temp;
+}
+inline ::claros::common::core::AuditEvent* Task::mutable_auditevent() {
+  
+  if (auditevent_ == nullptr) {
+    auto* p = CreateMaybeMessage<::claros::common::core::AuditEvent>(GetArenaNoVirtual());
+    auditevent_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:claros.common.task.Task.auditEvent)
+  return auditevent_;
+}
+inline void Task::set_allocated_auditevent(::claros::common::core::AuditEvent* auditevent) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(auditevent_);
+  }
+  if (auditevent) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      auditevent = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, auditevent, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  auditevent_ = auditevent;
+  // @@protoc_insertion_point(field_set_allocated:claros.common.task.Task.auditEvent)
 }
 
 #ifdef __GNUC__

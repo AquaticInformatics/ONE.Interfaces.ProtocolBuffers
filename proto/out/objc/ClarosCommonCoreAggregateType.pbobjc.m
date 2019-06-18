@@ -36,12 +36,13 @@ GPBEnumDescriptor *AggregateType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "AUnknown\000AMinimum\000AMaximum\000AAverage\000";
+        "AggregateUnknown\000AggregateMinimum\000Aggreg"
+        "ateMaximum\000AggregateAverage\000";
     static const int32_t values[] = {
-        AggregateType_AUnknown,
-        AggregateType_AMinimum,
-        AggregateType_AMaximum,
-        AggregateType_AAverage,
+        AggregateType_AggregateUnknown,
+        AggregateType_AggregateMinimum,
+        AggregateType_AggregateMaximum,
+        AggregateType_AggregateAverage,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(AggregateType)
@@ -59,10 +60,10 @@ GPBEnumDescriptor *AggregateType_EnumDescriptor(void) {
 
 BOOL AggregateType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case AggregateType_AUnknown:
-    case AggregateType_AMinimum:
-    case AggregateType_AMaximum:
-    case AggregateType_AAverage:
+    case AggregateType_AggregateUnknown:
+    case AggregateType_AggregateMinimum:
+    case AggregateType_AggregateMaximum:
+    case AggregateType_AggregateAverage:
       return YES;
     default:
       return NO;

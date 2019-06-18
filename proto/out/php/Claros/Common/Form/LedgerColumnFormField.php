@@ -30,7 +30,7 @@ class LedgerColumnFormField extends \Google\Protobuf\Internal\Message
      */
     private $lowLimit = '';
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence timeWindow = 5;</code>
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
      */
     private $timeWindow = null;
     /**
@@ -48,7 +48,7 @@ class LedgerColumnFormField extends \Google\Protobuf\Internal\Message
      *     @type string $unit
      *     @type string $upLimit
      *     @type string $lowLimit
-     *     @type \Claros\Common\Core\Recurrence $timeWindow
+     *     @type \Claros\Common\Recurrence\Recurrence $timeWindow
      *     @type string $parameter
      * }
      */
@@ -146,8 +146,8 @@ class LedgerColumnFormField extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence timeWindow = 5;</code>
-     * @return \Claros\Common\Core\Recurrence
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
+     * @return \Claros\Common\Recurrence\Recurrence
      */
     public function getTimeWindow()
     {
@@ -155,13 +155,13 @@ class LedgerColumnFormField extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence timeWindow = 5;</code>
-     * @param \Claros\Common\Core\Recurrence $var
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence timeWindow = 5;</code>
+     * @param \Claros\Common\Recurrence\Recurrence $var
      * @return $this
      */
     public function setTimeWindow($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\Core\Recurrence::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Recurrence\Recurrence::class);
         $this->timeWindow = $var;
 
         return $this;

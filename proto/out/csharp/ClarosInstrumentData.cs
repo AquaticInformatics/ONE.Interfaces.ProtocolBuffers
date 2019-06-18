@@ -25,22 +25,22 @@ namespace Claros.Instrument {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxjbGFyb3NfaW5zdHJ1bWVudF9kYXRhLnByb3RvEhFjbGFyb3MuaW5zdHJ1",
-            "bWVudBodY2xhcm9zX2luc3RydW1lbnRfZXZlbnQucHJvdG8aI2NsYXJvc19p",
-            "bnN0cnVtZW50X21lYXN1cmVtZW50LnByb3RvGidjbGFyb3NfY29tbW9uX2Nv",
-            "cmVfY2xhcm9zZGF0ZXRpbWUucHJvdG8izgMKDkluc3RydW1lbnREYXRhEhAK",
-            "CHRlbmFudElkGAEgASgJEhAKCGZ1c2lvbklkGAIgASgJEjIKBmV2ZW50cxgD",
-            "IAEoCzIiLmNsYXJvcy5pbnN0cnVtZW50Lkluc3RydW1lbnRFdmVudBI+Cgxt",
-            "ZWFzdXJlbWVudHMYBCADKAsyKC5jbGFyb3MuaW5zdHJ1bWVudC5JbnN0cnVt",
-            "ZW50TWVhc3VyZW1lbnQSQQoIc2V0dGluZ3MYBSADKAsyLy5jbGFyb3MuaW5z",
-            "dHJ1bWVudC5JbnN0cnVtZW50RGF0YS5TZXR0aW5nc0VudHJ5Ej0KBnN0YXRl",
-            "cxgGIAMoCzItLmNsYXJvcy5pbnN0cnVtZW50Lkluc3RydW1lbnREYXRhLlN0",
-            "YXRlc0VudHJ5EkIKFmluc3RydW1lbnREYXRhRGF0ZVRpbWUYByABKAsyIi5j",
-            "bGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUaLwoNU2V0dGluZ3NF",
-            "bnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBGi0KC1N0YXRl",
-            "c0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFiBnByb3Rv",
-            "Mw=="));
+            "bWVudBoiY2xhcm9zX2luc3RydW1lbnRfZXZlbnRfZGF0YS5wcm90bxooY2xh",
+            "cm9zX2luc3RydW1lbnRfbWVhc3VyZW1lbnRfZGF0YS5wcm90bxonY2xhcm9z",
+            "X2NvbW1vbl9jb3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvIugDCg5JbnN0cnVt",
+            "ZW50RGF0YRIQCgh0ZW5hbnRJZBgBIAEoCRIQCghmdXNpb25JZBgCIAEoCRI8",
+            "CgZldmVudHMYAyABKAsyLC5jbGFyb3MuaW5zdHJ1bWVudC5ldmVudC5JbnN0",
+            "cnVtZW50RXZlbnREYXRhEk4KDG1lYXN1cmVtZW50cxgEIAMoCzI4LmNsYXJv",
+            "cy5pbnN0cnVtZW50Lm1lYXN1cmVtZW50Lkluc3RydW1lbnRNZWFzdXJlbWVu",
+            "dERhdGESQQoIc2V0dGluZ3MYBSADKAsyLy5jbGFyb3MuaW5zdHJ1bWVudC5J",
+            "bnN0cnVtZW50RGF0YS5TZXR0aW5nc0VudHJ5Ej0KBnN0YXRlcxgGIAMoCzIt",
+            "LmNsYXJvcy5pbnN0cnVtZW50Lkluc3RydW1lbnREYXRhLlN0YXRlc0VudHJ5",
+            "EkIKFmluc3RydW1lbnREYXRhRGF0ZVRpbWUYByABKAsyIi5jbGFyb3MuY29t",
+            "bW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUaLwoNU2V0dGluZ3NFbnRyeRILCgNr",
+            "ZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBGi0KC1N0YXRlc0VudHJ5EgsK",
+            "A2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Instrument.ClarosInstrumentEventReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Instrument.Event.ClarosInstrumentEventDataReflection.Descriptor, global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementDataReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentData), global::Claros.Instrument.InstrumentData.Parser, new[]{ "TenantId", "FusionId", "Events", "Measurements", "Settings", "States", "InstrumentDataDateTime" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
@@ -93,7 +93,7 @@ namespace Claros.Instrument {
     public const int TenantIdFieldNumber = 1;
     private string tenantId_ = "";
     /// <summary>
-    /// In header
+    /// Header Information
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string TenantId {
@@ -106,6 +106,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "fusionId" field.</summary>
     public const int FusionIdFieldNumber = 2;
     private string fusionId_ = "";
+    /// <summary>
+    /// Unique id of an instrument
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string FusionId {
       get { return fusionId_; }
@@ -116,9 +119,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "events" field.</summary>
     public const int EventsFieldNumber = 3;
-    private global::Claros.Instrument.InstrumentEvent events_;
+    private global::Claros.Instrument.Event.InstrumentEventData events_;
+    /// <summary>
+    /// Events related to what has happened to an instrument
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentEvent Events {
+    public global::Claros.Instrument.Event.InstrumentEventData Events {
       get { return events_; }
       set {
         events_ = value;
@@ -127,11 +133,14 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "measurements" field.</summary>
     public const int MeasurementsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.InstrumentMeasurement> _repeated_measurements_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Instrument.InstrumentMeasurement.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement> measurements_ = new pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement>();
+    private static readonly pb::FieldCodec<global::Claros.Instrument.Measurement.InstrumentMeasurementData> _repeated_measurements_codec
+        = pb::FieldCodec.ForMessage(34, global::Claros.Instrument.Measurement.InstrumentMeasurementData.Parser);
+    private readonly pbc::RepeatedField<global::Claros.Instrument.Measurement.InstrumentMeasurementData> measurements_ = new pbc::RepeatedField<global::Claros.Instrument.Measurement.InstrumentMeasurementData>();
+    /// <summary>
+    /// Measurements related to an instrument
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement> Measurements {
+    public pbc::RepeatedField<global::Claros.Instrument.Measurement.InstrumentMeasurementData> Measurements {
       get { return measurements_; }
     }
 
@@ -140,6 +149,9 @@ namespace Claros.Instrument {
     private static readonly pbc::MapField<string, string>.Codec _map_settings_codec
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForString(18), 42);
     private readonly pbc::MapField<string, string> settings_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// Settings of an instrument
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, string> Settings {
       get { return settings_; }
@@ -150,6 +162,9 @@ namespace Claros.Instrument {
     private static readonly pbc::MapField<string, string>.Codec _map_states_codec
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForString(18), 50);
     private readonly pbc::MapField<string, string> states_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// State informantion of an instrument
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, string> States {
       get { return states_; }
@@ -276,7 +291,7 @@ namespace Claros.Instrument {
       }
       if (other.events_ != null) {
         if (events_ == null) {
-          Events = new global::Claros.Instrument.InstrumentEvent();
+          Events = new global::Claros.Instrument.Event.InstrumentEventData();
         }
         Events.MergeFrom(other.Events);
       }
@@ -310,7 +325,7 @@ namespace Claros.Instrument {
           }
           case 26: {
             if (events_ == null) {
-              Events = new global::Claros.Instrument.InstrumentEvent();
+              Events = new global::Claros.Instrument.Event.InstrumentEventData();
             }
             input.ReadMessage(Events);
             break;

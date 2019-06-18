@@ -237,7 +237,7 @@ public final class ClarosCommonFormFieldWorksheetColumnUTC {
       if (!getPlantIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, plantId_);
       }
-      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.W_UNKNOWN.getNumber()) {
+      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.WORKSHEET_UNKNOWN.getNumber()) {
         output.writeEnum(2, worksheetType_);
       }
       if (column_ != null) {
@@ -255,7 +255,7 @@ public final class ClarosCommonFormFieldWorksheetColumnUTC {
       if (!getPlantIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, plantId_);
       }
-      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.W_UNKNOWN.getNumber()) {
+      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.WORKSHEET_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, worksheetType_);
       }

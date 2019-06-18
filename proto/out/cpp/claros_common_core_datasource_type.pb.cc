@@ -40,16 +40,18 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto[] =
   "\n(claros_common_core_datasource_type.pro"
-  "to\022\022claros.common.core*\241\001\n\016DataSourceTyp"
-  "e\022\016\n\nDS_UNKNOWN\020\000\022\013\n\007DS_FORM\020\001\022\022\n\016DS_COM"
-  "PUTATION\020\002\022\022\n\016DS_SPREADSHEET\020\003\022\034\n\030DS_INS"
-  "TRUMENTMEASUREMENT\020\004\022\r\n\tDS_IMPORT\020\005\022\035\n\031D"
-  "S_SPREADSHEET_DEFINITION\020\006b\006proto3"
+  "to\022\022claros.common.core*\331\001\n\016DataSourceTyp"
+  "e\022\026\n\022DATASOURCE_UNKNOWN\020\000\022\023\n\017DATASOURCE_"
+  "FORM\020\001\022\032\n\026DATASOURCE_COMPUTATION\020\002\022\032\n\026DA"
+  "TASOURCE_SPREADSHEET\020\003\022$\n DATASOURCE_INS"
+  "TRUMENTMEASUREMENT\020\004\022\025\n\021DATASOURCE_IMPOR"
+  "T\020\005\022%\n!DATASOURCE_SPREADSHEET_DEFINITION"
+  "\020\006b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto,
-  "claros_common_core_datasource_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto, 234,
+  "claros_common_core_datasource_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto, 290,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5fdatasource_5ftype_2eproto() {

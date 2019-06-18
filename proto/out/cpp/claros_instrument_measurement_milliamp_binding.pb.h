@@ -51,23 +51,26 @@ struct TableStruct_claros_5finstrument_5fmeasurement_5fmilliamp_5fbinding_2eprot
 void AddDescriptors_claros_5finstrument_5fmeasurement_5fmilliamp_5fbinding_2eproto();
 namespace claros {
 namespace instrument {
+namespace measurement {
 class MilliAmpBinding;
 class MilliAmpBindingDefaultTypeInternal;
 extern MilliAmpBindingDefaultTypeInternal _MilliAmpBinding_default_instance_;
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 namespace google {
 namespace protobuf {
-template<> ::claros::instrument::MilliAmpBinding* Arena::CreateMaybeMessage<::claros::instrument::MilliAmpBinding>(Arena*);
+template<> ::claros::instrument::measurement::MilliAmpBinding* Arena::CreateMaybeMessage<::claros::instrument::measurement::MilliAmpBinding>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace claros {
 namespace instrument {
+namespace measurement {
 
 // ===================================================================
 
 class MilliAmpBinding :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.MilliAmpBinding) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.measurement.MilliAmpBinding) */ {
  public:
   MilliAmpBinding();
   virtual ~MilliAmpBinding();
@@ -199,7 +202,7 @@ class MilliAmpBinding :
   ::google::protobuf::uint32 channel() const;
   void set_channel(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:claros.instrument.MilliAmpBinding)
+  // @@protoc_insertion_point(class_scope:claros.instrument.measurement.MilliAmpBinding)
  private:
   class HasBitSetters;
 
@@ -227,41 +230,41 @@ inline void MilliAmpBinding::clear_cardname() {
   cardname_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MilliAmpBinding::cardname() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.MilliAmpBinding.cardName)
   return cardname_.GetNoArena();
 }
 inline void MilliAmpBinding::set_cardname(const ::std::string& value) {
   
   cardname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.MilliAmpBinding.cardName)
 }
 #if LANG_CXX11
 inline void MilliAmpBinding::set_cardname(::std::string&& value) {
   
   cardname_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.MilliAmpBinding.cardName)
 }
 #endif
 inline void MilliAmpBinding::set_cardname(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   cardname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.MilliAmpBinding.cardName)
 }
 inline void MilliAmpBinding::set_cardname(const char* value, size_t size) {
   
   cardname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.MilliAmpBinding.cardName)
 }
 inline ::std::string* MilliAmpBinding::mutable_cardname() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.MilliAmpBinding.cardName)
   return cardname_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* MilliAmpBinding::release_cardname() {
-  // @@protoc_insertion_point(field_release:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.MilliAmpBinding.cardName)
   
   return cardname_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -272,7 +275,7 @@ inline void MilliAmpBinding::set_allocated_cardname(::std::string* cardname) {
     
   }
   cardname_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), cardname);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.MilliAmpBinding.cardName)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.MilliAmpBinding.cardName)
 }
 
 // uint32 channel = 2;
@@ -280,13 +283,13 @@ inline void MilliAmpBinding::clear_channel() {
   channel_ = 0u;
 }
 inline ::google::protobuf::uint32 MilliAmpBinding::channel() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.MilliAmpBinding.channel)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.MilliAmpBinding.channel)
   return channel_;
 }
 inline void MilliAmpBinding::set_channel(::google::protobuf::uint32 value) {
   
   channel_ = value;
-  // @@protoc_insertion_point(field_set:claros.instrument.MilliAmpBinding.channel)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.MilliAmpBinding.channel)
 }
 
 // .claros.common.core.ClarosDateTime validFrom = 3;
@@ -295,12 +298,12 @@ inline bool MilliAmpBinding::has_validfrom() const {
 }
 inline const ::claros::common::core::ClarosDateTime& MilliAmpBinding::validfrom() const {
   const ::claros::common::core::ClarosDateTime* p = validfrom_;
-  // @@protoc_insertion_point(field_get:claros.instrument.MilliAmpBinding.validFrom)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.MilliAmpBinding.validFrom)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* MilliAmpBinding::release_validfrom() {
-  // @@protoc_insertion_point(field_release:claros.instrument.MilliAmpBinding.validFrom)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.MilliAmpBinding.validFrom)
   
   ::claros::common::core::ClarosDateTime* temp = validfrom_;
   validfrom_ = nullptr;
@@ -312,7 +315,7 @@ inline ::claros::common::core::ClarosDateTime* MilliAmpBinding::mutable_validfro
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     validfrom_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.MilliAmpBinding.validFrom)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.MilliAmpBinding.validFrom)
   return validfrom_;
 }
 inline void MilliAmpBinding::set_allocated_validfrom(::claros::common::core::ClarosDateTime* validfrom) {
@@ -331,7 +334,7 @@ inline void MilliAmpBinding::set_allocated_validfrom(::claros::common::core::Cla
     
   }
   validfrom_ = validfrom;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.MilliAmpBinding.validFrom)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.MilliAmpBinding.validFrom)
 }
 
 // .claros.common.core.ClarosDateTime validTo = 4;
@@ -340,12 +343,12 @@ inline bool MilliAmpBinding::has_validto() const {
 }
 inline const ::claros::common::core::ClarosDateTime& MilliAmpBinding::validto() const {
   const ::claros::common::core::ClarosDateTime* p = validto_;
-  // @@protoc_insertion_point(field_get:claros.instrument.MilliAmpBinding.validTo)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.MilliAmpBinding.validTo)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* MilliAmpBinding::release_validto() {
-  // @@protoc_insertion_point(field_release:claros.instrument.MilliAmpBinding.validTo)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.MilliAmpBinding.validTo)
   
   ::claros::common::core::ClarosDateTime* temp = validto_;
   validto_ = nullptr;
@@ -357,7 +360,7 @@ inline ::claros::common::core::ClarosDateTime* MilliAmpBinding::mutable_validto(
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     validto_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.MilliAmpBinding.validTo)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.MilliAmpBinding.validTo)
   return validto_;
 }
 inline void MilliAmpBinding::set_allocated_validto(::claros::common::core::ClarosDateTime* validto) {
@@ -376,7 +379,7 @@ inline void MilliAmpBinding::set_allocated_validto(::claros::common::core::Claro
     
   }
   validto_ = validto;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.MilliAmpBinding.validTo)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.MilliAmpBinding.validTo)
 }
 
 #ifdef __GNUC__
@@ -385,6 +388,7 @@ inline void MilliAmpBinding::set_allocated_validto(::claros::common::core::Claro
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 

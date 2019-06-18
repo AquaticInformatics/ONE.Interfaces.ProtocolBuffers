@@ -36,10 +36,10 @@ GPBEnumDescriptor *EntityType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "EtUnknown\000EtFormtemplate\000";
+        "EntityUnknown\000EntityFormtemplate\000";
     static const int32_t values[] = {
-        EntityType_EtUnknown,
-        EntityType_EtFormtemplate,
+        EntityType_EntityUnknown,
+        EntityType_EntityFormtemplate,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(EntityType)
@@ -57,8 +57,8 @@ GPBEnumDescriptor *EntityType_EnumDescriptor(void) {
 
 BOOL EntityType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case EntityType_EtUnknown:
-    case EntityType_EtFormtemplate:
+    case EntityType_EntityUnknown:
+    case EntityType_EntityFormtemplate:
       return YES;
     default:
       return NO;

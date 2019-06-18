@@ -19,38 +19,70 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     * </pre>
+     *
      * <code>string version = 1;</code>
      */
     java.lang.String getVersion();
     /**
+     * <pre>
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     * </pre>
+     *
      * <code>string version = 1;</code>
      */
     com.google.protobuf.ByteString
         getVersionBytes();
 
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     boolean hasTimewindow();
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getTimewindow();
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getTimewindowOrBuilder();
 
     /**
+     * <pre>
+     * The time zone related to the spreadsheet
+     * </pre>
+     *
      * <code>.claros.common.core.TimeZone timezone = 3;</code>
      */
     int getTimezoneValue();
     /**
+     * <pre>
+     * The time zone related to the spreadsheet
+     * </pre>
+     *
      * <code>.claros.common.core.TimeZone timezone = 3;</code>
      */
     claros.common.core.ClarosCommonCoreTimezone.TimeZone getTimezone();
 
     /**
+     * <pre>
+     * The number of hours offset to the start of day
+     * </pre>
+     *
      * <code>uint32 timeWindowOffset = 4;</code>
      */
     int getTimeWindowOffset();
@@ -161,6 +193,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
     public static final int VERSION_FIELD_NUMBER = 1;
     private volatile java.lang.Object version_;
     /**
+     * <pre>
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     * </pre>
+     *
      * <code>string version = 1;</code>
      */
     public java.lang.String getVersion() {
@@ -176,6 +212,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
       }
     }
     /**
+     * <pre>
+     * Numerical version of the spreadsheet definition.  This increments with eash new version
+     * </pre>
+     *
      * <code>string version = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -195,18 +235,30 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
     public static final int TIMEWINDOW_FIELD_NUMBER = 2;
     private claros.common.core.ClarosCommonCoreTimewindow.TimeWindow timewindow_;
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     public boolean hasTimewindow() {
       return timewindow_ != null;
     }
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getTimewindow() {
       return timewindow_ == null ? claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.getDefaultInstance() : timewindow_;
     }
     /**
+     * <pre>
+     * The Time window of when this configuration was valid
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getTimewindowOrBuilder() {
@@ -216,12 +268,20 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
     public static final int TIMEZONE_FIELD_NUMBER = 3;
     private int timezone_;
     /**
+     * <pre>
+     * The time zone related to the spreadsheet
+     * </pre>
+     *
      * <code>.claros.common.core.TimeZone timezone = 3;</code>
      */
     public int getTimezoneValue() {
       return timezone_;
     }
     /**
+     * <pre>
+     * The time zone related to the spreadsheet
+     * </pre>
+     *
      * <code>.claros.common.core.TimeZone timezone = 3;</code>
      */
     public claros.common.core.ClarosCommonCoreTimezone.TimeZone getTimezone() {
@@ -233,6 +293,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
     public static final int TIMEWINDOWOFFSET_FIELD_NUMBER = 4;
     private int timeWindowOffset_;
     /**
+     * <pre>
+     * The number of hours offset to the start of day
+     * </pre>
+     *
      * <code>uint32 timeWindowOffset = 4;</code>
      */
     public int getTimeWindowOffset() {
@@ -259,7 +323,7 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
       if (timewindow_ != null) {
         output.writeMessage(2, getTimewindow());
       }
-      if (timezone_ != claros.common.core.ClarosCommonCoreTimezone.TimeZone.TZ_UNKNOWN.getNumber()) {
+      if (timezone_ != claros.common.core.ClarosCommonCoreTimezone.TimeZone.TIMEZONE_UNKNOWN.getNumber()) {
         output.writeEnum(3, timezone_);
       }
       if (timeWindowOffset_ != 0) {
@@ -281,7 +345,7 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getTimewindow());
       }
-      if (timezone_ != claros.common.core.ClarosCommonCoreTimezone.TimeZone.TZ_UNKNOWN.getNumber()) {
+      if (timezone_ != claros.common.core.ClarosCommonCoreTimezone.TimeZone.TIMEZONE_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, timezone_);
       }
@@ -606,6 +670,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
 
       private java.lang.Object version_ = "";
       /**
+       * <pre>
+       * Numerical version of the spreadsheet definition.  This increments with eash new version
+       * </pre>
+       *
        * <code>string version = 1;</code>
        */
       public java.lang.String getVersion() {
@@ -621,6 +689,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         }
       }
       /**
+       * <pre>
+       * Numerical version of the spreadsheet definition.  This increments with eash new version
+       * </pre>
+       *
        * <code>string version = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -637,6 +709,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         }
       }
       /**
+       * <pre>
+       * Numerical version of the spreadsheet definition.  This increments with eash new version
+       * </pre>
+       *
        * <code>string version = 1;</code>
        */
       public Builder setVersion(
@@ -650,6 +726,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Numerical version of the spreadsheet definition.  This increments with eash new version
+       * </pre>
+       *
        * <code>string version = 1;</code>
        */
       public Builder clearVersion() {
@@ -659,6 +739,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Numerical version of the spreadsheet definition.  This increments with eash new version
+       * </pre>
+       *
        * <code>string version = 1;</code>
        */
       public Builder setVersionBytes(
@@ -677,12 +761,20 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreTimewindow.TimeWindow, claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.Builder, claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder> timewindowBuilder_;
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public boolean hasTimewindow() {
         return timewindowBuilder_ != null || timewindow_ != null;
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getTimewindow() {
@@ -693,6 +785,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         }
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public Builder setTimewindow(claros.common.core.ClarosCommonCoreTimewindow.TimeWindow value) {
@@ -709,6 +805,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public Builder setTimewindow(
@@ -723,6 +823,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public Builder mergeTimewindow(claros.common.core.ClarosCommonCoreTimewindow.TimeWindow value) {
@@ -741,6 +845,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public Builder clearTimewindow() {
@@ -755,6 +863,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.Builder getTimewindowBuilder() {
@@ -763,6 +875,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return getTimewindowFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getTimewindowOrBuilder() {
@@ -774,6 +890,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         }
       }
       /**
+       * <pre>
+       * The Time window of when this configuration was valid
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow timewindow = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -792,12 +912,20 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
 
       private int timezone_ = 0;
       /**
+       * <pre>
+       * The time zone related to the spreadsheet
+       * </pre>
+       *
        * <code>.claros.common.core.TimeZone timezone = 3;</code>
        */
       public int getTimezoneValue() {
         return timezone_;
       }
       /**
+       * <pre>
+       * The time zone related to the spreadsheet
+       * </pre>
+       *
        * <code>.claros.common.core.TimeZone timezone = 3;</code>
        */
       public Builder setTimezoneValue(int value) {
@@ -806,6 +934,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The time zone related to the spreadsheet
+       * </pre>
+       *
        * <code>.claros.common.core.TimeZone timezone = 3;</code>
        */
       public claros.common.core.ClarosCommonCoreTimezone.TimeZone getTimezone() {
@@ -814,6 +946,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return result == null ? claros.common.core.ClarosCommonCoreTimezone.TimeZone.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * The time zone related to the spreadsheet
+       * </pre>
+       *
        * <code>.claros.common.core.TimeZone timezone = 3;</code>
        */
       public Builder setTimezone(claros.common.core.ClarosCommonCoreTimezone.TimeZone value) {
@@ -826,6 +962,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The time zone related to the spreadsheet
+       * </pre>
+       *
        * <code>.claros.common.core.TimeZone timezone = 3;</code>
        */
       public Builder clearTimezone() {
@@ -837,12 +977,20 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
 
       private int timeWindowOffset_ ;
       /**
+       * <pre>
+       * The number of hours offset to the start of day
+       * </pre>
+       *
        * <code>uint32 timeWindowOffset = 4;</code>
        */
       public int getTimeWindowOffset() {
         return timeWindowOffset_;
       }
       /**
+       * <pre>
+       * The number of hours offset to the start of day
+       * </pre>
+       *
        * <code>uint32 timeWindowOffset = 4;</code>
        */
       public Builder setTimeWindowOffset(int value) {
@@ -852,6 +1000,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The number of hours offset to the start of day
+       * </pre>
+       *
        * <code>uint32 timeWindowOffset = 4;</code>
        */
       public Builder clearTimeWindowOffset() {

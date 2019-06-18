@@ -6,7 +6,7 @@ require 'google/protobuf'
 require 'claros_common_core_clarosdatetime_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_instrument_measurement_field_binding.proto", :syntax => :proto3) do
-    add_message "claros.instrument.InstrumentMeasurementFieldBinding" do
+    add_message "claros.instrument.measurement.InstrumentMeasurementFieldBinding" do
       optional :instrumentMeasurementId, :string, 1
       optional :timestamp, :message, 2, "claros.common.core.ClarosDateTime"
       optional :unitId, :uint32, 3
@@ -16,6 +16,8 @@ end
 
 module Claros
   module Instrument
-    InstrumentMeasurementFieldBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.InstrumentMeasurementFieldBinding").msgclass
+    module Measurement
+      InstrumentMeasurementFieldBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.measurement.InstrumentMeasurementFieldBinding").msgclass
+    end
   end
 end

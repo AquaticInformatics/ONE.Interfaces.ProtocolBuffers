@@ -30,21 +30,21 @@ namespace Claros.Operations.Spreadsheet {
             "X2NvbW1vbl9jb3JlX2xpbWl0LnByb3RvGitjbGFyb3NfaW5zdHJ1bWVudF9t",
             "ZWFzdXJlbWVudF9iaW5kaW5nLnByb3RvGidjbGFyb3NfY29tbW9uX2NvbXB1",
             "dGF0aW9uX2JpbmRpbmcucHJvdG8aNmNsYXJvc19jb21tb25fY29yZV9yZXBv",
-            "cnRhYmxlcXVhbGlmaWVyZGVmaW5pdGlvbi5wcm90byKEBAoGQ29sdW1uEhQK",
+            "cnRhYmxlcXVhbGlmaWVyZGVmaW5pdGlvbi5wcm90byKQBAoGQ29sdW1uEhQK",
             "DGNvbHVtbk51bWJlchgBIAEoDRIMCgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0",
             "aW9uGAMgASgJEhMKC3BhcmFtZXRlcklkGAQgASgNEhUKDWRpc3BsYXlVbml0",
             "SWQYBSABKA0SEgoKbG9jYXRpb25JZBgGIAEoCRIQCghpc0FjdGl2ZRgHIAEo",
             "CBIpCgZsaW1pdHMYCCADKAsyGS5jbGFyb3MuY29tbW9uLmNvcmUuTGltaXQS",
             "OgoOZGF0YVNvdXJjZVR5cGUYCSABKA4yIi5jbGFyb3MuY29tbW9uLmNvcmUu",
-            "RGF0YVNvdXJjZVR5cGUSVwocaW5zdHJ1bWVudE1lYXN1cmVtZW50QmluZGlu",
-            "ZxgKIAEoCzIvLmNsYXJvcy5pbnN0cnVtZW50Lkluc3RydW1lbnRNZWFzdXJl",
-            "bWVudEJpbmRpbmdIABJLChJjb21wdXRhdGlvbkJpbmRpbmcYCyABKAsyLS5j",
-            "bGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uLkNvbXB1dGF0aW9uQmluZGluZ0gA",
-            "ElcKHHJlcG9ydGFibGVRdWFsaWZlckRlZmluaXRpb24YDCADKAsyMS5jbGFy",
-            "b3MuY29tbW9uLmNvcmUuUmVwb3J0YWJsZVF1YWxpZmllckRlZmluaXRpb25C",
-            "CQoHYmluZGluZ2IGcHJvdG8z"));
+            "RGF0YVNvdXJjZVR5cGUSYwocaW5zdHJ1bWVudE1lYXN1cmVtZW50QmluZGlu",
+            "ZxgKIAEoCzI7LmNsYXJvcy5pbnN0cnVtZW50Lm1lYXN1cmVtZW50Lkluc3Ry",
+            "dW1lbnRNZWFzdXJlbWVudEJpbmRpbmdIABJLChJjb21wdXRhdGlvbkJpbmRp",
+            "bmcYCyABKAsyLS5jbGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uLkNvbXB1dGF0",
+            "aW9uQmluZGluZ0gAElcKHHJlcG9ydGFibGVRdWFsaWZlckRlZmluaXRpb24Y",
+            "DCADKAsyMS5jbGFyb3MuY29tbW9uLmNvcmUuUmVwb3J0YWJsZVF1YWxpZmll",
+            "ckRlZmluaXRpb25CCQoHYmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreReportablequalifierdefinitionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreReportablequalifierdefinitionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.Column), global::Claros.Operations.Spreadsheet.Column.Parser, new[]{ "ColumnNumber", "Name", "Description", "ParameterId", "DisplayUnitId", "LocationId", "IsActive", "Limits", "DataSourceType", "InstrumentMeasurementBinding", "ComputationBinding", "ReportableQualiferDefinition" }, new[]{ "Binding" }, null, null)
           }));
@@ -108,6 +108,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "columnNumber" field.</summary>
     public const int ColumnNumberFieldNumber = 1;
     private uint columnNumber_;
+    /// <summary>
+    /// The number of the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ColumnNumber {
       get { return columnNumber_; }
@@ -119,6 +122,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// The name of the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
       get { return name_; }
@@ -130,6 +136,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
     private string description_ = "";
+    /// <summary>
+    /// The description of the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Description {
       get { return description_; }
@@ -141,6 +150,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "parameterId" field.</summary>
     public const int ParameterIdFieldNumber = 4;
     private uint parameterId_;
+    /// <summary>
+    /// The parameter associated with the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ParameterId {
       get { return parameterId_; }
@@ -152,6 +164,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "displayUnitId" field.</summary>
     public const int DisplayUnitIdFieldNumber = 5;
     private uint displayUnitId_;
+    /// <summary>
+    /// The default unit to display the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint DisplayUnitId {
       get { return displayUnitId_; }
@@ -163,6 +178,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "locationId" field.</summary>
     public const int LocationIdFieldNumber = 6;
     private string locationId_ = "";
+    /// <summary>
+    /// The location associated to the data in the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string LocationId {
       get { return locationId_; }
@@ -174,6 +192,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "isActive" field.</summary>
     public const int IsActiveFieldNumber = 7;
     private bool isActive_;
+    /// <summary>
+    /// Soft Delete of the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsActive {
       get { return isActive_; }
@@ -187,6 +208,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Common.Core.Limit> _repeated_limits_codec
         = pb::FieldCodec.ForMessage(66, global::Claros.Common.Core.Limit.Parser);
     private readonly pbc::RepeatedField<global::Claros.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::Claros.Common.Core.Limit>();
+    /// <summary>
+    /// Collection of limits related to the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Common.Core.Limit> Limits {
       get { return limits_; }
@@ -195,6 +219,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "dataSourceType" field.</summary>
     public const int DataSourceTypeFieldNumber = 9;
     private global::Claros.Common.Core.DataSourceType dataSourceType_ = 0;
+    /// <summary>
+    /// The expected place where the data will be received into the column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.DataSourceType DataSourceType {
       get { return dataSourceType_; }
@@ -205,9 +232,12 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "instrumentMeasurementBinding" field.</summary>
     public const int InstrumentMeasurementBindingFieldNumber = 10;
+    /// <summary>
+    /// Column comes from aggregated instrument measurments
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentMeasurementBinding InstrumentMeasurementBinding {
-      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::Claros.Instrument.InstrumentMeasurementBinding) binding_ : null; }
+    public global::Claros.Instrument.Measurement.InstrumentMeasurementBinding InstrumentMeasurementBinding {
+      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::Claros.Instrument.Measurement.InstrumentMeasurementBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.InstrumentMeasurementBinding;
@@ -216,6 +246,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "computationBinding" field.</summary>
     public const int ComputationBindingFieldNumber = 11;
+    /// <summary>
+    /// Column comes as a result of a computation
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Computation.ComputationBinding ComputationBinding {
       get { return bindingCase_ == BindingOneofCase.ComputationBinding ? (global::Claros.Common.Computation.ComputationBinding) binding_ : null; }
@@ -230,6 +263,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Common.Core.ReportableQualifierDefinition> _repeated_reportableQualiferDefinition_codec
         = pb::FieldCodec.ForMessage(98, global::Claros.Common.Core.ReportableQualifierDefinition.Parser);
     private readonly pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition> reportableQualiferDefinition_ = new pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition>();
+    /// <summary>
+    /// This determines how qualifers are interpreted for this column
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition> ReportableQualiferDefinition {
       get { return reportableQualiferDefinition_; }
@@ -434,7 +470,7 @@ namespace Claros.Operations.Spreadsheet {
       switch (other.BindingCase) {
         case BindingOneofCase.InstrumentMeasurementBinding:
           if (InstrumentMeasurementBinding == null) {
-            InstrumentMeasurementBinding = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            InstrumentMeasurementBinding = new global::Claros.Instrument.Measurement.InstrumentMeasurementBinding();
           }
           InstrumentMeasurementBinding.MergeFrom(other.InstrumentMeasurementBinding);
           break;
@@ -494,7 +530,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 82: {
-            global::Claros.Instrument.InstrumentMeasurementBinding subBuilder = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            global::Claros.Instrument.Measurement.InstrumentMeasurementBinding subBuilder = new global::Claros.Instrument.Measurement.InstrumentMeasurementBinding();
             if (bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding) {
               subBuilder.MergeFrom(InstrumentMeasurementBinding);
             }

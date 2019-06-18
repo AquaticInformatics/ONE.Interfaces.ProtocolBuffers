@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Enum ComputationCursorType
 
+/** Allows for navigating to adjacent rows. */
 typedef GPB_ENUM(ComputationCursorType) {
   /**
    * Value used if any message's field encounters a value that is not defined
@@ -38,12 +39,14 @@ typedef GPB_ENUM(ComputationCursorType) {
    * of the field.
    **/
   ComputationCursorType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  ComputationCursorType_CcUnknown = 0,
-  ComputationCursorType_CcCurrent = 1,
-  ComputationCursorType_CcPrevious = 2,
-  ComputationCursorType_CcNext = 4,
-  ComputationCursorType_CcLast = 5,
-  ComputationCursorType_CcAbsolute = 6,
+  ComputationCursorType_ComputationCursorUnknown = 0,
+  ComputationCursorType_ComputationCursorCurrent = 1,
+  ComputationCursorType_ComputationCursorPrevious = 2,
+  ComputationCursorType_ComputationCursorNext = 4,
+  ComputationCursorType_ComputationCursorLast = 5,
+
+  /** should this be relative? */
+  ComputationCursorType_ComputationCursorAbsolute = 6,
 };
 
 GPBEnumDescriptor *ComputationCursorType_EnumDescriptor(void);

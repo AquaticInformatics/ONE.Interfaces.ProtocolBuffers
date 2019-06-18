@@ -6,11 +6,11 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_form_formdataentry_type.proto", :syntax => :proto3) do
     add_enum "claros.common.form.FormDataEntryType" do
-      value :FDE_UNKNOWN, 0
-      value :FDE_INSTRUMENT, 1
-      value :FDE_TOTALIZER, 2
-      value :FDE_CONSUMPTION, 3
-      value :FDE_TEXT, 4
+      value :FORM_DATE_ENTRY_UNKNOWN, 0
+      value :FORM_DATE_ENTRY_INSTRUMENT, 1
+      value :FORM_DATE_ENTRY_TOTALIZER, 2
+      value :FORM_DATE_ENTRY_CONSUMPTION, 3
+      value :FORM_DATE_ENTRY_TEXT, 4
     end
   end
 end

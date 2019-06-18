@@ -6,10 +6,10 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_form_formtemplate_type.proto", :syntax => :proto3) do
     add_enum "claros.common.form.FormTemplateType" do
-      value :FT_UNKNOWN, 0
-      value :FT_PLANT, 1
-      value :FT_LABORATORY, 2
-      value :FT_ENTERPRISE, 3
+      value :FORM_TEMPLATE_UNKNOWN, 0
+      value :FORM_TEMPLATE_PLANT, 1
+      value :FORM_TEMPLATE_LABORATORY, 2
+      value :FORM_TEMPLATE_ENTERPRISE, 3
     end
   end
 end

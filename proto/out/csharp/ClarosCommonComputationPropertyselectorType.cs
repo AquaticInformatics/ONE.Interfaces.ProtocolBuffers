@@ -25,10 +25,12 @@ namespace Claros.Common.Computation {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVjbGFyb3NfY29tbW9uX2NvbXB1dGF0aW9uX3Byb3BlcnR5c2VsZWN0b3Jf",
-            "dHlwZS5wcm90bxIZY2xhcm9zLmNvbW1vbi5jb21wdXRhdGlvbiqAAQoUUHJv",
-            "cGVydHlTZWxlY3RvclR5cGUSDgoKUFNfVU5LTk9XThAAEhYKElBTX01FQVNV",
-            "UkVNRU5UVElNRRABEhQKEFBTX0JFR0lOTElORVRJTUUQAhISCg5QU19FTkRM",
-            "SU5FVElNRRADEhYKElBTX01FQVNVUk1FTlRWQUxVRRAEYgZwcm90bzM="));
+            "dHlwZS5wcm90bxIZY2xhcm9zLmNvbW1vbi5jb21wdXRhdGlvbirLAQoUUHJv",
+            "cGVydHlTZWxlY3RvclR5cGUSHQoZUFJPUEVSVFlfU0VMRUNUT1JfVU5LTk9X",
+            "ThAAEiUKIVBST1BFUlRZX1NFTEVDVE9SX01FQVNVUkVNRU5UVElNRRABEiMK",
+            "H1BST1BFUlRZX1NFTEVDVE9SX0JFR0lOTElORVRJTUUQAhIhCh1QUk9QRVJU",
+            "WV9TRUxFQ1RPUl9FTkRMSU5FVElNRRADEiUKIVBST1BFUlRZX1NFTEVDVE9S",
+            "X01FQVNVUk1FTlRWQUxVRRAEYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Computation.PropertySelectorType), }, null));
@@ -37,12 +39,15 @@ namespace Claros.Common.Computation {
 
   }
   #region Enums
+  /// <summary>
+  /// What attribute of the row or cell is included in the expression
+  /// </summary>
   public enum PropertySelectorType {
-    [pbr::OriginalName("PS_UNKNOWN")] PsUnknown = 0,
-    [pbr::OriginalName("PS_MEASUREMENTTIME")] PsMeasurementtime = 1,
-    [pbr::OriginalName("PS_BEGINLINETIME")] PsBeginlinetime = 2,
-    [pbr::OriginalName("PS_ENDLINETIME")] PsEndlinetime = 3,
-    [pbr::OriginalName("PS_MEASURMENTVALUE")] PsMeasurmentvalue = 4,
+    [pbr::OriginalName("PROPERTY_SELECTOR_UNKNOWN")] PropertySelectorUnknown = 0,
+    [pbr::OriginalName("PROPERTY_SELECTOR_MEASUREMENTTIME")] PropertySelectorMeasurementtime = 1,
+    [pbr::OriginalName("PROPERTY_SELECTOR_BEGINLINETIME")] PropertySelectorBeginlinetime = 2,
+    [pbr::OriginalName("PROPERTY_SELECTOR_ENDLINETIME")] PropertySelectorEndlinetime = 3,
+    [pbr::OriginalName("PROPERTY_SELECTOR_MEASURMENTVALUE")] PropertySelectorMeasurmentvalue = 4,
   }
 
   #endregion

@@ -40,14 +40,15 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5flimit_5ftype_2eproto[] =
   "\n#claros_common_core_limit_type.proto\022\022c"
-  "laros.common.core*Z\n\tLimitType\022\r\n\tL_UNKN"
-  "OWN\020\000\022\017\n\013L_HIGHALARM\020\001\022\016\n\nL_HIGHNEAR\020\002\022\r"
-  "\n\tL_LOWNEAR\020\003\022\016\n\nL_LOWALARM\020\004b\006proto3"
+  "laros.common.core*o\n\tLimitType\022\021\n\rLIMIT_"
+  "UNKNOWN\020\000\022\023\n\017LIMIT_HIGHALARM\020\001\022\023\n\017LIMIT_"
+  "_HIGHNEAR\020\002\022\021\n\rLIMIT_LOWNEAR\020\003\022\022\n\016LIMIT_"
+  "LOWALARM\020\004b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5flimit_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5flimit_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5flimit_5ftype_2eproto,
-  "claros_common_core_limit_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5flimit_5ftype_2eproto, 157,
+  "claros_common_core_limit_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5flimit_5ftype_2eproto, 178,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5flimit_5ftype_2eproto() {

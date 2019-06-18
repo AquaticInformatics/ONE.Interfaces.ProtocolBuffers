@@ -19,53 +19,97 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Version of the Worksheet definition.  This is incremented with each change
+     * </pre>
+     *
      * <code>uint32 version = 1;</code>
      */
     int getVersion();
 
     /**
+     * <pre>
+     * The starting row number that the configuraiton applies
+     * </pre>
+     *
      * <code>uint32 startRow = 2;</code>
      */
     int getStartRow();
 
     /**
+     * <pre>
+     * The ending row number that the configuration applies
+     * </pre>
+     *
      * <code>uint32 endRow = 3;</code>
      */
     int getEndRow();
 
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column> 
         getColumnsList();
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column getColumns(int index);
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     int getColumnsCount();
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder> 
         getColumnsOrBuilderList();
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder getColumnsOrBuilder(
         int index);
 
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     boolean hasAuditEvent();
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent();
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder();
@@ -186,6 +230,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
     public static final int VERSION_FIELD_NUMBER = 1;
     private int version_;
     /**
+     * <pre>
+     * Version of the Worksheet definition.  This is incremented with each change
+     * </pre>
+     *
      * <code>uint32 version = 1;</code>
      */
     public int getVersion() {
@@ -195,6 +243,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
     public static final int STARTROW_FIELD_NUMBER = 2;
     private int startRow_;
     /**
+     * <pre>
+     * The starting row number that the configuraiton applies
+     * </pre>
+     *
      * <code>uint32 startRow = 2;</code>
      */
     public int getStartRow() {
@@ -204,6 +256,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
     public static final int ENDROW_FIELD_NUMBER = 3;
     private int endRow_;
     /**
+     * <pre>
+     * The ending row number that the configuration applies
+     * </pre>
+     *
      * <code>uint32 endRow = 3;</code>
      */
     public int getEndRow() {
@@ -213,12 +269,20 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
     public static final int COLUMNS_FIELD_NUMBER = 4;
     private java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column> columns_;
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column> getColumnsList() {
       return columns_;
     }
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder> 
@@ -226,18 +290,30 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
       return columns_;
     }
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     public int getColumnsCount() {
       return columns_.size();
     }
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column getColumns(int index) {
       return columns_.get(index);
     }
     /**
+     * <pre>
+     * ???? Should we rename these to column definitions
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder getColumnsOrBuilder(
@@ -248,18 +324,30 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
     public static final int AUDITEVENT_FIELD_NUMBER = 99;
     private claros.common.core.ClarosCommonCoreAuditevent.AuditEvent auditEvent_;
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public boolean hasAuditEvent() {
       return auditEvent_ != null;
     }
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
       return auditEvent_ == null ? claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.getDefaultInstance() : auditEvent_;
     }
     /**
+     * <pre>
+     * Audit Record of who created the definition
+     * </pre>
+     *
      * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
@@ -693,12 +781,20 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
 
       private int version_ ;
       /**
+       * <pre>
+       * Version of the Worksheet definition.  This is incremented with each change
+       * </pre>
+       *
        * <code>uint32 version = 1;</code>
        */
       public int getVersion() {
         return version_;
       }
       /**
+       * <pre>
+       * Version of the Worksheet definition.  This is incremented with each change
+       * </pre>
+       *
        * <code>uint32 version = 1;</code>
        */
       public Builder setVersion(int value) {
@@ -708,6 +804,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Version of the Worksheet definition.  This is incremented with each change
+       * </pre>
+       *
        * <code>uint32 version = 1;</code>
        */
       public Builder clearVersion() {
@@ -719,12 +819,20 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
 
       private int startRow_ ;
       /**
+       * <pre>
+       * The starting row number that the configuraiton applies
+       * </pre>
+       *
        * <code>uint32 startRow = 2;</code>
        */
       public int getStartRow() {
         return startRow_;
       }
       /**
+       * <pre>
+       * The starting row number that the configuraiton applies
+       * </pre>
+       *
        * <code>uint32 startRow = 2;</code>
        */
       public Builder setStartRow(int value) {
@@ -734,6 +842,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The starting row number that the configuraiton applies
+       * </pre>
+       *
        * <code>uint32 startRow = 2;</code>
        */
       public Builder clearStartRow() {
@@ -745,12 +857,20 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
 
       private int endRow_ ;
       /**
+       * <pre>
+       * The ending row number that the configuration applies
+       * </pre>
+       *
        * <code>uint32 endRow = 3;</code>
        */
       public int getEndRow() {
         return endRow_;
       }
       /**
+       * <pre>
+       * The ending row number that the configuration applies
+       * </pre>
+       *
        * <code>uint32 endRow = 3;</code>
        */
       public Builder setEndRow(int value) {
@@ -760,6 +880,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * The ending row number that the configuration applies
+       * </pre>
+       *
        * <code>uint32 endRow = 3;</code>
        */
       public Builder clearEndRow() {
@@ -782,6 +906,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder> columnsBuilder_;
 
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column> getColumnsList() {
@@ -792,6 +920,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public int getColumnsCount() {
@@ -802,6 +934,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column getColumns(int index) {
@@ -812,6 +948,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder setColumns(
@@ -829,6 +969,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder setColumns(
@@ -843,6 +987,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder addColumns(claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column value) {
@@ -859,6 +1007,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder addColumns(
@@ -876,6 +1028,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder addColumns(
@@ -890,6 +1046,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder addColumns(
@@ -904,6 +1064,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder addAllColumns(
@@ -919,6 +1083,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder clearColumns() {
@@ -932,6 +1100,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public Builder removeColumns(int index) {
@@ -945,6 +1117,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.Builder getColumnsBuilder(
@@ -952,6 +1128,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return getColumnsFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder getColumnsOrBuilder(
@@ -962,6 +1142,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.ColumnOrBuilder> 
@@ -973,6 +1157,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.Builder addColumnsBuilder() {
@@ -980,6 +1168,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
             claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.getDefaultInstance());
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.Builder addColumnsBuilder(
@@ -988,6 +1180,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
             index, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.getDefaultInstance());
       }
       /**
+       * <pre>
+       * ???? Should we rename these to column definitions
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetColumn.Column.Builder> 
@@ -1013,12 +1209,20 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreAuditevent.AuditEvent, claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder, claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder> auditEventBuilder_;
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public boolean hasAuditEvent() {
         return auditEventBuilder_ != null || auditEvent_ != null;
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
@@ -1029,6 +1233,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder setAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
@@ -1045,6 +1253,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder setAuditEvent(
@@ -1059,6 +1271,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder mergeAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
@@ -1077,6 +1293,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public Builder clearAuditEvent() {
@@ -1091,6 +1311,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return this;
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder getAuditEventBuilder() {
@@ -1099,6 +1323,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         return getAuditEventFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
@@ -1110,6 +1338,10 @@ public final class ClarosOperationsSpreadsheetWorksheetDefinition {
         }
       }
       /**
+       * <pre>
+       * Audit Record of who created the definition
+       * </pre>
+       *
        * <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

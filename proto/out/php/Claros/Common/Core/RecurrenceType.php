@@ -12,42 +12,42 @@ use UnexpectedValueException;
 class RecurrenceType
 {
     /**
-     * Generated from protobuf enum <code>R_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>RECURRENCE_UNKNOWN = 0;</code>
      */
-    const R_UNKNOWN = 0;
+    const RECURRENCE_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>R_FIFTEENMINUTE = 1;</code>
+     * Generated from protobuf enum <code>RECURRENCE_FIFTEENMINUTE = 1;</code>
      */
-    const R_FIFTEENMINUTE = 1;
+    const RECURRENCE_FIFTEENMINUTE = 1;
     /**
-     * Generated from protobuf enum <code>R_HOURLY = 2;</code>
+     * Generated from protobuf enum <code>RECURRENCE_HOURLY = 2;</code>
      */
-    const R_HOURLY = 2;
+    const RECURRENCE_HOURLY = 2;
     /**
-     * Generated from protobuf enum <code>R_FOURHOUR = 3;</code>
+     * Generated from protobuf enum <code>RECURRENCE_FOURHOUR = 3;</code>
      */
-    const R_FOURHOUR = 3;
+    const RECURRENCE_FOURHOUR = 3;
     /**
-     * Generated from protobuf enum <code>R_DAILY = 4;</code>
+     * Generated from protobuf enum <code>RECURRENCE_DAILY = 4;</code>
      */
-    const R_DAILY = 4;
+    const RECURRENCE_DAILY = 4;
     /**
-     * Generated from protobuf enum <code>R_WEEKLY = 5;</code>
+     * Generated from protobuf enum <code>RECURRENCE_WEEKLY = 5;</code>
      */
-    const R_WEEKLY = 5;
+    const RECURRENCE_WEEKLY = 5;
     /**
-     * Generated from protobuf enum <code>R_DAYSOFWEEK = 6;</code>
+     * Generated from protobuf enum <code>RECURRENCE_DAYSOFWEEK = 6;</code>
      */
-    const R_DAYSOFWEEK = 6;
+    const RECURRENCE_DAYSOFWEEK = 6;
 
     private static $valueToName = [
-        self::R_UNKNOWN => 'R_UNKNOWN',
-        self::R_FIFTEENMINUTE => 'R_FIFTEENMINUTE',
-        self::R_HOURLY => 'R_HOURLY',
-        self::R_FOURHOUR => 'R_FOURHOUR',
-        self::R_DAILY => 'R_DAILY',
-        self::R_WEEKLY => 'R_WEEKLY',
-        self::R_DAYSOFWEEK => 'R_DAYSOFWEEK',
+        self::RECURRENCE_UNKNOWN => 'RECURRENCE_UNKNOWN',
+        self::RECURRENCE_FIFTEENMINUTE => 'RECURRENCE_FIFTEENMINUTE',
+        self::RECURRENCE_HOURLY => 'RECURRENCE_HOURLY',
+        self::RECURRENCE_FOURHOUR => 'RECURRENCE_FOURHOUR',
+        self::RECURRENCE_DAILY => 'RECURRENCE_DAILY',
+        self::RECURRENCE_WEEKLY => 'RECURRENCE_WEEKLY',
+        self::RECURRENCE_DAYSOFWEEK => 'RECURRENCE_DAYSOFWEEK',
     ];
 
     public static function name($value)

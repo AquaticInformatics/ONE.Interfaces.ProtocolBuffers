@@ -26,13 +26,13 @@ namespace Claros.Common.Core {
           string.Concat(
             "Ch5jbGFyb3NfY29tbW9uX2NvcmVfbGltaXQucHJvdG8SEmNsYXJvcy5jb21t",
             "b24uY29yZRojY2xhcm9zX2NvbW1vbl9jb3JlX2xpbWl0X3R5cGUucHJvdG8a",
-            "I2NsYXJvc19jb21tb25fY29yZV9yZWN1cnJlbmNlLnByb3RvIp0BCgVMaW1p",
-            "dBIPCgdpMThuS2V5GAEgASgJEjAKCWxpbWl0VHlwZRgCIAEoDjIdLmNsYXJv",
-            "cy5jb21tb24uY29yZS5MaW1pdFR5cGUSDQoFdmFsdWUYAyABKAESDgoGdW5p",
-            "dElkGAQgASgNEjIKCnJlY3VycmVuY2UYBSABKAsyHi5jbGFyb3MuY29tbW9u",
-            "LmNvcmUuUmVjdXJyZW5jZWIGcHJvdG8z"));
+            "KWNsYXJvc19jb21tb25fcmVjdXJyZW5jZV9yZWN1cnJlbmNlLnByb3RvIqMB",
+            "CgVMaW1pdBIPCgdpMThuS2V5GAEgASgJEjAKCWxpbWl0VHlwZRgCIAEoDjId",
+            "LmNsYXJvcy5jb21tb24uY29yZS5MaW1pdFR5cGUSDQoFdmFsdWUYAyABKAES",
+            "DgoGdW5pdElkGAQgASgNEjgKCnJlY3VycmVuY2UYBSABKAsyJC5jbGFyb3Mu",
+            "Y29tbW9uLnJlY3VycmVuY2UuUmVjdXJyZW5jZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreLimitTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreLimitTypeReflection.Descriptor, global::Claros.Common.Recurrence.ClarosCommonRecurrenceRecurrenceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.Limit), global::Claros.Common.Core.Limit.Parser, new[]{ "I18NKey", "LimitType", "Value", "UnitId", "Recurrence" }, null, null, null)
           }));
@@ -82,6 +82,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "i18nKey" field.</summary>
     public const int I18NKeyFieldNumber = 1;
     private string i18NKey_ = "";
+    /// <summary>
+    /// Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string I18NKey {
       get { return i18NKey_; }
@@ -93,6 +96,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "limitType" field.</summary>
     public const int LimitTypeFieldNumber = 2;
     private global::Claros.Common.Core.LimitType limitType_ = 0;
+    /// <summary>
+    /// Type of Limit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.LimitType LimitType {
       get { return limitType_; }
@@ -104,6 +110,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 3;
     private double value_;
+    /// <summary>
+    /// Value that will trigger the limit ???? is this inclusive or exclusive
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double Value {
       get { return value_; }
@@ -115,6 +124,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "unitId" field.</summary>
     public const int UnitIdFieldNumber = 4;
     private uint unitId_;
+    /// <summary>
+    /// The unit used to compare the value with the limit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint UnitId {
       get { return unitId_; }
@@ -125,9 +137,12 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "recurrence" field.</summary>
     public const int RecurrenceFieldNumber = 5;
-    private global::Claros.Common.Core.Recurrence recurrence_;
+    private global::Claros.Common.Recurrence.Recurrence recurrence_;
+    /// <summary>
+    /// Used for seasonal limits
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence Recurrence {
+    public global::Claros.Common.Recurrence.Recurrence Recurrence {
       get { return recurrence_; }
       set {
         recurrence_ = value;
@@ -244,7 +259,7 @@ namespace Claros.Common.Core {
       }
       if (other.recurrence_ != null) {
         if (recurrence_ == null) {
-          Recurrence = new global::Claros.Common.Core.Recurrence();
+          Recurrence = new global::Claros.Common.Recurrence.Recurrence();
         }
         Recurrence.MergeFrom(other.Recurrence);
       }
@@ -277,7 +292,7 @@ namespace Claros.Common.Core {
           }
           case 42: {
             if (recurrence_ == null) {
-              Recurrence = new global::Claros.Common.Core.Recurrence();
+              Recurrence = new global::Claros.Common.Recurrence.Recurrence();
             }
             input.ReadMessage(Recurrence);
             break;

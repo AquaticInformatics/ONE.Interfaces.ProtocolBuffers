@@ -38,8 +38,8 @@ typedef GPB_ENUM(TimeZone) {
    * of the field.
    **/
   TimeZone_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  TimeZone_TzUnknown = 0,
-  TimeZone_TzUtc = 1,
+  TimeZone_TimezoneUnknown = 0,
+  TimeZone_TimezoneUtc = 1,
 };
 
 GPBEnumDescriptor *TimeZone_EnumDescriptor(void);

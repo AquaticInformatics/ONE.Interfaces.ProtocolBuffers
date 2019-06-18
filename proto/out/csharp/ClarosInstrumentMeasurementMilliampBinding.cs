@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace Claros.Instrument.Measurement {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_milliamp_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementMilliampBindingReflection {
@@ -25,16 +25,16 @@ namespace Claros.Instrument {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRjbGFyb3NfaW5zdHJ1bWVudF9tZWFzdXJlbWVudF9taWxsaWFtcF9iaW5k",
-            "aW5nLnByb3RvEhFjbGFyb3MuaW5zdHJ1bWVudBonY2xhcm9zX2NvbW1vbl9j",
-            "b3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvIqABCg9NaWxsaUFtcEJpbmRpbmcS",
-            "EAoIY2FyZE5hbWUYASABKAkSDwoHY2hhbm5lbBgCIAEoDRI1Cgl2YWxpZEZy",
-            "b20YAyABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUS",
-            "MwoHdmFsaWRUbxgEIAEoCzIiLmNsYXJvcy5jb21tb24uY29yZS5DbGFyb3NE",
-            "YXRlVGltZWIGcHJvdG8z"));
+            "aW5nLnByb3RvEh1jbGFyb3MuaW5zdHJ1bWVudC5tZWFzdXJlbWVudBonY2xh",
+            "cm9zX2NvbW1vbl9jb3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvIqABCg9NaWxs",
+            "aUFtcEJpbmRpbmcSEAoIY2FyZE5hbWUYASABKAkSDwoHY2hhbm5lbBgCIAEo",
+            "DRI1Cgl2YWxpZEZyb20YAyABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xh",
+            "cm9zRGF0ZVRpbWUSMwoHdmFsaWRUbxgEIAEoCzIiLmNsYXJvcy5jb21tb24u",
+            "Y29yZS5DbGFyb3NEYXRlVGltZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.MilliAmpBinding), global::Claros.Instrument.MilliAmpBinding.Parser, new[]{ "CardName", "Channel", "ValidFrom", "ValidTo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.Measurement.MilliAmpBinding), global::Claros.Instrument.Measurement.MilliAmpBinding.Parser, new[]{ "CardName", "Channel", "ValidFrom", "ValidTo" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -81,6 +81,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "cardName" field.</summary>
     public const int CardNameFieldNumber = 1;
     private string cardName_ = "";
+    /// <summary>
+    /// Name of the 4-20 mA Card
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CardName {
       get { return cardName_; }
@@ -92,6 +95,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "channel" field.</summary>
     public const int ChannelFieldNumber = 2;
     private uint channel_;
+    /// <summary>
+    /// Channel on the 4-20 mA Card
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Channel {
       get { return channel_; }
@@ -103,6 +109,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "validFrom" field.</summary>
     public const int ValidFromFieldNumber = 3;
     private global::Claros.Common.Core.ClarosDateTime validFrom_;
+    /// <summary>
+    /// Should this be Timespan validTimeSpan? ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ClarosDateTime ValidFrom {
       get { return validFrom_; }

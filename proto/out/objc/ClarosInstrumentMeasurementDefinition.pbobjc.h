@@ -79,28 +79,39 @@ typedef GPB_ENUM(InstrumentMeasurementDefinition_Binding_OneOfCase) {
 /** This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *instrumentMeasurementId;
 
+/** The name of the collection of instrument measurmenets.  There is a good chance this correlates to the parameter name. */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *name;
 
+/** The FusionId of the instrument that the data is being collected */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *fusionId;
 
+/** Optional: The location where the data is being collected */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *locationId;
 
+/** Required: The parameter related to the instrument measurments being collected */
 @property(nonatomic, readwrite) uint32_t parameterId;
 
+/** The default display unit that the data will be rendered */
 @property(nonatomic, readwrite) uint32_t displayUnitId;
 
+/** Soft delete of the Instrument Measurment Collection */
 @property(nonatomic, readwrite) BOOL isVisible;
 
+/** How the data is bound from the incoming instrument */
 @property(nonatomic, readonly) InstrumentMeasurementDefinition_Binding_OneOfCase bindingOneOfCase;
 
+/** For SC Instruments, how the SC Instrument is identified */
 @property(nonatomic, readwrite, strong, null_resettable) SCSensorBinding *scSensorBinding;
 
+/** For 4-20 mA input, how the inputs are mapped to instrument measurments */
 @property(nonatomic, readwrite, strong, null_resettable) MilliAmpBinding *milliAmpBinding;
 
+/** A collection of limits associated to the instrument measurements */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Limit*> *limitsArray;
 /** The number of items in @c limitsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger limitsArray_Count;
 
+/** Record Audit Fields */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *createdById;
 
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *createdOn;

@@ -37,14 +37,178 @@ public final class ClarosCommonTaskTask {
         getIdBytes();
 
     /**
+     * <pre>
+     * User Defined Name for the Task
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     java.lang.String getName();
     /**
+     * <pre>
+     * User Defined Name for the Task
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
+
+    /**
+     * <pre>
+     * Desciption of the work to do in this task
+     * </pre>
+     *
+     * <code>string description = 3;</code>
+     */
+    java.lang.String getDescription();
+    /**
+     * <pre>
+     * Desciption of the work to do in this task
+     * </pre>
+     *
+     * <code>string description = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getDescriptionBytes();
+
+    /**
+     * <pre>
+     * GUID of the User that the task is assigned
+     * </pre>
+     *
+     * <code>string assignee = 4;</code>
+     */
+    java.lang.String getAssignee();
+    /**
+     * <pre>
+     * GUID of the User that the task is assigned
+     * </pre>
+     *
+     * <code>string assignee = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getAssigneeBytes();
+
+    /**
+     * <pre>
+     * GUID of the user that created the task
+     * </pre>
+     *
+     * <code>string reporter = 5;</code>
+     */
+    java.lang.String getReporter();
+    /**
+     * <pre>
+     * GUID of the user that created the task
+     * </pre>
+     *
+     * <code>string reporter = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getReporterBytes();
+
+    /**
+     * <pre>
+     * TaskSeverity severity = 6;                  // Enumeration of common severities
+     * </pre>
+     *
+     * <code>uint32 priority = 6;</code>
+     */
+    int getPriority();
+
+    /**
+     * <pre>
+     * Source                                   // From where did the task come?
+     * </pre>
+     *
+     * <code>string instrumentId = 7;</code>
+     */
+    java.lang.String getInstrumentId();
+    /**
+     * <pre>
+     * Source                                   // From where did the task come?
+     * </pre>
+     *
+     * <code>string instrumentId = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getInstrumentIdBytes();
+
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    boolean hasTaskDefinition();
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    claros.common.task.ClarosCommonTaskDefinition.TaskDefinition getTaskDefinition();
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder getTaskDefinitionOrBuilder();
+
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    boolean hasTaskdata();
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    claros.common.task.ClarosCommonTaskData.TaskData getTaskdata();
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder getTaskdataOrBuilder();
+
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    boolean hasAuditEvent();
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent();
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder();
   }
   /**
    * Protobuf type {@code claros.common.task.Task}
@@ -61,6 +225,10 @@ public final class ClarosCommonTaskTask {
     private Task() {
       id_ = "";
       name_ = "";
+      description_ = "";
+      assignee_ = "";
+      reporter_ = "";
+      instrumentId_ = "";
     }
 
     @java.lang.Override
@@ -97,6 +265,74 @@ public final class ClarosCommonTaskTask {
               java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              description_ = s;
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              assignee_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reporter_ = s;
+              break;
+            }
+            case 48: {
+
+              priority_ = input.readUInt32();
+              break;
+            }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              instrumentId_ = s;
+              break;
+            }
+            case 66: {
+              claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder subBuilder = null;
+              if (taskDefinition_ != null) {
+                subBuilder = taskDefinition_.toBuilder();
+              }
+              taskDefinition_ = input.readMessage(claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(taskDefinition_);
+                taskDefinition_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 74: {
+              claros.common.task.ClarosCommonTaskData.TaskData.Builder subBuilder = null;
+              if (taskdata_ != null) {
+                subBuilder = taskdata_.toBuilder();
+              }
+              taskdata_ = input.readMessage(claros.common.task.ClarosCommonTaskData.TaskData.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(taskdata_);
+                taskdata_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 82: {
+              claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder subBuilder = null;
+              if (auditEvent_ != null) {
+                subBuilder = auditEvent_.toBuilder();
+              }
+              auditEvent_ = input.readMessage(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(auditEvent_);
+                auditEvent_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -176,6 +412,10 @@ public final class ClarosCommonTaskTask {
     public static final int NAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object name_;
     /**
+     * <pre>
+     * User Defined Name for the Task
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
@@ -191,6 +431,10 @@ public final class ClarosCommonTaskTask {
       }
     }
     /**
+     * <pre>
+     * User Defined Name for the Task
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -205,6 +449,286 @@ public final class ClarosCommonTaskTask {
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
+    }
+
+    public static final int DESCRIPTION_FIELD_NUMBER = 3;
+    private volatile java.lang.Object description_;
+    /**
+     * <pre>
+     * Desciption of the work to do in this task
+     * </pre>
+     *
+     * <code>string description = 3;</code>
+     */
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        description_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * Desciption of the work to do in this task
+     * </pre>
+     *
+     * <code>string description = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ASSIGNEE_FIELD_NUMBER = 4;
+    private volatile java.lang.Object assignee_;
+    /**
+     * <pre>
+     * GUID of the User that the task is assigned
+     * </pre>
+     *
+     * <code>string assignee = 4;</code>
+     */
+    public java.lang.String getAssignee() {
+      java.lang.Object ref = assignee_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        assignee_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * GUID of the User that the task is assigned
+     * </pre>
+     *
+     * <code>string assignee = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAssigneeBytes() {
+      java.lang.Object ref = assignee_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        assignee_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int REPORTER_FIELD_NUMBER = 5;
+    private volatile java.lang.Object reporter_;
+    /**
+     * <pre>
+     * GUID of the user that created the task
+     * </pre>
+     *
+     * <code>string reporter = 5;</code>
+     */
+    public java.lang.String getReporter() {
+      java.lang.Object ref = reporter_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reporter_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * GUID of the user that created the task
+     * </pre>
+     *
+     * <code>string reporter = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getReporterBytes() {
+      java.lang.Object ref = reporter_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        reporter_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PRIORITY_FIELD_NUMBER = 6;
+    private int priority_;
+    /**
+     * <pre>
+     * TaskSeverity severity = 6;                  // Enumeration of common severities
+     * </pre>
+     *
+     * <code>uint32 priority = 6;</code>
+     */
+    public int getPriority() {
+      return priority_;
+    }
+
+    public static final int INSTRUMENTID_FIELD_NUMBER = 7;
+    private volatile java.lang.Object instrumentId_;
+    /**
+     * <pre>
+     * Source                                   // From where did the task come?
+     * </pre>
+     *
+     * <code>string instrumentId = 7;</code>
+     */
+    public java.lang.String getInstrumentId() {
+      java.lang.Object ref = instrumentId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        instrumentId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * Source                                   // From where did the task come?
+     * </pre>
+     *
+     * <code>string instrumentId = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getInstrumentIdBytes() {
+      java.lang.Object ref = instrumentId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        instrumentId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TASKDEFINITION_FIELD_NUMBER = 8;
+    private claros.common.task.ClarosCommonTaskDefinition.TaskDefinition taskDefinition_;
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    public boolean hasTaskDefinition() {
+      return taskDefinition_ != null;
+    }
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    public claros.common.task.ClarosCommonTaskDefinition.TaskDefinition getTaskDefinition() {
+      return taskDefinition_ == null ? claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.getDefaultInstance() : taskDefinition_;
+    }
+    /**
+     * <pre>
+     * definition
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    public claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder getTaskDefinitionOrBuilder() {
+      return getTaskDefinition();
+    }
+
+    public static final int TASKDATA_FIELD_NUMBER = 9;
+    private claros.common.task.ClarosCommonTaskData.TaskData taskdata_;
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    public boolean hasTaskdata() {
+      return taskdata_ != null;
+    }
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    public claros.common.task.ClarosCommonTaskData.TaskData getTaskdata() {
+      return taskdata_ == null ? claros.common.task.ClarosCommonTaskData.TaskData.getDefaultInstance() : taskdata_;
+    }
+    /**
+     * <pre>
+     * data
+     * </pre>
+     *
+     * <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    public claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder getTaskdataOrBuilder() {
+      return getTaskdata();
+    }
+
+    public static final int AUDITEVENT_FIELD_NUMBER = 10;
+    private claros.common.core.ClarosCommonCoreAuditevent.AuditEvent auditEvent_;
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    public boolean hasAuditEvent() {
+      return auditEvent_ != null;
+    }
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
+      return auditEvent_ == null ? claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.getDefaultInstance() : auditEvent_;
+    }
+    /**
+     * <pre>
+     * Audit Events related to to the Task
+     * </pre>
+     *
+     * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
+      return getAuditEvent();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -227,6 +751,30 @@ public final class ClarosCommonTaskTask {
       if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
       }
+      if (!getDescriptionBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, description_);
+      }
+      if (!getAssigneeBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, assignee_);
+      }
+      if (!getReporterBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reporter_);
+      }
+      if (priority_ != 0) {
+        output.writeUInt32(6, priority_);
+      }
+      if (!getInstrumentIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, instrumentId_);
+      }
+      if (taskDefinition_ != null) {
+        output.writeMessage(8, getTaskDefinition());
+      }
+      if (taskdata_ != null) {
+        output.writeMessage(9, getTaskdata());
+      }
+      if (auditEvent_ != null) {
+        output.writeMessage(10, getAuditEvent());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -241,6 +789,34 @@ public final class ClarosCommonTaskTask {
       }
       if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
+      }
+      if (!getDescriptionBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, description_);
+      }
+      if (!getAssigneeBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, assignee_);
+      }
+      if (!getReporterBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reporter_);
+      }
+      if (priority_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, priority_);
+      }
+      if (!getInstrumentIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, instrumentId_);
+      }
+      if (taskDefinition_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getTaskDefinition());
+      }
+      if (taskdata_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getTaskdata());
+      }
+      if (auditEvent_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getAuditEvent());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -261,6 +837,31 @@ public final class ClarosCommonTaskTask {
           .equals(other.getId())) return false;
       if (!getName()
           .equals(other.getName())) return false;
+      if (!getDescription()
+          .equals(other.getDescription())) return false;
+      if (!getAssignee()
+          .equals(other.getAssignee())) return false;
+      if (!getReporter()
+          .equals(other.getReporter())) return false;
+      if (getPriority()
+          != other.getPriority()) return false;
+      if (!getInstrumentId()
+          .equals(other.getInstrumentId())) return false;
+      if (hasTaskDefinition() != other.hasTaskDefinition()) return false;
+      if (hasTaskDefinition()) {
+        if (!getTaskDefinition()
+            .equals(other.getTaskDefinition())) return false;
+      }
+      if (hasTaskdata() != other.hasTaskdata()) return false;
+      if (hasTaskdata()) {
+        if (!getTaskdata()
+            .equals(other.getTaskdata())) return false;
+      }
+      if (hasAuditEvent() != other.hasAuditEvent()) return false;
+      if (hasAuditEvent()) {
+        if (!getAuditEvent()
+            .equals(other.getAuditEvent())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,6 +877,28 @@ public final class ClarosCommonTaskTask {
       hash = (53 * hash) + getId().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
+      hash = (53 * hash) + getDescription().hashCode();
+      hash = (37 * hash) + ASSIGNEE_FIELD_NUMBER;
+      hash = (53 * hash) + getAssignee().hashCode();
+      hash = (37 * hash) + REPORTER_FIELD_NUMBER;
+      hash = (53 * hash) + getReporter().hashCode();
+      hash = (37 * hash) + PRIORITY_FIELD_NUMBER;
+      hash = (53 * hash) + getPriority();
+      hash = (37 * hash) + INSTRUMENTID_FIELD_NUMBER;
+      hash = (53 * hash) + getInstrumentId().hashCode();
+      if (hasTaskDefinition()) {
+        hash = (37 * hash) + TASKDEFINITION_FIELD_NUMBER;
+        hash = (53 * hash) + getTaskDefinition().hashCode();
+      }
+      if (hasTaskdata()) {
+        hash = (37 * hash) + TASKDATA_FIELD_NUMBER;
+        hash = (53 * hash) + getTaskdata().hashCode();
+      }
+      if (hasAuditEvent()) {
+        hash = (37 * hash) + AUDITEVENT_FIELD_NUMBER;
+        hash = (53 * hash) + getAuditEvent().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,6 +1036,34 @@ public final class ClarosCommonTaskTask {
 
         name_ = "";
 
+        description_ = "";
+
+        assignee_ = "";
+
+        reporter_ = "";
+
+        priority_ = 0;
+
+        instrumentId_ = "";
+
+        if (taskDefinitionBuilder_ == null) {
+          taskDefinition_ = null;
+        } else {
+          taskDefinition_ = null;
+          taskDefinitionBuilder_ = null;
+        }
+        if (taskdataBuilder_ == null) {
+          taskdata_ = null;
+        } else {
+          taskdata_ = null;
+          taskdataBuilder_ = null;
+        }
+        if (auditEventBuilder_ == null) {
+          auditEvent_ = null;
+        } else {
+          auditEvent_ = null;
+          auditEventBuilder_ = null;
+        }
         return this;
       }
 
@@ -441,6 +1092,26 @@ public final class ClarosCommonTaskTask {
         claros.common.task.ClarosCommonTaskTask.Task result = new claros.common.task.ClarosCommonTaskTask.Task(this);
         result.id_ = id_;
         result.name_ = name_;
+        result.description_ = description_;
+        result.assignee_ = assignee_;
+        result.reporter_ = reporter_;
+        result.priority_ = priority_;
+        result.instrumentId_ = instrumentId_;
+        if (taskDefinitionBuilder_ == null) {
+          result.taskDefinition_ = taskDefinition_;
+        } else {
+          result.taskDefinition_ = taskDefinitionBuilder_.build();
+        }
+        if (taskdataBuilder_ == null) {
+          result.taskdata_ = taskdata_;
+        } else {
+          result.taskdata_ = taskdataBuilder_.build();
+        }
+        if (auditEventBuilder_ == null) {
+          result.auditEvent_ = auditEvent_;
+        } else {
+          result.auditEvent_ = auditEventBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -496,6 +1167,34 @@ public final class ClarosCommonTaskTask {
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
+        }
+        if (!other.getDescription().isEmpty()) {
+          description_ = other.description_;
+          onChanged();
+        }
+        if (!other.getAssignee().isEmpty()) {
+          assignee_ = other.assignee_;
+          onChanged();
+        }
+        if (!other.getReporter().isEmpty()) {
+          reporter_ = other.reporter_;
+          onChanged();
+        }
+        if (other.getPriority() != 0) {
+          setPriority(other.getPriority());
+        }
+        if (!other.getInstrumentId().isEmpty()) {
+          instrumentId_ = other.instrumentId_;
+          onChanged();
+        }
+        if (other.hasTaskDefinition()) {
+          mergeTaskDefinition(other.getTaskDefinition());
+        }
+        if (other.hasTaskdata()) {
+          mergeTaskdata(other.getTaskdata());
+        }
+        if (other.hasAuditEvent()) {
+          mergeAuditEvent(other.getAuditEvent());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -617,6 +1316,10 @@ public final class ClarosCommonTaskTask {
 
       private java.lang.Object name_ = "";
       /**
+       * <pre>
+       * User Defined Name for the Task
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public java.lang.String getName() {
@@ -632,6 +1335,10 @@ public final class ClarosCommonTaskTask {
         }
       }
       /**
+       * <pre>
+       * User Defined Name for the Task
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -648,6 +1355,10 @@ public final class ClarosCommonTaskTask {
         }
       }
       /**
+       * <pre>
+       * User Defined Name for the Task
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setName(
@@ -661,6 +1372,10 @@ public final class ClarosCommonTaskTask {
         return this;
       }
       /**
+       * <pre>
+       * User Defined Name for the Task
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder clearName() {
@@ -670,6 +1385,10 @@ public final class ClarosCommonTaskTask {
         return this;
       }
       /**
+       * <pre>
+       * User Defined Name for the Task
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setNameBytes(
@@ -682,6 +1401,859 @@ public final class ClarosCommonTaskTask {
         name_ = value;
         onChanged();
         return this;
+      }
+
+      private java.lang.Object description_ = "";
+      /**
+       * <pre>
+       * Desciption of the work to do in this task
+       * </pre>
+       *
+       * <code>string description = 3;</code>
+       */
+      public java.lang.String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Desciption of the work to do in this task
+       * </pre>
+       *
+       * <code>string description = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDescriptionBytes() {
+        java.lang.Object ref = description_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          description_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Desciption of the work to do in this task
+       * </pre>
+       *
+       * <code>string description = 3;</code>
+       */
+      public Builder setDescription(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Desciption of the work to do in this task
+       * </pre>
+       *
+       * <code>string description = 3;</code>
+       */
+      public Builder clearDescription() {
+        
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Desciption of the work to do in this task
+       * </pre>
+       *
+       * <code>string description = 3;</code>
+       */
+      public Builder setDescriptionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        description_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object assignee_ = "";
+      /**
+       * <pre>
+       * GUID of the User that the task is assigned
+       * </pre>
+       *
+       * <code>string assignee = 4;</code>
+       */
+      public java.lang.String getAssignee() {
+        java.lang.Object ref = assignee_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          assignee_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * GUID of the User that the task is assigned
+       * </pre>
+       *
+       * <code>string assignee = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAssigneeBytes() {
+        java.lang.Object ref = assignee_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          assignee_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * GUID of the User that the task is assigned
+       * </pre>
+       *
+       * <code>string assignee = 4;</code>
+       */
+      public Builder setAssignee(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        assignee_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * GUID of the User that the task is assigned
+       * </pre>
+       *
+       * <code>string assignee = 4;</code>
+       */
+      public Builder clearAssignee() {
+        
+        assignee_ = getDefaultInstance().getAssignee();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * GUID of the User that the task is assigned
+       * </pre>
+       *
+       * <code>string assignee = 4;</code>
+       */
+      public Builder setAssigneeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        assignee_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object reporter_ = "";
+      /**
+       * <pre>
+       * GUID of the user that created the task
+       * </pre>
+       *
+       * <code>string reporter = 5;</code>
+       */
+      public java.lang.String getReporter() {
+        java.lang.Object ref = reporter_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          reporter_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * GUID of the user that created the task
+       * </pre>
+       *
+       * <code>string reporter = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getReporterBytes() {
+        java.lang.Object ref = reporter_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          reporter_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * GUID of the user that created the task
+       * </pre>
+       *
+       * <code>string reporter = 5;</code>
+       */
+      public Builder setReporter(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        reporter_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * GUID of the user that created the task
+       * </pre>
+       *
+       * <code>string reporter = 5;</code>
+       */
+      public Builder clearReporter() {
+        
+        reporter_ = getDefaultInstance().getReporter();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * GUID of the user that created the task
+       * </pre>
+       *
+       * <code>string reporter = 5;</code>
+       */
+      public Builder setReporterBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        reporter_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int priority_ ;
+      /**
+       * <pre>
+       * TaskSeverity severity = 6;                  // Enumeration of common severities
+       * </pre>
+       *
+       * <code>uint32 priority = 6;</code>
+       */
+      public int getPriority() {
+        return priority_;
+      }
+      /**
+       * <pre>
+       * TaskSeverity severity = 6;                  // Enumeration of common severities
+       * </pre>
+       *
+       * <code>uint32 priority = 6;</code>
+       */
+      public Builder setPriority(int value) {
+        
+        priority_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * TaskSeverity severity = 6;                  // Enumeration of common severities
+       * </pre>
+       *
+       * <code>uint32 priority = 6;</code>
+       */
+      public Builder clearPriority() {
+        
+        priority_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object instrumentId_ = "";
+      /**
+       * <pre>
+       * Source                                   // From where did the task come?
+       * </pre>
+       *
+       * <code>string instrumentId = 7;</code>
+       */
+      public java.lang.String getInstrumentId() {
+        java.lang.Object ref = instrumentId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          instrumentId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Source                                   // From where did the task come?
+       * </pre>
+       *
+       * <code>string instrumentId = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getInstrumentIdBytes() {
+        java.lang.Object ref = instrumentId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          instrumentId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Source                                   // From where did the task come?
+       * </pre>
+       *
+       * <code>string instrumentId = 7;</code>
+       */
+      public Builder setInstrumentId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        instrumentId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Source                                   // From where did the task come?
+       * </pre>
+       *
+       * <code>string instrumentId = 7;</code>
+       */
+      public Builder clearInstrumentId() {
+        
+        instrumentId_ = getDefaultInstance().getInstrumentId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Source                                   // From where did the task come?
+       * </pre>
+       *
+       * <code>string instrumentId = 7;</code>
+       */
+      public Builder setInstrumentIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        instrumentId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private claros.common.task.ClarosCommonTaskDefinition.TaskDefinition taskDefinition_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.task.ClarosCommonTaskDefinition.TaskDefinition, claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder, claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder> taskDefinitionBuilder_;
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public boolean hasTaskDefinition() {
+        return taskDefinitionBuilder_ != null || taskDefinition_ != null;
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public claros.common.task.ClarosCommonTaskDefinition.TaskDefinition getTaskDefinition() {
+        if (taskDefinitionBuilder_ == null) {
+          return taskDefinition_ == null ? claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.getDefaultInstance() : taskDefinition_;
+        } else {
+          return taskDefinitionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public Builder setTaskDefinition(claros.common.task.ClarosCommonTaskDefinition.TaskDefinition value) {
+        if (taskDefinitionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          taskDefinition_ = value;
+          onChanged();
+        } else {
+          taskDefinitionBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public Builder setTaskDefinition(
+          claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder builderForValue) {
+        if (taskDefinitionBuilder_ == null) {
+          taskDefinition_ = builderForValue.build();
+          onChanged();
+        } else {
+          taskDefinitionBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public Builder mergeTaskDefinition(claros.common.task.ClarosCommonTaskDefinition.TaskDefinition value) {
+        if (taskDefinitionBuilder_ == null) {
+          if (taskDefinition_ != null) {
+            taskDefinition_ =
+              claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.newBuilder(taskDefinition_).mergeFrom(value).buildPartial();
+          } else {
+            taskDefinition_ = value;
+          }
+          onChanged();
+        } else {
+          taskDefinitionBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public Builder clearTaskDefinition() {
+        if (taskDefinitionBuilder_ == null) {
+          taskDefinition_ = null;
+          onChanged();
+        } else {
+          taskDefinition_ = null;
+          taskDefinitionBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder getTaskDefinitionBuilder() {
+        
+        onChanged();
+        return getTaskDefinitionFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      public claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder getTaskDefinitionOrBuilder() {
+        if (taskDefinitionBuilder_ != null) {
+          return taskDefinitionBuilder_.getMessageOrBuilder();
+        } else {
+          return taskDefinition_ == null ?
+              claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.getDefaultInstance() : taskDefinition_;
+        }
+      }
+      /**
+       * <pre>
+       * definition
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.task.ClarosCommonTaskDefinition.TaskDefinition, claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder, claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder> 
+          getTaskDefinitionFieldBuilder() {
+        if (taskDefinitionBuilder_ == null) {
+          taskDefinitionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              claros.common.task.ClarosCommonTaskDefinition.TaskDefinition, claros.common.task.ClarosCommonTaskDefinition.TaskDefinition.Builder, claros.common.task.ClarosCommonTaskDefinition.TaskDefinitionOrBuilder>(
+                  getTaskDefinition(),
+                  getParentForChildren(),
+                  isClean());
+          taskDefinition_ = null;
+        }
+        return taskDefinitionBuilder_;
+      }
+
+      private claros.common.task.ClarosCommonTaskData.TaskData taskdata_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.task.ClarosCommonTaskData.TaskData, claros.common.task.ClarosCommonTaskData.TaskData.Builder, claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder> taskdataBuilder_;
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public boolean hasTaskdata() {
+        return taskdataBuilder_ != null || taskdata_ != null;
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public claros.common.task.ClarosCommonTaskData.TaskData getTaskdata() {
+        if (taskdataBuilder_ == null) {
+          return taskdata_ == null ? claros.common.task.ClarosCommonTaskData.TaskData.getDefaultInstance() : taskdata_;
+        } else {
+          return taskdataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public Builder setTaskdata(claros.common.task.ClarosCommonTaskData.TaskData value) {
+        if (taskdataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          taskdata_ = value;
+          onChanged();
+        } else {
+          taskdataBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public Builder setTaskdata(
+          claros.common.task.ClarosCommonTaskData.TaskData.Builder builderForValue) {
+        if (taskdataBuilder_ == null) {
+          taskdata_ = builderForValue.build();
+          onChanged();
+        } else {
+          taskdataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public Builder mergeTaskdata(claros.common.task.ClarosCommonTaskData.TaskData value) {
+        if (taskdataBuilder_ == null) {
+          if (taskdata_ != null) {
+            taskdata_ =
+              claros.common.task.ClarosCommonTaskData.TaskData.newBuilder(taskdata_).mergeFrom(value).buildPartial();
+          } else {
+            taskdata_ = value;
+          }
+          onChanged();
+        } else {
+          taskdataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public Builder clearTaskdata() {
+        if (taskdataBuilder_ == null) {
+          taskdata_ = null;
+          onChanged();
+        } else {
+          taskdata_ = null;
+          taskdataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public claros.common.task.ClarosCommonTaskData.TaskData.Builder getTaskdataBuilder() {
+        
+        onChanged();
+        return getTaskdataFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      public claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder getTaskdataOrBuilder() {
+        if (taskdataBuilder_ != null) {
+          return taskdataBuilder_.getMessageOrBuilder();
+        } else {
+          return taskdata_ == null ?
+              claros.common.task.ClarosCommonTaskData.TaskData.getDefaultInstance() : taskdata_;
+        }
+      }
+      /**
+       * <pre>
+       * data
+       * </pre>
+       *
+       * <code>.claros.common.task.TaskData taskdata = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.task.ClarosCommonTaskData.TaskData, claros.common.task.ClarosCommonTaskData.TaskData.Builder, claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder> 
+          getTaskdataFieldBuilder() {
+        if (taskdataBuilder_ == null) {
+          taskdataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              claros.common.task.ClarosCommonTaskData.TaskData, claros.common.task.ClarosCommonTaskData.TaskData.Builder, claros.common.task.ClarosCommonTaskData.TaskDataOrBuilder>(
+                  getTaskdata(),
+                  getParentForChildren(),
+                  isClean());
+          taskdata_ = null;
+        }
+        return taskdataBuilder_;
+      }
+
+      private claros.common.core.ClarosCommonCoreAuditevent.AuditEvent auditEvent_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.core.ClarosCommonCoreAuditevent.AuditEvent, claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder, claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder> auditEventBuilder_;
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public boolean hasAuditEvent() {
+        return auditEventBuilder_ != null || auditEvent_ != null;
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent getAuditEvent() {
+        if (auditEventBuilder_ == null) {
+          return auditEvent_ == null ? claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.getDefaultInstance() : auditEvent_;
+        } else {
+          return auditEventBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public Builder setAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
+        if (auditEventBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          auditEvent_ = value;
+          onChanged();
+        } else {
+          auditEventBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public Builder setAuditEvent(
+          claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder builderForValue) {
+        if (auditEventBuilder_ == null) {
+          auditEvent_ = builderForValue.build();
+          onChanged();
+        } else {
+          auditEventBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public Builder mergeAuditEvent(claros.common.core.ClarosCommonCoreAuditevent.AuditEvent value) {
+        if (auditEventBuilder_ == null) {
+          if (auditEvent_ != null) {
+            auditEvent_ =
+              claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.newBuilder(auditEvent_).mergeFrom(value).buildPartial();
+          } else {
+            auditEvent_ = value;
+          }
+          onChanged();
+        } else {
+          auditEventBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public Builder clearAuditEvent() {
+        if (auditEventBuilder_ == null) {
+          auditEvent_ = null;
+          onChanged();
+        } else {
+          auditEvent_ = null;
+          auditEventBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder getAuditEventBuilder() {
+        
+        onChanged();
+        return getAuditEventFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      public claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder getAuditEventOrBuilder() {
+        if (auditEventBuilder_ != null) {
+          return auditEventBuilder_.getMessageOrBuilder();
+        } else {
+          return auditEvent_ == null ?
+              claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.getDefaultInstance() : auditEvent_;
+        }
+      }
+      /**
+       * <pre>
+       * Audit Events related to to the Task
+       * </pre>
+       *
+       * <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          claros.common.core.ClarosCommonCoreAuditevent.AuditEvent, claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder, claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder> 
+          getAuditEventFieldBuilder() {
+        if (auditEventBuilder_ == null) {
+          auditEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              claros.common.core.ClarosCommonCoreAuditevent.AuditEvent, claros.common.core.ClarosCommonCoreAuditevent.AuditEvent.Builder, claros.common.core.ClarosCommonCoreAuditevent.AuditEventOrBuilder>(
+                  getAuditEvent(),
+                  getParentForChildren(),
+                  isClean());
+          auditEvent_ = null;
+        }
+        return auditEventBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -751,8 +2323,17 @@ public final class ClarosCommonTaskTask {
   static {
     java.lang.String[] descriptorData = {
       "\n\035claros_common_task_task.proto\022\022claros." +
-      "common.task\" \n\004Task\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030" +
-      "\002 \001(\tb\006proto3"
+      "common.task\032#claros_common_task_definiti" +
+      "on.proto\032\035claros_common_task_data.proto\032" +
+      "#claros_common_core_auditevent.proto\"\241\002\n" +
+      "\004Task\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\023\n\013descr" +
+      "iption\030\003 \001(\t\022\020\n\010assignee\030\004 \001(\t\022\020\n\010report" +
+      "er\030\005 \001(\t\022\020\n\010priority\030\006 \001(\r\022\024\n\014instrument" +
+      "Id\030\007 \001(\t\022:\n\016taskDefinition\030\010 \001(\0132\".claro" +
+      "s.common.task.TaskDefinition\022.\n\010taskdata" +
+      "\030\t \001(\0132\034.claros.common.task.TaskData\0222\n\n" +
+      "auditEvent\030\n \001(\0132\036.claros.common.core.Au" +
+      "ditEventb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -765,13 +2346,19 @@ public final class ClarosCommonTaskTask {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          claros.common.task.ClarosCommonTaskDefinition.getDescriptor(),
+          claros.common.task.ClarosCommonTaskData.getDescriptor(),
+          claros.common.core.ClarosCommonCoreAuditevent.getDescriptor(),
         }, assigner);
     internal_static_claros_common_task_Task_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_claros_common_task_Task_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_task_Task_descriptor,
-        new java.lang.String[] { "Id", "Name", });
+        new java.lang.String[] { "Id", "Name", "Description", "Assignee", "Reporter", "Priority", "InstrumentId", "TaskDefinition", "Taskdata", "AuditEvent", });
+    claros.common.task.ClarosCommonTaskDefinition.getDescriptor();
+    claros.common.task.ClarosCommonTaskData.getDescriptor();
+    claros.common.core.ClarosCommonCoreAuditevent.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -12,27 +12,27 @@ use UnexpectedValueException;
 class FormTemplateType
 {
     /**
-     * Generated from protobuf enum <code>FT_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>FORM_TEMPLATE_UNKNOWN = 0;</code>
      */
-    const FT_UNKNOWN = 0;
+    const FORM_TEMPLATE_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>FT_PLANT = 1;</code>
+     * Generated from protobuf enum <code>FORM_TEMPLATE_PLANT = 1;</code>
      */
-    const FT_PLANT = 1;
+    const FORM_TEMPLATE_PLANT = 1;
     /**
-     * Generated from protobuf enum <code>FT_LABORATORY = 2;</code>
+     * Generated from protobuf enum <code>FORM_TEMPLATE_LABORATORY = 2;</code>
      */
-    const FT_LABORATORY = 2;
+    const FORM_TEMPLATE_LABORATORY = 2;
     /**
-     * Generated from protobuf enum <code>FT_ENTERPRISE = 3;</code>
+     * Generated from protobuf enum <code>FORM_TEMPLATE_ENTERPRISE = 3;</code>
      */
-    const FT_ENTERPRISE = 3;
+    const FORM_TEMPLATE_ENTERPRISE = 3;
 
     private static $valueToName = [
-        self::FT_UNKNOWN => 'FT_UNKNOWN',
-        self::FT_PLANT => 'FT_PLANT',
-        self::FT_LABORATORY => 'FT_LABORATORY',
-        self::FT_ENTERPRISE => 'FT_ENTERPRISE',
+        self::FORM_TEMPLATE_UNKNOWN => 'FORM_TEMPLATE_UNKNOWN',
+        self::FORM_TEMPLATE_PLANT => 'FORM_TEMPLATE_PLANT',
+        self::FORM_TEMPLATE_LABORATORY => 'FORM_TEMPLATE_LABORATORY',
+        self::FORM_TEMPLATE_ENTERPRISE => 'FORM_TEMPLATE_ENTERPRISE',
     ];
 
     public static function name($value)

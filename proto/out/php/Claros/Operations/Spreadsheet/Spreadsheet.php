@@ -20,6 +20,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
      */
     private $name = '';
     /**
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     *
      * Generated from protobuf field <code>string locationId = 2;</code>
      */
     private $locationId = '';
@@ -30,6 +32,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
      */
     private $timeDefinition;
     /**
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     private $worksheet;
@@ -43,9 +47,11 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *           header
      *     @type string $locationId
+     *           Where this spreadsheet is bound.  I.e. the PlantId
      *     @type \Claros\Operations\Spreadsheet\SpreadsheetDefinition[]|\Google\Protobuf\Internal\RepeatedField $timeDefinition
      *           definition 
      *     @type \Claros\Operations\Spreadsheet\Worksheet[]|\Google\Protobuf\Internal\RepeatedField $worksheet
+     *           definition and data for worksheets.  Data and definition will be split up within the worksheets
      * }
      */
     public function __construct($data = NULL) {
@@ -80,6 +86,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     *
      * Generated from protobuf field <code>string locationId = 2;</code>
      * @return string
      */
@@ -89,6 +97,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     *
      * Generated from protobuf field <code>string locationId = 2;</code>
      * @param string $var
      * @return $this
@@ -128,6 +138,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -137,6 +149,8 @@ class Spreadsheet extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      * @param \Claros\Operations\Spreadsheet\Worksheet[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this

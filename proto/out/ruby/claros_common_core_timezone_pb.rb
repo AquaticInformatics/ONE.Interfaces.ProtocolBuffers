@@ -6,8 +6,8 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_timezone.proto", :syntax => :proto3) do
     add_enum "claros.common.core.TimeZone" do
-      value :TZ_UNKNOWN, 0
-      value :TZ_UTC, 1
+      value :TIMEZONE_UNKNOWN, 0
+      value :TIMEZONE_UTC, 1
     end
   end
 end

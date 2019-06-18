@@ -36,18 +36,19 @@ GPBEnumDescriptor *DayOfWeek_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "DowUnknown\000DowSunday\000DowMonday\000DowTuesda"
-        "y\000DowWednesday\000DowThursday\000DowFriday\000Dow"
-        "Saturday\000";
+        "DayOfWeekUnknown\000DayOfWeekSunday\000DayOfWe"
+        "ekMonday\000DayOfWeekTuesday\000DayOfWeekWedne"
+        "sday\000DayOfWeekThursday\000DayOfWeekFriday\000D"
+        "ayOfWeekSaturday\000";
     static const int32_t values[] = {
-        DayOfWeek_DowUnknown,
-        DayOfWeek_DowSunday,
-        DayOfWeek_DowMonday,
-        DayOfWeek_DowTuesday,
-        DayOfWeek_DowWednesday,
-        DayOfWeek_DowThursday,
-        DayOfWeek_DowFriday,
-        DayOfWeek_DowSaturday,
+        DayOfWeek_DayOfWeekUnknown,
+        DayOfWeek_DayOfWeekSunday,
+        DayOfWeek_DayOfWeekMonday,
+        DayOfWeek_DayOfWeekTuesday,
+        DayOfWeek_DayOfWeekWednesday,
+        DayOfWeek_DayOfWeekThursday,
+        DayOfWeek_DayOfWeekFriday,
+        DayOfWeek_DayOfWeekSaturday,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(DayOfWeek)
@@ -65,14 +66,14 @@ GPBEnumDescriptor *DayOfWeek_EnumDescriptor(void) {
 
 BOOL DayOfWeek_IsValidValue(int32_t value__) {
   switch (value__) {
-    case DayOfWeek_DowUnknown:
-    case DayOfWeek_DowSunday:
-    case DayOfWeek_DowMonday:
-    case DayOfWeek_DowTuesday:
-    case DayOfWeek_DowWednesday:
-    case DayOfWeek_DowThursday:
-    case DayOfWeek_DowFriday:
-    case DayOfWeek_DowSaturday:
+    case DayOfWeek_DayOfWeekUnknown:
+    case DayOfWeek_DayOfWeekSunday:
+    case DayOfWeek_DayOfWeekMonday:
+    case DayOfWeek_DayOfWeekTuesday:
+    case DayOfWeek_DayOfWeekWednesday:
+    case DayOfWeek_DayOfWeekThursday:
+    case DayOfWeek_DayOfWeekFriday:
+    case DayOfWeek_DayOfWeekSaturday:
       return YES;
     default:
       return NO;

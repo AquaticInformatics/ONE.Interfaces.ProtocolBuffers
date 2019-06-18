@@ -56,19 +56,19 @@ namespace common {
 namespace core {
 
 enum ReportableQualifierType {
-  RQ_UNKNOWN = 0,
-  RQ_NONDETECT = 1,
-  RQ_ESTIMATE = 2,
-  RQ_DETECTNONQUALIFIABLE = 3,
-  RQ_GREATERTHAN = 4,
-  RQ_LESSTHAN = 5,
-  RQ_TOO_NUMEROUS_TO_COUNT = 6,
+  REPORTABLE_QUALIFIER_UNKNOWN = 0,
+  REPORTABLE_QUALIFIER_NONDETECT = 1,
+  REPORTABLE_QUALIFIER_ESTIMATE = 2,
+  REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3,
+  REPORTABLE_QUALIFIER_GREATERTHAN = 4,
+  REPORTABLE_QUALIFIER_LESSTHAN = 5,
+  REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6,
   ReportableQualifierType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   ReportableQualifierType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool ReportableQualifierType_IsValid(int value);
-const ReportableQualifierType ReportableQualifierType_MIN = RQ_UNKNOWN;
-const ReportableQualifierType ReportableQualifierType_MAX = RQ_TOO_NUMEROUS_TO_COUNT;
+const ReportableQualifierType ReportableQualifierType_MIN = REPORTABLE_QUALIFIER_UNKNOWN;
+const ReportableQualifierType ReportableQualifierType_MAX = REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT;
 const int ReportableQualifierType_ARRAYSIZE = ReportableQualifierType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* ReportableQualifierType_descriptor();

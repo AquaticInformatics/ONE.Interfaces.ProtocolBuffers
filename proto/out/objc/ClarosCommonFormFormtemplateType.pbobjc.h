@@ -38,10 +38,10 @@ typedef GPB_ENUM(FormTemplateType) {
    * of the field.
    **/
   FormTemplateType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  FormTemplateType_FtUnknown = 0,
-  FormTemplateType_FtPlant = 1,
-  FormTemplateType_FtLaboratory = 2,
-  FormTemplateType_FtEnterprise = 3,
+  FormTemplateType_FormTemplateUnknown = 0,
+  FormTemplateType_FormTemplatePlant = 1,
+  FormTemplateType_FormTemplateLaboratory = 2,
+  FormTemplateType_FormTemplateEnterprise = 3,
 };
 
 GPBEnumDescriptor *FormTemplateType_EnumDescriptor(void);

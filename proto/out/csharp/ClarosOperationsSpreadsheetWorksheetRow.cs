@@ -80,6 +80,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "rowNumber" field.</summary>
     public const int RowNumberFieldNumber = 1;
     private uint rowNumber_;
+    /// <summary>
+    /// Row number - Based on 01-01-1900
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RowNumber {
       get { return rowNumber_; }
@@ -91,6 +94,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "UTCTimeWindow" field.</summary>
     public const int UTCTimeWindowFieldNumber = 2;
     private global::Claros.Common.Core.TimeWindow uTCTimeWindow_;
+    /// <summary>
+    /// UTC time window related to the row.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.TimeWindow UTCTimeWindow {
       get { return uTCTimeWindow_; }
@@ -104,6 +110,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Cell> _repeated_cells_codec
         = pb::FieldCodec.ForMessage(26, global::Claros.Operations.Spreadsheet.Cell.Parser);
     private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell> cells_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell>();
+    /// <summary>
+    /// Cells that are stored within the row.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell> Cells {
       get { return cells_; }

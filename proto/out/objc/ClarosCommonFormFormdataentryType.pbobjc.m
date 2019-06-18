@@ -36,14 +36,15 @@ GPBEnumDescriptor *FormDataEntryType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "FdeUnknown\000FdeInstrument\000FdeTotalizer\000Fd"
-        "eConsumption\000FdeText\000";
+        "FormDateEntryUnknown\000FormDateEntryInstru"
+        "ment\000FormDateEntryTotalizer\000FormDateEntr"
+        "yConsumption\000FormDateEntryText\000";
     static const int32_t values[] = {
-        FormDataEntryType_FdeUnknown,
-        FormDataEntryType_FdeInstrument,
-        FormDataEntryType_FdeTotalizer,
-        FormDataEntryType_FdeConsumption,
-        FormDataEntryType_FdeText,
+        FormDataEntryType_FormDateEntryUnknown,
+        FormDataEntryType_FormDateEntryInstrument,
+        FormDataEntryType_FormDateEntryTotalizer,
+        FormDataEntryType_FormDateEntryConsumption,
+        FormDataEntryType_FormDateEntryText,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(FormDataEntryType)
@@ -61,11 +62,11 @@ GPBEnumDescriptor *FormDataEntryType_EnumDescriptor(void) {
 
 BOOL FormDataEntryType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case FormDataEntryType_FdeUnknown:
-    case FormDataEntryType_FdeInstrument:
-    case FormDataEntryType_FdeTotalizer:
-    case FormDataEntryType_FdeConsumption:
-    case FormDataEntryType_FdeText:
+    case FormDataEntryType_FormDateEntryUnknown:
+    case FormDataEntryType_FormDateEntryInstrument:
+    case FormDataEntryType_FormDateEntryTotalizer:
+    case FormDataEntryType_FormDateEntryConsumption:
+    case FormDataEntryType_FormDateEntryText:
       return YES;
     default:
       return NO;

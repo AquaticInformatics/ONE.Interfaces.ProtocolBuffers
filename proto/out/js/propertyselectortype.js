@@ -13,10 +13,10 @@ goog.provide('proto.claros.common.computation.PropertySelectorType');
  * @enum {number}
  */
 proto.claros.common.computation.PropertySelectorType = {
-  PS_UNKNOWN: 0,
-  PS_MEASUREMENTTIME: 1,
-  PS_BEGINLINETIME: 2,
-  PS_ENDLINETIME: 3,
-  PS_MEASURMENTVALUE: 4
+  PROPERTY_SELECTOR_UNKNOWN: 0,
+  PROPERTY_SELECTOR_MEASUREMENTTIME: 1,
+  PROPERTY_SELECTOR_BEGINLINETIME: 2,
+  PROPERTY_SELECTOR_ENDLINETIME: 3,
+  PROPERTY_SELECTOR_MEASURMENTVALUE: 4
 };
 

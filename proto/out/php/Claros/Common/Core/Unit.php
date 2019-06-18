@@ -14,30 +14,44 @@ use Google\Protobuf\Internal\GPBUtil;
 class Unit extends \Google\Protobuf\Internal\Message
 {
     /**
+     * GUID for the Unit
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      */
     private $Id = '';
     /**
+     * Integer equivalent that uniquely describes the unit
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      */
     private $IntId = 0;
     /**
+     * Localization key for the unit
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      */
     private $i18nKey = '';
     /**
+     * The untranslated unit name
+     *
      * Generated from protobuf field <code>string unitName = 4;</code>
      */
     private $unitName = '';
     /**
+     * The quantity type related to the unit
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      */
     private $quantityTypeId = '';
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      */
     private $description = '';
     /**
+     * ????? Do we need these audit fields
+     *
      * Generated from protobuf field <code>string createdById = 7;</code>
      */
     private $createdById = '';
@@ -61,12 +75,19 @@ class Unit extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $Id
+     *           GUID for the Unit
      *     @type int $IntId
+     *           Integer equivalent that uniquely describes the unit
      *     @type string $i18nKey
+     *           Localization key for the unit
      *     @type string $unitName
+     *           The untranslated unit name
      *     @type string $quantityTypeId
+     *           The quantity type related to the unit
      *     @type string $description
+     *           ?????
      *     @type string $createdById
+     *           ????? Do we need these audit fields
      *     @type \Claros\Common\Core\ClarosDateTime $createdOn
      *     @type string $modifiedById
      *     @type \Claros\Common\Core\ClarosDateTime $modifiedOn
@@ -78,6 +99,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * GUID for the Unit
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      * @return string
      */
@@ -87,6 +110,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * GUID for the Unit
+     *
      * Generated from protobuf field <code>string Id = 1;</code>
      * @param string $var
      * @return $this
@@ -100,6 +125,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Integer equivalent that uniquely describes the unit
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      * @return int
      */
@@ -109,6 +136,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Integer equivalent that uniquely describes the unit
+     *
      * Generated from protobuf field <code>uint32 IntId = 2;</code>
      * @param int $var
      * @return $this
@@ -122,6 +151,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Localization key for the unit
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      * @return string
      */
@@ -131,6 +162,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Localization key for the unit
+     *
      * Generated from protobuf field <code>string i18nKey = 3;</code>
      * @param string $var
      * @return $this
@@ -144,6 +177,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The untranslated unit name
+     *
      * Generated from protobuf field <code>string unitName = 4;</code>
      * @return string
      */
@@ -153,6 +188,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The untranslated unit name
+     *
      * Generated from protobuf field <code>string unitName = 4;</code>
      * @param string $var
      * @return $this
@@ -166,6 +203,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The quantity type related to the unit
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      * @return string
      */
@@ -175,6 +214,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The quantity type related to the unit
+     *
      * Generated from protobuf field <code>string quantityTypeId = 5;</code>
      * @param string $var
      * @return $this
@@ -188,6 +229,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      * @return string
      */
@@ -197,6 +240,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ?????
+     *
      * Generated from protobuf field <code>string description = 6;</code>
      * @param string $var
      * @return $this
@@ -210,6 +255,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ????? Do we need these audit fields
+     *
      * Generated from protobuf field <code>string createdById = 7;</code>
      * @return string
      */
@@ -219,6 +266,8 @@ class Unit extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ????? Do we need these audit fields
+     *
      * Generated from protobuf field <code>string createdById = 7;</code>
      * @param string $var
      * @return $this

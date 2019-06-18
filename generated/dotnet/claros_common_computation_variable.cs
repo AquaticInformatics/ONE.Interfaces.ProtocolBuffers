@@ -29,8 +29,8 @@ namespace claros.common.computation
         [global::System.ComponentModel.DefaultValue("")]
         public string quantityTypeId { get; set; } = "";
 
-        [global::ProtoBuf.ProtoMember(5, Name = @"cursor")]
-        public ComputationCursorType Cursor { get; set; }
+        [global::ProtoBuf.ProtoMember(5)]
+        public ComputationCursorType cursorType { get; set; }
 
         [global::ProtoBuf.ProtoMember(6)]
         public uint cursorAbsolute { get; set; }

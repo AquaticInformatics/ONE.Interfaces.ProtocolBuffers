@@ -25,11 +25,14 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFjbGFyb3NfY29tbW9uX2NvcmVfcmVwb3J0YWJsZXF1YWxpZmllcl90eXBl",
-            "LnByb3RvEhJjbGFyb3MuY29tbW9uLmNvcmUqrAEKF1JlcG9ydGFibGVRdWFs",
-            "aWZpZXJUeXBlEg4KClJRX1VOS05PV04QABIQCgxSUV9OT05ERVRFQ1QQARIP",
-            "CgtSUV9FU1RJTUFURRACEhsKF1JRX0RFVEVDVE5PTlFVQUxJRklBQkxFEAMS",
-            "EgoOUlFfR1JFQVRFUlRIQU4QBBIPCgtSUV9MRVNTVEhBThAFEhwKGFJRX1RP",
-            "T19OVU1FUk9VU19UT19DT1VOVBAGYgZwcm90bzM="));
+            "LnByb3RvEhJjbGFyb3MuY29tbW9uLmNvcmUqqgIKF1JlcG9ydGFibGVRdWFs",
+            "aWZpZXJUeXBlEiAKHFJFUE9SVEFCTEVfUVVBTElGSUVSX1VOS05PV04QABIi",
+            "Ch5SRVBPUlRBQkxFX1FVQUxJRklFUl9OT05ERVRFQ1QQARIhCh1SRVBPUlRB",
+            "QkxFX1FVQUxJRklFUl9FU1RJTUFURRACEi0KKVJFUE9SVEFCTEVfUVVBTElG",
+            "SUVSX0RFVEVDVE5PTlFVQUxJRklBQkxFEAMSJAogUkVQT1JUQUJMRV9RVUFM",
+            "SUZJRVJfR1JFQVRFUlRIQU4QBBIhCh1SRVBPUlRBQkxFX1FVQUxJRklFUl9M",
+            "RVNTVEhBThAFEi4KKlJFUE9SVEFCTEVfUVVBTElGSUVSX1RPT19OVU1FUk9V",
+            "U19UT19DT1VOVBAGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.ReportableQualifierType), }, null));
@@ -39,13 +42,31 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum ReportableQualifierType {
-    [pbr::OriginalName("RQ_UNKNOWN")] RqUnknown = 0,
-    [pbr::OriginalName("RQ_NONDETECT")] RqNondetect = 1,
-    [pbr::OriginalName("RQ_ESTIMATE")] RqEstimate = 2,
-    [pbr::OriginalName("RQ_DETECTNONQUALIFIABLE")] RqDetectnonqualifiable = 3,
-    [pbr::OriginalName("RQ_GREATERTHAN")] RqGreaterthan = 4,
-    [pbr::OriginalName("RQ_LESSTHAN")] RqLessthan = 5,
-    [pbr::OriginalName("RQ_TOO_NUMEROUS_TO_COUNT")] RqTooNumerousToCount = 6,
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_UNKNOWN")] ReportableQualifierUnknown = 0,
+    /// <summary>
+    /// Non-Detect. Most states now require the &lt; detection limit and this should no longer be used
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_NONDETECT")] ReportableQualifierNondetect = 1,
+    /// <summary>
+    /// Estimated.
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_ESTIMATE")] ReportableQualifierEstimate = 2,
+    /// <summary>
+    /// Detected, not quantifiable. Result is above the Method Detection Limit (i.e.2) but below the Report Limit (i.e 4). Used in California.
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE")] ReportableQualifierDetectnonqualifiable = 3,
+    /// <summary>
+    /// Result is greater than xxxx. Used instead of TNTC.
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_GREATERTHAN")] ReportableQualifierGreaterthan = 4,
+    /// <summary>
+    /// Result was below the detection limit of YYYY.
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_LESSTHAN")] ReportableQualifierLessthan = 5,
+    /// <summary>
+    /// Too many colonies were present (TNTC); the numeric value represents the filtration volume.
+    /// </summary>
+    [pbr::OriginalName("REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT")] ReportableQualifierTooNumerousToCount = 6,
   }
 
   #endregion

@@ -40,14 +40,16 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto[] =
   "\n*claros_common_form_formtemplate_type.p"
-  "roto\022\022claros.common.form*V\n\020FormTemplate"
-  "Type\022\016\n\nFT_UNKNOWN\020\000\022\014\n\010FT_PLANT\020\001\022\021\n\rFT"
-  "_LABORATORY\020\002\022\021\n\rFT_ENTERPRISE\020\003b\006proto3"
+  "roto\022\022claros.common.form*\202\001\n\020FormTemplat"
+  "eType\022\031\n\025FORM_TEMPLATE_UNKNOWN\020\000\022\027\n\023FORM"
+  "_TEMPLATE_PLANT\020\001\022\034\n\030FORM_TEMPLATE_LABOR"
+  "ATORY\020\002\022\034\n\030FORM_TEMPLATE_ENTERPRISE\020\003b\006p"
+  "roto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto,
-  "claros_common_form_formtemplate_type.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto, 160,
+  "claros_common_form_formtemplate_type.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto, 205,
 };
 
 void AddDescriptors_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto() {

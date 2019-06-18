@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n!claros_common_core_timezone.proto\x12\x12\x63laros.common.core*&\n\x08TimeZone\x12\x0e\n\nTZ_UNKNOWN\x10\x00\x12\n\n\x06TZ_UTC\x10\x01\x62\x06proto3')
+  serialized_pb=_b('\n!claros_common_core_timezone.proto\x12\x12\x63laros.common.core*2\n\x08TimeZone\x12\x14\n\x10TIMEZONE_UNKNOWN\x10\x00\x12\x10\n\x0cTIMEZONE_UTC\x10\x01\x62\x06proto3')
 )
 
 _TIMEZONE = _descriptor.EnumDescriptor(
@@ -31,24 +31,24 @@ _TIMEZONE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='TZ_UNKNOWN', index=0, number=0,
+      name='TIMEZONE_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TZ_UTC', index=1, number=1,
+      name='TIMEZONE_UTC', index=1, number=1,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=57,
-  serialized_end=95,
+  serialized_end=107,
 )
 _sym_db.RegisterEnumDescriptor(_TIMEZONE)
 
 TimeZone = enum_type_wrapper.EnumTypeWrapper(_TIMEZONE)
-TZ_UNKNOWN = 0
-TZ_UTC = 1
+TIMEZONE_UNKNOWN = 0
+TIMEZONE_UTC = 1
 
 
 DESCRIPTOR.enum_types_by_name['TimeZone'] = _TIMEZONE

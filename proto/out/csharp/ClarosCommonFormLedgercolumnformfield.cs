@@ -25,14 +25,14 @@ namespace Claros.Common.Form {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5jbGFyb3NfY29tbW9uX2Zvcm1fbGVkZ2VyY29sdW1uZm9ybWZpZWxkLnBy",
-            "b3RvEhJjbGFyb3MuY29tbW9uLmZvcm0aI2NsYXJvc19jb21tb25fY29yZV9y",
-            "ZWN1cnJlbmNlLnByb3RvIqkBChVMZWRnZXJDb2x1bW5Gb3JtRmllbGQSGAoQ",
-            "bGVkZ2VyQ29sdW1uR1VJRBgBIAEoCRIMCgR1bml0GAIgASgJEg8KB3VwTGlt",
-            "aXQYAyABKAkSEAoIbG93TGltaXQYBCABKAkSMgoKdGltZVdpbmRvdxgFIAEo",
-            "CzIeLmNsYXJvcy5jb21tb24uY29yZS5SZWN1cnJlbmNlEhEKCXBhcmFtZXRl",
-            "chgGIAEoCWIGcHJvdG8z"));
+            "b3RvEhJjbGFyb3MuY29tbW9uLmZvcm0aKWNsYXJvc19jb21tb25fcmVjdXJy",
+            "ZW5jZV9yZWN1cnJlbmNlLnByb3RvIq8BChVMZWRnZXJDb2x1bW5Gb3JtRmll",
+            "bGQSGAoQbGVkZ2VyQ29sdW1uR1VJRBgBIAEoCRIMCgR1bml0GAIgASgJEg8K",
+            "B3VwTGltaXQYAyABKAkSEAoIbG93TGltaXQYBCABKAkSOAoKdGltZVdpbmRv",
+            "dxgFIAEoCzIkLmNsYXJvcy5jb21tb24ucmVjdXJyZW5jZS5SZWN1cnJlbmNl",
+            "EhEKCXBhcmFtZXRlchgGIAEoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Common.Recurrence.ClarosCommonRecurrenceRecurrenceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.LedgerColumnFormField), global::Claros.Common.Form.LedgerColumnFormField.Parser, new[]{ "LedgerColumnGUID", "Unit", "UpLimit", "LowLimit", "TimeWindow", "Parameter" }, null, null, null)
           }));
@@ -126,9 +126,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "timeWindow" field.</summary>
     public const int TimeWindowFieldNumber = 5;
-    private global::Claros.Common.Core.Recurrence timeWindow_;
+    private global::Claros.Common.Recurrence.Recurrence timeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence TimeWindow {
+    public global::Claros.Common.Recurrence.Recurrence TimeWindow {
       get { return timeWindow_; }
       set {
         timeWindow_ = value;
@@ -265,7 +265,7 @@ namespace Claros.Common.Form {
       }
       if (other.timeWindow_ != null) {
         if (timeWindow_ == null) {
-          TimeWindow = new global::Claros.Common.Core.Recurrence();
+          TimeWindow = new global::Claros.Common.Recurrence.Recurrence();
         }
         TimeWindow.MergeFrom(other.TimeWindow);
       }
@@ -301,7 +301,7 @@ namespace Claros.Common.Form {
           }
           case 42: {
             if (timeWindow_ == null) {
-              TimeWindow = new global::Claros.Common.Core.Recurrence();
+              TimeWindow = new global::Claros.Common.Recurrence.Recurrence();
             }
             input.ReadMessage(TimeWindow);
             break;

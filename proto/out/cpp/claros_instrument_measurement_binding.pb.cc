@@ -18,21 +18,23 @@
 
 namespace claros {
 namespace instrument {
+namespace measurement {
 class InstrumentMeasurementBindingDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<InstrumentMeasurementBinding> _instance;
 } _InstrumentMeasurementBinding_default_instance_;
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 static void InitDefaultsInstrumentMeasurementBinding_claros_5finstrument_5fmeasurement_5fbinding_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::claros::instrument::_InstrumentMeasurementBinding_default_instance_;
-    new (ptr) ::claros::instrument::InstrumentMeasurementBinding();
+    void* ptr = &::claros::instrument::measurement::_InstrumentMeasurementBinding_default_instance_;
+    new (ptr) ::claros::instrument::measurement::InstrumentMeasurementBinding();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::claros::instrument::InstrumentMeasurementBinding::InitAsDefaultInstance();
+  ::claros::instrument::measurement::InstrumentMeasurementBinding::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_InstrumentMeasurementBinding_claros_5finstrument_5fmeasurement_5fbinding_2eproto =
@@ -48,20 +50,20 @@ constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descr
 
 const ::google::protobuf::uint32 TableStruct_claros_5finstrument_5fmeasurement_5fbinding_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::InstrumentMeasurementBinding, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::InstrumentMeasurementBinding, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::InstrumentMeasurementBinding, instrumentmeasurementid_),
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::InstrumentMeasurementBinding, aggregatetype_),
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::InstrumentMeasurementBinding, unitid_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::InstrumentMeasurementBinding, instrumentmeasurementid_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::InstrumentMeasurementBinding, aggregatetype_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::InstrumentMeasurementBinding, unitid_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::claros::instrument::InstrumentMeasurementBinding)},
+  { 0, -1, sizeof(::claros::instrument::measurement::InstrumentMeasurementBinding)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::claros::instrument::_InstrumentMeasurementBinding_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::claros::instrument::measurement::_InstrumentMeasurementBinding_default_instance_),
 };
 
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_claros_5finstrument_5fmeasurement_5fbinding_2eproto = {
@@ -72,17 +74,17 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5finstrument_5fmeasurement_5fbinding_2eproto[] =
   "\n+claros_instrument_measurement_binding."
-  "proto\022\021claros.instrument\032\'claros_common_"
-  "core_aggregate_type.proto\"\211\001\n\034Instrument"
-  "MeasurementBinding\022\037\n\027instrumentMeasurem"
-  "entId\030\001 \001(\t\0228\n\raggregateType\030\002 \001(\0162!.cla"
-  "ros.common.core.AggregateType\022\016\n\006unitId\030"
-  "\003 \001(\rb\006proto3"
+  "proto\022\035claros.instrument.measurement\032\'cl"
+  "aros_common_core_aggregate_type.proto\"\211\001"
+  "\n\034InstrumentMeasurementBinding\022\037\n\027instru"
+  "mentMeasurementId\030\001 \001(\t\0228\n\raggregateType"
+  "\030\002 \001(\0162!.claros.common.core.AggregateTyp"
+  "e\022\016\n\006unitId\030\003 \001(\rb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5finstrument_5fmeasurement_5fbinding_2eproto = {
   false, InitDefaults_claros_5finstrument_5fmeasurement_5fbinding_2eproto, 
   descriptor_table_protodef_claros_5finstrument_5fmeasurement_5fbinding_2eproto,
-  "claros_instrument_measurement_binding.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_5fbinding_2eproto, 253,
+  "claros_instrument_measurement_binding.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_5fbinding_2eproto, 265,
 };
 
 void AddDescriptors_claros_5finstrument_5fmeasurement_5fbinding_2eproto() {
@@ -97,6 +99,7 @@ void AddDescriptors_claros_5finstrument_5fmeasurement_5fbinding_2eproto() {
 static bool dynamic_init_dummy_claros_5finstrument_5fmeasurement_5fbinding_2eproto = []() { AddDescriptors_claros_5finstrument_5fmeasurement_5fbinding_2eproto(); return true; }();
 namespace claros {
 namespace instrument {
+namespace measurement {
 
 // ===================================================================
 
@@ -115,7 +118,7 @@ const int InstrumentMeasurementBinding::kUnitIdFieldNumber;
 InstrumentMeasurementBinding::InstrumentMeasurementBinding()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(constructor:claros.instrument.measurement.InstrumentMeasurementBinding)
 }
 InstrumentMeasurementBinding::InstrumentMeasurementBinding(const InstrumentMeasurementBinding& from)
   : ::google::protobuf::Message(),
@@ -128,7 +131,7 @@ InstrumentMeasurementBinding::InstrumentMeasurementBinding(const InstrumentMeasu
   ::memcpy(&aggregatetype_, &from.aggregatetype_,
     static_cast<size_t>(reinterpret_cast<char*>(&unitid_) -
     reinterpret_cast<char*>(&aggregatetype_)) + sizeof(unitid_));
-  // @@protoc_insertion_point(copy_constructor:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(copy_constructor:claros.instrument.measurement.InstrumentMeasurementBinding)
 }
 
 void InstrumentMeasurementBinding::SharedCtor() {
@@ -141,7 +144,7 @@ void InstrumentMeasurementBinding::SharedCtor() {
 }
 
 InstrumentMeasurementBinding::~InstrumentMeasurementBinding() {
-  // @@protoc_insertion_point(destructor:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(destructor:claros.instrument.measurement.InstrumentMeasurementBinding)
   SharedDtor();
 }
 
@@ -159,7 +162,7 @@ const InstrumentMeasurementBinding& InstrumentMeasurementBinding::default_instan
 
 
 void InstrumentMeasurementBinding::Clear() {
-// @@protoc_insertion_point(message_clear_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(message_clear_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -189,7 +192,7 @@ const char* InstrumentMeasurementBinding::_InternalParse(const char* begin, cons
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("claros.instrument.InstrumentMeasurementBinding.instrumentMeasurementId");
+        ctx->extra_parse_data().SetFieldName("claros.instrument.measurement.InstrumentMeasurementBinding.instrumentMeasurementId");
         object = msg->mutable_instrumentmeasurementid();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -243,7 +246,7 @@ bool InstrumentMeasurementBinding::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(parse_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -257,7 +260,7 @@ bool InstrumentMeasurementBinding::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->instrumentmeasurementid().data(), static_cast<int>(this->instrumentmeasurementid().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "claros.instrument.InstrumentMeasurementBinding.instrumentMeasurementId"));
+            "claros.instrument.measurement.InstrumentMeasurementBinding.instrumentMeasurementId"));
         } else {
           goto handle_unusual;
         }
@@ -303,10 +306,10 @@ bool InstrumentMeasurementBinding::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(parse_success:claros.instrument.measurement.InstrumentMeasurementBinding)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(parse_failure:claros.instrument.measurement.InstrumentMeasurementBinding)
   return false;
 #undef DO_
 }
@@ -314,7 +317,7 @@ failure:
 
 void InstrumentMeasurementBinding::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(serialize_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -323,7 +326,7 @@ void InstrumentMeasurementBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instrumentmeasurementid().data(), static_cast<int>(this->instrumentmeasurementid().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "claros.instrument.InstrumentMeasurementBinding.instrumentMeasurementId");
+      "claros.instrument.measurement.InstrumentMeasurementBinding.instrumentMeasurementId");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->instrumentmeasurementid(), output);
   }
@@ -343,12 +346,12 @@ void InstrumentMeasurementBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(serialize_end:claros.instrument.measurement.InstrumentMeasurementBinding)
 }
 
 ::google::protobuf::uint8* InstrumentMeasurementBinding::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(serialize_to_array_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -357,7 +360,7 @@ void InstrumentMeasurementBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instrumentmeasurementid().data(), static_cast<int>(this->instrumentmeasurementid().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "claros.instrument.InstrumentMeasurementBinding.instrumentMeasurementId");
+      "claros.instrument.measurement.InstrumentMeasurementBinding.instrumentMeasurementId");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->instrumentmeasurementid(), target);
@@ -378,12 +381,12 @@ void InstrumentMeasurementBinding::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(serialize_to_array_end:claros.instrument.measurement.InstrumentMeasurementBinding)
   return target;
 }
 
 size_t InstrumentMeasurementBinding::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(message_byte_size_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -421,22 +424,22 @@ size_t InstrumentMeasurementBinding::ByteSizeLong() const {
 }
 
 void InstrumentMeasurementBinding::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(generalized_merge_from_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   GOOGLE_DCHECK_NE(&from, this);
   const InstrumentMeasurementBinding* source =
       ::google::protobuf::DynamicCastToGenerated<InstrumentMeasurementBinding>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.instrument.measurement.InstrumentMeasurementBinding)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.instrument.InstrumentMeasurementBinding)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.instrument.measurement.InstrumentMeasurementBinding)
     MergeFrom(*source);
   }
 }
 
 void InstrumentMeasurementBinding::MergeFrom(const InstrumentMeasurementBinding& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(class_specific_merge_from_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -455,14 +458,14 @@ void InstrumentMeasurementBinding::MergeFrom(const InstrumentMeasurementBinding&
 }
 
 void InstrumentMeasurementBinding::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(generalized_copy_from_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void InstrumentMeasurementBinding::CopyFrom(const InstrumentMeasurementBinding& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:claros.instrument.InstrumentMeasurementBinding)
+// @@protoc_insertion_point(class_specific_copy_from_start:claros.instrument.measurement.InstrumentMeasurementBinding)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -492,12 +495,13 @@ void InstrumentMeasurementBinding::InternalSwap(InstrumentMeasurementBinding* ot
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 namespace google {
 namespace protobuf {
-template<> PROTOBUF_NOINLINE ::claros::instrument::InstrumentMeasurementBinding* Arena::CreateMaybeMessage< ::claros::instrument::InstrumentMeasurementBinding >(Arena* arena) {
-  return Arena::CreateInternal< ::claros::instrument::InstrumentMeasurementBinding >(arena);
+template<> PROTOBUF_NOINLINE ::claros::instrument::measurement::InstrumentMeasurementBinding* Arena::CreateMaybeMessage< ::claros::instrument::measurement::InstrumentMeasurementBinding >(Arena* arena) {
+  return Arena::CreateInternal< ::claros::instrument::measurement::InstrumentMeasurementBinding >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

@@ -56,19 +56,19 @@ namespace common {
 namespace core {
 
 enum RecurrenceType {
-  R_UNKNOWN = 0,
-  R_FIFTEENMINUTE = 1,
-  R_HOURLY = 2,
-  R_FOURHOUR = 3,
-  R_DAILY = 4,
-  R_WEEKLY = 5,
-  R_DAYSOFWEEK = 6,
+  RECURRENCE_UNKNOWN = 0,
+  RECURRENCE_FIFTEENMINUTE = 1,
+  RECURRENCE_HOURLY = 2,
+  RECURRENCE_FOURHOUR = 3,
+  RECURRENCE_DAILY = 4,
+  RECURRENCE_WEEKLY = 5,
+  RECURRENCE_DAYSOFWEEK = 6,
   RecurrenceType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   RecurrenceType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool RecurrenceType_IsValid(int value);
-const RecurrenceType RecurrenceType_MIN = R_UNKNOWN;
-const RecurrenceType RecurrenceType_MAX = R_DAYSOFWEEK;
+const RecurrenceType RecurrenceType_MIN = RECURRENCE_UNKNOWN;
+const RecurrenceType RecurrenceType_MAX = RECURRENCE_DAYSOFWEEK;
 const int RecurrenceType_ARRAYSIZE = RecurrenceType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* RecurrenceType_descriptor();
