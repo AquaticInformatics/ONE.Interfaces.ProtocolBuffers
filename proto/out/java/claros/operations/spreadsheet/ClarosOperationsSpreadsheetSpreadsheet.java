@@ -37,10 +37,18 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         getNameBytes();
 
     /**
+     * <pre>
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     * </pre>
+     *
      * <code>string locationId = 2;</code>
      */
     java.lang.String getLocationId();
     /**
+     * <pre>
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     * </pre>
+     *
      * <code>string locationId = 2;</code>
      */
     com.google.protobuf.ByteString
@@ -91,24 +99,44 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         int index);
 
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet> 
         getWorksheetList();
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet getWorksheet(int index);
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     int getWorksheetCount();
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder> 
         getWorksheetOrBuilderList();
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder getWorksheetOrBuilder(
@@ -271,6 +299,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
     public static final int LOCATIONID_FIELD_NUMBER = 2;
     private volatile java.lang.Object locationId_;
     /**
+     * <pre>
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     * </pre>
+     *
      * <code>string locationId = 2;</code>
      */
     public java.lang.String getLocationId() {
@@ -286,6 +318,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
       }
     }
     /**
+     * <pre>
+     * Where this spreadsheet is bound.  I.e. the PlantId
+     * </pre>
+     *
      * <code>string locationId = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -360,12 +396,20 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
     public static final int WORKSHEET_FIELD_NUMBER = 4;
     private java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet> worksheet_;
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet> getWorksheetList() {
       return worksheet_;
     }
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder> 
@@ -373,18 +417,30 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
       return worksheet_;
     }
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     public int getWorksheetCount() {
       return worksheet_.size();
     }
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet getWorksheet(int index) {
       return worksheet_.get(index);
     }
     /**
+     * <pre>
+     * definition and data for worksheets.  Data and definition will be split up within the worksheets
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder getWorksheetOrBuilder(
@@ -916,6 +972,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
 
       private java.lang.Object locationId_ = "";
       /**
+       * <pre>
+       * Where this spreadsheet is bound.  I.e. the PlantId
+       * </pre>
+       *
        * <code>string locationId = 2;</code>
        */
       public java.lang.String getLocationId() {
@@ -931,6 +991,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * Where this spreadsheet is bound.  I.e. the PlantId
+       * </pre>
+       *
        * <code>string locationId = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -947,6 +1011,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * Where this spreadsheet is bound.  I.e. the PlantId
+       * </pre>
+       *
        * <code>string locationId = 2;</code>
        */
       public Builder setLocationId(
@@ -960,6 +1028,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * Where this spreadsheet is bound.  I.e. the PlantId
+       * </pre>
+       *
        * <code>string locationId = 2;</code>
        */
       public Builder clearLocationId() {
@@ -969,6 +1041,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * Where this spreadsheet is bound.  I.e. the PlantId
+       * </pre>
+       *
        * <code>string locationId = 2;</code>
        */
       public Builder setLocationIdBytes(
@@ -1308,6 +1384,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder> worksheetBuilder_;
 
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet> getWorksheetList() {
@@ -1318,6 +1398,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public int getWorksheetCount() {
@@ -1328,6 +1412,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet getWorksheet(int index) {
@@ -1338,6 +1426,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder setWorksheet(
@@ -1355,6 +1447,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder setWorksheet(
@@ -1369,6 +1465,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder addWorksheet(claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet value) {
@@ -1385,6 +1485,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder addWorksheet(
@@ -1402,6 +1506,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder addWorksheet(
@@ -1416,6 +1524,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder addWorksheet(
@@ -1430,6 +1542,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder addAllWorksheet(
@@ -1445,6 +1561,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder clearWorksheet() {
@@ -1458,6 +1578,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public Builder removeWorksheet(int index) {
@@ -1471,6 +1595,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return this;
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.Builder getWorksheetBuilder(
@@ -1478,6 +1606,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         return getWorksheetFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder getWorksheetOrBuilder(
@@ -1488,6 +1620,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.WorksheetOrBuilder> 
@@ -1499,6 +1635,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
         }
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.Builder addWorksheetBuilder() {
@@ -1506,6 +1646,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
             claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.getDefaultInstance());
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.Builder addWorksheetBuilder(
@@ -1514,6 +1658,10 @@ public final class ClarosOperationsSpreadsheetSpreadsheet {
             index, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.getDefaultInstance());
       }
       /**
+       * <pre>
+       * definition and data for worksheets.  Data and definition will be split up within the worksheets
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Worksheet worksheet = 4;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheet.Worksheet.Builder> 

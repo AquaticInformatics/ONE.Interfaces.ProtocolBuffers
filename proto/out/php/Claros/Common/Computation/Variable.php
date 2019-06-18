@@ -14,30 +14,44 @@ use Google\Protobuf\Internal\GPBUtil;
 class Variable extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Use for translations of a global computation
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      */
     private $i18nKey = '';
     /**
+     * Tenant entered name
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
     /**
+     * Tenant entered description
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      */
     private $description = '';
     /**
+     * FK to QuantityType
+     *
      * Generated from protobuf field <code>string quantityTypeId = 4;</code>
      */
     private $quantityTypeId = '';
     /**
-     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * References adjacent rows
+     *
+     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      */
-    private $cursor = 0;
+    private $cursorType = 0;
     /**
+     * ??? is this meant to be relative???
+     *
      * Generated from protobuf field <code>uint32 cursorAbsolute = 6;</code>
      */
     private $cursorAbsolute = 0;
     /**
+     * What attribute of the cell or row??
+     *
      * Generated from protobuf field <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      */
     private $propertySelector = 0;
@@ -58,12 +72,19 @@ class Variable extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $i18nKey
+     *           Use for translations of a global computation
      *     @type string $name
+     *           Tenant entered name
      *     @type string $description
+     *           Tenant entered description
      *     @type string $quantityTypeId
-     *     @type int $cursor
+     *           FK to QuantityType
+     *     @type int $cursorType
+     *           References adjacent rows
      *     @type int $cursorAbsolute
+     *           ??? is this meant to be relative???
      *     @type int $propertySelector
+     *           What attribute of the cell or row??
      *     @type int $suggestedParameterId
      *     @type int $suggestedUnitId
      *     @type int $columnId
@@ -76,6 +97,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Use for translations of a global computation
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      * @return string
      */
@@ -85,6 +108,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Use for translations of a global computation
+     *
      * Generated from protobuf field <code>string i18nKey = 1;</code>
      * @param string $var
      * @return $this
@@ -98,6 +123,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Tenant entered name
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @return string
      */
@@ -107,6 +134,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Tenant entered name
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @param string $var
      * @return $this
@@ -120,6 +149,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Tenant entered description
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      * @return string
      */
@@ -129,6 +160,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Tenant entered description
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      * @param string $var
      * @return $this
@@ -142,6 +175,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * FK to QuantityType
+     *
      * Generated from protobuf field <code>string quantityTypeId = 4;</code>
      * @return string
      */
@@ -151,6 +186,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * FK to QuantityType
+     *
      * Generated from protobuf field <code>string quantityTypeId = 4;</code>
      * @param string $var
      * @return $this
@@ -164,28 +201,34 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * References adjacent rows
+     *
+     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      * @return int
      */
-    public function getCursor()
+    public function getCursorType()
     {
-        return $this->cursor;
+        return $this->cursorType;
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * References adjacent rows
+     *
+     * Generated from protobuf field <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      * @param int $var
      * @return $this
      */
-    public function setCursor($var)
+    public function setCursorType($var)
     {
         GPBUtil::checkEnum($var, \Claros\Common\Computation\ComputationCursorType::class);
-        $this->cursor = $var;
+        $this->cursorType = $var;
 
         return $this;
     }
 
     /**
+     * ??? is this meant to be relative???
+     *
      * Generated from protobuf field <code>uint32 cursorAbsolute = 6;</code>
      * @return int
      */
@@ -195,6 +238,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ??? is this meant to be relative???
+     *
      * Generated from protobuf field <code>uint32 cursorAbsolute = 6;</code>
      * @param int $var
      * @return $this
@@ -208,6 +253,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What attribute of the cell or row??
+     *
      * Generated from protobuf field <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      * @return int
      */
@@ -217,6 +264,8 @@ class Variable extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * What attribute of the cell or row??
+     *
      * Generated from protobuf field <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      * @param int $var
      * @return $this

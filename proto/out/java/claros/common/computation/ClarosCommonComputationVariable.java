@@ -19,64 +19,116 @@ public final class ClarosCommonComputationVariable {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Use for translations of a global computation
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     java.lang.String getI18NKey();
     /**
+     * <pre>
+     * Use for translations of a global computation
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     com.google.protobuf.ByteString
         getI18NKeyBytes();
 
     /**
+     * <pre>
+     * Tenant entered name
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     java.lang.String getName();
     /**
+     * <pre>
+     * Tenant entered name
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
+     * <pre>
+     * Tenant entered description
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     java.lang.String getDescription();
     /**
+     * <pre>
+     * Tenant entered description
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
     /**
+     * <pre>
+     * FK to QuantityType
+     * </pre>
+     *
      * <code>string quantityTypeId = 4;</code>
      */
     java.lang.String getQuantityTypeId();
     /**
+     * <pre>
+     * FK to QuantityType
+     * </pre>
+     *
      * <code>string quantityTypeId = 4;</code>
      */
     com.google.protobuf.ByteString
         getQuantityTypeIdBytes();
 
     /**
-     * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * <pre>
+     * References adjacent rows
+     * </pre>
+     *
+     * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      */
-    int getCursorValue();
+    int getCursorTypeValue();
     /**
-     * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * <pre>
+     * References adjacent rows
+     * </pre>
+     *
+     * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      */
-    claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursor();
+    claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursorType();
 
     /**
+     * <pre>
+     * ??? is this meant to be relative???
+     * </pre>
+     *
      * <code>uint32 cursorAbsolute = 6;</code>
      */
     int getCursorAbsolute();
 
     /**
+     * <pre>
+     * What attribute of the cell or row??
+     * </pre>
+     *
      * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      */
     int getPropertySelectorValue();
     /**
+     * <pre>
+     * What attribute of the cell or row??
+     * </pre>
+     *
      * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      */
     claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType getPropertySelector();
@@ -120,7 +172,7 @@ public final class ClarosCommonComputationVariable {
       name_ = "";
       description_ = "";
       quantityTypeId_ = "";
-      cursor_ = 0;
+      cursorType_ = 0;
       propertySelector_ = 0;
     }
 
@@ -175,7 +227,7 @@ public final class ClarosCommonComputationVariable {
             case 40: {
               int rawValue = input.readEnum();
 
-              cursor_ = rawValue;
+              cursorType_ = rawValue;
               break;
             }
             case 48: {
@@ -282,6 +334,10 @@ public final class ClarosCommonComputationVariable {
     public static final int I18NKEY_FIELD_NUMBER = 1;
     private volatile java.lang.Object i18NKey_;
     /**
+     * <pre>
+     * Use for translations of a global computation
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     public java.lang.String getI18NKey() {
@@ -297,6 +353,10 @@ public final class ClarosCommonComputationVariable {
       }
     }
     /**
+     * <pre>
+     * Use for translations of a global computation
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -316,6 +376,10 @@ public final class ClarosCommonComputationVariable {
     public static final int NAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object name_;
     /**
+     * <pre>
+     * Tenant entered name
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
@@ -331,6 +395,10 @@ public final class ClarosCommonComputationVariable {
       }
     }
     /**
+     * <pre>
+     * Tenant entered name
+     * </pre>
+     *
      * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -350,6 +418,10 @@ public final class ClarosCommonComputationVariable {
     public static final int DESCRIPTION_FIELD_NUMBER = 3;
     private volatile java.lang.Object description_;
     /**
+     * <pre>
+     * Tenant entered description
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     public java.lang.String getDescription() {
@@ -365,6 +437,10 @@ public final class ClarosCommonComputationVariable {
       }
     }
     /**
+     * <pre>
+     * Tenant entered description
+     * </pre>
+     *
      * <code>string description = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -384,6 +460,10 @@ public final class ClarosCommonComputationVariable {
     public static final int QUANTITYTYPEID_FIELD_NUMBER = 4;
     private volatile java.lang.Object quantityTypeId_;
     /**
+     * <pre>
+     * FK to QuantityType
+     * </pre>
+     *
      * <code>string quantityTypeId = 4;</code>
      */
     public java.lang.String getQuantityTypeId() {
@@ -399,6 +479,10 @@ public final class ClarosCommonComputationVariable {
       }
     }
     /**
+     * <pre>
+     * FK to QuantityType
+     * </pre>
+     *
      * <code>string quantityTypeId = 4;</code>
      */
     public com.google.protobuf.ByteString
@@ -415,26 +499,38 @@ public final class ClarosCommonComputationVariable {
       }
     }
 
-    public static final int CURSOR_FIELD_NUMBER = 5;
-    private int cursor_;
+    public static final int CURSORTYPE_FIELD_NUMBER = 5;
+    private int cursorType_;
     /**
-     * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * <pre>
+     * References adjacent rows
+     * </pre>
+     *
+     * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      */
-    public int getCursorValue() {
-      return cursor_;
+    public int getCursorTypeValue() {
+      return cursorType_;
     }
     /**
-     * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+     * <pre>
+     * References adjacent rows
+     * </pre>
+     *
+     * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
      */
-    public claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursor() {
+    public claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursorType() {
       @SuppressWarnings("deprecation")
-      claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType result = claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.valueOf(cursor_);
+      claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType result = claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.valueOf(cursorType_);
       return result == null ? claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.UNRECOGNIZED : result;
     }
 
     public static final int CURSORABSOLUTE_FIELD_NUMBER = 6;
     private int cursorAbsolute_;
     /**
+     * <pre>
+     * ??? is this meant to be relative???
+     * </pre>
+     *
      * <code>uint32 cursorAbsolute = 6;</code>
      */
     public int getCursorAbsolute() {
@@ -444,12 +540,20 @@ public final class ClarosCommonComputationVariable {
     public static final int PROPERTYSELECTOR_FIELD_NUMBER = 7;
     private int propertySelector_;
     /**
+     * <pre>
+     * What attribute of the cell or row??
+     * </pre>
+     *
      * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      */
     public int getPropertySelectorValue() {
       return propertySelector_;
     }
     /**
+     * <pre>
+     * What attribute of the cell or row??
+     * </pre>
+     *
      * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
      */
     public claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType getPropertySelector() {
@@ -524,13 +628,13 @@ public final class ClarosCommonComputationVariable {
       if (!getQuantityTypeIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, quantityTypeId_);
       }
-      if (cursor_ != claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.CC_UNKNOWN.getNumber()) {
-        output.writeEnum(5, cursor_);
+      if (cursorType_ != claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.COMPUTATION_CURSOR_UNKNOWN.getNumber()) {
+        output.writeEnum(5, cursorType_);
       }
       if (cursorAbsolute_ != 0) {
         output.writeUInt32(6, cursorAbsolute_);
       }
-      if (propertySelector_ != claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType.PS_UNKNOWN.getNumber()) {
+      if (propertySelector_ != claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType.PROPERTY_SELECTOR_UNKNOWN.getNumber()) {
         output.writeEnum(7, propertySelector_);
       }
       if (suggestedParameterId_ != 0) {
@@ -568,15 +672,15 @@ public final class ClarosCommonComputationVariable {
       if (!getQuantityTypeIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, quantityTypeId_);
       }
-      if (cursor_ != claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.CC_UNKNOWN.getNumber()) {
+      if (cursorType_ != claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.COMPUTATION_CURSOR_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, cursor_);
+          .computeEnumSize(5, cursorType_);
       }
       if (cursorAbsolute_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, cursorAbsolute_);
       }
-      if (propertySelector_ != claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType.PS_UNKNOWN.getNumber()) {
+      if (propertySelector_ != claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType.PROPERTY_SELECTOR_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, propertySelector_);
       }
@@ -621,7 +725,7 @@ public final class ClarosCommonComputationVariable {
           .equals(other.getDescription())) return false;
       if (!getQuantityTypeId()
           .equals(other.getQuantityTypeId())) return false;
-      if (cursor_ != other.cursor_) return false;
+      if (cursorType_ != other.cursorType_) return false;
       if (getCursorAbsolute()
           != other.getCursorAbsolute()) return false;
       if (propertySelector_ != other.propertySelector_) return false;
@@ -661,8 +765,8 @@ public final class ClarosCommonComputationVariable {
       hash = (53 * hash) + getDescription().hashCode();
       hash = (37 * hash) + QUANTITYTYPEID_FIELD_NUMBER;
       hash = (53 * hash) + getQuantityTypeId().hashCode();
-      hash = (37 * hash) + CURSOR_FIELD_NUMBER;
-      hash = (53 * hash) + cursor_;
+      hash = (37 * hash) + CURSORTYPE_FIELD_NUMBER;
+      hash = (53 * hash) + cursorType_;
       hash = (37 * hash) + CURSORABSOLUTE_FIELD_NUMBER;
       hash = (53 * hash) + getCursorAbsolute();
       hash = (37 * hash) + PROPERTYSELECTOR_FIELD_NUMBER;
@@ -824,7 +928,7 @@ public final class ClarosCommonComputationVariable {
 
         quantityTypeId_ = "";
 
-        cursor_ = 0;
+        cursorType_ = 0;
 
         cursorAbsolute_ = 0;
 
@@ -866,7 +970,7 @@ public final class ClarosCommonComputationVariable {
         result.name_ = name_;
         result.description_ = description_;
         result.quantityTypeId_ = quantityTypeId_;
-        result.cursor_ = cursor_;
+        result.cursorType_ = cursorType_;
         result.cursorAbsolute_ = cursorAbsolute_;
         result.propertySelector_ = propertySelector_;
         result.suggestedParameterId_ = suggestedParameterId_;
@@ -942,8 +1046,8 @@ public final class ClarosCommonComputationVariable {
           quantityTypeId_ = other.quantityTypeId_;
           onChanged();
         }
-        if (other.cursor_ != 0) {
-          setCursorValue(other.getCursorValue());
+        if (other.cursorType_ != 0) {
+          setCursorTypeValue(other.getCursorTypeValue());
         }
         if (other.getCursorAbsolute() != 0) {
           setCursorAbsolute(other.getCursorAbsolute());
@@ -1016,6 +1120,10 @@ public final class ClarosCommonComputationVariable {
 
       private java.lang.Object i18NKey_ = "";
       /**
+       * <pre>
+       * Use for translations of a global computation
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public java.lang.String getI18NKey() {
@@ -1031,6 +1139,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Use for translations of a global computation
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -1047,6 +1159,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Use for translations of a global computation
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder setI18NKey(
@@ -1060,6 +1176,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Use for translations of a global computation
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder clearI18NKey() {
@@ -1069,6 +1189,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Use for translations of a global computation
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder setI18NKeyBytes(
@@ -1085,6 +1209,10 @@ public final class ClarosCommonComputationVariable {
 
       private java.lang.Object name_ = "";
       /**
+       * <pre>
+       * Tenant entered name
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public java.lang.String getName() {
@@ -1100,6 +1228,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Tenant entered name
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -1116,6 +1248,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Tenant entered name
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setName(
@@ -1129,6 +1265,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Tenant entered name
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder clearName() {
@@ -1138,6 +1278,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Tenant entered name
+       * </pre>
+       *
        * <code>string name = 2;</code>
        */
       public Builder setNameBytes(
@@ -1154,6 +1298,10 @@ public final class ClarosCommonComputationVariable {
 
       private java.lang.Object description_ = "";
       /**
+       * <pre>
+       * Tenant entered description
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public java.lang.String getDescription() {
@@ -1169,6 +1317,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Tenant entered description
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -1185,6 +1337,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * Tenant entered description
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder setDescription(
@@ -1198,6 +1354,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Tenant entered description
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder clearDescription() {
@@ -1207,6 +1367,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * Tenant entered description
+       * </pre>
+       *
        * <code>string description = 3;</code>
        */
       public Builder setDescriptionBytes(
@@ -1223,6 +1387,10 @@ public final class ClarosCommonComputationVariable {
 
       private java.lang.Object quantityTypeId_ = "";
       /**
+       * <pre>
+       * FK to QuantityType
+       * </pre>
+       *
        * <code>string quantityTypeId = 4;</code>
        */
       public java.lang.String getQuantityTypeId() {
@@ -1238,6 +1406,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * FK to QuantityType
+       * </pre>
+       *
        * <code>string quantityTypeId = 4;</code>
        */
       public com.google.protobuf.ByteString
@@ -1254,6 +1426,10 @@ public final class ClarosCommonComputationVariable {
         }
       }
       /**
+       * <pre>
+       * FK to QuantityType
+       * </pre>
+       *
        * <code>string quantityTypeId = 4;</code>
        */
       public Builder setQuantityTypeId(
@@ -1267,6 +1443,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * FK to QuantityType
+       * </pre>
+       *
        * <code>string quantityTypeId = 4;</code>
        */
       public Builder clearQuantityTypeId() {
@@ -1276,6 +1456,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * FK to QuantityType
+       * </pre>
+       *
        * <code>string quantityTypeId = 4;</code>
        */
       public Builder setQuantityTypeIdBytes(
@@ -1290,59 +1474,87 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
 
-      private int cursor_ = 0;
+      private int cursorType_ = 0;
       /**
-       * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+       * <pre>
+       * References adjacent rows
+       * </pre>
+       *
+       * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
        */
-      public int getCursorValue() {
-        return cursor_;
+      public int getCursorTypeValue() {
+        return cursorType_;
       }
       /**
-       * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+       * <pre>
+       * References adjacent rows
+       * </pre>
+       *
+       * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
        */
-      public Builder setCursorValue(int value) {
-        cursor_ = value;
+      public Builder setCursorTypeValue(int value) {
+        cursorType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+       * <pre>
+       * References adjacent rows
+       * </pre>
+       *
+       * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
        */
-      public claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursor() {
+      public claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType getCursorType() {
         @SuppressWarnings("deprecation")
-        claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType result = claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.valueOf(cursor_);
+        claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType result = claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.valueOf(cursorType_);
         return result == null ? claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+       * <pre>
+       * References adjacent rows
+       * </pre>
+       *
+       * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
        */
-      public Builder setCursor(claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType value) {
+      public Builder setCursorType(claros.common.computation.ClarosCommonComputationCursorType.ComputationCursorType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        cursor_ = value.getNumber();
+        cursorType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationCursorType cursor = 5;</code>
+       * <pre>
+       * References adjacent rows
+       * </pre>
+       *
+       * <code>.claros.common.computation.ComputationCursorType cursorType = 5;</code>
        */
-      public Builder clearCursor() {
+      public Builder clearCursorType() {
         
-        cursor_ = 0;
+        cursorType_ = 0;
         onChanged();
         return this;
       }
 
       private int cursorAbsolute_ ;
       /**
+       * <pre>
+       * ??? is this meant to be relative???
+       * </pre>
+       *
        * <code>uint32 cursorAbsolute = 6;</code>
        */
       public int getCursorAbsolute() {
         return cursorAbsolute_;
       }
       /**
+       * <pre>
+       * ??? is this meant to be relative???
+       * </pre>
+       *
        * <code>uint32 cursorAbsolute = 6;</code>
        */
       public Builder setCursorAbsolute(int value) {
@@ -1352,6 +1564,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * ??? is this meant to be relative???
+       * </pre>
+       *
        * <code>uint32 cursorAbsolute = 6;</code>
        */
       public Builder clearCursorAbsolute() {
@@ -1363,12 +1579,20 @@ public final class ClarosCommonComputationVariable {
 
       private int propertySelector_ = 0;
       /**
+       * <pre>
+       * What attribute of the cell or row??
+       * </pre>
+       *
        * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
        */
       public int getPropertySelectorValue() {
         return propertySelector_;
       }
       /**
+       * <pre>
+       * What attribute of the cell or row??
+       * </pre>
+       *
        * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
        */
       public Builder setPropertySelectorValue(int value) {
@@ -1377,6 +1601,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * What attribute of the cell or row??
+       * </pre>
+       *
        * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
        */
       public claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType getPropertySelector() {
@@ -1385,6 +1613,10 @@ public final class ClarosCommonComputationVariable {
         return result == null ? claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * What attribute of the cell or row??
+       * </pre>
+       *
        * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
        */
       public Builder setPropertySelector(claros.common.computation.ClarosCommonComputationPropertyselectorType.PropertySelectorType value) {
@@ -1397,6 +1629,10 @@ public final class ClarosCommonComputationVariable {
         return this;
       }
       /**
+       * <pre>
+       * What attribute of the cell or row??
+       * </pre>
+       *
        * <code>.claros.common.computation.PropertySelectorType propertySelector = 7;</code>
        */
       public Builder clearPropertySelector() {
@@ -1588,16 +1824,16 @@ public final class ClarosCommonComputationVariable {
       "to\022\031claros.common.computation\032+claros_co" +
       "mmon_computation_cursor_type.proto\0325clar" +
       "os_common_computation_propertyselector_t" +
-      "ype.proto\"\350\002\n\010Variable\022\017\n\007i18nKey\030\001 \001(\t\022" +
+      "ype.proto\"\354\002\n\010Variable\022\017\n\007i18nKey\030\001 \001(\t\022" +
       "\014\n\004name\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\026\n\016qu" +
-      "antityTypeId\030\004 \001(\t\022@\n\006cursor\030\005 \001(\01620.cla" +
-      "ros.common.computation.ComputationCursor" +
-      "Type\022\026\n\016cursorAbsolute\030\006 \001(\r\022I\n\020property" +
-      "Selector\030\007 \001(\0162/.claros.common.computati" +
-      "on.PropertySelectorType\022\034\n\024suggestedPara" +
-      "meterId\030\010 \001(\r\022\027\n\017suggestedUnitId\030\t \001(\r\022\022" +
-      "\n\010columnId\030\n \001(\rH\000\022\025\n\013formFieldId\030\013 \001(\rH" +
-      "\000B\t\n\007bindingb\006proto3"
+      "antityTypeId\030\004 \001(\t\022D\n\ncursorType\030\005 \001(\01620" +
+      ".claros.common.computation.ComputationCu" +
+      "rsorType\022\026\n\016cursorAbsolute\030\006 \001(\r\022I\n\020prop" +
+      "ertySelector\030\007 \001(\0162/.claros.common.compu" +
+      "tation.PropertySelectorType\022\034\n\024suggested" +
+      "ParameterId\030\010 \001(\r\022\027\n\017suggestedUnitId\030\t \001" +
+      "(\r\022\022\n\010columnId\030\n \001(\rH\000\022\025\n\013formFieldId\030\013 " +
+      "\001(\rH\000B\t\n\007bindingb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1618,7 +1854,7 @@ public final class ClarosCommonComputationVariable {
     internal_static_claros_common_computation_Variable_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_computation_Variable_descriptor,
-        new java.lang.String[] { "I18NKey", "Name", "Description", "QuantityTypeId", "Cursor", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId", "Binding", });
+        new java.lang.String[] { "I18NKey", "Name", "Description", "QuantityTypeId", "CursorType", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId", "Binding", });
     claros.common.computation.ClarosCommonComputationCursorType.getDescriptor();
     claros.common.computation.ClarosCommonComputationPropertyselectorType.getDescriptor();
   }

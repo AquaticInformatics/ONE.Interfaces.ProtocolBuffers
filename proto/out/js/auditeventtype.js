@@ -13,11 +13,11 @@ goog.provide('proto.claros.common.core.AuditEventType');
  * @enum {number}
  */
 proto.claros.common.core.AuditEventType = {
-  AE_UNKNOWN: 0,
-  AE_CREATE: 1,
-  AE_READ: 2,
-  AE_UPDATE: 3,
-  AE_DELETE: 4,
-  AE_SENT: 5
+  AUDIT_EVENT_UNKNOWN: 0,
+  AUDIT_EVENT_CREATE: 1,
+  AUDIT_EVENT_READ: 2,
+  AUDIT_EVENT_UPDATE: 3,
+  AUDIT_EVENT_DELETE: 4,
+  AUDIT_EVENT_SENT: 5
 };
 

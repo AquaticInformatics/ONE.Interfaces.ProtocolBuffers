@@ -25,10 +25,11 @@ namespace Claros.Common.Form {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitjbGFyb3NfY29tbW9uX2Zvcm1fZm9ybWRhdGFlbnRyeV90eXBlLnByb3Rv",
-            "EhJjbGFyb3MuY29tbW9uLmZvcm0qbgoRRm9ybURhdGFFbnRyeVR5cGUSDwoL",
-            "RkRFX1VOS05PV04QABISCg5GREVfSU5TVFJVTUVOVBABEhEKDUZERV9UT1RB",
-            "TElaRVIQAhITCg9GREVfQ09OU1VNUFRJT04QAxIMCghGREVfVEVYVBAEYgZw",
-            "cm90bzM="));
+            "EhJjbGFyb3MuY29tbW9uLmZvcm0qqgEKEUZvcm1EYXRhRW50cnlUeXBlEhsK",
+            "F0ZPUk1fREFURV9FTlRSWV9VTktOT1dOEAASHgoaRk9STV9EQVRFX0VOVFJZ",
+            "X0lOU1RSVU1FTlQQARIdChlGT1JNX0RBVEVfRU5UUllfVE9UQUxJWkVSEAIS",
+            "HwobRk9STV9EQVRFX0VOVFJZX0NPTlNVTVBUSU9OEAMSGAoURk9STV9EQVRF",
+            "X0VOVFJZX1RFWFQQBGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Form.FormDataEntryType), }, null));
@@ -38,11 +39,11 @@ namespace Claros.Common.Form {
   }
   #region Enums
   public enum FormDataEntryType {
-    [pbr::OriginalName("FDE_UNKNOWN")] FdeUnknown = 0,
-    [pbr::OriginalName("FDE_INSTRUMENT")] FdeInstrument = 1,
-    [pbr::OriginalName("FDE_TOTALIZER")] FdeTotalizer = 2,
-    [pbr::OriginalName("FDE_CONSUMPTION")] FdeConsumption = 3,
-    [pbr::OriginalName("FDE_TEXT")] FdeText = 4,
+    [pbr::OriginalName("FORM_DATE_ENTRY_UNKNOWN")] FormDateEntryUnknown = 0,
+    [pbr::OriginalName("FORM_DATE_ENTRY_INSTRUMENT")] FormDateEntryInstrument = 1,
+    [pbr::OriginalName("FORM_DATE_ENTRY_TOTALIZER")] FormDateEntryTotalizer = 2,
+    [pbr::OriginalName("FORM_DATE_ENTRY_CONSUMPTION")] FormDateEntryConsumption = 3,
+    [pbr::OriginalName("FORM_DATE_ENTRY_TEXT")] FormDateEntryText = 4,
   }
 
   #endregion

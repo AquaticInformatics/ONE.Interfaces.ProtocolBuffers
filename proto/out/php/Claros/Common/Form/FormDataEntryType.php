@@ -12,32 +12,32 @@ use UnexpectedValueException;
 class FormDataEntryType
 {
     /**
-     * Generated from protobuf enum <code>FDE_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>FORM_DATE_ENTRY_UNKNOWN = 0;</code>
      */
-    const FDE_UNKNOWN = 0;
+    const FORM_DATE_ENTRY_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>FDE_INSTRUMENT = 1;</code>
+     * Generated from protobuf enum <code>FORM_DATE_ENTRY_INSTRUMENT = 1;</code>
      */
-    const FDE_INSTRUMENT = 1;
+    const FORM_DATE_ENTRY_INSTRUMENT = 1;
     /**
-     * Generated from protobuf enum <code>FDE_TOTALIZER = 2;</code>
+     * Generated from protobuf enum <code>FORM_DATE_ENTRY_TOTALIZER = 2;</code>
      */
-    const FDE_TOTALIZER = 2;
+    const FORM_DATE_ENTRY_TOTALIZER = 2;
     /**
-     * Generated from protobuf enum <code>FDE_CONSUMPTION = 3;</code>
+     * Generated from protobuf enum <code>FORM_DATE_ENTRY_CONSUMPTION = 3;</code>
      */
-    const FDE_CONSUMPTION = 3;
+    const FORM_DATE_ENTRY_CONSUMPTION = 3;
     /**
-     * Generated from protobuf enum <code>FDE_TEXT = 4;</code>
+     * Generated from protobuf enum <code>FORM_DATE_ENTRY_TEXT = 4;</code>
      */
-    const FDE_TEXT = 4;
+    const FORM_DATE_ENTRY_TEXT = 4;
 
     private static $valueToName = [
-        self::FDE_UNKNOWN => 'FDE_UNKNOWN',
-        self::FDE_INSTRUMENT => 'FDE_INSTRUMENT',
-        self::FDE_TOTALIZER => 'FDE_TOTALIZER',
-        self::FDE_CONSUMPTION => 'FDE_CONSUMPTION',
-        self::FDE_TEXT => 'FDE_TEXT',
+        self::FORM_DATE_ENTRY_UNKNOWN => 'FORM_DATE_ENTRY_UNKNOWN',
+        self::FORM_DATE_ENTRY_INSTRUMENT => 'FORM_DATE_ENTRY_INSTRUMENT',
+        self::FORM_DATE_ENTRY_TOTALIZER => 'FORM_DATE_ENTRY_TOTALIZER',
+        self::FORM_DATE_ENTRY_CONSUMPTION => 'FORM_DATE_ENTRY_CONSUMPTION',
+        self::FORM_DATE_ENTRY_TEXT => 'FORM_DATE_ENTRY_TEXT',
     ];
 
     public static function name($value)

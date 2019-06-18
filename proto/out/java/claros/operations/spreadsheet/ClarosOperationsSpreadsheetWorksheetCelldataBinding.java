@@ -19,69 +19,69 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
     boolean hasInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder();
 
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     boolean hasComputationBinding();
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding();
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder();
 
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     boolean hasFormBinding();
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     claros.common.form.ClarosCommonFormBinding.FormBinding getFormBinding();
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     claros.common.form.ClarosCommonFormBinding.FormBindingOrBuilder getFormBindingOrBuilder();
 
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     boolean hasSpreadsheetBinding();
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding getSpreadsheetBinding();
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBindingOrBuilder getSpreadsheetBindingOrBuilder();
 
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
     boolean hasFieldInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding();
+    claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding();
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
-    claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder();
+    claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder();
 
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding.BindingCase getBindingCase();
   }
@@ -124,23 +124,23 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
             case 0:
               done = true;
               break;
-            case 58: {
-              claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder subBuilder = null;
-              if (bindingCase_ == 7) {
-                subBuilder = ((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_).toBuilder();
+            case 10: {
+              claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder subBuilder = null;
+              if (bindingCase_ == 1) {
+                subBuilder = ((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_).toBuilder();
               }
               binding_ =
-                  input.readMessage(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.parser(), extensionRegistry);
+                  input.readMessage(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+                subBuilder.mergeFrom((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
-              bindingCase_ = 7;
+              bindingCase_ = 1;
               break;
             }
-            case 66: {
+            case 18: {
               claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder subBuilder = null;
-              if (bindingCase_ == 8) {
+              if (bindingCase_ == 2) {
                 subBuilder = ((claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_).toBuilder();
               }
               binding_ =
@@ -149,12 +149,12 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                 subBuilder.mergeFrom((claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
-              bindingCase_ = 8;
+              bindingCase_ = 2;
               break;
             }
-            case 74: {
+            case 26: {
               claros.common.form.ClarosCommonFormBinding.FormBinding.Builder subBuilder = null;
-              if (bindingCase_ == 9) {
+              if (bindingCase_ == 3) {
                 subBuilder = ((claros.common.form.ClarosCommonFormBinding.FormBinding) binding_).toBuilder();
               }
               binding_ =
@@ -163,12 +163,12 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                 subBuilder.mergeFrom((claros.common.form.ClarosCommonFormBinding.FormBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
-              bindingCase_ = 9;
+              bindingCase_ = 3;
               break;
             }
-            case 82: {
+            case 34: {
               claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.Builder subBuilder = null;
-              if (bindingCase_ == 10) {
+              if (bindingCase_ == 4) {
                 subBuilder = ((claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_).toBuilder();
               }
               binding_ =
@@ -177,21 +177,21 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                 subBuilder.mergeFrom((claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
-              bindingCase_ = 10;
+              bindingCase_ = 4;
               break;
             }
-            case 90: {
-              claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder subBuilder = null;
-              if (bindingCase_ == 11) {
-                subBuilder = ((claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_).toBuilder();
+            case 42: {
+              claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder subBuilder = null;
+              if (bindingCase_ == 5) {
+                subBuilder = ((claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_).toBuilder();
               }
               binding_ =
-                  input.readMessage(claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.parser(), extensionRegistry);
+                  input.readMessage(claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
+                subBuilder.mergeFrom((claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
                 binding_ = subBuilder.buildPartial();
               }
-              bindingCase_ = 11;
+              bindingCase_ = 5;
               break;
             }
             default: {
@@ -230,11 +230,11 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
     private java.lang.Object binding_;
     public enum BindingCase
         implements com.google.protobuf.Internal.EnumLite {
-      INSTRUMENTMEASUREMENTBINDING(7),
-      COMPUTATIONBINDING(8),
-      FORMBINDING(9),
-      SPREADSHEETBINDING(10),
-      FIELDINSTRUMENTMEASUREMENTBINDING(11),
+      INSTRUMENTMEASUREMENTBINDING(1),
+      COMPUTATIONBINDING(2),
+      FORMBINDING(3),
+      SPREADSHEETBINDING(4),
+      FIELDINSTRUMENTMEASUREMENTBINDING(5),
       BINDING_NOT_SET(0);
       private final int value;
       private BindingCase(int value) {
@@ -250,11 +250,11 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
 
       public static BindingCase forNumber(int value) {
         switch (value) {
-          case 7: return INSTRUMENTMEASUREMENTBINDING;
-          case 8: return COMPUTATIONBINDING;
-          case 9: return FORMBINDING;
-          case 10: return SPREADSHEETBINDING;
-          case 11: return FIELDINSTRUMENTMEASUREMENTBINDING;
+          case 1: return INSTRUMENTMEASUREMENTBINDING;
+          case 2: return COMPUTATIONBINDING;
+          case 3: return FORMBINDING;
+          case 4: return SPREADSHEETBINDING;
+          case 5: return FIELDINSTRUMENTMEASUREMENTBINDING;
           case 0: return BINDING_NOT_SET;
           default: return null;
         }
@@ -270,134 +270,134 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
           bindingCase_);
     }
 
-    public static final int INSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER = 7;
+    public static final int INSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER = 1;
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
     public boolean hasInstrumentMeasurementBinding() {
-      return bindingCase_ == 7;
+      return bindingCase_ == 1;
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
-      if (bindingCase_ == 7) {
-         return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+    public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
+      if (bindingCase_ == 1) {
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
-      if (bindingCase_ == 7) {
-         return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+    public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
+      if (bindingCase_ == 1) {
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
     }
 
-    public static final int COMPUTATIONBINDING_FIELD_NUMBER = 8;
+    public static final int COMPUTATIONBINDING_FIELD_NUMBER = 2;
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     public boolean hasComputationBinding() {
-      return bindingCase_ == 8;
+      return bindingCase_ == 2;
     }
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding() {
-      if (bindingCase_ == 8) {
+      if (bindingCase_ == 2) {
          return (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_;
       }
       return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      */
     public claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder() {
-      if (bindingCase_ == 8) {
+      if (bindingCase_ == 2) {
          return (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_;
       }
       return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
     }
 
-    public static final int FORMBINDING_FIELD_NUMBER = 9;
+    public static final int FORMBINDING_FIELD_NUMBER = 3;
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     public boolean hasFormBinding() {
-      return bindingCase_ == 9;
+      return bindingCase_ == 3;
     }
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     public claros.common.form.ClarosCommonFormBinding.FormBinding getFormBinding() {
-      if (bindingCase_ == 9) {
+      if (bindingCase_ == 3) {
          return (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_;
       }
       return claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * <code>.claros.common.form.FormBinding formBinding = 3;</code>
      */
     public claros.common.form.ClarosCommonFormBinding.FormBindingOrBuilder getFormBindingOrBuilder() {
-      if (bindingCase_ == 9) {
+      if (bindingCase_ == 3) {
          return (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_;
       }
       return claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
     }
 
-    public static final int SPREADSHEETBINDING_FIELD_NUMBER = 10;
+    public static final int SPREADSHEETBINDING_FIELD_NUMBER = 4;
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     public boolean hasSpreadsheetBinding() {
-      return bindingCase_ == 10;
+      return bindingCase_ == 4;
     }
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding getSpreadsheetBinding() {
-      if (bindingCase_ == 10) {
+      if (bindingCase_ == 4) {
          return (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_;
       }
       return claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBindingOrBuilder getSpreadsheetBindingOrBuilder() {
-      if (bindingCase_ == 10) {
+      if (bindingCase_ == 4) {
          return (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_;
       }
       return claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
     }
 
-    public static final int FIELDINSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER = 11;
+    public static final int FIELDINSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER = 5;
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
     public boolean hasFieldInstrumentMeasurementBinding() {
-      return bindingCase_ == 11;
+      return bindingCase_ == 5;
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding() {
-      if (bindingCase_ == 11) {
-         return (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
+    public claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding() {
+      if (bindingCase_ == 5) {
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
     }
     /**
-     * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+     * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
      */
-    public claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder() {
-      if (bindingCase_ == 11) {
-         return (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
+    public claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder() {
+      if (bindingCase_ == 5) {
+         return (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
       }
-      return claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+      return claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -414,20 +414,20 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bindingCase_ == 7) {
-        output.writeMessage(7, (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+      if (bindingCase_ == 1) {
+        output.writeMessage(1, (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
       }
-      if (bindingCase_ == 8) {
-        output.writeMessage(8, (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
+      if (bindingCase_ == 2) {
+        output.writeMessage(2, (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
       }
-      if (bindingCase_ == 9) {
-        output.writeMessage(9, (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_);
+      if (bindingCase_ == 3) {
+        output.writeMessage(3, (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_);
       }
-      if (bindingCase_ == 10) {
-        output.writeMessage(10, (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_);
+      if (bindingCase_ == 4) {
+        output.writeMessage(4, (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_);
       }
-      if (bindingCase_ == 11) {
-        output.writeMessage(11, (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
+      if (bindingCase_ == 5) {
+        output.writeMessage(5, (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
       }
       unknownFields.writeTo(output);
     }
@@ -438,25 +438,25 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       if (size != -1) return size;
 
       size = 0;
-      if (bindingCase_ == 7) {
+      if (bindingCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
+          .computeMessageSize(1, (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_);
       }
-      if (bindingCase_ == 8) {
+      if (bindingCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
+          .computeMessageSize(2, (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_);
       }
-      if (bindingCase_ == 9) {
+      if (bindingCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_);
+          .computeMessageSize(3, (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_);
       }
-      if (bindingCase_ == 10) {
+      if (bindingCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_);
+          .computeMessageSize(4, (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_);
       }
-      if (bindingCase_ == 11) {
+      if (bindingCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
+          .computeMessageSize(5, (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -475,23 +475,23 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
 
       if (!getBindingCase().equals(other.getBindingCase())) return false;
       switch (bindingCase_) {
-        case 7:
+        case 1:
           if (!getInstrumentMeasurementBinding()
               .equals(other.getInstrumentMeasurementBinding())) return false;
           break;
-        case 8:
+        case 2:
           if (!getComputationBinding()
               .equals(other.getComputationBinding())) return false;
           break;
-        case 9:
+        case 3:
           if (!getFormBinding()
               .equals(other.getFormBinding())) return false;
           break;
-        case 10:
+        case 4:
           if (!getSpreadsheetBinding()
               .equals(other.getSpreadsheetBinding())) return false;
           break;
-        case 11:
+        case 5:
           if (!getFieldInstrumentMeasurementBinding()
               .equals(other.getFieldInstrumentMeasurementBinding())) return false;
           break;
@@ -510,23 +510,23 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       switch (bindingCase_) {
-        case 7:
+        case 1:
           hash = (37 * hash) + INSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER;
           hash = (53 * hash) + getInstrumentMeasurementBinding().hashCode();
           break;
-        case 8:
+        case 2:
           hash = (37 * hash) + COMPUTATIONBINDING_FIELD_NUMBER;
           hash = (53 * hash) + getComputationBinding().hashCode();
           break;
-        case 9:
+        case 3:
           hash = (37 * hash) + FORMBINDING_FIELD_NUMBER;
           hash = (53 * hash) + getFormBinding().hashCode();
           break;
-        case 10:
+        case 4:
           hash = (37 * hash) + SPREADSHEETBINDING_FIELD_NUMBER;
           hash = (53 * hash) + getSpreadsheetBinding().hashCode();
           break;
-        case 11:
+        case 5:
           hash = (37 * hash) + FIELDINSTRUMENTMEASUREMENTBINDING_FIELD_NUMBER;
           hash = (53 * hash) + getFieldInstrumentMeasurementBinding().hashCode();
           break;
@@ -694,35 +694,35 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       @java.lang.Override
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding buildPartial() {
         claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding result = new claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBinding.CellDataBinding(this);
-        if (bindingCase_ == 7) {
+        if (bindingCase_ == 1) {
           if (instrumentMeasurementBindingBuilder_ == null) {
             result.binding_ = binding_;
           } else {
             result.binding_ = instrumentMeasurementBindingBuilder_.build();
           }
         }
-        if (bindingCase_ == 8) {
+        if (bindingCase_ == 2) {
           if (computationBindingBuilder_ == null) {
             result.binding_ = binding_;
           } else {
             result.binding_ = computationBindingBuilder_.build();
           }
         }
-        if (bindingCase_ == 9) {
+        if (bindingCase_ == 3) {
           if (formBindingBuilder_ == null) {
             result.binding_ = binding_;
           } else {
             result.binding_ = formBindingBuilder_.build();
           }
         }
-        if (bindingCase_ == 10) {
+        if (bindingCase_ == 4) {
           if (spreadsheetBindingBuilder_ == null) {
             result.binding_ = binding_;
           } else {
             result.binding_ = spreadsheetBindingBuilder_.build();
           }
         }
-        if (bindingCase_ == 11) {
+        if (bindingCase_ == 5) {
           if (fieldInstrumentMeasurementBindingBuilder_ == null) {
             result.binding_ = binding_;
           } else {
@@ -848,33 +848,33 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
 
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> instrumentMeasurementBindingBuilder_;
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> instrumentMeasurementBindingBuilder_;
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
       public boolean hasInstrumentMeasurementBinding() {
-        return bindingCase_ == 7;
+        return bindingCase_ == 1;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding getInstrumentMeasurementBinding() {
         if (instrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 7) {
-            return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+          if (bindingCase_ == 1) {
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         } else {
-          if (bindingCase_ == 7) {
+          if (bindingCase_ == 1) {
             return instrumentMeasurementBindingBuilder_.getMessage();
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
-      public Builder setInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
+      public Builder setInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
         if (instrumentMeasurementBindingBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -884,57 +884,57 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           instrumentMeasurementBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 7;
+        bindingCase_ = 1;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
       public Builder setInstrumentMeasurementBinding(
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder builderForValue) {
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder builderForValue) {
         if (instrumentMeasurementBindingBuilder_ == null) {
           binding_ = builderForValue.build();
           onChanged();
         } else {
           instrumentMeasurementBindingBuilder_.setMessage(builderForValue.build());
         }
-        bindingCase_ = 7;
+        bindingCase_ = 1;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
-      public Builder mergeInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
+      public Builder mergeInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding value) {
         if (instrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 7 &&
-              binding_ != claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance()) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.newBuilder((claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_)
+          if (bindingCase_ == 1 &&
+              binding_ != claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance()) {
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.newBuilder((claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_)
                 .mergeFrom(value).buildPartial();
           } else {
             binding_ = value;
           }
           onChanged();
         } else {
-          if (bindingCase_ == 7) {
+          if (bindingCase_ == 1) {
             instrumentMeasurementBindingBuilder_.mergeFrom(value);
           }
           instrumentMeasurementBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 7;
+        bindingCase_ = 1;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
       public Builder clearInstrumentMeasurementBinding() {
         if (instrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 7) {
+          if (bindingCase_ == 1) {
             bindingCase_ = 0;
             binding_ = null;
             onChanged();
           }
         } else {
-          if (bindingCase_ == 7) {
+          if (bindingCase_ == 1) {
             bindingCase_ = 0;
             binding_ = null;
           }
@@ -943,42 +943,42 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder getInstrumentMeasurementBindingBuilder() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder getInstrumentMeasurementBindingBuilder() {
         return getInstrumentMeasurementBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
-        if ((bindingCase_ == 7) && (instrumentMeasurementBindingBuilder_ != null)) {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder getInstrumentMeasurementBindingOrBuilder() {
+        if ((bindingCase_ == 1) && (instrumentMeasurementBindingBuilder_ != null)) {
           return instrumentMeasurementBindingBuilder_.getMessageOrBuilder();
         } else {
-          if (bindingCase_ == 7) {
-            return (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
+          if (bindingCase_ == 1) {
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> 
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder> 
           getInstrumentMeasurementBindingFieldBuilder() {
         if (instrumentMeasurementBindingBuilder_ == null) {
-          if (!(bindingCase_ == 7)) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
+          if (!(bindingCase_ == 1)) {
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.getDefaultInstance();
           }
           instrumentMeasurementBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder>(
-                  (claros.instrument.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_,
+              claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBindingOrBuilder>(
+                  (claros.instrument.measurement.ClarosInstrumentMeasurementBinding.InstrumentMeasurementBinding) binding_,
                   getParentForChildren(),
                   isClean());
           binding_ = null;
         }
-        bindingCase_ = 7;
+        bindingCase_ = 1;
         onChanged();;
         return instrumentMeasurementBindingBuilder_;
       }
@@ -986,29 +986,29 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.computation.ClarosCommonComputationBinding.ComputationBinding, claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder, claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder> computationBindingBuilder_;
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public boolean hasComputationBinding() {
-        return bindingCase_ == 8;
+        return bindingCase_ == 2;
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding getComputationBinding() {
         if (computationBindingBuilder_ == null) {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             return (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_;
           }
           return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
         } else {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             return computationBindingBuilder_.getMessage();
           }
           return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public Builder setComputationBinding(claros.common.computation.ClarosCommonComputationBinding.ComputationBinding value) {
         if (computationBindingBuilder_ == null) {
@@ -1020,11 +1020,11 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           computationBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 8;
+        bindingCase_ = 2;
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public Builder setComputationBinding(
           claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder builderForValue) {
@@ -1034,15 +1034,15 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           computationBindingBuilder_.setMessage(builderForValue.build());
         }
-        bindingCase_ = 8;
+        bindingCase_ = 2;
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public Builder mergeComputationBinding(claros.common.computation.ClarosCommonComputationBinding.ComputationBinding value) {
         if (computationBindingBuilder_ == null) {
-          if (bindingCase_ == 8 &&
+          if (bindingCase_ == 2 &&
               binding_ != claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance()) {
             binding_ = claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.newBuilder((claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_)
                 .mergeFrom(value).buildPartial();
@@ -1051,26 +1051,26 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
           }
           onChanged();
         } else {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             computationBindingBuilder_.mergeFrom(value);
           }
           computationBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 8;
+        bindingCase_ = 2;
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public Builder clearComputationBinding() {
         if (computationBindingBuilder_ == null) {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             bindingCase_ = 0;
             binding_ = null;
             onChanged();
           }
         } else {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             bindingCase_ = 0;
             binding_ = null;
           }
@@ -1079,32 +1079,32 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         return this;
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder getComputationBindingBuilder() {
         return getComputationBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       public claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder getComputationBindingOrBuilder() {
-        if ((bindingCase_ == 8) && (computationBindingBuilder_ != null)) {
+        if ((bindingCase_ == 2) && (computationBindingBuilder_ != null)) {
           return computationBindingBuilder_.getMessageOrBuilder();
         } else {
-          if (bindingCase_ == 8) {
+          if (bindingCase_ == 2) {
             return (claros.common.computation.ClarosCommonComputationBinding.ComputationBinding) binding_;
           }
           return claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+       * <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.computation.ClarosCommonComputationBinding.ComputationBinding, claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.Builder, claros.common.computation.ClarosCommonComputationBinding.ComputationBindingOrBuilder> 
           getComputationBindingFieldBuilder() {
         if (computationBindingBuilder_ == null) {
-          if (!(bindingCase_ == 8)) {
+          if (!(bindingCase_ == 2)) {
             binding_ = claros.common.computation.ClarosCommonComputationBinding.ComputationBinding.getDefaultInstance();
           }
           computationBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1114,7 +1114,7 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                   isClean());
           binding_ = null;
         }
-        bindingCase_ = 8;
+        bindingCase_ = 2;
         onChanged();;
         return computationBindingBuilder_;
       }
@@ -1122,29 +1122,29 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.form.ClarosCommonFormBinding.FormBinding, claros.common.form.ClarosCommonFormBinding.FormBinding.Builder, claros.common.form.ClarosCommonFormBinding.FormBindingOrBuilder> formBindingBuilder_;
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public boolean hasFormBinding() {
-        return bindingCase_ == 9;
+        return bindingCase_ == 3;
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public claros.common.form.ClarosCommonFormBinding.FormBinding getFormBinding() {
         if (formBindingBuilder_ == null) {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             return (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_;
           }
           return claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
         } else {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             return formBindingBuilder_.getMessage();
           }
           return claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public Builder setFormBinding(claros.common.form.ClarosCommonFormBinding.FormBinding value) {
         if (formBindingBuilder_ == null) {
@@ -1156,11 +1156,11 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           formBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 9;
+        bindingCase_ = 3;
         return this;
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public Builder setFormBinding(
           claros.common.form.ClarosCommonFormBinding.FormBinding.Builder builderForValue) {
@@ -1170,15 +1170,15 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           formBindingBuilder_.setMessage(builderForValue.build());
         }
-        bindingCase_ = 9;
+        bindingCase_ = 3;
         return this;
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public Builder mergeFormBinding(claros.common.form.ClarosCommonFormBinding.FormBinding value) {
         if (formBindingBuilder_ == null) {
-          if (bindingCase_ == 9 &&
+          if (bindingCase_ == 3 &&
               binding_ != claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance()) {
             binding_ = claros.common.form.ClarosCommonFormBinding.FormBinding.newBuilder((claros.common.form.ClarosCommonFormBinding.FormBinding) binding_)
                 .mergeFrom(value).buildPartial();
@@ -1187,26 +1187,26 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
           }
           onChanged();
         } else {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             formBindingBuilder_.mergeFrom(value);
           }
           formBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 9;
+        bindingCase_ = 3;
         return this;
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public Builder clearFormBinding() {
         if (formBindingBuilder_ == null) {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             bindingCase_ = 0;
             binding_ = null;
             onChanged();
           }
         } else {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             bindingCase_ = 0;
             binding_ = null;
           }
@@ -1215,32 +1215,32 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         return this;
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public claros.common.form.ClarosCommonFormBinding.FormBinding.Builder getFormBindingBuilder() {
         return getFormBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       public claros.common.form.ClarosCommonFormBinding.FormBindingOrBuilder getFormBindingOrBuilder() {
-        if ((bindingCase_ == 9) && (formBindingBuilder_ != null)) {
+        if ((bindingCase_ == 3) && (formBindingBuilder_ != null)) {
           return formBindingBuilder_.getMessageOrBuilder();
         } else {
-          if (bindingCase_ == 9) {
+          if (bindingCase_ == 3) {
             return (claros.common.form.ClarosCommonFormBinding.FormBinding) binding_;
           }
           return claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.common.form.FormBinding formBinding = 9;</code>
+       * <code>.claros.common.form.FormBinding formBinding = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.form.ClarosCommonFormBinding.FormBinding, claros.common.form.ClarosCommonFormBinding.FormBinding.Builder, claros.common.form.ClarosCommonFormBinding.FormBindingOrBuilder> 
           getFormBindingFieldBuilder() {
         if (formBindingBuilder_ == null) {
-          if (!(bindingCase_ == 9)) {
+          if (!(bindingCase_ == 3)) {
             binding_ = claros.common.form.ClarosCommonFormBinding.FormBinding.getDefaultInstance();
           }
           formBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1250,7 +1250,7 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                   isClean());
           binding_ = null;
         }
-        bindingCase_ = 9;
+        bindingCase_ = 3;
         onChanged();;
         return formBindingBuilder_;
       }
@@ -1258,29 +1258,29 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding, claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBindingOrBuilder> spreadsheetBindingBuilder_;
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public boolean hasSpreadsheetBinding() {
-        return bindingCase_ == 10;
+        return bindingCase_ == 4;
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding getSpreadsheetBinding() {
         if (spreadsheetBindingBuilder_ == null) {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             return (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_;
           }
           return claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
         } else {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             return spreadsheetBindingBuilder_.getMessage();
           }
           return claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public Builder setSpreadsheetBinding(claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding value) {
         if (spreadsheetBindingBuilder_ == null) {
@@ -1292,11 +1292,11 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           spreadsheetBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 10;
+        bindingCase_ = 4;
         return this;
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public Builder setSpreadsheetBinding(
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.Builder builderForValue) {
@@ -1306,15 +1306,15 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           spreadsheetBindingBuilder_.setMessage(builderForValue.build());
         }
-        bindingCase_ = 10;
+        bindingCase_ = 4;
         return this;
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public Builder mergeSpreadsheetBinding(claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding value) {
         if (spreadsheetBindingBuilder_ == null) {
-          if (bindingCase_ == 10 &&
+          if (bindingCase_ == 4 &&
               binding_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance()) {
             binding_ = claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.newBuilder((claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_)
                 .mergeFrom(value).buildPartial();
@@ -1323,26 +1323,26 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
           }
           onChanged();
         } else {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             spreadsheetBindingBuilder_.mergeFrom(value);
           }
           spreadsheetBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 10;
+        bindingCase_ = 4;
         return this;
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public Builder clearSpreadsheetBinding() {
         if (spreadsheetBindingBuilder_ == null) {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             bindingCase_ = 0;
             binding_ = null;
             onChanged();
           }
         } else {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             bindingCase_ = 0;
             binding_ = null;
           }
@@ -1351,32 +1351,32 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         return this;
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.Builder getSpreadsheetBindingBuilder() {
         return getSpreadsheetBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBindingOrBuilder getSpreadsheetBindingOrBuilder() {
-        if ((bindingCase_ == 10) && (spreadsheetBindingBuilder_ != null)) {
+        if ((bindingCase_ == 4) && (spreadsheetBindingBuilder_ != null)) {
           return spreadsheetBindingBuilder_.getMessageOrBuilder();
         } else {
-          if (bindingCase_ == 10) {
+          if (bindingCase_ == 4) {
             return (claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding) binding_;
           }
           return claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+       * <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding, claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBindingOrBuilder> 
           getSpreadsheetBindingFieldBuilder() {
         if (spreadsheetBindingBuilder_ == null) {
-          if (!(bindingCase_ == 10)) {
+          if (!(bindingCase_ == 4)) {
             binding_ = claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.SpreadsheetBinding.getDefaultInstance();
           }
           spreadsheetBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1386,39 +1386,39 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
                   isClean());
           binding_ = null;
         }
-        bindingCase_ = 10;
+        bindingCase_ = 4;
         onChanged();;
         return spreadsheetBindingBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder> fieldInstrumentMeasurementBindingBuilder_;
+          claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder> fieldInstrumentMeasurementBindingBuilder_;
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
       public boolean hasFieldInstrumentMeasurementBinding() {
-        return bindingCase_ == 11;
+        return bindingCase_ == 5;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding getFieldInstrumentMeasurementBinding() {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 11) {
-            return (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
+          if (bindingCase_ == 5) {
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
         } else {
-          if (bindingCase_ == 11) {
+          if (bindingCase_ == 5) {
             return fieldInstrumentMeasurementBindingBuilder_.getMessage();
           }
-          return claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
-      public Builder setFieldInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding value) {
+      public Builder setFieldInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding value) {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1428,57 +1428,57 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         } else {
           fieldInstrumentMeasurementBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 11;
+        bindingCase_ = 5;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
       public Builder setFieldInstrumentMeasurementBinding(
-          claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder builderForValue) {
+          claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder builderForValue) {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
           binding_ = builderForValue.build();
           onChanged();
         } else {
           fieldInstrumentMeasurementBindingBuilder_.setMessage(builderForValue.build());
         }
-        bindingCase_ = 11;
+        bindingCase_ = 5;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
-      public Builder mergeFieldInstrumentMeasurementBinding(claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding value) {
+      public Builder mergeFieldInstrumentMeasurementBinding(claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding value) {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 11 &&
-              binding_ != claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance()) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.newBuilder((claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_)
+          if (bindingCase_ == 5 &&
+              binding_ != claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance()) {
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.newBuilder((claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_)
                 .mergeFrom(value).buildPartial();
           } else {
             binding_ = value;
           }
           onChanged();
         } else {
-          if (bindingCase_ == 11) {
+          if (bindingCase_ == 5) {
             fieldInstrumentMeasurementBindingBuilder_.mergeFrom(value);
           }
           fieldInstrumentMeasurementBindingBuilder_.setMessage(value);
         }
-        bindingCase_ = 11;
+        bindingCase_ = 5;
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
       public Builder clearFieldInstrumentMeasurementBinding() {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
-          if (bindingCase_ == 11) {
+          if (bindingCase_ == 5) {
             bindingCase_ = 0;
             binding_ = null;
             onChanged();
           }
         } else {
-          if (bindingCase_ == 11) {
+          if (bindingCase_ == 5) {
             bindingCase_ = 0;
             binding_ = null;
           }
@@ -1487,42 +1487,42 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         return this;
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder getFieldInstrumentMeasurementBindingBuilder() {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder getFieldInstrumentMeasurementBindingBuilder() {
         return getFieldInstrumentMeasurementBindingFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
-      public claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder() {
-        if ((bindingCase_ == 11) && (fieldInstrumentMeasurementBindingBuilder_ != null)) {
+      public claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder getFieldInstrumentMeasurementBindingOrBuilder() {
+        if ((bindingCase_ == 5) && (fieldInstrumentMeasurementBindingBuilder_ != null)) {
           return fieldInstrumentMeasurementBindingBuilder_.getMessageOrBuilder();
         } else {
-          if (bindingCase_ == 11) {
-            return (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
+          if (bindingCase_ == 5) {
+            return (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_;
           }
-          return claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+          return claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
         }
       }
       /**
-       * <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
+       * <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder> 
+          claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder> 
           getFieldInstrumentMeasurementBindingFieldBuilder() {
         if (fieldInstrumentMeasurementBindingBuilder_ == null) {
-          if (!(bindingCase_ == 11)) {
-            binding_ = claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
+          if (!(bindingCase_ == 5)) {
+            binding_ = claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.getDefaultInstance();
           }
           fieldInstrumentMeasurementBindingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder>(
-                  (claros.instrument.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_,
+              claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding.Builder, claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBindingOrBuilder>(
+                  (claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.InstrumentMeasurementFieldBinding) binding_,
                   getParentForChildren(),
                   isClean());
           binding_ = null;
         }
-        bindingCase_ = 11;
+        bindingCase_ = 5;
         onChanged();;
         return fieldInstrumentMeasurementBindingBuilder_;
       }
@@ -1600,18 +1600,19 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
       "ding.proto\032+claros_instrument_measuremen" +
       "t_binding.proto\0321claros_instrument_measu" +
       "rement_field_binding.proto\032+claros_opera" +
-      "tions_spreadsheet_binding.proto\"\256\003\n\017Cell" +
-      "DataBinding\022W\n\034instrumentMeasurementBind" +
-      "ing\030\007 \001(\0132/.claros.instrument.Instrument" +
-      "MeasurementBindingH\000\022K\n\022computationBindi" +
-      "ng\030\010 \001(\0132-.claros.common.computation.Com" +
-      "putationBindingH\000\0226\n\013formBinding\030\t \001(\0132\037" +
-      ".claros.common.form.FormBindingH\000\022O\n\022spr" +
-      "eadsheetBinding\030\n \001(\01321.claros.operation" +
-      "s.spreadsheet.SpreadsheetBindingH\000\022a\n!fi" +
-      "eldInstrumentMeasurementBinding\030\013 \001(\01324." +
-      "claros.instrument.InstrumentMeasurementF" +
-      "ieldBindingH\000B\t\n\007bindingb\006proto3"
+      "tions_spreadsheet_binding.proto\"\306\003\n\017Cell" +
+      "DataBinding\022c\n\034instrumentMeasurementBind" +
+      "ing\030\001 \001(\0132;.claros.instrument.measuremen" +
+      "t.InstrumentMeasurementBindingH\000\022K\n\022comp" +
+      "utationBinding\030\002 \001(\0132-.claros.common.com" +
+      "putation.ComputationBindingH\000\0226\n\013formBin" +
+      "ding\030\003 \001(\0132\037.claros.common.form.FormBind" +
+      "ingH\000\022O\n\022spreadsheetBinding\030\004 \001(\01321.clar" +
+      "os.operations.spreadsheet.SpreadsheetBin" +
+      "dingH\000\022m\n!fieldInstrumentMeasurementBind" +
+      "ing\030\005 \001(\0132@.claros.instrument.measuremen" +
+      "t.InstrumentMeasurementFieldBindingH\000B\t\n" +
+      "\007bindingb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1626,8 +1627,8 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           claros.common.form.ClarosCommonFormBinding.getDescriptor(),
           claros.common.computation.ClarosCommonComputationBinding.getDescriptor(),
-          claros.instrument.ClarosInstrumentMeasurementBinding.getDescriptor(),
-          claros.instrument.ClarosInstrumentMeasurementFieldBinding.getDescriptor(),
+          claros.instrument.measurement.ClarosInstrumentMeasurementBinding.getDescriptor(),
+          claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.getDescriptor(),
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.getDescriptor(),
         }, assigner);
     internal_static_claros_operations_spreadsheet_CellDataBinding_descriptor =
@@ -1638,8 +1639,8 @@ public final class ClarosOperationsSpreadsheetWorksheetCelldataBinding {
         new java.lang.String[] { "InstrumentMeasurementBinding", "ComputationBinding", "FormBinding", "SpreadsheetBinding", "FieldInstrumentMeasurementBinding", "Binding", });
     claros.common.form.ClarosCommonFormBinding.getDescriptor();
     claros.common.computation.ClarosCommonComputationBinding.getDescriptor();
-    claros.instrument.ClarosInstrumentMeasurementBinding.getDescriptor();
-    claros.instrument.ClarosInstrumentMeasurementFieldBinding.getDescriptor();
+    claros.instrument.measurement.ClarosInstrumentMeasurementBinding.getDescriptor();
+    claros.instrument.measurement.ClarosInstrumentMeasurementFieldBinding.getDescriptor();
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetBinding.getDescriptor();
   }
 

@@ -91,6 +91,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
     private double value_;
+    /// <summary>
+    /// The value that was entered by the user as a number
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double Value {
       get { return value_; }
@@ -102,6 +105,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "stringValue" field.</summary>
     public const int StringValueFieldNumber = 2;
     private string stringValue_ = "";
+    /// <summary>
+    /// The value represented as a string
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string StringValue {
       get { return stringValue_; }
@@ -113,6 +119,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "isLocked" field.</summary>
     public const int IsLockedFieldNumber = 3;
     private bool isLocked_;
+    /// <summary>
+    /// Whether the cell has been locked to prevent unautorized update of just this cell
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsLocked {
       get { return isLocked_; }
@@ -124,6 +133,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "unitId" field.</summary>
     public const int UnitIdFieldNumber = 4;
     private uint unitId_;
+    /// <summary>
+    /// The unit that relates to the value
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint UnitId {
       get { return unitId_; }
@@ -135,6 +147,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "justification" field.</summary>
     public const int JustificationFieldNumber = 5;
     private string justification_ = "";
+    /// <summary>
+    /// Textual note to explain why the data was changed
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Justification {
       get { return justification_; }
@@ -146,6 +161,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "reportableQualifier" field.</summary>
     public const int ReportableQualifierFieldNumber = 6;
     private global::Claros.Common.Core.ReportableQualifier reportableQualifier_;
+    /// <summary>
+    /// If the data was entered as a qualified value, the qualified properties
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ReportableQualifier ReportableQualifier {
       get { return reportableQualifier_; }
@@ -159,6 +177,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.CellDataBinding> _repeated_cellDataBindings_codec
         = pb::FieldCodec.ForMessage(58, global::Claros.Operations.Spreadsheet.CellDataBinding.Parser);
     private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding> cellDataBindings_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding>();
+    /// <summary>
+    /// Where the data came from that went into the cell
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding> CellDataBindings {
       get { return cellDataBindings_; }
@@ -167,6 +188,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 99;
     private global::Claros.Common.Core.AuditEvent auditEvent_;
+    /// <summary>
+    /// Audit information for this cell entry
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }

@@ -6,12 +6,12 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_computation_cursor_type.proto", :syntax => :proto3) do
     add_enum "claros.common.computation.ComputationCursorType" do
-      value :CC_UNKNOWN, 0
-      value :CC_CURRENT, 1
-      value :CC_PREVIOUS, 2
-      value :CC_NEXT, 4
-      value :CC_LAST, 5
-      value :CC_ABSOLUTE, 6
+      value :COMPUTATION_CURSOR_UNKNOWN, 0
+      value :COMPUTATION_CURSOR_CURRENT, 1
+      value :COMPUTATION_CURSOR_PREVIOUS, 2
+      value :COMPUTATION_CURSOR_NEXT, 4
+      value :COMPUTATION_CURSOR_LAST, 5
+      value :COMPUTATION_CURSOR_ABSOLUTE, 6
     end
   end
 end

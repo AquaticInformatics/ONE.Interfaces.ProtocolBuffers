@@ -80,6 +80,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "columnId" field.</summary>
     public const int ColumnIdFieldNumber = 1;
     private uint columnId_;
+    /// <summary>
+    /// The column id related to the cell
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ColumnId {
       get { return columnId_; }
@@ -93,6 +96,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Common.Core.Note> _repeated_notes_codec
         = pb::FieldCodec.ForMessage(18, global::Claros.Common.Core.Note.Parser);
     private readonly pbc::RepeatedField<global::Claros.Common.Core.Note> notes_ = new pbc::RepeatedField<global::Claros.Common.Core.Note>();
+    /// <summary>
+    /// A collection of notes that are related to a cell.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Common.Core.Note> Notes {
       get { return notes_; }
@@ -103,6 +109,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.CellData> _repeated_cellData_codec
         = pb::FieldCodec.ForMessage(26, global::Claros.Operations.Spreadsheet.CellData.Parser);
     private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellData> cellData_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellData>();
+    /// <summary>
+    /// The current and past data that has been entered into a cell
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellData> CellData {
       get { return cellData_; }

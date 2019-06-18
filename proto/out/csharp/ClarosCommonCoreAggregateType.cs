@@ -25,9 +25,9 @@ namespace Claros.Common.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CidjbGFyb3NfY29tbW9uX2NvcmVfYWdncmVnYXRlX3R5cGUucHJvdG8SEmNs",
-            "YXJvcy5jb21tb24uY29yZSpLCg1BZ2dyZWdhdGVUeXBlEg0KCUFfVU5LTk9X",
-            "ThAAEg0KCUFfTUlOSU1VTRABEg0KCUFfTUFYSU1VTRACEg0KCUFfQVZFUkFH",
-            "RRADYgZwcm90bzM="));
+            "YXJvcy5jb21tb24uY29yZSprCg1BZ2dyZWdhdGVUeXBlEhUKEUFHR1JFR0FU",
+            "RV9VTktOT1dOEAASFQoRQUdHUkVHQVRFX01JTklNVU0QARIVChFBR0dSRUdB",
+            "VEVfTUFYSU1VTRACEhUKEUFHR1JFR0FURV9BVkVSQUdFEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.AggregateType), }, null));
@@ -37,10 +37,19 @@ namespace Claros.Common.Core {
   }
   #region Enums
   public enum AggregateType {
-    [pbr::OriginalName("A_UNKNOWN")] AUnknown = 0,
-    [pbr::OriginalName("A_MINIMUM")] AMinimum = 1,
-    [pbr::OriginalName("A_MAXIMUM")] AMaximum = 2,
-    [pbr::OriginalName("A_AVERAGE")] AAverage = 3,
+    [pbr::OriginalName("AGGREGATE_UNKNOWN")] AggregateUnknown = 0,
+    /// <summary>
+    /// Mimimum value for the aggregate range
+    /// </summary>
+    [pbr::OriginalName("AGGREGATE_MINIMUM")] AggregateMinimum = 1,
+    /// <summary>
+    /// Maximim value for the aggregate range
+    /// </summary>
+    [pbr::OriginalName("AGGREGATE_MAXIMUM")] AggregateMaximum = 2,
+    /// <summary>
+    /// Average value for the aggregate range
+    /// </summary>
+    [pbr::OriginalName("AGGREGATE_AVERAGE")] AggregateAverage = 3,
   }
 
   #endregion

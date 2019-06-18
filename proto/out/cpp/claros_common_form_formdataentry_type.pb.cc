@@ -40,15 +40,17 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto[] =
   "\n+claros_common_form_formdataentry_type."
-  "proto\022\022claros.common.form*n\n\021FormDataEnt"
-  "ryType\022\017\n\013FDE_UNKNOWN\020\000\022\022\n\016FDE_INSTRUMEN"
-  "T\020\001\022\021\n\rFDE_TOTALIZER\020\002\022\023\n\017FDE_CONSUMPTIO"
-  "N\020\003\022\014\n\010FDE_TEXT\020\004b\006proto3"
+  "proto\022\022claros.common.form*\252\001\n\021FormDataEn"
+  "tryType\022\033\n\027FORM_DATE_ENTRY_UNKNOWN\020\000\022\036\n\032"
+  "FORM_DATE_ENTRY_INSTRUMENT\020\001\022\035\n\031FORM_DAT"
+  "E_ENTRY_TOTALIZER\020\002\022\037\n\033FORM_DATE_ENTRY_C"
+  "ONSUMPTION\020\003\022\030\n\024FORM_DATE_ENTRY_TEXT\020\004b\006"
+  "proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto,
-  "claros_common_form_formdataentry_type.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto, 185,
+  "claros_common_form_formdataentry_type.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto, 246,
 };
 
 void AddDescriptors_claros_5fcommon_5fform_5fformdataentry_5ftype_2eproto() {

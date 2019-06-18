@@ -20,72 +20,72 @@ public final class ClarosCommonCoreDayofweek {
   public enum DayOfWeek
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DOW_UNKNOWN = 0;</code>
+     * <code>DAY_OF_WEEK_UNKNOWN = 0;</code>
      */
-    DOW_UNKNOWN(0),
+    DAY_OF_WEEK_UNKNOWN(0),
     /**
-     * <code>DOW_SUNDAY = 1;</code>
+     * <code>DAY_OF_WEEK_SUNDAY = 1;</code>
      */
-    DOW_SUNDAY(1),
+    DAY_OF_WEEK_SUNDAY(1),
     /**
-     * <code>DOW_MONDAY = 2;</code>
+     * <code>DAY_OF_WEEK_MONDAY = 2;</code>
      */
-    DOW_MONDAY(2),
+    DAY_OF_WEEK_MONDAY(2),
     /**
-     * <code>DOW_TUESDAY = 3;</code>
+     * <code>DAY_OF_WEEK_TUESDAY = 3;</code>
      */
-    DOW_TUESDAY(3),
+    DAY_OF_WEEK_TUESDAY(3),
     /**
-     * <code>DOW_WEDNESDAY = 4;</code>
+     * <code>DAY_OF_WEEK_WEDNESDAY = 4;</code>
      */
-    DOW_WEDNESDAY(4),
+    DAY_OF_WEEK_WEDNESDAY(4),
     /**
-     * <code>DOW_THURSDAY = 5;</code>
+     * <code>DAY_OF_WEEK_THURSDAY = 5;</code>
      */
-    DOW_THURSDAY(5),
+    DAY_OF_WEEK_THURSDAY(5),
     /**
-     * <code>DOW_FRIDAY = 6;</code>
+     * <code>DAY_OF_WEEK_FRIDAY = 6;</code>
      */
-    DOW_FRIDAY(6),
+    DAY_OF_WEEK_FRIDAY(6),
     /**
-     * <code>DOW_SATURDAY = 7;</code>
+     * <code>DAY_OF_WEEK_SATURDAY = 7;</code>
      */
-    DOW_SATURDAY(7),
+    DAY_OF_WEEK_SATURDAY(7),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DOW_UNKNOWN = 0;</code>
+     * <code>DAY_OF_WEEK_UNKNOWN = 0;</code>
      */
-    public static final int DOW_UNKNOWN_VALUE = 0;
+    public static final int DAY_OF_WEEK_UNKNOWN_VALUE = 0;
     /**
-     * <code>DOW_SUNDAY = 1;</code>
+     * <code>DAY_OF_WEEK_SUNDAY = 1;</code>
      */
-    public static final int DOW_SUNDAY_VALUE = 1;
+    public static final int DAY_OF_WEEK_SUNDAY_VALUE = 1;
     /**
-     * <code>DOW_MONDAY = 2;</code>
+     * <code>DAY_OF_WEEK_MONDAY = 2;</code>
      */
-    public static final int DOW_MONDAY_VALUE = 2;
+    public static final int DAY_OF_WEEK_MONDAY_VALUE = 2;
     /**
-     * <code>DOW_TUESDAY = 3;</code>
+     * <code>DAY_OF_WEEK_TUESDAY = 3;</code>
      */
-    public static final int DOW_TUESDAY_VALUE = 3;
+    public static final int DAY_OF_WEEK_TUESDAY_VALUE = 3;
     /**
-     * <code>DOW_WEDNESDAY = 4;</code>
+     * <code>DAY_OF_WEEK_WEDNESDAY = 4;</code>
      */
-    public static final int DOW_WEDNESDAY_VALUE = 4;
+    public static final int DAY_OF_WEEK_WEDNESDAY_VALUE = 4;
     /**
-     * <code>DOW_THURSDAY = 5;</code>
+     * <code>DAY_OF_WEEK_THURSDAY = 5;</code>
      */
-    public static final int DOW_THURSDAY_VALUE = 5;
+    public static final int DAY_OF_WEEK_THURSDAY_VALUE = 5;
     /**
-     * <code>DOW_FRIDAY = 6;</code>
+     * <code>DAY_OF_WEEK_FRIDAY = 6;</code>
      */
-    public static final int DOW_FRIDAY_VALUE = 6;
+    public static final int DAY_OF_WEEK_FRIDAY_VALUE = 6;
     /**
-     * <code>DOW_SATURDAY = 7;</code>
+     * <code>DAY_OF_WEEK_SATURDAY = 7;</code>
      */
-    public static final int DOW_SATURDAY_VALUE = 7;
+    public static final int DAY_OF_WEEK_SATURDAY_VALUE = 7;
 
 
     public final int getNumber() {
@@ -106,14 +106,14 @@ public final class ClarosCommonCoreDayofweek {
 
     public static DayOfWeek forNumber(int value) {
       switch (value) {
-        case 0: return DOW_UNKNOWN;
-        case 1: return DOW_SUNDAY;
-        case 2: return DOW_MONDAY;
-        case 3: return DOW_TUESDAY;
-        case 4: return DOW_WEDNESDAY;
-        case 5: return DOW_THURSDAY;
-        case 6: return DOW_FRIDAY;
-        case 7: return DOW_SATURDAY;
+        case 0: return DAY_OF_WEEK_UNKNOWN;
+        case 1: return DAY_OF_WEEK_SUNDAY;
+        case 2: return DAY_OF_WEEK_MONDAY;
+        case 3: return DAY_OF_WEEK_TUESDAY;
+        case 4: return DAY_OF_WEEK_WEDNESDAY;
+        case 5: return DAY_OF_WEEK_THURSDAY;
+        case 6: return DAY_OF_WEEK_FRIDAY;
+        case 7: return DAY_OF_WEEK_SATURDAY;
         default: return null;
       }
     }
@@ -176,11 +176,12 @@ public final class ClarosCommonCoreDayofweek {
   static {
     java.lang.String[] descriptorData = {
       "\n\"claros_common_core_dayofweek.proto\022\022cl" +
-      "aros.common.core*\224\001\n\tDayOfWeek\022\017\n\013DOW_UN" +
-      "KNOWN\020\000\022\016\n\nDOW_SUNDAY\020\001\022\016\n\nDOW_MONDAY\020\002\022" +
-      "\017\n\013DOW_TUESDAY\020\003\022\021\n\rDOW_WEDNESDAY\020\004\022\020\n\014D" +
-      "OW_THURSDAY\020\005\022\016\n\nDOW_FRIDAY\020\006\022\020\n\014DOW_SAT" +
-      "URDAY\020\007b\006proto3"
+      "aros.common.core*\324\001\n\tDayOfWeek\022\027\n\023DAY_OF" +
+      "_WEEK_UNKNOWN\020\000\022\026\n\022DAY_OF_WEEK_SUNDAY\020\001\022" +
+      "\026\n\022DAY_OF_WEEK_MONDAY\020\002\022\027\n\023DAY_OF_WEEK_T" +
+      "UESDAY\020\003\022\031\n\025DAY_OF_WEEK_WEDNESDAY\020\004\022\030\n\024D" +
+      "AY_OF_WEEK_THURSDAY\020\005\022\026\n\022DAY_OF_WEEK_FRI" +
+      "DAY\020\006\022\030\n\024DAY_OF_WEEK_SATURDAY\020\007b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

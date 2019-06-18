@@ -20,64 +20,112 @@ public final class ClarosCommonCoreDatasourceType {
   public enum DataSourceType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DS_UNKNOWN = 0;</code>
+     * <code>DATASOURCE_UNKNOWN = 0;</code>
      */
-    DS_UNKNOWN(0),
+    DATASOURCE_UNKNOWN(0),
     /**
-     * <code>DS_FORM = 1;</code>
+     * <pre>
+     * Data related to Claros.Common.Form
+     * </pre>
+     *
+     * <code>DATASOURCE_FORM = 1;</code>
      */
-    DS_FORM(1),
+    DATASOURCE_FORM(1),
     /**
-     * <code>DS_COMPUTATION = 2;</code>
+     * <pre>
+     * Data related to Claros.Common.Computation
+     * </pre>
+     *
+     * <code>DATASOURCE_COMPUTATION = 2;</code>
      */
-    DS_COMPUTATION(2),
+    DATASOURCE_COMPUTATION(2),
     /**
-     * <code>DS_SPREADSHEET = 3;</code>
+     * <pre>
+     * Data related to Claros.Common.Spreadsheet
+     * </pre>
+     *
+     * <code>DATASOURCE_SPREADSHEET = 3;</code>
      */
-    DS_SPREADSHEET(3),
+    DATASOURCE_SPREADSHEET(3),
     /**
-     * <code>DS_INSTRUMENTMEASUREMENT = 4;</code>
+     * <pre>
+     * Data related to Claros.Instrument.Measurement
+     * </pre>
+     *
+     * <code>DATASOURCE_INSTRUMENTMEASUREMENT = 4;</code>
      */
-    DS_INSTRUMENTMEASUREMENT(4),
+    DATASOURCE_INSTRUMENTMEASUREMENT(4),
     /**
-     * <code>DS_IMPORT = 5;</code>
+     * <pre>
+     * Data related to imports
+     * </pre>
+     *
+     * <code>DATASOURCE_IMPORT = 5;</code>
      */
-    DS_IMPORT(5),
+    DATASOURCE_IMPORT(5),
     /**
-     * <code>DS_SPREADSHEET_DEFINITION = 6;</code>
+     * <pre>
+     * Data related to Claros.Common.Spreadsheet.Definition
+     * </pre>
+     *
+     * <code>DATASOURCE_SPREADSHEET_DEFINITION = 6;</code>
      */
-    DS_SPREADSHEET_DEFINITION(6),
+    DATASOURCE_SPREADSHEET_DEFINITION(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DS_UNKNOWN = 0;</code>
+     * <code>DATASOURCE_UNKNOWN = 0;</code>
      */
-    public static final int DS_UNKNOWN_VALUE = 0;
+    public static final int DATASOURCE_UNKNOWN_VALUE = 0;
     /**
-     * <code>DS_FORM = 1;</code>
+     * <pre>
+     * Data related to Claros.Common.Form
+     * </pre>
+     *
+     * <code>DATASOURCE_FORM = 1;</code>
      */
-    public static final int DS_FORM_VALUE = 1;
+    public static final int DATASOURCE_FORM_VALUE = 1;
     /**
-     * <code>DS_COMPUTATION = 2;</code>
+     * <pre>
+     * Data related to Claros.Common.Computation
+     * </pre>
+     *
+     * <code>DATASOURCE_COMPUTATION = 2;</code>
      */
-    public static final int DS_COMPUTATION_VALUE = 2;
+    public static final int DATASOURCE_COMPUTATION_VALUE = 2;
     /**
-     * <code>DS_SPREADSHEET = 3;</code>
+     * <pre>
+     * Data related to Claros.Common.Spreadsheet
+     * </pre>
+     *
+     * <code>DATASOURCE_SPREADSHEET = 3;</code>
      */
-    public static final int DS_SPREADSHEET_VALUE = 3;
+    public static final int DATASOURCE_SPREADSHEET_VALUE = 3;
     /**
-     * <code>DS_INSTRUMENTMEASUREMENT = 4;</code>
+     * <pre>
+     * Data related to Claros.Instrument.Measurement
+     * </pre>
+     *
+     * <code>DATASOURCE_INSTRUMENTMEASUREMENT = 4;</code>
      */
-    public static final int DS_INSTRUMENTMEASUREMENT_VALUE = 4;
+    public static final int DATASOURCE_INSTRUMENTMEASUREMENT_VALUE = 4;
     /**
-     * <code>DS_IMPORT = 5;</code>
+     * <pre>
+     * Data related to imports
+     * </pre>
+     *
+     * <code>DATASOURCE_IMPORT = 5;</code>
      */
-    public static final int DS_IMPORT_VALUE = 5;
+    public static final int DATASOURCE_IMPORT_VALUE = 5;
     /**
-     * <code>DS_SPREADSHEET_DEFINITION = 6;</code>
+     * <pre>
+     * Data related to Claros.Common.Spreadsheet.Definition
+     * </pre>
+     *
+     * <code>DATASOURCE_SPREADSHEET_DEFINITION = 6;</code>
      */
-    public static final int DS_SPREADSHEET_DEFINITION_VALUE = 6;
+    public static final int DATASOURCE_SPREADSHEET_DEFINITION_VALUE = 6;
 
 
     public final int getNumber() {
@@ -98,13 +146,13 @@ public final class ClarosCommonCoreDatasourceType {
 
     public static DataSourceType forNumber(int value) {
       switch (value) {
-        case 0: return DS_UNKNOWN;
-        case 1: return DS_FORM;
-        case 2: return DS_COMPUTATION;
-        case 3: return DS_SPREADSHEET;
-        case 4: return DS_INSTRUMENTMEASUREMENT;
-        case 5: return DS_IMPORT;
-        case 6: return DS_SPREADSHEET_DEFINITION;
+        case 0: return DATASOURCE_UNKNOWN;
+        case 1: return DATASOURCE_FORM;
+        case 2: return DATASOURCE_COMPUTATION;
+        case 3: return DATASOURCE_SPREADSHEET;
+        case 4: return DATASOURCE_INSTRUMENTMEASUREMENT;
+        case 5: return DATASOURCE_IMPORT;
+        case 6: return DATASOURCE_SPREADSHEET_DEFINITION;
         default: return null;
       }
     }
@@ -167,11 +215,13 @@ public final class ClarosCommonCoreDatasourceType {
   static {
     java.lang.String[] descriptorData = {
       "\n(claros_common_core_datasource_type.pro" +
-      "to\022\022claros.common.core*\241\001\n\016DataSourceTyp" +
-      "e\022\016\n\nDS_UNKNOWN\020\000\022\013\n\007DS_FORM\020\001\022\022\n\016DS_COM" +
-      "PUTATION\020\002\022\022\n\016DS_SPREADSHEET\020\003\022\034\n\030DS_INS" +
-      "TRUMENTMEASUREMENT\020\004\022\r\n\tDS_IMPORT\020\005\022\035\n\031D" +
-      "S_SPREADSHEET_DEFINITION\020\006b\006proto3"
+      "to\022\022claros.common.core*\331\001\n\016DataSourceTyp" +
+      "e\022\026\n\022DATASOURCE_UNKNOWN\020\000\022\023\n\017DATASOURCE_" +
+      "FORM\020\001\022\032\n\026DATASOURCE_COMPUTATION\020\002\022\032\n\026DA" +
+      "TASOURCE_SPREADSHEET\020\003\022$\n DATASOURCE_INS" +
+      "TRUMENTMEASUREMENT\020\004\022\025\n\021DATASOURCE_IMPOR" +
+      "T\020\005\022%\n!DATASOURCE_SPREADSHEET_DEFINITION" +
+      "\020\006b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

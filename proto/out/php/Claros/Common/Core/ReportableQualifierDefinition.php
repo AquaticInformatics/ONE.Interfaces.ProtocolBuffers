@@ -14,14 +14,20 @@ use Google\Protobuf\Internal\GPBUtil;
 class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The type of reportable qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     private $reportableQualifierType = 0;
     /**
+     * How to interpret the qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      */
     private $reportableQualifierDefinitionType = 0;
     /**
+     * The value if the interpretation is a constant
+     *
      * Generated from protobuf field <code>double constantValue = 3;</code>
      */
     private $constantValue = 0.0;
@@ -33,8 +39,11 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $reportableQualifierType
+     *           The type of reportable qualifer
      *     @type int $reportableQualifierDefinitionType
+     *           How to interpret the qualifer
      *     @type float $constantValue
+     *           The value if the interpretation is a constant
      * }
      */
     public function __construct($data = NULL) {
@@ -43,6 +52,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of reportable qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      * @return int
      */
@@ -52,6 +63,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The type of reportable qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      * @param int $var
      * @return $this
@@ -65,6 +78,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * How to interpret the qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      * @return int
      */
@@ -74,6 +89,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * How to interpret the qualifer
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;</code>
      * @param int $var
      * @return $this
@@ -87,6 +104,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value if the interpretation is a constant
+     *
      * Generated from protobuf field <code>double constantValue = 3;</code>
      * @return float
      */
@@ -96,6 +115,8 @@ class ReportableQualifierDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value if the interpretation is a constant
+     *
      * Generated from protobuf field <code>double constantValue = 3;</code>
      * @param float $var
      * @return $this

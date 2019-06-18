@@ -377,7 +377,7 @@ public final class ClarosOperationsSpreadsheetWorksheet {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.W_UNKNOWN.getNumber()) {
+      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.WORKSHEET_UNKNOWN.getNumber()) {
         output.writeEnum(1, worksheetType_);
       }
       for (int i = 0; i < worksheetDefinitions_.size(); i++) {
@@ -395,7 +395,7 @@ public final class ClarosOperationsSpreadsheetWorksheet {
       if (size != -1) return size;
 
       size = 0;
-      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.W_UNKNOWN.getNumber()) {
+      if (worksheetType_ != claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetType.WorksheetType.WORKSHEET_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, worksheetType_);
       }

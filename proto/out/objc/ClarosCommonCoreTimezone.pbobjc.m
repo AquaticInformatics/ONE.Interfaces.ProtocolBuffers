@@ -36,10 +36,10 @@ GPBEnumDescriptor *TimeZone_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "TzUnknown\000TzUtc\000";
+        "TimezoneUnknown\000TimezoneUtc\000";
     static const int32_t values[] = {
-        TimeZone_TzUnknown,
-        TimeZone_TzUtc,
+        TimeZone_TimezoneUnknown,
+        TimeZone_TimezoneUtc,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(TimeZone)
@@ -57,8 +57,8 @@ GPBEnumDescriptor *TimeZone_EnumDescriptor(void) {
 
 BOOL TimeZone_IsValidValue(int32_t value__) {
   switch (value__) {
-    case TimeZone_TzUnknown:
-    case TimeZone_TzUtc:
+    case TimeZone_TimezoneUnknown:
+    case TimeZone_TimezoneUtc:
       return YES;
     default:
       return NO;

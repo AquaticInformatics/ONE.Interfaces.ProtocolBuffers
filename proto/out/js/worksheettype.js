@@ -13,10 +13,10 @@ goog.provide('proto.claros.operations.spreadsheet.WorksheetType');
  * @enum {number}
  */
 proto.claros.operations.spreadsheet.WorksheetType = {
-  W_UNKNOWN: 0,
-  W_FIFTEEN_MINUTE: 1,
-  W_FOUR_HOUR: 2,
-  W_DAILY: 3,
-  W_MONTHLY: 4
+  WORKSHEET_UNKNOWN: 0,
+  WORKSHEET_FIFTEEN_MINUTE: 1,
+  WORKSHEET_HOUR: 2,
+  WORKSHEET_FOUR_HOUR: 3,
+  WORKSHEET_DAILY: 4
 };
 

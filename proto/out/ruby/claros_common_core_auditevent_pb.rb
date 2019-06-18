@@ -14,6 +14,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :dataSourceType, :enum, 3, "claros.common.core.DataSourceType"
       optional :eventType, :enum, 4, "claros.common.core.AuditEventType"
       optional :timeStamp, :message, 5, "claros.common.core.ClarosDateTime"
+      optional :details, :string, 6
     end
   end
 end

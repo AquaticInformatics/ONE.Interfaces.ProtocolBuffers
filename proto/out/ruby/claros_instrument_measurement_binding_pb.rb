@@ -6,7 +6,7 @@ require 'google/protobuf'
 require 'claros_common_core_aggregate_type_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_instrument_measurement_binding.proto", :syntax => :proto3) do
-    add_message "claros.instrument.InstrumentMeasurementBinding" do
+    add_message "claros.instrument.measurement.InstrumentMeasurementBinding" do
       optional :instrumentMeasurementId, :string, 1
       optional :aggregateType, :enum, 2, "claros.common.core.AggregateType"
       optional :unitId, :uint32, 3
@@ -16,6 +16,8 @@ end
 
 module Claros
   module Instrument
-    InstrumentMeasurementBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.InstrumentMeasurementBinding").msgclass
+    module Measurement
+      InstrumentMeasurementBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.measurement.InstrumentMeasurementBinding").msgclass
+    end
   end
 end

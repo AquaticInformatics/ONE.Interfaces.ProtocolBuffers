@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n(claros_common_core_datasource_type.proto\x12\x12\x63laros.common.core*\xa1\x01\n\x0e\x44\x61taSourceType\x12\x0e\n\nDS_UNKNOWN\x10\x00\x12\x0b\n\x07\x44S_FORM\x10\x01\x12\x12\n\x0e\x44S_COMPUTATION\x10\x02\x12\x12\n\x0e\x44S_SPREADSHEET\x10\x03\x12\x1c\n\x18\x44S_INSTRUMENTMEASUREMENT\x10\x04\x12\r\n\tDS_IMPORT\x10\x05\x12\x1d\n\x19\x44S_SPREADSHEET_DEFINITION\x10\x06\x62\x06proto3')
+  serialized_pb=_b('\n(claros_common_core_datasource_type.proto\x12\x12\x63laros.common.core*\xd9\x01\n\x0e\x44\x61taSourceType\x12\x16\n\x12\x44\x41TASOURCE_UNKNOWN\x10\x00\x12\x13\n\x0f\x44\x41TASOURCE_FORM\x10\x01\x12\x1a\n\x16\x44\x41TASOURCE_COMPUTATION\x10\x02\x12\x1a\n\x16\x44\x41TASOURCE_SPREADSHEET\x10\x03\x12$\n DATASOURCE_INSTRUMENTMEASUREMENT\x10\x04\x12\x15\n\x11\x44\x41TASOURCE_IMPORT\x10\x05\x12%\n!DATASOURCE_SPREADSHEET_DEFINITION\x10\x06\x62\x06proto3')
 )
 
 _DATASOURCETYPE = _descriptor.EnumDescriptor(
@@ -31,49 +31,49 @@ _DATASOURCETYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='DS_UNKNOWN', index=0, number=0,
+      name='DATASOURCE_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_FORM', index=1, number=1,
+      name='DATASOURCE_FORM', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_COMPUTATION', index=2, number=2,
+      name='DATASOURCE_COMPUTATION', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_SPREADSHEET', index=3, number=3,
+      name='DATASOURCE_SPREADSHEET', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_INSTRUMENTMEASUREMENT', index=4, number=4,
+      name='DATASOURCE_INSTRUMENTMEASUREMENT', index=4, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_IMPORT', index=5, number=5,
+      name='DATASOURCE_IMPORT', index=5, number=5,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DS_SPREADSHEET_DEFINITION', index=6, number=6,
+      name='DATASOURCE_SPREADSHEET_DEFINITION', index=6, number=6,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=65,
-  serialized_end=226,
+  serialized_end=282,
 )
 _sym_db.RegisterEnumDescriptor(_DATASOURCETYPE)
 
 DataSourceType = enum_type_wrapper.EnumTypeWrapper(_DATASOURCETYPE)
-DS_UNKNOWN = 0
-DS_FORM = 1
-DS_COMPUTATION = 2
-DS_SPREADSHEET = 3
-DS_INSTRUMENTMEASUREMENT = 4
-DS_IMPORT = 5
-DS_SPREADSHEET_DEFINITION = 6
+DATASOURCE_UNKNOWN = 0
+DATASOURCE_FORM = 1
+DATASOURCE_COMPUTATION = 2
+DATASOURCE_SPREADSHEET = 3
+DATASOURCE_INSTRUMENTMEASUREMENT = 4
+DATASOURCE_IMPORT = 5
+DATASOURCE_SPREADSHEET_DEFINITION = 6
 
 
 DESCRIPTOR.enum_types_by_name['DataSourceType'] = _DATASOURCETYPE

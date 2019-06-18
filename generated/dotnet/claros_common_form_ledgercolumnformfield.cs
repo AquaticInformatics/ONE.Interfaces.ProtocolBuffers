@@ -30,7 +30,7 @@ namespace claros.common.form
         public string lowLimit { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.core.Recurrence timeWindow { get; set; }
+        public global::claros.common.recurrence.Recurrence timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(6, Name = @"parameter")]
         [global::System.ComponentModel.DefaultValue("")]

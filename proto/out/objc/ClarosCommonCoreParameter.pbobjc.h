@@ -64,18 +64,25 @@ typedef GPB_ENUM(Parameter_FieldNumber) {
 
 @interface Parameter : GPBMessage
 
+/** The GUID for the parameter */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *id_p;
 
+/** The integer used to globally identify the parameter */
 @property(nonatomic, readwrite) uint32_t intId;
 
+/** The locationization string used for i18 lookup for this parameter */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *i18NKey;
 
+/** ????? */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *parameterTypeId;
 
+/** The GUID of the Quantity Type related to the parameter */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *quantityTypeId;
 
+/** ????? */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *description_p;
 
+/** The GUID of the tenant that is ????? */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *tenantId;
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *createdById;

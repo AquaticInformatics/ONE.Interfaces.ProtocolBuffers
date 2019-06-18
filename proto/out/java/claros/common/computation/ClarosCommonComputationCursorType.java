@@ -15,61 +15,73 @@ public final class ClarosCommonComputationCursorType {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Allows for navigating to adjacent rows.
+   * </pre>
+   *
    * Protobuf enum {@code claros.common.computation.ComputationCursorType}
    */
   public enum ComputationCursorType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CC_UNKNOWN = 0;</code>
+     * <code>COMPUTATION_CURSOR_UNKNOWN = 0;</code>
      */
-    CC_UNKNOWN(0),
+    COMPUTATION_CURSOR_UNKNOWN(0),
     /**
-     * <code>CC_CURRENT = 1;</code>
+     * <code>COMPUTATION_CURSOR_CURRENT = 1;</code>
      */
-    CC_CURRENT(1),
+    COMPUTATION_CURSOR_CURRENT(1),
     /**
-     * <code>CC_PREVIOUS = 2;</code>
+     * <code>COMPUTATION_CURSOR_PREVIOUS = 2;</code>
      */
-    CC_PREVIOUS(2),
+    COMPUTATION_CURSOR_PREVIOUS(2),
     /**
-     * <code>CC_NEXT = 4;</code>
+     * <code>COMPUTATION_CURSOR_NEXT = 4;</code>
      */
-    CC_NEXT(4),
+    COMPUTATION_CURSOR_NEXT(4),
     /**
-     * <code>CC_LAST = 5;</code>
+     * <code>COMPUTATION_CURSOR_LAST = 5;</code>
      */
-    CC_LAST(5),
+    COMPUTATION_CURSOR_LAST(5),
     /**
-     * <code>CC_ABSOLUTE = 6;</code>
+     * <pre>
+     * should this be relative?
+     * </pre>
+     *
+     * <code>COMPUTATION_CURSOR_ABSOLUTE = 6;</code>
      */
-    CC_ABSOLUTE(6),
+    COMPUTATION_CURSOR_ABSOLUTE(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CC_UNKNOWN = 0;</code>
+     * <code>COMPUTATION_CURSOR_UNKNOWN = 0;</code>
      */
-    public static final int CC_UNKNOWN_VALUE = 0;
+    public static final int COMPUTATION_CURSOR_UNKNOWN_VALUE = 0;
     /**
-     * <code>CC_CURRENT = 1;</code>
+     * <code>COMPUTATION_CURSOR_CURRENT = 1;</code>
      */
-    public static final int CC_CURRENT_VALUE = 1;
+    public static final int COMPUTATION_CURSOR_CURRENT_VALUE = 1;
     /**
-     * <code>CC_PREVIOUS = 2;</code>
+     * <code>COMPUTATION_CURSOR_PREVIOUS = 2;</code>
      */
-    public static final int CC_PREVIOUS_VALUE = 2;
+    public static final int COMPUTATION_CURSOR_PREVIOUS_VALUE = 2;
     /**
-     * <code>CC_NEXT = 4;</code>
+     * <code>COMPUTATION_CURSOR_NEXT = 4;</code>
      */
-    public static final int CC_NEXT_VALUE = 4;
+    public static final int COMPUTATION_CURSOR_NEXT_VALUE = 4;
     /**
-     * <code>CC_LAST = 5;</code>
+     * <code>COMPUTATION_CURSOR_LAST = 5;</code>
      */
-    public static final int CC_LAST_VALUE = 5;
+    public static final int COMPUTATION_CURSOR_LAST_VALUE = 5;
     /**
-     * <code>CC_ABSOLUTE = 6;</code>
+     * <pre>
+     * should this be relative?
+     * </pre>
+     *
+     * <code>COMPUTATION_CURSOR_ABSOLUTE = 6;</code>
      */
-    public static final int CC_ABSOLUTE_VALUE = 6;
+    public static final int COMPUTATION_CURSOR_ABSOLUTE_VALUE = 6;
 
 
     public final int getNumber() {
@@ -90,12 +102,12 @@ public final class ClarosCommonComputationCursorType {
 
     public static ComputationCursorType forNumber(int value) {
       switch (value) {
-        case 0: return CC_UNKNOWN;
-        case 1: return CC_CURRENT;
-        case 2: return CC_PREVIOUS;
-        case 4: return CC_NEXT;
-        case 5: return CC_LAST;
-        case 6: return CC_ABSOLUTE;
+        case 0: return COMPUTATION_CURSOR_UNKNOWN;
+        case 1: return COMPUTATION_CURSOR_CURRENT;
+        case 2: return COMPUTATION_CURSOR_PREVIOUS;
+        case 4: return COMPUTATION_CURSOR_NEXT;
+        case 5: return COMPUTATION_CURSOR_LAST;
+        case 6: return COMPUTATION_CURSOR_ABSOLUTE;
         default: return null;
       }
     }
@@ -158,10 +170,13 @@ public final class ClarosCommonComputationCursorType {
   static {
     java.lang.String[] descriptorData = {
       "\n+claros_common_computation_cursor_type." +
-      "proto\022\031claros.common.computation*s\n\025Comp" +
-      "utationCursorType\022\016\n\nCC_UNKNOWN\020\000\022\016\n\nCC_" +
-      "CURRENT\020\001\022\017\n\013CC_PREVIOUS\020\002\022\013\n\007CC_NEXT\020\004\022" +
-      "\013\n\007CC_LAST\020\005\022\017\n\013CC_ABSOLUTE\020\006b\006proto3"
+      "proto\022\031claros.common.computation*\323\001\n\025Com" +
+      "putationCursorType\022\036\n\032COMPUTATION_CURSOR" +
+      "_UNKNOWN\020\000\022\036\n\032COMPUTATION_CURSOR_CURRENT" +
+      "\020\001\022\037\n\033COMPUTATION_CURSOR_PREVIOUS\020\002\022\033\n\027C" +
+      "OMPUTATION_CURSOR_NEXT\020\004\022\033\n\027COMPUTATION_" +
+      "CURSOR_LAST\020\005\022\037\n\033COMPUTATION_CURSOR_ABSO" +
+      "LUTE\020\006b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

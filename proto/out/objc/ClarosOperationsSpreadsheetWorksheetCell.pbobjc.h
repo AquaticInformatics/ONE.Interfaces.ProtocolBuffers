@@ -57,12 +57,15 @@ typedef GPB_ENUM(Cell_FieldNumber) {
 
 @interface Cell : GPBMessage
 
+/** The column id related to the cell */
 @property(nonatomic, readwrite) uint32_t columnId;
 
+/** A collection of notes that are related to a cell. */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Note*> *notesArray;
 /** The number of items in @c notesArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger notesArray_Count;
 
+/** The current and past data that has been entered into a cell */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<CellData*> *cellDataArray;
 /** The number of items in @c cellDataArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger cellDataArray_Count;

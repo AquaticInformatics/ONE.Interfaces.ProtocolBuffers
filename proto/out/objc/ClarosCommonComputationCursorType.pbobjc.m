@@ -36,15 +36,17 @@ GPBEnumDescriptor *ComputationCursorType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "CcUnknown\000CcCurrent\000CcPrevious\000CcNext\000Cc"
-        "Last\000CcAbsolute\000";
+        "ComputationCursorUnknown\000ComputationCurs"
+        "orCurrent\000ComputationCursorPrevious\000Comp"
+        "utationCursorNext\000ComputationCursorLast\000"
+        "ComputationCursorAbsolute\000";
     static const int32_t values[] = {
-        ComputationCursorType_CcUnknown,
-        ComputationCursorType_CcCurrent,
-        ComputationCursorType_CcPrevious,
-        ComputationCursorType_CcNext,
-        ComputationCursorType_CcLast,
-        ComputationCursorType_CcAbsolute,
+        ComputationCursorType_ComputationCursorUnknown,
+        ComputationCursorType_ComputationCursorCurrent,
+        ComputationCursorType_ComputationCursorPrevious,
+        ComputationCursorType_ComputationCursorNext,
+        ComputationCursorType_ComputationCursorLast,
+        ComputationCursorType_ComputationCursorAbsolute,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(ComputationCursorType)
@@ -62,12 +64,12 @@ GPBEnumDescriptor *ComputationCursorType_EnumDescriptor(void) {
 
 BOOL ComputationCursorType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case ComputationCursorType_CcUnknown:
-    case ComputationCursorType_CcCurrent:
-    case ComputationCursorType_CcPrevious:
-    case ComputationCursorType_CcNext:
-    case ComputationCursorType_CcLast:
-    case ComputationCursorType_CcAbsolute:
+    case ComputationCursorType_ComputationCursorUnknown:
+    case ComputationCursorType_ComputationCursorCurrent:
+    case ComputationCursorType_ComputationCursorPrevious:
+    case ComputationCursorType_ComputationCursorNext:
+    case ComputationCursorType_ComputationCursorLast:
+    case ComputationCursorType_ComputationCursorAbsolute:
       return YES;
     default:
       return NO;

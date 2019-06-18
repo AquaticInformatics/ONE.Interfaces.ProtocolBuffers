@@ -22,7 +22,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :dataSourceType, :enum, 9, "claros.common.core.DataSourceType"
       repeated :reportableQualiferDefinition, :message, 12, "claros.common.core.ReportableQualifierDefinition"
       oneof :binding do
-        optional :instrumentMeasurementBinding, :message, 10, "claros.instrument.InstrumentMeasurementBinding"
+        optional :instrumentMeasurementBinding, :message, 10, "claros.instrument.measurement.InstrumentMeasurementBinding"
         optional :computationBinding, :message, 11, "claros.common.computation.ComputationBinding"
       end
     end

@@ -38,11 +38,11 @@ typedef GPB_ENUM(LimitType) {
    * of the field.
    **/
   LimitType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  LimitType_LUnknown = 0,
-  LimitType_LHighalarm = 1,
-  LimitType_LHighnear = 2,
-  LimitType_LLownear = 3,
-  LimitType_LLowalarm = 4,
+  LimitType_LimitUnknown = 0,
+  LimitType_LimitHighalarm = 1,
+  LimitType_LimitHighnear = 2,
+  LimitType_LimitLownear = 3,
+  LimitType_LimitLowalarm = 4,
 };
 
 GPBEnumDescriptor *LimitType_EnumDescriptor(void);

@@ -19,29 +19,53 @@ public final class ClarosCommonCoreClarosdatetime {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     boolean hasMobileDateTime();
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime getMobileDateTime();
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTimeOrBuilder getMobileDateTimeOrBuilder();
 
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>string jsonDateTime = 2;</code>
      */
     java.lang.String getJsonDateTime();
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>string jsonDateTime = 2;</code>
      */
     com.google.protobuf.ByteString
         getJsonDateTimeBytes();
 
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>uint64 ticks = 3;</code>
      */
     long getTicks();
@@ -186,12 +210,20 @@ public final class ClarosCommonCoreClarosdatetime {
 
     public static final int MOBILEDATETIME_FIELD_NUMBER = 1;
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     public boolean hasMobileDateTime() {
       return clarosDateTimeCase_ == 1;
     }
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime getMobileDateTime() {
@@ -201,6 +233,10 @@ public final class ClarosCommonCoreClarosdatetime {
       return claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime.getDefaultInstance();
     }
     /**
+     * <pre>
+     * Used for data collected from Mobile Devices
+     * </pre>
+     *
      * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTimeOrBuilder getMobileDateTimeOrBuilder() {
@@ -212,6 +248,10 @@ public final class ClarosCommonCoreClarosdatetime {
 
     public static final int JSONDATETIME_FIELD_NUMBER = 2;
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>string jsonDateTime = 2;</code>
      */
     public java.lang.String getJsonDateTime() {
@@ -232,6 +272,10 @@ public final class ClarosCommonCoreClarosdatetime {
       }
     }
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>string jsonDateTime = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -255,6 +299,10 @@ public final class ClarosCommonCoreClarosdatetime {
 
     public static final int TICKS_FIELD_NUMBER = 3;
     /**
+     * <pre>
+     * 
+     * </pre>
+     *
      * <code>uint64 ticks = 3;</code>
      */
     public long getTicks() {
@@ -658,12 +706,20 @@ public final class ClarosCommonCoreClarosdatetime {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime, claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime.Builder, claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTimeOrBuilder> mobileDateTimeBuilder_;
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public boolean hasMobileDateTime() {
         return clarosDateTimeCase_ == 1;
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime getMobileDateTime() {
@@ -680,6 +736,10 @@ public final class ClarosCommonCoreClarosdatetime {
         }
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public Builder setMobileDateTime(claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime value) {
@@ -696,6 +756,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public Builder setMobileDateTime(
@@ -710,6 +774,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public Builder mergeMobileDateTime(claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime value) {
@@ -732,6 +800,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public Builder clearMobileDateTime() {
@@ -751,12 +823,20 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTime.Builder getMobileDateTimeBuilder() {
         return getMobileDateTimeFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreMobiledatetime.MobileDateTimeOrBuilder getMobileDateTimeOrBuilder() {
@@ -770,6 +850,10 @@ public final class ClarosCommonCoreClarosdatetime {
         }
       }
       /**
+       * <pre>
+       * Used for data collected from Mobile Devices
+       * </pre>
+       *
        * <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -792,6 +876,10 @@ public final class ClarosCommonCoreClarosdatetime {
       }
 
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>string jsonDateTime = 2;</code>
        */
       public java.lang.String getJsonDateTime() {
@@ -812,6 +900,10 @@ public final class ClarosCommonCoreClarosdatetime {
         }
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>string jsonDateTime = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -833,6 +925,10 @@ public final class ClarosCommonCoreClarosdatetime {
         }
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>string jsonDateTime = 2;</code>
        */
       public Builder setJsonDateTime(
@@ -846,6 +942,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>string jsonDateTime = 2;</code>
        */
       public Builder clearJsonDateTime() {
@@ -857,6 +957,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>string jsonDateTime = 2;</code>
        */
       public Builder setJsonDateTimeBytes(
@@ -872,6 +976,10 @@ public final class ClarosCommonCoreClarosdatetime {
       }
 
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>uint64 ticks = 3;</code>
        */
       public long getTicks() {
@@ -881,6 +989,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return 0L;
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>uint64 ticks = 3;</code>
        */
       public Builder setTicks(long value) {
@@ -890,6 +1002,10 @@ public final class ClarosCommonCoreClarosdatetime {
         return this;
       }
       /**
+       * <pre>
+       * 
+       * </pre>
+       *
        * <code>uint64 ticks = 3;</code>
        */
       public Builder clearTicks() {

@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.form',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n+claros_common_form_formdataentry_type.proto\x12\x12\x63laros.common.form*n\n\x11\x46ormDataEntryType\x12\x0f\n\x0b\x46\x44\x45_UNKNOWN\x10\x00\x12\x12\n\x0e\x46\x44\x45_INSTRUMENT\x10\x01\x12\x11\n\rFDE_TOTALIZER\x10\x02\x12\x13\n\x0f\x46\x44\x45_CONSUMPTION\x10\x03\x12\x0c\n\x08\x46\x44\x45_TEXT\x10\x04\x62\x06proto3')
+  serialized_pb=_b('\n+claros_common_form_formdataentry_type.proto\x12\x12\x63laros.common.form*\xaa\x01\n\x11\x46ormDataEntryType\x12\x1b\n\x17\x46ORM_DATE_ENTRY_UNKNOWN\x10\x00\x12\x1e\n\x1a\x46ORM_DATE_ENTRY_INSTRUMENT\x10\x01\x12\x1d\n\x19\x46ORM_DATE_ENTRY_TOTALIZER\x10\x02\x12\x1f\n\x1b\x46ORM_DATE_ENTRY_CONSUMPTION\x10\x03\x12\x18\n\x14\x46ORM_DATE_ENTRY_TEXT\x10\x04\x62\x06proto3')
 )
 
 _FORMDATAENTRYTYPE = _descriptor.EnumDescriptor(
@@ -31,39 +31,39 @@ _FORMDATAENTRYTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='FDE_UNKNOWN', index=0, number=0,
+      name='FORM_DATE_ENTRY_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FDE_INSTRUMENT', index=1, number=1,
+      name='FORM_DATE_ENTRY_INSTRUMENT', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FDE_TOTALIZER', index=2, number=2,
+      name='FORM_DATE_ENTRY_TOTALIZER', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FDE_CONSUMPTION', index=3, number=3,
+      name='FORM_DATE_ENTRY_CONSUMPTION', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FDE_TEXT', index=4, number=4,
+      name='FORM_DATE_ENTRY_TEXT', index=4, number=4,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=67,
-  serialized_end=177,
+  serialized_start=68,
+  serialized_end=238,
 )
 _sym_db.RegisterEnumDescriptor(_FORMDATAENTRYTYPE)
 
 FormDataEntryType = enum_type_wrapper.EnumTypeWrapper(_FORMDATAENTRYTYPE)
-FDE_UNKNOWN = 0
-FDE_INSTRUMENT = 1
-FDE_TOTALIZER = 2
-FDE_CONSUMPTION = 3
-FDE_TEXT = 4
+FORM_DATE_ENTRY_UNKNOWN = 0
+FORM_DATE_ENTRY_INSTRUMENT = 1
+FORM_DATE_ENTRY_TOTALIZER = 2
+FORM_DATE_ENTRY_CONSUMPTION = 3
+FORM_DATE_ENTRY_TEXT = 4
 
 
 DESCRIPTOR.enum_types_by_name['FormDataEntryType'] = _FORMDATAENTRYTYPE

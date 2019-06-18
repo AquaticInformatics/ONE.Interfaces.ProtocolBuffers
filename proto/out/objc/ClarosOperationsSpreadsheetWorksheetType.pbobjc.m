@@ -36,14 +36,15 @@ GPBEnumDescriptor *WorksheetType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "WUnknown\000WFifteenMinute\000WFourHour\000WDaily"
-        "\000WMonthly\000";
+        "WorksheetUnknown\000WorksheetFifteenMinute\000"
+        "WorksheetHour\000WorksheetFourHour\000Workshee"
+        "tDaily\000";
     static const int32_t values[] = {
-        WorksheetType_WUnknown,
-        WorksheetType_WFifteenMinute,
-        WorksheetType_WFourHour,
-        WorksheetType_WDaily,
-        WorksheetType_WMonthly,
+        WorksheetType_WorksheetUnknown,
+        WorksheetType_WorksheetFifteenMinute,
+        WorksheetType_WorksheetHour,
+        WorksheetType_WorksheetFourHour,
+        WorksheetType_WorksheetDaily,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(WorksheetType)
@@ -61,11 +62,11 @@ GPBEnumDescriptor *WorksheetType_EnumDescriptor(void) {
 
 BOOL WorksheetType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case WorksheetType_WUnknown:
-    case WorksheetType_WFifteenMinute:
-    case WorksheetType_WFourHour:
-    case WorksheetType_WDaily:
-    case WorksheetType_WMonthly:
+    case WorksheetType_WorksheetUnknown:
+    case WorksheetType_WorksheetFifteenMinute:
+    case WorksheetType_WorksheetHour:
+    case WorksheetType_WorksheetFourHour:
+    case WorksheetType_WorksheetDaily:
       return YES;
     default:
       return NO;

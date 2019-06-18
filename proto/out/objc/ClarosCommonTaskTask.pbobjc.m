@@ -14,6 +14,9 @@
 #endif
 
 #import "ClarosCommonTaskTask.pbobjc.h"
+#import "ClarosCommonTaskDefinition.pbobjc.h"
+#import "ClarosCommonTaskData.pbobjc.h"
+#import "ClarosCommonCoreAuditevent.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
 #pragma clang diagnostic push
@@ -23,8 +26,8 @@
 
 @implementation ClarosCommonTaskTaskRoot
 
-// No extensions in the file and no imports, so no need to generate
-// +extensionRegistry.
+// No extensions in the file and none of the imports (direct or indirect)
+// defined extensions, so no need to generate +extensionRegistry.
 
 @end
 
@@ -48,11 +51,27 @@ static GPBFileDescriptor *ClarosCommonTaskTaskRoot_FileDescriptor(void) {
 
 @dynamic id_p;
 @dynamic name;
+@dynamic description_p;
+@dynamic assignee;
+@dynamic reporter;
+@dynamic priority;
+@dynamic instrumentId;
+@dynamic hasTaskDefinition, taskDefinition;
+@dynamic hasTaskdata, taskdata;
+@dynamic hasAuditEvent, auditEvent;
 
 typedef struct Task__storage_ {
   uint32_t _has_storage_[1];
+  uint32_t priority;
   NSString *id_p;
   NSString *name;
+  NSString *description_p;
+  NSString *assignee;
+  NSString *reporter;
+  NSString *instrumentId;
+  TaskDefinition *taskDefinition;
+  TaskData *taskdata;
+  AuditEvent *auditEvent;
 } Task__storage_;
 
 // This method is threadsafe because it is initially called
@@ -79,6 +98,78 @@ typedef struct Task__storage_ {
         .flags = GPBFieldOptional,
         .dataType = GPBDataTypeString,
       },
+      {
+        .name = "description_p",
+        .dataTypeSpecific.className = NULL,
+        .number = Task_FieldNumber_Description_p,
+        .hasIndex = 2,
+        .offset = (uint32_t)offsetof(Task__storage_, description_p),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "assignee",
+        .dataTypeSpecific.className = NULL,
+        .number = Task_FieldNumber_Assignee,
+        .hasIndex = 3,
+        .offset = (uint32_t)offsetof(Task__storage_, assignee),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "reporter",
+        .dataTypeSpecific.className = NULL,
+        .number = Task_FieldNumber_Reporter,
+        .hasIndex = 4,
+        .offset = (uint32_t)offsetof(Task__storage_, reporter),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "priority",
+        .dataTypeSpecific.className = NULL,
+        .number = Task_FieldNumber_Priority,
+        .hasIndex = 5,
+        .offset = (uint32_t)offsetof(Task__storage_, priority),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeUInt32,
+      },
+      {
+        .name = "instrumentId",
+        .dataTypeSpecific.className = NULL,
+        .number = Task_FieldNumber_InstrumentId,
+        .hasIndex = 6,
+        .offset = (uint32_t)offsetof(Task__storage_, instrumentId),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "taskDefinition",
+        .dataTypeSpecific.className = GPBStringifySymbol(TaskDefinition),
+        .number = Task_FieldNumber_TaskDefinition,
+        .hasIndex = 7,
+        .offset = (uint32_t)offsetof(Task__storage_, taskDefinition),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeMessage,
+      },
+      {
+        .name = "taskdata",
+        .dataTypeSpecific.className = GPBStringifySymbol(TaskData),
+        .number = Task_FieldNumber_Taskdata,
+        .hasIndex = 8,
+        .offset = (uint32_t)offsetof(Task__storage_, taskdata),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeMessage,
+      },
+      {
+        .name = "auditEvent",
+        .dataTypeSpecific.className = GPBStringifySymbol(AuditEvent),
+        .number = Task_FieldNumber_AuditEvent,
+        .hasIndex = 9,
+        .offset = (uint32_t)offsetof(Task__storage_, auditEvent),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeMessage,
+      },
     };
     GPBDescriptor *localDescriptor =
         [GPBDescriptor allocDescriptorForClass:[Task class]
@@ -88,6 +179,11 @@ typedef struct Task__storage_ {
                                     fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
                                    storageSize:sizeof(Task__storage_)
                                          flags:GPBDescriptorInitializationFlag_None];
+#if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
+    static const char *extraTextFormatInfo =
+        "\003\007\014\000\010\016\000\n\n\000";
+    [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
+#endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     #if defined(DEBUG) && DEBUG
       NSAssert(descriptor == nil, @"Startup recursed!");
     #endif  // DEBUG

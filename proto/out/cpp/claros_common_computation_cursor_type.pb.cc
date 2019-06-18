@@ -40,15 +40,18 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto[] =
   "\n+claros_common_computation_cursor_type."
-  "proto\022\031claros.common.computation*s\n\025Comp"
-  "utationCursorType\022\016\n\nCC_UNKNOWN\020\000\022\016\n\nCC_"
-  "CURRENT\020\001\022\017\n\013CC_PREVIOUS\020\002\022\013\n\007CC_NEXT\020\004\022"
-  "\013\n\007CC_LAST\020\005\022\017\n\013CC_ABSOLUTE\020\006b\006proto3"
+  "proto\022\031claros.common.computation*\323\001\n\025Com"
+  "putationCursorType\022\036\n\032COMPUTATION_CURSOR"
+  "_UNKNOWN\020\000\022\036\n\032COMPUTATION_CURSOR_CURRENT"
+  "\020\001\022\037\n\033COMPUTATION_CURSOR_PREVIOUS\020\002\022\033\n\027C"
+  "OMPUTATION_CURSOR_NEXT\020\004\022\033\n\027COMPUTATION_"
+  "CURSOR_LAST\020\005\022\037\n\033COMPUTATION_CURSOR_ABSO"
+  "LUTE\020\006b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto,
-  "claros_common_computation_cursor_type.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto, 197,
+  "claros_common_computation_cursor_type.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto, 294,
 };
 
 void AddDescriptors_claros_5fcommon_5fcomputation_5fcursor_5ftype_2eproto() {

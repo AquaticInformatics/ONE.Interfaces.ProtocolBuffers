@@ -227,11 +227,11 @@ class Variable :
   ::std::string* release_quantitytypeid();
   void set_allocated_quantitytypeid(::std::string* quantitytypeid);
 
-  // .claros.common.computation.ComputationCursorType cursor = 5;
-  void clear_cursor();
-  static const int kCursorFieldNumber = 5;
-  ::claros::common::computation::ComputationCursorType cursor() const;
-  void set_cursor(::claros::common::computation::ComputationCursorType value);
+  // .claros.common.computation.ComputationCursorType cursorType = 5;
+  void clear_cursortype();
+  static const int kCursorTypeFieldNumber = 5;
+  ::claros::common::computation::ComputationCursorType cursortype() const;
+  void set_cursortype(::claros::common::computation::ComputationCursorType value);
 
   // uint32 cursorAbsolute = 6;
   void clear_cursorabsolute();
@@ -291,7 +291,7 @@ class Variable :
   ::google::protobuf::internal::ArenaStringPtr name_;
   ::google::protobuf::internal::ArenaStringPtr description_;
   ::google::protobuf::internal::ArenaStringPtr quantitytypeid_;
-  int cursor_;
+  int cursortype_;
   ::google::protobuf::uint32 cursorabsolute_;
   int propertyselector_;
   ::google::protobuf::uint32 suggestedparameterid_;
@@ -529,18 +529,18 @@ inline void Variable::set_allocated_quantitytypeid(::std::string* quantitytypeid
   // @@protoc_insertion_point(field_set_allocated:claros.common.computation.Variable.quantityTypeId)
 }
 
-// .claros.common.computation.ComputationCursorType cursor = 5;
-inline void Variable::clear_cursor() {
-  cursor_ = 0;
+// .claros.common.computation.ComputationCursorType cursorType = 5;
+inline void Variable::clear_cursortype() {
+  cursortype_ = 0;
 }
-inline ::claros::common::computation::ComputationCursorType Variable::cursor() const {
-  // @@protoc_insertion_point(field_get:claros.common.computation.Variable.cursor)
-  return static_cast< ::claros::common::computation::ComputationCursorType >(cursor_);
+inline ::claros::common::computation::ComputationCursorType Variable::cursortype() const {
+  // @@protoc_insertion_point(field_get:claros.common.computation.Variable.cursorType)
+  return static_cast< ::claros::common::computation::ComputationCursorType >(cursortype_);
 }
-inline void Variable::set_cursor(::claros::common::computation::ComputationCursorType value) {
+inline void Variable::set_cursortype(::claros::common::computation::ComputationCursorType value) {
   
-  cursor_ = value;
-  // @@protoc_insertion_point(field_set:claros.common.computation.Variable.cursor)
+  cursortype_ = value;
+  // @@protoc_insertion_point(field_set:claros.common.computation.Variable.cursorType)
 }
 
 // uint32 cursorAbsolute = 6;

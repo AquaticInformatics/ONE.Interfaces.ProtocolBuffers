@@ -51,23 +51,26 @@ struct TableStruct_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eprot
 void AddDescriptors_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto();
 namespace claros {
 namespace instrument {
+namespace measurement {
 class SCSensorBinding;
 class SCSensorBindingDefaultTypeInternal;
 extern SCSensorBindingDefaultTypeInternal _SCSensorBinding_default_instance_;
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 namespace google {
 namespace protobuf {
-template<> ::claros::instrument::SCSensorBinding* Arena::CreateMaybeMessage<::claros::instrument::SCSensorBinding>(Arena*);
+template<> ::claros::instrument::measurement::SCSensorBinding* Arena::CreateMaybeMessage<::claros::instrument::measurement::SCSensorBinding>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace claros {
 namespace instrument {
+namespace measurement {
 
 // ===================================================================
 
 class SCSensorBinding :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.SCSensorBinding) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.measurement.SCSensorBinding) */ {
  public:
   SCSensorBinding();
   virtual ~SCSensorBinding();
@@ -199,7 +202,7 @@ class SCSensorBinding :
   ::google::protobuf::uint32 channel() const;
   void set_channel(::google::protobuf::uint32 value);
 
-  // @@protoc_insertion_point(class_scope:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(class_scope:claros.instrument.measurement.SCSensorBinding)
  private:
   class HasBitSetters;
 
@@ -227,13 +230,13 @@ inline void SCSensorBinding::clear_channel() {
   channel_ = 0u;
 }
 inline ::google::protobuf::uint32 SCSensorBinding::channel() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.SCSensorBinding.channel)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.SCSensorBinding.channel)
   return channel_;
 }
 inline void SCSensorBinding::set_channel(::google::protobuf::uint32 value) {
   
   channel_ = value;
-  // @@protoc_insertion_point(field_set:claros.instrument.SCSensorBinding.channel)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.SCSensorBinding.channel)
 }
 
 // string tag = 3;
@@ -241,41 +244,41 @@ inline void SCSensorBinding::clear_tag() {
   tag_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& SCSensorBinding::tag() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.SCSensorBinding.tag)
   return tag_.GetNoArena();
 }
 inline void SCSensorBinding::set_tag(const ::std::string& value) {
   
   tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.SCSensorBinding.tag)
 }
 #if LANG_CXX11
 inline void SCSensorBinding::set_tag(::std::string&& value) {
   
   tag_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.SCSensorBinding.tag)
 }
 #endif
 inline void SCSensorBinding::set_tag(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.SCSensorBinding.tag)
 }
 inline void SCSensorBinding::set_tag(const char* value, size_t size) {
   
   tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.SCSensorBinding.tag)
 }
 inline ::std::string* SCSensorBinding::mutable_tag() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.SCSensorBinding.tag)
   return tag_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SCSensorBinding::release_tag() {
-  // @@protoc_insertion_point(field_release:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.SCSensorBinding.tag)
   
   return tag_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -286,7 +289,7 @@ inline void SCSensorBinding::set_allocated_tag(::std::string* tag) {
     
   }
   tag_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), tag);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.SCSensorBinding.tag)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.SCSensorBinding.tag)
 }
 
 // .claros.common.core.ClarosDateTime validFrom = 4;
@@ -295,12 +298,12 @@ inline bool SCSensorBinding::has_validfrom() const {
 }
 inline const ::claros::common::core::ClarosDateTime& SCSensorBinding::validfrom() const {
   const ::claros::common::core::ClarosDateTime* p = validfrom_;
-  // @@protoc_insertion_point(field_get:claros.instrument.SCSensorBinding.validFrom)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.SCSensorBinding.validFrom)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* SCSensorBinding::release_validfrom() {
-  // @@protoc_insertion_point(field_release:claros.instrument.SCSensorBinding.validFrom)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.SCSensorBinding.validFrom)
   
   ::claros::common::core::ClarosDateTime* temp = validfrom_;
   validfrom_ = nullptr;
@@ -312,7 +315,7 @@ inline ::claros::common::core::ClarosDateTime* SCSensorBinding::mutable_validfro
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     validfrom_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.SCSensorBinding.validFrom)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.SCSensorBinding.validFrom)
   return validfrom_;
 }
 inline void SCSensorBinding::set_allocated_validfrom(::claros::common::core::ClarosDateTime* validfrom) {
@@ -331,7 +334,7 @@ inline void SCSensorBinding::set_allocated_validfrom(::claros::common::core::Cla
     
   }
   validfrom_ = validfrom;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.SCSensorBinding.validFrom)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.SCSensorBinding.validFrom)
 }
 
 // .claros.common.core.ClarosDateTime validTo = 5;
@@ -340,12 +343,12 @@ inline bool SCSensorBinding::has_validto() const {
 }
 inline const ::claros::common::core::ClarosDateTime& SCSensorBinding::validto() const {
   const ::claros::common::core::ClarosDateTime* p = validto_;
-  // @@protoc_insertion_point(field_get:claros.instrument.SCSensorBinding.validTo)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.SCSensorBinding.validTo)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* SCSensorBinding::release_validto() {
-  // @@protoc_insertion_point(field_release:claros.instrument.SCSensorBinding.validTo)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.SCSensorBinding.validTo)
   
   ::claros::common::core::ClarosDateTime* temp = validto_;
   validto_ = nullptr;
@@ -357,7 +360,7 @@ inline ::claros::common::core::ClarosDateTime* SCSensorBinding::mutable_validto(
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     validto_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.SCSensorBinding.validTo)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.SCSensorBinding.validTo)
   return validto_;
 }
 inline void SCSensorBinding::set_allocated_validto(::claros::common::core::ClarosDateTime* validto) {
@@ -376,7 +379,7 @@ inline void SCSensorBinding::set_allocated_validto(::claros::common::core::Claro
     
   }
   validto_ = validto;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.SCSensorBinding.validTo)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.SCSensorBinding.validTo)
 }
 
 #ifdef __GNUC__
@@ -385,6 +388,7 @@ inline void SCSensorBinding::set_allocated_validto(::claros::common::core::Claro
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 

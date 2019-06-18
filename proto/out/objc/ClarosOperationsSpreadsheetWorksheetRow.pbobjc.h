@@ -57,12 +57,15 @@ typedef GPB_ENUM(Row_FieldNumber) {
 
 @interface Row : GPBMessage
 
+/** Row number - Based on 01-01-1900 */
 @property(nonatomic, readwrite) uint32_t rowNumber;
 
+/** UTC time window related to the row. */
 @property(nonatomic, readwrite, strong, null_resettable) TimeWindow *utctimeWindow;
 /** Test to see if @c utctimeWindow has been set. */
 @property(nonatomic, readwrite) BOOL hasUtctimeWindow;
 
+/** Cells that are stored within the row. */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Cell*> *cellsArray;
 /** The number of items in @c cellsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger cellsArray_Count;

@@ -4,14 +4,14 @@
 require 'google/protobuf'
 
 require 'claros_common_form_formtemplate_type_pb'
-require 'claros_common_core_recurrence_pb'
+require 'claros_common_recurrence_recurrence_pb'
 require 'claros_common_form_formlayout_pb'
 require 'claros_common_form_formfield_definition_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_form_formtemplateconfiguration.proto", :syntax => :proto3) do
     add_message "claros.common.form.FormTemplateConfiguration" do
       optional :formTemplateType, :enum, 1, "claros.common.form.FormTemplateType"
-      optional :recurrence, :message, 2, "claros.common.core.Recurrence"
+      optional :recurrence, :message, 2, "claros.common.recurrence.Recurrence"
       optional :formLayout, :message, 3, "claros.common.form.FormLayout"
       repeated :formFieldDefinitions, :message, 4, "claros.common.form.FormFieldDefinition"
     end

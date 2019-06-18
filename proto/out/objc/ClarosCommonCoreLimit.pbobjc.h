@@ -59,14 +59,19 @@ typedef GPB_ENUM(Limit_FieldNumber) {
 
 @interface Limit : GPBMessage
 
+/** Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *i18NKey;
 
+/** Type of Limit */
 @property(nonatomic, readwrite) enum LimitType limitType;
 
+/** Value that will trigger the limit ???? is this inclusive or exclusive */
 @property(nonatomic, readwrite) double value;
 
+/** The unit used to compare the value with the limit */
 @property(nonatomic, readwrite) uint32_t unitId;
 
+/** Used for seasonal limits */
 @property(nonatomic, readwrite, strong, null_resettable) Recurrence *recurrence;
 /** Test to see if @c recurrence has been set. */
 @property(nonatomic, readwrite) BOOL hasRecurrence;

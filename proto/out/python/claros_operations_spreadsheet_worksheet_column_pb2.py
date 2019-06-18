@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.operations.spreadsheet',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n4claros_operations_spreadsheet_worksheet_column.proto\x12\x1d\x63laros.operations.spreadsheet\x1a(claros_common_core_datasource_type.proto\x1a\x1e\x63laros_common_core_limit.proto\x1a+claros_instrument_measurement_binding.proto\x1a\'claros_common_computation_binding.proto\x1a\x36\x63laros_common_core_reportablequalifierdefinition.proto\"\x84\x04\n\x06\x43olumn\x12\x14\n\x0c\x63olumnNumber\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x13\n\x0bparameterId\x18\x04 \x01(\r\x12\x15\n\rdisplayUnitId\x18\x05 \x01(\r\x12\x12\n\nlocationId\x18\x06 \x01(\t\x12\x10\n\x08isActive\x18\x07 \x01(\x08\x12)\n\x06limits\x18\x08 \x03(\x0b\x32\x19.claros.common.core.Limit\x12:\n\x0e\x64\x61taSourceType\x18\t \x01(\x0e\x32\".claros.common.core.DataSourceType\x12W\n\x1cinstrumentMeasurementBinding\x18\n \x01(\x0b\x32/.claros.instrument.InstrumentMeasurementBindingH\x00\x12K\n\x12\x63omputationBinding\x18\x0b \x01(\x0b\x32-.claros.common.computation.ComputationBindingH\x00\x12W\n\x1creportableQualiferDefinition\x18\x0c \x03(\x0b\x32\x31.claros.common.core.ReportableQualifierDefinitionB\t\n\x07\x62indingb\x06proto3')
+  serialized_pb=_b('\n4claros_operations_spreadsheet_worksheet_column.proto\x12\x1d\x63laros.operations.spreadsheet\x1a(claros_common_core_datasource_type.proto\x1a\x1e\x63laros_common_core_limit.proto\x1a+claros_instrument_measurement_binding.proto\x1a\'claros_common_computation_binding.proto\x1a\x36\x63laros_common_core_reportablequalifierdefinition.proto\"\x90\x04\n\x06\x43olumn\x12\x14\n\x0c\x63olumnNumber\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x13\n\x0bparameterId\x18\x04 \x01(\r\x12\x15\n\rdisplayUnitId\x18\x05 \x01(\r\x12\x12\n\nlocationId\x18\x06 \x01(\t\x12\x10\n\x08isActive\x18\x07 \x01(\x08\x12)\n\x06limits\x18\x08 \x03(\x0b\x32\x19.claros.common.core.Limit\x12:\n\x0e\x64\x61taSourceType\x18\t \x01(\x0e\x32\".claros.common.core.DataSourceType\x12\x63\n\x1cinstrumentMeasurementBinding\x18\n \x01(\x0b\x32;.claros.instrument.measurement.InstrumentMeasurementBindingH\x00\x12K\n\x12\x63omputationBinding\x18\x0b \x01(\x0b\x32-.claros.common.computation.ComputationBindingH\x00\x12W\n\x1creportableQualiferDefinition\x18\x0c \x03(\x0b\x32\x31.claros.common.core.ReportableQualifierDefinitionB\t\n\x07\x62indingb\x06proto3')
   ,
   dependencies=[claros__common__core__datasource__type__pb2.DESCRIPTOR,claros__common__core__limit__pb2.DESCRIPTOR,claros__instrument__measurement__binding__pb2.DESCRIPTOR,claros__common__computation__binding__pb2.DESCRIPTOR,claros__common__core__reportablequalifierdefinition__pb2.DESCRIPTOR,])
 
@@ -139,7 +139,7 @@ _COLUMN = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=304,
-  serialized_end=820,
+  serialized_end=832,
 )
 
 _COLUMN.fields_by_name['limits'].message_type = claros__common__core__limit__pb2._LIMIT

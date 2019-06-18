@@ -56,17 +56,17 @@ namespace common {
 namespace core {
 
 enum LimitType {
-  L_UNKNOWN = 0,
-  L_HIGHALARM = 1,
-  L_HIGHNEAR = 2,
-  L_LOWNEAR = 3,
-  L_LOWALARM = 4,
+  LIMIT_UNKNOWN = 0,
+  LIMIT_HIGHALARM = 1,
+  LIMIT__HIGHNEAR = 2,
+  LIMIT_LOWNEAR = 3,
+  LIMIT_LOWALARM = 4,
   LimitType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   LimitType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool LimitType_IsValid(int value);
-const LimitType LimitType_MIN = L_UNKNOWN;
-const LimitType LimitType_MAX = L_LOWALARM;
+const LimitType LimitType_MIN = LIMIT_UNKNOWN;
+const LimitType LimitType_MAX = LIMIT_LOWALARM;
 const int LimitType_ARRAYSIZE = LimitType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* LimitType_descriptor();

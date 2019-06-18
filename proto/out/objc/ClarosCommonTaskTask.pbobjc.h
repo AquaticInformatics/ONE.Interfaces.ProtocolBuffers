@@ -27,6 +27,10 @@
 
 CF_EXTERN_C_BEGIN
 
+@class AuditEvent;
+@class TaskData;
+@class TaskDefinition;
+
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - ClarosCommonTaskTaskRoot
@@ -49,6 +53,14 @@ NS_ASSUME_NONNULL_BEGIN
 typedef GPB_ENUM(Task_FieldNumber) {
   Task_FieldNumber_Id_p = 1,
   Task_FieldNumber_Name = 2,
+  Task_FieldNumber_Description_p = 3,
+  Task_FieldNumber_Assignee = 4,
+  Task_FieldNumber_Reporter = 5,
+  Task_FieldNumber_Priority = 6,
+  Task_FieldNumber_InstrumentId = 7,
+  Task_FieldNumber_TaskDefinition = 8,
+  Task_FieldNumber_Taskdata = 9,
+  Task_FieldNumber_AuditEvent = 10,
 };
 
 @interface Task : GPBMessage
@@ -56,7 +68,38 @@ typedef GPB_ENUM(Task_FieldNumber) {
 /** header */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *id_p;
 
+/** User Defined Name for the Task */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *name;
+
+/** Desciption of the work to do in this task */
+@property(nonatomic, readwrite, copy, null_resettable) NSString *description_p;
+
+/** GUID of the User that the task is assigned */
+@property(nonatomic, readwrite, copy, null_resettable) NSString *assignee;
+
+/** GUID of the user that created the task */
+@property(nonatomic, readwrite, copy, null_resettable) NSString *reporter;
+
+/** TaskSeverity severity = 6;                  // Enumeration of common severities */
+@property(nonatomic, readwrite) uint32_t priority;
+
+/** Source                                   // From where did the task come? */
+@property(nonatomic, readwrite, copy, null_resettable) NSString *instrumentId;
+
+/** definition */
+@property(nonatomic, readwrite, strong, null_resettable) TaskDefinition *taskDefinition;
+/** Test to see if @c taskDefinition has been set. */
+@property(nonatomic, readwrite) BOOL hasTaskDefinition;
+
+/** data */
+@property(nonatomic, readwrite, strong, null_resettable) TaskData *taskdata;
+/** Test to see if @c taskdata has been set. */
+@property(nonatomic, readwrite) BOOL hasTaskdata;
+
+/** Audit Events related to to the Task */
+@property(nonatomic, readwrite, strong, null_resettable) AuditEvent *auditEvent;
+/** Test to see if @c auditEvent has been set. */
+@property(nonatomic, readwrite) BOOL hasAuditEvent;
 
 @end
 

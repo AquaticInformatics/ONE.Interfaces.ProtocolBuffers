@@ -40,13 +40,13 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5ftimezone_2eproto[] =
   "\n!claros_common_core_timezone.proto\022\022cla"
-  "ros.common.core*&\n\010TimeZone\022\016\n\nTZ_UNKNOW"
-  "N\020\000\022\n\n\006TZ_UTC\020\001b\006proto3"
+  "ros.common.core*2\n\010TimeZone\022\024\n\020TIMEZONE_"
+  "UNKNOWN\020\000\022\020\n\014TIMEZONE_UTC\020\001b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5ftimezone_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5ftimezone_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5ftimezone_2eproto,
-  "claros_common_core_timezone.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5ftimezone_2eproto, 103,
+  "claros_common_core_timezone.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5ftimezone_2eproto, 115,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5ftimezone_2eproto() {

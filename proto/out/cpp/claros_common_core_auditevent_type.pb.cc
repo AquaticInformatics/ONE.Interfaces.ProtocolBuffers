@@ -40,15 +40,16 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto[] =
   "\n(claros_common_core_auditevent_type.pro"
-  "to\022\022claros.common.core*g\n\016AuditEventType"
-  "\022\016\n\nAE_UNKNOWN\020\000\022\r\n\tAE_CREATE\020\001\022\013\n\007AE_RE"
-  "AD\020\002\022\r\n\tAE_UPDATE\020\003\022\r\n\tAE_DELETE\020\004\022\013\n\007AE"
-  "_SENT\020\005b\006proto3"
+  "to\022\022claros.common.core*\235\001\n\016AuditEventTyp"
+  "e\022\027\n\023AUDIT_EVENT_UNKNOWN\020\000\022\026\n\022AUDIT_EVEN"
+  "T_CREATE\020\001\022\024\n\020AUDIT_EVENT_READ\020\002\022\026\n\022AUDI"
+  "T_EVENT_UPDATE\020\003\022\026\n\022AUDIT_EVENT_DELETE\020\004"
+  "\022\024\n\020AUDIT_EVENT_SENT\020\005b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto,
-  "claros_common_core_auditevent_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto, 175,
+  "claros_common_core_auditevent_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto, 230,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5fauditevent_5ftype_2eproto() {

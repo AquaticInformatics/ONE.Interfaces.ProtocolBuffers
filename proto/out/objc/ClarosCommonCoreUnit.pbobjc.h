@@ -63,18 +63,25 @@ typedef GPB_ENUM(Unit_FieldNumber) {
 
 @interface Unit : GPBMessage
 
+/** GUID for the Unit */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *id_p;
 
+/** Integer equivalent that uniquely describes the unit */
 @property(nonatomic, readwrite) uint32_t intId;
 
+/** Localization key for the unit */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *i18NKey;
 
+/** The untranslated unit name */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *unitName;
 
+/** The quantity type related to the unit */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *quantityTypeId;
 
+/** ????? */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *description_p;
 
+/** ????? Do we need these audit fields */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *createdById;
 
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *createdOn;

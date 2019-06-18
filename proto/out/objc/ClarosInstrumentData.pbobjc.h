@@ -28,8 +28,8 @@
 CF_EXTERN_C_BEGIN
 
 @class ClarosDateTime;
-@class InstrumentEvent;
-@class InstrumentMeasurement;
+@class InstrumentEventData;
+@class InstrumentMeasurementData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -62,23 +62,28 @@ typedef GPB_ENUM(InstrumentData_FieldNumber) {
 
 @interface InstrumentData : GPBMessage
 
-/** In header */
+/** Header Information */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *tenantId;
 
+/** Unique id of an instrument */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *fusionId;
 
-@property(nonatomic, readwrite, strong, null_resettable) InstrumentEvent *events;
+/** Events related to what has happened to an instrument */
+@property(nonatomic, readwrite, strong, null_resettable) InstrumentEventData *events;
 /** Test to see if @c events has been set. */
 @property(nonatomic, readwrite) BOOL hasEvents;
 
-@property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<InstrumentMeasurement*> *measurementsArray;
+/** Measurements related to an instrument */
+@property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<InstrumentMeasurementData*> *measurementsArray;
 /** The number of items in @c measurementsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger measurementsArray_Count;
 
+/** Settings of an instrument */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableDictionary<NSString*, NSString*> *settings;
 /** The number of items in @c settings without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger settings_Count;
 
+/** State informantion of an instrument */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableDictionary<NSString*, NSString*> *states;
 /** The number of items in @c states without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger states_Count;

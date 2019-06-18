@@ -61,6 +61,7 @@ typedef GPB_ENUM(SCSensorBinding_FieldNumber) {
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *tag;
 
+/** Should this be Timespan validTimeSpan? ????? */
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *validFrom;
 /** Test to see if @c validFrom has been set. */
 @property(nonatomic, readwrite) BOOL hasValidFrom;

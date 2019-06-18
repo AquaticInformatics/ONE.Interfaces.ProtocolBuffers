@@ -9,7 +9,7 @@ require 'claros_instrument_measurement_scsensor_binding_pb'
 require 'claros_common_core_limit_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_instrument_measurement_definition.proto", :syntax => :proto3) do
-    add_message "claros.instrument.InstrumentMeasurementDefinition" do
+    add_message "claros.instrument.measurement.InstrumentMeasurementDefinition" do
       optional :instrumentMeasurementId, :string, 1
       optional :name, :string, 2
       optional :fusionId, :string, 3
@@ -23,8 +23,8 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :modifiedById, :string, 13
       optional :modifiedOn, :message, 14, "claros.common.core.ClarosDateTime"
       oneof :binding do
-        optional :scSensorBinding, :message, 8, "claros.instrument.SCSensorBinding"
-        optional :milliAmpBinding, :message, 9, "claros.instrument.MilliAmpBinding"
+        optional :scSensorBinding, :message, 8, "claros.instrument.measurement.SCSensorBinding"
+        optional :milliAmpBinding, :message, 9, "claros.instrument.measurement.MilliAmpBinding"
       end
     end
   end
@@ -32,6 +32,8 @@ end
 
 module Claros
   module Instrument
-    InstrumentMeasurementDefinition = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.InstrumentMeasurementDefinition").msgclass
+    module Measurement
+      InstrumentMeasurementDefinition = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.measurement.InstrumentMeasurementDefinition").msgclass
+    end
   end
 end

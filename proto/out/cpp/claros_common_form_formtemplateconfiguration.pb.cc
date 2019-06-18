@@ -16,9 +16,9 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fform_5fformfield_5fdefinition_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_FormFieldDefinition_claros_5fcommon_5fform_5fformfield_5fdefinition_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fform_5fformlayout_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_FormLayout_claros_5fcommon_5fform_5fformlayout_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5frecurrence_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto;
 namespace claros {
 namespace common {
 namespace form {
@@ -42,7 +42,7 @@ static void InitDefaultsFormTemplateConfiguration_claros_5fcommon_5fform_5fformt
 
 ::google::protobuf::internal::SCCInfo<3> scc_info_FormTemplateConfiguration_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsFormTemplateConfiguration_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto}, {
-      &scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto.base,
+      &scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto.base,
       &scc_info_FormLayout_claros_5fcommon_5fform_5fformlayout_2eproto.base,
       &scc_info_FormFieldDefinition_claros_5fcommon_5fform_5fformfield_5fdefinition_2eproto.base,}};
 
@@ -82,29 +82,30 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 const char descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto[] =
   "\n2claros_common_form_formtemplateconfigu"
   "ration.proto\022\022claros.common.form\032*claros"
-  "_common_form_formtemplate_type.proto\032#cl"
-  "aros_common_core_recurrence.proto\032#claro"
-  "s_common_form_formlayout.proto\032-claros_c"
-  "ommon_form_formfield_definition.proto\"\212\002"
-  "\n\031FormTemplateConfiguration\022>\n\020formTempl"
-  "ateType\030\001 \001(\0162$.claros.common.form.FormT"
-  "emplateType\0222\n\nrecurrence\030\002 \001(\0132\036.claros"
-  ".common.core.Recurrence\0222\n\nformLayout\030\003 "
-  "\001(\0132\036.claros.common.form.FormLayout\022E\n\024f"
-  "ormFieldDefinitions\030\004 \003(\0132\'.claros.commo"
-  "n.form.FormFieldDefinitionb\006proto3"
+  "_common_form_formtemplate_type.proto\032)cl"
+  "aros_common_recurrence_recurrence.proto\032"
+  "#claros_common_form_formlayout.proto\032-cl"
+  "aros_common_form_formfield_definition.pr"
+  "oto\"\220\002\n\031FormTemplateConfiguration\022>\n\020for"
+  "mTemplateType\030\001 \001(\0162$.claros.common.form"
+  ".FormTemplateType\0228\n\nrecurrence\030\002 \001(\0132$."
+  "claros.common.recurrence.Recurrence\0222\n\nf"
+  "ormLayout\030\003 \001(\0132\036.claros.common.form.For"
+  "mLayout\022E\n\024formFieldDefinitions\030\004 \003(\0132\'."
+  "claros.common.form.FormFieldDefinitionb\006"
+  "proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto = {
   false, InitDefaults_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto,
-  "claros_common_form_formtemplateconfiguration.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto, 514,
+  "claros_common_form_formtemplateconfiguration.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto, 526,
 };
 
 void AddDescriptors_claros_5fcommon_5fform_5fformtemplateconfiguration_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[4] =
   {
     ::AddDescriptors_claros_5fcommon_5fform_5fformtemplate_5ftype_2eproto,
-    ::AddDescriptors_claros_5fcommon_5fcore_5frecurrence_2eproto,
+    ::AddDescriptors_claros_5fcommon_5frecurrence_5frecurrence_2eproto,
     ::AddDescriptors_claros_5fcommon_5fform_5fformlayout_2eproto,
     ::AddDescriptors_claros_5fcommon_5fform_5fformfield_5fdefinition_2eproto,
   };
@@ -120,18 +121,18 @@ namespace form {
 // ===================================================================
 
 void FormTemplateConfiguration::InitAsDefaultInstance() {
-  ::claros::common::form::_FormTemplateConfiguration_default_instance_._instance.get_mutable()->recurrence_ = const_cast< ::claros::common::core::Recurrence*>(
-      ::claros::common::core::Recurrence::internal_default_instance());
+  ::claros::common::form::_FormTemplateConfiguration_default_instance_._instance.get_mutable()->recurrence_ = const_cast< ::claros::common::recurrence::Recurrence*>(
+      ::claros::common::recurrence::Recurrence::internal_default_instance());
   ::claros::common::form::_FormTemplateConfiguration_default_instance_._instance.get_mutable()->formlayout_ = const_cast< ::claros::common::form::FormLayout*>(
       ::claros::common::form::FormLayout::internal_default_instance());
 }
 class FormTemplateConfiguration::HasBitSetters {
  public:
-  static const ::claros::common::core::Recurrence& recurrence(const FormTemplateConfiguration* msg);
+  static const ::claros::common::recurrence::Recurrence& recurrence(const FormTemplateConfiguration* msg);
   static const ::claros::common::form::FormLayout& formlayout(const FormTemplateConfiguration* msg);
 };
 
-const ::claros::common::core::Recurrence&
+const ::claros::common::recurrence::Recurrence&
 FormTemplateConfiguration::HasBitSetters::recurrence(const FormTemplateConfiguration* msg) {
   return *msg->recurrence_;
 }
@@ -172,7 +173,7 @@ FormTemplateConfiguration::FormTemplateConfiguration(const FormTemplateConfigura
       formfielddefinitions_(from.formfielddefinitions_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_recurrence()) {
-    recurrence_ = new ::claros::common::core::Recurrence(*from.recurrence_);
+    recurrence_ = new ::claros::common::recurrence::Recurrence(*from.recurrence_);
   } else {
     recurrence_ = nullptr;
   }
@@ -252,12 +253,12 @@ const char* FormTemplateConfiguration::_InternalParse(const char* begin, const c
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .claros.common.core.Recurrence recurrence = 2;
+      // .claros.common.recurrence.Recurrence recurrence = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::core::Recurrence::_InternalParse;
+        parser_till_end = ::claros::common::recurrence::Recurrence::_InternalParse;
         object = msg->mutable_recurrence();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -338,7 +339,7 @@ bool FormTemplateConfiguration::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.core.Recurrence recurrence = 2;
+      // .claros.common.recurrence.Recurrence recurrence = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -404,7 +405,7 @@ void FormTemplateConfiguration::SerializeWithCachedSizes(
       1, this->formtemplatetype(), output);
   }
 
-  // .claros.common.core.Recurrence recurrence = 2;
+  // .claros.common.recurrence.Recurrence recurrence = 2;
   if (this->has_recurrence()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::recurrence(this), output);
@@ -444,7 +445,7 @@ void FormTemplateConfiguration::SerializeWithCachedSizes(
       1, this->formtemplatetype(), target);
   }
 
-  // .claros.common.core.Recurrence recurrence = 2;
+  // .claros.common.recurrence.Recurrence recurrence = 2;
   if (this->has_recurrence()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -498,7 +499,7 @@ size_t FormTemplateConfiguration::ByteSizeLong() const {
     }
   }
 
-  // .claros.common.core.Recurrence recurrence = 2;
+  // .claros.common.recurrence.Recurrence recurrence = 2;
   if (this->has_recurrence()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -547,7 +548,7 @@ void FormTemplateConfiguration::MergeFrom(const FormTemplateConfiguration& from)
 
   formfielddefinitions_.MergeFrom(from.formfielddefinitions_);
   if (from.has_recurrence()) {
-    mutable_recurrence()->::claros::common::core::Recurrence::MergeFrom(from.recurrence());
+    mutable_recurrence()->::claros::common::recurrence::Recurrence::MergeFrom(from.recurrence());
   }
   if (from.has_formlayout()) {
     mutable_formlayout()->::claros::common::form::FormLayout::MergeFrom(from.formlayout());

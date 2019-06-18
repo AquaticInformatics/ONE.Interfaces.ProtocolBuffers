@@ -38,10 +38,16 @@ typedef GPB_ENUM(AggregateType) {
    * of the field.
    **/
   AggregateType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  AggregateType_AUnknown = 0,
-  AggregateType_AMinimum = 1,
-  AggregateType_AMaximum = 2,
-  AggregateType_AAverage = 3,
+  AggregateType_AggregateUnknown = 0,
+
+  /** Mimimum value for the aggregate range */
+  AggregateType_AggregateMinimum = 1,
+
+  /** Maximim value for the aggregate range */
+  AggregateType_AggregateMaximum = 2,
+
+  /** Average value for the aggregate range */
+  AggregateType_AggregateAverage = 3,
 };
 
 GPBEnumDescriptor *AggregateType_EnumDescriptor(void);

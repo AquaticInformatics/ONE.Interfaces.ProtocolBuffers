@@ -14,28 +14,38 @@ use Google\Protobuf\Internal\GPBUtil;
 class InstrumentData extends \Google\Protobuf\Internal\Message
 {
     /**
-     * In header
+     * Header Information
      *
      * Generated from protobuf field <code>string tenantId = 1;</code>
      */
     private $tenantId = '';
     /**
+     * Unique id of an instrument
+     *
      * Generated from protobuf field <code>string fusionId = 2;</code>
      */
     private $fusionId = '';
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentEvent events = 3;</code>
+     * Events related to what has happened to an instrument
+     *
+     * Generated from protobuf field <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
      */
     private $events = null;
     /**
-     * Generated from protobuf field <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * Measurements related to an instrument
+     *
+     * Generated from protobuf field <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      */
     private $measurements;
     /**
+     * Settings of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> settings = 5;</code>
      */
     private $settings;
     /**
+     * State informantion of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> states = 6;</code>
      */
     private $states;
@@ -53,12 +63,17 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $tenantId
-     *           In header
+     *           Header Information
      *     @type string $fusionId
-     *     @type \Claros\Instrument\InstrumentEvent $events
-     *     @type \Claros\Instrument\InstrumentMeasurement[]|\Google\Protobuf\Internal\RepeatedField $measurements
+     *           Unique id of an instrument
+     *     @type \Claros\Instrument\Event\InstrumentEventData $events
+     *           Events related to what has happened to an instrument
+     *     @type \Claros\Instrument\Measurement\InstrumentMeasurementData[]|\Google\Protobuf\Internal\RepeatedField $measurements
+     *           Measurements related to an instrument
      *     @type array|\Google\Protobuf\Internal\MapField $settings
+     *           Settings of an instrument
      *     @type array|\Google\Protobuf\Internal\MapField $states
+     *           State informantion of an instrument
      *     @type \Claros\Common\Core\ClarosDateTime $instrumentDataDateTime
      *           this is optionally set if all children share the same time
      * }
@@ -69,7 +84,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * In header
+     * Header Information
      *
      * Generated from protobuf field <code>string tenantId = 1;</code>
      * @return string
@@ -80,7 +95,7 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * In header
+     * Header Information
      *
      * Generated from protobuf field <code>string tenantId = 1;</code>
      * @param string $var
@@ -95,6 +110,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Unique id of an instrument
+     *
      * Generated from protobuf field <code>string fusionId = 2;</code>
      * @return string
      */
@@ -104,6 +121,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Unique id of an instrument
+     *
      * Generated from protobuf field <code>string fusionId = 2;</code>
      * @param string $var
      * @return $this
@@ -117,8 +136,10 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentEvent events = 3;</code>
-     * @return \Claros\Instrument\InstrumentEvent
+     * Events related to what has happened to an instrument
+     *
+     * Generated from protobuf field <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
+     * @return \Claros\Instrument\Event\InstrumentEventData
      */
     public function getEvents()
     {
@@ -126,20 +147,24 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentEvent events = 3;</code>
-     * @param \Claros\Instrument\InstrumentEvent $var
+     * Events related to what has happened to an instrument
+     *
+     * Generated from protobuf field <code>.claros.instrument.event.InstrumentEventData events = 3;</code>
+     * @param \Claros\Instrument\Event\InstrumentEventData $var
      * @return $this
      */
     public function setEvents($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Instrument\InstrumentEvent::class);
+        GPBUtil::checkMessage($var, \Claros\Instrument\Event\InstrumentEventData::class);
         $this->events = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
+     * Measurements related to an instrument
+     *
+     * Generated from protobuf field <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
     public function getMeasurements()
@@ -148,19 +173,23 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .claros.instrument.InstrumentMeasurement measurements = 4;</code>
-     * @param \Claros\Instrument\InstrumentMeasurement[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Measurements related to an instrument
+     *
+     * Generated from protobuf field <code>repeated .claros.instrument.measurement.InstrumentMeasurementData measurements = 4;</code>
+     * @param \Claros\Instrument\Measurement\InstrumentMeasurementData[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMeasurements($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Claros\Instrument\InstrumentMeasurement::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Claros\Instrument\Measurement\InstrumentMeasurementData::class);
         $this->measurements = $arr;
 
         return $this;
     }
 
     /**
+     * Settings of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> settings = 5;</code>
      * @return \Google\Protobuf\Internal\MapField
      */
@@ -170,6 +199,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Settings of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> settings = 5;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
@@ -183,6 +214,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * State informantion of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> states = 6;</code>
      * @return \Google\Protobuf\Internal\MapField
      */
@@ -192,6 +225,8 @@ class InstrumentData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * State informantion of an instrument
+     *
      * Generated from protobuf field <code>map<string, string> states = 6;</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this

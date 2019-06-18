@@ -56,17 +56,17 @@ namespace common {
 namespace computation {
 
 enum PropertySelectorType {
-  PS_UNKNOWN = 0,
-  PS_MEASUREMENTTIME = 1,
-  PS_BEGINLINETIME = 2,
-  PS_ENDLINETIME = 3,
-  PS_MEASURMENTVALUE = 4,
+  PROPERTY_SELECTOR_UNKNOWN = 0,
+  PROPERTY_SELECTOR_MEASUREMENTTIME = 1,
+  PROPERTY_SELECTOR_BEGINLINETIME = 2,
+  PROPERTY_SELECTOR_ENDLINETIME = 3,
+  PROPERTY_SELECTOR_MEASURMENTVALUE = 4,
   PropertySelectorType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   PropertySelectorType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool PropertySelectorType_IsValid(int value);
-const PropertySelectorType PropertySelectorType_MIN = PS_UNKNOWN;
-const PropertySelectorType PropertySelectorType_MAX = PS_MEASURMENTVALUE;
+const PropertySelectorType PropertySelectorType_MIN = PROPERTY_SELECTOR_UNKNOWN;
+const PropertySelectorType PropertySelectorType_MAX = PROPERTY_SELECTOR_MEASURMENTVALUE;
 const int PropertySelectorType_ARRAYSIZE = PropertySelectorType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* PropertySelectorType_descriptor();

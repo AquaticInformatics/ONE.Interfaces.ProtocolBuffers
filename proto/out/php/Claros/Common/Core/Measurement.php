@@ -14,26 +14,38 @@ use Google\Protobuf\Internal\GPBUtil;
 class Measurement extends \Google\Protobuf\Internal\Message
 {
     /**
+     * When the measurement was taken (UTC)
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     private $timestamp = null;
     /**
+     * The parameter related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 parameterId = 2;</code>
      */
     private $parameterId = 0;
     /**
+     * The parameter related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string parameterGuid = 3;</code>
      */
     private $parameterGuid = '';
     /**
+     * The unit related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 unitId = 4;</code>
      */
     private $unitId = 0;
     /**
+     * The unit related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string unitGuid = 5;</code>
      */
     private $unitGuid = '';
     /**
+     * the value of the measurement ????? should this be decimal?
+     *
      * Generated from protobuf field <code>float value = 6;</code>
      */
     private $value = 0.0;
@@ -45,11 +57,17 @@ class Measurement extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Claros\Common\Core\ClarosDateTime $timestamp
+     *           When the measurement was taken (UTC)
      *     @type int $parameterId
+     *           The parameter related to the measurement as an integer
      *     @type string $parameterGuid
+     *           The parameter related to the measurement as a GUID
      *     @type int $unitId
+     *           The unit related to the measurement as an integer
      *     @type string $unitGuid
+     *           The unit related to the measurement as a GUID
      *     @type float $value
+     *           the value of the measurement ????? should this be decimal?
      * }
      */
     public function __construct($data = NULL) {
@@ -58,6 +76,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * When the measurement was taken (UTC)
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      * @return \Claros\Common\Core\ClarosDateTime
      */
@@ -67,6 +87,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * When the measurement was taken (UTC)
+     *
      * Generated from protobuf field <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      * @param \Claros\Common\Core\ClarosDateTime $var
      * @return $this
@@ -80,6 +102,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 parameterId = 2;</code>
      * @return int
      */
@@ -89,6 +113,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 parameterId = 2;</code>
      * @param int $var
      * @return $this
@@ -102,6 +128,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string parameterGuid = 3;</code>
      * @return string
      */
@@ -111,6 +139,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string parameterGuid = 3;</code>
      * @param string $var
      * @return $this
@@ -124,6 +154,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 unitId = 4;</code>
      * @return int
      */
@@ -133,6 +165,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit related to the measurement as an integer
+     *
      * Generated from protobuf field <code>int32 unitId = 4;</code>
      * @param int $var
      * @return $this
@@ -146,6 +180,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string unitGuid = 5;</code>
      * @return string
      */
@@ -155,6 +191,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit related to the measurement as a GUID
+     *
      * Generated from protobuf field <code>string unitGuid = 5;</code>
      * @param string $var
      * @return $this
@@ -168,6 +206,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * the value of the measurement ????? should this be decimal?
+     *
      * Generated from protobuf field <code>float value = 6;</code>
      * @return float
      */
@@ -177,6 +217,8 @@ class Measurement extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * the value of the measurement ????? should this be decimal?
+     *
      * Generated from protobuf field <code>float value = 6;</code>
      * @param float $var
      * @return $this

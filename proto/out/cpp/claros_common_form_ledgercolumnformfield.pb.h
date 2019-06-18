@@ -31,7 +31,7 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "claros_common_core_recurrence.pb.h"
+#include "claros_common_recurrence_recurrence.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto
@@ -234,14 +234,14 @@ class LedgerColumnFormField :
   ::std::string* release_parameter();
   void set_allocated_parameter(::std::string* parameter);
 
-  // .claros.common.core.Recurrence timeWindow = 5;
+  // .claros.common.recurrence.Recurrence timeWindow = 5;
   bool has_timewindow() const;
   void clear_timewindow();
   static const int kTimeWindowFieldNumber = 5;
-  const ::claros::common::core::Recurrence& timewindow() const;
-  ::claros::common::core::Recurrence* release_timewindow();
-  ::claros::common::core::Recurrence* mutable_timewindow();
-  void set_allocated_timewindow(::claros::common::core::Recurrence* timewindow);
+  const ::claros::common::recurrence::Recurrence& timewindow() const;
+  ::claros::common::recurrence::Recurrence* release_timewindow();
+  ::claros::common::recurrence::Recurrence* mutable_timewindow();
+  void set_allocated_timewindow(::claros::common::recurrence::Recurrence* timewindow);
 
   // @@protoc_insertion_point(class_scope:claros.common.form.LedgerColumnFormField)
  private:
@@ -253,7 +253,7 @@ class LedgerColumnFormField :
   ::google::protobuf::internal::ArenaStringPtr uplimit_;
   ::google::protobuf::internal::ArenaStringPtr lowlimit_;
   ::google::protobuf::internal::ArenaStringPtr parameter_;
-  ::claros::common::core::Recurrence* timewindow_;
+  ::claros::common::recurrence::Recurrence* timewindow_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_claros_5fcommon_5fform_5fledgercolumnformfield_2eproto;
 };
@@ -480,33 +480,33 @@ inline void LedgerColumnFormField::set_allocated_lowlimit(::std::string* lowlimi
   // @@protoc_insertion_point(field_set_allocated:claros.common.form.LedgerColumnFormField.lowLimit)
 }
 
-// .claros.common.core.Recurrence timeWindow = 5;
+// .claros.common.recurrence.Recurrence timeWindow = 5;
 inline bool LedgerColumnFormField::has_timewindow() const {
   return this != internal_default_instance() && timewindow_ != nullptr;
 }
-inline const ::claros::common::core::Recurrence& LedgerColumnFormField::timewindow() const {
-  const ::claros::common::core::Recurrence* p = timewindow_;
+inline const ::claros::common::recurrence::Recurrence& LedgerColumnFormField::timewindow() const {
+  const ::claros::common::recurrence::Recurrence* p = timewindow_;
   // @@protoc_insertion_point(field_get:claros.common.form.LedgerColumnFormField.timeWindow)
-  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::Recurrence*>(
-      &::claros::common::core::_Recurrence_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::recurrence::Recurrence*>(
+      &::claros::common::recurrence::_Recurrence_default_instance_);
 }
-inline ::claros::common::core::Recurrence* LedgerColumnFormField::release_timewindow() {
+inline ::claros::common::recurrence::Recurrence* LedgerColumnFormField::release_timewindow() {
   // @@protoc_insertion_point(field_release:claros.common.form.LedgerColumnFormField.timeWindow)
   
-  ::claros::common::core::Recurrence* temp = timewindow_;
+  ::claros::common::recurrence::Recurrence* temp = timewindow_;
   timewindow_ = nullptr;
   return temp;
 }
-inline ::claros::common::core::Recurrence* LedgerColumnFormField::mutable_timewindow() {
+inline ::claros::common::recurrence::Recurrence* LedgerColumnFormField::mutable_timewindow() {
   
   if (timewindow_ == nullptr) {
-    auto* p = CreateMaybeMessage<::claros::common::core::Recurrence>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::claros::common::recurrence::Recurrence>(GetArenaNoVirtual());
     timewindow_ = p;
   }
   // @@protoc_insertion_point(field_mutable:claros.common.form.LedgerColumnFormField.timeWindow)
   return timewindow_;
 }
-inline void LedgerColumnFormField::set_allocated_timewindow(::claros::common::core::Recurrence* timewindow) {
+inline void LedgerColumnFormField::set_allocated_timewindow(::claros::common::recurrence::Recurrence* timewindow) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::google::protobuf::MessageLite*>(timewindow_);

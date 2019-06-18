@@ -502,7 +502,7 @@ public final class ClarosCommonFormFormfield {
       if (!getFormFieldDefinitionIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, formFieldDefinitionId_);
       }
-      if (formDataEntryType_ != claros.common.form.ClarosCommonFormFormdataentryType.FormDataEntryType.FDE_UNKNOWN.getNumber()) {
+      if (formDataEntryType_ != claros.common.form.ClarosCommonFormFormdataentryType.FormDataEntryType.FORM_DATE_ENTRY_UNKNOWN.getNumber()) {
         output.writeEnum(3, formDataEntryType_);
       }
       if (isDataEntryTypeLocked_ != false) {
@@ -532,7 +532,7 @@ public final class ClarosCommonFormFormfield {
       if (!getFormFieldDefinitionIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, formFieldDefinitionId_);
       }
-      if (formDataEntryType_ != claros.common.form.ClarosCommonFormFormdataentryType.FormDataEntryType.FDE_UNKNOWN.getNumber()) {
+      if (formDataEntryType_ != claros.common.form.ClarosCommonFormFormdataentryType.FormDataEntryType.FORM_DATE_ENTRY_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, formDataEntryType_);
       }

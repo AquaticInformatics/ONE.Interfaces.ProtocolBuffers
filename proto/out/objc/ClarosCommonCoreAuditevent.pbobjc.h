@@ -56,21 +56,30 @@ typedef GPB_ENUM(AuditEvent_FieldNumber) {
   AuditEvent_FieldNumber_DataSourceType = 3,
   AuditEvent_FieldNumber_EventType = 4,
   AuditEvent_FieldNumber_TimeStamp = 5,
+  AuditEvent_FieldNumber_Details = 6,
 };
 
 @interface AuditEvent : GPBMessage
 
+/** A GUID that uniquely identifies the audit event */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *id_p;
 
+/** The id of the user related to this audit event */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *userId;
 
+/** What system generated the audit event */
 @property(nonatomic, readwrite) enum DataSourceType dataSourceType;
 
+/** The type of event */
 @property(nonatomic, readwrite) enum AuditEventType eventType;
 
+/** The time in which this event occurred */
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *timeStamp;
 /** Test to see if @c timeStamp has been set. */
 @property(nonatomic, readwrite) BOOL hasTimeStamp;
+
+/** Text details that can provide more clarification to the audit */
+@property(nonatomic, readwrite, copy, null_resettable) NSString *details;
 
 @end
 

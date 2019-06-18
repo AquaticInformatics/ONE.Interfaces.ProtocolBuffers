@@ -16,7 +16,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
-extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5frecurrence_5frecurrence_2eproto ::google::protobuf::internal::SCCInfo<5> scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto;
 namespace claros {
 namespace common {
 namespace core {
@@ -40,7 +40,7 @@ static void InitDefaultsLimit_claros_5fcommon_5fcore_5flimit_2eproto() {
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_Limit_claros_5fcommon_5fcore_5flimit_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLimit_claros_5fcommon_5fcore_5flimit_2eproto}, {
-      &scc_info_Recurrence_claros_5fcommon_5fcore_5frecurrence_2eproto.base,}};
+      &scc_info_Recurrence_claros_5fcommon_5frecurrence_5frecurrence_2eproto.base,}};
 
 void InitDefaults_claros_5fcommon_5fcore_5flimit_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_Limit_claros_5fcommon_5fcore_5flimit_2eproto.base);
@@ -79,24 +79,24 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5flimit_2eproto[] =
   "\n\036claros_common_core_limit.proto\022\022claros"
   ".common.core\032#claros_common_core_limit_t"
-  "ype.proto\032#claros_common_core_recurrence"
-  ".proto\"\235\001\n\005Limit\022\017\n\007i18nKey\030\001 \001(\t\0220\n\tlim"
-  "itType\030\002 \001(\0162\035.claros.common.core.LimitT"
-  "ype\022\r\n\005value\030\003 \001(\001\022\016\n\006unitId\030\004 \001(\r\0222\n\nre"
-  "currence\030\005 \001(\0132\036.claros.common.core.Recu"
-  "rrenceb\006proto3"
+  "ype.proto\032)claros_common_recurrence_recu"
+  "rrence.proto\"\243\001\n\005Limit\022\017\n\007i18nKey\030\001 \001(\t\022"
+  "0\n\tlimitType\030\002 \001(\0162\035.claros.common.core."
+  "LimitType\022\r\n\005value\030\003 \001(\001\022\016\n\006unitId\030\004 \001(\r"
+  "\0228\n\nrecurrence\030\005 \001(\0132$.claros.common.rec"
+  "urrence.Recurrenceb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5flimit_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5flimit_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5flimit_2eproto,
-  "claros_common_core_limit.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5flimit_2eproto, 294,
+  "claros_common_core_limit.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5flimit_2eproto, 306,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5flimit_2eproto() {
   static constexpr ::google::protobuf::internal::InitFunc deps[2] =
   {
     ::AddDescriptors_claros_5fcommon_5fcore_5flimit_5ftype_2eproto,
-    ::AddDescriptors_claros_5fcommon_5fcore_5frecurrence_2eproto,
+    ::AddDescriptors_claros_5fcommon_5frecurrence_5frecurrence_2eproto,
   };
  ::google::protobuf::internal::AddDescriptors(&descriptor_table_claros_5fcommon_5fcore_5flimit_2eproto, deps, 2);
 }
@@ -110,15 +110,15 @@ namespace core {
 // ===================================================================
 
 void Limit::InitAsDefaultInstance() {
-  ::claros::common::core::_Limit_default_instance_._instance.get_mutable()->recurrence_ = const_cast< ::claros::common::core::Recurrence*>(
-      ::claros::common::core::Recurrence::internal_default_instance());
+  ::claros::common::core::_Limit_default_instance_._instance.get_mutable()->recurrence_ = const_cast< ::claros::common::recurrence::Recurrence*>(
+      ::claros::common::recurrence::Recurrence::internal_default_instance());
 }
 class Limit::HasBitSetters {
  public:
-  static const ::claros::common::core::Recurrence& recurrence(const Limit* msg);
+  static const ::claros::common::recurrence::Recurrence& recurrence(const Limit* msg);
 };
 
-const ::claros::common::core::Recurrence&
+const ::claros::common::recurrence::Recurrence&
 Limit::HasBitSetters::recurrence(const Limit* msg) {
   return *msg->recurrence_;
 }
@@ -150,7 +150,7 @@ Limit::Limit(const Limit& from)
     i18nkey_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.i18nkey_);
   }
   if (from.has_recurrence()) {
-    recurrence_ = new ::claros::common::core::Recurrence(*from.recurrence_);
+    recurrence_ = new ::claros::common::recurrence::Recurrence(*from.recurrence_);
   } else {
     recurrence_ = nullptr;
   }
@@ -256,12 +256,12 @@ const char* Limit::_InternalParse(const char* begin, const char* end, void* obje
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // .claros.common.core.Recurrence recurrence = 5;
+      // .claros.common.recurrence.Recurrence recurrence = 5;
       case 5: {
         if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::claros::common::core::Recurrence::_InternalParse;
+        parser_till_end = ::claros::common::recurrence::Recurrence::_InternalParse;
         object = msg->mutable_recurrence();
         if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
@@ -358,7 +358,7 @@ bool Limit::MergePartialFromCodedStream(
         break;
       }
 
-      // .claros.common.core.Recurrence recurrence = 5;
+      // .claros.common.recurrence.Recurrence recurrence = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -422,7 +422,7 @@ void Limit::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->unitid(), output);
   }
 
-  // .claros.common.core.Recurrence recurrence = 5;
+  // .claros.common.recurrence.Recurrence recurrence = 5;
   if (this->has_recurrence()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, HasBitSetters::recurrence(this), output);
@@ -468,7 +468,7 @@ void Limit::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->unitid(), target);
   }
 
-  // .claros.common.core.Recurrence recurrence = 5;
+  // .claros.common.recurrence.Recurrence recurrence = 5;
   if (this->has_recurrence()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -503,7 +503,7 @@ size_t Limit::ByteSizeLong() const {
         this->i18nkey());
   }
 
-  // .claros.common.core.Recurrence recurrence = 5;
+  // .claros.common.recurrence.Recurrence recurrence = 5;
   if (this->has_recurrence()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
@@ -560,7 +560,7 @@ void Limit::MergeFrom(const Limit& from) {
     i18nkey_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.i18nkey_);
   }
   if (from.has_recurrence()) {
-    mutable_recurrence()->::claros::common::core::Recurrence::MergeFrom(from.recurrence());
+    mutable_recurrence()->::claros::common::recurrence::Recurrence::MergeFrom(from.recurrence());
   }
   if (from.value() != 0) {
     set_value(from.value());

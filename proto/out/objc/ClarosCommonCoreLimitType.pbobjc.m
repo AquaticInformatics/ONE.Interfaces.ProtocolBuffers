@@ -36,21 +36,23 @@ GPBEnumDescriptor *LimitType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "LUnknown\000LHighalarm\000LHighnear\000LLownear\000L"
-        "Lowalarm\000";
+        "LimitUnknown\000LimitHighalarm\000LimitHighnea"
+        "r\000LimitLownear\000LimitLowalarm\000";
     static const int32_t values[] = {
-        LimitType_LUnknown,
-        LimitType_LHighalarm,
-        LimitType_LHighnear,
-        LimitType_LLownear,
-        LimitType_LLowalarm,
+        LimitType_LimitUnknown,
+        LimitType_LimitHighalarm,
+        LimitType_LimitHighnear,
+        LimitType_LimitLownear,
+        LimitType_LimitLowalarm,
     };
+    static const char *extraTextFormatInfo = "\001\002e\200\350\000";
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(LimitType)
                                        valueNames:valueNames
                                            values:values
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
-                                     enumVerifier:LimitType_IsValidValue];
+                                     enumVerifier:LimitType_IsValidValue
+                              extraTextFormatInfo:extraTextFormatInfo];
     GPBEnumDescriptor *expected = nil;
     if (!atomic_compare_exchange_strong(&descriptor, &expected, worker)) {
       [worker release];
@@ -61,11 +63,11 @@ GPBEnumDescriptor *LimitType_EnumDescriptor(void) {
 
 BOOL LimitType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case LimitType_LUnknown:
-    case LimitType_LHighalarm:
-    case LimitType_LHighnear:
-    case LimitType_LLownear:
-    case LimitType_LLowalarm:
+    case LimitType_LimitUnknown:
+    case LimitType_LimitHighalarm:
+    case LimitType_LimitHighnear:
+    case LimitType_LimitLownear:
+    case LimitType_LimitLowalarm:
       return YES;
     default:
       return NO;

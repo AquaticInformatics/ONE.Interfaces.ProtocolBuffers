@@ -59,16 +59,21 @@ typedef GPB_ENUM(WorksheetDefinition_FieldNumber) {
 
 @interface WorksheetDefinition : GPBMessage
 
+/** Version of the Worksheet definition.  This is incremented with each change */
 @property(nonatomic, readwrite) uint32_t version;
 
+/** The starting row number that the configuraiton applies */
 @property(nonatomic, readwrite) uint32_t startRow;
 
+/** The ending row number that the configuration applies */
 @property(nonatomic, readwrite) uint32_t endRow;
 
+/** ???? Should we rename these to column definitions */
 @property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<Column*> *columnsArray;
 /** The number of items in @c columnsArray without causing the array to be created. */
 @property(nonatomic, readonly) NSUInteger columnsArray_Count;
 
+/** Audit Record of who created the definition */
 @property(nonatomic, readwrite, strong, null_resettable) AuditEvent *auditEvent;
 /** Test to see if @c auditEvent has been set. */
 @property(nonatomic, readwrite) BOOL hasAuditEvent;

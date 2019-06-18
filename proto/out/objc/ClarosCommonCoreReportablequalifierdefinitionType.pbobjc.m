@@ -36,14 +36,17 @@ GPBEnumDescriptor *ReportableQualifierDefinitionType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "RqdUnknown\000RqdEnteredvalue\000RqdZero\000RqdHa"
-        "lfentered\000RqdConstant\000";
+        "ReportableQualifierDefinitionUnknown\000Rep"
+        "ortableQualifierDefinitionEnteredvalue\000R"
+        "eportableQualifierDefinitionZero\000Reporta"
+        "bleQualifierDefinitionHalfentered\000Report"
+        "ableQualifierDefinitionConstant\000";
     static const int32_t values[] = {
-        ReportableQualifierDefinitionType_RqdUnknown,
-        ReportableQualifierDefinitionType_RqdEnteredvalue,
-        ReportableQualifierDefinitionType_RqdZero,
-        ReportableQualifierDefinitionType_RqdHalfentered,
-        ReportableQualifierDefinitionType_RqdConstant,
+        ReportableQualifierDefinitionType_ReportableQualifierDefinitionUnknown,
+        ReportableQualifierDefinitionType_ReportableQualifierDefinitionEnteredvalue,
+        ReportableQualifierDefinitionType_ReportableQualifierDefinitionZero,
+        ReportableQualifierDefinitionType_ReportableQualifierDefinitionHalfentered,
+        ReportableQualifierDefinitionType_ReportableQualifierDefinitionConstant,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(ReportableQualifierDefinitionType)
@@ -61,11 +64,11 @@ GPBEnumDescriptor *ReportableQualifierDefinitionType_EnumDescriptor(void) {
 
 BOOL ReportableQualifierDefinitionType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case ReportableQualifierDefinitionType_RqdUnknown:
-    case ReportableQualifierDefinitionType_RqdEnteredvalue:
-    case ReportableQualifierDefinitionType_RqdZero:
-    case ReportableQualifierDefinitionType_RqdHalfentered:
-    case ReportableQualifierDefinitionType_RqdConstant:
+    case ReportableQualifierDefinitionType_ReportableQualifierDefinitionUnknown:
+    case ReportableQualifierDefinitionType_ReportableQualifierDefinitionEnteredvalue:
+    case ReportableQualifierDefinitionType_ReportableQualifierDefinitionZero:
+    case ReportableQualifierDefinitionType_ReportableQualifierDefinitionHalfentered:
+    case ReportableQualifierDefinitionType_ReportableQualifierDefinitionConstant:
       return YES;
     default:
       return NO;

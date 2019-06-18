@@ -56,17 +56,17 @@ namespace operations {
 namespace spreadsheet {
 
 enum WorksheetType {
-  W_UNKNOWN = 0,
-  W_FIFTEEN_MINUTE = 1,
-  W_FOUR_HOUR = 2,
-  W_DAILY = 3,
-  W_MONTHLY = 4,
+  WORKSHEET_UNKNOWN = 0,
+  WORKSHEET_FIFTEEN_MINUTE = 1,
+  WORKSHEET_HOUR = 2,
+  WORKSHEET_FOUR_HOUR = 3,
+  WORKSHEET_DAILY = 4,
   WorksheetType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   WorksheetType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool WorksheetType_IsValid(int value);
-const WorksheetType WorksheetType_MIN = W_UNKNOWN;
-const WorksheetType WorksheetType_MAX = W_MONTHLY;
+const WorksheetType WorksheetType_MIN = WORKSHEET_UNKNOWN;
+const WorksheetType WorksheetType_MAX = WORKSHEET_DAILY;
 const int WorksheetType_ARRAYSIZE = WorksheetType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* WorksheetType_descriptor();

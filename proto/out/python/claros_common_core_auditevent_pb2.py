@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n#claros_common_core_auditevent.proto\x12\x12\x63laros.common.core\x1a(claros_common_core_auditevent_type.proto\x1a\'claros_common_core_clarosdatetime.proto\x1a(claros_common_core_datasource_type.proto\"\xd2\x01\n\nAuditEvent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06userId\x18\x02 \x01(\t\x12:\n\x0e\x64\x61taSourceType\x18\x03 \x01(\x0e\x32\".claros.common.core.DataSourceType\x12\x35\n\teventType\x18\x04 \x01(\x0e\x32\".claros.common.core.AuditEventType\x12\x35\n\ttimeStamp\x18\x05 \x01(\x0b\x32\".claros.common.core.ClarosDateTimeb\x06proto3')
+  serialized_pb=_b('\n#claros_common_core_auditevent.proto\x12\x12\x63laros.common.core\x1a(claros_common_core_auditevent_type.proto\x1a\'claros_common_core_clarosdatetime.proto\x1a(claros_common_core_datasource_type.proto\"\xe3\x01\n\nAuditEvent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06userId\x18\x02 \x01(\t\x12:\n\x0e\x64\x61taSourceType\x18\x03 \x01(\x0e\x32\".claros.common.core.DataSourceType\x12\x35\n\teventType\x18\x04 \x01(\x0e\x32\".claros.common.core.AuditEventType\x12\x35\n\ttimeStamp\x18\x05 \x01(\x0b\x32\".claros.common.core.ClarosDateTime\x12\x0f\n\x07\x64\x65tails\x18\x06 \x01(\tb\x06proto3')
   ,
   dependencies=[claros__common__core__auditevent__type__pb2.DESCRIPTOR,claros__common__core__clarosdatetime__pb2.DESCRIPTOR,claros__common__core__datasource__type__pb2.DESCRIPTOR,])
 
@@ -72,6 +72,13 @@ _AUDITEVENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='details', full_name='claros.common.core.AuditEvent.details', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -85,7 +92,7 @@ _AUDITEVENT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=185,
-  serialized_end=395,
+  serialized_end=412,
 )
 
 _AUDITEVENT.fields_by_name['dataSourceType'].enum_type = claros__common__core__datasource__type__pb2._DATASOURCETYPE

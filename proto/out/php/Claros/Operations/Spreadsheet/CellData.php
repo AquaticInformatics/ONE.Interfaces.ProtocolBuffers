@@ -14,34 +14,50 @@ use Google\Protobuf\Internal\GPBUtil;
 class CellData extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The value that was entered by the user as a number
+     *
      * Generated from protobuf field <code>double value = 1;</code>
      */
     private $value = 0.0;
     /**
+     * The value represented as a string
+     *
      * Generated from protobuf field <code>string stringValue = 2;</code>
      */
     private $stringValue = '';
     /**
+     * Whether the cell has been locked to prevent unautorized update of just this cell
+     *
      * Generated from protobuf field <code>bool isLocked = 3;</code>
      */
     private $isLocked = false;
     /**
+     * The unit that relates to the value
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      */
     private $unitId = 0;
     /**
+     * Textual note to explain why the data was changed
+     *
      * Generated from protobuf field <code>string justification = 5;</code>
      */
     private $justification = '';
     /**
+     * If the data was entered as a qualified value, the qualified properties
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      */
     private $reportableQualifier = null;
     /**
+     * Where the data came from that went into the cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      */
     private $cellDataBindings;
     /**
+     * Audit information for this cell entry
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     private $auditEvent = null;
@@ -53,13 +69,21 @@ class CellData extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type float $value
+     *           The value that was entered by the user as a number
      *     @type string $stringValue
+     *           The value represented as a string
      *     @type bool $isLocked
+     *           Whether the cell has been locked to prevent unautorized update of just this cell
      *     @type int $unitId
+     *           The unit that relates to the value
      *     @type string $justification
+     *           Textual note to explain why the data was changed
      *     @type \Claros\Common\Core\ReportableQualifier $reportableQualifier
+     *           If the data was entered as a qualified value, the qualified properties
      *     @type \Claros\Operations\Spreadsheet\CellDataBinding[]|\Google\Protobuf\Internal\RepeatedField $cellDataBindings
+     *           Where the data came from that went into the cell
      *     @type \Claros\Common\Core\AuditEvent $auditEvent
+     *           Audit information for this cell entry
      * }
      */
     public function __construct($data = NULL) {
@@ -68,6 +92,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value that was entered by the user as a number
+     *
      * Generated from protobuf field <code>double value = 1;</code>
      * @return float
      */
@@ -77,6 +103,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value that was entered by the user as a number
+     *
      * Generated from protobuf field <code>double value = 1;</code>
      * @param float $var
      * @return $this
@@ -90,6 +118,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value represented as a string
+     *
      * Generated from protobuf field <code>string stringValue = 2;</code>
      * @return string
      */
@@ -99,6 +129,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The value represented as a string
+     *
      * Generated from protobuf field <code>string stringValue = 2;</code>
      * @param string $var
      * @return $this
@@ -112,6 +144,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Whether the cell has been locked to prevent unautorized update of just this cell
+     *
      * Generated from protobuf field <code>bool isLocked = 3;</code>
      * @return bool
      */
@@ -121,6 +155,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Whether the cell has been locked to prevent unautorized update of just this cell
+     *
      * Generated from protobuf field <code>bool isLocked = 3;</code>
      * @param bool $var
      * @return $this
@@ -134,6 +170,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit that relates to the value
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      * @return int
      */
@@ -143,6 +181,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The unit that relates to the value
+     *
      * Generated from protobuf field <code>uint32 unitId = 4;</code>
      * @param int $var
      * @return $this
@@ -156,6 +196,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Textual note to explain why the data was changed
+     *
      * Generated from protobuf field <code>string justification = 5;</code>
      * @return string
      */
@@ -165,6 +207,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Textual note to explain why the data was changed
+     *
      * Generated from protobuf field <code>string justification = 5;</code>
      * @param string $var
      * @return $this
@@ -178,6 +222,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * If the data was entered as a qualified value, the qualified properties
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      * @return \Claros\Common\Core\ReportableQualifier
      */
@@ -187,6 +233,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * If the data was entered as a qualified value, the qualified properties
+     *
      * Generated from protobuf field <code>.claros.common.core.ReportableQualifier reportableQualifier = 6;</code>
      * @param \Claros\Common\Core\ReportableQualifier $var
      * @return $this
@@ -200,6 +248,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Where the data came from that went into the cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -209,6 +259,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Where the data came from that went into the cell
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.CellDataBinding cellDataBindings = 7;</code>
      * @param \Claros\Operations\Spreadsheet\CellDataBinding[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
@@ -222,6 +274,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Audit information for this cell entry
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      * @return \Claros\Common\Core\AuditEvent
      */
@@ -231,6 +285,8 @@ class CellData extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Audit information for this cell entry
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      * @param \Claros\Common\Core\AuditEvent $var
      * @return $this

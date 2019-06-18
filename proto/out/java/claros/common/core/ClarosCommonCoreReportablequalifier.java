@@ -19,19 +19,35 @@ public final class ClarosCommonCoreReportablequalifier {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * The type of Qualifier
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     int getReportableQualifierTypeValue();
     /**
+     * <pre>
+     * The type of Qualifier
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType();
 
     /**
+     * <pre>
+     * What the user has entered as the qualifer
+     * </pre>
+     *
      * <code>string qualifiedValue = 2;</code>
      */
     java.lang.String getQualifiedValue();
     /**
+     * <pre>
+     * What the user has entered as the qualifer
+     * </pre>
+     *
      * <code>string qualifiedValue = 2;</code>
      */
     com.google.protobuf.ByteString
@@ -125,12 +141,20 @@ public final class ClarosCommonCoreReportablequalifier {
     public static final int REPORTABLEQUALIFIERTYPE_FIELD_NUMBER = 1;
     private int reportableQualifierType_;
     /**
+     * <pre>
+     * The type of Qualifier
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     public int getReportableQualifierTypeValue() {
       return reportableQualifierType_;
     }
     /**
+     * <pre>
+     * The type of Qualifier
+     * </pre>
+     *
      * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType() {
@@ -142,6 +166,10 @@ public final class ClarosCommonCoreReportablequalifier {
     public static final int QUALIFIEDVALUE_FIELD_NUMBER = 2;
     private volatile java.lang.Object qualifiedValue_;
     /**
+     * <pre>
+     * What the user has entered as the qualifer
+     * </pre>
+     *
      * <code>string qualifiedValue = 2;</code>
      */
     public java.lang.String getQualifiedValue() {
@@ -157,6 +185,10 @@ public final class ClarosCommonCoreReportablequalifier {
       }
     }
     /**
+     * <pre>
+     * What the user has entered as the qualifer
+     * </pre>
+     *
      * <code>string qualifiedValue = 2;</code>
      */
     public com.google.protobuf.ByteString
@@ -187,7 +219,7 @@ public final class ClarosCommonCoreReportablequalifier {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.RQ_UNKNOWN.getNumber()) {
+      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.REPORTABLE_QUALIFIER_UNKNOWN.getNumber()) {
         output.writeEnum(1, reportableQualifierType_);
       }
       if (!getQualifiedValueBytes().isEmpty()) {
@@ -202,7 +234,7 @@ public final class ClarosCommonCoreReportablequalifier {
       if (size != -1) return size;
 
       size = 0;
-      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.RQ_UNKNOWN.getNumber()) {
+      if (reportableQualifierType_ != claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.REPORTABLE_QUALIFIER_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, reportableQualifierType_);
       }
@@ -493,12 +525,20 @@ public final class ClarosCommonCoreReportablequalifier {
 
       private int reportableQualifierType_ = 0;
       /**
+       * <pre>
+       * The type of Qualifier
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public int getReportableQualifierTypeValue() {
         return reportableQualifierType_;
       }
       /**
+       * <pre>
+       * The type of Qualifier
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder setReportableQualifierTypeValue(int value) {
@@ -507,6 +547,10 @@ public final class ClarosCommonCoreReportablequalifier {
         return this;
       }
       /**
+       * <pre>
+       * The type of Qualifier
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType getReportableQualifierType() {
@@ -515,6 +559,10 @@ public final class ClarosCommonCoreReportablequalifier {
         return result == null ? claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * The type of Qualifier
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder setReportableQualifierType(claros.common.core.ClarosCommonCoreReportablequalifierType.ReportableQualifierType value) {
@@ -527,6 +575,10 @@ public final class ClarosCommonCoreReportablequalifier {
         return this;
       }
       /**
+       * <pre>
+       * The type of Qualifier
+       * </pre>
+       *
        * <code>.claros.common.core.ReportableQualifierType reportableQualifierType = 1;</code>
        */
       public Builder clearReportableQualifierType() {
@@ -538,6 +590,10 @@ public final class ClarosCommonCoreReportablequalifier {
 
       private java.lang.Object qualifiedValue_ = "";
       /**
+       * <pre>
+       * What the user has entered as the qualifer
+       * </pre>
+       *
        * <code>string qualifiedValue = 2;</code>
        */
       public java.lang.String getQualifiedValue() {
@@ -553,6 +609,10 @@ public final class ClarosCommonCoreReportablequalifier {
         }
       }
       /**
+       * <pre>
+       * What the user has entered as the qualifer
+       * </pre>
+       *
        * <code>string qualifiedValue = 2;</code>
        */
       public com.google.protobuf.ByteString
@@ -569,6 +629,10 @@ public final class ClarosCommonCoreReportablequalifier {
         }
       }
       /**
+       * <pre>
+       * What the user has entered as the qualifer
+       * </pre>
+       *
        * <code>string qualifiedValue = 2;</code>
        */
       public Builder setQualifiedValue(
@@ -582,6 +646,10 @@ public final class ClarosCommonCoreReportablequalifier {
         return this;
       }
       /**
+       * <pre>
+       * What the user has entered as the qualifer
+       * </pre>
+       *
        * <code>string qualifiedValue = 2;</code>
        */
       public Builder clearQualifiedValue() {
@@ -591,6 +659,10 @@ public final class ClarosCommonCoreReportablequalifier {
         return this;
       }
       /**
+       * <pre>
+       * What the user has entered as the qualifer
+       * </pre>
+       *
        * <code>string qualifiedValue = 2;</code>
        */
       public Builder setQualifiedValueBytes(

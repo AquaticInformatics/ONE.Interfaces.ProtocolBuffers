@@ -41,15 +41,17 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 const char descriptor_table_protodef_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto[] =
   "\n5claros_common_computation_propertysele"
   "ctor_type.proto\022\031claros.common.computati"
-  "on*\200\001\n\024PropertySelectorType\022\016\n\nPS_UNKNOW"
-  "N\020\000\022\026\n\022PS_MEASUREMENTTIME\020\001\022\024\n\020PS_BEGINL"
-  "INETIME\020\002\022\022\n\016PS_ENDLINETIME\020\003\022\026\n\022PS_MEAS"
-  "URMENTVALUE\020\004b\006proto3"
+  "on*\313\001\n\024PropertySelectorType\022\035\n\031PROPERTY_"
+  "SELECTOR_UNKNOWN\020\000\022%\n!PROPERTY_SELECTOR_"
+  "MEASUREMENTTIME\020\001\022#\n\037PROPERTY_SELECTOR_B"
+  "EGINLINETIME\020\002\022!\n\035PROPERTY_SELECTOR_ENDL"
+  "INETIME\020\003\022%\n!PROPERTY_SELECTOR_MEASURMEN"
+  "TVALUE\020\004b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto,
-  "claros_common_computation_propertyselector_type.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto, 221,
+  "claros_common_computation_propertyselector_type.proto", &assign_descriptors_table_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto, 296,
 };
 
 void AddDescriptors_claros_5fcommon_5fcomputation_5fpropertyselector_5ftype_2eproto() {

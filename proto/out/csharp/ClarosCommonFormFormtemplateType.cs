@@ -25,9 +25,10 @@ namespace Claros.Common.Form {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CipjbGFyb3NfY29tbW9uX2Zvcm1fZm9ybXRlbXBsYXRlX3R5cGUucHJvdG8S",
-            "EmNsYXJvcy5jb21tb24uZm9ybSpWChBGb3JtVGVtcGxhdGVUeXBlEg4KCkZU",
-            "X1VOS05PV04QABIMCghGVF9QTEFOVBABEhEKDUZUX0xBQk9SQVRPUlkQAhIR",
-            "Cg1GVF9FTlRFUlBSSVNFEANiBnByb3RvMw=="));
+            "EmNsYXJvcy5jb21tb24uZm9ybSqCAQoQRm9ybVRlbXBsYXRlVHlwZRIZChVG",
+            "T1JNX1RFTVBMQVRFX1VOS05PV04QABIXChNGT1JNX1RFTVBMQVRFX1BMQU5U",
+            "EAESHAoYRk9STV9URU1QTEFURV9MQUJPUkFUT1JZEAISHAoYRk9STV9URU1Q",
+            "TEFURV9FTlRFUlBSSVNFEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Form.FormTemplateType), }, null));
@@ -37,10 +38,10 @@ namespace Claros.Common.Form {
   }
   #region Enums
   public enum FormTemplateType {
-    [pbr::OriginalName("FT_UNKNOWN")] FtUnknown = 0,
-    [pbr::OriginalName("FT_PLANT")] FtPlant = 1,
-    [pbr::OriginalName("FT_LABORATORY")] FtLaboratory = 2,
-    [pbr::OriginalName("FT_ENTERPRISE")] FtEnterprise = 3,
+    [pbr::OriginalName("FORM_TEMPLATE_UNKNOWN")] FormTemplateUnknown = 0,
+    [pbr::OriginalName("FORM_TEMPLATE_PLANT")] FormTemplatePlant = 1,
+    [pbr::OriginalName("FORM_TEMPLATE_LABORATORY")] FormTemplateLaboratory = 2,
+    [pbr::OriginalName("FORM_TEMPLATE_ENTERPRISE")] FormTemplateEnterprise = 3,
   }
 
   #endregion

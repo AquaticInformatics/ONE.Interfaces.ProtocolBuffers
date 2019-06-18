@@ -41,14 +41,15 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 const char descriptor_table_protodef_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto[] =
   "\n2claros_operations_spreadsheet_workshee"
   "t_type.proto\022\035claros.operations.spreadsh"
-  "eet*a\n\rWorksheetType\022\r\n\tW_UNKNOWN\020\000\022\024\n\020W"
-  "_FIFTEEN_MINUTE\020\001\022\017\n\013W_FOUR_HOUR\020\002\022\013\n\007W_"
-  "DAILY\020\003\022\r\n\tW_MONTHLY\020\004b\006proto3"
+  "eet*\206\001\n\rWorksheetType\022\025\n\021WORKSHEET_UNKNO"
+  "WN\020\000\022\034\n\030WORKSHEET_FIFTEEN_MINUTE\020\001\022\022\n\016WO"
+  "RKSHEET_HOUR\020\002\022\027\n\023WORKSHEET_FOUR_HOUR\020\003\022"
+  "\023\n\017WORKSHEET_DAILY\020\004b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto = {
   false, InitDefaults_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto, 
   descriptor_table_protodef_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto,
-  "claros_operations_spreadsheet_worksheet_type.proto", &assign_descriptors_table_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto, 190,
+  "claros_operations_spreadsheet_worksheet_type.proto", &assign_descriptors_table_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto, 228,
 };
 
 void AddDescriptors_claros_5foperations_5fspreadsheet_5fworksheet_5ftype_2eproto() {

@@ -65,10 +65,13 @@ typedef GPB_ENUM(ClarosDateTime_ClarosDateTime_OneOfCase) {
 
 @property(nonatomic, readonly) ClarosDateTime_ClarosDateTime_OneOfCase clarosDateTimeOneOfCase;
 
+/** Used for data collected from Mobile Devices */
 @property(nonatomic, readwrite, strong, null_resettable) MobileDateTime *mobileDateTime;
 
+/** */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *jsonDateTime;
 
+/** */
 @property(nonatomic, readwrite) uint64_t ticks;
 
 @end

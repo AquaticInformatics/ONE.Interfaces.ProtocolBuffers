@@ -56,14 +56,14 @@ namespace common {
 namespace core {
 
 enum TimeZone {
-  TZ_UNKNOWN = 0,
-  TZ_UTC = 1,
+  TIMEZONE_UNKNOWN = 0,
+  TIMEZONE_UTC = 1,
   TimeZone_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   TimeZone_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool TimeZone_IsValid(int value);
-const TimeZone TimeZone_MIN = TZ_UNKNOWN;
-const TimeZone TimeZone_MAX = TZ_UTC;
+const TimeZone TimeZone_MIN = TIMEZONE_UNKNOWN;
+const TimeZone TimeZone_MAX = TIMEZONE_UTC;
 const int TimeZone_ARRAYSIZE = TimeZone_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* TimeZone_descriptor();

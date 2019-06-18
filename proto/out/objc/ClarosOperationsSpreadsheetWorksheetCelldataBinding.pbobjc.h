@@ -53,20 +53,20 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - CellDataBinding
 
 typedef GPB_ENUM(CellDataBinding_FieldNumber) {
-  CellDataBinding_FieldNumber_InstrumentMeasurementBinding = 7,
-  CellDataBinding_FieldNumber_ComputationBinding = 8,
-  CellDataBinding_FieldNumber_FormBinding = 9,
-  CellDataBinding_FieldNumber_SpreadsheetBinding = 10,
-  CellDataBinding_FieldNumber_FieldInstrumentMeasurementBinding = 11,
+  CellDataBinding_FieldNumber_InstrumentMeasurementBinding = 1,
+  CellDataBinding_FieldNumber_ComputationBinding = 2,
+  CellDataBinding_FieldNumber_FormBinding = 3,
+  CellDataBinding_FieldNumber_SpreadsheetBinding = 4,
+  CellDataBinding_FieldNumber_FieldInstrumentMeasurementBinding = 5,
 };
 
 typedef GPB_ENUM(CellDataBinding_Binding_OneOfCase) {
   CellDataBinding_Binding_OneOfCase_GPBUnsetOneOfCase = 0,
-  CellDataBinding_Binding_OneOfCase_InstrumentMeasurementBinding = 7,
-  CellDataBinding_Binding_OneOfCase_ComputationBinding = 8,
-  CellDataBinding_Binding_OneOfCase_FormBinding = 9,
-  CellDataBinding_Binding_OneOfCase_SpreadsheetBinding = 10,
-  CellDataBinding_Binding_OneOfCase_FieldInstrumentMeasurementBinding = 11,
+  CellDataBinding_Binding_OneOfCase_InstrumentMeasurementBinding = 1,
+  CellDataBinding_Binding_OneOfCase_ComputationBinding = 2,
+  CellDataBinding_Binding_OneOfCase_FormBinding = 3,
+  CellDataBinding_Binding_OneOfCase_SpreadsheetBinding = 4,
+  CellDataBinding_Binding_OneOfCase_FieldInstrumentMeasurementBinding = 5,
 };
 
 @interface CellDataBinding : GPBMessage

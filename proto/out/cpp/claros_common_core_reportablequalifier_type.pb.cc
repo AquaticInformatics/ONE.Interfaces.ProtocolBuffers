@@ -40,17 +40,20 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto[] =
   "\n1claros_common_core_reportablequalifier"
-  "_type.proto\022\022claros.common.core*\254\001\n\027Repo"
-  "rtableQualifierType\022\016\n\nRQ_UNKNOWN\020\000\022\020\n\014R"
-  "Q_NONDETECT\020\001\022\017\n\013RQ_ESTIMATE\020\002\022\033\n\027RQ_DET"
-  "ECTNONQUALIFIABLE\020\003\022\022\n\016RQ_GREATERTHAN\020\004\022"
-  "\017\n\013RQ_LESSTHAN\020\005\022\034\n\030RQ_TOO_NUMEROUS_TO_C"
-  "OUNT\020\006b\006proto3"
+  "_type.proto\022\022claros.common.core*\252\002\n\027Repo"
+  "rtableQualifierType\022 \n\034REPORTABLE_QUALIF"
+  "IER_UNKNOWN\020\000\022\"\n\036REPORTABLE_QUALIFIER_NO"
+  "NDETECT\020\001\022!\n\035REPORTABLE_QUALIFIER_ESTIMA"
+  "TE\020\002\022-\n)REPORTABLE_QUALIFIER_DETECTNONQU"
+  "ALIFIABLE\020\003\022$\n REPORTABLE_QUALIFIER_GREA"
+  "TERTHAN\020\004\022!\n\035REPORTABLE_QUALIFIER_LESSTH"
+  "AN\020\005\022.\n*REPORTABLE_QUALIFIER_TOO_NUMEROU"
+  "S_TO_COUNT\020\006b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto,
-  "claros_common_core_reportablequalifier_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto, 254,
+  "claros_common_core_reportablequalifier_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto, 380,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5freportablequalifier_5ftype_2eproto() {

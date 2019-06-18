@@ -19,46 +19,82 @@ public final class ClarosCommonCoreLimit {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     java.lang.String getI18NKey();
     /**
+     * <pre>
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     com.google.protobuf.ByteString
         getI18NKeyBytes();
 
     /**
+     * <pre>
+     * Type of Limit
+     * </pre>
+     *
      * <code>.claros.common.core.LimitType limitType = 2;</code>
      */
     int getLimitTypeValue();
     /**
+     * <pre>
+     * Type of Limit
+     * </pre>
+     *
      * <code>.claros.common.core.LimitType limitType = 2;</code>
      */
     claros.common.core.ClarosCommonCoreLimitType.LimitType getLimitType();
 
     /**
+     * <pre>
+     * Value that will trigger the limit ???? is this inclusive or exclusive
+     * </pre>
+     *
      * <code>double value = 3;</code>
      */
     double getValue();
 
     /**
+     * <pre>
+     * The unit used to compare the value with the limit
+     * </pre>
+     *
      * <code>uint32 unitId = 4;</code>
      */
     int getUnitId();
 
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
     boolean hasRecurrence();
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence();
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder();
   }
   /**
    * Protobuf type {@code claros.common.core.Limit}
@@ -124,11 +160,11 @@ public final class ClarosCommonCoreLimit {
               break;
             }
             case 42: {
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder subBuilder = null;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder subBuilder = null;
               if (recurrence_ != null) {
                 subBuilder = recurrence_.toBuilder();
               }
-              recurrence_ = input.readMessage(claros.common.core.ClarosCommonCoreRecurrence.Recurrence.parser(), extensionRegistry);
+              recurrence_ = input.readMessage(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(recurrence_);
                 recurrence_ = subBuilder.buildPartial();
@@ -171,6 +207,10 @@ public final class ClarosCommonCoreLimit {
     public static final int I18NKEY_FIELD_NUMBER = 1;
     private volatile java.lang.Object i18NKey_;
     /**
+     * <pre>
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     public java.lang.String getI18NKey() {
@@ -186,6 +226,10 @@ public final class ClarosCommonCoreLimit {
       }
     }
     /**
+     * <pre>
+     * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+     * </pre>
+     *
      * <code>string i18nKey = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -205,12 +249,20 @@ public final class ClarosCommonCoreLimit {
     public static final int LIMITTYPE_FIELD_NUMBER = 2;
     private int limitType_;
     /**
+     * <pre>
+     * Type of Limit
+     * </pre>
+     *
      * <code>.claros.common.core.LimitType limitType = 2;</code>
      */
     public int getLimitTypeValue() {
       return limitType_;
     }
     /**
+     * <pre>
+     * Type of Limit
+     * </pre>
+     *
      * <code>.claros.common.core.LimitType limitType = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreLimitType.LimitType getLimitType() {
@@ -222,6 +274,10 @@ public final class ClarosCommonCoreLimit {
     public static final int VALUE_FIELD_NUMBER = 3;
     private double value_;
     /**
+     * <pre>
+     * Value that will trigger the limit ???? is this inclusive or exclusive
+     * </pre>
+     *
      * <code>double value = 3;</code>
      */
     public double getValue() {
@@ -231,6 +287,10 @@ public final class ClarosCommonCoreLimit {
     public static final int UNITID_FIELD_NUMBER = 4;
     private int unitId_;
     /**
+     * <pre>
+     * The unit used to compare the value with the limit
+     * </pre>
+     *
      * <code>uint32 unitId = 4;</code>
      */
     public int getUnitId() {
@@ -238,23 +298,35 @@ public final class ClarosCommonCoreLimit {
     }
 
     public static final int RECURRENCE_FIELD_NUMBER = 5;
-    private claros.common.core.ClarosCommonCoreRecurrence.Recurrence recurrence_;
+    private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence recurrence_;
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
     public boolean hasRecurrence() {
       return recurrence_ != null;
     }
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence() {
-      return recurrence_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence() {
+      return recurrence_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
     }
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+     * <pre>
+     * Used for seasonal limits
+     * </pre>
+     *
+     * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
       return getRecurrence();
     }
 
@@ -275,7 +347,7 @@ public final class ClarosCommonCoreLimit {
       if (!getI18NKeyBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, i18NKey_);
       }
-      if (limitType_ != claros.common.core.ClarosCommonCoreLimitType.LimitType.L_UNKNOWN.getNumber()) {
+      if (limitType_ != claros.common.core.ClarosCommonCoreLimitType.LimitType.LIMIT_UNKNOWN.getNumber()) {
         output.writeEnum(2, limitType_);
       }
       if (value_ != 0D) {
@@ -299,7 +371,7 @@ public final class ClarosCommonCoreLimit {
       if (!getI18NKeyBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, i18NKey_);
       }
-      if (limitType_ != claros.common.core.ClarosCommonCoreLimitType.LimitType.L_UNKNOWN.getNumber()) {
+      if (limitType_ != claros.common.core.ClarosCommonCoreLimitType.LimitType.LIMIT_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, limitType_);
       }
@@ -644,6 +716,10 @@ public final class ClarosCommonCoreLimit {
 
       private java.lang.Object i18NKey_ = "";
       /**
+       * <pre>
+       * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public java.lang.String getI18NKey() {
@@ -659,6 +735,10 @@ public final class ClarosCommonCoreLimit {
         }
       }
       /**
+       * <pre>
+       * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -675,6 +755,10 @@ public final class ClarosCommonCoreLimit {
         }
       }
       /**
+       * <pre>
+       * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder setI18NKey(
@@ -688,6 +772,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder clearI18NKey() {
@@ -697,6 +785,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+       * </pre>
+       *
        * <code>string i18nKey = 1;</code>
        */
       public Builder setI18NKeyBytes(
@@ -713,12 +805,20 @@ public final class ClarosCommonCoreLimit {
 
       private int limitType_ = 0;
       /**
+       * <pre>
+       * Type of Limit
+       * </pre>
+       *
        * <code>.claros.common.core.LimitType limitType = 2;</code>
        */
       public int getLimitTypeValue() {
         return limitType_;
       }
       /**
+       * <pre>
+       * Type of Limit
+       * </pre>
+       *
        * <code>.claros.common.core.LimitType limitType = 2;</code>
        */
       public Builder setLimitTypeValue(int value) {
@@ -727,6 +827,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * Type of Limit
+       * </pre>
+       *
        * <code>.claros.common.core.LimitType limitType = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreLimitType.LimitType getLimitType() {
@@ -735,6 +839,10 @@ public final class ClarosCommonCoreLimit {
         return result == null ? claros.common.core.ClarosCommonCoreLimitType.LimitType.UNRECOGNIZED : result;
       }
       /**
+       * <pre>
+       * Type of Limit
+       * </pre>
+       *
        * <code>.claros.common.core.LimitType limitType = 2;</code>
        */
       public Builder setLimitType(claros.common.core.ClarosCommonCoreLimitType.LimitType value) {
@@ -747,6 +855,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * Type of Limit
+       * </pre>
+       *
        * <code>.claros.common.core.LimitType limitType = 2;</code>
        */
       public Builder clearLimitType() {
@@ -758,12 +870,20 @@ public final class ClarosCommonCoreLimit {
 
       private double value_ ;
       /**
+       * <pre>
+       * Value that will trigger the limit ???? is this inclusive or exclusive
+       * </pre>
+       *
        * <code>double value = 3;</code>
        */
       public double getValue() {
         return value_;
       }
       /**
+       * <pre>
+       * Value that will trigger the limit ???? is this inclusive or exclusive
+       * </pre>
+       *
        * <code>double value = 3;</code>
        */
       public Builder setValue(double value) {
@@ -773,6 +893,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * Value that will trigger the limit ???? is this inclusive or exclusive
+       * </pre>
+       *
        * <code>double value = 3;</code>
        */
       public Builder clearValue() {
@@ -784,12 +908,20 @@ public final class ClarosCommonCoreLimit {
 
       private int unitId_ ;
       /**
+       * <pre>
+       * The unit used to compare the value with the limit
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public int getUnitId() {
         return unitId_;
       }
       /**
+       * <pre>
+       * The unit used to compare the value with the limit
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public Builder setUnitId(int value) {
@@ -799,6 +931,10 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
+       * <pre>
+       * The unit used to compare the value with the limit
+       * </pre>
+       *
        * <code>uint32 unitId = 4;</code>
        */
       public Builder clearUnitId() {
@@ -808,29 +944,41 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
 
-      private claros.common.core.ClarosCommonCoreRecurrence.Recurrence recurrence_;
+      private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence recurrence_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> recurrenceBuilder_;
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> recurrenceBuilder_;
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
       public boolean hasRecurrence() {
         return recurrenceBuilder_ != null || recurrence_ != null;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence() {
         if (recurrenceBuilder_ == null) {
-          return recurrence_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+          return recurrence_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
         } else {
           return recurrenceBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
-      public Builder setRecurrence(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder setRecurrence(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (recurrenceBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -844,10 +992,14 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
       public Builder setRecurrence(
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder builderForValue) {
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder builderForValue) {
         if (recurrenceBuilder_ == null) {
           recurrence_ = builderForValue.build();
           onChanged();
@@ -858,13 +1010,17 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
-      public Builder mergeRecurrence(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder mergeRecurrence(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (recurrenceBuilder_ == null) {
           if (recurrence_ != null) {
             recurrence_ =
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.newBuilder(recurrence_).mergeFrom(value).buildPartial();
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.newBuilder(recurrence_).mergeFrom(value).buildPartial();
           } else {
             recurrence_ = value;
           }
@@ -876,7 +1032,11 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
       public Builder clearRecurrence() {
         if (recurrenceBuilder_ == null) {
@@ -890,33 +1050,45 @@ public final class ClarosCommonCoreLimit {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder getRecurrenceBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder getRecurrenceBuilder() {
         
         onChanged();
         return getRecurrenceFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
         if (recurrenceBuilder_ != null) {
           return recurrenceBuilder_.getMessageOrBuilder();
         } else {
           return recurrence_ == null ?
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 5;</code>
+       * <pre>
+       * Used for seasonal limits
+       * </pre>
+       *
+       * <code>.claros.common.recurrence.Recurrence recurrence = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> 
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> 
           getRecurrenceFieldBuilder() {
         if (recurrenceBuilder_ == null) {
           recurrenceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder>(
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder>(
                   getRecurrence(),
                   getParentForChildren(),
                   isClean());
@@ -993,12 +1165,12 @@ public final class ClarosCommonCoreLimit {
     java.lang.String[] descriptorData = {
       "\n\036claros_common_core_limit.proto\022\022claros" +
       ".common.core\032#claros_common_core_limit_t" +
-      "ype.proto\032#claros_common_core_recurrence" +
-      ".proto\"\235\001\n\005Limit\022\017\n\007i18nKey\030\001 \001(\t\0220\n\tlim" +
-      "itType\030\002 \001(\0162\035.claros.common.core.LimitT" +
-      "ype\022\r\n\005value\030\003 \001(\001\022\016\n\006unitId\030\004 \001(\r\0222\n\nre" +
-      "currence\030\005 \001(\0132\036.claros.common.core.Recu" +
-      "rrenceb\006proto3"
+      "ype.proto\032)claros_common_recurrence_recu" +
+      "rrence.proto\"\243\001\n\005Limit\022\017\n\007i18nKey\030\001 \001(\t\022" +
+      "0\n\tlimitType\030\002 \001(\0162\035.claros.common.core." +
+      "LimitType\022\r\n\005value\030\003 \001(\001\022\016\n\006unitId\030\004 \001(\r" +
+      "\0228\n\nrecurrence\030\005 \001(\0132$.claros.common.rec" +
+      "urrence.Recurrenceb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1012,7 +1184,7 @@ public final class ClarosCommonCoreLimit {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           claros.common.core.ClarosCommonCoreLimitType.getDescriptor(),
-          claros.common.core.ClarosCommonCoreRecurrence.getDescriptor(),
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor(),
         }, assigner);
     internal_static_claros_common_core_Limit_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1021,7 +1193,7 @@ public final class ClarosCommonCoreLimit {
         internal_static_claros_common_core_Limit_descriptor,
         new java.lang.String[] { "I18NKey", "LimitType", "Value", "UnitId", "Recurrence", });
     claros.common.core.ClarosCommonCoreLimitType.getDescriptor();
-    claros.common.core.ClarosCommonCoreRecurrence.getDescriptor();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

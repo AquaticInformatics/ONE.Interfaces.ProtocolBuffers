@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\'claros_common_core_aggregate_type.proto\x12\x12\x63laros.common.core*K\n\rAggregateType\x12\r\n\tA_UNKNOWN\x10\x00\x12\r\n\tA_MINIMUM\x10\x01\x12\r\n\tA_MAXIMUM\x10\x02\x12\r\n\tA_AVERAGE\x10\x03\x62\x06proto3')
+  serialized_pb=_b('\n\'claros_common_core_aggregate_type.proto\x12\x12\x63laros.common.core*k\n\rAggregateType\x12\x15\n\x11\x41GGREGATE_UNKNOWN\x10\x00\x12\x15\n\x11\x41GGREGATE_MINIMUM\x10\x01\x12\x15\n\x11\x41GGREGATE_MAXIMUM\x10\x02\x12\x15\n\x11\x41GGREGATE_AVERAGE\x10\x03\x62\x06proto3')
 )
 
 _AGGREGATETYPE = _descriptor.EnumDescriptor(
@@ -31,34 +31,34 @@ _AGGREGATETYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='A_UNKNOWN', index=0, number=0,
+      name='AGGREGATE_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='A_MINIMUM', index=1, number=1,
+      name='AGGREGATE_MINIMUM', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='A_MAXIMUM', index=2, number=2,
+      name='AGGREGATE_MAXIMUM', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='A_AVERAGE', index=3, number=3,
+      name='AGGREGATE_AVERAGE', index=3, number=3,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=63,
-  serialized_end=138,
+  serialized_end=170,
 )
 _sym_db.RegisterEnumDescriptor(_AGGREGATETYPE)
 
 AggregateType = enum_type_wrapper.EnumTypeWrapper(_AGGREGATETYPE)
-A_UNKNOWN = 0
-A_MINIMUM = 1
-A_MAXIMUM = 2
-A_AVERAGE = 3
+AGGREGATE_UNKNOWN = 0
+AGGREGATE_MINIMUM = 1
+AGGREGATE_MAXIMUM = 2
+AGGREGATE_AVERAGE = 3
 
 
 DESCRIPTOR.enum_types_by_name['AggregateType'] = _AGGREGATETYPE

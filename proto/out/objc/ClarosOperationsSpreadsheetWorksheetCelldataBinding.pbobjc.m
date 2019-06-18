@@ -136,7 +136,7 @@ typedef struct CellDataBinding__storage_ {
                    firstHasIndex:-1];
 #if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     static const char *extraTextFormatInfo =
-        "\005\007\034\000\010\022\000\t\013\000\n\022\000\013\037\002\000";
+        "\005\001\034\000\002\022\000\003\013\000\004\022\000\005\037\002\000";
     [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
 #endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     #if defined(DEBUG) && DEBUG

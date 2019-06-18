@@ -19,49 +19,89 @@ public final class ClarosCommonCoreMeasurement {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     boolean hasTimestamp();
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimestamp();
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimestampOrBuilder();
 
     /**
+     * <pre>
+     * The parameter related to the measurement as an integer
+     * </pre>
+     *
      * <code>int32 parameterId = 2;</code>
      */
     int getParameterId();
 
     /**
+     * <pre>
+     * The parameter related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string parameterGuid = 3;</code>
      */
     java.lang.String getParameterGuid();
     /**
+     * <pre>
+     * The parameter related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string parameterGuid = 3;</code>
      */
     com.google.protobuf.ByteString
         getParameterGuidBytes();
 
     /**
+     * <pre>
+     * The unit related to the measurement as an integer
+     * </pre>
+     *
      * <code>int32 unitId = 4;</code>
      */
     int getUnitId();
 
     /**
+     * <pre>
+     * The unit related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string unitGuid = 5;</code>
      */
     java.lang.String getUnitGuid();
     /**
+     * <pre>
+     * The unit related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string unitGuid = 5;</code>
      */
     com.google.protobuf.ByteString
         getUnitGuidBytes();
 
     /**
+     * <pre>
+     * the value of the measurement ????? should this be decimal?
+     * </pre>
+     *
      * <code>float value = 6;</code>
      */
     float getValue();
@@ -182,18 +222,30 @@ public final class ClarosCommonCoreMeasurement {
     public static final int TIMESTAMP_FIELD_NUMBER = 1;
     private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime timestamp_;
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     public boolean hasTimestamp() {
       return timestamp_ != null;
     }
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimestamp() {
       return timestamp_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : timestamp_;
     }
     /**
+     * <pre>
+     * When the measurement was taken (UTC)
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimestampOrBuilder() {
@@ -203,6 +255,10 @@ public final class ClarosCommonCoreMeasurement {
     public static final int PARAMETERID_FIELD_NUMBER = 2;
     private int parameterId_;
     /**
+     * <pre>
+     * The parameter related to the measurement as an integer
+     * </pre>
+     *
      * <code>int32 parameterId = 2;</code>
      */
     public int getParameterId() {
@@ -212,6 +268,10 @@ public final class ClarosCommonCoreMeasurement {
     public static final int PARAMETERGUID_FIELD_NUMBER = 3;
     private volatile java.lang.Object parameterGuid_;
     /**
+     * <pre>
+     * The parameter related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string parameterGuid = 3;</code>
      */
     public java.lang.String getParameterGuid() {
@@ -227,6 +287,10 @@ public final class ClarosCommonCoreMeasurement {
       }
     }
     /**
+     * <pre>
+     * The parameter related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string parameterGuid = 3;</code>
      */
     public com.google.protobuf.ByteString
@@ -246,6 +310,10 @@ public final class ClarosCommonCoreMeasurement {
     public static final int UNITID_FIELD_NUMBER = 4;
     private int unitId_;
     /**
+     * <pre>
+     * The unit related to the measurement as an integer
+     * </pre>
+     *
      * <code>int32 unitId = 4;</code>
      */
     public int getUnitId() {
@@ -255,6 +323,10 @@ public final class ClarosCommonCoreMeasurement {
     public static final int UNITGUID_FIELD_NUMBER = 5;
     private volatile java.lang.Object unitGuid_;
     /**
+     * <pre>
+     * The unit related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string unitGuid = 5;</code>
      */
     public java.lang.String getUnitGuid() {
@@ -270,6 +342,10 @@ public final class ClarosCommonCoreMeasurement {
       }
     }
     /**
+     * <pre>
+     * The unit related to the measurement as a GUID
+     * </pre>
+     *
      * <code>string unitGuid = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -289,6 +365,10 @@ public final class ClarosCommonCoreMeasurement {
     public static final int VALUE_FIELD_NUMBER = 6;
     private float value_;
     /**
+     * <pre>
+     * the value of the measurement ????? should this be decimal?
+     * </pre>
+     *
      * <code>float value = 6;</code>
      */
     public float getValue() {
@@ -701,12 +781,20 @@ public final class ClarosCommonCoreMeasurement {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> timestampBuilder_;
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public boolean hasTimestamp() {
         return timestampBuilder_ != null || timestamp_ != null;
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimestamp() {
@@ -717,6 +805,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public Builder setTimestamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -733,6 +825,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public Builder setTimestamp(
@@ -747,6 +843,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public Builder mergeTimestamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -765,6 +865,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public Builder clearTimestamp() {
@@ -779,6 +883,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder getTimestampBuilder() {
@@ -787,6 +895,10 @@ public final class ClarosCommonCoreMeasurement {
         return getTimestampFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimestampOrBuilder() {
@@ -798,6 +910,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * When the measurement was taken (UTC)
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timestamp = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -816,12 +932,20 @@ public final class ClarosCommonCoreMeasurement {
 
       private int parameterId_ ;
       /**
+       * <pre>
+       * The parameter related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 parameterId = 2;</code>
        */
       public int getParameterId() {
         return parameterId_;
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 parameterId = 2;</code>
        */
       public Builder setParameterId(int value) {
@@ -831,6 +955,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 parameterId = 2;</code>
        */
       public Builder clearParameterId() {
@@ -842,6 +970,10 @@ public final class ClarosCommonCoreMeasurement {
 
       private java.lang.Object parameterGuid_ = "";
       /**
+       * <pre>
+       * The parameter related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string parameterGuid = 3;</code>
        */
       public java.lang.String getParameterGuid() {
@@ -857,6 +989,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string parameterGuid = 3;</code>
        */
       public com.google.protobuf.ByteString
@@ -873,6 +1009,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string parameterGuid = 3;</code>
        */
       public Builder setParameterGuid(
@@ -886,6 +1026,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string parameterGuid = 3;</code>
        */
       public Builder clearParameterGuid() {
@@ -895,6 +1039,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The parameter related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string parameterGuid = 3;</code>
        */
       public Builder setParameterGuidBytes(
@@ -911,12 +1059,20 @@ public final class ClarosCommonCoreMeasurement {
 
       private int unitId_ ;
       /**
+       * <pre>
+       * The unit related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 unitId = 4;</code>
        */
       public int getUnitId() {
         return unitId_;
       }
       /**
+       * <pre>
+       * The unit related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 unitId = 4;</code>
        */
       public Builder setUnitId(int value) {
@@ -926,6 +1082,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The unit related to the measurement as an integer
+       * </pre>
+       *
        * <code>int32 unitId = 4;</code>
        */
       public Builder clearUnitId() {
@@ -937,6 +1097,10 @@ public final class ClarosCommonCoreMeasurement {
 
       private java.lang.Object unitGuid_ = "";
       /**
+       * <pre>
+       * The unit related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string unitGuid = 5;</code>
        */
       public java.lang.String getUnitGuid() {
@@ -952,6 +1116,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * The unit related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string unitGuid = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -968,6 +1136,10 @@ public final class ClarosCommonCoreMeasurement {
         }
       }
       /**
+       * <pre>
+       * The unit related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string unitGuid = 5;</code>
        */
       public Builder setUnitGuid(
@@ -981,6 +1153,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The unit related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string unitGuid = 5;</code>
        */
       public Builder clearUnitGuid() {
@@ -990,6 +1166,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * The unit related to the measurement as a GUID
+       * </pre>
+       *
        * <code>string unitGuid = 5;</code>
        */
       public Builder setUnitGuidBytes(
@@ -1006,12 +1186,20 @@ public final class ClarosCommonCoreMeasurement {
 
       private float value_ ;
       /**
+       * <pre>
+       * the value of the measurement ????? should this be decimal?
+       * </pre>
+       *
        * <code>float value = 6;</code>
        */
       public float getValue() {
         return value_;
       }
       /**
+       * <pre>
+       * the value of the measurement ????? should this be decimal?
+       * </pre>
+       *
        * <code>float value = 6;</code>
        */
       public Builder setValue(float value) {
@@ -1021,6 +1209,10 @@ public final class ClarosCommonCoreMeasurement {
         return this;
       }
       /**
+       * <pre>
+       * the value of the measurement ????? should this be decimal?
+       * </pre>
+       *
        * <code>float value = 6;</code>
        */
       public Builder clearValue() {

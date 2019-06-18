@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace Claros.Instrument.Measurement {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_definition.proto</summary>
   public static partial class ClarosInstrumentMeasurementDefinitionReflection {
@@ -25,27 +25,27 @@ namespace Claros.Instrument {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5jbGFyb3NfaW5zdHJ1bWVudF9tZWFzdXJlbWVudF9kZWZpbml0aW9uLnBy",
-            "b3RvEhFjbGFyb3MuaW5zdHJ1bWVudBonY2xhcm9zX2NvbW1vbl9jb3JlX2Ns",
-            "YXJvc2RhdGV0aW1lLnByb3RvGjRjbGFyb3NfaW5zdHJ1bWVudF9tZWFzdXJl",
-            "bWVudF9taWxsaWFtcF9iaW5kaW5nLnByb3RvGjRjbGFyb3NfaW5zdHJ1bWVu",
-            "dF9tZWFzdXJlbWVudF9zY3NlbnNvcl9iaW5kaW5nLnByb3RvGh5jbGFyb3Nf",
-            "Y29tbW9uX2NvcmVfbGltaXQucHJvdG8igwQKH0luc3RydW1lbnRNZWFzdXJl",
-            "bWVudERlZmluaXRpb24SHwoXaW5zdHJ1bWVudE1lYXN1cmVtZW50SWQYASAB",
-            "KAkSDAoEbmFtZRgCIAEoCRIQCghmdXNpb25JZBgDIAEoCRISCgpsb2NhdGlv",
-            "bklkGAQgASgJEhMKC3BhcmFtZXRlcklkGAUgASgNEhUKDWRpc3BsYXlVbml0",
-            "SWQYBiABKA0SEQoJaXNWaXNpYmxlGAcgASgIEj0KD3NjU2Vuc29yQmluZGlu",
-            "ZxgIIAEoCzIiLmNsYXJvcy5pbnN0cnVtZW50LlNDU2Vuc29yQmluZGluZ0gA",
-            "Ej0KD21pbGxpQW1wQmluZGluZxgJIAEoCzIiLmNsYXJvcy5pbnN0cnVtZW50",
-            "Lk1pbGxpQW1wQmluZGluZ0gAEikKBmxpbWl0cxgKIAMoCzIZLmNsYXJvcy5j",
-            "b21tb24uY29yZS5MaW1pdBITCgtjcmVhdGVkQnlJZBgLIAEoCRI1CgljcmVh",
-            "dGVkT24YDCABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRp",
-            "bWUSFAoMbW9kaWZpZWRCeUlkGA0gASgJEjYKCm1vZGlmaWVkT24YDiABKAsy",
-            "Ii5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWVCCQoHYmluZGlu",
-            "Z2IGcHJvdG8z"));
+            "b3RvEh1jbGFyb3MuaW5zdHJ1bWVudC5tZWFzdXJlbWVudBonY2xhcm9zX2Nv",
+            "bW1vbl9jb3JlX2NsYXJvc2RhdGV0aW1lLnByb3RvGjRjbGFyb3NfaW5zdHJ1",
+            "bWVudF9tZWFzdXJlbWVudF9taWxsaWFtcF9iaW5kaW5nLnByb3RvGjRjbGFy",
+            "b3NfaW5zdHJ1bWVudF9tZWFzdXJlbWVudF9zY3NlbnNvcl9iaW5kaW5nLnBy",
+            "b3RvGh5jbGFyb3NfY29tbW9uX2NvcmVfbGltaXQucHJvdG8imwQKH0luc3Ry",
+            "dW1lbnRNZWFzdXJlbWVudERlZmluaXRpb24SHwoXaW5zdHJ1bWVudE1lYXN1",
+            "cmVtZW50SWQYASABKAkSDAoEbmFtZRgCIAEoCRIQCghmdXNpb25JZBgDIAEo",
+            "CRISCgpsb2NhdGlvbklkGAQgASgJEhMKC3BhcmFtZXRlcklkGAUgASgNEhUK",
+            "DWRpc3BsYXlVbml0SWQYBiABKA0SEQoJaXNWaXNpYmxlGAcgASgIEkkKD3Nj",
+            "U2Vuc29yQmluZGluZxgIIAEoCzIuLmNsYXJvcy5pbnN0cnVtZW50Lm1lYXN1",
+            "cmVtZW50LlNDU2Vuc29yQmluZGluZ0gAEkkKD21pbGxpQW1wQmluZGluZxgJ",
+            "IAEoCzIuLmNsYXJvcy5pbnN0cnVtZW50Lm1lYXN1cmVtZW50Lk1pbGxpQW1w",
+            "QmluZGluZ0gAEikKBmxpbWl0cxgKIAMoCzIZLmNsYXJvcy5jb21tb24uY29y",
+            "ZS5MaW1pdBITCgtjcmVhdGVkQnlJZBgLIAEoCRI1CgljcmVhdGVkT24YDCAB",
+            "KAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUSFAoMbW9k",
+            "aWZpZWRCeUlkGA0gASgJEjYKCm1vZGlmaWVkT24YDiABKAsyIi5jbGFyb3Mu",
+            "Y29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWVCCQoHYmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor, global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurementDefinition), global::Claros.Instrument.InstrumentMeasurementDefinition.Parser, new[]{ "InstrumentMeasurementId", "Name", "FusionId", "LocationId", "ParameterId", "DisplayUnitId", "IsVisible", "ScSensorBinding", "MilliAmpBinding", "Limits", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.Measurement.InstrumentMeasurementDefinition), global::Claros.Instrument.Measurement.InstrumentMeasurementDefinition.Parser, new[]{ "InstrumentMeasurementId", "Name", "FusionId", "LocationId", "ParameterId", "DisplayUnitId", "IsVisible", "ScSensorBinding", "MilliAmpBinding", "Limits", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementDefinitionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementDefinitionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -110,7 +110,7 @@ namespace Claros.Instrument {
     public const int InstrumentMeasurementIdFieldNumber = 1;
     private string instrumentMeasurementId_ = "";
     /// <summary>
-    ///This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
+    /// This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InstrumentMeasurementId {
@@ -123,6 +123,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// The name of the collection of instrument measurmenets.  There is a good chance this correlates to the parameter name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
       get { return name_; }
@@ -134,6 +137,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "fusionId" field.</summary>
     public const int FusionIdFieldNumber = 3;
     private string fusionId_ = "";
+    /// <summary>
+    /// The FusionId of the instrument that the data is being collected
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string FusionId {
       get { return fusionId_; }
@@ -145,6 +151,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "locationId" field.</summary>
     public const int LocationIdFieldNumber = 4;
     private string locationId_ = "";
+    /// <summary>
+    /// Optional: The location where the data is being collected
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string LocationId {
       get { return locationId_; }
@@ -156,6 +165,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "parameterId" field.</summary>
     public const int ParameterIdFieldNumber = 5;
     private uint parameterId_;
+    /// <summary>
+    /// Required: The parameter related to the instrument measurments being collected
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ParameterId {
       get { return parameterId_; }
@@ -167,6 +179,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "displayUnitId" field.</summary>
     public const int DisplayUnitIdFieldNumber = 6;
     private uint displayUnitId_;
+    /// <summary>
+    /// The default display unit that the data will be rendered
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint DisplayUnitId {
       get { return displayUnitId_; }
@@ -178,6 +193,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "isVisible" field.</summary>
     public const int IsVisibleFieldNumber = 7;
     private bool isVisible_;
+    /// <summary>
+    /// Soft delete of the Instrument Measurment Collection
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsVisible {
       get { return isVisible_; }
@@ -188,9 +206,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "scSensorBinding" field.</summary>
     public const int ScSensorBindingFieldNumber = 8;
+    /// <summary>
+    /// For SC Instruments, how the SC Instrument is identified
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.SCSensorBinding ScSensorBinding {
-      get { return bindingCase_ == BindingOneofCase.ScSensorBinding ? (global::Claros.Instrument.SCSensorBinding) binding_ : null; }
+    public global::Claros.Instrument.Measurement.SCSensorBinding ScSensorBinding {
+      get { return bindingCase_ == BindingOneofCase.ScSensorBinding ? (global::Claros.Instrument.Measurement.SCSensorBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.ScSensorBinding;
@@ -199,9 +220,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "milliAmpBinding" field.</summary>
     public const int MilliAmpBindingFieldNumber = 9;
+    /// <summary>
+    /// For 4-20 mA input, how the inputs are mapped to instrument measurments
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.MilliAmpBinding MilliAmpBinding {
-      get { return bindingCase_ == BindingOneofCase.MilliAmpBinding ? (global::Claros.Instrument.MilliAmpBinding) binding_ : null; }
+    public global::Claros.Instrument.Measurement.MilliAmpBinding MilliAmpBinding {
+      get { return bindingCase_ == BindingOneofCase.MilliAmpBinding ? (global::Claros.Instrument.Measurement.MilliAmpBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.MilliAmpBinding;
@@ -213,6 +237,9 @@ namespace Claros.Instrument {
     private static readonly pb::FieldCodec<global::Claros.Common.Core.Limit> _repeated_limits_codec
         = pb::FieldCodec.ForMessage(82, global::Claros.Common.Core.Limit.Parser);
     private readonly pbc::RepeatedField<global::Claros.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::Claros.Common.Core.Limit>();
+    /// <summary>
+    /// A collection of limits associated to the instrument measurements
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Common.Core.Limit> Limits {
       get { return limits_; }
@@ -221,6 +248,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "createdById" field.</summary>
     public const int CreatedByIdFieldNumber = 11;
     private string createdById_ = "";
+    /// <summary>
+    /// Record Audit Fields
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CreatedById {
       get { return createdById_; }
@@ -498,13 +528,13 @@ namespace Claros.Instrument {
       switch (other.BindingCase) {
         case BindingOneofCase.ScSensorBinding:
           if (ScSensorBinding == null) {
-            ScSensorBinding = new global::Claros.Instrument.SCSensorBinding();
+            ScSensorBinding = new global::Claros.Instrument.Measurement.SCSensorBinding();
           }
           ScSensorBinding.MergeFrom(other.ScSensorBinding);
           break;
         case BindingOneofCase.MilliAmpBinding:
           if (MilliAmpBinding == null) {
-            MilliAmpBinding = new global::Claros.Instrument.MilliAmpBinding();
+            MilliAmpBinding = new global::Claros.Instrument.Measurement.MilliAmpBinding();
           }
           MilliAmpBinding.MergeFrom(other.MilliAmpBinding);
           break;
@@ -550,7 +580,7 @@ namespace Claros.Instrument {
             break;
           }
           case 66: {
-            global::Claros.Instrument.SCSensorBinding subBuilder = new global::Claros.Instrument.SCSensorBinding();
+            global::Claros.Instrument.Measurement.SCSensorBinding subBuilder = new global::Claros.Instrument.Measurement.SCSensorBinding();
             if (bindingCase_ == BindingOneofCase.ScSensorBinding) {
               subBuilder.MergeFrom(ScSensorBinding);
             }
@@ -559,7 +589,7 @@ namespace Claros.Instrument {
             break;
           }
           case 74: {
-            global::Claros.Instrument.MilliAmpBinding subBuilder = new global::Claros.Instrument.MilliAmpBinding();
+            global::Claros.Instrument.Measurement.MilliAmpBinding subBuilder = new global::Claros.Instrument.Measurement.MilliAmpBinding();
             if (bindingCase_ == BindingOneofCase.MilliAmpBinding) {
               subBuilder.MergeFrom(MilliAmpBinding);
             }

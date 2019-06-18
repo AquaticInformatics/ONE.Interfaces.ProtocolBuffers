@@ -7,7 +7,7 @@
  */
 // GENERATED CODE -- DO NOT EDIT!
 
-goog.provide('proto.claros.instrument.InstrumentMeasurementFieldBinding');
+goog.provide('proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding');
 
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
@@ -24,16 +24,16 @@ goog.require('proto.claros.common.core.ClarosDateTime');
  * @extends {jspb.Message}
  * @constructor
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding = function(opt_data) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.claros.instrument.InstrumentMeasurementFieldBinding, jspb.Message);
+goog.inherits(proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.claros.instrument.InstrumentMeasurementFieldBinding.displayName = 'proto.claros.instrument.InstrumentMeasurementFieldBinding';
+  proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.displayName = 'proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding';
 }
 
 
@@ -49,8 +49,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.toObject = function(opt_includeInstance) {
-  return proto.claros.instrument.InstrumentMeasurementFieldBinding.toObject(opt_includeInstance, this);
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.toObject = function(opt_includeInstance) {
+  return proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.toObject(opt_includeInstance, this);
 };
 
 
@@ -59,11 +59,11 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.toObject = f
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.claros.instrument.InstrumentMeasurementFieldBinding} msg The msg instance to transform.
+ * @param {!proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.toObject = function(includeInstance, msg) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.toObject = function(includeInstance, msg) {
   var f, obj = {
     instrumentmeasurementid: jspb.Message.getFieldWithDefault(msg, 1, ""),
     timestamp: (f = msg.getTimestamp()) && proto.claros.common.core.ClarosDateTime.toObject(includeInstance, f),
@@ -81,23 +81,23 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.toObject = function(in
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.claros.instrument.InstrumentMeasurementFieldBinding}
+ * @return {!proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.deserializeBinary = function(bytes) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.claros.instrument.InstrumentMeasurementFieldBinding;
-  return proto.claros.instrument.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding;
+  return proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.claros.instrument.InstrumentMeasurementFieldBinding} msg The message object to deserialize into.
+ * @param {!proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.claros.instrument.InstrumentMeasurementFieldBinding}
+ * @return {!proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader = function(msg, reader) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -130,9 +130,9 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.deserializeBinaryFromR
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.serializeBinary = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.claros.instrument.InstrumentMeasurementFieldBinding.serializeBinaryToWriter(this, writer);
+  proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -140,11 +140,11 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.serializeBin
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.claros.instrument.InstrumentMeasurementFieldBinding} message
+ * @param {!proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.serializeBinaryToWriter = function(message, writer) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getInstrumentmeasurementid();
   if (f.length > 0) {
@@ -175,13 +175,13 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.serializeBinaryToWrite
  * optional string instrumentMeasurementId = 1;
  * @return {string}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.getInstrumentmeasurementid = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.getInstrumentmeasurementid = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /** @param {string} value */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.setInstrumentmeasurementid = function(value) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.setInstrumentmeasurementid = function(value) {
   jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -190,14 +190,14 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.setInstrumen
  * optional claros.common.core.ClarosDateTime timestamp = 2;
  * @return {?proto.claros.common.core.ClarosDateTime}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.getTimestamp = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.getTimestamp = function() {
   return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
     jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 2));
 };
 
 
 /** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.setTimestamp = function(value) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.setTimestamp = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
@@ -205,7 +205,7 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.setTimestamp
 /**
  * Clears the message field making it undefined.
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.clearTimestamp = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.clearTimestamp = function() {
   this.setTimestamp(undefined);
 };
 
@@ -214,7 +214,7 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.clearTimesta
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.hasTimestamp = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.hasTimestamp = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -223,13 +223,13 @@ proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.hasTimestamp
  * optional uint32 unitId = 3;
  * @return {number}
  */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.getUnitid = function() {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.getUnitid = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {number} value */
-proto.claros.instrument.InstrumentMeasurementFieldBinding.prototype.setUnitid = function(value) {
+proto.claros.instrument.measurement.InstrumentMeasurementFieldBinding.prototype.setUnitid = function(value) {
   jspb.Message.setProto3IntField(this, 3, value);
 };
 

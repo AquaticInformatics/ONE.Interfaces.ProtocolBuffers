@@ -22,8 +22,11 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Claros\Common\Core\MobileDateTime $mobileDateTime
+     *           Used for data collected from Mobile Devices
      *     @type string $jsonDateTime
+     *           
      *     @type int|string $ticks
+     *           
      * }
      */
     public function __construct($data = NULL) {
@@ -32,6 +35,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Used for data collected from Mobile Devices
+     *
      * Generated from protobuf field <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      * @return \Claros\Common\Core\MobileDateTime
      */
@@ -41,6 +46,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Used for data collected from Mobile Devices
+     *
      * Generated from protobuf field <code>.claros.common.core.MobileDateTime mobileDateTime = 1;</code>
      * @param \Claros\Common\Core\MobileDateTime $var
      * @return $this
@@ -54,6 +61,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * 
+     *
      * Generated from protobuf field <code>string jsonDateTime = 2;</code>
      * @return string
      */
@@ -63,6 +72,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * 
+     *
      * Generated from protobuf field <code>string jsonDateTime = 2;</code>
      * @param string $var
      * @return $this
@@ -76,6 +87,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * 
+     *
      * Generated from protobuf field <code>uint64 ticks = 3;</code>
      * @return int|string
      */
@@ -85,6 +98,8 @@ class ClarosDateTime extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * 
+     *
      * Generated from protobuf field <code>uint64 ticks = 3;</code>
      * @param int|string $var
      * @return $this

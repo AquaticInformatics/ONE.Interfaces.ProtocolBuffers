@@ -54,7 +54,7 @@ typedef GPB_ENUM(Variable_FieldNumber) {
   Variable_FieldNumber_Name = 2,
   Variable_FieldNumber_Description_p = 3,
   Variable_FieldNumber_QuantityTypeId = 4,
-  Variable_FieldNumber_Cursor = 5,
+  Variable_FieldNumber_CursorType = 5,
   Variable_FieldNumber_CursorAbsolute = 6,
   Variable_FieldNumber_PropertySelector = 7,
   Variable_FieldNumber_SuggestedParameterId = 8,
@@ -71,18 +71,25 @@ typedef GPB_ENUM(Variable_Binding_OneOfCase) {
 
 @interface Variable : GPBMessage
 
+/** Use for translations of a global computation */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *i18NKey;
 
+/** Tenant entered name */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *name;
 
+/** Tenant entered description */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *description_p;
 
+/** FK to QuantityType */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *quantityTypeId;
 
-@property(nonatomic, readwrite) enum ComputationCursorType cursor;
+/** References adjacent rows */
+@property(nonatomic, readwrite) enum ComputationCursorType cursorType;
 
+/** ??? is this meant to be relative??? */
 @property(nonatomic, readwrite) uint32_t cursorAbsolute;
 
+/** What attribute of the cell or row?? */
 @property(nonatomic, readwrite) enum PropertySelectorType propertySelector;
 
 @property(nonatomic, readwrite) uint32_t suggestedParameterId;
@@ -98,16 +105,16 @@ typedef GPB_ENUM(Variable_Binding_OneOfCase) {
 @end
 
 /**
- * Fetches the raw value of a @c Variable's @c cursor property, even
+ * Fetches the raw value of a @c Variable's @c cursorType property, even
  * if the value was not defined by the enum at the time the code was generated.
  **/
-int32_t Variable_Cursor_RawValue(Variable *message);
+int32_t Variable_CursorType_RawValue(Variable *message);
 /**
- * Sets the raw value of an @c Variable's @c cursor property, allowing
+ * Sets the raw value of an @c Variable's @c cursorType property, allowing
  * it to be set to a value that was not defined by the enum at the time the code
  * was generated.
  **/
-void SetVariable_Cursor_RawValue(Variable *message, int32_t value);
+void SetVariable_CursorType_RawValue(Variable *message, int32_t value);
 
 /**
  * Fetches the raw value of a @c Variable's @c propertySelector property, even

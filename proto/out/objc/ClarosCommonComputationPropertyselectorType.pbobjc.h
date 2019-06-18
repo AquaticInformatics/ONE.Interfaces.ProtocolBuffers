@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Enum PropertySelectorType
 
+/** What attribute of the row or cell is included in the expression */
 typedef GPB_ENUM(PropertySelectorType) {
   /**
    * Value used if any message's field encounters a value that is not defined
@@ -38,11 +39,11 @@ typedef GPB_ENUM(PropertySelectorType) {
    * of the field.
    **/
   PropertySelectorType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  PropertySelectorType_PsUnknown = 0,
-  PropertySelectorType_PsMeasurementtime = 1,
-  PropertySelectorType_PsBeginlinetime = 2,
-  PropertySelectorType_PsEndlinetime = 3,
-  PropertySelectorType_PsMeasurmentvalue = 4,
+  PropertySelectorType_PropertySelectorUnknown = 0,
+  PropertySelectorType_PropertySelectorMeasurementtime = 1,
+  PropertySelectorType_PropertySelectorBeginlinetime = 2,
+  PropertySelectorType_PropertySelectorEndlinetime = 3,
+  PropertySelectorType_PropertySelectorMeasurmentvalue = 4,
 };
 
 GPBEnumDescriptor *PropertySelectorType_EnumDescriptor(void);

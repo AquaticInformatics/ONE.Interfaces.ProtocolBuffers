@@ -54,7 +54,7 @@ static GPBFileDescriptor *ClarosCommonComputationVariableRoot_FileDescriptor(voi
 @dynamic name;
 @dynamic description_p;
 @dynamic quantityTypeId;
-@dynamic cursor;
+@dynamic cursorType;
 @dynamic cursorAbsolute;
 @dynamic propertySelector;
 @dynamic suggestedParameterId;
@@ -64,7 +64,7 @@ static GPBFileDescriptor *ClarosCommonComputationVariableRoot_FileDescriptor(voi
 
 typedef struct Variable__storage_ {
   uint32_t _has_storage_[2];
-  ComputationCursorType cursor;
+  ComputationCursorType cursorType;
   uint32_t cursorAbsolute;
   PropertySelectorType propertySelector;
   uint32_t suggestedParameterId;
@@ -120,12 +120,12 @@ typedef struct Variable__storage_ {
         .dataType = GPBDataTypeString,
       },
       {
-        .name = "cursor",
+        .name = "cursorType",
         .dataTypeSpecific.enumDescFunc = ComputationCursorType_EnumDescriptor,
-        .number = Variable_FieldNumber_Cursor,
+        .number = Variable_FieldNumber_CursorType,
         .hasIndex = 4,
-        .offset = (uint32_t)offsetof(Variable__storage_, cursor),
-        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldHasEnumDescriptor),
+        .offset = (uint32_t)offsetof(Variable__storage_, cursorType),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom | GPBFieldHasEnumDescriptor),
         .dataType = GPBDataTypeEnum,
       },
       {
@@ -199,7 +199,7 @@ typedef struct Variable__storage_ {
                    firstHasIndex:-1];
 #if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     static const char *extraTextFormatInfo =
-        "\010\001\003$\000\004\016\000\006\016\000\007\020\000\010\024\000\t\017\000\n\010\000\013\013\000";
+        "\t\001\003$\000\004\016\000\005\n\000\006\016\000\007\020\000\010\024\000\t\017\000\n\010\000\013\013\000";
     [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
 #endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     #if defined(DEBUG) && DEBUG
@@ -212,15 +212,15 @@ typedef struct Variable__storage_ {
 
 @end
 
-int32_t Variable_Cursor_RawValue(Variable *message) {
+int32_t Variable_CursorType_RawValue(Variable *message) {
   GPBDescriptor *descriptor = [Variable descriptor];
-  GPBFieldDescriptor *field = [descriptor fieldWithNumber:Variable_FieldNumber_Cursor];
+  GPBFieldDescriptor *field = [descriptor fieldWithNumber:Variable_FieldNumber_CursorType];
   return GPBGetMessageInt32Field(message, field);
 }
 
-void SetVariable_Cursor_RawValue(Variable *message, int32_t value) {
+void SetVariable_CursorType_RawValue(Variable *message, int32_t value) {
   GPBDescriptor *descriptor = [Variable descriptor];
-  GPBFieldDescriptor *field = [descriptor fieldWithNumber:Variable_FieldNumber_Cursor];
+  GPBFieldDescriptor *field = [descriptor fieldWithNumber:Variable_FieldNumber_CursorType];
   GPBSetInt32IvarWithFieldInternal(message, field, value, descriptor.file.syntax);
 }
 

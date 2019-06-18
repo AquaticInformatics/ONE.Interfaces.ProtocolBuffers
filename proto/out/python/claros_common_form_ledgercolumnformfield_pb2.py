@@ -13,7 +13,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import claros_common_core_recurrence_pb2 as claros__common__core__recurrence__pb2
+import claros_common_recurrence_recurrence_pb2 as claros__common__recurrence__recurrence__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.form',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n.claros_common_form_ledgercolumnformfield.proto\x12\x12\x63laros.common.form\x1a#claros_common_core_recurrence.proto\"\xa9\x01\n\x15LedgerColumnFormField\x12\x18\n\x10ledgerColumnGUID\x18\x01 \x01(\t\x12\x0c\n\x04unit\x18\x02 \x01(\t\x12\x0f\n\x07upLimit\x18\x03 \x01(\t\x12\x10\n\x08lowLimit\x18\x04 \x01(\t\x12\x32\n\ntimeWindow\x18\x05 \x01(\x0b\x32\x1e.claros.common.core.Recurrence\x12\x11\n\tparameter\x18\x06 \x01(\tb\x06proto3')
+  serialized_pb=_b('\n.claros_common_form_ledgercolumnformfield.proto\x12\x12\x63laros.common.form\x1a)claros_common_recurrence_recurrence.proto\"\xaf\x01\n\x15LedgerColumnFormField\x12\x18\n\x10ledgerColumnGUID\x18\x01 \x01(\t\x12\x0c\n\x04unit\x18\x02 \x01(\t\x12\x0f\n\x07upLimit\x18\x03 \x01(\t\x12\x10\n\x08lowLimit\x18\x04 \x01(\t\x12\x38\n\ntimeWindow\x18\x05 \x01(\x0b\x32$.claros.common.recurrence.Recurrence\x12\x11\n\tparameter\x18\x06 \x01(\tb\x06proto3')
   ,
-  dependencies=[claros__common__core__recurrence__pb2.DESCRIPTOR,])
+  dependencies=[claros__common__recurrence__recurrence__pb2.DESCRIPTOR,])
 
 
 
@@ -89,11 +89,11 @@ _LEDGERCOLUMNFORMFIELD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=108,
-  serialized_end=277,
+  serialized_start=114,
+  serialized_end=289,
 )
 
-_LEDGERCOLUMNFORMFIELD.fields_by_name['timeWindow'].message_type = claros__common__core__recurrence__pb2._RECURRENCE
+_LEDGERCOLUMNFORMFIELD.fields_by_name['timeWindow'].message_type = claros__common__recurrence__recurrence__pb2._RECURRENCE
 DESCRIPTOR.message_types_by_name['LedgerColumnFormField'] = _LEDGERCOLUMNFORMFIELD
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

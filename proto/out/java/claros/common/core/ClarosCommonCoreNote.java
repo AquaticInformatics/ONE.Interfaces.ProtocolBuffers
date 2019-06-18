@@ -19,43 +19,79 @@ public final class ClarosCommonCoreNote {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Unique GUID that identifies the note
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     java.lang.String getId();
     /**
+     * <pre>
+     * Unique GUID that identifies the note
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     com.google.protobuf.ByteString
         getIdBytes();
 
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     boolean hasTimeStamp();
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp();
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder();
 
     /**
+     * <pre>
+     * The GUID of the user who entered the note
+     * </pre>
+     *
      * <code>string userId = 5;</code>
      */
     java.lang.String getUserId();
     /**
+     * <pre>
+     * The GUID of the user who entered the note
+     * </pre>
+     *
      * <code>string userId = 5;</code>
      */
     com.google.protobuf.ByteString
         getUserIdBytes();
 
     /**
+     * <pre>
+     * The content of the note
+     * </pre>
+     *
      * <code>string text = 6;</code>
      */
     java.lang.String getText();
     /**
+     * <pre>
+     * The content of the note
+     * </pre>
+     *
      * <code>string text = 6;</code>
      */
     com.google.protobuf.ByteString
@@ -169,6 +205,10 @@ public final class ClarosCommonCoreNote {
     public static final int ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object id_;
     /**
+     * <pre>
+     * Unique GUID that identifies the note
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     public java.lang.String getId() {
@@ -184,6 +224,10 @@ public final class ClarosCommonCoreNote {
       }
     }
     /**
+     * <pre>
+     * Unique GUID that identifies the note
+     * </pre>
+     *
      * <code>string id = 1;</code>
      */
     public com.google.protobuf.ByteString
@@ -203,18 +247,30 @@ public final class ClarosCommonCoreNote {
     public static final int TIMESTAMP_FIELD_NUMBER = 4;
     private claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime timeStamp_;
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     public boolean hasTimeStamp() {
       return timeStamp_ != null;
     }
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp() {
       return timeStamp_ == null ? claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.getDefaultInstance() : timeStamp_;
     }
     /**
+     * <pre>
+     * The UTC time when the note was taken
+     * </pre>
+     *
      * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
      */
     public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder() {
@@ -224,6 +280,10 @@ public final class ClarosCommonCoreNote {
     public static final int USERID_FIELD_NUMBER = 5;
     private volatile java.lang.Object userId_;
     /**
+     * <pre>
+     * The GUID of the user who entered the note
+     * </pre>
+     *
      * <code>string userId = 5;</code>
      */
     public java.lang.String getUserId() {
@@ -239,6 +299,10 @@ public final class ClarosCommonCoreNote {
       }
     }
     /**
+     * <pre>
+     * The GUID of the user who entered the note
+     * </pre>
+     *
      * <code>string userId = 5;</code>
      */
     public com.google.protobuf.ByteString
@@ -258,6 +322,10 @@ public final class ClarosCommonCoreNote {
     public static final int TEXT_FIELD_NUMBER = 6;
     private volatile java.lang.Object text_;
     /**
+     * <pre>
+     * The content of the note
+     * </pre>
+     *
      * <code>string text = 6;</code>
      */
     public java.lang.String getText() {
@@ -273,6 +341,10 @@ public final class ClarosCommonCoreNote {
       }
     }
     /**
+     * <pre>
+     * The content of the note
+     * </pre>
+     *
      * <code>string text = 6;</code>
      */
     public com.google.protobuf.ByteString
@@ -657,6 +729,10 @@ public final class ClarosCommonCoreNote {
 
       private java.lang.Object id_ = "";
       /**
+       * <pre>
+       * Unique GUID that identifies the note
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public java.lang.String getId() {
@@ -672,6 +748,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * Unique GUID that identifies the note
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public com.google.protobuf.ByteString
@@ -688,6 +768,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * Unique GUID that identifies the note
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder setId(
@@ -701,6 +785,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * Unique GUID that identifies the note
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder clearId() {
@@ -710,6 +798,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * Unique GUID that identifies the note
+       * </pre>
+       *
        * <code>string id = 1;</code>
        */
       public Builder setIdBytes(
@@ -728,12 +820,20 @@ public final class ClarosCommonCoreNote {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder, claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder> timeStampBuilder_;
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public boolean hasTimeStamp() {
         return timeStampBuilder_ != null || timeStamp_ != null;
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime getTimeStamp() {
@@ -744,6 +844,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder setTimeStamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -760,6 +864,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder setTimeStamp(
@@ -774,6 +882,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder mergeTimeStamp(claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime value) {
@@ -792,6 +904,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public Builder clearTimeStamp() {
@@ -806,6 +922,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTime.Builder getTimeStampBuilder() {
@@ -814,6 +934,10 @@ public final class ClarosCommonCoreNote {
         return getTimeStampFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       public claros.common.core.ClarosCommonCoreClarosdatetime.ClarosDateTimeOrBuilder getTimeStampOrBuilder() {
@@ -825,6 +949,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The UTC time when the note was taken
+       * </pre>
+       *
        * <code>.claros.common.core.ClarosDateTime timeStamp = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -843,6 +971,10 @@ public final class ClarosCommonCoreNote {
 
       private java.lang.Object userId_ = "";
       /**
+       * <pre>
+       * The GUID of the user who entered the note
+       * </pre>
+       *
        * <code>string userId = 5;</code>
        */
       public java.lang.String getUserId() {
@@ -858,6 +990,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The GUID of the user who entered the note
+       * </pre>
+       *
        * <code>string userId = 5;</code>
        */
       public com.google.protobuf.ByteString
@@ -874,6 +1010,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The GUID of the user who entered the note
+       * </pre>
+       *
        * <code>string userId = 5;</code>
        */
       public Builder setUserId(
@@ -887,6 +1027,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the user who entered the note
+       * </pre>
+       *
        * <code>string userId = 5;</code>
        */
       public Builder clearUserId() {
@@ -896,6 +1040,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The GUID of the user who entered the note
+       * </pre>
+       *
        * <code>string userId = 5;</code>
        */
       public Builder setUserIdBytes(
@@ -912,6 +1060,10 @@ public final class ClarosCommonCoreNote {
 
       private java.lang.Object text_ = "";
       /**
+       * <pre>
+       * The content of the note
+       * </pre>
+       *
        * <code>string text = 6;</code>
        */
       public java.lang.String getText() {
@@ -927,6 +1079,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The content of the note
+       * </pre>
+       *
        * <code>string text = 6;</code>
        */
       public com.google.protobuf.ByteString
@@ -943,6 +1099,10 @@ public final class ClarosCommonCoreNote {
         }
       }
       /**
+       * <pre>
+       * The content of the note
+       * </pre>
+       *
        * <code>string text = 6;</code>
        */
       public Builder setText(
@@ -956,6 +1116,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The content of the note
+       * </pre>
+       *
        * <code>string text = 6;</code>
        */
       public Builder clearText() {
@@ -965,6 +1129,10 @@ public final class ClarosCommonCoreNote {
         return this;
       }
       /**
+       * <pre>
+       * The content of the note
+       * </pre>
+       *
        * <code>string text = 6;</code>
        */
       public Builder setTextBytes(

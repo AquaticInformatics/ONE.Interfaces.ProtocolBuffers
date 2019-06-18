@@ -20,48 +20,48 @@ public final class ClarosOperationsSpreadsheetWorksheetType {
   public enum WorksheetType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>W_UNKNOWN = 0;</code>
+     * <code>WORKSHEET_UNKNOWN = 0;</code>
      */
-    W_UNKNOWN(0),
+    WORKSHEET_UNKNOWN(0),
     /**
-     * <code>W_FIFTEEN_MINUTE = 1;</code>
+     * <code>WORKSHEET_FIFTEEN_MINUTE = 1;</code>
      */
-    W_FIFTEEN_MINUTE(1),
+    WORKSHEET_FIFTEEN_MINUTE(1),
     /**
-     * <code>W_FOUR_HOUR = 2;</code>
+     * <code>WORKSHEET_HOUR = 2;</code>
      */
-    W_FOUR_HOUR(2),
+    WORKSHEET_HOUR(2),
     /**
-     * <code>W_DAILY = 3;</code>
+     * <code>WORKSHEET_FOUR_HOUR = 3;</code>
      */
-    W_DAILY(3),
+    WORKSHEET_FOUR_HOUR(3),
     /**
-     * <code>W_MONTHLY = 4;</code>
+     * <code>WORKSHEET_DAILY = 4;</code>
      */
-    W_MONTHLY(4),
+    WORKSHEET_DAILY(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>W_UNKNOWN = 0;</code>
+     * <code>WORKSHEET_UNKNOWN = 0;</code>
      */
-    public static final int W_UNKNOWN_VALUE = 0;
+    public static final int WORKSHEET_UNKNOWN_VALUE = 0;
     /**
-     * <code>W_FIFTEEN_MINUTE = 1;</code>
+     * <code>WORKSHEET_FIFTEEN_MINUTE = 1;</code>
      */
-    public static final int W_FIFTEEN_MINUTE_VALUE = 1;
+    public static final int WORKSHEET_FIFTEEN_MINUTE_VALUE = 1;
     /**
-     * <code>W_FOUR_HOUR = 2;</code>
+     * <code>WORKSHEET_HOUR = 2;</code>
      */
-    public static final int W_FOUR_HOUR_VALUE = 2;
+    public static final int WORKSHEET_HOUR_VALUE = 2;
     /**
-     * <code>W_DAILY = 3;</code>
+     * <code>WORKSHEET_FOUR_HOUR = 3;</code>
      */
-    public static final int W_DAILY_VALUE = 3;
+    public static final int WORKSHEET_FOUR_HOUR_VALUE = 3;
     /**
-     * <code>W_MONTHLY = 4;</code>
+     * <code>WORKSHEET_DAILY = 4;</code>
      */
-    public static final int W_MONTHLY_VALUE = 4;
+    public static final int WORKSHEET_DAILY_VALUE = 4;
 
 
     public final int getNumber() {
@@ -82,11 +82,11 @@ public final class ClarosOperationsSpreadsheetWorksheetType {
 
     public static WorksheetType forNumber(int value) {
       switch (value) {
-        case 0: return W_UNKNOWN;
-        case 1: return W_FIFTEEN_MINUTE;
-        case 2: return W_FOUR_HOUR;
-        case 3: return W_DAILY;
-        case 4: return W_MONTHLY;
+        case 0: return WORKSHEET_UNKNOWN;
+        case 1: return WORKSHEET_FIFTEEN_MINUTE;
+        case 2: return WORKSHEET_HOUR;
+        case 3: return WORKSHEET_FOUR_HOUR;
+        case 4: return WORKSHEET_DAILY;
         default: return null;
       }
     }
@@ -150,9 +150,10 @@ public final class ClarosOperationsSpreadsheetWorksheetType {
     java.lang.String[] descriptorData = {
       "\n2claros_operations_spreadsheet_workshee" +
       "t_type.proto\022\035claros.operations.spreadsh" +
-      "eet*a\n\rWorksheetType\022\r\n\tW_UNKNOWN\020\000\022\024\n\020W" +
-      "_FIFTEEN_MINUTE\020\001\022\017\n\013W_FOUR_HOUR\020\002\022\013\n\007W_" +
-      "DAILY\020\003\022\r\n\tW_MONTHLY\020\004b\006proto3"
+      "eet*\206\001\n\rWorksheetType\022\025\n\021WORKSHEET_UNKNO" +
+      "WN\020\000\022\034\n\030WORKSHEET_FIFTEEN_MINUTE\020\001\022\022\n\016WO" +
+      "RKSHEET_HOUR\020\002\022\027\n\023WORKSHEET_FOUR_HOUR\020\003\022" +
+      "\023\n\017WORKSHEET_DAILY\020\004b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

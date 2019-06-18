@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace Claros.Instrument.Measurement {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementBindingReflection {
@@ -25,15 +25,15 @@ namespace Claros.Instrument {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitjbGFyb3NfaW5zdHJ1bWVudF9tZWFzdXJlbWVudF9iaW5kaW5nLnByb3Rv",
-            "EhFjbGFyb3MuaW5zdHJ1bWVudBonY2xhcm9zX2NvbW1vbl9jb3JlX2FnZ3Jl",
-            "Z2F0ZV90eXBlLnByb3RvIokBChxJbnN0cnVtZW50TWVhc3VyZW1lbnRCaW5k",
-            "aW5nEh8KF2luc3RydW1lbnRNZWFzdXJlbWVudElkGAEgASgJEjgKDWFnZ3Jl",
-            "Z2F0ZVR5cGUYAiABKA4yIS5jbGFyb3MuY29tbW9uLmNvcmUuQWdncmVnYXRl",
-            "VHlwZRIOCgZ1bml0SWQYAyABKA1iBnByb3RvMw=="));
+            "Eh1jbGFyb3MuaW5zdHJ1bWVudC5tZWFzdXJlbWVudBonY2xhcm9zX2NvbW1v",
+            "bl9jb3JlX2FnZ3JlZ2F0ZV90eXBlLnByb3RvIokBChxJbnN0cnVtZW50TWVh",
+            "c3VyZW1lbnRCaW5kaW5nEh8KF2luc3RydW1lbnRNZWFzdXJlbWVudElkGAEg",
+            "ASgJEjgKDWFnZ3JlZ2F0ZVR5cGUYAiABKA4yIS5jbGFyb3MuY29tbW9uLmNv",
+            "cmUuQWdncmVnYXRlVHlwZRIOCgZ1bml0SWQYAyABKA1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreAggregateTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurementBinding), global::Claros.Instrument.InstrumentMeasurementBinding.Parser, new[]{ "InstrumentMeasurementId", "AggregateType", "UnitId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.Measurement.InstrumentMeasurementBinding), global::Claros.Instrument.Measurement.InstrumentMeasurementBinding.Parser, new[]{ "InstrumentMeasurementId", "AggregateType", "UnitId" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Claros.Instrument.Measurement.ClarosInstrumentMeasurementBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -79,6 +79,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "instrumentMeasurementId" field.</summary>
     public const int InstrumentMeasurementIdFieldNumber = 1;
     private string instrumentMeasurementId_ = "";
+    /// <summary>
+    /// The id of the definition of an instrument measurement
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InstrumentMeasurementId {
       get { return instrumentMeasurementId_; }
@@ -90,6 +93,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "aggregateType" field.</summary>
     public const int AggregateTypeFieldNumber = 2;
     private global::Claros.Common.Core.AggregateType aggregateType_ = 0;
+    /// <summary>
+    /// How the data from instrument measurements will be aggregated into the bound system (Spreadsheet cell)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.AggregateType AggregateType {
       get { return aggregateType_; }
@@ -101,6 +107,9 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "unitId" field.</summary>
     public const int UnitIdFieldNumber = 3;
     private uint unitId_;
+    /// <summary>
+    /// The unit correlated to the binding. The resulting aggregate will be converted into this unit.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint UnitId {
       get { return unitId_; }

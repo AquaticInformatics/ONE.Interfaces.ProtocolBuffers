@@ -57,10 +57,13 @@ typedef GPB_ENUM(MilliAmpBinding_FieldNumber) {
 
 @interface MilliAmpBinding : GPBMessage
 
+/** Name of the 4-20 mA Card */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *cardName;
 
+/** Channel on the 4-20 mA Card */
 @property(nonatomic, readwrite) uint32_t channel;
 
+/** Should this be Timespan validTimeSpan? ????? */
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *validFrom;
 /** Test to see if @c validFrom has been set. */
 @property(nonatomic, readwrite) BOOL hasValidFrom;

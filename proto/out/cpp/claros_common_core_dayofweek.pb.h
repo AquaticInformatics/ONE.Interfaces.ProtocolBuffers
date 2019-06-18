@@ -56,20 +56,20 @@ namespace common {
 namespace core {
 
 enum DayOfWeek {
-  DOW_UNKNOWN = 0,
-  DOW_SUNDAY = 1,
-  DOW_MONDAY = 2,
-  DOW_TUESDAY = 3,
-  DOW_WEDNESDAY = 4,
-  DOW_THURSDAY = 5,
-  DOW_FRIDAY = 6,
-  DOW_SATURDAY = 7,
+  DAY_OF_WEEK_UNKNOWN = 0,
+  DAY_OF_WEEK_SUNDAY = 1,
+  DAY_OF_WEEK_MONDAY = 2,
+  DAY_OF_WEEK_TUESDAY = 3,
+  DAY_OF_WEEK_WEDNESDAY = 4,
+  DAY_OF_WEEK_THURSDAY = 5,
+  DAY_OF_WEEK_FRIDAY = 6,
+  DAY_OF_WEEK_SATURDAY = 7,
   DayOfWeek_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   DayOfWeek_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool DayOfWeek_IsValid(int value);
-const DayOfWeek DayOfWeek_MIN = DOW_UNKNOWN;
-const DayOfWeek DayOfWeek_MAX = DOW_SATURDAY;
+const DayOfWeek DayOfWeek_MIN = DAY_OF_WEEK_UNKNOWN;
+const DayOfWeek DayOfWeek_MAX = DAY_OF_WEEK_SATURDAY;
 const int DayOfWeek_ARRAYSIZE = DayOfWeek_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* DayOfWeek_descriptor();

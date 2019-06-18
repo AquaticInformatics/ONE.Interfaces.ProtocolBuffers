@@ -20,56 +20,96 @@ public final class ClarosCommonCoreAuditeventType {
   public enum AuditEventType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>AE_UNKNOWN = 0;</code>
+     * <code>AUDIT_EVENT_UNKNOWN = 0;</code>
      */
-    AE_UNKNOWN(0),
+    AUDIT_EVENT_UNKNOWN(0),
     /**
-     * <code>AE_CREATE = 1;</code>
+     * <pre>
+     * Information has been created
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_CREATE = 1;</code>
      */
-    AE_CREATE(1),
+    AUDIT_EVENT_CREATE(1),
     /**
-     * <code>AE_READ = 2;</code>
+     * <pre>
+     * Information has been read
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_READ = 2;</code>
      */
-    AE_READ(2),
+    AUDIT_EVENT_READ(2),
     /**
-     * <code>AE_UPDATE = 3;</code>
+     * <pre>
+     * Information has been updated
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_UPDATE = 3;</code>
      */
-    AE_UPDATE(3),
+    AUDIT_EVENT_UPDATE(3),
     /**
-     * <code>AE_DELETE = 4;</code>
+     * <pre>
+     * Information has been deleted
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_DELETE = 4;</code>
      */
-    AE_DELETE(4),
+    AUDIT_EVENT_DELETE(4),
     /**
-     * <code>AE_SENT = 5;</code>
+     * <pre>
+     * Information has been sent to another system
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_SENT = 5;</code>
      */
-    AE_SENT(5),
+    AUDIT_EVENT_SENT(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>AE_UNKNOWN = 0;</code>
+     * <code>AUDIT_EVENT_UNKNOWN = 0;</code>
      */
-    public static final int AE_UNKNOWN_VALUE = 0;
+    public static final int AUDIT_EVENT_UNKNOWN_VALUE = 0;
     /**
-     * <code>AE_CREATE = 1;</code>
+     * <pre>
+     * Information has been created
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_CREATE = 1;</code>
      */
-    public static final int AE_CREATE_VALUE = 1;
+    public static final int AUDIT_EVENT_CREATE_VALUE = 1;
     /**
-     * <code>AE_READ = 2;</code>
+     * <pre>
+     * Information has been read
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_READ = 2;</code>
      */
-    public static final int AE_READ_VALUE = 2;
+    public static final int AUDIT_EVENT_READ_VALUE = 2;
     /**
-     * <code>AE_UPDATE = 3;</code>
+     * <pre>
+     * Information has been updated
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_UPDATE = 3;</code>
      */
-    public static final int AE_UPDATE_VALUE = 3;
+    public static final int AUDIT_EVENT_UPDATE_VALUE = 3;
     /**
-     * <code>AE_DELETE = 4;</code>
+     * <pre>
+     * Information has been deleted
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_DELETE = 4;</code>
      */
-    public static final int AE_DELETE_VALUE = 4;
+    public static final int AUDIT_EVENT_DELETE_VALUE = 4;
     /**
-     * <code>AE_SENT = 5;</code>
+     * <pre>
+     * Information has been sent to another system
+     * </pre>
+     *
+     * <code>AUDIT_EVENT_SENT = 5;</code>
      */
-    public static final int AE_SENT_VALUE = 5;
+    public static final int AUDIT_EVENT_SENT_VALUE = 5;
 
 
     public final int getNumber() {
@@ -90,12 +130,12 @@ public final class ClarosCommonCoreAuditeventType {
 
     public static AuditEventType forNumber(int value) {
       switch (value) {
-        case 0: return AE_UNKNOWN;
-        case 1: return AE_CREATE;
-        case 2: return AE_READ;
-        case 3: return AE_UPDATE;
-        case 4: return AE_DELETE;
-        case 5: return AE_SENT;
+        case 0: return AUDIT_EVENT_UNKNOWN;
+        case 1: return AUDIT_EVENT_CREATE;
+        case 2: return AUDIT_EVENT_READ;
+        case 3: return AUDIT_EVENT_UPDATE;
+        case 4: return AUDIT_EVENT_DELETE;
+        case 5: return AUDIT_EVENT_SENT;
         default: return null;
       }
     }
@@ -158,10 +198,11 @@ public final class ClarosCommonCoreAuditeventType {
   static {
     java.lang.String[] descriptorData = {
       "\n(claros_common_core_auditevent_type.pro" +
-      "to\022\022claros.common.core*g\n\016AuditEventType" +
-      "\022\016\n\nAE_UNKNOWN\020\000\022\r\n\tAE_CREATE\020\001\022\013\n\007AE_RE" +
-      "AD\020\002\022\r\n\tAE_UPDATE\020\003\022\r\n\tAE_DELETE\020\004\022\013\n\007AE" +
-      "_SENT\020\005b\006proto3"
+      "to\022\022claros.common.core*\235\001\n\016AuditEventTyp" +
+      "e\022\027\n\023AUDIT_EVENT_UNKNOWN\020\000\022\026\n\022AUDIT_EVEN" +
+      "T_CREATE\020\001\022\024\n\020AUDIT_EVENT_READ\020\002\022\026\n\022AUDI" +
+      "T_EVENT_UPDATE\020\003\022\026\n\022AUDIT_EVENT_DELETE\020\004" +
+      "\022\024\n\020AUDIT_EVENT_SENT\020\005b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

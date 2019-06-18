@@ -38,12 +38,22 @@ typedef GPB_ENUM(AuditEventType) {
    * of the field.
    **/
   AuditEventType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  AuditEventType_AeUnknown = 0,
-  AuditEventType_AeCreate = 1,
-  AuditEventType_AeRead = 2,
-  AuditEventType_AeUpdate = 3,
-  AuditEventType_AeDelete = 4,
-  AuditEventType_AeSent = 5,
+  AuditEventType_AuditEventUnknown = 0,
+
+  /** Information has been created */
+  AuditEventType_AuditEventCreate = 1,
+
+  /** Information has been read */
+  AuditEventType_AuditEventRead = 2,
+
+  /** Information has been updated */
+  AuditEventType_AuditEventUpdate = 3,
+
+  /** Information has been deleted */
+  AuditEventType_AuditEventDelete = 4,
+
+  /** Information has been sent to another system */
+  AuditEventType_AuditEventSent = 5,
 };
 
 GPBEnumDescriptor *AuditEventType_EnumDescriptor(void);

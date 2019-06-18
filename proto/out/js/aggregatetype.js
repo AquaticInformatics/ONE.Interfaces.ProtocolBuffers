@@ -13,9 +13,9 @@ goog.provide('proto.claros.common.core.AggregateType');
  * @enum {number}
  */
 proto.claros.common.core.AggregateType = {
-  A_UNKNOWN: 0,
-  A_MINIMUM: 1,
-  A_MAXIMUM: 2,
-  A_AVERAGE: 3
+  AGGREGATE_UNKNOWN: 0,
+  AGGREGATE_MINIMUM: 1,
+  AGGREGATE_MAXIMUM: 2,
+  AGGREGATE_AVERAGE: 3
 };
 

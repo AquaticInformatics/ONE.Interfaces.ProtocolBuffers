@@ -6,12 +6,12 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_auditevent_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.AuditEventType" do
-      value :AE_UNKNOWN, 0
-      value :AE_CREATE, 1
-      value :AE_READ, 2
-      value :AE_UPDATE, 3
-      value :AE_DELETE, 4
-      value :AE_SENT, 5
+      value :AUDIT_EVENT_UNKNOWN, 0
+      value :AUDIT_EVENT_CREATE, 1
+      value :AUDIT_EVENT_READ, 2
+      value :AUDIT_EVENT_UPDATE, 3
+      value :AUDIT_EVENT_DELETE, 4
+      value :AUDIT_EVENT_SENT, 5
     end
   end
 end

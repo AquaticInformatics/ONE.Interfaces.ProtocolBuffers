@@ -20,24 +20,24 @@ public final class ClarosCommonConfigurationEntityType {
   public enum EntityType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ET_UNKNOWN = 0;</code>
+     * <code>ENTITY_UNKNOWN = 0;</code>
      */
-    ET_UNKNOWN(0),
+    ENTITY_UNKNOWN(0),
     /**
-     * <code>ET_FORMTEMPLATE = 1;</code>
+     * <code>ENTITY_FORMTEMPLATE = 1;</code>
      */
-    ET_FORMTEMPLATE(1),
+    ENTITY_FORMTEMPLATE(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ET_UNKNOWN = 0;</code>
+     * <code>ENTITY_UNKNOWN = 0;</code>
      */
-    public static final int ET_UNKNOWN_VALUE = 0;
+    public static final int ENTITY_UNKNOWN_VALUE = 0;
     /**
-     * <code>ET_FORMTEMPLATE = 1;</code>
+     * <code>ENTITY_FORMTEMPLATE = 1;</code>
      */
-    public static final int ET_FORMTEMPLATE_VALUE = 1;
+    public static final int ENTITY_FORMTEMPLATE_VALUE = 1;
 
 
     public final int getNumber() {
@@ -58,8 +58,8 @@ public final class ClarosCommonConfigurationEntityType {
 
     public static EntityType forNumber(int value) {
       switch (value) {
-        case 0: return ET_UNKNOWN;
-        case 1: return ET_FORMTEMPLATE;
+        case 0: return ENTITY_UNKNOWN;
+        case 1: return ENTITY_FORMTEMPLATE;
         default: return null;
       }
     }
@@ -122,9 +122,9 @@ public final class ClarosCommonConfigurationEntityType {
   static {
     java.lang.String[] descriptorData = {
       "\n-claros_common_configuration_entity_typ" +
-      "e.proto\022\033claros.common.configuration*1\n\n" +
-      "EntityType\022\016\n\nET_UNKNOWN\020\000\022\023\n\017ET_FORMTEM" +
-      "PLATE\020\001b\006proto3"
+      "e.proto\022\033claros.common.configuration*9\n\n" +
+      "EntityType\022\022\n\016ENTITY_UNKNOWN\020\000\022\027\n\023ENTITY" +
+      "_FORMTEMPLATE\020\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

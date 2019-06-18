@@ -6,13 +6,13 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_recurrence_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.RecurrenceType" do
-      value :R_UNKNOWN, 0
-      value :R_FIFTEENMINUTE, 1
-      value :R_HOURLY, 2
-      value :R_FOURHOUR, 3
-      value :R_DAILY, 4
-      value :R_WEEKLY, 5
-      value :R_DAYSOFWEEK, 6
+      value :RECURRENCE_UNKNOWN, 0
+      value :RECURRENCE_FIFTEENMINUTE, 1
+      value :RECURRENCE_HOURLY, 2
+      value :RECURRENCE_FOURHOUR, 3
+      value :RECURRENCE_DAILY, 4
+      value :RECURRENCE_WEEKLY, 5
+      value :RECURRENCE_DAYSOFWEEK, 6
     end
   end
 end

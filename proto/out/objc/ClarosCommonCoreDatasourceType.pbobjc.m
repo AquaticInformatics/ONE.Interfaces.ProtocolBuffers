@@ -36,17 +36,18 @@ GPBEnumDescriptor *DataSourceType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "DsUnknown\000DsForm\000DsComputation\000DsSpreads"
-        "heet\000DsInstrumentmeasurement\000DsImport\000Ds"
-        "SpreadsheetDefinition\000";
+        "DatasourceUnknown\000DatasourceForm\000Datasou"
+        "rceComputation\000DatasourceSpreadsheet\000Dat"
+        "asourceInstrumentmeasurement\000DatasourceI"
+        "mport\000DatasourceSpreadsheetDefinition\000";
     static const int32_t values[] = {
-        DataSourceType_DsUnknown,
-        DataSourceType_DsForm,
-        DataSourceType_DsComputation,
-        DataSourceType_DsSpreadsheet,
-        DataSourceType_DsInstrumentmeasurement,
-        DataSourceType_DsImport,
-        DataSourceType_DsSpreadsheetDefinition,
+        DataSourceType_DatasourceUnknown,
+        DataSourceType_DatasourceForm,
+        DataSourceType_DatasourceComputation,
+        DataSourceType_DatasourceSpreadsheet,
+        DataSourceType_DatasourceInstrumentmeasurement,
+        DataSourceType_DatasourceImport,
+        DataSourceType_DatasourceSpreadsheetDefinition,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(DataSourceType)
@@ -64,13 +65,13 @@ GPBEnumDescriptor *DataSourceType_EnumDescriptor(void) {
 
 BOOL DataSourceType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case DataSourceType_DsUnknown:
-    case DataSourceType_DsForm:
-    case DataSourceType_DsComputation:
-    case DataSourceType_DsSpreadsheet:
-    case DataSourceType_DsInstrumentmeasurement:
-    case DataSourceType_DsImport:
-    case DataSourceType_DsSpreadsheetDefinition:
+    case DataSourceType_DatasourceUnknown:
+    case DataSourceType_DatasourceForm:
+    case DataSourceType_DatasourceComputation:
+    case DataSourceType_DatasourceSpreadsheet:
+    case DataSourceType_DatasourceInstrumentmeasurement:
+    case DataSourceType_DatasourceImport:
+    case DataSourceType_DatasourceSpreadsheetDefinition:
       return YES;
     default:
       return NO;

@@ -20,9 +20,59 @@ class Task extends \Google\Protobuf\Internal\Message
      */
     private $id = '';
     /**
+     * User Defined Name for the Task
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
+    /**
+     * Desciption of the work to do in this task
+     *
+     * Generated from protobuf field <code>string description = 3;</code>
+     */
+    private $description = '';
+    /**
+     * GUID of the User that the task is assigned
+     *
+     * Generated from protobuf field <code>string assignee = 4;</code>
+     */
+    private $assignee = '';
+    /**
+     * GUID of the user that created the task
+     *
+     * Generated from protobuf field <code>string reporter = 5;</code>
+     */
+    private $reporter = '';
+    /**
+     * TaskSeverity severity = 6;                  // Enumeration of common severities
+     *
+     * Generated from protobuf field <code>uint32 priority = 6;</code>
+     */
+    private $priority = 0;
+    /**
+     * Source                                   // From where did the task come?
+     *
+     * Generated from protobuf field <code>string instrumentId = 7;</code>
+     */
+    private $instrumentId = '';
+    /**
+     * definition
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     */
+    private $taskDefinition = null;
+    /**
+     * data
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskData taskdata = 9;</code>
+     */
+    private $taskdata = null;
+    /**
+     * Audit Events related to to the Task
+     *
+     * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     */
+    private $auditEvent = null;
 
     /**
      * Constructor.
@@ -33,6 +83,23 @@ class Task extends \Google\Protobuf\Internal\Message
      *     @type string $id
      *           header
      *     @type string $name
+     *           User Defined Name for the Task
+     *     @type string $description
+     *           Desciption of the work to do in this task
+     *     @type string $assignee
+     *           GUID of the User that the task is assigned
+     *     @type string $reporter
+     *           GUID of the user that created the task
+     *     @type int $priority
+     *           TaskSeverity severity = 6;                  // Enumeration of common severities
+     *     @type string $instrumentId
+     *           Source                                   // From where did the task come?
+     *     @type \Claros\Common\Task\TaskDefinition $taskDefinition
+     *           definition
+     *     @type \Claros\Common\Task\TaskData $taskdata
+     *           data
+     *     @type \Claros\Common\Core\AuditEvent $auditEvent
+     *           Audit Events related to to the Task
      * }
      */
     public function __construct($data = NULL) {
@@ -67,6 +134,8 @@ class Task extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * User Defined Name for the Task
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @return string
      */
@@ -76,6 +145,8 @@ class Task extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * User Defined Name for the Task
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @param string $var
      * @return $this
@@ -84,6 +155,214 @@ class Task extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Desciption of the work to do in this task
+     *
+     * Generated from protobuf field <code>string description = 3;</code>
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Desciption of the work to do in this task
+     *
+     * Generated from protobuf field <code>string description = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDescription($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->description = $var;
+
+        return $this;
+    }
+
+    /**
+     * GUID of the User that the task is assigned
+     *
+     * Generated from protobuf field <code>string assignee = 4;</code>
+     * @return string
+     */
+    public function getAssignee()
+    {
+        return $this->assignee;
+    }
+
+    /**
+     * GUID of the User that the task is assigned
+     *
+     * Generated from protobuf field <code>string assignee = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAssignee($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->assignee = $var;
+
+        return $this;
+    }
+
+    /**
+     * GUID of the user that created the task
+     *
+     * Generated from protobuf field <code>string reporter = 5;</code>
+     * @return string
+     */
+    public function getReporter()
+    {
+        return $this->reporter;
+    }
+
+    /**
+     * GUID of the user that created the task
+     *
+     * Generated from protobuf field <code>string reporter = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setReporter($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->reporter = $var;
+
+        return $this;
+    }
+
+    /**
+     * TaskSeverity severity = 6;                  // Enumeration of common severities
+     *
+     * Generated from protobuf field <code>uint32 priority = 6;</code>
+     * @return int
+     */
+    public function getPriority()
+    {
+        return $this->priority;
+    }
+
+    /**
+     * TaskSeverity severity = 6;                  // Enumeration of common severities
+     *
+     * Generated from protobuf field <code>uint32 priority = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPriority($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->priority = $var;
+
+        return $this;
+    }
+
+    /**
+     * Source                                   // From where did the task come?
+     *
+     * Generated from protobuf field <code>string instrumentId = 7;</code>
+     * @return string
+     */
+    public function getInstrumentId()
+    {
+        return $this->instrumentId;
+    }
+
+    /**
+     * Source                                   // From where did the task come?
+     *
+     * Generated from protobuf field <code>string instrumentId = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setInstrumentId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->instrumentId = $var;
+
+        return $this;
+    }
+
+    /**
+     * definition
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     * @return \Claros\Common\Task\TaskDefinition
+     */
+    public function getTaskDefinition()
+    {
+        return $this->taskDefinition;
+    }
+
+    /**
+     * definition
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskDefinition taskDefinition = 8;</code>
+     * @param \Claros\Common\Task\TaskDefinition $var
+     * @return $this
+     */
+    public function setTaskDefinition($var)
+    {
+        GPBUtil::checkMessage($var, \Claros\Common\Task\TaskDefinition::class);
+        $this->taskDefinition = $var;
+
+        return $this;
+    }
+
+    /**
+     * data
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskData taskdata = 9;</code>
+     * @return \Claros\Common\Task\TaskData
+     */
+    public function getTaskdata()
+    {
+        return $this->taskdata;
+    }
+
+    /**
+     * data
+     *
+     * Generated from protobuf field <code>.claros.common.task.TaskData taskdata = 9;</code>
+     * @param \Claros\Common\Task\TaskData $var
+     * @return $this
+     */
+    public function setTaskdata($var)
+    {
+        GPBUtil::checkMessage($var, \Claros\Common\Task\TaskData::class);
+        $this->taskdata = $var;
+
+        return $this;
+    }
+
+    /**
+     * Audit Events related to to the Task
+     *
+     * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     * @return \Claros\Common\Core\AuditEvent
+     */
+    public function getAuditEvent()
+    {
+        return $this->auditEvent;
+    }
+
+    /**
+     * Audit Events related to to the Task
+     *
+     * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 10;</code>
+     * @param \Claros\Common\Core\AuditEvent $var
+     * @return $this
+     */
+    public function setAuditEvent($var)
+    {
+        GPBUtil::checkMessage($var, \Claros\Common\Core\AuditEvent::class);
+        $this->auditEvent = $var;
 
         return $this;
     }

@@ -18,7 +18,7 @@ class FormTemplateConfiguration extends \Google\Protobuf\Internal\Message
      */
     private $formTemplateType = 0;
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
     private $recurrence = null;
     /**
@@ -37,7 +37,7 @@ class FormTemplateConfiguration extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $formTemplateType
-     *     @type \Claros\Common\Core\Recurrence $recurrence
+     *     @type \Claros\Common\Recurrence\Recurrence $recurrence
      *     @type \Claros\Common\Form\FormLayout $formLayout
      *     @type \Claros\Common\Form\FormFieldDefinition[]|\Google\Protobuf\Internal\RepeatedField $formFieldDefinitions
      * }
@@ -70,8 +70,8 @@ class FormTemplateConfiguration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 2;</code>
-     * @return \Claros\Common\Core\Recurrence
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
+     * @return \Claros\Common\Recurrence\Recurrence
      */
     public function getRecurrence()
     {
@@ -79,13 +79,13 @@ class FormTemplateConfiguration extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.core.Recurrence recurrence = 2;</code>
-     * @param \Claros\Common\Core\Recurrence $var
+     * Generated from protobuf field <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
+     * @param \Claros\Common\Recurrence\Recurrence $var
      * @return $this
      */
     public function setRecurrence($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Common\Core\Recurrence::class);
+        GPBUtil::checkMessage($var, \Claros\Common\Recurrence\Recurrence::class);
         $this->recurrence = $var;
 
         return $this;

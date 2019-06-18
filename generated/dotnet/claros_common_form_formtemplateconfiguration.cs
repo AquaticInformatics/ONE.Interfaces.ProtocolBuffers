@@ -17,7 +17,7 @@ namespace claros.common.form
         public FormTemplateType formTemplateType { get; set; }
 
         [global::ProtoBuf.ProtoMember(2, Name = @"recurrence")]
-        public global::claros.common.core.Recurrence Recurrence { get; set; }
+        public global::claros.common.recurrence.Recurrence Recurrence { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
         public FormLayout formLayout { get; set; }

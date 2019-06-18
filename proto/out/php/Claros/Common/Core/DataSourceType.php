@@ -12,42 +12,54 @@ use UnexpectedValueException;
 class DataSourceType
 {
     /**
-     * Generated from protobuf enum <code>DS_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>DATASOURCE_UNKNOWN = 0;</code>
      */
-    const DS_UNKNOWN = 0;
+    const DATASOURCE_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>DS_FORM = 1;</code>
+     * Data related to Claros.Common.Form
+     *
+     * Generated from protobuf enum <code>DATASOURCE_FORM = 1;</code>
      */
-    const DS_FORM = 1;
+    const DATASOURCE_FORM = 1;
     /**
-     * Generated from protobuf enum <code>DS_COMPUTATION = 2;</code>
+     * Data related to Claros.Common.Computation
+     *
+     * Generated from protobuf enum <code>DATASOURCE_COMPUTATION = 2;</code>
      */
-    const DS_COMPUTATION = 2;
+    const DATASOURCE_COMPUTATION = 2;
     /**
-     * Generated from protobuf enum <code>DS_SPREADSHEET = 3;</code>
+     * Data related to Claros.Common.Spreadsheet
+     *
+     * Generated from protobuf enum <code>DATASOURCE_SPREADSHEET = 3;</code>
      */
-    const DS_SPREADSHEET = 3;
+    const DATASOURCE_SPREADSHEET = 3;
     /**
-     * Generated from protobuf enum <code>DS_INSTRUMENTMEASUREMENT = 4;</code>
+     * Data related to Claros.Instrument.Measurement
+     *
+     * Generated from protobuf enum <code>DATASOURCE_INSTRUMENTMEASUREMENT = 4;</code>
      */
-    const DS_INSTRUMENTMEASUREMENT = 4;
+    const DATASOURCE_INSTRUMENTMEASUREMENT = 4;
     /**
-     * Generated from protobuf enum <code>DS_IMPORT = 5;</code>
+     * Data related to imports
+     *
+     * Generated from protobuf enum <code>DATASOURCE_IMPORT = 5;</code>
      */
-    const DS_IMPORT = 5;
+    const DATASOURCE_IMPORT = 5;
     /**
-     * Generated from protobuf enum <code>DS_SPREADSHEET_DEFINITION = 6;</code>
+     * Data related to Claros.Common.Spreadsheet.Definition
+     *
+     * Generated from protobuf enum <code>DATASOURCE_SPREADSHEET_DEFINITION = 6;</code>
      */
-    const DS_SPREADSHEET_DEFINITION = 6;
+    const DATASOURCE_SPREADSHEET_DEFINITION = 6;
 
     private static $valueToName = [
-        self::DS_UNKNOWN => 'DS_UNKNOWN',
-        self::DS_FORM => 'DS_FORM',
-        self::DS_COMPUTATION => 'DS_COMPUTATION',
-        self::DS_SPREADSHEET => 'DS_SPREADSHEET',
-        self::DS_INSTRUMENTMEASUREMENT => 'DS_INSTRUMENTMEASUREMENT',
-        self::DS_IMPORT => 'DS_IMPORT',
-        self::DS_SPREADSHEET_DEFINITION => 'DS_SPREADSHEET_DEFINITION',
+        self::DATASOURCE_UNKNOWN => 'DATASOURCE_UNKNOWN',
+        self::DATASOURCE_FORM => 'DATASOURCE_FORM',
+        self::DATASOURCE_COMPUTATION => 'DATASOURCE_COMPUTATION',
+        self::DATASOURCE_SPREADSHEET => 'DATASOURCE_SPREADSHEET',
+        self::DATASOURCE_INSTRUMENTMEASUREMENT => 'DATASOURCE_INSTRUMENTMEASUREMENT',
+        self::DATASOURCE_IMPORT => 'DATASOURCE_IMPORT',
+        self::DATASOURCE_SPREADSHEET_DEFINITION => 'DATASOURCE_SPREADSHEET_DEFINITION',
     ];
 
     public static function name($value)

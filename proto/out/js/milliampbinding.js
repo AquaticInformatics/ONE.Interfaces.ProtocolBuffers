@@ -7,7 +7,7 @@
  */
 // GENERATED CODE -- DO NOT EDIT!
 
-goog.provide('proto.claros.instrument.MilliAmpBinding');
+goog.provide('proto.claros.instrument.measurement.MilliAmpBinding');
 
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
@@ -24,16 +24,16 @@ goog.require('proto.claros.common.core.ClarosDateTime');
  * @extends {jspb.Message}
  * @constructor
  */
-proto.claros.instrument.MilliAmpBinding = function(opt_data) {
+proto.claros.instrument.measurement.MilliAmpBinding = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.claros.instrument.MilliAmpBinding, jspb.Message);
+goog.inherits(proto.claros.instrument.measurement.MilliAmpBinding, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.claros.instrument.MilliAmpBinding.displayName = 'proto.claros.instrument.MilliAmpBinding';
+  proto.claros.instrument.measurement.MilliAmpBinding.displayName = 'proto.claros.instrument.measurement.MilliAmpBinding';
 }
 
 
@@ -49,8 +49,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.toObject = function(opt_includeInstance) {
-  return proto.claros.instrument.MilliAmpBinding.toObject(opt_includeInstance, this);
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.toObject = function(opt_includeInstance) {
+  return proto.claros.instrument.measurement.MilliAmpBinding.toObject(opt_includeInstance, this);
 };
 
 
@@ -59,11 +59,11 @@ proto.claros.instrument.MilliAmpBinding.prototype.toObject = function(opt_includ
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.claros.instrument.MilliAmpBinding} msg The msg instance to transform.
+ * @param {!proto.claros.instrument.measurement.MilliAmpBinding} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.MilliAmpBinding.toObject = function(includeInstance, msg) {
+proto.claros.instrument.measurement.MilliAmpBinding.toObject = function(includeInstance, msg) {
   var f, obj = {
     cardname: jspb.Message.getFieldWithDefault(msg, 1, ""),
     channel: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -82,23 +82,23 @@ proto.claros.instrument.MilliAmpBinding.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.claros.instrument.MilliAmpBinding}
+ * @return {!proto.claros.instrument.measurement.MilliAmpBinding}
  */
-proto.claros.instrument.MilliAmpBinding.deserializeBinary = function(bytes) {
+proto.claros.instrument.measurement.MilliAmpBinding.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.claros.instrument.MilliAmpBinding;
-  return proto.claros.instrument.MilliAmpBinding.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.claros.instrument.measurement.MilliAmpBinding;
+  return proto.claros.instrument.measurement.MilliAmpBinding.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.claros.instrument.MilliAmpBinding} msg The message object to deserialize into.
+ * @param {!proto.claros.instrument.measurement.MilliAmpBinding} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.claros.instrument.MilliAmpBinding}
+ * @return {!proto.claros.instrument.measurement.MilliAmpBinding}
  */
-proto.claros.instrument.MilliAmpBinding.deserializeBinaryFromReader = function(msg, reader) {
+proto.claros.instrument.measurement.MilliAmpBinding.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -136,9 +136,9 @@ proto.claros.instrument.MilliAmpBinding.deserializeBinaryFromReader = function(m
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.serializeBinary = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.claros.instrument.MilliAmpBinding.serializeBinaryToWriter(this, writer);
+  proto.claros.instrument.measurement.MilliAmpBinding.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -146,11 +146,11 @@ proto.claros.instrument.MilliAmpBinding.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.claros.instrument.MilliAmpBinding} message
+ * @param {!proto.claros.instrument.measurement.MilliAmpBinding} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.MilliAmpBinding.serializeBinaryToWriter = function(message, writer) {
+proto.claros.instrument.measurement.MilliAmpBinding.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCardname();
   if (f.length > 0) {
@@ -189,13 +189,13 @@ proto.claros.instrument.MilliAmpBinding.serializeBinaryToWriter = function(messa
  * optional string cardName = 1;
  * @return {string}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.getCardname = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.getCardname = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /** @param {string} value */
-proto.claros.instrument.MilliAmpBinding.prototype.setCardname = function(value) {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.setCardname = function(value) {
   jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -204,13 +204,13 @@ proto.claros.instrument.MilliAmpBinding.prototype.setCardname = function(value) 
  * optional uint32 channel = 2;
  * @return {number}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.getChannel = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.getChannel = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.claros.instrument.MilliAmpBinding.prototype.setChannel = function(value) {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.setChannel = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -219,14 +219,14 @@ proto.claros.instrument.MilliAmpBinding.prototype.setChannel = function(value) {
  * optional claros.common.core.ClarosDateTime validFrom = 3;
  * @return {?proto.claros.common.core.ClarosDateTime}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.getValidfrom = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.getValidfrom = function() {
   return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
     jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 3));
 };
 
 
 /** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
-proto.claros.instrument.MilliAmpBinding.prototype.setValidfrom = function(value) {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.setValidfrom = function(value) {
   jspb.Message.setWrapperField(this, 3, value);
 };
 
@@ -234,7 +234,7 @@ proto.claros.instrument.MilliAmpBinding.prototype.setValidfrom = function(value)
 /**
  * Clears the message field making it undefined.
  */
-proto.claros.instrument.MilliAmpBinding.prototype.clearValidfrom = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.clearValidfrom = function() {
   this.setValidfrom(undefined);
 };
 
@@ -243,7 +243,7 @@ proto.claros.instrument.MilliAmpBinding.prototype.clearValidfrom = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.hasValidfrom = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.hasValidfrom = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -252,14 +252,14 @@ proto.claros.instrument.MilliAmpBinding.prototype.hasValidfrom = function() {
  * optional claros.common.core.ClarosDateTime validTo = 4;
  * @return {?proto.claros.common.core.ClarosDateTime}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.getValidto = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.getValidto = function() {
   return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
     jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 4));
 };
 
 
 /** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
-proto.claros.instrument.MilliAmpBinding.prototype.setValidto = function(value) {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.setValidto = function(value) {
   jspb.Message.setWrapperField(this, 4, value);
 };
 
@@ -267,7 +267,7 @@ proto.claros.instrument.MilliAmpBinding.prototype.setValidto = function(value) {
 /**
  * Clears the message field making it undefined.
  */
-proto.claros.instrument.MilliAmpBinding.prototype.clearValidto = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.clearValidto = function() {
   this.setValidto(undefined);
 };
 
@@ -276,7 +276,7 @@ proto.claros.instrument.MilliAmpBinding.prototype.clearValidto = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.claros.instrument.MilliAmpBinding.prototype.hasValidto = function() {
+proto.claros.instrument.measurement.MilliAmpBinding.prototype.hasValidto = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 

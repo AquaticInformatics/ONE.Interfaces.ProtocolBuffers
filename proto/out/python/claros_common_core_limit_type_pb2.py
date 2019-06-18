@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n#claros_common_core_limit_type.proto\x12\x12\x63laros.common.core*Z\n\tLimitType\x12\r\n\tL_UNKNOWN\x10\x00\x12\x0f\n\x0bL_HIGHALARM\x10\x01\x12\x0e\n\nL_HIGHNEAR\x10\x02\x12\r\n\tL_LOWNEAR\x10\x03\x12\x0e\n\nL_LOWALARM\x10\x04\x62\x06proto3')
+  serialized_pb=_b('\n#claros_common_core_limit_type.proto\x12\x12\x63laros.common.core*o\n\tLimitType\x12\x11\n\rLIMIT_UNKNOWN\x10\x00\x12\x13\n\x0fLIMIT_HIGHALARM\x10\x01\x12\x13\n\x0fLIMIT__HIGHNEAR\x10\x02\x12\x11\n\rLIMIT_LOWNEAR\x10\x03\x12\x12\n\x0eLIMIT_LOWALARM\x10\x04\x62\x06proto3')
 )
 
 _LIMITTYPE = _descriptor.EnumDescriptor(
@@ -31,39 +31,39 @@ _LIMITTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='L_UNKNOWN', index=0, number=0,
+      name='LIMIT_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='L_HIGHALARM', index=1, number=1,
+      name='LIMIT_HIGHALARM', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='L_HIGHNEAR', index=2, number=2,
+      name='LIMIT__HIGHNEAR', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='L_LOWNEAR', index=3, number=3,
+      name='LIMIT_LOWNEAR', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='L_LOWALARM', index=4, number=4,
+      name='LIMIT_LOWALARM', index=4, number=4,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=59,
-  serialized_end=149,
+  serialized_end=170,
 )
 _sym_db.RegisterEnumDescriptor(_LIMITTYPE)
 
 LimitType = enum_type_wrapper.EnumTypeWrapper(_LIMITTYPE)
-L_UNKNOWN = 0
-L_HIGHALARM = 1
-L_HIGHNEAR = 2
-L_LOWNEAR = 3
-L_LOWALARM = 4
+LIMIT_UNKNOWN = 0
+LIMIT_HIGHALARM = 1
+LIMIT__HIGHNEAR = 2
+LIMIT_LOWNEAR = 3
+LIMIT_LOWALARM = 4
 
 
 DESCRIPTOR.enum_types_by_name['LimitType'] = _LIMITTYPE

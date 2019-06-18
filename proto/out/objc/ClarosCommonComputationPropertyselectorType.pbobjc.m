@@ -36,14 +36,16 @@ GPBEnumDescriptor *PropertySelectorType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "PsUnknown\000PsMeasurementtime\000PsBeginlinet"
-        "ime\000PsEndlinetime\000PsMeasurmentvalue\000";
+        "PropertySelectorUnknown\000PropertySelector"
+        "Measurementtime\000PropertySelectorBeginlin"
+        "etime\000PropertySelectorEndlinetime\000Proper"
+        "tySelectorMeasurmentvalue\000";
     static const int32_t values[] = {
-        PropertySelectorType_PsUnknown,
-        PropertySelectorType_PsMeasurementtime,
-        PropertySelectorType_PsBeginlinetime,
-        PropertySelectorType_PsEndlinetime,
-        PropertySelectorType_PsMeasurmentvalue,
+        PropertySelectorType_PropertySelectorUnknown,
+        PropertySelectorType_PropertySelectorMeasurementtime,
+        PropertySelectorType_PropertySelectorBeginlinetime,
+        PropertySelectorType_PropertySelectorEndlinetime,
+        PropertySelectorType_PropertySelectorMeasurmentvalue,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(PropertySelectorType)
@@ -61,11 +63,11 @@ GPBEnumDescriptor *PropertySelectorType_EnumDescriptor(void) {
 
 BOOL PropertySelectorType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case PropertySelectorType_PsUnknown:
-    case PropertySelectorType_PsMeasurementtime:
-    case PropertySelectorType_PsBeginlinetime:
-    case PropertySelectorType_PsEndlinetime:
-    case PropertySelectorType_PsMeasurmentvalue:
+    case PropertySelectorType_PropertySelectorUnknown:
+    case PropertySelectorType_PropertySelectorMeasurementtime:
+    case PropertySelectorType_PropertySelectorBeginlinetime:
+    case PropertySelectorType_PropertySelectorEndlinetime:
+    case PropertySelectorType_PropertySelectorMeasurmentvalue:
       return YES;
     default:
       return NO;

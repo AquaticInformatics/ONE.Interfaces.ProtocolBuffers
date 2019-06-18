@@ -15,7 +15,7 @@ goog.require('jspb.Message');
 goog.require('proto.claros.common.computation.ComputationBinding');
 goog.require('proto.claros.common.core.Limit');
 goog.require('proto.claros.common.core.ReportableQualifierDefinition');
-goog.require('proto.claros.instrument.InstrumentMeasurementBinding');
+goog.require('proto.claros.instrument.measurement.InstrumentMeasurementBinding');
 
 goog.forwardDeclare('proto.claros.common.core.DataSourceType');
 /**
@@ -112,7 +112,7 @@ proto.claros.operations.spreadsheet.Column.toObject = function(includeInstance, 
     limitsList: jspb.Message.toObjectList(msg.getLimitsList(),
     proto.claros.common.core.Limit.toObject, includeInstance),
     datasourcetype: jspb.Message.getFieldWithDefault(msg, 9, 0),
-    instrumentmeasurementbinding: (f = msg.getInstrumentmeasurementbinding()) && proto.claros.instrument.InstrumentMeasurementBinding.toObject(includeInstance, f),
+    instrumentmeasurementbinding: (f = msg.getInstrumentmeasurementbinding()) && proto.claros.instrument.measurement.InstrumentMeasurementBinding.toObject(includeInstance, f),
     computationbinding: (f = msg.getComputationbinding()) && proto.claros.common.computation.ComputationBinding.toObject(includeInstance, f),
     reportablequaliferdefinitionList: jspb.Message.toObjectList(msg.getReportablequaliferdefinitionList(),
     proto.claros.common.core.ReportableQualifierDefinition.toObject, includeInstance)
@@ -190,8 +190,8 @@ proto.claros.operations.spreadsheet.Column.deserializeBinaryFromReader = functio
       msg.setDatasourcetype(value);
       break;
     case 10:
-      var value = new proto.claros.instrument.InstrumentMeasurementBinding;
-      reader.readMessage(value,proto.claros.instrument.InstrumentMeasurementBinding.deserializeBinaryFromReader);
+      var value = new proto.claros.instrument.measurement.InstrumentMeasurementBinding;
+      reader.readMessage(value,proto.claros.instrument.measurement.InstrumentMeasurementBinding.deserializeBinaryFromReader);
       msg.setInstrumentmeasurementbinding(value);
       break;
     case 11:
@@ -302,7 +302,7 @@ proto.claros.operations.spreadsheet.Column.serializeBinaryToWriter = function(me
     writer.writeMessage(
       10,
       f,
-      proto.claros.instrument.InstrumentMeasurementBinding.serializeBinaryToWriter
+      proto.claros.instrument.measurement.InstrumentMeasurementBinding.serializeBinaryToWriter
     );
   }
   f = message.getComputationbinding();
@@ -481,16 +481,16 @@ proto.claros.operations.spreadsheet.Column.prototype.setDatasourcetype = functio
 
 
 /**
- * optional claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
- * @return {?proto.claros.instrument.InstrumentMeasurementBinding}
+ * optional claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+ * @return {?proto.claros.instrument.measurement.InstrumentMeasurementBinding}
  */
 proto.claros.operations.spreadsheet.Column.prototype.getInstrumentmeasurementbinding = function() {
-  return /** @type{?proto.claros.instrument.InstrumentMeasurementBinding} */ (
-    jspb.Message.getWrapperField(this, proto.claros.instrument.InstrumentMeasurementBinding, 10));
+  return /** @type{?proto.claros.instrument.measurement.InstrumentMeasurementBinding} */ (
+    jspb.Message.getWrapperField(this, proto.claros.instrument.measurement.InstrumentMeasurementBinding, 10));
 };
 
 
-/** @param {?proto.claros.instrument.InstrumentMeasurementBinding|undefined} value */
+/** @param {?proto.claros.instrument.measurement.InstrumentMeasurementBinding|undefined} value */
 proto.claros.operations.spreadsheet.Column.prototype.setInstrumentmeasurementbinding = function(value) {
   jspb.Message.setOneofWrapperField(this, 10, proto.claros.operations.spreadsheet.Column.oneofGroups_[0], value);
 };

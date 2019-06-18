@@ -38,11 +38,11 @@ typedef GPB_ENUM(WorksheetType) {
    * of the field.
    **/
   WorksheetType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  WorksheetType_WUnknown = 0,
-  WorksheetType_WFifteenMinute = 1,
-  WorksheetType_WFourHour = 2,
-  WorksheetType_WDaily = 3,
-  WorksheetType_WMonthly = 4,
+  WorksheetType_WorksheetUnknown = 0,
+  WorksheetType_WorksheetFifteenMinute = 1,
+  WorksheetType_WorksheetHour = 2,
+  WorksheetType_WorksheetFourHour = 3,
+  WorksheetType_WorksheetDaily = 4,
 };
 
 GPBEnumDescriptor *WorksheetType_EnumDescriptor(void);

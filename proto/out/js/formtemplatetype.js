@@ -13,9 +13,9 @@ goog.provide('proto.claros.common.form.FormTemplateType');
  * @enum {number}
  */
 proto.claros.common.form.FormTemplateType = {
-  FT_UNKNOWN: 0,
-  FT_PLANT: 1,
-  FT_LABORATORY: 2,
-  FT_ENTERPRISE: 3
+  FORM_TEMPLATE_UNKNOWN: 0,
+  FORM_TEMPLATE_PLANT: 1,
+  FORM_TEMPLATE_LABORATORY: 2,
+  FORM_TEMPLATE_ENTERPRISE: 3
 };
 

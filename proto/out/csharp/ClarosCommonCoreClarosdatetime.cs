@@ -87,6 +87,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "mobileDateTime" field.</summary>
     public const int MobileDateTimeFieldNumber = 1;
+    /// <summary>
+    /// Used for data collected from Mobile Devices
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.MobileDateTime MobileDateTime {
       get { return clarosDateTimeCase_ == ClarosDateTimeOneofCase.MobileDateTime ? (global::Claros.Common.Core.MobileDateTime) clarosDateTime_ : null; }
@@ -98,6 +101,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "jsonDateTime" field.</summary>
     public const int JsonDateTimeFieldNumber = 2;
+    /// <summary>
+    /// 
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string JsonDateTime {
       get { return clarosDateTimeCase_ == ClarosDateTimeOneofCase.JsonDateTime ? (string) clarosDateTime_ : ""; }
@@ -109,6 +115,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "ticks" field.</summary>
     public const int TicksFieldNumber = 3;
+    /// <summary>
+    /// 
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong Ticks {
       get { return clarosDateTimeCase_ == ClarosDateTimeOneofCase.Ticks ? (ulong) clarosDateTime_ : 0UL; }

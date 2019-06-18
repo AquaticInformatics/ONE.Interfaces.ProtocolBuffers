@@ -7,7 +7,7 @@
  */
 // GENERATED CODE -- DO NOT EDIT!
 
-goog.provide('proto.claros.instrument.SCSensorBinding');
+goog.provide('proto.claros.instrument.measurement.SCSensorBinding');
 
 goog.require('jspb.BinaryReader');
 goog.require('jspb.BinaryWriter');
@@ -24,16 +24,16 @@ goog.require('proto.claros.common.core.ClarosDateTime');
  * @extends {jspb.Message}
  * @constructor
  */
-proto.claros.instrument.SCSensorBinding = function(opt_data) {
+proto.claros.instrument.measurement.SCSensorBinding = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.claros.instrument.SCSensorBinding, jspb.Message);
+goog.inherits(proto.claros.instrument.measurement.SCSensorBinding, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.claros.instrument.SCSensorBinding.displayName = 'proto.claros.instrument.SCSensorBinding';
+  proto.claros.instrument.measurement.SCSensorBinding.displayName = 'proto.claros.instrument.measurement.SCSensorBinding';
 }
 
 
@@ -49,8 +49,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.claros.instrument.SCSensorBinding.prototype.toObject = function(opt_includeInstance) {
-  return proto.claros.instrument.SCSensorBinding.toObject(opt_includeInstance, this);
+proto.claros.instrument.measurement.SCSensorBinding.prototype.toObject = function(opt_includeInstance) {
+  return proto.claros.instrument.measurement.SCSensorBinding.toObject(opt_includeInstance, this);
 };
 
 
@@ -59,11 +59,11 @@ proto.claros.instrument.SCSensorBinding.prototype.toObject = function(opt_includ
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.claros.instrument.SCSensorBinding} msg The msg instance to transform.
+ * @param {!proto.claros.instrument.measurement.SCSensorBinding} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.SCSensorBinding.toObject = function(includeInstance, msg) {
+proto.claros.instrument.measurement.SCSensorBinding.toObject = function(includeInstance, msg) {
   var f, obj = {
     channel: jspb.Message.getFieldWithDefault(msg, 2, 0),
     tag: jspb.Message.getFieldWithDefault(msg, 3, ""),
@@ -82,23 +82,23 @@ proto.claros.instrument.SCSensorBinding.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.claros.instrument.SCSensorBinding}
+ * @return {!proto.claros.instrument.measurement.SCSensorBinding}
  */
-proto.claros.instrument.SCSensorBinding.deserializeBinary = function(bytes) {
+proto.claros.instrument.measurement.SCSensorBinding.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.claros.instrument.SCSensorBinding;
-  return proto.claros.instrument.SCSensorBinding.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.claros.instrument.measurement.SCSensorBinding;
+  return proto.claros.instrument.measurement.SCSensorBinding.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.claros.instrument.SCSensorBinding} msg The message object to deserialize into.
+ * @param {!proto.claros.instrument.measurement.SCSensorBinding} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.claros.instrument.SCSensorBinding}
+ * @return {!proto.claros.instrument.measurement.SCSensorBinding}
  */
-proto.claros.instrument.SCSensorBinding.deserializeBinaryFromReader = function(msg, reader) {
+proto.claros.instrument.measurement.SCSensorBinding.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -136,9 +136,9 @@ proto.claros.instrument.SCSensorBinding.deserializeBinaryFromReader = function(m
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.claros.instrument.SCSensorBinding.prototype.serializeBinary = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.claros.instrument.SCSensorBinding.serializeBinaryToWriter(this, writer);
+  proto.claros.instrument.measurement.SCSensorBinding.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -146,11 +146,11 @@ proto.claros.instrument.SCSensorBinding.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.claros.instrument.SCSensorBinding} message
+ * @param {!proto.claros.instrument.measurement.SCSensorBinding} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.claros.instrument.SCSensorBinding.serializeBinaryToWriter = function(message, writer) {
+proto.claros.instrument.measurement.SCSensorBinding.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getChannel();
   if (f !== 0) {
@@ -189,13 +189,13 @@ proto.claros.instrument.SCSensorBinding.serializeBinaryToWriter = function(messa
  * optional uint32 channel = 2;
  * @return {number}
  */
-proto.claros.instrument.SCSensorBinding.prototype.getChannel = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.getChannel = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.claros.instrument.SCSensorBinding.prototype.setChannel = function(value) {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.setChannel = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -204,13 +204,13 @@ proto.claros.instrument.SCSensorBinding.prototype.setChannel = function(value) {
  * optional string tag = 3;
  * @return {string}
  */
-proto.claros.instrument.SCSensorBinding.prototype.getTag = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.getTag = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.claros.instrument.SCSensorBinding.prototype.setTag = function(value) {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.setTag = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -219,14 +219,14 @@ proto.claros.instrument.SCSensorBinding.prototype.setTag = function(value) {
  * optional claros.common.core.ClarosDateTime validFrom = 4;
  * @return {?proto.claros.common.core.ClarosDateTime}
  */
-proto.claros.instrument.SCSensorBinding.prototype.getValidfrom = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.getValidfrom = function() {
   return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
     jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 4));
 };
 
 
 /** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
-proto.claros.instrument.SCSensorBinding.prototype.setValidfrom = function(value) {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.setValidfrom = function(value) {
   jspb.Message.setWrapperField(this, 4, value);
 };
 
@@ -234,7 +234,7 @@ proto.claros.instrument.SCSensorBinding.prototype.setValidfrom = function(value)
 /**
  * Clears the message field making it undefined.
  */
-proto.claros.instrument.SCSensorBinding.prototype.clearValidfrom = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.clearValidfrom = function() {
   this.setValidfrom(undefined);
 };
 
@@ -243,7 +243,7 @@ proto.claros.instrument.SCSensorBinding.prototype.clearValidfrom = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.claros.instrument.SCSensorBinding.prototype.hasValidfrom = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.hasValidfrom = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
@@ -252,14 +252,14 @@ proto.claros.instrument.SCSensorBinding.prototype.hasValidfrom = function() {
  * optional claros.common.core.ClarosDateTime validTo = 5;
  * @return {?proto.claros.common.core.ClarosDateTime}
  */
-proto.claros.instrument.SCSensorBinding.prototype.getValidto = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.getValidto = function() {
   return /** @type{?proto.claros.common.core.ClarosDateTime} */ (
     jspb.Message.getWrapperField(this, proto.claros.common.core.ClarosDateTime, 5));
 };
 
 
 /** @param {?proto.claros.common.core.ClarosDateTime|undefined} value */
-proto.claros.instrument.SCSensorBinding.prototype.setValidto = function(value) {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.setValidto = function(value) {
   jspb.Message.setWrapperField(this, 5, value);
 };
 
@@ -267,7 +267,7 @@ proto.claros.instrument.SCSensorBinding.prototype.setValidto = function(value) {
 /**
  * Clears the message field making it undefined.
  */
-proto.claros.instrument.SCSensorBinding.prototype.clearValidto = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.clearValidto = function() {
   this.setValidto(undefined);
 };
 
@@ -276,7 +276,7 @@ proto.claros.instrument.SCSensorBinding.prototype.clearValidto = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.claros.instrument.SCSensorBinding.prototype.hasValidto = function() {
+proto.claros.instrument.measurement.SCSensorBinding.prototype.hasValidto = function() {
   return jspb.Message.getField(this, 5) != null;
 };
 

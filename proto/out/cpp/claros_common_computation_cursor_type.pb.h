@@ -56,18 +56,18 @@ namespace common {
 namespace computation {
 
 enum ComputationCursorType {
-  CC_UNKNOWN = 0,
-  CC_CURRENT = 1,
-  CC_PREVIOUS = 2,
-  CC_NEXT = 4,
-  CC_LAST = 5,
-  CC_ABSOLUTE = 6,
+  COMPUTATION_CURSOR_UNKNOWN = 0,
+  COMPUTATION_CURSOR_CURRENT = 1,
+  COMPUTATION_CURSOR_PREVIOUS = 2,
+  COMPUTATION_CURSOR_NEXT = 4,
+  COMPUTATION_CURSOR_LAST = 5,
+  COMPUTATION_CURSOR_ABSOLUTE = 6,
   ComputationCursorType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   ComputationCursorType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool ComputationCursorType_IsValid(int value);
-const ComputationCursorType ComputationCursorType_MIN = CC_UNKNOWN;
-const ComputationCursorType ComputationCursorType_MAX = CC_ABSOLUTE;
+const ComputationCursorType ComputationCursorType_MIN = COMPUTATION_CURSOR_UNKNOWN;
+const ComputationCursorType ComputationCursorType_MAX = COMPUTATION_CURSOR_ABSOLUTE;
 const int ComputationCursorType_ARRAYSIZE = ComputationCursorType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* ComputationCursorType_descriptor();

@@ -84,6 +84,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 1;
     private uint version_;
+    /// <summary>
+    /// Version of the Worksheet definition.  This is incremented with each change
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Version {
       get { return version_; }
@@ -95,6 +98,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "startRow" field.</summary>
     public const int StartRowFieldNumber = 2;
     private uint startRow_;
+    /// <summary>
+    /// The starting row number that the configuraiton applies
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint StartRow {
       get { return startRow_; }
@@ -106,6 +112,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "endRow" field.</summary>
     public const int EndRowFieldNumber = 3;
     private uint endRow_;
+    /// <summary>
+    /// The ending row number that the configuration applies
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint EndRow {
       get { return endRow_; }
@@ -119,6 +128,9 @@ namespace Claros.Operations.Spreadsheet {
     private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Column> _repeated_columns_codec
         = pb::FieldCodec.ForMessage(34, global::Claros.Operations.Spreadsheet.Column.Parser);
     private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column> columns_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column>();
+    /// <summary>
+    /// ???? Should we rename these to column definitions
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column> Columns {
       get { return columns_; }
@@ -127,6 +139,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 99;
     private global::Claros.Common.Core.AuditEvent auditEvent_;
+    /// <summary>
+    /// Audit Record of who created the definition
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }

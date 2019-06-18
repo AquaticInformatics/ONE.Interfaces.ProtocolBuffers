@@ -20,40 +20,40 @@ public final class ClarosCommonFormFormtemplateType {
   public enum FormTemplateType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FT_UNKNOWN = 0;</code>
+     * <code>FORM_TEMPLATE_UNKNOWN = 0;</code>
      */
-    FT_UNKNOWN(0),
+    FORM_TEMPLATE_UNKNOWN(0),
     /**
-     * <code>FT_PLANT = 1;</code>
+     * <code>FORM_TEMPLATE_PLANT = 1;</code>
      */
-    FT_PLANT(1),
+    FORM_TEMPLATE_PLANT(1),
     /**
-     * <code>FT_LABORATORY = 2;</code>
+     * <code>FORM_TEMPLATE_LABORATORY = 2;</code>
      */
-    FT_LABORATORY(2),
+    FORM_TEMPLATE_LABORATORY(2),
     /**
-     * <code>FT_ENTERPRISE = 3;</code>
+     * <code>FORM_TEMPLATE_ENTERPRISE = 3;</code>
      */
-    FT_ENTERPRISE(3),
+    FORM_TEMPLATE_ENTERPRISE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FT_UNKNOWN = 0;</code>
+     * <code>FORM_TEMPLATE_UNKNOWN = 0;</code>
      */
-    public static final int FT_UNKNOWN_VALUE = 0;
+    public static final int FORM_TEMPLATE_UNKNOWN_VALUE = 0;
     /**
-     * <code>FT_PLANT = 1;</code>
+     * <code>FORM_TEMPLATE_PLANT = 1;</code>
      */
-    public static final int FT_PLANT_VALUE = 1;
+    public static final int FORM_TEMPLATE_PLANT_VALUE = 1;
     /**
-     * <code>FT_LABORATORY = 2;</code>
+     * <code>FORM_TEMPLATE_LABORATORY = 2;</code>
      */
-    public static final int FT_LABORATORY_VALUE = 2;
+    public static final int FORM_TEMPLATE_LABORATORY_VALUE = 2;
     /**
-     * <code>FT_ENTERPRISE = 3;</code>
+     * <code>FORM_TEMPLATE_ENTERPRISE = 3;</code>
      */
-    public static final int FT_ENTERPRISE_VALUE = 3;
+    public static final int FORM_TEMPLATE_ENTERPRISE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -74,10 +74,10 @@ public final class ClarosCommonFormFormtemplateType {
 
     public static FormTemplateType forNumber(int value) {
       switch (value) {
-        case 0: return FT_UNKNOWN;
-        case 1: return FT_PLANT;
-        case 2: return FT_LABORATORY;
-        case 3: return FT_ENTERPRISE;
+        case 0: return FORM_TEMPLATE_UNKNOWN;
+        case 1: return FORM_TEMPLATE_PLANT;
+        case 2: return FORM_TEMPLATE_LABORATORY;
+        case 3: return FORM_TEMPLATE_ENTERPRISE;
         default: return null;
       }
     }
@@ -140,9 +140,11 @@ public final class ClarosCommonFormFormtemplateType {
   static {
     java.lang.String[] descriptorData = {
       "\n*claros_common_form_formtemplate_type.p" +
-      "roto\022\022claros.common.form*V\n\020FormTemplate" +
-      "Type\022\016\n\nFT_UNKNOWN\020\000\022\014\n\010FT_PLANT\020\001\022\021\n\rFT" +
-      "_LABORATORY\020\002\022\021\n\rFT_ENTERPRISE\020\003b\006proto3"
+      "roto\022\022claros.common.form*\202\001\n\020FormTemplat" +
+      "eType\022\031\n\025FORM_TEMPLATE_UNKNOWN\020\000\022\027\n\023FORM" +
+      "_TEMPLATE_PLANT\020\001\022\034\n\030FORM_TEMPLATE_LABOR" +
+      "ATORY\020\002\022\034\n\030FORM_TEMPLATE_ENTERPRISE\020\003b\006p" +
+      "roto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

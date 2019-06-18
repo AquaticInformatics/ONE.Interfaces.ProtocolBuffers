@@ -270,14 +270,14 @@ class Column :
   ::claros::common::core::DataSourceType datasourcetype() const;
   void set_datasourcetype(::claros::common::core::DataSourceType value);
 
-  // .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+  // .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
   bool has_instrumentmeasurementbinding() const;
   void clear_instrumentmeasurementbinding();
   static const int kInstrumentMeasurementBindingFieldNumber = 10;
-  const ::claros::instrument::InstrumentMeasurementBinding& instrumentmeasurementbinding() const;
-  ::claros::instrument::InstrumentMeasurementBinding* release_instrumentmeasurementbinding();
-  ::claros::instrument::InstrumentMeasurementBinding* mutable_instrumentmeasurementbinding();
-  void set_allocated_instrumentmeasurementbinding(::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding);
+  const ::claros::instrument::measurement::InstrumentMeasurementBinding& instrumentmeasurementbinding() const;
+  ::claros::instrument::measurement::InstrumentMeasurementBinding* release_instrumentmeasurementbinding();
+  ::claros::instrument::measurement::InstrumentMeasurementBinding* mutable_instrumentmeasurementbinding();
+  void set_allocated_instrumentmeasurementbinding(::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding);
 
   // .claros.common.computation.ComputationBinding computationBinding = 11;
   bool has_computationbinding() const;
@@ -312,7 +312,7 @@ class Column :
   int datasourcetype_;
   union BindingUnion {
     BindingUnion() {}
-    ::claros::instrument::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
+    ::claros::instrument::measurement::InstrumentMeasurementBinding* instrumentmeasurementbinding_;
     ::claros::common::computation::ComputationBinding* computationbinding_;
   } binding_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
@@ -587,35 +587,35 @@ inline void Column::set_datasourcetype(::claros::common::core::DataSourceType va
   // @@protoc_insertion_point(field_set:claros.operations.spreadsheet.Column.dataSourceType)
 }
 
-// .claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
+// .claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;
 inline bool Column::has_instrumentmeasurementbinding() const {
   return binding_case() == kInstrumentMeasurementBinding;
 }
 inline void Column::set_has_instrumentmeasurementbinding() {
   _oneof_case_[0] = kInstrumentMeasurementBinding;
 }
-inline ::claros::instrument::InstrumentMeasurementBinding* Column::release_instrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementBinding* Column::release_instrumentmeasurementbinding() {
   // @@protoc_insertion_point(field_release:claros.operations.spreadsheet.Column.instrumentMeasurementBinding)
   if (has_instrumentmeasurementbinding()) {
     clear_has_binding();
-      ::claros::instrument::InstrumentMeasurementBinding* temp = binding_.instrumentmeasurementbinding_;
+      ::claros::instrument::measurement::InstrumentMeasurementBinding* temp = binding_.instrumentmeasurementbinding_;
     binding_.instrumentmeasurementbinding_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline const ::claros::instrument::InstrumentMeasurementBinding& Column::instrumentmeasurementbinding() const {
+inline const ::claros::instrument::measurement::InstrumentMeasurementBinding& Column::instrumentmeasurementbinding() const {
   // @@protoc_insertion_point(field_get:claros.operations.spreadsheet.Column.instrumentMeasurementBinding)
   return has_instrumentmeasurementbinding()
       ? *binding_.instrumentmeasurementbinding_
-      : *reinterpret_cast< ::claros::instrument::InstrumentMeasurementBinding*>(&::claros::instrument::_InstrumentMeasurementBinding_default_instance_);
+      : *reinterpret_cast< ::claros::instrument::measurement::InstrumentMeasurementBinding*>(&::claros::instrument::measurement::_InstrumentMeasurementBinding_default_instance_);
 }
-inline ::claros::instrument::InstrumentMeasurementBinding* Column::mutable_instrumentmeasurementbinding() {
+inline ::claros::instrument::measurement::InstrumentMeasurementBinding* Column::mutable_instrumentmeasurementbinding() {
   if (!has_instrumentmeasurementbinding()) {
     clear_binding();
     set_has_instrumentmeasurementbinding();
-    binding_.instrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::InstrumentMeasurementBinding >(
+    binding_.instrumentmeasurementbinding_ = CreateMaybeMessage< ::claros::instrument::measurement::InstrumentMeasurementBinding >(
         GetArenaNoVirtual());
   }
   // @@protoc_insertion_point(field_mutable:claros.operations.spreadsheet.Column.instrumentMeasurementBinding)

@@ -6,11 +6,11 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_operations_spreadsheet_worksheet_type.proto", :syntax => :proto3) do
     add_enum "claros.operations.spreadsheet.WorksheetType" do
-      value :W_UNKNOWN, 0
-      value :W_FIFTEEN_MINUTE, 1
-      value :W_FOUR_HOUR, 2
-      value :W_DAILY, 3
-      value :W_MONTHLY, 4
+      value :WORKSHEET_UNKNOWN, 0
+      value :WORKSHEET_FIFTEEN_MINUTE, 1
+      value :WORKSHEET_HOUR, 2
+      value :WORKSHEET_FOUR_HOUR, 3
+      value :WORKSHEET_DAILY, 4
     end
   end
 end

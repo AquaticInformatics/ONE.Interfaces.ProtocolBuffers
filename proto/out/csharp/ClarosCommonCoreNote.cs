@@ -79,6 +79,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Unique GUID that identifies the note
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Id {
       get { return id_; }
@@ -90,6 +93,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "timeStamp" field.</summary>
     public const int TimeStampFieldNumber = 4;
     private global::Claros.Common.Core.ClarosDateTime timeStamp_;
+    /// <summary>
+    /// The UTC time when the note was taken
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ClarosDateTime TimeStamp {
       get { return timeStamp_; }
@@ -101,6 +107,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 5;
     private string userId_ = "";
+    /// <summary>
+    /// The GUID of the user who entered the note
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UserId {
       get { return userId_; }
@@ -112,6 +121,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "text" field.</summary>
     public const int TextFieldNumber = 6;
     private string text_ = "";
+    /// <summary>
+    /// The content of the note
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Text {
       get { return text_; }

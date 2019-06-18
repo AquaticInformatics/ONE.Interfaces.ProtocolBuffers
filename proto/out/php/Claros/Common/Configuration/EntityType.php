@@ -12,17 +12,17 @@ use UnexpectedValueException;
 class EntityType
 {
     /**
-     * Generated from protobuf enum <code>ET_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>ENTITY_UNKNOWN = 0;</code>
      */
-    const ET_UNKNOWN = 0;
+    const ENTITY_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>ET_FORMTEMPLATE = 1;</code>
+     * Generated from protobuf enum <code>ENTITY_FORMTEMPLATE = 1;</code>
      */
-    const ET_FORMTEMPLATE = 1;
+    const ENTITY_FORMTEMPLATE = 1;
 
     private static $valueToName = [
-        self::ET_UNKNOWN => 'ET_UNKNOWN',
-        self::ET_FORMTEMPLATE => 'ET_FORMTEMPLATE',
+        self::ENTITY_UNKNOWN => 'ENTITY_UNKNOWN',
+        self::ENTITY_FORMTEMPLATE => 'ENTITY_FORMTEMPLATE',
     ];
 
     public static function name($value)

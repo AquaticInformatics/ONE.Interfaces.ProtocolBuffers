@@ -38,11 +38,11 @@ typedef GPB_ENUM(FormDataEntryType) {
    * of the field.
    **/
   FormDataEntryType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  FormDataEntryType_FdeUnknown = 0,
-  FormDataEntryType_FdeInstrument = 1,
-  FormDataEntryType_FdeTotalizer = 2,
-  FormDataEntryType_FdeConsumption = 3,
-  FormDataEntryType_FdeText = 4,
+  FormDataEntryType_FormDateEntryUnknown = 0,
+  FormDataEntryType_FormDateEntryInstrument = 1,
+  FormDataEntryType_FormDateEntryTotalizer = 2,
+  FormDataEntryType_FormDateEntryConsumption = 3,
+  FormDataEntryType_FormDateEntryText = 4,
 };
 
 GPBEnumDescriptor *FormDataEntryType_EnumDescriptor(void);

@@ -36,17 +36,20 @@ GPBEnumDescriptor *ReportableQualifierType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "RqUnknown\000RqNondetect\000RqEstimate\000RqDetec"
-        "tnonqualifiable\000RqGreaterthan\000RqLessthan"
-        "\000RqTooNumerousToCount\000";
+        "ReportableQualifierUnknown\000ReportableQua"
+        "lifierNondetect\000ReportableQualifierEstim"
+        "ate\000ReportableQualifierDetectnonqualifia"
+        "ble\000ReportableQualifierGreaterthan\000Repor"
+        "tableQualifierLessthan\000ReportableQualifi"
+        "erTooNumerousToCount\000";
     static const int32_t values[] = {
-        ReportableQualifierType_RqUnknown,
-        ReportableQualifierType_RqNondetect,
-        ReportableQualifierType_RqEstimate,
-        ReportableQualifierType_RqDetectnonqualifiable,
-        ReportableQualifierType_RqGreaterthan,
-        ReportableQualifierType_RqLessthan,
-        ReportableQualifierType_RqTooNumerousToCount,
+        ReportableQualifierType_ReportableQualifierUnknown,
+        ReportableQualifierType_ReportableQualifierNondetect,
+        ReportableQualifierType_ReportableQualifierEstimate,
+        ReportableQualifierType_ReportableQualifierDetectnonqualifiable,
+        ReportableQualifierType_ReportableQualifierGreaterthan,
+        ReportableQualifierType_ReportableQualifierLessthan,
+        ReportableQualifierType_ReportableQualifierTooNumerousToCount,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(ReportableQualifierType)
@@ -64,13 +67,13 @@ GPBEnumDescriptor *ReportableQualifierType_EnumDescriptor(void) {
 
 BOOL ReportableQualifierType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case ReportableQualifierType_RqUnknown:
-    case ReportableQualifierType_RqNondetect:
-    case ReportableQualifierType_RqEstimate:
-    case ReportableQualifierType_RqDetectnonqualifiable:
-    case ReportableQualifierType_RqGreaterthan:
-    case ReportableQualifierType_RqLessthan:
-    case ReportableQualifierType_RqTooNumerousToCount:
+    case ReportableQualifierType_ReportableQualifierUnknown:
+    case ReportableQualifierType_ReportableQualifierNondetect:
+    case ReportableQualifierType_ReportableQualifierEstimate:
+    case ReportableQualifierType_ReportableQualifierDetectnonqualifiable:
+    case ReportableQualifierType_ReportableQualifierGreaterthan:
+    case ReportableQualifierType_ReportableQualifierLessthan:
+    case ReportableQualifierType_ReportableQualifierTooNumerousToCount:
       return YES;
     default:
       return NO;

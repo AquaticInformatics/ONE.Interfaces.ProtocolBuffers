@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n(claros_common_core_recurrence_type.proto\x12\x12\x63laros.common.core*\x7f\n\x0eRecurrenceType\x12\r\n\tR_UNKNOWN\x10\x00\x12\x13\n\x0fR_FIFTEENMINUTE\x10\x01\x12\x0c\n\x08R_HOURLY\x10\x02\x12\x0e\n\nR_FOURHOUR\x10\x03\x12\x0b\n\x07R_DAILY\x10\x04\x12\x0c\n\x08R_WEEKLY\x10\x05\x12\x10\n\x0cR_DAYSOFWEEK\x10\x06\x62\x06proto3')
+  serialized_pb=_b('\n(claros_common_core_recurrence_type.proto\x12\x12\x63laros.common.core*\xbe\x01\n\x0eRecurrenceType\x12\x16\n\x12RECURRENCE_UNKNOWN\x10\x00\x12\x1c\n\x18RECURRENCE_FIFTEENMINUTE\x10\x01\x12\x15\n\x11RECURRENCE_HOURLY\x10\x02\x12\x17\n\x13RECURRENCE_FOURHOUR\x10\x03\x12\x14\n\x10RECURRENCE_DAILY\x10\x04\x12\x15\n\x11RECURRENCE_WEEKLY\x10\x05\x12\x19\n\x15RECURRENCE_DAYSOFWEEK\x10\x06\x62\x06proto3')
 )
 
 _RECURRENCETYPE = _descriptor.EnumDescriptor(
@@ -31,49 +31,49 @@ _RECURRENCETYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='R_UNKNOWN', index=0, number=0,
+      name='RECURRENCE_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_FIFTEENMINUTE', index=1, number=1,
+      name='RECURRENCE_FIFTEENMINUTE', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_HOURLY', index=2, number=2,
+      name='RECURRENCE_HOURLY', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_FOURHOUR', index=3, number=3,
+      name='RECURRENCE_FOURHOUR', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_DAILY', index=4, number=4,
+      name='RECURRENCE_DAILY', index=4, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_WEEKLY', index=5, number=5,
+      name='RECURRENCE_WEEKLY', index=5, number=5,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='R_DAYSOFWEEK', index=6, number=6,
+      name='RECURRENCE_DAYSOFWEEK', index=6, number=6,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=64,
-  serialized_end=191,
+  serialized_start=65,
+  serialized_end=255,
 )
 _sym_db.RegisterEnumDescriptor(_RECURRENCETYPE)
 
 RecurrenceType = enum_type_wrapper.EnumTypeWrapper(_RECURRENCETYPE)
-R_UNKNOWN = 0
-R_FIFTEENMINUTE = 1
-R_HOURLY = 2
-R_FOURHOUR = 3
-R_DAILY = 4
-R_WEEKLY = 5
-R_DAYSOFWEEK = 6
+RECURRENCE_UNKNOWN = 0
+RECURRENCE_FIFTEENMINUTE = 1
+RECURRENCE_HOURLY = 2
+RECURRENCE_FOURHOUR = 3
+RECURRENCE_DAILY = 4
+RECURRENCE_WEEKLY = 5
+RECURRENCE_DAYSOFWEEK = 6
 
 
 DESCRIPTOR.enum_types_by_name['RecurrenceType'] = _RECURRENCETYPE

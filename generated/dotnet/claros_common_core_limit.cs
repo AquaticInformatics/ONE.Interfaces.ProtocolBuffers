@@ -27,7 +27,7 @@ namespace claros.common.core
         public uint unitId { get; set; }
 
         [global::ProtoBuf.ProtoMember(5, Name = @"recurrence")]
-        public Recurrence Recurrence { get; set; }
+        public global::claros.common.recurrence.Recurrence Recurrence { get; set; }
 
     }
 

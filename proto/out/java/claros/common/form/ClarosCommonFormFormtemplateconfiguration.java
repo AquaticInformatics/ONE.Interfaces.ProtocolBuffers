@@ -28,17 +28,17 @@ public final class ClarosCommonFormFormtemplateconfiguration {
     claros.common.form.ClarosCommonFormFormtemplateType.FormTemplateType getFormTemplateType();
 
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
     boolean hasRecurrence();
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence();
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
-    claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder();
 
     /**
      * <code>.claros.common.form.FormLayout formLayout = 3;</code>
@@ -125,11 +125,11 @@ public final class ClarosCommonFormFormtemplateconfiguration {
               break;
             }
             case 18: {
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder subBuilder = null;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder subBuilder = null;
               if (recurrence_ != null) {
                 subBuilder = recurrence_.toBuilder();
               }
-              recurrence_ = input.readMessage(claros.common.core.ClarosCommonCoreRecurrence.Recurrence.parser(), extensionRegistry);
+              recurrence_ = input.readMessage(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(recurrence_);
                 recurrence_ = subBuilder.buildPartial();
@@ -213,23 +213,23 @@ public final class ClarosCommonFormFormtemplateconfiguration {
     }
 
     public static final int RECURRENCE_FIELD_NUMBER = 2;
-    private claros.common.core.ClarosCommonCoreRecurrence.Recurrence recurrence_;
+    private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence recurrence_;
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
     public boolean hasRecurrence() {
       return recurrence_ != null;
     }
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence() {
-      return recurrence_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence() {
+      return recurrence_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
     }
     /**
-     * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+     * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
      */
-    public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
+    public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
       return getRecurrence();
     }
 
@@ -303,7 +303,7 @@ public final class ClarosCommonFormFormtemplateconfiguration {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (formTemplateType_ != claros.common.form.ClarosCommonFormFormtemplateType.FormTemplateType.FT_UNKNOWN.getNumber()) {
+      if (formTemplateType_ != claros.common.form.ClarosCommonFormFormtemplateType.FormTemplateType.FORM_TEMPLATE_UNKNOWN.getNumber()) {
         output.writeEnum(1, formTemplateType_);
       }
       if (recurrence_ != null) {
@@ -324,7 +324,7 @@ public final class ClarosCommonFormFormtemplateconfiguration {
       if (size != -1) return size;
 
       size = 0;
-      if (formTemplateType_ != claros.common.form.ClarosCommonFormFormtemplateType.FormTemplateType.FT_UNKNOWN.getNumber()) {
+      if (formTemplateType_ != claros.common.form.ClarosCommonFormFormtemplateType.FormTemplateType.FORM_TEMPLATE_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, formTemplateType_);
       }
@@ -754,29 +754,29 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         return this;
       }
 
-      private claros.common.core.ClarosCommonCoreRecurrence.Recurrence recurrence_;
+      private claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence recurrence_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> recurrenceBuilder_;
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> recurrenceBuilder_;
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
       public boolean hasRecurrence() {
         return recurrenceBuilder_ != null || recurrence_ != null;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence getRecurrence() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence getRecurrence() {
         if (recurrenceBuilder_ == null) {
-          return recurrence_ == null ? claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+          return recurrence_ == null ? claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
         } else {
           return recurrenceBuilder_.getMessage();
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
-      public Builder setRecurrence(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder setRecurrence(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (recurrenceBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -790,10 +790,10 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
       public Builder setRecurrence(
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder builderForValue) {
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder builderForValue) {
         if (recurrenceBuilder_ == null) {
           recurrence_ = builderForValue.build();
           onChanged();
@@ -804,13 +804,13 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
-      public Builder mergeRecurrence(claros.common.core.ClarosCommonCoreRecurrence.Recurrence value) {
+      public Builder mergeRecurrence(claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence value) {
         if (recurrenceBuilder_ == null) {
           if (recurrence_ != null) {
             recurrence_ =
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.newBuilder(recurrence_).mergeFrom(value).buildPartial();
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.newBuilder(recurrence_).mergeFrom(value).buildPartial();
           } else {
             recurrence_ = value;
           }
@@ -822,7 +822,7 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
       public Builder clearRecurrence() {
         if (recurrenceBuilder_ == null) {
@@ -836,33 +836,33 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         return this;
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder getRecurrenceBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder getRecurrenceBuilder() {
         
         onChanged();
         return getRecurrenceFieldBuilder().getBuilder();
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
-      public claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
+      public claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder getRecurrenceOrBuilder() {
         if (recurrenceBuilder_ != null) {
           return recurrenceBuilder_.getMessageOrBuilder();
         } else {
           return recurrence_ == null ?
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence.getDefaultInstance() : recurrence_;
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.getDefaultInstance() : recurrence_;
         }
       }
       /**
-       * <code>.claros.common.core.Recurrence recurrence = 2;</code>
+       * <code>.claros.common.recurrence.Recurrence recurrence = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder> 
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder> 
           getRecurrenceFieldBuilder() {
         if (recurrenceBuilder_ == null) {
           recurrenceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              claros.common.core.ClarosCommonCoreRecurrence.Recurrence, claros.common.core.ClarosCommonCoreRecurrence.Recurrence.Builder, claros.common.core.ClarosCommonCoreRecurrence.RecurrenceOrBuilder>(
+              claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.Recurrence.Builder, claros.common.recurrence.ClarosCommonRecurrenceRecurrence.RecurrenceOrBuilder>(
                   getRecurrence(),
                   getParentForChildren(),
                   isClean());
@@ -1296,17 +1296,18 @@ public final class ClarosCommonFormFormtemplateconfiguration {
     java.lang.String[] descriptorData = {
       "\n2claros_common_form_formtemplateconfigu" +
       "ration.proto\022\022claros.common.form\032*claros" +
-      "_common_form_formtemplate_type.proto\032#cl" +
-      "aros_common_core_recurrence.proto\032#claro" +
-      "s_common_form_formlayout.proto\032-claros_c" +
-      "ommon_form_formfield_definition.proto\"\212\002" +
-      "\n\031FormTemplateConfiguration\022>\n\020formTempl" +
-      "ateType\030\001 \001(\0162$.claros.common.form.FormT" +
-      "emplateType\0222\n\nrecurrence\030\002 \001(\0132\036.claros" +
-      ".common.core.Recurrence\0222\n\nformLayout\030\003 " +
-      "\001(\0132\036.claros.common.form.FormLayout\022E\n\024f" +
-      "ormFieldDefinitions\030\004 \003(\0132\'.claros.commo" +
-      "n.form.FormFieldDefinitionb\006proto3"
+      "_common_form_formtemplate_type.proto\032)cl" +
+      "aros_common_recurrence_recurrence.proto\032" +
+      "#claros_common_form_formlayout.proto\032-cl" +
+      "aros_common_form_formfield_definition.pr" +
+      "oto\"\220\002\n\031FormTemplateConfiguration\022>\n\020for" +
+      "mTemplateType\030\001 \001(\0162$.claros.common.form" +
+      ".FormTemplateType\0228\n\nrecurrence\030\002 \001(\0132$." +
+      "claros.common.recurrence.Recurrence\0222\n\nf" +
+      "ormLayout\030\003 \001(\0132\036.claros.common.form.For" +
+      "mLayout\022E\n\024formFieldDefinitions\030\004 \003(\0132\'." +
+      "claros.common.form.FormFieldDefinitionb\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1320,7 +1321,7 @@ public final class ClarosCommonFormFormtemplateconfiguration {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           claros.common.form.ClarosCommonFormFormtemplateType.getDescriptor(),
-          claros.common.core.ClarosCommonCoreRecurrence.getDescriptor(),
+          claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor(),
           claros.common.form.ClarosCommonFormFormlayout.getDescriptor(),
           claros.common.form.ClarosCommonFormFormfieldDefinition.getDescriptor(),
         }, assigner);
@@ -1331,7 +1332,7 @@ public final class ClarosCommonFormFormtemplateconfiguration {
         internal_static_claros_common_form_FormTemplateConfiguration_descriptor,
         new java.lang.String[] { "FormTemplateType", "Recurrence", "FormLayout", "FormFieldDefinitions", });
     claros.common.form.ClarosCommonFormFormtemplateType.getDescriptor();
-    claros.common.core.ClarosCommonCoreRecurrence.getDescriptor();
+    claros.common.recurrence.ClarosCommonRecurrenceRecurrence.getDescriptor();
     claros.common.form.ClarosCommonFormFormlayout.getDescriptor();
     claros.common.form.ClarosCommonFormFormfieldDefinition.getDescriptor();
   }

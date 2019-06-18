@@ -20,64 +20,64 @@ public final class ClarosCommonCoreRecurrenceType {
   public enum RecurrenceType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>R_UNKNOWN = 0;</code>
+     * <code>RECURRENCE_UNKNOWN = 0;</code>
      */
-    R_UNKNOWN(0),
+    RECURRENCE_UNKNOWN(0),
     /**
-     * <code>R_FIFTEENMINUTE = 1;</code>
+     * <code>RECURRENCE_FIFTEENMINUTE = 1;</code>
      */
-    R_FIFTEENMINUTE(1),
+    RECURRENCE_FIFTEENMINUTE(1),
     /**
-     * <code>R_HOURLY = 2;</code>
+     * <code>RECURRENCE_HOURLY = 2;</code>
      */
-    R_HOURLY(2),
+    RECURRENCE_HOURLY(2),
     /**
-     * <code>R_FOURHOUR = 3;</code>
+     * <code>RECURRENCE_FOURHOUR = 3;</code>
      */
-    R_FOURHOUR(3),
+    RECURRENCE_FOURHOUR(3),
     /**
-     * <code>R_DAILY = 4;</code>
+     * <code>RECURRENCE_DAILY = 4;</code>
      */
-    R_DAILY(4),
+    RECURRENCE_DAILY(4),
     /**
-     * <code>R_WEEKLY = 5;</code>
+     * <code>RECURRENCE_WEEKLY = 5;</code>
      */
-    R_WEEKLY(5),
+    RECURRENCE_WEEKLY(5),
     /**
-     * <code>R_DAYSOFWEEK = 6;</code>
+     * <code>RECURRENCE_DAYSOFWEEK = 6;</code>
      */
-    R_DAYSOFWEEK(6),
+    RECURRENCE_DAYSOFWEEK(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>R_UNKNOWN = 0;</code>
+     * <code>RECURRENCE_UNKNOWN = 0;</code>
      */
-    public static final int R_UNKNOWN_VALUE = 0;
+    public static final int RECURRENCE_UNKNOWN_VALUE = 0;
     /**
-     * <code>R_FIFTEENMINUTE = 1;</code>
+     * <code>RECURRENCE_FIFTEENMINUTE = 1;</code>
      */
-    public static final int R_FIFTEENMINUTE_VALUE = 1;
+    public static final int RECURRENCE_FIFTEENMINUTE_VALUE = 1;
     /**
-     * <code>R_HOURLY = 2;</code>
+     * <code>RECURRENCE_HOURLY = 2;</code>
      */
-    public static final int R_HOURLY_VALUE = 2;
+    public static final int RECURRENCE_HOURLY_VALUE = 2;
     /**
-     * <code>R_FOURHOUR = 3;</code>
+     * <code>RECURRENCE_FOURHOUR = 3;</code>
      */
-    public static final int R_FOURHOUR_VALUE = 3;
+    public static final int RECURRENCE_FOURHOUR_VALUE = 3;
     /**
-     * <code>R_DAILY = 4;</code>
+     * <code>RECURRENCE_DAILY = 4;</code>
      */
-    public static final int R_DAILY_VALUE = 4;
+    public static final int RECURRENCE_DAILY_VALUE = 4;
     /**
-     * <code>R_WEEKLY = 5;</code>
+     * <code>RECURRENCE_WEEKLY = 5;</code>
      */
-    public static final int R_WEEKLY_VALUE = 5;
+    public static final int RECURRENCE_WEEKLY_VALUE = 5;
     /**
-     * <code>R_DAYSOFWEEK = 6;</code>
+     * <code>RECURRENCE_DAYSOFWEEK = 6;</code>
      */
-    public static final int R_DAYSOFWEEK_VALUE = 6;
+    public static final int RECURRENCE_DAYSOFWEEK_VALUE = 6;
 
 
     public final int getNumber() {
@@ -98,13 +98,13 @@ public final class ClarosCommonCoreRecurrenceType {
 
     public static RecurrenceType forNumber(int value) {
       switch (value) {
-        case 0: return R_UNKNOWN;
-        case 1: return R_FIFTEENMINUTE;
-        case 2: return R_HOURLY;
-        case 3: return R_FOURHOUR;
-        case 4: return R_DAILY;
-        case 5: return R_WEEKLY;
-        case 6: return R_DAYSOFWEEK;
+        case 0: return RECURRENCE_UNKNOWN;
+        case 1: return RECURRENCE_FIFTEENMINUTE;
+        case 2: return RECURRENCE_HOURLY;
+        case 3: return RECURRENCE_FOURHOUR;
+        case 4: return RECURRENCE_DAILY;
+        case 5: return RECURRENCE_WEEKLY;
+        case 6: return RECURRENCE_DAYSOFWEEK;
         default: return null;
       }
     }
@@ -167,10 +167,12 @@ public final class ClarosCommonCoreRecurrenceType {
   static {
     java.lang.String[] descriptorData = {
       "\n(claros_common_core_recurrence_type.pro" +
-      "to\022\022claros.common.core*\177\n\016RecurrenceType" +
-      "\022\r\n\tR_UNKNOWN\020\000\022\023\n\017R_FIFTEENMINUTE\020\001\022\014\n\010" +
-      "R_HOURLY\020\002\022\016\n\nR_FOURHOUR\020\003\022\013\n\007R_DAILY\020\004\022" +
-      "\014\n\010R_WEEKLY\020\005\022\020\n\014R_DAYSOFWEEK\020\006b\006proto3"
+      "to\022\022claros.common.core*\276\001\n\016RecurrenceTyp" +
+      "e\022\026\n\022RECURRENCE_UNKNOWN\020\000\022\034\n\030RECURRENCE_" +
+      "FIFTEENMINUTE\020\001\022\025\n\021RECURRENCE_HOURLY\020\002\022\027" +
+      "\n\023RECURRENCE_FOURHOUR\020\003\022\024\n\020RECURRENCE_DA" +
+      "ILY\020\004\022\025\n\021RECURRENCE_WEEKLY\020\005\022\031\n\025RECURREN" +
+      "CE_DAYSOFWEEK\020\006b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

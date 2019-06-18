@@ -56,19 +56,19 @@ namespace common {
 namespace core {
 
 enum DataSourceType {
-  DS_UNKNOWN = 0,
-  DS_FORM = 1,
-  DS_COMPUTATION = 2,
-  DS_SPREADSHEET = 3,
-  DS_INSTRUMENTMEASUREMENT = 4,
-  DS_IMPORT = 5,
-  DS_SPREADSHEET_DEFINITION = 6,
+  DATASOURCE_UNKNOWN = 0,
+  DATASOURCE_FORM = 1,
+  DATASOURCE_COMPUTATION = 2,
+  DATASOURCE_SPREADSHEET = 3,
+  DATASOURCE_INSTRUMENTMEASUREMENT = 4,
+  DATASOURCE_IMPORT = 5,
+  DATASOURCE_SPREADSHEET_DEFINITION = 6,
   DataSourceType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   DataSourceType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool DataSourceType_IsValid(int value);
-const DataSourceType DataSourceType_MIN = DS_UNKNOWN;
-const DataSourceType DataSourceType_MAX = DS_SPREADSHEET_DEFINITION;
+const DataSourceType DataSourceType_MIN = DATASOURCE_UNKNOWN;
+const DataSourceType DataSourceType_MAX = DATASOURCE_SPREADSHEET_DEFINITION;
 const int DataSourceType_ARRAYSIZE = DataSourceType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* DataSourceType_descriptor();

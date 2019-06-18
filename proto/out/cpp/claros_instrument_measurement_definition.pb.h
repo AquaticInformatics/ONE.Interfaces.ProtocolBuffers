@@ -54,23 +54,26 @@ struct TableStruct_claros_5finstrument_5fmeasurement_5fdefinition_2eproto {
 void AddDescriptors_claros_5finstrument_5fmeasurement_5fdefinition_2eproto();
 namespace claros {
 namespace instrument {
+namespace measurement {
 class InstrumentMeasurementDefinition;
 class InstrumentMeasurementDefinitionDefaultTypeInternal;
 extern InstrumentMeasurementDefinitionDefaultTypeInternal _InstrumentMeasurementDefinition_default_instance_;
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 namespace google {
 namespace protobuf {
-template<> ::claros::instrument::InstrumentMeasurementDefinition* Arena::CreateMaybeMessage<::claros::instrument::InstrumentMeasurementDefinition>(Arena*);
+template<> ::claros::instrument::measurement::InstrumentMeasurementDefinition* Arena::CreateMaybeMessage<::claros::instrument::measurement::InstrumentMeasurementDefinition>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace claros {
 namespace instrument {
+namespace measurement {
 
 // ===================================================================
 
 class InstrumentMeasurementDefinition :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.InstrumentMeasurementDefinition) */ {
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:claros.instrument.measurement.InstrumentMeasurementDefinition) */ {
  public:
   InstrumentMeasurementDefinition();
   virtual ~InstrumentMeasurementDefinition();
@@ -302,27 +305,27 @@ class InstrumentMeasurementDefinition :
   bool isvisible() const;
   void set_isvisible(bool value);
 
-  // .claros.instrument.SCSensorBinding scSensorBinding = 8;
+  // .claros.instrument.measurement.SCSensorBinding scSensorBinding = 8;
   bool has_scsensorbinding() const;
   void clear_scsensorbinding();
   static const int kScSensorBindingFieldNumber = 8;
-  const ::claros::instrument::SCSensorBinding& scsensorbinding() const;
-  ::claros::instrument::SCSensorBinding* release_scsensorbinding();
-  ::claros::instrument::SCSensorBinding* mutable_scsensorbinding();
-  void set_allocated_scsensorbinding(::claros::instrument::SCSensorBinding* scsensorbinding);
+  const ::claros::instrument::measurement::SCSensorBinding& scsensorbinding() const;
+  ::claros::instrument::measurement::SCSensorBinding* release_scsensorbinding();
+  ::claros::instrument::measurement::SCSensorBinding* mutable_scsensorbinding();
+  void set_allocated_scsensorbinding(::claros::instrument::measurement::SCSensorBinding* scsensorbinding);
 
-  // .claros.instrument.MilliAmpBinding milliAmpBinding = 9;
+  // .claros.instrument.measurement.MilliAmpBinding milliAmpBinding = 9;
   bool has_milliampbinding() const;
   void clear_milliampbinding();
   static const int kMilliAmpBindingFieldNumber = 9;
-  const ::claros::instrument::MilliAmpBinding& milliampbinding() const;
-  ::claros::instrument::MilliAmpBinding* release_milliampbinding();
-  ::claros::instrument::MilliAmpBinding* mutable_milliampbinding();
-  void set_allocated_milliampbinding(::claros::instrument::MilliAmpBinding* milliampbinding);
+  const ::claros::instrument::measurement::MilliAmpBinding& milliampbinding() const;
+  ::claros::instrument::measurement::MilliAmpBinding* release_milliampbinding();
+  ::claros::instrument::measurement::MilliAmpBinding* mutable_milliampbinding();
+  void set_allocated_milliampbinding(::claros::instrument::measurement::MilliAmpBinding* milliampbinding);
 
   void clear_binding();
   BindingCase binding_case() const;
-  // @@protoc_insertion_point(class_scope:claros.instrument.InstrumentMeasurementDefinition)
+  // @@protoc_insertion_point(class_scope:claros.instrument.measurement.InstrumentMeasurementDefinition)
  private:
   class HasBitSetters;
   void set_has_scsensorbinding();
@@ -346,8 +349,8 @@ class InstrumentMeasurementDefinition :
   bool isvisible_;
   union BindingUnion {
     BindingUnion() {}
-    ::claros::instrument::SCSensorBinding* scsensorbinding_;
-    ::claros::instrument::MilliAmpBinding* milliampbinding_;
+    ::claros::instrument::measurement::SCSensorBinding* scsensorbinding_;
+    ::claros::instrument::measurement::MilliAmpBinding* milliampbinding_;
   } binding_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 _oneof_case_[1];
@@ -370,41 +373,41 @@ inline void InstrumentMeasurementDefinition::clear_instrumentmeasurementid() {
   instrumentmeasurementid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::instrumentmeasurementid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
   return instrumentmeasurementid_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_instrumentmeasurementid(const ::std::string& value) {
   
   instrumentmeasurementid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_instrumentmeasurementid(::std::string&& value) {
   
   instrumentmeasurementid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_instrumentmeasurementid(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   instrumentmeasurementid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
 }
 inline void InstrumentMeasurementDefinition::set_instrumentmeasurementid(const char* value, size_t size) {
   
   instrumentmeasurementid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_instrumentmeasurementid() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
   return instrumentmeasurementid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_instrumentmeasurementid() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
   
   return instrumentmeasurementid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -415,7 +418,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_instrumentmeasurement
     
   }
   instrumentmeasurementid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), instrumentmeasurementid);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.instrumentMeasurementId)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.instrumentMeasurementId)
 }
 
 // string name = 2;
@@ -423,41 +426,41 @@ inline void InstrumentMeasurementDefinition::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::name() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
   return name_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_name(::std::string&& value) {
   
   name_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_name(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
 }
 inline void InstrumentMeasurementDefinition::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_name() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_name() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -468,7 +471,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_name(::std::string* n
     
   }
   name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.name)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.name)
 }
 
 // string fusionId = 3;
@@ -476,41 +479,41 @@ inline void InstrumentMeasurementDefinition::clear_fusionid() {
   fusionid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::fusionid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
   return fusionid_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_fusionid(const ::std::string& value) {
   
   fusionid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_fusionid(::std::string&& value) {
   
   fusionid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_fusionid(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   fusionid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
 }
 inline void InstrumentMeasurementDefinition::set_fusionid(const char* value, size_t size) {
   
   fusionid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_fusionid() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
   return fusionid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_fusionid() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
   
   return fusionid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -521,7 +524,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_fusionid(::std::strin
     
   }
   fusionid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), fusionid);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.fusionId)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.fusionId)
 }
 
 // string locationId = 4;
@@ -529,41 +532,41 @@ inline void InstrumentMeasurementDefinition::clear_locationid() {
   locationid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::locationid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
   return locationid_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_locationid(const ::std::string& value) {
   
   locationid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_locationid(::std::string&& value) {
   
   locationid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_locationid(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   locationid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
 }
 inline void InstrumentMeasurementDefinition::set_locationid(const char* value, size_t size) {
   
   locationid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_locationid() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
   return locationid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_locationid() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
   
   return locationid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -574,7 +577,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_locationid(::std::str
     
   }
   locationid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), locationid);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.locationId)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.locationId)
 }
 
 // uint32 parameterId = 5;
@@ -582,13 +585,13 @@ inline void InstrumentMeasurementDefinition::clear_parameterid() {
   parameterid_ = 0u;
 }
 inline ::google::protobuf::uint32 InstrumentMeasurementDefinition::parameterid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.parameterId)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.parameterId)
   return parameterid_;
 }
 inline void InstrumentMeasurementDefinition::set_parameterid(::google::protobuf::uint32 value) {
   
   parameterid_ = value;
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.parameterId)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.parameterId)
 }
 
 // uint32 displayUnitId = 6;
@@ -596,13 +599,13 @@ inline void InstrumentMeasurementDefinition::clear_displayunitid() {
   displayunitid_ = 0u;
 }
 inline ::google::protobuf::uint32 InstrumentMeasurementDefinition::displayunitid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.displayUnitId)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.displayUnitId)
   return displayunitid_;
 }
 inline void InstrumentMeasurementDefinition::set_displayunitid(::google::protobuf::uint32 value) {
   
   displayunitid_ = value;
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.displayUnitId)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.displayUnitId)
 }
 
 // bool isVisible = 7;
@@ -610,82 +613,82 @@ inline void InstrumentMeasurementDefinition::clear_isvisible() {
   isvisible_ = false;
 }
 inline bool InstrumentMeasurementDefinition::isvisible() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.isVisible)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.isVisible)
   return isvisible_;
 }
 inline void InstrumentMeasurementDefinition::set_isvisible(bool value) {
   
   isvisible_ = value;
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.isVisible)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.isVisible)
 }
 
-// .claros.instrument.SCSensorBinding scSensorBinding = 8;
+// .claros.instrument.measurement.SCSensorBinding scSensorBinding = 8;
 inline bool InstrumentMeasurementDefinition::has_scsensorbinding() const {
   return binding_case() == kScSensorBinding;
 }
 inline void InstrumentMeasurementDefinition::set_has_scsensorbinding() {
   _oneof_case_[0] = kScSensorBinding;
 }
-inline ::claros::instrument::SCSensorBinding* InstrumentMeasurementDefinition::release_scsensorbinding() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.scSensorBinding)
+inline ::claros::instrument::measurement::SCSensorBinding* InstrumentMeasurementDefinition::release_scsensorbinding() {
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.scSensorBinding)
   if (has_scsensorbinding()) {
     clear_has_binding();
-      ::claros::instrument::SCSensorBinding* temp = binding_.scsensorbinding_;
+      ::claros::instrument::measurement::SCSensorBinding* temp = binding_.scsensorbinding_;
     binding_.scsensorbinding_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline const ::claros::instrument::SCSensorBinding& InstrumentMeasurementDefinition::scsensorbinding() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.scSensorBinding)
+inline const ::claros::instrument::measurement::SCSensorBinding& InstrumentMeasurementDefinition::scsensorbinding() const {
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.scSensorBinding)
   return has_scsensorbinding()
       ? *binding_.scsensorbinding_
-      : *reinterpret_cast< ::claros::instrument::SCSensorBinding*>(&::claros::instrument::_SCSensorBinding_default_instance_);
+      : *reinterpret_cast< ::claros::instrument::measurement::SCSensorBinding*>(&::claros::instrument::measurement::_SCSensorBinding_default_instance_);
 }
-inline ::claros::instrument::SCSensorBinding* InstrumentMeasurementDefinition::mutable_scsensorbinding() {
+inline ::claros::instrument::measurement::SCSensorBinding* InstrumentMeasurementDefinition::mutable_scsensorbinding() {
   if (!has_scsensorbinding()) {
     clear_binding();
     set_has_scsensorbinding();
-    binding_.scsensorbinding_ = CreateMaybeMessage< ::claros::instrument::SCSensorBinding >(
+    binding_.scsensorbinding_ = CreateMaybeMessage< ::claros::instrument::measurement::SCSensorBinding >(
         GetArenaNoVirtual());
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.scSensorBinding)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.scSensorBinding)
   return binding_.scsensorbinding_;
 }
 
-// .claros.instrument.MilliAmpBinding milliAmpBinding = 9;
+// .claros.instrument.measurement.MilliAmpBinding milliAmpBinding = 9;
 inline bool InstrumentMeasurementDefinition::has_milliampbinding() const {
   return binding_case() == kMilliAmpBinding;
 }
 inline void InstrumentMeasurementDefinition::set_has_milliampbinding() {
   _oneof_case_[0] = kMilliAmpBinding;
 }
-inline ::claros::instrument::MilliAmpBinding* InstrumentMeasurementDefinition::release_milliampbinding() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.milliAmpBinding)
+inline ::claros::instrument::measurement::MilliAmpBinding* InstrumentMeasurementDefinition::release_milliampbinding() {
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.milliAmpBinding)
   if (has_milliampbinding()) {
     clear_has_binding();
-      ::claros::instrument::MilliAmpBinding* temp = binding_.milliampbinding_;
+      ::claros::instrument::measurement::MilliAmpBinding* temp = binding_.milliampbinding_;
     binding_.milliampbinding_ = nullptr;
     return temp;
   } else {
     return nullptr;
   }
 }
-inline const ::claros::instrument::MilliAmpBinding& InstrumentMeasurementDefinition::milliampbinding() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.milliAmpBinding)
+inline const ::claros::instrument::measurement::MilliAmpBinding& InstrumentMeasurementDefinition::milliampbinding() const {
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.milliAmpBinding)
   return has_milliampbinding()
       ? *binding_.milliampbinding_
-      : *reinterpret_cast< ::claros::instrument::MilliAmpBinding*>(&::claros::instrument::_MilliAmpBinding_default_instance_);
+      : *reinterpret_cast< ::claros::instrument::measurement::MilliAmpBinding*>(&::claros::instrument::measurement::_MilliAmpBinding_default_instance_);
 }
-inline ::claros::instrument::MilliAmpBinding* InstrumentMeasurementDefinition::mutable_milliampbinding() {
+inline ::claros::instrument::measurement::MilliAmpBinding* InstrumentMeasurementDefinition::mutable_milliampbinding() {
   if (!has_milliampbinding()) {
     clear_binding();
     set_has_milliampbinding();
-    binding_.milliampbinding_ = CreateMaybeMessage< ::claros::instrument::MilliAmpBinding >(
+    binding_.milliampbinding_ = CreateMaybeMessage< ::claros::instrument::measurement::MilliAmpBinding >(
         GetArenaNoVirtual());
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.milliAmpBinding)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.milliAmpBinding)
   return binding_.milliampbinding_;
 }
 
@@ -694,25 +697,25 @@ inline int InstrumentMeasurementDefinition::limits_size() const {
   return limits_.size();
 }
 inline ::claros::common::core::Limit* InstrumentMeasurementDefinition::mutable_limits(int index) {
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.limits)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.limits)
   return limits_.Mutable(index);
 }
 inline ::google::protobuf::RepeatedPtrField< ::claros::common::core::Limit >*
 InstrumentMeasurementDefinition::mutable_limits() {
-  // @@protoc_insertion_point(field_mutable_list:claros.instrument.InstrumentMeasurementDefinition.limits)
+  // @@protoc_insertion_point(field_mutable_list:claros.instrument.measurement.InstrumentMeasurementDefinition.limits)
   return &limits_;
 }
 inline const ::claros::common::core::Limit& InstrumentMeasurementDefinition::limits(int index) const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.limits)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.limits)
   return limits_.Get(index);
 }
 inline ::claros::common::core::Limit* InstrumentMeasurementDefinition::add_limits() {
-  // @@protoc_insertion_point(field_add:claros.instrument.InstrumentMeasurementDefinition.limits)
+  // @@protoc_insertion_point(field_add:claros.instrument.measurement.InstrumentMeasurementDefinition.limits)
   return limits_.Add();
 }
 inline const ::google::protobuf::RepeatedPtrField< ::claros::common::core::Limit >&
 InstrumentMeasurementDefinition::limits() const {
-  // @@protoc_insertion_point(field_list:claros.instrument.InstrumentMeasurementDefinition.limits)
+  // @@protoc_insertion_point(field_list:claros.instrument.measurement.InstrumentMeasurementDefinition.limits)
   return limits_;
 }
 
@@ -721,41 +724,41 @@ inline void InstrumentMeasurementDefinition::clear_createdbyid() {
   createdbyid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::createdbyid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
   return createdbyid_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_createdbyid(const ::std::string& value) {
   
   createdbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_createdbyid(::std::string&& value) {
   
   createdbyid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_createdbyid(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   createdbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
 }
 inline void InstrumentMeasurementDefinition::set_createdbyid(const char* value, size_t size) {
   
   createdbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_createdbyid() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
   return createdbyid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_createdbyid() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
   
   return createdbyid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -766,7 +769,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_createdbyid(::std::st
     
   }
   createdbyid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), createdbyid);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.createdById)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.createdById)
 }
 
 // .claros.common.core.ClarosDateTime createdOn = 12;
@@ -775,12 +778,12 @@ inline bool InstrumentMeasurementDefinition::has_createdon() const {
 }
 inline const ::claros::common::core::ClarosDateTime& InstrumentMeasurementDefinition::createdon() const {
   const ::claros::common::core::ClarosDateTime* p = createdon_;
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.createdOn)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.createdOn)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* InstrumentMeasurementDefinition::release_createdon() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.createdOn)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.createdOn)
   
   ::claros::common::core::ClarosDateTime* temp = createdon_;
   createdon_ = nullptr;
@@ -792,7 +795,7 @@ inline ::claros::common::core::ClarosDateTime* InstrumentMeasurementDefinition::
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     createdon_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.createdOn)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.createdOn)
   return createdon_;
 }
 inline void InstrumentMeasurementDefinition::set_allocated_createdon(::claros::common::core::ClarosDateTime* createdon) {
@@ -811,7 +814,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_createdon(::claros::c
     
   }
   createdon_ = createdon;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.createdOn)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.createdOn)
 }
 
 // string modifiedById = 13;
@@ -819,41 +822,41 @@ inline void InstrumentMeasurementDefinition::clear_modifiedbyid() {
   modifiedbyid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& InstrumentMeasurementDefinition::modifiedbyid() const {
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
   return modifiedbyid_.GetNoArena();
 }
 inline void InstrumentMeasurementDefinition::set_modifiedbyid(const ::std::string& value) {
   
   modifiedbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_set:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
 }
 #if LANG_CXX11
 inline void InstrumentMeasurementDefinition::set_modifiedbyid(::std::string&& value) {
   
   modifiedbyid_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_set_rvalue:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
 }
 #endif
 inline void InstrumentMeasurementDefinition::set_modifiedbyid(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   modifiedbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_set_char:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
 }
 inline void InstrumentMeasurementDefinition::set_modifiedbyid(const char* value, size_t size) {
   
   modifiedbyid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_set_pointer:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
 }
 inline ::std::string* InstrumentMeasurementDefinition::mutable_modifiedbyid() {
   
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
   return modifiedbyid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InstrumentMeasurementDefinition::release_modifiedbyid() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
   
   return modifiedbyid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -864,7 +867,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_modifiedbyid(::std::s
     
   }
   modifiedbyid_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), modifiedbyid);
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.modifiedById)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedById)
 }
 
 // .claros.common.core.ClarosDateTime modifiedOn = 14;
@@ -873,12 +876,12 @@ inline bool InstrumentMeasurementDefinition::has_modifiedon() const {
 }
 inline const ::claros::common::core::ClarosDateTime& InstrumentMeasurementDefinition::modifiedon() const {
   const ::claros::common::core::ClarosDateTime* p = modifiedon_;
-  // @@protoc_insertion_point(field_get:claros.instrument.InstrumentMeasurementDefinition.modifiedOn)
+  // @@protoc_insertion_point(field_get:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedOn)
   return p != nullptr ? *p : *reinterpret_cast<const ::claros::common::core::ClarosDateTime*>(
       &::claros::common::core::_ClarosDateTime_default_instance_);
 }
 inline ::claros::common::core::ClarosDateTime* InstrumentMeasurementDefinition::release_modifiedon() {
-  // @@protoc_insertion_point(field_release:claros.instrument.InstrumentMeasurementDefinition.modifiedOn)
+  // @@protoc_insertion_point(field_release:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedOn)
   
   ::claros::common::core::ClarosDateTime* temp = modifiedon_;
   modifiedon_ = nullptr;
@@ -890,7 +893,7 @@ inline ::claros::common::core::ClarosDateTime* InstrumentMeasurementDefinition::
     auto* p = CreateMaybeMessage<::claros::common::core::ClarosDateTime>(GetArenaNoVirtual());
     modifiedon_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:claros.instrument.InstrumentMeasurementDefinition.modifiedOn)
+  // @@protoc_insertion_point(field_mutable:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedOn)
   return modifiedon_;
 }
 inline void InstrumentMeasurementDefinition::set_allocated_modifiedon(::claros::common::core::ClarosDateTime* modifiedon) {
@@ -909,7 +912,7 @@ inline void InstrumentMeasurementDefinition::set_allocated_modifiedon(::claros::
     
   }
   modifiedon_ = modifiedon;
-  // @@protoc_insertion_point(field_set_allocated:claros.instrument.InstrumentMeasurementDefinition.modifiedOn)
+  // @@protoc_insertion_point(field_set_allocated:claros.instrument.measurement.InstrumentMeasurementDefinition.modifiedOn)
 }
 
 inline bool InstrumentMeasurementDefinition::has_binding() const {
@@ -927,6 +930,7 @@ inline InstrumentMeasurementDefinition::BindingCase InstrumentMeasurementDefinit
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 

@@ -6,7 +6,7 @@ require 'google/protobuf'
 require 'claros_common_core_clarosdatetime_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_instrument_measurement_milliamp_binding.proto", :syntax => :proto3) do
-    add_message "claros.instrument.MilliAmpBinding" do
+    add_message "claros.instrument.measurement.MilliAmpBinding" do
       optional :cardName, :string, 1
       optional :channel, :uint32, 2
       optional :validFrom, :message, 3, "claros.common.core.ClarosDateTime"
@@ -17,6 +17,8 @@ end
 
 module Claros
   module Instrument
-    MilliAmpBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.MilliAmpBinding").msgclass
+    module Measurement
+      MilliAmpBinding = Google::Protobuf::DescriptorPool.generated_pool.lookup("claros.instrument.measurement.MilliAmpBinding").msgclass
+    end
   end
 end

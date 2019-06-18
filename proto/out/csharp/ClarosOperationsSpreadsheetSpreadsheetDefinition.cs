@@ -82,6 +82,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 1;
     private string version_ = "";
+    /// <summary>
+    /// Numerical version of the spreadsheet definition.  This increments with eash new version
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Version {
       get { return version_; }
@@ -93,6 +96,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "timewindow" field.</summary>
     public const int TimewindowFieldNumber = 2;
     private global::Claros.Common.Core.TimeWindow timewindow_;
+    /// <summary>
+    /// The Time window of when this configuration was valid
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.TimeWindow Timewindow {
       get { return timewindow_; }
@@ -104,6 +110,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "timezone" field.</summary>
     public const int TimezoneFieldNumber = 3;
     private global::Claros.Common.Core.TimeZone timezone_ = 0;
+    /// <summary>
+    /// The time zone related to the spreadsheet
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.TimeZone Timezone {
       get { return timezone_; }
@@ -115,6 +124,9 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "timeWindowOffset" field.</summary>
     public const int TimeWindowOffsetFieldNumber = 4;
     private uint timeWindowOffset_;
+    /// <summary>
+    /// The number of hours offset to the start of day
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint TimeWindowOffset {
       get { return timeWindowOffset_; }

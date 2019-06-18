@@ -59,18 +59,24 @@ typedef GPB_ENUM(Measurement_FieldNumber) {
 
 @interface Measurement : GPBMessage
 
+/** When the measurement was taken (UTC) */
 @property(nonatomic, readwrite, strong, null_resettable) ClarosDateTime *timestamp;
 /** Test to see if @c timestamp has been set. */
 @property(nonatomic, readwrite) BOOL hasTimestamp;
 
+/** The parameter related to the measurement as an integer */
 @property(nonatomic, readwrite) int32_t parameterId;
 
+/** The parameter related to the measurement as a GUID */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *parameterGuid;
 
+/** The unit related to the measurement as an integer */
 @property(nonatomic, readwrite) int32_t unitId;
 
+/** The unit related to the measurement as a GUID */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *unitGuid;
 
+/** the value of the measurement ????? should this be decimal? */
 @property(nonatomic, readwrite) float value;
 
 @end

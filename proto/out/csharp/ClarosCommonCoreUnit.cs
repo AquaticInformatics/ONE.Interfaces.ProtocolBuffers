@@ -89,6 +89,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "Id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// GUID for the Unit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Id {
       get { return id_; }
@@ -100,6 +103,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "IntId" field.</summary>
     public const int IntIdFieldNumber = 2;
     private uint intId_;
+    /// <summary>
+    /// Integer equivalent that uniquely describes the unit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint IntId {
       get { return intId_; }
@@ -111,6 +117,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "i18nKey" field.</summary>
     public const int I18NKeyFieldNumber = 3;
     private string i18NKey_ = "";
+    /// <summary>
+    /// Localization key for the unit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string I18NKey {
       get { return i18NKey_; }
@@ -122,6 +131,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "unitName" field.</summary>
     public const int UnitNameFieldNumber = 4;
     private string unitName_ = "";
+    /// <summary>
+    /// The untranslated unit name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UnitName {
       get { return unitName_; }
@@ -133,6 +145,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "quantityTypeId" field.</summary>
     public const int QuantityTypeIdFieldNumber = 5;
     private string quantityTypeId_ = "";
+    /// <summary>
+    /// The quantity type related to the unit
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string QuantityTypeId {
       get { return quantityTypeId_; }
@@ -144,6 +159,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 6;
     private string description_ = "";
+    /// <summary>
+    /// ?????
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Description {
       get { return description_; }
@@ -155,6 +173,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "createdById" field.</summary>
     public const int CreatedByIdFieldNumber = 7;
     private string createdById_ = "";
+    /// <summary>
+    /// ????? Do we need these audit fields
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CreatedById {
       get { return createdById_; }

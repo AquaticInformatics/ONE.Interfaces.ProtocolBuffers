@@ -6,11 +6,11 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_reportablequalifierdefinition_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.ReportableQualifierDefinitionType" do
-      value :RQD_UNKNOWN, 0
-      value :RQD_ENTEREDVALUE, 1
-      value :RQD_ZERO, 2
-      value :RQD_HALFENTERED, 3
-      value :RQD_CONSTANT, 4
+      value :REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN, 0
+      value :REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE, 1
+      value :REPORTABLE_QUALIFIER_DEFINITION_ZERO, 2
+      value :REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED, 3
+      value :REPORTABLE_QUALIFIER_DEFINITION_CONSTANT, 4
     end
   end
 end

@@ -12,32 +12,36 @@ use UnexpectedValueException;
 class LimitType
 {
     /**
-     * Generated from protobuf enum <code>L_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>LIMIT_UNKNOWN = 0;</code>
      */
-    const L_UNKNOWN = 0;
+    const LIMIT_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>L_HIGHALARM = 1;</code>
+     *
+     * Generated from protobuf enum <code>LIMIT_HIGHALARM = 1;</code>
      */
-    const L_HIGHALARM = 1;
+    const LIMIT_HIGHALARM = 1;
     /**
-     * Generated from protobuf enum <code>L_HIGHNEAR = 2;</code>
+     *
+     * Generated from protobuf enum <code>LIMIT__HIGHNEAR = 2;</code>
      */
-    const L_HIGHNEAR = 2;
+    const LIMIT__HIGHNEAR = 2;
     /**
-     * Generated from protobuf enum <code>L_LOWNEAR = 3;</code>
+     *
+     * Generated from protobuf enum <code>LIMIT_LOWNEAR = 3;</code>
      */
-    const L_LOWNEAR = 3;
+    const LIMIT_LOWNEAR = 3;
     /**
-     * Generated from protobuf enum <code>L_LOWALARM = 4;</code>
+     *
+     * Generated from protobuf enum <code>LIMIT_LOWALARM = 4;</code>
      */
-    const L_LOWALARM = 4;
+    const LIMIT_LOWALARM = 4;
 
     private static $valueToName = [
-        self::L_UNKNOWN => 'L_UNKNOWN',
-        self::L_HIGHALARM => 'L_HIGHALARM',
-        self::L_HIGHNEAR => 'L_HIGHNEAR',
-        self::L_LOWNEAR => 'L_LOWNEAR',
-        self::L_LOWALARM => 'L_LOWALARM',
+        self::LIMIT_UNKNOWN => 'LIMIT_UNKNOWN',
+        self::LIMIT_HIGHALARM => 'LIMIT_HIGHALARM',
+        self::LIMIT__HIGHNEAR => 'LIMIT__HIGHNEAR',
+        self::LIMIT_LOWNEAR => 'LIMIT_LOWNEAR',
+        self::LIMIT_LOWALARM => 'LIMIT_LOWALARM',
     ];
 
     public static function name($value)

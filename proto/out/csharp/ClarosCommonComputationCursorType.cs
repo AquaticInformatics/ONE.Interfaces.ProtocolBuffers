@@ -25,10 +25,12 @@ namespace Claros.Common.Computation {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitjbGFyb3NfY29tbW9uX2NvbXB1dGF0aW9uX2N1cnNvcl90eXBlLnByb3Rv",
-            "EhljbGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uKnMKFUNvbXB1dGF0aW9uQ3Vy",
-            "c29yVHlwZRIOCgpDQ19VTktOT1dOEAASDgoKQ0NfQ1VSUkVOVBABEg8KC0ND",
-            "X1BSRVZJT1VTEAISCwoHQ0NfTkVYVBAEEgsKB0NDX0xBU1QQBRIPCgtDQ19B",
-            "QlNPTFVURRAGYgZwcm90bzM="));
+            "EhljbGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uKtMBChVDb21wdXRhdGlvbkN1",
+            "cnNvclR5cGUSHgoaQ09NUFVUQVRJT05fQ1VSU09SX1VOS05PV04QABIeChpD",
+            "T01QVVRBVElPTl9DVVJTT1JfQ1VSUkVOVBABEh8KG0NPTVBVVEFUSU9OX0NV",
+            "UlNPUl9QUkVWSU9VUxACEhsKF0NPTVBVVEFUSU9OX0NVUlNPUl9ORVhUEAQS",
+            "GwoXQ09NUFVUQVRJT05fQ1VSU09SX0xBU1QQBRIfChtDT01QVVRBVElPTl9D",
+            "VVJTT1JfQUJTT0xVVEUQBmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Computation.ComputationCursorType), }, null));
@@ -37,13 +39,19 @@ namespace Claros.Common.Computation {
 
   }
   #region Enums
+  /// <summary>
+  /// Allows for navigating to adjacent rows.
+  /// </summary>
   public enum ComputationCursorType {
-    [pbr::OriginalName("CC_UNKNOWN")] CcUnknown = 0,
-    [pbr::OriginalName("CC_CURRENT")] CcCurrent = 1,
-    [pbr::OriginalName("CC_PREVIOUS")] CcPrevious = 2,
-    [pbr::OriginalName("CC_NEXT")] CcNext = 4,
-    [pbr::OriginalName("CC_LAST")] CcLast = 5,
-    [pbr::OriginalName("CC_ABSOLUTE")] CcAbsolute = 6,
+    [pbr::OriginalName("COMPUTATION_CURSOR_UNKNOWN")] ComputationCursorUnknown = 0,
+    [pbr::OriginalName("COMPUTATION_CURSOR_CURRENT")] ComputationCursorCurrent = 1,
+    [pbr::OriginalName("COMPUTATION_CURSOR_PREVIOUS")] ComputationCursorPrevious = 2,
+    [pbr::OriginalName("COMPUTATION_CURSOR_NEXT")] ComputationCursorNext = 4,
+    [pbr::OriginalName("COMPUTATION_CURSOR_LAST")] ComputationCursorLast = 5,
+    /// <summary>
+    /// should this be relative?
+    /// </summary>
+    [pbr::OriginalName("COMPUTATION_CURSOR_ABSOLUTE")] ComputationCursorAbsolute = 6,
   }
 
   #endregion

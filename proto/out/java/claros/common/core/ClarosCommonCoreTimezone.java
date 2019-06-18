@@ -20,24 +20,24 @@ public final class ClarosCommonCoreTimezone {
   public enum TimeZone
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TZ_UNKNOWN = 0;</code>
+     * <code>TIMEZONE_UNKNOWN = 0;</code>
      */
-    TZ_UNKNOWN(0),
+    TIMEZONE_UNKNOWN(0),
     /**
-     * <code>TZ_UTC = 1;</code>
+     * <code>TIMEZONE_UTC = 1;</code>
      */
-    TZ_UTC(1),
+    TIMEZONE_UTC(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TZ_UNKNOWN = 0;</code>
+     * <code>TIMEZONE_UNKNOWN = 0;</code>
      */
-    public static final int TZ_UNKNOWN_VALUE = 0;
+    public static final int TIMEZONE_UNKNOWN_VALUE = 0;
     /**
-     * <code>TZ_UTC = 1;</code>
+     * <code>TIMEZONE_UTC = 1;</code>
      */
-    public static final int TZ_UTC_VALUE = 1;
+    public static final int TIMEZONE_UTC_VALUE = 1;
 
 
     public final int getNumber() {
@@ -58,8 +58,8 @@ public final class ClarosCommonCoreTimezone {
 
     public static TimeZone forNumber(int value) {
       switch (value) {
-        case 0: return TZ_UNKNOWN;
-        case 1: return TZ_UTC;
+        case 0: return TIMEZONE_UNKNOWN;
+        case 1: return TIMEZONE_UTC;
         default: return null;
       }
     }
@@ -122,8 +122,8 @@ public final class ClarosCommonCoreTimezone {
   static {
     java.lang.String[] descriptorData = {
       "\n!claros_common_core_timezone.proto\022\022cla" +
-      "ros.common.core*&\n\010TimeZone\022\016\n\nTZ_UNKNOW" +
-      "N\020\000\022\n\n\006TZ_UTC\020\001b\006proto3"
+      "ros.common.core*2\n\010TimeZone\022\024\n\020TIMEZONE_" +
+      "UNKNOWN\020\000\022\020\n\014TIMEZONE_UTC\020\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

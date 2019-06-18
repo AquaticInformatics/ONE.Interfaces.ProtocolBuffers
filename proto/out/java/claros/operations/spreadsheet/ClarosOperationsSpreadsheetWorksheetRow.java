@@ -19,42 +19,78 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     * Row number - Based on 01-01-1900
+     * </pre>
+     *
      * <code>uint32 rowNumber = 1;</code>
      */
     int getRowNumber();
 
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     boolean hasUTCTimeWindow();
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getUTCTimeWindow();
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getUTCTimeWindowOrBuilder();
 
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell> 
         getCellsList();
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell getCells(int index);
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     int getCellsCount();
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder> 
         getCellsOrBuilderList();
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder getCellsOrBuilder(
@@ -166,6 +202,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
     public static final int ROWNUMBER_FIELD_NUMBER = 1;
     private int rowNumber_;
     /**
+     * <pre>
+     * Row number - Based on 01-01-1900
+     * </pre>
+     *
      * <code>uint32 rowNumber = 1;</code>
      */
     public int getRowNumber() {
@@ -175,18 +215,30 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
     public static final int UTCTIMEWINDOW_FIELD_NUMBER = 2;
     private claros.common.core.ClarosCommonCoreTimewindow.TimeWindow uTCTimeWindow_;
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     public boolean hasUTCTimeWindow() {
       return uTCTimeWindow_ != null;
     }
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getUTCTimeWindow() {
       return uTCTimeWindow_ == null ? claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.getDefaultInstance() : uTCTimeWindow_;
     }
     /**
+     * <pre>
+     * UTC time window related to the row.
+     * </pre>
+     *
      * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
      */
     public claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getUTCTimeWindowOrBuilder() {
@@ -196,12 +248,20 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
     public static final int CELLS_FIELD_NUMBER = 3;
     private java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell> cells_;
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell> getCellsList() {
       return cells_;
     }
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder> 
@@ -209,18 +269,30 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
       return cells_;
     }
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     public int getCellsCount() {
       return cells_.size();
     }
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell getCells(int index) {
       return cells_.get(index);
     }
     /**
+     * <pre>
+     * Cells that are stored within the row.
+     * </pre>
+     *
      * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
      */
     public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder getCellsOrBuilder(
@@ -621,12 +693,20 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
 
       private int rowNumber_ ;
       /**
+       * <pre>
+       * Row number - Based on 01-01-1900
+       * </pre>
+       *
        * <code>uint32 rowNumber = 1;</code>
        */
       public int getRowNumber() {
         return rowNumber_;
       }
       /**
+       * <pre>
+       * Row number - Based on 01-01-1900
+       * </pre>
+       *
        * <code>uint32 rowNumber = 1;</code>
        */
       public Builder setRowNumber(int value) {
@@ -636,6 +716,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Row number - Based on 01-01-1900
+       * </pre>
+       *
        * <code>uint32 rowNumber = 1;</code>
        */
       public Builder clearRowNumber() {
@@ -649,12 +733,20 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
       private com.google.protobuf.SingleFieldBuilderV3<
           claros.common.core.ClarosCommonCoreTimewindow.TimeWindow, claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.Builder, claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder> uTCTimeWindowBuilder_;
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public boolean hasUTCTimeWindow() {
         return uTCTimeWindowBuilder_ != null || uTCTimeWindow_ != null;
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow getUTCTimeWindow() {
@@ -665,6 +757,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public Builder setUTCTimeWindow(claros.common.core.ClarosCommonCoreTimewindow.TimeWindow value) {
@@ -681,6 +777,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public Builder setUTCTimeWindow(
@@ -695,6 +795,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public Builder mergeUTCTimeWindow(claros.common.core.ClarosCommonCoreTimewindow.TimeWindow value) {
@@ -713,6 +817,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public Builder clearUTCTimeWindow() {
@@ -727,6 +835,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindow.Builder getUTCTimeWindowBuilder() {
@@ -735,6 +847,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return getUTCTimeWindowFieldBuilder().getBuilder();
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       public claros.common.core.ClarosCommonCoreTimewindow.TimeWindowOrBuilder getUTCTimeWindowOrBuilder() {
@@ -746,6 +862,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * UTC time window related to the row.
+       * </pre>
+       *
        * <code>.claros.common.core.TimeWindow UTCTimeWindow = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -775,6 +895,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
           claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.Builder, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder> cellsBuilder_;
 
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell> getCellsList() {
@@ -785,6 +909,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public int getCellsCount() {
@@ -795,6 +923,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell getCells(int index) {
@@ -805,6 +937,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder setCells(
@@ -822,6 +958,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder setCells(
@@ -836,6 +976,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder addCells(claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell value) {
@@ -852,6 +996,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder addCells(
@@ -869,6 +1017,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder addCells(
@@ -883,6 +1035,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder addCells(
@@ -897,6 +1053,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder addAllCells(
@@ -912,6 +1072,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder clearCells() {
@@ -925,6 +1089,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public Builder removeCells(int index) {
@@ -938,6 +1106,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return this;
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.Builder getCellsBuilder(
@@ -945,6 +1117,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         return getCellsFieldBuilder().getBuilder(index);
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder getCellsOrBuilder(
@@ -955,6 +1131,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public java.util.List<? extends claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.CellOrBuilder> 
@@ -966,6 +1146,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
         }
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.Builder addCellsBuilder() {
@@ -973,6 +1157,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
             claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.Builder addCellsBuilder(
@@ -981,6 +1169,10 @@ public final class ClarosOperationsSpreadsheetWorksheetRow {
             index, claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.getDefaultInstance());
       }
       /**
+       * <pre>
+       * Cells that are stored within the row.
+       * </pre>
+       *
        * <code>repeated .claros.operations.spreadsheet.Cell cells = 3;</code>
        */
       public java.util.List<claros.operations.spreadsheet.ClarosOperationsSpreadsheetWorksheetCell.Cell.Builder> 

@@ -14,22 +14,32 @@ use Google\Protobuf\Internal\GPBUtil;
 class WorksheetDefinition extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Version of the Worksheet definition.  This is incremented with each change
+     *
      * Generated from protobuf field <code>uint32 version = 1;</code>
      */
     private $version = 0;
     /**
+     * The starting row number that the configuraiton applies
+     *
      * Generated from protobuf field <code>uint32 startRow = 2;</code>
      */
     private $startRow = 0;
     /**
+     * The ending row number that the configuration applies
+     *
      * Generated from protobuf field <code>uint32 endRow = 3;</code>
      */
     private $endRow = 0;
     /**
+     * ???? Should we rename these to column definitions
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      */
     private $columns;
     /**
+     * Audit Record of who created the definition
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      */
     private $auditEvent = null;
@@ -41,10 +51,15 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $version
+     *           Version of the Worksheet definition.  This is incremented with each change
      *     @type int $startRow
+     *           The starting row number that the configuraiton applies
      *     @type int $endRow
+     *           The ending row number that the configuration applies
      *     @type \Claros\Operations\Spreadsheet\Column[]|\Google\Protobuf\Internal\RepeatedField $columns
+     *           ???? Should we rename these to column definitions
      *     @type \Claros\Common\Core\AuditEvent $auditEvent
+     *           Audit Record of who created the definition
      * }
      */
     public function __construct($data = NULL) {
@@ -53,6 +68,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Version of the Worksheet definition.  This is incremented with each change
+     *
      * Generated from protobuf field <code>uint32 version = 1;</code>
      * @return int
      */
@@ -62,6 +79,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Version of the Worksheet definition.  This is incremented with each change
+     *
      * Generated from protobuf field <code>uint32 version = 1;</code>
      * @param int $var
      * @return $this
@@ -75,6 +94,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The starting row number that the configuraiton applies
+     *
      * Generated from protobuf field <code>uint32 startRow = 2;</code>
      * @return int
      */
@@ -84,6 +105,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The starting row number that the configuraiton applies
+     *
      * Generated from protobuf field <code>uint32 startRow = 2;</code>
      * @param int $var
      * @return $this
@@ -97,6 +120,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The ending row number that the configuration applies
+     *
      * Generated from protobuf field <code>uint32 endRow = 3;</code>
      * @return int
      */
@@ -106,6 +131,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The ending row number that the configuration applies
+     *
      * Generated from protobuf field <code>uint32 endRow = 3;</code>
      * @param int $var
      * @return $this
@@ -119,6 +146,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ???? Should we rename these to column definitions
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -128,6 +157,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * ???? Should we rename these to column definitions
+     *
      * Generated from protobuf field <code>repeated .claros.operations.spreadsheet.Column columns = 4;</code>
      * @param \Claros\Operations\Spreadsheet\Column[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
@@ -141,6 +172,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Audit Record of who created the definition
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      * @return \Claros\Common\Core\AuditEvent
      */
@@ -150,6 +183,8 @@ class WorksheetDefinition extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Audit Record of who created the definition
+     *
      * Generated from protobuf field <code>.claros.common.core.AuditEvent auditEvent = 99;</code>
      * @param \Claros\Common\Core\AuditEvent $var
      * @return $this

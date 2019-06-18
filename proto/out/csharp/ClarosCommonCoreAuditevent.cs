@@ -28,15 +28,16 @@ namespace Claros.Common.Core {
             "LmNvbW1vbi5jb3JlGihjbGFyb3NfY29tbW9uX2NvcmVfYXVkaXRldmVudF90",
             "eXBlLnByb3RvGidjbGFyb3NfY29tbW9uX2NvcmVfY2xhcm9zZGF0ZXRpbWUu",
             "cHJvdG8aKGNsYXJvc19jb21tb25fY29yZV9kYXRhc291cmNlX3R5cGUucHJv",
-            "dG8i0gEKCkF1ZGl0RXZlbnQSCgoCaWQYASABKAkSDgoGdXNlcklkGAIgASgJ",
+            "dG8i4wEKCkF1ZGl0RXZlbnQSCgoCaWQYASABKAkSDgoGdXNlcklkGAIgASgJ",
             "EjoKDmRhdGFTb3VyY2VUeXBlGAMgASgOMiIuY2xhcm9zLmNvbW1vbi5jb3Jl",
             "LkRhdGFTb3VyY2VUeXBlEjUKCWV2ZW50VHlwZRgEIAEoDjIiLmNsYXJvcy5j",
             "b21tb24uY29yZS5BdWRpdEV2ZW50VHlwZRI1Cgl0aW1lU3RhbXAYBSABKAsy",
-            "Ii5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWViBnByb3RvMw=="));
+            "Ii5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUSDwoHZGV0YWls",
+            "cxgGIAEoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreAuditeventTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.AuditEvent), global::Claros.Common.Core.AuditEvent.Parser, new[]{ "Id", "UserId", "DataSourceType", "EventType", "TimeStamp" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.AuditEvent), global::Claros.Common.Core.AuditEvent.Parser, new[]{ "Id", "UserId", "DataSourceType", "EventType", "TimeStamp", "Details" }, null, null, null)
           }));
     }
     #endregion
@@ -73,6 +74,7 @@ namespace Claros.Common.Core {
       dataSourceType_ = other.dataSourceType_;
       eventType_ = other.eventType_;
       timeStamp_ = other.timeStamp_ != null ? other.timeStamp_.Clone() : null;
+      details_ = other.details_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -84,6 +86,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// A GUID that uniquely identifies the audit event
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Id {
       get { return id_; }
@@ -95,6 +100,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "userId" field.</summary>
     public const int UserIdFieldNumber = 2;
     private string userId_ = "";
+    /// <summary>
+    /// The id of the user related to this audit event
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UserId {
       get { return userId_; }
@@ -106,6 +114,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "dataSourceType" field.</summary>
     public const int DataSourceTypeFieldNumber = 3;
     private global::Claros.Common.Core.DataSourceType dataSourceType_ = 0;
+    /// <summary>
+    /// What system generated the audit event
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.DataSourceType DataSourceType {
       get { return dataSourceType_; }
@@ -117,6 +128,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "eventType" field.</summary>
     public const int EventTypeFieldNumber = 4;
     private global::Claros.Common.Core.AuditEventType eventType_ = 0;
+    /// <summary>
+    /// The type of event
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.AuditEventType EventType {
       get { return eventType_; }
@@ -128,11 +142,28 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "timeStamp" field.</summary>
     public const int TimeStampFieldNumber = 5;
     private global::Claros.Common.Core.ClarosDateTime timeStamp_;
+    /// <summary>
+    /// The time in which this event occurred
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ClarosDateTime TimeStamp {
       get { return timeStamp_; }
       set {
         timeStamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "details" field.</summary>
+    public const int DetailsFieldNumber = 6;
+    private string details_ = "";
+    /// <summary>
+    /// Text details that can provide more clarification to the audit
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Details {
+      get { return details_; }
+      set {
+        details_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -154,6 +185,7 @@ namespace Claros.Common.Core {
       if (DataSourceType != other.DataSourceType) return false;
       if (EventType != other.EventType) return false;
       if (!object.Equals(TimeStamp, other.TimeStamp)) return false;
+      if (Details != other.Details) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -165,6 +197,7 @@ namespace Claros.Common.Core {
       if (DataSourceType != 0) hash ^= DataSourceType.GetHashCode();
       if (EventType != 0) hash ^= EventType.GetHashCode();
       if (timeStamp_ != null) hash ^= TimeStamp.GetHashCode();
+      if (Details.Length != 0) hash ^= Details.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -198,6 +231,10 @@ namespace Claros.Common.Core {
         output.WriteRawTag(42);
         output.WriteMessage(TimeStamp);
       }
+      if (Details.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Details);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -220,6 +257,9 @@ namespace Claros.Common.Core {
       }
       if (timeStamp_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TimeStamp);
+      }
+      if (Details.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Details);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -249,6 +289,9 @@ namespace Claros.Common.Core {
           TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
         }
         TimeStamp.MergeFrom(other.TimeStamp);
+      }
+      if (other.Details.Length != 0) {
+        Details = other.Details;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -282,6 +325,10 @@ namespace Claros.Common.Core {
               TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(TimeStamp);
+            break;
+          }
+          case 50: {
+            Details = input.ReadString();
             break;
           }
         }

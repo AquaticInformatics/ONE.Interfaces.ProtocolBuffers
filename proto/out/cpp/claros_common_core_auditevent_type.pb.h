@@ -56,18 +56,18 @@ namespace common {
 namespace core {
 
 enum AuditEventType {
-  AE_UNKNOWN = 0,
-  AE_CREATE = 1,
-  AE_READ = 2,
-  AE_UPDATE = 3,
-  AE_DELETE = 4,
-  AE_SENT = 5,
+  AUDIT_EVENT_UNKNOWN = 0,
+  AUDIT_EVENT_CREATE = 1,
+  AUDIT_EVENT_READ = 2,
+  AUDIT_EVENT_UPDATE = 3,
+  AUDIT_EVENT_DELETE = 4,
+  AUDIT_EVENT_SENT = 5,
   AuditEventType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   AuditEventType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool AuditEventType_IsValid(int value);
-const AuditEventType AuditEventType_MIN = AE_UNKNOWN;
-const AuditEventType AuditEventType_MAX = AE_SENT;
+const AuditEventType AuditEventType_MIN = AUDIT_EVENT_UNKNOWN;
+const AuditEventType AuditEventType_MAX = AUDIT_EVENT_SENT;
 const int AuditEventType_ARRAYSIZE = AuditEventType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* AuditEventType_descriptor();

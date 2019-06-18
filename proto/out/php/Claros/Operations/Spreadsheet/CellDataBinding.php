@@ -21,11 +21,11 @@ class CellDataBinding extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Claros\Instrument\InstrumentMeasurementBinding $instrumentMeasurementBinding
+     *     @type \Claros\Instrument\Measurement\InstrumentMeasurementBinding $instrumentMeasurementBinding
      *     @type \Claros\Common\Computation\ComputationBinding $computationBinding
      *     @type \Claros\Common\Form\FormBinding $formBinding
      *     @type \Claros\Operations\Spreadsheet\SpreadsheetBinding $spreadsheetBinding
-     *     @type \Claros\Instrument\InstrumentMeasurementFieldBinding $fieldInstrumentMeasurementBinding
+     *     @type \Claros\Instrument\Measurement\InstrumentMeasurementFieldBinding $fieldInstrumentMeasurementBinding
      * }
      */
     public function __construct($data = NULL) {
@@ -34,111 +34,111 @@ class CellDataBinding extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
-     * @return \Claros\Instrument\InstrumentMeasurementBinding
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
+     * @return \Claros\Instrument\Measurement\InstrumentMeasurementBinding
      */
     public function getInstrumentMeasurementBinding()
     {
-        return $this->readOneof(7);
+        return $this->readOneof(1);
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 7;</code>
-     * @param \Claros\Instrument\InstrumentMeasurementBinding $var
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;</code>
+     * @param \Claros\Instrument\Measurement\InstrumentMeasurementBinding $var
      * @return $this
      */
     public function setInstrumentMeasurementBinding($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Instrument\InstrumentMeasurementBinding::class);
-        $this->writeOneof(7, $var);
+        GPBUtil::checkMessage($var, \Claros\Instrument\Measurement\InstrumentMeasurementBinding::class);
+        $this->writeOneof(1, $var);
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      * @return \Claros\Common\Computation\ComputationBinding
      */
     public function getComputationBinding()
     {
-        return $this->readOneof(8);
+        return $this->readOneof(2);
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 8;</code>
+     * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 2;</code>
      * @param \Claros\Common\Computation\ComputationBinding $var
      * @return $this
      */
     public function setComputationBinding($var)
     {
         GPBUtil::checkMessage($var, \Claros\Common\Computation\ComputationBinding::class);
-        $this->writeOneof(8, $var);
+        $this->writeOneof(2, $var);
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * Generated from protobuf field <code>.claros.common.form.FormBinding formBinding = 3;</code>
      * @return \Claros\Common\Form\FormBinding
      */
     public function getFormBinding()
     {
-        return $this->readOneof(9);
+        return $this->readOneof(3);
     }
 
     /**
-     * Generated from protobuf field <code>.claros.common.form.FormBinding formBinding = 9;</code>
+     * Generated from protobuf field <code>.claros.common.form.FormBinding formBinding = 3;</code>
      * @param \Claros\Common\Form\FormBinding $var
      * @return $this
      */
     public function setFormBinding($var)
     {
         GPBUtil::checkMessage($var, \Claros\Common\Form\FormBinding::class);
-        $this->writeOneof(9, $var);
+        $this->writeOneof(3, $var);
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * Generated from protobuf field <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      * @return \Claros\Operations\Spreadsheet\SpreadsheetBinding
      */
     public function getSpreadsheetBinding()
     {
-        return $this->readOneof(10);
+        return $this->readOneof(4);
     }
 
     /**
-     * Generated from protobuf field <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 10;</code>
+     * Generated from protobuf field <code>.claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;</code>
      * @param \Claros\Operations\Spreadsheet\SpreadsheetBinding $var
      * @return $this
      */
     public function setSpreadsheetBinding($var)
     {
         GPBUtil::checkMessage($var, \Claros\Operations\Spreadsheet\SpreadsheetBinding::class);
-        $this->writeOneof(10, $var);
+        $this->writeOneof(4, $var);
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
-     * @return \Claros\Instrument\InstrumentMeasurementFieldBinding
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
+     * @return \Claros\Instrument\Measurement\InstrumentMeasurementFieldBinding
      */
     public function getFieldInstrumentMeasurementBinding()
     {
-        return $this->readOneof(11);
+        return $this->readOneof(5);
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 11;</code>
-     * @param \Claros\Instrument\InstrumentMeasurementFieldBinding $var
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;</code>
+     * @param \Claros\Instrument\Measurement\InstrumentMeasurementFieldBinding $var
      * @return $this
      */
     public function setFieldInstrumentMeasurementBinding($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Instrument\InstrumentMeasurementFieldBinding::class);
-        $this->writeOneof(11, $var);
+        GPBUtil::checkMessage($var, \Claros\Instrument\Measurement\InstrumentMeasurementFieldBinding::class);
+        $this->writeOneof(5, $var);
 
         return $this;
     }

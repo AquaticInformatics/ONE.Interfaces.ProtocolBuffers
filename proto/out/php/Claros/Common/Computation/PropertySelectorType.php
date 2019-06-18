@@ -7,37 +7,39 @@ namespace Claros\Common\Computation;
 use UnexpectedValueException;
 
 /**
+ * What attribute of the row or cell is included in the expression
+ *
  * Protobuf type <code>claros.common.computation.PropertySelectorType</code>
  */
 class PropertySelectorType
 {
     /**
-     * Generated from protobuf enum <code>PS_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>PROPERTY_SELECTOR_UNKNOWN = 0;</code>
      */
-    const PS_UNKNOWN = 0;
+    const PROPERTY_SELECTOR_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>PS_MEASUREMENTTIME = 1;</code>
+     * Generated from protobuf enum <code>PROPERTY_SELECTOR_MEASUREMENTTIME = 1;</code>
      */
-    const PS_MEASUREMENTTIME = 1;
+    const PROPERTY_SELECTOR_MEASUREMENTTIME = 1;
     /**
-     * Generated from protobuf enum <code>PS_BEGINLINETIME = 2;</code>
+     * Generated from protobuf enum <code>PROPERTY_SELECTOR_BEGINLINETIME = 2;</code>
      */
-    const PS_BEGINLINETIME = 2;
+    const PROPERTY_SELECTOR_BEGINLINETIME = 2;
     /**
-     * Generated from protobuf enum <code>PS_ENDLINETIME = 3;</code>
+     * Generated from protobuf enum <code>PROPERTY_SELECTOR_ENDLINETIME = 3;</code>
      */
-    const PS_ENDLINETIME = 3;
+    const PROPERTY_SELECTOR_ENDLINETIME = 3;
     /**
-     * Generated from protobuf enum <code>PS_MEASURMENTVALUE = 4;</code>
+     * Generated from protobuf enum <code>PROPERTY_SELECTOR_MEASURMENTVALUE = 4;</code>
      */
-    const PS_MEASURMENTVALUE = 4;
+    const PROPERTY_SELECTOR_MEASURMENTVALUE = 4;
 
     private static $valueToName = [
-        self::PS_UNKNOWN => 'PS_UNKNOWN',
-        self::PS_MEASUREMENTTIME => 'PS_MEASUREMENTTIME',
-        self::PS_BEGINLINETIME => 'PS_BEGINLINETIME',
-        self::PS_ENDLINETIME => 'PS_ENDLINETIME',
-        self::PS_MEASURMENTVALUE => 'PS_MEASURMENTVALUE',
+        self::PROPERTY_SELECTOR_UNKNOWN => 'PROPERTY_SELECTOR_UNKNOWN',
+        self::PROPERTY_SELECTOR_MEASUREMENTTIME => 'PROPERTY_SELECTOR_MEASUREMENTTIME',
+        self::PROPERTY_SELECTOR_BEGINLINETIME => 'PROPERTY_SELECTOR_BEGINLINETIME',
+        self::PROPERTY_SELECTOR_ENDLINETIME => 'PROPERTY_SELECTOR_ENDLINETIME',
+        self::PROPERTY_SELECTOR_MEASURMENTVALUE => 'PROPERTY_SELECTOR_MEASURMENTVALUE',
     ];
 
     public static function name($value)

@@ -12,32 +12,40 @@ use UnexpectedValueException;
 class ReportableQualifierDefinitionType
 {
     /**
-     * Generated from protobuf enum <code>RQD_UNKNOWN = 0;</code>
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;</code>
      */
-    const RQD_UNKNOWN = 0;
+    const REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;
     /**
-     * Generated from protobuf enum <code>RQD_ENTEREDVALUE = 1;</code>
+     * The value is taken from the qualified value.  Example < 2 becomes 2
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;</code>
      */
-    const RQD_ENTEREDVALUE = 1;
+    const REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;
     /**
-     * Generated from protobuf enum <code>RQD_ZERO = 2;</code>
+     * The value is set to zero (0) in this case
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DEFINITION_ZERO = 2;</code>
      */
-    const RQD_ZERO = 2;
+    const REPORTABLE_QUALIFIER_DEFINITION_ZERO = 2;
     /**
-     * Generated from protobuf enum <code>RQD_HALFENTERED = 3;</code>
+     * The value is set to half of the entered value.  Example < 2 becomes 1
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED = 3;</code>
      */
-    const RQD_HALFENTERED = 3;
+    const REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED = 3;
     /**
-     * Generated from protobuf enum <code>RQD_CONSTANT = 4;</code>
+     * The value is set to a constant value that is entered by the customer.  For example < 2 may be set to a customer value of 1.5
+     *
+     * Generated from protobuf enum <code>REPORTABLE_QUALIFIER_DEFINITION_CONSTANT = 4;</code>
      */
-    const RQD_CONSTANT = 4;
+    const REPORTABLE_QUALIFIER_DEFINITION_CONSTANT = 4;
 
     private static $valueToName = [
-        self::RQD_UNKNOWN => 'RQD_UNKNOWN',
-        self::RQD_ENTEREDVALUE => 'RQD_ENTEREDVALUE',
-        self::RQD_ZERO => 'RQD_ZERO',
-        self::RQD_HALFENTERED => 'RQD_HALFENTERED',
-        self::RQD_CONSTANT => 'RQD_CONSTANT',
+        self::REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN => 'REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN',
+        self::REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE => 'REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE',
+        self::REPORTABLE_QUALIFIER_DEFINITION_ZERO => 'REPORTABLE_QUALIFIER_DEFINITION_ZERO',
+        self::REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED => 'REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED',
+        self::REPORTABLE_QUALIFIER_DEFINITION_CONSTANT => 'REPORTABLE_QUALIFIER_DEFINITION_CONSTANT',
     ];
 
     public static function name($value)

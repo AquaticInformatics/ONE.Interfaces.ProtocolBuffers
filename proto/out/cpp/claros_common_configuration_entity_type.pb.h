@@ -56,14 +56,14 @@ namespace common {
 namespace configuration {
 
 enum EntityType {
-  ET_UNKNOWN = 0,
-  ET_FORMTEMPLATE = 1,
+  ENTITY_UNKNOWN = 0,
+  ENTITY_FORMTEMPLATE = 1,
   EntityType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::min(),
   EntityType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::google::protobuf::int32>::max()
 };
 bool EntityType_IsValid(int value);
-const EntityType EntityType_MIN = ET_UNKNOWN;
-const EntityType EntityType_MAX = ET_FORMTEMPLATE;
+const EntityType EntityType_MIN = ENTITY_UNKNOWN;
+const EntityType EntityType_MAX = ENTITY_FORMTEMPLATE;
 const int EntityType_ARRAYSIZE = EntityType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* EntityType_descriptor();

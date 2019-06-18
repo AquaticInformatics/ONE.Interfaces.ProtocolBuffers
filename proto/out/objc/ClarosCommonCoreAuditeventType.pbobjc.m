@@ -36,15 +36,16 @@ GPBEnumDescriptor *AuditEventType_EnumDescriptor(void) {
   static _Atomic(GPBEnumDescriptor*) descriptor = nil;
   if (!descriptor) {
     static const char *valueNames =
-        "AeUnknown\000AeCreate\000AeRead\000AeUpdate\000AeDel"
-        "ete\000AeSent\000";
+        "AuditEventUnknown\000AuditEventCreate\000Audit"
+        "EventRead\000AuditEventUpdate\000AuditEventDel"
+        "ete\000AuditEventSent\000";
     static const int32_t values[] = {
-        AuditEventType_AeUnknown,
-        AuditEventType_AeCreate,
-        AuditEventType_AeRead,
-        AuditEventType_AeUpdate,
-        AuditEventType_AeDelete,
-        AuditEventType_AeSent,
+        AuditEventType_AuditEventUnknown,
+        AuditEventType_AuditEventCreate,
+        AuditEventType_AuditEventRead,
+        AuditEventType_AuditEventUpdate,
+        AuditEventType_AuditEventDelete,
+        AuditEventType_AuditEventSent,
     };
     GPBEnumDescriptor *worker =
         [GPBEnumDescriptor allocDescriptorForName:GPBNSStringifySymbol(AuditEventType)
@@ -62,12 +63,12 @@ GPBEnumDescriptor *AuditEventType_EnumDescriptor(void) {
 
 BOOL AuditEventType_IsValidValue(int32_t value__) {
   switch (value__) {
-    case AuditEventType_AeUnknown:
-    case AuditEventType_AeCreate:
-    case AuditEventType_AeRead:
-    case AuditEventType_AeUpdate:
-    case AuditEventType_AeDelete:
-    case AuditEventType_AeSent:
+    case AuditEventType_AuditEventUnknown:
+    case AuditEventType_AuditEventCreate:
+    case AuditEventType_AuditEventRead:
+    case AuditEventType_AuditEventUpdate:
+    case AuditEventType_AuditEventDelete:
+    case AuditEventType_AuditEventSent:
       return YES;
     default:
       return NO;

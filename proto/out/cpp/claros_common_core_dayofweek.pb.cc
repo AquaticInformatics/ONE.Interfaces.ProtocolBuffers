@@ -40,16 +40,17 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5fdayofweek_2eproto[] =
   "\n\"claros_common_core_dayofweek.proto\022\022cl"
-  "aros.common.core*\224\001\n\tDayOfWeek\022\017\n\013DOW_UN"
-  "KNOWN\020\000\022\016\n\nDOW_SUNDAY\020\001\022\016\n\nDOW_MONDAY\020\002\022"
-  "\017\n\013DOW_TUESDAY\020\003\022\021\n\rDOW_WEDNESDAY\020\004\022\020\n\014D"
-  "OW_THURSDAY\020\005\022\016\n\nDOW_FRIDAY\020\006\022\020\n\014DOW_SAT"
-  "URDAY\020\007b\006proto3"
+  "aros.common.core*\324\001\n\tDayOfWeek\022\027\n\023DAY_OF"
+  "_WEEK_UNKNOWN\020\000\022\026\n\022DAY_OF_WEEK_SUNDAY\020\001\022"
+  "\026\n\022DAY_OF_WEEK_MONDAY\020\002\022\027\n\023DAY_OF_WEEK_T"
+  "UESDAY\020\003\022\031\n\025DAY_OF_WEEK_WEDNESDAY\020\004\022\030\n\024D"
+  "AY_OF_WEEK_THURSDAY\020\005\022\026\n\022DAY_OF_WEEK_FRI"
+  "DAY\020\006\022\030\n\024DAY_OF_WEEK_SATURDAY\020\007b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5fdayofweek_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5fdayofweek_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5fdayofweek_2eproto,
-  "claros_common_core_dayofweek.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fdayofweek_2eproto, 215,
+  "claros_common_core_dayofweek.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5fdayofweek_2eproto, 279,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5fdayofweek_2eproto() {

@@ -38,8 +38,8 @@ typedef GPB_ENUM(EntityType) {
    * of the field.
    **/
   EntityType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  EntityType_EtUnknown = 0,
-  EntityType_EtFormtemplate = 1,
+  EntityType_EntityUnknown = 0,
+  EntityType_EntityFormtemplate = 1,
 };
 
 GPBEnumDescriptor *EntityType_EnumDescriptor(void);

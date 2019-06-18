@@ -57,10 +57,13 @@ typedef GPB_ENUM(ReportableQualifierDefinition_FieldNumber) {
 
 @interface ReportableQualifierDefinition : GPBMessage
 
+/** The type of reportable qualifer */
 @property(nonatomic, readwrite) enum ReportableQualifierType reportableQualifierType;
 
+/** How to interpret the qualifer */
 @property(nonatomic, readwrite) enum ReportableQualifierDefinitionType reportableQualifierDefinitionType;
 
+/** The value if the interpretation is a constant */
 @property(nonatomic, readwrite) double constantValue;
 
 @end

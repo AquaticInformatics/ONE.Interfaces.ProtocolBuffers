@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\"claros_common_core_dayofweek.proto\x12\x12\x63laros.common.core*\x94\x01\n\tDayOfWeek\x12\x0f\n\x0b\x44OW_UNKNOWN\x10\x00\x12\x0e\n\nDOW_SUNDAY\x10\x01\x12\x0e\n\nDOW_MONDAY\x10\x02\x12\x0f\n\x0b\x44OW_TUESDAY\x10\x03\x12\x11\n\rDOW_WEDNESDAY\x10\x04\x12\x10\n\x0c\x44OW_THURSDAY\x10\x05\x12\x0e\n\nDOW_FRIDAY\x10\x06\x12\x10\n\x0c\x44OW_SATURDAY\x10\x07\x62\x06proto3')
+  serialized_pb=_b('\n\"claros_common_core_dayofweek.proto\x12\x12\x63laros.common.core*\xd4\x01\n\tDayOfWeek\x12\x17\n\x13\x44\x41Y_OF_WEEK_UNKNOWN\x10\x00\x12\x16\n\x12\x44\x41Y_OF_WEEK_SUNDAY\x10\x01\x12\x16\n\x12\x44\x41Y_OF_WEEK_MONDAY\x10\x02\x12\x17\n\x13\x44\x41Y_OF_WEEK_TUESDAY\x10\x03\x12\x19\n\x15\x44\x41Y_OF_WEEK_WEDNESDAY\x10\x04\x12\x18\n\x14\x44\x41Y_OF_WEEK_THURSDAY\x10\x05\x12\x16\n\x12\x44\x41Y_OF_WEEK_FRIDAY\x10\x06\x12\x18\n\x14\x44\x41Y_OF_WEEK_SATURDAY\x10\x07\x62\x06proto3')
 )
 
 _DAYOFWEEK = _descriptor.EnumDescriptor(
@@ -31,54 +31,54 @@ _DAYOFWEEK = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='DOW_UNKNOWN', index=0, number=0,
+      name='DAY_OF_WEEK_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_SUNDAY', index=1, number=1,
+      name='DAY_OF_WEEK_SUNDAY', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_MONDAY', index=2, number=2,
+      name='DAY_OF_WEEK_MONDAY', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_TUESDAY', index=3, number=3,
+      name='DAY_OF_WEEK_TUESDAY', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_WEDNESDAY', index=4, number=4,
+      name='DAY_OF_WEEK_WEDNESDAY', index=4, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_THURSDAY', index=5, number=5,
+      name='DAY_OF_WEEK_THURSDAY', index=5, number=5,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_FRIDAY', index=6, number=6,
+      name='DAY_OF_WEEK_FRIDAY', index=6, number=6,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DOW_SATURDAY', index=7, number=7,
+      name='DAY_OF_WEEK_SATURDAY', index=7, number=7,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=59,
-  serialized_end=207,
+  serialized_end=271,
 )
 _sym_db.RegisterEnumDescriptor(_DAYOFWEEK)
 
 DayOfWeek = enum_type_wrapper.EnumTypeWrapper(_DAYOFWEEK)
-DOW_UNKNOWN = 0
-DOW_SUNDAY = 1
-DOW_MONDAY = 2
-DOW_TUESDAY = 3
-DOW_WEDNESDAY = 4
-DOW_THURSDAY = 5
-DOW_FRIDAY = 6
-DOW_SATURDAY = 7
+DAY_OF_WEEK_UNKNOWN = 0
+DAY_OF_WEEK_SUNDAY = 1
+DAY_OF_WEEK_MONDAY = 2
+DAY_OF_WEEK_TUESDAY = 3
+DAY_OF_WEEK_WEDNESDAY = 4
+DAY_OF_WEEK_THURSDAY = 5
+DAY_OF_WEEK_FRIDAY = 6
+DAY_OF_WEEK_SATURDAY = 7
 
 
 DESCRIPTOR.enum_types_by_name['DayOfWeek'] = _DAYOFWEEK

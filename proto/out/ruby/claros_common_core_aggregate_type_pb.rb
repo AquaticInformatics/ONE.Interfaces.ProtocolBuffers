@@ -6,10 +6,10 @@ require 'google/protobuf'
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("claros_common_core_aggregate_type.proto", :syntax => :proto3) do
     add_enum "claros.common.core.AggregateType" do
-      value :A_UNKNOWN, 0
-      value :A_MINIMUM, 1
-      value :A_MAXIMUM, 2
-      value :A_AVERAGE, 3
+      value :AGGREGATE_UNKNOWN, 0
+      value :AGGREGATE_MINIMUM, 1
+      value :AGGREGATE_MAXIMUM, 2
+      value :AGGREGATE_AVERAGE, 3
     end
   end
 end

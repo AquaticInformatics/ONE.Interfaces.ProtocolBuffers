@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.operations.spreadsheet',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n2claros_operations_spreadsheet_worksheet_type.proto\x12\x1d\x63laros.operations.spreadsheet*a\n\rWorksheetType\x12\r\n\tW_UNKNOWN\x10\x00\x12\x14\n\x10W_FIFTEEN_MINUTE\x10\x01\x12\x0f\n\x0bW_FOUR_HOUR\x10\x02\x12\x0b\n\x07W_DAILY\x10\x03\x12\r\n\tW_MONTHLY\x10\x04\x62\x06proto3')
+  serialized_pb=_b('\n2claros_operations_spreadsheet_worksheet_type.proto\x12\x1d\x63laros.operations.spreadsheet*\x86\x01\n\rWorksheetType\x12\x15\n\x11WORKSHEET_UNKNOWN\x10\x00\x12\x1c\n\x18WORKSHEET_FIFTEEN_MINUTE\x10\x01\x12\x12\n\x0eWORKSHEET_HOUR\x10\x02\x12\x17\n\x13WORKSHEET_FOUR_HOUR\x10\x03\x12\x13\n\x0fWORKSHEET_DAILY\x10\x04\x62\x06proto3')
 )
 
 _WORKSHEETTYPE = _descriptor.EnumDescriptor(
@@ -31,39 +31,39 @@ _WORKSHEETTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='W_UNKNOWN', index=0, number=0,
+      name='WORKSHEET_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='W_FIFTEEN_MINUTE', index=1, number=1,
+      name='WORKSHEET_FIFTEEN_MINUTE', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='W_FOUR_HOUR', index=2, number=2,
+      name='WORKSHEET_HOUR', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='W_DAILY', index=3, number=3,
+      name='WORKSHEET_FOUR_HOUR', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='W_MONTHLY', index=4, number=4,
+      name='WORKSHEET_DAILY', index=4, number=4,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=85,
-  serialized_end=182,
+  serialized_start=86,
+  serialized_end=220,
 )
 _sym_db.RegisterEnumDescriptor(_WORKSHEETTYPE)
 
 WorksheetType = enum_type_wrapper.EnumTypeWrapper(_WORKSHEETTYPE)
-W_UNKNOWN = 0
-W_FIFTEEN_MINUTE = 1
-W_FOUR_HOUR = 2
-W_DAILY = 3
-W_MONTHLY = 4
+WORKSHEET_UNKNOWN = 0
+WORKSHEET_FIFTEEN_MINUTE = 1
+WORKSHEET_HOUR = 2
+WORKSHEET_FOUR_HOUR = 3
+WORKSHEET_DAILY = 4
 
 
 DESCRIPTOR.enum_types_by_name['WorksheetType'] = _WORKSHEETTYPE

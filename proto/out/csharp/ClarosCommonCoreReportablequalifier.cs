@@ -78,6 +78,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "reportableQualifierType" field.</summary>
     public const int ReportableQualifierTypeFieldNumber = 1;
     private global::Claros.Common.Core.ReportableQualifierType reportableQualifierType_ = 0;
+    /// <summary>
+    /// The type of Qualifier
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Core.ReportableQualifierType ReportableQualifierType {
       get { return reportableQualifierType_; }
@@ -89,6 +92,9 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "qualifiedValue" field.</summary>
     public const int QualifiedValueFieldNumber = 2;
     private string qualifiedValue_ = "";
+    /// <summary>
+    /// What the user has entered as the qualifer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string QualifiedValue {
       get { return qualifiedValue_; }

@@ -56,10 +56,13 @@ typedef GPB_ENUM(InstrumentMeasurementBinding_FieldNumber) {
 
 @interface InstrumentMeasurementBinding : GPBMessage
 
+/** The id of the definition of an instrument measurement */
 @property(nonatomic, readwrite, copy, null_resettable) NSString *instrumentMeasurementId;
 
+/** How the data from instrument measurements will be aggregated into the bound system (Spreadsheet cell) */
 @property(nonatomic, readwrite) enum AggregateType aggregateType;
 
+/** The unit correlated to the binding. The resulting aggregate will be converted into this unit. */
 @property(nonatomic, readwrite) uint32_t unitId;
 
 @end

@@ -14,42 +14,62 @@ use Google\Protobuf\Internal\GPBUtil;
 class Column extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The number of the column
+     *
      * Generated from protobuf field <code>uint32 columnNumber = 1;</code>
      */
     private $columnNumber = 0;
     /**
+     * The name of the column
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
     /**
+     * The description of the column
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      */
     private $description = '';
     /**
+     * The parameter associated with the column
+     *
      * Generated from protobuf field <code>uint32 parameterId = 4;</code>
      */
     private $parameterId = 0;
     /**
+     * The default unit to display the column
+     *
      * Generated from protobuf field <code>uint32 displayUnitId = 5;</code>
      */
     private $displayUnitId = 0;
     /**
+     * The location associated to the data in the column
+     *
      * Generated from protobuf field <code>string locationId = 6;</code>
      */
     private $locationId = '';
     /**
+     * Soft Delete of the column
+     *
      * Generated from protobuf field <code>bool isActive = 7;</code>
      */
     private $isActive = false;
     /**
+     * Collection of limits related to the column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Limit limits = 8;</code>
      */
     private $limits;
     /**
+     * The expected place where the data will be received into the column
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      */
     private $dataSourceType = 0;
     /**
+     * This determines how qualifers are interpreted for this column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      */
     private $reportableQualiferDefinition;
@@ -62,17 +82,29 @@ class Column extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $columnNumber
+     *           The number of the column
      *     @type string $name
+     *           The name of the column
      *     @type string $description
+     *           The description of the column
      *     @type int $parameterId
+     *           The parameter associated with the column
      *     @type int $displayUnitId
+     *           The default unit to display the column
      *     @type string $locationId
+     *           The location associated to the data in the column
      *     @type bool $isActive
+     *           Soft Delete of the column
      *     @type \Claros\Common\Core\Limit[]|\Google\Protobuf\Internal\RepeatedField $limits
+     *           Collection of limits related to the column
      *     @type int $dataSourceType
-     *     @type \Claros\Instrument\InstrumentMeasurementBinding $instrumentMeasurementBinding
+     *           The expected place where the data will be received into the column
+     *     @type \Claros\Instrument\Measurement\InstrumentMeasurementBinding $instrumentMeasurementBinding
+     *           Column comes from aggregated instrument measurments
      *     @type \Claros\Common\Computation\ComputationBinding $computationBinding
+     *           Column comes as a result of a computation
      *     @type \Claros\Common\Core\ReportableQualifierDefinition[]|\Google\Protobuf\Internal\RepeatedField $reportableQualiferDefinition
+     *           This determines how qualifers are interpreted for this column
      * }
      */
     public function __construct($data = NULL) {
@@ -81,6 +113,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The number of the column
+     *
      * Generated from protobuf field <code>uint32 columnNumber = 1;</code>
      * @return int
      */
@@ -90,6 +124,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The number of the column
+     *
      * Generated from protobuf field <code>uint32 columnNumber = 1;</code>
      * @param int $var
      * @return $this
@@ -103,6 +139,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The name of the column
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @return string
      */
@@ -112,6 +150,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The name of the column
+     *
      * Generated from protobuf field <code>string name = 2;</code>
      * @param string $var
      * @return $this
@@ -125,6 +165,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The description of the column
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      * @return string
      */
@@ -134,6 +176,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The description of the column
+     *
      * Generated from protobuf field <code>string description = 3;</code>
      * @param string $var
      * @return $this
@@ -147,6 +191,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter associated with the column
+     *
      * Generated from protobuf field <code>uint32 parameterId = 4;</code>
      * @return int
      */
@@ -156,6 +202,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The parameter associated with the column
+     *
      * Generated from protobuf field <code>uint32 parameterId = 4;</code>
      * @param int $var
      * @return $this
@@ -169,6 +217,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The default unit to display the column
+     *
      * Generated from protobuf field <code>uint32 displayUnitId = 5;</code>
      * @return int
      */
@@ -178,6 +228,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The default unit to display the column
+     *
      * Generated from protobuf field <code>uint32 displayUnitId = 5;</code>
      * @param int $var
      * @return $this
@@ -191,6 +243,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The location associated to the data in the column
+     *
      * Generated from protobuf field <code>string locationId = 6;</code>
      * @return string
      */
@@ -200,6 +254,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The location associated to the data in the column
+     *
      * Generated from protobuf field <code>string locationId = 6;</code>
      * @param string $var
      * @return $this
@@ -213,6 +269,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Soft Delete of the column
+     *
      * Generated from protobuf field <code>bool isActive = 7;</code>
      * @return bool
      */
@@ -222,6 +280,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Soft Delete of the column
+     *
      * Generated from protobuf field <code>bool isActive = 7;</code>
      * @param bool $var
      * @return $this
@@ -235,6 +295,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Collection of limits related to the column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Limit limits = 8;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -244,6 +306,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Collection of limits related to the column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.Limit limits = 8;</code>
      * @param \Claros\Common\Core\Limit[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
@@ -257,6 +321,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The expected place where the data will be received into the column
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      * @return int
      */
@@ -266,6 +332,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The expected place where the data will be received into the column
+     *
      * Generated from protobuf field <code>.claros.common.core.DataSourceType dataSourceType = 9;</code>
      * @param int $var
      * @return $this
@@ -279,8 +347,10 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
-     * @return \Claros\Instrument\InstrumentMeasurementBinding
+     * Column comes from aggregated instrument measurments
+     *
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * @return \Claros\Instrument\Measurement\InstrumentMeasurementBinding
      */
     public function getInstrumentMeasurementBinding()
     {
@@ -288,19 +358,23 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
-     * @param \Claros\Instrument\InstrumentMeasurementBinding $var
+     * Column comes from aggregated instrument measurments
+     *
+     * Generated from protobuf field <code>.claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;</code>
+     * @param \Claros\Instrument\Measurement\InstrumentMeasurementBinding $var
      * @return $this
      */
     public function setInstrumentMeasurementBinding($var)
     {
-        GPBUtil::checkMessage($var, \Claros\Instrument\InstrumentMeasurementBinding::class);
+        GPBUtil::checkMessage($var, \Claros\Instrument\Measurement\InstrumentMeasurementBinding::class);
         $this->writeOneof(10, $var);
 
         return $this;
     }
 
     /**
+     * Column comes as a result of a computation
+     *
      * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      * @return \Claros\Common\Computation\ComputationBinding
      */
@@ -310,6 +384,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Column comes as a result of a computation
+     *
      * Generated from protobuf field <code>.claros.common.computation.ComputationBinding computationBinding = 11;</code>
      * @param \Claros\Common\Computation\ComputationBinding $var
      * @return $this
@@ -323,6 +399,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * This determines how qualifers are interpreted for this column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      * @return \Google\Protobuf\Internal\RepeatedField
      */
@@ -332,6 +410,8 @@ class Column extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * This determines how qualifers are interpreted for this column
+     *
      * Generated from protobuf field <code>repeated .claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;</code>
      * @param \Claros\Common\Core\ReportableQualifierDefinition[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this

@@ -40,14 +40,15 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto[] =
   "\n\'claros_common_core_aggregate_type.prot"
-  "o\022\022claros.common.core*K\n\rAggregateType\022\r"
-  "\n\tA_UNKNOWN\020\000\022\r\n\tA_MINIMUM\020\001\022\r\n\tA_MAXIMU"
-  "M\020\002\022\r\n\tA_AVERAGE\020\003b\006proto3"
+  "o\022\022claros.common.core*k\n\rAggregateType\022\025"
+  "\n\021AGGREGATE_UNKNOWN\020\000\022\025\n\021AGGREGATE_MINIM"
+  "UM\020\001\022\025\n\021AGGREGATE_MAXIMUM\020\002\022\025\n\021AGGREGATE"
+  "_AVERAGE\020\003b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto = {
   false, InitDefaults_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto,
-  "claros_common_core_aggregate_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto, 146,
+  "claros_common_core_aggregate_type.proto", &assign_descriptors_table_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto, 178,
 };
 
 void AddDescriptors_claros_5fcommon_5fcore_5faggregate_5ftype_2eproto() {

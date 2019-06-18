@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='claros.common.core',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n1claros_common_core_reportablequalifier_type.proto\x12\x12\x63laros.common.core*\xac\x01\n\x17ReportableQualifierType\x12\x0e\n\nRQ_UNKNOWN\x10\x00\x12\x10\n\x0cRQ_NONDETECT\x10\x01\x12\x0f\n\x0bRQ_ESTIMATE\x10\x02\x12\x1b\n\x17RQ_DETECTNONQUALIFIABLE\x10\x03\x12\x12\n\x0eRQ_GREATERTHAN\x10\x04\x12\x0f\n\x0bRQ_LESSTHAN\x10\x05\x12\x1c\n\x18RQ_TOO_NUMEROUS_TO_COUNT\x10\x06\x62\x06proto3')
+  serialized_pb=_b('\n1claros_common_core_reportablequalifier_type.proto\x12\x12\x63laros.common.core*\xaa\x02\n\x17ReportableQualifierType\x12 \n\x1cREPORTABLE_QUALIFIER_UNKNOWN\x10\x00\x12\"\n\x1eREPORTABLE_QUALIFIER_NONDETECT\x10\x01\x12!\n\x1dREPORTABLE_QUALIFIER_ESTIMATE\x10\x02\x12-\n)REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE\x10\x03\x12$\n REPORTABLE_QUALIFIER_GREATERTHAN\x10\x04\x12!\n\x1dREPORTABLE_QUALIFIER_LESSTHAN\x10\x05\x12.\n*REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT\x10\x06\x62\x06proto3')
 )
 
 _REPORTABLEQUALIFIERTYPE = _descriptor.EnumDescriptor(
@@ -31,49 +31,49 @@ _REPORTABLEQUALIFIERTYPE = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='RQ_UNKNOWN', index=0, number=0,
+      name='REPORTABLE_QUALIFIER_UNKNOWN', index=0, number=0,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_NONDETECT', index=1, number=1,
+      name='REPORTABLE_QUALIFIER_NONDETECT', index=1, number=1,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_ESTIMATE', index=2, number=2,
+      name='REPORTABLE_QUALIFIER_ESTIMATE', index=2, number=2,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_DETECTNONQUALIFIABLE', index=3, number=3,
+      name='REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE', index=3, number=3,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_GREATERTHAN', index=4, number=4,
+      name='REPORTABLE_QUALIFIER_GREATERTHAN', index=4, number=4,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_LESSTHAN', index=5, number=5,
+      name='REPORTABLE_QUALIFIER_LESSTHAN', index=5, number=5,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RQ_TOO_NUMEROUS_TO_COUNT', index=6, number=6,
+      name='REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT', index=6, number=6,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=74,
-  serialized_end=246,
+  serialized_end=372,
 )
 _sym_db.RegisterEnumDescriptor(_REPORTABLEQUALIFIERTYPE)
 
 ReportableQualifierType = enum_type_wrapper.EnumTypeWrapper(_REPORTABLEQUALIFIERTYPE)
-RQ_UNKNOWN = 0
-RQ_NONDETECT = 1
-RQ_ESTIMATE = 2
-RQ_DETECTNONQUALIFIABLE = 3
-RQ_GREATERTHAN = 4
-RQ_LESSTHAN = 5
-RQ_TOO_NUMEROUS_TO_COUNT = 6
+REPORTABLE_QUALIFIER_UNKNOWN = 0
+REPORTABLE_QUALIFIER_NONDETECT = 1
+REPORTABLE_QUALIFIER_ESTIMATE = 2
+REPORTABLE_QUALIFIER_DETECTNONQUALIFIABLE = 3
+REPORTABLE_QUALIFIER_GREATERTHAN = 4
+REPORTABLE_QUALIFIER_LESSTHAN = 5
+REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6
 
 
 DESCRIPTOR.enum_types_by_name['ReportableQualifierType'] = _REPORTABLEQUALIFIERTYPE

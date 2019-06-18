@@ -27,19 +27,20 @@ namespace Claros.Common.Computation {
             "CihjbGFyb3NfY29tbW9uX2NvbXB1dGF0aW9uX3ZhcmlhYmxlLnByb3RvEhlj",
             "bGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uGitjbGFyb3NfY29tbW9uX2NvbXB1",
             "dGF0aW9uX2N1cnNvcl90eXBlLnByb3RvGjVjbGFyb3NfY29tbW9uX2NvbXB1",
-            "dGF0aW9uX3Byb3BlcnR5c2VsZWN0b3JfdHlwZS5wcm90byLoAgoIVmFyaWFi",
+            "dGF0aW9uX3Byb3BlcnR5c2VsZWN0b3JfdHlwZS5wcm90byLsAgoIVmFyaWFi",
             "bGUSDwoHaTE4bktleRgBIAEoCRIMCgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0",
-            "aW9uGAMgASgJEhYKDnF1YW50aXR5VHlwZUlkGAQgASgJEkAKBmN1cnNvchgF",
-            "IAEoDjIwLmNsYXJvcy5jb21tb24uY29tcHV0YXRpb24uQ29tcHV0YXRpb25D",
-            "dXJzb3JUeXBlEhYKDmN1cnNvckFic29sdXRlGAYgASgNEkkKEHByb3BlcnR5",
-            "U2VsZWN0b3IYByABKA4yLy5jbGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uLlBy",
-            "b3BlcnR5U2VsZWN0b3JUeXBlEhwKFHN1Z2dlc3RlZFBhcmFtZXRlcklkGAgg",
-            "ASgNEhcKD3N1Z2dlc3RlZFVuaXRJZBgJIAEoDRISCghjb2x1bW5JZBgKIAEo",
-            "DUgAEhUKC2Zvcm1GaWVsZElkGAsgASgNSABCCQoHYmluZGluZ2IGcHJvdG8z"));
+            "aW9uGAMgASgJEhYKDnF1YW50aXR5VHlwZUlkGAQgASgJEkQKCmN1cnNvclR5",
+            "cGUYBSABKA4yMC5jbGFyb3MuY29tbW9uLmNvbXB1dGF0aW9uLkNvbXB1dGF0",
+            "aW9uQ3Vyc29yVHlwZRIWCg5jdXJzb3JBYnNvbHV0ZRgGIAEoDRJJChBwcm9w",
+            "ZXJ0eVNlbGVjdG9yGAcgASgOMi8uY2xhcm9zLmNvbW1vbi5jb21wdXRhdGlv",
+            "bi5Qcm9wZXJ0eVNlbGVjdG9yVHlwZRIcChRzdWdnZXN0ZWRQYXJhbWV0ZXJJ",
+            "ZBgIIAEoDRIXCg9zdWdnZXN0ZWRVbml0SWQYCSABKA0SEgoIY29sdW1uSWQY",
+            "CiABKA1IABIVCgtmb3JtRmllbGRJZBgLIAEoDUgAQgkKB2JpbmRpbmdiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Claros.Common.Computation.ClarosCommonComputationCursorTypeReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationPropertyselectorTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Computation.Variable), global::Claros.Common.Computation.Variable.Parser, new[]{ "I18NKey", "Name", "Description", "QuantityTypeId", "Cursor", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Computation.Variable), global::Claros.Common.Computation.Variable.Parser, new[]{ "I18NKey", "Name", "Description", "QuantityTypeId", "CursorType", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -75,7 +76,7 @@ namespace Claros.Common.Computation {
       name_ = other.name_;
       description_ = other.description_;
       quantityTypeId_ = other.quantityTypeId_;
-      cursor_ = other.cursor_;
+      cursorType_ = other.cursorType_;
       cursorAbsolute_ = other.cursorAbsolute_;
       propertySelector_ = other.propertySelector_;
       suggestedParameterId_ = other.suggestedParameterId_;
@@ -100,6 +101,9 @@ namespace Claros.Common.Computation {
     /// <summary>Field number for the "i18nKey" field.</summary>
     public const int I18NKeyFieldNumber = 1;
     private string i18NKey_ = "";
+    /// <summary>
+    /// Use for translations of a global computation
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string I18NKey {
       get { return i18NKey_; }
@@ -111,6 +115,9 @@ namespace Claros.Common.Computation {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Tenant entered name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
       get { return name_; }
@@ -122,6 +129,9 @@ namespace Claros.Common.Computation {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
     private string description_ = "";
+    /// <summary>
+    /// Tenant entered description
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Description {
       get { return description_; }
@@ -133,6 +143,9 @@ namespace Claros.Common.Computation {
     /// <summary>Field number for the "quantityTypeId" field.</summary>
     public const int QuantityTypeIdFieldNumber = 4;
     private string quantityTypeId_ = "";
+    /// <summary>
+    /// FK to QuantityType
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string QuantityTypeId {
       get { return quantityTypeId_; }
@@ -141,20 +154,26 @@ namespace Claros.Common.Computation {
       }
     }
 
-    /// <summary>Field number for the "cursor" field.</summary>
-    public const int CursorFieldNumber = 5;
-    private global::Claros.Common.Computation.ComputationCursorType cursor_ = 0;
+    /// <summary>Field number for the "cursorType" field.</summary>
+    public const int CursorTypeFieldNumber = 5;
+    private global::Claros.Common.Computation.ComputationCursorType cursorType_ = 0;
+    /// <summary>
+    /// References adjacent rows
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Computation.ComputationCursorType Cursor {
-      get { return cursor_; }
+    public global::Claros.Common.Computation.ComputationCursorType CursorType {
+      get { return cursorType_; }
       set {
-        cursor_ = value;
+        cursorType_ = value;
       }
     }
 
     /// <summary>Field number for the "cursorAbsolute" field.</summary>
     public const int CursorAbsoluteFieldNumber = 6;
     private uint cursorAbsolute_;
+    /// <summary>
+    /// ??? is this meant to be relative???
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint CursorAbsolute {
       get { return cursorAbsolute_; }
@@ -166,6 +185,9 @@ namespace Claros.Common.Computation {
     /// <summary>Field number for the "propertySelector" field.</summary>
     public const int PropertySelectorFieldNumber = 7;
     private global::Claros.Common.Computation.PropertySelectorType propertySelector_ = 0;
+    /// <summary>
+    /// What attribute of the cell or row??
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Claros.Common.Computation.PropertySelectorType PropertySelector {
       get { return propertySelector_; }
@@ -254,7 +276,7 @@ namespace Claros.Common.Computation {
       if (Name != other.Name) return false;
       if (Description != other.Description) return false;
       if (QuantityTypeId != other.QuantityTypeId) return false;
-      if (Cursor != other.Cursor) return false;
+      if (CursorType != other.CursorType) return false;
       if (CursorAbsolute != other.CursorAbsolute) return false;
       if (PropertySelector != other.PropertySelector) return false;
       if (SuggestedParameterId != other.SuggestedParameterId) return false;
@@ -272,7 +294,7 @@ namespace Claros.Common.Computation {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (QuantityTypeId.Length != 0) hash ^= QuantityTypeId.GetHashCode();
-      if (Cursor != 0) hash ^= Cursor.GetHashCode();
+      if (CursorType != 0) hash ^= CursorType.GetHashCode();
       if (CursorAbsolute != 0) hash ^= CursorAbsolute.GetHashCode();
       if (PropertySelector != 0) hash ^= PropertySelector.GetHashCode();
       if (SuggestedParameterId != 0) hash ^= SuggestedParameterId.GetHashCode();
@@ -309,9 +331,9 @@ namespace Claros.Common.Computation {
         output.WriteRawTag(34);
         output.WriteString(QuantityTypeId);
       }
-      if (Cursor != 0) {
+      if (CursorType != 0) {
         output.WriteRawTag(40);
-        output.WriteEnum((int) Cursor);
+        output.WriteEnum((int) CursorType);
       }
       if (CursorAbsolute != 0) {
         output.WriteRawTag(48);
@@ -357,8 +379,8 @@ namespace Claros.Common.Computation {
       if (QuantityTypeId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(QuantityTypeId);
       }
-      if (Cursor != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Cursor);
+      if (CursorType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CursorType);
       }
       if (CursorAbsolute != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CursorAbsolute);
@@ -401,8 +423,8 @@ namespace Claros.Common.Computation {
       if (other.QuantityTypeId.Length != 0) {
         QuantityTypeId = other.QuantityTypeId;
       }
-      if (other.Cursor != 0) {
-        Cursor = other.Cursor;
+      if (other.CursorType != 0) {
+        CursorType = other.CursorType;
       }
       if (other.CursorAbsolute != 0) {
         CursorAbsolute = other.CursorAbsolute;
@@ -453,7 +475,7 @@ namespace Claros.Common.Computation {
             break;
           }
           case 40: {
-            Cursor = (global::Claros.Common.Computation.ComputationCursorType) input.ReadEnum();
+            CursorType = (global::Claros.Common.Computation.ComputationCursorType) input.ReadEnum();
             break;
           }
           case 48: {

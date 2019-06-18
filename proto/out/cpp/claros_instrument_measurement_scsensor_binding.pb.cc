@@ -19,21 +19,23 @@
 extern PROTOBUF_INTERNAL_EXPORT_claros_5fcommon_5fcore_5fclarosdatetime_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ClarosDateTime_claros_5fcommon_5fcore_5fclarosdatetime_2eproto;
 namespace claros {
 namespace instrument {
+namespace measurement {
 class SCSensorBindingDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<SCSensorBinding> _instance;
 } _SCSensorBinding_default_instance_;
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 static void InitDefaultsSCSensorBinding_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::claros::instrument::_SCSensorBinding_default_instance_;
-    new (ptr) ::claros::instrument::SCSensorBinding();
+    void* ptr = &::claros::instrument::measurement::_SCSensorBinding_default_instance_;
+    new (ptr) ::claros::instrument::measurement::SCSensorBinding();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::claros::instrument::SCSensorBinding::InitAsDefaultInstance();
+  ::claros::instrument::measurement::SCSensorBinding::InitAsDefaultInstance();
 }
 
 ::google::protobuf::internal::SCCInfo<1> scc_info_SCSensorBinding_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto =
@@ -50,21 +52,21 @@ constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descr
 
 const ::google::protobuf::uint32 TableStruct_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::SCSensorBinding, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::SCSensorBinding, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::SCSensorBinding, channel_),
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::SCSensorBinding, tag_),
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::SCSensorBinding, validfrom_),
-  PROTOBUF_FIELD_OFFSET(::claros::instrument::SCSensorBinding, validto_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::SCSensorBinding, channel_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::SCSensorBinding, tag_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::SCSensorBinding, validfrom_),
+  PROTOBUF_FIELD_OFFSET(::claros::instrument::measurement::SCSensorBinding, validto_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::claros::instrument::SCSensorBinding)},
+  { 0, -1, sizeof(::claros::instrument::measurement::SCSensorBinding)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::claros::instrument::_SCSensorBinding_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::claros::instrument::measurement::_SCSensorBinding_default_instance_),
 };
 
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto = {
@@ -75,17 +77,18 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto[] =
   "\n4claros_instrument_measurement_scsensor"
-  "_binding.proto\022\021claros.instrument\032\'claro"
-  "s_common_core_clarosdatetime.proto\"\233\001\n\017S"
-  "CSensorBinding\022\017\n\007channel\030\002 \001(\r\022\013\n\003tag\030\003"
-  " \001(\t\0225\n\tvalidFrom\030\004 \001(\0132\".claros.common."
-  "core.ClarosDateTime\0223\n\007validTo\030\005 \001(\0132\".c"
-  "laros.common.core.ClarosDateTimeb\006proto3"
+  "_binding.proto\022\035claros.instrument.measur"
+  "ement\032\'claros_common_core_clarosdatetime"
+  ".proto\"\233\001\n\017SCSensorBinding\022\017\n\007channel\030\002 "
+  "\001(\r\022\013\n\003tag\030\003 \001(\t\0225\n\tvalidFrom\030\004 \001(\0132\".cl"
+  "aros.common.core.ClarosDateTime\0223\n\007valid"
+  "To\030\005 \001(\0132\".claros.common.core.ClarosDate"
+  "Timeb\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto = {
   false, InitDefaults_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto, 
   descriptor_table_protodef_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto,
-  "claros_instrument_measurement_scsensor_binding.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto, 280,
+  "claros_instrument_measurement_scsensor_binding.proto", &assign_descriptors_table_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto, 292,
 };
 
 void AddDescriptors_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto() {
@@ -100,13 +103,14 @@ void AddDescriptors_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2epro
 static bool dynamic_init_dummy_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto = []() { AddDescriptors_claros_5finstrument_5fmeasurement_5fscsensor_5fbinding_2eproto(); return true; }();
 namespace claros {
 namespace instrument {
+namespace measurement {
 
 // ===================================================================
 
 void SCSensorBinding::InitAsDefaultInstance() {
-  ::claros::instrument::_SCSensorBinding_default_instance_._instance.get_mutable()->validfrom_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+  ::claros::instrument::measurement::_SCSensorBinding_default_instance_._instance.get_mutable()->validfrom_ = const_cast< ::claros::common::core::ClarosDateTime*>(
       ::claros::common::core::ClarosDateTime::internal_default_instance());
-  ::claros::instrument::_SCSensorBinding_default_instance_._instance.get_mutable()->validto_ = const_cast< ::claros::common::core::ClarosDateTime*>(
+  ::claros::instrument::measurement::_SCSensorBinding_default_instance_._instance.get_mutable()->validto_ = const_cast< ::claros::common::core::ClarosDateTime*>(
       ::claros::common::core::ClarosDateTime::internal_default_instance());
 }
 class SCSensorBinding::HasBitSetters {
@@ -145,7 +149,7 @@ const int SCSensorBinding::kValidToFieldNumber;
 SCSensorBinding::SCSensorBinding()
   : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(constructor:claros.instrument.measurement.SCSensorBinding)
 }
 SCSensorBinding::SCSensorBinding(const SCSensorBinding& from)
   : ::google::protobuf::Message(),
@@ -166,7 +170,7 @@ SCSensorBinding::SCSensorBinding(const SCSensorBinding& from)
     validto_ = nullptr;
   }
   channel_ = from.channel_;
-  // @@protoc_insertion_point(copy_constructor:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(copy_constructor:claros.instrument.measurement.SCSensorBinding)
 }
 
 void SCSensorBinding::SharedCtor() {
@@ -179,7 +183,7 @@ void SCSensorBinding::SharedCtor() {
 }
 
 SCSensorBinding::~SCSensorBinding() {
-  // @@protoc_insertion_point(destructor:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(destructor:claros.instrument.measurement.SCSensorBinding)
   SharedDtor();
 }
 
@@ -199,7 +203,7 @@ const SCSensorBinding& SCSensorBinding::default_instance() {
 
 
 void SCSensorBinding::Clear() {
-// @@protoc_insertion_point(message_clear_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(message_clear_start:claros.instrument.measurement.SCSensorBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -242,7 +246,7 @@ const char* SCSensorBinding::_InternalParse(const char* begin, const char* end, 
         if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("claros.instrument.SCSensorBinding.tag");
+        ctx->extra_parse_data().SetFieldName("claros.instrument.measurement.SCSensorBinding.tag");
         object = msg->mutable_tag();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
           parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
@@ -307,7 +311,7 @@ bool SCSensorBinding::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(parse_start:claros.instrument.measurement.SCSensorBinding)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -334,7 +338,7 @@ bool SCSensorBinding::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->tag().data(), static_cast<int>(this->tag().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "claros.instrument.SCSensorBinding.tag"));
+            "claros.instrument.measurement.SCSensorBinding.tag"));
         } else {
           goto handle_unusual;
         }
@@ -375,10 +379,10 @@ bool SCSensorBinding::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(parse_success:claros.instrument.measurement.SCSensorBinding)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(parse_failure:claros.instrument.measurement.SCSensorBinding)
   return false;
 #undef DO_
 }
@@ -386,7 +390,7 @@ failure:
 
 void SCSensorBinding::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(serialize_start:claros.instrument.measurement.SCSensorBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -400,7 +404,7 @@ void SCSensorBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->tag().data(), static_cast<int>(this->tag().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "claros.instrument.SCSensorBinding.tag");
+      "claros.instrument.measurement.SCSensorBinding.tag");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->tag(), output);
   }
@@ -421,12 +425,12 @@ void SCSensorBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(serialize_end:claros.instrument.measurement.SCSensorBinding)
 }
 
 ::google::protobuf::uint8* SCSensorBinding::InternalSerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(serialize_to_array_start:claros.instrument.measurement.SCSensorBinding)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -440,7 +444,7 @@ void SCSensorBinding::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->tag().data(), static_cast<int>(this->tag().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "claros.instrument.SCSensorBinding.tag");
+      "claros.instrument.measurement.SCSensorBinding.tag");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->tag(), target);
@@ -464,12 +468,12 @@ void SCSensorBinding::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(serialize_to_array_end:claros.instrument.measurement.SCSensorBinding)
   return target;
 }
 
 size_t SCSensorBinding::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(message_byte_size_start:claros.instrument.measurement.SCSensorBinding)
   size_t total_size = 0;
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -515,22 +519,22 @@ size_t SCSensorBinding::ByteSizeLong() const {
 }
 
 void SCSensorBinding::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(generalized_merge_from_start:claros.instrument.measurement.SCSensorBinding)
   GOOGLE_DCHECK_NE(&from, this);
   const SCSensorBinding* source =
       ::google::protobuf::DynamicCastToGenerated<SCSensorBinding>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:claros.instrument.measurement.SCSensorBinding)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.instrument.SCSensorBinding)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:claros.instrument.measurement.SCSensorBinding)
     MergeFrom(*source);
   }
 }
 
 void SCSensorBinding::MergeFrom(const SCSensorBinding& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(class_specific_merge_from_start:claros.instrument.measurement.SCSensorBinding)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -552,14 +556,14 @@ void SCSensorBinding::MergeFrom(const SCSensorBinding& from) {
 }
 
 void SCSensorBinding::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(generalized_copy_from_start:claros.instrument.measurement.SCSensorBinding)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SCSensorBinding::CopyFrom(const SCSensorBinding& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:claros.instrument.SCSensorBinding)
+// @@protoc_insertion_point(class_specific_copy_from_start:claros.instrument.measurement.SCSensorBinding)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -590,12 +594,13 @@ void SCSensorBinding::InternalSwap(SCSensorBinding* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace measurement
 }  // namespace instrument
 }  // namespace claros
 namespace google {
 namespace protobuf {
-template<> PROTOBUF_NOINLINE ::claros::instrument::SCSensorBinding* Arena::CreateMaybeMessage< ::claros::instrument::SCSensorBinding >(Arena* arena) {
-  return Arena::CreateInternal< ::claros::instrument::SCSensorBinding >(arena);
+template<> PROTOBUF_NOINLINE ::claros::instrument::measurement::SCSensorBinding* Arena::CreateMaybeMessage< ::claros::instrument::measurement::SCSensorBinding >(Arena* arena) {
+  return Arena::CreateInternal< ::claros::instrument::measurement::SCSensorBinding >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

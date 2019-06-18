@@ -12,7 +12,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :name, :string, 2
       optional :description, :string, 3
       optional :quantityTypeId, :string, 4
-      optional :cursor, :enum, 5, "claros.common.computation.ComputationCursorType"
+      optional :cursorType, :enum, 5, "claros.common.computation.ComputationCursorType"
       optional :cursorAbsolute, :uint32, 6
       optional :propertySelector, :enum, 7, "claros.common.computation.PropertySelectorType"
       optional :suggestedParameterId, :uint32, 8

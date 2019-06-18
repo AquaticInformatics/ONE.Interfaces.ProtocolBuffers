@@ -20,48 +20,80 @@ public final class ClarosCommonCoreReportablequalifierdefinitionType {
   public enum ReportableQualifierDefinitionType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RQD_UNKNOWN = 0;</code>
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;</code>
      */
-    RQD_UNKNOWN(0),
+    REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN(0),
     /**
-     * <code>RQD_ENTEREDVALUE = 1;</code>
+     * <pre>
+     * The value is taken from the qualified value.  Example &lt; 2 becomes 2
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;</code>
      */
-    RQD_ENTEREDVALUE(1),
+    REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE(1),
     /**
-     * <code>RQD_ZERO = 2;</code>
+     * <pre>
+     * The value is set to zero (0) in this case
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_ZERO = 2;</code>
      */
-    RQD_ZERO(2),
+    REPORTABLE_QUALIFIER_DEFINITION_ZERO(2),
     /**
-     * <code>RQD_HALFENTERED = 3;</code>
+     * <pre>
+     * The value is set to half of the entered value.  Example &lt; 2 becomes 1
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED = 3;</code>
      */
-    RQD_HALFENTERED(3),
+    REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED(3),
     /**
-     * <code>RQD_CONSTANT = 4;</code>
+     * <pre>
+     * The value is set to a constant value that is entered by the customer.  For example &lt; 2 may be set to a customer value of 1.5
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_CONSTANT = 4;</code>
      */
-    RQD_CONSTANT(4),
+    REPORTABLE_QUALIFIER_DEFINITION_CONSTANT(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RQD_UNKNOWN = 0;</code>
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;</code>
      */
-    public static final int RQD_UNKNOWN_VALUE = 0;
+    public static final int REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN_VALUE = 0;
     /**
-     * <code>RQD_ENTEREDVALUE = 1;</code>
+     * <pre>
+     * The value is taken from the qualified value.  Example &lt; 2 becomes 2
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;</code>
      */
-    public static final int RQD_ENTEREDVALUE_VALUE = 1;
+    public static final int REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE_VALUE = 1;
     /**
-     * <code>RQD_ZERO = 2;</code>
+     * <pre>
+     * The value is set to zero (0) in this case
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_ZERO = 2;</code>
      */
-    public static final int RQD_ZERO_VALUE = 2;
+    public static final int REPORTABLE_QUALIFIER_DEFINITION_ZERO_VALUE = 2;
     /**
-     * <code>RQD_HALFENTERED = 3;</code>
+     * <pre>
+     * The value is set to half of the entered value.  Example &lt; 2 becomes 1
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED = 3;</code>
      */
-    public static final int RQD_HALFENTERED_VALUE = 3;
+    public static final int REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED_VALUE = 3;
     /**
-     * <code>RQD_CONSTANT = 4;</code>
+     * <pre>
+     * The value is set to a constant value that is entered by the customer.  For example &lt; 2 may be set to a customer value of 1.5
+     * </pre>
+     *
+     * <code>REPORTABLE_QUALIFIER_DEFINITION_CONSTANT = 4;</code>
      */
-    public static final int RQD_CONSTANT_VALUE = 4;
+    public static final int REPORTABLE_QUALIFIER_DEFINITION_CONSTANT_VALUE = 4;
 
 
     public final int getNumber() {
@@ -82,11 +114,11 @@ public final class ClarosCommonCoreReportablequalifierdefinitionType {
 
     public static ReportableQualifierDefinitionType forNumber(int value) {
       switch (value) {
-        case 0: return RQD_UNKNOWN;
-        case 1: return RQD_ENTEREDVALUE;
-        case 2: return RQD_ZERO;
-        case 3: return RQD_HALFENTERED;
-        case 4: return RQD_CONSTANT;
+        case 0: return REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN;
+        case 1: return REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE;
+        case 2: return REPORTABLE_QUALIFIER_DEFINITION_ZERO;
+        case 3: return REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED;
+        case 4: return REPORTABLE_QUALIFIER_DEFINITION_CONSTANT;
         default: return null;
       }
     }
@@ -150,10 +182,13 @@ public final class ClarosCommonCoreReportablequalifierdefinitionType {
     java.lang.String[] descriptorData = {
       "\n;claros_common_core_reportablequalifier" +
       "definition_type.proto\022\022claros.common.cor" +
-      "e*\177\n!ReportableQualifierDefinitionType\022\017" +
-      "\n\013RQD_UNKNOWN\020\000\022\024\n\020RQD_ENTEREDVALUE\020\001\022\014\n" +
-      "\010RQD_ZERO\020\002\022\023\n\017RQD_HALFENTERED\020\003\022\020\n\014RQD_" +
-      "CONSTANT\020\004b\006proto3"
+      "e*\213\002\n!ReportableQualifierDefinitionType\022" +
+      "+\n\'REPORTABLE_QUALIFIER_DEFINITION_UNKNO" +
+      "WN\020\000\0220\n,REPORTABLE_QUALIFIER_DEFINITION_" +
+      "ENTEREDVALUE\020\001\022(\n$REPORTABLE_QUALIFIER_D" +
+      "EFINITION_ZERO\020\002\022/\n+REPORTABLE_QUALIFIER" +
+      "_DEFINITION_HALFENTERED\020\003\022,\n(REPORTABLE_" +
+      "QUALIFIER_DEFINITION_CONSTANT\020\004b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

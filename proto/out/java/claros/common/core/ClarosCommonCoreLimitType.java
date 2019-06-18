@@ -20,48 +20,72 @@ public final class ClarosCommonCoreLimitType {
   public enum LimitType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>L_UNKNOWN = 0;</code>
+     * <code>LIMIT_UNKNOWN = 0;</code>
      */
-    L_UNKNOWN(0),
+    LIMIT_UNKNOWN(0),
     /**
-     * <code>L_HIGHALARM = 1;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_HIGHALARM = 1;</code>
      */
-    L_HIGHALARM(1),
+    LIMIT_HIGHALARM(1),
     /**
-     * <code>L_HIGHNEAR = 2;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT__HIGHNEAR = 2;</code>
      */
-    L_HIGHNEAR(2),
+    LIMIT__HIGHNEAR(2),
     /**
-     * <code>L_LOWNEAR = 3;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_LOWNEAR = 3;</code>
      */
-    L_LOWNEAR(3),
+    LIMIT_LOWNEAR(3),
     /**
-     * <code>L_LOWALARM = 4;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_LOWALARM = 4;</code>
      */
-    L_LOWALARM(4),
+    LIMIT_LOWALARM(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>L_UNKNOWN = 0;</code>
+     * <code>LIMIT_UNKNOWN = 0;</code>
      */
-    public static final int L_UNKNOWN_VALUE = 0;
+    public static final int LIMIT_UNKNOWN_VALUE = 0;
     /**
-     * <code>L_HIGHALARM = 1;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_HIGHALARM = 1;</code>
      */
-    public static final int L_HIGHALARM_VALUE = 1;
+    public static final int LIMIT_HIGHALARM_VALUE = 1;
     /**
-     * <code>L_HIGHNEAR = 2;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT__HIGHNEAR = 2;</code>
      */
-    public static final int L_HIGHNEAR_VALUE = 2;
+    public static final int LIMIT__HIGHNEAR_VALUE = 2;
     /**
-     * <code>L_LOWNEAR = 3;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_LOWNEAR = 3;</code>
      */
-    public static final int L_LOWNEAR_VALUE = 3;
+    public static final int LIMIT_LOWNEAR_VALUE = 3;
     /**
-     * <code>L_LOWALARM = 4;</code>
+     * <pre>
+     * </pre>
+     *
+     * <code>LIMIT_LOWALARM = 4;</code>
      */
-    public static final int L_LOWALARM_VALUE = 4;
+    public static final int LIMIT_LOWALARM_VALUE = 4;
 
 
     public final int getNumber() {
@@ -82,11 +106,11 @@ public final class ClarosCommonCoreLimitType {
 
     public static LimitType forNumber(int value) {
       switch (value) {
-        case 0: return L_UNKNOWN;
-        case 1: return L_HIGHALARM;
-        case 2: return L_HIGHNEAR;
-        case 3: return L_LOWNEAR;
-        case 4: return L_LOWALARM;
+        case 0: return LIMIT_UNKNOWN;
+        case 1: return LIMIT_HIGHALARM;
+        case 2: return LIMIT__HIGHNEAR;
+        case 3: return LIMIT_LOWNEAR;
+        case 4: return LIMIT_LOWALARM;
         default: return null;
       }
     }
@@ -149,9 +173,10 @@ public final class ClarosCommonCoreLimitType {
   static {
     java.lang.String[] descriptorData = {
       "\n#claros_common_core_limit_type.proto\022\022c" +
-      "laros.common.core*Z\n\tLimitType\022\r\n\tL_UNKN" +
-      "OWN\020\000\022\017\n\013L_HIGHALARM\020\001\022\016\n\nL_HIGHNEAR\020\002\022\r" +
-      "\n\tL_LOWNEAR\020\003\022\016\n\nL_LOWALARM\020\004b\006proto3"
+      "laros.common.core*o\n\tLimitType\022\021\n\rLIMIT_" +
+      "UNKNOWN\020\000\022\023\n\017LIMIT_HIGHALARM\020\001\022\023\n\017LIMIT_" +
+      "_HIGHNEAR\020\002\022\021\n\rLIMIT_LOWNEAR\020\003\022\022\n\016LIMIT_" +
+      "LOWALARM\020\004b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

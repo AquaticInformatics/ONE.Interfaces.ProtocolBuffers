@@ -38,13 +38,25 @@ typedef GPB_ENUM(DataSourceType) {
    * of the field.
    **/
   DataSourceType_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
-  DataSourceType_DsUnknown = 0,
-  DataSourceType_DsForm = 1,
-  DataSourceType_DsComputation = 2,
-  DataSourceType_DsSpreadsheet = 3,
-  DataSourceType_DsInstrumentmeasurement = 4,
-  DataSourceType_DsImport = 5,
-  DataSourceType_DsSpreadsheetDefinition = 6,
+  DataSourceType_DatasourceUnknown = 0,
+
+  /** Data related to Claros.Common.Form */
+  DataSourceType_DatasourceForm = 1,
+
+  /** Data related to Claros.Common.Computation */
+  DataSourceType_DatasourceComputation = 2,
+
+  /** Data related to Claros.Common.Spreadsheet */
+  DataSourceType_DatasourceSpreadsheet = 3,
+
+  /** Data related to Claros.Instrument.Measurement */
+  DataSourceType_DatasourceInstrumentmeasurement = 4,
+
+  /** Data related to imports */
+  DataSourceType_DatasourceImport = 5,
+
+  /** Data related to Claros.Common.Spreadsheet.Definition */
+  DataSourceType_DatasourceSpreadsheetDefinition = 6,
 };
 
 GPBEnumDescriptor *DataSourceType_EnumDescriptor(void);
