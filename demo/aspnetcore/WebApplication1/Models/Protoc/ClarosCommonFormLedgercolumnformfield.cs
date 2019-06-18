@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_ledgercolumnformfield.proto</summary>
   public static partial class ClarosCommonFormLedgercolumnformfieldReflection {
@@ -32,9 +32,9 @@ namespace Claros.Common.Form {
             "CzIeLmNsYXJvcy5jb21tb24uY29yZS5SZWN1cnJlbmNlEhEKCXBhcmFtZXRl",
             "chgGIAEoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.LedgerColumnFormField), global::Claros.Common.Form.LedgerColumnFormField.Parser, new[]{ "LedgerColumnGUID", "Unit", "UpLimit", "LowLimit", "TimeWindow", "Parameter" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.LedgerColumnFormField), global::claros.protoc.Common.Form.LedgerColumnFormField.Parser, new[]{ "LedgerColumnGUID", "Unit", "UpLimit", "LowLimit", "TimeWindow", "Parameter" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormLedgercolumnformfieldReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormLedgercolumnformfieldReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,9 +126,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "timeWindow" field.</summary>
     public const int TimeWindowFieldNumber = 5;
-    private global::Claros.Common.Core.Recurrence timeWindow_;
+    private global::claros.protoc.Common.Core.Recurrence timeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence TimeWindow {
+    public global::claros.protoc.Common.Core.Recurrence TimeWindow {
       get { return timeWindow_; }
       set {
         timeWindow_ = value;
@@ -265,7 +265,7 @@ namespace Claros.Common.Form {
       }
       if (other.timeWindow_ != null) {
         if (timeWindow_ == null) {
-          TimeWindow = new global::Claros.Common.Core.Recurrence();
+          TimeWindow = new global::claros.protoc.Common.Core.Recurrence();
         }
         TimeWindow.MergeFrom(other.TimeWindow);
       }
@@ -301,7 +301,7 @@ namespace Claros.Common.Form {
           }
           case 42: {
             if (timeWindow_ == null) {
-              TimeWindow = new global::Claros.Common.Core.Recurrence();
+              TimeWindow = new global::claros.protoc.Common.Core.Recurrence();
             }
             input.ReadMessage(TimeWindow);
             break;

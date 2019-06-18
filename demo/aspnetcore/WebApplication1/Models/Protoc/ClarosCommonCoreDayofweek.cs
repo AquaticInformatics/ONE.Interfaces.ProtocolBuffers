@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_dayofweek.proto</summary>
   public static partial class ClarosCommonCoreDayofweekReflection {
@@ -31,7 +31,7 @@ namespace Claros.Common.Core {
             "X0ZSSURBWRAGEhAKDERPV19TQVRVUkRBWRAHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.DayOfWeek), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Common.Core.DayOfWeek), }, null));
     }
     #endregion
 

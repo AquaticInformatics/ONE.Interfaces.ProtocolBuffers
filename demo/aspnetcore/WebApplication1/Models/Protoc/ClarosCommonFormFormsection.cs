@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formsection.proto</summary>
   public static partial class ClarosCommonFormFormsectionReflection {
@@ -30,9 +30,9 @@ namespace Claros.Common.Form {
             "bhgCIAMoCzIeLmNsYXJvcy5jb21tb24uZm9ybS5Gb3JtQ29sdW1uYgZwcm90",
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormcolumnReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormcolumnReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormSection), global::Claros.Common.Form.FormSection.Parser, new[]{ "Number", "Column" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormSection), global::claros.protoc.Common.Form.FormSection.Parser, new[]{ "Number", "Column" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormsectionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormsectionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -87,11 +87,11 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "column" field.</summary>
     public const int ColumnFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormColumn> _repeated_column_codec
-        = pb::FieldCodec.ForMessage(18, global::Claros.Common.Form.FormColumn.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormColumn> column_ = new pbc::RepeatedField<global::Claros.Common.Form.FormColumn>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormColumn> _repeated_column_codec
+        = pb::FieldCodec.ForMessage(18, global::claros.protoc.Common.Form.FormColumn.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormColumn> column_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormColumn>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormColumn> Column {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormColumn> Column {
       get { return column_; }
     }
 

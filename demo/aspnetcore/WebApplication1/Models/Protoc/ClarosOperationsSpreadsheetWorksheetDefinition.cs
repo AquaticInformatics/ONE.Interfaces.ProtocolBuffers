@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_definition.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetDefinitionReflection {
@@ -34,9 +34,9 @@ namespace Claros.Operations.Spreadsheet {
             "YXVkaXRFdmVudBhjIAEoCzIeLmNsYXJvcy5jb21tb24uY29yZS5BdWRpdEV2",
             "ZW50YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.WorksheetDefinition), global::Claros.Operations.Spreadsheet.WorksheetDefinition.Parser, new[]{ "Version", "StartRow", "EndRow", "Columns", "AuditEvent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition), global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition.Parser, new[]{ "Version", "StartRow", "EndRow", "Columns", "AuditEvent" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetDefinitionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetDefinitionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -116,19 +116,19 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "columns" field.</summary>
     public const int ColumnsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Column> _repeated_columns_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Operations.Spreadsheet.Column.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column> columns_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.Column> _repeated_columns_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Operations.Spreadsheet.Column.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Column> columns_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Column>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Column> Columns {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Column> Columns {
       get { return columns_; }
     }
 
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 99;
-    private global::Claros.Common.Core.AuditEvent auditEvent_;
+    private global::claros.protoc.Common.Core.AuditEvent auditEvent_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AuditEvent AuditEvent {
+    public global::claros.protoc.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }
       set {
         auditEvent_ = value;
@@ -238,7 +238,7 @@ namespace Claros.Operations.Spreadsheet {
       columns_.Add(other.columns_);
       if (other.auditEvent_ != null) {
         if (auditEvent_ == null) {
-          AuditEvent = new global::Claros.Common.Core.AuditEvent();
+          AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
         }
         AuditEvent.MergeFrom(other.AuditEvent);
       }
@@ -271,7 +271,7 @@ namespace Claros.Operations.Spreadsheet {
           }
           case 794: {
             if (auditEvent_ == null) {
-              AuditEvent = new global::Claros.Common.Core.AuditEvent();
+              AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
             }
             input.ReadMessage(AuditEvent);
             break;

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_networkdata.proto</summary>
   public static partial class ClarosCommonCoreNetworkdataReflection {
@@ -37,9 +37,9 @@ namespace Claros.Common.Core {
             "bm90ZRgFIAEoCzIYLmNsYXJvcy5jb21tb24uY29yZS5Ob3RlSABCEQoPcmVz",
             "cG9uc2Vfb25lX29mYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.NetworkData), global::Claros.Common.Core.NetworkData.Parser, new[]{ "Responses" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.NetworkData.Types.Response), global::Claros.Common.Core.NetworkData.Types.Response.Parser, new[]{ "FormTemplate", "Form", "DateTime", "Note" }, new[]{ "ResponseOneOf" }, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.NetworkData), global::claros.protoc.Common.Core.NetworkData.Parser, new[]{ "Responses" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.NetworkData.Types.Response), global::claros.protoc.Common.Core.NetworkData.Types.Response.Parser, new[]{ "FormTemplate", "Form", "DateTime", "Note" }, new[]{ "ResponseOneOf" }, null, null)})
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreNetworkdataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreNetworkdataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -82,11 +82,11 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "responses" field.</summary>
     public const int ResponsesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.NetworkData.Types.Response> _repeated_responses_codec
-        = pb::FieldCodec.ForMessage(10, global::Claros.Common.Core.NetworkData.Types.Response.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.NetworkData.Types.Response> responses_ = new pbc::RepeatedField<global::Claros.Common.Core.NetworkData.Types.Response>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.NetworkData.Types.Response> _repeated_responses_codec
+        = pb::FieldCodec.ForMessage(10, global::claros.protoc.Common.Core.NetworkData.Types.Response.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.NetworkData.Types.Response> responses_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.NetworkData.Types.Response>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.NetworkData.Types.Response> Responses {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.NetworkData.Types.Response> Responses {
       get { return responses_; }
     }
 
@@ -177,7 +177,7 @@ namespace Claros.Common.Core {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Claros.Common.Core.NetworkData.Descriptor.NestedTypes[0]; }
+          get { return global::claros.protoc.Common.Core.NetworkData.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -220,8 +220,8 @@ namespace Claros.Common.Core {
         /// <summary>Field number for the "formTemplate" field.</summary>
         public const int FormTemplateFieldNumber = 2;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Claros.Common.Form.FormTemplate FormTemplate {
-          get { return responseOneOfCase_ == ResponseOneOfOneofCase.FormTemplate ? (global::Claros.Common.Form.FormTemplate) responseOneOf_ : null; }
+        public global::claros.protoc.Common.Form.FormTemplate FormTemplate {
+          get { return responseOneOfCase_ == ResponseOneOfOneofCase.FormTemplate ? (global::claros.protoc.Common.Form.FormTemplate) responseOneOf_ : null; }
           set {
             responseOneOf_ = value;
             responseOneOfCase_ = value == null ? ResponseOneOfOneofCase.None : ResponseOneOfOneofCase.FormTemplate;
@@ -231,8 +231,8 @@ namespace Claros.Common.Core {
         /// <summary>Field number for the "form" field.</summary>
         public const int FormFieldNumber = 3;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Claros.Common.Form.Form Form {
-          get { return responseOneOfCase_ == ResponseOneOfOneofCase.Form ? (global::Claros.Common.Form.Form) responseOneOf_ : null; }
+        public global::claros.protoc.Common.Form.Form Form {
+          get { return responseOneOfCase_ == ResponseOneOfOneofCase.Form ? (global::claros.protoc.Common.Form.Form) responseOneOf_ : null; }
           set {
             responseOneOf_ = value;
             responseOneOfCase_ = value == null ? ResponseOneOfOneofCase.None : ResponseOneOfOneofCase.Form;
@@ -242,8 +242,8 @@ namespace Claros.Common.Core {
         /// <summary>Field number for the "dateTime" field.</summary>
         public const int DateTimeFieldNumber = 4;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Claros.Common.Core.ClarosDateTime DateTime {
-          get { return responseOneOfCase_ == ResponseOneOfOneofCase.DateTime ? (global::Claros.Common.Core.ClarosDateTime) responseOneOf_ : null; }
+        public global::claros.protoc.Common.Core.ClarosDateTime DateTime {
+          get { return responseOneOfCase_ == ResponseOneOfOneofCase.DateTime ? (global::claros.protoc.Common.Core.ClarosDateTime) responseOneOf_ : null; }
           set {
             responseOneOf_ = value;
             responseOneOfCase_ = value == null ? ResponseOneOfOneofCase.None : ResponseOneOfOneofCase.DateTime;
@@ -253,8 +253,8 @@ namespace Claros.Common.Core {
         /// <summary>Field number for the "note" field.</summary>
         public const int NoteFieldNumber = 5;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Claros.Common.Core.Note Note {
-          get { return responseOneOfCase_ == ResponseOneOfOneofCase.Note ? (global::Claros.Common.Core.Note) responseOneOf_ : null; }
+        public global::claros.protoc.Common.Core.Note Note {
+          get { return responseOneOfCase_ == ResponseOneOfOneofCase.Note ? (global::claros.protoc.Common.Core.Note) responseOneOf_ : null; }
           set {
             responseOneOf_ = value;
             responseOneOfCase_ = value == null ? ResponseOneOfOneofCase.None : ResponseOneOfOneofCase.Note;
@@ -374,25 +374,25 @@ namespace Claros.Common.Core {
           switch (other.ResponseOneOfCase) {
             case ResponseOneOfOneofCase.FormTemplate:
               if (FormTemplate == null) {
-                FormTemplate = new global::Claros.Common.Form.FormTemplate();
+                FormTemplate = new global::claros.protoc.Common.Form.FormTemplate();
               }
               FormTemplate.MergeFrom(other.FormTemplate);
               break;
             case ResponseOneOfOneofCase.Form:
               if (Form == null) {
-                Form = new global::Claros.Common.Form.Form();
+                Form = new global::claros.protoc.Common.Form.Form();
               }
               Form.MergeFrom(other.Form);
               break;
             case ResponseOneOfOneofCase.DateTime:
               if (DateTime == null) {
-                DateTime = new global::Claros.Common.Core.ClarosDateTime();
+                DateTime = new global::claros.protoc.Common.Core.ClarosDateTime();
               }
               DateTime.MergeFrom(other.DateTime);
               break;
             case ResponseOneOfOneofCase.Note:
               if (Note == null) {
-                Note = new global::Claros.Common.Core.Note();
+                Note = new global::claros.protoc.Common.Core.Note();
               }
               Note.MergeFrom(other.Note);
               break;
@@ -410,7 +410,7 @@ namespace Claros.Common.Core {
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 18: {
-                global::Claros.Common.Form.FormTemplate subBuilder = new global::Claros.Common.Form.FormTemplate();
+                global::claros.protoc.Common.Form.FormTemplate subBuilder = new global::claros.protoc.Common.Form.FormTemplate();
                 if (responseOneOfCase_ == ResponseOneOfOneofCase.FormTemplate) {
                   subBuilder.MergeFrom(FormTemplate);
                 }
@@ -419,7 +419,7 @@ namespace Claros.Common.Core {
                 break;
               }
               case 26: {
-                global::Claros.Common.Form.Form subBuilder = new global::Claros.Common.Form.Form();
+                global::claros.protoc.Common.Form.Form subBuilder = new global::claros.protoc.Common.Form.Form();
                 if (responseOneOfCase_ == ResponseOneOfOneofCase.Form) {
                   subBuilder.MergeFrom(Form);
                 }
@@ -428,7 +428,7 @@ namespace Claros.Common.Core {
                 break;
               }
               case 34: {
-                global::Claros.Common.Core.ClarosDateTime subBuilder = new global::Claros.Common.Core.ClarosDateTime();
+                global::claros.protoc.Common.Core.ClarosDateTime subBuilder = new global::claros.protoc.Common.Core.ClarosDateTime();
                 if (responseOneOfCase_ == ResponseOneOfOneofCase.DateTime) {
                   subBuilder.MergeFrom(DateTime);
                 }
@@ -437,7 +437,7 @@ namespace Claros.Common.Core {
                 break;
               }
               case 42: {
-                global::Claros.Common.Core.Note subBuilder = new global::Claros.Common.Core.Note();
+                global::claros.protoc.Common.Core.Note subBuilder = new global::claros.protoc.Common.Core.Note();
                 if (responseOneOfCase_ == ResponseOneOfOneofCase.Note) {
                   subBuilder.MergeFrom(Note);
                 }

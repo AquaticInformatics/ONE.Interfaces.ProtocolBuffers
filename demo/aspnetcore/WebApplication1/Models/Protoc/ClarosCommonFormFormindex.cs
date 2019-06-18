@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formindex.proto</summary>
   public static partial class ClarosCommonFormFormindexReflection {
@@ -34,9 +34,9 @@ namespace Claros.Common.Form {
             "EgwKBG5hbWUYBiABKAkSEQoJY3JlYXRvcklkGAcgASgJEhEKCWlzSW5TcGVl",
             "ZBgIIAEoCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormIndex), global::Claros.Common.Form.FormIndex.Parser, new[]{ "Id", "TemplateId", "TemplateVersion", "TimeWindow", "LastModified", "Name", "CreatorId", "IsInSpeed" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormIndex), global::claros.protoc.Common.Form.FormIndex.Parser, new[]{ "Id", "TemplateId", "TemplateVersion", "TimeWindow", "LastModified", "Name", "CreatorId", "IsInSpeed" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormindexReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormindexReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -125,9 +125,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "timeWindow" field.</summary>
     public const int TimeWindowFieldNumber = 4;
-    private global::Claros.Common.Core.TimeWindow timeWindow_;
+    private global::claros.protoc.Common.Core.TimeWindow timeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow TimeWindow {
+    public global::claros.protoc.Common.Core.TimeWindow TimeWindow {
       get { return timeWindow_; }
       set {
         timeWindow_ = value;
@@ -136,9 +136,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "lastModified" field.</summary>
     public const int LastModifiedFieldNumber = 5;
-    private global::Claros.Common.Core.ClarosDateTime lastModified_;
+    private global::claros.protoc.Common.Core.ClarosDateTime lastModified_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime LastModified {
+    public global::claros.protoc.Common.Core.ClarosDateTime LastModified {
       get { return lastModified_; }
       set {
         lastModified_ = value;
@@ -312,13 +312,13 @@ namespace Claros.Common.Form {
       }
       if (other.timeWindow_ != null) {
         if (timeWindow_ == null) {
-          TimeWindow = new global::Claros.Common.Core.TimeWindow();
+          TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
         }
         TimeWindow.MergeFrom(other.TimeWindow);
       }
       if (other.lastModified_ != null) {
         if (lastModified_ == null) {
-          LastModified = new global::Claros.Common.Core.ClarosDateTime();
+          LastModified = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         LastModified.MergeFrom(other.LastModified);
       }
@@ -356,14 +356,14 @@ namespace Claros.Common.Form {
           }
           case 34: {
             if (timeWindow_ == null) {
-              TimeWindow = new global::Claros.Common.Core.TimeWindow();
+              TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(TimeWindow);
             break;
           }
           case 42: {
             if (lastModified_ == null) {
-              LastModified = new global::Claros.Common.Core.ClarosDateTime();
+              LastModified = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(LastModified);
             break;

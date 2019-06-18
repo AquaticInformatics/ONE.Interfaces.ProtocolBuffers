@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_view.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetViewReflection {
@@ -34,9 +34,9 @@ namespace Claros.Operations.Spreadsheet {
             "dBgDIAEoCRoyChBDb2x1bW5NYXNrc0VudHJ5EgsKA2tleRgBIAEoDRINCgV2",
             "YWx1ZRgCIAEoCToCOAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.WorksheetView), global::Claros.Operations.Spreadsheet.WorksheetView.Parser, new[]{ "WorksheetType", "ColumnMasks", "Layout" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.WorksheetView), global::claros.protoc.Operations.Spreadsheet.WorksheetView.Parser, new[]{ "WorksheetType", "ColumnMasks", "Layout" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetViewReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetViewReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -81,9 +81,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "worksheetType" field.</summary>
     public const int WorksheetTypeFieldNumber = 1;
-    private global::Claros.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
+    private global::claros.protoc.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.WorksheetType WorksheetType {
+    public global::claros.protoc.Operations.Spreadsheet.WorksheetType WorksheetType {
       get { return worksheetType_; }
       set {
         worksheetType_ = value;
@@ -203,7 +203,7 @@ namespace Claros.Operations.Spreadsheet {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            WorksheetType = (global::Claros.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
+            WorksheetType = (global::claros.protoc.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
             break;
           }
           case 18: {

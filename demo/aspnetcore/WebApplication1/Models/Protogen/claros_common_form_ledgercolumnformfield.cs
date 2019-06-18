@@ -3,7 +3,7 @@
 // Input: claros_common_form_ledgercolumnformfield.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -30,7 +30,7 @@ namespace claros.common.form
         public string lowLimit { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.core.Recurrence timeWindow { get; set; }
+        public global::claros.protogen.common.core.Recurrence timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(6, Name = @"parameter")]
         [global::System.ComponentModel.DefaultValue("")]

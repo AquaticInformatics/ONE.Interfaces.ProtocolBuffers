@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_form.proto</summary>
   public static partial class ClarosCommonFormFormReflection {
@@ -41,9 +41,9 @@ namespace Claros.Common.Form {
             "Y2xhcm9zLmNvbW1vbi5jb3JlLk5vdGUSMwoLYXVkaXRFdmVudHMYYyADKAsy",
             "Hi5jbGFyb3MuY29tbW9uLmNvcmUuQXVkaXRFdmVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormfieldReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormfieldReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.Form), global::Claros.Common.Form.Form.Parser, new[]{ "Id", "Name", "TimeWindow", "FormTemplate", "AdHocFormFieldDefinitions", "TemplateFormFields", "AdhocFormFields", "Notes", "AuditEvents" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.Form), global::claros.protoc.Common.Form.Form.Parser, new[]{ "Id", "Name", "TimeWindow", "FormTemplate", "AdHocFormFieldDefinitions", "TemplateFormFields", "AdhocFormFields", "Notes", "AuditEvents" }, null, null, null)
           }));
     }
     #endregion
@@ -58,7 +58,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -119,9 +119,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "timeWindow" field.</summary>
     public const int TimeWindowFieldNumber = 3;
-    private global::Claros.Common.Core.TimeWindow timeWindow_;
+    private global::claros.protoc.Common.Core.TimeWindow timeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow TimeWindow {
+    public global::claros.protoc.Common.Core.TimeWindow TimeWindow {
       get { return timeWindow_; }
       set {
         timeWindow_ = value;
@@ -130,12 +130,12 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formTemplate" field.</summary>
     public const int FormTemplateFieldNumber = 4;
-    private global::Claros.Common.Form.FormTemplate formTemplate_;
+    private global::claros.protoc.Common.Form.FormTemplate formTemplate_;
     /// <summary>
     /// definition
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormTemplate FormTemplate {
+    public global::claros.protoc.Common.Form.FormTemplate FormTemplate {
       get { return formTemplate_; }
       set {
         formTemplate_ = value;
@@ -144,54 +144,54 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "adHocFormFieldDefinitions" field.</summary>
     public const int AdHocFormFieldDefinitionsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormFieldDefinition> _repeated_adHocFormFieldDefinitions_codec
-        = pb::FieldCodec.ForMessage(42, global::Claros.Common.Form.FormFieldDefinition.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition> adHocFormFieldDefinitions_ = new pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormFieldDefinition> _repeated_adHocFormFieldDefinitions_codec
+        = pb::FieldCodec.ForMessage(42, global::claros.protoc.Common.Form.FormFieldDefinition.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition> adHocFormFieldDefinitions_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition> AdHocFormFieldDefinitions {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition> AdHocFormFieldDefinitions {
       get { return adHocFormFieldDefinitions_; }
     }
 
     /// <summary>Field number for the "templateFormFields" field.</summary>
     public const int TemplateFormFieldsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormField> _repeated_templateFormFields_codec
-        = pb::FieldCodec.ForMessage(50, global::Claros.Common.Form.FormField.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormField> templateFormFields_ = new pbc::RepeatedField<global::Claros.Common.Form.FormField>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormField> _repeated_templateFormFields_codec
+        = pb::FieldCodec.ForMessage(50, global::claros.protoc.Common.Form.FormField.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormField> templateFormFields_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormField>();
     /// <summary>
     /// data
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormField> TemplateFormFields {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormField> TemplateFormFields {
       get { return templateFormFields_; }
     }
 
     /// <summary>Field number for the "adhocFormFields" field.</summary>
     public const int AdhocFormFieldsFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormField> _repeated_adhocFormFields_codec
-        = pb::FieldCodec.ForMessage(58, global::Claros.Common.Form.FormField.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormField> adhocFormFields_ = new pbc::RepeatedField<global::Claros.Common.Form.FormField>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormField> _repeated_adhocFormFields_codec
+        = pb::FieldCodec.ForMessage(58, global::claros.protoc.Common.Form.FormField.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormField> adhocFormFields_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormField>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormField> AdhocFormFields {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormField> AdhocFormFields {
       get { return adhocFormFields_; }
     }
 
     /// <summary>Field number for the "notes" field.</summary>
     public const int NotesFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.Note> _repeated_notes_codec
-        = pb::FieldCodec.ForMessage(66, global::Claros.Common.Core.Note.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.Note> notes_ = new pbc::RepeatedField<global::Claros.Common.Core.Note>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.Note> _repeated_notes_codec
+        = pb::FieldCodec.ForMessage(66, global::claros.protoc.Common.Core.Note.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.Note> notes_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.Note>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.Note> Notes {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.Note> Notes {
       get { return notes_; }
     }
 
     /// <summary>Field number for the "auditEvents" field.</summary>
     public const int AuditEventsFieldNumber = 99;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.AuditEvent> _repeated_auditEvents_codec
-        = pb::FieldCodec.ForMessage(794, global::Claros.Common.Core.AuditEvent.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.AuditEvent> auditEvents_ = new pbc::RepeatedField<global::Claros.Common.Core.AuditEvent>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.AuditEvent> _repeated_auditEvents_codec
+        = pb::FieldCodec.ForMessage(794, global::claros.protoc.Common.Core.AuditEvent.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.AuditEvent> auditEvents_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.AuditEvent>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.AuditEvent> AuditEvents {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.AuditEvent> AuditEvents {
       get { return auditEvents_; }
     }
 
@@ -310,13 +310,13 @@ namespace Claros.Common.Form {
       }
       if (other.timeWindow_ != null) {
         if (timeWindow_ == null) {
-          TimeWindow = new global::Claros.Common.Core.TimeWindow();
+          TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
         }
         TimeWindow.MergeFrom(other.TimeWindow);
       }
       if (other.formTemplate_ != null) {
         if (formTemplate_ == null) {
-          FormTemplate = new global::Claros.Common.Form.FormTemplate();
+          FormTemplate = new global::claros.protoc.Common.Form.FormTemplate();
         }
         FormTemplate.MergeFrom(other.FormTemplate);
       }
@@ -346,14 +346,14 @@ namespace Claros.Common.Form {
           }
           case 26: {
             if (timeWindow_ == null) {
-              TimeWindow = new global::Claros.Common.Core.TimeWindow();
+              TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(TimeWindow);
             break;
           }
           case 34: {
             if (formTemplate_ == null) {
-              FormTemplate = new global::Claros.Common.Form.FormTemplate();
+              FormTemplate = new global::claros.protoc.Common.Form.FormTemplate();
             }
             input.ReadMessage(FormTemplate);
             break;

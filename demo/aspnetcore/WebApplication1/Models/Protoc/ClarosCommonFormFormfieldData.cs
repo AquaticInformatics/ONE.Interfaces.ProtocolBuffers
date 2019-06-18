@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formfield_data.proto</summary>
   public static partial class ClarosCommonFormFormfieldDataReflection {
@@ -34,9 +34,9 @@ namespace Claros.Common.Form {
             "dWRpdEV2ZW50GGMgASgLMh4uY2xhcm9zLmNvbW1vbi5jb3JlLkF1ZGl0RXZl",
             "bnRCEgoQZmllbGREYXRhQmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentDataReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentDataReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormFieldData), global::Claros.Common.Form.FormFieldData.Parser, new[]{ "Cell", "InstrumentData", "AuditEvent" }, new[]{ "FieldDataBinding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormFieldData), global::claros.protoc.Common.Form.FormFieldData.Parser, new[]{ "Cell", "InstrumentData", "AuditEvent" }, new[]{ "FieldDataBinding" }, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormfieldDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormfieldDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -87,8 +87,8 @@ namespace Claros.Common.Form {
     /// <summary>Field number for the "cell" field.</summary>
     public const int CellFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.Cell Cell {
-      get { return fieldDataBindingCase_ == FieldDataBindingOneofCase.Cell ? (global::Claros.Operations.Spreadsheet.Cell) fieldDataBinding_ : null; }
+    public global::claros.protoc.Operations.Spreadsheet.Cell Cell {
+      get { return fieldDataBindingCase_ == FieldDataBindingOneofCase.Cell ? (global::claros.protoc.Operations.Spreadsheet.Cell) fieldDataBinding_ : null; }
       set {
         fieldDataBinding_ = value;
         fieldDataBindingCase_ = value == null ? FieldDataBindingOneofCase.None : FieldDataBindingOneofCase.Cell;
@@ -97,9 +97,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "instrumentData" field.</summary>
     public const int InstrumentDataFieldNumber = 2;
-    private global::Claros.Instrument.InstrumentData instrumentData_;
+    private global::claros.protoc.Instrument.InstrumentData instrumentData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentData InstrumentData {
+    public global::claros.protoc.Instrument.InstrumentData InstrumentData {
       get { return instrumentData_; }
       set {
         instrumentData_ = value;
@@ -108,9 +108,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 99;
-    private global::Claros.Common.Core.AuditEvent auditEvent_;
+    private global::claros.protoc.Common.Core.AuditEvent auditEvent_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AuditEvent AuditEvent {
+    public global::claros.protoc.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }
       set {
         auditEvent_ = value;
@@ -217,20 +217,20 @@ namespace Claros.Common.Form {
       }
       if (other.instrumentData_ != null) {
         if (instrumentData_ == null) {
-          InstrumentData = new global::Claros.Instrument.InstrumentData();
+          InstrumentData = new global::claros.protoc.Instrument.InstrumentData();
         }
         InstrumentData.MergeFrom(other.InstrumentData);
       }
       if (other.auditEvent_ != null) {
         if (auditEvent_ == null) {
-          AuditEvent = new global::Claros.Common.Core.AuditEvent();
+          AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
         }
         AuditEvent.MergeFrom(other.AuditEvent);
       }
       switch (other.FieldDataBindingCase) {
         case FieldDataBindingOneofCase.Cell:
           if (Cell == null) {
-            Cell = new global::Claros.Operations.Spreadsheet.Cell();
+            Cell = new global::claros.protoc.Operations.Spreadsheet.Cell();
           }
           Cell.MergeFrom(other.Cell);
           break;
@@ -248,7 +248,7 @@ namespace Claros.Common.Form {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Claros.Operations.Spreadsheet.Cell subBuilder = new global::Claros.Operations.Spreadsheet.Cell();
+            global::claros.protoc.Operations.Spreadsheet.Cell subBuilder = new global::claros.protoc.Operations.Spreadsheet.Cell();
             if (fieldDataBindingCase_ == FieldDataBindingOneofCase.Cell) {
               subBuilder.MergeFrom(Cell);
             }
@@ -258,14 +258,14 @@ namespace Claros.Common.Form {
           }
           case 18: {
             if (instrumentData_ == null) {
-              InstrumentData = new global::Claros.Instrument.InstrumentData();
+              InstrumentData = new global::claros.protoc.Instrument.InstrumentData();
             }
             input.ReadMessage(InstrumentData);
             break;
           }
           case 794: {
             if (auditEvent_ == null) {
-              AuditEvent = new global::Claros.Common.Core.AuditEvent();
+              AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
             }
             input.ReadMessage(AuditEvent);
             break;

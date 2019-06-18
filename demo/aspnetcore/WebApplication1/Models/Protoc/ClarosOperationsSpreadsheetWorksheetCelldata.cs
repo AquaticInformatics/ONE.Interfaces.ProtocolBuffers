@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_celldata.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetCelldataReflection {
@@ -38,9 +38,9 @@ namespace Claros.Operations.Spreadsheet {
             "ZW50GGMgASgLMh4uY2xhcm9zLmNvbW1vbi5jb3JlLkF1ZGl0RXZlbnRiBnBy",
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreReportablequalifierReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreReportablequalifierReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBindingReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.CellData), global::Claros.Operations.Spreadsheet.CellData.Parser, new[]{ "Value", "StringValue", "IsLocked", "UnitId", "Justification", "ReportableQualifier", "CellDataBindings", "AuditEvent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.CellData), global::claros.protoc.Operations.Spreadsheet.CellData.Parser, new[]{ "Value", "StringValue", "IsLocked", "UnitId", "Justification", "ReportableQualifier", "CellDataBindings", "AuditEvent" }, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,9 +145,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "reportableQualifier" field.</summary>
     public const int ReportableQualifierFieldNumber = 6;
-    private global::Claros.Common.Core.ReportableQualifier reportableQualifier_;
+    private global::claros.protoc.Common.Core.ReportableQualifier reportableQualifier_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ReportableQualifier ReportableQualifier {
+    public global::claros.protoc.Common.Core.ReportableQualifier ReportableQualifier {
       get { return reportableQualifier_; }
       set {
         reportableQualifier_ = value;
@@ -156,19 +156,19 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "cellDataBindings" field.</summary>
     public const int CellDataBindingsFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.CellDataBinding> _repeated_cellDataBindings_codec
-        = pb::FieldCodec.ForMessage(58, global::Claros.Operations.Spreadsheet.CellDataBinding.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding> cellDataBindings_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.CellDataBinding> _repeated_cellDataBindings_codec
+        = pb::FieldCodec.ForMessage(58, global::claros.protoc.Operations.Spreadsheet.CellDataBinding.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.CellDataBinding> cellDataBindings_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.CellDataBinding>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.CellDataBinding> CellDataBindings {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.CellDataBinding> CellDataBindings {
       get { return cellDataBindings_; }
     }
 
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 99;
-    private global::Claros.Common.Core.AuditEvent auditEvent_;
+    private global::claros.protoc.Common.Core.AuditEvent auditEvent_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AuditEvent AuditEvent {
+    public global::claros.protoc.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }
       set {
         auditEvent_ = value;
@@ -310,14 +310,14 @@ namespace Claros.Operations.Spreadsheet {
       }
       if (other.reportableQualifier_ != null) {
         if (reportableQualifier_ == null) {
-          ReportableQualifier = new global::Claros.Common.Core.ReportableQualifier();
+          ReportableQualifier = new global::claros.protoc.Common.Core.ReportableQualifier();
         }
         ReportableQualifier.MergeFrom(other.ReportableQualifier);
       }
       cellDataBindings_.Add(other.cellDataBindings_);
       if (other.auditEvent_ != null) {
         if (auditEvent_ == null) {
-          AuditEvent = new global::Claros.Common.Core.AuditEvent();
+          AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
         }
         AuditEvent.MergeFrom(other.AuditEvent);
       }
@@ -354,7 +354,7 @@ namespace Claros.Operations.Spreadsheet {
           }
           case 50: {
             if (reportableQualifier_ == null) {
-              ReportableQualifier = new global::Claros.Common.Core.ReportableQualifier();
+              ReportableQualifier = new global::claros.protoc.Common.Core.ReportableQualifier();
             }
             input.ReadMessage(ReportableQualifier);
             break;
@@ -365,7 +365,7 @@ namespace Claros.Operations.Spreadsheet {
           }
           case 794: {
             if (auditEvent_ == null) {
-              AuditEvent = new global::Claros.Common.Core.AuditEvent();
+              AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
             }
             input.ReadMessage(AuditEvent);
             break;

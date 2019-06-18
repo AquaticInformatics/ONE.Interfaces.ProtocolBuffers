@@ -3,7 +3,7 @@
 // Input: claros_common_gis_multi_point2d.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.gis
+namespace claros.protogen.common.gis
 {
 
     [global::ProtoBuf.ProtoContract()]

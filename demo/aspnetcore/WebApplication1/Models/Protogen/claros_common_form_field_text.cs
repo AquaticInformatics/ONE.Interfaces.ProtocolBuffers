@@ -3,7 +3,7 @@
 // Input: claros_common_form_field_text.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -22,10 +22,10 @@ namespace claros.common.form
         public string Value { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3, Name = @"note")]
-        public global::claros.common.core.Note Note { get; set; }
+        public global::claros.protogen.common.core.Note Note { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.core.AuditEvent auditEvent { get; set; }
+        public global::claros.protogen.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

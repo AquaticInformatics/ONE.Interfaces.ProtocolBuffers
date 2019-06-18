@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_field_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementFieldBindingReflection {
@@ -31,9 +31,9 @@ namespace Claros.Instrument {
             "KAkSNQoJdGltZXN0YW1wGAIgASgLMiIuY2xhcm9zLmNvbW1vbi5jb3JlLkNs",
             "YXJvc0RhdGVUaW1lEg4KBnVuaXRJZBgDIAEoDWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurementFieldBinding), global::Claros.Instrument.InstrumentMeasurementFieldBinding.Parser, new[]{ "InstrumentMeasurementId", "Timestamp", "UnitId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding), global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding.Parser, new[]{ "InstrumentMeasurementId", "Timestamp", "UnitId" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementFieldBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentMeasurementFieldBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -89,9 +89,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "timestamp" field.</summary>
     public const int TimestampFieldNumber = 2;
-    private global::Claros.Common.Core.ClarosDateTime timestamp_;
+    private global::claros.protoc.Common.Core.ClarosDateTime timestamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime Timestamp {
+    public global::claros.protoc.Common.Core.ClarosDateTime Timestamp {
       get { return timestamp_; }
       set {
         timestamp_ = value;
@@ -192,7 +192,7 @@ namespace Claros.Instrument {
       }
       if (other.timestamp_ != null) {
         if (timestamp_ == null) {
-          Timestamp = new global::Claros.Common.Core.ClarosDateTime();
+          Timestamp = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         Timestamp.MergeFrom(other.Timestamp);
       }
@@ -216,7 +216,7 @@ namespace Claros.Instrument {
           }
           case 18: {
             if (timestamp_ == null) {
-              Timestamp = new global::Claros.Common.Core.ClarosDateTime();
+              Timestamp = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(Timestamp);
             break;

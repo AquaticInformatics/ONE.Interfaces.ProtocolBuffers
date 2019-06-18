@@ -3,7 +3,7 @@
 // Input: claros_common_form_formfield.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -32,10 +32,10 @@ namespace claros.common.form
         public string Name { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(6, Name = @"cell")]
-        public global::claros.operations.spreadsheet.Cell Cell { get; set; }
+        public global::claros.protogen.operations.spreadsheet.Cell Cell { get; set; }
 
         [global::ProtoBuf.ProtoMember(7, Name = @"instrumentData")]
-        public global::System.Collections.Generic.List<global::claros.instrument.InstrumentData> instrumentDatas { get; } = new global::System.Collections.Generic.List<global::claros.instrument.InstrumentData>();
+        public global::System.Collections.Generic.List<global::claros.protogen.instrument.InstrumentData> instrumentDatas { get; } = new global::System.Collections.Generic.List<global::claros.protogen.instrument.InstrumentData>();
 
     }
 

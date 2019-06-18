@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formdataentry_type.proto</summary>
   public static partial class ClarosCommonFormFormdataentryTypeReflection {
@@ -31,7 +31,7 @@ namespace Claros.Common.Form {
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Form.FormDataEntryType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Common.Form.FormDataEntryType), }, null));
     }
     #endregion
 

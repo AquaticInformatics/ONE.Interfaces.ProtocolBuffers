@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_unit.proto</summary>
   public static partial class ClarosCommonCoreUnitReflection {
@@ -34,9 +34,9 @@ namespace Claros.Common.Core {
             "aWVkT24YCiABKAsyIi5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRp",
             "bWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.Unit), global::Claros.Common.Core.Unit.Parser, new[]{ "Id", "IntId", "I18NKey", "UnitName", "QuantityTypeId", "Description", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.Unit), global::claros.protoc.Common.Core.Unit.Parser, new[]{ "Id", "IntId", "I18NKey", "UnitName", "QuantityTypeId", "Description", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreUnitReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreUnitReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -165,9 +165,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "createdOn" field.</summary>
     public const int CreatedOnFieldNumber = 8;
-    private global::Claros.Common.Core.ClarosDateTime createdOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime createdOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime CreatedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime CreatedOn {
       get { return createdOn_; }
       set {
         createdOn_ = value;
@@ -187,9 +187,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "modifiedOn" field.</summary>
     public const int ModifiedOnFieldNumber = 10;
-    private global::Claros.Common.Core.ClarosDateTime modifiedOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime modifiedOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime ModifiedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime ModifiedOn {
       get { return modifiedOn_; }
       set {
         modifiedOn_ = value;
@@ -360,7 +360,7 @@ namespace Claros.Common.Core {
       }
       if (other.createdOn_ != null) {
         if (createdOn_ == null) {
-          CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+          CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         CreatedOn.MergeFrom(other.CreatedOn);
       }
@@ -369,7 +369,7 @@ namespace Claros.Common.Core {
       }
       if (other.modifiedOn_ != null) {
         if (modifiedOn_ == null) {
-          ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+          ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         ModifiedOn.MergeFrom(other.ModifiedOn);
       }
@@ -414,7 +414,7 @@ namespace Claros.Common.Core {
           }
           case 66: {
             if (createdOn_ == null) {
-              CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+              CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(CreatedOn);
             break;
@@ -425,7 +425,7 @@ namespace Claros.Common.Core {
           }
           case 82: {
             if (modifiedOn_ == null) {
-              ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+              ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(ModifiedOn);
             break;

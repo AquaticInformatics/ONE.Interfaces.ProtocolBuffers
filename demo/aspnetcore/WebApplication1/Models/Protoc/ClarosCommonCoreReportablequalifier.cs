@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_reportablequalifier.proto</summary>
   public static partial class ClarosCommonCoreReportablequalifierReflection {
@@ -31,9 +31,9 @@ namespace Claros.Common.Core {
             "b3MuY29tbW9uLmNvcmUuUmVwb3J0YWJsZVF1YWxpZmllclR5cGUSFgoOcXVh",
             "bGlmaWVkVmFsdWUYAiABKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreReportablequalifierTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreReportablequalifierTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.ReportableQualifier), global::Claros.Common.Core.ReportableQualifier.Parser, new[]{ "ReportableQualifierType", "QualifiedValue" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.ReportableQualifier), global::claros.protoc.Common.Core.ReportableQualifier.Parser, new[]{ "ReportableQualifierType", "QualifiedValue" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreReportablequalifierReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreReportablequalifierReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -77,9 +77,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "reportableQualifierType" field.</summary>
     public const int ReportableQualifierTypeFieldNumber = 1;
-    private global::Claros.Common.Core.ReportableQualifierType reportableQualifierType_ = 0;
+    private global::claros.protoc.Common.Core.ReportableQualifierType reportableQualifierType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ReportableQualifierType ReportableQualifierType {
+    public global::claros.protoc.Common.Core.ReportableQualifierType ReportableQualifierType {
       get { return reportableQualifierType_; }
       set {
         reportableQualifierType_ = value;
@@ -184,7 +184,7 @@ namespace Claros.Common.Core {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            ReportableQualifierType = (global::Claros.Common.Core.ReportableQualifierType) input.ReadEnum();
+            ReportableQualifierType = (global::claros.protoc.Common.Core.ReportableQualifierType) input.ReadEnum();
             break;
           }
           case 18: {

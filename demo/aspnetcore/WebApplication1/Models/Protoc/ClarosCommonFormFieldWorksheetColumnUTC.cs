@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_field_worksheet_column_UTC.proto</summary>
   public static partial class ClarosCommonFormFieldWorksheetColumnUTCReflection {
@@ -33,9 +33,9 @@ namespace Claros.Common.Form {
             "cy5zcHJlYWRzaGVldC5Xb3Jrc2hlZXRUeXBlEjUKBmNvbHVtbhgDIAEoCzIl",
             "LmNsYXJvcy5vcGVyYXRpb25zLnNwcmVhZHNoZWV0LkNvbHVtbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormFieldWorksheetColumnUTC), global::Claros.Common.Form.FormFieldWorksheetColumnUTC.Parser, new[]{ "PlantId", "WorksheetType", "Column" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC), global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC.Parser, new[]{ "PlantId", "WorksheetType", "Column" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFieldWorksheetColumnUTCReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFieldWorksheetColumnUTCReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,9 +91,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "worksheetType" field.</summary>
     public const int WorksheetTypeFieldNumber = 2;
-    private global::Claros.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
+    private global::claros.protoc.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.WorksheetType WorksheetType {
+    public global::claros.protoc.Operations.Spreadsheet.WorksheetType WorksheetType {
       get { return worksheetType_; }
       set {
         worksheetType_ = value;
@@ -102,9 +102,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "column" field.</summary>
     public const int ColumnFieldNumber = 3;
-    private global::Claros.Operations.Spreadsheet.Column column_;
+    private global::claros.protoc.Operations.Spreadsheet.Column column_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.Column Column {
+    public global::claros.protoc.Operations.Spreadsheet.Column Column {
       get { return column_; }
       set {
         column_ = value;
@@ -197,7 +197,7 @@ namespace Claros.Common.Form {
       }
       if (other.column_ != null) {
         if (column_ == null) {
-          Column = new global::Claros.Operations.Spreadsheet.Column();
+          Column = new global::claros.protoc.Operations.Spreadsheet.Column();
         }
         Column.MergeFrom(other.Column);
       }
@@ -217,12 +217,12 @@ namespace Claros.Common.Form {
             break;
           }
           case 16: {
-            WorksheetType = (global::Claros.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
+            WorksheetType = (global::claros.protoc.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
             break;
           }
           case 26: {
             if (column_ == null) {
-              Column = new global::Claros.Operations.Spreadsheet.Column();
+              Column = new global::claros.protoc.Operations.Spreadsheet.Column();
             }
             input.ReadMessage(Column);
             break;

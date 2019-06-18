@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_recurrence.proto</summary>
   public static partial class ClarosCommonCoreRecurrenceReflection {
@@ -34,9 +34,9 @@ namespace Claros.Common.Core {
             "ASgNEjEKCmRheXNPZldlZWsYBCADKA4yHS5jbGFyb3MuY29tbW9uLmNvcmUu",
             "RGF5T2ZXZWVrEhAKCGR1cmF0aW9uGAUgASgNYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreRecurrenceTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreDayofweekReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreRecurrenceTypeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreDayofweekReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.Recurrence), global::Claros.Common.Core.Recurrence.Parser, new[]{ "Type", "StartDate", "MinuteOffset", "DaysOfWeek", "Duration" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.Recurrence), global::claros.protoc.Common.Core.Recurrence.Parser, new[]{ "Type", "StartDate", "MinuteOffset", "DaysOfWeek", "Duration" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -83,9 +83,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Claros.Common.Core.RecurrenceType type_ = 0;
+    private global::claros.protoc.Common.Core.RecurrenceType type_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.RecurrenceType Type {
+    public global::claros.protoc.Common.Core.RecurrenceType Type {
       get { return type_; }
       set {
         type_ = value;
@@ -94,9 +94,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "startDate" field.</summary>
     public const int StartDateFieldNumber = 2;
-    private global::Claros.Common.Core.ClarosDateTime startDate_;
+    private global::claros.protoc.Common.Core.ClarosDateTime startDate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime StartDate {
+    public global::claros.protoc.Common.Core.ClarosDateTime StartDate {
       get { return startDate_; }
       set {
         startDate_ = value;
@@ -116,11 +116,11 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "daysOfWeek" field.</summary>
     public const int DaysOfWeekFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.DayOfWeek> _repeated_daysOfWeek_codec
-        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::Claros.Common.Core.DayOfWeek) x);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.DayOfWeek> daysOfWeek_ = new pbc::RepeatedField<global::Claros.Common.Core.DayOfWeek>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.DayOfWeek> _repeated_daysOfWeek_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::claros.protoc.Common.Core.DayOfWeek) x);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.DayOfWeek> daysOfWeek_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.DayOfWeek>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.DayOfWeek> DaysOfWeek {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.DayOfWeek> DaysOfWeek {
       get { return daysOfWeek_; }
     }
 
@@ -231,7 +231,7 @@ namespace Claros.Common.Core {
       }
       if (other.startDate_ != null) {
         if (startDate_ == null) {
-          StartDate = new global::Claros.Common.Core.ClarosDateTime();
+          StartDate = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         StartDate.MergeFrom(other.StartDate);
       }
@@ -254,12 +254,12 @@ namespace Claros.Common.Core {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Type = (global::Claros.Common.Core.RecurrenceType) input.ReadEnum();
+            Type = (global::claros.protoc.Common.Core.RecurrenceType) input.ReadEnum();
             break;
           }
           case 18: {
             if (startDate_ == null) {
-              StartDate = new global::Claros.Common.Core.ClarosDateTime();
+              StartDate = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(StartDate);
             break;

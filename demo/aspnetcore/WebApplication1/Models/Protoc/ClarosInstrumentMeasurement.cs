@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement.proto</summary>
   public static partial class ClarosInstrumentMeasurementReflection {
@@ -37,9 +37,9 @@ namespace Claros.Instrument {
             "bWVhc3VyZW1lbnRFdmVudBgIIAEoCzIiLmNsYXJvcy5pbnN0cnVtZW50Lklu",
             "c3RydW1lbnRFdmVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreMeasurementReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentEventReflection.Descriptor, global::Claros.Common.Gis.ClarosCommonGisGisReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreMeasurementReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentEventReflection.Descriptor, global::claros.protoc.Common.Gis.ClarosCommonGisGisReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurement), global::Claros.Instrument.InstrumentMeasurement.Parser, new[]{ "InstrumentMeasurementId", "Channel", "FusionId", "Measurement", "SupportingMeasurements", "Gis", "MeasurementDataExtended", "MeasurementEvent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentMeasurement), global::claros.protoc.Instrument.InstrumentMeasurement.Parser, new[]{ "InstrumentMeasurementId", "Channel", "FusionId", "Measurement", "SupportingMeasurements", "Gis", "MeasurementDataExtended", "MeasurementEvent" }, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentMeasurementReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,7 +91,7 @@ namespace Claros.Instrument {
     public const int InstrumentMeasurementIdFieldNumber = 1;
     private string instrumentMeasurementId_ = "";
     /// <summary>
-    ///This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
+    ///This is nullable.  In the case of Instrument Data this would be null until it reaches claros.protoc.Instrument.Measurement
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InstrumentMeasurementId {
@@ -128,9 +128,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "measurement" field.</summary>
     public const int MeasurementFieldNumber = 4;
-    private global::Claros.Common.Core.Measurement measurement_;
+    private global::claros.protoc.Common.Core.Measurement measurement_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Measurement Measurement {
+    public global::claros.protoc.Common.Core.Measurement Measurement {
       get { return measurement_; }
       set {
         measurement_ = value;
@@ -139,9 +139,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "supportingMeasurements" field.</summary>
     public const int SupportingMeasurementsFieldNumber = 5;
-    private global::Claros.Instrument.InstrumentMeasurement supportingMeasurements_;
+    private global::claros.protoc.Instrument.InstrumentMeasurement supportingMeasurements_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentMeasurement SupportingMeasurements {
+    public global::claros.protoc.Instrument.InstrumentMeasurement SupportingMeasurements {
       get { return supportingMeasurements_; }
       set {
         supportingMeasurements_ = value;
@@ -150,9 +150,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "gis" field.</summary>
     public const int GisFieldNumber = 6;
-    private global::Claros.Common.Gis.GIS gis_;
+    private global::claros.protoc.Common.Gis.GIS gis_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Gis.GIS Gis {
+    public global::claros.protoc.Common.Gis.GIS Gis {
       get { return gis_; }
       set {
         gis_ = value;
@@ -172,12 +172,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "measurementEvent" field.</summary>
     public const int MeasurementEventFieldNumber = 8;
-    private global::Claros.Instrument.InstrumentEvent measurementEvent_;
+    private global::claros.protoc.Instrument.InstrumentEvent measurementEvent_;
     /// <summary>
     /// Clean up
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentEvent MeasurementEvent {
+    public global::claros.protoc.Instrument.InstrumentEvent MeasurementEvent {
       get { return measurementEvent_; }
       set {
         measurementEvent_ = value;
@@ -318,19 +318,19 @@ namespace Claros.Instrument {
       }
       if (other.measurement_ != null) {
         if (measurement_ == null) {
-          Measurement = new global::Claros.Common.Core.Measurement();
+          Measurement = new global::claros.protoc.Common.Core.Measurement();
         }
         Measurement.MergeFrom(other.Measurement);
       }
       if (other.supportingMeasurements_ != null) {
         if (supportingMeasurements_ == null) {
-          SupportingMeasurements = new global::Claros.Instrument.InstrumentMeasurement();
+          SupportingMeasurements = new global::claros.protoc.Instrument.InstrumentMeasurement();
         }
         SupportingMeasurements.MergeFrom(other.SupportingMeasurements);
       }
       if (other.gis_ != null) {
         if (gis_ == null) {
-          Gis = new global::Claros.Common.Gis.GIS();
+          Gis = new global::claros.protoc.Common.Gis.GIS();
         }
         Gis.MergeFrom(other.Gis);
       }
@@ -339,7 +339,7 @@ namespace Claros.Instrument {
       }
       if (other.measurementEvent_ != null) {
         if (measurementEvent_ == null) {
-          MeasurementEvent = new global::Claros.Instrument.InstrumentEvent();
+          MeasurementEvent = new global::claros.protoc.Instrument.InstrumentEvent();
         }
         MeasurementEvent.MergeFrom(other.MeasurementEvent);
       }
@@ -368,21 +368,21 @@ namespace Claros.Instrument {
           }
           case 34: {
             if (measurement_ == null) {
-              Measurement = new global::Claros.Common.Core.Measurement();
+              Measurement = new global::claros.protoc.Common.Core.Measurement();
             }
             input.ReadMessage(Measurement);
             break;
           }
           case 42: {
             if (supportingMeasurements_ == null) {
-              SupportingMeasurements = new global::Claros.Instrument.InstrumentMeasurement();
+              SupportingMeasurements = new global::claros.protoc.Instrument.InstrumentMeasurement();
             }
             input.ReadMessage(SupportingMeasurements);
             break;
           }
           case 50: {
             if (gis_ == null) {
-              Gis = new global::Claros.Common.Gis.GIS();
+              Gis = new global::claros.protoc.Common.Gis.GIS();
             }
             input.ReadMessage(Gis);
             break;
@@ -393,7 +393,7 @@ namespace Claros.Instrument {
           }
           case 66: {
             if (measurementEvent_ == null) {
-              MeasurementEvent = new global::Claros.Instrument.InstrumentEvent();
+              MeasurementEvent = new global::claros.protoc.Instrument.InstrumentEvent();
             }
             input.ReadMessage(MeasurementEvent);
             break;

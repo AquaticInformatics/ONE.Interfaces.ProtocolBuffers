@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_field_text.proto</summary>
   public static partial class ClarosCommonFormFieldTextReflection {
@@ -31,9 +31,9 @@ namespace Claros.Common.Form {
             "IAEoCzIYLmNsYXJvcy5jb21tb24uY29yZS5Ob3RlEjIKCmF1ZGl0RXZlbnQY",
             "BCABKAsyHi5jbGFyb3MuY29tbW9uLmNvcmUuQXVkaXRFdmVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreNoteReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormFieldText), global::Claros.Common.Form.FormFieldText.Parser, new[]{ "Id", "Value", "Note", "AuditEvent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormFieldText), global::claros.protoc.Common.Form.FormFieldText.Parser, new[]{ "Id", "Value", "Note", "AuditEvent" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFieldTextReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFieldTextReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -101,9 +101,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "note" field.</summary>
     public const int NoteFieldNumber = 3;
-    private global::Claros.Common.Core.Note note_;
+    private global::claros.protoc.Common.Core.Note note_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Note Note {
+    public global::claros.protoc.Common.Core.Note Note {
       get { return note_; }
       set {
         note_ = value;
@@ -112,9 +112,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "auditEvent" field.</summary>
     public const int AuditEventFieldNumber = 4;
-    private global::Claros.Common.Core.AuditEvent auditEvent_;
+    private global::claros.protoc.Common.Core.AuditEvent auditEvent_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AuditEvent AuditEvent {
+    public global::claros.protoc.Common.Core.AuditEvent AuditEvent {
       get { return auditEvent_; }
       set {
         auditEvent_ = value;
@@ -216,13 +216,13 @@ namespace Claros.Common.Form {
       }
       if (other.note_ != null) {
         if (note_ == null) {
-          Note = new global::Claros.Common.Core.Note();
+          Note = new global::claros.protoc.Common.Core.Note();
         }
         Note.MergeFrom(other.Note);
       }
       if (other.auditEvent_ != null) {
         if (auditEvent_ == null) {
-          AuditEvent = new global::Claros.Common.Core.AuditEvent();
+          AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
         }
         AuditEvent.MergeFrom(other.AuditEvent);
       }
@@ -247,14 +247,14 @@ namespace Claros.Common.Form {
           }
           case 26: {
             if (note_ == null) {
-              Note = new global::Claros.Common.Core.Note();
+              Note = new global::claros.protoc.Common.Core.Note();
             }
             input.ReadMessage(Note);
             break;
           }
           case 34: {
             if (auditEvent_ == null) {
-              AuditEvent = new global::Claros.Common.Core.AuditEvent();
+              AuditEvent = new global::claros.protoc.Common.Core.AuditEvent();
             }
             input.ReadMessage(AuditEvent);
             break;

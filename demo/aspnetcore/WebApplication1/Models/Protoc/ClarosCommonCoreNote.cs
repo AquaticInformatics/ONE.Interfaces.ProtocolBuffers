@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_note.proto</summary>
   public static partial class ClarosCommonCoreNoteReflection {
@@ -30,9 +30,9 @@ namespace Claros.Common.Core {
             "bGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWUSDgoGdXNlcklkGAUg",
             "ASgJEgwKBHRleHQYBiABKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.Note), global::Claros.Common.Core.Note.Parser, new[]{ "Id", "TimeStamp", "UserId", "Text" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.Note), global::claros.protoc.Common.Core.Note.Parser, new[]{ "Id", "TimeStamp", "UserId", "Text" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreNoteReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreNoteReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -89,9 +89,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "timeStamp" field.</summary>
     public const int TimeStampFieldNumber = 4;
-    private global::Claros.Common.Core.ClarosDateTime timeStamp_;
+    private global::claros.protoc.Common.Core.ClarosDateTime timeStamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime TimeStamp {
+    public global::claros.protoc.Common.Core.ClarosDateTime TimeStamp {
       get { return timeStamp_; }
       set {
         timeStamp_ = value;
@@ -212,7 +212,7 @@ namespace Claros.Common.Core {
       }
       if (other.timeStamp_ != null) {
         if (timeStamp_ == null) {
-          TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
+          TimeStamp = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         TimeStamp.MergeFrom(other.TimeStamp);
       }
@@ -239,7 +239,7 @@ namespace Claros.Common.Core {
           }
           case 34: {
             if (timeStamp_ == null) {
-              TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
+              TimeStamp = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(TimeStamp);
             break;

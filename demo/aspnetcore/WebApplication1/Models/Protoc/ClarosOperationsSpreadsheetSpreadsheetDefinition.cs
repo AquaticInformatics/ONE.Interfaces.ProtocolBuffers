@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_spreadsheet_definition.proto</summary>
   public static partial class ClarosOperationsSpreadsheetSpreadsheetDefinitionReflection {
@@ -33,9 +33,9 @@ namespace Claros.Operations.Spreadsheet {
             "GAMgASgOMhwuY2xhcm9zLmNvbW1vbi5jb3JlLlRpbWVab25lEhgKEHRpbWVX",
             "aW5kb3dPZmZzZXQYBCABKA1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreTimezoneReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreTimezoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.SpreadsheetDefinition), global::Claros.Operations.Spreadsheet.SpreadsheetDefinition.Parser, new[]{ "Version", "Timewindow", "Timezone", "TimeWindowOffset" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition), global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition.Parser, new[]{ "Version", "Timewindow", "Timezone", "TimeWindowOffset" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetDefinitionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetDefinitionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92,9 +92,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "timewindow" field.</summary>
     public const int TimewindowFieldNumber = 2;
-    private global::Claros.Common.Core.TimeWindow timewindow_;
+    private global::claros.protoc.Common.Core.TimeWindow timewindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow Timewindow {
+    public global::claros.protoc.Common.Core.TimeWindow Timewindow {
       get { return timewindow_; }
       set {
         timewindow_ = value;
@@ -103,9 +103,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "timezone" field.</summary>
     public const int TimezoneFieldNumber = 3;
-    private global::Claros.Common.Core.TimeZone timezone_ = 0;
+    private global::claros.protoc.Common.Core.TimeZone timezone_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeZone Timezone {
+    public global::claros.protoc.Common.Core.TimeZone Timezone {
       get { return timezone_; }
       set {
         timezone_ = value;
@@ -215,7 +215,7 @@ namespace Claros.Operations.Spreadsheet {
       }
       if (other.timewindow_ != null) {
         if (timewindow_ == null) {
-          Timewindow = new global::Claros.Common.Core.TimeWindow();
+          Timewindow = new global::claros.protoc.Common.Core.TimeWindow();
         }
         Timewindow.MergeFrom(other.Timewindow);
       }
@@ -242,13 +242,13 @@ namespace Claros.Operations.Spreadsheet {
           }
           case 18: {
             if (timewindow_ == null) {
-              Timewindow = new global::Claros.Common.Core.TimeWindow();
+              Timewindow = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(Timewindow);
             break;
           }
           case 24: {
-            Timezone = (global::Claros.Common.Core.TimeZone) input.ReadEnum();
+            Timezone = (global::claros.protoc.Common.Core.TimeZone) input.ReadEnum();
             break;
           }
           case 32: {

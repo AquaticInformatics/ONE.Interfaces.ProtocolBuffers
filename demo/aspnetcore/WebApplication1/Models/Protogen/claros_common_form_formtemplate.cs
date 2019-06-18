@@ -3,7 +3,7 @@
 // Input: claros_common_form_formtemplate.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -29,7 +29,7 @@ namespace claros.common.form
 
         [global::ProtoBuf.ProtoMember(5, Name = @"privileges")]
         [global::ProtoBuf.ProtoMap]
-        public global::System.Collections.Generic.Dictionary<string, global::claros.common.configuration.Rights> Privileges { get; } = new global::System.Collections.Generic.Dictionary<string, global::claros.common.configuration.Rights>();
+        public global::System.Collections.Generic.Dictionary<string, global::claros.protogen.common.configuration.Rights> Privileges { get; } = new global::System.Collections.Generic.Dictionary<string, global::claros.protogen.common.configuration.Rights>();
 
         [global::ProtoBuf.ProtoMember(6)]
         public FormTemplateConfiguration formTemplateConfiguration { get; set; }

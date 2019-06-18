@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_type.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetTypeReflection {
@@ -31,7 +31,7 @@ namespace Claros.Operations.Spreadsheet {
             "EARiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Operations.Spreadsheet.WorksheetType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Operations.Spreadsheet.WorksheetType), }, null));
     }
     #endregion
 

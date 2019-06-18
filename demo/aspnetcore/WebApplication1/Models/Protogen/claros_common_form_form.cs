@@ -3,7 +3,7 @@
 // Input: claros_common_form_form.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -22,7 +22,7 @@ namespace claros.common.form
         public string Name { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.core.TimeWindow timeWindow { get; set; }
+        public global::claros.protogen.common.core.TimeWindow timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
         public FormTemplate formTemplate { get; set; }
@@ -37,10 +37,10 @@ namespace claros.common.form
         public global::System.Collections.Generic.List<FormField> adhocFormFields { get; } = new global::System.Collections.Generic.List<FormField>();
 
         [global::ProtoBuf.ProtoMember(8, Name = @"notes")]
-        public global::System.Collections.Generic.List<global::claros.common.core.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Note>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.Note>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::System.Collections.Generic.List<global::claros.common.core.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.common.core.AuditEvent>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.AuditEvent> auditEvents { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.AuditEvent>();
 
     }
 

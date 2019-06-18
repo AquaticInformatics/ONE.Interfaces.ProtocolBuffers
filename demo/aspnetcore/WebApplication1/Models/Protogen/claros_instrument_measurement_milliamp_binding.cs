@@ -3,7 +3,7 @@
 // Input: claros_instrument_measurement_milliamp_binding.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument
+namespace claros.protogen.instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -21,10 +21,10 @@ namespace claros.instrument
         public uint Channel { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.core.ClarosDateTime validFrom { get; set; }
+        public global::claros.protogen.common.core.ClarosDateTime validFrom { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.core.ClarosDateTime validTo { get; set; }
+        public global::claros.protogen.common.core.ClarosDateTime validTo { get; set; }
 
     }
 

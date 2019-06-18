@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_definition.proto</summary>
   public static partial class ClarosInstrumentMeasurementDefinitionReflection {
@@ -43,9 +43,9 @@ namespace Claros.Instrument {
             "Ii5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWVCCQoHYmluZGlu",
             "Z2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementScsensorBindingReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurementDefinition), global::Claros.Instrument.InstrumentMeasurementDefinition.Parser, new[]{ "InstrumentMeasurementId", "Name", "FusionId", "LocationId", "ParameterId", "DisplayUnitId", "IsVisible", "ScSensorBinding", "MilliAmpBinding", "Limits", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentMeasurementDefinition), global::claros.protoc.Instrument.InstrumentMeasurementDefinition.Parser, new[]{ "InstrumentMeasurementId", "Name", "FusionId", "LocationId", "ParameterId", "DisplayUnitId", "IsVisible", "ScSensorBinding", "MilliAmpBinding", "Limits", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementDefinitionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentMeasurementDefinitionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -110,7 +110,7 @@ namespace Claros.Instrument {
     public const int InstrumentMeasurementIdFieldNumber = 1;
     private string instrumentMeasurementId_ = "";
     /// <summary>
-    ///This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
+    ///This is nullable.  In the case of Instrument Data this would be null until it reaches claros.protoc.Instrument.Measurement
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string InstrumentMeasurementId {
@@ -189,8 +189,8 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "scSensorBinding" field.</summary>
     public const int ScSensorBindingFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.SCSensorBinding ScSensorBinding {
-      get { return bindingCase_ == BindingOneofCase.ScSensorBinding ? (global::Claros.Instrument.SCSensorBinding) binding_ : null; }
+    public global::claros.protoc.Instrument.SCSensorBinding ScSensorBinding {
+      get { return bindingCase_ == BindingOneofCase.ScSensorBinding ? (global::claros.protoc.Instrument.SCSensorBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.ScSensorBinding;
@@ -200,8 +200,8 @@ namespace Claros.Instrument {
     /// <summary>Field number for the "milliAmpBinding" field.</summary>
     public const int MilliAmpBindingFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.MilliAmpBinding MilliAmpBinding {
-      get { return bindingCase_ == BindingOneofCase.MilliAmpBinding ? (global::Claros.Instrument.MilliAmpBinding) binding_ : null; }
+    public global::claros.protoc.Instrument.MilliAmpBinding MilliAmpBinding {
+      get { return bindingCase_ == BindingOneofCase.MilliAmpBinding ? (global::claros.protoc.Instrument.MilliAmpBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.MilliAmpBinding;
@@ -210,11 +210,11 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "limits" field.</summary>
     public const int LimitsFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.Limit> _repeated_limits_codec
-        = pb::FieldCodec.ForMessage(82, global::Claros.Common.Core.Limit.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::Claros.Common.Core.Limit>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.Limit> _repeated_limits_codec
+        = pb::FieldCodec.ForMessage(82, global::claros.protoc.Common.Core.Limit.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.Limit>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.Limit> Limits {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.Limit> Limits {
       get { return limits_; }
     }
 
@@ -231,9 +231,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "createdOn" field.</summary>
     public const int CreatedOnFieldNumber = 12;
-    private global::Claros.Common.Core.ClarosDateTime createdOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime createdOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime CreatedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime CreatedOn {
       get { return createdOn_; }
       set {
         createdOn_ = value;
@@ -253,9 +253,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "modifiedOn" field.</summary>
     public const int ModifiedOnFieldNumber = 14;
-    private global::Claros.Common.Core.ClarosDateTime modifiedOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime modifiedOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime ModifiedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime ModifiedOn {
       get { return modifiedOn_; }
       set {
         modifiedOn_ = value;
@@ -482,7 +482,7 @@ namespace Claros.Instrument {
       }
       if (other.createdOn_ != null) {
         if (createdOn_ == null) {
-          CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+          CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         CreatedOn.MergeFrom(other.CreatedOn);
       }
@@ -491,20 +491,20 @@ namespace Claros.Instrument {
       }
       if (other.modifiedOn_ != null) {
         if (modifiedOn_ == null) {
-          ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+          ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         ModifiedOn.MergeFrom(other.ModifiedOn);
       }
       switch (other.BindingCase) {
         case BindingOneofCase.ScSensorBinding:
           if (ScSensorBinding == null) {
-            ScSensorBinding = new global::Claros.Instrument.SCSensorBinding();
+            ScSensorBinding = new global::claros.protoc.Instrument.SCSensorBinding();
           }
           ScSensorBinding.MergeFrom(other.ScSensorBinding);
           break;
         case BindingOneofCase.MilliAmpBinding:
           if (MilliAmpBinding == null) {
-            MilliAmpBinding = new global::Claros.Instrument.MilliAmpBinding();
+            MilliAmpBinding = new global::claros.protoc.Instrument.MilliAmpBinding();
           }
           MilliAmpBinding.MergeFrom(other.MilliAmpBinding);
           break;
@@ -550,7 +550,7 @@ namespace Claros.Instrument {
             break;
           }
           case 66: {
-            global::Claros.Instrument.SCSensorBinding subBuilder = new global::Claros.Instrument.SCSensorBinding();
+            global::claros.protoc.Instrument.SCSensorBinding subBuilder = new global::claros.protoc.Instrument.SCSensorBinding();
             if (bindingCase_ == BindingOneofCase.ScSensorBinding) {
               subBuilder.MergeFrom(ScSensorBinding);
             }
@@ -559,7 +559,7 @@ namespace Claros.Instrument {
             break;
           }
           case 74: {
-            global::Claros.Instrument.MilliAmpBinding subBuilder = new global::Claros.Instrument.MilliAmpBinding();
+            global::claros.protoc.Instrument.MilliAmpBinding subBuilder = new global::claros.protoc.Instrument.MilliAmpBinding();
             if (bindingCase_ == BindingOneofCase.MilliAmpBinding) {
               subBuilder.MergeFrom(MilliAmpBinding);
             }
@@ -577,7 +577,7 @@ namespace Claros.Instrument {
           }
           case 98: {
             if (createdOn_ == null) {
-              CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+              CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(CreatedOn);
             break;
@@ -588,7 +588,7 @@ namespace Claros.Instrument {
           }
           case 114: {
             if (modifiedOn_ == null) {
-              ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+              ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(ModifiedOn);
             break;

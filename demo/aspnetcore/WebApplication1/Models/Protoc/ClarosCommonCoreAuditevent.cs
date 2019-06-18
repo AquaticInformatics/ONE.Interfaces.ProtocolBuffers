@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_auditevent.proto</summary>
   public static partial class ClarosCommonCoreAuditeventReflection {
@@ -34,9 +34,9 @@ namespace Claros.Common.Core {
             "b21tb24uY29yZS5BdWRpdEV2ZW50VHlwZRI1Cgl0aW1lU3RhbXAYBSABKAsy",
             "Ii5jbGFyb3MuY29tbW9uLmNvcmUuQ2xhcm9zRGF0ZVRpbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreAuditeventTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventTypeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.AuditEvent), global::Claros.Common.Core.AuditEvent.Parser, new[]{ "Id", "UserId", "DataSourceType", "EventType", "TimeStamp" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.AuditEvent), global::claros.protoc.Common.Core.AuditEvent.Parser, new[]{ "Id", "UserId", "DataSourceType", "EventType", "TimeStamp" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreAuditeventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -105,9 +105,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "dataSourceType" field.</summary>
     public const int DataSourceTypeFieldNumber = 3;
-    private global::Claros.Common.Core.DataSourceType dataSourceType_ = 0;
+    private global::claros.protoc.Common.Core.DataSourceType dataSourceType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.DataSourceType DataSourceType {
+    public global::claros.protoc.Common.Core.DataSourceType DataSourceType {
       get { return dataSourceType_; }
       set {
         dataSourceType_ = value;
@@ -116,9 +116,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "eventType" field.</summary>
     public const int EventTypeFieldNumber = 4;
-    private global::Claros.Common.Core.AuditEventType eventType_ = 0;
+    private global::claros.protoc.Common.Core.AuditEventType eventType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AuditEventType EventType {
+    public global::claros.protoc.Common.Core.AuditEventType EventType {
       get { return eventType_; }
       set {
         eventType_ = value;
@@ -127,9 +127,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "timeStamp" field.</summary>
     public const int TimeStampFieldNumber = 5;
-    private global::Claros.Common.Core.ClarosDateTime timeStamp_;
+    private global::claros.protoc.Common.Core.ClarosDateTime timeStamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime TimeStamp {
+    public global::claros.protoc.Common.Core.ClarosDateTime TimeStamp {
       get { return timeStamp_; }
       set {
         timeStamp_ = value;
@@ -246,7 +246,7 @@ namespace Claros.Common.Core {
       }
       if (other.timeStamp_ != null) {
         if (timeStamp_ == null) {
-          TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
+          TimeStamp = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         TimeStamp.MergeFrom(other.TimeStamp);
       }
@@ -270,16 +270,16 @@ namespace Claros.Common.Core {
             break;
           }
           case 24: {
-            DataSourceType = (global::Claros.Common.Core.DataSourceType) input.ReadEnum();
+            DataSourceType = (global::claros.protoc.Common.Core.DataSourceType) input.ReadEnum();
             break;
           }
           case 32: {
-            EventType = (global::Claros.Common.Core.AuditEventType) input.ReadEnum();
+            EventType = (global::claros.protoc.Common.Core.AuditEventType) input.ReadEnum();
             break;
           }
           case 42: {
             if (timeStamp_ == null) {
-              TimeStamp = new global::Claros.Common.Core.ClarosDateTime();
+              TimeStamp = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(TimeStamp);
             break;

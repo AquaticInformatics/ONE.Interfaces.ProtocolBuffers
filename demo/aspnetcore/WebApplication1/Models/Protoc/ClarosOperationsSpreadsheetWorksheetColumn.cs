@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_column.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetColumnReflection {
@@ -44,9 +44,9 @@ namespace Claros.Operations.Spreadsheet {
             "b3MuY29tbW9uLmNvcmUuUmVwb3J0YWJsZVF1YWxpZmllckRlZmluaXRpb25C",
             "CQoHYmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreReportablequalifierdefinitionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreDatasourceTypeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreLimitReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::claros.protoc.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreReportablequalifierdefinitionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.Column), global::Claros.Operations.Spreadsheet.Column.Parser, new[]{ "ColumnNumber", "Name", "Description", "ParameterId", "DisplayUnitId", "LocationId", "IsActive", "Limits", "DataSourceType", "InstrumentMeasurementBinding", "ComputationBinding", "ReportableQualiferDefinition" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.Column), global::claros.protoc.Operations.Spreadsheet.Column.Parser, new[]{ "ColumnNumber", "Name", "Description", "ParameterId", "DisplayUnitId", "LocationId", "IsActive", "Limits", "DataSourceType", "InstrumentMeasurementBinding", "ComputationBinding", "ReportableQualiferDefinition" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -61,7 +61,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetColumnReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -184,19 +184,19 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "limits" field.</summary>
     public const int LimitsFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.Limit> _repeated_limits_codec
-        = pb::FieldCodec.ForMessage(66, global::Claros.Common.Core.Limit.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::Claros.Common.Core.Limit>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.Limit> _repeated_limits_codec
+        = pb::FieldCodec.ForMessage(66, global::claros.protoc.Common.Core.Limit.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.Limit> limits_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.Limit>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.Limit> Limits {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.Limit> Limits {
       get { return limits_; }
     }
 
     /// <summary>Field number for the "dataSourceType" field.</summary>
     public const int DataSourceTypeFieldNumber = 9;
-    private global::Claros.Common.Core.DataSourceType dataSourceType_ = 0;
+    private global::claros.protoc.Common.Core.DataSourceType dataSourceType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.DataSourceType DataSourceType {
+    public global::claros.protoc.Common.Core.DataSourceType DataSourceType {
       get { return dataSourceType_; }
       set {
         dataSourceType_ = value;
@@ -206,8 +206,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "instrumentMeasurementBinding" field.</summary>
     public const int InstrumentMeasurementBindingFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentMeasurementBinding InstrumentMeasurementBinding {
-      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::Claros.Instrument.InstrumentMeasurementBinding) binding_ : null; }
+    public global::claros.protoc.Instrument.InstrumentMeasurementBinding InstrumentMeasurementBinding {
+      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::claros.protoc.Instrument.InstrumentMeasurementBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.InstrumentMeasurementBinding;
@@ -217,8 +217,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "computationBinding" field.</summary>
     public const int ComputationBindingFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Computation.ComputationBinding ComputationBinding {
-      get { return bindingCase_ == BindingOneofCase.ComputationBinding ? (global::Claros.Common.Computation.ComputationBinding) binding_ : null; }
+    public global::claros.protoc.Common.Computation.ComputationBinding ComputationBinding {
+      get { return bindingCase_ == BindingOneofCase.ComputationBinding ? (global::claros.protoc.Common.Computation.ComputationBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.ComputationBinding;
@@ -227,11 +227,11 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "reportableQualiferDefinition" field.</summary>
     public const int ReportableQualiferDefinitionFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Claros.Common.Core.ReportableQualifierDefinition> _repeated_reportableQualiferDefinition_codec
-        = pb::FieldCodec.ForMessage(98, global::Claros.Common.Core.ReportableQualifierDefinition.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition> reportableQualiferDefinition_ = new pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Core.ReportableQualifierDefinition> _repeated_reportableQualiferDefinition_codec
+        = pb::FieldCodec.ForMessage(98, global::claros.protoc.Common.Core.ReportableQualifierDefinition.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Core.ReportableQualifierDefinition> reportableQualiferDefinition_ = new pbc::RepeatedField<global::claros.protoc.Common.Core.ReportableQualifierDefinition>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Core.ReportableQualifierDefinition> ReportableQualiferDefinition {
+    public pbc::RepeatedField<global::claros.protoc.Common.Core.ReportableQualifierDefinition> ReportableQualiferDefinition {
       get { return reportableQualiferDefinition_; }
     }
 
@@ -434,13 +434,13 @@ namespace Claros.Operations.Spreadsheet {
       switch (other.BindingCase) {
         case BindingOneofCase.InstrumentMeasurementBinding:
           if (InstrumentMeasurementBinding == null) {
-            InstrumentMeasurementBinding = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            InstrumentMeasurementBinding = new global::claros.protoc.Instrument.InstrumentMeasurementBinding();
           }
           InstrumentMeasurementBinding.MergeFrom(other.InstrumentMeasurementBinding);
           break;
         case BindingOneofCase.ComputationBinding:
           if (ComputationBinding == null) {
-            ComputationBinding = new global::Claros.Common.Computation.ComputationBinding();
+            ComputationBinding = new global::claros.protoc.Common.Computation.ComputationBinding();
           }
           ComputationBinding.MergeFrom(other.ComputationBinding);
           break;
@@ -490,11 +490,11 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 72: {
-            DataSourceType = (global::Claros.Common.Core.DataSourceType) input.ReadEnum();
+            DataSourceType = (global::claros.protoc.Common.Core.DataSourceType) input.ReadEnum();
             break;
           }
           case 82: {
-            global::Claros.Instrument.InstrumentMeasurementBinding subBuilder = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            global::claros.protoc.Instrument.InstrumentMeasurementBinding subBuilder = new global::claros.protoc.Instrument.InstrumentMeasurementBinding();
             if (bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding) {
               subBuilder.MergeFrom(InstrumentMeasurementBinding);
             }
@@ -503,7 +503,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 90: {
-            global::Claros.Common.Computation.ComputationBinding subBuilder = new global::Claros.Common.Computation.ComputationBinding();
+            global::claros.protoc.Common.Computation.ComputationBinding subBuilder = new global::claros.protoc.Common.Computation.ComputationBinding();
             if (bindingCase_ == BindingOneofCase.ComputationBinding) {
               subBuilder.MergeFrom(ComputationBinding);
             }

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Configuration {
+namespace claros.protoc.Common.Configuration {
 
   /// <summary>Holder for reflection information generated from claros_common_configuration_configuration.proto</summary>
   public static partial class ClarosCommonConfigurationConfigurationReflection {
@@ -42,9 +42,9 @@ namespace Claros.Common.Configuration {
             "IAEoCRIyCgV2YWx1ZRgCIAEoCzIjLmNsYXJvcy5jb21tb24uY29uZmlndXJh",
             "dGlvbi5SaWdodHM6AjgBYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Common.Configuration.ClarosCommonConfigurationEntityTypeReflection.Descriptor, global::Claros.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Common.Configuration.ClarosCommonConfigurationEntityTypeReflection.Descriptor, global::claros.protoc.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Configuration.Configuration), global::Claros.Common.Configuration.Configuration.Parser, new[]{ "Id", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn", "ConfigurationData", "EntityTypeId", "FilterById", "TenantId", "OwnerId", "Public", "Version", "Privilege" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Configuration.Configuration), global::claros.protoc.Common.Configuration.Configuration.Parser, new[]{ "Id", "CreatedById", "CreatedOn", "ModifiedById", "ModifiedOn", "ConfigurationData", "EntityTypeId", "FilterById", "TenantId", "OwnerId", "Public", "Version", "Privilege" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -59,7 +59,7 @@ namespace Claros.Common.Configuration {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Configuration.ClarosCommonConfigurationConfigurationReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Configuration.ClarosCommonConfigurationConfigurationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -121,9 +121,9 @@ namespace Claros.Common.Configuration {
 
     /// <summary>Field number for the "createdOn" field.</summary>
     public const int CreatedOnFieldNumber = 3;
-    private global::Claros.Common.Core.ClarosDateTime createdOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime createdOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime CreatedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime CreatedOn {
       get { return createdOn_; }
       set {
         createdOn_ = value;
@@ -143,9 +143,9 @@ namespace Claros.Common.Configuration {
 
     /// <summary>Field number for the "modifiedOn" field.</summary>
     public const int ModifiedOnFieldNumber = 5;
-    private global::Claros.Common.Core.ClarosDateTime modifiedOn_;
+    private global::claros.protoc.Common.Core.ClarosDateTime modifiedOn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime ModifiedOn {
+    public global::claros.protoc.Common.Core.ClarosDateTime ModifiedOn {
       get { return modifiedOn_; }
       set {
         modifiedOn_ = value;
@@ -165,9 +165,9 @@ namespace Claros.Common.Configuration {
 
     /// <summary>Field number for the "entityTypeId" field.</summary>
     public const int EntityTypeIdFieldNumber = 7;
-    private global::Claros.Common.Configuration.EntityType entityTypeId_ = 0;
+    private global::claros.protoc.Common.Configuration.EntityType entityTypeId_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Configuration.EntityType EntityTypeId {
+    public global::claros.protoc.Common.Configuration.EntityType EntityTypeId {
       get { return entityTypeId_; }
       set {
         entityTypeId_ = value;
@@ -231,11 +231,11 @@ namespace Claros.Common.Configuration {
 
     /// <summary>Field number for the "privilege" field.</summary>
     public const int PrivilegeFieldNumber = 13;
-    private static readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec _map_privilege_codec
-        = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Claros.Common.Configuration.Rights.Parser), 106);
-    private readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights> privilege_ = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>();
+    private static readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec _map_privilege_codec
+        = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::claros.protoc.Common.Configuration.Rights.Parser), 106);
+    private readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> privilege_ = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<string, global::Claros.Common.Configuration.Rights> Privilege {
+    public pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> Privilege {
       get { return privilege_; }
     }
 
@@ -410,7 +410,7 @@ namespace Claros.Common.Configuration {
       }
       if (other.createdOn_ != null) {
         if (createdOn_ == null) {
-          CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+          CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         CreatedOn.MergeFrom(other.CreatedOn);
       }
@@ -419,7 +419,7 @@ namespace Claros.Common.Configuration {
       }
       if (other.modifiedOn_ != null) {
         if (modifiedOn_ == null) {
-          ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+          ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         ModifiedOn.MergeFrom(other.ModifiedOn);
       }
@@ -466,7 +466,7 @@ namespace Claros.Common.Configuration {
           }
           case 26: {
             if (createdOn_ == null) {
-              CreatedOn = new global::Claros.Common.Core.ClarosDateTime();
+              CreatedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(CreatedOn);
             break;
@@ -477,7 +477,7 @@ namespace Claros.Common.Configuration {
           }
           case 42: {
             if (modifiedOn_ == null) {
-              ModifiedOn = new global::Claros.Common.Core.ClarosDateTime();
+              ModifiedOn = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(ModifiedOn);
             break;
@@ -487,7 +487,7 @@ namespace Claros.Common.Configuration {
             break;
           }
           case 56: {
-            EntityTypeId = (global::Claros.Common.Configuration.EntityType) input.ReadEnum();
+            EntityTypeId = (global::claros.protoc.Common.Configuration.EntityType) input.ReadEnum();
             break;
           }
           case 66: {

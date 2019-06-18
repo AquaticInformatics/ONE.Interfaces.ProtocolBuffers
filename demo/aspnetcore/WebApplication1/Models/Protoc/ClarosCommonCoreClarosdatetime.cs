@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_clarosdatetime.proto</summary>
   public static partial class ClarosCommonCoreClarosdatetimeReflection {
@@ -31,9 +31,9 @@ namespace Claros.Common.Core {
             "ZUgAEhYKDGpzb25EYXRlVGltZRgCIAEoCUgAEg8KBXRpY2tzGAMgASgESABC",
             "EAoOY2xhcm9zRGF0ZVRpbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreMobiledatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreMobiledatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.ClarosDateTime), global::Claros.Common.Core.ClarosDateTime.Parser, new[]{ "MobileDateTime", "JsonDateTime", "Ticks" }, new[]{ "ClarosDateTime" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.ClarosDateTime), global::claros.protoc.Common.Core.ClarosDateTime.Parser, new[]{ "MobileDateTime", "JsonDateTime", "Ticks" }, new[]{ "ClarosDateTime" }, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -88,8 +88,8 @@ namespace Claros.Common.Core {
     /// <summary>Field number for the "mobileDateTime" field.</summary>
     public const int MobileDateTimeFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.MobileDateTime MobileDateTime {
-      get { return clarosDateTimeCase_ == ClarosDateTimeOneofCase.MobileDateTime ? (global::Claros.Common.Core.MobileDateTime) clarosDateTime_ : null; }
+    public global::claros.protoc.Common.Core.MobileDateTime MobileDateTime {
+      get { return clarosDateTimeCase_ == ClarosDateTimeOneofCase.MobileDateTime ? (global::claros.protoc.Common.Core.MobileDateTime) clarosDateTime_ : null; }
       set {
         clarosDateTime_ = value;
         clarosDateTimeCase_ = value == null ? ClarosDateTimeOneofCase.None : ClarosDateTimeOneofCase.MobileDateTime;
@@ -221,7 +221,7 @@ namespace Claros.Common.Core {
       switch (other.ClarosDateTimeCase) {
         case ClarosDateTimeOneofCase.MobileDateTime:
           if (MobileDateTime == null) {
-            MobileDateTime = new global::Claros.Common.Core.MobileDateTime();
+            MobileDateTime = new global::claros.protoc.Common.Core.MobileDateTime();
           }
           MobileDateTime.MergeFrom(other.MobileDateTime);
           break;
@@ -245,7 +245,7 @@ namespace Claros.Common.Core {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Claros.Common.Core.MobileDateTime subBuilder = new global::Claros.Common.Core.MobileDateTime();
+            global::claros.protoc.Common.Core.MobileDateTime subBuilder = new global::claros.protoc.Common.Core.MobileDateTime();
             if (clarosDateTimeCase_ == ClarosDateTimeOneofCase.MobileDateTime) {
               subBuilder.MergeFrom(MobileDateTime);
             }

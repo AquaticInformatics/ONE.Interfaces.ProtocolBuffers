@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_timewindow.proto</summary>
   public static partial class ClarosCommonCoreTimewindowReflection {
@@ -31,9 +31,9 @@ namespace Claros.Common.Core {
             "IAEoCzIiLmNsYXJvcy5jb21tb24uY29yZS5DbGFyb3NEYXRlVGltZWIGcHJv",
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.TimeWindow), global::Claros.Common.Core.TimeWindow.Parser, new[]{ "StartTime", "EndTime" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.TimeWindow), global::claros.protoc.Common.Core.TimeWindow.Parser, new[]{ "StartTime", "EndTime" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -77,9 +77,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "startTime" field.</summary>
     public const int StartTimeFieldNumber = 1;
-    private global::Claros.Common.Core.ClarosDateTime startTime_;
+    private global::claros.protoc.Common.Core.ClarosDateTime startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime StartTime {
+    public global::claros.protoc.Common.Core.ClarosDateTime StartTime {
       get { return startTime_; }
       set {
         startTime_ = value;
@@ -88,9 +88,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "endTime" field.</summary>
     public const int EndTimeFieldNumber = 2;
-    private global::Claros.Common.Core.ClarosDateTime endTime_;
+    private global::claros.protoc.Common.Core.ClarosDateTime endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime EndTime {
+    public global::claros.protoc.Common.Core.ClarosDateTime EndTime {
       get { return endTime_; }
       set {
         endTime_ = value;
@@ -168,13 +168,13 @@ namespace Claros.Common.Core {
       }
       if (other.startTime_ != null) {
         if (startTime_ == null) {
-          StartTime = new global::Claros.Common.Core.ClarosDateTime();
+          StartTime = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         StartTime.MergeFrom(other.StartTime);
       }
       if (other.endTime_ != null) {
         if (endTime_ == null) {
-          EndTime = new global::Claros.Common.Core.ClarosDateTime();
+          EndTime = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         EndTime.MergeFrom(other.EndTime);
       }
@@ -191,14 +191,14 @@ namespace Claros.Common.Core {
             break;
           case 10: {
             if (startTime_ == null) {
-              StartTime = new global::Claros.Common.Core.ClarosDateTime();
+              StartTime = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(StartTime);
             break;
           }
           case 18: {
             if (endTime_ == null) {
-              EndTime = new global::Claros.Common.Core.ClarosDateTime();
+              EndTime = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(EndTime);
             break;

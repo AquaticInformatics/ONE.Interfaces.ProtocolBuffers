@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_index.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -21,10 +21,10 @@ namespace claros.common.form
         public uint worksheetVersion { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
-        public global::claros.common.core.TimeWindow timeWindow { get; set; }
+        public global::claros.protogen.common.core.TimeWindow timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.core.TimeWindow utcTimeWindows { get; set; }
+        public global::claros.protogen.common.core.TimeWindow utcTimeWindows { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
         public bool isInSpeed { get; set; }

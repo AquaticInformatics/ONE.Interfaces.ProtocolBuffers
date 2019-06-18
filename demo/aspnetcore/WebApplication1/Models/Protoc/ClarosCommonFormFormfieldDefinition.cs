@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formfield_definition.proto</summary>
   public static partial class ClarosCommonFormFormfieldDefinitionReflection {
@@ -37,9 +37,9 @@ namespace Claros.Common.Form {
             "KS5jbGFyb3MuY29tbW9uLmZvcm0uRm9ybUZpZWxkVGV4dFJlcGVhdGVkSABC",
             "EQoPZmllbGREZWZpbml0aW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormdataentryTypeReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFieldWorksheetColumnUTCReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFieldTextRepeatedReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormdataentryTypeReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFieldWorksheetColumnUTCReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFieldTextRepeatedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormFieldDefinition), global::Claros.Common.Form.FormFieldDefinition.Parser, new[]{ "Guid", "FormDataEntryType", "IsDataEntryTypeLocked", "Name", "Column", "TextRepeated" }, new[]{ "FieldDefinition" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormFieldDefinition), global::claros.protoc.Common.Form.FormFieldDefinition.Parser, new[]{ "Guid", "FormDataEntryType", "IsDataEntryTypeLocked", "Name", "Column", "TextRepeated" }, new[]{ "FieldDefinition" }, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -105,9 +105,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formDataEntryType" field.</summary>
     public const int FormDataEntryTypeFieldNumber = 2;
-    private global::Claros.Common.Form.FormDataEntryType formDataEntryType_ = 0;
+    private global::claros.protoc.Common.Form.FormDataEntryType formDataEntryType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormDataEntryType FormDataEntryType {
+    public global::claros.protoc.Common.Form.FormDataEntryType FormDataEntryType {
       get { return formDataEntryType_; }
       set {
         formDataEntryType_ = value;
@@ -139,8 +139,8 @@ namespace Claros.Common.Form {
     /// <summary>Field number for the "column" field.</summary>
     public const int ColumnFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormFieldWorksheetColumnUTC Column {
-      get { return fieldDefinitionCase_ == FieldDefinitionOneofCase.Column ? (global::Claros.Common.Form.FormFieldWorksheetColumnUTC) fieldDefinition_ : null; }
+    public global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC Column {
+      get { return fieldDefinitionCase_ == FieldDefinitionOneofCase.Column ? (global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC) fieldDefinition_ : null; }
       set {
         fieldDefinition_ = value;
         fieldDefinitionCase_ = value == null ? FieldDefinitionOneofCase.None : FieldDefinitionOneofCase.Column;
@@ -150,8 +150,8 @@ namespace Claros.Common.Form {
     /// <summary>Field number for the "textRepeated" field.</summary>
     public const int TextRepeatedFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormFieldTextRepeated TextRepeated {
-      get { return fieldDefinitionCase_ == FieldDefinitionOneofCase.TextRepeated ? (global::Claros.Common.Form.FormFieldTextRepeated) fieldDefinition_ : null; }
+    public global::claros.protoc.Common.Form.FormFieldTextRepeated TextRepeated {
+      get { return fieldDefinitionCase_ == FieldDefinitionOneofCase.TextRepeated ? (global::claros.protoc.Common.Form.FormFieldTextRepeated) fieldDefinition_ : null; }
       set {
         fieldDefinition_ = value;
         fieldDefinitionCase_ = value == null ? FieldDefinitionOneofCase.None : FieldDefinitionOneofCase.TextRepeated;
@@ -299,13 +299,13 @@ namespace Claros.Common.Form {
       switch (other.FieldDefinitionCase) {
         case FieldDefinitionOneofCase.Column:
           if (Column == null) {
-            Column = new global::Claros.Common.Form.FormFieldWorksheetColumnUTC();
+            Column = new global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC();
           }
           Column.MergeFrom(other.Column);
           break;
         case FieldDefinitionOneofCase.TextRepeated:
           if (TextRepeated == null) {
-            TextRepeated = new global::Claros.Common.Form.FormFieldTextRepeated();
+            TextRepeated = new global::claros.protoc.Common.Form.FormFieldTextRepeated();
           }
           TextRepeated.MergeFrom(other.TextRepeated);
           break;
@@ -327,7 +327,7 @@ namespace Claros.Common.Form {
             break;
           }
           case 16: {
-            FormDataEntryType = (global::Claros.Common.Form.FormDataEntryType) input.ReadEnum();
+            FormDataEntryType = (global::claros.protoc.Common.Form.FormDataEntryType) input.ReadEnum();
             break;
           }
           case 24: {
@@ -339,7 +339,7 @@ namespace Claros.Common.Form {
             break;
           }
           case 42: {
-            global::Claros.Common.Form.FormFieldWorksheetColumnUTC subBuilder = new global::Claros.Common.Form.FormFieldWorksheetColumnUTC();
+            global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC subBuilder = new global::claros.protoc.Common.Form.FormFieldWorksheetColumnUTC();
             if (fieldDefinitionCase_ == FieldDefinitionOneofCase.Column) {
               subBuilder.MergeFrom(Column);
             }
@@ -348,7 +348,7 @@ namespace Claros.Common.Form {
             break;
           }
           case 50: {
-            global::Claros.Common.Form.FormFieldTextRepeated subBuilder = new global::Claros.Common.Form.FormFieldTextRepeated();
+            global::claros.protoc.Common.Form.FormFieldTextRepeated subBuilder = new global::claros.protoc.Common.Form.FormFieldTextRepeated();
             if (fieldDefinitionCase_ == FieldDefinitionOneofCase.TextRepeated) {
               subBuilder.MergeFrom(TextRepeated);
             }

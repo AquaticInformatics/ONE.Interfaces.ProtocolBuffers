@@ -5,11 +5,12 @@
 #pragma warning disable 1591, 0612, 3021
 #region Designer generated code
 
+using ProtoBuf;
 using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formtemplate.proto</summary>
   public static partial class ClarosCommonFormFormtemplateReflection {
@@ -36,15 +37,16 @@ namespace Claros.Common.Form {
             "CgNrZXkYASABKAkSMgoFdmFsdWUYAiABKAsyIy5jbGFyb3MuY29tbW9uLmNv",
             "bmZpZ3VyYXRpb24uUmlnaHRzOgI4AWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormtemplateconfigurationReflection.Descriptor, global::Claros.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateconfigurationReflection.Descriptor, global::claros.protoc.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormTemplate), global::Claros.Common.Form.FormTemplate.Parser, new[]{ "Id", "OwnerId", "Public", "Version", "Privileges", "FormTemplateConfiguration" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormTemplate), global::claros.protoc.Common.Form.FormTemplate.Parser, new[]{ "Id", "OwnerId", "Public", "Version", "Privileges", "FormTemplateConfiguration" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
 
   }
   #region Messages
+  [ProtoContract]
   public sealed partial class FormTemplate : pb::IMessage<FormTemplate> {
     private static readonly pb::MessageParser<FormTemplate> _parser = new pb::MessageParser<FormTemplate>(() => new FormTemplate());
     private pb::UnknownFieldSet _unknownFields;
@@ -53,7 +55,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,6 +93,7 @@ namespace Claros.Common.Form {
     ///retrieval only
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [ProtoMember(1)]
     public string Id {
       get { return id_; }
       set {
@@ -104,6 +107,7 @@ namespace Claros.Common.Form {
     /// <summary>
     ///update and retrieval only
     /// </summary>
+    [ProtoMember(2)]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string OwnerId {
       get { return ownerId_; }
@@ -116,7 +120,9 @@ namespace Claros.Common.Form {
     public const int PublicFieldNumber = 3;
     private bool public_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Public {
+    [ProtoMember(3)]
+    public bool Public
+        {
       get { return public_; }
       set {
         public_ = value;
@@ -130,7 +136,9 @@ namespace Claros.Common.Form {
     ///retrieval only
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Version {
+    [ProtoMember(4)]
+    public uint Version
+        {
       get { return version_; }
       set {
         version_ = value;
@@ -139,22 +147,24 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "privileges" field.</summary>
     public const int PrivilegesFieldNumber = 5;
-    private static readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec _map_privileges_codec
-        = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Claros.Common.Configuration.Rights.Parser), 42);
-    private readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights> privileges_ = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>();
+    private static readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec _map_privileges_codec
+        = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::claros.protoc.Common.Configuration.Rights.Parser), 42);
+    private readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> privileges_ = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<string, global::Claros.Common.Configuration.Rights> Privileges {
+    [ProtoMember(5)]
+    public pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> Privileges {
       get { return privileges_; }
     }
 
     /// <summary>Field number for the "formTemplateConfiguration" field.</summary>
     public const int FormTemplateConfigurationFieldNumber = 6;
-    private global::Claros.Common.Form.FormTemplateConfiguration formTemplateConfiguration_;
+    private global::claros.protoc.Common.Form.FormTemplateConfiguration formTemplateConfiguration_;
     /// <summary>
-    ///This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+    ///This is the JSON stored data that exists in the ConfigurationData from the claros.protoc.Common.Configuration serialized into the FormTemplateConfigurationData
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormTemplateConfiguration FormTemplateConfiguration {
+    [ProtoMember(6)]
+    public global::claros.protoc.Common.Form.FormTemplateConfiguration FormTemplateConfiguration {
       get { return formTemplateConfiguration_; }
       set {
         formTemplateConfiguration_ = value;
@@ -276,7 +286,7 @@ namespace Claros.Common.Form {
       privileges_.Add(other.privileges_);
       if (other.formTemplateConfiguration_ != null) {
         if (formTemplateConfiguration_ == null) {
-          FormTemplateConfiguration = new global::Claros.Common.Form.FormTemplateConfiguration();
+          FormTemplateConfiguration = new global::claros.protoc.Common.Form.FormTemplateConfiguration();
         }
         FormTemplateConfiguration.MergeFrom(other.FormTemplateConfiguration);
       }
@@ -313,7 +323,7 @@ namespace Claros.Common.Form {
           }
           case 50: {
             if (formTemplateConfiguration_ == null) {
-              FormTemplateConfiguration = new global::Claros.Common.Form.FormTemplateConfiguration();
+              FormTemplateConfiguration = new global::claros.protoc.Common.Form.FormTemplateConfiguration();
             }
             input.ReadMessage(FormTemplateConfiguration);
             break;

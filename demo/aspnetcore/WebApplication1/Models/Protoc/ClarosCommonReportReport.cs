@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Report {
+namespace claros.protoc.Common.Report {
 
   /// <summary>Holder for reflection information generated from claros_common_report_report.proto</summary>
   public static partial class ClarosCommonReportReportReflection {
@@ -30,9 +30,9 @@ namespace Claros.Common.Report {
             "CgpyZXBvcnREYXRhGAQgAygLMiAuY2xhcm9zLmNvbW1vbi5yZXBvcnQuUmVw",
             "b3J0RGF0YWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Report.ClarosCommonReportReportDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Report.ClarosCommonReportReportDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Report.Report), global::Claros.Common.Report.Report.Parser, new[]{ "Id", "Name", "ReportData" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Report.Report), global::claros.protoc.Common.Report.Report.Parser, new[]{ "Id", "Name", "ReportData" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Claros.Common.Report {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Report.ClarosCommonReportReportReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Report.ClarosCommonReportReportReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -102,14 +102,14 @@ namespace Claros.Common.Report {
 
     /// <summary>Field number for the "reportData" field.</summary>
     public const int ReportDataFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Common.Report.ReportData> _repeated_reportData_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Common.Report.ReportData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Report.ReportData> reportData_ = new pbc::RepeatedField<global::Claros.Common.Report.ReportData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Report.ReportData> _repeated_reportData_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Common.Report.ReportData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Report.ReportData> reportData_ = new pbc::RepeatedField<global::claros.protoc.Common.Report.ReportData>();
     /// <summary>
     /// data
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Report.ReportData> ReportData {
+    public pbc::RepeatedField<global::claros.protoc.Common.Report.ReportData> ReportData {
       get { return reportData_; }
     }
 

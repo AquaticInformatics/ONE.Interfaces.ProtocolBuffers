@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Configuration {
+namespace claros.protoc.Common.Configuration {
 
   /// <summary>Holder for reflection information generated from claros_common_configuration_entity_type.proto</summary>
   public static partial class ClarosCommonConfigurationEntityTypeReflection {
@@ -29,7 +29,7 @@ namespace Claros.Common.Configuration {
             "Eg4KCkVUX1VOS05PV04QABITCg9FVF9GT1JNVEVNUExBVEUQAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Configuration.EntityType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Common.Configuration.EntityType), }, null));
     }
     #endregion
 

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_spreadsheet.proto</summary>
   public static partial class ClarosOperationsSpreadsheetSpreadsheetReflection {
@@ -34,9 +34,9 @@ namespace Claros.Operations.Spreadsheet {
             "EjsKCXdvcmtzaGVldBgEIAMoCzIoLmNsYXJvcy5vcGVyYXRpb25zLnNwcmVh",
             "ZHNoZWV0LldvcmtzaGVldGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetDefinitionReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetDefinitionReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.Spreadsheet), global::Claros.Operations.Spreadsheet.Spreadsheet.Parser, new[]{ "Name", "LocationId", "TimeDefinition", "Worksheet" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.Spreadsheet), global::claros.protoc.Operations.Spreadsheet.Spreadsheet.Parser, new[]{ "Name", "LocationId", "TimeDefinition", "Worksheet" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -107,24 +107,24 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "timeDefinition" field.</summary>
     public const int TimeDefinitionFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.SpreadsheetDefinition> _repeated_timeDefinition_codec
-        = pb::FieldCodec.ForMessage(26, global::Claros.Operations.Spreadsheet.SpreadsheetDefinition.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.SpreadsheetDefinition> timeDefinition_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.SpreadsheetDefinition>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition> _repeated_timeDefinition_codec
+        = pb::FieldCodec.ForMessage(26, global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition> timeDefinition_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition>();
     /// <summary>
     /// definition 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.SpreadsheetDefinition> TimeDefinition {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.SpreadsheetDefinition> TimeDefinition {
       get { return timeDefinition_; }
     }
 
     /// <summary>Field number for the "worksheet" field.</summary>
     public const int WorksheetFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Worksheet> _repeated_worksheet_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Operations.Spreadsheet.Worksheet.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet> worksheet_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.Worksheet> _repeated_worksheet_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Operations.Spreadsheet.Worksheet.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Worksheet> worksheet_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Worksheet>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Worksheet> Worksheet {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Worksheet> Worksheet {
       get { return worksheet_; }
     }
 

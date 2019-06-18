@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formlayout.proto</summary>
   public static partial class ClarosCommonFormFormlayoutReflection {
@@ -29,9 +29,9 @@ namespace Claros.Common.Form {
             "cHJvdG8iPwoKRm9ybUxheW91dBIxCghzZWN0aW9ucxgBIAMoCzIfLmNsYXJv",
             "cy5jb21tb24uZm9ybS5Gb3JtU2VjdGlvbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormsectionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormsectionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormLayout), global::Claros.Common.Form.FormLayout.Parser, new[]{ "Sections" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormLayout), global::claros.protoc.Common.Form.FormLayout.Parser, new[]{ "Sections" }, null, null, null)
           }));
     }
     #endregion
@@ -46,7 +46,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -74,11 +74,11 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "sections" field.</summary>
     public const int SectionsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormSection> _repeated_sections_codec
-        = pb::FieldCodec.ForMessage(10, global::Claros.Common.Form.FormSection.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormSection> sections_ = new pbc::RepeatedField<global::Claros.Common.Form.FormSection>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormSection> _repeated_sections_codec
+        = pb::FieldCodec.ForMessage(10, global::claros.protoc.Common.Form.FormSection.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormSection> sections_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormSection>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormSection> Sections {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormSection> Sections {
       get { return sections_; }
     }
 

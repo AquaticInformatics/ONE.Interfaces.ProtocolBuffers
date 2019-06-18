@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_row.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetRowReflection {
@@ -32,9 +32,9 @@ namespace Claros.Operations.Spreadsheet {
             "bGFyb3MuY29tbW9uLmNvcmUuVGltZVdpbmRvdxIyCgVjZWxscxgDIAMoCzIj",
             "LmNsYXJvcy5vcGVyYXRpb25zLnNwcmVhZHNoZWV0LkNlbGxiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.Row), global::Claros.Operations.Spreadsheet.Row.Parser, new[]{ "RowNumber", "UTCTimeWindow", "Cells" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.Row), global::claros.protoc.Operations.Spreadsheet.Row.Parser, new[]{ "RowNumber", "UTCTimeWindow", "Cells" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetRowReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetRowReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -90,9 +90,9 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "UTCTimeWindow" field.</summary>
     public const int UTCTimeWindowFieldNumber = 2;
-    private global::Claros.Common.Core.TimeWindow uTCTimeWindow_;
+    private global::claros.protoc.Common.Core.TimeWindow uTCTimeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow UTCTimeWindow {
+    public global::claros.protoc.Common.Core.TimeWindow UTCTimeWindow {
       get { return uTCTimeWindow_; }
       set {
         uTCTimeWindow_ = value;
@@ -101,11 +101,11 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "cells" field.</summary>
     public const int CellsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Cell> _repeated_cells_codec
-        = pb::FieldCodec.ForMessage(26, global::Claros.Operations.Spreadsheet.Cell.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell> cells_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.Cell> _repeated_cells_codec
+        = pb::FieldCodec.ForMessage(26, global::claros.protoc.Operations.Spreadsheet.Cell.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Cell> cells_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Cell>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Cell> Cells {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Cell> Cells {
       get { return cells_; }
     }
 
@@ -187,7 +187,7 @@ namespace Claros.Operations.Spreadsheet {
       }
       if (other.uTCTimeWindow_ != null) {
         if (uTCTimeWindow_ == null) {
-          UTCTimeWindow = new global::Claros.Common.Core.TimeWindow();
+          UTCTimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
         }
         UTCTimeWindow.MergeFrom(other.UTCTimeWindow);
       }
@@ -209,7 +209,7 @@ namespace Claros.Operations.Spreadsheet {
           }
           case 18: {
             if (uTCTimeWindow_ == null) {
-              UTCTimeWindow = new global::Claros.Common.Core.TimeWindow();
+              UTCTimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(UTCTimeWindow);
             break;

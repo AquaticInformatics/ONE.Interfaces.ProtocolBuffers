@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_row.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.operations.spreadsheet
+namespace claros.protogen.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -17,7 +17,7 @@ namespace claros.operations.spreadsheet
         public uint rowNumber { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.common.core.TimeWindow UTCTimeWindow { get; set; }
+        public global::claros.protogen.common.core.TimeWindow UTCTimeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(3, Name = @"cells")]
         public global::System.Collections.Generic.List<Cell> Cells { get; } = new global::System.Collections.Generic.List<Cell>();

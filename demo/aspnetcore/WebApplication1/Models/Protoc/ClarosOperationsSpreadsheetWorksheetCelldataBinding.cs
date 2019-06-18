@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_celldata_binding.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetCelldataBindingReflection {
@@ -42,9 +42,9 @@ namespace Claros.Operations.Spreadsheet {
             "KAsyNC5jbGFyb3MuaW5zdHJ1bWVudC5JbnN0cnVtZW50TWVhc3VyZW1lbnRG",
             "aWVsZEJpbmRpbmdIAEIJCgdiaW5kaW5nYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormBindingReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementFieldBindingReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetBindingReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormBindingReflection.Descriptor, global::claros.protoc.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementFieldBindingReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetBindingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.CellDataBinding), global::Claros.Operations.Spreadsheet.CellDataBinding.Parser, new[]{ "InstrumentMeasurementBinding", "ComputationBinding", "FormBinding", "SpreadsheetBinding", "FieldInstrumentMeasurementBinding" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.CellDataBinding), global::claros.protoc.Operations.Spreadsheet.CellDataBinding.Parser, new[]{ "InstrumentMeasurementBinding", "ComputationBinding", "FormBinding", "SpreadsheetBinding", "FieldInstrumentMeasurementBinding" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -59,7 +59,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCelldataBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -105,8 +105,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "instrumentMeasurementBinding" field.</summary>
     public const int InstrumentMeasurementBindingFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentMeasurementBinding InstrumentMeasurementBinding {
-      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::Claros.Instrument.InstrumentMeasurementBinding) binding_ : null; }
+    public global::claros.protoc.Instrument.InstrumentMeasurementBinding InstrumentMeasurementBinding {
+      get { return bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding ? (global::claros.protoc.Instrument.InstrumentMeasurementBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.InstrumentMeasurementBinding;
@@ -116,8 +116,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "computationBinding" field.</summary>
     public const int ComputationBindingFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Computation.ComputationBinding ComputationBinding {
-      get { return bindingCase_ == BindingOneofCase.ComputationBinding ? (global::Claros.Common.Computation.ComputationBinding) binding_ : null; }
+    public global::claros.protoc.Common.Computation.ComputationBinding ComputationBinding {
+      get { return bindingCase_ == BindingOneofCase.ComputationBinding ? (global::claros.protoc.Common.Computation.ComputationBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.ComputationBinding;
@@ -127,8 +127,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "formBinding" field.</summary>
     public const int FormBindingFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormBinding FormBinding {
-      get { return bindingCase_ == BindingOneofCase.FormBinding ? (global::Claros.Common.Form.FormBinding) binding_ : null; }
+    public global::claros.protoc.Common.Form.FormBinding FormBinding {
+      get { return bindingCase_ == BindingOneofCase.FormBinding ? (global::claros.protoc.Common.Form.FormBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.FormBinding;
@@ -138,8 +138,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "spreadsheetBinding" field.</summary>
     public const int SpreadsheetBindingFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.SpreadsheetBinding SpreadsheetBinding {
-      get { return bindingCase_ == BindingOneofCase.SpreadsheetBinding ? (global::Claros.Operations.Spreadsheet.SpreadsheetBinding) binding_ : null; }
+    public global::claros.protoc.Operations.Spreadsheet.SpreadsheetBinding SpreadsheetBinding {
+      get { return bindingCase_ == BindingOneofCase.SpreadsheetBinding ? (global::claros.protoc.Operations.Spreadsheet.SpreadsheetBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.SpreadsheetBinding;
@@ -149,8 +149,8 @@ namespace Claros.Operations.Spreadsheet {
     /// <summary>Field number for the "fieldInstrumentMeasurementBinding" field.</summary>
     public const int FieldInstrumentMeasurementBindingFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentMeasurementFieldBinding FieldInstrumentMeasurementBinding {
-      get { return bindingCase_ == BindingOneofCase.FieldInstrumentMeasurementBinding ? (global::Claros.Instrument.InstrumentMeasurementFieldBinding) binding_ : null; }
+    public global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding FieldInstrumentMeasurementBinding {
+      get { return bindingCase_ == BindingOneofCase.FieldInstrumentMeasurementBinding ? (global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding) binding_ : null; }
       set {
         binding_ = value;
         bindingCase_ = value == null ? BindingOneofCase.None : BindingOneofCase.FieldInstrumentMeasurementBinding;
@@ -280,31 +280,31 @@ namespace Claros.Operations.Spreadsheet {
       switch (other.BindingCase) {
         case BindingOneofCase.InstrumentMeasurementBinding:
           if (InstrumentMeasurementBinding == null) {
-            InstrumentMeasurementBinding = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            InstrumentMeasurementBinding = new global::claros.protoc.Instrument.InstrumentMeasurementBinding();
           }
           InstrumentMeasurementBinding.MergeFrom(other.InstrumentMeasurementBinding);
           break;
         case BindingOneofCase.ComputationBinding:
           if (ComputationBinding == null) {
-            ComputationBinding = new global::Claros.Common.Computation.ComputationBinding();
+            ComputationBinding = new global::claros.protoc.Common.Computation.ComputationBinding();
           }
           ComputationBinding.MergeFrom(other.ComputationBinding);
           break;
         case BindingOneofCase.FormBinding:
           if (FormBinding == null) {
-            FormBinding = new global::Claros.Common.Form.FormBinding();
+            FormBinding = new global::claros.protoc.Common.Form.FormBinding();
           }
           FormBinding.MergeFrom(other.FormBinding);
           break;
         case BindingOneofCase.SpreadsheetBinding:
           if (SpreadsheetBinding == null) {
-            SpreadsheetBinding = new global::Claros.Operations.Spreadsheet.SpreadsheetBinding();
+            SpreadsheetBinding = new global::claros.protoc.Operations.Spreadsheet.SpreadsheetBinding();
           }
           SpreadsheetBinding.MergeFrom(other.SpreadsheetBinding);
           break;
         case BindingOneofCase.FieldInstrumentMeasurementBinding:
           if (FieldInstrumentMeasurementBinding == null) {
-            FieldInstrumentMeasurementBinding = new global::Claros.Instrument.InstrumentMeasurementFieldBinding();
+            FieldInstrumentMeasurementBinding = new global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding();
           }
           FieldInstrumentMeasurementBinding.MergeFrom(other.FieldInstrumentMeasurementBinding);
           break;
@@ -322,7 +322,7 @@ namespace Claros.Operations.Spreadsheet {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 58: {
-            global::Claros.Instrument.InstrumentMeasurementBinding subBuilder = new global::Claros.Instrument.InstrumentMeasurementBinding();
+            global::claros.protoc.Instrument.InstrumentMeasurementBinding subBuilder = new global::claros.protoc.Instrument.InstrumentMeasurementBinding();
             if (bindingCase_ == BindingOneofCase.InstrumentMeasurementBinding) {
               subBuilder.MergeFrom(InstrumentMeasurementBinding);
             }
@@ -331,7 +331,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 66: {
-            global::Claros.Common.Computation.ComputationBinding subBuilder = new global::Claros.Common.Computation.ComputationBinding();
+            global::claros.protoc.Common.Computation.ComputationBinding subBuilder = new global::claros.protoc.Common.Computation.ComputationBinding();
             if (bindingCase_ == BindingOneofCase.ComputationBinding) {
               subBuilder.MergeFrom(ComputationBinding);
             }
@@ -340,7 +340,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 74: {
-            global::Claros.Common.Form.FormBinding subBuilder = new global::Claros.Common.Form.FormBinding();
+            global::claros.protoc.Common.Form.FormBinding subBuilder = new global::claros.protoc.Common.Form.FormBinding();
             if (bindingCase_ == BindingOneofCase.FormBinding) {
               subBuilder.MergeFrom(FormBinding);
             }
@@ -349,7 +349,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 82: {
-            global::Claros.Operations.Spreadsheet.SpreadsheetBinding subBuilder = new global::Claros.Operations.Spreadsheet.SpreadsheetBinding();
+            global::claros.protoc.Operations.Spreadsheet.SpreadsheetBinding subBuilder = new global::claros.protoc.Operations.Spreadsheet.SpreadsheetBinding();
             if (bindingCase_ == BindingOneofCase.SpreadsheetBinding) {
               subBuilder.MergeFrom(SpreadsheetBinding);
             }
@@ -358,7 +358,7 @@ namespace Claros.Operations.Spreadsheet {
             break;
           }
           case 90: {
-            global::Claros.Instrument.InstrumentMeasurementFieldBinding subBuilder = new global::Claros.Instrument.InstrumentMeasurementFieldBinding();
+            global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding subBuilder = new global::claros.protoc.Instrument.InstrumentMeasurementFieldBinding();
             if (bindingCase_ == BindingOneofCase.FieldInstrumentMeasurementBinding) {
               subBuilder.MergeFrom(FieldInstrumentMeasurementBinding);
             }

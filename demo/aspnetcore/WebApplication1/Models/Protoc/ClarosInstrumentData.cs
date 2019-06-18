@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_data.proto</summary>
   public static partial class ClarosInstrumentDataReflection {
@@ -40,9 +40,9 @@ namespace Claros.Instrument {
             "c0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFiBnByb3Rv",
             "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Instrument.ClarosInstrumentEventReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentMeasurementReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Instrument.ClarosInstrumentEventReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentMeasurementReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentData), global::Claros.Instrument.InstrumentData.Parser, new[]{ "TenantId", "FusionId", "Events", "Measurements", "Settings", "States", "InstrumentDataDateTime" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentData), global::claros.protoc.Instrument.InstrumentData.Parser, new[]{ "TenantId", "FusionId", "Events", "Measurements", "Settings", "States", "InstrumentDataDateTime" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -57,7 +57,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -116,9 +116,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "events" field.</summary>
     public const int EventsFieldNumber = 3;
-    private global::Claros.Instrument.InstrumentEvent events_;
+    private global::claros.protoc.Instrument.InstrumentEvent events_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.InstrumentEvent Events {
+    public global::claros.protoc.Instrument.InstrumentEvent Events {
       get { return events_; }
       set {
         events_ = value;
@@ -127,11 +127,11 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "measurements" field.</summary>
     public const int MeasurementsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.InstrumentMeasurement> _repeated_measurements_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Instrument.InstrumentMeasurement.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement> measurements_ = new pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.InstrumentMeasurement> _repeated_measurements_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Instrument.InstrumentMeasurement.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentMeasurement> measurements_ = new pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentMeasurement>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.InstrumentMeasurement> Measurements {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentMeasurement> Measurements {
       get { return measurements_; }
     }
 
@@ -157,12 +157,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "instrumentDataDateTime" field.</summary>
     public const int InstrumentDataDateTimeFieldNumber = 7;
-    private global::Claros.Common.Core.ClarosDateTime instrumentDataDateTime_;
+    private global::claros.protoc.Common.Core.ClarosDateTime instrumentDataDateTime_;
     /// <summary>
     /// this is optionally set if all children share the same time
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime InstrumentDataDateTime {
+    public global::claros.protoc.Common.Core.ClarosDateTime InstrumentDataDateTime {
       get { return instrumentDataDateTime_; }
       set {
         instrumentDataDateTime_ = value;
@@ -276,7 +276,7 @@ namespace Claros.Instrument {
       }
       if (other.events_ != null) {
         if (events_ == null) {
-          Events = new global::Claros.Instrument.InstrumentEvent();
+          Events = new global::claros.protoc.Instrument.InstrumentEvent();
         }
         Events.MergeFrom(other.Events);
       }
@@ -285,7 +285,7 @@ namespace Claros.Instrument {
       states_.Add(other.states_);
       if (other.instrumentDataDateTime_ != null) {
         if (instrumentDataDateTime_ == null) {
-          InstrumentDataDateTime = new global::Claros.Common.Core.ClarosDateTime();
+          InstrumentDataDateTime = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         InstrumentDataDateTime.MergeFrom(other.InstrumentDataDateTime);
       }
@@ -310,7 +310,7 @@ namespace Claros.Instrument {
           }
           case 26: {
             if (events_ == null) {
-              Events = new global::Claros.Instrument.InstrumentEvent();
+              Events = new global::claros.protoc.Instrument.InstrumentEvent();
             }
             input.ReadMessage(Events);
             break;
@@ -329,7 +329,7 @@ namespace Claros.Instrument {
           }
           case 58: {
             if (instrumentDataDateTime_ == null) {
-              InstrumentDataDateTime = new global::Claros.Common.Core.ClarosDateTime();
+              InstrumentDataDateTime = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(InstrumentDataDateTime);
             break;

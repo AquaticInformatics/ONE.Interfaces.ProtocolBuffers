@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_event.proto</summary>
   public static partial class ClarosInstrumentEventReflection {
@@ -40,9 +40,9 @@ namespace Claros.Instrument {
             "Cg1ldmVudERhdGVUaW1lGAggASgLMiIuY2xhcm9zLmNvbW1vbi5jb3JlLkNs",
             "YXJvc0RhdGVUaW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentEventMetadataReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentCalibrationReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentPrognosysReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentEventMetadataReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentCalibrationReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentPrognosysReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentEvent), global::Claros.Instrument.InstrumentEvent.Parser, new[]{ "Calibrations", "Errors", "Info", "Limits", "Reminders", "Warnings", "Prognosys", "EventDateTime" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentEvent), global::claros.protoc.Instrument.InstrumentEvent.Parser, new[]{ "Calibrations", "Errors", "Info", "Limits", "Reminders", "Warnings", "Prognosys", "EventDateTime" }, null, null, null)
           }));
     }
     #endregion
@@ -57,7 +57,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentEventReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92,79 +92,79 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "calibrations" field.</summary>
     public const int CalibrationsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.Calibration> _repeated_calibrations_codec
-        = pb::FieldCodec.ForMessage(10, global::Claros.Instrument.Calibration.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.Calibration> calibrations_ = new pbc::RepeatedField<global::Claros.Instrument.Calibration>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.Calibration> _repeated_calibrations_codec
+        = pb::FieldCodec.ForMessage(10, global::claros.protoc.Instrument.Calibration.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.Calibration> calibrations_ = new pbc::RepeatedField<global::claros.protoc.Instrument.Calibration>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.Calibration> Calibrations {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.Calibration> Calibrations {
       get { return calibrations_; }
     }
 
     /// <summary>Field number for the "errors" field.</summary>
     public const int ErrorsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.EventMetaData> _repeated_errors_codec
-        = pb::FieldCodec.ForMessage(18, global::Claros.Instrument.EventMetaData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.EventMetaData> errors_ = new pbc::RepeatedField<global::Claros.Instrument.EventMetaData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.EventMetaData> _repeated_errors_codec
+        = pb::FieldCodec.ForMessage(18, global::claros.protoc.Instrument.EventMetaData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> errors_ = new pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.EventMetaData> Errors {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> Errors {
       get { return errors_; }
     }
 
     /// <summary>Field number for the "info" field.</summary>
     public const int InfoFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.EventMetaData> _repeated_info_codec
-        = pb::FieldCodec.ForMessage(26, global::Claros.Instrument.EventMetaData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.EventMetaData> info_ = new pbc::RepeatedField<global::Claros.Instrument.EventMetaData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.EventMetaData> _repeated_info_codec
+        = pb::FieldCodec.ForMessage(26, global::claros.protoc.Instrument.EventMetaData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> info_ = new pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.EventMetaData> Info {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> Info {
       get { return info_; }
     }
 
     /// <summary>Field number for the "limits" field.</summary>
     public const int LimitsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.EventMetaData> _repeated_limits_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Instrument.EventMetaData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.EventMetaData> limits_ = new pbc::RepeatedField<global::Claros.Instrument.EventMetaData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.EventMetaData> _repeated_limits_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Instrument.EventMetaData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> limits_ = new pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.EventMetaData> Limits {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> Limits {
       get { return limits_; }
     }
 
     /// <summary>Field number for the "reminders" field.</summary>
     public const int RemindersFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.EventMetaData> _repeated_reminders_codec
-        = pb::FieldCodec.ForMessage(42, global::Claros.Instrument.EventMetaData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.EventMetaData> reminders_ = new pbc::RepeatedField<global::Claros.Instrument.EventMetaData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.EventMetaData> _repeated_reminders_codec
+        = pb::FieldCodec.ForMessage(42, global::claros.protoc.Instrument.EventMetaData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> reminders_ = new pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.EventMetaData> Reminders {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> Reminders {
       get { return reminders_; }
     }
 
     /// <summary>Field number for the "warnings" field.</summary>
     public const int WarningsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.EventMetaData> _repeated_warnings_codec
-        = pb::FieldCodec.ForMessage(50, global::Claros.Instrument.EventMetaData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.EventMetaData> warnings_ = new pbc::RepeatedField<global::Claros.Instrument.EventMetaData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.EventMetaData> _repeated_warnings_codec
+        = pb::FieldCodec.ForMessage(50, global::claros.protoc.Instrument.EventMetaData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> warnings_ = new pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.EventMetaData> Warnings {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.EventMetaData> Warnings {
       get { return warnings_; }
     }
 
     /// <summary>Field number for the "prognosys" field.</summary>
     public const int PrognosysFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.PrognosysData> _repeated_prognosys_codec
-        = pb::FieldCodec.ForMessage(58, global::Claros.Instrument.PrognosysData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.PrognosysData> prognosys_ = new pbc::RepeatedField<global::Claros.Instrument.PrognosysData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.PrognosysData> _repeated_prognosys_codec
+        = pb::FieldCodec.ForMessage(58, global::claros.protoc.Instrument.PrognosysData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.PrognosysData> prognosys_ = new pbc::RepeatedField<global::claros.protoc.Instrument.PrognosysData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.PrognosysData> Prognosys {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.PrognosysData> Prognosys {
       get { return prognosys_; }
     }
 
     /// <summary>Field number for the "eventDateTime" field.</summary>
     public const int EventDateTimeFieldNumber = 8;
-    private global::Claros.Common.Core.ClarosDateTime eventDateTime_;
+    private global::claros.protoc.Common.Core.ClarosDateTime eventDateTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime EventDateTime {
+    public global::claros.protoc.Common.Core.ClarosDateTime EventDateTime {
       get { return eventDateTime_; }
       set {
         eventDateTime_ = value;
@@ -268,7 +268,7 @@ namespace Claros.Instrument {
       prognosys_.Add(other.prognosys_);
       if (other.eventDateTime_ != null) {
         if (eventDateTime_ == null) {
-          EventDateTime = new global::Claros.Common.Core.ClarosDateTime();
+          EventDateTime = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         EventDateTime.MergeFrom(other.EventDateTime);
       }
@@ -313,7 +313,7 @@ namespace Claros.Instrument {
           }
           case 66: {
             if (eventDateTime_ == null) {
-              EventDateTime = new global::Claros.Common.Core.ClarosDateTime();
+              EventDateTime = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(EventDateTime);
             break;

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formfield.proto</summary>
   public static partial class ClarosCommonFormFormfieldReflection {
@@ -36,9 +36,9 @@ namespace Claros.Common.Form {
             "ABI5Cg5pbnN0cnVtZW50RGF0YRgHIAMoCzIhLmNsYXJvcy5pbnN0cnVtZW50",
             "Lkluc3RydW1lbnREYXRhQg8KDUZvcm1GaWVsZERhdGFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormdataentryTypeReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, global::Claros.Instrument.ClarosInstrumentDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormdataentryTypeReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetCellReflection.Descriptor, global::claros.protoc.Instrument.ClarosInstrumentDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormField), global::Claros.Common.Form.FormField.Parser, new[]{ "Guid", "FormFieldDefinitionId", "FormDataEntryType", "IsDataEntryTypeLocked", "Name", "Cell", "InstrumentData" }, new[]{ "FormFieldData" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormField), global::claros.protoc.Common.Form.FormField.Parser, new[]{ "Guid", "FormFieldDefinitionId", "FormDataEntryType", "IsDataEntryTypeLocked", "Name", "Cell", "InstrumentData" }, new[]{ "FormFieldData" }, null, null)
           }));
     }
     #endregion
@@ -53,7 +53,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormfieldReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormfieldReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -114,9 +114,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formDataEntryType" field.</summary>
     public const int FormDataEntryTypeFieldNumber = 3;
-    private global::Claros.Common.Form.FormDataEntryType formDataEntryType_ = 0;
+    private global::claros.protoc.Common.Form.FormDataEntryType formDataEntryType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormDataEntryType FormDataEntryType {
+    public global::claros.protoc.Common.Form.FormDataEntryType FormDataEntryType {
       get { return formDataEntryType_; }
       set {
         formDataEntryType_ = value;
@@ -151,8 +151,8 @@ namespace Claros.Common.Form {
     /// AdHocFormField adHocFormField
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.Cell Cell {
-      get { return formFieldDataCase_ == FormFieldDataOneofCase.Cell ? (global::Claros.Operations.Spreadsheet.Cell) formFieldData_ : null; }
+    public global::claros.protoc.Operations.Spreadsheet.Cell Cell {
+      get { return formFieldDataCase_ == FormFieldDataOneofCase.Cell ? (global::claros.protoc.Operations.Spreadsheet.Cell) formFieldData_ : null; }
       set {
         formFieldData_ = value;
         formFieldDataCase_ = value == null ? FormFieldDataOneofCase.None : FormFieldDataOneofCase.Cell;
@@ -161,11 +161,11 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "instrumentData" field.</summary>
     public const int InstrumentDataFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.InstrumentData> _repeated_instrumentData_codec
-        = pb::FieldCodec.ForMessage(58, global::Claros.Instrument.InstrumentData.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.InstrumentData> instrumentData_ = new pbc::RepeatedField<global::Claros.Instrument.InstrumentData>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.InstrumentData> _repeated_instrumentData_codec
+        = pb::FieldCodec.ForMessage(58, global::claros.protoc.Instrument.InstrumentData.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentData> instrumentData_ = new pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.InstrumentData> InstrumentData {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.InstrumentData> InstrumentData {
       get { return instrumentData_; }
     }
 
@@ -317,7 +317,7 @@ namespace Claros.Common.Form {
       switch (other.FormFieldDataCase) {
         case FormFieldDataOneofCase.Cell:
           if (Cell == null) {
-            Cell = new global::Claros.Operations.Spreadsheet.Cell();
+            Cell = new global::claros.protoc.Operations.Spreadsheet.Cell();
           }
           Cell.MergeFrom(other.Cell);
           break;
@@ -343,7 +343,7 @@ namespace Claros.Common.Form {
             break;
           }
           case 24: {
-            FormDataEntryType = (global::Claros.Common.Form.FormDataEntryType) input.ReadEnum();
+            FormDataEntryType = (global::claros.protoc.Common.Form.FormDataEntryType) input.ReadEnum();
             break;
           }
           case 32: {
@@ -355,7 +355,7 @@ namespace Claros.Common.Form {
             break;
           }
           case 50: {
-            global::Claros.Operations.Spreadsheet.Cell subBuilder = new global::Claros.Operations.Spreadsheet.Cell();
+            global::claros.protoc.Operations.Spreadsheet.Cell subBuilder = new global::claros.protoc.Operations.Spreadsheet.Cell();
             if (formFieldDataCase_ == FormFieldDataOneofCase.Cell) {
               subBuilder.MergeFrom(Cell);
             }

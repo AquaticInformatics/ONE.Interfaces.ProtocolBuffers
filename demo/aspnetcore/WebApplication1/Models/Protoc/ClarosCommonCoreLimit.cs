@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_limit.proto</summary>
   public static partial class ClarosCommonCoreLimitReflection {
@@ -32,9 +32,9 @@ namespace Claros.Common.Core {
             "dElkGAQgASgNEjIKCnJlY3VycmVuY2UYBSABKAsyHi5jbGFyb3MuY29tbW9u",
             "LmNvcmUuUmVjdXJyZW5jZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreLimitTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreLimitTypeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.Limit), global::Claros.Common.Core.Limit.Parser, new[]{ "I18NKey", "LimitType", "Value", "UnitId", "Recurrence" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.Limit), global::claros.protoc.Common.Core.Limit.Parser, new[]{ "I18NKey", "LimitType", "Value", "UnitId", "Recurrence" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreLimitReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreLimitReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92,9 +92,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "limitType" field.</summary>
     public const int LimitTypeFieldNumber = 2;
-    private global::Claros.Common.Core.LimitType limitType_ = 0;
+    private global::claros.protoc.Common.Core.LimitType limitType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.LimitType LimitType {
+    public global::claros.protoc.Common.Core.LimitType LimitType {
       get { return limitType_; }
       set {
         limitType_ = value;
@@ -125,9 +125,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "recurrence" field.</summary>
     public const int RecurrenceFieldNumber = 5;
-    private global::Claros.Common.Core.Recurrence recurrence_;
+    private global::claros.protoc.Common.Core.Recurrence recurrence_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence Recurrence {
+    public global::claros.protoc.Common.Core.Recurrence Recurrence {
       get { return recurrence_; }
       set {
         recurrence_ = value;
@@ -244,7 +244,7 @@ namespace Claros.Common.Core {
       }
       if (other.recurrence_ != null) {
         if (recurrence_ == null) {
-          Recurrence = new global::Claros.Common.Core.Recurrence();
+          Recurrence = new global::claros.protoc.Common.Core.Recurrence();
         }
         Recurrence.MergeFrom(other.Recurrence);
       }
@@ -264,7 +264,7 @@ namespace Claros.Common.Core {
             break;
           }
           case 16: {
-            LimitType = (global::Claros.Common.Core.LimitType) input.ReadEnum();
+            LimitType = (global::claros.protoc.Common.Core.LimitType) input.ReadEnum();
             break;
           }
           case 25: {
@@ -277,7 +277,7 @@ namespace Claros.Common.Core {
           }
           case 42: {
             if (recurrence_ == null) {
-              Recurrence = new global::Claros.Common.Core.Recurrence();
+              Recurrence = new global::claros.protoc.Common.Core.Recurrence();
             }
             input.ReadMessage(Recurrence);
             break;

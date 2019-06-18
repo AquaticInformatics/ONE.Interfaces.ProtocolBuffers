@@ -3,7 +3,7 @@
 // Input: claros_common_core_networkdata.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.core
+namespace claros.protogen.common.core
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -24,9 +24,9 @@ namespace claros.common.core
                 => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
             [global::ProtoBuf.ProtoMember(2)]
-            public global::claros.common.form.FormTemplate formTemplate
+            public global::claros.protogen.common.form.FormTemplate formTemplate
             {
-                get { return __pbn__response_one_of.Is(2) ? ((global::claros.common.form.FormTemplate)__pbn__response_one_of.Object) : default; }
+                get { return __pbn__response_one_of.Is(2) ? ((global::claros.protogen.common.form.FormTemplate)__pbn__response_one_of.Object) : default; }
                 set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(2, value); }
             }
             public bool ShouldSerializeformTemplate() => __pbn__response_one_of.Is(2);
@@ -35,9 +35,9 @@ namespace claros.common.core
             private global::ProtoBuf.DiscriminatedUnionObject __pbn__response_one_of;
 
             [global::ProtoBuf.ProtoMember(3, Name = @"form")]
-            public global::claros.common.form.Form Form
+            public global::claros.protogen.common.form.Form Form
             {
-                get { return __pbn__response_one_of.Is(3) ? ((global::claros.common.form.Form)__pbn__response_one_of.Object) : default; }
+                get { return __pbn__response_one_of.Is(3) ? ((global::claros.protogen.common.form.Form)__pbn__response_one_of.Object) : default; }
                 set { __pbn__response_one_of = new global::ProtoBuf.DiscriminatedUnionObject(3, value); }
             }
             public bool ShouldSerializeForm() => __pbn__response_one_of.Is(3);

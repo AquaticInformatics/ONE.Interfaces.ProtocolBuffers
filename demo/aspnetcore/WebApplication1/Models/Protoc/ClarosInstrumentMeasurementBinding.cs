@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementBindingReflection {
@@ -31,9 +31,9 @@ namespace Claros.Instrument {
             "Z2F0ZVR5cGUYAiABKA4yIS5jbGFyb3MuY29tbW9uLmNvcmUuQWdncmVnYXRl",
             "VHlwZRIOCgZ1bml0SWQYAyABKA1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreAggregateTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreAggregateTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.InstrumentMeasurementBinding), global::Claros.Instrument.InstrumentMeasurementBinding.Parser, new[]{ "InstrumentMeasurementId", "AggregateType", "UnitId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.InstrumentMeasurementBinding), global::claros.protoc.Instrument.InstrumentMeasurementBinding.Parser, new[]{ "InstrumentMeasurementId", "AggregateType", "UnitId" }, null, null, null)
           }));
     }
     #endregion
@@ -48,7 +48,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentMeasurementBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -89,9 +89,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "aggregateType" field.</summary>
     public const int AggregateTypeFieldNumber = 2;
-    private global::Claros.Common.Core.AggregateType aggregateType_ = 0;
+    private global::claros.protoc.Common.Core.AggregateType aggregateType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.AggregateType AggregateType {
+    public global::claros.protoc.Common.Core.AggregateType AggregateType {
       get { return aggregateType_; }
       set {
         aggregateType_ = value;
@@ -212,7 +212,7 @@ namespace Claros.Instrument {
             break;
           }
           case 16: {
-            AggregateType = (global::Claros.Common.Core.AggregateType) input.ReadEnum();
+            AggregateType = (global::claros.protoc.Common.Core.AggregateType) input.ReadEnum();
             break;
           }
           case 24: {

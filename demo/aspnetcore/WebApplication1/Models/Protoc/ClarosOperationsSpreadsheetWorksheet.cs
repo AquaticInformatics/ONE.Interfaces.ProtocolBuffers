@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Operations.Spreadsheet {
+namespace claros.protoc.Operations.Spreadsheet {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetReflection {
@@ -36,9 +36,9 @@ namespace Claros.Operations.Spreadsheet {
             "MAoEcm93cxgDIAMoCzIiLmNsYXJvcy5vcGVyYXRpb25zLnNwcmVhZHNoZWV0",
             "LlJvd2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetDefinitionReflection.Descriptor, global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetRowReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetTypeReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetDefinitionReflection.Descriptor, global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetRowReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Operations.Spreadsheet.Worksheet), global::Claros.Operations.Spreadsheet.Worksheet.Parser, new[]{ "WorksheetType", "WorksheetDefinitions", "Rows" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Operations.Spreadsheet.Worksheet), global::claros.protoc.Operations.Spreadsheet.Worksheet.Parser, new[]{ "WorksheetType", "WorksheetDefinitions", "Rows" }, null, null, null)
           }));
     }
     #endregion
@@ -53,7 +53,7 @@ namespace Claros.Operations.Spreadsheet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetWorksheetReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -83,12 +83,12 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "worksheetType" field.</summary>
     public const int WorksheetTypeFieldNumber = 1;
-    private global::Claros.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
+    private global::claros.protoc.Operations.Spreadsheet.WorksheetType worksheetType_ = 0;
     /// <summary>
     /// header
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.WorksheetType WorksheetType {
+    public global::claros.protoc.Operations.Spreadsheet.WorksheetType WorksheetType {
       get { return worksheetType_; }
       set {
         worksheetType_ = value;
@@ -97,27 +97,27 @@ namespace Claros.Operations.Spreadsheet {
 
     /// <summary>Field number for the "worksheetDefinitions" field.</summary>
     public const int WorksheetDefinitionsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.WorksheetDefinition> _repeated_worksheetDefinitions_codec
-        = pb::FieldCodec.ForMessage(18, global::Claros.Operations.Spreadsheet.WorksheetDefinition.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.WorksheetDefinition> worksheetDefinitions_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.WorksheetDefinition>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition> _repeated_worksheetDefinitions_codec
+        = pb::FieldCodec.ForMessage(18, global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition> worksheetDefinitions_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition>();
     /// <summary>
     /// definition
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.WorksheetDefinition> WorksheetDefinitions {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.WorksheetDefinition> WorksheetDefinitions {
       get { return worksheetDefinitions_; }
     }
 
     /// <summary>Field number for the "rows" field.</summary>
     public const int RowsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Claros.Operations.Spreadsheet.Row> _repeated_rows_codec
-        = pb::FieldCodec.ForMessage(26, global::Claros.Operations.Spreadsheet.Row.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Row> rows_ = new pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Row>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Operations.Spreadsheet.Row> _repeated_rows_codec
+        = pb::FieldCodec.ForMessage(26, global::claros.protoc.Operations.Spreadsheet.Row.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Row> rows_ = new pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Row>();
     /// <summary>
     /// data
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Operations.Spreadsheet.Row> Rows {
+    public pbc::RepeatedField<global::claros.protoc.Operations.Spreadsheet.Row> Rows {
       get { return rows_; }
     }
 
@@ -206,7 +206,7 @@ namespace Claros.Operations.Spreadsheet {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            WorksheetType = (global::Claros.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
+            WorksheetType = (global::claros.protoc.Operations.Spreadsheet.WorksheetType) input.ReadEnum();
             break;
           }
           case 18: {

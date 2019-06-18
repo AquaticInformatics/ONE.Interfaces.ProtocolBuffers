@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Computation {
+namespace claros.protoc.Common.Computation {
 
   /// <summary>Holder for reflection information generated from claros_common_computation_computation.proto</summary>
   public static partial class ClarosCommonComputationComputationReflection {
@@ -37,9 +37,9 @@ namespace Claros.Common.Computation {
             "GAggASgIEhIKCGxlZGdlcklkGAkgASgJSAASEAoGZm9ybUlkGAogASgJSABC",
             "CQoHYmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Computation.ClarosCommonComputationVariableReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationExpressionlineReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Computation.ClarosCommonComputationVariableReflection.Descriptor, global::claros.protoc.Common.Computation.ClarosCommonComputationExpressionlineReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Computation.Computation), global::Claros.Common.Computation.Computation.Parser, new[]{ "I18NKey", "Name", "Description", "InputVariables", "OutputVariables", "ExpressionLines", "IsActive", "IsValid", "LedgerId", "FormId" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Computation.Computation), global::claros.protoc.Common.Computation.Computation.Parser, new[]{ "I18NKey", "Name", "Description", "InputVariables", "OutputVariables", "ExpressionLines", "IsActive", "IsValid", "LedgerId", "FormId" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Claros.Common.Computation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Computation.ClarosCommonComputationComputationReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Computation.ClarosCommonComputationComputationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -131,31 +131,31 @@ namespace Claros.Common.Computation {
 
     /// <summary>Field number for the "inputVariables" field.</summary>
     public const int InputVariablesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Common.Computation.Variable> _repeated_inputVariables_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Common.Computation.Variable.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Computation.Variable> inputVariables_ = new pbc::RepeatedField<global::Claros.Common.Computation.Variable>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Computation.Variable> _repeated_inputVariables_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Common.Computation.Variable.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable> inputVariables_ = new pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Computation.Variable> InputVariables {
+    public pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable> InputVariables {
       get { return inputVariables_; }
     }
 
     /// <summary>Field number for the "outputVariables" field.</summary>
     public const int OutputVariablesFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Claros.Common.Computation.Variable> _repeated_outputVariables_codec
-        = pb::FieldCodec.ForMessage(42, global::Claros.Common.Computation.Variable.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Computation.Variable> outputVariables_ = new pbc::RepeatedField<global::Claros.Common.Computation.Variable>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Computation.Variable> _repeated_outputVariables_codec
+        = pb::FieldCodec.ForMessage(42, global::claros.protoc.Common.Computation.Variable.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable> outputVariables_ = new pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Computation.Variable> OutputVariables {
+    public pbc::RepeatedField<global::claros.protoc.Common.Computation.Variable> OutputVariables {
       get { return outputVariables_; }
     }
 
     /// <summary>Field number for the "expressionLines" field.</summary>
     public const int ExpressionLinesFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Claros.Common.Computation.ExpressionLine> _repeated_expressionLines_codec
-        = pb::FieldCodec.ForMessage(50, global::Claros.Common.Computation.ExpressionLine.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Computation.ExpressionLine> expressionLines_ = new pbc::RepeatedField<global::Claros.Common.Computation.ExpressionLine>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Computation.ExpressionLine> _repeated_expressionLines_codec
+        = pb::FieldCodec.ForMessage(50, global::claros.protoc.Common.Computation.ExpressionLine.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Computation.ExpressionLine> expressionLines_ = new pbc::RepeatedField<global::claros.protoc.Common.Computation.ExpressionLine>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Computation.ExpressionLine> ExpressionLines {
+    public pbc::RepeatedField<global::claros.protoc.Common.Computation.ExpressionLine> ExpressionLines {
       get { return expressionLines_; }
     }
 

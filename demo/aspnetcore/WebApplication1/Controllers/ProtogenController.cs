@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
-using Claros.Common.Form; // The namespace capitalization difference scares the crap out of me....
+using claros.protogen.common.configuration;
+using claros.protogen.common.form;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -23,10 +24,19 @@ namespace WebApplication1.Controllers
             _logger.LogInformation("{controllerName} - {verb} called", nameof(ProtogenController), nameof(HttpMethod.Get));
             var result = new FormTemplate();
 
-            result.Id = "581F4F37-E160-43FA-8FF8-008E9091E173";
-            result.Public = true;
-            result.OwnerId = "9ED5A778-0059-4ADA-AC8A-7BF56A3D95FA";
-            result.Version = 1;
+            result.Id = "CF99650B-3AC9-4D79-A67E-0E979EE4E254";
+            result.Public = false;
+            result.ownerId = "3CFDCBB6-6031-4887-9FBA-44860394FE62";
+            result.Version = 2;
+            result.formTemplateConfiguration = new FormTemplateConfiguration{formTemplateType = FormTemplateType.FtPlant};
+            result.Privileges.Add("SuperSecure", new Rights
+            {
+                Create = false,
+                Delete = false,
+                Edit = false,
+                View = false
+            } );
+            
 
             return Ok(result);
         }

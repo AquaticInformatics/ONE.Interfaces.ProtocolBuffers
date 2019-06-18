@@ -3,7 +3,7 @@
 // Input: claros_common_form_formfield_data.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -14,13 +14,13 @@ namespace claros.common.form
             => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
         [global::ProtoBuf.ProtoMember(1, Name = @"cell")]
-        public global::claros.operations.spreadsheet.Cell Cell { get; set; }
+        public global::claros.protogen.operations.spreadsheet.Cell Cell { get; set; }
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.instrument.InstrumentData instrumentData { get; set; }
+        public global::claros.protogen.instrument.InstrumentData instrumentData { get; set; }
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::claros.common.core.AuditEvent auditEvent { get; set; }
+        public global::claros.protogen.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

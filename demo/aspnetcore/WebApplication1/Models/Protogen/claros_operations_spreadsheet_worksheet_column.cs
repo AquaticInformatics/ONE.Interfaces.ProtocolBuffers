@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_column.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.operations.spreadsheet
+namespace claros.protogen.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -38,15 +38,15 @@ namespace claros.operations.spreadsheet
         public bool isActive { get; set; }
 
         [global::ProtoBuf.ProtoMember(8, Name = @"limits")]
-        public global::System.Collections.Generic.List<global::claros.common.core.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Limit>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.Limit>();
 
         [global::ProtoBuf.ProtoMember(9)]
-        public global::claros.common.core.DataSourceType dataSourceType { get; set; }
+        public global::claros.protogen.common.core.DataSourceType dataSourceType { get; set; }
 
         [global::ProtoBuf.ProtoMember(10)]
-        public global::claros.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
+        public global::claros.protogen.instrument.InstrumentMeasurementBinding instrumentMeasurementBinding
         {
-            get { return __pbn__binding.Is(10) ? ((global::claros.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
+            get { return __pbn__binding.Is(10) ? ((global::claros.protogen.instrument.InstrumentMeasurementBinding)__pbn__binding.Object) : default; }
             set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(10, value); }
         }
         public bool ShouldSerializeinstrumentMeasurementBinding() => __pbn__binding.Is(10);
@@ -55,16 +55,16 @@ namespace claros.operations.spreadsheet
         private global::ProtoBuf.DiscriminatedUnionObject __pbn__binding;
 
         [global::ProtoBuf.ProtoMember(11)]
-        public global::claros.common.computation.ComputationBinding computationBinding
+        public global::claros.protogen.common.computation.ComputationBinding computationBinding
         {
-            get { return __pbn__binding.Is(11) ? ((global::claros.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
+            get { return __pbn__binding.Is(11) ? ((global::claros.protogen.common.computation.ComputationBinding)__pbn__binding.Object) : default; }
             set { __pbn__binding = new global::ProtoBuf.DiscriminatedUnionObject(11, value); }
         }
         public bool ShouldSerializecomputationBinding() => __pbn__binding.Is(11);
         public void ResetcomputationBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 11);
 
         [global::ProtoBuf.ProtoMember(12, Name = @"reportableQualiferDefinition")]
-        public global::System.Collections.Generic.List<global::claros.common.core.ReportableQualifierDefinition> reportableQualiferDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.common.core.ReportableQualifierDefinition>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.ReportableQualifierDefinition> reportableQualiferDefinitions { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.ReportableQualifierDefinition>();
 
     }
 

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Computation {
+namespace claros.protoc.Common.Computation {
 
   /// <summary>Holder for reflection information generated from claros_common_computation_variable.proto</summary>
   public static partial class ClarosCommonComputationVariableReflection {
@@ -37,9 +37,9 @@ namespace Claros.Common.Computation {
             "ASgNEhcKD3N1Z2dlc3RlZFVuaXRJZBgJIAEoDRISCghjb2x1bW5JZBgKIAEo",
             "DUgAEhUKC2Zvcm1GaWVsZElkGAsgASgNSABCCQoHYmluZGluZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Computation.ClarosCommonComputationCursorTypeReflection.Descriptor, global::Claros.Common.Computation.ClarosCommonComputationPropertyselectorTypeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Computation.ClarosCommonComputationCursorTypeReflection.Descriptor, global::claros.protoc.Common.Computation.ClarosCommonComputationPropertyselectorTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Computation.Variable), global::Claros.Common.Computation.Variable.Parser, new[]{ "I18NKey", "Name", "Description", "QuantityTypeId", "Cursor", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId" }, new[]{ "Binding" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Computation.Variable), global::claros.protoc.Common.Computation.Variable.Parser, new[]{ "I18NKey", "Name", "Description", "QuantityTypeId", "Cursor", "CursorAbsolute", "PropertySelector", "SuggestedParameterId", "SuggestedUnitId", "ColumnId", "FormFieldId" }, new[]{ "Binding" }, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Claros.Common.Computation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Computation.ClarosCommonComputationVariableReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Computation.ClarosCommonComputationVariableReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -143,9 +143,9 @@ namespace Claros.Common.Computation {
 
     /// <summary>Field number for the "cursor" field.</summary>
     public const int CursorFieldNumber = 5;
-    private global::Claros.Common.Computation.ComputationCursorType cursor_ = 0;
+    private global::claros.protoc.Common.Computation.ComputationCursorType cursor_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Computation.ComputationCursorType Cursor {
+    public global::claros.protoc.Common.Computation.ComputationCursorType Cursor {
       get { return cursor_; }
       set {
         cursor_ = value;
@@ -165,9 +165,9 @@ namespace Claros.Common.Computation {
 
     /// <summary>Field number for the "propertySelector" field.</summary>
     public const int PropertySelectorFieldNumber = 7;
-    private global::Claros.Common.Computation.PropertySelectorType propertySelector_ = 0;
+    private global::claros.protoc.Common.Computation.PropertySelectorType propertySelector_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Computation.PropertySelectorType PropertySelector {
+    public global::claros.protoc.Common.Computation.PropertySelectorType PropertySelector {
       get { return propertySelector_; }
       set {
         propertySelector_ = value;
@@ -453,7 +453,7 @@ namespace Claros.Common.Computation {
             break;
           }
           case 40: {
-            Cursor = (global::Claros.Common.Computation.ComputationCursorType) input.ReadEnum();
+            Cursor = (global::claros.protoc.Common.Computation.ComputationCursorType) input.ReadEnum();
             break;
           }
           case 48: {
@@ -461,7 +461,7 @@ namespace Claros.Common.Computation {
             break;
           }
           case 56: {
-            PropertySelector = (global::Claros.Common.Computation.PropertySelectorType) input.ReadEnum();
+            PropertySelector = (global::claros.protoc.Common.Computation.PropertySelectorType) input.ReadEnum();
             break;
           }
           case 64: {

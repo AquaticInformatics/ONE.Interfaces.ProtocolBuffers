@@ -3,7 +3,7 @@
 // Input: claros_instrument_measurement_binding.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument
+namespace claros.protogen.instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -18,7 +18,7 @@ namespace claros.instrument
         public string instrumentMeasurementId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.common.core.AggregateType aggregateType { get; set; }
+        public global::claros.protogen.common.core.AggregateType aggregateType { get; set; }
 
         [global::ProtoBuf.ProtoMember(3)]
         public uint unitId { get; set; }

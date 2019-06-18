@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Report {
+namespace claros.protoc.Common.Report {
 
   /// <summary>Holder for reflection information generated from claros_common_report_report_data.proto</summary>
   public static partial class ClarosCommonReportReportDataReflection {
@@ -30,9 +30,9 @@ namespace Claros.Common.Report {
             "c2hlZXQYASABKAsyKi5jbGFyb3Mub3BlcmF0aW9ucy5zcHJlYWRzaGVldC5T",
             "cHJlYWRzaGVldEgAQg8KDXJlcG9ydERhdGFTZXRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Operations.Spreadsheet.ClarosOperationsSpreadsheetSpreadsheetReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Report.ReportData), global::Claros.Common.Report.ReportData.Parser, new[]{ "Spreadsheet" }, new[]{ "ReportDataSet" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Report.ReportData), global::claros.protoc.Common.Report.ReportData.Parser, new[]{ "Spreadsheet" }, new[]{ "ReportDataSet" }, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Claros.Common.Report {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Report.ClarosCommonReportReportDataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Report.ClarosCommonReportReportDataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -81,8 +81,8 @@ namespace Claros.Common.Report {
     /// <summary>Field number for the "spreadsheet" field.</summary>
     public const int SpreadsheetFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Operations.Spreadsheet.Spreadsheet Spreadsheet {
-      get { return reportDataSetCase_ == ReportDataSetOneofCase.Spreadsheet ? (global::Claros.Operations.Spreadsheet.Spreadsheet) reportDataSet_ : null; }
+    public global::claros.protoc.Operations.Spreadsheet.Spreadsheet Spreadsheet {
+      get { return reportDataSetCase_ == ReportDataSetOneofCase.Spreadsheet ? (global::claros.protoc.Operations.Spreadsheet.Spreadsheet) reportDataSet_ : null; }
       set {
         reportDataSet_ = value;
         reportDataSetCase_ = value == null ? ReportDataSetOneofCase.None : ReportDataSetOneofCase.Spreadsheet;
@@ -172,7 +172,7 @@ namespace Claros.Common.Report {
       switch (other.ReportDataSetCase) {
         case ReportDataSetOneofCase.Spreadsheet:
           if (Spreadsheet == null) {
-            Spreadsheet = new global::Claros.Operations.Spreadsheet.Spreadsheet();
+            Spreadsheet = new global::claros.protoc.Operations.Spreadsheet.Spreadsheet();
           }
           Spreadsheet.MergeFrom(other.Spreadsheet);
           break;
@@ -190,7 +190,7 @@ namespace Claros.Common.Report {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Claros.Operations.Spreadsheet.Spreadsheet subBuilder = new global::Claros.Operations.Spreadsheet.Spreadsheet();
+            global::claros.protoc.Operations.Spreadsheet.Spreadsheet subBuilder = new global::claros.protoc.Operations.Spreadsheet.Spreadsheet();
             if (reportDataSetCase_ == ReportDataSetOneofCase.Spreadsheet) {
               subBuilder.MergeFrom(Spreadsheet);
             }

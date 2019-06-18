@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_measurement_milliamp_binding.proto</summary>
   public static partial class ClarosInstrumentMeasurementMilliampBindingReflection {
@@ -32,9 +32,9 @@ namespace Claros.Instrument {
             "MwoHdmFsaWRUbxgEIAEoCzIiLmNsYXJvcy5jb21tb24uY29yZS5DbGFyb3NE",
             "YXRlVGltZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreClarosdatetimeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.MilliAmpBinding), global::Claros.Instrument.MilliAmpBinding.Parser, new[]{ "CardName", "Channel", "ValidFrom", "ValidTo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.MilliAmpBinding), global::claros.protoc.Instrument.MilliAmpBinding.Parser, new[]{ "CardName", "Channel", "ValidFrom", "ValidTo" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentMeasurementMilliampBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -102,9 +102,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "validFrom" field.</summary>
     public const int ValidFromFieldNumber = 3;
-    private global::Claros.Common.Core.ClarosDateTime validFrom_;
+    private global::claros.protoc.Common.Core.ClarosDateTime validFrom_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime ValidFrom {
+    public global::claros.protoc.Common.Core.ClarosDateTime ValidFrom {
       get { return validFrom_; }
       set {
         validFrom_ = value;
@@ -113,9 +113,9 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "validTo" field.</summary>
     public const int ValidToFieldNumber = 4;
-    private global::Claros.Common.Core.ClarosDateTime validTo_;
+    private global::claros.protoc.Common.Core.ClarosDateTime validTo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.ClarosDateTime ValidTo {
+    public global::claros.protoc.Common.Core.ClarosDateTime ValidTo {
       get { return validTo_; }
       set {
         validTo_ = value;
@@ -217,13 +217,13 @@ namespace Claros.Instrument {
       }
       if (other.validFrom_ != null) {
         if (validFrom_ == null) {
-          ValidFrom = new global::Claros.Common.Core.ClarosDateTime();
+          ValidFrom = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         ValidFrom.MergeFrom(other.ValidFrom);
       }
       if (other.validTo_ != null) {
         if (validTo_ == null) {
-          ValidTo = new global::Claros.Common.Core.ClarosDateTime();
+          ValidTo = new global::claros.protoc.Common.Core.ClarosDateTime();
         }
         ValidTo.MergeFrom(other.ValidTo);
       }
@@ -248,14 +248,14 @@ namespace Claros.Instrument {
           }
           case 26: {
             if (validFrom_ == null) {
-              ValidFrom = new global::Claros.Common.Core.ClarosDateTime();
+              ValidFrom = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(ValidFrom);
             break;
           }
           case 34: {
             if (validTo_ == null) {
-              ValidTo = new global::Claros.Common.Core.ClarosDateTime();
+              ValidTo = new global::claros.protoc.Common.Core.ClarosDateTime();
             }
             input.ReadMessage(ValidTo);
             break;

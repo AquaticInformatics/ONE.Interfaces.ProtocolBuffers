@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Gis {
+namespace claros.protoc.Common.Gis {
 
   /// <summary>Holder for reflection information generated from claros_common_gis_gis.proto</summary>
   public static partial class ClarosCommonGisGisReflection {
@@ -35,9 +35,9 @@ namespace Claros.Common.Gis {
             "dDNkGAQgASgLMh8uY2xhcm9zLmNvbW1vbi5naXMuTXVsdGlQb2ludDNEYgZw",
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Gis.ClarosCommonGisPoint2DReflection.Descriptor, global::Claros.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor, global::Claros.Common.Gis.ClarosCommonGisMultiPoint2DReflection.Descriptor, global::Claros.Common.Gis.ClarosCommonGisMultiPoint3DReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Gis.ClarosCommonGisPoint2DReflection.Descriptor, global::claros.protoc.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor, global::claros.protoc.Common.Gis.ClarosCommonGisMultiPoint2DReflection.Descriptor, global::claros.protoc.Common.Gis.ClarosCommonGisMultiPoint3DReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Gis.GIS), global::Claros.Common.Gis.GIS.Parser, new[]{ "Point2D", "Point3D", "MultiPoint2D", "MultiPoint3D" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Gis.GIS), global::claros.protoc.Common.Gis.GIS.Parser, new[]{ "Point2D", "Point3D", "MultiPoint2D", "MultiPoint3D" }, null, null, null)
           }));
     }
     #endregion
@@ -52,7 +52,7 @@ namespace Claros.Common.Gis {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Gis.ClarosCommonGisGisReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Gis.ClarosCommonGisGisReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -83,9 +83,9 @@ namespace Claros.Common.Gis {
 
     /// <summary>Field number for the "point2d" field.</summary>
     public const int Point2DFieldNumber = 1;
-    private global::Claros.Common.Gis.Point2D point2D_;
+    private global::claros.protoc.Common.Gis.Point2D point2D_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Gis.Point2D Point2D {
+    public global::claros.protoc.Common.Gis.Point2D Point2D {
       get { return point2D_; }
       set {
         point2D_ = value;
@@ -94,9 +94,9 @@ namespace Claros.Common.Gis {
 
     /// <summary>Field number for the "point3d" field.</summary>
     public const int Point3DFieldNumber = 2;
-    private global::Claros.Common.Gis.Point3D point3D_;
+    private global::claros.protoc.Common.Gis.Point3D point3D_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Gis.Point3D Point3D {
+    public global::claros.protoc.Common.Gis.Point3D Point3D {
       get { return point3D_; }
       set {
         point3D_ = value;
@@ -105,9 +105,9 @@ namespace Claros.Common.Gis {
 
     /// <summary>Field number for the "multi_point2d" field.</summary>
     public const int MultiPoint2DFieldNumber = 3;
-    private global::Claros.Common.Gis.MultiPoint2D multiPoint2D_;
+    private global::claros.protoc.Common.Gis.MultiPoint2D multiPoint2D_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Gis.MultiPoint2D MultiPoint2D {
+    public global::claros.protoc.Common.Gis.MultiPoint2D MultiPoint2D {
       get { return multiPoint2D_; }
       set {
         multiPoint2D_ = value;
@@ -116,9 +116,9 @@ namespace Claros.Common.Gis {
 
     /// <summary>Field number for the "multi_point3d" field.</summary>
     public const int MultiPoint3DFieldNumber = 4;
-    private global::Claros.Common.Gis.MultiPoint3D multiPoint3D_;
+    private global::claros.protoc.Common.Gis.MultiPoint3D multiPoint3D_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Gis.MultiPoint3D MultiPoint3D {
+    public global::claros.protoc.Common.Gis.MultiPoint3D MultiPoint3D {
       get { return multiPoint3D_; }
       set {
         multiPoint3D_ = value;
@@ -214,25 +214,25 @@ namespace Claros.Common.Gis {
       }
       if (other.point2D_ != null) {
         if (point2D_ == null) {
-          Point2D = new global::Claros.Common.Gis.Point2D();
+          Point2D = new global::claros.protoc.Common.Gis.Point2D();
         }
         Point2D.MergeFrom(other.Point2D);
       }
       if (other.point3D_ != null) {
         if (point3D_ == null) {
-          Point3D = new global::Claros.Common.Gis.Point3D();
+          Point3D = new global::claros.protoc.Common.Gis.Point3D();
         }
         Point3D.MergeFrom(other.Point3D);
       }
       if (other.multiPoint2D_ != null) {
         if (multiPoint2D_ == null) {
-          MultiPoint2D = new global::Claros.Common.Gis.MultiPoint2D();
+          MultiPoint2D = new global::claros.protoc.Common.Gis.MultiPoint2D();
         }
         MultiPoint2D.MergeFrom(other.MultiPoint2D);
       }
       if (other.multiPoint3D_ != null) {
         if (multiPoint3D_ == null) {
-          MultiPoint3D = new global::Claros.Common.Gis.MultiPoint3D();
+          MultiPoint3D = new global::claros.protoc.Common.Gis.MultiPoint3D();
         }
         MultiPoint3D.MergeFrom(other.MultiPoint3D);
       }
@@ -249,28 +249,28 @@ namespace Claros.Common.Gis {
             break;
           case 10: {
             if (point2D_ == null) {
-              Point2D = new global::Claros.Common.Gis.Point2D();
+              Point2D = new global::claros.protoc.Common.Gis.Point2D();
             }
             input.ReadMessage(Point2D);
             break;
           }
           case 18: {
             if (point3D_ == null) {
-              Point3D = new global::Claros.Common.Gis.Point3D();
+              Point3D = new global::claros.protoc.Common.Gis.Point3D();
             }
             input.ReadMessage(Point3D);
             break;
           }
           case 26: {
             if (multiPoint2D_ == null) {
-              MultiPoint2D = new global::Claros.Common.Gis.MultiPoint2D();
+              MultiPoint2D = new global::claros.protoc.Common.Gis.MultiPoint2D();
             }
             input.ReadMessage(MultiPoint2D);
             break;
           }
           case 34: {
             if (multiPoint3D_ == null) {
-              MultiPoint3D = new global::Claros.Common.Gis.MultiPoint3D();
+              MultiPoint3D = new global::claros.protoc.Common.Gis.MultiPoint3D();
             }
             input.ReadMessage(MultiPoint3D);
             break;

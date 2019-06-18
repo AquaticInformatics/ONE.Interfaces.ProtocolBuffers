@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Gis {
+namespace claros.protoc.Common.Gis {
 
   /// <summary>Holder for reflection information generated from claros_common_gis_point3d.proto</summary>
   public static partial class ClarosCommonGisPoint3DReflection {
@@ -30,7 +30,7 @@ namespace Claros.Common.Gis {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Gis.Point3D), global::Claros.Common.Gis.Point3D.Parser, new[]{ "X", "Y", "Z" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Gis.Point3D), global::claros.protoc.Common.Gis.Point3D.Parser, new[]{ "X", "Y", "Z" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Claros.Common.Gis {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

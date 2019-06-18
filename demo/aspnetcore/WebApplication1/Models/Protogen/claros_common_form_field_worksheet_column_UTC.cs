@@ -3,7 +3,7 @@
 // Input: claros_common_form_field_worksheet_column_UTC.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -18,10 +18,10 @@ namespace claros.common.form
         public string plantId { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(2)]
-        public global::claros.operations.spreadsheet.WorksheetType worksheetType { get; set; }
+        public global::claros.protogen.operations.spreadsheet.WorksheetType worksheetType { get; set; }
 
         [global::ProtoBuf.ProtoMember(3, Name = @"column")]
-        public global::claros.operations.spreadsheet.Column Column { get; set; }
+        public global::claros.protogen.operations.spreadsheet.Column Column { get; set; }
 
     }
 

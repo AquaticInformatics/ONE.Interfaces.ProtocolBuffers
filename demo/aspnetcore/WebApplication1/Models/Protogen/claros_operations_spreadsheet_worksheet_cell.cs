@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_cell.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.operations.spreadsheet
+namespace claros.protogen.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -17,7 +17,7 @@ namespace claros.operations.spreadsheet
         public uint columnId { get; set; }
 
         [global::ProtoBuf.ProtoMember(2, Name = @"notes")]
-        public global::System.Collections.Generic.List<global::claros.common.core.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Note>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.Note> Notes { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.Note>();
 
         [global::ProtoBuf.ProtoMember(3, Name = @"cellData")]
         public global::System.Collections.Generic.List<CellData> cellDatas { get; } = new global::System.Collections.Generic.List<CellData>();

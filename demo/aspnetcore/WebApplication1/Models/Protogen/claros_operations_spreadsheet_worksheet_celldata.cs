@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_celldata.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.operations.spreadsheet
+namespace claros.protogen.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -31,13 +31,13 @@ namespace claros.operations.spreadsheet
         public string Justification { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(6)]
-        public global::claros.common.core.ReportableQualifier reportableQualifier { get; set; }
+        public global::claros.protogen.common.core.ReportableQualifier reportableQualifier { get; set; }
 
         [global::ProtoBuf.ProtoMember(7)]
         public global::System.Collections.Generic.List<CellDataBinding> cellDataBindings { get; } = new global::System.Collections.Generic.List<CellDataBinding>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::claros.common.core.AuditEvent auditEvent { get; set; }
+        public global::claros.protogen.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

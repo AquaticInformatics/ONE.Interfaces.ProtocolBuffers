@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_calibration_standard.proto</summary>
   public static partial class ClarosInstrumentCalibrationStandardReflection {
@@ -33,9 +33,9 @@ namespace Claros.Instrument {
             "IAMoCzIjLmNsYXJvcy5pbnN0cnVtZW50LkNhbGlicmF0aW9uVmFsdWViBnBy",
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Instrument.ClarosInstrumentCalibrationValueReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Instrument.ClarosInstrumentCalibrationValueReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.CalibrationStandard), global::Claros.Instrument.CalibrationStandard.Parser, new[]{ "KnownValue", "MeasuredValue", "SecondaryValues" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.CalibrationStandard), global::claros.protoc.Instrument.CalibrationStandard.Parser, new[]{ "KnownValue", "MeasuredValue", "SecondaryValues" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentCalibrationStandardReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentCalibrationStandardReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -80,12 +80,12 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "knownValue" field.</summary>
     public const int KnownValueFieldNumber = 1;
-    private global::Claros.Instrument.CalibrationValue knownValue_;
+    private global::claros.protoc.Instrument.CalibrationValue knownValue_;
     /// <summary>
     ///this is the primary value  (Concentration)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.CalibrationValue KnownValue {
+    public global::claros.protoc.Instrument.CalibrationValue KnownValue {
       get { return knownValue_; }
       set {
         knownValue_ = value;
@@ -94,11 +94,11 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "measuredValue" field.</summary>
     public const int MeasuredValueFieldNumber = 2;
-    private global::Claros.Instrument.CalibrationValue measuredValue_;
+    private global::claros.protoc.Instrument.CalibrationValue measuredValue_;
     /// <summary>
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Instrument.CalibrationValue MeasuredValue {
+    public global::claros.protoc.Instrument.CalibrationValue MeasuredValue {
       get { return measuredValue_; }
       set {
         measuredValue_ = value;
@@ -107,11 +107,11 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "secondaryValues" field.</summary>
     public const int SecondaryValuesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.CalibrationValue> _repeated_secondaryValues_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Instrument.CalibrationValue.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.CalibrationValue> secondaryValues_ = new pbc::RepeatedField<global::Claros.Instrument.CalibrationValue>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.CalibrationValue> _repeated_secondaryValues_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Instrument.CalibrationValue.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationValue> secondaryValues_ = new pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationValue>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.CalibrationValue> SecondaryValues {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationValue> SecondaryValues {
       get { return secondaryValues_; }
     }
 
@@ -190,13 +190,13 @@ namespace Claros.Instrument {
       }
       if (other.knownValue_ != null) {
         if (knownValue_ == null) {
-          KnownValue = new global::Claros.Instrument.CalibrationValue();
+          KnownValue = new global::claros.protoc.Instrument.CalibrationValue();
         }
         KnownValue.MergeFrom(other.KnownValue);
       }
       if (other.measuredValue_ != null) {
         if (measuredValue_ == null) {
-          MeasuredValue = new global::Claros.Instrument.CalibrationValue();
+          MeasuredValue = new global::claros.protoc.Instrument.CalibrationValue();
         }
         MeasuredValue.MergeFrom(other.MeasuredValue);
       }
@@ -214,14 +214,14 @@ namespace Claros.Instrument {
             break;
           case 10: {
             if (knownValue_ == null) {
-              KnownValue = new global::Claros.Instrument.CalibrationValue();
+              KnownValue = new global::claros.protoc.Instrument.CalibrationValue();
             }
             input.ReadMessage(KnownValue);
             break;
           }
           case 18: {
             if (measuredValue_ == null) {
-              MeasuredValue = new global::Claros.Instrument.CalibrationValue();
+              MeasuredValue = new global::claros.protoc.Instrument.CalibrationValue();
             }
             input.ReadMessage(MeasuredValue);
             break;

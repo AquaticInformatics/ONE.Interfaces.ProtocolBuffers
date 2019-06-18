@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_field_text_repeated.proto</summary>
   public static partial class ClarosCommonFormFieldTextRepeatedReflection {
@@ -30,9 +30,9 @@ namespace Claros.Common.Form {
             "bUZpZWxkVGV4dFJlcGVhdGVkGAEgAygLMiEuY2xhcm9zLmNvbW1vbi5mb3Jt",
             "LkZvcm1GaWVsZFRleHRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFieldTextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFieldTextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormFieldTextRepeated), global::Claros.Common.Form.FormFieldTextRepeated.Parser, new[]{ "FormFieldTextRepeated_" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormFieldTextRepeated), global::claros.protoc.Common.Form.FormFieldTextRepeated.Parser, new[]{ "FormFieldTextRepeated_" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFieldTextRepeatedReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFieldTextRepeatedReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -75,11 +75,11 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formFieldTextRepeated" field.</summary>
     public const int FormFieldTextRepeated_FieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormFieldText> _repeated_formFieldTextRepeated_codec
-        = pb::FieldCodec.ForMessage(10, global::Claros.Common.Form.FormFieldText.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormFieldText> formFieldTextRepeated_ = new pbc::RepeatedField<global::Claros.Common.Form.FormFieldText>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormFieldText> _repeated_formFieldTextRepeated_codec
+        = pb::FieldCodec.ForMessage(10, global::claros.protoc.Common.Form.FormFieldText.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldText> formFieldTextRepeated_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldText>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormFieldText> FormFieldTextRepeated_ {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldText> FormFieldTextRepeated_ {
       get { return formFieldTextRepeated_; }
     }
 

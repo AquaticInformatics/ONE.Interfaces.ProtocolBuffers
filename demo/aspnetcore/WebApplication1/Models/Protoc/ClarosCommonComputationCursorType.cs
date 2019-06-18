@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Computation {
+namespace claros.protoc.Common.Computation {
 
   /// <summary>Holder for reflection information generated from claros_common_computation_cursor_type.proto</summary>
   public static partial class ClarosCommonComputationCursorTypeReflection {
@@ -31,7 +31,7 @@ namespace Claros.Common.Computation {
             "QlNPTFVURRAGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Computation.ComputationCursorType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Common.Computation.ComputationCursorType), }, null));
     }
     #endregion
 

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_auditevent_type.proto</summary>
   public static partial class ClarosCommonCoreAuditeventTypeReflection {
@@ -30,7 +30,7 @@ namespace Claros.Common.Core {
             "VEUQAxINCglBRV9ERUxFVEUQBBILCgdBRV9TRU5UEAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Claros.Common.Core.AuditEventType), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::claros.protoc.Common.Core.AuditEventType), }, null));
     }
     #endregion
 

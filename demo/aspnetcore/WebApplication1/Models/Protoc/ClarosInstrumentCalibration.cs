@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Instrument {
+namespace claros.protoc.Instrument {
 
   /// <summary>Holder for reflection information generated from claros_instrument_calibration.proto</summary>
   public static partial class ClarosInstrumentCalibrationReflection {
@@ -33,9 +33,9 @@ namespace Claros.Instrument {
             "cjIYCiABKAISRAoUY2FsaWJyYXRpb25TdGFuZGFyZHMYCyADKAsyJi5jbGFy",
             "b3MuaW5zdHJ1bWVudC5DYWxpYnJhdGlvblN0YW5kYXJkYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Instrument.ClarosInstrumentCalibrationStandardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Instrument.ClarosInstrumentCalibrationStandardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Instrument.Calibration), global::Claros.Instrument.Calibration.Parser, new[]{ "ID", "UserID", "Time", "Status", "OffsetUnits", "SlopeUnits", "Slope", "SlopeAux", "Offset", "R2", "CalibrationStandards" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Instrument.Calibration), global::claros.protoc.Instrument.Calibration.Parser, new[]{ "ID", "UserID", "Time", "Status", "OffsetUnits", "SlopeUnits", "Slope", "SlopeAux", "Offset", "R2", "CalibrationStandards" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Claros.Instrument {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Instrument.ClarosInstrumentCalibrationReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Instrument.ClarosInstrumentCalibrationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -228,11 +228,11 @@ namespace Claros.Instrument {
 
     /// <summary>Field number for the "calibrationStandards" field.</summary>
     public const int CalibrationStandardsFieldNumber = 11;
-    private static readonly pb::FieldCodec<global::Claros.Instrument.CalibrationStandard> _repeated_calibrationStandards_codec
-        = pb::FieldCodec.ForMessage(90, global::Claros.Instrument.CalibrationStandard.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Instrument.CalibrationStandard> calibrationStandards_ = new pbc::RepeatedField<global::Claros.Instrument.CalibrationStandard>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Instrument.CalibrationStandard> _repeated_calibrationStandards_codec
+        = pb::FieldCodec.ForMessage(90, global::claros.protoc.Instrument.CalibrationStandard.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationStandard> calibrationStandards_ = new pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationStandard>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Instrument.CalibrationStandard> CalibrationStandards {
+    public pbc::RepeatedField<global::claros.protoc.Instrument.CalibrationStandard> CalibrationStandards {
       get { return calibrationStandards_; }
     }
 

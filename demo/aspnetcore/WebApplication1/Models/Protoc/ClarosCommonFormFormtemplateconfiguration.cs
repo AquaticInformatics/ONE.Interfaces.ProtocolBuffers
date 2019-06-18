@@ -5,11 +5,12 @@
 #pragma warning disable 1591, 0612, 3021
 #region Designer generated code
 
+using ProtoBuf;
 using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_common_form_formtemplateconfiguration.proto</summary>
   public static partial class ClarosCommonFormFormtemplateconfigurationReflection {
@@ -37,15 +38,16 @@ namespace Claros.Common.Form {
             "ZmluaXRpb25zGAQgAygLMicuY2xhcm9zLmNvbW1vbi5mb3JtLkZvcm1GaWVs",
             "ZERlZmluaXRpb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Form.ClarosCommonFormFormtemplateTypeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor, global::Claros.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateTypeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreRecurrenceReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormlayoutReflection.Descriptor, global::claros.protoc.Common.Form.ClarosCommonFormFormfieldDefinitionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.FormTemplateConfiguration), global::Claros.Common.Form.FormTemplateConfiguration.Parser, new[]{ "FormTemplateType", "Recurrence", "FormLayout", "FormFieldDefinitions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.FormTemplateConfiguration), global::claros.protoc.Common.Form.FormTemplateConfiguration.Parser, new[]{ "FormTemplateType", "Recurrence", "FormLayout", "FormFieldDefinitions" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  [ProtoContract]
   public sealed partial class FormTemplateConfiguration : pb::IMessage<FormTemplateConfiguration> {
     private static readonly pb::MessageParser<FormTemplateConfiguration> _parser = new pb::MessageParser<FormTemplateConfiguration>(() => new FormTemplateConfiguration());
     private pb::UnknownFieldSet _unknownFields;
@@ -54,7 +56,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosCommonFormFormtemplateconfigurationReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosCommonFormFormtemplateconfigurationReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -85,9 +87,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formTemplateType" field.</summary>
     public const int FormTemplateTypeFieldNumber = 1;
-    private global::Claros.Common.Form.FormTemplateType formTemplateType_ = 0;
+    private global::claros.protoc.Common.Form.FormTemplateType formTemplateType_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormTemplateType FormTemplateType {
+    public global::claros.protoc.Common.Form.FormTemplateType FormTemplateType {
       get { return formTemplateType_; }
       set {
         formTemplateType_ = value;
@@ -96,9 +98,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "recurrence" field.</summary>
     public const int RecurrenceFieldNumber = 2;
-    private global::Claros.Common.Core.Recurrence recurrence_;
+    private global::claros.protoc.Common.Core.Recurrence recurrence_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.Recurrence Recurrence {
+    public global::claros.protoc.Common.Core.Recurrence Recurrence {
       get { return recurrence_; }
       set {
         recurrence_ = value;
@@ -107,9 +109,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formLayout" field.</summary>
     public const int FormLayoutFieldNumber = 3;
-    private global::Claros.Common.Form.FormLayout formLayout_;
+    private global::claros.protoc.Common.Form.FormLayout formLayout_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Form.FormLayout FormLayout {
+    public global::claros.protoc.Common.Form.FormLayout FormLayout {
       get { return formLayout_; }
       set {
         formLayout_ = value;
@@ -118,11 +120,11 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "formFieldDefinitions" field.</summary>
     public const int FormFieldDefinitionsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Claros.Common.Form.FormFieldDefinition> _repeated_formFieldDefinitions_codec
-        = pb::FieldCodec.ForMessage(34, global::Claros.Common.Form.FormFieldDefinition.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition> formFieldDefinitions_ = new pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Form.FormFieldDefinition> _repeated_formFieldDefinitions_codec
+        = pb::FieldCodec.ForMessage(34, global::claros.protoc.Common.Form.FormFieldDefinition.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition> formFieldDefinitions_ = new pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Form.FormFieldDefinition> FormFieldDefinitions {
+    public pbc::RepeatedField<global::claros.protoc.Common.Form.FormFieldDefinition> FormFieldDefinitions {
       get { return formFieldDefinitions_; }
     }
 
@@ -213,13 +215,13 @@ namespace Claros.Common.Form {
       }
       if (other.recurrence_ != null) {
         if (recurrence_ == null) {
-          Recurrence = new global::Claros.Common.Core.Recurrence();
+          Recurrence = new global::claros.protoc.Common.Core.Recurrence();
         }
         Recurrence.MergeFrom(other.Recurrence);
       }
       if (other.formLayout_ != null) {
         if (formLayout_ == null) {
-          FormLayout = new global::Claros.Common.Form.FormLayout();
+          FormLayout = new global::claros.protoc.Common.Form.FormLayout();
         }
         FormLayout.MergeFrom(other.FormLayout);
       }
@@ -236,19 +238,19 @@ namespace Claros.Common.Form {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            FormTemplateType = (global::Claros.Common.Form.FormTemplateType) input.ReadEnum();
+            FormTemplateType = (global::claros.protoc.Common.Form.FormTemplateType) input.ReadEnum();
             break;
           }
           case 18: {
             if (recurrence_ == null) {
-              Recurrence = new global::Claros.Common.Core.Recurrence();
+              Recurrence = new global::claros.protoc.Common.Core.Recurrence();
             }
             input.ReadMessage(Recurrence);
             break;
           }
           case 26: {
             if (formLayout_ == null) {
-              FormLayout = new global::Claros.Common.Form.FormLayout();
+              FormLayout = new global::claros.protoc.Common.Form.FormLayout();
             }
             input.ReadMessage(FormLayout);
             break;

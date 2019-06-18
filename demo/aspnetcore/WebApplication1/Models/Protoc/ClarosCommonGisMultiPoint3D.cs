@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Gis {
+namespace claros.protoc.Common.Gis {
 
   /// <summary>Holder for reflection information generated from claros_common_gis_multi_point3d.proto</summary>
   public static partial class ClarosCommonGisMultiPoint3DReflection {
@@ -29,9 +29,9 @@ namespace Claros.Common.Gis {
             "byI5CgxNdWx0aVBvaW50M0QSKQoFcG9pbnQYASADKAsyGi5jbGFyb3MuY29t",
             "bW9uLmdpcy5Qb2ludDNEYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Gis.ClarosCommonGisPoint3DReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Gis.MultiPoint3D), global::Claros.Common.Gis.MultiPoint3D.Parser, new[]{ "Point" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Gis.MultiPoint3D), global::claros.protoc.Common.Gis.MultiPoint3D.Parser, new[]{ "Point" }, null, null, null)
           }));
     }
     #endregion
@@ -46,7 +46,7 @@ namespace Claros.Common.Gis {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Gis.ClarosCommonGisMultiPoint3DReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Gis.ClarosCommonGisMultiPoint3DReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -74,11 +74,11 @@ namespace Claros.Common.Gis {
 
     /// <summary>Field number for the "point" field.</summary>
     public const int PointFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Claros.Common.Gis.Point3D> _repeated_point_codec
-        = pb::FieldCodec.ForMessage(10, global::Claros.Common.Gis.Point3D.Parser);
-    private readonly pbc::RepeatedField<global::Claros.Common.Gis.Point3D> point_ = new pbc::RepeatedField<global::Claros.Common.Gis.Point3D>();
+    private static readonly pb::FieldCodec<global::claros.protoc.Common.Gis.Point3D> _repeated_point_codec
+        = pb::FieldCodec.ForMessage(10, global::claros.protoc.Common.Gis.Point3D.Parser);
+    private readonly pbc::RepeatedField<global::claros.protoc.Common.Gis.Point3D> point_ = new pbc::RepeatedField<global::claros.protoc.Common.Gis.Point3D>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Claros.Common.Gis.Point3D> Point {
+    public pbc::RepeatedField<global::claros.protoc.Common.Gis.Point3D> Point {
       get { return point_; }
     }
 

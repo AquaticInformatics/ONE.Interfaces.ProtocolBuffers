@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Configuration {
+namespace claros.protoc.Common.Configuration {
 
   /// <summary>Holder for reflection information generated from claros_common_configuration_privileges.proto</summary>
   public static partial class ClarosCommonConfigurationPrivilegesReflection {
@@ -32,9 +32,9 @@ namespace Claros.Common.Configuration {
             "EgsKA2tleRgBIAEoCRIyCgV2YWx1ZRgCIAEoCzIjLmNsYXJvcy5jb21tb24u",
             "Y29uZmlndXJhdGlvbi5SaWdodHM6AjgBYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Configuration.ClarosCommonConfigurationRightsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Configuration.Privileges), global::Claros.Common.Configuration.Privileges.Parser, new[]{ "Privilege" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Configuration.Privileges), global::claros.protoc.Common.Configuration.Privileges.Parser, new[]{ "Privilege" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Common.Configuration {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Configuration.ClarosCommonConfigurationPrivilegesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Configuration.ClarosCommonConfigurationPrivilegesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -77,11 +77,11 @@ namespace Claros.Common.Configuration {
 
     /// <summary>Field number for the "privilege" field.</summary>
     public const int PrivilegeFieldNumber = 1;
-    private static readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec _map_privilege_codec
-        = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Claros.Common.Configuration.Rights.Parser), 10);
-    private readonly pbc::MapField<string, global::Claros.Common.Configuration.Rights> privilege_ = new pbc::MapField<string, global::Claros.Common.Configuration.Rights>();
+    private static readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec _map_privilege_codec
+        = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::claros.protoc.Common.Configuration.Rights.Parser), 10);
+    private readonly pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> privilege_ = new pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<string, global::Claros.Common.Configuration.Rights> Privilege {
+    public pbc::MapField<string, global::claros.protoc.Common.Configuration.Rights> Privilege {
       get { return privilege_; }
     }
 

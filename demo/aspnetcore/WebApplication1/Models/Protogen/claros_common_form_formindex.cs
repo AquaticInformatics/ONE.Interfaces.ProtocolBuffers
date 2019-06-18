@@ -3,7 +3,7 @@
 // Input: claros_common_form_formindex.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.common.form
+namespace claros.protogen.common.form
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -25,10 +25,10 @@ namespace claros.common.form
         public uint templateVersion { get; set; }
 
         [global::ProtoBuf.ProtoMember(4)]
-        public global::claros.common.core.TimeWindow timeWindow { get; set; }
+        public global::claros.protogen.common.core.TimeWindow timeWindow { get; set; }
 
         [global::ProtoBuf.ProtoMember(5)]
-        public global::claros.common.core.ClarosDateTime lastModified { get; set; }
+        public global::claros.protogen.common.core.ClarosDateTime lastModified { get; set; }
 
         [global::ProtoBuf.ProtoMember(6, Name = @"name")]
         [global::System.ComponentModel.DefaultValue("")]

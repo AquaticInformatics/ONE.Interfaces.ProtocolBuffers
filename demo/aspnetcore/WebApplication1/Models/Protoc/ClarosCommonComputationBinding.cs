@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Computation {
+namespace claros.protoc.Common.Computation {
 
   /// <summary>Holder for reflection information generated from claros_common_computation_binding.proto</summary>
   public static partial class ClarosCommonComputationBindingReflection {
@@ -30,7 +30,7 @@ namespace Claros.Common.Computation {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Computation.ComputationBinding), global::Claros.Common.Computation.ComputationBinding.Parser, new[]{ "ComputationId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Computation.ComputationBinding), global::claros.protoc.Common.Computation.ComputationBinding.Parser, new[]{ "ComputationId" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Claros.Common.Computation {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Computation.ClarosCommonComputationBindingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

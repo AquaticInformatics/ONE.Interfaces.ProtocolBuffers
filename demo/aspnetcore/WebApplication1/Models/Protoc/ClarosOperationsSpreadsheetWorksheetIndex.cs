@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Form {
+namespace claros.protoc.Common.Form {
 
   /// <summary>Holder for reflection information generated from claros_operations_spreadsheet_worksheet_index.proto</summary>
   public static partial class ClarosOperationsSpreadsheetWorksheetIndexReflection {
@@ -32,9 +32,9 @@ namespace Claros.Common.Form {
             "Y1RpbWVXaW5kb3dzGAQgASgLMh4uY2xhcm9zLmNvbW1vbi5jb3JlLlRpbWVX",
             "aW5kb3cSEQoJaXNJblNwZWVkGAUgASgIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreTimewindowReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Form.WorksheetIndex), global::Claros.Common.Form.WorksheetIndex.Parser, new[]{ "Id", "WorksheetVersion", "TimeWindow", "UtcTimeWindows", "IsInSpeed" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Form.WorksheetIndex), global::claros.protoc.Common.Form.WorksheetIndex.Parser, new[]{ "Id", "WorksheetVersion", "TimeWindow", "UtcTimeWindows", "IsInSpeed" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Common.Form {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Form.ClarosOperationsSpreadsheetWorksheetIndexReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Form.ClarosOperationsSpreadsheetWorksheetIndexReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -106,9 +106,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "timeWindow" field.</summary>
     public const int TimeWindowFieldNumber = 3;
-    private global::Claros.Common.Core.TimeWindow timeWindow_;
+    private global::claros.protoc.Common.Core.TimeWindow timeWindow_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow TimeWindow {
+    public global::claros.protoc.Common.Core.TimeWindow TimeWindow {
       get { return timeWindow_; }
       set {
         timeWindow_ = value;
@@ -117,9 +117,9 @@ namespace Claros.Common.Form {
 
     /// <summary>Field number for the "utcTimeWindows" field.</summary>
     public const int UtcTimeWindowsFieldNumber = 4;
-    private global::Claros.Common.Core.TimeWindow utcTimeWindows_;
+    private global::claros.protoc.Common.Core.TimeWindow utcTimeWindows_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.TimeWindow UtcTimeWindows {
+    public global::claros.protoc.Common.Core.TimeWindow UtcTimeWindows {
       get { return utcTimeWindows_; }
       set {
         utcTimeWindows_ = value;
@@ -241,13 +241,13 @@ namespace Claros.Common.Form {
       }
       if (other.timeWindow_ != null) {
         if (timeWindow_ == null) {
-          TimeWindow = new global::Claros.Common.Core.TimeWindow();
+          TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
         }
         TimeWindow.MergeFrom(other.TimeWindow);
       }
       if (other.utcTimeWindows_ != null) {
         if (utcTimeWindows_ == null) {
-          UtcTimeWindows = new global::Claros.Common.Core.TimeWindow();
+          UtcTimeWindows = new global::claros.protoc.Common.Core.TimeWindow();
         }
         UtcTimeWindows.MergeFrom(other.UtcTimeWindows);
       }
@@ -275,14 +275,14 @@ namespace Claros.Common.Form {
           }
           case 26: {
             if (timeWindow_ == null) {
-              TimeWindow = new global::Claros.Common.Core.TimeWindow();
+              TimeWindow = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(TimeWindow);
             break;
           }
           case 34: {
             if (utcTimeWindows_ == null) {
-              UtcTimeWindows = new global::Claros.Common.Core.TimeWindow();
+              UtcTimeWindows = new global::claros.protoc.Common.Core.TimeWindow();
             }
             input.ReadMessage(UtcTimeWindows);
             break;

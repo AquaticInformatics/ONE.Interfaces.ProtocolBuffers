@@ -3,7 +3,7 @@
 // Input: claros_instrument_measurement_definition.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.instrument
+namespace claros.protogen.instrument
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -59,21 +59,21 @@ namespace claros.instrument
         public void ResetmilliAmpBinding() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__binding, 9);
 
         [global::ProtoBuf.ProtoMember(10, Name = @"limits")]
-        public global::System.Collections.Generic.List<global::claros.common.core.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.common.core.Limit>();
+        public global::System.Collections.Generic.List<global::claros.protogen.common.core.Limit> Limits { get; } = new global::System.Collections.Generic.List<global::claros.protogen.common.core.Limit>();
 
         [global::ProtoBuf.ProtoMember(11)]
         [global::System.ComponentModel.DefaultValue("")]
         public string createdById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(12)]
-        public global::claros.common.core.ClarosDateTime createdOn { get; set; }
+        public global::claros.protogen.common.core.ClarosDateTime createdOn { get; set; }
 
         [global::ProtoBuf.ProtoMember(13)]
         [global::System.ComponentModel.DefaultValue("")]
         public string modifiedById { get; set; } = "";
 
         [global::ProtoBuf.ProtoMember(14)]
-        public global::claros.common.core.ClarosDateTime modifiedOn { get; set; }
+        public global::claros.protogen.common.core.ClarosDateTime modifiedOn { get; set; }
 
     }
 

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
 using ProtoBuf.Meta;
+using Google.Protobuf;
 
 namespace AspNetCoreProtobuf.Formatters
 {
@@ -37,7 +38,14 @@ namespace AspNetCoreProtobuf.Formatters
         {
             var response = context.HttpContext.Response;
 
-            Model.Serialize(response.Body, context.Object);
+            try
+            {
+                Model.Serialize(response.Body, context.Object);
+            }
+            catch (InvalidOperationException)
+            {
+                (context.Object as ProtocSample).WriteTo(response.Body);
+            }
             return Task.FromResult(response);
         }
     }

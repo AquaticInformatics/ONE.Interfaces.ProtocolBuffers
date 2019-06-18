@@ -3,7 +3,7 @@
 // Input: claros_operations_spreadsheet_worksheet_definition.proto
 
 #pragma warning disable CS0612, CS1591, CS3021, IDE1006, RCS1036, RCS1057, RCS1085, RCS1192
-namespace claros.operations.spreadsheet
+namespace claros.protogen.operations.spreadsheet
 {
 
     [global::ProtoBuf.ProtoContract()]
@@ -26,7 +26,7 @@ namespace claros.operations.spreadsheet
         public global::System.Collections.Generic.List<Column> Columns { get; } = new global::System.Collections.Generic.List<Column>();
 
         [global::ProtoBuf.ProtoMember(99)]
-        public global::claros.common.core.AuditEvent auditEvent { get; set; }
+        public global::claros.protogen.common.core.AuditEvent auditEvent { get; set; }
 
     }
 

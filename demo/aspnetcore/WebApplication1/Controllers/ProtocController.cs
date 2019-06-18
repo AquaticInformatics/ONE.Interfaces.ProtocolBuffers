@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Net.Http;
-using claros.common.form;
+using claros.protoc.Common.Form;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -21,7 +21,7 @@ namespace WebApplication1.Controllers
         public ActionResult<FormTemplate> Get()
         {
             _logger.LogInformation("{controllerName} - {verb} called", nameof(ProtocController), nameof(HttpMethod.Get));
-            var result = new Claros.Common.Form.FormTemplate();
+            var result = new FormTemplate();
 
             result.Id = "581F4F37-E160-43FA-8FF8-008E9091E173";
             result.Public = true;

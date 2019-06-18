@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Claros.Common.Core {
+namespace claros.protoc.Common.Core {
 
   /// <summary>Holder for reflection information generated from claros_common_core_mobiledatetime.proto</summary>
   public static partial class ClarosCommonCoreMobiledatetimeReflection {
@@ -32,9 +32,9 @@ namespace Claros.Common.Core {
             "CzIeLmNsYXJvcy5jb21tb24uY29yZS5Nb2JpbGVUaW1lEhAKCHRpbWVab25l",
             "GAMgASgFYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Claros.Common.Core.ClarosCommonCoreMobiletimeReflection.Descriptor, global::Claros.Common.Core.ClarosCommonCoreMobiledateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::claros.protoc.Common.Core.ClarosCommonCoreMobiletimeReflection.Descriptor, global::claros.protoc.Common.Core.ClarosCommonCoreMobiledateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Claros.Common.Core.MobileDateTime), global::Claros.Common.Core.MobileDateTime.Parser, new[]{ "MobileDate", "MobileTime", "TimeZone" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::claros.protoc.Common.Core.MobileDateTime), global::claros.protoc.Common.Core.MobileDateTime.Parser, new[]{ "MobileDate", "MobileTime", "TimeZone" }, null, null, null)
           }));
     }
     #endregion
@@ -49,7 +49,7 @@ namespace Claros.Common.Core {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Claros.Common.Core.ClarosCommonCoreMobiledatetimeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::claros.protoc.Common.Core.ClarosCommonCoreMobiledatetimeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -79,9 +79,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "mobileDate" field.</summary>
     public const int MobileDateFieldNumber = 1;
-    private global::Claros.Common.Core.MobileDate mobileDate_;
+    private global::claros.protoc.Common.Core.MobileDate mobileDate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.MobileDate MobileDate {
+    public global::claros.protoc.Common.Core.MobileDate MobileDate {
       get { return mobileDate_; }
       set {
         mobileDate_ = value;
@@ -90,9 +90,9 @@ namespace Claros.Common.Core {
 
     /// <summary>Field number for the "mobileTime" field.</summary>
     public const int MobileTimeFieldNumber = 2;
-    private global::Claros.Common.Core.MobileTime mobileTime_;
+    private global::claros.protoc.Common.Core.MobileTime mobileTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Claros.Common.Core.MobileTime MobileTime {
+    public global::claros.protoc.Common.Core.MobileTime MobileTime {
       get { return mobileTime_; }
       set {
         mobileTime_ = value;
@@ -190,13 +190,13 @@ namespace Claros.Common.Core {
       }
       if (other.mobileDate_ != null) {
         if (mobileDate_ == null) {
-          MobileDate = new global::Claros.Common.Core.MobileDate();
+          MobileDate = new global::claros.protoc.Common.Core.MobileDate();
         }
         MobileDate.MergeFrom(other.MobileDate);
       }
       if (other.mobileTime_ != null) {
         if (mobileTime_ == null) {
-          MobileTime = new global::Claros.Common.Core.MobileTime();
+          MobileTime = new global::claros.protoc.Common.Core.MobileTime();
         }
         MobileTime.MergeFrom(other.MobileTime);
       }
@@ -216,14 +216,14 @@ namespace Claros.Common.Core {
             break;
           case 10: {
             if (mobileDate_ == null) {
-              MobileDate = new global::Claros.Common.Core.MobileDate();
+              MobileDate = new global::claros.protoc.Common.Core.MobileDate();
             }
             input.ReadMessage(MobileDate);
             break;
           }
           case 18: {
             if (mobileTime_ == null) {
-              MobileTime = new global::Claros.Common.Core.MobileTime();
+              MobileTime = new global::claros.protoc.Common.Core.MobileTime();
             }
             input.ReadMessage(MobileTime);
             break;
