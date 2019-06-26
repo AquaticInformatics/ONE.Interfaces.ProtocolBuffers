@@ -234,6 +234,20 @@ class FormTemplate :
   ::std::string* release_ownerid();
   void set_allocated_ownerid(::std::string* ownerid);
 
+  // string name = 7;
+  void clear_name();
+  static const int kNameFieldNumber = 7;
+  const ::std::string& name() const;
+  void set_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_name(::std::string&& value);
+  #endif
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  ::std::string* mutable_name();
+  ::std::string* release_name();
+  void set_allocated_name(::std::string* name);
+
   // .claros.common.form.FormTemplateConfiguration formTemplateConfiguration = 6;
   bool has_formtemplateconfiguration() const;
   void clear_formtemplateconfiguration();
@@ -268,6 +282,7 @@ class FormTemplate :
       0 > privileges_;
   ::google::protobuf::internal::ArenaStringPtr id_;
   ::google::protobuf::internal::ArenaStringPtr ownerid_;
+  ::google::protobuf::internal::ArenaStringPtr name_;
   ::claros::common::form::FormTemplateConfiguration* formtemplateconfiguration_;
   bool public__;
   ::google::protobuf::uint32 version_;
@@ -479,6 +494,59 @@ inline void FormTemplate::set_allocated_formtemplateconfiguration(::claros::comm
   }
   formtemplateconfiguration_ = formtemplateconfiguration;
   // @@protoc_insertion_point(field_set_allocated:claros.common.form.FormTemplate.formTemplateConfiguration)
+}
+
+// string name = 7;
+inline void FormTemplate::clear_name() {
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& FormTemplate::name() const {
+  // @@protoc_insertion_point(field_get:claros.common.form.FormTemplate.name)
+  return name_.GetNoArena();
+}
+inline void FormTemplate::set_name(const ::std::string& value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:claros.common.form.FormTemplate.name)
+}
+#if LANG_CXX11
+inline void FormTemplate::set_name(::std::string&& value) {
+  
+  name_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:claros.common.form.FormTemplate.name)
+}
+#endif
+inline void FormTemplate::set_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:claros.common.form.FormTemplate.name)
+}
+inline void FormTemplate::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:claros.common.form.FormTemplate.name)
+}
+inline ::std::string* FormTemplate::mutable_name() {
+  
+  // @@protoc_insertion_point(field_mutable:claros.common.form.FormTemplate.name)
+  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* FormTemplate::release_name() {
+  // @@protoc_insertion_point(field_release:claros.common.form.FormTemplate.name)
+  
+  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void FormTemplate::set_allocated_name(::std::string* name) {
+  if (name != nullptr) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:claros.common.form.FormTemplate.name)
 }
 
 #ifdef __GNUC__

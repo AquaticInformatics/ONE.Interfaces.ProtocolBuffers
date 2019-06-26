@@ -14,6 +14,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :version, :uint32, 4
       map :privileges, :string, :message, 5, "claros.common.configuration.Rights"
       optional :formTemplateConfiguration, :message, 6, "claros.common.form.FormTemplateConfiguration"
+      optional :name, :string, 7
     end
   end
 end
