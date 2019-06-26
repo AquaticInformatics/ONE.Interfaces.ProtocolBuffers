@@ -126,6 +126,16 @@ public final class ClarosCommonFormFormtemplate {
      * <code>.claros.common.form.FormTemplateConfiguration formTemplateConfiguration = 6;</code>
      */
     claros.common.form.ClarosCommonFormFormtemplateconfiguration.FormTemplateConfigurationOrBuilder getFormTemplateConfigurationOrBuilder();
+
+    /**
+     * <code>string name = 7;</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>string name = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
   }
   /**
    * Protobuf type {@code claros.common.form.FormTemplate}
@@ -142,6 +152,7 @@ public final class ClarosCommonFormFormtemplate {
     private FormTemplate() {
       id_ = "";
       ownerId_ = "";
+      name_ = "";
     }
 
     @java.lang.Override
@@ -214,6 +225,12 @@ public final class ClarosCommonFormFormtemplate {
                 formTemplateConfiguration_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
               break;
             }
             default: {
@@ -476,6 +493,40 @@ public final class ClarosCommonFormFormtemplate {
       return getFormTemplateConfiguration();
     }
 
+    public static final int NAME_FIELD_NUMBER = 7;
+    private volatile java.lang.Object name_;
+    /**
+     * <code>string name = 7;</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string name = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -510,6 +561,9 @@ public final class ClarosCommonFormFormtemplate {
           5);
       if (formTemplateConfiguration_ != null) {
         output.writeMessage(6, getFormTemplateConfiguration());
+      }
+      if (!getNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, name_);
       }
       unknownFields.writeTo(output);
     }
@@ -548,6 +602,9 @@ public final class ClarosCommonFormFormtemplate {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getFormTemplateConfiguration());
       }
+      if (!getNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, name_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -578,6 +635,8 @@ public final class ClarosCommonFormFormtemplate {
         if (!getFormTemplateConfiguration()
             .equals(other.getFormTemplateConfiguration())) return false;
       }
+      if (!getName()
+          .equals(other.getName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -606,6 +665,8 @@ public final class ClarosCommonFormFormtemplate {
         hash = (37 * hash) + FORMTEMPLATECONFIGURATION_FIELD_NUMBER;
         hash = (53 * hash) + getFormTemplateConfiguration().hashCode();
       }
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -776,6 +837,8 @@ public final class ClarosCommonFormFormtemplate {
           formTemplateConfiguration_ = null;
           formTemplateConfigurationBuilder_ = null;
         }
+        name_ = "";
+
         return this;
       }
 
@@ -815,6 +878,7 @@ public final class ClarosCommonFormFormtemplate {
         } else {
           result.formTemplateConfiguration_ = formTemplateConfigurationBuilder_.build();
         }
+        result.name_ = name_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -882,6 +946,10 @@ public final class ClarosCommonFormFormtemplate {
             other.internalGetPrivileges());
         if (other.hasFormTemplateConfiguration()) {
           mergeFormTemplateConfiguration(other.getFormTemplateConfiguration());
+        }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1430,6 +1498,75 @@ public final class ClarosCommonFormFormtemplate {
         }
         return formTemplateConfigurationBuilder_;
       }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>string name = 7;</code>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string name = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string name = 7;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string name = 7;</code>
+       */
+      public Builder clearName() {
+        
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string name = 7;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        name_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1505,15 +1642,16 @@ public final class ClarosCommonFormFormtemplate {
       "\n%claros_common_form_formtemplate.proto\022" +
       "\022claros.common.form\0322claros_common_form_" +
       "formtemplateconfiguration.proto\032(claros_" +
-      "common_configuration_rights.proto\"\274\002\n\014Fo" +
+      "common_configuration_rights.proto\"\312\002\n\014Fo" +
       "rmTemplate\022\n\n\002id\030\001 \001(\t\022\017\n\007ownerId\030\002 \001(\t\022" +
       "\016\n\006public\030\003 \001(\010\022\017\n\007version\030\004 \001(\r\022D\n\npriv" +
       "ileges\030\005 \003(\01320.claros.common.form.FormTe" +
       "mplate.PrivilegesEntry\022P\n\031formTemplateCo" +
       "nfiguration\030\006 \001(\0132-.claros.common.form.F" +
-      "ormTemplateConfiguration\032V\n\017PrivilegesEn" +
-      "try\022\013\n\003key\030\001 \001(\t\0222\n\005value\030\002 \001(\0132#.claros" +
-      ".common.configuration.Rights:\0028\001b\006proto3"
+      "ormTemplateConfiguration\022\014\n\004name\030\007 \001(\t\032V" +
+      "\n\017PrivilegesEntry\022\013\n\003key\030\001 \001(\t\0222\n\005value\030" +
+      "\002 \001(\0132#.claros.common.configuration.Righ" +
+      "ts:\0028\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1534,7 +1672,7 @@ public final class ClarosCommonFormFormtemplate {
     internal_static_claros_common_form_FormTemplate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_claros_common_form_FormTemplate_descriptor,
-        new java.lang.String[] { "Id", "OwnerId", "Public", "Version", "Privileges", "FormTemplateConfiguration", });
+        new java.lang.String[] { "Id", "OwnerId", "Public", "Version", "Privileges", "FormTemplateConfiguration", "Name", });
     internal_static_claros_common_form_FormTemplate_PrivilegesEntry_descriptor =
       internal_static_claros_common_form_FormTemplate_descriptor.getNestedTypes().get(0);
     internal_static_claros_common_form_FormTemplate_PrivilegesEntry_fieldAccessorTable = new

@@ -45,6 +45,10 @@ class FormTemplate extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.claros.common.form.FormTemplateConfiguration formTemplateConfiguration = 6;</code>
      */
     private $formTemplateConfiguration = null;
+    /**
+     * Generated from protobuf field <code>string name = 7;</code>
+     */
+    private $name = '';
 
     /**
      * Constructor.
@@ -62,6 +66,7 @@ class FormTemplate extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $privileges
      *     @type \Claros\Common\Form\FormTemplateConfiguration $formTemplateConfiguration
      *          This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+     *     @type string $name
      * }
      */
     public function __construct($data = NULL) {
@@ -213,6 +218,28 @@ class FormTemplate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Claros\Common\Form\FormTemplateConfiguration::class);
         $this->formTemplateConfiguration = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 7;</code>
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->name = $var;
 
         return $this;
     }

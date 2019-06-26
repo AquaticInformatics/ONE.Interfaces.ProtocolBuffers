@@ -72,7 +72,8 @@ proto.claros.common.form.FormTemplate.toObject = function(includeInstance, msg) 
     pb_public: jspb.Message.getFieldWithDefault(msg, 3, false),
     version: jspb.Message.getFieldWithDefault(msg, 4, 0),
     privilegesMap: (f = msg.getPrivilegesMap()) ? f.toObject(includeInstance, proto.claros.common.configuration.Rights.toObject) : [],
-    formtemplateconfiguration: (f = msg.getFormtemplateconfiguration()) && proto.claros.common.form.FormTemplateConfiguration.toObject(includeInstance, f)
+    formtemplateconfiguration: (f = msg.getFormtemplateconfiguration()) && proto.claros.common.form.FormTemplateConfiguration.toObject(includeInstance, f),
+    name: jspb.Message.getFieldWithDefault(msg, 7, "")
   };
 
   if (includeInstance) {
@@ -135,6 +136,10 @@ proto.claros.common.form.FormTemplate.deserializeBinaryFromReader = function(msg
       var value = new proto.claros.common.form.FormTemplateConfiguration;
       reader.readMessage(value,proto.claros.common.form.FormTemplateConfiguration.deserializeBinaryFromReader);
       msg.setFormtemplateconfiguration(value);
+      break;
+    case 7:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
       break;
     default:
       reader.skipField();
@@ -203,6 +208,13 @@ proto.claros.common.form.FormTemplate.serializeBinaryToWriter = function(message
       6,
       f,
       proto.claros.common.form.FormTemplateConfiguration.serializeBinaryToWriter
+    );
+  }
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      7,
+      f
     );
   }
 };
@@ -321,6 +333,21 @@ proto.claros.common.form.FormTemplate.prototype.clearFormtemplateconfiguration =
  */
 proto.claros.common.form.FormTemplate.prototype.hasFormtemplateconfiguration = function() {
   return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional string name = 7;
+ * @return {string}
+ */
+proto.claros.common.form.FormTemplate.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+};
+
+
+/** @param {string} value */
+proto.claros.common.form.FormTemplate.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 7, value);
 };
 
 

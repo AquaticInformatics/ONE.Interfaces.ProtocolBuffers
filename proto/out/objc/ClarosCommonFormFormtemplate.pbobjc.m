@@ -54,6 +54,7 @@ static GPBFileDescriptor *ClarosCommonFormFormtemplateRoot_FileDescriptor(void) 
 @dynamic version;
 @dynamic privileges, privileges_Count;
 @dynamic hasFormTemplateConfiguration, formTemplateConfiguration;
+@dynamic name;
 
 typedef struct FormTemplate__storage_ {
   uint32_t _has_storage_[1];
@@ -62,6 +63,7 @@ typedef struct FormTemplate__storage_ {
   NSString *ownerId;
   NSMutableDictionary *privileges;
   FormTemplateConfiguration *formTemplateConfiguration;
+  NSString *name;
 } FormTemplate__storage_;
 
 // This method is threadsafe because it is initially called
@@ -123,6 +125,15 @@ typedef struct FormTemplate__storage_ {
         .offset = (uint32_t)offsetof(FormTemplate__storage_, formTemplateConfiguration),
         .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
         .dataType = GPBDataTypeMessage,
+      },
+      {
+        .name = "name",
+        .dataTypeSpecific.className = NULL,
+        .number = FormTemplate_FieldNumber_Name,
+        .hasIndex = 6,
+        .offset = (uint32_t)offsetof(FormTemplate__storage_, name),
+        .flags = GPBFieldOptional,
+        .dataType = GPBDataTypeString,
       },
     };
     GPBDescriptor *localDescriptor =

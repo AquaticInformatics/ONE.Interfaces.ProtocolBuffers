@@ -93,6 +93,7 @@ const ::google::protobuf::uint32 TableStruct_claros_5fcommon_5fform_5fformtempla
   PROTOBUF_FIELD_OFFSET(::claros::common::form::FormTemplate, version_),
   PROTOBUF_FIELD_OFFSET(::claros::common::form::FormTemplate, privileges_),
   PROTOBUF_FIELD_OFFSET(::claros::common::form::FormTemplate, formtemplateconfiguration_),
+  PROTOBUF_FIELD_OFFSET(::claros::common::form::FormTemplate, name_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::claros::common::form::FormTemplate_PrivilegesEntry_DoNotUse)},
@@ -114,20 +115,21 @@ const char descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplate_2epro
   "\n%claros_common_form_formtemplate.proto\022"
   "\022claros.common.form\0322claros_common_form_"
   "formtemplateconfiguration.proto\032(claros_"
-  "common_configuration_rights.proto\"\274\002\n\014Fo"
+  "common_configuration_rights.proto\"\312\002\n\014Fo"
   "rmTemplate\022\n\n\002id\030\001 \001(\t\022\017\n\007ownerId\030\002 \001(\t\022"
   "\016\n\006public\030\003 \001(\010\022\017\n\007version\030\004 \001(\r\022D\n\npriv"
   "ileges\030\005 \003(\01320.claros.common.form.FormTe"
   "mplate.PrivilegesEntry\022P\n\031formTemplateCo"
   "nfiguration\030\006 \001(\0132-.claros.common.form.F"
-  "ormTemplateConfiguration\032V\n\017PrivilegesEn"
-  "try\022\013\n\003key\030\001 \001(\t\0222\n\005value\030\002 \001(\0132#.claros"
-  ".common.configuration.Rights:\0028\001b\006proto3"
+  "ormTemplateConfiguration\022\014\n\004name\030\007 \001(\t\032V"
+  "\n\017PrivilegesEntry\022\013\n\003key\030\001 \001(\t\0222\n\005value\030"
+  "\002 \001(\0132#.claros.common.configuration.Righ"
+  "ts:\0028\001b\006proto3"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_claros_5fcommon_5fform_5fformtemplate_2eproto = {
   false, InitDefaults_claros_5fcommon_5fform_5fformtemplate_2eproto, 
   descriptor_table_protodef_claros_5fcommon_5fform_5fformtemplate_2eproto,
-  "claros_common_form_formtemplate.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplate_2eproto, 480,
+  "claros_common_form_formtemplate.proto", &assign_descriptors_table_claros_5fcommon_5fform_5fformtemplate_2eproto, 494,
 };
 
 void AddDescriptors_claros_5fcommon_5fform_5fformtemplate_2eproto() {
@@ -213,6 +215,7 @@ const int FormTemplate::kPublicFieldNumber;
 const int FormTemplate::kVersionFieldNumber;
 const int FormTemplate::kPrivilegesFieldNumber;
 const int FormTemplate::kFormTemplateConfigurationFieldNumber;
+const int FormTemplate::kNameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FormTemplate::FormTemplate()
@@ -233,6 +236,10 @@ FormTemplate::FormTemplate(const FormTemplate& from)
   if (from.ownerid().size() > 0) {
     ownerid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ownerid_);
   }
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.name().size() > 0) {
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
   if (from.has_formtemplateconfiguration()) {
     formtemplateconfiguration_ = new ::claros::common::form::FormTemplateConfiguration(*from.formtemplateconfiguration_);
   } else {
@@ -249,6 +256,7 @@ void FormTemplate::SharedCtor() {
       &scc_info_FormTemplate_claros_5fcommon_5fform_5fformtemplate_2eproto.base);
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ownerid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&formtemplateconfiguration_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&version_) -
       reinterpret_cast<char*>(&formtemplateconfiguration_)) + sizeof(version_));
@@ -262,6 +270,7 @@ FormTemplate::~FormTemplate() {
 void FormTemplate::SharedDtor() {
   id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ownerid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete formtemplateconfiguration_;
 }
 
@@ -283,6 +292,7 @@ void FormTemplate::Clear() {
   privileges_.Clear();
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ownerid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == nullptr && formtemplateconfiguration_ != nullptr) {
     delete formtemplateconfiguration_;
   }
@@ -382,6 +392,22 @@ const char* FormTemplate::_InternalParse(const char* begin, const char* end, voi
         ptr += size;
         GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
             {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // string name = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("claros.common.form.FormTemplate.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
         break;
       }
       default: {
@@ -507,6 +533,21 @@ bool FormTemplate::MergePartialFromCodedStream(
         break;
       }
 
+      // string name = 7;
+      case 7: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->name().data(), static_cast<int>(this->name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "claros.common.form.FormTemplate.name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -615,6 +656,16 @@ void FormTemplate::SerializeWithCachedSizes(
       6, HasBitSetters::formtemplateconfiguration(this), output);
   }
 
+  // string name = 7;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.form.FormTemplate.name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->name(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -712,6 +763,17 @@ void FormTemplate::SerializeWithCachedSizes(
         6, HasBitSetters::formtemplateconfiguration(this), target);
   }
 
+  // string name = 7;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "claros.common.form.FormTemplate.name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        7, this->name(), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -759,6 +821,13 @@ size_t FormTemplate::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->ownerid());
+  }
+
+  // string name = 7;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
   }
 
   // .claros.common.form.FormTemplateConfiguration formTemplateConfiguration = 6;
@@ -816,6 +885,10 @@ void FormTemplate::MergeFrom(const FormTemplate& from) {
 
     ownerid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ownerid_);
   }
+  if (from.name().size() > 0) {
+
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
   if (from.has_formtemplateconfiguration()) {
     mutable_formtemplateconfiguration()->::claros::common::form::FormTemplateConfiguration::MergeFrom(from.formtemplateconfiguration());
   }
@@ -856,6 +929,8 @@ void FormTemplate::InternalSwap(FormTemplate* other) {
   id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   ownerid_.Swap(&other->ownerid_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(formtemplateconfiguration_, other->formtemplateconfiguration_);
   swap(public__, other->public__);

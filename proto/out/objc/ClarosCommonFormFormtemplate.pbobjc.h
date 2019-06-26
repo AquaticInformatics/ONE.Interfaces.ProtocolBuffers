@@ -56,6 +56,7 @@ typedef GPB_ENUM(FormTemplate_FieldNumber) {
   FormTemplate_FieldNumber_Version = 4,
   FormTemplate_FieldNumber_Privileges = 5,
   FormTemplate_FieldNumber_FormTemplateConfiguration = 6,
+  FormTemplate_FieldNumber_Name = 7,
 };
 
 @interface FormTemplate : GPBMessage
@@ -79,6 +80,8 @@ typedef GPB_ENUM(FormTemplate_FieldNumber) {
 @property(nonatomic, readwrite, strong, null_resettable) FormTemplateConfiguration *formTemplateConfiguration;
 /** Test to see if @c formTemplateConfiguration has been set. */
 @property(nonatomic, readwrite) BOOL hasFormTemplateConfiguration;
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *name;
 
 @end
 
