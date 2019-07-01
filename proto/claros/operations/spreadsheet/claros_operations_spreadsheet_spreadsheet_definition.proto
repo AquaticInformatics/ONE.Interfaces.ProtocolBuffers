@@ -8,7 +8,7 @@ import "claros_common_core_timezone.proto";
 // This describes the overall definition of a spreadsheet.  Worksheet definitions are separate from this.
 
 message SpreadsheetDefinition {
-    string version = 1;                                 // Numerical version of the spreadsheet definition.  This increments with eash new version
+    uint32 version = 1;                                 // Numerical version of the spreadsheet definition.  This increments with eash new version
     claros.common.core.TimeWindow timewindow = 2;       // The Time window of when this configuration was valid
     claros.common.core.TimeZone  timezone = 3;          // The time zone related to the spreadsheet
     uint32 timeWindowOffset = 4;                        // The number of hours offset to the start of day
