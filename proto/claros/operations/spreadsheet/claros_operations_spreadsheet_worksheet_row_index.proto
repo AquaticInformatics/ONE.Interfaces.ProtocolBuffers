@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.form;
+package claros.operations.spreadsheet;
  
 import "claros_common_core_timewindow.proto";
  
