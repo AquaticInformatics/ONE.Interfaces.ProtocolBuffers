@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.common.gis;
- 
-// type: MultiPoint
-// coordinates: [[x, y], [x, y]]
- 
-message MultiPoint2D {
-    repeated Point2D point = 1;
-}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package claros.instrument;
+ 
+import "claros_instrument_event_data.proto";
+import "claros_instrument_measurement_data.proto";
+import "claros_common_core_clarosdatetime.proto";
+
+message InstrumentData {
+    // Header Information
+    string tenantId = 1;                                            // Tenant related to instrument
+    string fusionId = 2;                                            // Unique id of an instrument
+
+    claros.instrument.event.InstrumentEventData events = 3;                                     // Events related to what has happened to an instrument
+    repeated claros.instrument.measurement.InstrumentMeasurementData measurements = 4;                // Measurements related to an instrument
+    map<string,string> settings = 5;                                // Settings of an instrument
+    map<string,string> states = 6;                                  // State informantion of an instrument
+    claros.common.core.ClarosDateTime instrumentDataDateTime = 7;   // this is optionally set if all children share the same time
+}
+

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common.form; 
+
+import "claros_common_form_formcolumn.proto";
+
+message FormSection {
+    uint32 number = 1;
+    repeated FormColumn column = 2;
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+message SpreadsheetBinding {
+   string userId = 1;
+}

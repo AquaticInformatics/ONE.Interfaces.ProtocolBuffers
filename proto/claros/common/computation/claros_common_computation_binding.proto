@@ -1,0 +1,6 @@
+syntax = "proto3";
+package claros.common.computation;
+
+message ComputationBinding {
+   string computationId = 1;
+}

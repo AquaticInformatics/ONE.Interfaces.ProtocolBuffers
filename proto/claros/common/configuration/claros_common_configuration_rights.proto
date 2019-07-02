@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common.configuration;
+ 
+message Rights {
+    bool view = 2;
+    bool edit = 3;
+    bool delete = 4;
+    bool create = 5;
+}
