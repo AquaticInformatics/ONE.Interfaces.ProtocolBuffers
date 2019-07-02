@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.notification;
+
+import "record_auditinfo.proto";
+import "notification_category_type.proto";
+
+message NotificationTopic {
+    string id = 1;
+    string name = 2;
+    string description = 3;
+    NotificationCategoryType notificationCategoryType = 4;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 5;
+}
