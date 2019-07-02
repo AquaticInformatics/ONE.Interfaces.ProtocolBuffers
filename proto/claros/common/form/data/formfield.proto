@@ -1,0 +1,25 @@
+syntax = "proto3";
+package claros.common.form;
+
+import "form_dataentry_type.proto"; 
+import "cell.proto";
+import "instrument_data.proto";
+
+message FormField {
+    string guid = 1;
+    string formFieldDefinitionId = 2;
+
+    FormDataEntryType formDataEntryType = 3;
+    bool isDataEntryTypeLocked = 4;
+    string name = 5;
+
+    
+    oneof FormFieldData {
+        // AdHocFormField adHocFormField
+        claros.operations.spreadsheet.Cell cell = 6;        
+    }
+
+    repeated claros.instrument.InstrumentData instrumentData = 7;
+
+
+}

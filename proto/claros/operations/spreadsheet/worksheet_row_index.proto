@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "timewindow.proto";
+ 
+// This is a record that is used as a "FAT" table within the Worksheet Manager service
+
+message WorksheetRowIndex {
+    uint32 id = 1;                                      // Int
+    uint32 worksheetVersion = 2;                        // The version of the worksheet related to this row
+    claros.common.core.TimeWindow timeWindow = 3;       // The relative time window of the row
+    claros.common.core.TimeWindow utcTimeWindows = 4;   // The UTC time window associated with the row
+    bool isInSpeed = 5;                                 // Whether the row is in speed or batch
+}

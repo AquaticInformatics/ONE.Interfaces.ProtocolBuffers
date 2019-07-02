@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "instrument_definition_model.proto";
+
+message TaskDefinitionSourceInstrumentMaintenance {
+    claros.instrument.InstrumentDefinitionModel instrumentModel = 1;
+}

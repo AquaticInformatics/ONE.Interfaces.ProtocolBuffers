@@ -1,0 +1,16 @@
+syntax = "proto3";
+package claros.common.report;
+ 
+import "report_data.proto";
+ 
+message Report {
+    // header
+    string id = 1;  //GUID
+    string name = 2;
+
+    // definition
+    //ReportTemplate reportTemplate = 3;
+    
+    // data
+    repeated ReportData reportData = 4;
+}

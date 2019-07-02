@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "form_template_type.proto";
+import "recurrence.proto";
+import "form_layout.proto";
+import "formfield_definition.proto";
+ 
+message FormTemplateConfiguration {
+    FormTemplateType formTemplateType = 1;
+    claros.common.recurrence.Recurrence recurrence = 2;
+    FormLayout formLayout = 3;
+    repeated FormFieldDefinition formFieldDefinitions = 4;
+}

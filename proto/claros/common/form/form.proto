@@ -1,0 +1,27 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "timewindow.proto";
+import "note.proto";
+import "auditevent.proto";
+import "formfield.proto";
+import "form_template.proto";
+import "formfield_definition.proto";
+ 
+message Form {
+    // header
+    string id = 1;  //GUID
+    string name = 2;
+    claros.common.core.TimeWindow timeWindow = 3;
+
+    // definition
+    FormTemplate formTemplate = 4;
+    repeated FormFieldDefinition adHocFormFieldDefinitions = 5;
+
+    // data
+    repeated FormField templateFormFields = 6; // Form components in the form
+    repeated FormField adhocFormFields = 7;
+    repeated claros.common.core.Note notes = 8;
+
+    repeated claros.common.core.AuditEvent auditEvents = 99;
+}

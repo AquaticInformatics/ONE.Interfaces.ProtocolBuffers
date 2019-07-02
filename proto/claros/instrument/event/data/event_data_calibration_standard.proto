@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.instrument.event;
+
+import "event_data_calibration_value.proto";
+
+message EventDataCalibrationStandard {
+    EventDataCalibrationValue knownValue = 1;                       //this is the primary value  (Concentration)
+    EventDataCalibrationValue measuredValue = 2;                    //
+    repeated EventDataCalibrationValue secondaryValues = 4;
+}
+ 
+ 

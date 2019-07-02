@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package claros.common.gis;
+
+import "point2d.proto";
+import "point3d.proto";
+import "multi_point2d.proto";
+import "multi_point3d.proto";
+
+// https://pypi.org/project/protobuf-gis/
+ 
+message GIS {
+  Point2D point2d = 1;
+  Point3D point3d = 2;
+  MultiPoint2D multi_point2d = 3;
+  MultiPoint3D multi_point3d = 4;
+}

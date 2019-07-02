@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+package claros.operations.spreadsheet;
+ 
+import "column.proto";
+import "auditevent.proto";
+ 
+message WorksheetDefinition {
+    uint32 version = 1;                             // Version of the Worksheet definition.  This is incremented with each change
+    uint32 startRow = 2;                            // The starting row number that the configuraiton applies
+    uint32 endRow = 3;                              // The ending row number that the configuration applies
+    repeated Column columns = 4;                    // ???? Should we rename these to column definitions
+
+    claros.common.core.AuditEvent auditEvent = 99;  // Audit Record of who created the definition
+}
