@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.instrument.measurement;
+
+import "aggregate_type.proto";
+
+// This message is used to bind an instrument measurment to other entities such as a spreadshet column
+
+message InstrumentMeasurementBinding {
+   string instrumentMeasurementId = 1;                   // The id of the definition of an instrument measurement
+   claros.common.core.AggregateType aggregateType = 2;   // How the data from instrument measurements will be aggregated into the bound system (Spreadsheet cell)
+   uint32 unitId = 3;                                    // The unit correlated to the binding. The resulting aggregate will be converted into this unit.
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "timewindow.proto";
+import "clarosdatetime.proto";
+ 
+message FormIndex {
+    string id = 1;  //GUID
+    string templateId = 2;  //GUID
+    uint32 templateVersion = 3;
+    claros.common.core.TimeWindow timeWindow = 4;
+    claros.common.core.ClarosDateTime lastModified = 5;
+    string name = 6;
+    string creatorId = 7;
+    bool isInSpeed = 8;
+}

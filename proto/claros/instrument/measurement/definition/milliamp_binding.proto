@@ -1,0 +1,15 @@
+syntax = "proto3";
+package claros.instrument.measurement;
+
+import "clarosdatetime.proto";
+
+// This is the definition of how 4-20 mA inputs are mapped to a collection of measurements
+
+message MilliAmpBinding
+{
+    string cardName = 1;                                // Name of the 4-20 mA Card
+    uint32 channel = 2;                                 // Channel on the 4-20 mA Card
+    
+    claros.common.core.ClarosDateTime validFrom = 3;    // Should this be Timespan validTimeSpan? ?????
+    claros.common.core.ClarosDateTime validTo = 4;
+}

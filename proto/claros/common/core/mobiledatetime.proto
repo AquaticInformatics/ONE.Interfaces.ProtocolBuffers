@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "mobiletime.proto";
+import "mobiledate.proto";
+
+message MobileDateTime {
+    MobileDate mobileDate = 1;
+    MobileTime mobileTime = 2;
+    int32 timeZone = 3;
+}

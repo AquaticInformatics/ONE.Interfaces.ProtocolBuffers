@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "form_section.proto";
+
+message FormLayout {
+    repeated FormSection sections = 1;
+}

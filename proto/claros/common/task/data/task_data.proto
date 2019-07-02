@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "binding_instrument_maintenance.proto";
+ 
+message TaskData {
+    
+    oneof binding
+    {
+        BindingInstrumentMaintenance bindingInstrumentMaintenance = 1;
+    }
+}
