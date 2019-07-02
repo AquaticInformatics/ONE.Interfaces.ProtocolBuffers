@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common;
+
+enum LinkCategoryType
+{
+    LINK_CATEGORY_UNKNOWN = 0;
+    LINK_CATEGORY_ERROR = 1;
+    LINK_CATEGORY_WARNING = 2; 
+    LINK_CATEGORY_MANUAL = 3;  // Standard operating manual of the instrument 
+}

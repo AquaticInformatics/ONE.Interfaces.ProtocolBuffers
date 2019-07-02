@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common;
+
+enum LinkType
+{
+    LINK_UNKNOWN = 0;
+    LINK_WEBSITE = 1;
+    LINK_YOUTUBE = 2;
+    LINK_VIMEO = 3;
+    LINK_PDF = 4;
+}
