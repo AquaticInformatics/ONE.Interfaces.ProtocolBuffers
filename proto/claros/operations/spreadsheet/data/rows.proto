@@ -4,5 +4,5 @@ package claros.operations.spreadsheet;
 import "row.proto";
 
 message Rows {
-    map<int, Row> rows = 1;
+    map<uint32, Row> rows = 1;
 }
