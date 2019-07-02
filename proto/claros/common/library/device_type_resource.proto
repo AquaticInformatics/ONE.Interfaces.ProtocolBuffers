@@ -1,0 +1,19 @@
+syntax = "proto3";
+package claros.common.library;
+ 
+import "link_type.proto";
+import "record_auditinfo.proto";
+import "link_category_type.proto";
+ 
+message DeviceTypeResource {
+    string Id = 1;
+    string deviceTypeId = 2;
+    string i18nDatabaseName = 3;
+    string translationIndex = 4;
+    string link = 5;
+    claros.common.LinkType linkType = 6;
+    string i18nKey = 7;
+    string cultureCode = 8;
+    claros.common.LinkCategoryType category = 9;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 10;
+}
