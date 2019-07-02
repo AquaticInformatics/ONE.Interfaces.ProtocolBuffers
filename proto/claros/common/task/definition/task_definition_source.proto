@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "task_definition_source_instrument_maintenance.proto";
+ 
+message TaskDefinitionSource {
+    oneof taskSource  {
+        TaskDefinitionSourceInstrumentMaintenance taskDefinitionSourceInstrumentMaintenance = 1;
+    }
+}

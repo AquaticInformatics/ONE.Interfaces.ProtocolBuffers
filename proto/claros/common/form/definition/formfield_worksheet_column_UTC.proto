@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+package claros.common.form;
+ 
+import "column.proto";
+import "worksheet_type.proto";
+
+message FormFieldWorksheetColumnUTC {
+    string plantId = 1;
+    claros.operations.spreadsheet.WorksheetType worksheetType = 2;
+    claros.operations.spreadsheet.Column column = 3;
+}

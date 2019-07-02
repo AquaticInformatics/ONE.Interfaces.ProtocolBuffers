@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "mobiledatetime.proto";
+
+message ClarosDateTime
+{
+    oneof clarosDateTime {
+        MobileDateTime mobileDateTime = 1;  // Used for data collected from Mobile Devices
+        string jsonDateTime = 2;            // 
+        uint64 ticks = 3;                   // 
+    }
+}

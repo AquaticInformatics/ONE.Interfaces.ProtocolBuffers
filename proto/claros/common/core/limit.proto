@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+import "limit_type.proto";
+import "recurrence.proto";
+
+message Limit {
+    string i18nKey = 1;         // Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
+    LimitType limitType = 2;    // Type of Limit
+    double value = 3;           // Value that will trigger the limit ???? is this inclusive or exclusive
+    uint32 unitId = 4;          // The unit used to compare the value with the limit
+    claros.common.recurrence.Recurrence recurrence = 5;  // Used for seasonal limits
+}
