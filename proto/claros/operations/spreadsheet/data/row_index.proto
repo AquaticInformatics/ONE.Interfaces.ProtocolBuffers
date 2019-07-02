@@ -5,7 +5,7 @@ import "timewindow.proto";
  
 // This is a record that is used as a "FAT" table within the Worksheet Manager service
 
-message WorksheetRowIndex {
+message RowIndex {
     uint32 id = 1;                                      // Int
     uint32 worksheetVersion = 2;                        // The version of the worksheet related to this row
     claros.common.core.TimeWindow timeWindow = 3;       // The relative time window of the row
