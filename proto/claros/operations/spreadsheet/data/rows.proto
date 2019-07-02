@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+import "row.proto";
+
+message Rows {
+    map<int, Row> rows = 1;
+}
