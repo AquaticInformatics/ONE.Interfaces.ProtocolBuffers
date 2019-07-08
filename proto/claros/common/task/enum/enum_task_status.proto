@@ -2,7 +2,7 @@ syntax = "proto3";
 package claros.common.task;
 
 // Similar to JIRA statuses
-enum StatusType {
+enum EnumTaskStatus {
     TASK_STATUS_UNKNOWN = 0;
     TASK_STATUS_COMPLETED = 1;
     TASK_STATUS_CANCELLED = 2;
