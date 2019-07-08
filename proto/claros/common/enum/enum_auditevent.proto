@@ -1,7 +1,7 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common;
  
-enum AuditEventType {
+enum EnumAuditEvent {
     AUDIT_EVENT_UNKNOWN = 0;
     AUDIT_EVENT_CREATE = 1;     // Information has been created
     AUDIT_EVENT_READ = 2;       // Information has been read
