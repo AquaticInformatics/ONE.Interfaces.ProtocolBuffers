@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common.library;
 
 import "clarosdatetime.proto";
 
@@ -14,7 +14,7 @@ message Unit {
     string description = 6;         // ?????
     
     string createdById = 7;         // ????? Do we need these audit fields
-    ClarosDateTime createdOn = 8;
+    claros.common.core.ClarosDateTime createdOn = 8;
     string modifiedById = 9;
-    ClarosDateTime modifiedOn = 10;
+    claros.common.core.ClarosDateTime modifiedOn = 10;
 }
