@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common;
 
-enum DayType {
+enum EnumDay {
     DAY_UNKNOWN = 0;
     DAY_SUNDAY = 1;
     DAY_MONDAY = 2;

@@ -3,7 +3,7 @@ package claros.common;
 
 // Allows for the specifying of ordinal position
 // Used in recurrence
-enum OrdinalType {
+enum EnumOrdinal {
     ORDINAL_UNKNOWN = 0;
     ORDINAL_FIRST = 1;
     ORDINAL_SECOND = 2;
