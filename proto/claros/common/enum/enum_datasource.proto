@@ -1,7 +1,7 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common;
  
-enum DataSourceType {
+enum EnumDataSource {
     DATASOURCE_UNKNOWN = 0;
     DATASOURCE_FORM = 1;                    // Data related to Claros.Common.Form
     DATASOURCE_COMPUTATION = 2;             // Data related to Claros.Common.Computation
