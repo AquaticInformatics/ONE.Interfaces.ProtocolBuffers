@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common.library;
 
 import "clarosdatetime.proto";
 
@@ -13,7 +13,7 @@ message Parameter {
     string tenantId = 7;            // The GUID of the tenant that is ?????
 
     string createdById = 8;
-    ClarosDateTime createdOn = 9;
+    claros.common.core.ClarosDateTime createdOn = 9;
     string modifiedById = 10;
-    ClarosDateTime modifiedOn = 11;
+    claros.common.core.ClarosDateTime modifiedOn = 11;
 }
