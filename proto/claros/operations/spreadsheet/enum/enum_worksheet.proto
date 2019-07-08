@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-enum WorksheetType {
+enum EnumWorksheet {
     WORKSHEET_UNKNOWN = 0;
     WORKSHEET_FIFTEEN_MINUTE = 1; 
     WORKSHEET_HOUR = 2; 
