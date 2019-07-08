@@ -1,14 +1,14 @@
 syntax = "proto3";
 package claros.instrument;
 
-import "instrument_type.proto";
-import "instrument_group_type.proto";
-import "instrument_manufacturer_type.proto";
+import "enum_instrument.proto";
+import "enum_instrument_group.proto";
+import "enum_instrument_manufacturer.proto";
 
 message InstrumentDefinitionModel {
     string id = 1;
     string i18NKeyName = 2;
-    InstrumentGroupType instrumentGroupType = 3;
+    EnumInstrumentGroup enumInstrumentGroup = 3;
     string name = 4;
     bool canHaveChildren = 5;
     bool mustHaveParent = 6;
@@ -17,13 +17,13 @@ message InstrumentDefinitionModel {
     string pictureSmallUrl = 9;
     string pictureLargeUrl = 10;
     bool UsesFid = 11;
-    InstrumentManufacturerType instrumentManufacturer = 12;
+    EnumInstrumentManufacturer enumInstrumentManufacturer = 12;
     string fidInstrumentCode = 13;
     bool guidedWorkflowSupport = 14;
     uint32 TransmissionInterval = 15;
     string description = 16;
     // RecordAuditInfo recordAuditInfo = 17;
-    InstrumentType instrumentType = 18;
+    EnumInstrument enumInstrument = 18;
 }
  
  

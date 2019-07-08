@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.instrument;
 
-enum InstrumentType {
+enum EnumInstrument {
     INSTRUMENT_TYPE_UNKNOWN = 0;
     INSTRUMENT_TYPE_1200S_V2_SENSOR = 2;
     INSTRUMENT_TYPE_3798S_V2_SENSOR = 3;
