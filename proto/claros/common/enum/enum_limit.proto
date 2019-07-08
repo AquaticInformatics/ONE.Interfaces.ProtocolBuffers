@@ -1,7 +1,7 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common;
  
-enum LimitType {
+enum EnumLimit {
     LIMIT_UNKNOWN = 0;
     LIMIT_HIGHALARM = 1;    //
     LIMIT__HIGHNEAR = 2;    //
