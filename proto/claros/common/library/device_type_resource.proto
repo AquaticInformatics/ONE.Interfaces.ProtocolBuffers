@@ -3,7 +3,7 @@ package claros.common.library;
  
 import "link_type.proto";
 import "record_auditinfo.proto";
-import "link_category_type.proto";
+import "enum_link_category.proto";
  
 message DeviceTypeResource {
     string Id = 1;
@@ -14,6 +14,6 @@ message DeviceTypeResource {
     claros.common.LinkType linkType = 6;
     string i18nKey = 7;
     string cultureCode = 8;
-    claros.common.LinkCategoryType category = 9;
+    claros.common.EnumLinkCategory enumLinkCategory = 9;
     claros.common.core.RecordAuditInfo recordAuditInfo = 10;
 }
