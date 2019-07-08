@@ -4,7 +4,7 @@ package claros.common;
 enum EnumLimit {
     LIMIT_UNKNOWN = 0;
     LIMIT_HIGHALARM = 1;    //
-    LIMIT__HIGHNEAR = 2;    //
+    LIMIT_HIGHNEAR = 2;    //
     LIMIT_LOWNEAR = 3;      //
     LIMIT_LOWALARM = 4;     //
 }
