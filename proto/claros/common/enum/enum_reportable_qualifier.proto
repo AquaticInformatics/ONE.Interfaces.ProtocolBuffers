@@ -1,7 +1,7 @@
 syntax = "proto3";
-package claros.common.core;
+package claros.common;
 
-enum ReportableQualifierType {
+enum EnumReportableQualifier {
     REPORTABLE_QUALIFIER_UNKNOWN = 0;                   
     REPORTABLE_QUALIFIER_NONDETECT = 1;                 // Non-Detect. Most states now require the < detection limit and this should no longer be used
     REPORTABLE_QUALIFIER_ESTIMATE = 2;                  // Estimated.

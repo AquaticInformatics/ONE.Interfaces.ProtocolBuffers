@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.core;
   
-enum ReportableQualifierDefinitionType
+enum EnumReportableQualifierDefinition
 {
     REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;
     REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;   // The value is taken from the qualified value.  Example < 2 becomes 2
