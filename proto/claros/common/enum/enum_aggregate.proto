@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common;
+ 
+enum EnumAggregate {
+    AGGREGATE_UNKNOWN = 0;
+    AGGREGATE_MINIMUM = 1;  // Mimimum value for the aggregate range
+    AGGREGATE_MAXIMUM = 2;  // Maximim value for the aggregate range
+    AGGREGATE_AVERAGE = 3;  // Average value for the aggregate range
+}
