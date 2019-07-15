@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.notification;
+
+import "notification_topic.proto";
+import "record_auditinfo.proto";
+
+message NotificationTopicVariable {
+    string id = 1;
+    NotificationTopic notificationTopic = 2;
+    string name = 3;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 4;
+
+}

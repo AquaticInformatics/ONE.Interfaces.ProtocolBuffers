@@ -1,7 +1,0 @@
-syntax = "proto3";
-package claros.common.configuration;
-
-enum EntityType {
-    ENTITY_UNKNOWN = 0;
-    ENTITY_FORMTEMPLATE = 1;
-};

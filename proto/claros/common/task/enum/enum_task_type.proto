@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+ 
+enum EnumTaskType {
+    TASKTYPE_UNKNOWN = 0;
+    TASKTYPE_INSTRUMENT_MAINTENANCE = 1;
+}

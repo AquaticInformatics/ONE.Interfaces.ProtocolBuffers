@@ -3,9 +3,9 @@ package claros.common.core;
 
 import "mobiletime.proto";
 import "mobiledate.proto";
-
+import "enum_timezone.proto";
 message MobileDateTime {
     MobileDate mobileDate = 1;
     MobileTime mobileTime = 2;
-    int32 timeZone = 3;
+    claros.common.EnumTimeZone enumTimeZone = 3;
 }

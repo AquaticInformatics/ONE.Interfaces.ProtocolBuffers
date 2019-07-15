@@ -1,14 +1,14 @@
 syntax = "proto3";
 package claros.common.core;
   
-import "reportable_qualifier_type.proto";
-import "reportable_qualifier_definition_type.proto";
+import "enum_reportable_qualifier.proto";
+import "enum_reportable_qualifier_definition.proto";
  
 // The reportable qualifier definition determines how reportable qualifier is interpreted for the defined parameter
 
 message ReportableQualifierDefinition
 {
-    ReportableQualifierType reportableQualifierType = 1;                        // The type of reportable qualifer
-    ReportableQualifierDefinitionType reportableQualifierDefinitionType = 2;    // How to interpret the qualifer
+    EnumReportableQualifier enumReportableQualifier = 1;                        // The type of reportable qualifer
+    EnumReportableQualifierDefinition enumReportableQualifierDefinition = 2;    // Ho to interpret the qualifer
     double constantValue = 3;                                                   // The value if the interpretation is a constant
 }
