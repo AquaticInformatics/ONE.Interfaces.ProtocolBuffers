@@ -4,5 +4,5 @@ package claros.operations.spreadsheet;
 import "row_index.proto";
 
 message RowIndices {
-    map<uint32, RowIndex> rowIndicies = 1;
+    map<uint32, RowIndex> rowIndices = 1;
 }
