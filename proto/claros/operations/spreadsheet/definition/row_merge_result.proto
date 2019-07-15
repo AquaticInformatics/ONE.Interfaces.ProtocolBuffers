@@ -6,5 +6,5 @@ import "cell.proto";
 
 message RowMergeResult {
     Row row = 1;
-    repeated Cell callsThatFailedToUpdatew = 2;
+    repeated Cell callsThatFailedToUpdate = 2;
 }
