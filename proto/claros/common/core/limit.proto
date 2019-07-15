@@ -2,7 +2,6 @@ syntax = "proto3";
 package claros.common.core;
  
 import "enum_limit.proto";
-import "recurrence.proto";
 import "timewindow.proto";
 
 message Limit {
