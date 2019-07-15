@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+import "row_index.proto";
+
+message RowIndices {
+    map<uint32, RowIndex> rowIndicies = 1;
+}
