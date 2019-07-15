@@ -1,6 +1,9 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
+import "row.proto";
+import "cell.proto";
+
 message RowMergeResult {
     Row row = 1;
     repeated Cell callsThatFailedToUpdatew = 2;
