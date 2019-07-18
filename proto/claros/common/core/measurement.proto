@@ -11,3 +11,7 @@ message Measurement {
     string unitGuid = 5;            // The unit related to the measurement as a GUID
     float value = 6;                // the value of the measurement ????? should this be decimal?
 }
+
+message Measurements {
+    repeated Measurement measurements = 1;
+}
