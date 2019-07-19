@@ -3,7 +3,8 @@ package claros.common.form;
 
 import "form_template_configuration.proto";
 import "rights.proto";
- 
+import "configuration.proto";
+
 message FormTemplate {
     string id = 1;  //retrieval only
     string ownerId = 2; //update and retrieval only
@@ -12,4 +13,5 @@ message FormTemplate {
     map<string, claros.common.configuration.Rights> privileges = 5;
     FormTemplateConfiguration formTemplateConfiguration = 6; //This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
     string name = 7;
+    claros.common.configuration.Configuration configuration = 8; // Common configuration
 }
