@@ -4,10 +4,69 @@ package claros.common.core;
 import "enum_limit.proto";
 import "timewindow.proto";
 
+
 message Limit {
-    string i18nKey = 1;         // Translatable Key that describes limit ???? If this is customer defined does it make sense for this to be an i18nKey
-    claros.common.EnumLimit enumLimit = 2;    // Type of Limit
-    double value = 3;           // Value that will trigger the limit ???? is this inclusive or exclusive
-    uint32 unitId = 4;          // The unit used to compare the value with the limit
-    TimeWindow timeWindows = 5; // The start and end time of this specific limit
+    // Customer defined name of limit
+    string name = 1;        
+
+    // Operation to compare measurement with limit value
+    EnumLimitOperation enumLimitOperation = 2;
+
+    // Standard limit definitions, used for application context
+    // Does not contribute to limit violation processing logic
+    claros.common.EnumLimit enumLimit = 3;
+
+    // Optional value of low range to compare
+    double lowValue = 4;
+
+    // Optional value of high range to compare
+    double highValue = 5;   
+    
+    // The unit used to compare the value with the limit
+    uint32 unitId = 6;          
+
+    // The start and end time of when this limit applies
+    // i.e. seasonal limits
+    TimeWindow timeWindow = 7; 
+
+    
+    oneof Rules {
+        ThresholdRule thresholdRule = 8;
+    }
+
+}
+
+// A rule that determines violations that occur a number of times over a specified duration
+message ThresholdRule
+{
+    // Unit of the duration property
+    EnumTimeUnit durationUnit = 1;
+
+    // duration of tumbling window for which to track instances of limits outside of range
+    uint32 duration = 2;
+
+    // count of measuremennts outside of valid limit range needed to trigger a limit violation
+    uint32 instanceCount = 3;
+
+    EnumLimitOperation enumLimitOperation = 4;
+}
+
+// 
+// Initially we will only support minutes
+enum EnumTimeUnit 
+{
+    TIMEUNIT_UNKNOWN = 0;
+    TIMEUNIT_MINUTE = 1;
+    // TIMEUNIT_HOUR = 2;
+    // TIMEUNIT_DAY = 3;
+}
+
+enum EnumLimitOperation {
+    LIMITOPERATION_UNKNOWN = 0;
+    LIMITOPERATION_GREATERTHAN = 1;
+    LIMITOPERATION_GREATERTHANOREQUAL = 2;
+    LIMITOPERATION_LESSTHAN = 3;
+    LIMITOPERATION_LESSTHANOREQUAL = 4;
+    LIMITOPERATION_BETWEEN_INCLUSIVE = 5;
+    LIMITOPERATION_BETWEEN_EXCLUSIVE = 6;
 }
