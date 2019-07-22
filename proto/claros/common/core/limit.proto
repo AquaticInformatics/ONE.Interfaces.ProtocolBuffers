@@ -10,4 +10,9 @@ message Limit {
     double value = 3;           // Value that will trigger the limit ???? is this inclusive or exclusive
     uint32 unitId = 4;          // The unit used to compare the value with the limit
     TimeWindow timeWindows = 5; // The start and end time of this specific limit
+
+    // Duration in which to keep track of measurements values
+    uint32 triggerDuration = 6;
+    // count of measuremennts outside of valid limit range needed to trigger a limit violation
+    uint32 triggerCount = 7;
 }
