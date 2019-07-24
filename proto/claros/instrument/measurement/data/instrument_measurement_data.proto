@@ -13,5 +13,5 @@ message InstrumentMeasurementData {
     InstrumentMeasurementData supportingMeasurements = 5;                
     claros.common.gis.GIS gis = 6;
     string measurementDataExtended = 7;
-    claros.instrument.event.InstrumentEventData measurementEvent = 8;                   // Clean up ??????
+    claros.instrument.instrumentevent.InstrumentEventData measurementEvent = 8;                   // Clean up ??????
 }

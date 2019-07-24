@@ -1,9 +1,9 @@
 syntax = "proto3";
-package claros.instrument.event;
+package claros.instrument.instrumentevent;
 
 // This is the standard message type for Prognosys (tm) data
 
-message EventDataPrognosys {
+message InstrumentEventDataPrognosys {
     int32 id = 1;
     float percent = 2;
     int32 days = 3;
