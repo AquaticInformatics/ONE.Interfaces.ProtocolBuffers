@@ -32,15 +32,15 @@ message ApiResponse {
         claros.common.configuration.Configuration configuration = 3;
  
         // Operations
-        claros.operations.spreadsheet.Rows rows = 2;
-        claros.operations.spreadsheet.Cell cell = 3;
-        claros.operations.spreadsheet.RowIndices rowIndices = 4;
-        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 5;
-        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 6;
+        claros.operations.spreadsheet.Rows rows = 4;
+        claros.operations.spreadsheet.Cell cell = 5;
+        claros.operations.spreadsheet.RowIndices rowIndices = 6;
+        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 7;
+        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 8;
  
         // Instrument Measurement
-        claros.instrument.measurement.InstrumentMeasurementDefinition instrumentMeasurementDefinition = 7;
-        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 8;
+        claros.instrument.measurement.InstrumentMeasurementDefinition instrumentMeasurementDefinition = 9;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 10;
 
         // Forms
 
