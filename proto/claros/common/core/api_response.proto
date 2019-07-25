@@ -1,0 +1,62 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "measurement.proto";
+import "configuration.proto";
+import "cell.proto";
+import "rows.proto";
+import "row_indices.proto";
+import "spreadsheet_definition.proto";
+import "worksheet_definition.proto";
+import "instrument_measurement_definition.proto";
+import "instrument_measurement_data.proto";
+
+// Common response object for all HTTP methods
+// GET         
+// would have content defined, errors should be null
+//
+// POST/PATCH 
+// if there was an error in validation, or exception, the errors would be populated
+// if the POST was successful, the created object would be returned
+// 
+// DELETE
+// if there is an error procesing the delete, the errors would be populated
+message ApiResponse {
+
+    repeated ApiError errors = 1;
+ 
+    // Provides the ability to return a wide variety of protocol buffers
+    oneof content {
+        // Common
+        claros.common.core.Measurements measurements = 2;
+        claros.common.configuration.Configuration configuration = 3;
+ 
+        // Operations
+        claros.operations.spreadsheet.Rows rows = 4;
+        claros.operations.spreadsheet.Cell cell = 5;
+        claros.operations.spreadsheet.RowIndices rowIndices = 6;
+        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 7;
+        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 8;
+ 
+        // Instrument Measurement
+        claros.instrument.measurement.InstrumentMeasurementDefinition instrumentMeasurementDefinition = 9;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 10;
+
+        // Forms
+
+        // Notifications
+
+    }
+}
+
+
+message ApiError {
+    // Since this object will be used by the facade as well as the api controller
+    // this allows us to set the status code at the facde level, essentially
+    // passing it through to the controller
+    string statusCode = 1;
+    // Custom error code that maps to an enum
+    string code = 2;      
+    // detailed message describing the error
+    string detail = 3;  
+}

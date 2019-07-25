@@ -13,3 +13,7 @@ message WorksheetDefinition {
 
     claros.common.core.AuditEvent auditEvent = 99;  // Audit Record of who created the definition
 }
+
+message WorksheetDefinitions {
+    repeated WorksheetDefinition worksheetDefinitions = 1;
+}
