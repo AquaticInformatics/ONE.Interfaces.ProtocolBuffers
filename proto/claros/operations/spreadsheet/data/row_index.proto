@@ -6,9 +6,24 @@ import "timewindow.proto";
 // This is a record that is used as a "FAT" table within the Worksheet Manager service
 
 message RowIndex {
-    uint32 id = 1;                                      // Int
-    uint32 worksheetVersion = 2;                        // The version of the worksheet related to this row
-    claros.common.core.TimeWindow timeWindow = 3;       // The relative time window of the row
-    claros.common.core.TimeWindow utcTimeWindows = 4;   // The UTC time window associated with the row
-    bool isInSpeed = 5;                                 // Whether the row is in speed or batch
+    // Int
+    uint32 id = 1;                                     
+
+    // The version of the worksheet related to this row
+    uint32 worksheetVersion = 2;                        
+
+    // The relative time window of the row
+    claros.common.core.TimeWindow timeWindow = 3;       
+
+    // The UTC time window associated with the row
+    claros.common.core.TimeWindow utcTimeWindows = 4;   
+
+    // Whether the row is in speed or batch
+    bool isInSpeed = 5;                    
+                 
+    // Has this row been cooked into row collections for days, months 
+    bool isRowCooked = 6;
+
+    // Has this row been cooked into a columns worth of measurements
+    bool isColumnCooked = 7;
 }
