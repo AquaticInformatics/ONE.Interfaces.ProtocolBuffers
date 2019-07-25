@@ -19,4 +19,7 @@ message Configuration {
     bool public = 11;
     uint32 version = 12;
     map<string, Rights> privilege = 13;
+
+    // allow for comparing configurations on the name property without having to parse the configurationData object
+    string name = 14;
 }
