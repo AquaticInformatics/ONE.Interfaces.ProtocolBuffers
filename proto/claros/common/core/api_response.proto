@@ -54,9 +54,14 @@ message ApiError {
     // Since this object will be used by the facade as well as the api controller
     // this allows us to set the status code at the facde level, essentially
     // passing it through to the controller
-    string statusCode = 1;
+    // Example: 400 for an error
+    uint32 statusCode = 1;
+
     // Custom error code that maps to an enum
-    string code = 2;      
+    // Example: ERR-100
+    string code = 2;   
+
     // detailed message describing the error
+    // Example: This object didn't validate properly
     string detail = 3;  
 }
