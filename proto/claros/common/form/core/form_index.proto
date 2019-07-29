@@ -13,4 +13,11 @@ message FormIndex {
     string name = 6;
     string creatorId = 7;
     bool isInSpeed = 8;
+
+    // GUID id of location (type = plant)
+    // This property will be used to filter forms by location
+    string locationId = 9;     
+   
+   // This property will use in creating folder structure in Data lake.
+   claros.common.core.ClarosDateTime createdOn =10; 
 }

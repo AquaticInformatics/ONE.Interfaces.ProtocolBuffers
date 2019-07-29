@@ -1,13 +1,25 @@
 syntax = "proto3";
 package claros.common.core;
 
-import "mobiledatetime.proto";
-
+// Allow the setting of datetime via either json or ticks
+// Serving layer will typically convert ticks to json on retrieval
 message ClarosDateTime
 {
+
+   // We originally had a mobileDateTime object that has been deprecated
+   reserved 1;
+
     oneof clarosDateTime {
-        MobileDateTime mobileDateTime = 1;  // Used for data collected from Mobile Devices
-        string jsonDateTime = 2;            // 
-        uint64 ticks = 3;                   // 
+        
+        // https://stackoverflow.com/questions/10286204/the-right-json-date-format
+        // JavaScript string representation of a datetime
+        // "2012-04-23T18:25:43.511Z"              JavaScript built-in JSON object
+        // "2012-04-21T18:25:43-05:00"             ISO 8601
+        string jsonDateTime = 2;           
+        
+        // milliseconds since the beginning of Epoch time
+        // does not contain timezone information
+        // Instruments will only set the ticks value
+        uint64 ticks = 3;                   
     }
 }

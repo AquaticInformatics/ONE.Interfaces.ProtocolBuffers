@@ -9,12 +9,25 @@ import "form_template.proto";
 import "formfield_definition.proto";
  
 message Form {
-    // header
-    string id = 1;  //GUID
+    // Header
+
+    // GUID identifier of the form instance
+    string id = 1;
+
+    // user defined name of form instance
     string name = 2;
+
+    // startTime and endTime for this form instance
     claros.common.core.TimeWindow timeWindow = 3;
 
-    // definition
+    // GUID id of location (of the plant)
+    string locationId = 9;
+
+    // GUID id of the tenant
+    string tenantId = 10;
+
+
+    // Definition
     FormTemplate formTemplate = 4;
     repeated FormFieldDefinition adHocFormFieldDefinitions = 5;
 
