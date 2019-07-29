@@ -9,21 +9,43 @@ import "computation_binding.proto";
 import "reportable_qualifier_definition.proto";
 
 // This is the definition of the column with a worksheet
- 
 message Column
 {
-    uint32 columnNumber = 1;                                        // The number of the column
-    string name = 2;                                                // The name of the column
-    string description = 3;                                         // The description of the column
-    uint32 parameterId = 4;                                         // The parameter associated with the column
-    uint32 displayUnitId = 5;                                       // The default unit to display the column
-    string locationId = 6;                                          // The location associated to the data in the column
-    bool isActive = 7;                                              // Soft Delete of the column
-    repeated claros.common.core.Limit limits = 8;                   // Collection of limits related to the column
-    claros.common.EnumDataSource enumDataSource = 9;           // The expected place where the data will be received into the column
+    // The number of the column
+    uint32 columnNumber = 1;                                        
+
+    // The name of the column
+    string name = 2;                
+
+    // The description of the column
+    string description = 3;                   
+
+    // The parameter associated with the column
+    uint32 parameterId = 4;                                         
+    
+    // The default unit to display the column
+    uint32 displayUnitId = 5;                                       
+    
+    // The location associated to the data in the column
+    string locationId = 6;                                          
+
+    // Soft Delete of the column
+    bool isActive = 7;                                              
+
+    // Collection of limits related to the column
+    repeated claros.common.core.Limit limits = 8;
+    
+    // The expected place where the data will be received into the column
+    claros.common.EnumDataSource enumDataSource = 9;           
+
     oneof binding {
-        claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           // Column comes from aggregated instrument measurments
-        claros.common.computation.ComputationBinding computationBinding = 11;                       // Column comes as a result of a computation
+        // Column comes from aggregated instrument measurments
+        claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           
+
+        // Column comes as a result of a computation
+        claros.common.computation.ComputationBinding computationBinding = 11;  
     }
-    repeated claros.common.core.ReportableQualifierDefinition reportableQualiferDefinition = 12;    // This determines how qualifers are interpreted for this column
+
+    // This determines how qualifers are interpreted for this column
+    repeated claros.common.core.ReportableQualifierDefinition reportableQualifierDefinition = 12;        
 }
