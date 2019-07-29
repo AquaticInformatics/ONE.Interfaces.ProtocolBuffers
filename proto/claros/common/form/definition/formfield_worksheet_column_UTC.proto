@@ -1,12 +1,17 @@
-
 syntax = "proto3";
 package claros.common.form;
  
 import "column.proto";
 import "enum_worksheet.proto";
 
+// Allows sending of data into spreadsheets from a form that is in a non-grid format
 message FormFieldWorksheetColumnUTC {
+    // GUID id of the location (type = plant) 
     string plantId = 1;
+
+    // Specificy the type of worksheet
     claros.operations.spreadsheet.EnumWorksheet enumWorksheet = 2;
+
+    // Just setting the column Id would be sufficient  
     claros.operations.spreadsheet.Column column = 3;
 }
