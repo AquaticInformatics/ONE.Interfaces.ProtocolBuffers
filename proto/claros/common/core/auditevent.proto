@@ -6,10 +6,21 @@ import "clarosdatetime.proto";
 import "enum_datasource.proto";
 
 message AuditEvent {
-    string id = 1;                      // A GUID that uniquely identifies the audit event
-    string userId = 2;                  // The id of the user related to this audit event
-    claros.common.EnumDataSource enumDataSource = 3;  // What system generated the audit event
-    claros.common.EnumAuditEvent enumAuditEvent = 4;       // The type of event
-    ClarosDateTime timeStamp = 5;       // The time in which this event occurred
-    string details = 6;                 // Text details that can provide more clarification to the audit
+    // A GUID that uniquely identifies the audit event
+    string id = 1;                          
+    
+    // The id of the user related to this audit event
+    string userId = 2;                      
+    
+    // What system generated the audit event
+    claros.common.EnumDataSource enumDataSource = 3;      
+    
+    // The type of event
+    claros.common.EnumAuditEvent enumAuditEvent = 4;           
+    
+    // The time in which this event occurred
+    ClarosDateTime timeStamp = 5;           
+    
+    // Text details that can provide more clarification to the audit
+    string details = 6;                 
 }
