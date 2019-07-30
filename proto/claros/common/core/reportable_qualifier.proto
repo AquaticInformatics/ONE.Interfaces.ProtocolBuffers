@@ -4,8 +4,11 @@ package claros.common.core;
 import "enum_reportable_qualifier.proto";
 
 // The reportable qualifier is a qualification on a measurement value.  This takes into account detectable ranges of instruments
-
 message ReportableQualifier{
-    EnumReportableQualifier enumReportableQualifier = 1;    // The type of Qualifier
-    string qualifiedValue = 2;                              // What the user has entered as the qualifer
-}
+ 
+    // The type of Qualifier
+    EnumReportableQualifier enumReportableQualifier = 1;       
+ 
+    // What the user has entered as the qualifer
+     string qualifiedValue = 2;                              
+ }

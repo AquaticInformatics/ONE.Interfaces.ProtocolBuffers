@@ -5,10 +5,14 @@ import "enum_reportable_qualifier.proto";
 import "enum_reportable_qualifier_definition.proto";
  
 // The reportable qualifier definition determines how reportable qualifier is interpreted for the defined parameter
-
 message ReportableQualifierDefinition
 {
-    EnumReportableQualifier enumReportableQualifier = 1;                        // The type of reportable qualifer
-    EnumReportableQualifierDefinition enumReportableQualifierDefinition = 2;    // Ho to interpret the qualifer
-    double constantValue = 3;                                                   // The value if the interpretation is a constant
+    // The type of reportable qualifer
+    EnumReportableQualifier enumReportableQualifier = 1;                            
+    
+    // Ho to interpret the qualifer
+    EnumReportableQualifierDefinition enumReportableQualifierDefinition = 2;        
+    
+    // The value if the interpretation is a constant
+    double constantValue = 3;                                                   
 }
