@@ -3,13 +3,27 @@ package claros.common.core;
 
 import "clarosdatetime.proto";
 
+// Minimal representation of a measurement.
+// Used as a poperty of an instrument measurement
+// Will be returned to populate spreadsheet cells, graphs
 message Measurement {
-    ClarosDateTime timestamp = 1;   // When the measurement was taken (UTC)
-    int32 parameterId = 2;          // The parameter related to the measurement as an integer
-    string parameterGuid = 3;       // The parameter related to the measurement as a GUID
-    int32 unitId = 4;               // The unit related to the measurement as an integer
-    string unitGuid = 5;            // The unit related to the measurement as a GUID
-    float value = 6;                // the value of the measurement ????? should this be decimal?
+    // When the measurement was taken (UTC)
+    ClarosDateTime timestamp = 1;       
+
+    // The parameter related to the measurement as an integer
+    int32 parameterId = 2;              
+
+    // The parameter related to the measurement as a GUID
+    string parameterGuid = 3;           
+
+    // The unit related to the measurement as an integer
+    int32 unitId = 4;                   
+
+    // The unit related to the measurement as a GUID
+    string unitGuid = 5;                
+
+    // the value of the measurement ????? should this be decimal?
+    float value = 6;                
 }
 
 message Measurements {
