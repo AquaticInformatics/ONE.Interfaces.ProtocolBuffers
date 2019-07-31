@@ -13,7 +13,7 @@ $logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/"
 Start-Transcript $logName
 foreach($file in $files)
 {
-    $Command = "protogen --csharp_out=../generated/dotnet $protoDirsCommand $file"
+    $Command = "C:\Tools\protogen --csharp_out=../generated/dotnet $protoDirsCommand $file"
     echo `n$Command
 
     Invoke-Expression -Command $Command
