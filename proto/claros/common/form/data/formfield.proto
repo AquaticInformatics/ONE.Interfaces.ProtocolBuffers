@@ -1,25 +1,21 @@
 syntax = "proto3";
 package claros.common.form;
 
-import "form_dataentry_type.proto"; 
+import "formfield_definition.proto"; 
 import "cell.proto";
 import "instrument_data.proto";
 
 message FormField {
     string guid = 1;
-    string formFieldDefinitionId = 2;
+    FormFieldDefinition formFieldDefinition = 2; // Proto defining the attributes of the form field
 
-    FormDataEntryType formDataEntryType = 3;
-    bool isDataEntryTypeLocked = 4;
-    string name = 5;
-
-    
     oneof FormFieldData {
         // AdHocFormField adHocFormField
-        claros.operations.spreadsheet.Cell cell = 6;        
+        claros.operations.spreadsheet.Cell cell = 3; // Proto for the cell in a worksheet, if the form field is bound
     }
 
-    repeated claros.instrument.InstrumentData instrumentData = 7;
+    repeated claros.instrument.InstrumentData instrumentData = 4; // Data received from an instrument if transferred directly
+    bytes rawInstrumentData = 5; // PROPOSED: Bytes containing raw data from the instrument, such as proto2 bytes
 
 
 }

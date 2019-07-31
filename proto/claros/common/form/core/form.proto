@@ -6,7 +6,6 @@ import "note.proto";
 import "auditevent.proto";
 import "formfield.proto";
 import "form_template.proto";
-import "formfield_definition.proto";
  
 message Form {
     // Header
@@ -28,13 +27,12 @@ message Form {
 
 
     // Definition
-    FormTemplate formTemplate = 4;
-    repeated FormFieldDefinition adHocFormFieldDefinitions = 5;
+    FormTemplate formTemplate = 4; // Copy of the template the form instance was generated from
 
     // data
-    repeated FormField templateFormFields = 6; // Form components in the form
-    repeated FormField adhocFormFields = 7;
-    repeated claros.common.core.Note notes = 8;
+    repeated FormField templateFormFields = 5; // Form components in the form
+    repeated FormField adhocFormFields = 6; // Form fields added by the client, but not part of the form template. They live only on this form instance.
+    repeated claros.common.core.Note notes = 7; // Notes added to the form by the user, similar to observations in Collect
 
-    repeated claros.common.core.AuditEvent auditEvents = 99;
+    repeated claros.common.core.AuditEvent auditEvents = 99; // System-added events on changes to the form
 }

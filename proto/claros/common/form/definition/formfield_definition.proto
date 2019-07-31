@@ -3,17 +3,14 @@ package claros.common.form;
 
 import "form_dataentry_type.proto"; 
 import "formfield_worksheet_column_UTC.proto"; 
-import "formfield_text_repeated.proto"; 
+import "formfield_text.proto"; 
  
 message FormFieldDefinition {
     string guid = 1;
-    FormDataEntryType formDataEntryType = 2;
-    bool isDataEntryTypeLocked = 3;
-    string name = 4;
+    FormDataEntryType formDataEntryType = 2; // Outlines to the client how to display render form field data entry control/UI to the user
+    bool isDataEntryTypeLocked = 3; // Defines whether an alternate entry method can be used (i.e. Transfer from instrument on a form field with Text entry type)
+    string name = 4; // Custom name set by the user
 
-    oneof fieldDefinition {
-        FormFieldWorksheetColumnUTC column = 5;   
-        FormFieldTextRepeated textRepeated = 6;
-    }
+    FormFieldWorksheetColumnUTC column = 5; // Data needed to convert
 }
 
