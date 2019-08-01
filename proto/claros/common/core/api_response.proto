@@ -16,7 +16,7 @@ import "claros_content.proto";
 message ApiResponse {
 
     repeated ApiError errors = 1;
-    ClarosContent content = 2;
+    repeated ClarosContent content = 2;
     
 }
 
