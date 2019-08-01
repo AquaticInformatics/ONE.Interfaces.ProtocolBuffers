@@ -10,20 +10,23 @@ import "form_layout.proto";
 import "timewindow.proto";
 
 message FormTemplate {
-    string id = 1;  //retrieval only
-    string ownerId = 2; //update and retrieval only
-    bool public = 3;
-    uint32 version = 4; //retrieval only
-    map<string, claros.common.configuration.Rights> privileges = 5;
-    FormTemplateConfiguration formTemplateConfiguration = 6; //This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+    // retrieval only
+    string id = 1;      
+    
+    // retrieval only
+    uint32 version = 2;
 
     // User-defined name of the template
-    string name = 7;
+    string name = 3;
+    
+    // This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+    FormTemplateConfiguration formTemplateConfiguration = 4; 
 
-    claros.common.configuration.Configuration configuration = 8; // Common configuration
+    // Common configuration
+    claros.common.configuration.Configuration configuration = 5; 
 
     // Guid of the plant associated with the template
-    string locationId = 9; 
+    string locationId = 6; 
 }
 
 message FormTemplateConfiguration {
@@ -37,7 +40,4 @@ message FormTemplateConfiguration {
 
     // The definitions for each form field in the template
     repeated FormFieldDefinition formFieldDefinitions = 4;
-
-    // The start and end time (duration) for each form generated from this template
-    claros.common.core.TimeWindow timeWindow = 5; 
 }
