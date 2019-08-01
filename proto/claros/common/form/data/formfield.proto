@@ -12,8 +12,6 @@ message FormField {
     FormFieldDefinition formFieldDefinition = 2; 
 
     oneof formFieldData {
-        // AdHocFormField adHocFormField
-
         // Proto for the cell in a worksheet, if the form field is bound
         claros.operations.spreadsheet.Cell cell = 3; 
     }
