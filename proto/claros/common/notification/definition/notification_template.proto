@@ -4,12 +4,18 @@ package claros.common.notification;
 import "notification_topic.proto";
 import "enum_notification_delivery_method.proto";
 import "record_auditinfo.proto";
-
+//Each topic delivery method will have it's own template per language
 message NotificationTemplate {
+    //GUID identifier of template
     string id = 1;
+    //this is specifically for delivery methods that have both a subject and body -- ie the email subject line
     string subject = 2;
+    //body of the template with the variables defined like this {variable}
     string body = 3;
-    NotificationTopic notificationTopic = 4;
-    EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 5;
-    claros.common.core.RecordAuditInfo recordAuditInfo = 6;
+    //culture code like en-us
+    string cultureCode = 4;
+    NotificationTopic notificationTopic = 5;
+    //delivery method email and push
+    EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 6;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 7;
 }
