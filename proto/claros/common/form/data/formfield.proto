@@ -9,21 +9,21 @@ import "formfield_text.proto";
 
 message FormField {
     // Proto defining the attributes of the form field
-    FormFieldDefinition formFieldDefinition = 2; 
+    FormFieldDefinition formFieldDefinition = 1; 
 
     oneof formFieldData {
         // Proto for the cell in a worksheet, if the form field is bound
-        claros.operations.spreadsheet.Cell cell = 3; 
+        claros.operations.spreadsheet.Cell cell = 2; 
     }
 
     // Data received from an instrument if transferred directly
-    repeated claros.instrument.InstrumentData instrumentData = 4; 
+    repeated claros.instrument.InstrumentData instrumentData = 3; 
 
     // PROPOSED: Bytes containing raw data from the instrument, such as proto2 bytes
-    bytes rawInstrumentData = 5; 
+    bytes rawInstrumentData = 4; 
 
     // Text values added by the user or system (i.e. notes, audit events, etc)
-    repeated FormFieldText textRepeated = 6; 
+    repeated FormFieldText textRepeated = 5; 
 }
 
 message FormFieldDefinition {
