@@ -10,7 +10,7 @@ import "spreadsheet_definition.proto";
 import "worksheet_definition.proto";
 import "instrument_measurement_definition.proto";
 import "instrument_measurement_data.proto";
-
+import "notification_template.proto";
 
 message ClarosContent {
 
@@ -34,6 +34,7 @@ message ClarosContent {
         // Forms
 
         // Notifications
+        claros.common.notification.NotificationTemplate notificationTemplate = 10;
     }
 }
 

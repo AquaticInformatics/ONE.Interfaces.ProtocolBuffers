@@ -3,11 +3,13 @@ package claros.common.notification;
 
 import "record_auditinfo.proto";
 import "enum_notification_category.proto";
+import "notification_topic_variable.proto";
 
 message NotificationTopic {
     string id = 1;
     string name = 2;
     string description = 3;
-    EnumNotificationCategory enumNotificationCategory = 4;
-    claros.common.core.RecordAuditInfo recordAuditInfo = 5;
+    repeated NotificationTopicVariable notificationTopicVariables =4;
+    EnumNotificationCategory enumNotificationCategory = 5;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 6;
 }
