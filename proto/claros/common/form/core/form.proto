@@ -5,7 +5,6 @@ import "timewindow.proto";
 import "note.proto";
 import "auditevent.proto";
 import "formfield.proto";
-import "form_template.proto";
  
 message Form {
     // Header
