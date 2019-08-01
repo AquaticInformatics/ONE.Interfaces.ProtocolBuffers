@@ -6,7 +6,6 @@ import "note.proto";
 import "auditevent.proto";
 import "formfield.proto";
 import "form_template.proto";
-import "formfield_definition.proto";
  
 message Form {
     // Header
@@ -20,21 +19,22 @@ message Form {
     // startTime and endTime for this form instance
     claros.common.core.TimeWindow timeWindow = 3;
 
-    // GUID id of location (of the plant)
-    string locationId = 9;
+    // Guid of the template from which this form was generated
+    string templateId = 4;
 
-    // GUID id of the tenant
-    string tenantId = 10;
-
-
-    // Definition
-    FormTemplate formTemplate = 4;
-    repeated FormFieldDefinition adHocFormFieldDefinitions = 5;
+    // Version of the template from which this form was generated
+    uint32 templateVersion = 5;
 
     // data
-    repeated FormField templateFormFields = 6; // Form components in the form
-    repeated FormField adhocFormFields = 7;
-    repeated claros.common.core.Note notes = 8;
+    // Form components in the form
+    repeated FormField templateFormFields = 6; 
 
-    repeated claros.common.core.AuditEvent auditEvents = 99;
+    // Form fields added by the client, but not part of the form template. They live only on this form instance.
+    repeated FormField adhocFormFields = 7; 
+
+    // Notes added to the form by the user, similar to observations in Collect
+    repeated claros.common.core.Note notes = 8; 
+
+    // System-added events on changes to the form
+    repeated claros.common.core.AuditEvent auditEvents = 99; 
 }
