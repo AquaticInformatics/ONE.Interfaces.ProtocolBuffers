@@ -26,9 +26,15 @@ message Form {
     uint32 templateVersion = 5;
 
     // data
-    repeated FormField templateFormFields = 6; // Form components in the form
-    repeated FormField adhocFormFields = 7; // Form fields added by the client, but not part of the form template. They live only on this form instance.
-    repeated claros.common.core.Note notes = 8; // Notes added to the form by the user, similar to observations in Collect
+    // Form components in the form
+    repeated FormField templateFormFields = 6; 
 
-    repeated claros.common.core.AuditEvent auditEvents = 99; // System-added events on changes to the form
+    // Form fields added by the client, but not part of the form template. They live only on this form instance.
+    repeated FormField adhocFormFields = 7; 
+
+    // Notes added to the form by the user, similar to observations in Collect
+    repeated claros.common.core.Note notes = 8; 
+
+    // System-added events on changes to the form
+    repeated claros.common.core.AuditEvent auditEvents = 99; 
 }
