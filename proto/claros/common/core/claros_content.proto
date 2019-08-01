@@ -11,6 +11,8 @@ import "worksheet_definition.proto";
 import "instrument_measurement_definition.proto";
 import "instrument_measurement_data.proto";
 import "notification_template.proto";
+import "form.proto";
+import "form_template.proto";
 
 message ClarosContent {
 
@@ -32,7 +34,9 @@ message ClarosContent {
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 9;
 
         // Forms
-
+        claros.common.form.Form form = 11;
+        claros.common.form.FormTemplate formTemplate = 12;
+        
         // Notifications
         claros.common.notification.NotificationTemplate notificationTemplate = 10;
     }

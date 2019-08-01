@@ -1,13 +1,11 @@
 syntax = "proto3";
 package claros.common.form;
 
-import "rights.proto";
 import "configuration.proto";
 import "formfield.proto";
 import "form_template_type.proto";
 import "recurrence.proto";
 import "form_layout.proto";
-import "timewindow.proto";
 
 message FormTemplate {
     // retrieval only
