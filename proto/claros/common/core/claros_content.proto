@@ -33,6 +33,8 @@ message ClarosContent {
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 9;
 
         // Forms
+        claros.common.form.FormTemplate formTemplate = 10;
+        claros.common.form.Form form = 11;
 
         // Notifications
         claros.common.notification.NotificationTemplate notificationTemplate = 10;
