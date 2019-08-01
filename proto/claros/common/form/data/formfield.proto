@@ -1,21 +1,49 @@
 syntax = "proto3";
 package claros.common.form;
 
-import "formfield_definition.proto"; 
 import "cell.proto";
 import "instrument_data.proto";
+import "form_dataentry_type.proto"; 
+import "formfield_worksheet_column_UTC.proto";
+import "formfield_text.proto";
 
 message FormField {
-    string guid = 1;
-    FormFieldDefinition formFieldDefinition = 2; // Proto defining the attributes of the form field
+    // Proto defining the attributes of the form field
+    FormFieldDefinition formFieldDefinition = 2; 
 
-    oneof FormFieldData {
+    oneof formFieldData {
         // AdHocFormField adHocFormField
-        claros.operations.spreadsheet.Cell cell = 3; // Proto for the cell in a worksheet, if the form field is bound
+
+        // Proto for the cell in a worksheet, if the form field is bound
+        claros.operations.spreadsheet.Cell cell = 3; 
     }
 
-    repeated claros.instrument.InstrumentData instrumentData = 4; // Data received from an instrument if transferred directly
-    bytes rawInstrumentData = 5; // PROPOSED: Bytes containing raw data from the instrument, such as proto2 bytes
+    // Data received from an instrument if transferred directly
+    repeated claros.instrument.InstrumentData instrumentData = 4; 
 
+    // PROPOSED: Bytes containing raw data from the instrument, such as proto2 bytes
+    bytes rawInstrumentData = 5; 
 
+    // Text values added by the user or system (i.e. notes, audit events, etc)
+    repeated FormFieldText textRepeated = 6; 
+}
+
+message FormFieldDefinition {
+    // Id for the form field definition
+    string guid = 1;
+
+    // Outlines to the client how to display render form field data entry control/UI to the user
+    FormDataEntryType formDataEntryType = 2; 
+
+    // Defines whether an alternate entry method can be used (i.e. Transfer from instrument on a form field with Text entry type)
+    bool isDataEntryTypeLocked = 3; 
+
+    // Custom name set by the user
+    string name = 4; 
+
+    // Links the form field to a other entities on the backend.
+    oneof fieldDefinition {
+        // Defines the relationship between the form field and the worksheet column
+        FormFieldWorksheetColumnUTC column = 5;
+    }
 }
