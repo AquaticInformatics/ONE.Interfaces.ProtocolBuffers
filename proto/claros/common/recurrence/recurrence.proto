@@ -20,6 +20,9 @@ message Recurrence {
  
     // Date recurrence starts
     claros.common.core.ClarosDateTime recurrenceStartDate = 5;
+
+
+    
     // Allows selection of one of three different recurrence end options
     oneof recurrenceEnd {
         // Recurrence doesn't end

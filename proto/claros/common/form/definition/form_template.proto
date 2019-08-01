@@ -1,9 +1,13 @@
 syntax = "proto3";
 package claros.common.form;
 
-import "form_template_configuration.proto";
 import "rights.proto";
 import "configuration.proto";
+import "formfield.proto";
+import "form_template_type.proto";
+import "recurrence.proto";
+import "form_layout.proto";
+import "timewindow.proto";
 
 message FormTemplate {
     string id = 1;  //retrieval only
@@ -14,4 +18,21 @@ message FormTemplate {
     FormTemplateConfiguration formTemplateConfiguration = 6; //This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
     string name = 7;
     claros.common.configuration.Configuration configuration = 8; // Common configuration
+    string locationId = 9; // Guid of the plant associated with the template
+}
+
+message FormTemplateConfiguration {
+    FormTemplateType formTemplateType = 1;
+
+    // Defines how frequently to generate a form from this template
+    claros.common.recurrence.Recurrence recurrence = 2;
+
+    // A layout definition for how to display the form fields to the user
+    FormLayout formLayout = 3;
+
+    // The definitions for each form field in the template
+    repeated FormFieldDefinition formFieldDefinitions = 4;
+
+    // The start and end time (duration) for each form generated from this template
+    claros.common.core.TimeWindow timeWindow = 5; 
 }
