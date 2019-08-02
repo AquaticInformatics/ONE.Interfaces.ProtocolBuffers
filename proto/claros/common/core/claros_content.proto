@@ -11,12 +11,11 @@ import "worksheet_definition.proto";
 import "instrument_measurement_definition.proto";
 import "instrument_measurement_data.proto";
 import "notification_template.proto";
-<<<<<<< refs/remotes/origin/notifications
+import "notification_topic.proto";
+import "notification_topic_variable.proto";
 import "device_type_resource.proto";
-=======
 import "form.proto";
 import "form_template.proto";
->>>>>>> fix merge conflicets
 
 message ClarosContent {
 
