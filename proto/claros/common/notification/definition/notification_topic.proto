@@ -13,3 +13,7 @@ message NotificationTopic {
     EnumNotificationCategory enumNotificationCategory = 5;
     claros.common.core.RecordAuditInfo recordAuditInfo = 6;
 }
+
+message NotificationTopic {
+    repeated NotificationTopic notificationTopics= 1;
+}

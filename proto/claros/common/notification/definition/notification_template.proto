@@ -19,3 +19,7 @@ message NotificationTemplate {
     EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 6;
     claros.common.core.RecordAuditInfo recordAuditInfo = 7;
 }
+
+message NotificationTemplates {
+    repeated NotificationTemplate notificationTemplates = 1;
+}
