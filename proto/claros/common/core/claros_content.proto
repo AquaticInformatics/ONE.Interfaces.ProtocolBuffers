@@ -13,7 +13,10 @@ import "instrument_measurement_data.proto";
 import "notification_template.proto";
 import "form.proto";
 import "form_template.proto";
+import "parameter.proto";
+import "unit.proto";
 
+// Next id = 15
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
@@ -21,6 +24,8 @@ message ClarosContent {
         // Common
         claros.common.core.Measurements measurements = 1;
         claros.common.configuration.Configuration configuration = 2;
+        claros.common.library.Parameter parameter = 13;
+        claros.common.library.Unit unit = 14;
  
         // Operations
         claros.operations.spreadsheet.Rows rows = 3;
