@@ -6,14 +6,25 @@ import "clarosdatetime.proto";
 // Used to describe a unit
 
 message Unit {
-    string Id = 1;                  // GUID for the Unit
-    uint32 IntId = 2;               // Integer equivalent that uniquely describes the unit
-    string i18nKey = 3;             // Localization key for the unit
-    string unitName = 4;            // The untranslated unit name
-    string quantityTypeId = 5;      // The quantity type related to the unit
-    string description = 6;         // ?????
+    // GUID for the Unit
+    string Id = 1;                      
     
-    string createdById = 7;         // ????? Do we need these audit fields
+    // Integer equivalent that uniquely describes the unit
+    uint32 IntId = 2;                   
+    
+    // Localization key for the unit
+    string i18nKey = 3;                 
+    
+    // The untranslated unit name
+    string unitName = 4;                
+    
+    // The quantity type related to the unit
+    string quantityTypeId = 5;          
+    
+    // Optional description of the Unit
+    string description = 6;             
+
+    string createdById = 7;         
     claros.common.core.ClarosDateTime createdOn = 8;
     string modifiedById = 9;
     claros.common.core.ClarosDateTime modifiedOn = 10;
