@@ -9,6 +9,6 @@ message NotificationTopicVariable {
     claros.common.core.RecordAuditInfo recordAuditInfo = 3;
 }
 
-message NotificationTopicVariable {
+message NotificationTopicVariables {
     repeated NotificationTopicVariable notificationTopicVariables= 1;
 }

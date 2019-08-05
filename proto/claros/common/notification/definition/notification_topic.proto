@@ -14,6 +14,6 @@ message NotificationTopic {
     claros.common.core.RecordAuditInfo recordAuditInfo = 6;
 }
 
-message NotificationTopic {
+message NotificationTopics {
     repeated NotificationTopic notificationTopics= 1;
 }
