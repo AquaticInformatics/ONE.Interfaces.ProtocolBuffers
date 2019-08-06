@@ -18,7 +18,7 @@ import "form_template.proto";
 import "parameter.proto";
 import "unit.proto";
 
-// Next id = 15
+// Next id = 17
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
@@ -46,13 +46,10 @@ message ClarosContent {
         
         // Notifications
         claros.common.notification.NotificationTemplate notificationTemplate = 10;
-        claros.common.notification.NotificationTemplates notificationTemplates = 16;
-        claros.common.notification.NotificationTopic notificationTopic = 11;
-        claros.common.notification.NotificationTopics notificationTopics = 15;
-       
+        claros.common.notification.NotificationTopic notificationTopic = 15;
 
         //Claros.Common.Library
-        claros.common.library.DeviceTypeResource deviceTypeResource =13;
+        claros.common.library.DeviceTypeResource deviceTypeResource = 16;
     }
 }
 
