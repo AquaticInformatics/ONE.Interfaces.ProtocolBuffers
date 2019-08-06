@@ -17,3 +17,6 @@ message DeviceTypeResource {
     claros.common.EnumLinkCategory enumLinkCategory = 9;
     claros.common.core.RecordAuditInfo recordAuditInfo = 10;
 }
+message DeviceTypeResource {
+    repeated DeviceTypeResource deviceTypeResource = 1;
+}

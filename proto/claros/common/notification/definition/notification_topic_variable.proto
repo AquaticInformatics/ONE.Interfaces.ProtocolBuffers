@@ -8,3 +8,7 @@ message NotificationTopicVariable {
     string name = 2;
     claros.common.core.RecordAuditInfo recordAuditInfo = 3;
 }
+
+message NotificationTopicVariables {
+    repeated NotificationTopicVariable notificationTopicVariables= 1;
+}
