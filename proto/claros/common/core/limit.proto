@@ -4,7 +4,6 @@ package claros.common.core;
 import "enum_limit.proto";
 import "timewindow.proto";
 
-
 message Limit {
     // Customer defined name of limit
     string name = 1;        
@@ -47,8 +46,6 @@ message ThresholdRule
 
     // count of measuremennts outside of valid limit range needed to trigger a limit violation
     uint32 instanceCount = 3;
-
-    EnumLimitOperation enumLimitOperation = 4;
 }
 
 // 
