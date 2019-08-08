@@ -16,7 +16,12 @@ import "claros_content.proto";
 message ApiResponse {
 
     repeated ApiError errors = 1;
-    repeated ClarosContent content = 2;
+
+    // Allow for clients to receive a list of unrelated data in a single call
+    repeated ClarosContent contents = 2;
+
+    // Standard object for receiving a single protobuf    
+    ClarosContent content = 3;
     
 }
 
