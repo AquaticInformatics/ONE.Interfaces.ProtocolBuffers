@@ -15,10 +15,11 @@ import "notification_topic.proto";
 import "device_type_resource.proto";
 import "form.proto";
 import "form_template.proto";
+import "form_index.proto";
 import "parameter.proto";
 import "unit.proto";
 
-// Next id = 17
+// Next id = 20; 
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
@@ -43,6 +44,9 @@ message ClarosContent {
         // Forms
         claros.common.form.Form form = 11;
         claros.common.form.FormTemplate formTemplate = 12;
+        claros.common.form.Forms forms = 17;
+        claros.common.form.FormTemplates formTemplates = 18;
+        claros.common.form.FormIndices formIndices = 19;
         
         // Notifications
         claros.common.notification.NotificationTemplate notificationTemplate = 10;
