@@ -39,3 +39,7 @@ message FormIndex {
    // GUID id of tenant associated to form
    string tenantId = 11;
 }
+
+message FormIndices {
+    repeated FormIndex formIndices = 1;
+}

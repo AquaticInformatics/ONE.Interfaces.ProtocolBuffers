@@ -27,6 +27,10 @@ message FormTemplate {
     string locationId = 6; 
 }
 
+message FormTemplates {
+    repeated FormTemplate formTemplates = 1;
+}
+
 message FormTemplateConfiguration {
     FormTemplateType formTemplateType = 1;
 

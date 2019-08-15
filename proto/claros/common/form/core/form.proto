@@ -43,3 +43,7 @@ message Form {
     // System-added events on changes to the form
     repeated claros.common.core.AuditEvent auditEvents = 99; 
 }
+
+message Forms {
+    repeated Form forms = 1;
+}
