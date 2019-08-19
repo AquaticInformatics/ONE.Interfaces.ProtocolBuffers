@@ -5,4 +5,5 @@ enum EnumEntity {
     ENTITY_UNKNOWN = 0;
     ENTITY_FORMTEMPLATE = 1;
     ENTITY_APPLICATION = 2;
+    ENTITY_DASHBOARD = 3;
 };
