@@ -9,20 +9,50 @@ import "limit.proto";
 // This defines a set of data that is collected from an instrument
 
 message InstrumentMeasurementDefinition {
-    string instrumentMeasurementId = 1;                 // This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
-    string name = 2;                                    // The name of the collection of instrument measurmenets.  There is a good chance this correlates to the parameter name.
-    string fusionId = 3;                                // The FusionId of the instrument that the data is being collected
-    string locationId = 4;                              // Optional: The location where the data is being collected
-    uint32 parameterId = 5;                             // Required: The parameter related to the instrument measurments being collected
-    uint32 displayUnitId = 6;                           // The default display unit that the data will be rendered
-    bool isVisible = 7;                                 // Soft delete of the Instrument Measurment Collection
-
-    oneof binding {                                     // How the data is bound from the incoming instrument
-        SCSensorBinding scSensorBinding = 8;            // For SC Instruments, how the SC Instrument is identified
-        MilliAmpBinding milliAmpBinding = 9;            // For 4-20 mA input, how the inputs are mapped to instrument measurments
+    // This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
+    string instrumentMeasurementId = 1;                     
+    
+    // The name of the collection of instrument measurmenets.  There is a good chance this correlates to the parameter name.
+    string name = 2;                                        
+    
+    // GUID id of tenant
+    string tenantId = 16;
+    
+    // The FusionId of the instrument that the data is being collected
+    string fusionId = 3;                                    
+    
+    // Optional: The location where the data is being collected
+    string locationId = 4;                                  
+    
+    // Instrument source of this specific parameter
+    int32 channel = 15;
+    
+    // Required: The parameter related to the instrument measurments being collected
+    uint32 parameterIntId = 5;                                 
+    
+    // GUID id of parameter
+    string parameterGuidId = 17;
+    
+    // The default display unit that the data will be rendered
+    uint32 displayUnitIntId = 6;                               
+    
+    // GUID id of display unit
+    string displayUnitGuidId = 18;
+    
+    // Soft delete of the Instrument Measurment Collection
+    bool isVisible = 7;  
+   
+    // How the data is bound from the incoming instrument
+    oneof binding {                                             
+        // For SC Instruments, how the SC Instrument is identified
+        SCSensorBinding scSensorBinding = 8;                    
+        
+        // For 4-20 mA input, how the inputs are mapped to instrument measurments
+        MilliAmpBinding milliAmpBinding = 9;                
     }
 
-    repeated claros.common.core.Limit limits = 10;      // A collection of limits associated to the instrument measurements
+    // A collection of limits associated to the instrument measurements
+    repeated claros.common.core.Limit limits = 10;      
 
     // Record Audit Fields
     string createdById = 11;
