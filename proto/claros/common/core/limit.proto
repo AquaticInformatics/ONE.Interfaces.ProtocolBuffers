@@ -9,28 +9,29 @@ message Limit {
     string name = 1;        
 
     // Operation to compare measurement with limit value
-    EnumLimitOperation enumLimitOperation = 2;
+    EnumLimitOperation lowOperation = 2;
+    EnumLimitOperation highOperation = 3;
 
     // Standard limit definitions, used for application context
     // Does not contribute to limit violation processing logic
-    claros.common.EnumLimit enumLimit = 3;
+    claros.common.EnumLimit enumLimit = 4;
 
     // Optional value of low range to compare
-    double lowValue = 4;
+    double lowValue = 5;
 
     // Optional value of high range to compare
-    double highValue = 5;   
+    double highValue = 6;   
     
     // The unit used to compare the value with the limit
-    uint32 unitId = 6;          
+    uint32 unitId = 7;          
 
     // The start and end time of when this limit applies
     // i.e. seasonal limits
-    TimeWindow timeWindow = 7; 
+    TimeWindow timeWindow = 8; 
 
     
     oneof Rules {
-        ThresholdRule thresholdRule = 8;
+        ThresholdRule thresholdRule = 9;
     }
 
 }
@@ -64,6 +65,4 @@ enum EnumLimitOperation {
     LIMITOPERATION_GREATERTHANOREQUAL = 2;
     LIMITOPERATION_LESSTHAN = 3;
     LIMITOPERATION_LESSTHANOREQUAL = 4;
-    LIMITOPERATION_BETWEEN_INCLUSIVE = 5;
-    LIMITOPERATION_BETWEEN_EXCLUSIVE = 6;
 }
