@@ -49,8 +49,8 @@ message ClarosContent {
         claros.common.form.FormIndices formIndices = 19;
         
         // Notifications
-        claros.common.notification.NotificationTemplate notificationTemplate = 10;
-        claros.common.notification.NotificationTopic notificationTopic = 15;
+        claros.common.notification.NotificationTemplates notificationTemplates = 10;
+        claros.common.notification.NotificationTopics notificationTopics = 15;
 
         //Claros.Common.Library
         claros.common.library.DeviceTypeResources deviceTypeResources = 16;
