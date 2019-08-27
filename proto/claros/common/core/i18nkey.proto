@@ -1,0 +1,17 @@
+syntax = "proto3";
+package claros.common.core;
+
+option csharp_namespace ="Claros.Common.Core";
+
+// Defines the properties that make up an i18nKey
+message I18NKey {
+     
+    // To be specified by the instrument. For example: "common", "param", "unit", "sensor"
+    string i18nDatabaseName = 1;
+ 
+    // To be mapped by cloud backend. For example: "CommonStandard", "HL001_00119"
+    string i18nModule = 2;
+ 
+    // The key identifying the text.
+    string i18nKey = 3;
+}

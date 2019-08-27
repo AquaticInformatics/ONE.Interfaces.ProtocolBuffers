@@ -3,19 +3,32 @@ package claros.instrument;
  
 import "instrument_event_data.proto";
 import "instrument_measurement_data.proto";
-import "clarosdatetime.proto";
+import "instrument_status.proto";
+import "instrument_settings.proto";
 
 option csharp_namespace ="Claros.Instrument";
 
 message InstrumentData {
     // Header Information
-    string tenantId = 1;                                            // Tenant related to instrument
-    string fusionId = 2;                                            // Unique id of an instrument
+	// Unique id of an instrument
+    string fusionId = 2;
 
-    claros.instrument.instrumentevent.InstrumentEventData events = 3;                                     // Events related to what has happened to an instrument
-    repeated claros.instrument.measurement.InstrumentMeasurementData measurements = 4;                // Measurements related to an instrument
-    map<string,string> settings = 5;                                // Settings of an instrument
-    map<string,string> states = 6;                                  // State informantion of an instrument
-    claros.common.core.ClarosDateTime instrumentDataDateTime = 7;   // this is optionally set if all children share the same time
+	// Measurements related to an instrument
+    // Classical definition of a measurement (Time Series)
+    repeated claros.instrument.measurement.InstrumentMeasurementData instrumentMeasurementDatas = 3;
+     
+    // Metadata related to a Time Stamp that represents an action that has occurred within an instrument.
+    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 4;                    
+ 
+    // The current / predictive condition of the instrument. 
+    // This is commonly thought of the "Twin" data related to an instrument. 
+    // This includes Errors, Warnings, Processing Status and Prognosys data
+    repeated InstrumentStatus instrumentStatuses = 5;
+     
+    // Describes the configuration of an instrument.  This is commonly stored in the Instrument Twin.
+    InstrumentSettings instrumentSettings = 6;
 }
 
+message InstrumentDatas {
+    repeated InstrumentData instrumentDatas = 1;
+}

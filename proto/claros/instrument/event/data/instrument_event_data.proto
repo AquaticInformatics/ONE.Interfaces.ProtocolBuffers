@@ -4,17 +4,17 @@ package claros.instrument.instrumentevent;
 import "clarosdatetime.proto";
 import "instrument_event_data_metadata.proto";
 import "instrument_event_data_calibration.proto";
-import "instrument_event_data_prognosys.proto";
 
 option csharp_namespace ="Claros.Instrument.InstrumentEvent";
  
 message InstrumentEventData {
-    repeated InstrumentEventDataCalibration calibrations = 1;                  // Collection of Calibrarion Events
-    repeated InstrumentEventDataMetaData errors = 2;                      // Collection of Errors
-    repeated InstrumentEventDataMetaData info = 3;                        // Collection of Information about an Instrument
-    repeated InstrumentEventDataMetaData limits = 4;                      // Collection of limit violations coming from an insturment
-    repeated InstrumentEventDataMetaData reminders = 5;                   // Collection of maintenance reminders coming from an instrument
-    repeated InstrumentEventDataMetaData warnings = 6;                    // Collection of warnings coming from an instrument
-    repeated InstrumentEventDataPrognosys prognosys = 7;                   // Collection of prognosys (tm) events coming from prognosys enabled instruments
-    claros.common.core.ClarosDateTime eventDateTime = 8;    // The time of the event
+ 
+    // Collection of Calibrarion Events
+    repeated InstrumentEventDataCalibration calibrations = 1;
+     
+    // Collection of Information about an Instrument
+    repeated InstrumentEventDataMetaData info = 2;
+     
+    // The time of the event
+    claros.common.core.ClarosDateTime eventDateTime = 3;
 }
