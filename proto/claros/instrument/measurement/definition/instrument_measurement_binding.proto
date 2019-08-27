@@ -3,8 +3,9 @@ package claros.instrument.measurement;
 
 import "enum_aggregate.proto";
 
-// This message is used to bind an instrument measurment to other entities such as a spreadshet column
+option csharp_namespace ="Claros.Instrument.Measurement";
 
+// This message is used to bind an instrument measurment to other entities such as a spreadshet column
 message InstrumentMeasurementBinding {
    string instrumentMeasurementId = 1;                   // The id of the definition of an instrument measurement
    claros.common.EnumAggregate enumAggregate = 2;   // How the data from instrument measurements will be aggregated into the bound system (Spreadsheet cell)

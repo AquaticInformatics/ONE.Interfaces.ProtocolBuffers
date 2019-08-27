@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option csharp_namespace ="Claros.Common.Core";
+
 message sample {
     oneof oneof {
         string sampleString = 1;

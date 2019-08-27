@@ -4,6 +4,8 @@ package claros.common.form;
 import "column.proto";
 import "enum_worksheet.proto";
 
+option csharp_namespace ="Claros.Common.Form";
+
 // Allows sending of data into spreadsheets from a form that is in a non-grid format
 message FormFieldWorksheetColumnUTC {
     // GUID id of the location (type = plant) 

@@ -4,6 +4,8 @@ package claros.operations.spreadsheet;
 import "row.proto";
 import "cell.proto";
 
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
 message RowMergeResult {
     Row row = 1;
     repeated Cell callsThatFailedToUpdate = 2;

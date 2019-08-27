@@ -3,8 +3,9 @@ package claros.instrument.measurement;
 
 import "clarosdatetime.proto";
 
-// This is the definition of how SC Sensors are mapped to a collection of measurements
+option csharp_namespace ="Claros.Instrument.Measurement";
 
+// This is the definition of how SC Sensors are mapped to a collection of measurements
 message SCSensorBinding
 {
     uint32 channel = 2;

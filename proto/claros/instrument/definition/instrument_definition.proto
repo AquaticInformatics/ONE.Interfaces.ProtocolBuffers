@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.instrument;
 
+option csharp_namespace ="Claros.Instrument";
+
 message InstrumentDefnition {
     string fusionId = 1;                       //this is the primary value  (Concentration)
 }

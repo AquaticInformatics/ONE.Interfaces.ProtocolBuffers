@@ -3,6 +3,8 @@ package claros.common.configuration;
 
 import "rights.proto";
 
+option csharp_namespace ="Claros.Common.Configuration";
+
 message Privileges {
     map<string, Rights> privilege = 1;
 }

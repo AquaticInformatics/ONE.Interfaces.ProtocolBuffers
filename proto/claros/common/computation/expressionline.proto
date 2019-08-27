@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.computation;
 
+option csharp_namespace ="Claros.Common.Computation";
+
 message ExpressionLine {
     string i18nKey = 1;
     string name = 2;

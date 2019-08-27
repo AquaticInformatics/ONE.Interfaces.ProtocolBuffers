@@ -3,6 +3,8 @@ package claros.operations.spreadsheet;
  
 import "spreadsheet_definition.proto";
 import "worksheet.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 message Spreadsheet {
     // header

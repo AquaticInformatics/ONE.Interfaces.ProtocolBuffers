@@ -5,9 +5,10 @@ import "clarosdatetime.proto";
 import "milliamp_binding.proto";
 import "scsensor_binding.proto";
 import "limit.proto";
+
+option csharp_namespace ="Claros.Instrument.Measurement";
  
 // This defines a set of data that is collected from an instrument
-
 message InstrumentMeasurementDefinition {
     // This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
     string instrumentMeasurementId = 1;                     

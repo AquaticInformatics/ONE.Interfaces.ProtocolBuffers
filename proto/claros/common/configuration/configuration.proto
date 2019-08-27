@@ -4,6 +4,8 @@ package claros.common.configuration;
 import "clarosdatetime.proto";
 import "enum_entity.proto";
 import "rights.proto";
+
+option csharp_namespace ="Claros.Common.Configuration";
  
 message Configuration {
     string id = 1;

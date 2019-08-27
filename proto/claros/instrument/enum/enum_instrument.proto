@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.instrument;
 
+option csharp_namespace ="Claros.Instrument";
+
 enum EnumInstrument {
     INSTRUMENT_TYPE_UNKNOWN = 0;
     INSTRUMENT_TYPE_1200S_V2_SENSOR = 2;

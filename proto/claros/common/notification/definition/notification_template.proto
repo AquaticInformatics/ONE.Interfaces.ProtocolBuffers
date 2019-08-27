@@ -4,6 +4,9 @@ package claros.common.notification;
 import "notification_topic.proto";
 import "enum_notification_delivery_method.proto";
 import "record_auditinfo.proto";
+
+option csharp_namespace ="Claros.Common.Notification";
+
 //Each topic delivery method will have it's own template per language
 message NotificationTemplate {
     //GUID identifier of template

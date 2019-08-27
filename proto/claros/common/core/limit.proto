@@ -4,6 +4,8 @@ package claros.common.core;
 import "enum_limit.proto";
 import "timewindow.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 message Limit {
     // Customer defined name of limit
     string name = 1;        

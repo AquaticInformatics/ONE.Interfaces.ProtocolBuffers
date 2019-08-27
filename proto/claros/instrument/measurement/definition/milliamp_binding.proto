@@ -3,8 +3,9 @@ package claros.instrument.measurement;
 
 import "clarosdatetime.proto";
 
-// This is the definition of how 4-20 mA inputs are mapped to a collection of measurements
+option csharp_namespace ="Claros.Instrument.Measurement";
 
+// This is the definition of how 4-20 mA inputs are mapped to a collection of measurements
 message MilliAmpBinding
 {
     string cardName = 1;                                // Name of the 4-20 mA Card

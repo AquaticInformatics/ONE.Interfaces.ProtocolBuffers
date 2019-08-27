@@ -5,6 +5,8 @@ import "enum_day.proto";
 import "enum_month.proto";
 import "enum_ordinal.proto";
 
+option csharp_namespace ="Claros.Common.Recurrence";
+
 // Recurrence can happen every interval number of years on a specific date or a specific weekday
 message PatternYearly {
 

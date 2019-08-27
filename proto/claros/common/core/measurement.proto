@@ -3,6 +3,8 @@ package claros.common.core;
 
 import "clarosdatetime.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 // Minimal representation of a measurement.
 // Used as a poperty of an instrument measurement
 // Will be returned to populate spreadsheet cells, graphs

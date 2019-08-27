@@ -1,5 +1,7 @@
 syntax = "proto3";
 package claros.common;
+
+option csharp_namespace ="Claros.Common";
  
 enum EnumAuditEvent {
     AUDIT_EVENT_UNKNOWN = 0;

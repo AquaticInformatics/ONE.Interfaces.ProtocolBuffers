@@ -3,6 +3,7 @@ package claros.common.core;
 
 import "clarosdatetime.proto";
 
+option csharp_namespace ="Claros.Common.Core";
 
 message RecordAuditInfo {
     string createdById = 1;

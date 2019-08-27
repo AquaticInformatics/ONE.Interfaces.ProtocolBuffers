@@ -3,6 +3,8 @@ package claros.common.report;
  
 import "spreadsheet.proto";
 
+option csharp_namespace ="Claros.Common.Report";
+
 message ReportData {
     oneof reportDataSet {
         claros.operations.spreadsheet.Spreadsheet spreadsheet = 1;

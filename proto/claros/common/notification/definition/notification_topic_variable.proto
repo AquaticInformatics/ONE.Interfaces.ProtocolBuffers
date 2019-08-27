@@ -3,6 +3,8 @@ package claros.common.notification;
 
 import "record_auditinfo.proto";
 
+option csharp_namespace ="Claros.Common.Notification";
+
 message NotificationTopicVariable {
     string id = 1;
     string name = 2;

@@ -5,6 +5,8 @@ import "task_definition.proto";
 import "task_data.proto";
 import "auditevent.proto";
 
+option csharp_namespace ="Claros.Common.Task";
+
 message Task {
     // header
     string id = 1;                              // GUID

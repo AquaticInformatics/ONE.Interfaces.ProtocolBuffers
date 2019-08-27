@@ -1,10 +1,12 @@
 syntax = "proto3";
 package claros.common.gis;
 
-// type: MultiPoint
-// coordinates: [[x, y, z], [x, y, z]]
 import "point3d.proto"; 
 
+option csharp_namespace ="Claros.Common.Gis";
+
+// type: MultiPoint
+// coordinates: [[x, y, z], [x, y, z]]
 message MultiPoint3D {
     repeated Point3D point = 1;
 }

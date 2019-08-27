@@ -3,6 +3,8 @@ package claros.common.form;
 
 import "recurrence.proto";
  
+option csharp_namespace ="Claros.Common.Form";
+
 message LedgerColumnFormField {
     string ledgerColumnGUID = 1;
     string unit = 2;

@@ -1,4 +1,3 @@
-
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
@@ -7,6 +6,8 @@ import "limit.proto";
 import "instrument_measurement_binding.proto";
 import "computation_binding.proto";
 import "reportable_qualifier_definition.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 // This is the definition of the column with a worksheet
 message Column

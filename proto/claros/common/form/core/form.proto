@@ -5,6 +5,8 @@ import "timewindow.proto";
 import "note.proto";
 import "auditevent.proto";
 import "formfield.proto";
+
+option csharp_namespace ="Claros.Common.Form";
  
 message Form {
     // Header

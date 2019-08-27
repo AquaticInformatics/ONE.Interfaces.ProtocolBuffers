@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
- 
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
 enum EnumWorksheet {
     WORKSHEET_UNKNOWN = 0;
     WORKSHEET_FIFTEEN_MINUTE = 1; 

@@ -1,9 +1,10 @@
 syntax = "proto3";
 package claros.common.gis;
- 
+
+option csharp_namespace ="Claros.Common.Gis";
+
 // type: Point
 // coordinates: [x, y, z]
- 
 message Point3D {
   float x = 1;
   float y = 2;

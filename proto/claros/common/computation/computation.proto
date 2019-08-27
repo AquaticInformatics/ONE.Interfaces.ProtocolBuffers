@@ -4,6 +4,8 @@ package claros.common.computation;
 import "variable.proto";
 import "expressionline.proto";
 
+option csharp_namespace ="Claros.Common.Computation";
+
 message Computation
 {
     string i18nKey = 1;

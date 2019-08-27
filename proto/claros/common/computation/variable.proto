@@ -4,6 +4,8 @@ package claros.common.computation;
 import "computation_cursor_type.proto";
 import "propertyselector_type.proto";
 
+option csharp_namespace ="Claros.Common.Computation";
+
 message Variable
 {
     string i18nKey = 1;                         // Use for translations of a global computation

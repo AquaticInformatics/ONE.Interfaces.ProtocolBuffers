@@ -3,6 +3,8 @@ package claros.common.form;
  
 import "timewindow.proto";
 import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.Common.Form";
  
 message FormIndex {
     // GUID identifer of the form

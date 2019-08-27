@@ -19,6 +19,8 @@ import "form_index.proto";
 import "parameter.proto";
 import "unit.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 // Next id = 20; 
 message ClarosContent {
 
