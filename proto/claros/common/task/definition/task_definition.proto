@@ -3,6 +3,8 @@ package claros.common.task;
  
 import "binding_instrument_maintenance.proto";
 import "task_definition_source.proto";
+
+option csharp_namespace ="Claros.Common.Task";
  
 message TaskDefinition {
     // What is the source of the Task?

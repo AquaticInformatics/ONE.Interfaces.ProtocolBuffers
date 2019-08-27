@@ -1,9 +1,10 @@
-
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
 import "timewindow.proto";
 import "enum_timezone.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 // This describes the overall definition of a spreadsheet.  
 // Worksheet definitions are separate from this.

@@ -5,6 +5,8 @@ import "clarosdatetime.proto";
 import "instrument_event_data_metadata.proto";
 import "instrument_event_data_calibration.proto";
 import "instrument_event_data_prognosys.proto";
+
+option csharp_namespace ="Claros.Instrument.InstrumentEvent";
  
 message InstrumentEventData {
     repeated InstrumentEventDataCalibration calibrations = 1;                  // Collection of Calibrarion Events

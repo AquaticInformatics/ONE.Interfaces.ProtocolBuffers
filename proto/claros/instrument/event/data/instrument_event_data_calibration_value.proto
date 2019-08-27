@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.instrument.instrumentevent;
 
+option csharp_namespace ="Claros.Instrument.InstrumentEvent";
+
 message InstrumentEventDataCalibrationValue {
     float value = 1;
     uint32 unit = 2;

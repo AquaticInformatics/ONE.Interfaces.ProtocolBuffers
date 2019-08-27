@@ -5,6 +5,8 @@ import "enum_auditevent.proto";
 import "clarosdatetime.proto";
 import "enum_datasource.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 message AuditEvent {
     // A GUID that uniquely identifies the audit event
     string id = 1;                          

@@ -5,6 +5,8 @@ package claros.common.form;
 import "auditevent.proto";
 import "note.proto";
 
+option csharp_namespace ="Claros.Common.Form";
+
 message FormFieldText {
     string id = 1;
     string value = 2;

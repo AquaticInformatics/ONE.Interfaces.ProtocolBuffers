@@ -3,6 +3,8 @@ package claros.common.recurrence;
 
 import "enum_day.proto";
 
+option csharp_namespace ="Claros.Common.Recurrence";
+
 // Recurrence can happen every interval number of weeks on the days specified
 message PatternWeekly {
     // How many weeks between each occurance

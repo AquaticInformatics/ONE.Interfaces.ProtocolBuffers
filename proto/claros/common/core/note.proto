@@ -2,6 +2,8 @@ syntax = "proto3";
 package claros.common.core;
  
 import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.Common.Core";
  
 message Note {
     // Unique GUID that identifies the note

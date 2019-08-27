@@ -5,6 +5,8 @@ import "cell.proto";
 import "instrument_data.proto";
 import "auditevent.proto";
 
+option csharp_namespace ="Claros.Common.Form";
+
 message FormFieldData {
  
     oneof fieldDataBinding {

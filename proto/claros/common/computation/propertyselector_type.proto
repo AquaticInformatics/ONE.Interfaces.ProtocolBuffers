@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.computation;
 
+option csharp_namespace ="Claros.Common.Computation";
+
 // What attribute of the row or cell is included in the expression
 enum PropertySelectorType
 {

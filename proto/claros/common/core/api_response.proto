@@ -3,6 +3,8 @@ package claros.common.core;
 
 import "claros_content.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 // Common response object for all HTTP methods
 // GET         
 // would have content defined, errors should be null

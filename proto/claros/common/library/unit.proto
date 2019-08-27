@@ -3,8 +3,9 @@ package claros.common.library;
 
 import "clarosdatetime.proto";
 
-// Used to describe a unit
+option csharp_namespace ="Claros.Common.Library";
 
+// Used to describe a unit
 message Unit {
     // GUID for the Unit
     string Id = 1;                      

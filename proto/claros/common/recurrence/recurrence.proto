@@ -7,6 +7,8 @@ import "pattern_weekly.proto";
 import "pattern_monthly.proto";
 import "pattern_yearly.proto";
 
+option csharp_namespace ="Claros.Common.Recurrence";
+
 // Root message for recurrence pattern
 message Recurrence {
 

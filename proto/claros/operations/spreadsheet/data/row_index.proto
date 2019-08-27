@@ -2,9 +2,10 @@ syntax = "proto3";
 package claros.operations.spreadsheet;
  
 import "timewindow.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 // This is a record that is used as a "FAT" table within the Worksheet Manager service
-
 message RowIndex {
     // Int
     uint32 id = 1;                                     

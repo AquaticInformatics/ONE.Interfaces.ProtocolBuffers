@@ -1,8 +1,9 @@
 syntax = "proto3";
 package claros.common;
 
-// A list of all of the timezones as an enumeration
+option csharp_namespace ="Claros.Common";
 
+// A list of all of the timezones as an enumeration
 enum EnumTimeZone {
     TIMEZONE_UNKNOWN = 0;
     TIMEZONE_AFRICA_ABIDJAN = 1;

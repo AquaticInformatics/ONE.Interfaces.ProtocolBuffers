@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common;
 
+option csharp_namespace ="Claros.Common";
+
 enum EnumReportableQualifier {
     REPORTABLE_QUALIFIER_UNKNOWN = 0;                   
 

@@ -7,6 +7,8 @@ import "form_template_type.proto";
 import "recurrence.proto";
 import "form_layout.proto";
 
+option csharp_namespace ="Claros.Common.Form";
+
 message FormTemplate {
     // retrieval only
     string id = 1;      

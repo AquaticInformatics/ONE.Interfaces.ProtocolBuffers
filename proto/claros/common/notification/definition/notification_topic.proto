@@ -5,6 +5,8 @@ import "record_auditinfo.proto";
 import "enum_notification_category.proto";
 import "notification_topic_variable.proto";
 
+option csharp_namespace ="Claros.Common.Notification";
+
 message NotificationTopic {
     string id = 1;
     string name = 2;

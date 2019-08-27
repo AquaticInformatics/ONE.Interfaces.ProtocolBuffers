@@ -3,6 +3,8 @@ package claros.common.core;
 
 import "enum_reportable_qualifier.proto";
 
+option csharp_namespace ="Claros.Common.Core";
+
 // The reportable qualifier is a qualification on a measurement value.  This takes into account detectable ranges of instruments
 message ReportableQualifier{
  

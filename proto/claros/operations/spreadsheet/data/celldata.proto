@@ -1,10 +1,11 @@
-
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
 import "reportable_qualifier.proto";
 import "celldata_binding.proto";
 import "auditevent.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 message CellData {
    double value = 1;                                                 // The value that was entered by the user as a number

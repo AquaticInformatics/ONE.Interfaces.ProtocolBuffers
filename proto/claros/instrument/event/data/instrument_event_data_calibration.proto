@@ -3,6 +3,8 @@ package claros.instrument.instrumentevent;
 
 import "instrument_event_data_calibration_standard.proto";
 
+option csharp_namespace ="Claros.Instrument.InstrumentEvent";
+
 message InstrumentEventDataCalibration {
     string ID = 1;                      // unique identifier of the calibration.  Could be a hash.
     string userID = 2;                  // User who performed the calibration

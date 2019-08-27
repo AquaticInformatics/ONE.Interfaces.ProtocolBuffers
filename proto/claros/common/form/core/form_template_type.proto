@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.form;
 
+option csharp_namespace ="Claros.Common.Form";
+
 enum FormTemplateType {
     FORM_TEMPLATE_UNKNOWN = 0;
     FORM_TEMPLATE_PLANT = 1;

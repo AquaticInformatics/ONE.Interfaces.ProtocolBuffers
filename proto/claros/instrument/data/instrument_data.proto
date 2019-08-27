@@ -5,6 +5,8 @@ import "instrument_event_data.proto";
 import "instrument_measurement_data.proto";
 import "clarosdatetime.proto";
 
+option csharp_namespace ="Claros.Instrument";
+
 message InstrumentData {
     // Header Information
     string tenantId = 1;                                            // Tenant related to instrument

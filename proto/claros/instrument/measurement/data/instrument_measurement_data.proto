@@ -4,6 +4,8 @@ package claros.instrument.measurement;
 import "measurement.proto";
 import "instrument_event_data.proto";
 import "gis.proto";
+
+option csharp_namespace ="Claros.Instrument.Measurement";
  
 message InstrumentMeasurementData {
     string instrumentMeasurementId = 1;                     //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement

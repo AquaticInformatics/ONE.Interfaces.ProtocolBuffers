@@ -3,6 +3,8 @@ package claros.instrument.instrumentevent;
 
 import "instrument_event_data_calibration_value.proto";
 
+option csharp_namespace ="Claros.Instrument.InstrumentEvent";
+
 message InstrumentEventDataCalibrationStandard {
     InstrumentEventDataCalibrationValue knownValue = 1;                       //this is the primary value  (Concentration)
     InstrumentEventDataCalibrationValue measuredValue = 2;                    //

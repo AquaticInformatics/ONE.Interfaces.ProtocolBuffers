@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.notification;
 
+option csharp_namespace ="Claros.Common.Notification";
+
 enum EnumNotificationCategory {
     NOTIFICATION_CATEGORY_UNKNOWN = 0;
     NOTIFICATION_CATEGORY_OPERATIONS = 1;

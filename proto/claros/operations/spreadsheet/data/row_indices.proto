@@ -3,6 +3,8 @@ package claros.operations.spreadsheet;
 
 import "row_index.proto";
 
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
 message RowIndices {
     map<uint32, RowIndex> rowIndices = 1;
 }

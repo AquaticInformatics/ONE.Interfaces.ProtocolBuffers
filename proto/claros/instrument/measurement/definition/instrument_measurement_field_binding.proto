@@ -3,6 +3,8 @@ package claros.instrument.measurement;
 
 import "clarosdatetime.proto";
 
+option csharp_namespace ="Claros.Instrument.Measurement";
+
 message InstrumentMeasurementFieldBinding {
    string instrumentMeasurementId = 1;
    claros.common.core.ClarosDateTime timestamp = 2;

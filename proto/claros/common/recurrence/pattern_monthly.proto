@@ -4,6 +4,8 @@ package claros.common.recurrence;
 import "enum_day.proto";
 import "enum_ordinal.proto";
 
+option csharp_namespace ="Claros.Common.Recurrence";
+
 // Recurrence can happen on a specific day of the month every interval number of months
 // or on a specific weekday
 message PatternMonthly {

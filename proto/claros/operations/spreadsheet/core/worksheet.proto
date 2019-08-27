@@ -4,7 +4,9 @@ package claros.operations.spreadsheet;
 import "enum_worksheet.proto";
 import "worksheet_definition.proto";
 import "row.proto";
- 
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
 message Worksheet {
     // header
     EnumWorksheet enumWorksheet = 1;

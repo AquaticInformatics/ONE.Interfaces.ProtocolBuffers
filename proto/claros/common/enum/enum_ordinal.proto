@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common;
 
+option csharp_namespace ="Claros.Common";
+
 // Allows for the specifying of ordinal position
 // Used in recurrence
 enum EnumOrdinal {

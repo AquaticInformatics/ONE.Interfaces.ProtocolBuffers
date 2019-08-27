@@ -3,6 +3,8 @@ package claros.operations.spreadsheet;
 
 import "enum_worksheet.proto";
 
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
 message WorksheetView {
     EnumWorksheet enumWorksheet = 1;
     map<uint32, string> columnMasks = 2;

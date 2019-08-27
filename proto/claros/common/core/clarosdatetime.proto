@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.core;
 
+option csharp_namespace ="Claros.Common.Core";
+
 // Allow the setting of datetime via either json or ticks
 // Serving layer will typically convert ticks to json on retrieval
 message ClarosDateTime

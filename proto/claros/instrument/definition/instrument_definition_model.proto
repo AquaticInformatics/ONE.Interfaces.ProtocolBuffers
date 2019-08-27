@@ -5,6 +5,8 @@ import "enum_instrument.proto";
 import "enum_instrument_group.proto";
 import "enum_instrument_manufacturer.proto";
 
+option csharp_namespace ="Claros.Instrument";
+
 message InstrumentDefinitionModel {
     string id = 1;
     string i18NKeyName = 2;
