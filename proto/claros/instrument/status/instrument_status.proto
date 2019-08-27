@@ -1,0 +1,35 @@
+syntax = "proto3";
+package claros.instrument.Status;
+
+import "instrument_status_metadata.proto";
+import "instrument_status_prognosys.proto";
+import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.Instrument.Status";
+
+message InstrumentStatus {
+	// Collection of Errors (sc errors, ..)
+    repeated StatusMetaData errors = 1;
+ 
+ 
+    // Collection of limit violations coming from an insturment                     
+    repeated StatusMetaData limits = 2;
+ 
+ 
+    // Collection of maintenance reminders coming from an instrument  (sc reminders, ..)                 
+    repeated StatusMetaData reminders = 3;
+ 
+ 
+    // Collection of warnings coming from an instrument (sc warnings, ..)
+    repeated StatusMetaData warnings = 4;
+ 
+ 
+    // Collection of process events or operational status (calibrating, warming up, restarting)
+    repeated StatusMetaData operations = 5;
+     
+    // Collection of prognosys (tm) events coming from prognosys enabled instruments
+    StatusPrognosys prognosys = 6;
+ 
+    // The time of the observation snapshot
+    claros.common.core.ClarosDateTime statusDateTime = 7;
+}
