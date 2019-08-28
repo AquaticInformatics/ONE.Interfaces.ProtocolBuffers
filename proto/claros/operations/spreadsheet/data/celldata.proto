@@ -4,18 +4,26 @@ package claros.operations.spreadsheet;
 import "reportable_qualifier.proto";
 import "celldata_binding.proto";
 import "auditevent.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 message CellData {
-   double value = 1;                                                 // The value that was entered by the user as a number
-   string stringValue = 2;                                           // The value represented as a string
-   bool isLocked = 3;                                                // Whether the cell has been locked to prevent unautorized update of just this cell
-   uint32 unitId = 4;                                                // The unit that relates to the value
-   string justification = 5;                                         // Textual note to explain why the data was changed
-   claros.common.core.ReportableQualifier reportableQualifier = 6;   // If the data was entered as a qualified value, the qualified properties
-   repeated CellDataBinding cellDataBindings = 7;                    // Where the data came from that went into the cell
-
-   claros.common.core.AuditEvent auditEvent = 99;                    // Audit information for this cell entry
+   // The value that was entered by the user as a number
+   google.protobuf.DoubleValue value = 1;
+   // The value represented as a string
+   google.protobuf.StringValue stringValue = 2;
+   // Whether the cell has been locked to prevent unautorized update of just this cell                                          
+   bool isLocked = 3;
+   // The unit that relates to the value
+   uint32 unitId = 4;
+   // Textual note to explain why the data was changed
+   string justification = 5;
+   // If the data was entered as a qualified value, the qualified properties
+   claros.common.core.ReportableQualifier reportableQualifier = 6;
+   // Where the data came from that went into the cell
+   repeated CellDataBinding cellDataBindings = 7;
+   // Audit information for this cell entry
+   claros.common.core.AuditEvent auditEvent = 99;
 }
 
