@@ -42,4 +42,7 @@ message ApiError {
     // detailed message describing the error
     // Example: This object didn't validate properly
     string detail = 3;  
+
+    // allow error to have clarosContent
+    ClarosContent content = 4;
 }
