@@ -1,10 +1,7 @@
 syntax = "proto3";
-package claros.instrument.Status;
+package claros.instrument.status;
 
 option csharp_namespace ="Claros.Instrument.Status";
-
-syntax = "proto3";
-package claros.instrument.status;
  
 // This is the standard message type for Prognosys (tm) data
 message StatusPrognosys {

@@ -7,5 +7,5 @@ option csharp_namespace ="Claros.Instrument.Status";
  
 message StatusMetaData {
     int32 id = 1;
-    I18NKey description = 2;
+    claros.common.core.I18NKey description = 2;
 }
