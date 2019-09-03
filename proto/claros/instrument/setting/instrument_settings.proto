@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.instrument.Settings;
+package claros.instrument.settings;
 
 option csharp_namespace ="Claros.Instrument.Settings";
 

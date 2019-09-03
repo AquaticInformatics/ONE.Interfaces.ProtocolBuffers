@@ -23,10 +23,10 @@ message InstrumentData {
     // The current / predictive condition of the instrument. 
     // This is commonly thought of the "Twin" data related to an instrument. 
     // This includes Errors, Warnings, Processing Status and Prognosys data
-    repeated InstrumentStatus instrumentStatuses = 5;
+    repeated claros.instrument.status.InstrumentStatus instrumentStatuses = 5;
      
     // Describes the configuration of an instrument.  This is commonly stored in the Instrument Twin.
-    InstrumentSettings instrumentSettings = 6;
+    claros.instrument.settings.InstrumentSettings instrumentSettings = 6;
 }
 
 message InstrumentDatas {
