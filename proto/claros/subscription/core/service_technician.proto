@@ -1,0 +1,8 @@
+syntax = "proto3";
+package claros.subscription;
+
+option csharp_namespace ="Claros.Subscription";
+ 
+message ServiceTechnician {
+	// TODO:
+}

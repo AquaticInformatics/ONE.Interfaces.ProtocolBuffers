@@ -1,0 +1,17 @@
+syntax = "proto3";
+package claros.subscription;
+
+import "auditevent.proto";
+
+option csharp_namespace ="Claros.Subscription";
+ 
+message FeatureStateType {
+	// GUID unique identifier of the feature state type instance
+    string id = 1;
+
+	// name of the feature state type
+	string name = 2;
+
+	// Audit information for the feature state type
+    claros.common.core.AuditEvent auditEvent = 99;
+}

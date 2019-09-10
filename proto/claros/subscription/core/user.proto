@@ -1,0 +1,88 @@
+syntax = "proto3";
+package claros.subscription;
+
+import "auditevent.proto";
+import "clarosdatetime.proto";
+import "feature.proto";
+import "role.proto";
+import "tenant.proto";
+import "user_preference.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Subscription";
+ 
+message User {
+	// GUID unique identifier of the user instance
+    string id = 1;
+
+	// user name of the user
+	string userName = 2;
+
+	// nullable first name of the user
+	google.protobuf.StringValue firstName = 3;
+
+	// nullable last name of the user
+	google.protobuf.StringValue lastName = 4;
+
+	// nullable email of the user
+	google.protobuf.StringValue email = 5;
+
+	// is email confirmed?
+	bool isEmailConfirmed = 6;
+	
+	// nullable phone number of the user
+	google.protobuf.StringValue phoneNumber = 7;
+
+	// is phone number confirmed?
+	bool isPhoneNumberConfirmed = 8;
+
+	// nullable password hash for user
+	google.protobuf.StringValue passwordHash = 9;
+
+	// nullable security stamp hash for user
+	google.protobuf.StringValue securityStamp = 10;
+
+	// is two factor enabled?
+	bool isTwoFactorEnabled = 11;
+
+	// is lockout enabled?
+	bool isLockoutEnabled = 12;
+
+	// lockout end date datetime
+	claros.common.core.ClarosDateTime lockoutEndDate = 13;
+
+	// access failed count
+	int32 accessFailedCount = 14;
+
+	// password expiration datetime
+	claros.common.core.ClarosDateTime passwordExpiration = 15;
+
+	// invitation expiration datetime
+	claros.common.core.ClarosDateTime invitationExpiration = 16;
+
+	// is user active?
+	bool isActive = 17;
+
+	// is accepted TCs?
+	bool isAcceptedTcs = 18;
+
+	// is accepted TCs datetime
+	claros.common.core.ClarosDateTime  isAcceptedTcsDateTime = 19;
+
+	// Collection of preferences for the user
+	repeated UserPreference userPreferences = 20;
+
+	// Collection of roles assigned to a user
+	repeated Role roles = 21;
+
+	// Collection of tenants for the user
+    repeated Tenant tenants = 22;
+
+	// Collection of features assigned to a user
+    repeated Feature features = 23;
+
+	// TODO: user profiles?
+
+	// Audit information for the user
+    claros.common.core.AuditEvent auditEvent = 99;
+}

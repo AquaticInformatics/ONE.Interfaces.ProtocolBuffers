@@ -1,0 +1,27 @@
+syntax = "proto3";
+package claros.subscription;
+
+import "auditevent.proto";
+import "enum_timezone.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Subscription";
+ 
+message Tenant {
+	// GUID unique identifier of the tenant instance
+    string id = 1;
+
+	// nullable name of the tenant
+	google.protobuf.StringValue name = 2;
+
+	// nullable default culture of the tenant
+	// TODO: Is this just a string??
+	google.protobuf.StringValue culture = 3;
+
+	// default timezone of the tenant
+	// TODO: Is this the accurate enum?
+	claros.common.EnumTimeZone enumTimeZone = 4;
+
+	// Audit information for the tenant
+    claros.common.core.AuditEvent auditEvent = 99;
+}

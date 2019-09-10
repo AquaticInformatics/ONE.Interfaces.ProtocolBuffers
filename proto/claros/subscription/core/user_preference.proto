@@ -1,0 +1,25 @@
+syntax = "proto3";
+package claros.subscription;
+
+import "auditevent.proto";;
+
+option csharp_namespace ="Claros.Subscription";
+ 
+message UserPreference {
+	// GUID unique identifier of the user preference instance
+    string id = 1;
+
+	// TODO: Should we have the UserId here?
+	// User would cause an infinite loop in object
+	// User that the user preference belongs to
+	//User user = 2;
+
+	// key of the user preference
+    string key = 2;
+
+	// value of the user preference
+	string value = 3;
+
+	// Audit information for the user preference
+    claros.common.core.AuditEvent auditEvent = 99;
+}
