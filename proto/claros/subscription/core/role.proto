@@ -1,29 +1,33 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";
+import "record_auditinfo.proto";
+
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
 message Role {
+
 	// GUID unique identifier of the role instance
     string id = 1;
 
 	// I18NKey name of the role
-	string I18NKeyName = 2;
+	string i18NKeyName = 2;
 
-	// nullable I18NKey description of the role
+	// Nullable I18NKey description of the role
 	google.protobuf.StringValue description = 3;
 
 	// Typically set to a GUID to enforce uniqueness so that they I18NKeyName doesn't have to be unique. 
 	// This was put in place when we were allowing Tenants to define their own Roles.
-	// TODO: Do we need this?
 	string name = 4;
 
-	// Collection of roles assigned to this feature
-	repeated Role roles = 5;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
 
-	// Audit information for the role
-    claros.common.core.AuditEvent auditEvent = 99;
+
+message Roles
+{
+    repeated Role collection = 1;
 }

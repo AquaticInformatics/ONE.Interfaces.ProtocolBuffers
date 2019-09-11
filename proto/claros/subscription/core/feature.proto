@@ -1,30 +1,36 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";
 import "feature_state_type.proto";
 import "product_offering.proto";
+import "record_auditinfo.proto";
+
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
 message Feature {
+
 	// GUID unique identifier of the feature instance
     string id = 1;
 
 	// I18NKey name of the feature
-	string I18NKeyName = 2;
+	string i18NKeyName = 2;
 
-	// feature state type associated to feature
+	// Feature state type associated to feature
 	FeatureStateType featureStateType = 3;
-    //google.protobuf.StringValue featureStateTypeId = 3;
 
-	// nullable description of the feature
+	// Nullable description of the feature
 	google.protobuf.StringValue description = 4;
 
-	// product offering that the feature belongs to
+	// Product offering that the feature belongs to
 	ProductOffering productOffering = 5;
 
 	// Audit information for the feature
-    claros.common.core.AuditEvent auditEvent = 99;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Features
+{
+    repeated Feature collection = 1;
 }

@@ -1,72 +1,75 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";
 import "clarosdatetime.proto";
 import "feature.proto";
+import "record_auditinfo.proto";
 import "role.proto";
 import "tenant.proto";
 import "user_preference.proto";
+import "user_profile.proto";
+
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
 message User {
+
 	// GUID unique identifier of the user instance
     string id = 1;
 
-	// user name of the user
+	// User name of the user
 	string userName = 2;
 
-	// nullable first name of the user
+	// Nullable first name of the user
 	google.protobuf.StringValue firstName = 3;
 
-	// nullable last name of the user
+	// Nullable last name of the user
 	google.protobuf.StringValue lastName = 4;
 
-	// nullable email of the user
+	// Nullable email of the user
 	google.protobuf.StringValue email = 5;
 
-	// is email confirmed?
+	// Is email confirmed?
 	bool isEmailConfirmed = 6;
 	
-	// nullable phone number of the user
+	// Nullable phone number of the user
 	google.protobuf.StringValue phoneNumber = 7;
 
-	// is phone number confirmed?
+	// Is phone number confirmed?
 	bool isPhoneNumberConfirmed = 8;
 
-	// nullable password hash for user
+	// Nullable password hash for user
 	google.protobuf.StringValue passwordHash = 9;
 
-	// nullable security stamp hash for user
+	// Nullable security stamp hash for user
 	google.protobuf.StringValue securityStamp = 10;
 
-	// is two factor enabled?
+	// Is two factor enabled?
 	bool isTwoFactorEnabled = 11;
 
-	// is lockout enabled?
+	// Is lockout enabled?
 	bool isLockoutEnabled = 12;
 
-	// lockout end date datetime
+	// Lockout end date datetime
 	claros.common.core.ClarosDateTime lockoutEndDate = 13;
 
-	// access failed count
+	// Access failed count
 	int32 accessFailedCount = 14;
 
-	// password expiration datetime
+	// Password expiration datetime
 	claros.common.core.ClarosDateTime passwordExpiration = 15;
 
-	// invitation expiration datetime
+	// Invitation expiration datetime
 	claros.common.core.ClarosDateTime invitationExpiration = 16;
 
-	// is user active?
+	// Is user active?
 	bool isActive = 17;
 
-	// is accepted TCs?
+	// Is accepted TCs?
 	bool isAcceptedTcs = 18;
 
-	// is accepted TCs datetime
+	// Is accepted TCs datetime
 	claros.common.core.ClarosDateTime  isAcceptedTcsDateTime = 19;
 
 	// Collection of preferences for the user
@@ -81,8 +84,14 @@ message User {
 	// Collection of features assigned to a user
     repeated Feature features = 23;
 
-	// TODO: user profiles?
+	// Collection of user profiles for a user
+    repeated UserProfile userProfiles = 24;
 
-	// Audit information for the user
-    claros.common.core.AuditEvent auditEvent = 99;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Users
+{
+    repeated User collection = 1;
 }

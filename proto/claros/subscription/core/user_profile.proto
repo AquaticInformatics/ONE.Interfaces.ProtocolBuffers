@@ -1,24 +1,29 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";;
+import "location.proto";
+import "record_auditinfo.proto";
+
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
-// allows the storage of statically typed user preferences
-// TODO: how this is being used?
 message UserProfile {
+
 	// GUID unique identifier of the user profile instance
     string id = 1;
 
 	// nullable language code for the user profile
 	google.protobuf.StringValue languageCode = 2;
 
-	// nullable GUID current location id that the user profile belongs to
-	// TODO: Should this be a Location Type?
-    google.protobuf.StringValue currentLocationId = 3;
+	// nullable current location that the user profile belongs to
+    claros.common.core.Location currentLocation = 3;
 
-	// Audit information for the user preference
-    claros.common.core.AuditEvent auditEvent = 99;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message UserProfiles
+{
+    repeated UserProfile collection = 1;
 }

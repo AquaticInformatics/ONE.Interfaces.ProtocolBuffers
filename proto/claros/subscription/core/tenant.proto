@@ -1,27 +1,32 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";
 import "enum_timezone.proto";
+import "record_auditinfo.proto";
+
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
 message Tenant {
+
 	// GUID unique identifier of the tenant instance
     string id = 1;
 
-	// nullable name of the tenant
+	// Nullable name of the tenant
 	google.protobuf.StringValue name = 2;
 
-	// nullable default culture of the tenant
-	// TODO: Is this just a string??
+	// Nullable default culture of the tenant
 	google.protobuf.StringValue culture = 3;
 
-	// default timezone of the tenant
-	// TODO: Is this the accurate enum?
+	// Default timezone of the tenant
 	claros.common.EnumTimeZone enumTimeZone = 4;
 
-	// Audit information for the tenant
-    claros.common.core.AuditEvent auditEvent = 99;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Tenants
+{
+    repeated Tenant collection = 1;
 }

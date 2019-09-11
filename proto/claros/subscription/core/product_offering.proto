@@ -3,19 +3,26 @@ package claros.subscription;
 
 option csharp_namespace ="Claros.Subscription";
 
-import "auditevent.proto";
+import "record_auditinfo.proto";
+
 import "google/protobuf/wrappers.proto";
  
 message ProductOffering {
+
 	// GUID unique identifier of the product offering instance
     string id = 1;
 
-	// nullable name of the product offering
+	// Nullable name of the product offering
 	google.protobuf.StringValue name = 2;
 
-	// nullable description of the product offering
+	// Nullable description of the product offering
 	google.protobuf.StringValue description = 3;
 
-	// Audit information for the product offering
-    claros.common.core.AuditEvent auditEvent = 99;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ProductOfferings
+{
+    repeated ProductOffering collection = 1;
 }

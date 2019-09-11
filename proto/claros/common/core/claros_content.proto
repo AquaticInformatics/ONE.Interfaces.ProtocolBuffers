@@ -18,6 +18,20 @@ import "form_template.proto";
 import "form_index.proto";
 import "parameter.proto";
 import "unit.proto";
+import "address.proto";
+import "location.proto";
+import "location_type.proto";
+import "location_type_group.proto";
+import "feature.proto";
+import "feature_state_type.proto";
+import "permission.proto";
+import "product_offering.proto";
+import "role.proto";
+import "service_tech_tenant_request.proto";
+import "tenant.proto";
+import "user.proto";
+import "user_preference.proto";
+import "user_profile.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -27,6 +41,10 @@ message ClarosContent {
     // Provides the ability to return a wide variety of protocol buffers
     oneof content {
         // Common
+		claros.common.core.Addresses addresses = 20;
+		claros.common.core.Locations locations = 21;
+		claros.common.core.LocationTypes locationTypes = 22;
+		claros.common.core.LocationTypeGroups locationTypeGroups = 23;
         claros.common.core.Measurements measurements = 1;
         claros.common.configuration.Configuration configuration = 2;
         claros.common.library.Parameter parameter = 13;
@@ -56,6 +74,18 @@ message ClarosContent {
 
         //Claros.Common.Library
         claros.common.library.DeviceTypeResources deviceTypeResources = 16;
+
+		//Claros.Subscription
+		claros.subscription.Features features = 24;
+		claros.subscription.FeatureStateTypes featureStateTypes = 25;
+		claros.subscription.Permissions permissions = 26;
+		claros.subscription.ProductOfferings productOfferings = 27;
+		claros.subscription.Roles roles = 28;
+		claros.subscription.ServiceTechTenantRequests serviceTechTenantRequests = 29;
+		claros.subscription.Tenants tenants = 30;
+		claros.subscription.Users users = 31;
+		claros.subscription.UserPreferences userPreferences = 32;
+		claros.subscription.UserProfiles userProfiles = 33;
     }
 }
 

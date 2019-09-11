@@ -1,25 +1,30 @@
 syntax = "proto3";
 package claros.subscription;
 
-import "auditevent.proto";;
+import "record_auditinfo.proto";
 
 option csharp_namespace ="Claros.Subscription";
  
 message UserPreference {
+
 	// GUID unique identifier of the user preference instance
     string id = 1;
 
-	// TODO: Should we have the UserId here?
-	// User would cause an infinite loop in object
-	// User that the user preference belongs to
-	//User user = 2;
+	// UserId for User that the user preference belongs to
+	// Note: We cannot use User entity here as it produces exception/conflict with user.proto: File recursively imports itself 
+	string userId = 2;
 
 	// key of the user preference
-    string key = 2;
+    string key = 3;
 
 	// value of the user preference
-	string value = 3;
+	string value = 4;
 
-	// Audit information for the user preference
-    claros.common.core.AuditEvent auditEvent = 99;
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message UserPreferences
+{
+    repeated UserPreference collection = 1;
 }

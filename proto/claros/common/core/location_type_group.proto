@@ -1,0 +1,28 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "record_auditinfo.proto";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Common.Core";
+ 
+message LocationTypeGroup {
+
+	// GUID unique identifier of the location type group instance
+    string id = 1;
+
+	// Nullable I18NKey name of the location type group
+	google.protobuf.StringValue I18NKeyName = 2;
+
+	// Nullable description of the location type group
+	google.protobuf.StringValue description = 3;
+
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message LocationTypeGroups
+{
+    repeated LocationTypeGroup collection = 1;
+}
