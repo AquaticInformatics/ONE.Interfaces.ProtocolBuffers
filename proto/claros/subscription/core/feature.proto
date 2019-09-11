@@ -3,6 +3,8 @@ package claros.subscription;
 
 import "feature_state_type.proto";
 import "product_offering.proto";
+import "permission.proto";
+import "role.proto";
 import "record_auditinfo.proto";
 
 import "google/protobuf/wrappers.proto";
@@ -25,6 +27,12 @@ message Feature {
 
 	// Product offering that the feature belongs to
 	ProductOffering productOffering = 5;
+
+	// Collection of roles the feature belongs to
+	repeated Role roles = 6;
+
+	// Collection of permissions the feature belongs to
+	repeated Permission permissions = 7;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

@@ -3,6 +3,8 @@ package claros.subscription;
 
 import "enum_timezone.proto";
 import "record_auditinfo.proto";
+//import "user.proto";
+//import "product_offering.proto";
 
 import "google/protobuf/wrappers.proto";
 
@@ -21,6 +23,18 @@ message Tenant {
 
 	// Default timezone of the tenant
 	claros.common.EnumTimeZone enumTimeZone = 4;
+
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of product offerings that are available to tenant users
+	//repeated ProductOffering productOfferings = 5;
+
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of users that have access to the tenant
+	//repeated User users = 6;
+
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of service tech requests for the tenant
+	//repeated ServiceTechTenantRequest serviceTechTenantRequests = 7;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

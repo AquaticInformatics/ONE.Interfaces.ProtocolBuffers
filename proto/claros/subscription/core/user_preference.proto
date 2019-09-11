@@ -11,7 +11,7 @@ message UserPreference {
     string id = 1;
 
 	// UserId for User that the user preference belongs to
-	// Note: We cannot use User entity here as it produces exception/conflict with user.proto: File recursively imports itself 
+	// Note: We cannot use User entity here as it produces exception/conflict with user.proto: File recursively imports itself
 	string userId = 2;
 
 	// key of the user preference
