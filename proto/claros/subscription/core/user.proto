@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.subscription;
+package claros.enterprise;
 
 import "clarosdatetime.proto";
 import "feature.proto";
@@ -11,7 +11,7 @@ import "user_profile.proto";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Claros.Subscription";
+option csharp_namespace ="Claros.Enterprise";
  
 message User {
 

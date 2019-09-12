@@ -75,17 +75,17 @@ message ClarosContent {
         //Claros.Common.Library
         claros.common.library.DeviceTypeResources deviceTypeResources = 16;
 
-		//Claros.Subscription
-		claros.subscription.Features features = 24;
-		claros.subscription.FeatureStateTypes featureStateTypes = 25;
-		claros.subscription.Permissions permissions = 26;
-		claros.subscription.ProductOfferings productOfferings = 27;
-		claros.subscription.Roles roles = 28;
-		claros.subscription.ServiceTechTenantRequests serviceTechTenantRequests = 29;
-		claros.subscription.Tenants tenants = 30;
-		claros.subscription.Users users = 31;
-		claros.subscription.UserPreferences userPreferences = 32;
-		claros.subscription.UserProfiles userProfiles = 33;
+		//Claros.Enterprise
+		claros.enterprise.Features features = 24;
+		claros.enterprise.FeatureStateTypes featureStateTypes = 25;
+		claros.enterprise.Permissions permissions = 26;
+		claros.enterprise.ProductOfferings productOfferings = 27;
+		claros.enterprise.Roles roles = 28;
+		claros.enterprise.ServiceTechTenantRequests serviceTechTenantRequests = 29;
+		claros.enterprise.Tenants tenants = 30;
+		claros.enterprise.Users users = 31;
+		claros.enterprise.UserPreferences userPreferences = 32;
+		claros.enterprise.UserProfiles userProfiles = 33;
     }
 }
 

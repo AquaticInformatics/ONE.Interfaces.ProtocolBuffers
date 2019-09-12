@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.subscription;
+package claros.enterprise;
 
 import "feature_state_type.proto";
 import "product_offering.proto";
@@ -9,7 +9,7 @@ import "record_auditinfo.proto";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Claros.Subscription";
+option csharp_namespace ="Claros.Enterprise";
  
 message Feature {
 
