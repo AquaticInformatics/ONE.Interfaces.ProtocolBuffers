@@ -36,7 +36,7 @@ message Address {
     claros.common.gis.GIS geoCode = 9;
 
 	// Tenant that the address belongs to
-	claros.enterprise.Tenant tenant = 10;
+	claros.enterprise.core.Tenant tenant = 10;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

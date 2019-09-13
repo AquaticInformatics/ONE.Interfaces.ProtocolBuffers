@@ -1,9 +1,9 @@
 syntax = "proto3";
-package claros.enterprise;
+package claros.enterprise.core;
 
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Claros.Enterprise";
+option csharp_namespace ="Claros.Enterprise.Core";
  
 message UserPreference {
 
