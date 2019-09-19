@@ -61,3 +61,7 @@ message InstrumentMeasurementDefinition {
     string modifiedById = 13;
     claros.common.core.ClarosDateTime modifiedOn = 14;
 }
+
+message InstrumentMeasurementDefinitions {
+    repeated InstrumentMeasurementDefinition instrumentMeasurementDefinitions = 1;
+}

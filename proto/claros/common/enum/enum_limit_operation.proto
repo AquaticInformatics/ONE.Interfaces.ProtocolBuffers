@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.core;
+
+option csharp_namespace ="Claros.Common.Core";
+
+enum EnumLimitOperation {
+    LIMITOPERATION_UNKNOWN = 0;
+    LIMITOPERATION_GREATERTHAN = 1;
+    LIMITOPERATION_GREATERTHANOREQUAL = 2;
+    LIMITOPERATION_LESSTHAN = 3;
+    LIMITOPERATION_LESSTHANOREQUAL = 4;
+}
