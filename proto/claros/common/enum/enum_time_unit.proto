@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+ 
+option csharp_namespace ="Claros.Common.Core";
+
+// Initially we will only support minutes
+enum EnumTimeUnit 
+{
+    TIMEUNIT_UNKNOWN = 0;
+    TIMEUNIT_MINUTE = 1;
+    // TIMEUNIT_HOUR = 2;
+    // TIMEUNIT_DAY = 3;
+}

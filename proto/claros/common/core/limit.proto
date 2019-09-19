@@ -2,6 +2,8 @@ syntax = "proto3";
 package claros.common.core;
  
 import "enum_limit.proto";
+import "enum_time_unit.proto";
+import "enum_limit_operation.proto";
 import "timewindow.proto";
 
 option csharp_namespace ="Claros.Common.Core";
@@ -51,20 +53,3 @@ message ThresholdRule
     uint32 instanceCount = 3;
 }
 
-// 
-// Initially we will only support minutes
-enum EnumTimeUnit 
-{
-    TIMEUNIT_UNKNOWN = 0;
-    TIMEUNIT_MINUTE = 1;
-    // TIMEUNIT_HOUR = 2;
-    // TIMEUNIT_DAY = 3;
-}
-
-enum EnumLimitOperation {
-    LIMITOPERATION_UNKNOWN = 0;
-    LIMITOPERATION_GREATERTHAN = 1;
-    LIMITOPERATION_GREATERTHANOREQUAL = 2;
-    LIMITOPERATION_LESSTHAN = 3;
-    LIMITOPERATION_LESSTHANOREQUAL = 4;
-}
