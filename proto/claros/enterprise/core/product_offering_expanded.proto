@@ -1,0 +1,21 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+option csharp_namespace ="Claros.Enterprise.Core";
+
+import "tenant.proto";
+import "feature.proto";
+import "product_offering.proto";
+
+message ProductOfferingExpanded {
+
+	ProductOffering productOffering = 1;
+
+	// Collection of tenants that have access to the product offering
+	repeated Tenant tenants = 2;
+
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of features associated with the product offering
+	repeated Feature features = 3;
+}
+
