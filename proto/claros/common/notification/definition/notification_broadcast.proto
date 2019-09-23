@@ -1,7 +1,8 @@
 syntax = "proto3";
 package claros.common.notification;
-import "enum_azure_notification_hub_type.proto";
 
+import "enum_azure_notification_hub_type.proto";
+import "record_auditinfo.proto";
 //This will support a broad cast message to all subscribers.
 //Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
 message NotificationBroadcast {
@@ -14,3 +15,6 @@ message NotificationBroadcast {
     
 }
 
+message NotificationBroadcasts {
+    repeated NotificationBroadcast notificationBroadcasts = 1;
+}

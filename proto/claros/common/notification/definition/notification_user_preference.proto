@@ -1,6 +1,9 @@
 syntax = "proto3";
 package claros.common.notification;
 import "enum_azure_notification_hub_type.proto";
+import "record_auditinfo.proto";
+import "notification_device.proto";
+import "notification_preference.proto";
 
 //This will support a broad cast message to all subscribers.
 //Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
@@ -20,5 +23,11 @@ message  UserNotificationPreference {
     //This is the unique id from the device/app 
     string Culture =6;
     
+    claros.common.core.RecordAuditInfo recordAuditInfo = 7;
+}
+
+message NotificationPreferences
+{
+    repeated NotificationPreference notificationPreferences = 1;
 }
 
