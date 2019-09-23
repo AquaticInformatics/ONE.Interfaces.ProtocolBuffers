@@ -28,7 +28,7 @@ $commandPath = Split-Path $MyInvocation.MyCommand.Path -Parent
 # Start-Transcript $logName
 foreach($file in $files)
 {
-    $Command = "$commandPath\protoc\bin\protoc $flags $file"
+    $Command = "$commandPath\protoc\tool\protoc $flags $file"
     echo `n$Command
 
     Invoke-Expression -Command $Command
