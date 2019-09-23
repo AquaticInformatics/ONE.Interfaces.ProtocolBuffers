@@ -3,6 +3,8 @@ package claros.enterprise.core;
 
 import "record_auditinfo.proto";
 
+import "google/protobuf/field_mask.proto";
+
 option csharp_namespace ="Claros.Enterprise.Core";
  
 message FeatureStateType {
@@ -12,6 +14,8 @@ message FeatureStateType {
 
 	// Name of the feature state type
 	string name = 2;
+
+	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

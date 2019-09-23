@@ -1,10 +1,11 @@
 syntax = "proto3";
 package claros.enterprise.core;
 
-//import "feature.proto";
+import "feature.proto";
 import "record_auditinfo.proto";
 
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
 
 option csharp_namespace ="Claros.Enterprise.Core";
  
@@ -19,9 +20,10 @@ message Permission {
 	// Nullable CRUD operation
     google.protobuf.StringValue activity = 3;
 
-	//TODO: Causes Exception: File recursively imports itself:
 	// Collection of features associated with the permissions
-	//repeated Feature features = 4;
+	repeated Feature features = 4;
+
+	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

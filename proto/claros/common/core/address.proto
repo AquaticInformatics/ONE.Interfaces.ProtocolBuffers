@@ -6,6 +6,7 @@ import "record_auditinfo.proto";
 import "tenant.proto";
 
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
 
 option csharp_namespace ="Claros.Common.Core";
  
@@ -37,6 +38,8 @@ message Address {
 
 	// Tenant that the address belongs to
 	claros.enterprise.core.Tenant tenant = 10;
+
+	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;

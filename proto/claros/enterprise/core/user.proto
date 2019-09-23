@@ -41,10 +41,12 @@ message User {
 	bool isPhoneNumberConfirmed = 8;
 
 	// Nullable password hash for user
-	google.protobuf.StringValue passwordHash = 9;
+	//google.protobuf.StringValue passwordHash = 9;
+	string passwordHash = 9;
 
 	// Nullable security stamp hash for user
-	google.protobuf.StringValue securityStamp = 10;
+	//google.protobuf.StringValue securityStamp = 10;
+	string securityStamp = 10;
 
 	// Is two factor enabled?
 	bool isTwoFactorEnabled = 11;
@@ -71,7 +73,7 @@ message User {
 	bool isAcceptedTcs = 18;
 
 	// Is accepted TCs datetime
-	claros.common.core.ClarosDateTime  isAcceptedTcsDateTime = 19;
+	claros.common.core.ClarosDateTime  lastAcceptedTCsDate = 19;
 
 	// Collection of preferences for the user
 	repeated UserPreference userPreferences = 20;
@@ -92,6 +94,7 @@ message User {
 
 	// Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+
 }
 
 message Users
