@@ -1,0 +1,20 @@
+syntax = "proto3";
+package claros.common.notification;
+import "enum_azure_notification_hub_type.proto";
+
+//This will support a broad cast message to all subscribers.
+//Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
+message NotificationDevice {
+    //Who is sending the message
+    //the id will be the RegistrationId in the Azure Notification Hub
+    Guid Id =1;
+ 
+    repeated string Tags =2;
+
+    EnumAzureNotificationHubType enumAzureNotificationHubType = 3;
+
+    //This is the unique id from the device/app 
+    string DeviceId =4;
+    
+}
+
