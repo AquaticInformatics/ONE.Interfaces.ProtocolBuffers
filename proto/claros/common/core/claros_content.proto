@@ -58,7 +58,7 @@ message ClarosContent {
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 7;
  
         // Instrument Measurement
-        claros.instrument.measurement.InstrumentMeasurementDefinition instrumentMeasurementDefinition = 8;
+        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 8;
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 9;
 
         // Forms
