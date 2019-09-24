@@ -40,6 +40,9 @@ message FormIndex {
 
    // GUID id of tenant associated to form
    string tenantId = 11;
+
+   // Whether this form should be visible 
+   bool isActive = 12;
 }
 
 message FormIndices {
