@@ -1,24 +1,37 @@
 syntax = "proto3";
 package claros.instrument.measurement;
-
+ 
 import "measurement.proto";
 import "instrument_event_data.proto";
 import "gis.proto";
-
-option csharp_namespace ="Claros.Instrument.Measurement";
- 
+  
 message InstrumentMeasurementData {
-    string instrumentMeasurementId = 1;                     //This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
-    int32 channel = 2;
-    string fusionId = 3;                                    // This is optional and may be populated to
-    claros.common.core.Measurement measurement = 4;
-    InstrumentMeasurementData supportingMeasurements = 5;                
-    claros.common.gis.GIS gis = 6;
-    string measurementDataExtended = 7;
-    claros.instrument.instrumentevent.InstrumentEventData measurementEvent = 8;                   
+    // Hardare physical connector identifier
+    int32 channelNumber = 1;
+ 
+    // For SC instruments, this is the identifier of the register
+    uint32 tagNumber = 2;
+ 
+    // The common definition of a measurement
+    claros.common.core.Measurement measurement = 3;
+ 
+    // The seconday measurements related to the processing of calculating the
+    // value of the primary measurement
+    // This data could be valuable for future instrument improvements
+    repeated InstrumentMeasurementData secondaryMeasurementDatas = 4; 
+ 
+    // Geolocation from portable instruments or any device that provides geo location.            
+    claros.common.gis.GIS geolocation = 5;
+ 
+    // Bucket for any undefined data related to this instrument measurement
+    string measurementDataExtended = 6;
+ 
+    // Events related to the process of taking this measurement from handheld instruments
+    // This data could be valuable for future instrument improvements
+    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 7;
 }
 
 message InstrumentMeasurementDatas
 {
-    repeated InstrumentMeasurementData instrumentMeasurementDatas = 1;
+    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 1;
 }
