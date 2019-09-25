@@ -12,5 +12,5 @@ message NotificationTopicVariable {
 }
 
 message NotificationTopicVariables {
-    repeated NotificationTopicVariable notificationTopicVariables= 1;
+    repeated NotificationTopicVariable notificationTopicVariables = 1;
 }

@@ -1,0 +1,40 @@
+syntax = "proto3";
+package claros.common.notification;
+
+import "record_auditinfo.proto";
+import "notification_device.proto";
+import "notification_preference.proto";
+
+option csharp_namespace ="Claros.Common.Notification";
+
+//This will support a broad cast message to all subscribers.
+//Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
+message  UserNotificationPreference {
+    //Who is sending the message
+    //the id will be the RegistrationId in the Azure Notification Hub
+    string id =1;
+ 
+    //
+    string email =2;
+ 
+    //
+    repeated string pushDeviceIds = 3;
+    
+    //
+    NotificationDevices devices = 4;
+
+    //
+    NotificationPreferences preferences = 5;
+
+    //This is the unique id from the device/app 
+    string Culture =6;
+    
+    //
+    claros.common.core.RecordAuditInfo recordAuditInfo = 7;
+}
+
+message UserNotificationPreferences
+{
+    repeated UserNotificationPreference userNotificationPreferences = 1;
+}
+
