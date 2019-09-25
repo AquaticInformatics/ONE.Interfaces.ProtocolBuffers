@@ -1,7 +1,0 @@
-syntax = "proto3";
-package claros.common.notification;
-
-enum EnumAzureNotificationHubType {
-    APPLE = 0;
-    GOOGLE = 1;
-}

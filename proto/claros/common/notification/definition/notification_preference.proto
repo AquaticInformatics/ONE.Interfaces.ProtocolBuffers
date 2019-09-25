@@ -3,6 +3,8 @@ package claros.common.notification;
 
 import "record_auditinfo.proto";
 
+option csharp_namespace ="Claros.Common.Notification";
+
 //This will support a broad cast message to all subscribers.
 //Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
 message NotificationPreference {

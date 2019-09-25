@@ -1,14 +1,17 @@
 syntax = "proto3";
 package claros.common.notification;
 
-import "enum_azure_notification_hub_type.proto";
+import "enum_azure_notification_hubtype.proto";
 import "record_auditinfo.proto";
+
+option csharp_namespace ="Claros.Common.Notification";
+
 //This will support a broad cast message to all subscribers.
 //Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
 message NotificationDevice {
     //Who is sending the message
     //the id will be the RegistrationId in the Azure Notification Hub
-    Guid id =1;
+    string id =1;
  
     //tags identify which device to contact
     repeated string tags =2;
