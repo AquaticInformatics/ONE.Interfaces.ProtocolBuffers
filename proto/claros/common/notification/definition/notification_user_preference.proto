@@ -22,7 +22,7 @@ message  UserNotificationPreference {
     
     repeated NotificationDevices devices = 4;
 
-    repeated NotficationPreferences preferences = 5;
+    repeated NotificationPreferences preferences = 5;
 
     //This is the unique id from the device/app 
     string Culture =6;
