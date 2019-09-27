@@ -45,10 +45,10 @@ message ClarosContent {
     // Provides the ability to return a wide variety of protocol buffers
     oneof content {
         // Common
-		claros.common.core.Addresses addresses = 20;
-		claros.common.core.Locations locations = 21;
-		claros.common.core.LocationTypes locationTypes = 22;
-		claros.common.core.LocationTypeGroups locationTypeGroups = 23;
+		claros.common.core.Addresses addresses = 24;
+		claros.common.core.Locations locations = 25;
+		claros.common.core.LocationTypes locationTypes = 26;
+		claros.common.core.LocationTypeGroups locationTypeGroups = 27;
         claros.common.core.Measurements measurements = 1;
         claros.common.configuration.Configuration configuration = 2;
         claros.common.library.Parameter parameter = 13;
@@ -85,16 +85,16 @@ message ClarosContent {
         claros.common.library.DeviceTypeResources deviceTypeResources = 16;
 
 		//Claros.Enterprise
-		claros.enterprise.core.Features features = 24;
-		claros.enterprise.core.FeatureStateTypes featureStateTypes = 25;
-		claros.enterprise.core.Permissions permissions = 26;
-		claros.enterprise.core.ProductOfferings productOfferings = 27;
-		claros.enterprise.core.Roles roles = 28;
-		claros.enterprise.core.ServiceTechTenantRequests serviceTechTenantRequests = 29;
-		claros.enterprise.core.Tenants tenants = 30;
-		claros.enterprise.core.Users users = 31;
-		claros.enterprise.core.UserPreferences userPreferences = 32;
-		claros.enterprise.core.UserProfiles userProfiles = 33;
+		claros.enterprise.core.Features features = 28;
+		claros.enterprise.core.FeatureStateTypes featureStateTypes = 29;
+		claros.enterprise.core.Permissions permissions = 30;
+		claros.enterprise.core.ProductOfferings productOfferings = 31;
+		claros.enterprise.core.Roles roles = 32;
+		claros.enterprise.core.ServiceTechTenantRequests serviceTechTenantRequests = 33;
+		claros.enterprise.core.Tenants tenants = 34;
+		claros.enterprise.core.Users users = 35;
+		claros.enterprise.core.UserPreferences userPreferences = 36;
+		claros.enterprise.core.UserProfiles userProfiles = 37;
     }
 }
 
