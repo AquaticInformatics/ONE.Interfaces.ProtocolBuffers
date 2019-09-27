@@ -11,6 +11,10 @@ import "worksheet_definition.proto";
 import "instrument_measurement_definition.proto";
 import "instrument_measurement_data.proto";
 import "notification_template.proto";
+import "notification_contact.proto";
+import "notification_device.proto";
+import "notification_preference.proto";
+import "notification_user_preference.proto";
 import "notification_topic.proto";
 import "device_type_resource.proto";
 import "form.proto";
@@ -71,6 +75,11 @@ message ClarosContent {
         // Notifications
         claros.common.notification.NotificationTemplates notificationTemplates = 10;
         claros.common.notification.NotificationTopics notificationTopics = 15;
+		claros.common.notification.NotificationContacts notificationContacts = 20;
+		claros.common.notification.NotificationDevices notificationDevices = 21;
+		claros.common.notification.NotificationPreferences notificationPreferences = 22;
+		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 23;
+
 
         //Claros.Common.Library
         claros.common.library.DeviceTypeResources deviceTypeResources = 16;

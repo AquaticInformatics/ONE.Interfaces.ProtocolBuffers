@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.notification;
+
+option csharp_namespace ="Claros.Common.Notification";
+
+message NotificationContact {
+    string ContactType = 1;
+    string Value = 2;
+}
+
+message NotificationContacts {
+    repeated NotificationContact notificationContacts = 1;
+}

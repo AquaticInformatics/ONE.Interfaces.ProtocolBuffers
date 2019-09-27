@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+import "cell.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
+message Cells {
+    map<uint32, Cell> cells = 1;
+}

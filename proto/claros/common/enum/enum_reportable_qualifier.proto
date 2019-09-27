@@ -22,5 +22,11 @@ enum EnumReportableQualifier {
     REPORTABLE_QUALIFIER_LESSTHAN = 5;                  
     
     // Too many colonies were present (TNTC); the numeric value represents the filtration volume.
-    REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;     
+    REPORTABLE_QUALIFIER_TOO_NUMEROUS_TO_COUNT = 6;  
+    
+    // Present
+    REPORTABLE_QUALIFIER_PRESENT = 7;
+
+    // Absent
+    REPORTABLE_QUALIFIER_ABSENT = 8;
 }
