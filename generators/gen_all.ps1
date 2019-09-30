@@ -23,11 +23,12 @@ $flags
 
 $logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/","_").Replace(" ", "-")+".log"
 
+$commandPath = Split-Path $MyInvocation.MyCommand.Path -Parent
+
 # Start-Transcript $logName
 foreach($file in $files)
 {
-#    $Command = "protogen --csharp_out=./out/ $protoDirsCommand $file"
-    $Command = "protoc $flags $file"
+    $Command = "$commandPath\protoc\bin\protoc $flags $file"
     echo `n$Command
 
     Invoke-Expression -Command $Command
