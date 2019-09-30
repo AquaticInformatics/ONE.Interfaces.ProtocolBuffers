@@ -4,6 +4,7 @@ package claros.common.configuration;
 import "clarosdatetime.proto";
 import "enum_entity.proto";
 import "rights.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Configuration";
  
@@ -18,7 +19,7 @@ message Configuration {
     string filterById = 8;
     string tenantId = 9;
     string ownerId = 10;
-    bool public = 11;
+    google.protobuf.BoolValue isPublic = 11;
     uint32 version = 12;
     map<string, Rights> privilege = 13;
 
