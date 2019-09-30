@@ -20,11 +20,11 @@ message  UserNotificationPreference {
     //
     repeated string pushDeviceIds = 3;
     
-    repeated NotificationDevices devices = 4;
+    NotificationDevices devices = 4;
 
-    repeated NotificationPreferences preferences = 5;
+    NotificationPreferences preferences = 5;
 
-    repeated NotificationContacts contacts = 8;
+    NotificationContacts contacts = 8;
 
     //This is the unique id from the device/app 
     string Culture =6;
