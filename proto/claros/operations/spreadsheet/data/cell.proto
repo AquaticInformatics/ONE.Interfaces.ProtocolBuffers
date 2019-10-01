@@ -1,15 +1,26 @@
-
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
 import "note.proto";
 import "celldata.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 // A Cell is the traditional intersection between a column and a row in a worksheet
 message Cell {
-    uint32 columnId = 1;                            // The column id related to the cell
-    repeated claros.common.core.Note notes = 2;     // A collection of notes that are related to a cell.
-    repeated CellData cellData = 3;                 // The current and past data that has been entered into a cell
+	// The column number related to the cell
+    uint32 columnNumber = 1;
+
+	// A collection of notes that are related to a cell.
+    repeated claros.common.core.Note notes = 2;
+
+	// The current and past data that has been entered into a cell
+    repeated CellData cellData = 3;
+
+	google.protobuf.StringValue computationBindingId = 4;
+
+	// reference id to the digital twin. 
+	// all columns will create a unique GUID that will be shared with the digital twin.
+	string columnId = 5;
 }
