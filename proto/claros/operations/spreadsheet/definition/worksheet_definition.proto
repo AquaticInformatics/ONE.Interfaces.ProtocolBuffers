@@ -3,6 +3,7 @@ package claros.operations.spreadsheet;
  
 import "column.proto";
 import "auditevent.proto";
+import "enum_worksheet.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
  
