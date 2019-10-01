@@ -11,7 +11,7 @@ message Worksheet {
     // header
     EnumWorksheet enumWorksheet = 1;
     // definition
-    repeated WorksheetDefinition worksheetDefinitions = 2;
+    WorksheetDefinition worksheetDefinition = 2;
     // data
     repeated Row rows = 3;
 }

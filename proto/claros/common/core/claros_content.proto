@@ -38,8 +38,8 @@ message ClarosContent {
         claros.common.configuration.Configuration configuration = 2;
         claros.common.library.Parameter parameter = 13;
         claros.common.library.Unit unit = 14;
-		claros.common.core.LimitConfigurations limitConfigurations = 27;
-		claros.common.core.Timezones timezones = 28;
+		claros.common.core.LimitConfigurations limitConfigurations = 26;
+		claros.common.core.Timezones timezones = 27;
 
 		// Claros.Common.Computation
 		claros.common.computation.Computations computation = 25;

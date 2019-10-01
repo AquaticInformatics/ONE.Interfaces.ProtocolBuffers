@@ -25,3 +25,7 @@ message Computation
 	// Audit information for the Computation
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
+
+message Computations {
+    repeated Computation computations = 1;
+}
