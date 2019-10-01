@@ -33,5 +33,5 @@ message InstrumentMeasurementData {
 
 message InstrumentMeasurementDatas
 {
-    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 1;
+    repeated InstrumentMeasurementData instrumentMeasurementDatas = 1;
 }

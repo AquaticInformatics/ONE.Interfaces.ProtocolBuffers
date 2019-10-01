@@ -25,6 +25,7 @@ import "device_type_resource.proto";
 import "parameter.proto";
 import "unit.proto";
 import "timezones.proto";
+import "variable.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -40,6 +41,7 @@ message ClarosContent {
         claros.common.library.Unit unit = 14;
 		claros.common.core.LimitConfigurations limitConfigurations = 26;
 		claros.common.core.Timezones timezones = 27;
+		claros.common.computation.Variables variables = 28;
 
 		// Claros.Common.Computation
 		claros.common.computation.Computations computation = 25;
