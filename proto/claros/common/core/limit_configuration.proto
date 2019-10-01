@@ -23,3 +23,7 @@ message LimitConfiguration
     // if active on the device or not
     bool isActive = 5;
 }
+
+message LimitConfigurations {
+    repeated LimitConfiguration limitConfigurations = 1;
+}
