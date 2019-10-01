@@ -19,13 +19,16 @@ message Measurement {
     string parameterGuid = 3;           
 
     // The unit related to the measurement as an integer
-    int32 unitId = 4;                   
+    uint32 unitId = 4;                   
 
     // The unit related to the measurement as a GUID
     string unitGuid = 5;                
 
-    // the value of the measurement ????? should this be decimal?
-    float value = 6;                
+    // the value of the measurement
+    double value = 6;     
+	
+	// significant digit precision of the value
+    uint32 precision = 7;  
 }
 
 message Measurements {
