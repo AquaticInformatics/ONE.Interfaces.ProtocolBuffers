@@ -26,3 +26,7 @@ message Configuration {
     // allow for comparing configurations on the name property without having to parse the configurationData object
     string name = 14;
 }
+
+message Configurations {
+    repeated Configuration configurations = 1;
+}
