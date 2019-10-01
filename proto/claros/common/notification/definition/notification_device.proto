@@ -26,6 +26,6 @@ message NotificationDevice {
 }
 
 message NotificationDevices {
-    repeated NotificationDevices notificationDevices = 1;
+    repeated NotificationDevice notificationDevices = 1;
 }
 

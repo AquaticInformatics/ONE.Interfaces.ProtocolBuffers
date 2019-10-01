@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common;
+
+option csharp_namespace ="Claros.Common";
+ 
+enum EnumComputationUsage {
+    UNKNOWN = 0;
+    GLOBAL = 1;
+    CUSTOMER = 2;
+}
