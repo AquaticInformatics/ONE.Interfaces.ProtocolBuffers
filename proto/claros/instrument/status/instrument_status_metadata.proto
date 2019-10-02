@@ -1,11 +1,11 @@
 syntax = "proto3";
 package claros.instrument.status;
 
-import "i18nkey.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="Claros.Instrument.Status";
  
 message StatusMetaData {
     int32 id = 1;
-    claros.common.core.I18NKey description = 2;
+    claros.common.core.I18NKeyTextReference description = 2;
 }

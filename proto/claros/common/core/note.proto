@@ -18,3 +18,7 @@ message Note {
     // The content of the note
     string text = 6;                
 }
+
+message Notes {
+    repeated Note items = 1;
+}

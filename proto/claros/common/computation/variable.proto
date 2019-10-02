@@ -1,24 +1,29 @@
 syntax = "proto3";
 package claros.common.computation;
-
-import "computation_cursor_type.proto";
-import "propertyselector_type.proto";
-
+  
+import "google/protobuf/wrappers.proto";
+  
 option csharp_namespace ="Claros.Common.Computation";
-
+  
 message Variable
 {
-    string i18nKey = 1;                         // Use for translations of a global computation
-    string name = 2;                            // Tenant entered name
-    string description = 3;                     // Tenant entered description
-    string quantityTypeId = 4;                  // FK to QuantityType
-    ComputationCursorType cursorType = 5;       // References adjacent rows
-    uint32 cursorAbsolute = 6;                  // ??? is this meant to be relative???
-    PropertySelectorType propertySelector = 7;  // What attribute of the cell or row??
-    uint32 suggestedParameterId = 8;
-    uint32 suggestedUnitId = 9;    
-    oneof binding {
-        uint32 columnId = 10;
-        uint32 formFieldId = 11;
-    }
+	// Use for translations of a global computation
+    string i18nKey = 1;
+
+	// Tenant entered name
+    string name = 2;
+
+	// Tenant entered description
+    string description = 3;
+
+	// used for web client to suggest likely parameters
+    google.protobuf.UInt32Value suggestedParameterId = 4;
+
+	// used as the value for the variable when the computation is executed
+    google.protobuf.DoubleValue value = 5;
+}
+
+message Variables
+{
+    repeated Variable items = 1;
 }

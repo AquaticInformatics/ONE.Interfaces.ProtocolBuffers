@@ -10,19 +10,19 @@ option csharp_namespace ="Claros.Common.Notification";
 message NotificationPreference {
     //Who is sending the message
     //the id will be the RegistrationId in the Azure Notification Hub
-    string notificationTopic =1;
+    string notificationTopic = 1;
  
-    string communicationChannel =2;
+    string communicationChannel = 2;
 
     bool isAlert = 3;
 
     //This is the unique id from the device/app 
-    bool enabled =4;
+    bool enabled = 4 ;
     
-    claros.common.core.RecordAuditInfo recordAuditInfo = 5;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message NotificationPreferences
 {
-    repeated NotificationPreference notificationPreferences = 1;
+    repeated NotificationPreference items = 1;
 }

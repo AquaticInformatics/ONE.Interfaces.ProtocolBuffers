@@ -6,5 +6,5 @@ option csharp_namespace ="Claros.Common.Core";
 message Timezones{
  
     // dictionary of regions and timezones
-    map<string, string> timezones = 1;
+    map<string, string> items = 1;
 }

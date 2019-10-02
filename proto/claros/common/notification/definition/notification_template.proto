@@ -26,9 +26,9 @@ message NotificationTemplate {
     //delivery method email and push
     EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 6;
     
-    claros.common.core.RecordAuditInfo recordAuditInfo = 7;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message NotificationTemplates {
-    repeated NotificationTemplate notificationTemplates = 1;
+    repeated NotificationTemplate items = 1;
 }

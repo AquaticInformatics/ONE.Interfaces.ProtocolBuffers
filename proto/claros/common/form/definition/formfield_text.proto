@@ -13,3 +13,8 @@ message FormFieldText {
     claros.common.core.Note note = 3;
     claros.common.core.AuditEvent auditEvent = 4;
 }
+
+message FormFieldTexts
+{
+    repeated FormFieldText items = 1;
+}

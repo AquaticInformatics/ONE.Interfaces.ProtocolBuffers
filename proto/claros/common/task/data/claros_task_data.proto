@@ -5,7 +5,7 @@ import "binding_instrument_maintenance.proto";
 
 option csharp_namespace ="Claros.Common.Task";
  
-message TaskData {
+message ClarosTaskData {
     
     oneof binding
     {
