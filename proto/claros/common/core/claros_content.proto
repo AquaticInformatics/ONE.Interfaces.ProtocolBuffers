@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.common.core;
 
-import "cell.proto";
+import "cells.proto";
 import "configuration.proto";
 import "computation.proto";
 import "form.proto";
@@ -33,6 +33,8 @@ option csharp_namespace ="Claros.Common.Core";
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
+	// NOTE: This message type is always volatile - updates can be made as required
+	//       Data should never be stored via this type. This message type is for transport only
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -49,33 +51,31 @@ message ClarosContent {
 		// common.library
         claros.common.library.DeviceTypeResources deviceTypeResources = 7;
 		claros.common.library.Parameters parameters = 8;
-        claros.common.library.Unit unit = 9;
+        claros.common.library.Units units = 9;
  
         // operations
         claros.operations.spreadsheet.Rows rows = 10;
-        claros.operations.spreadsheet.Cell cell = 11;
+        claros.operations.spreadsheet.Cells cells = 11;
         claros.operations.spreadsheet.RowIndices rowIndices = 12;
         claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 13;
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 14;
  
         // instrument
-        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 16;
-        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 17;
+        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 15;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 16;
 
         // forms
-        claros.common.form.Form form = 18;
-        claros.common.form.FormTemplate formTemplate = 19;
-        claros.common.form.Forms forms = 20;
-        claros.common.form.FormTemplates formTemplates = 21;
-        claros.common.form.FormIndices formIndices = 22;
+        claros.common.form.Forms forms = 17;
+        claros.common.form.FormTemplates formTemplates = 18;
+        claros.common.form.FormIndices formIndices = 19;
         
         // notifications
-        claros.common.notification.NotificationTemplates notificationTemplates = 23;
-        claros.common.notification.NotificationTopics notificationTopics = 24;
-		claros.common.notification.NotificationContacts notificationContacts = 25;
-		claros.common.notification.NotificationDevices notificationDevices = 26;
-		claros.common.notification.NotificationPreferences notificationPreferences = 27;
-		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 28;
+        claros.common.notification.NotificationTemplates notificationTemplates = 20;
+        claros.common.notification.NotificationTopics notificationTopics = 21;
+		claros.common.notification.NotificationContacts notificationContacts = 22;
+		claros.common.notification.NotificationDevices notificationDevices = 23;
+		claros.common.notification.NotificationPreferences notificationPreferences = 24;
+		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 25;
     }
 }
 

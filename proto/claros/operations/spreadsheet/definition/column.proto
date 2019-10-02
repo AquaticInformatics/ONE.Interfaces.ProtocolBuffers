@@ -44,7 +44,7 @@ message Column
         claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           
 
         // Column comes as a result of a computation
-        claros.common.computation.ComputationBinding computationBinding = 11;  
+        ComputationBinding computationBinding = 11;  
     }
 
     // This determines how qualifers are interpreted for this column
