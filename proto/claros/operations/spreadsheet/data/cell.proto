@@ -16,7 +16,7 @@ message Cell {
     repeated claros.common.core.Note notes = 2;
 
 	// The current and past data that has been entered into a cell
-    repeated CellData cellData = 3;
+    repeated CellData cellDatas = 3;
 
 	google.protobuf.StringValue computationBindingId = 4;
 

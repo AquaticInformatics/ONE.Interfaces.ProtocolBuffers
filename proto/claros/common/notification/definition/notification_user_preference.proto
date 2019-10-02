@@ -15,10 +15,8 @@ message  UserNotificationPreference {
     //the id will be the RegistrationId in the Azure Notification Hub
     string id =1;
  
-    //
     string email =2;
  
-    //
     repeated string pushDeviceIds = 3;
     
     NotificationDevices devices = 4;
@@ -30,12 +28,11 @@ message  UserNotificationPreference {
     //This is the unique id from the device/app 
     string Culture =6;
     
-    //
-    claros.common.core.RecordAuditInfo recordAuditInfo = 7;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message UserNotificationPreferences
 {
-    repeated UserNotificationPreference userNotificationPreferences = 1;
+    repeated UserNotificationPreference items = 1;
 }
 

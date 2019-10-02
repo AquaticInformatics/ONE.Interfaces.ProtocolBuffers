@@ -34,49 +34,48 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
     oneof content {
-        // Common
-        claros.common.core.Measurements measurements = 1;
-        claros.common.configuration.Configuration configuration = 2;
-        claros.common.library.Parameter parameter = 13;
-        claros.common.library.Unit unit = 14;
-		claros.common.core.LimitConfigurations limitConfigurations = 26;
-		claros.common.core.Timezones timezones = 27;
-		claros.common.computation.Variables variables = 28;
+        // common.core
+		claros.common.core.LimitConfigurations limitConfigurations = 1;
+        claros.common.core.Measurements measurements = 2;
+		claros.common.core.Timezones timezones = 3;
 
-		// Claros.Common.Computation
-		claros.common.computation.Computations computation = 25;
+		// common.computation
+		claros.common.computation.Computations computation = 4;
+		claros.common.computation.Variables variables = 5;
 
-		// Claros.Common.configuration
-		claros.common.configuration.Configurations configurations = 24;
+		// claros.common.configuration
+		claros.common.configuration.Configurations configurations = 6;
 
-		//Claros.Common.Library
-        claros.common.library.DeviceTypeResources deviceTypeResources = 16;
+		// common.library
+        claros.common.library.DeviceTypeResources deviceTypeResources = 7;
+		claros.common.library.Parameters parameters = 8;
+        claros.common.library.Unit unit = 9;
  
-        // Operations
-        claros.operations.spreadsheet.Rows rows = 3;
-        claros.operations.spreadsheet.Cell cell = 4;
-        claros.operations.spreadsheet.RowIndices rowIndices = 5;
-        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 6;
-        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 7;
+        // operations
+        claros.operations.spreadsheet.Rows rows = 10;
+        claros.operations.spreadsheet.Cell cell = 11;
+        claros.operations.spreadsheet.RowIndices rowIndices = 12;
+        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 13;
+        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 14;
  
-        // Instrument Measurement
-        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 8;
-        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 9;
+        // instrument
+        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 16;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 17;
 
-        // Forms
-        claros.common.form.Form form = 11;
-        claros.common.form.FormTemplate formTemplate = 12;
-        claros.common.form.Forms forms = 17;
-        claros.common.form.FormTemplates formTemplates = 18;
-        claros.common.form.FormIndices formIndices = 19;
+        // forms
+        claros.common.form.Form form = 18;
+        claros.common.form.FormTemplate formTemplate = 19;
+        claros.common.form.Forms forms = 20;
+        claros.common.form.FormTemplates formTemplates = 21;
+        claros.common.form.FormIndices formIndices = 22;
         
-        // Notifications
-        claros.common.notification.NotificationTemplates notificationTemplates = 10;
-        claros.common.notification.NotificationTopics notificationTopics = 15;
-		claros.common.notification.NotificationContacts notificationContacts = 20;
-		claros.common.notification.NotificationDevices notificationDevices = 21;
-		claros.common.notification.NotificationPreferences notificationPreferences = 22;
-		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 23;
+        // notifications
+        claros.common.notification.NotificationTemplates notificationTemplates = 23;
+        claros.common.notification.NotificationTopics notificationTopics = 24;
+		claros.common.notification.NotificationContacts notificationContacts = 25;
+		claros.common.notification.NotificationDevices notificationDevices = 26;
+		claros.common.notification.NotificationPreferences notificationPreferences = 27;
+		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 28;
     }
 }
 

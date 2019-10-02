@@ -6,5 +6,5 @@ import "row_index.proto";
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 message RowIndices {
-    map<uint32, RowIndex> rowIndices = 1;
+    map<uint32, RowIndex> items = 1;
 }

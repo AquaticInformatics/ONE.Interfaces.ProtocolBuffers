@@ -20,5 +20,5 @@ message NotificationBroadcast {
 }
 
 message NotificationBroadcasts {
-    repeated NotificationBroadcast notificationBroadcasts = 1;
+    repeated NotificationBroadcast items = 1;
 }

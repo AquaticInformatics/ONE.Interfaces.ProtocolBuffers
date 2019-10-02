@@ -4,7 +4,7 @@ package claros.common.core;
 option csharp_namespace ="Claros.Common.Core";
 
 // Defines the properties that make up an i18nKey
-message I18NKey {
+message I18NKeyTextReference {
      
     // To be specified by the instrument. For example: "common", "param", "unit", "sensor"
     string i18nDatabaseName = 1;

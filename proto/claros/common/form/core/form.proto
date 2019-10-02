@@ -34,7 +34,7 @@ message Form {
     repeated FormField adhocFormFields = 7; 
 
     // Notes added to the form by the user, similar to observations in Collect
-    repeated claros.common.core.Note notes = 8;
+    claros.common.core.Notes notes = 8;
     
     // GUID id of tenant associated to form
     string tenantId = 11;
@@ -47,5 +47,5 @@ message Form {
 }
 
 message Forms {
-    repeated Form forms = 1;
+    repeated Form items = 1;
 }

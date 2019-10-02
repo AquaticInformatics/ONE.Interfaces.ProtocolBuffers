@@ -6,5 +6,5 @@ import "rights.proto";
 option csharp_namespace ="Claros.Common.Configuration";
 
 message Privileges {
-    map<string, Rights> privilege = 1;
+    map<string, Rights> items = 1;
 }

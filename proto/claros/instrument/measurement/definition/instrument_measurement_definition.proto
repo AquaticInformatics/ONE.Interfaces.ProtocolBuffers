@@ -1,10 +1,10 @@
 syntax = "proto3";
 package claros.instrument.measurement;
 
-import "clarosdatetime.proto";
 import "milliamp_binding.proto";
 import "scsensor_binding.proto";
 import "limit.proto";
+import "record_auditinfo.proto";
 
 option csharp_namespace ="Claros.Instrument.Measurement";
  
@@ -55,13 +55,10 @@ message InstrumentMeasurementDefinition {
     // A collection of limits associated to the instrument measurements
     repeated claros.common.core.Limit limits = 10;      
 
-    // Record Audit Fields
-    string createdById = 11;
-    claros.common.core.ClarosDateTime createdOn = 12;
-    string modifiedById = 13;
-    claros.common.core.ClarosDateTime modifiedOn = 14;
+	// Audit information for the InstrumentMeasurementDefinition
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message InstrumentMeasurementDefinitions {
-    repeated InstrumentMeasurementDefinition instrumentMeasurementDefinitions = 1;
+    repeated InstrumentMeasurementDefinition items = 1;
 }

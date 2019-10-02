@@ -32,5 +32,5 @@ message Measurement {
 }
 
 message Measurements {
-    repeated Measurement measurements = 1;
+    repeated Measurement items = 1;
 }

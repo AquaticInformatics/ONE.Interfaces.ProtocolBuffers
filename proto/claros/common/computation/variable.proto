@@ -25,5 +25,5 @@ message Variable
 
 message Variables
 {
-    repeated Variable variables = 1;
+    repeated Variable items = 1;
 }

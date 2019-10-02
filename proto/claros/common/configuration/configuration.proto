@@ -21,12 +21,12 @@ message Configuration {
     string ownerId = 10;
     google.protobuf.BoolValue isPublic = 11;
     uint32 version = 12;
-    map<string, Rights> privilege = 13;
+    map<string, Rights> privileges = 13;
 
     // allow for comparing configurations on the name property without having to parse the configurationData object
     string name = 14;
 }
 
 message Configurations {
-    repeated Configuration configurations = 1;
+    repeated Configuration items = 1;
 }

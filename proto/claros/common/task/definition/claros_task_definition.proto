@@ -2,13 +2,13 @@ syntax = "proto3";
 package claros.common.task;
  
 import "binding_instrument_maintenance.proto";
-import "task_definition_source.proto";
+import "claros_task_definition_source.proto";
 
 option csharp_namespace ="Claros.Common.Task";
  
-message TaskDefinition {
+message ClarosTaskDefinition {
     // What is the source of the Task?
-    repeated TaskDefinitionSource taskSource = 1;
+    repeated ClarosTaskDefinitionSource taskSource = 1;
     
     /*
     string i18nKey

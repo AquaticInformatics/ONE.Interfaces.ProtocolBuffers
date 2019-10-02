@@ -13,10 +13,12 @@ message WorksheetDefinition {
 
     repeated Column columns = 2;
 
+	string twinId = 3;
+
 	// Audit Record of who created the worksheet definition
     repeated claros.common.core.AuditEvent auditEvent = 99;
 }
 
 message WorksheetDefinitions {
-    repeated WorksheetDefinition worksheetDefinitions = 1;
+    repeated WorksheetDefinition items = 1;
 }

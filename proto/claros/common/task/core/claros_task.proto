@@ -1,13 +1,13 @@
 syntax = "proto3";
 package claros.common.task;
  
-import "task_definition.proto";
-import "task_data.proto";
+import "claros_task_definition.proto";
+import "claros_task_data.proto";
 import "auditevent.proto";
 
 option csharp_namespace ="Claros.Common.Task";
 
-message Task {
+message ClarosTask {
     // header
     string id = 1;                              // GUID
     string name = 2;                            // User Defined Name for the Task
@@ -21,10 +21,10 @@ message Task {
     string instrumentId = 7; 
 
     // definition
-    TaskDefinition taskDefinition = 8;          // Definition of the Task
+    ClarosTaskDefinition taskDefinition = 8;          // Definition of the Task
     
     // data
-    TaskData taskdata = 9;                      // Data Stored related to the Task
+    ClarosTaskData taskdata = 9;                      // Data Stored related to the Task
     claros.common.core.AuditEvent auditEvent = 10;    // Audit Events related to to the Task
 
 }
