@@ -34,5 +34,5 @@ message LocationType {
 
 message LocationTypes
 {
-    repeated LocationType collection = 1;
+    repeated LocationType items = 1;
 }

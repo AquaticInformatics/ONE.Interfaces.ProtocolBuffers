@@ -47,5 +47,5 @@ message Address {
 
 message Addresses
 {
-    repeated Address collection = 1;
+    repeated Address items = 1;
 }

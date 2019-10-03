@@ -99,5 +99,5 @@ message User {
 
 message Users
 {
-    repeated User collection = 1;
+    repeated User items = 1;
 }

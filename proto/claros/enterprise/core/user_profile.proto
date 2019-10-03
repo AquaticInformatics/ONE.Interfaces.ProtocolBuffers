@@ -27,5 +27,5 @@ message UserProfile {
 
 message UserProfiles
 {
-    repeated UserProfile collection = 1;
+    repeated UserProfile items = 1;
 }

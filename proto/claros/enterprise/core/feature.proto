@@ -44,5 +44,5 @@ message Feature {
 
 message Features
 {
-    repeated Feature collection = 1;
+    repeated Feature items = 1;
 }

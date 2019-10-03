@@ -45,5 +45,5 @@ message Location {
 
 message Locations
 {
-    repeated Location collection = 1;
+    repeated Location items = 1;
 }

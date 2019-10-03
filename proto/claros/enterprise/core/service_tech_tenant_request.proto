@@ -37,5 +37,5 @@ message ServiceTechTenantRequest {
 
 message ServiceTechTenantRequests
 {
-    repeated ServiceTechTenantRequest collection = 1;
+    repeated ServiceTechTenantRequest items = 1;
 }

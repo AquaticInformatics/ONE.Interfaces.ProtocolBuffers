@@ -27,5 +27,5 @@ message LocationTypeGroup {
 
 message LocationTypeGroups
 {
-    repeated LocationTypeGroup collection = 1;
+    repeated LocationTypeGroup items = 1;
 }

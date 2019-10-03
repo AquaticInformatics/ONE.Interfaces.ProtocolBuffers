@@ -40,5 +40,5 @@ message Role {
 
 message Roles
 {
-    repeated Role collection = 1;
+    repeated Role items = 1;
 }

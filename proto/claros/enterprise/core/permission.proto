@@ -31,5 +31,5 @@ message Permission {
 
 message Permissions
 {
-    repeated Permission collection = 1;
+    repeated Permission items = 1;
 }

@@ -23,5 +23,5 @@ message FeatureStateType {
 
 message FeatureStateTypes
 {
-    repeated FeatureStateType collection = 1;
+    repeated FeatureStateType items = 1;
 }

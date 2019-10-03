@@ -29,5 +29,5 @@ message UserPreference {
 
 message UserPreferences
 {
-    repeated UserPreference collection = 1;
+    repeated UserPreference items = 1;
 }

@@ -26,6 +26,20 @@ import "parameter.proto";
 import "unit.proto";
 import "timezones.proto";
 import "variable.proto";
+import "address.proto";
+import "location.proto";
+import "location_type.proto";
+import "location_type_group.proto";
+import "feature.proto";
+import "feature_state_type.proto";
+import "permission.proto";
+import "product_offering.proto";
+import "role.proto";
+import "service_tech_tenant_request.proto";
+import "tenant.proto";
+import "user.proto";
+import "user_preference.proto";
+import "user_profile.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -40,42 +54,58 @@ message ClarosContent {
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
         claros.common.core.Measurements measurements = 2;
 		claros.common.core.Timezones timezones = 3;
+		claros.common.core.Addresses addresses = 4;
+		claros.common.core.Locations locations = 5;
+		claros.common.core.LocationTypes locationTypes = 6;
+		claros.common.core.LocationTypeGroups locationTypeGroups = 7;
 
 		// common.computation
-		claros.common.computation.Computations computation = 4;
-		claros.common.computation.Variables variables = 5;
+		claros.common.computation.Computations computation = 8;
+		claros.common.computation.Variables variables = 9;
 
 		// claros.common.configuration
-		claros.common.configuration.Configurations configurations = 6;
+		claros.common.configuration.Configurations configurations = 10;
 
 		// common.library
-        claros.common.library.DeviceTypeResources deviceTypeResources = 7;
-		claros.common.library.Parameters parameters = 8;
-        claros.common.library.Units units = 9;
+        claros.common.library.DeviceTypeResources deviceTypeResources = 11;
+		claros.common.library.Parameters parameters = 12;
+        claros.common.library.Units units = 13;
  
         // operations
-        claros.operations.spreadsheet.Rows rows = 10;
-        claros.operations.spreadsheet.Cells cells = 11;
-        claros.operations.spreadsheet.RowIndices rowIndices = 12;
-        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 13;
-        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 14;
+        claros.operations.spreadsheet.Rows rows = 14;
+        claros.operations.spreadsheet.Cells cells = 15;
+        claros.operations.spreadsheet.RowIndices rowIndices = 16;
+        claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 17;
+        claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 18;
  
         // instrument
-        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 15;
-        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 16;
+        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 19;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 20;
 
         // forms
-        claros.common.form.Forms forms = 17;
-        claros.common.form.FormTemplates formTemplates = 18;
-        claros.common.form.FormIndices formIndices = 19;
+        claros.common.form.Forms forms = 21;
+        claros.common.form.FormTemplates formTemplates = 22;
+        claros.common.form.FormIndices formIndices = 23;
         
         // notifications
-        claros.common.notification.NotificationTemplates notificationTemplates = 20;
-        claros.common.notification.NotificationTopics notificationTopics = 21;
-		claros.common.notification.NotificationContacts notificationContacts = 22;
-		claros.common.notification.NotificationDevices notificationDevices = 23;
-		claros.common.notification.NotificationPreferences notificationPreferences = 24;
-		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 25;
+        claros.common.notification.NotificationTemplates notificationTemplates = 24;
+        claros.common.notification.NotificationTopics notificationTopics = 25;
+		claros.common.notification.NotificationContacts notificationContacts = 26;
+		claros.common.notification.NotificationDevices notificationDevices = 27;
+		claros.common.notification.NotificationPreferences notificationPreferences = 28;
+		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 29;
+
+		//enterprise
+		claros.enterprise.core.Features features = 30;
+		claros.enterprise.core.FeatureStateTypes featureStateTypes = 31;
+		claros.enterprise.core.Permissions permissions = 32;
+		claros.enterprise.core.ProductOfferings productOfferings = 33;
+		claros.enterprise.core.Roles roles = 34;
+		claros.enterprise.core.ServiceTechTenantRequests serviceTechTenantRequests = 35;
+		claros.enterprise.core.Tenants tenants = 36;
+		claros.enterprise.core.Users users = 37;
+		claros.enterprise.core.UserPreferences userPreferences = 38;
+		claros.enterprise.core.UserProfiles userProfiles = 39;
     }
 }
 

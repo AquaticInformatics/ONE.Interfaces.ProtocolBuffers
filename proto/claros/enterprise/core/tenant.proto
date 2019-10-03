@@ -44,5 +44,5 @@ message Tenant {
 
 message Tenants
 {
-    repeated Tenant collection = 1;
+    repeated Tenant items = 1;
 }

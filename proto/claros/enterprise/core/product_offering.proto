@@ -35,5 +35,5 @@ message ProductOffering {
 
 message ProductOfferings
 {
-    repeated ProductOffering collection = 1;
+    repeated ProductOffering items = 1;
 }
