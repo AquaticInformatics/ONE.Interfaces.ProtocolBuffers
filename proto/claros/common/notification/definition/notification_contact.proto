@@ -9,5 +9,5 @@ message NotificationContact {
 }
 
 message NotificationContacts {
-    repeated NotificationContact notificationContacts = 1;
+    repeated NotificationContact items = 1;
 }

@@ -7,5 +7,5 @@ option csharp_namespace ="Claros.Common.Form";
 
 message FormSection {
     uint32 number = 1;
-    repeated FormColumn column = 2;
+    repeated FormColumn columns = 2;
 }

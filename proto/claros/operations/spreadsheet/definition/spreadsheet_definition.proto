@@ -20,9 +20,11 @@ message SpreadsheetDefinition {
     claros.common.EnumTimeZone enumTimeZone = 3;              
     
     // The number of hours offset to the start of day
-    uint32 timeWindowOffset = 4;                        
+    uint32 timeWindowOffset = 4;      
+	
+	string twinId = 5;
 }
 
 message SpreadsheetDefinitions {
-    repeated SpreadsheetDefinition spreadsheetDefinitions = 1;
+    repeated SpreadsheetDefinition items = 1;
 }

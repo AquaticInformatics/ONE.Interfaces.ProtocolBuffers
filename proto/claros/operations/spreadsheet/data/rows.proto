@@ -6,5 +6,5 @@ import "row.proto";
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 message Rows {
-    map<uint32, Row> rows = 1;
+    map<uint32, Row> items = 1;
 }

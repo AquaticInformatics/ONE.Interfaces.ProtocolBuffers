@@ -11,21 +11,21 @@ option csharp_namespace ="Claros.Common.Notification";
 message NotificationDevice {
     //Who is sending the message
     //the id will be the RegistrationId in the Azure Notification Hub
-    string id =1;
+    string id = 1;
  
     //tags identify which device to contact
-    repeated string tags =2;
+    repeated string tags = 2;
 
     //We only support Apple and Google
     EnumAzureNotificationHubType enumAzureNotificationHubType = 3;
 
     //This is the unique id from the device/app 
-    string deviceId =4;
+    string deviceId = 4;
     
-    claros.common.core.RecordAuditInfo recordAuditInfo = 5;    
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;    
 }
 
 message NotificationDevices {
-    repeated NotificationDevices notificationDevices = 1;
+    repeated NotificationDevice items = 1;
 }
 

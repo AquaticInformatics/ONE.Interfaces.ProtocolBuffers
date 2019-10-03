@@ -8,4 +8,5 @@ enum EnumEntity {
     ENTITY_FORMTEMPLATE = 1;
     ENTITY_APPLICATION = 2;
     ENTITY_DASHBOARD = 3;
+	ENTITY_GRAPH = 4;
 };

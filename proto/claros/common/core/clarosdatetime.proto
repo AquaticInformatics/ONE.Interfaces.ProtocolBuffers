@@ -1,6 +1,8 @@
 syntax = "proto3";
 package claros.common.core;
 
+import "google/protobuf/wrappers.proto";
+
 option csharp_namespace ="Claros.Common.Core";
 
 // Allow the setting of datetime via either json or ticks
@@ -17,11 +19,11 @@ message ClarosDateTime
         // JavaScript string representation of a datetime
         // "2012-04-23T18:25:43.511Z"              JavaScript built-in JSON object
         // "2012-04-21T18:25:43-05:00"             ISO 8601
-        string jsonDateTime = 2;           
+        google.protobuf.StringValue jsonDateTime = 2;           
         
         // milliseconds since the beginning of Epoch time
         // does not contain timezone information
         // Instruments will only set the ticks value
-        uint64 ticks = 3;                   
+        google.protobuf.UInt64Value ticks = 3;                   
     }
 }

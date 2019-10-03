@@ -13,7 +13,7 @@ option csharp_namespace ="Claros.Operations.Spreadsheet";
 message CellDataBinding {
     oneof binding {
         claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;
-        claros.common.computation.ComputationBinding computationBinding = 2;
+        ComputationBinding computationBinding = 2;
         claros.common.form.FormBinding formBinding = 3;
         claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;
         claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;

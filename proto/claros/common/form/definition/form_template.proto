@@ -30,7 +30,7 @@ message FormTemplate {
 }
 
 message FormTemplates {
-    repeated FormTemplate formTemplates = 1;
+    repeated FormTemplate items = 1;
 }
 
 message FormTemplateConfiguration {

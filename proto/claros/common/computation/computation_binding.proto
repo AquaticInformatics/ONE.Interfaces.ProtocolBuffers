@@ -1,8 +1,0 @@
-syntax = "proto3";
-package claros.common.computation;
-
-option csharp_namespace ="Claros.Common.Computation";
-
-message ComputationBinding {
-   string computationId = 1;
-}

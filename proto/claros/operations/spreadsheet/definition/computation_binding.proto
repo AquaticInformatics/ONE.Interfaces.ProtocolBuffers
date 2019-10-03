@@ -1,10 +1,8 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
-import "cell.proto";
-
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
-message Cells {
-    map<uint32, Cell> items = 1;
+message ComputationBinding {
+   string computationId = 1;
 }

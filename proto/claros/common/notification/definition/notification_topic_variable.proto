@@ -8,9 +8,9 @@ option csharp_namespace ="Claros.Common.Notification";
 message NotificationTopicVariable {
     string id = 1;
     string name = 2;
-    claros.common.core.RecordAuditInfo recordAuditInfo = 3;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message NotificationTopicVariables {
-    repeated NotificationTopicVariable notificationTopicVariables = 1;
+    repeated NotificationTopicVariable items = 1;
 }
