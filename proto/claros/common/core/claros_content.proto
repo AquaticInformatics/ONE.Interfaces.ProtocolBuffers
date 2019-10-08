@@ -42,7 +42,7 @@ message ClarosContent {
 		claros.common.core.Timezones timezones = 3;
 
 		// common.computation
-		claros.common.computation.Computations computation = 4;
+		claros.common.computation.Computations computations = 4;
 		claros.common.computation.Variables variables = 5;
 
 		// claros.common.configuration
