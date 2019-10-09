@@ -10,19 +10,16 @@ option csharp_namespace ="Claros.Operations.Spreadsheet";
 // Worksheet definitions are separate from this.
 message SpreadsheetDefinition {
     
-    // Numerical version of the spreadsheet definition.  This increments with eash new version
-    uint32 version = 1;                                 
-
     // The Time window of when this configuration was valid
-    claros.common.core.TimeWindow timewindow = 2;       
+    claros.common.core.TimeWindow timewindow = 1;       
 
     // The time zone related to the spreadsheet
-    claros.common.EnumTimeZone enumTimeZone = 3;              
+    claros.common.EnumTimeZone enumTimeZone = 2;              
     
     // The number of hours offset to the start of day
-    uint32 timeWindowOffset = 4;      
+    uint32 timeWindowOffset = 3;      
 	
-	string twinId = 5;
+	string twinId = 4;
 }
 
 message SpreadsheetDefinitions {

@@ -22,5 +22,5 @@ message Cell {
 
 	// reference id to the digital twin. 
 	// all columns will create a unique GUID that will be shared with the digital twin.
-	string columnId = 5;
+	string twinId = 5;
 }
