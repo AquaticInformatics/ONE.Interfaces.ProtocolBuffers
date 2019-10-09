@@ -3,6 +3,7 @@ package claros.common.computation;
 
 import "variable.proto";
 import "record_auditinfo.proto";
+import "expression_line.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Computation";
