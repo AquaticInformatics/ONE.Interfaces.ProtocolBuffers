@@ -14,7 +14,7 @@ message Computation
     google.protobuf.StringValue description = 3;
     repeated Variable inputVariables = 4;
     repeated Variable outputVariables = 5;
-    repeated google.protobuf.StringValue expressionLines = 6;
+    repeated ExpressionLine expressionLines = 6;
     google.protobuf.BoolValue isActive = 7;
     google.protobuf.BoolValue isValid = 8;
 	google.protobuf.BoolValue isGlobal = 9;
