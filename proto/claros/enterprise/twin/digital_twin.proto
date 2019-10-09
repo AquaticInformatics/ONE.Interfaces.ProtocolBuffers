@@ -1,0 +1,29 @@
+syntax = "proto3";
+package claros.enterporise.twin;
+
+import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+
+message DigitalTwin{
+    int64 id = 1; 
+    
+    int32 categoryId = 2;
+    
+    string twinNodeId = 3;
+
+    string twinId = 4;
+
+    string name = 5;
+
+    string twinTypeId = 6;
+
+    google.protobuf.StringValue twinSubTypeId = 7;
+
+    string propertyBag = 8;
+
+    string addressId = 9;
+
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
