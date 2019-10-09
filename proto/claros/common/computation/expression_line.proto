@@ -10,7 +10,7 @@ message ExpressionLine
 	// Tenant entered name
     string name = 1;
 
-	// Tenant entered description
-    string line = 2;
+	// Expression line
+	string line = 2;
 }
 
