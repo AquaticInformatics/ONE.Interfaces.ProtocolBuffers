@@ -1,5 +1,5 @@
 syntax = "proto3";
-package claros.enterporise.twin;
+package claros.enterprise.twin;
 
 import "record_auditinfo.proto";
 import "google/protobuf/wrappers.proto";
@@ -7,6 +7,7 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace = "Claros.Enterprise.Twin";
 
 message DigitalTwin{
+    
     int64 id = 1; 
     
     int32 categoryId = 2;
