@@ -39,3 +39,7 @@ message InstrumentMeasurementLimitNotification {
     claros.common.core.ClarosDateTime timeStamp = 10;
 
 }
+
+message InstrumentMeasurementLimitNotifications {
+    repeated InstrumentMeasurementLimitNotification items = 1;
+}
