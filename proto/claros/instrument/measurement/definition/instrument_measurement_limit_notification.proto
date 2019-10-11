@@ -1,0 +1,41 @@
+syntax = "proto3";
+package claros.instrument.measurement;
+
+import "clarosdatetime.proto";
+import "limit.proto";
+import "enum_notification_category.proto";
+
+option csharp_namespace ="Claros.Instrument.Measurement";
+
+message InstrumentMeasurementLimitNotification {
+    //
+    string fustionId = 1;
+
+    //
+    claros.common.core.Limit limit = 2;
+
+    //
+    string instrumentName = 3;
+
+    //
+    string instrumentTypei18nKeyName = 4; 
+
+    //
+    string serialNumber = 5;
+
+    //
+    string parameteri18nKeyName = 6;
+
+    //
+    string uniti18nKeyName = 7;
+
+    //
+    string currentValue = 8;
+
+    //
+    claros.common.notification.EnumNotificationCategory notificationCategory = 9;
+
+    //
+    claros.common.core.ClarosDateTime timeStamp = 10;
+
+}
