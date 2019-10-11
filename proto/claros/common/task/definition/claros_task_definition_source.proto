@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.task;
+ 
+import "claros_task_definition_source_instrument_maintenance.proto";
+
+option csharp_namespace ="Claros.Common.Task";
+ 
+message ClarosTaskDefinitionSource {
+    oneof taskSource  {
+        ClarosTaskDefinitionSourceInstrumentMaintenance taskDefinitionSourceInstrumentMaintenance = 1;
+    }
+}

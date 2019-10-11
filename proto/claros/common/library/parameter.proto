@@ -1,7 +1,7 @@
 syntax = "proto3";
-
 package claros.common.library;
-import "clarosdatetime.proto";
+
+import "record_auditinfo.proto";
 
 option csharp_namespace ="Claros.Common.Library";
 
@@ -27,8 +27,10 @@ message Parameter {
     // The GUID of the tenant that is ?????
     string tenantId = 7;            
  
-    string createdById = 8;
-    claros.common.core.ClarosDateTime createdOn = 9;
-    string modifiedById = 10;
-    claros.common.core.ClarosDateTime modifiedOn = 11;
+	// Audit information for the Parameter
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Parameters {
+    repeated Parameter items = 1;
 }

@@ -25,5 +25,5 @@ message LimitConfiguration
 }
 
 message LimitConfigurations {
-    repeated LimitConfiguration limitConfigurations = 1;
+    repeated LimitConfiguration items = 1;
 }

@@ -5,6 +5,6 @@ import "instrument_definition_model.proto";
 
 option csharp_namespace ="Claros.Common.Task";
 
-message TaskDefinitionSourceInstrumentMaintenance {
+message ClarosTaskDefinitionSourceInstrumentMaintenance {
     claros.instrument.InstrumentDefinitionModel instrumentModel = 1;
 }

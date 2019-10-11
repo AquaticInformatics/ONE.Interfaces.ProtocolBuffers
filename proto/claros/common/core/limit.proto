@@ -5,6 +5,7 @@ import "enum_limit.proto";
 import "enum_time_unit.proto";
 import "enum_limit_operation.proto";
 import "timewindow.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -21,10 +22,10 @@ message Limit {
     claros.common.EnumLimit enumLimit = 4;
 
     // Optional value of low range to compare
-    double lowValue = 5;
+    google.protobuf.DoubleValue lowValue = 5;
 
     // Optional value of high range to compare
-    double highValue = 6;   
+    google.protobuf.DoubleValue highValue = 6;
     
     // The unit used to compare the value with the limit
     uint32 unitId = 7;          
@@ -32,12 +33,10 @@ message Limit {
     // The start and end time of when this limit applies
     // i.e. seasonal limits
     TimeWindow timeWindow = 8; 
-
-    
+   
     oneof Rules {
         ThresholdRule thresholdRule = 9;
     }
-
 }
 
 // A rule that determines violations that occur a number of times over a specified duration
