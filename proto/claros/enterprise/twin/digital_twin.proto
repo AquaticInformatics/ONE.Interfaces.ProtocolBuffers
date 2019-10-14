@@ -29,7 +29,7 @@ message DigitalTwin{
 
     string addressId = 9;
 
-	GIS geography = 10;
+	claros.common.gis.GIS geography = 10;
 
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
