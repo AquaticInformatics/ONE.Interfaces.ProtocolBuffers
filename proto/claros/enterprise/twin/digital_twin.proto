@@ -1,8 +1,11 @@
 syntax = "proto3";
 package claros.enterprise.twin;
 
-import "record_auditinfo.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "record_auditinfo.proto";
+import "gis.proto";
 
 option csharp_namespace = "Claros.Enterprise.Twin";
 
@@ -26,5 +29,12 @@ message DigitalTwin{
 
     string addressId = 9;
 
+	GIS geography = 10;
+
+    google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message DigitalTwins{
+	repeated DigitalTwin twins = 1;
 }
