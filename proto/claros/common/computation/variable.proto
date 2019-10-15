@@ -20,7 +20,7 @@ message Variable
     google.protobuf.UInt32Value suggestedParameterId = 4;
 
 	// used as the value for the variable when the computation is executed
-    google.protobuf.DoubleValue value = 5;
+    repeated double value = 5;
 }
 
 message Variables
