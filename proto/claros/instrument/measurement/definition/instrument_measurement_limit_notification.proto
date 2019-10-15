@@ -9,7 +9,7 @@ option csharp_namespace ="Claros.Instrument.Measurement";
 
 message InstrumentMeasurementLimitNotification {
     //
-    string fustionId = 1;
+    string fusionId = 1;
 
     //
     claros.common.core.Limit limit = 2;
