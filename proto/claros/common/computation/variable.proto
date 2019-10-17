@@ -19,8 +19,8 @@ message Variable
 	// used for web client to suggest likely parameters
     google.protobuf.UInt32Value suggestedParameterId = 4;
 
-	// used as the value for the variable when the computation is executed
-    repeated double value = 5;
+	// used as the set of values for the variable when the computation is executed
+    repeated double values = 5;
 }
 
 message Variables
