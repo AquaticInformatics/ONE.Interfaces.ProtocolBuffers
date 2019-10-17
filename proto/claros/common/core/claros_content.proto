@@ -41,6 +41,7 @@ import "user.proto";
 import "user_preference.proto";
 import "user_profile.proto";
 import "digital_twin.proto";
+import "digital_twin_user_right.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -106,6 +107,7 @@ message ClarosContent {
 		claros.enterprise.core.Users users = 37;
 		claros.enterprise.core.UserPreferences userPreferences = 38;
 		claros.enterprise.core.UserProfiles userProfiles = 39;
-		.claros.enterprise.twin.DigitalTwins DigitalTwins = 40;
+		claros.enterprise.twin.DigitalTwins DigitalTwins = 40;
+		claros.enterprise.twin.DigitalTwinUserRights DigitalTwinUserRights = 41;
     }
 }
