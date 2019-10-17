@@ -1,7 +1,6 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "timewindow.proto";
 import "enum_timezone.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
@@ -10,16 +9,14 @@ option csharp_namespace ="Claros.Operations.Spreadsheet";
 // Worksheet definitions are separate from this.
 message SpreadsheetDefinition {
     
-    // The Time window of when this configuration was valid
-    claros.common.core.TimeWindow timewindow = 1;       
-
     // The time zone related to the spreadsheet
-    claros.common.EnumTimeZone enumTimeZone = 2;              
+    claros.common.EnumTimeZone enumTimeZone = 1;
     
     // The number of hours offset to the start of day
-    uint32 timeWindowOffset = 3;      
+    uint32 timeWindowOffset = 2;
 	
-	string twinId = 4;
+	string twinId = 3;
+
 }
 
 message SpreadsheetDefinitions {
