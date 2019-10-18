@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
+message ComputationVariableBinding {
+   string variableName = 1;
+   uint32 columnNum = 2;
+   uint32 rowOffset = 3;
+}
