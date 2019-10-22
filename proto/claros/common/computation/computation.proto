@@ -13,8 +13,8 @@ message Computation
     google.protobuf.StringValue i18nKey = 1;
     google.protobuf.StringValue name = 2;
     google.protobuf.StringValue description = 3;
-    repeated Variable inputVariables = 4;
-    repeated Variable outputVariables = 5;
+    Variables inputVariables = 4;
+    Variables outputVariables = 5;
     repeated ExpressionLine expressionLines = 6;
     google.protobuf.BoolValue isActive = 7;
     google.protobuf.BoolValue isValid = 8;
