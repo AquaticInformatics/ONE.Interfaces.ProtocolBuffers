@@ -15,6 +15,7 @@ import "rows.proto";
 import "row_indices.proto";
 import "spreadsheet_definition.proto";
 import "worksheet_definition.proto";
+import "spreadsheet_computation.proto";
 import "notification_template.proto";
 import "notification_contact.proto";
 import "notification_device.proto";
@@ -59,23 +60,24 @@ message ClarosContent {
         claros.operations.spreadsheet.RowIndices rowIndices = 12;
         claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 13;
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 14;
+        claros.operations.spreadsheet.SpreadsheetComputation spreadsheetComputation = 15;
  
         // instrument
-        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 15;
-        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 16;
+        claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 16;
+        claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 17;
 
         // forms
-        claros.common.form.Forms forms = 17;
-        claros.common.form.FormTemplates formTemplates = 18;
-        claros.common.form.FormIndices formIndices = 19;
+        claros.common.form.Forms forms = 18;
+        claros.common.form.FormTemplates formTemplates = 19;
+        claros.common.form.FormIndices formIndices = 20;
         
         // notifications
-        claros.common.notification.NotificationTemplates notificationTemplates = 20;
-        claros.common.notification.NotificationTopics notificationTopics = 21;
-		claros.common.notification.NotificationContacts notificationContacts = 22;
-		claros.common.notification.NotificationDevices notificationDevices = 23;
-		claros.common.notification.NotificationPreferences notificationPreferences = 24;
-		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 25;
+        claros.common.notification.NotificationTemplates notificationTemplates = 21;
+        claros.common.notification.NotificationTopics notificationTopics = 22;
+		claros.common.notification.NotificationContacts notificationContacts = 23;
+		claros.common.notification.NotificationDevices notificationDevices = 24;
+		claros.common.notification.NotificationPreferences notificationPreferences = 25;
+		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 26;
     }
 }
 

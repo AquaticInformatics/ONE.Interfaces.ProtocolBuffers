@@ -1,8 +1,8 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
+import "data_source_binding.proto";
 import "reportable_qualifier.proto";
-import "celldata_binding.proto";
 import "auditevent.proto";
 import "google/protobuf/wrappers.proto";
 
@@ -27,8 +27,8 @@ message CellData {
    // If the data was entered as a qualified value, the qualified properties
    claros.common.core.ReportableQualifier reportableQualifier = 6;
 
-   // Where the data came from that went into the cell
-   repeated CellDataBinding cellDataBindings = 7;
+    // The expected binding
+    claros.common.core.DataSourceBinding dataSourceBinding = 7;
 
    // Audit information for this cell entry
    claros.common.core.AuditEvent auditEvent = 99;

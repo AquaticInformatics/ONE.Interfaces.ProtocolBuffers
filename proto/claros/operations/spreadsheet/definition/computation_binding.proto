@@ -1,8 +1,16 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
+import "computation_variable_binding.proto";
+import "record_auditinfo.proto";
+
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 message ComputationBinding {
-   string computationId = 1;
+   string id = 1;
+   string computationId = 2;
+   repeated ComputationVariableBinding inputVariableBindings = 3;
+   uint32 outputColumnNumber = 4;
+   bool requireAllInputs = 5;
+   claros.common.core.RecordAuditInfo recordAuditInfo = 6;
 }

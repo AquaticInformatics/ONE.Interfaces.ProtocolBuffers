@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+import "computation_binding.proto";
+import "computation.proto";
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
+message SpreadsheetComputation {
+   ComputationBinding binding = 1;
+   claros.common.computation.Computation computation = 2;
+}
