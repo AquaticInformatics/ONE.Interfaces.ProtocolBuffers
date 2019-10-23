@@ -10,7 +10,7 @@ message JobStatus {
     string id = 1;                          
 
     // The process status
-    claros.common.EnumProcessStatus enumProcessStatus = 2;      
+    claros.common.EnumProcessStatus processStatus = 2;      
 
     // The total number of successfully processed items
     uint32 sucessfullyProcessed = 3;
