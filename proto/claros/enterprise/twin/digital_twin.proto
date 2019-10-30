@@ -15,26 +15,34 @@ message DigitalTwin{
     
     int32 categoryId = 2;
     
-    string twinNodeId = 3;
+    string twinNodePath = 3;
 
-    string twinId = 4;
+    int32 twinNodeLevel = 4;
 
-    string name = 5;
+    google.protobuf.StringValue twinReferenceId = 5;
 
-    string twinTypeId = 6;
+    google.protobuf.StringValue name = 6;
 
-    google.protobuf.StringValue twinSubTypeId = 7;
+    string twinTypeId = 7;
 
-    string propertyBag = 8;
+    google.protobuf.StringValue twinSubTypeId = 8;
 
-    string addressId = 9;
+    google.protobuf.StringValue propertyBag = 9;
 
-	claros.common.gis.GIS geography = 10;
+    google.protobuf.StringValue addressId = 10;
+
+    claros.common.gis.GIS geography = 11;
+    
+    google.protobuf.Int64Value parentId = 12;
+
+    string parentNodePath = 13;
+
+    int32 sortOrder = 14;
 
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message DigitalTwins{
-	repeated DigitalTwin twins = 1;
+	repeated DigitalTwin items = 1;
 }
