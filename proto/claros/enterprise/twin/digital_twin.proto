@@ -33,7 +33,7 @@ message DigitalTwin{
 
     claros.common.gis.GIS geography = 11;
     
-    string parentId = 12;
+    google.protobuf.Int64Value parentId = 12;
 
     string parentNodePath = 13;
 
