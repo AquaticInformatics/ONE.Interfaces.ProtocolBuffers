@@ -25,8 +25,8 @@ message DigitalTwin {
      // should this be a map or a string since it will be stored in SQL as JSON
     string propertyBag = 10;
  
-    GIS gis = 11; 
-    Address address = 12;
+    claros.common.gis.GIS gis = 11; 
+    claros.common.core.Address address = 12;
 
-    RecordAuditInfo recordAuditInfo = 13;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 13;
 }   
