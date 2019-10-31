@@ -1,0 +1,24 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "record_auditinfo.proto";
+import "gis.proto"; 
+
+option csharp_namespace ="Claros.Common.Core";
+
+message Address { 
+
+    string id = 1;
+    
+    string line1 = 2;
+    string line2 = 3;
+    string stateProvinceRegion = 4;
+    string zipPostalCode = 5;
+    string country = 6;
+    string zipPostalCode = 7;
+    string country = 8;
+    GIS gis = 9;
+    string tenantId = 10;  
+
+    RecordAuditInfo recordAuditInfo = 11; 
+}

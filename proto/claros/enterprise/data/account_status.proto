@@ -1,0 +1,33 @@
+syntax = "proto3";
+package claros.enterprise.data;
+
+import "digital_twin.proto";
+import "gis.proto"; 
+
+option csharp_namespace ="Claros.Enterprise.Data";
+
+message AccountStatus { 
+
+    // twin type: organization
+    // twin sub type : tenant
+    // contains operation name, id, addres, geo code
+    // account number, service contract, expiration date, etc..
+    DigitalTwin operationDigitalTwin = 1;
+ 
+ 
+    // Not clear on the current UX guidance where we need tenant information, but this is how we would return it
+    DigitalTwin tenantDigitalTwin = 2;
+ 
+    // InstrumentData for this operation's instruments
+    // array of instrument data used by client to determine
+    // 1 - operation health,
+    // 2 - health message,
+    // 3 - count of warnings,
+    // 4 - count of events, count of instruments?
+    InstrumentDatas instrumentDatas = 3;
+}
+
+message AccountStatusView
+{
+    repeated OperationStatus operationStatusItems = 1;
+}

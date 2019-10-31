@@ -1,0 +1,32 @@
+syntax = "proto3";
+package claros.enpterprise.twin;
+
+import "record_auditinfo.proto";
+import "instrument_data.proto";
+import "address.proto";
+import "gis.proto";
+
+option csharp_namespace ="Claros.Enterprise.Twin";
+
+message DigitalTwin { 
+
+    int32 id = 1;
+
+    int32 categoryId = 2;
+    string twinNode = 3;
+    string twinNodeLevel = 4;
+    string twinId = 5;
+    string name = 6;
+ 
+    string twinTypeId  = 7;
+    string twinSubTypeId  = 8;
+    string sortOrder  = 9;
+
+     // should this be a map or a string since it will be stored in SQL as JSON
+    string propertyBag = 10;
+ 
+    GIS gis = 11; 
+    Address address = 12;
+
+    RecordAuditInfo recordAuditInfo = 13;
+}   
