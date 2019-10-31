@@ -2,7 +2,6 @@ syntax = "proto3";
 package claros.enpterprise.twin;
 
 import "record_auditinfo.proto";
-import "instrument_data.proto";
 import "address.proto";
 import "gis.proto";
 
@@ -28,5 +27,5 @@ message DigitalTwin {
     claros.common.gis.GIS gis = 11; 
     claros.common.core.Address address = 12;
 
-    claros.common.core.RecordAuditInfo recordAuditInfo = 13;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }   
