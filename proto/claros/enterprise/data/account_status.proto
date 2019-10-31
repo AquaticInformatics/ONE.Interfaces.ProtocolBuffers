@@ -27,7 +27,7 @@ message AccountStatus {
     claros.instrument.InstrumentDatas instrumentDatas = 3;
 }
 
-message AccountStatusView
+message AccountStatuses
 {
-    repeated AccountStatus accountStatusItems = 1;
+    repeated AccountStatus items = 1;
 }

@@ -10,7 +10,7 @@ option csharp_namespace ="Claros.Enterprise.Twin";
 
 message DigitalTwin { 
 
-    int32 id = 1;
+    int64 id = 1;
 
     int32 categoryId = 2;
     string twinNode = 3;
