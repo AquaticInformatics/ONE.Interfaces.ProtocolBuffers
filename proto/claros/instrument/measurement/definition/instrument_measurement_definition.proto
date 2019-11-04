@@ -33,13 +33,13 @@ message InstrumentMeasurementDefinition {
     uint32 parameterId = 5;                                 
     
     // GUID id of parameter
-    string parameterGuidId = 17;
+    string parameterGuid = 17;
     
     // The default display unit that the data will be rendered
     uint32 displayUnitId = 6;                               
     
     // GUID id of display unit
-    string displayUnitGuidId = 18;
+    string displayUnitGuid = 18;
     
     // Soft delete of the Instrument Measurment Collection
     bool isVisible = 7;  

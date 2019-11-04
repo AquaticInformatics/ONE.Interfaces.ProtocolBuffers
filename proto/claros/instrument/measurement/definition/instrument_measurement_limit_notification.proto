@@ -19,7 +19,7 @@ message InstrumentMeasurementLimitNotification {
     string instrumentName = 3;
 
     // Device Type Name
-    string instrumentTypei18nKeyName = 4; 
+    string instrumentTypeI18NKeyName = 4; 
 
     // Serial Number
     string serialNumber = 5;
