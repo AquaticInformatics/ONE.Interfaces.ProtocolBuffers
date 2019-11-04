@@ -2,10 +2,12 @@ syntax = "proto3";
 package claros.instrument.status;
 
 import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Instrument.Status";
  
-message StatusMetaData {
-    int32 id = 1;
+message StatusMetadata {
+	google.protobuf.UInt32Value id = 1;
+
     claros.common.core.I18NKeyTextReference description = 2;
 }
