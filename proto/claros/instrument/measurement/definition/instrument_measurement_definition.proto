@@ -5,6 +5,7 @@ import "milliamp_binding.proto";
 import "scsensor_binding.proto";
 import "limit.proto";
 import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Instrument.Measurement";
  
@@ -26,16 +27,16 @@ message InstrumentMeasurementDefinition {
     string locationId = 4;                                  
     
     // Instrument source of this specific parameter
-    int32 channel = 15;
+    google.protobuf.UInt32Value channelNumber = 15;
     
     // Required: The parameter related to the instrument measurments being collected
-    uint32 parameterIntId = 5;                                 
+    uint32 parameterId = 5;                                 
     
     // GUID id of parameter
     string parameterGuidId = 17;
     
     // The default display unit that the data will be rendered
-    uint32 displayUnitIntId = 6;                               
+    uint32 displayUnitId = 6;                               
     
     // GUID id of display unit
     string displayUnitGuidId = 18;
