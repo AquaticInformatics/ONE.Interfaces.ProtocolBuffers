@@ -1,0 +1,48 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "feature_state_type.proto";
+
+//import "role.proto";
+import "record_auditinfo.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message Feature {
+
+	// GUID unique identifier of the feature instance
+    string id = 1;
+
+	// I18NKey name of the feature
+	string i18NKeyName = 2;
+
+	// Feature state type associated to feature
+	FeatureStateType featureStateType = 3;
+
+	// Nullable description of the feature
+	google.protobuf.StringValue description = 4;
+
+	// id of Product offering that the feature belongs to
+	string productOfferingId = 5;
+
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of roles the feature belongs to
+	//repeated Role roles = 6;
+	
+	// TODO: Causes Exception: File recursively imports itself:
+	// Collection of permissions the feature belongs to
+	//repeated Permission permissions = 7;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Features
+{
+    repeated Feature items = 1;
+}

@@ -1,0 +1,35 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "feature.proto";
+import "record_auditinfo.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message Permission {
+
+	// GUID unique identifier of the permission instance
+    string id = 1;
+
+	// Nullable api endpoint that the activity can be performed against
+	google.protobuf.StringValue resource = 2;
+
+	// Nullable CRUD operation
+    google.protobuf.StringValue activity = 3;
+
+	// Collection of features associated with the permissions
+	repeated Feature features = 4;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Permissions
+{
+    repeated Permission items = 1;
+}

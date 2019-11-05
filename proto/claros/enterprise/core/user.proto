@@ -1,0 +1,103 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "clarosdatetime.proto";
+import "feature.proto";
+import "record_auditinfo.proto";
+import "role.proto";
+import "tenant.proto";
+import "user_preference.proto";
+import "user_profile.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message User {
+
+	// GUID unique identifier of the user instance
+    string id = 1;
+
+	// User name of the user
+	string userName = 2;
+
+	// Nullable first name of the user
+	google.protobuf.StringValue firstName = 3;
+
+	// Nullable last name of the user
+	google.protobuf.StringValue lastName = 4;
+
+	// Nullable email of the user
+	google.protobuf.StringValue email = 5;
+
+	// Is email confirmed?
+	bool isEmailConfirmed = 6;
+	
+	// Nullable phone number of the user
+	google.protobuf.StringValue phoneNumber = 7;
+
+	// Is phone number confirmed?
+	bool isPhoneNumberConfirmed = 8;
+
+	// Nullable password hash for user
+	//google.protobuf.StringValue passwordHash = 9;
+	string passwordHash = 9;
+
+	// Nullable security stamp hash for user
+	//google.protobuf.StringValue securityStamp = 10;
+	string securityStamp = 10;
+
+	// Is two factor enabled?
+	bool isTwoFactorEnabled = 11;
+
+	// Is lockout enabled?
+	bool isLockoutEnabled = 12;
+
+	// Lockout end date datetime
+	claros.common.core.ClarosDateTime lockoutEndDate = 13;
+
+	// Access failed count
+	int32 accessFailedCount = 14;
+
+	// Password expiration datetime
+	claros.common.core.ClarosDateTime passwordExpiration = 15;
+
+	// Invitation expiration datetime
+	claros.common.core.ClarosDateTime invitationExpiration = 16;
+
+	// Is user active?
+	bool isActive = 17;
+
+	// Is accepted TCs?
+	bool isAcceptedTcs = 18;
+
+	// Is accepted TCs datetime
+	claros.common.core.ClarosDateTime  lastAcceptedTCsDate = 19;
+
+	// Collection of preferences for the user
+	repeated UserPreference userPreferences = 20;
+
+	// Collection of roles assigned to a user
+	repeated Role roles = 21;
+
+	// Collection of tenants for the user
+    repeated Tenant tenants = 22;
+
+	// Collection of features assigned to a user
+    repeated Feature features = 23;
+
+	// Collection of user profiles for a user
+    repeated UserProfile userProfiles = 24;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+
+}
+
+message Users
+{
+    repeated User items = 1;
+}

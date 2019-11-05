@@ -1,0 +1,48 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "record_auditinfo.proto";
+import "gis.proto";
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+
+message DigitalTwin{
+    
+    int64 id = 1; 
+    
+    int32 categoryId = 2;
+    
+    string twinNodePath = 3;
+
+    int32 twinNodeLevel = 4;
+
+    google.protobuf.StringValue twinReferenceId = 5;
+
+    google.protobuf.StringValue name = 6;
+
+    string twinTypeId = 7;
+
+    google.protobuf.StringValue twinSubTypeId = 8;
+
+    google.protobuf.StringValue propertyBag = 9;
+
+    google.protobuf.StringValue addressId = 10;
+
+    claros.common.gis.GIS geography = 11;
+    
+    google.protobuf.Int64Value parentId = 12;
+
+    string parentNodePath = 13;
+
+    int32 sortOrder = 14;
+
+    google.protobuf.FieldMask updateMask = 98;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message DigitalTwins{
+	repeated DigitalTwin items = 1;
+}
