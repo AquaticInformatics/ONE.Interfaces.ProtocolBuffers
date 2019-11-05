@@ -7,10 +7,25 @@ import "record_auditinfo.proto";
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 message ComputationBinding {
+
+   // the ID of the computation binding
    string id = 1;
+
+   // the ID of the associated computation
    string computationId = 2;
+
+   // collection of Computation Variable Bindings
    repeated ComputationVariableBinding inputVariableBindings = 3;
+
+   // the output column number
    uint32 outputColumnNumber = 4;
+   
+   // should all inputs be required for the computation to be executed
    bool requireAllInputs = 5;
-   claros.common.core.RecordAuditInfo recordAuditInfo = 6;
+   
+   // is this a valid computation binding
+   bool isValid = 6;
+
+   // audit information
+   claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
