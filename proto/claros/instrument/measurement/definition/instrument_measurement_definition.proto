@@ -29,7 +29,7 @@ message InstrumentMeasurementDefinition {
     // Instrument source of this specific parameter
     google.protobuf.UInt32Value channelNumber = 15;
     
-    // Required: The parameter related to the instrument measurments being collected
+    // Required: The parameter related to the instrument measurements being collected
     uint32 parameterId = 5;                                 
     
     // GUID id of parameter
