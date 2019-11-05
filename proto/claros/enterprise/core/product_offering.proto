@@ -1,0 +1,39 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+option csharp_namespace ="Claros.Enterprise.Core";
+
+import "record_auditinfo.proto";
+import "tenant.proto";
+import "feature.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+ 
+message ProductOffering {
+
+	// GUID unique identifier of the product offering instance
+    string id = 1;
+
+	// Nullable name of the product offering
+	google.protobuf.StringValue name = 2;
+
+	// Nullable description of the product offering
+	google.protobuf.StringValue description = 3;
+
+	// Collection of tenants that have access to the product offering
+	repeated Tenant tenants = 4;
+
+	// Collection of features associated with the product offering
+	repeated Feature features = 5;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ProductOfferings
+{
+    repeated ProductOffering items = 1;
+}
