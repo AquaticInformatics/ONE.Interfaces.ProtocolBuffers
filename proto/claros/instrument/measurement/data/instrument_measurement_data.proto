@@ -4,13 +4,15 @@ package claros.instrument.measurement;
 import "measurement.proto";
 import "instrument_event_data.proto";
 import "gis.proto";
-  
+import "instrument_tag_identifier.proto";
+import "google/protobuf/wrappers.proto";
+
 message InstrumentMeasurementData {
-    // Hardare physical connector identifier
-    int32 channelNumber = 1;
+    // Hardware physical connector identifier
+    google.protobuf.UInt32Value channelNumber = 1;
  
-    // For SC instruments, this is the identifier of the register
-    uint32 tagNumber = 2;
+    // For SC instruments, this is the identifier of the register (instrument tag)
+    claros.common.library.InstrumentTagIdentifier tagIdentifier = 2;
  
     // The common definition of a measurement
     claros.common.core.Measurement measurement = 3;

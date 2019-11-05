@@ -1,0 +1,18 @@
+syntax = "proto3";
+package claros.common.library;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Common.Library";
+
+// Identifier of an instrument tag.
+// Used as a property of an instrument measurement data
+// Used as a property of instrument tag definition
+message InstrumentTagIdentifier
+{
+    // The instrument identifier of the register
+    google.protobuf.UInt32Value id = 1;
+    
+    // The Foundation Library GUID of a tag id
+    google.protobuf.StringValue guid = 2;
+}

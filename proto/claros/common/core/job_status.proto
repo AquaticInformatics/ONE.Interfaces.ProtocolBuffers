@@ -1,0 +1,26 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "enum_process_status.proto";
+
+option csharp_namespace ="Claros.Common.Core";
+
+message JobStatus {
+    // A GUID that uniquely identifies the job
+    string id = 1;                          
+
+    // The process status
+    claros.common.EnumProcessStatus processStatus = 2;      
+
+    // The total number of successfully processed items
+    uint32 sucessfullyProcessed = 3;
+
+    // The number of items which failed to process
+    uint32 failedItems = 4;
+
+    // The number of items to be processed
+    uint32 remainingItems = 5;
+
+    // Text to communicate other information
+    string message = 6;
+}

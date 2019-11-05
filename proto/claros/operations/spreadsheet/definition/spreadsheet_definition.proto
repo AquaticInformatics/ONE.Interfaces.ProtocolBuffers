@@ -1,28 +1,25 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "timewindow.proto";
 import "enum_timezone.proto";
+import "auditevent.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
  
 // This describes the overall definition of a spreadsheet.  
 // Worksheet definitions are separate from this.
 message SpreadsheetDefinition {
-    
-    // Numerical version of the spreadsheet definition.  This increments with eash new version
-    uint32 version = 1;                                 
 
-    // The Time window of when this configuration was valid
-    claros.common.core.TimeWindow timewindow = 2;       
+	string twinId = 1;
 
     // The time zone related to the spreadsheet
-    claros.common.EnumTimeZone enumTimeZone = 3;              
+    claros.common.EnumTimeZone enumTimeZone = 2;
     
     // The number of hours offset to the start of day
-    uint32 timeWindowOffset = 4;      
-	
-	string twinId = 5;
+    uint32 timeWindowOffset = 3;
+
+    // Audit information
+   repeated claros.common.core.AuditEvent auditEvents = 99;
 }
 
 message SpreadsheetDefinitions {

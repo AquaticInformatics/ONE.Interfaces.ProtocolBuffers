@@ -5,6 +5,7 @@ import "milliamp_binding.proto";
 import "scsensor_binding.proto";
 import "limit.proto";
 import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Instrument.Measurement";
  
@@ -13,7 +14,7 @@ message InstrumentMeasurementDefinition {
     // This is nullable.  In the case of Instrument Data this would be null until it reaches Claros.Instrument.Measurement
     string instrumentMeasurementId = 1;                     
     
-    // The name of the collection of instrument measurmenets.  There is a good chance this correlates to the parameter name.
+    // The name of the collection of instrument measurements.  There is a good chance this correlates to the parameter name.
     string name = 2;                                        
     
     // GUID id of tenant
@@ -26,9 +27,9 @@ message InstrumentMeasurementDefinition {
     string locationId = 4;                                  
     
     // Instrument source of this specific parameter
-    int32 channel = 15;
+    google.protobuf.UInt32Value channel = 15;
     
-    // Required: The parameter related to the instrument measurments being collected
+    // Required: The parameter related to the instrument measurements being collected
     uint32 parameterIntId = 5;                                 
     
     // GUID id of parameter
@@ -40,7 +41,7 @@ message InstrumentMeasurementDefinition {
     // GUID id of display unit
     string displayUnitGuidId = 18;
     
-    // Soft delete of the Instrument Measurment Collection
+    // Soft delete of the Instrument Measurement Collection
     bool isVisible = 7;  
    
     // How the data is bound from the incoming instrument
@@ -48,7 +49,7 @@ message InstrumentMeasurementDefinition {
         // For SC Instruments, how the SC Instrument is identified
         SCSensorBinding scSensorBinding = 8;                    
         
-        // For 4-20 mA input, how the inputs are mapped to instrument measurments
+        // For 4-20 mA input, how the inputs are mapped to instrument measurements
         MilliAmpBinding milliAmpBinding = 9;                
     }
 

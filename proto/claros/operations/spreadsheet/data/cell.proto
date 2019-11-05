@@ -1,9 +1,9 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
+import "data_source_binding.proto";
 import "note.proto";
 import "celldata.proto";
-import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
  
@@ -18,9 +18,10 @@ message Cell {
 	// The current and past data that has been entered into a cell
     repeated CellData cellDatas = 3;
 
-	google.protobuf.StringValue computationBindingId = 4;
+	// The expected binding
+    claros.common.core.DataSourceBinding dataSourceBinding = 4;
 
 	// reference id to the digital twin. 
 	// all columns will create a unique GUID that will be shared with the digital twin.
-	string columnId = 5;
+	string twinId = 5;
 }

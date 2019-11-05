@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common;
+
+option csharp_namespace ="Claros.Common";
+ 
+enum EnumProcessStatus {
+    UNKNOWN = 0;
+    QUEUED = 1;
+    IN_PROGRESS = 2;
+    FINISHED_SUCCESSFULLY = 3;
+    PARTIAL_SUCCESS = 4;
+    FAILED = 5;
+}

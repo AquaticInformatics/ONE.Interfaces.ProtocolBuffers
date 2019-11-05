@@ -1,0 +1,19 @@
+syntax = "proto3";
+package claros.common.library;
+
+import "instrument_tag_identifier.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Claros.Common.Library";
+
+// Representation of an instrument tag definition.
+message InstrumentTagDefinition {
+
+    // The identifier of the instrument tag definition
+    claros.common.library.InstrumentTagIdentifier identifier = 1;
+
+    // Attributes from DeviceTypeTags table like deviceTypeId, i18nKeyName, tagType, tagDataType, sortOrder, etc. will be added later
+    
+    // Audit information for the Instrument Tag Definition
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}

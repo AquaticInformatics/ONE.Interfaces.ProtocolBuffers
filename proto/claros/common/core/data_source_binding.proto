@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.core;
+  
+import "enum_datasource.proto";
+   
+option csharp_namespace ="Claros.Common.Core";
+  
+message DataSourceBinding {
+    string bindingId = 1;
+    claros.common.EnumDataSource dataSource = 2;
+}

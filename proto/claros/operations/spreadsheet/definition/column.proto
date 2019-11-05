@@ -1,10 +1,8 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
  
-import "enum_datasource.proto";
+import "data_source_binding.proto";
 import "limit.proto";
-import "instrument_measurement_binding.proto";
-import "computation_binding.proto";
 import "reportable_qualifier_definition.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
@@ -36,17 +34,9 @@ message Column
     // Collection of limits related to the column
     repeated claros.common.core.Limit limits = 8;
     
-    // The expected place where the data will be received into the column
-    claros.common.EnumDataSource enumDataSource = 9;           
-
-    oneof binding {
-        // Column comes from aggregated instrument measurments
-        claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 10;           
-
-        // Column comes as a result of a computation
-        ComputationBinding computationBinding = 11;  
-    }
+    // The expected binding
+    claros.common.core.DataSourceBinding dataSourceBinding = 9;
 
     // This determines how qualifers are interpreted for this column
-    repeated claros.common.core.ReportableQualifierDefinition reportableQualifierDefinitions = 12;        
+    repeated claros.common.core.ReportableQualifierDefinition reportableQualifierDefinitions = 10;        
 }
