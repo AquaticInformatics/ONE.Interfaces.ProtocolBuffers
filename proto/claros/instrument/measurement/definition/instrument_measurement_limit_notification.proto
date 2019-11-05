@@ -8,35 +8,35 @@ import "enum_notification_category.proto";
 option csharp_namespace ="Claros.Instrument.Measurement";
 
 message InstrumentMeasurementLimitNotification {
-    //
+     // The FusionId of the instrument that the data is being collected
     string fusionId = 1;
 
-    //
+    // A collection of limits associated to the instrument measurements
     claros.common.core.Limit limit = 2;
 
-    //
+    // Instrument/ Device Name
     string instrumentName = 3;
 
-    //
-    string instrumentTypei18nKeyName = 4; 
+    // Device Type Name
+    string instrumentTypeI18NKeyName = 4; 
 
-    //
+    // Serial Number
     string serialNumber = 5;
 
-    //
-    string parameteri18nKeyName = 6;
+    // Parameter Name
+    string parameterI18NKeyName = 6;
 
-    //
-    string uniti18nKeyName = 7;
+    // Unit Type Name
+    string unitI18NKeyName = 7;
 
-    //
+    // Current Value when triggering Notification
     string currentValue = 8;
 
-    //
+    // Notification Category 
     claros.common.notification.EnumNotificationCategory notificationCategory = 9;
 
-    //
-    claros.common.core.ClarosDateTime timeStamp = 10;
+    // Time Stamp when triggering Notification
+    claros.common.core.ClarosDateTime timestamp = 10;
 
 }
 

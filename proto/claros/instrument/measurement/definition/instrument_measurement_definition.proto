@@ -27,19 +27,19 @@ message InstrumentMeasurementDefinition {
     string locationId = 4;                                  
     
     // Instrument source of this specific parameter
-    google.protobuf.UInt32Value channel = 15;
+    google.protobuf.UInt32Value channelNumber = 15;
     
     // Required: The parameter related to the instrument measurements being collected
-    uint32 parameterIntId = 5;                                 
+    uint32 parameterId = 5;                                 
     
     // GUID id of parameter
-    string parameterGuidId = 17;
+    string parameterGuid = 17;
     
     // The default display unit that the data will be rendered
-    uint32 displayUnitIntId = 6;                               
+    uint32 displayUnitId = 6;                               
     
     // GUID id of display unit
-    string displayUnitGuidId = 18;
+    string displayUnitGuid = 18;
     
     // Soft delete of the Instrument Measurement Collection
     bool isVisible = 7;  
