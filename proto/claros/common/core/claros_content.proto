@@ -27,6 +27,22 @@ import "parameter.proto";
 import "unit.proto";
 import "timezones.proto";
 import "variable.proto";
+import "address.proto";
+import "location.proto";
+import "location_type.proto";
+import "location_type_group.proto";
+import "feature.proto";
+import "feature_state_type.proto";
+import "permission.proto";
+import "product_offering.proto";
+import "role.proto";
+import "service_tech_tenant_request.proto";
+import "tenant.proto";
+import "user.proto";
+import "user_preference.proto";
+import "user_profile.proto";
+import "digital_twin.proto";
+import "digital_twin_user_right.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
