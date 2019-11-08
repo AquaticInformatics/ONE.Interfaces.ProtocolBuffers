@@ -80,7 +80,7 @@ message ClarosContent {
         claros.operations.spreadsheet.RowIndices rowIndices = 16;
         claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 17;
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 18;
-        claros.operations.spreadsheet.SpreadsheetComputation spreadsheetComputation = 19;
+        claros.operations.spreadsheet.SpreadsheetComputations spreadsheetComputations = 19;
  
         // instrument
         claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 20;

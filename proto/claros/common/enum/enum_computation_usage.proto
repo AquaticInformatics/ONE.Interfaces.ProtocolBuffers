@@ -4,7 +4,7 @@ package claros.common;
 option csharp_namespace ="Claros.Common";
  
 enum EnumComputationUsage {
-    UNKNOWN = 0;
-    GLOBAL = 1;
-    CUSTOMER = 2;
+    COMPUTATION_USAGE_UNKNOWN = 0;
+    COMPUTATION_USAGE_GLOBAL = 1;
+    COMPUTATION_USAGE_CUSTOMER = 2;
 }

@@ -10,3 +10,7 @@ message SpreadsheetComputation {
    ComputationBinding binding = 1;
    claros.common.computation.Computation computation = 2;
 }
+
+message SpreadsheetComputations {
+    repeated SpreadsheetComputation items = 1;
+}
