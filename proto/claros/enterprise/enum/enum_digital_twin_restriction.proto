@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+ 
+option csharp_namespace = "Claros.Enterprise.Twin";
+ 
+enum EnumDigitalTwinRestriction{
+    DIGITAL_TWIN_RESTRICTION_NONE = 0;
+    DIGITAL_TWIN_RESTRICTION_EDIT = 1;
+    DIGITAL_TWIN_RESTRICTION_VIEW_AND_EDIT = 2;
+}
+ 
