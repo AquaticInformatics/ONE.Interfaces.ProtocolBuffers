@@ -4,10 +4,10 @@ package claros.common;
 option csharp_namespace ="Claros.Common";
  
 enum EnumProcessStatus {
-    UNKNOWN = 0;
-    QUEUED = 1;
-    IN_PROGRESS = 2;
-    FINISHED_SUCCESSFULLY = 3;
-    PARTIAL_SUCCESS = 4;
-    FAILED = 5;
+    PROCESS_STATUS_UNKNOWN = 0;
+    PROCESS_STATUS_QUEUED = 1;
+    PROCESS_STATUS_IN_PROGRESS = 2;
+    PROCESS_STATUS_FINISHED_SUCCESSFULLY = 3;
+    PROCESS_STATUS_PARTIAL_SUCCESS = 4;
+    PROCESS_STATUS_FAILED = 5;
 }

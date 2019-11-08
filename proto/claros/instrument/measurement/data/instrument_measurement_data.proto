@@ -28,9 +28,12 @@ message InstrumentMeasurementData {
     // Bucket for any undefined data related to this instrument measurement
     string measurementDataExtended = 6;
  
+    // Byte array used for sending the raw measurement data
+    bytes rawMeasurementData = 7;
+
     // Events related to the process of taking this measurement from handheld instruments
     // This data could be valuable for future instrument improvements
-    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 7;
+    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 8;
 }
 
 message InstrumentMeasurementDatas
