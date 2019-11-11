@@ -43,10 +43,10 @@ import "user_preference.proto";
 import "user_profile.proto";
 import "digital_twin.proto";
 import "digital_twin_user_right.proto";
+import "account_status.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
-// Next id = 20; 
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
@@ -112,6 +112,7 @@ message ClarosContent {
         claros.enterprise.core.UserProfiles userProfiles = 40;
         claros.enterprise.twin.DigitalTwins DigitalTwins = 41;
         claros.enterprise.twin.DigitalTwinUserRights DigitalTwinUserRights = 42;
+        claros.enterprise.data.AccountStatuses accountStatuses = 43;
     }
 }
 
