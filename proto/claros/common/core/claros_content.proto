@@ -62,7 +62,7 @@ message ClarosContent {
         claros.common.core.Locations locations = 5;
         claros.common.core.LocationTypes locationTypes = 6;
         claros.common.core.LocationTypeGroups locationTypeGroups = 7;
-        claros.common.core.JobStatus jobStatus = 8
+        claros.common.core.JobStatuses jobStatuses = 8
 
 		// common.computation
 		claros.common.computation.Computations computations = 9;
