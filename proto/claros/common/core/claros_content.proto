@@ -44,14 +44,15 @@ import "user_profile.proto";
 import "digital_twin.proto";
 import "digital_twin_user_right.proto";
 import "account_status.proto";
+import "job_status.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
 message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
-	// NOTE: This message type is always volatile - updates can be made as required
-	//       Data should never be stored via this type. This message type is for transport only
+	// Data should never be stored via this type. This message type is for transport only.
+    // NEXT AVAILABLE ID: 45
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -61,6 +62,7 @@ message ClarosContent {
         claros.common.core.Locations locations = 5;
         claros.common.core.LocationTypes locationTypes = 6;
         claros.common.core.LocationTypeGroups locationTypeGroups = 7;
+        claros.common.core.JobStatuses jobStatuses = 44;
 
 		// common.computation
 		claros.common.computation.Computations computations = 8;

@@ -40,6 +40,9 @@ message InstrumentMeasurementDefinition {
     
     // GUID id of display unit
     string displayUnitGuid = 18;
+
+    //GUID Tag Number for Instrument Measurement
+    string tagNumberGuid = 19;
     
     // Soft delete of the Instrument Measurement Collection
     bool isVisible = 7;  

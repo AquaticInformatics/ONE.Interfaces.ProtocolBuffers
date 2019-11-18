@@ -24,3 +24,7 @@ message JobStatus {
     // Text to communicate other information
     string message = 6;
 }
+
+message JobStatuses {
+    repeated JobStatus items = 1;
+}
