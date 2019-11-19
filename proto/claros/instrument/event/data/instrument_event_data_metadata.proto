@@ -4,7 +4,7 @@ package claros.instrument.instrumentevent;
 option csharp_namespace ="Claros.Instrument.InstrumentEvent";
 
 // This is a generic implementation of the data that is collected with any type of Event coming from an instrument
-message InstrumentEventDataMetaData {
+message InstrumentEventDataMetadata {
     string i18nDatabaseName = 1;    // The i18n database that is associated to the event
     int32 translationIndex = 2;     // This is the Identifier within the i18n Database
     string i18nKey = 3;             // This is the translatable key that is used to describe the event

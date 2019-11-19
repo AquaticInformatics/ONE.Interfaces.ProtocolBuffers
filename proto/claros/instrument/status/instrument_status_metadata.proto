@@ -11,3 +11,7 @@ message StatusMetadata {
 
     claros.common.core.I18NKeyTextReference description = 2;
 }
+
+message StatusMetadatas {
+    repeated StatusMetadata items = 1;
+}
