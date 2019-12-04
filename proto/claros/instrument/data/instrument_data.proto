@@ -15,7 +15,7 @@ message InstrumentData {
 
 	// Measurements related to an instrument
     // Classical definition of a measurement (Time Series)
-    claros.instrument.measurement.instrumentMeasurementDatas instrumentMeasurementDatas = 3;
+    claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 3;
      
     // Metadata related to a Timestamp that represents an action that has occurred within an instrument.
     claros.instrument.instrumentevent.InstrumentEventDatas instrumentEventDatas = 4;                    

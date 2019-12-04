@@ -1,12 +1,16 @@
 syntax = "proto3";
 package claros.instrument.instrumentevent;
 
+import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
+
 option csharp_namespace ="Claros.Instrument.InstrumentEvent";
 
 // This is a generic implementation of the data that is collected with any type of Event coming from an instrument
 message InstrumentEventDataMetadata {
-    string i18nDatabaseName = 1;    // The i18n database that is associated to the event
-    int32 translationIndex = 2;     // This is the Identifier within the i18n Database
-    string i18nKey = 3;             // This is the translatable key that is used to describe the event
-    int32 status = 4;               // ????? - Dan Dickout had a concept of a status on an event
+
+    claros.common.core.I18NKeyTextReference description = 1;
+
+	// ????? - Dan Dickout had a concept of a status on an event
+    google.protobuf.UInt32Value status = 2;
 }
