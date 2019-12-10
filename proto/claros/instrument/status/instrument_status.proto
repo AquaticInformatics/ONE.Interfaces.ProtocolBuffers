@@ -9,23 +9,27 @@ option csharp_namespace ="Claros.Instrument.Status";
 
 message InstrumentStatus {
 	// Collection of Errors (sc errors, ..)
-    repeated StatusMetadata errors = 1;
+    StatusMetadatas errors = 1;
   
     // Collection of limit violations coming from an instrument
-    repeated StatusMetadata limits = 2;
+    StatusMetadatas limits = 2;
   
     // Collection of maintenance reminders coming from an instrument (sc reminders, ..)
-    repeated StatusMetadata reminders = 3;
+    StatusMetadatas reminders = 3;
   
     // Collection of warnings coming from an instrument (sc warnings, ..)
-    repeated StatusMetadata warnings = 4;
+    StatusMetadatas warnings = 4;
   
     // Collection of process events or operational status (calibrating, warming up, restarting)
-    repeated StatusMetadata operations = 5;
+    StatusMetadatas operations = 5;
      
     // Collection of prognosys (tm) events coming from prognosys enabled instruments
     StatusPrognosys prognosys = 6;
  
     // The time of the observation snapshot
     claros.common.core.ClarosDateTime statusDateTime = 7;
+}
+
+message InstrumentStatuses {
+    repeated InstrumentStatus items = 1;
 }

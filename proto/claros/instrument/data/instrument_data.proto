@@ -15,15 +15,15 @@ message InstrumentData {
 
 	// Measurements related to an instrument
     // Classical definition of a measurement (Time Series)
-    repeated claros.instrument.measurement.InstrumentMeasurementData instrumentMeasurementDatas = 3;
+    claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 3;
      
-    // Metadata related to a Time Stamp that represents an action that has occurred within an instrument.
-    repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 4;                    
+    // Metadata related to a Timestamp that represents an action that has occurred within an instrument.
+    claros.instrument.instrumentevent.InstrumentEventDatas instrumentEventDatas = 4;                    
  
     // The current / predictive condition of the instrument. 
     // This is commonly thought of the "Twin" data related to an instrument. 
     // This includes Errors, Warnings, Processing Status and Prognosys data
-    repeated claros.instrument.status.InstrumentStatus instrumentStatuses = 5;
+    claros.instrument.status.InstrumentStatuses instrumentStatuses = 5;
      
     // Describes the configuration of an instrument.  This is commonly stored in the Instrument Twin.
     claros.instrument.settings.InstrumentSettings instrumentSettings = 6;

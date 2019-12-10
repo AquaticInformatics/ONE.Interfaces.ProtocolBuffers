@@ -9,12 +9,16 @@ option csharp_namespace ="Claros.Instrument.InstrumentEvent";
  
 message InstrumentEventData {
  
-    // Collection of Calibrarion Events
+    // Collection of Calibration Events
     repeated InstrumentEventDataCalibration calibrations = 1;
      
-    // Collection of Information about an Instrument
-    repeated InstrumentEventDataMetaData info = 2;
+    // Collection of "Information" (info level event logs) about an Instrument
+    repeated InstrumentEventDataMetadata info = 2;
      
     // The time of the event
     claros.common.core.ClarosDateTime eventDateTime = 3;
+}
+
+message InstrumentEventDatas {
+    repeated InstrumentEventData items = 1;
 }
