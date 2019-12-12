@@ -45,6 +45,8 @@ import "digital_twin.proto";
 import "digital_twin_user_right.proto";
 import "account_status.proto";
 import "job_status.proto";
+import "digital_twin_type.proto";
+import "digital_twin_subtype.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -115,6 +117,8 @@ message ClarosContent {
         claros.enterprise.twin.DigitalTwins DigitalTwins = 41;
         claros.enterprise.twin.DigitalTwinUserRights DigitalTwinUserRights = 42;
         claros.enterprise.data.AccountStatuses accountStatuses = 43;
+		claros.enterprise.twin.DigitalTwinTypes digitalTwinTypes = 45;
+        claros.enterprise.twin.DigitalTwinSubtypes digitalTwinSubtypes = 46;
     }
 }
 
