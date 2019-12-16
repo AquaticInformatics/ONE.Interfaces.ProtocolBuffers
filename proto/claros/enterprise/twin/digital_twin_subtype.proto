@@ -1,0 +1,30 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "record_auditinfo.proto";
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+
+message DigitalTwinSubtype{
+    
+	// Guid unique identifier of the DigitalTwinSubtype
+    string id = 1; 
+
+    // I18NKey name of the DigitalTwinSubtype
+    string i18NKeyName = 2;
+
+    // Guid Id of the DigitalTwinType
+    string digitalTwinTypeId = 3;
+
+    google.protobuf.StringValue propertyBag = 9;
+
+    google.protobuf.FieldMask updateMask = 98;
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message DigitalTwinSubtypes{
+	repeated DigitalTwinSubtype items = 1;
+}
