@@ -12,11 +12,11 @@ message NotificationEvent {
     //GUID identifier of Event
     string id = 1;
 
-    // Noptification Topic
+    // Notification Topic
     NotificationTopic notificationTopic = 2;
 
-    //Event Data should be in proper json format.
-    string EventData = 3;
+    // Event Data should be in proper json format.
+    string eventData = 3;
 
     // NotificationCategory
     EnumNotificationCategory enumNotificationCategory = 4;
