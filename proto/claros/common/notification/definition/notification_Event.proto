@@ -6,10 +6,10 @@ import "enum_notification_category.proto";
 
 option csharp_namespace ="Claros.Common.Notification";
 
-//Each topic delivery method will have it's own template per language
+// Each Notification Event will have it's own data
 message NotificationEvent {
 
-    //GUID identifier of Event
+    // GUID identifier of Event
     string id = 1;
 
     // Notification Topic
@@ -18,7 +18,7 @@ message NotificationEvent {
     // Event Data should be in proper json format.
     string eventData = 3;
 
-    // NotificationCategory
+    // Notification Category
     EnumNotificationCategory enumNotificationCategory = 4;
     
     //Audit Info
