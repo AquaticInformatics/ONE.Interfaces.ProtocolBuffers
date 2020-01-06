@@ -21,6 +21,6 @@ message NotificationEvent {
     // Notification Category
     EnumNotificationCategory enumNotificationCategory = 4;
     
-    //Audit Info
+    // Audit Info
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
