@@ -15,18 +15,15 @@ message  UserNotificationPreference {
     //the id will be the RegistrationId in the Azure Notification Hub
     string id =1;
  
-    string email =2;
+    string userId =2;
  
-    repeated string pushDeviceIds = 3;
+    // unique id from the notification topics.
+    string notificationTopicId = 3;
     
-    NotificationDevices devices = 4;
-
-    NotificationPreferences preferences = 5;
-
-    NotificationContacts contacts = 8;
+    EnumNotificationDeliveryMethod communicationChannel = 4 ;
 
     //This is the unique id from the device/app 
-    string Culture =6;
+    string Culture =5;
     
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
