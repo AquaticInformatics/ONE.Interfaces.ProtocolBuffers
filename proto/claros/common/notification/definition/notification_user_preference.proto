@@ -13,17 +13,26 @@ option csharp_namespace ="Claros.Common.Notification";
 message  UserNotificationPreference {
     //Who is sending the message
     //the id will be the RegistrationId in the Azure Notification Hub
-    string id =1;
+    string id = 1;
  
-    string userId =2;
+    //the userId will be user's id(guid).
+    string userId = 2;
  
+    //notification category enum
+    EnumNotificationCategory category = 3 ;
+
     // unique id from the notification topics.
-    string notificationTopicId = 3;
+    string notificationTopicId = 4;
     
-    EnumNotificationDeliveryMethod communicationChannel = 4 ;
+    //Unique id, if category is instrument then instrumentId
+    //if category is operations then worksheetId
+    string ObjectId = 5;
+
+    //Notification communication channel enum.
+    EnumNotificationDeliveryMethod communicationChannel = 6;
 
     //This is the unique id from the device/app 
-    string Culture =5;
+    string Culture = 7;
     
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
