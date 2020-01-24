@@ -28,8 +28,8 @@ message  UserNotificationPreference {
     //if category is operations then worksheetId
     string ObjectId = 5;
 
-    //Notification communication channel enum.
-    EnumNotificationDeliveryMethod communicationChannel = 6;
+    //Notification deliveryMethod enum.
+    EnumNotificationDeliveryMethod deliveryMethod = 6;
 
     //This is the unique id from the device/app 
     string Culture = 7;
