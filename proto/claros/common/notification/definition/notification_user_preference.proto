@@ -26,7 +26,7 @@ message  UserNotificationPreference {
     
     //Unique id, if category is instrument then instrumentId
     //if category is operations then worksheetId
-    string ObjectId = 5;
+    string objectId = 5;
 
     //Notification deliveryMethod enum.
     EnumNotificationDeliveryMethod deliveryMethod = 6;
@@ -34,6 +34,8 @@ message  UserNotificationPreference {
     //This is the unique id from the device/app 
     string Culture = 7;
     
+    //This is used to check whether the notification preference is enabled or not.
+    bool isEnabled = 8;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
