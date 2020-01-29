@@ -32,10 +32,11 @@ message  UserNotificationPreference {
     EnumNotificationDeliveryMethod deliveryMethod = 6;
 
     //This is the unique id from the device/app 
-    string Culture = 7;
+    string culture = 7;
     
     //This is used to check whether the notification preference is enabled or not.
     bool isEnabled = 8;
+    
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
