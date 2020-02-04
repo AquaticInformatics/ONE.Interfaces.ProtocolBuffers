@@ -7,8 +7,7 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="Claros.Instrument.Core";
 
 // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
-message InstrumentReference
-{
+message InstrumentReference {
     // Unique identifier of the instrument
     claros.instrument.core.InstrumentIdentifier instrumentIdentifier = 1;
 

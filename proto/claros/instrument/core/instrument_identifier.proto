@@ -6,8 +6,7 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="Claros.Instrument.Core";
 
 // Unique identifier of an instrument.
-message InstrumentIdentifier
-{
+message InstrumentIdentifier {
     // Fusion Id that is composed of manufacturer-code, instrument-code and serial-number.
     // For an instrument, the Fusion Id does not change throughout its entire lifetime.
     google.protobuf.StringValue fusionId = 1;
