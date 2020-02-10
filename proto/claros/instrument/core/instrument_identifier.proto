@@ -1,0 +1,20 @@
+syntax = "proto3";
+package claros.instrument.core;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Core";
+
+// Unique identifier of an instrument.
+message InstrumentIdentifier {
+    // Fusion Id that is composed of manufacturer-code, instrument-code and serial-number.
+    // For an instrument, the Fusion Id does not change throughout its entire lifetime.
+    google.protobuf.StringValue fusionId = 1;
+
+    // Unique identifier of an instrument.
+    // Guid of an instrument stays same for the span of a single registration period.
+    // For example: 
+    // - An instrument gets provisioned to a tenant and it gets assigned with a Guid.
+    // - Then, the instrument gets removed and provisioned again to same or a different tenant and it gets assigned with a different Guid.
+    google.protobuf.StringValue guid = 2;
+}
