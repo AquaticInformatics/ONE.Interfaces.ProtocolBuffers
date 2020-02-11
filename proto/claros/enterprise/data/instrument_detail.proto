@@ -1,0 +1,41 @@
+syntax = "proto3";
+package claros.enterprise.data;
+
+import "instrument_reference.proto";
+import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.Enterprise.Data";
+
+message InstrumentDetail { 
+    // Device Name for devices related to this instrument detail
+    string deviceName = 1;
+
+    // Device Status for devices related to this instrument detail
+    string deviceStatus = 2;
+    
+    // Image URL for devices related to this instrument detail
+    string imageUrl = 3;
+
+    // Represents Value for device measurement related to this instrument detail
+    double value = 4;
+
+    // Represents Unit Type for devices related to this instrument detail
+    string unitType = 5;
+
+    // Represents the time for device measurement related to this instrument detail
+    ClarosDateTime timeStamp = 6;
+
+    // Represents the maintainance Over due status for the devices related to this instrument detail
+    bool isMaintainanceOverdue = 7;
+ 
+    // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
+    claros.instrument.core.InstrumentReference instrumentReference = 8;
+}
+
+message InstrumentDetails
+{
+    repeated InstrumentDetail items = 1;
+
+    // Represents the total number of rows for devices related to this instrument detail
+    int32 TotalRows = 2;
+}
