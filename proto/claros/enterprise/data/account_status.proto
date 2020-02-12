@@ -2,7 +2,8 @@ syntax = "proto3";
 package claros.enterprise.data;
 
 import "digital_twin.proto"; 
-import "instrument_data.proto"; 
+import "instrument_data.proto";
+import "pagination.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
@@ -30,4 +31,7 @@ message AccountStatus {
 message AccountStatuses
 {
     repeated AccountStatus items = 1;
+
+    // Represents the pagination for account status
+    Pagination pagination = 2;
 }
