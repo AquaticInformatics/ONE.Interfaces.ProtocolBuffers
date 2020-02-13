@@ -8,25 +8,25 @@ import "pagination.proto";
 option csharp_namespace ="Claros.Enterprise.Data";
 
 message InstrumentDetail { 
-    // Device Name for devices related to this instrument detail
-    string deviceName = 1;
+    // Instrument Name for instruments related to this instrument detail
+    string instrumentName = 1;
 
-    // Device Status for devices related to this instrument detail
-    string deviceStatus = 2;
+    // Instrument Status for instruments related to this instrument detail
+    string instrumentStatus = 2;
     
-    // Image URL for devices related to this instrument detail
+    // Image URL for instruments related to this instrument detail
     string imageUrl = 3;
 
-    // Represents Value for device measurement related to this instrument detail
+    // Represents Value for instrument measurement related to this instrument detail
     double value = 4;
 
-    // Represents Unit Type for devices related to this instrument detail
+    // Represents Unit Type for instruments related to this instrument detail
     string unitType = 5;
 
-    // Represents the time for device measurement related to this instrument detail
+    // Represents the time for instrument measurement related to this instrument detail
     claros.common.core.ClarosDateTime timeStamp = 6;
 
-    // Represents the maintainance Over due status for the devices related to this instrument detail
+    // Represents the maintainance Over due status for the instruments related to this instrument detail
     bool isMaintainanceOverdue = 7;
  
     // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
@@ -37,6 +37,6 @@ message InstrumentDetails
 {
     repeated InstrumentDetail items = 1;
 
-    // Represents the pagination for devices related to this instrument detail
+    // Represents the pagination for instruments related to this instrument detail
     claros.common.core.Pagination pagination = 2;
 }
