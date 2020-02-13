@@ -5,20 +5,20 @@ option csharp_namespace ="Claros.Common.Core";
 
 message Pagination { 
 	// Specifies the page number of the result set
-	int32 PageNumber = 1;
+	int32 pageNumber = 1;
 
 	// Specifies the page size of the result set
-	int32 PageSize = 2;
+	int32 pageSize = 2;
 
 	// Specifies total records of the result set
-	optional int32 TotalRecords = 3;
+	optional int32 totalRecords = 3;
 
 	// Specifies the total pages of the result set
-	optional int32 TotalPages = 4;
+	optional int32 totalPages = 4;
 
 	// Specifies it has previous page of the result set
-	bool HasPrevious = 5;
+	bool hasPrevious = 5;
 
 	// Specifies it has next page of the result set
-	bool HasNext = 6;
+	bool hasNext = 6;
 }
