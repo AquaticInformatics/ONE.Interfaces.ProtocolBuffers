@@ -33,5 +33,5 @@ message AccountStatuses
     repeated AccountStatus items = 1;
 
     // Represents the pagination for account status
-    Pagination pagination = 2;
+    claros.common.core.Pagination pagination = 2;
 }

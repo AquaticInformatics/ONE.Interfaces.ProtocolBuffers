@@ -24,7 +24,7 @@ message InstrumentDetail {
     string unitType = 5;
 
     // Represents the time for device measurement related to this instrument detail
-    ClarosDateTime timeStamp = 6;
+    claros.common.core.ClarosDateTime timeStamp = 6;
 
     // Represents the maintainance Over due status for the devices related to this instrument detail
     bool isMaintainanceOverdue = 7;
@@ -38,5 +38,5 @@ message InstrumentDetails
     repeated InstrumentDetail items = 1;
 
     // Represents the pagination for devices related to this instrument detail
-    Pagination pagination = 2;
+    claros.common.core.Pagination pagination = 2;
 }
