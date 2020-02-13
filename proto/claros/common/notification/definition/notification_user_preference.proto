@@ -35,6 +35,9 @@ message  UserNotificationPreference {
     
     //This is used to check whether the notification preference is enabled or not.
     bool isEnabled = 8;
+
+    // Secondary email of the user
+	string email = 9;
     
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
