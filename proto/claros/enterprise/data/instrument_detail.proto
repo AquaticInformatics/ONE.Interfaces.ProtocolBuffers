@@ -11,8 +11,13 @@ message InstrumentDetail {
     // Instrument Name for instruments related to this instrument detail
     string instrumentName = 1;
 
-    // Instrument Status for instruments related to this instrument detail
-    string instrumentStatus = 2;
+    enum EnumInstrumentActivityStatus {
+        ACTIVE = 0;         // Instrument activity Status for Online
+        INACTIVE = 1;       // Instrument activity Status for Offline
+    }
+
+    // Instrument activity Status for instruments related to this instrument detail
+    EnumInstrumentActivityStatus instrumentActivityStatus = 2;
     
     // Image URL for instruments related to this instrument detail
     string imageUrl = 3;
