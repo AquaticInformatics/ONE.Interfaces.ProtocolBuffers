@@ -20,7 +20,7 @@ message  UserNotificationPreference {
     //notification category enum
     EnumNotificationCategory category = 3 ;
 
-    // unique id from the notification topics.
+    //unique id from the notification topics.
     string notificationTopicId = 4;
     
     //Unique id, if category is instrument then instrumentId
@@ -37,7 +37,7 @@ message  UserNotificationPreference {
     bool isEnabled = 8;
 
     //Secondary email of the user
-	google.protobuf.StringValue secondaryEmail = 9;
+    google.protobuf.StringValue secondaryEmail = 9;
     
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
