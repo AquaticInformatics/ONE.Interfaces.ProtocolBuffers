@@ -4,6 +4,7 @@ package claros.common.notification;
 import "record_auditinfo.proto";
 import "enum_notification_category.proto";
 import "enum_notification_delivery_method.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Notification";
 
