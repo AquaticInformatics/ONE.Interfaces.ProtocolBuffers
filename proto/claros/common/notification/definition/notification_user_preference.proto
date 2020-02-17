@@ -31,7 +31,7 @@ message  UserNotificationPreference {
     //Notification deliveryMethod enum.
     EnumNotificationDeliveryMethod deliveryMethod = 6;
 
-    //This is the unique id from the device/app 
+    //This is the user culture used while sending notification 
     string culture = 7;
     
     //This is used to check whether the notification preference is enabled or not.
