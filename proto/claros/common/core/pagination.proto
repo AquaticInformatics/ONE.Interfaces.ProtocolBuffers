@@ -1,0 +1,26 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Common.Core";
+
+message Pagination { 
+	// Specifies the page number of the result set
+	int32 pageNumber = 1;
+
+	// Specifies the page size of the result set
+	int32 pageSize = 2;
+
+	// Specifies total records of the result set
+	google.protobuf.Int32Value totalRecords = 3;
+
+	// Specifies the total pages of the result set
+	google.protobuf.Int32Value totalPages = 4;
+
+	// Specifies it has previous page of the result set
+	bool hasPrevious = 5;
+
+	// Specifies it has next page of the result set
+	bool hasNext = 6;
+}

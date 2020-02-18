@@ -1,0 +1,47 @@
+syntax = "proto3";
+package claros.enterprise.data;
+
+import "instrument_reference.proto";
+import "clarosdatetime.proto";
+import "pagination.proto";
+
+option csharp_namespace ="Claros.Enterprise.Data";
+
+message InstrumentDetail { 
+    // Instrument Name for instruments related to this instrument detail
+    string instrumentName = 1;
+
+    enum EnumInstrumentActivityStatus {
+        ACTIVE = 0;         // Instrument activity Status for Online
+        INACTIVE = 1;       // Instrument activity Status for Offline
+    }
+
+    // Instrument activity Status for instruments related to this instrument detail
+    EnumInstrumentActivityStatus instrumentActivityStatus = 2;
+    
+    // Image URL for instruments related to this instrument detail
+    string imageUrl = 3;
+
+    // Represents Value for instrument measurement related to this instrument detail
+    double value = 4;
+
+    // Represents Unit Type for instruments related to this instrument detail
+    string unitType = 5;
+
+    // Represents the time for instrument measurement related to this instrument detail
+    claros.common.core.ClarosDateTime timeStamp = 6;
+
+    // Represents the maintainance Over due status for the instruments related to this instrument detail
+    bool isMaintainanceOverdue = 7;
+ 
+    // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
+    claros.instrument.core.InstrumentReference instrumentReference = 8;
+}
+
+message InstrumentDetails
+{
+    repeated InstrumentDetail items = 1;
+
+    // Represents the pagination for instruments related to this instrument detail
+    claros.common.core.Pagination pagination = 2;
+}
