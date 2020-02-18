@@ -4,6 +4,7 @@ package claros.common.notification;
 import "record_auditinfo.proto";
 import "enum_notification_category.proto";
 import "enum_notification_delivery_method.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Notification";
 
@@ -20,7 +21,7 @@ message  UserNotificationPreference {
     //notification category enum
     EnumNotificationCategory category = 3 ;
 
-    // unique id from the notification topics.
+    //unique id from the notification topics.
     string notificationTopicId = 4;
     
     //Unique id, if category is instrument then instrumentId
@@ -30,11 +31,14 @@ message  UserNotificationPreference {
     //Notification deliveryMethod enum.
     EnumNotificationDeliveryMethod deliveryMethod = 6;
 
-    //This is the unique id from the device/app 
+    //This is the user culture used while sending notification 
     string culture = 7;
     
     //This is used to check whether the notification preference is enabled or not.
     bool isEnabled = 8;
+
+    //Secondary email of the user
+    google.protobuf.StringValue secondaryEmail = 9;
     
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
