@@ -1,10 +1,9 @@
-﻿# remove flat folder with no prompot
-rmdir -r ./flat
-mkdir -Force ./flat
+﻿mkdir -Force ../proto/flat
 
-Get-ChildItem ./claros -Recurse -Filter "*.proto" | Copy-Item -destination ./flat
+Get-ChildItem ../proto/claros -Recurse -Filter "*.proto" | Copy-Item -destination ../proto/flat
 
-cd ./flat
+cd ../proto/flat
+
 $files = Get-ChildItem . -Filter "*.proto" 
 
 $dirs = "cpp","csharp" # "java", "js", "objc", "php", "python", "ruby"
@@ -34,4 +33,4 @@ foreach($file in $files)
     Invoke-Expression -Command $Command
 }
 # Stop-Transcript
-cd ..
+cd ..\..\generators
