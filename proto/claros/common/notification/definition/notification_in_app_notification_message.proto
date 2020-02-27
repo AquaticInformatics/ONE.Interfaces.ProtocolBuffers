@@ -8,7 +8,7 @@ import "record_auditinfo.proto";
 
 option csharp_namespace ="Claros.Common.Notification";
 
-message InAppMessage{
+message InAppNotificationMessage{
     //GUID identifier of In App Message
     string id = 1;
 
@@ -45,6 +45,6 @@ message InAppMessage{
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
-message InAppMessages{
-    repeated InAppMessage items = 1;
+message InAppNotificationMessages{
+    repeated InAppNotificationMessage items = 1;
 }
