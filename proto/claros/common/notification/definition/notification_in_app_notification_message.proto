@@ -34,13 +34,13 @@ message InAppNotificationMessage{
     bool isTrash = 8;
 
     //Indicates the datetime of the In App message recieved.
-    ClarosDateTime DateReceived = 9;
+    claros.common.core.ClarosDateTime dateReceived = 9;
 
     //Indicates the datetime of the In App message when read.
-    ClarosDateTime DateRead = 10;
+    claros.common.core.ClarosDateTime dateRead = 10;
 
     //Indicates the datetime of the In App message sent.
-    ClarosDateTime DateTimeSent = 11;
+    claros.common.core.ClarosDateTime dateTimeSent = 11;
 
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
