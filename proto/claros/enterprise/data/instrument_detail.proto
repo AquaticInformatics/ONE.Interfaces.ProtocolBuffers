@@ -13,8 +13,9 @@ message InstrumentDetail {
     string instrumentName = 1;
 
     enum EnumInstrumentActivityStatus {
-        INACTIVE = 0;       // Instrument activity Status for Offline
-        ACTIVE = 1;         // Instrument activity Status for Online
+        INSTRUMENT_ACTIVITY_STATUS_UNKNOWN = 0;
+        INSTRUMENT_ACTIVITY_STATUS_ACTIVE = 1;         // Instrument activity Status for Online
+        INSTRUMENT_ACTIVITY_STATUS_INACTIVE = 2;       // Instrument activity Status for Offline
     }
 
     // Instrument activity Status for instruments related to this instrument detail
