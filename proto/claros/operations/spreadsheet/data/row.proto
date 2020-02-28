@@ -1,14 +1,13 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
- 
-import "timewindow.proto";
+
 import "cell.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 // This is the container for information about the row.
 message Row {
-    uint32 rowNumber = 1;                               // Row number - Based on 01-01-1900
-    claros.common.core.TimeWindow UTCTimeWindow = 2;    // UTC time window related to the row.
+    uint32 rowNumber = 1;                               // Row number - Based on 01-01-1900 WIMS local
+    reserved 2;                                         // formerly UTCTimeWindow
     repeated Cell cells = 3;                            // Cells that are stored within the row.
 }
