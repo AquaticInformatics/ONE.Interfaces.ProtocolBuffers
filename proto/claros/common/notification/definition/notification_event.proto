@@ -20,6 +20,9 @@ message NotificationEvent {
 
     // Notification Category
     EnumNotificationCategory enumNotificationCategory = 4;
+
+    //This is used to replaced the dynamic content in Notification Template. Ex: 18nkeys({UNIT_NAME:FOUNDATION_LIBRARY.UNIT_TYPE.PH}) or subject/body place holder parameters.
+    map<string, string> eventVariables = 5;
     
     // Audit Info
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
