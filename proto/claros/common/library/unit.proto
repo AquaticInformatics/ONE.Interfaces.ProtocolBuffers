@@ -14,7 +14,7 @@ message Unit {
     uint32 IntId = 2;                   
     
     // Localization key for the unit
-    string i18nKey = 3;                 
+    string i18nKey = 3;    
     
     // The untranslated unit name
     string unitName = 4;                
@@ -24,6 +24,9 @@ message Unit {
     
     // Optional description of the Unit
     string description = 6;             
+
+    // Localization key for Abbreviation for the unit
+    string i18nKeyAbbreviation = 7;
 
 	// Audit information for the Unit
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
