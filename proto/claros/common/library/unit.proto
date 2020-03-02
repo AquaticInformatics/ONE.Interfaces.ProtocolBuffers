@@ -28,6 +28,9 @@ message Unit {
     // Localization key for Abbreviation for the unit
     string i18nKeyAbbreviation = 7;
 
+    // Unit Type Group Id
+    string unitTypeGroupId =8;
+
 	// Audit information for the Unit
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
