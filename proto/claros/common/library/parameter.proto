@@ -24,7 +24,7 @@ message Parameter {
     // Optional parameter description
     string description = 6;             
     
-    // The GUID of the tenant that is ?????
+    // The GUID of the tenant (Tenant Defined Parameters)
     string tenantId = 7;            
 
     // GUID of Base UnitType 
