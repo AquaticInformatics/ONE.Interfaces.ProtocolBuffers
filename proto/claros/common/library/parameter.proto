@@ -26,6 +26,16 @@ message Parameter {
     
     // The GUID of the tenant that is ?????
     string tenantId = 7;            
+
+    // GUID of Base UnitType 
+    string baseUnitTypeId = 8;
+
+    // GUID of Chemical Form TypeID
+    string baseChemicalFormTypeId = 9;
+
+    // GUID of Optional Parameter Value Id
+    string defaultParameterOptionValueId = 10;
+
  
 	// Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
