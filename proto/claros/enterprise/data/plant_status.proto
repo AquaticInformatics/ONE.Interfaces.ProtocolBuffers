@@ -1,7 +1,8 @@
 syntax = "proto3";
 package claros.enterprise.data;
  
-import "digital_twin.proto"; 
+import "digital_twin.proto";
+import "address.proto";
 import "pagination.proto";
  
 option csharp_namespace ="Claros.Enterprise.Data";
