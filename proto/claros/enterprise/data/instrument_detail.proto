@@ -4,6 +4,7 @@ package claros.enterprise.data;
 import "instrument_reference.proto";
 import "clarosdatetime.proto";
 import "pagination.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
@@ -12,8 +13,9 @@ message InstrumentDetail {
     string instrumentName = 1;
 
     enum EnumInstrumentActivityStatus {
-        ACTIVE = 0;         // Instrument activity Status for Online
-        INACTIVE = 1;       // Instrument activity Status for Offline
+        INSTRUMENT_ACTIVITY_STATUS_UNKNOWN = 0;
+        INSTRUMENT_ACTIVITY_STATUS_ACTIVE = 1;         // Instrument activity Status for Online
+        INSTRUMENT_ACTIVITY_STATUS_INACTIVE = 2;       // Instrument activity Status for Offline
     }
 
     // Instrument activity Status for instruments related to this instrument detail
@@ -33,9 +35,12 @@ message InstrumentDetail {
 
     // Represents the maintainance Over due status for the instruments related to this instrument detail
     bool isMaintainanceOverdue = 7;
+
+    // Represents the description for instruments related to this instrument detail
+    google.protobuf.StringValue description = 8;
  
     // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
-    claros.instrument.core.InstrumentReference instrumentReference = 8;
+    claros.instrument.core.InstrumentReference instrumentReference = 9;
 }
 
 message InstrumentDetails
