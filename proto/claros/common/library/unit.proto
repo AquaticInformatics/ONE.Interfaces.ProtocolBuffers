@@ -31,7 +31,7 @@ message Unit {
     // Unit Type Group Id
     string unitTypeGroupId =8;
 
-	// Audit information for the Unit
+    // Audit information for the Unit
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 

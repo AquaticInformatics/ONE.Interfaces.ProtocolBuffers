@@ -36,7 +36,7 @@ message Parameter {
     // GUID of Optional Parameter Value Id
     string defaultParameterOptionValueId = 10;
 
-	// Audit information for the Parameter
+    // Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
