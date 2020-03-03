@@ -1,0 +1,50 @@
+syntax = "proto3";
+package claros.common.notification;
+
+import "clarosdatetime.proto";
+
+import "record_auditinfo.proto";
+
+
+option csharp_namespace ="Claros.Common.Notification";
+
+message InAppNotificationMessage{
+    //GUID identifier of In App Message
+    string id = 1;
+
+    //GUID identifier of message type(notification topic id) for In App Message. Ex: Limit Voilation Notification Topic.
+    string messageTypeId = 2;
+
+    //GUID identifier of sender who sent the In App Message notification. ex: Notifications feature id.
+    string senderId = 3;
+
+    //GUID identifier of User id to who the In App Message is sent to.
+    string userId = 4;
+
+    //Subject of the template for a Notification Topic for the In App Message.
+    string subject = 5;
+
+    //Body of the template for a Notification Topic for the In App Message.
+    string body = 6;
+
+    //boolean identifier which indicates the message read or not for In App Message.
+    bool isRead = 7;
+
+    //boolean identifier which indicates the message moved totrash or not.
+    bool isTrash = 8;
+
+    //Indicates the datetime of the In App message recieved.
+    claros.common.core.ClarosDateTime dateReceived = 9;
+
+    //Indicates the datetime of the In App message when read.
+    claros.common.core.ClarosDateTime dateRead = 10;
+
+    //Indicates the datetime of the In App message sent.
+    claros.common.core.ClarosDateTime dateTimeSent = 11;
+
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InAppNotificationMessages{
+    repeated InAppNotificationMessage items = 1;
+}
