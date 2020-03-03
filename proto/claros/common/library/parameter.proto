@@ -7,25 +7,25 @@ option csharp_namespace ="Claros.Common.Library";
 
 message Parameter {
     // The GUID for the parameter
-    string Id = 1;                      
+    string Id = 1;
     
     // The integer used to globally identify the parameter
-    uint32 IntId = 2;                   
+    uint32 IntId = 2;
     
     // The locationization string used for i18 lookup for this parameter
-    string i18nKey = 3;             
+    string i18nKey = 3;
   
     // GUID parameter type identifier
-    string parameterTypeId = 4;         
+    string parameterTypeId = 4;
 
     // The GUID of the Quantity Type related to the parameter
-    string quantityTypeId = 5;          
+    string quantityTypeId = 5;
     
     // Optional parameter description
-    string description = 6;             
+    string description = 6;
     
     // The GUID of the tenant (Tenant Defined Parameters)
-    string tenantId = 7;            
+    string tenantId = 7;
 
     // GUID of Base UnitType 
     string baseUnitTypeId = 8;
@@ -36,7 +36,6 @@ message Parameter {
     // GUID of Optional Parameter Value Id
     string defaultParameterOptionValueId = 10;
 
- 
 	// Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
