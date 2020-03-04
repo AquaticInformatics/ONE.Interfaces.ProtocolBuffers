@@ -50,6 +50,7 @@ import "digital_twin_type.proto";
 import "digital_twin_subtype.proto";
 import "instrument_detail.proto";
 import "plant_status.proto";
+import "notification_in_app_notification_message.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -57,7 +58,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 50
+    // NEXT AVAILABLE ID: 51
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -105,6 +106,7 @@ message ClarosContent {
 		claros.common.notification.NotificationDevices notificationDevices = 28;
 		claros.common.notification.NotificationPreferences notificationPreferences = 29;
 		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 30;
+        claros.common.notification.InAppNotificationMessages inAppNotificationMessages = 50;
 
         // enterprise
         claros.enterprise.core.Features features = 31;

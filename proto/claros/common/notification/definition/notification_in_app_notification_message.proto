@@ -42,6 +42,9 @@ message InAppNotificationMessage{
     //Indicates the datetime of the In App message sent.
     claros.common.core.ClarosDateTime dateTimeSent = 11;
 
+    //boolean identifier which indicates that the user flaged the message as important.
+    bool isMarkedImportant = 12;
+    
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
