@@ -16,8 +16,9 @@ message RowIndex {
     // The relative time window of the row
     claros.common.core.TimeWindow timeWindow = 3;       
 
-    // The UTC time window associated with the row
-    claros.common.core.TimeWindow utcTimeWindows = 4;   
+    // DEPRECATED: a row number cannot be reliably mapped to a time zone,
+    // which means is also cannot be mapped to a UTC time.
+    claros.common.core.TimeWindow utcTimeWindows = 4 [deprecated=true];   
 
     // Whether the row is in speed or batch
     bool isInSpeed = 5;                    

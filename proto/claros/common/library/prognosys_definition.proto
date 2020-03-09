@@ -4,6 +4,7 @@ package claros.common.library;
 import "prognosys_identifier.proto";
 import "i18nkey_text_reference.proto";
 import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Library";
 
@@ -17,7 +18,7 @@ message PrognosysDefinition {
     google.protobuf.StringValue instrumentTypeGuid = 2;
     
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    claros.commong.core.I18NKeyTextReference i18nKeyTextReference = 3;
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 3;
     
     // Audit information for the Prognosys Definition
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
