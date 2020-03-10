@@ -51,6 +51,7 @@ import "digital_twin_subtype.proto";
 import "instrument_detail.proto";
 import "plant_status.proto";
 import "notification_in_app_notification_message.proto";
+import "digital_twin_subtype_propertybag.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -58,7 +59,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 51
+    // NEXT AVAILABLE ID: 52
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -126,6 +127,7 @@ message ClarosContent {
         claros.enterprise.twin.DigitalTwinSubtypes digitalTwinSubtypes = 46;
         claros.enterprise.data.InstrumentDetails instrumentDetails = 48;
         claros.enterprise.data.PlantStatuses plantStatuses = 49;
+        claros.enterprise.twin.PropertyBagCollections propertyBagCollections = 51;
 
         // instrument
         claros.instrument.InstrumentData instrumentData = 47;
