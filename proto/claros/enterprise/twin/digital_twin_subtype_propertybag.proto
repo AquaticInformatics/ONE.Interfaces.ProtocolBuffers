@@ -1,7 +1,7 @@
 syntax = "proto3";
 package claros.enterprise.twin;
  
-import "proto/claros/enterprise/twin/digital_twin.proto";
+import "digital_twin.proto";
 
 option csharp_namespace = "Claros.Enterprise.Twin";
  
@@ -36,10 +36,10 @@ message Attribute {
     EnumElements uiElement = 4;
  
     // Optional: validation  criteria if validation for UI element need to happen
-    optional Validator validator = 5;
+    Validator validator = 5;
  
     // Optional: if the UI element is needs pre-defined options
-    optional map<string,string> options = 6;
+    map<string,string> options = 6;
 }
  
 message MeasurementDefintion {
