@@ -90,6 +90,16 @@ message User {
 	// Collection of user profiles for a user
     repeated UserProfile userProfiles = 24;
 
+	//Password Management for a User.
+	// New Password for a User
+	string newPassword = 25;
+
+	//Old Password for a User
+	string oldPassword = 26
+
+	// The password reset token 
+    string userToken = 27;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
