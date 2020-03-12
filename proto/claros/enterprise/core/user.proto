@@ -95,7 +95,7 @@ message User {
 	string newPassword = 25;
 
 	//Old Password for a User
-	string oldPassword = 26
+	string oldPassword = 26;
 
 	// The password reset token 
     string userToken = 27;
