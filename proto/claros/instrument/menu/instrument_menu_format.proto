@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+message Format {
+    int32 dp = 1;  // Used with floating point numbers to determine fixed vs. floating decimal precision.
+                   // 0—Decimal point floating
+                   // 1—Decimal point fixed
+
+    int32 prec = 2;  // Precision of the value. (Number of significant digits. For example, 
+                     // is PREC is set to 3, and the value is 2347.12, the value should be 
+                     // rounded to 2350.0). Mustbe less than or equal to LEN.
+
+    int32 len = 3;  // Maximum number of digits/characters to use in displaying the
+                    // value (excluding decimal point and sign).
+
+    int32 dpl = 4;  // Number of digits past the decimal point. (Fixed number or max number
+                    // based on DP setting. Mustbe less than LEN.
+
+}
+

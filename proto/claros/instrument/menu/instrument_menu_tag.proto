@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_tag_value.proto";
+import "instrument_menu_format.proto";
+import "google/protobuf/wrappers.proto";
+
+
+message Tag {
+    TagValue value = 1;
+    int32 idd = 2;  // idd from sc standard - [[ not used ]]:
+                    // 0—Float
+                    // 1—Unsigned integer
+                    // 2—Integer
+                    // [[ 3—Selection List ]]
+                    // 4—Text String
+                    // 5—Time
+                    // [[ 6—Units String (Not available for tags) ]]
+                    // [[ 7—Parameter String (Not available for tags) ]]
+                    // 8—Date
+                    // 9—Time and Date
+    google.protobuf.StringValue unit = 3;
+    google.protobuf.StringValue param = 4;
+    Format format = 5;  // display format
+    google.protobuf.FloatValue min_value = 6;
+    google.protobuf.FloatValue max_value = 7;
+}
+

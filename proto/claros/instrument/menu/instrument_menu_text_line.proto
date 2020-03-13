@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+
+import "google/protobuf/wrappers.proto";
+import "instrument_menu_text.proto";
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+message TextLine {
+    Text left = 1;
+    Text right = 2;
+    google.protobuf.BoolValue inverse = 3;  // use inverse Video (highlighted)
+    google.protobuf.BoolValue large_font = 4;  //  use a larger font for this line
+    google.protobuf.StringValue delimiter = 5;  // delimiter between left and right text.
+    google.protobuf.Int32Value justification = 6;  // text algnment (default 0)
+                              // 0: Left. Left Text aligned at the left side of left column,
+                              //    right Text aligned at the right side of right column.
+                              // 1: Center. Left Text aligned at the right side of left column,
+                              //    right Text aligned at the left side of right column.
+   google.protobuf.Int32Value icon_number = 7;  // Display an Icon in front of text line
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+message TextReference {
+    string module = 1;  // Module of the text to be resolved - Possible values:
+                        // "<instrument-type-code>" e.g. "HL001_00119"
+                        // "CommonStandard"
+                        // "CommonParameters"
+                        // "CommonUnits"
+                        // "CommonExtras"
+    int32 index = 2;  // Identifier of the text to be resolved within the module
+}
+

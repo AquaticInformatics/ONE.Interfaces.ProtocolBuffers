@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+
+message PortListEntry {
+    int32 port = 1;
+    int32 tag = 2;
+}
+
+message TelegramEntry {
+    string fid = 1;
+    repeated PortListEntry portlist = 2;
+}
+
+message EditFieldBus {
+    repeated TelegramEntry telegram = 1;
+}
+

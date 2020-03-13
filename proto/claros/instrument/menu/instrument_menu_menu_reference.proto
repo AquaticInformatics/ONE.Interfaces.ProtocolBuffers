@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+message MenuReference {
+    int32 reference = 1;  // Value of the menu reference - an id to identify a menu
+    google.protobuf.BoolValue poll_status = 2;  // (optional) The execution of reference can take a while.
+}
+

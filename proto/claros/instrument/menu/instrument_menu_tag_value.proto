@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+message TagValue {
+    int32 tag = 1;  // Tag number. This value must never be modified
+    string value = 2;  // string representation of TagValue
+}
+

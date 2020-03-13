@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_text_line.proto";
+import "instrument_menu_edit_field_bus.proto";
+import "instrument_menu_edit_selection_list.proto";
+import "instrument_menu_edit_source.proto";
+import "instrument_menu_edit_user_param_unit.proto";
+import "instrument_menu_edit_value.proto";
+import "instrument_menu_menu_reference.proto";
+
+
+message Edit {
+  string edit_type = 1;  // limited to following entries:
+      // "edit"
+      // "selection_list"
+      // "field_bus"
+      // "formula_editor"
+      // "select_source"
+      // "user_param_unit"
+  TextLine headline = 2;
+  int32 protection = 3;  // limited to following entries:
+      // 0: access for All
+      // 1: access for Maitainance personel
+      // 2: access for Service
+  MenuReference menu_reference = 4;
+  EditValue edit = 5;  // optional
+  EditSelectionList selection_list = 6;
+  EditFieldBus field_bus = 7;
+  EditSource select_source = 8;
+  EditUserParamUnit user_param_unit = 9;
+}
+

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_edit.proto";
+import "instrument_menu_text_line.proto";
+import "instrument_menu_menu_reference.proto";
+import "google/protobuf/wrappers.proto";
+
+message MenuLine {
+    TextLine text = 1;
+    int32 type = 2;  // Specifies the type of menu line. Defined values:
+                     // 0: Text line
+                     // 1: Navigation
+                     // 2: Edit
+    google.protobuf.BoolValue fixed = 3;  // This line is fixed and not scrollable.
+    MenuReference menu_reference = 4;
+    Edit edit_data = 5;
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_menu_reference.proto";
+import "instrument_menu_text_line.proto";
+import "instrument_menu_button.proto";
+import "instrument_menu_menu_line.proto";
+import "instrument_menu_timer.proto";
+
+
+message TableMenu {
+    MenuReference menu_reference = 1;
+    TextLine headline = 2;
+    int32 protection = 3;  // Specifies the protection level for controlling access to a menu item.
+                           // 0: All
+                           // 1: Maintenance personal,
+                           // 2: Service
+    repeated Button actions = 4;
+    repeated MenuLine content = 5;
+    bool refresh = 6;
+    Timer timer = 7;  // When specified, indicates that the current page expires after
+                      // a given amount of time with the menu reference of the new
+                      // page to navigate after timer expires.
+}
+

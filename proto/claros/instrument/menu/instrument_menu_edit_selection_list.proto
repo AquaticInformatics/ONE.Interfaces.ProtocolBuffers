@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+
+import "instrument_menu_selection_list_item.proto";
+import "instrument_menu_tag.proto";
+
+
+message EditSelectionList {
+    Tag index = 1;  // Specifies the currently selected value.
+    repeated SelectionListItem items = 2;  // Specifies the list of items to be 
+                                           // selected from to edit the value.
+}
+
