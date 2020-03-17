@@ -41,7 +41,7 @@ message Attribute {
     Validator validator = 5;
  
     // Optional: if the UI element is needs pre-defined options
-    map<google.protobuf.StringValue, google.protobuf.StringValue> options = 6;
+    map<string, google.protobuf.StringValue> options = 6;
 }
  
 message MeasurementDefintion {
