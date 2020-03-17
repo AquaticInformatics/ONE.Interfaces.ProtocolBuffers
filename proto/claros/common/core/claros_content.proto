@@ -49,6 +49,7 @@ import "job_status.proto";
 import "digital_twin_type.proto";
 import "digital_twin_subtype.proto";
 import "instrument_detail.proto";
+import "prognosys_definition.proto";
 import "plant_status.proto";
 import "notification_in_app_notification_message.proto";
 import "digital_twin_subtype_propertybag.proto";
@@ -82,6 +83,7 @@ message ClarosContent {
         claros.common.library.DeviceTypeResources deviceTypeResources = 11;
 		claros.common.library.Parameters parameters = 12;
         claros.common.library.Units units = 13;
+        claros.common.library.PrognosysDefinitions prognosysDefinitions = 51;
  
         // operations
         claros.operations.spreadsheet.Rows rows = 14;
@@ -94,6 +96,7 @@ message ClarosContent {
         // instrument
         claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 20;
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 21;
+        claros.instrument.InstrumentData instrumentData = 47;
 
         // forms
         claros.common.form.Forms forms = 22;
@@ -129,8 +132,6 @@ message ClarosContent {
         claros.enterprise.data.PlantStatuses plantStatuses = 49;
         claros.enterprise.twin.PropertyBagCollections propertyBagCollections = 52;
 
-        // instrument
-        claros.instrument.InstrumentData instrumentData = 47;
     }
 }
 
