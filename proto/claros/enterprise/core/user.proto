@@ -82,13 +82,13 @@ message User {
 	repeated Role roles = 21;
 
 	// Collection of tenants for the user
-    repeated Tenant tenants = 22;
+	repeated Tenant tenants = 22;
 
 	// Collection of features assigned to a user
-    repeated Feature features = 23;
+	repeated Feature features = 23;
 
 	// Collection of user profiles for a user
-    repeated UserProfile userProfiles = 24;
+	repeated UserProfile userProfiles = 24;
 
 	google.protobuf.FieldMask updateMask = 98;
 
