@@ -38,5 +38,8 @@ message Column
     claros.common.core.DataSourceBinding dataSourceBinding = 9;
 
     // This determines how qualifers are interpreted for this column
-    repeated claros.common.core.ReportableQualifierDefinition reportableQualifierDefinitions = 10;        
+    repeated claros.common.core.ReportableQualifierDefinition reportableQualifierDefinitions = 10;
+
+    // The id of the digital twin associated with the column
+    int64 twinId = 11;
 }
