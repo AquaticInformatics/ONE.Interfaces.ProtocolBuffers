@@ -37,7 +37,7 @@ message Edit {
   claros.instrument.menu.MenuReference menu_reference = 4;
   claros.instrument.menu.EditValue edit = 5;  // optional
   claros.instrument.menu.EditSelectionList selection_list = 6;
-  claros.instrument.menu.EditFieldBus field_bus = 7;
+  claros.instrument.menu.FieldBusTelegram field_bus = 7;
   claros.instrument.menu.EditSource select_source = 8;
   claros.instrument.menu.EditUserParamUnit user_param_unit = 9;
 }

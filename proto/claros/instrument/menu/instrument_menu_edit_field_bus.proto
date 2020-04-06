@@ -17,7 +17,7 @@ message TelegramEntry {
     repeated PortListEntry portlist = 2;
 }
 
-message EditFieldBus {
-    repeated TelegramEntry telegram = 1;
+message FieldBusTelegram {
+    repeated TelegramEntry telegram_entry = 1;
 }
 
