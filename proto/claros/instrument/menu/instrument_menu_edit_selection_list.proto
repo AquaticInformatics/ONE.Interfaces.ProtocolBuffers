@@ -11,8 +11,8 @@ import "instrument_menu_tag.proto";
 
 
 message EditSelectionList {
-    Tag index = 1;  // Specifies the currently selected value.
-    repeated SelectionListItem items = 2;  // Specifies the list of items to be 
+    claros.instrument.menu.Tag index = 1;  // Specifies the currently selected value.
+    repeated claros.instrument.menu.SelectionListItem items = 2;  // Specifies the list of items to be
                                            // selected from to edit the value.
 }
 

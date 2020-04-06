@@ -11,8 +11,8 @@ import "google/protobuf/wrappers.proto";
 
 
 message EditValue {
-    Tag data = 1;
+    claros.instrument.menu.Tag data = 1;
     google.protobuf.BoolValue update = 2;  // Send all changes imediatly rather than waiting for enter key
-    Text info_text = 3;  // Optional text for help function
+    claros.instrument.menu.Text info_text = 3;  // Optional text for help function
 }
 

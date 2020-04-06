@@ -10,8 +10,8 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 
 message TextLine {
-    Text left = 1;
-    Text right = 2;
+    claros.instrument.menu.Text left = 1;
+    claros.instrument.menu.Text right = 2;
     google.protobuf.BoolValue inverse = 3;  // use inverse Video (highlighted)
     google.protobuf.BoolValue large_font = 4;  //  use a larger font for this line
     google.protobuf.StringValue delimiter = 5;  // delimiter between left and right text.

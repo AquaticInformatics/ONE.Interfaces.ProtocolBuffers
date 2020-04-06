@@ -25,7 +25,7 @@ message Tag {
                     // 9—Time and Date
     google.protobuf.StringValue unit = 3;
     google.protobuf.StringValue param = 4;
-    Format format = 5;  // display format
+    claros.instrument.menu.Format format = 5;  // display format
     google.protobuf.FloatValue min_value = 6;
     google.protobuf.FloatValue max_value = 7;
 }

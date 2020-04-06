@@ -6,6 +6,7 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 
 import "instrument_menu_menu_reference.proto";
+import "google/protobuf/wrappers.proto";
 
 
 message Button {
@@ -21,8 +22,8 @@ message Button {
     // "END"
     // "LEFT"
     // "RIGHT"
-  MenuReference menu_reference = 2;
-  bool enabled = 3;
+  claros.instrument.menu.MenuReference menu_reference = 2;
+  google.protobuf.BoolValue enabled = 3;
 }
 
 

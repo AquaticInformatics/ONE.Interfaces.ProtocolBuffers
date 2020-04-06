@@ -9,6 +9,6 @@ import "instrument_menu_table_menu.proto";
 
 message PageData {
 	string layout = 1;  // predefined values: "home", "table_menu"
-	TableMenu menu = 2; // required, when layout = "table_menu"
+	claros.instrument.menu.TableMenu menu = 2; // required, when layout = "table_menu"
 }
 

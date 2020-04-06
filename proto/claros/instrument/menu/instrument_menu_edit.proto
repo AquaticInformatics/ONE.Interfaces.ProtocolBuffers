@@ -22,16 +22,16 @@ message Edit {
       // "formula_editor"
       // "select_source"
       // "user_param_unit"
-  TextLine headline = 2;
+  claros.instrument.menu.TextLine headline = 2;
   int32 protection = 3;  // limited to following entries:
       // 0: access for All
-      // 1: access for Maitainance personel
+      // 1: access for Maintenance personnel
       // 2: access for Service
-  MenuReference menu_reference = 4;
-  EditValue edit = 5;  // optional
-  EditSelectionList selection_list = 6;
-  EditFieldBus field_bus = 7;
-  EditSource select_source = 8;
-  EditUserParamUnit user_param_unit = 9;
+  claros.instrument.menu.MenuReference menu_reference = 4;
+  claros.instrument.menu.EditValue edit = 5;  // optional
+  claros.instrument.menu.EditSelectionList selection_list = 6;
+  claros.instrument.menu.EditFieldBus field_bus = 7;
+  claros.instrument.menu.EditSource select_source = 8;
+  claros.instrument.menu.EditUserParamUnit user_param_unit = 9;
 }
 

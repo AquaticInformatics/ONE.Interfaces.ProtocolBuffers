@@ -11,12 +11,12 @@ import "instrument_menu_menu_reference.proto";
 import "google/protobuf/wrappers.proto";
 
 message MenuLine {
-    TextLine text = 1;
+    claros.instrument.menu.TextLine text = 1;
     int32 type = 2;  // Specifies the type of menu line. Defined values:
                      // 0: Text line
                      // 1: Navigation
                      // 2: Edit
     google.protobuf.BoolValue fixed = 3;  // This line is fixed and not scrollable.
-    MenuReference menu_reference = 4;
-    Edit edit_data = 5;
+    claros.instrument.menu.MenuReference menu_reference = 4;
+    claros.instrument.menu.Edit edit_data = 5;
 }

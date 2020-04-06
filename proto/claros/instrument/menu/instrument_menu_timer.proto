@@ -10,6 +10,6 @@ import "instrument_menu_menu_reference.proto";
 
 message Timer {
     int32 timeout = 1;  // Indicates after how many seconds the current page expires.
-    MenuReference menu_reference = 2;  // After timeout enter this menu.
+    claros.instrument.menu.MenuReference menu_reference = 2;  // After timeout enter this menu.
 }
 

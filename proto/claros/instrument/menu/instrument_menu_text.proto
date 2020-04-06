@@ -11,6 +11,6 @@ import "instrument_menu_text_reference.proto";
 message Text { 
     string text = 1;  // Text to be displayed.
 
-    TextReference text_number = 2;  // Text reference of the text to be displayed.
+    claros.instrument.menu.TextReference text_number = 2;  // Text reference of the text to be displayed.
 }
 

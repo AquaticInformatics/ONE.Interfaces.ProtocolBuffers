@@ -9,7 +9,7 @@ import "instrument_menu_edit_field_bus.proto";
 
 
 message EditSource {
-    repeated TelegramEntry telegram = 1;  // can have 0 or 1 entry
+    repeated claros.instrument.menu.TelegramEntry telegram = 1;  // can have 0 or 1 entry
     int32 channel = 2;
 }
 
