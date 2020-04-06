@@ -4,6 +4,8 @@ package claros.instrument.menu;
 
 option csharp_namespace ="Claros.Instrument.Menu";
 
+import "i18nkey_text_reference.proto";
+
 
 enum EnumTextReferenceModule { // Module of the text to be resolved - Possible values:
     TEXTREFERENCE_MODULE_INSTRUMENT_TYPECODE = 0; // "<instrument-type-code>" e.g. "HL001_00119"
@@ -13,8 +15,15 @@ enum EnumTextReferenceModule { // Module of the text to be resolved - Possible v
     TEXTREFERENCE_MODULE_COMMON_EXTRAS = 4;       // "CommonExtras"
 }
 
-message TextReference {
+message ScTextReference {
     EnumTextReferenceModule module = 1;
     int32 index = 2;  // Identifier of the text to be resolved within the module
+}
+
+message TextReference {
+    oneof text_reference {
+        ScTextReference sc_reference = 1;
+        claros.common.core.I18NKeyTextReference i18_reference = 2;
+    }
 }
 
