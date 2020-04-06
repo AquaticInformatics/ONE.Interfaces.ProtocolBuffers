@@ -20,6 +20,6 @@ message TextLine {
                               //    right Text aligned at the right side of right column.
                               // 1: Center. Left Text aligned at the right side of left column,
                               //    right Text aligned at the left side of right column.
-   google.protobuf.Int32Value icon_number = 7;  // Display an Icon in front of text line
+    google.protobuf.Int32Value icon_number = 7;  // Display an Icon in front of text line
 }
 

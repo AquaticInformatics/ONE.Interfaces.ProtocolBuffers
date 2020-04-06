@@ -10,12 +10,17 @@ import "instrument_menu_text_line.proto";
 import "instrument_menu_menu_reference.proto";
 import "google/protobuf/wrappers.proto";
 
+
+enum EnumMenuLineType { // Specifies the type of menu line.
+    MENU_LINE_TYPE_TEXTLINE = 0;    // 0: Text line
+    MENU_LINE_TYPE_NAVIGATION = 1;  // 1: Navigation
+    MENU_LINE_TYPE_EDIT = 2;        // 2: Edit
+}
+
+
 message MenuLine {
     claros.instrument.menu.TextLine text = 1;
-    int32 type = 2;  // Specifies the type of menu line. Defined values:
-                     // 0: Text line
-                     // 1: Navigation
-                     // 2: Edit
+    EnumMenuLineType type = 2;
     google.protobuf.BoolValue fixed = 3;  // This line is fixed and not scrollable.
     claros.instrument.menu.MenuReference menu_reference = 4;
     claros.instrument.menu.Edit edit_data = 5;

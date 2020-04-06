@@ -9,16 +9,14 @@ import "instrument_menu_menu_reference.proto";
 import "instrument_menu_text_line.proto";
 import "instrument_menu_button.proto";
 import "instrument_menu_menu_line.proto";
+import "instrument_menu_edit.proto";
 import "instrument_menu_timer.proto";
 
 
 message TableMenu {
     claros.instrument.menu.MenuReference menu_reference = 1;
     claros.instrument.menu.TextLine headline = 2;
-    int32 protection = 3;  // Specifies the protection level for controlling access to a menu item.
-                           // 0: All
-                           // 1: Maintenance personal,
-                           // 2: Service
+    claros.instrument.menu.EnumMenuProtection protection = 3;  // Specifies the protection level for controlling access to a menu item.
     repeated claros.instrument.menu.Button actions = 4;
     repeated claros.instrument.menu.MenuLine content = 5;
     bool refresh = 6;

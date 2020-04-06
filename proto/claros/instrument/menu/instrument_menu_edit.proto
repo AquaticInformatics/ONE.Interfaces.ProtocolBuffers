@@ -14,19 +14,26 @@ import "instrument_menu_edit_value.proto";
 import "instrument_menu_menu_reference.proto";
 
 
+enum EnumMenuEditType {
+    MENU_EDIT_TYPE_EDIT = 0;             // "edit"
+    MENU_EDIT_TYPE_SELECTION_LIST = 1;   // "selection_list"
+    MENU_EDIT_TYPE_FIELDBUS = 2;         // "field_bus"
+    MENU_EDIT_TYPE_FORMULA_EDITOR = 3;   // "formula_editor"
+    MENU_EDIT_TYPE_SELECT_SOURCE = 4;    // "select_source"
+    MENU_EDIT_TYPE_USER_PARAM_UNIT = 5;  // "user_param_unit"
+}
+
+
+enum EnumMenuProtection {
+    MENU_PROTECTION_ALL = 0;             // 0: access for All
+    MENU_PROTECTION_MAINTENANCE = 1;     // 1: access for Maintenance personnel
+    MENU_PROTECTION_SERVICE = 2;         // 2: access for Service
+}
+
 message Edit {
-  string edit_type = 1;  // limited to following entries:
-      // "edit"
-      // "selection_list"
-      // "field_bus"
-      // "formula_editor"
-      // "select_source"
-      // "user_param_unit"
+  EnumMenuEditType edit_type = 1;
   claros.instrument.menu.TextLine headline = 2;
-  int32 protection = 3;  // limited to following entries:
-      // 0: access for All
-      // 1: access for Maintenance personnel
-      // 2: access for Service
+  EnumMenuProtection protection = 3;
   claros.instrument.menu.MenuReference menu_reference = 4;
   claros.instrument.menu.EditValue edit = 5;  // optional
   claros.instrument.menu.EditSelectionList selection_list = 6;
