@@ -12,7 +12,7 @@ message FormFieldData {
  
     oneof fieldDataBinding {
         claros.operations.spreadsheet.Cell cell = 1;
-        claros.operations.spreadsheet.Row row = 2;
+        claros.operations.spreadsheet.Row row = 3;
     }
 
     claros.instrument.InstrumentData instrumentData = 2;

@@ -17,7 +17,7 @@ message FormField {
     oneof formFieldData {
         // Proto for the cell in a worksheet, if the form field is bound
         claros.operations.spreadsheet.Cell cell = 2;
-        claros.operations.spreadsheet.Row row = 2;
+        claros.operations.spreadsheet.Row row = 6;
     }
 
     // Data received from an instrument if transferred directly
