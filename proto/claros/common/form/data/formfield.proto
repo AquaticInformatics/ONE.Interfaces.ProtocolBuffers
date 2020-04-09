@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.form;
 
 import "cell.proto";
+import "row.proto";
 import "instrument_data.proto";
 import "form_dataentry_type.proto"; 
 import "formfield_worksheet_column_UTC.proto";
@@ -15,7 +16,8 @@ message FormField {
 
     oneof formFieldData {
         // Proto for the cell in a worksheet, if the form field is bound
-        claros.operations.spreadsheet.Cell cell = 2; 
+        claros.operations.spreadsheet.Cell cell = 2;
+        claros.operations.spreadsheet.Row row = 2;
     }
 
     // Data received from an instrument if transferred directly

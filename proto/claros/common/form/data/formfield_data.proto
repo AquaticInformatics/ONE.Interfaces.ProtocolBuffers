@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.form;
  
 import "cell.proto";
+import "row.proto";
 import "instrument_data.proto";
 import "auditevent.proto";
 
@@ -10,7 +11,8 @@ option csharp_namespace ="Claros.Common.Form";
 message FormFieldData {
  
     oneof fieldDataBinding {
-        claros.operations.spreadsheet.Cell cell = 1; 
+        claros.operations.spreadsheet.Cell cell = 1;
+        claros.operations.spreadsheet.Row row = 2;
     }
 
     claros.instrument.InstrumentData instrumentData = 2;
