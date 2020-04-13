@@ -21,4 +21,7 @@ message PlantStatuses
  
 	// Represents the pagination for plant status
 	claros.common.core.Pagination pagination = 2;
+
+	// Represents the SearchOptions for plant status
+	claros.common.core.SearchOptions searchOptions = 3;
 }

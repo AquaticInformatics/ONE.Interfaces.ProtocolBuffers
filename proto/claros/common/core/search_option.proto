@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common.core;
+
+option csharp_namespace ="Claros.Common.Core";
+
+message SearchOption { 
+	// Specifies the key-value pair for search
+	map <string, string> searchBasedOn = 1;
+}
+
+message SearchOptions {
+    repeated SearchOption items = 1;
+}
