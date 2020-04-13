@@ -1,11 +1,13 @@
 syntax = "proto3";
 package claros.common.core;
 
+import "google/protobuf/wrappers.proto";
+
 option csharp_namespace ="Claros.Common.Core";
 
 message SearchOption { 
 	// Specifies the key-value pair for search
-	map <string, string> searchBasedOn = 1;
+	map <string, google.protobuf.StringValue> searchBasedOn = 1;
 }
 
 message SearchOptions {
