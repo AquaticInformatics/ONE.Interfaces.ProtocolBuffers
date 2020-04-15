@@ -4,6 +4,7 @@ package claros.enterprise.data;
 import "digital_twin.proto";
 import "address.proto";
 import "pagination.proto";
+import "search_option.proto";
  
 option csharp_namespace ="Claros.Enterprise.Data";
  
@@ -32,6 +33,6 @@ message PlantStatuses
 	// Represents the pagination for plant status
 	claros.common.core.Pagination pagination = 2;
 
-	// Represents the SearchOptions for plant status
-	claros.common.core.SearchOptions searchOptions = 3;
+	// Represents the SearchOption for plant status
+	claros.common.core.SearchOption searchOption = 3;
 }
