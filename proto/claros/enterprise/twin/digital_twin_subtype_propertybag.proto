@@ -16,6 +16,7 @@ enum EnumElements {
     ELEMENTS_OPTION = 5;                    //Element for HTML Option
     ELEMENTS_FORM = 6;                      //Element for HTML Form Control
     ELEMENTS_MEASUREMENT_DEFINITION = 7;    //Element for MeasurementDefintion
+    ELEMENTS_CHECKBOX = 8;                  //Element for HTML checkbox
 }
  
 message Validator {
