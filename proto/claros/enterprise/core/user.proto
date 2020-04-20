@@ -90,6 +90,9 @@ message User {
 	// Collection of user profiles for a user
 	repeated UserProfile userProfiles = 24;
 
+	//User Status enum
+	EnumUserStatus userStatus = 25;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
