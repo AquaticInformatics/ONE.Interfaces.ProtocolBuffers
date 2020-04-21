@@ -4,20 +4,6 @@ The generators folder contains scripts for generating class files in the target 
 
 ## DotNet
 
-protogen-batch.ps1 is a powershell script that will enumerate through the entire \proto folder and generate C# class files in the \generated\dotnet folder
+gen_all.ps1 is a powershell script that will enumerate through the entire \proto folder and generate C# class files
 
 Console logging will indicate success or failure for each file.
-
-### Tools Needed
-Download and install protoget from https://protogen.marcgravell.com/
-
-Direct Link
-
-https://protogen.marcgravell.com/protogen/protogen%202.3.16.zip
-
-### Steps
-In powershell, execute script 
-
-````
- .\generators\dotnet\protogen-batch.ps1
- ````
