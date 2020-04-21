@@ -43,6 +43,9 @@ message DigitalTwin{
 
     EnumDigitalTwinRestriction restriction = 15;
 
+    //twinReferenceId of the Parent Twin
+    google.protobuf.StringValue parentTwinReferenceId = 16;
+
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
