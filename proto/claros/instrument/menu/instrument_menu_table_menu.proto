@@ -14,8 +14,8 @@ import "instrument_menu_timer.proto";
 
 
 message TableMenu {
-    claros.instrument.menu.MenuReference menu_reference = 1;
-    claros.instrument.menu.TextLine headline = 2;
+    claros.instrument.menu.MenuReference menuReference = 1;
+    claros.instrument.menu.TextLine headLine = 2;
     claros.instrument.menu.EnumMenuProtection protection = 3;  // Specifies the protection level for controlling access to a menu item.
     repeated claros.instrument.menu.Button actions = 4;
     repeated claros.instrument.menu.MenuLine content = 5;
@@ -24,4 +24,3 @@ message TableMenu {
                       // a given amount of time with the menu reference of the new
                       // page to navigate after timer expires.
 }
-

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+message PortListEntry {
+    int32 port = 1;
+    oneof entry {
+        int32 tag = 2;
+        int32 deviceInfo = 3;
+    }
+}
+
+message TelegramEntry {
+    string fusionId = 1;
+    repeated PortListEntry portList = 2;
+}

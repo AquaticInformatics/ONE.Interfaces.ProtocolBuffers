@@ -8,9 +8,11 @@ option csharp_namespace ="Claros.Instrument.Menu";
 import "instrument_menu_text_reference.proto";
 
 
+import "google/protobuf/wrappers.proto";
+
+
 message Text { 
-    string text = 1;  // Text to be displayed.
+    google.protobuf.StringValue  text = 1;  // Text to be displayed.
 
-    claros.instrument.menu.TextReference text_number = 2;  // Text reference of the text to be displayed.
+    claros.instrument.menu.TextReference textReference = 2;  // Text reference of the text to be displayed.
 }
-

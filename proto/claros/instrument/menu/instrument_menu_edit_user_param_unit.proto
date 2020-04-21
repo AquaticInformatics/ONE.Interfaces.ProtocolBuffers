@@ -6,13 +6,17 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 
 message ParamUnitEntry {
-    string str = 1;
-    string uuid = 2;
+    string string = 1;
+    string guid = 2;
 }
 
-message EditUserParamUnit {
+message UserParamUnit {
     int32 channel = 1;
     ParamUnitEntry param = 2;
     ParamUnitEntry unit = 3;
+}
+
+message EditUserParamUnit {
+    UserParamUnit userParamUnit = 1;
 }
 

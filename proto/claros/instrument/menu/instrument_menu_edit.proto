@@ -15,30 +15,32 @@ import "instrument_menu_menu_reference.proto";
 
 
 enum EnumMenuEditType {
-    MENU_EDIT_TYPE_EDIT = 0;             // "edit"
-    MENU_EDIT_TYPE_SELECTION_LIST = 1;   // "selection_list"
-    MENU_EDIT_TYPE_FIELDBUS = 2;         // "field_bus"
-    MENU_EDIT_TYPE_FORMULA_EDITOR = 3;   // "formula_editor"
-    MENU_EDIT_TYPE_SELECT_SOURCE = 4;    // "select_source"
-    MENU_EDIT_TYPE_USER_PARAM_UNIT = 5;  // "user_param_unit"
+    MENU_EDIT_TYPE_UNUSED = 0;           // not used
+    MENU_EDIT_TYPE_EDIT = 1;             // "edit"
+    MENU_EDIT_TYPE_SELECTION_LIST = 2;   // "selection_list"
+    MENU_EDIT_TYPE_FIELDBUS = 3;         // "field_bus"
+    MENU_EDIT_TYPE_FORMULA_EDITOR = 4;   // "formula_editor"
+    MENU_EDIT_TYPE_SELECT_SOURCE = 5;    // "select_source"
+    MENU_EDIT_TYPE_USER_PARAM_UNIT = 6;  // "user_param_unit"
 }
 
 
 enum EnumMenuProtection {
-    MENU_PROTECTION_ALL = 0;             // 0: access for All
-    MENU_PROTECTION_MAINTENANCE = 1;     // 1: access for Maintenance personnel
-    MENU_PROTECTION_SERVICE = 2;         // 2: access for Service
+    MENU_PROTECTION_NOT_USED = 0;        // not used
+    MENU_PROTECTION_ALL = 1;             // sc value 0: access for All
+    MENU_PROTECTION_MAINTENANCE = 2;     // sc value 1: access for Maintenance personnel
+    MENU_PROTECTION_SERVICE = 3;         // sc value 2: access for Service
 }
 
 message Edit {
-  EnumMenuEditType edit_type = 1;
-  claros.instrument.menu.TextLine headline = 2;
+  EnumMenuEditType editType = 1;
+  claros.instrument.menu.TextLine headLine = 2;
   EnumMenuProtection protection = 3;
-  claros.instrument.menu.MenuReference menu_reference = 4;
+  claros.instrument.menu.MenuReference menuReference = 4;
   claros.instrument.menu.EditValue edit = 5;  // optional
-  claros.instrument.menu.EditSelectionList selection_list = 6;
-  claros.instrument.menu.FieldBusTelegram field_bus = 7;
-  claros.instrument.menu.EditSource select_source = 8;
-  claros.instrument.menu.EditUserParamUnit user_param_unit = 9;
+  claros.instrument.menu.EditSelectionList selectionList = 6;
+  claros.instrument.menu.FieldBusTelegram fieldBusTelegram = 7;
+  claros.instrument.menu.EditSource selectSource = 8;
+  claros.instrument.menu.EditUserParamUnit userParamUnit = 9;
 }
 

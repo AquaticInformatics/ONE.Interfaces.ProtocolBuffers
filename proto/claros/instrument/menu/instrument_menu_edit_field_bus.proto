@@ -5,19 +5,11 @@ package claros.instrument.menu;
 option csharp_namespace ="Claros.Instrument.Menu";
 
 
+import "instrument_menu_edit_telegram_entry.proto";
 
 
-message PortListEntry {
-    int32 port = 1;
-    int32 tag = 2;
-}
-
-message TelegramEntry {
-    string fid = 1;
-    repeated PortListEntry portlist = 2;
-}
 
 message FieldBusTelegram {
-    repeated TelegramEntry telegram_entry = 1;
+    repeated claros.instrument.menu.TelegramEntry telegram = 1;
 }
 

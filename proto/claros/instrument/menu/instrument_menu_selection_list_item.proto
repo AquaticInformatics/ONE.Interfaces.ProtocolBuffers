@@ -10,6 +10,6 @@ import "instrument_menu_text_line.proto";
 
 message SelectionListItem {
     claros.instrument.menu.TextLine text = 1;
-    int32 value_ref = 2;  // The value identifier of selection TextLine
+    int32 valueRef = 2;  // The value identifier of selection TextLine
 }
 

@@ -8,11 +8,12 @@ import "i18nkey_text_reference.proto";
 
 
 enum EnumTextReferenceModule { // Module of the text to be resolved - Possible values:
-    TEXTREFERENCE_MODULE_INSTRUMENT_TYPECODE = 0; // "<instrument-type-code>" e.g. "HL001_00119"
-    TEXTREFERENCE_MODULE_COMMON_STANDARD = 1;     // "CommonStandard"
-    TEXTREFERENCE_MODULE_COMMON_PARAMETERS = 2;   // "CommonParameters"
-    TEXTREFERENCE_MODULE_COMMON_UNITS = 3;        // "CommonUnits"
-    TEXTREFERENCE_MODULE_COMMON_EXTRAS = 4;       // "CommonExtras"
+    TEXTREFERENCE_MODULE_UNUSED = 0;              // not used
+    TEXTREFERENCE_MODULE_INSTRUMENT_TYPECODE = 1; // "<instrument-type-code>" e.g. "HL001_00119"
+    TEXTREFERENCE_MODULE_COMMON_STANDARD = 2;     // "CommonStandard"
+    TEXTREFERENCE_MODULE_COMMON_PARAMETERS = 3;   // "CommonParameters"
+    TEXTREFERENCE_MODULE_COMMON_UNITS = 4;        // "CommonUnits"
+    TEXTREFERENCE_MODULE_COMMON_EXTRAS = 5;       // "CommonExtras"
 }
 
 message ScTextReference {
@@ -21,9 +22,9 @@ message ScTextReference {
 }
 
 message TextReference {
-    oneof text_reference {
-        ScTextReference sc_reference = 1;
-        claros.common.core.I18NKeyTextReference i18_reference = 2;
+    oneof textReference {
+        ScTextReference scReference = 1;
+        claros.common.core.I18NKeyTextReference i18Reference = 2;
     }
 }
 

@@ -11,16 +11,17 @@ import "google/protobuf/wrappers.proto";
 
 
 enum EnumTagIdd { // idd from sc standard - [[ not used ]]:
-    TAG_IDD_FLOAT = 0;             // 0—Float
-    TAG_IDD_UNSIGNED_INTEGER = 1;  // 1—Unsigned integer
-    TAG_IDD_INTEGER = 2;           // 2—Integer
-    TAG_IDD_SELECTION_LIST = 3;    // [[ 3—Selection List ]]
-    TAG_IDD_TEXT_STRING = 4;       // 4—Text String
-    TAG_IDD_TIME = 5;              // 5—Time
-    TAG_IDD_UNIT = 6;              // [[ 6—Units String (Not available for tags) ]]
-    TAG_IDD_PARAMETER = 7;         // [[ 7—Parameter String (Not available for tags) ]]
-    TAG_IDD_DATE = 8;              // 8—Date
-    TAG_IDD_DATE_TIME = 9;         // 9—Time and Date
+    TAG_IDD_UNUSED = 0;            // not used
+    TAG_IDD_FLOAT = 1;             // sc value = 0 — Float
+    TAG_IDD_UNSIGNED_INTEGER = 2;  // sc value = 1 — Unsigned integer
+    TAG_IDD_INTEGER = 3;           // sc value = 2 — Integer
+    TAG_IDD_SELECTION_LIST = 4;    // sc value = 3 [[ Selection List ]]
+    TAG_IDD_TEXT_STRING = 5;       // sc value = 4 — Text String
+    TAG_IDD_TIME = 6;              // sc value = 5 — Time
+    TAG_IDD_UNIT = 7;              // sc value = 6 [[ Units String (Not available for tags) ]]
+    TAG_IDD_PARAMETER = 8;         // sc value = 7 [[ Parameter String (Not available for tags) ]]
+    TAG_IDD_DATE = 9;              // sc value = 8 — Date
+    TAG_IDD_DATE_TIME = 10;        // sc value = 9 — Time and Date
 }
 
 message Tag {
@@ -29,7 +30,7 @@ message Tag {
     google.protobuf.StringValue unit = 3;
     google.protobuf.StringValue param = 4;
     claros.instrument.menu.Format format = 5;  // display format
-    google.protobuf.FloatValue min_value = 6;
-    google.protobuf.FloatValue max_value = 7;
+    google.protobuf.FloatValue minValue = 6;
+    google.protobuf.FloatValue maxValue = 7;
 }
 

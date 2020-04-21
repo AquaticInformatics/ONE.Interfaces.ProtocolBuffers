@@ -10,6 +10,6 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 message MenuReference {
     int32 reference = 1;  // Value of the menu reference - an id to identify a menu
-    google.protobuf.BoolValue poll_status = 2;  // (optional) The execution of reference can take a while.
+    google.protobuf.BoolValue pollStatus = 2;  // (optional) The execution of reference can take a while.
 }
 

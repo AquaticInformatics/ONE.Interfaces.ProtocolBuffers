@@ -5,7 +5,7 @@ package claros.instrument.menu;
 option csharp_namespace ="Claros.Instrument.Menu";
 
 
-import "instrument_menu_edit_field_bus.proto";
+import "instrument_menu_edit_telegram_entry.proto";
 
 
 message EditSource {

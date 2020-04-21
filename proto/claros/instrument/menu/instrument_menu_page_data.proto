@@ -7,8 +7,14 @@ option csharp_namespace ="Claros.Instrument.Menu";
 import "instrument_menu_table_menu.proto";
 
 
+enum EnumMenuPageDataLayout {
+    MENU_PAGE_LAYOUT_UNUSED = 0;     // not used
+    MENU_PAGE_LAYOUT_HOME = 1;       // "home"
+    MENU_PAGE_LAYOUT_TABLE_MENU = 2; // "table_menu"
+}
+
 message PageData {
-	string layout = 1;  // predefined values: "home", "table_menu"
-	claros.instrument.menu.TableMenu menu = 2; // required, when layout = "table_menu"
+	EnumMenuPageDataLayout layout = 1;
+	claros.instrument.menu.TableMenu menu = 2; // required, when layout = MENU_PAGE_LAYOUT_TABLE_MENU
 }
 

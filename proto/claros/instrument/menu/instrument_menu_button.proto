@@ -10,26 +10,27 @@ import "google/protobuf/wrappers.proto";
 
 
 enum EnumMenuButtonName { // [[ ]] : currently not used
-    MENU_BUTTON_NAME_HOME = 0;        // "HOME"
-    MENU_BUTTON_NAME_BACK = 1;        // "BACK"
-    MENU_BUTTON_NAME_ENTER = 2;       // "ENTER"
-    MENU_BUTTON_NAME_UP = 3;          // "UP"
-    MENU_BUTTON_NAME_DOWN = 4;        // "DOWN"
-    MENU_BUTTON_NAME_PAGE_UP = 5;     // "PAGE_UP"
-    MENU_BUTTON_NAME_PAGE_DOWN = 6;   // "PAGE_DOWN"
-    MENU_BUTTON_NAME_TOP = 7;         // "TOP" - MOST_UP
-    MENU_BUTTON_NAME_END = 8;         // "END" - MOST_DOWN
-    MENU_BUTTON_NAME_LEFT = 9;        // "LEFT"
-    MENU_BUTTON_NAME_RIGHT = 10;      // "RIGHT"
-    MENU_BUTTON_NAME_PAGE_LEFT = 11;  // [[ ]]
-    MENU_BUTTON_NAME_PAGE_RIGHT = 12; // [[ ]]
-    MENU_BUTTON_NAME_MOST_LEFT = 13;  // [[ ]]
-    MENU_BUTTON_NAME_MOST_RIGHT = 14; // [[ ]]
+    MENU_BUTTON_NAME_UNUSED = 0;      // not used
+    MENU_BUTTON_NAME_HOME = 1;        // "HOME"
+    MENU_BUTTON_NAME_BACK = 2;        // "BACK"
+    MENU_BUTTON_NAME_ENTER = 3;       // "ENTER"
+    MENU_BUTTON_NAME_UP = 4;          // "UP"
+    MENU_BUTTON_NAME_DOWN = 5;        // "DOWN"
+    MENU_BUTTON_NAME_PAGE_UP = 6;     // "PAGE_UP"
+    MENU_BUTTON_NAME_PAGE_DOWN = 7;   // "PAGE_DOWN"
+    MENU_BUTTON_NAME_TOP = 8;         // "TOP" - MOST_UP
+    MENU_BUTTON_NAME_END = 9;         // "END" - MOST_DOWN
+    MENU_BUTTON_NAME_LEFT = 10;       // "LEFT"
+    MENU_BUTTON_NAME_RIGHT = 11;      // "RIGHT"
+    MENU_BUTTON_NAME_PAGE_LEFT = 12;  // [[ ]]
+    MENU_BUTTON_NAME_PAGE_RIGHT = 13; // [[ ]]
+    MENU_BUTTON_NAME_MOST_LEFT = 14;  // [[ ]]
+    MENU_BUTTON_NAME_MOST_RIGHT = 15; // [[ ]]
 }
 
 message Button {
   EnumMenuButtonName name = 1;
-  claros.instrument.menu.MenuReference menu_reference = 2;
+  claros.instrument.menu.MenuReference menuReference = 2;
   google.protobuf.BoolValue enabled = 3;
 }
 
