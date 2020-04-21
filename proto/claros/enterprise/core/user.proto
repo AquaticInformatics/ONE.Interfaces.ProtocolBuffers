@@ -30,32 +30,67 @@ message User {
 	// Nullable email of the user
 	google.protobuf.StringValue email = 5;
 
+	// Is email confirmed?
+	bool isEmailConfirmed = 6;
+	
 	// Nullable phone number of the user
 	google.protobuf.StringValue phoneNumber = 7;
 
+	// Is phone number confirmed?
+	bool isPhoneNumberConfirmed = 8;
+
+	// Nullable password hash for user
+	//google.protobuf.StringValue passwordHash = 9;
+	string passwordHash = 9;
+
+	// Nullable security stamp hash for user
+	//google.protobuf.StringValue securityStamp = 10;
+	string securityStamp = 10;
+
 	// Is two factor enabled?
-	bool isTwoFactorEnabled = 8;
+	bool isTwoFactorEnabled = 11;
+
+	// Is lockout enabled?
+	bool isLockoutEnabled = 12;
+
+	// Lockout end date datetime
+	claros.common.core.ClarosDateTime lockoutEndDate = 13;
+
+	// Access failed count
+	int32 accessFailedCount = 14;
+
+	// Password expiration datetime
+	claros.common.core.ClarosDateTime passwordExpiration = 15;
+
+	// Invitation expiration datetime
+	claros.common.core.ClarosDateTime invitationExpiration = 16;
 
 	// Is user active?
-	bool isActive = 9;
+	bool isActive = 17;
+
+	// Is accepted TCs?
+	bool isAcceptedTcs = 18;
+
+	// Is accepted TCs datetime
+	claros.common.core.ClarosDateTime  lastAcceptedTCsDate = 19;
 
 	// Collection of preferences for the user
-	repeated UserPreference userPreferences = 10;
+	repeated UserPreference userPreferences = 20;
 
 	// Collection of roles assigned to a user
-	repeated Role roles = 11;
+	repeated Role roles = 21;
 
 	// Collection of tenants for the user
-	repeated Tenant tenants = 12;
+	repeated Tenant tenants = 22;
 
 	// Collection of features assigned to a user
-	repeated Feature features = 13;
+	repeated Feature features = 23;
 
 	// Collection of user profiles for a user
-	repeated UserProfile userProfiles = 14;
-
+	repeated UserProfile userProfiles = 24;
+	
 	//User Status enum
-	EnumUserStatus userStatus = 15;
+	EnumUserStatus userStatus = 25;
 
 	google.protobuf.FieldMask updateMask = 98;
 
