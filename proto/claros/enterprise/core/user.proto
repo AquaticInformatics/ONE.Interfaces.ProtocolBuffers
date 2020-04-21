@@ -1,7 +1,6 @@
 syntax = "proto3";
 package claros.enterprise.core;
 
-import "clarosdatetime.proto";
 import "feature.proto";
 import "record_auditinfo.proto";
 import "role.proto";
@@ -31,67 +30,32 @@ message User {
 	// Nullable email of the user
 	google.protobuf.StringValue email = 5;
 
-	// Is email confirmed?
-	bool isEmailConfirmed = 6;
-	
 	// Nullable phone number of the user
 	google.protobuf.StringValue phoneNumber = 7;
 
-	// Is phone number confirmed?
-	bool isPhoneNumberConfirmed = 8;
-
-	// Nullable password hash for user
-	//google.protobuf.StringValue passwordHash = 9;
-	string passwordHash = 9;
-
-	// Nullable security stamp hash for user
-	//google.protobuf.StringValue securityStamp = 10;
-	string securityStamp = 10;
-
 	// Is two factor enabled?
-	bool isTwoFactorEnabled = 11;
-
-	// Is lockout enabled?
-	bool isLockoutEnabled = 12;
-
-	// Lockout end date datetime
-	claros.common.core.ClarosDateTime lockoutEndDate = 13;
-
-	// Access failed count
-	int32 accessFailedCount = 14;
-
-	// Password expiration datetime
-	claros.common.core.ClarosDateTime passwordExpiration = 15;
-
-	// Invitation expiration datetime
-	claros.common.core.ClarosDateTime invitationExpiration = 16;
+	bool isTwoFactorEnabled = 8;
 
 	// Is user active?
-	bool isActive = 17;
-
-	// Is accepted TCs?
-	bool isAcceptedTcs = 18;
-
-	// Is accepted TCs datetime
-	claros.common.core.ClarosDateTime  lastAcceptedTCsDate = 19;
+	bool isActive = 9;
 
 	// Collection of preferences for the user
-	repeated UserPreference userPreferences = 20;
+	repeated UserPreference userPreferences = 10;
 
 	// Collection of roles assigned to a user
-	repeated Role roles = 21;
+	repeated Role roles = 11;
 
 	// Collection of tenants for the user
-	repeated Tenant tenants = 22;
+	repeated Tenant tenants = 12;
 
 	// Collection of features assigned to a user
-	repeated Feature features = 23;
+	repeated Feature features = 13;
 
 	// Collection of user profiles for a user
-	repeated UserProfile userProfiles = 24;
+	repeated UserProfile userProfiles = 14;
 
 	//User Status enum
-	EnumUserStatus userStatus = 25;
+	EnumUserStatus userStatus = 15;
 
 	google.protobuf.FieldMask updateMask = 98;
 
@@ -104,3 +68,12 @@ message Users
 {
     repeated User items = 1;
 }
+
+enum EnumUserStatus {
+	USERSTATUS_UNKNOWN = 0;
+	USERSTATUS_INVITE_PENDING = 1;
+	USERSTATUS_INVITE_EXPIRED = 2;
+	USERSTATUS_ACCOUNT_ACTIVE = 3;
+	USERSTATUS_ACCOUNT_LOCKED = 4;
+	USERSTATUS_PASSWORD_EXPIRED = 5;
+};
