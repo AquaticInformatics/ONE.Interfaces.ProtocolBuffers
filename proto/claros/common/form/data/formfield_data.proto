@@ -10,7 +10,7 @@ option csharp_namespace ="Claros.Common.Form";
 message FormFieldData {
  
     oneof fieldDataBinding {
-        claros.operations.spreadsheet.Cell cell = 1; 
+        claros.operations.spreadsheet.Cell cell = 1;
     }
 
     claros.instrument.InstrumentData instrumentData = 2;
