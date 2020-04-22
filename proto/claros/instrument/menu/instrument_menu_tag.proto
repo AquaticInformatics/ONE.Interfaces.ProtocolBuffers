@@ -11,7 +11,7 @@ import "google/protobuf/wrappers.proto";
 
 
 enum EnumTagIdd { // idd from sc standard - [[ not used ]]:
-    TAG_IDD_UNUSED = 0;            // not used
+    TAG_IDD_UNKNOWN = 0;           // not used
     TAG_IDD_FLOAT = 1;             // sc value = 0 — Float
     TAG_IDD_UNSIGNED_INTEGER = 2;  // sc value = 1 — Unsigned integer
     TAG_IDD_INTEGER = 3;           // sc value = 2 — Integer

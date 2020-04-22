@@ -10,11 +10,11 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 
 enum EnumMenuTextJustification {
-    MENU_TEXT_JUSTIFICATION_UNUSED = 0; // not used
-    MENU_TEXT_JUSTIFICATION_LEFT = 1;   // sc value = 0: Left. Left Text aligned at the left side of left column,
-                                        // right Text aligned at the right side of right column.
-    MENU_TEXT_JUSTIFICATION_CENTER = 2; // sc value = 1: Center. Left Text aligned at the right side of left column,
-                                        // right Text aligned at the left side of right column.
+    MENU_TEXT_JUSTIFICATION_UNKNOWN = 0; // not used
+    MENU_TEXT_JUSTIFICATION_LEFT = 1;    // sc value = 0: Left. Left Text aligned at the left side of left column,
+                                         // right Text aligned at the right side of right column.
+    MENU_TEXT_JUSTIFICATION_CENTER = 2;  // sc value = 1: Center. Left Text aligned at the right side of left column,
+                                         // right Text aligned at the left side of right column.
 }
 
 message TextLine {

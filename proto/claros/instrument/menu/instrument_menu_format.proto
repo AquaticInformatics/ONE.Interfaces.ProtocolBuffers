@@ -5,7 +5,7 @@ package claros.instrument.menu;
 option csharp_namespace ="Claros.Instrument.Menu";
 
 enum EnumMenuFormatType {
-    MENU_FORMAT_TYPE_UNUSED = 0;   // not used
+    MENU_FORMAT_TYPE_UNKNOWN = 0;  // not used
     MENU_FORMAT_TYPE_FLOATING = 1; // sc value = 0 — Decimal point floating
     MENU_FORMAT_TYPE_FIXED = 2;    // sc value = 1 — Decimal point fixed
 }

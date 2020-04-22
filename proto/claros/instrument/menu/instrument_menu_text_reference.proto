@@ -8,7 +8,7 @@ import "i18nkey_text_reference.proto";
 
 
 enum EnumTextReferenceModule { // Module of the text to be resolved - Possible values:
-    TEXTREFERENCE_MODULE_UNUSED = 0;              // not used
+    TEXTREFERENCE_MODULE_UNKNOWN = 0;             // not used
     TEXTREFERENCE_MODULE_INSTRUMENT_TYPECODE = 1; // "<instrument-type-code>" e.g. "HL001_00119"
     TEXTREFERENCE_MODULE_COMMON_STANDARD = 2;     // "CommonStandard"
     TEXTREFERENCE_MODULE_COMMON_PARAMETERS = 3;   // "CommonParameters"

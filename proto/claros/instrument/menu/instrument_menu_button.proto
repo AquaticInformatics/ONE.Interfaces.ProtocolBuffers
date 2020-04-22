@@ -10,7 +10,7 @@ import "google/protobuf/wrappers.proto";
 
 
 enum EnumMenuButtonName { // [[ ]] : currently not used
-    MENU_BUTTON_NAME_UNUSED = 0;      // not used
+    MENU_BUTTON_NAME_UNKNOWN = 0;     // not used
     MENU_BUTTON_NAME_HOME = 1;        // "HOME"
     MENU_BUTTON_NAME_BACK = 2;        // "BACK"
     MENU_BUTTON_NAME_ENTER = 3;       // "ENTER"

@@ -12,7 +12,7 @@ import "google/protobuf/wrappers.proto";
 
 
 enum EnumMenuLineType { // Specifies the type of menu line.
-    MENU_LINE_TYPE_UNUSED = 0;      // not used
+    MENU_LINE_TYPE_UNKNOWN = 0;     // not used
     MENU_LINE_TYPE_TEXTLINE = 1;    // sc value = 0: Text line
     MENU_LINE_TYPE_NAVIGATION = 2;  // sc value = 1: Navigation
     MENU_LINE_TYPE_EDIT = 3;        // sc value = 2: Edit

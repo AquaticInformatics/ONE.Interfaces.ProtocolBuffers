@@ -15,7 +15,7 @@ import "instrument_menu_menu_reference.proto";
 
 
 enum EnumMenuEditType {
-    MENU_EDIT_TYPE_UNUSED = 0;           // not used
+    MENU_EDIT_TYPE_UNKNOWN = 0;          // not used
     MENU_EDIT_TYPE_EDIT = 1;             // "edit"
     MENU_EDIT_TYPE_SELECTION_LIST = 2;   // "selection_list"
     MENU_EDIT_TYPE_FIELDBUS = 3;         // "field_bus"
@@ -26,7 +26,7 @@ enum EnumMenuEditType {
 
 
 enum EnumMenuProtection {
-    MENU_PROTECTION_NOT_USED = 0;        // not used
+    MENU_PROTECTION_UNKNOWN = 0;         // not used
     MENU_PROTECTION_ALL = 1;             // sc value 0: access for All
     MENU_PROTECTION_MAINTENANCE = 2;     // sc value 1: access for Maintenance personnel
     MENU_PROTECTION_SERVICE = 3;         // sc value 2: access for Service
