@@ -15,6 +15,6 @@ enum EnumMenuPageDataLayout {
 
 message PageData {
 	EnumMenuPageDataLayout layout = 1;
-	claros.instrument.menu.TableMenu menu = 2; // required, when layout = MENU_PAGE_LAYOUT_TABLE_MENU
+	claros.instrument.menu.TableMenu tableMenu = 2; // required, when layout = MENU_PAGE_LAYOUT_TABLE_MENU
 }
 

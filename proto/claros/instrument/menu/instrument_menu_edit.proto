@@ -37,10 +37,12 @@ message Edit {
   claros.instrument.menu.TextLine headLine = 2;
   EnumMenuProtection protection = 3;
   claros.instrument.menu.MenuReference menuReference = 4;
-  claros.instrument.menu.EditValue edit = 5;  // optional
-  claros.instrument.menu.EditSelectionList selectionList = 6;
-  claros.instrument.menu.FieldBusTelegram fieldBusTelegram = 7;
-  claros.instrument.menu.EditSource selectSource = 8;
-  claros.instrument.menu.EditUserParamUnit userParamUnit = 9;
+  oneof editItem {
+      claros.instrument.menu.EditValue edit = 5;  // optional
+      claros.instrument.menu.EditSelectionList selectionList = 6;
+      claros.instrument.menu.FieldBusTelegram fieldBusTelegram = 7;
+      claros.instrument.menu.EditSource selectSource = 8;
+      claros.instrument.menu.EditUserParamUnit userParamUnit = 9;
+  }
 }
 
