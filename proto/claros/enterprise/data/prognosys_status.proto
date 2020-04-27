@@ -1,0 +1,37 @@
+syntax = "proto3";
+package claros.enterprise.data;
+
+import "prognosys_definition.proto";
+import "instrument_status_prognosys.proto";
+import "pagination.proto";
+
+option csharp_namespace ="Claros.Enterprise.Data";
+
+enum EnumSeverityStatus {
+    SEVERITY_STATUS_UNKNOWN = 0;
+    SEVERITY_STATUS_NORMAL = 1             //status for normal
+    SEVERITY_STATUS_CRITICAL = 2;          //status for critical
+    SEVERITY_STATUS_SEVERE = 3;            //status for severe
+}
+
+message PrognosysStatus { 
+    // Represents the prognosys definition for instrument indentifier
+    claros.Common.librart.PrognosysDefinition prognosysDefinition = 1;
+
+    // Represents instrument status prognosys
+    claros.instrument.StatusPrognosysItem prognosysStatus = 2;
+
+    // Represents service indicator severity
+    EnumSeverity serviceIndicatorSeverity = 3;
+
+    // Represents measurement indicator severity
+    EnumSeverity measurementIndicatorSeverity = 4;
+}
+
+message PrognosysStatuses
+{
+    repeated PrognosysStatus items = 1;
+
+    // Represents the pagination for account status
+    claros.common.core.Pagination pagination = 2;
+}
