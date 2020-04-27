@@ -1,0 +1,144 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message Client {
+
+	// GUID unique identifier of the client instance
+    string id = 1;
+
+    // Specifies if client is enabled (defaults to true)
+    bool enabled = 2;
+
+	// GUID unique identifier of the client
+	string clientId = 3;
+
+	// Client display name (used for logging and consent screen)
+	string clientName = 4;
+
+	// URI to further information about client (used on consent screen)
+	google.protobuf.StringValue clientUri = 5;
+
+	// URI to client logo (used on consent screen)
+	google.protobuf.StringValue logoUri = 6;
+
+	// Specifies whether a consent screen is required (defaults to true)
+	bool requireConsent = 7;
+	
+	// Specifies whether user can choose to store consent decisions (defaults to true)
+	bool allowRememberConsent = 8;
+
+    // Flows Enum , Specifies allowed flow for client (either AuthorizationCode, Implicit, Hybrid, ResourceOwner, ClientCredentials or Custom). Defaults to Implicit.
+    EnumFlows flow = 9;
+
+    //Value indicating whether this client is allowed to request token using client credentials only.
+    bool allowClientCredentialsOnly = 10;
+
+    //Specifies logout URI at client for HTTP based logout.
+    google.protobuf.StringValue logOutUri = 11;
+
+    //Specifies if the user's session id should be sent to the LogoutUri. Defaults to true.
+    bool logOutSessionRequired = 12;
+
+    //Specifies if the client will always show a confirmation page for sign-out. Defaults to false.
+    bool requireSignOutPrompt = 13;
+
+    // Gets or sets a value indicating whether the client has access to all scopes. Defaults to false.
+    bool allowAccessToAllScopes = 14;
+
+    // Lifetime of identity token in seconds (defaults to 300 seconds / 5 minutes)
+    int32 identityTokenLifetime = 15;
+
+    // Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour)
+    int32 accessTokenLifetime = 16;
+
+    // Lifetime of authorization code in seconds (defaults to 300 seconds / 5 minutes)
+    int32 authorizationCodeLifetime = 17;
+    
+    // Maximum lifetime of a refresh token in seconds. Defaults to 2592000 seconds / 30 days
+    int32  absoluteRefreshTokenLifetime = 18;
+
+    // Sliding lifetime of a refresh token in seconds. Defaults to 1296000 seconds / 15 days
+    int32  slidingRefreshTokenLifetime = 19;
+
+    // ReUse: the refresh token handle will stay the same when refreshing tokens
+    EnumTokenUsage refreshTokenUsage = 20;
+
+    // Gets or sets a value indicating whether the access token (and its claims) should be updated on a refresh token request.
+    bool updateAccessTokenOnRefresh = 21;
+
+    //Token Expiration for a client 
+    EnumTokenExpiration refreshTokenExpiration = 22;
+
+    // Specifies whether the access token is a reference token or a self contained JWT token (defaults to Jwt).
+    EnumAccessTokenType AccessTokenType = 23;
+
+    // Gets or sets a value indicating whether the local login is allowed for this client. Defaults to <c>true</c>.
+    bool enableLocalLogin = 24;
+
+    // Gets or sets a value indicating whether JWT access tokens should include an identifier
+    bool includeJwtId = 25;
+
+    // Gets or sets a value indicating whether client claims should be always included in the access tokens - or only for client credentials flow.
+    bool alwaysSendClientClaims = 26;
+
+    // Gets or sets a value indicating whether all client claims should be prefixed.
+    bool prefixClientClaims = 27;
+
+    // Gets or sets a value indicating whether the client has access to all custom grant types. Defaults to false.
+    bool allowAccessToAllGrantTypes = 28;
+
+    // Controls whether access tokens are transmitted via the browser for this client (defaults to true).
+    bool AllowAccessTokensViaBrowser = 29;
+
+    //Sprint Number in which client is added.
+    int32 sprintNumber = 30;
+
+
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the client
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Clients
+{
+    repeated Client items = 1;
+}
+
+// <summary>OpenID Connect flows.</summary>
+   enum EnumFlows
+  {
+    ENUMFLOWS_AUTHORIZATION_CODE = 0;
+    ENUMFLOWS_IMPLICIT = 1;
+    ENUMFLOWS_HYBRID = 2;
+    ENUMFLOWS_CLIENT_CREDENTIALS = 3;
+    ENUMFLOWS_RESOURCE_OWNER = 4;
+    ENUMFLOWS_CUSTOM = 5;
+    ENUMFLOWS_AUTHORIZAION_CODE_WITH_PROOF_KEY = 6;
+    ENUMFLOWS_HYBRID_WITH_PROOF_KEY = 7;
+  }
+
+  enum EnumTokenUsage
+  {
+    ENUMTOKENUSAGE_RE_USE = 0;
+    ENUMTOKENUSAGE_ONE_TIME_ONLY = 1;;
+  }
+
+   enum EnumTokenExpiration
+  {    
+    ENUMTOKENEXPIRATION_SLIDING = 0;
+    ENUMTOKENEXPIRATION_ABSOLUTE = 1;
+  }
+
+  enum EnumAccessTokenType
+  {
+    ENUMACCESSTOKENTYPE_JWT = 0 ;
+    ENUMACCESSTOKENTYPE_REFERENCE = 1;
+  }
