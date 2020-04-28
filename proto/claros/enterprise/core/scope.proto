@@ -1,0 +1,67 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message Scope {
+
+    // GUID unique identifier of the scope instance
+    string id = 1;
+
+    // Specifies if scope is enabled (defaults to true)
+    bool enabled = 2;
+
+    // Scope name (used for logging and consent screen)
+	string name = 3;
+
+    // Display name of the scope that is displayed on the consent screen.
+	string displayName = 4;
+
+    // Description of the scope that is displayed on the consent screen.
+	google.protobuf.StringValue description = 5;
+
+    // Flag indicating whether the user can de-select the scope on the consent screen.
+    bool required = 6;
+
+    // Flag indicating whether the scope is emphasized in the consent view.
+    bool emphasize = 7;
+
+    // Scope type is either Identity (OpenID Connect related) or Resource (OAuth2 resources).
+    EnumScopeType type = 8;
+
+    // A flag indicating whether all claims are included for the user.
+    bool includeAllClaimsForUser = 9;
+
+    // A rule for determining which claims should be included in the token
+    string claimsRule = 10;
+
+    // Flag indicating whether the scope is shown in the discovery document.
+    bool showInDiscoveryDocument = 11;
+    
+    // Specifies whether this scope is allowed to see other scopes when using the introspection endpoint
+    bool allowUnrestrictedIntrospection = 12;
+
+
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the scope
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Scopes
+{
+    repeated Scope items = 1;
+}
+
+// <summary>OpenID Connect flows.</summary>
+   enum EnumScopeType
+  {
+    SCOPE_TYPE_UNKNOWN = 0;
+    SCOPE_TYPE_IDENTITY = 1;
+    SCOPE_TYPE_RESOURCE = 2;
+  }
