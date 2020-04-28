@@ -3,7 +3,6 @@ package claros.enterprise.data;
 
 import "digital_twin.proto";
 import "instrument_reference.proto";
-import "prognosys_definition.proto";
 import "instrument_status_prognosys.proto";
 import "pagination.proto";
 
@@ -11,12 +10,12 @@ option csharp_namespace ="Claros.Enterprise.Data";
 
 enum EnumSeverityStatus {
     SEVERITY_STATUS_UNKNOWN = 0;
-    SEVERITY_STATUS_NORMAL = 1             //status for normal
+    SEVERITY_STATUS_NORMAL = 1;            //status for normal
     SEVERITY_STATUS_CRITICAL = 2;          //status for critical
     SEVERITY_STATUS_SEVERE = 3;            //status for severe
 }
 
-message PrognosysStatus { 
+message InstrumentPrognosysDetail { 
     // Specifies the instrument twin for the prognosys
     claros.enterprise.twin.DigitalTwin tenantDigitalTwin = 1;
 
@@ -24,19 +23,19 @@ message PrognosysStatus {
     claros.instrument.core.InstrumentReference instrumentReference = 2;
 
     // Represents instrument status prognosys
-    claros.instrument.StatusPrognosysItem prognosysStatus = 3;
+    claros.instrument.status.StatusPrognosysItem prognosysStatus = 3;
 
     // Represents service indicator severity
-    EnumSeverity serviceIndicatorSeverity = 4;
+    EnumSeverityStatus serviceIndicatorSeverity = 4;
 
     // Represents measurement indicator severity
-    EnumSeverity measurementIndicatorSeverity = 5;
+    EnumSeverityStatus measurementIndicatorSeverity = 5;
 }
 
-message PrognosysStatuses
+message InstrumentPrognosysDetails
 {
-    repeated PrognosysStatus items = 1;
+    repeated InstrumentPrognosysDetail items = 1;
 
-    // Represents the pagination for account status
+    // Represents the pagination for prognosys status
     claros.common.core.Pagination pagination = 2;
 }
