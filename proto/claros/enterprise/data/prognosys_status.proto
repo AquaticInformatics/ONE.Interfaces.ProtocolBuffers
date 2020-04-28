@@ -24,13 +24,13 @@ message PrognosysStatus {
     claros.instrument.core.InstrumentReference instrumentReference = 2;
 
     // Represents instrument status prognosys
-    claros.instrument.StatusPrognosysItem prognosysStatus = 4;
+    claros.instrument.StatusPrognosysItem prognosysStatus = 3;
 
     // Represents service indicator severity
-    EnumSeverity serviceIndicatorSeverity = 5;
+    EnumSeverity serviceIndicatorSeverity = 4;
 
     // Represents measurement indicator severity
-    EnumSeverity measurementIndicatorSeverity = 6;
+    EnumSeverity measurementIndicatorSeverity = 5;
 }
 
 message PrognosysStatuses
