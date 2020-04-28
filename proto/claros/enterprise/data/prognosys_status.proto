@@ -23,9 +23,6 @@ message PrognosysStatus {
     // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
     claros.instrument.core.InstrumentReference instrumentReference = 2;
 
-    // Represents the prognosys definition for instrument indentifier
-    claros.Common.library.PrognosysDefinition prognosysDefinition = 3;
-
     // Represents instrument status prognosys
     claros.instrument.StatusPrognosysItem prognosysStatus = 4;
 
