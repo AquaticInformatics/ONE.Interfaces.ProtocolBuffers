@@ -8,6 +8,7 @@ import "form.proto";
 import "form_template.proto";
 import "form_index.proto";
 import "instrument_data.proto";
+import "instrument_lock_status.proto";
 import "instrument_measurement_definition.proto";
 import "instrument_measurement_data.proto";
 import "limit_configuration.proto";
@@ -98,6 +99,7 @@ message ClarosContent {
         claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 20;
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 21;
         claros.instrument.InstrumentData instrumentData = 47;
+        claros.instrument.lock.InstrumentLockStatus instrumentLockStatus = 53;
 
         // forms
         claros.common.form.Forms forms = 22;
