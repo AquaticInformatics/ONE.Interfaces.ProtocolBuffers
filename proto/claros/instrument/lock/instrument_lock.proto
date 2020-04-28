@@ -9,17 +9,24 @@ option csharp_namespace ="Claros.Instrument.Lock";
 // Represents an instrument lock.
 message InstrumentLock {
 
+    // Specifies the target operation for the instrument lock.
+    InstrumentLockTarget target = 1;
+
+    // Specifies the owner of the lock.
+    InstrumentLockOwner owner = 2;
+
+    // Specifies the timestamp since when the lock is active.
+    claros.common.core.ClarosDateTime createdOn = 3;
+}
+
+// Represents the target operation for instrument lock.
+message InstrumentLockTarget {
+
     // Specifices instrument app that is locking the access.
     EnumInstrumentApp app = 1;
 
     // Specifies the context within the application that is locking the access.
     google.protobuf.StringValue context = 2;
-
-    // Specifies the owner of the lock.
-    InstrumentLockOwner owner = 3;
-
-    // Specifies the timestamp since when the lock is active.
-    claros.common.core.ClarosDateTime createdOn = 4;
 }
 
 // Represents the type of instrument app.

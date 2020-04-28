@@ -11,7 +11,7 @@ message InstrumentLockStatus {
     // Specifies whether the instrument is locked or not.
     EnumInstrumentLockStatus status = 1;
 
-    // Specifies the details of instrument lock.
+    // Specifies the details of instrument lock (present only when status is locked).
     InstrumentLock lock = 2;
 }
 
