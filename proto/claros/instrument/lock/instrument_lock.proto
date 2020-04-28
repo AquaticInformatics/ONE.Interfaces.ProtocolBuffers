@@ -1,0 +1,58 @@
+syntax = "proto3";
+package claros.instrument.lock;
+
+import "clarosdatetime.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Lock";
+
+// Represents an instrument lock.
+message InstrumentLock {
+
+    // Specifices instrument app that is locking the access.
+    EnumInstrumentApp app = 1;
+
+    // Specifies the context within the application that is locking the access.
+    google.protobuf.StringValue context = 2;
+
+    // Specifies the owner of the lock.
+    InstrumentLockOwner owner = 3;
+
+    // Specifies the timestamp since when the lock is active.
+    claros.common.core.ClarosDateTime createdOn = 4;
+}
+
+// Represents the type of instrument app.
+enum EnumInstrumentApp {
+    INSTRUMENT_APP_UNKNOWN = 0;
+    INSTRUMENT_APP_MENU = 1;        // Corresponds to sc Menu (a.k.a. LnS Menu)
+    INSTRUMENT_APP_WORKFLOW = 2;    // Corresponds to a maintenance task or a workflow
+    INSTRUMENT_APP_FIRMWARE = 3;    // Corresponds to a firmware update process
+}
+
+// Represents the owner of the instrument lock.
+message InstrumentLockOwner {
+
+    oneof instrumentLockOwner {
+
+        // Specifies the details of the local user who owns the lock.
+        InstrumentLockOwnerLocal local = 1;
+        
+        // Specifies the details of the remote user who owns the lock.
+        InstrumentLockOwnerRemote remote = 2;
+    }
+}
+
+// Represents a remote lock owner.
+message InstrumentLockOnwerRemote {
+
+    // Specifies the GUID of the user who owns the lock.
+    google.protobuf.StringValue userGuid = 1;
+}
+
+// Represents a local lock owner.
+message InstrumentLockOwnerLocal {
+
+    // Reserved property w/ which any kind of identifier details can be provided about a local user. 
+    google.protobuf.StringValue identifier = 1;
+}

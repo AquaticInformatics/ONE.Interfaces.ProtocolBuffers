@@ -1,0 +1,23 @@
+syntax = "proto3";
+package claros.instrument.lock;
+
+import "instrument_lock.proto";
+
+option csharp_namespace ="Claros.Instrument.Lock";
+
+// Represents the lock status for an instrument.
+message InstrumentLockStatus {
+
+    // Specifies whether the instrument is locked or not.
+    EnumInstrumentLockStatus status = 1;
+
+    // Specifies the details of instrument lock.
+    InstrumentLock lock = 2;
+}
+
+// Represents the type of the instrument lock status.
+enum EnumInstrumentLockStatus {
+    INSTRUMENT_LOCK_STATUS_UNKNOWN = 0;
+    INSTRUMENT_LOCK_STATUS_OPEN = 1;        // Instrument is not locked.
+    INSTRUMENT_LOCK_STATUS_LOCKED = 2;      // Instrument is locked.
+}
