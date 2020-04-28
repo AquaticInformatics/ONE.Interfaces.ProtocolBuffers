@@ -1,0 +1,21 @@
+syntax = "proto3";
+package claros.instrument.lock;
+
+import "clarosdatetime.proto";
+import "instrument_lock_target.proto";
+import "instrument_lock_owner.proto";
+
+option csharp_namespace ="Claros.Instrument.Lock";
+
+// Represents an instrument lock.
+message InstrumentLock {
+
+    // Specifies the target operation for the instrument lock.
+    claros.instrument.lock.InstrumentLockTarget target = 1;
+
+    // Specifies the owner of the lock.
+    claros.instrument.lock.InstrumentLockOwner owner = 2;
+
+    // Specifies the timestamp since when the lock is active.
+    claros.common.core.ClarosDateTime createdOn = 3;
+}
