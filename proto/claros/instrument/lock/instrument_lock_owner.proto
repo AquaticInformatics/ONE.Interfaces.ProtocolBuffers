@@ -11,15 +11,15 @@ message InstrumentLockOwner {
     oneof instrumentLockOwner {
 
         // Specifies the details of the local user who owns the lock.
-        InstrumentLockOwnerLocal local = 1;
+        claros.instrument.lock.InstrumentLockOwnerLocal local = 1;
         
         // Specifies the details of the remote user who owns the lock.
-        InstrumentLockOwnerRemote remote = 2;
+        claros.instrument.lock.InstrumentLockOwnerRemote remote = 2;
     }
 }
 
 // Represents a remote lock owner.
-message InstrumentLockOnwerRemote {
+message InstrumentLockOwnerRemote {
 
     // Specifies the GUID of the user who owns the lock.
     google.protobuf.StringValue userGuid = 1;

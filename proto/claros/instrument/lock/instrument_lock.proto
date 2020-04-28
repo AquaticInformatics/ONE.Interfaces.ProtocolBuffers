@@ -11,10 +11,10 @@ option csharp_namespace ="Claros.Instrument.Lock";
 message InstrumentLock {
 
     // Specifies the target operation for the instrument lock.
-    InstrumentLockTarget target = 1;
+    claros.instrument.lock.InstrumentLockTarget target = 1;
 
     // Specifies the owner of the lock.
-    InstrumentLockOwner owner = 2;
+    claros.instrument.lock.InstrumentLockOwner owner = 2;
 
     // Specifies the timestamp since when the lock is active.
     claros.common.core.ClarosDateTime createdOn = 3;

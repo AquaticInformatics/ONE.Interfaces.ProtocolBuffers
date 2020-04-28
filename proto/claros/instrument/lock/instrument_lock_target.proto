@@ -9,7 +9,7 @@ option csharp_namespace ="Claros.Instrument.Lock";
 message InstrumentLockTarget {
 
     // Specifices instrument app that is locking the access.
-    EnumInstrumentApp app = 1;
+    claros.instrument.lock.EnumInstrumentApp app = 1;
 
     // Specifies the context within the application that is locking the access.
     google.protobuf.StringValue context = 2;
