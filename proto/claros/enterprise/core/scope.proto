@@ -61,7 +61,7 @@ message Scopes
 // <summary>OpenID Connect flows.</summary>
    enum EnumScopeType
   {
-    SCOPETYPE_UNKNOWN = 0;
-    SCOPETYPE_IDENTITY = 1;
-    SCOPETYPE_RESOURCE = 2;
+    SCOPE_TYPE_UNKNOWN = 0;
+    SCOPE_TYPE_IDENTITY = 1;
+    SCOPE_TYPE_RESOURCE = 2;
   }
