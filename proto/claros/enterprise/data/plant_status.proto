@@ -5,6 +5,7 @@ import "digital_twin.proto";
 import "address.proto";
 import "pagination.proto";
 import "search_option.proto";
+import "google/protobuf/wrappers.proto";
  
 option csharp_namespace ="Claros.Enterprise.Data";
  
@@ -24,6 +25,12 @@ message PlantStatus {
 
 	// Plant Status for Instruments with Error and Warning
 	EnumPlantInstrumentStatus plantInstrumentStatus = 3;
+
+	// Error Count for instruments for the specified plant
+	google.protobuf.Int32Value instrumentErrorCount = 4;
+
+	// Warning Count for instruments for the specified plant
+	google.protobuf.Int32Value instrumentWarningCount = 5;
 }
  
 message PlantStatuses
