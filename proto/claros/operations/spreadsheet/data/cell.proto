@@ -20,8 +20,4 @@ message Cell {
 
 	// The expected binding
     claros.common.core.DataSourceBinding dataSourceBinding = 4;
-
-	// reference id to the digital twin. 
-	// all columns will create a unique GUID that will be shared with the digital twin.
-	string twinId = 5;
 }
