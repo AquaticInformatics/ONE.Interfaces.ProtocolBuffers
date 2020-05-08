@@ -1,12 +1,15 @@
 syntax = "proto3";
 package claros.iot.registry;
  
-import "enum_link.proto";
-import "record_auditinfo.proto";
-import "enum_link_category.proto";
-
 option csharp_namespace ="Claros.IoT.Registry";
- 
+ /*
+The production cell is a grouping of instruments in the nebula database.
+For example all Trojan instruments will be in the Trojan Production Cell.
+
+productionCellId is a GUID
+cellName could be Trojan 
+cellDescription could Production Trojan Instruments
+ */
 message ProductionCell {
     string productionCellId= 1;
     string cellName = 2;
@@ -14,5 +17,5 @@ message ProductionCell {
 }
 
 message ProductionCells {
-    repeated ProducitonCell items = 1;
+    repeated ProductionCell items = 1;
 }
