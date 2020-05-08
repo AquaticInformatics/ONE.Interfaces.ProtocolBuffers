@@ -26,7 +26,10 @@ message AuditEvent {
     
     // Text details that can provide more clarification to the audit
     string details = 6;            
+
+    // Location data for where the event occurred or was recorded
+    claros.common.gis.GIS gis = 7;
     
     // The domain in which the audit event was generated
-    claros.common.EnumDomainSource enumDomainSource = 7;
+    claros.common.EnumDomainSource enumDomainSource = 8;
 }
