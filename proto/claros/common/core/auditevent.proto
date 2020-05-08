@@ -5,6 +5,7 @@ import "enum_auditevent.proto";
 import "clarosdatetime.proto";
 import "enum_datasource.proto";
 import "enum_domain_source.proto";
+import "gis.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
