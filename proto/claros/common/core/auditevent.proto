@@ -24,5 +24,8 @@ message AuditEvent {
     ClarosDateTime timeStamp = 5;           
     
     // Text details that can provide more clarification to the audit
-    string details = 6;                 
+    string details = 6;            
+    
+    // The domain in which the audit event was generated
+    claros.common.EnumDomainSource enumDomainSource = 7;
 }
