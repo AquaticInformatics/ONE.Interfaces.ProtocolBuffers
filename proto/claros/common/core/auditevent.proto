@@ -4,6 +4,7 @@ package claros.common.core;
 import "enum_auditevent.proto";
 import "clarosdatetime.proto";
 import "enum_datasource.proto";
+import "enum_domain_source.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
