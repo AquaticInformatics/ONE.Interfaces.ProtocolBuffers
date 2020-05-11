@@ -3,7 +3,7 @@ package claros.common;
 
 option csharp_namespace ="Claros.Common";
 
-// Initially we will only support minutes
+// Indicates the domain where data was generated
 enum EnumDomainSource 
 {
     DOMAIN_SOURCE_UNKNOWN = 0;
