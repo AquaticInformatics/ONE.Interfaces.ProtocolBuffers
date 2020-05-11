@@ -1,0 +1,19 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "enum_valid_value_restriction.proto";
+
+option csharp_namespace ="Claros.Common.Core";
+ 
+message ValidValue {
+
+	// Valid string value
+	string value = 1;	
+}
+
+message ValidValues
+{
+	repeated ValidValue items = 1;
+
+	claros.common.enum.EnumValidValueRestriction restriction = 2;
+}

@@ -4,6 +4,7 @@ package claros.operations.spreadsheet;
 import "data_source_binding.proto";
 import "limit.proto";
 import "reportable_qualifier_definition.proto";
+import "valid_value.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
@@ -42,4 +43,7 @@ message Column
 
     // The id of the digital twin associated with the column
     int64 twinId = 11;
+
+    // List of values which are valid for this column
+    claros.common.core.ValidValues ValidValues = 12;    
 }
