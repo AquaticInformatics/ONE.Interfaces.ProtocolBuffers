@@ -5,14 +5,14 @@ option csharp_namespace ="Claros.IoT.Registry";
  /*
 The production cell is a grouping of instruments in the nebula database.
 For example all Trojan instruments will be in the Trojan Production Cell.
-
-productionCellId is a GUID
-cellName could be Trojan 
-cellDescription could Production Trojan Instruments
  */
+ 
 message ProductionCell {
-    string productionCellId= 1;
+    //productionCellId is a GUID
+    string productionCellId = 1;
+    //cellName could be Trojan 
     string cellName = 2;
+    //cellDescription could Production Trojan Instruments
     string cellDescription = 3;
 }
 

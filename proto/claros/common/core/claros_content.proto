@@ -57,7 +57,7 @@ import "digital_twin_subtype_propertybag.proto";
 import "instrument_prognosys_detail.proto";
 import "client.proto";
 import "scope.proto";
-import "claros.iot.registry";
+import "productioncell.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -142,7 +142,7 @@ message ClarosContent {
         claros.enterprise.core.Scopes scopes = 56;
 
         //iot
-        claros.iot.registry.ProductionCells ProductionCells = 57;
+        claros.iot.registry.ProductionCells productionCells = 57;
     }
 }
 
