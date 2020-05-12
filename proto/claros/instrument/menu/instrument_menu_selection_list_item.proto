@@ -8,8 +8,13 @@ option csharp_namespace ="Claros.Instrument.Menu";
 import "instrument_menu_text_line.proto";
 
 
+// Describes items, that are shown in selection lists.
 message SelectionListItem {
-    claros.instrument.menu.TextLine text = 1;
-    int32 valueRef = 2;  // The value identifier of selection TextLine
-}
 
+    // Textual description of the choice.
+    claros.instrument.menu.TextLine text = 1;
+
+    // The value identifier of selection TextLine,
+    // index of the chosen item.
+    int32 valueRef = 2;
+}

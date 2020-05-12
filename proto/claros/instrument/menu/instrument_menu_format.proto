@@ -4,24 +4,33 @@ package claros.instrument.menu;
 
 option csharp_namespace ="Claros.Instrument.Menu";
 
+
+
+// Describes how display of floating point numbers is handled.
 enum EnumMenuFormatType {
     MENU_FORMAT_TYPE_UNKNOWN = 0;  // not used
-    MENU_FORMAT_TYPE_FLOATING = 1; // sc value = 0 — Decimal point floating
-    MENU_FORMAT_TYPE_FIXED = 2;    // sc value = 1 — Decimal point fixed
+    MENU_FORMAT_TYPE_FLOATING = 1; // sc value = 0 - Decimal point floating
+    MENU_FORMAT_TYPE_FIXED = 2;    // sc value = 1 - Decimal point fixed
 }
 
+
+// Describes how floating point numbers are displayed and edited.
 message Format {
-    EnumMenuFormatType dp = 1;   // Used with floating point numbers to determine
-                                 // fixed vs. floating decimal precision.
 
-    int32 prec = 2; // Precision of the value. (Number of significant digits. For example,
-                    // is PREC is set to 3, and the value is 2347.12, the value should be
-                    // rounded to 2350.0). Must be less than or equal to LEN.
+    // Used with floating point numbers to determine
+    // fixed vs. floating decimal precision.
+    EnumMenuFormatType dp = 1;
 
-    int32 len = 3;  // Maximum number of digits/characters to use in displaying the
-                    // value (excluding decimal point and sign).
+    // Precision of the value. (Number of significant digits. For example,
+    // is PREC is set to 3, and the value is 2347.12, the value should be
+    // rounded to 2350.0). Must be less than or equal to LEN.
+    int32 prec = 2;
 
-    int32 dpl = 4;  // Number of digits past the decimal point. (Fixed number or max number
-                    // based on DP setting. Must be less than LEN.
+    // Maximum number of digits/characters to use in displaying the
+    // value (excluding decimal point and sign).
+    int32 len = 3;
+
+    // Number of digits past the decimal point. (Fixed number or max number
+    // based on DP setting. Must be less than LEN.
+    int32 dpl = 4;
 }
-

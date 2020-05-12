@@ -7,9 +7,13 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="Claros.Instrument.Menu";
 
 
-
+// Describes a device/sensor specific menu reference id,
+// which is addressed when navigation in the menu occurs.
 message MenuReference {
-    int32 reference = 1;  // Value of the menu reference - an id to identify a menu
-    google.protobuf.BoolValue pollStatus = 2;  // (optional) The execution of reference can take a while.
-}
 
+    // Value of the menu reference - an id to identify a menu
+    int32 reference = 1;
+
+    // The execution of reference can take a while (optional).
+    google.protobuf.BoolValue pollStatus = 2;
+}

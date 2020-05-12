@@ -8,8 +8,12 @@ option csharp_namespace ="Claros.Instrument.Menu";
 import "instrument_menu_edit_telegram_entry.proto";
 
 
-
+// Describes the telegram (configuration) of a field bus device,
+// which consists of a list of values from one or multiple devices (sensors).
 message FieldBusTelegram {
+
+    // The telegram consists of a list (one entry per sensor),
+    // where each entry hold a list of values (to read from this sensor).
     repeated claros.instrument.menu.TelegramEntry telegram = 1;
 }
 

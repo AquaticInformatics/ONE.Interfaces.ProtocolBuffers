@@ -13,7 +13,7 @@ import "instrument_menu_edit_user_param_unit.proto";
 import "instrument_menu_edit_value.proto";
 import "instrument_menu_menu_reference.proto";
 
-
+// Types of editable items.
 enum EnumMenuEditType {
     MENU_EDIT_TYPE_UNKNOWN = 0;          // not used
     MENU_EDIT_TYPE_EDIT = 1;             // "edit"
@@ -24,7 +24,7 @@ enum EnumMenuEditType {
     MENU_EDIT_TYPE_USER_PARAM_UNIT = 6;  // "user_param_unit"
 }
 
-
+// Protection to avoid unauthorized access.
 enum EnumMenuProtection {
     MENU_PROTECTION_UNKNOWN = 0;         // not used
     MENU_PROTECTION_ALL = 1;             // sc value 0: access for All
@@ -32,16 +32,38 @@ enum EnumMenuProtection {
     MENU_PROTECTION_SERVICE = 3;         // sc value 2: access for Service
 }
 
+
+// Describes editable items within menus
 message Edit {
+
+  // Types of editable item.
   EnumMenuEditType editType = 1;
+
+  // Text line which shows up during editing.
   claros.instrument.menu.TextLine headLine = 2;
+
+  // Protection level.
   EnumMenuProtection protection = 3;
+
+  // Device specific reference which identifies the edit menu.
   claros.instrument.menu.MenuReference menuReference = 4;
+
+  // Item to be edited.
   oneof editItem {
-      claros.instrument.menu.EditValue edit = 5;  // optional
+
+      // String or numeric value
+      claros.instrument.menu.EditValue edit = 5;
+
+      // Selection from list of choices.
       claros.instrument.menu.EditSelectionList selectionList = 6;
+
+      // Fieldbus telegram configuration changes.
       claros.instrument.menu.FieldBusTelegram fieldBusTelegram = 7;
+
+      // Selection of data sources.
       claros.instrument.menu.EditSource selectSource = 8;
+
+      // User editable parameter and/or unit strings.
       claros.instrument.menu.EditUserParamUnit userParamUnit = 9;
   }
 }

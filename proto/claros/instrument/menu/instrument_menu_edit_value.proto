@@ -10,9 +10,15 @@ import "instrument_menu_text.proto";
 import "google/protobuf/wrappers.proto";
 
 
+// Describes attributes of values, which can be edited by users.
 message EditValue {
-    claros.instrument.menu.Tag data = 1;
-    google.protobuf.BoolValue update = 2;  // Send all changes imediatly rather than waiting for enter key
-    claros.instrument.menu.Text infoText = 3;  // Optional text for help function
-}
 
+    // Tag which is edited.
+    claros.instrument.menu.Tag data = 1;
+
+    // Send all changes immediately rather than waiting for enter key.
+    google.protobuf.BoolValue update = 2;
+
+    // Optional text for help function
+    claros.instrument.menu.Text infoText = 3;
+}

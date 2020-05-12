@@ -9,8 +9,12 @@ import "i18nkey_text_reference.proto";
 import "google/protobuf/wrappers.proto";
 
 
+// Describes text to show in menu lines.
 message Text { 
-    google.protobuf.StringValue  text = 1;  // Text to be displayed.
 
-    claros.common.core.I18NKeyTextReference textReference = 2;  // Text reference of the text to be displayed.
+    // Text to be displayed (optional).
+    google.protobuf.StringValue  text = 1;
+
+    // Text reference of the text to be displayed.
+    claros.common.core.I18NKeyTextReference textReference = 2;
 }

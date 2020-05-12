@@ -7,8 +7,13 @@ option csharp_namespace ="Claros.Instrument.Menu";
 import "google/protobuf/wrappers.proto";
 
 
+// Describes the string representation of a tag value.
+// This message is used only in device/sensor specific context.
 message TagValue {
-    int32 tag = 1;  // Tag number. This value must never be modified
-    google.protobuf.StringValue value = 2;  // string representation of TagValue
-}
 
+    // Tag number. This value must never be modified
+    int32 tag = 1;
+
+    // string representation of TagValue
+    google.protobuf.StringValue value = 2;
+}
