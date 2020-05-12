@@ -31,6 +31,9 @@ message CellData {
     claros.common.core.DataSourceBinding dataSourceBinding = 7;
 
    // Audit information for this cell entry
-   repeated claros.common.core.AuditEvent auditEvents = 99;
+   claros.common.core.AuditEvent auditEvent = 99 [deprecated = true];
+
+   // Repeated audit information to support multiple events for the same data
+   repeated claros.common.core.AuditEvent auditEvents = 100;
 }
 
