@@ -67,7 +67,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 59
+    // NEXT AVAILABLE ID: 60
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -105,8 +105,8 @@ message ClarosContent {
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 21;
         claros.instrument.InstrumentData instrumentData = 47;
         claros.instrument.lock.InstrumentLockStatus instrumentLockStatus = 53;
-        claros.instrument.menu.InstrumentMenuRequest instrumentMenuRequest = 57;
-        claros.instrument.menu.InstrumentMenuResponse instrumentMenuResponse = 58;
+        claros.instrument.menu.InstrumentMenuRequest instrumentMenuRequest = 58;
+        claros.instrument.menu.InstrumentMenuResponse instrumentMenuResponse = 59;
 
         // forms
         claros.common.form.Forms forms = 22;
