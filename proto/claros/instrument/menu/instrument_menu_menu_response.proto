@@ -6,7 +6,7 @@ option csharp_namespace ="Claros.Instrument.Menu";
 
 
 import "instrument_menu_page_data.proto";
-import "instrument_menu_menu_reference.proto";
+import "instrument_menu_menu_request.proto";
 import "google/protobuf/wrappers.proto";
 
 
@@ -16,12 +16,15 @@ message InstrumentMenuResponse {
     // Unique reference to the requested device.
     string fusionId = 1;
 
+    // Describes the purpose of this InstrumentMenuResponse.
+    EnumMenuSequenceId sequenceId = 2;
+
     // Content of the requested menu page.
-    claros.instrument.menu.PageData pageData = 2;
+    claros.instrument.menu.PageData pageData = 3;
 
     // Reference Id which is returned, when a InstrumentMenuResponse message is sent (optional).
-    google.protobuf.StringValue refId = 3;
+    google.protobuf.StringValue refId = 4;
 
     // Information about successful processing of the InstrumentMenuRequest.
-    bool success = 4;
+    bool success = 5;
 }
