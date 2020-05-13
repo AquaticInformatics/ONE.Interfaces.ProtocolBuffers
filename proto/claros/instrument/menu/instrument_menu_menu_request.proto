@@ -9,6 +9,7 @@ import "instrument_menu_menu_reference.proto";
 import "google/protobuf/wrappers.proto";
 
 
+// Describes intentions for raising an InstrumentMenuRequest.
 enum EnumMenuSequenceId {
     MENU_SEQUENCE_ID_UNKNOWN = 0;            // not used
     MENU_SEQUENCE_ID_MENU_ENTER = 1;         // enter a menu

@@ -8,15 +8,15 @@ option csharp_namespace ="Claros.Instrument.Menu";
 // Describes one value, which is read from a device or sensor.
 message PortListEntry {
 
-    // Position, where the value is located in the final configuration (telegram)
+    // Position, where the value is located in the final configuration (telegram).
     int32 port = 1;
 
-    // Describes the type of value, which is read
+    // Describes the type of value, which is read.
     oneof entry {
 
         // Tags are assigned to device/sensor values on a per device base.
         // Each device has its own tag list, where the first tags are
-        // used for measurement values
+        // used for measurement values.
         int32 tag = 2;
 
         // Values with fixed meaning (e.g. error conditions, Prognosys, ...)
@@ -25,12 +25,12 @@ message PortListEntry {
 }
 
 // Describes a list of values (PortListEntry items), that
-// are read from the specified device/sensor
+// are read from the specified device/sensor.
 message TelegramEntry {
 
-    // String, that globally unique identifies one device or sensor
+    // String, that globally unique identifies one device or sensor.
     string fusionId = 1;
 
-    // List of entries, which are to be read
+    // List of entries, which are to be read.
     repeated PortListEntry portList = 2;
 }

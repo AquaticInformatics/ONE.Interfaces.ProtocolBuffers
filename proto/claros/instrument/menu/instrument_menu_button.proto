@@ -29,7 +29,7 @@ enum EnumMenuButtonName {
     MENU_BUTTON_NAME_MOST_RIGHT = 15; // currently not used
 }
 
-// Describes a button that appears in a men.u
+// Describes a button that appears in a menu.
 message Button {
 
   // Function of the button.
