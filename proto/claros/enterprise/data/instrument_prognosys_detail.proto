@@ -5,6 +5,7 @@ import "digital_twin.proto";
 import "instrument_reference.proto";
 import "instrument_status_prognosys.proto";
 import "pagination.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
@@ -30,6 +31,17 @@ message InstrumentPrognosysDetail {
 
     // Represents measurement indicator severity
     EnumSeverityStatus measurementIndicatorSeverity = 5;
+
+    // Represents to localized i18n key
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 6;
+
+    string instrumentName = 7;
+
+    // Represents the i18nKey for instrument type
+    claros.common.core.I18NKeyTextReference instrumentType = 8;
+
+    // Image URL for instrument
+    string imageUrl = 9;
 }
 
 message InstrumentPrognosysDetails
