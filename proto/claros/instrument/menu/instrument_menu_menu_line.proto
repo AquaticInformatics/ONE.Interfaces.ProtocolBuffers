@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_edit.proto";
+import "instrument_menu_text_line.proto";
+import "instrument_menu_menu_reference.proto";
+import "google/protobuf/wrappers.proto";
+
+
+// Specifies the type of a menu line.
+enum EnumMenuLineType {
+    MENU_LINE_TYPE_UNKNOWN = 0;     // not used
+    MENU_LINE_TYPE_TEXTLINE = 1;    // sc value = 0: Display a Text line
+    MENU_LINE_TYPE_NAVIGATION = 2;  // sc value = 1: Navigation
+    MENU_LINE_TYPE_EDIT = 3;        // sc value = 2: Edit
+}
+
+
+// Describes content and functionality for each menu line.
+message MenuLine {
+
+    // Describes text and text attributes.
+    claros.instrument.menu.TextLine text = 1;
+
+    // Describes the type of a menu line.
+    EnumMenuLineType type = 2;
+
+    // This line is fixed and not scrollable.
+    google.protobuf.BoolValue fixed = 3;
+
+    // Device specific reference Id which is requested,
+    // when type = MENU_LINE_TYPE_NAVIGATION (optional).
+    claros.instrument.menu.MenuReference menuReference = 4;
+
+    // Describes item to be edited, when
+    // type = MENU_LINE_TYPE_EDIT (optional).
+    claros.instrument.menu.Edit editData = 5;
+}

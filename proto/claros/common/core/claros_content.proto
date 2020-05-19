@@ -65,7 +65,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 57
+    // NEXT AVAILABLE ID: 58
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
