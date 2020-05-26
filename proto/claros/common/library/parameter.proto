@@ -3,6 +3,8 @@ package claros.common.library;
 
 import "record_auditinfo.proto";
 
+import "clarosdatetime.proto";
+
 option csharp_namespace ="Claros.Common.Library";
 
 message Parameter {
@@ -35,6 +37,9 @@ message Parameter {
 
     // GUID of Optional Parameter Value Id
     string defaultParameterOptionValueId = 10;
+
+    // Indicates the deprecation date of a parameter
+    claros.common.core.ClarosDateTime deprecationDate = 11;
 
     // Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
