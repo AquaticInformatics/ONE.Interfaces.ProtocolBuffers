@@ -143,6 +143,7 @@ message ClarosContent {
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
+        claros.iot.registry.InstrumentConnectionStrings instrumentConnectionStrings = 58;
     }
 }
 
