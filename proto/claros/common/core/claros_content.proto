@@ -58,6 +58,7 @@ import "instrument_prognosys_detail.proto";
 import "client.proto";
 import "scope.proto";
 import "productioncell.proto";
+import "instrumentconnectionstring.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
