@@ -58,6 +58,7 @@ import "instrument_prognosys_detail.proto";
 import "client.proto";
 import "scope.proto";
 import "productioncell.proto";
+import "instrumentconnectionstring.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -143,6 +144,7 @@ message ClarosContent {
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
+        claros.iot.registry.InstrumentConnectionStrings instrumentConnectionStrings = 58;
     }
 }
 
