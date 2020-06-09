@@ -20,4 +20,5 @@ enum EnumInstrumentLockStatus {
     INSTRUMENT_LOCK_STATUS_UNKNOWN = 0;
     INSTRUMENT_LOCK_STATUS_OPEN = 1;        // Instrument is not locked.
     INSTRUMENT_LOCK_STATUS_LOCKED = 2;      // Instrument is locked.
+    INSTRUMENT_LOCK_STATUS_PENDING = 3;     // There is a pending (currently in-progress) lock request.
 }
