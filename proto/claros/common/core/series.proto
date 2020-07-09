@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package claros.common.core;
+option csharp_namespace ="Claros.Common.Core";
+
+message Values{ 
+
+    // Parameter related to the measurement as an integer
+    int32 parameterId = 1;             
+ 
+    // Parameter related to the measurement as a GUID
+    string parameterGuid = 2;          
+ 
+    // Unit related to the measurement as an integer
+    uint32 unitId = 3;                  
+ 
+    // Unit related to the measurement as a GUID
+    string unitGuid = 4; 
+
+    // Significant digit precision of the value
+    uint32 precision = 5;
+
+    // Value as series    
+    repeated double datapoints = 6;
+}
+
+message Series{ 
+    
+    repeated string timestamp = 1;    
+    repeated Values items = 2;
+}   

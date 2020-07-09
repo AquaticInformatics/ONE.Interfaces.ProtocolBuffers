@@ -29,6 +29,9 @@ message Measurement {
 	
 	// significant digit precision of the value
     uint32 precision = 7;  
+
+    // The value represented as a string
+    string stringValue = 8;
 }
 
 message Measurements {
