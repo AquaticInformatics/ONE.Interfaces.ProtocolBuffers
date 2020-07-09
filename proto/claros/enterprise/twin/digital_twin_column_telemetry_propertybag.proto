@@ -20,6 +20,6 @@ message ColumnTelemetryPropertyBag {
     // Spreadsheet version of Timestamp, rowindex for identifying latest row.
     uint32 rowNumber = 3;       
 
-    // Properties: Custom attributes required to added additional metadata to the Digital Twin SubType, primarilyy used by UX
-    repeated claros.enterprise.twin.Attribute attributes = 5;    
+    // Properties: Custom attributes required to added additional metadata to the Digital Twin SubType, primarily used by UX
+    repeated claros.enterprise.twin.Attribute attributes = 4;    
 }
