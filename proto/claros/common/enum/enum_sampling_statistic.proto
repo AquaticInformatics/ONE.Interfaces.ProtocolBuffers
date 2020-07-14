@@ -1,0 +1,13 @@
+syntax = "proto3";
+package claros.common;
+
+option csharp_namespace ="Claros.Common";
+ 
+enum EnumSamplingStatistic {
+    SAMPLING_STATISTIC_UNKNOWN = 0;
+    SAMPLING_STATISTIC_RAW = 1;
+    SAMPLING_STATISTIC_AVERAGE = 2;
+    SAMPLING_STATISTIC_MIN = 3;
+    SAMPLING_STATISTIC_MAX = 4;
+    SAMPLING_STATISTIC_GEOMETRIC_MEAN = 5;
+}
