@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+// Describes relation between UUID (for parameter or unit) and display string.
+message ParamUnitEntry {
+    string string = 1;
+    string guid = 2;
+}
+
+// Describes parameter and unit for a certain value.
+message UserParamUnit {
+
+    // Channel (e.g. relay# or telegram position).
+    int32 channel = 1;
+
+    // Description of the used parameter.
+    ParamUnitEntry param = 2;
+
+    // Description of the used unit.
+    ParamUnitEntry unit = 3;
+}
+
+// Describes parameter and unit for entries (e.g. relay#),
+// where parameter and/or units can be edited by users.
+message EditUserParamUnit {
+    UserParamUnit userParamUnit = 1;
+}
+

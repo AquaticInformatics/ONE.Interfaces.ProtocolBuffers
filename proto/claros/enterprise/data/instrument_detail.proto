@@ -4,13 +4,19 @@ package claros.enterprise.data;
 import "instrument_reference.proto";
 import "clarosdatetime.proto";
 import "pagination.proto";
+import "parameter.proto";
+import "digital_twin.proto";
 import "google/protobuf/wrappers.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
 message InstrumentDetail { 
     // Instrument Name for instruments related to this instrument detail
     string instrumentName = 1;
+
+    // Defines the i18nKey for instrument type to this instrument detail
+    claros.common.core.I18NKeyTextReference instrumentType = 2;
 
     enum EnumInstrumentActivityStatus {
         INSTRUMENT_ACTIVITY_STATUS_UNKNOWN = 0;
@@ -19,28 +25,34 @@ message InstrumentDetail {
     }
 
     // Instrument activity Status for instruments related to this instrument detail
-    EnumInstrumentActivityStatus instrumentActivityStatus = 2;
+    EnumInstrumentActivityStatus instrumentActivityStatus = 3;
     
     // Image URL for instruments related to this instrument detail
-    string imageUrl = 3;
+    string imageUrl = 4;
 
     // Represents Value for instrument measurement related to this instrument detail
-    double value = 4;
+    double value = 5;
 
     // Represents Unit Type for instruments related to this instrument detail
-    string unitType = 5;
+    string unitType = 6;
 
     // Represents the time for instrument measurement related to this instrument detail
-    claros.common.core.ClarosDateTime timeStamp = 6;
+    claros.common.core.ClarosDateTime timestamp = 7;
 
     // Represents the maintainance Over due status for the instruments related to this instrument detail
-    bool isMaintainanceOverdue = 7;
+    google.protobuf.Int32Value maintenanceOverdue = 8;
 
     // Represents the description for instruments related to this instrument detail
-    google.protobuf.StringValue description = 8;
+    google.protobuf.StringValue description = 9;
  
     // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
-    claros.instrument.core.InstrumentReference instrumentReference = 9;
+    claros.instrument.core.InstrumentReference instrumentReference = 10;
+
+    // Parameter type related to this instrument detail
+    claros.common.library.Parameter parameter = 11;
+
+    // Specifies the instrument twin for the instrument
+    claros.enterprise.twin.DigitalTwin instrumentDigitalTwin = 12;
 }
 
 message InstrumentDetails

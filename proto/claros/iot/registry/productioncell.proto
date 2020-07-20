@@ -1,0 +1,24 @@
+syntax = "proto3";
+package claros.iot.registry;
+ 
+option csharp_namespace ="Claros.IoT.Registry";
+ /*
+The production cell is a grouping of instruments in the nebula database.
+For example all Trojan instruments will be in the Trojan Production Cell.
+ */
+
+message ProductionCell {
+    
+    //productionCellId is a GUID
+    string productionCellId = 1;
+    
+    //cellName could be Trojan 
+    string cellName = 2;
+    
+    //cellDescription could Production Trojan Instruments
+    string cellDescription = 3;
+}
+
+message ProductionCells {
+    repeated ProductionCell items = 1;
+}

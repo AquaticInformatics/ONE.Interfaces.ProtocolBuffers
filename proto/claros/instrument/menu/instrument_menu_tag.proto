@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_tag_value.proto";
+import "instrument_menu_format.proto";
+import "google/protobuf/wrappers.proto";
+
+
+// Representation of the idd number from Common Controller standard.
+// Note: Values are different from sc Standard due to TAG_IDD_UNKNOWN = 0.
+enum EnumTagIdd {
+    TAG_IDD_UNKNOWN = 0;           // not used
+    TAG_IDD_FLOAT = 1;             // sc value = 0 - Float
+    TAG_IDD_UNSIGNED_INTEGER = 2;  // sc value = 1 - Unsigned integer
+    TAG_IDD_INTEGER = 3;           // sc value = 2 - Integer
+    TAG_IDD_SELECTION_LIST = 4;    // sc value = 3 - Selection List [not used]
+    TAG_IDD_TEXT_STRING = 5;       // sc value = 4 - Text String
+    TAG_IDD_TIME = 6;              // sc value = 5 - Time
+    TAG_IDD_UNIT = 7;              // sc value = 6 - Units String (Not available for tags) [not used]
+    TAG_IDD_PARAMETER = 8;         // sc value = 7 - Parameter String (Not available for tags) [not used]
+    TAG_IDD_DATE = 9;              // sc value = 8 - Date
+    TAG_IDD_DATE_TIME = 10;        // sc value = 9 - Time and Date
+}
+
+
+// Describes a device/sensor specific value, which is identified by a tag number.
+message Tag {
+
+    // Describes tag number and display string of the value.
+    claros.instrument.menu.TagValue value = 1;
+
+    // Type of the value.
+    EnumTagIdd idd = 2;
+
+    // Description of unit.
+    google.protobuf.StringValue unit = 3;
+
+    // Description of parameter.
+    google.protobuf.StringValue param = 4;
+
+    // Display format
+    claros.instrument.menu.Format format = 5;
+
+    // Maximal allowed value (optional)
+    google.protobuf.FloatValue minValue = 6;
+
+    // Minimal allowed value (optional)
+    google.protobuf.FloatValue maxValue = 7;
+}

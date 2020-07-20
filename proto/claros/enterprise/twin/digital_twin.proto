@@ -7,6 +7,7 @@ import "google/protobuf/field_mask.proto";
 import "record_auditinfo.proto";
 import "gis.proto";
 import "enum_digital_twin_restriction.proto";
+import "search_option.proto";
 
 option csharp_namespace = "Claros.Enterprise.Twin";
 
@@ -42,10 +43,16 @@ message DigitalTwin{
 
     EnumDigitalTwinRestriction restriction = 15;
 
+    //twinReferenceId of the Parent Twin
+    google.protobuf.StringValue parentTwinReferenceId = 16;
+
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message DigitalTwins{
 	repeated DigitalTwin items = 1;
+
+    // Represents the SearchOption for digital twins
+	claros.common.core.SearchOption searchOption = 2;
 }

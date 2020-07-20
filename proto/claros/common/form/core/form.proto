@@ -5,6 +5,7 @@ import "timewindow.proto";
 import "note.proto";
 import "auditevent.proto";
 import "formfield.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Form";
  
@@ -41,6 +42,18 @@ message Form {
 
     // GUID id of location associated to form
     string locationId = 12;
+
+    // Indicates whether the form was made obsolete by an update
+    // to its form template within the form's timeWindow
+    bool isObsolete = 13;
+
+    // If the form is obsolete, this is the GUID of the form
+    // that replaced it
+    google.protobuf.StringValue updatedFormId = 14;
+
+    // If this form replaced an obsolete form, this is the
+    // GUID of the obsolete form
+    google.protobuf.StringValue obsoletedFormId = 15;
 
     // System-added events on changes to the form
     repeated claros.common.core.AuditEvent auditEvents = 99; 

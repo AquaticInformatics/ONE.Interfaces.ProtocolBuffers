@@ -1,6 +1,5 @@
 syntax = "proto3";
 package claros.enterprise.core;
-
 import "clarosdatetime.proto";
 import "feature.proto";
 import "record_auditinfo.proto";
@@ -8,6 +7,7 @@ import "role.proto";
 import "tenant.proto";
 import "user_preference.proto";
 import "user_profile.proto";
+
 
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/field_mask.proto";
@@ -89,6 +89,9 @@ message User {
 
 	// Collection of user profiles for a user
 	repeated UserProfile userProfiles = 24;
+	
+	//User Status enum
+	EnumUserStatus userStatus = 25;
 
 	google.protobuf.FieldMask updateMask = 98;
 
@@ -101,3 +104,12 @@ message Users
 {
     repeated User items = 1;
 }
+
+enum EnumUserStatus {
+	USERSTATUS_UNKNOWN = 0;
+	USERSTATUS_INVITE_PENDING = 1;
+	USERSTATUS_INVITE_EXPIRED = 2;
+	USERSTATUS_ACCOUNT_ACTIVE = 3;
+	USERSTATUS_ACCOUNT_LOCKED = 4;
+	USERSTATUS_PASSWORD_EXPIRED = 5;
+};

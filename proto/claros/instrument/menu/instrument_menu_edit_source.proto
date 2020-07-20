@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package claros.instrument.menu;
+
+option csharp_namespace ="Claros.Instrument.Menu";
+
+
+import "instrument_menu_edit_telegram_entry.proto";
+
+
+// Used to delete/select a certain value from a specified device.
+message EditSource {
+
+    // List can have 0 or 1 entries:
+    //   0: "delete entry for channel",
+    //   1: "add entry for channel".
+    repeated claros.instrument.menu.TelegramEntry telegram = 1;
+
+    // Denotes the channel that is changed.
+    int32 channel = 2;
+}
+

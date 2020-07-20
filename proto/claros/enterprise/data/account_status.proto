@@ -4,6 +4,7 @@ package claros.enterprise.data;
 import "digital_twin.proto"; 
 import "instrument_data.proto";
 import "pagination.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
@@ -26,6 +27,15 @@ message AccountStatus {
     // 3 - count of warnings,
     // 4 - count of events, count of instruments?
     claros.instrument.InstrumentDatas instrumentDatas = 3;
+
+    // Represents the instrument Name
+    string instrumentName = 4;
+
+    // Represents the i18nKey for instrument type
+    claros.common.core.I18NKeyTextReference instrumentType = 5;
+
+    // Image URL for instrument
+    string imageUrl = 6;
 }
 
 message AccountStatuses
