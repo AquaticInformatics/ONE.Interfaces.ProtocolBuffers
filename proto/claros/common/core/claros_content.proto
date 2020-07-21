@@ -59,6 +59,10 @@ import "client.proto";
 import "scope.proto";
 import "productioncell.proto";
 import "instrumentconnectionstring.proto";
+import "gauge_data_point.proto";
+import "series.proto";
+import "digital_twin_column_telemetry_propertybag.proto";
+import "digital_twin_instrument_telemetry_propertybag.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -66,7 +70,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 58
+    // NEXT AVAILABLE ID: 63
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -77,6 +81,8 @@ message ClarosContent {
         claros.common.core.LocationTypes locationTypes = 6;
         claros.common.core.LocationTypeGroups locationTypeGroups = 7;
         claros.common.core.JobStatuses jobStatuses = 44;
+        claros.common.core.GaugeDataPoint gaugeDataPoint = 59;
+        claros.common.core.Series series = 60;
 
 		// common.computation
 		claros.common.computation.Computations computations = 8;
@@ -141,6 +147,8 @@ message ClarosContent {
         claros.enterprise.data.InstrumentPrognosysDetails instrumentPrognosysDetails = 54;
         claros.enterprise.core.Clients clients = 55;
         claros.enterprise.core.Scopes scopes = 56;
+        claros.enterprise.twin.ColumnTelemetryPropertyBag columnTelemetryPropertyBag = 61;
+        claros.enterprise.twin.MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;

@@ -1,0 +1,25 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+
+import "column.proto"; 
+import "measurement.proto"; 
+import "digital_twin_subtype_propertybag.proto";
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+
+message ColumnTelemetryPropertyBag {
+
+    // PropertyBag: Digital Twin SubType: 1 Hour (Column), 4 Hour (Column), 15 Minute (Column), and Daily (Column)
+
+    // Definition: Column defintions used by Spreadsheet to identify device and paramater measured with units
+    claros.operations.spreadsheet.Column columnDefinition = 1;
+
+    // Telemetry: Most recent instrument measurments relayed by either Spreadsheet or Measurement
+    claros.common.core.Measurement measurement = 2;
+
+    // Spreadsheet version of Timestamp, rowindex for identifying latest row.
+    uint32 rowNumber = 3;       
+
+    // Properties: Custom attributes required to added additional metadata to the Digital Twin SubType, primarily used by UX
+    repeated claros.enterprise.twin.Attribute attributes = 4;    
+}
