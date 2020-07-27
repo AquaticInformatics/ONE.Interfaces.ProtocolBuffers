@@ -15,7 +15,7 @@ message SpreadsheetDefinition {
     // The time zone related to the spreadsheet
     claros.common.EnumTimeZone enumTimeZone = 2;
     
-    // The number of hours offset to the start of day
+    // The number of minutes offset to the start of day
     uint32 timeWindowOffset = 3;
 
     // Audit information
