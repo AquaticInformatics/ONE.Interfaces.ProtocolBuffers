@@ -25,6 +25,5 @@ message Telemetry{
 }
 
 message Series{ 
-
-    repeated Telemetry items = 2;
+    repeated Telemetry items = 1;
 }   
