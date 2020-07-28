@@ -3,7 +3,7 @@ syntax = "proto3";
 package claros.common.core;
 option csharp_namespace ="Claros.Common.Core";
 
-message Values{ 
+message Telemetry{ 
 
     // Parameter related to the measurement as an integer
     int32 parameterId = 1;             
@@ -26,5 +26,5 @@ message Values{
 
 message Series{ 
 
-    repeated Values items = 2;
+    repeated Telemetry items = 2;
 }   
