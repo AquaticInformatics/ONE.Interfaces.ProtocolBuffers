@@ -20,12 +20,11 @@ message Values{
     // Significant digit precision of the value
     uint32 precision = 5;
 
-    // Value as series    
-    repeated double datapoints = 6;
+    //x, y value as datapoint - time, value and time is converted to epoch    
+    repeated map<string, double> datapoints = 6;
 }
 
 message Series{ 
-    
-    repeated string timestamp = 1;    
+
     repeated Values items = 2;
 }   
