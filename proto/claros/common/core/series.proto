@@ -21,7 +21,7 @@ message Telemetry{
     uint32 precision = 5;
 
     //x, y value as datapoint - time, value and time is converted to epoch    
-    map<string, double> datapoints = 6;
+    map<uint64, double> datapoints = 6;
 }
 
 message Series{ 
