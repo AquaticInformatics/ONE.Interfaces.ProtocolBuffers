@@ -21,7 +21,7 @@ message Values{
     uint32 precision = 5;
 
     //x, y value as datapoint - time, value and time is converted to epoch    
-    repeated map<string, double> datapoints = 6;
+    map<string, double> datapoints = 6;
 }
 
 message Series{ 
