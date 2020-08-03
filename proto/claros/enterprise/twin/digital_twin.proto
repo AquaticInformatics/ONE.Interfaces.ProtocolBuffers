@@ -45,6 +45,9 @@ message DigitalTwin{
 
     //twinReferenceId of the Parent Twin
     google.protobuf.StringValue parentTwinReferenceId = 16;
+     
+    //Digital Twin Data based on the Json schema of TwinSubtype
+    google.protobuf.StringValue twinData = 17;
 
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
