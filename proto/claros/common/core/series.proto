@@ -22,6 +22,8 @@ message Telemetry{
 
     //x, y value as datapoint - time, value and time is converted to epoch    
     map<uint64, double> datapoints = 6;
+
+    repeated claros.common.core.Limit limits = 7;  
 }
 
 message Series{ 

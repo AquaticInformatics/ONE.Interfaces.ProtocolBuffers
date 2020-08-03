@@ -25,7 +25,7 @@ message DigitalTwinSubtype{
     google.protobuf.StringValue jsonSchema = 10;
 
     //Definitions for Custom attributes for UI
-    google.protobuf.StringValue attributes = 11;
+    google.protobuf.StringValue attributesDefinition = 11;
 
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
