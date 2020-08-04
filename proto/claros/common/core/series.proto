@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package claros.common.core;
+import "limit.proto";
 option csharp_namespace ="Claros.Common.Core";
 
 message Telemetry{ 
@@ -22,6 +23,8 @@ message Telemetry{
 
     //x, y value as datapoint - time, value and time is converted to epoch    
     map<uint64, double> datapoints = 6;
+
+    repeated claros.common.core.Limit limits = 7;  
 }
 
 message Series{ 

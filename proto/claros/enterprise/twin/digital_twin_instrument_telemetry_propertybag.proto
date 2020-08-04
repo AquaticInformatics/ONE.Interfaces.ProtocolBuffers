@@ -3,7 +3,6 @@ package claros.enterprise.twin;
  
 import "instrument_measurement_definition.proto"; 
 import "measurement.proto"; 
-import "digital_twin_subtype_propertybag.proto";
 
 option csharp_namespace = "Claros.Enterprise.Twin";
 
@@ -14,11 +13,5 @@ message MeasurementTelemetryPropertyBag {
     claros.instrument.measurement.InstrumentMeasurementDefinition measurementDefinition = 1;
 
     // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
-    claros.common.core.Measurement measurement = 2; 
-    
-    // Properties: Custom attributes required to added additional metadata to the Digital Twin SubType, primary used by UX
-    repeated claros.enterprise.twin.Attribute attributes = 3;
-
-    // Geolocation from portable instruments or any device that provides geo-location.           
-    // claros.common.gis.GIS geolocation = 4;
+    claros.common.core.Measurement measurement = 2;
 }           
