@@ -32,6 +32,9 @@ message Measurement {
 
     // The value represented as a string
     string stringValue = 8;
+	
+	//The value represents the number of measurements taken into consideration for calculating the aggregated value
+	int32 aggregatedMeasurementCount = 9;
 }
 
 message Measurements {
