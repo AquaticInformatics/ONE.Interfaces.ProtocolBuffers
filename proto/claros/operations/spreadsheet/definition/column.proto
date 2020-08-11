@@ -26,8 +26,8 @@ message Column
     // The default unit to display the column
     uint32 displayUnitId = 5;                                       
     
-    // The location associated to the data in the column
-    string locationId = 6;                                          
+    // DEPRECATED: The location associated to the data in the column
+    string locationId = 6 [deprecated=true];                                          
 
     // Soft Delete of the column
     bool isActive = 7;                                              
@@ -45,5 +45,11 @@ message Column
     int64 twinId = 11;
 
     // List of values which are valid for this column
-    claros.common.core.ValidValues ValidValues = 12;    
+    claros.common.core.ValidValues ValidValues = 12;
+
+    // Identifies the plant that the column belongs to
+    string plantId = 13;  
+
+    // Indicates whether the data associated with this column is numeric or not
+    bool isNumeric = 14;  
 }
