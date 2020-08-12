@@ -1,0 +1,54 @@
+syntax = "proto3";
+package claros.common.notification;
+
+import "enum_notification_TYPE.proto";
+import "enum_notification_platform.proto";
+import "enum_notification_subject.proto";
+import "enum_notification_delivery_method.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Common.Notification";
+
+//This will support a broad cast message to all subscribers.
+message  NotificationDirectPreference {
+    //Who is sending the message id(guid)
+    string id = 1;
+ 
+    //the tenantId will be user's id(guid).
+    string tenantId = 2;
+
+    //the userId will be user's id string.
+    string userId = 4;
+ 
+    //notification Type enum
+    EnumNotificationDeliveryMethod notificationType = 3 ;
+
+    //This is what type of alarms they want to receive
+    EnumNotificationAlarmSubject messageType = 4;
+
+    //the registrataionId will be the unique guid in the Azure Notification Hub
+    string deviceToken = 5;
+
+    //the registrataionId will be the unique guid in the Azure Notification Hub
+    string registrataionId = 5;
+
+
+    //This is the platform of the device ios or andorid
+    EnumNotificationPlatform platform = 6;
+
+    //This is the user that modified this perference Guid
+    string modifiedBy = 7;
+    
+    //This is the user that created this preference Guid
+    string createdBy = 8;
+ 
+    //This is the date it was modifiedBy
+    claros.common.core.ClarosDateTime modfiedDate = 9;
+    
+    //This is the date it was created 
+    claros.common.core.ClarosDateTime createdDate = 10;
+}
+
+message NotificationDirectPreferences{
+repeated NotificationDirectPreference items = 1;
+}
