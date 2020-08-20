@@ -52,4 +52,7 @@ message Column
 
     // Indicates whether the data associated with this column is numeric or not
     bool isNumeric = 14;  
+
+    // GUID to uniquely identify this column
+    string columnId = 15;
 }
