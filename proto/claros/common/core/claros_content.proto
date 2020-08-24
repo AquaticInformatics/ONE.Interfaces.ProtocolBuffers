@@ -23,6 +23,7 @@ import "notification_contact.proto";
 import "notification_device.proto";
 import "notification_preference.proto";
 import "notification_user_preference.proto";
+import "notification_direct_preference.proto";
 import "notification_topic.proto";
 import "device_type_resource.proto";
 import "parameter.proto";
@@ -118,6 +119,7 @@ message ClarosContent {
 		claros.common.notification.NotificationPreferences notificationPreferences = 29;
 		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 30;
         claros.common.notification.InAppNotificationMessages inAppNotificationMessages = 50;
+        claros.common.notification.NotificationDirectPreferences NotificationDirectPreferences = 59;
 
         // enterprise
         claros.enterprise.core.Features features = 31;
