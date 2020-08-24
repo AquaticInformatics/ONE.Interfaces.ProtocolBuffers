@@ -13,10 +13,10 @@ message  NotificationDirectPreference {
     //Who is sending the message id(guid)
     string id = 1;
  
-    //the tenantId will be user's id(guid).
+    //the tenantId will be tenant's id(guid).
     string tenantId = 2;
 
-    //the userId will be user's id string.
+    //the userId will be user's username from usertable string.
     string userId = 3;
  
     //notification Type enum
@@ -31,23 +31,22 @@ message  NotificationDirectPreference {
     //the registrataionId will be the unique guid in the Azure Notification Hub
     string registrataionId = 7;
 
-
     //This is the platform of the device ios or andorid
     EnumNotificationPlatform platform = 8;
 
-    //This is the user that modified this perference Guid
+    //This is the user that modified this preference Guid
     string modifiedBy = 9;
     
     //This is the user that created this preference Guid
     string createdBy = 10;
  
     //This is the date it was modifiedBy
-    claros.common.core.ClarosDateTime modfiedDate = 11;
+    claros.common.core.ClarosDateTime modifiedDate = 11;
     
     //This is the date it was created 
     claros.common.core.ClarosDateTime createdDate = 12;
 }
 
 message NotificationDirectPreferences{
-repeated NotificationDirectPreference items = 1;
+    repeated NotificationDirectPreference items = 1;
 }
