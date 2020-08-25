@@ -17,10 +17,10 @@ message  NotificationDirectPreference {
     string tenantId = 2;
 
     //the userId will be user's username from usertable string.
-    string userId = 3;
+    string userName = 3;
  
     //notification Type enum
-    EnumNotificationDeliveryMethod notificationType = 4;
+    EnumNotificationDeliveryMethod deliveryMethod = 4;
 
     //This is what type of alarms they want to receive
     EnumNotificationMessageType messageType = 5;
@@ -45,6 +45,8 @@ message  NotificationDirectPreference {
     
     //This is the date it was created 
     claros.common.core.ClarosDateTime createdDate = 12;
+
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
 message NotificationDirectPreferences{
