@@ -1,22 +1,24 @@
 syntax = "proto3";
-
 package claros.common.core;
+
 import "limit.proto";
+import "google/protobuf/wrappers.proto";
+
 option csharp_namespace ="Claros.Common.Core";
 
 message Telemetry{ 
 
     // Parameter related to the measurement as an integer
-    int32 parameterId = 1;             
+    int32 parameterId = 1;
  
     // Parameter related to the measurement as a GUID
-    string parameterGuid = 2;          
+    string parameterGuid = 2;
  
     // Unit related to the measurement as an integer
-    uint32 unitId = 3;                  
+    uint32 unitId = 3;
  
     // Unit related to the measurement as a GUID
-    string unitGuid = 4; 
+    string unitGuid = 4;
 
     // Significant digit precision of the value
     uint32 precision = 5;
@@ -24,7 +26,10 @@ message Telemetry{
     //x, y value as datapoint - time, value and time is converted to epoch    
     map<uint64, double> datapoints = 6;
 
-    repeated claros.common.core.Limit limits = 7;  
+    repeated claros.common.core.Limit limits = 7;
+
+    // twinRefId for the Telemetry as a GUID
+    google.protobuf.StringValue telemetryGuid = 8;
 }
 
 message Series{ 
