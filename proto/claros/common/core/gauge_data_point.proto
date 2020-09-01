@@ -4,14 +4,17 @@ package claros.common.core;
  
 import "measurement.proto";
 import "limit.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
 message GaugeDataPoint{
     
-     // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
-     claros.common.core.Measurement measurement = 1;  
+    // Telemetry: Most recent instrument measurement in the telemetry Twin
+    claros.common.core.Measurement measurement = 1;  
 
-     repeated claros.common.core.Limit limits = 2;    
+    repeated claros.common.core.Limit limits = 2;
 
+    // TwinRefId of the telemetry twin used to create gauge Data
+    google.protobuf.StringValue twinRefId = 3;
 }
