@@ -28,7 +28,7 @@ message Telemetry{
 
     repeated claros.common.core.Limit limits = 7;
 
-    // twinRefId for the Telemetry as a GUID
+    // Id for the Telemetry as a GUID
     google.protobuf.StringValue id = 8;
 }
 
