@@ -10,11 +10,11 @@ option csharp_namespace ="Claros.Common.Core";
 
 message GaugeDataPoint{
     
-    // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
+    // Telemetry: Most recent instrument measurement reported by either Spreadsheet or Measurement
     claros.common.core.Measurement measurement = 1;  
 
     repeated claros.common.core.Limit limits = 2;
 
     // twinRefId for the Telemetry as a GUID
-    google.protobuf.StringValue telemetryGuid = 3;
+    google.protobuf.StringValue telemetryTwinRefId = 3;
 }
