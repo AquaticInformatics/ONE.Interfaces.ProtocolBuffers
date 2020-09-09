@@ -4,6 +4,7 @@ package claros.common.notification;
 import "enum_notification_platform.proto";
 import "enum_notification_message_type.proto";
 import "enum_notification_delivery_method.proto";
+import "record_auditinfo.proto";
 import "clarosdatetime.proto";
 
 option csharp_namespace ="Claros.Common.Notification";

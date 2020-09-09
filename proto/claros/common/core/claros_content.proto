@@ -64,7 +64,6 @@ import "gauge_data_point.proto";
 import "series.proto";
 import "digital_twin_column_telemetry_propertybag.proto";
 import "digital_twin_instrument_telemetry_propertybag.proto";
-58
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -125,8 +124,8 @@ message ClarosContent {
 		claros.common.notification.NotificationDevices notificationDevices = 28;
 		claros.common.notification.NotificationPreferences notificationPreferences = 29;
 		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 30;
-        claros.common.notification.InAppNotificationMessages inAppNotificationMessages = 50;
-        claros.common.notification.NotificationDirectPreferences NotificationDirectPreferences = 63;
+        claros.common.notification.InAppNotificationMessages inAppNotificationMessage = 50;
+        claros.common.notification.NotificationDirectPreferences notificationDirectPreferences = 63;
 
         // enterprise
         claros.enterprise.core.Features features = 31;
