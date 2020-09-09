@@ -29,6 +29,12 @@ message Measurement {
 	
 	// significant digit precision of the value
     uint32 precision = 7;  
+
+    // The value represented as a string
+    string stringValue = 8;
+	
+	// The value represents the number of measurements taken into consideration for calculating the aggregated value
+	uint32 aggregatedMeasurementCount = 9;
 }
 
 message Measurements {

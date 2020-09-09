@@ -23,6 +23,12 @@ message InstrumentLockOwnerRemote {
 
     // Specifies the GUID of the user who owns the lock.
     google.protobuf.StringValue userGuid = 1;
+
+    // Specifies the first name of the user who owns the lock.
+    google.protobuf.StringValue firstName = 2;
+
+    // Specifies the last name of the user who owns the lock.
+    google.protobuf.StringValue lastName = 3;
 }
 
 // Represents a local lock owner.

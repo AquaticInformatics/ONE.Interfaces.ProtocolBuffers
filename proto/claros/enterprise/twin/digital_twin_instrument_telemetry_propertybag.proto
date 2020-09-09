@@ -1,0 +1,17 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+ 
+import "instrument_measurement_definition.proto"; 
+import "measurement.proto"; 
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+
+message MeasurementTelemetryPropertyBag {
+
+    // Digital Twin SubType: Measurement : PropertyBag
+    // Definition: Instrument measurement defintions used by Measurement to identify device and paramater measured with units
+    claros.instrument.measurement.InstrumentMeasurementDefinition measurementDefinition = 1;
+
+    // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
+    claros.common.core.Measurement measurement = 2;
+}           
