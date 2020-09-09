@@ -16,8 +16,8 @@ message  NotificationDirectPreference {
     //the tenantId will be tenant's id(guid).
     string tenantId = 2;
 
-    //the userId will be user's username from usertable string.
-    string userName = 3;
+    //the userId will be user's guid from usertable.
+    string userId = 3;
  
     //notification Type enum
     EnumNotificationDeliveryMethod deliveryMethod = 4;
