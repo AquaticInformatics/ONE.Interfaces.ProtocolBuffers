@@ -11,7 +11,7 @@ option csharp_namespace ="Claros.Common.Notification";
 
 //This will support a broad cast message to all subscribers.
 message  NotificationDirectPreference {
-    //The id will be the RegistrationId in the Azure Notification Hub
+    //The id will be the unique identifier
     string id = 1;
  
     //The tenantId will be tenant's id(guid).
@@ -20,7 +20,7 @@ message  NotificationDirectPreference {
     //The userId will be user's guid from usertable.
     string userId = 3;
  
-    //Delivery Type enum
+    //DeliveryMethod enum
     EnumNotificationDeliveryMethod deliveryMethod = 4;
 
     //Messagetype enum error or warning 
@@ -28,6 +28,9 @@ message  NotificationDirectPreference {
 
     //The deviceToken will be a string token coming from the device itself 
     string deviceToken = 6;
+
+    //The registrationId will be used in the Azure Notification Hub 
+    string registrationId = 7;
 
     //This is the platform of the device ios or andorid
     EnumNotificationPlatform platform = 8;
