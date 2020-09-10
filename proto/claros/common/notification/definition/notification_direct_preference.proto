@@ -29,7 +29,6 @@ message  NotificationDirectPreference {
     //The deviceToken will be a string token coming from the device itself 
     string deviceToken = 6;
 
-
     //This is the platform of the device ios or andorid
     EnumNotificationPlatform platform = 8;
 
