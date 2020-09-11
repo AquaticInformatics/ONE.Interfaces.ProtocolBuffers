@@ -1,0 +1,21 @@
+syntax = "proto3";
+package claros.iot.registry;
+
+import "google/protobuf/wrappers.proto";
+import "i18nkey_text_reference.proto";
+import "record_auditinfo.proto";
+ 
+option csharp_namespace ="Claros.IoT.Registry";
+ 
+// Represents the group of an instrument.
+message InstrumentGroup {
+    
+    // Unique identifier of an instrument group.
+    google.protobuf.StringValue guid = 1;
+ 
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
+
+    // Audit information for the Instrument Group
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
