@@ -23,6 +23,7 @@ import "notification_contact.proto";
 import "notification_device.proto";
 import "notification_preference.proto";
 import "notification_user_preference.proto";
+import "notification_direct_preference.proto";
 import "notification_topic.proto";
 import "device_type_resource.proto";
 import "parameter.proto";
@@ -70,7 +71,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 63
+    // NEXT AVAILABLE ID: 64
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -124,6 +125,7 @@ message ClarosContent {
 		claros.common.notification.NotificationPreferences notificationPreferences = 29;
 		claros.common.notification.UserNotificationPreferences userNotificationPreferences = 30;
         claros.common.notification.InAppNotificationMessages inAppNotificationMessages = 50;
+        claros.common.notification.NotificationDirectPreferences notificationDirectPreferences = 63;
 
         // enterprise
         claros.enterprise.core.Features features = 31;
