@@ -19,3 +19,8 @@ message InstrumentGroup {
     // Audit information for the Instrument Group
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
+
+// Represetns a list of instrument groups
+message InstrumentGroups {
+    repeated InstrumentGroup items = 1;
+}
