@@ -9,9 +9,9 @@ option csharp_namespace = "Claros.Common.Activity";
 
 message ActivityAudit{
     
-    google.protobuf.StringValue id = 1; 
+    string id = 1; 
     
-    google.protobuf.StringValue activityId = 2;
+    string activityId = 2;
     
     EnumActivityAuditType activityAuditType = 3;
 

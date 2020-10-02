@@ -15,7 +15,7 @@ option csharp_namespace = "Claros.Common.Activity";
 
 message Activity{
     
-    google.protobuf.StringValue id = 1; 
+    string id = 1; 
     
     // plant id
     google.protobuf.StringValue twinRefId = 2;
@@ -36,10 +36,10 @@ message Activity{
     claros.common.core.ClarosDateTime scheduledEnd = 7;
 
     // subject
-    string subject = 8;
+    google.protobuf.StringValue subject = 8;
 
     // description
-    string description = 9;
+    google.protobuf.StringValue description = 9;
 
     // json schema - description of what is stored in activityAdditionalParams
     google.protobuf.StringValue jsonSchema = 10;

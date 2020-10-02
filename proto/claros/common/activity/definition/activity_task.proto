@@ -9,21 +9,21 @@ import "record_auditinfo.proto";
 
 option csharp_namespace = "Claros.Common.Activity";
 
-message Task{
+message ActivityTask{
     
-    google.protobuf.StringValue id = 1; 
+    string id = 1; 
     
     Activity activity = 2;
     
     EnumActivityTaskType taskType = 3;
 
     // service desk number/ticket number
-    string externalReferenceId = 4;
+    google.protobuf.StringValue externalReferenceId = 4;
 
     // record audit information
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
-message Tasks{
-	repeated Task items = 1;
+message ActivityTasks{
+	repeated ActivityTask items = 1;
 }

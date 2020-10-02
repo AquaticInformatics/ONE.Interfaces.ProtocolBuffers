@@ -64,7 +64,7 @@ import "gauge_data_point.proto";
 import "series.proto";
 import "digital_twin_column_telemetry_propertybag.proto";
 import "digital_twin_instrument_telemetry_propertybag.proto";
-import "task.proto";
+import "activity_task.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -158,7 +158,7 @@ message ClarosContent {
         claros.iot.registry.InstrumentConnectionStrings instrumentConnectionStrings = 58;
 
         // tasks
-        claros.common.activity.Tasks tasks = 64;
+        claros.common.activity.ActivityTasks activityTasks = 64;
     }
 }
 
