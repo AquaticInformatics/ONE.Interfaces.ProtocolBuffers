@@ -4,7 +4,8 @@ package claros.common.activity;
 option csharp_namespace ="Claros.Common.Activity";
 
 enum EnumActivityPriority {
-    ACTIVITY_PRIORITY_LOW = 0;
-    ACTIVITY_PRIORITY_NORMAL = 1;
-    ACTIVITY_PRIORITY_HIGH = 2;
+    ACTIVITY_PRIORITY_UNKNOWN = 0; 
+    ACTIVITY_PRIORITY_LOW = 1; 
+    ACTIVITY_PRIORITY_NORMAL = 2;
+    ACTIVITY_PRIORITY_HIGH = 3;
 }
