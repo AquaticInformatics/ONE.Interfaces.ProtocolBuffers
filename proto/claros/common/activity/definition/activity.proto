@@ -17,7 +17,7 @@ message Activity{
     
     string id = 1; 
     
-    // plant id
+    // plant id for task implementation.  Could reference other twins for future activity types
     google.protobuf.StringValue twinRefId = 2;
     
     // assigned user
