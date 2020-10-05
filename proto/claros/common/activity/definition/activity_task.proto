@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 import "activity.proto";
 import "enum_activity_task_type.proto";
 import "record_auditinfo.proto";
+import "search_option.proto";
 
 option csharp_namespace = "Claros.Common.Activity";
 
@@ -25,5 +26,9 @@ message ActivityTask{
 }
 
 message ActivityTasks{
-	repeated ActivityTask items = 1;
+    repeated ActivityTask items = 1;
+    
+    // Represents the SearchOptions for task
+	claros.common.core.SearchOptions searchOptions = 2;
+
 }
