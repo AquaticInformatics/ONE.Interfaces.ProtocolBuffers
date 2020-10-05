@@ -64,6 +64,7 @@ import "gauge_data_point.proto";
 import "series.proto";
 import "digital_twin_column_telemetry_propertybag.proto";
 import "digital_twin_instrument_telemetry_propertybag.proto";
+import "activity_task.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -71,7 +72,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 64
+    // NEXT AVAILABLE ID: 65
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -155,6 +156,9 @@ message ClarosContent {
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
         claros.iot.registry.InstrumentConnectionStrings instrumentConnectionStrings = 58;
+
+        // tasks
+        claros.common.activity.ActivityTasks activityTasks = 64;
     }
 }
 

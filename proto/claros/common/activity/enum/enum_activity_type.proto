@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.common.activity;
+
+option csharp_namespace ="Claros.Common.Activity";
+
+enum EnumActivityType {
+    ACTIVITY_TYPE_UNKNOWN = 0;
+    ACTIVITY_TYPE_TASK = 1; 
+}
