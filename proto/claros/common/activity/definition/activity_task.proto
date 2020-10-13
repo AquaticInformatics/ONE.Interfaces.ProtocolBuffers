@@ -1,0 +1,34 @@
+syntax = "proto3";
+package claros.common.activity;
+
+import "google/protobuf/wrappers.proto";
+
+import "activity.proto";
+import "enum_activity_task_type.proto";
+import "record_auditinfo.proto";
+import "search_option.proto";
+
+option csharp_namespace = "Claros.Common.Activity";
+
+message ActivityTask{
+    
+    string id = 1; 
+    
+    Activity activity = 2;
+    
+    EnumActivityTaskType taskType = 3;
+
+    // service desk number/ticket number
+    google.protobuf.StringValue externalReferenceId = 4;
+
+    // record audit information
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ActivityTasks{
+    repeated ActivityTask items = 1;
+    
+    // Represents the SearchOptions for task
+	claros.common.core.SearchOptions searchOptions = 2;
+
+}

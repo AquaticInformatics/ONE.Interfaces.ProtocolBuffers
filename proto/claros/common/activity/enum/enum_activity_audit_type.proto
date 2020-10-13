@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common.activity;
+
+option csharp_namespace ="Claros.Common.Activity";
+
+enum EnumActivityAuditType {
+    ACTIVITY_AUDIT_TYPE_UNKNOWN = 0;
+    ACTIVITY_AUDIT_TYPE_CREATED = 1; 
+    ACTIVITY_AUDIT_TYPE_UPDATED = 2; 
+    ACTIVITY_AUDIT_TYPE_DELETED = 3; 
+}
