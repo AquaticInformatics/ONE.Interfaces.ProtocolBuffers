@@ -11,7 +11,7 @@ option csharp_namespace ="Claros.IoT.Registry";
 message InstrumentGroup {
     
     // Unique identifier of an instrument group.
-    google.protobuf.StringValue guid = 1;
+    google.protobuf.StringValue id = 1;
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
     claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
