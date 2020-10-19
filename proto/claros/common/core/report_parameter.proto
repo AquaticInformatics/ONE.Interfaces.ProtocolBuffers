@@ -1,0 +1,20 @@
+syntax = "proto3";
+package claros.common.core;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Common.Core";
+ 
+message ReportParameter {
+
+	string name = 0;
+
+    google.protobuf.StringValue value = 1;
+
+    string type = 2;
+}
+
+message ReportParameters
+{
+    repeated ReportParameter items = 1;
+}
