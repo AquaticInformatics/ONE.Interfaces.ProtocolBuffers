@@ -7,14 +7,12 @@ option csharp_namespace ="Claros.Common.Core";
  
 message ReportParameter {
 
-	string name = 0;
+    //Name of the Report parameter
+	string name = 1;
+    
+    //Value of the Report parameter
+    string value = 2;
 
-    google.protobuf.StringValue value = 1;
-
-    string type = 2;
-}
-
-message ReportParameters
-{
-    repeated ReportParameter items = 1;
+    //Datatype of Report parameter
+    string type = 3;
 }
