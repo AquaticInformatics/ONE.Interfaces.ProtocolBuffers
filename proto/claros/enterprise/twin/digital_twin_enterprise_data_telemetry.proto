@@ -16,10 +16,10 @@ message EnterpriseDataTelemetry{
     string title = 2;
 
     //Filter parameters of Report
-    repeated claros.common.core.ReportParameter parameters = 3;
+    repeated claros.common.core.ReportParameterSet parameterSet = 3;
 
     //one or more formats for generating report - CSV, Excel etc.
-    repeated string format = 4;
+    repeated string formats = 4;
 
     //user-defined tempate for Report
     google.protobuf.StringValue template = 5;

@@ -14,3 +14,10 @@ message ReportParameter {
     //Datatype of Report parameter
     string type = 3;
 }
+
+message ReportParameterSet {
+
+    string name = 1;
+
+    repeated ReportParameter items = 2;
+}
