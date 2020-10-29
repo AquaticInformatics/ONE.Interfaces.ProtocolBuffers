@@ -19,5 +19,5 @@ message ReportParameterSet {
 
     string name = 1;
 
-    repeated ReportParameter items = 2;
+    repeated ReportParameter parameters = 2;
 }

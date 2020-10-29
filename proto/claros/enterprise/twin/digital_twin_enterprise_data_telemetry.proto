@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.enterprise.twin;
 
 import "report_parameter.proto";
+import "enum_digital_twin_dataset_output_format.proto";
 
 import "google/protobuf/wrappers.proto";
 
@@ -9,22 +10,22 @@ option csharp_namespace = "Claros.Enterprise.Twin";
 
 message EnterpriseDataTelemetry{
 
-    //Name of Report telemetry
-    string name = 1;
+    //Name of dataset
+    string dataSetName = 1;
 
     //Title for the Report
-    string title = 2;
+    string reportTitle = 2;
 
-    //Filter parameters of Report
+    //request or filter parameters for generating dataTables
     repeated claros.common.core.ReportParameterSet parameterSet = 3;
 
-    //one or more formats for generating report - CSV, Excel etc.
-    repeated string formats = 4;
+    //one or more formats for generating dataset
+    repeated EnumDatasetOutputFormat dataSetOutputFormats = 4;
 
     //user-defined tempate for Report
     google.protobuf.StringValue template = 5;
 
-    //the list of sources for the report data
+    //the list of sources for generating dataset
     repeated string dataTables = 6;
 
     //description of Report
