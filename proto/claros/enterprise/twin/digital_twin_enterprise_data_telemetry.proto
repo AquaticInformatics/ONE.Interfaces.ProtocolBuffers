@@ -16,16 +16,16 @@ message EnterpriseDataTelemetry{
     //Title for the Report
     string reportTitle = 2;
 
-    //request or filter parameters for generating dataTables
-    repeated claros.common.core.ReportParameterSet parameterSet = 3;
+    //list of parameterSets required by the dataTables
+    repeated claros.common.core.ReportParameterSet parameterSets = 3;
 
     //one or more formats for generating dataset
     repeated EnumDatasetOutputFormat dataSetOutputFormats = 4;
 
-    //user-defined tempate for Report
+    //pre-defined template for Report
     google.protobuf.StringValue template = 5;
 
-    //the list of sources for generating dataset
+    //names of dataAdapters used for building dataTables
     repeated string dataTables = 6;
 
     //description of Report
