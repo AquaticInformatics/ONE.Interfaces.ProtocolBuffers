@@ -17,6 +17,7 @@ message ReportParameter {
 
 message ReportParameterSet {
 
+    //Name of DataAdapter that uses the reportParameters to generate datatable
     string name = 1;
 
     repeated ReportParameter parameters = 2;
