@@ -66,6 +66,8 @@ import "digital_twin_column_telemetry_propertybag.proto";
 import "digital_twin_instrument_telemetry_propertybag.proto";
 import "instrument_group.proto";
 import "activity_task.proto";
+import "digital_twin_enterprise_data_telemetry.proto";
+import "report_parameter.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -86,6 +88,7 @@ message ClarosContent {
         claros.common.core.JobStatuses jobStatuses = 44;
         claros.common.core.GaugeDataPoint gaugeDataPoint = 59;
         claros.common.core.Series series = 60;
+        claros.common.core.ReportParameterSet reportParameterSets = 66;
 
 		// common.computation
 		claros.common.computation.Computations computations = 8;
@@ -156,6 +159,7 @@ message ClarosContent {
         claros.enterprise.core.Scopes scopes = 56;
         claros.enterprise.twin.ColumnTelemetryPropertyBag columnTelemetryPropertyBag = 61;
         claros.enterprise.twin.MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
+        claros.enterprise.twin.EnterpriseDataTelemetry enterpriseDataTelemetry = 67;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
