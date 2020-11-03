@@ -1,0 +1,25 @@
+syntax = "proto3";
+package claros.iot.core;
+
+import "google/protobuf/wrappers.proto";
+import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.IoT.Core";
+ 
+// Represents the reqest for a change in tenant subscription.
+message SubscriptionChangeRequest {
+    
+    // Unique identifier of the tenant for whom this request is made.
+    string tenantId = 1;
+ 
+    // Operation to be performed on the subscription.
+    google.protobuf.StringValue operation = 2;
+
+    // Date and time when the request was queued.
+    claros.common.core.ClarosDateTime queuedTimestamp = 3;
+}
+
+// Represents a list of subscription requests.
+message SubscriptionChangeRequests {
+    repeated SubscriptionChangeRequest items = 1;
+}
