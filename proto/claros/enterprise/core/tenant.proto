@@ -36,6 +36,9 @@ message Tenant {
 	// Collection of service tech requests for the tenant
 	repeated ServiceTechTenantRequest serviceTechTenantRequests = 7;
 
+	// Tenant Type id to differenciate users from Hach, Trojan etc... 
+	google.protobuf.StringValue tenantTypeId = 8;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
