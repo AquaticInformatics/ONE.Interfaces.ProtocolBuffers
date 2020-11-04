@@ -81,7 +81,7 @@ message User {
 	// Collection of roles assigned to a user
 	repeated Role roles = 21;
 
-	// Collection of tenants for the user - to be Deprecated
+	// Collection of tenants for the user
 	repeated Tenant tenants = 22;
 
 	// Collection of features assigned to a user
