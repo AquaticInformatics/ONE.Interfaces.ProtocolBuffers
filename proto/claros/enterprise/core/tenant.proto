@@ -39,8 +39,8 @@ message Tenant {
 	// Tenant Twin Sub Type id to differentiate Tenants from Hach tenants, Trojan tenants, sales tenants, remote service tenants, test tenants, etc... 
 	google.protobuf.StringValue tenantTwinSubTypeId = 8;
 
-	// Parent tenant ID of the tenant
-	string parentTenantId = 9;
+	// Nullable Parent tenant ID of the tenant
+	google.protobuf.StringValue parentTenantId = 9;
 
 	google.protobuf.FieldMask updateMask = 98;
 
