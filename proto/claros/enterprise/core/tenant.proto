@@ -36,12 +36,6 @@ message Tenant {
 	// Collection of service tech requests for the tenant
 	repeated ServiceTechTenantRequest serviceTechTenantRequests = 7;
 
-	// Tenant Twin Sub Type id to differentiate Tenants from Hach tenants, Trojan tenants, sales tenants, remote service tenants, test tenants, etc... 
-	google.protobuf.StringValue tenantTwinSubTypeId = 8;
-
-	// Nullable Parent tenant ID of the tenant
-	google.protobuf.StringValue parentTenantId = 9;
-
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
