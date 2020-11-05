@@ -94,7 +94,7 @@ message User {
 	EnumUserStatus userStatus = 25;
 
 	//Tenant the user belong to
-	google.protobuf.StringValue tenantId = 26;
+	string tenantId = 26;
 
 	google.protobuf.FieldMask updateMask = 98;
 
