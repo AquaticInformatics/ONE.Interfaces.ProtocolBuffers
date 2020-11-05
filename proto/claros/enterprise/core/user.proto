@@ -93,6 +93,9 @@ message User {
 	//User Status enum
 	EnumUserStatus userStatus = 25;
 
+	//Tenant the user belong to
+	string tenantId = 26;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
