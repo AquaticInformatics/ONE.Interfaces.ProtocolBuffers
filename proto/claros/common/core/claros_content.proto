@@ -120,7 +120,7 @@ message ClarosContent {
 
         // iot
         claros.iot.registry.InstrumentGroups instrumentGroups = 65;
-        claros.iot.core.Subscriptions subscriptions = 67;
+        claros.iot.core.Subscriptions subscriptions = 68;
 
         // forms
         claros.common.form.Forms forms = 22;
@@ -161,7 +161,7 @@ message ClarosContent {
         claros.enterprise.core.Scopes scopes = 56;
         claros.enterprise.twin.ColumnTelemetryPropertyBag columnTelemetryPropertyBag = 61;
         claros.enterprise.twin.MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
-        claros.enterprise.twin.EnterpriseDataTelemetry enterpriseDataTelemetry = 68;
+        claros.enterprise.twin.EnterpriseDataTelemetry enterpriseDataTelemetry = 67;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
