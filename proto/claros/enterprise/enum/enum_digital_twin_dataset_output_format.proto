@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.enterprise.twin;
+
+option csharp_namespace = "Claros.Enterprise.Twin";
+ 
+enum EnumDatasetOutputFormat {
+    DATASET_OUTPUT_FORMAT_UNKNOWN = 0;
+    DATASET_OUTPUT_FORMAT_CSV = 1;
+    DATASET_OUTPUT_FORMAT_EXCEL = 2;
+    DATASET_OUTPUT_FORMAT_PDF = 3;
+}
