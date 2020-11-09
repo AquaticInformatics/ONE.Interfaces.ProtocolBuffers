@@ -3,23 +3,27 @@ package claros.iot.core;
 
 import "google/protobuf/wrappers.proto";
 import "subscription_change_request.proto";
+import "service.proto";
  
 option csharp_namespace ="Claros.IoT.Core";
  
 // Represents the subscription of a tenant.
 message Subscription {
     
+    // Unique identifier of the tenant for whom this request is made.
+    string tenantId = 1;
+
     // Status of the subscription.
-    google.protobuf.StringValue status = 1;
- 
+    google.protobuf.StringValue status = 2;
+
     // Pending change requests for the subscription.
-    claros.iot.core.SubscriptionChangeRequests changeRequests = 2;
+    claros.iot.core.SubscriptionChangeRequests changeRequests = 3;
 
     // Details of the tenant services on the cluster.
-    google.protobuf.StringValue clusterDetails = 3;
+    Services services = 4;
 }
 
-// Represents a list of subscriptions
+// Represents a list of subscriptions.
 message Subscriptions {
     repeated Subscription items = 1;
 }
