@@ -7,6 +7,8 @@ import "gis.proto";
 import "instrument_tag_identifier.proto";
 import "google/protobuf/wrappers.proto";
 
+option csharp_namespace ="Claros.Instrument.Measurement";
+
 message InstrumentMeasurementData {
     // Hardware physical connector identifier
     google.protobuf.UInt32Value channelNumber = 1;
