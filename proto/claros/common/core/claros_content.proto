@@ -88,7 +88,7 @@ message ClarosContent {
         claros.common.core.JobStatuses jobStatuses = 44;
         claros.common.core.GaugeDataPoint gaugeDataPoint = 59;
         claros.common.core.Series series = 60;
-        claros.common.core.ReportParameterSet reportParameterSet = 66;
+        claros.common.core.ReportParameterSets reportParameterSets = 66;
 
 		// common.computation
 		claros.common.computation.Computations computations = 8;

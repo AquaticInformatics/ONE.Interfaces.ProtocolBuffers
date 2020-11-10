@@ -22,3 +22,8 @@ message ReportParameterSet {
 
     repeated ReportParameter parameters = 2;
 }
+
+message ReportParameterSets {
+
+    repeated ReportParameterSet items = 1;
+}
