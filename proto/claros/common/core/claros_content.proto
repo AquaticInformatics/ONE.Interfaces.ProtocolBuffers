@@ -76,7 +76,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 69
+    // NEXT AVAILABLE ID: 70
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -121,6 +121,7 @@ message ClarosContent {
         // iot
         claros.iot.registry.InstrumentGroups instrumentGroups = 65;
         claros.iot.core.Subscriptions subscriptions = 68;
+        claros.iot.registry.InstrumentTypes instrumentTypes = 69;
 
         // forms
         claros.common.form.Forms forms = 22;

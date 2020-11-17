@@ -1,0 +1,66 @@
+syntax = "proto3";
+package claros.iot.registry;
+
+import "google/protobuf/wrappers.proto";
+import "i18nkey_text_reference.proto";
+import "record_auditinfo.proto";
+ 
+option csharp_namespace ="Claros.IoT.Registry";
+ 
+// Represents the type of an instrument.
+message InstrumentType {
+    
+    // Identifier property of an instrument type.
+    InstrumentTypeIdentifier identifier = 1;
+ 
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
+
+    //Contains all the flags for an instrument type
+    InstrumentTypeAttributes attributes = 3;
+
+    // Audit information for the Instrument Type
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+//Represent the indenfier pproperties for a instrument type
+message InstrumentTypeIdentifier {
+    
+    // Unique identifier of an instrument type.
+    google.protobuf.StringValue id = 1;
+    
+    // Manufacture code for the instrument type.
+    google.protobuf.StringValue manufacturerCode = 2;
+
+    //Instrument code for the instrument type
+    google.protobuf.StringValue instrumentCode = 3;
+
+}
+
+//Combining all flags here, to be deprecated once we move into Plug and Play
+message InstrumentTypeAttributes {
+
+    google.protobuf.BoolValue canHaveChildren = 1;
+
+    google.protobuf.BoolValue mustHaveParent = 2;
+
+    google.protobuf.BoolValue RootListVisible = 3;
+
+    google.protobuf.BoolValue EmitsMeasurements = 4;
+
+    google.protobuf.StringValue PictureSmallUrl = 5;
+
+    google.protobuf.StringValue PictureLargeUrl = 6;
+
+    google.protobuf.BoolValue guidedWorkflowSupport = 7;
+
+    google.protobuf.Int32Value transmissionInterval =8;
+
+    google.protobuf.BoolValue localAccessSupport = 9;
+    
+}
+
+// Represetns a list of instrument types
+message InstrumentTypes {
+    repeated InstrumentType items = 1;
+}
