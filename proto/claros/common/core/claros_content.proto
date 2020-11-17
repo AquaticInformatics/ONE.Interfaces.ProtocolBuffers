@@ -69,6 +69,7 @@ import "activity_task.proto";
 import "digital_twin_enterprise_data_telemetry.proto";
 import "report_parameter.proto";
 import "subscription.proto";
+import "instrument_type.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
