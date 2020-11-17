@@ -16,7 +16,7 @@ message SubscriptionChangeRequest {
     claros.common.core.ClarosDateTime queuedTimestamp = 2;
 
     // Status code of the request.
-    string statusCode = 3;
+    google.protobuf.StringValue statusCode = 3;
 
     // Error if any.
     google.protobuf.StringValue error = 4;
