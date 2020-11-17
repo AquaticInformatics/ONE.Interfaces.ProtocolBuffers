@@ -13,6 +13,9 @@ message Service {
 
     // Details of the service from the cluster (null = does not exist on the cluster).
     google.protobuf.StringValue details = 2;
+
+    // Status of the service.
+    google.protobuf.StringValue status = 3;
 }
 
 // Represents a list of services.

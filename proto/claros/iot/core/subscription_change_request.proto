@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.iot.core;
 
 import "clarosdatetime.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.IoT.Core";
  
@@ -13,6 +14,12 @@ message SubscriptionChangeRequest {
 
     // Date and time when the request was queued.
     claros.common.core.ClarosDateTime queuedTimestamp = 2;
+
+    // Status code of the request.
+    google.protobuf.StringValue statusCode = 3;
+
+    // Error if any.
+    google.protobuf.StringValue error = 4;
 }
 
 // Represents a list of subscription requests.
