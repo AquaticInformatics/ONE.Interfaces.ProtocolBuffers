@@ -21,3 +21,7 @@ message InstrumentReference {
     // Guid of instrument group
     google.protobuf.StringValue instrumentGroupGuid = 4;
 }
+
+message InstrumentReferences {
+    repeated InstrumentReference items = 1;
+}
