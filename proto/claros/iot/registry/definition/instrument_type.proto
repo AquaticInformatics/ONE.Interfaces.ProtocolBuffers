@@ -40,23 +40,23 @@ message InstrumentTypeIdentifier {
 //Combining all flags here, to be deprecated once we move into Plug and Play
 message InstrumentTypeAttributes {
 
-    google.protobuf.BoolValue canHaveChildren = 1;
+    bool canHaveChildren = 1;
 
-    google.protobuf.BoolValue mustHaveParent = 2;
+    bool mustHaveParent = 2;
 
-    google.protobuf.BoolValue RootListVisible = 3;
+    bool RootListVisible = 3;
 
-    google.protobuf.BoolValue EmitsMeasurements = 4;
+    bool EmitsMeasurements = 4;
 
-    google.protobuf.StringValue PictureSmallUrl = 5;
+    bool PictureSmallUrl = 5;
 
-    google.protobuf.StringValue PictureLargeUrl = 6;
+    bool PictureLargeUrl = 6;
 
-    google.protobuf.BoolValue guidedWorkflowSupport = 7;
+    bool guidedWorkflowSupport = 7;
 
-    google.protobuf.Int32Value transmissionInterval =8;
+    bool transmissionInterval =8;
 
-    google.protobuf.BoolValue localAccessSupport = 9;
+    bool localAccessSupport = 9;
     
 }
 
