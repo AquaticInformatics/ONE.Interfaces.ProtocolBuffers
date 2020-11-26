@@ -48,13 +48,13 @@ message InstrumentTypeAttributes {
 
     bool EmitsMeasurements = 4;
 
-    bool PictureSmallUrl = 5;
+    google.protobuf.StringValue PictureSmallUrl = 5;
 
-    bool PictureLargeUrl = 6;
+    google.protobuf.StringValue PictureLargeUrl = 6;
 
     bool guidedWorkflowSupport = 7;
 
-    bool transmissionInterval =8;
+    google.protobuf.Int32Value transmissionInterval =8;
 
     bool localAccessSupport = 9;
     
