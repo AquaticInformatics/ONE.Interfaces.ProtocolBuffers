@@ -6,6 +6,7 @@ import "instrument_reference.proto";
 import "instrument_status_prognosys.proto";
 import "pagination.proto";
 import "i18nkey_text_reference.proto";
+import "clarosdatetime.proto";
 
 option csharp_namespace ="Claros.Enterprise.Data";
 
@@ -42,6 +43,9 @@ message InstrumentPrognosysDetail {
 
     // Image URL for instrument
     string imageUrl = 9;
+
+    // The DateTime of the prognosysStatus
+    claros.common.core.ClarosDateTime statusDateTime = 10;
 }
 
 message InstrumentPrognosysDetails
