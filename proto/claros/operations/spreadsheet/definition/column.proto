@@ -55,4 +55,7 @@ message Column
 
     // GUID to uniquely identify this column
     string columnId = 15;
+
+    // The max row number for this column
+    uint32 maxRowNumber = 16;
 }
