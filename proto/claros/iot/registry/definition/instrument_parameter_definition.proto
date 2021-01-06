@@ -3,7 +3,7 @@ package claros.iot.registry;
 
 import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
-import "instrument_data_attribute_priority.proto";
+import "enum_instrument_data_attribute_priority.proto";
  
 option csharp_namespace ="Claros.IoT.Registry";
 
