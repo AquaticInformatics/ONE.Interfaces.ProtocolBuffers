@@ -1,0 +1,48 @@
+syntax = "proto3";
+package claros.iot.registry;
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+import "instrument_data_attribute_priority.proto";
+ 
+option csharp_namespace ="Claros.IoT.Registry";
+
+// Represents an instrument parameter definition.
+message InstrumentParameterDefinition {
+
+    // Unique identifier of an instrument parameter definition.
+    google.protobuf.StringValue id = 1;
+
+    // Unique identifier of the instrument type to which this definition belongs to.
+    google.protobuf.StringValue instrumentTypeId = 2;
+
+    // Unique identifier of the parameter for which this definition specifies the preferences.
+    google.protobuf.StringValue parameterId = 3;
+
+    // Set of attributes specifying the preferences for the instrument type-parameter pair.
+    InstrumentParameterDefinitionAttributes attributes = 4;
+
+    // Audit information for the Instrument Tag Definition
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+// Represents a set of attributes specifying the preferences for the instrument type-parameter pair.
+message InstrumentParameterDefinitionAttributes {
+
+    // Indicates whether the parameter should be visible to user or not (a.k.a. "VisibleToUser").
+    bool visible = 1;
+
+    // Specifies the priority of the parameter (a.k.a. "ImportanceToUser") when diplayed to users.
+    EnumInstrumentDataAttributePriority displayPriority = 2;
+
+    // Specifies the order of the parameter (a.k.a. "SortOrder") when displayed to users.
+    google.protobuf.UInt32Value displaySortOrder = 3;
+
+    // Specifies the number of decimal points to be displayed (a.k.a. "DisplayDecimalPoints") when data related to this parameter is displayed to users.
+    google.protobuf.UInt32Value displayDecimalPoints = 4;
+}
+
+// Represents a list of instrument parameter definitions.
+message InstrumentParameterDefinitions {
+    repeated InstrumentParameterDefinition items = 1;
+}
