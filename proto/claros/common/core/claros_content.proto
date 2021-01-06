@@ -124,7 +124,7 @@ message ClarosContent {
         claros.iot.registry.InstrumentGroups instrumentGroups = 65;
         claros.iot.core.Subscriptions subscriptions = 68;
         claros.iot.registry.InstrumentTypes instrumentTypes = 69;
-        claros.iot.registry.InstrumentParameterDefinitions instrumentParameterDefinitions  = 71;
+        claros.iot.registry.InstrumentParameterDefinitions instrumentParameterDefinitions  = 70;
 
         // forms
         claros.common.form.Forms forms = 22;
