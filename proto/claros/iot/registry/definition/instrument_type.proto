@@ -29,7 +29,7 @@ message InstrumentTypeIdentifier {
     // Unique identifier of an instrument type.
     google.protobuf.StringValue id = 1;
     
-    // Manufacture code for the instrument type.
+    // Manufacturer code for the instrument type.
     google.protobuf.StringValue manufacturerCode = 2;
 
     // Instrument code for the instrument type
@@ -44,17 +44,17 @@ message InstrumentTypeAttributes {
 
     bool mustHaveParent = 2;
 
-    bool RootListVisible = 3;
+    bool rootListVisible = 3;
 
-    bool EmitsMeasurements = 4;
+    bool emitsMeasurements = 4;
 
-    google.protobuf.StringValue PictureSmallUrl = 5;
+    google.protobuf.StringValue pictureSmallUrl = 5;
 
-    google.protobuf.StringValue PictureLargeUrl = 6;
+    google.protobuf.StringValue pictureLargeUrl = 6;
 
     bool guidedWorkflowSupport = 7;
 
-    google.protobuf.Int32Value transmissionInterval =8;
+    google.protobuf.Int32Value transmissionInterval = 8;
 
     bool localAccessSupport = 9;
     
