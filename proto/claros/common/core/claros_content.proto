@@ -70,6 +70,7 @@ import "digital_twin_enterprise_data_telemetry.proto";
 import "report_parameter.proto";
 import "subscription.proto";
 import "instrument_type.proto";
+import "instrument_parameter_definition.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -77,7 +78,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 70
+    // NEXT AVAILABLE ID: 71
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -123,6 +124,7 @@ message ClarosContent {
         claros.iot.registry.InstrumentGroups instrumentGroups = 65;
         claros.iot.core.Subscriptions subscriptions = 68;
         claros.iot.registry.InstrumentTypes instrumentTypes = 69;
+        claros.iot.registry.InstrumentParameterDefinitions instrumentParameterDefinitions  = 70;
 
         // forms
         claros.common.form.Forms forms = 22;

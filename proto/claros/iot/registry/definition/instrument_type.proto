@@ -23,7 +23,7 @@ message InstrumentType {
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
-//Represent the indenfier pproperties for a instrument type
+// Represents the identifier properties for a instrument type
 message InstrumentTypeIdentifier {
     
     // Unique identifier of an instrument type.
@@ -32,12 +32,12 @@ message InstrumentTypeIdentifier {
     // Manufacture code for the instrument type.
     google.protobuf.StringValue manufacturerCode = 2;
 
-    //Instrument code for the instrument type
+    // Instrument code for the instrument type
     google.protobuf.StringValue instrumentCode = 3;
 
 }
 
-//Combining all flags here, to be deprecated once we move into Plug and Play
+// Combining all flags here, to be deprecated once we move into Plug and Play
 message InstrumentTypeAttributes {
 
     bool canHaveChildren = 1;

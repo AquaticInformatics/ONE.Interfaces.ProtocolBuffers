@@ -16,11 +16,11 @@ message InstrumentGroup {
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
     claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
 
-    // Audit information for the Instrument Group
+    // Audit information for the instrument group.
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
-// Represetns a list of instrument groups
+// Represents a list of instrument groups.
 message InstrumentGroups {
     repeated InstrumentGroup items = 1;
 }
