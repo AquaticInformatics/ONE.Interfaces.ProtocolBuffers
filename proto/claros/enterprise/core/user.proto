@@ -96,8 +96,8 @@ message User {
 	//Tenant the user belong to
 	string tenantId = 26;
 
-	// Is User only used for API interfaces?
-	bool IsInterfaceUser = 27;
+	// Is User only used for non-interactive use?
+	bool IsHeadlessUser = 27;
 
 	google.protobuf.FieldMask updateMask = 98;
 
