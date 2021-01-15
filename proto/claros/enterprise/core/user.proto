@@ -96,6 +96,9 @@ message User {
 	//Tenant the user belong to
 	string tenantId = 26;
 
+	// Is User only used for non-interactive use?
+	bool IsHeadlessUser = 27;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
