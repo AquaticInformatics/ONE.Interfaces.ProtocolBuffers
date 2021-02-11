@@ -11,7 +11,7 @@ message ComputationVariableBinding {
    int32 rowOffset = 3;
 
    // added to rowOffset to determine what cells bind to the variable
-   int32 cellRange = 4;
+   uint32 cellRange = 4;
 
    // action taken on values of cells in range to determine value of variable
    EnumCellRangeAction cellRangeAction = 5;
