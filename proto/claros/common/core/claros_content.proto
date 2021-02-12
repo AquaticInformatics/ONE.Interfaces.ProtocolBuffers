@@ -71,6 +71,7 @@ import "report_parameter.proto";
 import "subscription.proto";
 import "instrument_type.proto";
 import "instrument_parameter_definition.proto";
+import "agency.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -78,7 +79,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 71
+    // NEXT AVAILABLE ID: 72
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -105,7 +106,8 @@ message ClarosContent {
 		claros.common.library.Parameters parameters = 12;
         claros.common.library.Units units = 13;
         claros.common.library.PrognosysDefinitions prognosysDefinitions = 51;
- 
+        claros.common.library.Agencies agencies = 71;
+
         // operations
         claros.operations.spreadsheet.Rows rows = 14;
         claros.operations.spreadsheet.Cells cells = 15;
@@ -113,7 +115,7 @@ message ClarosContent {
         claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 17;
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 18;
         claros.operations.spreadsheet.SpreadsheetComputations spreadsheetComputations = 19;
- 
+
         // instrument
         claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 20;
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 21;
@@ -130,7 +132,7 @@ message ClarosContent {
         claros.common.form.Forms forms = 22;
         claros.common.form.FormTemplates formTemplates = 23;
         claros.common.form.FormIndices formIndices = 24;
-        
+
         // notifications
         claros.common.notification.NotificationTemplates notificationTemplates = 25;
         claros.common.notification.NotificationTopics notificationTopics = 26;
