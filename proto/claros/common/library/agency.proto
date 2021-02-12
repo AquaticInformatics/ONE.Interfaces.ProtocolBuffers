@@ -13,6 +13,8 @@ message Agency {
     // Localization key for the agency name
     string i18nKeyName = 2;
 
+    google.protobuf.FieldMask updateMask = 98;
+
     // Audit information for the Unit
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
