@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
+enum EnumCellRangeAction {
+    ACTION_UNKNOWN = 0;
+    ACTION_TAKE_LAST = 1; // Take the value with max rownumber
+    ACTION_TAKE_FIRST = 2; // Take the value with min rownumber
+    ACTION_TAKE_ALL = 3; // Take all values in range
+}

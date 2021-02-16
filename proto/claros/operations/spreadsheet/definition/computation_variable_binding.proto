@@ -1,10 +1,18 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
+import "enum_cell_range_action.proto";
+
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
 message ComputationVariableBinding {
    string variableName = 1;
    uint32 columnNum = 2;
    int32 rowOffset = 3;
+
+   // added to rowOffset to determine what cells bind to the variable
+   uint32 cellRange = 4;
+
+   // action taken on values of cells in range to determine value of variable
+   EnumCellRangeAction cellRangeAction = 5;
 }
