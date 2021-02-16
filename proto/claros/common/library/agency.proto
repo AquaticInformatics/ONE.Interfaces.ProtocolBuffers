@@ -16,7 +16,7 @@ message Agency {
 
     google.protobuf.FieldMask updateMask = 98;
 
-    // Audit information for the Unit
+    // Audit information for the Agency
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
