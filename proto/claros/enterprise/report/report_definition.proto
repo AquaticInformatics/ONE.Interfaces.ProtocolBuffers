@@ -1,0 +1,46 @@
+syntax = "proto3";
+package claros.enterprise.report;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "clarosdatetime.proto";
+import "enum_rendering_engine.proto";
+
+option csharp_namespace = "Claros.Enterprise.Report";
+
+message ReportDefinition{
+    
+    string id = 1; 
+    
+    // Name of Report Definition
+    google.protobuf.StringValue name = 2;
+    
+    // Report Definition owner
+    google.protobuf.StringValue ownerDigitalTwinRefId = 3;
+
+    // Actual Report Definition
+    google.protobuf.StringValue reportDefinition = 4;
+
+    // Pointer to Digital Twin SubType
+    google.protobuf.StringValue dataSetDigitalTwinRefId = 5;
+
+    // Pointer to where definition file is stored
+    google.protobuf.StringValue referenceToTemplateFile = 6;
+
+    //  Rendering Engine used 0:unknown 1:excel
+    EnumRenderingEngine renderingEngine = 7;
+
+    // UserId who last ran the report
+    google.protobuf.StringValue lastRunById = 8;
+
+    // When it was last run
+    claros.common.core.ClarosDateTime lastRunOn = 9;
+
+    google.protobuf.FieldMask updateMask = 99;
+
+}
+
+message ReportDefinitions{
+	repeated ReportDefinition items = 1;
+}
