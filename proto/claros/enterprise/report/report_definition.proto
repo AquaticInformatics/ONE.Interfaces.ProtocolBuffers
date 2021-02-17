@@ -25,7 +25,7 @@ message ReportDefinition{
     // Pointer to Digital Twin SubType
     google.protobuf.StringValue dataSetDigitalTwinRefId = 5;
 
-    // Pointer to where definition file is stored
+    // Pointer to where template file is stored
     google.protobuf.StringValue referenceToTemplateFile = 6;
 
     //  Rendering Engine used 0:unknown 1:excel
