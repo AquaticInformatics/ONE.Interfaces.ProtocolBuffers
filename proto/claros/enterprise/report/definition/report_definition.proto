@@ -21,7 +21,7 @@ message ReportDefinition{
     google.protobuf.StringValue ownerDigitalTwinRefId = 3;
 
     // Actual Report Definition
-    google.protobuf.StringValue reportDefinition = 4;
+    google.protobuf.StringValue reportDefinitionJson = 4;
 
     // Pointer to Digital Twin SubType
     google.protobuf.StringValue dataSetDigitalTwinRefId = 5;
