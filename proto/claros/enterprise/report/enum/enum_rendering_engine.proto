@@ -4,6 +4,6 @@ package claros.enterprise.report;
 option csharp_namespace ="Claros.Enterprise.Report";
 
 enum EnumRenderingEngine {
-    UNKNOWN = 0; 
-    EXCEL = 1; 
+    RENDERING_ENGINE_UNKNOWN = 0; 
+    RENDERING_ENGINE_EXCEL = 1; 
 }
