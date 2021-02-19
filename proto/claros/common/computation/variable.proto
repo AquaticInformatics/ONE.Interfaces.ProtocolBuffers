@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.computation;
   
 import "google/protobuf/wrappers.proto";
+import "enum_variable_type.proto";
   
 option csharp_namespace ="Claros.Common.Computation";
   
@@ -21,6 +22,9 @@ message Variable
 
 	// used as the set of values for the variable when the computation is executed
     repeated double values = 5;
+
+    // type of variable (Value vs Array)
+    claros.common.core.EnumVariableType variableType = 6;
 }
 
 message Variables

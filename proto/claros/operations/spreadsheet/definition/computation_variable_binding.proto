@@ -15,4 +15,7 @@ message ComputationVariableBinding {
 
    // action taken on values of cells in range to determine value of variable
    EnumCellRangeAction cellRangeAction = 5;
+
+   // number of values required for this variable to be valid
+   uint32 requiredValues = 6;
 }
