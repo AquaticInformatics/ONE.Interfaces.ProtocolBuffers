@@ -72,6 +72,7 @@ import "subscription.proto";
 import "instrument_type.proto";
 import "instrument_parameter_definition.proto";
 import "agency.proto";
+import "report_definition.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -79,7 +80,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 72
+    // NEXT AVAILABLE ID: 73
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -168,6 +169,7 @@ message ClarosContent {
         claros.enterprise.twin.ColumnTelemetryPropertyBag columnTelemetryPropertyBag = 61;
         claros.enterprise.twin.MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
         claros.enterprise.twin.EnterpriseDataTelemetry enterpriseDataTelemetry = 67;
+        claros.enterprise.report.ReportDefinitions ReportDefinitions = 72;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;

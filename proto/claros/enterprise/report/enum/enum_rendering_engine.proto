@@ -1,0 +1,9 @@
+syntax = "proto3";
+package claros.enterprise.report;
+
+option csharp_namespace ="Claros.Enterprise.Report";
+
+enum EnumRenderingEngine {
+    RENDERING_ENGINE_UNKNOWN = 0; 
+    RENDERING_ENGINE_EXCEL = 1; 
+}
