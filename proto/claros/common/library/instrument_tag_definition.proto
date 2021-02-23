@@ -59,6 +59,6 @@ enum EnumInstrumentDataAttributePriority {
 }
 
 // Represents a list of instrument tag definitions.
-message InstrumenttagDefinitions {
-    repeated InstrumenttagDefinition items = 1;
+message InstrumentTagDefinitions {
+    repeated InstrumentTagDefinition items = 1;
 }

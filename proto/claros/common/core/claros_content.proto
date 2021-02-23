@@ -80,7 +80,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 73
+    // NEXT AVAILABLE ID: 74
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -108,6 +108,7 @@ message ClarosContent {
         claros.common.library.Units units = 13;
         claros.common.library.PrognosysDefinitions prognosysDefinitions = 51;
         claros.common.library.Agencies agencies = 71;
+        claros.common.library.InstrumentTagDefinitions instrumentTagDefinitions = 72;
 
         // operations
         claros.operations.spreadsheet.Rows rows = 14;
