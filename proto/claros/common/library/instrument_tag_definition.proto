@@ -12,8 +12,53 @@ message InstrumentTagDefinition {
     // The identifier of the instrument tag definition
     claros.common.library.InstrumentTagIdentifier identifier = 1;
 
-    // Attributes from DeviceTypeTags table like deviceTypeId, i18nKeyName, tagType, tagDataType, sortOrder, etc. will be added later
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
+
+    // Unique identifier of the instrument type to which this definition belongs to.
+    google.protobuf.StringValue instrumentTypeId = 3;
+
+    // Unique identifier of the parameter for which this definition specifies the preferences.
+    google.protobuf.StringValue parameterId = 4;
     
+    // Unique identifier of the unit for which this definition specifies the preferences.
+    google.protobuf.StringValue unitTypeId = 5;
+
+    // Specifies the length in words of the tag (a.k.a. "TagDataType") when diplayed to users.
+    google.protobuf.UInt32Value length = 6; 
+    
+    // Set of attributes specifying the preferences for the instrument type-tag pair.
+    InstrumentTagDefinitionAttributes attributes = 7;
+
     // Audit information for the Instrument Tag Definition
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+// Represents a set of attributes specifying the preferences for the instrument type-tag pair.
+message InstrumentTagDefinitionAttributes {
+
+    // Indicates whether the parameter should be visible to user or not (a.k.a. "VisibleToUser").
+    bool visible = 1;
+
+    // Specifies the priority of the tag (a.k.a. "ImportanceToUser") when diplayed to users.
+    EnumInstrumentDataAttributePriority displayPriority = 2;
+
+    // Specifies the order of the tag (a.k.a. "SortOrder") when displayed to users.
+    google.protobuf.UInt32Value displaySortOrder = 3;
+
+    // Specifies the number of decimal points to be displayed (a.k.a. "DisplayDecimalPoints") when data related to this tag is displayed to users.
+    google.protobuf.UInt32Value displayDecimalPoints = 4;
+}
+
+// Represents priority for an instrument data attribute (a.k.a. "ImportanceToUser")
+enum EnumInstrumentDataAttributePriority {
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_UNKNOWN = 0;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_PRIMARY = 1;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_SECONDARY = 2;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_RESERVED = 99;
+}
+
+// Represents a list of instrument tag definitions.
+message InstrumenttagDefinitions {
+    repeated InstrumenttagDefinition items = 1;
 }
