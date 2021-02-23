@@ -3,6 +3,8 @@ package claros.common.library;
 
 import "instrument_tag_identifier.proto";
 import "record_auditinfo.proto";
+import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Library";
 

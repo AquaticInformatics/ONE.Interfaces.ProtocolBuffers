@@ -16,7 +16,7 @@ message InstrumentTagIdentifier
     // The Foundation Library GUID of a tag id
     google.protobuf.StringValue guid = 2;
 
-    // Specifies the type of the tag (a.k.a. "TagType") when diplayed to users.
+    // Specifies the type of the tag (a.k.a. "TagType") when displayed to users.
     EnumInstrumentDataAttributeTagType type = 3;
 }
 
