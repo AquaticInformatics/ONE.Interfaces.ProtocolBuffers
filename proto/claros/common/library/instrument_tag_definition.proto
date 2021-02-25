@@ -4,6 +4,7 @@ package claros.common.library;
 import "instrument_tag_identifier.proto";
 import "record_auditinfo.proto";
 import "i18nkey_text_reference.proto";
+import "enum_instrument_tag_definition_priority.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Library";
@@ -43,21 +44,13 @@ message InstrumentTagDefinitionAttributes {
     bool visible = 1;
 
     // Specifies the priority of the tag (a.k.a. "ImportanceToUser") when diplayed to users.
-    EnumInstrumentDataAttributePriority displayPriority = 2;
+    EnumInstrumentTagDefinitionPriority displayPriority = 2;
 
     // Specifies the order of the tag (a.k.a. "SortOrder") when displayed to users.
     google.protobuf.UInt32Value displaySortOrder = 3;
 
     // Specifies the number of decimal points to be displayed (a.k.a. "DisplayDecimalPoints") when data related to this tag is displayed to users.
     google.protobuf.UInt32Value displayDecimalPoints = 4;
-}
-
-// Represents priority for an instrument data attribute (a.k.a. "ImportanceToUser")
-enum EnumInstrumentDataAttributePriority {
-    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_UNKNOWN = 0;
-    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_PRIMARY = 1;
-    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_SECONDARY = 2;
-    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_RESERVED = 99;
 }
 
 // Represents a list of instrument tag definitions.

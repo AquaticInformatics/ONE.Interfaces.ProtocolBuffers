@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.common;
+
+option csharp_namespace ="Claros.Common";
+
+// Represents tag type for an instrument data identifier (a.k.a. "TagType")
+enum EnumInstrumentTagDefinitionType {
+    INSTRUMENT_DATA_ATTRIBUTE_TAG_TYPE_UNKNOWN = 0;
+    INSTRUMENT_DATA_ATTRIBUTE_TAG_TYPE_TAG = 1;
+    INSTRUMENT_DATA_ATTRIBUTE_TAG_TYPE_INFO = 2;
+}
