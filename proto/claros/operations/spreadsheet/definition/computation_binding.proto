@@ -3,7 +3,7 @@ package claros.operations.spreadsheet;
 
 import "computation_variable_binding.proto";
 import "record_auditinfo.proto";
-import "enum_wims_week_definition.proto";
+import "execution_details.proto";
 
 option csharp_namespace ="Claros.Operations.Spreadsheet";
 
@@ -27,8 +27,8 @@ message ComputationBinding {
    // is this a valid computation binding
    bool isValid = 6;
 
-   // week definition to use for weekly computations
-   EnumWimsWeekDefinition wimsWeekDefinition = 7;
+   // details on when to execute computation and where to put the output defaults to every row
+   ExecutionDetails executionDetails = 7;
 
    // audit information
    claros.common.core.RecordAuditInfo recordAuditInfo = 99;

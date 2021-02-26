@@ -8,6 +8,9 @@ enum EnumTimeUnit
 {
     TIMEUNIT_UNKNOWN = 0;
     TIMEUNIT_MINUTE = 1;
-    // TIMEUNIT_HOUR = 2;
-    // TIMEUNIT_DAY = 3;
+    TIMEUNIT_HOUR = 2;
+    TIMEUNIT_DAY = 3;
+    TIMEUNIT_WEEK = 4;
+    TIMEUNIT_MONTH = 5;
+    TIMEUNIT_YEAR = 6;
 }
