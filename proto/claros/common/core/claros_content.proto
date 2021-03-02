@@ -73,6 +73,10 @@ import "instrument_type.proto";
 import "instrument_parameter_definition.proto";
 import "agency.proto";
 import "report_definition.proto";
+import "parameter_agency_code.proto";
+import "parameter_agency_code_type.proto";
+import "unit_agency_code.proto";
+import "unit_agency_code_type.proto";
 import "instrument_tag_definition.proto";
 
 option csharp_namespace ="Claros.Common.Core";
@@ -81,7 +85,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 74
+    // NEXT AVAILABLE ID: 78
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -110,6 +114,10 @@ message ClarosContent {
         claros.common.library.PrognosysDefinitions prognosysDefinitions = 51;
         claros.common.library.Agencies agencies = 71;
         claros.common.library.InstrumentTagDefinitions instrumentTagDefinitions = 73;
+        claros.common.library.ParameterAgencyCodes parameterAgencyCodes = 74;
+        claros.common.library.ParameterAgencyCodeTypes parameterAgencyCodeTypes = 75;
+        claros.common.library.UnitAgencyCodes unitAgencyCodes = 76;
+        claros.common.library.UnitAgencyCodeTypes unitAgencyCodeTypes = 77;
 
         // operations
         claros.operations.spreadsheet.Rows rows = 14;

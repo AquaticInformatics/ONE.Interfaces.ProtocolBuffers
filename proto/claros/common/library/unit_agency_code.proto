@@ -1,0 +1,30 @@
+syntax = "proto3";
+package claros.common.library;
+
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Claros.Common.Library";
+
+message UnitAgencyCode {
+    // The GUID for the unit agency code
+    string Id = 1;
+    
+    // The GUID of the unit agency type
+    string unitAgencyTypeId = 2;
+    
+    // GUID unit type identifier
+    string unitTypeId = 3;
+
+    // the name of the unit agency code
+    string name = 4;
+    
+    // the code that is used for unit agency code
+    string code = 5;
+    
+    // Audit information for the unit agency code
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message UnitAgencyCodes {
+    repeated UnitAgencyCode items = 1;
+}

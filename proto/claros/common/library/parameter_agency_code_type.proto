@@ -1,0 +1,24 @@
+syntax = "proto3";
+package claros.common.library;
+
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Claros.Common.Library";
+
+message ParameterAgencyCodeType {
+    // The GUID for the parameter agency code type
+    string Id = 1;
+    
+    // The GUID of the agency
+    string agencyId = 2;
+    
+    // the name of the parameter agency code type
+    string name = 3;
+    
+    // Audit information for the parameter agency code
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ParameterAgencyCodeTypes {
+    repeated ParameterAgencyCodeType items = 1;
+}
