@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.operations.spreadsheet;
+
+option csharp_namespace ="Claros.Operations.Spreadsheet";
+
+enum EnumOutputPlacement {
+	OUTPUT_PLACEMENT_UNKNOWN = 0;
+    OUTPUT_PLACEMENT_PERIOD_START = 1;
+	OUTPUT_PLACEMENT_PERIOD_END = 2;
+    OUTPUT_PLACEMENT_CUSTOM = 3;
+} 
