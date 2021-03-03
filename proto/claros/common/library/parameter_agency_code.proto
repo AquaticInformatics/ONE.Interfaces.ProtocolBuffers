@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.library;
 
 import "record_auditinfo.proto";
+import "clarosdatetime.proto";
 
 option csharp_namespace ="Claros.Common.Library";
 
@@ -26,6 +27,9 @@ message ParameterAgencyCode {
     
     // decimal places defined for the parameter agency code
     uint32 decimalPlaces = 7;
+
+    // the date that parameter agency code becomes deprecated
+    claros.common.core.ClarosDateTime deprecationDate = 8;
 
     // Audit information for the parameter agency code
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
