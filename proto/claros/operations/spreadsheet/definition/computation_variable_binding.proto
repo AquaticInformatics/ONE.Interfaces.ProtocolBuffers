@@ -18,4 +18,7 @@ message ComputationVariableBinding {
 
    // number of values required for this variable to be valid
    uint32 requiredValues = 6;
+
+   // Name of function associated to variable
+   string functionName = 7;
 }
