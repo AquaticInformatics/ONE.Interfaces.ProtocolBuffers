@@ -1,6 +1,7 @@
 syntax = "proto3";
 package claros.instrument.status;
 
+import "clarosdatetime.proto";
 import "i18nkey_text_reference.proto";
 import "google/protobuf/wrappers.proto";
 
@@ -10,6 +11,8 @@ message StatusMetadata {
 	google.protobuf.UInt32Value id = 1;
 
     claros.common.core.I18NKeyTextReference description = 2;
+
+    claros.common.core.ClarosDateTime createdOn = 3;
 }
 
 message StatusMetadatas {
