@@ -13,6 +13,12 @@ message StatusMetadata {
     claros.common.core.I18NKeyTextReference description = 2;
 
     claros.common.core.ClarosDateTime createdOn = 3;
+    
+    // Additional property to store the any specific metadata as a key.
+    google.protobuf.StringValue key = 4;
+
+    // Additional property to store the any specific metadata as a value.
+    google.protobuf.StringValue value = 5;
 }
 
 message StatusMetadatas {
