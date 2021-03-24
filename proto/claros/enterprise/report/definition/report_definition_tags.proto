@@ -1,0 +1,22 @@
+syntax = "proto3";
+package claros.enterprise.report;
+
+import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
+import "clarosdatetime.proto";
+
+option csharp_namespace = "Claros.Enterprise.Report";
+
+message ReportDefinitionTag {
+  string id = 1;
+
+  // Id of the ReportDefinition
+  google.protobuf.StringValue tag = 2;
+
+  // record_auditinfo
+  claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ReportDefinitionTags {
+  repeated ReportDefinitionTag items = 1;
+}
