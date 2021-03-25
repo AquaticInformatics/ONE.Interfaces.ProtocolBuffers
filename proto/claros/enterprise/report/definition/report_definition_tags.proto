@@ -11,7 +11,10 @@ message ReportDefinitionTag {
   string id = 1;
 
   // Id of the ReportDefinition
-  google.protobuf.StringValue tag = 2;
+  google.protobuf.StringValue reportDefinitionId = 2;
+
+  // Id of the ReportDefinition
+  google.protobuf.StringValue tag = 3;
 
   // record_auditinfo
   claros.common.core.RecordAuditInfo recordAuditInfo = 99;
