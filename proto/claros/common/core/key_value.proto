@@ -1,0 +1,18 @@
+syntax = "proto3";
+package claros.common.core;
+
+option csharp_namespace ="Claros.Common.Core";
+
+message KeyValue {
+
+  // Key
+	string key = 1;
+
+  // Value
+  string value = 2;
+}
+
+message KeyValues {
+
+    repeated KeyValue items = 1;
+}

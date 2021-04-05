@@ -78,6 +78,9 @@ import "parameter_agency_code_type.proto";
 import "unit_agency_code.proto";
 import "unit_agency_code_type.proto";
 import "instrument_tag_definition.proto";
+import "report_definition_runs.proto";
+import "report_definition_tags.proto";
+import "key_value.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -85,7 +88,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 78
+    // NEXT AVAILABLE ID: 81
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -99,6 +102,7 @@ message ClarosContent {
         claros.common.core.GaugeDataPoint gaugeDataPoint = 59;
         claros.common.core.Series series = 60;
         claros.common.core.ReportParameterSets reportParameterSets = 66;
+        claros.common.core.KeyValues KeyValues = 80;
 
 		// common.computation
 		claros.common.computation.Computations computations = 8;
@@ -180,6 +184,8 @@ message ClarosContent {
         claros.enterprise.twin.MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
         claros.enterprise.twin.EnterpriseDataTelemetry enterpriseDataTelemetry = 67;
         claros.enterprise.report.ReportDefinitions ReportDefinitions = 72;
+        claros.enterprise.report.ReportDefinitionRuns ReportDefinitionRuns = 78;
+        claros.enterprise.report.ReportDefinitionTags ReportDefinitionTags = 79;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
