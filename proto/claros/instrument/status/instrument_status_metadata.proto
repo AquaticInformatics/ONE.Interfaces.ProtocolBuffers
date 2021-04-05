@@ -4,6 +4,7 @@ package claros.instrument.status;
 import "clarosdatetime.proto";
 import "i18nkey_text_reference.proto";
 import "google/protobuf/wrappers.proto";
+import "key_value.proto";
 
 option csharp_namespace ="Claros.Instrument.Status";
  
@@ -14,11 +15,9 @@ message StatusMetadata {
 
     claros.common.core.ClarosDateTime createdOn = 3;
     
-    // Additional property to store the any specific metadata as a key.
-    google.protobuf.StringValue key = 4;
+    // Additional property to store the any specific metadata as a key value pair.
+    claros.common.core.KeyValues data = 4;
 
-    // Additional property to store the any specific metadata as a value.
-    google.protobuf.StringValue value = 5;
 }
 
 message StatusMetadatas {
