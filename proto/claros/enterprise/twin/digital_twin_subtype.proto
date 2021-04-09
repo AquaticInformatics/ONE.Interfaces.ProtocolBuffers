@@ -27,6 +27,9 @@ message DigitalTwinSubtype{
     //Definitions for Custom UI attributes for UI
     google.protobuf.StringValue uiDefinition = 11;
 
+    // sprintNumber when subType was created, used for translations
+    int32 sprintNumber = 12;
+
     google.protobuf.FieldMask updateMask = 98;
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
