@@ -4,6 +4,7 @@ package claros.common.notification;
 import "record_auditinfo.proto";
 import "enum_notification_category.proto";
 import "notification_topic_variable.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="Claros.Common.Notification";
 
@@ -14,6 +15,9 @@ message NotificationTopic {
     repeated NotificationTopicVariable notificationTopicVariables = 4;
     EnumNotificationCategory enumNotificationCategory = 5;
     claros.common.core.RecordAuditInfo recordAuditInfo = 6;
+
+    // Represents the i18nKey for Notification Topics
+    claros.common.core.I18NKeyTextReference i18NKeyName = 7;
 }
 
 message NotificationTopics {
