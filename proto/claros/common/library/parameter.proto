@@ -42,10 +42,10 @@ message Parameter {
     claros.common.core.ClarosDateTime deprecationDate = 11;
 
     // The abbreviated i18 lookup for this parameter
-    string I18NKeyAbbreviation = 12;
+    string i18NKeyAbbreviation = 12;
 
     // The sprint number parameter was added
-    uint32 SprintNumber = 13;
+    uint32 sprintNumber = 13;
     
     // Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
