@@ -46,9 +46,6 @@ message Parameter {
 
     // The sprint number parameter was added
     uint32 sprintNumber = 13;
- 
-    // GUID of the unit type group
-    string unitTypeGroupId = 14;
 
     // Audit information for the Parameter
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
