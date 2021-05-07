@@ -31,6 +31,9 @@ message ParameterAgencyCode {
     // the date that parameter agency code becomes deprecated
     claros.common.core.ClarosDateTime deprecationDate = 8;
 
+    // Digital twin subtype id
+    string digitalTwinSubTypeId = 9;
+
     // Audit information for the parameter agency code
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
