@@ -32,7 +32,7 @@ message ParameterAgencyCode {
     claros.common.core.ClarosDateTime deprecationDate = 8;
 
     // Digital twin subtype id
-    string digitalTwinSubTypeId = 9;
+    google.protobuf.StringValue digitalTwinSubTypeId = 9;
 
     // Audit information for the parameter agency code
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
