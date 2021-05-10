@@ -3,8 +3,6 @@ package claros.common.library;
 
 import "record_auditinfo.proto";
 
-import "clarosdatetime.proto";
-
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Library";

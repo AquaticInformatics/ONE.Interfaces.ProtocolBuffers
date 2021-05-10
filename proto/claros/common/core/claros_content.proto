@@ -81,6 +81,7 @@ import "instrument_tag_definition.proto";
 import "report_definition_runs.proto";
 import "report_definition_tags.proto";
 import "key_value.proto";
+import "quantity_type.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -88,7 +89,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 81
+    // NEXT AVAILABLE ID: 82
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -122,6 +123,7 @@ message ClarosContent {
         claros.common.library.ParameterAgencyCodeTypes parameterAgencyCodeTypes = 75;
         claros.common.library.UnitAgencyCodes unitAgencyCodes = 76;
         claros.common.library.UnitAgencyCodeTypes unitAgencyCodeTypes = 77;
+        claros.common.library.QuantityTypes quantityTypes = 81;
 
         // operations
         claros.operations.spreadsheet.Rows rows = 14;
