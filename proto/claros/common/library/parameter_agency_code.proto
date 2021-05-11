@@ -4,6 +4,8 @@ package claros.common.library;
 import "record_auditinfo.proto";
 import "clarosdatetime.proto";
 
+import "google/protobuf/wrappers.proto";
+
 option csharp_namespace ="Claros.Common.Library";
 
 message ParameterAgencyCode {
@@ -30,6 +32,9 @@ message ParameterAgencyCode {
 
     // the date that parameter agency code becomes deprecated
     claros.common.core.ClarosDateTime deprecationDate = 8;
+
+    // Digital twin subtype id
+    google.protobuf.StringValue digitalTwinSubTypeId = 9;
 
     // Audit information for the parameter agency code
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
