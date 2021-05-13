@@ -31,7 +31,7 @@ message Unit {
     // Unit Type Group Id
     string unitTypeGroupId =8;
 
-    // The sprint number parameter was added
+    // The sprint number unit was added
     uint32 sprintNumber = 9;
 
     // Audit information for the Unit
