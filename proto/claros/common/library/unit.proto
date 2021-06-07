@@ -29,7 +29,7 @@ message Unit {
     string i18nKeyAbbreviation = 7;
 
     // Unit Type Group Id
-    string unitTypeGroupId =8;
+    string unitTypeGroupId =8 [deprecated = true];
 
     // The sprint number unit was added
     uint32 sprintNumber = 9;
