@@ -27,16 +27,16 @@ message Parameter {
     string description = 6;
     
     // The GUID of the tenant (Tenant Defined Parameters)
-    string tenantId = 7;
+    google.protobuf.StringValue tenantId = 7;
 
     // GUID of Base UnitType 
     string baseUnitTypeId = 8;
 
     // GUID of Chemical Form TypeID
-    string baseChemicalFormTypeId = 9;
+    google.protobuf.StringValue baseChemicalFormTypeId = 9;
 
     // GUID of Optional Parameter Value Id
-    string defaultParameterOptionValueId = 10;
+    google.protobuf.StringValue defaultParameterOptionValueId = 10;
 
     // Indicates the deprecation date of a parameter
     claros.common.core.ClarosDateTime deprecationDate = 11;
