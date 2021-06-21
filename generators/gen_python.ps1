@@ -51,7 +51,7 @@ $Command = "python setup.py bdist_wheel"
 Write-Output `n$Command
 Invoke-Expression -Command $Command
 
-# In claros.interfaces.python.dist will be the source tarball and the binary wheel file
+# In the claros.interfaces.python/dist directory will be the source tarball and the binary wheel file
 
 # Stop-Transcript
 Set-Location ..\..\..\generators
