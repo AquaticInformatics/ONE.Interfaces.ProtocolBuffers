@@ -11,7 +11,7 @@ Requirements
 
 Usage
 =====
-See the tests directory for examples.
+
 
 Testing
 =======
