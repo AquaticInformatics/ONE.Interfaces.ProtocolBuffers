@@ -40,14 +40,15 @@ Copy-Item ..\..\..\generators\python\* .
 mkdir -Force .\claros_interfaces
 Copy-Item ..\out\python\*.* claros_interfaces
 Move-Item -Force __init__.py claros_interfaces
+Copy-Item -Force claros_interfaces.pth claros_interfaces
 
 # Make a source package
-$Command = "python setup.py sdist"
+$Command = "python setup.py clean build sdist"
 Write-Output `n$Command
 Invoke-Expression -Command $Command
 
 # Make a binary package
-$Command = "python setup.py bdist_wheel"
+$Command = "python setup.py clean build bdist_wheel"
 Write-Output `n$Command
 Invoke-Expression -Command $Command
 
