@@ -36,10 +36,10 @@ foreach($file in $files)
 mkdir -Force ./claros.interfaces.python
 Set-Location ./claros.interfaces.python
 
-Copy-Item ..\..\..\generators\python\*.* .
-mkdir -Force .\python
-Copy-Item ..\out\python\*.* python
-Move-Item -Force __init__.py python
+Copy-Item ..\..\..\generators\python\* .
+mkdir -Force .\claros_interfaces
+Copy-Item ..\out\python\*.* claros_interfaces
+Move-Item -Force __init__.py claros_interfaces
 
 # Make a source package
 $Command = "python setup.py sdist"
