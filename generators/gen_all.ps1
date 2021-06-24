@@ -6,7 +6,7 @@ cd ../proto/flat
 
 $files = Get-ChildItem . -Filter "*.proto" 
 
-$dirs = "cpp","csharp" # "java", "js", "objc", "php", "python", "ruby"
+$dirs = "cpp","csharp","python" # "java", "js", "objc", "php", "ruby"
 
 # Create Output Directories
 foreach($dir in $dirs) {
