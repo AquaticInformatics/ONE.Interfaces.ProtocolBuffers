@@ -29,7 +29,7 @@ message InstrumentMeasurementData {
     claros.common.gis.GIS geolocation = 5;
  
     // Bucket for any undefined data related to this instrument measurement
-    string measurementDataExtended = 6;    
+    string measurementDataExtended = 6;
  
     // Byte array used for sending the raw measurement data
     bytes rawMeasurementData = 7;
