@@ -2,6 +2,7 @@ syntax = "proto3";
 package claros.common.core;
 
 import "clarosdatetime.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -28,7 +29,7 @@ message Measurement {
     double value = 6;     
 	
 	// significant digit precision of the value
-    uint32 precision = 7;  
+    google.protobuf.UInt32Value precision = 7;  
 
     // The value represented as a string
     string stringValue = 8;
