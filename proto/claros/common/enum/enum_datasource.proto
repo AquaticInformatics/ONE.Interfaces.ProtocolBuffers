@@ -11,4 +11,5 @@ enum EnumDataSource {
     DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Claros.Instrument.Measurement
     DATASOURCE_IMPORT = 5;                  // Data related to imports
     DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Claros.Common.Spreadsheet.Definition
+    DATASOURCE_CLAROS_CONNECT = 7;          // Data related to Claros Connect
 }
