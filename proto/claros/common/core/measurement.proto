@@ -30,7 +30,7 @@ message Measurement {
 	
     // DEPRECATED: Adding a new field decimalPrecision
 	// significant digit precision of the value
-    uint32 precision = 7 [deprecated=true];    
+    uint32 precision = 7 [deprecated=true];
 
     // The value represented as a string
     string stringValue = 8;
