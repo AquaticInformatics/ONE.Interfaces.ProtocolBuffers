@@ -28,14 +28,18 @@ message Measurement {
     // the value of the measurement
     double value = 6;     
 	
+    // DEPRECATED: Adding a new field decimalPrecision
 	// significant digit precision of the value
-    google.protobuf.UInt32Value precision = 7;  
+    uint32 precision = 7 [deprecated=true];    
 
     // The value represented as a string
     string stringValue = 8;
 	
 	// The value represents the number of measurements taken into consideration for calculating the aggregated value
 	uint32 aggregatedMeasurementCount = 9;
+
+    // significant digit precision of the value
+    google.protobuf.UInt32Value decimalPrecision = 10; 
 }
 
 message Measurements {

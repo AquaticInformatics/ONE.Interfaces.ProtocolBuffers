@@ -28,9 +28,8 @@ message InstrumentMeasurementData {
     // Geolocation from portable instruments or any device that provides geo location.            
     claros.common.gis.GIS geolocation = 5;
  
-    // DEPRECATED: Adding a new field attributes of type key-value pair
     // Bucket for any undefined data related to this instrument measurement
-    string measurementDataExtended = 6 [deprecated=true];    
+    string measurementDataExtended = 6;    
  
     // Byte array used for sending the raw measurement data
     bytes rawMeasurementData = 7;
