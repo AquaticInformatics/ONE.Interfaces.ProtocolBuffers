@@ -6,6 +6,7 @@ import "instrument_event_data.proto";
 import "gis.proto";
 import "instrument_tag_identifier.proto";
 import "google/protobuf/wrappers.proto";
+import "key_value.proto";
 
 option csharp_namespace ="Claros.Instrument.Measurement";
 
@@ -36,6 +37,9 @@ message InstrumentMeasurementData {
     // Events related to the process of taking this measurement from handheld instruments
     // This data could be valuable for future instrument improvements
     repeated claros.instrument.instrumentevent.InstrumentEventData instrumentEventDatas = 8;
+
+    // Bucket for any undefined data related to this instrument measurement
+    claros.common.core.KeyValues attributes = 9;
 }
 
 message InstrumentMeasurementDatas
