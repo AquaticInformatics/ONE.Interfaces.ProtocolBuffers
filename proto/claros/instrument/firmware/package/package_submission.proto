@@ -1,0 +1,62 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+// Represents an instrument firmware package submission
+message PackageSubmission {
+
+    // Unique identifier of the package submission
+    google.protobuf.StringValue id = 1;
+
+    // Specifies the provider of the package
+    google.protobuf.StringValue provider = 2;
+
+    // Specifies the version of the package as a 4-digit version string
+    google.protobuf.StringValue version = 3;
+
+    PackageFormat format = 4;
+    
+    oneof content {
+        FusionDevicePackageContent fusionDevicePackageContent = 1;
+        ClarosDevicePackageContent clarosDevicePackageContent = 2;
+    }
+}
+
+message PackageFormat {
+
+    // Specifies the name of the package format
+    google.protobuf.StringValue name = 1;
+
+    // Specifies the version of the package format (a.k.a. 'Generation')
+    google.protobuf.StringValue version = 2;
+}
+
+message PackageFile {
+    google.protobuf.StringValue name = 1;
+    PackageFileHash hash = 2;
+}
+
+message PackageFileHash {
+    google.protobuf.StringValue sha1 = 1;
+}
+
+message FusionDevicePackageContent {
+    repeated PackageFile files = 5;
+}
+
+// TO BE DEFINED w/ Plug & Play
+message ClarosDevicePackageContent {
+
+}
+
+
+
+
+
+message Submission {
+
+}
+
