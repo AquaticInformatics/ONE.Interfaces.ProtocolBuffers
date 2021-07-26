@@ -1,9 +1,14 @@
 syntax = "proto3";
 package claros.instrument.firmware.package;
 
-import "google/protobuf/wrappers.proto";
-
 option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "google/protobuf/wrappers.proto";
+import "auditevent.proto";
+import "package_info.proto";
+import "fusion_device_package_content.proto";
+import "claros_device_package_content.proto";
+import "enum_package_submission_status.proto";
 
 // Represents an instrument firmware package submission
 message PackageSubmission {

@@ -1,9 +1,9 @@
 syntax = "proto3";
 package claros.instrument.firmware.package;
 
-import "google/protobuf/wrappers.proto";
-
 option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "package_file.proto";
 
 // Represents the content of the package in 'Fusion Device Package (.fdp)' format
 message FusionDevicePackageContent {

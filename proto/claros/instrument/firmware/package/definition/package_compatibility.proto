@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "instrument_type.proto";
+
+// Represents the compatibility details of a package
+message PackageCompatibility {
+
+    // Specifies the target instrument type the package is compatible with
+    claros.iot.registry.InstrumentTypeIdentifier targetInstrumentType = 1;
+
+}

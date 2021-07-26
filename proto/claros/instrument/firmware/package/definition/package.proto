@@ -1,9 +1,14 @@
 syntax = "proto3";
 package claros.instrument.firmware.package;
 
-import "google/protobuf/wrappers.proto";
-
 option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+import "package_info.proto";
+import "fusion_device_package_content.proto";
+import "claros_device_package_content.proto";
+import "enum_package_state.proto";
 
 // Represents an instrument firmware package
 message Package {
@@ -25,11 +30,8 @@ message Package {
     }
 
     // Specifies the state of the package
-    EnumPackageState state = 5; // ?????
-
-    // Audit information providing details for the changes made to package
-    repeated claros.common.core.AuditEvent auditEvents = 98;
-
+    EnumPackageState state = 5;
+    
     // Audit information for the package record
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 

@@ -1,9 +1,10 @@
 syntax = "proto3";
 package claros.instrument.firmware.package;
 
-import "google/protobuf/wrappers.proto";
-
 option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "google/protobuf/wrappers.proto";
+import "package_file_signature.proto";
 
 // Represents the details of a file included in a package
 message PackageFile {

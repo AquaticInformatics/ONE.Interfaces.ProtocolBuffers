@@ -4,7 +4,7 @@ package claros.instrument.firmware.package;
 option csharp_namespace ="Claros.Instrument.Firmware.Package";
 
 // Specifies the state of a package
-enum PackageState {
+enum EnumPackageState {
     PACKAGE_STATE_UNKNOWN = 0;
     PACKAGE_STATE_PUBLISHED = 1;
 }
