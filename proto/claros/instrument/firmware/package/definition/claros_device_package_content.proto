@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+// Represents the content of the package in 'Claros Device Package (.cdp)' format
+message ClarosDevicePackageContent {
+
+}

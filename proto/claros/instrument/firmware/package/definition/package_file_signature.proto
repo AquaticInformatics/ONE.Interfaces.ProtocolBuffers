@@ -1,0 +1,14 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+// Represents the data used to verify the integrity of file contents
+message PackageFileSignature {
+    
+    // Specifies the checksum (calculated with SHA-1)
+    google.protobuf.StringValue checksumSha1 = 1;
+    
+}
