@@ -82,6 +82,8 @@ import "report_definition_runs.proto";
 import "report_definition_tags.proto";
 import "key_value.proto";
 import "quantity_type.proto";
+import "package.proto";
+import "package_submission.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -89,7 +91,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 82
+    // NEXT AVAILABLE ID: 84
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -138,6 +140,8 @@ message ClarosContent {
         claros.instrument.measurement.InstrumentMeasurementDatas instrumentMeasurementDatas = 21;
         claros.instrument.InstrumentData instrumentData = 47;
         claros.instrument.lock.InstrumentLockStatus instrumentLockStatus = 53;
+        claros.instrument.firmware.package.Packages instrumentFirmwarePackages = 82;
+        claros.instrument.firmware.package.PackageSubmissions instrumentFirmwarePackageSubmissions = 83;
 
         // iot
         claros.iot.registry.InstrumentGroups instrumentGroups = 65;
