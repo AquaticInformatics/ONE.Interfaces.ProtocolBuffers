@@ -24,10 +24,9 @@ message Package {
         ClarosDevicePackageContent clarosDevicePackageContent = 2;
     }
 
-    // TODO: state/visibility (published, hidden(?), disabled(?)...) !!!!!
-    /*
-        NONE,
-        PUBLISHED
-    */
+    // Specifies the state of the package
+    EnumPackageState state = 3; // ?????
+
+}
 
 }
