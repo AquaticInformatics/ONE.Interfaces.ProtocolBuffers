@@ -29,4 +29,7 @@ message Package {
 
 }
 
+// Represents a list of instrument firmware packages
+message Packages {
+    repeated Package items = 1;
 }

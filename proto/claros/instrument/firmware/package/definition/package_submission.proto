@@ -24,9 +24,14 @@ message PackageSubmission {
         ClarosDevicePackageContent clarosDevicePackageContent = 2;
     }
 
-    // Specifies the status of a package submission
+    // Specifies the status of the package submission
     EnumPackageSubmissionStatus status = 3; // ?????
     
     // TODO: audits !!!!!
 
+}
+
+// Represents a list of instrument firmware package submissions
+message PackageSubmissions {
+    repeated PackageSubmission items = 1;
 }
