@@ -53,6 +53,9 @@ message InstrumentDetail {
 
     // Specifies the instrument twin for the instrument
     claros.enterprise.twin.DigitalTwin instrumentDigitalTwin = 12;
+
+    // Specifies decimal precision of the measurement value
+    google.protobuf.UInt32Value decimalPrecision = 13;
 }
 
 message InstrumentDetails
