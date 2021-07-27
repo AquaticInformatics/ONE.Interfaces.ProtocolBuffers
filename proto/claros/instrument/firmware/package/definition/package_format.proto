@@ -1,0 +1,17 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+import "google/protobuf/wrappers.proto";
+
+// Represents the format of a package
+message PackageFormat {
+
+    // Specifies the name of the package format
+    google.protobuf.StringValue name = 1;
+
+    // Specifies the version of the package format (a.k.a. 'Generation')
+    google.protobuf.StringValue version = 2;
+
+}

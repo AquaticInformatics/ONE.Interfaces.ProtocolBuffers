@@ -1,0 +1,11 @@
+syntax = "proto3";
+package claros.instrument.firmware.package;
+
+option csharp_namespace ="Claros.Instrument.Firmware.Package";
+
+/* Represents the content of the package in 'Claros Device Package (.cdp)' format
+ * This is a placeholder in oneof for future implementation
+ */
+message ClarosDevicePackageContent {
+
+}
