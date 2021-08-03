@@ -3,7 +3,6 @@ package claros.enterprise.report;
 
 import "record_auditinfo.proto";
 import "google/protobuf/wrappers.proto";
-import "clarosdatetime.proto";
 
 option csharp_namespace = "Claros.Enterprise.Report";
 
