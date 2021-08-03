@@ -3,6 +3,7 @@ package claros.enterprise.twin;
  
 import "instrument_measurement_definition.proto"; 
 import "measurement.proto"; 
+import "key_value.proto";
 
 option csharp_namespace = "Claros.Enterprise.Twin";
 
@@ -14,4 +15,8 @@ message MeasurementTelemetryPropertyBag {
 
     // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
     claros.common.core.Measurement measurement = 2;
+
+    // Bucket for any undefined data related to this instrument measurement
+    claros.common.core.KeyValues attributes = 3;
+    
 }           
