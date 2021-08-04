@@ -60,5 +60,5 @@ message Column
     uint32 lastRowNumberWithData = 16;
 
     //Guids of the parameter agency codes used to create the column taken from the plant wizards subtypes twindata
-    repeated string parameterAgencyCode = 17; 
+    repeated string parameterAgencyCodeIds = 17; 
 }
