@@ -58,4 +58,7 @@ message Column
 
     // The last row number for this column with data.  NOTE:  cellData for the cell could be empty.
     uint32 lastRowNumberWithData = 16;
+
+    //Guids of the parameter agency codes used to create the column taken from the plant wizards subtypes twindata
+    repeated string parameterAgencyCode = 17; 
 }
