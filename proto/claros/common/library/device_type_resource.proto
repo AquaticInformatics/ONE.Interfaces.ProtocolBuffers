@@ -18,7 +18,7 @@ message DeviceTypeResource {
     string cultureCode = 8;
     claros.common.EnumLinkCategory enumLinkCategory = 9;
     claros.common.core.RecordAuditInfo recordAuditInfo = 10;
-    string sprintNumber = 11;
+    int32 sprintNumber = 11;
 }
 
 message DeviceTypeResources {
