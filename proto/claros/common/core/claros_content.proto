@@ -4,9 +4,6 @@ package claros.common.core;
 import "cells.proto";
 import "configuration.proto";
 import "computation.proto";
-import "form.proto";
-import "form_template.proto";
-import "form_index.proto";
 import "instrument_data.proto";
 import "instrument_lock_status.proto";
 import "instrument_measurement_definition.proto";
@@ -150,9 +147,8 @@ message ClarosContent {
         claros.iot.registry.InstrumentParameterDefinitions instrumentParameterDefinitions  = 70;
 
         // forms
-        claros.common.form.Forms forms = 22;
-        claros.common.form.FormTemplates formTemplates = 23;
-        claros.common.form.FormIndices formIndices = 24;
+        reserved 22 to 24;
+        reserved "forms", "formTemplates", "formIndices";
 
         // notifications
         claros.common.notification.NotificationTemplates notificationTemplates = 25;
