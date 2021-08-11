@@ -5,7 +5,7 @@ option csharp_namespace ="Claros.Common";
  
 enum EnumDataSource {
     DATASOURCE_UNKNOWN = 0;
-    DATASOURCE_FORM = 1;                    // [Obsolete] Data related to Claros.Common.Form
+    DATASOURCE_FORM = 1;                    // Data related to Claros.Common.Form
     DATASOURCE_COMPUTATION = 2;             // Data related to Claros.Common.Computation
     DATASOURCE_SPREADSHEET = 3;             // Data related to Claros.Common.Spreadsheet
     DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Claros.Instrument.Measurement

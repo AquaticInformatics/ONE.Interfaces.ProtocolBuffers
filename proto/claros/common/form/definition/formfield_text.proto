@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+package claros.common.form;
+ 
+import "auditevent.proto";
+import "note.proto";
+
+option csharp_namespace ="Claros.Common.Form";
+
+message FormFieldText {
+    string id = 1;
+    string value = 2;
+    claros.common.core.Note note = 3;
+    claros.common.core.AuditEvent auditEvent = 4;
+}
+
+message FormFieldTexts
+{
+    repeated FormFieldText items = 1;
+}

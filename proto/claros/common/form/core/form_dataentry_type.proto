@@ -1,0 +1,12 @@
+syntax = "proto3";
+package claros.common.form;
+
+option csharp_namespace ="Claros.Common.Form";
+ 
+enum FormDataEntryType {
+    FORM_DATE_ENTRY_UNKNOWN = 0;
+    FORM_DATE_ENTRY_INSTRUMENT = 1;
+    FORM_DATE_ENTRY_TOTALIZER = 2;
+    FORM_DATE_ENTRY_CONSUMPTION = 3;
+    FORM_DATE_ENTRY_TEXT = 4;
+}

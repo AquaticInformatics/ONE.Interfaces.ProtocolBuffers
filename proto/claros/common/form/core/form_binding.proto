@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.form;
+
+option csharp_namespace ="Claros.Common.Form";
+
+message FormBinding {
+   string formId = 1;
+   string formFieldId = 2;
+   string userId = 3;
+}

@@ -1,6 +1,7 @@
 syntax = "proto3";
 package claros.operations.spreadsheet;
 
+import "form_binding.proto";
 import "computation_binding.proto";
 import "instrument_measurement_binding.proto";
 import "instrument_measurement_field_binding.proto";
@@ -13,8 +14,7 @@ message CellDataBinding {
     oneof binding {
         claros.instrument.measurement.InstrumentMeasurementBinding instrumentMeasurementBinding = 1;
         ComputationBinding computationBinding = 2;
-        reserved 3;
-        reserved "formBinding";
+        claros.common.form.FormBinding formBinding = 3;
         claros.operations.spreadsheet.SpreadsheetBinding spreadsheetBinding = 4;
         claros.instrument.measurement.InstrumentMeasurementFieldBinding fieldInstrumentMeasurementBinding = 5;
     }

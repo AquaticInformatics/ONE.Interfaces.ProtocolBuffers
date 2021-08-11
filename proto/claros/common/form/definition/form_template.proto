@@ -1,0 +1,47 @@
+syntax = "proto3";
+package claros.common.form;
+
+import "configuration.proto";
+import "formfield.proto";
+import "form_template_type.proto";
+import "recurrence.proto";
+import "form_layout.proto";
+
+option csharp_namespace ="Claros.Common.Form";
+
+message FormTemplate {
+    // retrieval only
+    string id = 1;      
+    
+    // retrieval only
+    uint32 version = 2;
+
+    // User-defined name of the template
+    string name = 3;
+    
+    // This is the JSON stored data that exists in the ConfigurationData from the Claros.Common.Configuration serialized into the FormTemplateConfigurationData
+    FormTemplateConfiguration formTemplateConfiguration = 4; 
+
+    // Common configuration
+    claros.common.configuration.Configuration configuration = 5; 
+
+    // Guid of the plant associated with the template
+    string locationId = 6; 
+}
+
+message FormTemplates {
+    repeated FormTemplate items = 1;
+}
+
+message FormTemplateConfiguration {
+    FormTemplateType formTemplateType = 1;
+
+    // Defines how frequently to generate a form from this template
+    claros.common.recurrence.Recurrence recurrence = 2;
+
+    // A layout definition for how to display the form fields to the user
+    FormLayout formLayout = 3;
+
+    // The definitions for each form field in the template
+    repeated FormFieldDefinition formFieldDefinitions = 4;
+}

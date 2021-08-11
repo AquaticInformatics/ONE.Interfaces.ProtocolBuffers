@@ -1,0 +1,54 @@
+syntax = "proto3";
+package claros.common.form;
+
+import "cell.proto";
+import "row.proto";
+import "instrument_data.proto";
+import "form_dataentry_type.proto"; 
+import "formfield_worksheet_column_UTC.proto";
+import "formfield_text.proto";
+
+option csharp_namespace ="Claros.Common.Form";
+
+message FormField {
+    // Proto defining the attributes of the form field
+    FormFieldDefinition formFieldDefinition = 1; 
+
+    oneof formFieldData {
+        // Proto for the cell in a worksheet, if the form field is bound
+        claros.operations.spreadsheet.Cell cell = 2;
+
+        // Proto for the row of cells in a worksheet, if the form is submitted
+        // for data in the past
+        claros.operations.spreadsheet.Row row = 6;
+    }
+
+    // Data received from an instrument if transferred directly
+    claros.instrument.InstrumentDatas instrumentDatas = 3; 
+
+    // PROPOSED: Bytes containing raw data from the instrument, such as proto2 bytes
+    bytes rawInstrumentData = 4; 
+
+    // Text values added by the user or system (i.e. notes, audit events, etc)
+    FormFieldTexts formFieldTexts = 5; 
+}
+
+message FormFieldDefinition {
+    // Id for the form field definition
+    string guid = 1;
+
+    // Outlines to the client how to display render form field data entry control/UI to the user
+    FormDataEntryType formDataEntryType = 2; 
+
+    // Defines whether an alternate entry method can be used (i.e. Transfer from instrument on a form field with Text entry type)
+    bool isDataEntryTypeLocked = 3; 
+
+    // Custom name set by the user
+    string name = 4; 
+
+    // Links the form field to a other entities on the backend.
+    oneof fieldDefinition {
+        // Defines the relationship between the form field and the worksheet column
+        FormFieldWorksheetColumnUTC column = 5;
+    }
+}

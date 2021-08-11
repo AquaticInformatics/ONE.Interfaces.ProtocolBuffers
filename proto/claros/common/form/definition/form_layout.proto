@@ -1,0 +1,10 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "form_section.proto";
+
+option csharp_namespace ="Claros.Common.Form";
+
+message FormLayout {
+    repeated FormSection sections = 1;
+}

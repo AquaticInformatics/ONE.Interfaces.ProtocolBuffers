@@ -1,0 +1,50 @@
+syntax = "proto3";
+package claros.common.form;
+ 
+import "timewindow.proto";
+import "clarosdatetime.proto";
+
+option csharp_namespace ="Claros.Common.Form";
+ 
+message FormIndex {
+    // GUID identifer of the form
+    string id = 1;  
+
+    // GUID identifier of the template associated to the form
+    string templateId = 2; 
+
+    // enables multiple versions of a template
+    uint32 templateVersion = 3;
+
+    // begin and end datetime when this version is valid
+    claros.common.core.TimeWindow timeWindow = 4;
+
+    // timestamp when this index record was modified
+    claros.common.core.ClarosDateTime lastModified = 5;
+
+    // unique form name
+    string name = 6;
+
+    // GUID id of user creating form
+    string creatorId = 7;
+
+    // Does this form exist in the speed layer
+    bool isInSpeed = 8;
+
+    // GUID id of location (type = plant)
+    // This property will be used to filter forms by location
+    string locationId = 9;     
+   
+   // This property will use in creating folder structure in Data lake.
+   claros.common.core.ClarosDateTime createdOn = 10; 
+
+   // GUID id of tenant associated to form
+   string tenantId = 11;
+
+   // Whether this form should be visible 
+   bool isActive = 12;
+}
+
+message FormIndices {
+    repeated FormIndex items = 1;
+}
