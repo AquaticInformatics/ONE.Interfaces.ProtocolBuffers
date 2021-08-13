@@ -37,7 +37,7 @@ message Tenant {
 	repeated ServiceTechTenantRequest serviceTechTenantRequests = 7;
 
     // ChargifyId associated to this tenant
-    string chargifyId = 8;
+    google.protobuf.StringValue chargifyId = 8;
 
 	google.protobuf.FieldMask updateMask = 98;
 
