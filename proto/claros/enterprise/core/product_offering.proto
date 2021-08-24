@@ -4,7 +4,7 @@ package claros.enterprise.core;
 option csharp_namespace ="Claros.Enterprise.Core";
 
 import "record_auditinfo.proto";
-import "tenant.proto";
+//import "tenant.proto";
 import "feature.proto";
 
 import "google/protobuf/wrappers.proto";
@@ -21,8 +21,9 @@ message ProductOffering {
 	// Nullable description of the product offering
 	google.protobuf.StringValue description = 3;
 
+    // TODO: Causes Exception: File recursively imports itself:
 	// Collection of tenants that have access to the product offering
-	repeated Tenant tenants = 4;
+	//repeated Tenant tenants = 4;
 
 	// Collection of features associated with the product offering
 	repeated Feature features = 5;
