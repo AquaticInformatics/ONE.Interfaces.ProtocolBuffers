@@ -11,16 +11,16 @@ option csharp_namespace ="Claros.IoT.Registry";
 message InstrumentType {
     
     // Identifier property of an instrument type.
-    InstrumentTypeIdentifier identifier = 1;
-
-    // Unique identifier of the instrument group to which this instrument type belongs to.
-    google.protobuf.StringValue instrumentGroupId = 2;
+    InstrumentTypeIdentifier identifier = 1;    
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 3;
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
 
     //Contains all the flags for an instrument type
-    InstrumentTypeAttributes attributes = 4;
+    InstrumentTypeAttributes attributes = 3;
+
+    // Unique identifier of the instrument group to which this instrument type belongs to.
+    google.protobuf.StringValue instrumentGroupId = 4;
 
     // Audit information for the Instrument Type
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
