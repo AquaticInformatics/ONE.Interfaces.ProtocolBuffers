@@ -11,7 +11,7 @@ option csharp_namespace ="Claros.IoT.Registry";
 message InstrumentType {
     
     // Identifier property of an instrument type.
-    InstrumentTypeIdentifier identifier = 1;    
+    InstrumentTypeIdentifier identifier = 1;   
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
     claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
