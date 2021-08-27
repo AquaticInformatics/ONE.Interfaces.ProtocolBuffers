@@ -19,6 +19,9 @@ message InstrumentType {
     //Contains all the flags for an instrument type
     InstrumentTypeAttributes attributes = 3;
 
+    // Unique identifier of the instrument group to which this instrument type belongs to.
+    google.protobuf.StringValue instrumentGroupId = 4;
+
     // Audit information for the Instrument Type
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
@@ -57,10 +60,9 @@ message InstrumentTypeAttributes {
     google.protobuf.Int32Value transmissionInterval = 8;
 
     bool localAccessSupport = 9;
-    
 }
 
-// Represetns a list of instrument types
+// Represents a list of instrument types
 message InstrumentTypes {
     repeated InstrumentType items = 1;
 }
