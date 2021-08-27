@@ -60,10 +60,6 @@ message InstrumentTypeAttributes {
     google.protobuf.Int32Value transmissionInterval = 8;
 
     bool localAccessSupport = 9;
-    
-    bool usesFid = 10;
-
-    google.protobuf.StringValue description = 11;
 }
 
 // Represents a list of instrument types

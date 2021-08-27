@@ -16,21 +16,8 @@ message InstrumentGroup {
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
     claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
 
-    // Set of attributes specifying the preferences for the instrument group
-    InstrumentGroupAttributes instrumentGroupAttributes = 3;
-
     // Audit information for the instrument group.
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
-}
-
-// Represents a set of attributes specifying the preferences for the instrument group.
-message InstrumentGroupAttributes {
-
-    // Specifies the order of the device group (a.k.a. "SortOrder") when displayed to users.
-    int32 sortOrder = 1;
-
-    // Nullable description of the device group
-    google.protobuf.StringValue description = 2;
 }
 
 // Represents a list of instrument groups.
