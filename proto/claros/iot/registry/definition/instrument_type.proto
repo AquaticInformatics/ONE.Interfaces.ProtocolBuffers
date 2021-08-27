@@ -12,12 +12,15 @@ message InstrumentType {
     
     // Identifier property of an instrument type.
     InstrumentTypeIdentifier identifier = 1;
+
+    // Unique identifier of the instrument group to which this instrument type belongs to.
+    google.protobuf.StringValue instrumentGroupId = 2;
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 2;
+    claros.common.core.I18NKeyTextReference i18nKeyTextReference = 3;
 
     //Contains all the flags for an instrument type
-    InstrumentTypeAttributes attributes = 3;
+    InstrumentTypeAttributes attributes = 4;
 
     // Audit information for the Instrument Type
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
@@ -58,9 +61,12 @@ message InstrumentTypeAttributes {
 
     bool localAccessSupport = 9;
     
+    bool usesFid = 10;
+
+    google.protobuf.StringValue description = 11;
 }
 
-// Represetns a list of instrument types
+// Represents a list of instrument types
 message InstrumentTypes {
     repeated InstrumentType items = 1;
 }
