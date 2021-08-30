@@ -84,6 +84,7 @@ import "key_value.proto";
 import "quantity_type.proto";
 import "package.proto";
 import "package_submission.proto";
+import "subscription_workflow_status.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -91,7 +92,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 84
+    // NEXT AVAILABLE ID: 85
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -192,6 +193,7 @@ message ClarosContent {
         claros.enterprise.report.ReportDefinitions ReportDefinitions = 72;
         claros.enterprise.report.ReportDefinitionRuns ReportDefinitionRuns = 78;
         claros.enterprise.report.ReportDefinitionTags ReportDefinitionTags = 79;
+        claros.enterprise.core.SubscriptionWorkflowStatus subscriptionWorkflowStatus = 84;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;

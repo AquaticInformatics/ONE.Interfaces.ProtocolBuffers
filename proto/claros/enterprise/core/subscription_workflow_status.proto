@@ -1,0 +1,37 @@
+syntax = "proto3";
+package claros.enterprise.core;
+
+import "record_auditinfo.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+
+enum EnumSubscriptionWorkflowStatus {
+    SUBSCRIPTION_WORKFLOW_STATUS_UNKNOWN = 0;
+    SUBSCRIPTION_WORKFLOW_STATUS_SUCCESS = 1;
+    SUBSCRIPTION_WORKFLOW_STATUS_FAILED = 2;
+    SUBSCRIPTION_WORKFLOW_STATUS_PROCESSED = 3;
+}
+
+message SubscriptionWorkflowStatus {
+
+	// GUID of the subscription workflow
+    string id = 1;
+
+    string tenantId = 2;
+
+    // StepId of the subscription workflow
+    google.protobuf.StringValue workflowStepId = 3;
+
+    // Status of the subscription workflow
+    EnumSubscriptionWorkflowStatus status = 4;
+
+    bool isActive = 5;
+	
+	// Audit information for the feature
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message SubscriptionWorkflowStatuses {
+    repeated SubscriptionWorkflowStatus items = 1;
+}
