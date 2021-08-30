@@ -14,21 +14,21 @@ enum EnumSubscriptionWorkflowStatus {
 }
 
 message SubscriptionWorkflowStatus {
-
-	// GUID of the subscription workflow
+    
+    // GUID of the subscription workflow
     string id = 1;
 
     string tenantId = 2;
-
+    
     // StepId of the subscription workflow
     google.protobuf.StringValue workflowStepId = 3;
-
+    
     // Status of the subscription workflow
     EnumSubscriptionWorkflowStatus status = 4;
 
     bool isActive = 5;
-	
-	// Audit information for the feature
+    
+    // Audit information for the feature
     claros.common.core.RecordAuditInfo recordAuditInfo = 99;
 }
 
