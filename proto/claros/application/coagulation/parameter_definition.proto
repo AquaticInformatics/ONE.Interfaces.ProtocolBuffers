@@ -1,0 +1,24 @@
+syntax = "proto3";
+package claros.application.coagulation;
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Application.Coagulation";
+
+// used to store data associated with digital twin
+message ParameterDefinition
+{
+    google.protobuf.DoubleValue filterRate = 1;
+
+    google.protobuf.DoubleValue limitDelay = 2;
+
+    google.protobuf.DoubleValue maxLimit = 3;
+
+    google.protobuf.DoubleValue minLimit = 4;
+
+    google.protobuf.StringValue paramterId = 5;
+
+    google.protobuf.DoubleValue sampleRate = 6;
+
+    google.protobuf.StringValue unitId = 7;
+}

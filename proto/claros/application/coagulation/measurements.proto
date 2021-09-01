@@ -1,0 +1,33 @@
+syntax = "proto3";
+package claros.application.coagulation;
+
+import "record_auditinfo.proto";
+import "clarosdatetime.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Application.Coagulation";
+
+message Measurement
+{
+    // GUID ID of this measurement
+    string id = 1;
+
+    // Date Time of this measurement
+    claros.common.core.ClarosDateTime measurementDateTime = 2;
+
+    // Nullable OperationTwinRefId
+    google.protobuf.StringValue operationTwinRefId = 3;
+
+    // Nullable TelemetryTwinRefId
+    google.protobuf.StringValue telemetryTwinRefId = 4;
+
+    // Value of this measurement
+    google.protobuf.DoubleValue value = 5;
+
+    // Audit information for the Measurement
+    claros.common.core.RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Measurements {
+    repeated Measurement items = 1;
+}
