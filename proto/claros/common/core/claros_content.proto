@@ -193,7 +193,7 @@ message ClarosContent {
         claros.enterprise.report.ReportDefinitions ReportDefinitions = 72;
         claros.enterprise.report.ReportDefinitionRuns ReportDefinitionRuns = 78;
         claros.enterprise.report.ReportDefinitionTags ReportDefinitionTags = 79;
-        claros.enterprise.core.SubscriptionWorkflowStatus subscriptionWorkflowStatus = 84;
+        claros.enterprise.core.SubscriptionWorkflowStatuses subscriptionWorkflowStatuses = 84;
 
         //iot
         claros.iot.registry.ProductionCells productionCells = 57;
