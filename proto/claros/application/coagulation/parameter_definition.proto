@@ -16,7 +16,7 @@ message ParameterDefinition
 
     google.protobuf.DoubleValue minLimit = 4;
 
-    google.protobuf.StringValue paramterId = 5;
+    google.protobuf.StringValue parameterId = 5;
 
     google.protobuf.DoubleValue sampleRate = 6;
 
