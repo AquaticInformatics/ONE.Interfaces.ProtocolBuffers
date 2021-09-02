@@ -85,6 +85,7 @@ import "quantity_type.proto";
 import "package.proto";
 import "package_submission.proto";
 import "subscription_workflow_status.proto";
+import "measurements.proto";
 
 option csharp_namespace ="Claros.Common.Core";
 
@@ -92,8 +93,11 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 85
+    // NEXT AVAILABLE ID: 86
     oneof content {
+        // application.coagulation
+        claros.application.coagulation.Measurements coagulationMeasurements = 85;
+
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
         claros.common.core.Measurements measurements = 2;
