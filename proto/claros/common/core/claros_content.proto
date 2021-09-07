@@ -95,9 +95,6 @@ message ClarosContent {
 	// Data should never be stored via this type. This message type is for transport only.
     // NEXT AVAILABLE ID: 86
     oneof content {
-        // application.coagulation
-        claros.application.coagulation.Measurements coagulationMeasurements = 85;
-
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
         claros.common.core.Measurements measurements = 2;
@@ -139,6 +136,7 @@ message ClarosContent {
         claros.operations.spreadsheet.SpreadsheetDefinitions spreadsheetDefinitions = 17;
         claros.operations.spreadsheet.WorksheetDefinitions worksheetDefinitions = 18;
         claros.operations.spreadsheet.SpreadsheetComputations spreadsheetComputations = 19;
+        claros.operations.coagulation.Measurements coagulationMeasurements = 85;
 
         // instrument
         claros.instrument.measurement.InstrumentMeasurementDefinitions instrumentMeasurementDefinitions = 20;

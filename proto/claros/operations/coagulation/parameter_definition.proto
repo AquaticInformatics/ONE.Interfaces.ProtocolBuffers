@@ -1,9 +1,9 @@
 syntax = "proto3";
-package claros.application.coagulation;
+package claros.operations.coagulation;
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Claros.Application.Coagulation";
+option csharp_namespace ="Claros.Operations.Coagulation";
 
 // used to store data associated with digital twin
 message ParameterDefinition
