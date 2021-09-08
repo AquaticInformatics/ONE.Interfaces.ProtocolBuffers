@@ -1,11 +1,11 @@
 syntax = "proto3";
-package claros.application.coagulation;
+package claros.operations.coagulation;
 
 import "record_auditinfo.proto";
 import "clarosdatetime.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Claros.Application.Coagulation";
+option csharp_namespace ="Claros.Operations.Coagulation";
 
 message Measurement
 {
