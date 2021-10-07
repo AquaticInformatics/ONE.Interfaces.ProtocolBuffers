@@ -27,6 +27,9 @@ message ProductOffering {
 
 	// Collection of features associated with the product offering
 	repeated Feature features = 5;
+	
+	// json property bag
+	google.protobuf.StringValue propertyBag = 6;
 
 	google.protobuf.FieldMask updateMask = 98;
 
