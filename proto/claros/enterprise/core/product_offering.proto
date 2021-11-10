@@ -32,7 +32,7 @@ message ProductOffering {
 	google.protobuf.StringValue uiDefinition = 7;
 	google.protobuf.StringValue i18NKeyName = 8;
 	
-	int sprintNumber = 9;
+	optional int sprintNumber = 9;
 
 	google.protobuf.FieldMask updateMask = 98;
 

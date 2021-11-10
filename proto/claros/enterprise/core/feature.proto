@@ -36,7 +36,7 @@ message Feature {
 	// Collection of permissions the feature belongs to
 	//repeated Permission permissions = 7;
 	
-	int sprintNumber = 8;
+	optional int sprintNumber = 8;
 
 	google.protobuf.FieldMask updateMask = 98;
 
