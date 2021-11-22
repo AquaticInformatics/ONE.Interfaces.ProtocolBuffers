@@ -34,6 +34,8 @@ message ProductOffering {
 	
 	google.protobuf.Int32Value sprintNumber = 9;
 
+    google.protobuf.StringValue propertyBag = 10;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
