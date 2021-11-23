@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "enum_auditevent.proto";
+import "jsonTicksDateTime.proto";
+import "enum_datasource.proto";
+import "enum_domain_source.proto";
+import "gis.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+message AuditEvent {
+    // A GUID that uniquely identifies the audit event
+    string id = 1;                          
+    
+    // The id of the user related to this audit event
+    string userId = 2;                      
+    
+    // What system generated the audit event
+    EnumDataSource enumDataSource = 3;      
+    
+    // The type of event
+    EnumAuditEvent enumAuditEvent = 4;           
+    
+    // The time in which this event occurred
+    JsonTicksDateTime timeStamp = 5;           
+    
+    // Text details that can provide more clarification to the audit
+    string details = 6;            
+
+    // Location data for where the event occurred or was recorded
+    GIS gis = 7;
+    
+    // The domain in which the audit event was generated
+    EnumDomainSource enumDomainSource = 8;
+}

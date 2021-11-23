@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "variable.proto";
+import "record_auditinfo.proto";
+import "expression_line.proto";
+
+option csharp_namespace = "Common.Computation.Protobuf.Models";
+
+message Computation
+{
+    google.protobuf.StringValue i18nKey = 1;
+    google.protobuf.StringValue name = 2;
+    google.protobuf.StringValue description = 3;
+    repeated Variable inputVariables = 4;
+    repeated Variable outputVariables = 5;
+    repeated ExpressionLine expressionLines = 6;
+    google.protobuf.BoolValue isActive = 7;
+    google.protobuf.BoolValue isValid = 8;
+	google.protobuf.BoolValue isGlobal = 9;
+	google.protobuf.BoolValue isFrozen = 10;
+	google.protobuf.StringValue id = 11;
+	google.protobuf.StringValue derivedFromId = 12;
+
+	// Audit information for the Computation
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Computations {
+    repeated Computation items = 1;
+}

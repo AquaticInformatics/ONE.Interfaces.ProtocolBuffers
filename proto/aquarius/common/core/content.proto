@@ -1,0 +1,158 @@
+syntax = "proto3";
+
+import "cells.proto";
+import "configuration.proto";
+import "computation.proto";
+import "limit_configuration.proto";
+import "measurement.proto";
+import "row.proto";
+import "row_index.proto";
+import "spreadsheet_definition.proto";
+import "worksheet_definition.proto";
+import "spreadsheet_computation.proto";
+import "notification_template.proto";
+import "notification_contact.proto";
+import "notification_device.proto";
+import "notification_preference.proto";
+import "notification_user_preference.proto";
+import "notification_direct_preference.proto";
+import "notification_topic.proto";
+import "parameter.proto";
+import "unit.proto";
+import "timezones.proto";
+import "variable.proto";
+import "address.proto";
+import "feature.proto";
+import "product_offering.proto";
+import "role.proto";
+import "service_tech_tenant_request.proto";
+import "tenant.proto";
+import "user.proto";
+import "user_preference.proto";
+import "user_profile.proto";
+import "digital_twin.proto";
+import "digital_twin_user_right.proto";
+import "account_status.proto";
+import "digital_twin_type.proto";
+import "digital_twin_subtype.proto";
+import "plant_status.proto";
+import "notification_in_app_notification_message.proto";
+import "digital_twin_subtype_propertybag.proto";
+import "client.proto";
+import "scope.proto";
+import "gauge_data_point.proto";
+import "series.proto";
+import "digital_twin_column_telemetry_propertybag.proto";
+import "digital_twin_instrument_telemetry_propertybag.proto";
+import "activity_task.proto";
+import "digital_twin_enterprise_data_telemetry.proto";
+import "report_parameter.proto";
+import "agency.proto";
+import "report_definition.proto";
+import "parameter_agency_code.proto";
+import "parameter_agency_code_type.proto";
+import "unit_agency_code.proto";
+import "unit_agency_code_type.proto";
+import "report_definition_runs.proto";
+import "report_definition_tags.proto";
+import "key_value.proto";
+import "quantity_type.proto";
+import "coagmeasurement.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+message Content {
+
+    // Provides the ability to return a wide variety of protocol buffers
+	// Data should never be stored via this type. This message type is for transport only.
+    // NEXT AVAILABLE ID: 86
+    oneof content {
+        // common
+        
+        // activity
+        ActivityTasks activityTasks = 64;
+
+		// computation
+		Computations computations = 8;
+		Variables variables = 9;
+
+		// configuration
+		Configurations configurations = 10;
+
+        // core
+        LimitConfigurations limitConfigurations = 1;
+        Measurements measurements = 2;
+        Timezones timezones = 3;
+        Addresses addresses = 4;        
+        GaugeDataPoint gaugeDataPoint = 59;
+        Series series = 60;
+        ReportParameterSets reportParameterSets = 66;
+        KeyValues KeyValues = 80;
+
+		// library
+        Parameters parameters = 12;
+        Units units = 13;
+        Agencies agencies = 71;        
+        ParameterAgencyCodes parameterAgencyCodes = 74;
+        ParameterAgencyCodeTypes parameterAgencyCodeTypes = 75;
+        UnitAgencyCodes unitAgencyCodes = 76;
+        UnitAgencyCodeTypes unitAgencyCodeTypes = 77;
+        QuantityTypes quantityTypes = 81;
+
+        // notification
+        NotificationTemplates notificationTemplates = 25;
+        NotificationTopics notificationTopics = 26;
+        NotificationContacts notificationContacts = 27;
+        NotificationDevices notificationDevices = 28;
+        NotificationPreferences notificationPreferences = 29;
+        UserNotificationPreferences userNotificationPreferences = 30;
+        InAppNotificationMessages inAppNotificationMessages = 50;
+        NotificationDirectPreferences notificationDirectPreferences = 63;
+
+        // enterprise
+
+        // core
+        Features features = 31;
+        ProductOfferings productOfferings = 34;
+        Roles roles = 35;
+        ServiceTechTenantRequests serviceTechTenantRequests = 36;
+        Tenants tenants = 37;
+        Users users = 38;
+        UserPreferences userPreferences = 39;
+        UserProfiles userProfiles = 40;
+        Clients clients = 55;
+        Scopes scopes = 56;
+
+        // twin
+        DigitalTwins DigitalTwins = 41;
+        DigitalTwinUserRights DigitalTwinUserRights = 42;
+        DigitalTwinTypes digitalTwinTypes = 45;
+        DigitalTwinSubtypes digitalTwinSubtypes = 46;
+        PropertyBagCollections propertyBagCollections = 52;
+        ColumnTelemetryPropertyBag columnTelemetryPropertyBag = 61;
+        MeasurementTelemetryPropertyBag measurementTelemetryPropertyBag = 62;
+        EnterpriseDataTelemetry enterpriseDataTelemetry = 67;
+
+        // data
+        PlantStatuses plantStatuses = 49;
+        AccountStatuses accountStatuses = 43;
+                
+        // report
+        ReportDefinitions ReportDefinitions = 72;
+        ReportDefinitionRuns ReportDefinitionRuns = 78;
+        ReportDefinitionTags ReportDefinitionTags = 79;        
+
+        // operations
+
+        // spreadsheet
+        Rows rows = 14;
+        Cells cells = 15;
+        RowIndices rowIndices = 16;
+        SpreadsheetDefinitions spreadsheetDefinitions = 17;
+        WorksheetDefinitions worksheetDefinitions = 18;
+        SpreadsheetComputations spreadsheetComputations = 19;
+
+        // coagulation
+        CoagMeasurements coagulationMeasurements = 85;
+    }
+}

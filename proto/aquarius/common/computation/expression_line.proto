@@ -1,0 +1,13 @@
+syntax = "proto3";
+  
+option csharp_namespace = "Common.Computation.Protobuf.Models";
+  
+message ExpressionLine
+{
+	// Tenant entered name
+    string name = 1;
+
+	// Expression line
+	string line = 2;
+}
+

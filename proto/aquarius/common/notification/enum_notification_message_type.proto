@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+enum EnumNotificationMessageType {
+    NOTIFICATION_MESSAGE_TYPE_UNKNOWN = 0;
+    NOTIFICATION_MESSAGE_TYPE_WARNINGS = 1;
+    NOTIFICATION_MESSAGE_TYPE_ERRORS = 2;
+    NOTIFICATION_MESSAGE_TYPE_ALL = 3;
+}

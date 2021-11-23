@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "enum_azure_notification_hubtype.proto";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+//This will support a broad cast message to all subscribers.
+//Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.
+message NotificationBroadcast {
+    //Who is sending the message
+    string from = 1;
+
+    //Apple or Google
+    EnumAzureNotificationHubType enumAzureNotificationHubType = 2;
+    
+    //The message to send
+    string message = 3;    
+}
+
+message NotificationBroadcasts {
+    repeated NotificationBroadcast items = 1;
+}

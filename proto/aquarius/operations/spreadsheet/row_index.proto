@@ -1,0 +1,30 @@
+syntax = "proto3";
+ 
+import "timewindow.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+// This is a record that is used as a "FAT" table within the Worksheet Manager service
+message RowIndex {
+    // Int
+    uint32 id = 1;                                     
+
+    // The version of the worksheet related to this row
+    uint32 worksheetVersion = 2;                        
+
+    // The relative time window of the row
+    TimeWindow timeWindow = 3;       
+
+    // Whether the row is in speed or batch
+    bool isInSpeed = 5;                    
+                 
+    // Has this row been cooked into row collections for days, months 
+    bool isRowCooked = 6;
+
+    // Has this row been cooked into a columns worth of measurements
+    bool isColumnCooked = 7;
+}
+
+message RowIndices {
+	map<uint32, RowIndex> items = 1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+ 
+import "enum_worksheet.proto";
+import "worksheet_definition.proto";
+import "row.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message Worksheet {
+    // header
+    EnumWorksheet enumWorksheet = 1;
+    // definition
+    WorksheetDefinition worksheetDefinition = 2;
+    // data
+    repeated Row rows = 3;
+}

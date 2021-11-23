@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// Defines the properties that make up an i18nKey
+message I18NKeyTextReference {
+     
+    // To be specified by the instrument. For example: "common", "param", "unit", "sensor"
+    google.protobuf.StringValue i18nDatabaseName = 1;
+ 
+    // To be mapped by cloud backend. For example: "CommonStandard", "HL001_00119"
+    google.protobuf.StringValue i18nModule = 2;
+ 
+    // The key identifying the text.
+    google.protobuf.StringValue i18nKey = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+ 
+import "spreadsheet_definition.proto";
+import "worksheet.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+message Spreadsheet {
+    // header
+    string name = 1;                                        // Name of the spreadsheet
+    string locationId = 2;                                  // Where this spreadsheet is bound.  I.e. the PlantId
+
+    // definition 
+    repeated SpreadsheetDefinition spreadsheetDefinitions = 3;      // The definition of the overall spreadsheet
+    
+    // definition and data for worksheets.  Data and definition will be split up within the worksheets
+    repeated Worksheet worksheets = 4;                       // A collection of worksheets.
+}

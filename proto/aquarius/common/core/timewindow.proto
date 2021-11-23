@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// Often there is a need for a Time Span that includes a begin and end time
+message TimeWindow {
+    // start time of time window 
+    JsonTicksDateTime startTime = 1;
+    // end time of time window
+    JsonTicksDateTime endTime = 2;
+    // time window duration in seconds
+    uint32 durationInSeconds = 3;
+}

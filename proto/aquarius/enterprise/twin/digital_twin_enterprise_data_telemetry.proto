@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "report_parameter.proto";
+import "enum_digital_twin_dataset_output_format.proto";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+
+message EnterpriseDataTelemetry{
+
+    //Name of dataset
+    string dataSetName = 1;
+
+    //Title for the Report
+    string reportTitle = 2;
+
+    //list of parameterSets required by the dataTables
+    repeated ReportParameterSet parameterSets = 3;
+
+    //one or more formats for generating dataset
+    repeated EnumDatasetOutputFormat dataSetOutputFormats = 4;
+
+    //pre-defined template for Report
+    google.protobuf.StringValue template = 5;
+
+    //names of dataAdapters used for building dataTables
+    repeated string dataTables = 6;
+
+    //description of Report
+    google.protobuf.StringValue description = 7;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// Allow the setting of datetime via either json or ticks
+message JsonTicksDateTime
+{
+    oneof jsonTicksDateTime {
+        
+        // https://stackoverflow.com/questions/10286204/the-right-json-date-format
+        // JavaScript string representation of a datetime
+        // "2012-04-23T18:25:43.511Z"              JavaScript built-in JSON object
+        // "2012-04-21T18:25:43-05:00"             ISO 8601
+        google.protobuf.StringValue jsonDateTime = 1;           
+        
+        // milliseconds since the beginning of Epoch time
+        // does not contain timezone information
+        // Instruments will only set the ticks value
+        google.protobuf.UInt64Value ticks = 2;                   
+    }
+}

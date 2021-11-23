@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "enum_activity_audit_type.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace = "Common.Activity.Protobuf.Models";
+
+message ActivityAudit{
+    
+    string id = 1; 
+    
+    string activityId = 2;
+    
+    EnumActivityAuditType activityAuditType = 3;
+
+    // Serialized protobuf of an Activity record
+    google.protobuf.StringValue auditInfo = 4;
+
+    string createdById = 5;
+
+    JsonTicksDateTime createdOn = 6;
+}
+
+message ActivityAudits{
+	repeated ActivityAudit items = 1;
+}

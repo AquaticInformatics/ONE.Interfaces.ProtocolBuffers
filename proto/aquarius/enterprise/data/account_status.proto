@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "digital_twin.proto"; 
+import "pagination.proto";
+
+option csharp_namespace ="Enterprise.Data.Protobuf.Models";
+
+message AccountStatus { 
+
+    // twin type: organization
+    // twin sub type : tenant
+    // contains operation name, id, addres, geo code
+    // account number, service contract, expiration date, etc..
+    DigitalTwin operationDigitalTwin = 1;
+    
+    DigitalTwin tenantDigitalTwin = 2;    
+}
+
+message AccountStatuses
+{
+    repeated AccountStatus items = 1;
+
+    // Represents the pagination for account status
+    Pagination pagination = 2;
+}

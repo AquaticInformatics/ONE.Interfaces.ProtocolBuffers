@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+import "i18nkey_text_reference.proto";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+message NotificationTopicVariable {
+    string id = 1;
+    string name = 2;
+    // Represents the i18nKey for Notification Topic Variables
+    I18NKeyTextReference i18NKeyName = 3;
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message NotificationTopicVariables {
+    repeated NotificationTopicVariable items = 1;
+}

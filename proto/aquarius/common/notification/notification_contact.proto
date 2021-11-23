@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+message NotificationContact {
+    string ContactType = 1;
+    string Value = 2;
+}
+
+message NotificationContacts {
+    repeated NotificationContact items = 1;
+}

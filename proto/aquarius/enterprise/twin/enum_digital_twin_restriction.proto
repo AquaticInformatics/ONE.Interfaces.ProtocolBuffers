@@ -1,0 +1,10 @@
+syntax = "proto3";
+ 
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+ 
+enum EnumDigitalTwinRestriction{
+    DIGITAL_TWIN_RESTRICTION_NONE = 0;
+    DIGITAL_TWIN_RESTRICTION_EDIT = 1;
+    DIGITAL_TWIN_RESTRICTION_VIEW_AND_EDIT = 2;
+}
+ 

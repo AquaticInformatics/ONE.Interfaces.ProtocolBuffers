@@ -1,0 +1,11 @@
+syntax = "proto3";
+ 
+import "point2d.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// type: MultiPoint
+// coordinates: [[x, y], [x, y]]
+message MultiPoint2D {
+    repeated Point2D point = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+enum EnumValidValueRestriction {
+    VALID_VALUE_RESTRICTION_UNKNOWN = 0;
+    VALID_VALUE_RESTRICTION_NONE = 1;     // No restriction on values
+    VALID_VALUE_RESTRICTION_LOOSE = 2;    // Warning on invalid values but they are allowed
+    VALID_VALUE_RESTRICTION_STRICT = 3;   // Invalid values not allowed
+}

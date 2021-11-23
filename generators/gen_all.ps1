@@ -1,6 +1,6 @@
 ﻿mkdir -Force ../proto/flat
 
-Get-ChildItem ../proto/claros -Recurse -Filter "*.proto" | Copy-Item -destination ../proto/flat
+Get-ChildItem ../proto/aquarius -Recurse -Filter "*.proto" | Copy-Item -destination ../proto/flat
 
 cd ../proto/flat
 

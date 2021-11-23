@@ -1,0 +1,16 @@
+syntax = "proto3";
+ 
+import "measurement.proto"; 
+import "key_value.proto";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+
+message MeasurementTelemetryPropertyBag {
+
+    // Telemetry: Most recent instrument measurments reported by either Spreadsheet or Measurement
+    Measurement measurement = 2;
+
+    // Bucket for any undefined data related to this instrument measurement
+    KeyValues attributes = 3;
+    
+}           

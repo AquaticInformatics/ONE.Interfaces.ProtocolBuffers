@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "record_auditinfo.proto";
+import "feature.proto";
+
+option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+ 
+message ProductOffering {
+
+	// GUID unique identifier of the product offering instance
+    string id = 1;
+
+	// Nullable name of the product offering
+	google.protobuf.StringValue name = 2;
+
+	// Nullable description of the product offering
+	google.protobuf.StringValue description = 3;
+
+    // TODO: Causes Exception: File recursively imports itself:
+	// Collection of tenants that have access to the product offering
+	//repeated Tenant tenants = 4;
+
+	// Collection of features associated with the product offering
+	repeated Feature features = 5;
+	
+	google.protobuf.StringValue jsonSchema = 6;
+	google.protobuf.StringValue uiDefinition = 7;
+	google.protobuf.StringValue i18NKeyName = 8;
+	
+	google.protobuf.Int32Value sprintNumber = 9;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ProductOfferings
+{
+    repeated ProductOffering items = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+
+enum EnumDigitalTwinUserRight {
+	DIGITAL_TWIN_USER_RIGHT_UNKNOWN = 0;
+    DIGITAL_TWIN_USER_RIGHT_READ = 1;
+    DIGITAL_TWIN_USER_RIGHT_WRITE = 2; 
+    DIGITAL_TWIN_USER_RIGHT_ADMIN = 3;
+}

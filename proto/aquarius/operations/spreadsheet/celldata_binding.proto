@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "computation_binding.proto";
+import "spreadsheet_binding.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+// This message describes how the data was received into a cell and stored into cellData
+message CellDataBinding {
+    oneof binding {
+        ComputationBinding computationBinding = 2;
+        SpreadsheetBinding spreadsheetBinding = 4;
+    }
+}

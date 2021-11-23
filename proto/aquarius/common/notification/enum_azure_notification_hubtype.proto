@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+enum EnumAzureNotificationHubType {
+    AZURE_NOTIFICATION_HUBTYPE_UNKNOWN = 0;
+    AZURE_NOTIFICATION_HUBTYPE_APPLE = 1;
+    AZURE_NOTIFICATION_HUBTYPE_GOOGLE = 2;
+}

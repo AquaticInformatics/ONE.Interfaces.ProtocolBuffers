@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+ 
+enum EnumDatasetOutputFormat {
+    DATASET_OUTPUT_FORMAT_UNKNOWN = 0;
+    DATASET_OUTPUT_FORMAT_CSV = 1;
+    DATASET_OUTPUT_FORMAT_EXCEL = 2;
+    DATASET_OUTPUT_FORMAT_PDF = 3;
+    DATASET_OUTPUT_FORMAT_JSON = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+enum EnumOutputPlacement {
+	OUTPUT_PLACEMENT_UNKNOWN = 0;
+    OUTPUT_PLACEMENT_PERIOD_START = 1;
+	OUTPUT_PLACEMENT_PERIOD_END = 2;
+    OUTPUT_PLACEMENT_CUSTOM = 3;
+} 

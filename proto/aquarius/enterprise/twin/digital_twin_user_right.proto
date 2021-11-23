@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "google/protobuf/field_mask.proto";
+
+import "enum_digital_twin_user_right.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+
+message DigitalTwinUserRight{
+    
+    int64 DigitalTwinId = 1; 
+    
+    string UserId = 2;
+    
+    EnumDigitalTwinUserRight Right = 3;
+
+    google.protobuf.FieldMask updateMask = 98;
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message DigitalTwinUserRights{
+	repeated DigitalTwinUserRight items = 1;
+}

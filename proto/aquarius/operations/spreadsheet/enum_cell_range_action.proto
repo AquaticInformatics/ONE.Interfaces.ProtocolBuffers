@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+enum EnumCellRangeAction {
+    ACTION_UNKNOWN = 0;
+    ACTION_TAKE_LAST = 1; // Take the value with max rownumber
+    ACTION_TAKE_FIRST = 2; // Take the value with min rownumber
+    ACTION_TAKE_ALL = 3; // Take all values in range
+    ACTION_TAKE_SINGLE = 4; // Single value available for variable
+    ACTION_TAKE_CURRENT_AND_PREVIOUS = 6; // Take current value and previous value
+}

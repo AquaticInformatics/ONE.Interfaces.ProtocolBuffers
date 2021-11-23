@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+enum EnumNotificationPlatform {
+    NOTIFICATION_PLATFORM_UNKNOWN = 0;
+    NOTIFICATION_PLATFORM_APNS = 1;
+    NOTIFICATION_PLATFORM_FCM = 2;
+}

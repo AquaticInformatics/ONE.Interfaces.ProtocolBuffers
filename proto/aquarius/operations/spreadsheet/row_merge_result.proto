@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "row.proto";
+import "cell.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message RowMergeResult {
+    Row row = 1;
+    repeated Cell callsThatFailedToUpdate = 2;
+}

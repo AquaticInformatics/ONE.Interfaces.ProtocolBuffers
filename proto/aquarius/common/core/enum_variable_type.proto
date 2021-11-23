@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+enum EnumVariableType
+{
+    VARIABLETYPE_UNKNOWN = 0;
+    VARIABLETYPE_VALUE = 1;
+    VARIABLETYPE_ARRAY = 2;
+}

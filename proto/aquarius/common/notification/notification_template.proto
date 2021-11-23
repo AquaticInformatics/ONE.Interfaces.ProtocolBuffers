@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "notification_topic.proto";
+import "enum_notification_delivery_method.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+//Each topic delivery method will have it's own template per language
+message NotificationTemplate {
+    //GUID identifier of template
+    string id = 1;
+
+    //this is specifically for delivery methods that have both a subject and body -- ie the email subject line
+    string subject = 2;
+
+    //body of the template with the variables defined like this {variable}
+    string body = 3;
+
+    //culture code like en-us
+    string cultureCode = 4;
+
+    NotificationTopic notificationTopic = 5;
+
+    //delivery method email and push
+    EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 6;
+    
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message NotificationTemplates {
+    repeated NotificationTemplate items = 1;
+}

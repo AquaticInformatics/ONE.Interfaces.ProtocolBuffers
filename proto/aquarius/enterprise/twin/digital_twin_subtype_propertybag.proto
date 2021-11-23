@@ -1,0 +1,68 @@
+syntax = "proto3";
+ 
+import "digital_twin.proto";
+import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+ 
+enum EnumElements {
+    ELEMENTS_UNKNOWN = 0;
+    ELEMENTS_TEXTBOX = 1;                   //Element for HTML input fields
+    ELEMENTS_DATE = 2;                      //Element for DatePicker
+    ELEMENTS_DROPDOWN = 3;                  //Element for HTML Select
+    ELEMENTS_LIST = 4;                      //Element for List
+    ELEMENTS_OPTION = 5;                    //Element for HTML Option
+    ELEMENTS_FORM = 6;                      //Element for HTML Form Control
+    ELEMENTS_MEASUREMENT_DEFINITION = 7;    //Element for MeasurementDefintion
+    ELEMENTS_CHECKBOX = 8;                  //Element for HTML checkbox
+}
+ 
+message Validator {
+    bool required = 1;    //Specifies required Attribute
+    google.protobuf.Int32Value minLength = 2;  //Mimimum Length for input field
+    google.protobuf.Int32Value maxLength = 3;  //Maximum Length for input field
+}
+ 
+message Attribute {
+    // Definition is namespace ex, enterprise.twin-v1.0.map
+    google.protobuf.StringValue definition = 1;
+ 
+    //JSON attribute name
+    string key = 2;
+ 
+    // Defines the properties that make up an i18nKey
+    I18NKeyTextReference description = 3;
+ 
+    // Angular form Elements
+    EnumElements uiElement = 4;
+ 
+    // Optional: validation  criteria if validation for UI element need to happen
+    Validator validator = 5;
+ 
+    // Optional: if the UI element is needs pre-defined options
+    map<string, google.protobuf.StringValue> options = 6;
+}
+ 
+message MeasurementDefintion {
+    // The parameter related to the measurement as a GUID
+    string parameterGuid = 1;
+ 
+    // The unit related to the measurement as a GUID
+    string unitGuid = 2;
+ 
+    // Potentially, Precision could be used in the future measurement definition
+    // Precision
+    // Potentially, Analysis Method could be used in the future measurement definition
+    // Analysis Method
+}
+ 
+message PropertyBagCollection {
+    repeated Attribute attributes = 1;
+    repeated MeasurementDefintion measurementDefintions = 2;
+    repeated DigitalTwin suggestedChildDigitalTwins = 3;
+}
+ 
+message PropertyBagCollections {
+    repeated PropertyBagCollection  items  = 1;
+}

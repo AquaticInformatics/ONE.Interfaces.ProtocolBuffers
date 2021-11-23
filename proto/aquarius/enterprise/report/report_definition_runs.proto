@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace = "Enterprise.Report.Protobuf.Models";
+
+message ReportDefinitionRun {
+  string id = 1;
+
+  // Id of the ReportDefinition
+  google.protobuf.StringValue reportDefinitionId = 2;
+
+  // The name of the report template file
+  google.protobuf.StringValue sourceTemplateName = 3;
+
+  // The name of the report output file
+  google.protobuf.StringValue reportOutputName = 4;
+
+  // Start time of the report
+  JsonTicksDateTime startDate = 5;
+
+  // End time of the report
+  JsonTicksDateTime endDate = 6;
+
+  string createdById = 7;
+
+  JsonTicksDateTime createdOn = 8;
+}
+
+message ReportDefinitionRuns {
+  repeated ReportDefinitionRun items = 1;
+}

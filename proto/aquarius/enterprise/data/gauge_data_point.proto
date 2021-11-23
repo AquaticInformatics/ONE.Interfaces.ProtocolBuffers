@@ -1,0 +1,18 @@
+syntax = "proto3";
+ 
+import "measurement.proto";
+import "limit.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Enterprise.Data.Protobuf.Models";
+
+message GaugeDataPoint{
+    
+    // Telemetry: Most recent instrument measurement in the telemetry Twin
+    Measurement measurement = 1;  
+
+    repeated Limit limits = 2;
+
+    // TwinRefId of the telemetry twin used to create gauge Data
+    google.protobuf.StringValue twinRefId = 3;
+}

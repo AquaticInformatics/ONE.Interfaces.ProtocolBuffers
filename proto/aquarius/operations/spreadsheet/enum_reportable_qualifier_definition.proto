@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+  
+enum EnumReportableQualifierDefinition
+{
+    REPORTABLE_QUALIFIER_DEFINITION_UNKNOWN = 0;
+    REPORTABLE_QUALIFIER_DEFINITION_ENTEREDVALUE = 1;   // The value is taken from the qualified value.  Example < 2 becomes 2
+    REPORTABLE_QUALIFIER_DEFINITION_ZERO = 2;           // The value is set to zero (0) in this case
+    REPORTABLE_QUALIFIER_DEFINITION_HALFENTERED = 3;    // The value is set to half of the entered value.  Example < 2 becomes 1
+    REPORTABLE_QUALIFIER_DEFINITION_CONSTANT = 4;       // The value is set to a constant value that is entered by the customer.  For example < 2 may be set to a customer value of 1.5
+}

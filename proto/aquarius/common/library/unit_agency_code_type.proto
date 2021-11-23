@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Common.Library.Protobuf.Models";
+
+message UnitAgencyCodeType {
+    // The GUID for the unit agency code type
+    string Id = 1;
+    
+    // The GUID of the agency
+    string agencyId = 2;
+    
+    // the name of the unit agency code type
+    string name = 3;
+    
+    // Audit information for the unit agency code
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message UnitAgencyCodeTypes {
+    repeated UnitAgencyCodeType items = 1;
+}

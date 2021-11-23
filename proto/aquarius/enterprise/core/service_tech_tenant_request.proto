@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime.proto";
+import "record_auditinfo.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+ 
+message ServiceTechTenantRequest {
+
+	// GUID unique identifier of the service technician instance
+    string id = 1;
+
+	// Id of Tenant that the access is being requested for
+	string tenantId = 2;
+
+	// Id of User that the access request will be directed to for authorization
+	string userId = 3;
+
+	// Id of Service tech user that is requesting tenant access
+	string serviceTechUserId = 4;
+
+	// Nullable translateable key representing the state of the access request
+	google.protobuf.StringValue i18NStatusKey = 5;
+
+	// Password expiration datetime
+	JsonTicksDateTime expiresOn = 6;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ServiceTechTenantRequests
+{
+    repeated ServiceTechTenantRequest items = 1;
+}

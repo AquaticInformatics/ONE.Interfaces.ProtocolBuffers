@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "enum_timezone.proto";
+import "record_auditinfo.proto";
+import "product_offering.proto";
+import "service_tech_tenant_request.proto";
+
+option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+ 
+message Tenant {
+
+	// GUID unique identifier of the tenant instance
+    string id = 1;
+
+	// Nullable name of the tenant
+	google.protobuf.StringValue name = 2;
+
+	// Nullable default culture of the tenant
+	google.protobuf.StringValue culture = 3;
+
+	// Default timezone of the tenant
+	EnumTimeZone enumTimeZone = 4;
+	
+	// Collection of product offerings that are available to tenant users
+	repeated ProductOffering productOfferings = 5;
+	
+	// Collection of service tech requests for the tenant
+	repeated ServiceTechTenantRequest serviceTechTenantRequests = 7;
+
+    // ChargifyId associated to this tenant
+    google.protobuf.StringValue chargifyId = 8;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Tenants
+{
+    repeated Tenant items = 1;
+}

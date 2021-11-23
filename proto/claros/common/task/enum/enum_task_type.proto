@@ -1,9 +1,0 @@
-syntax = "proto3";
-package claros.common.task;
- 
-option csharp_namespace ="Claros.Common.Task";
-
-enum EnumTaskType {
-    TASKTYPE_UNKNOWN = 0;
-    TASKTYPE_INSTRUMENT_MAINTENANCE = 1;
-}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Configuration.Protobuf.Models";
+ 
+message Rights {
+    bool view = 2;
+    bool edit = 3;
+    bool delete = 4;
+    bool create = 5;
+}

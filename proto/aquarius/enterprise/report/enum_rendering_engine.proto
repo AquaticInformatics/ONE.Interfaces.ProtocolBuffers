@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "Enterprise.Report.Protobuf.Models";
+
+enum EnumRenderingEngine {
+    RENDERING_ENGINE_UNKNOWN = 0; 
+    RENDERING_ENGINE_EXCEL = 1; 
+}

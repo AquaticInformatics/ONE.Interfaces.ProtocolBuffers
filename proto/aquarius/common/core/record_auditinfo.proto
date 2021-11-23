@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+message RecordAuditInfo {
+    string createdById = 1;
+    JsonTicksDateTime createdOn = 2;
+    string modifiedById = 3;
+    JsonTicksDateTime modifiedOn = 4;
+}

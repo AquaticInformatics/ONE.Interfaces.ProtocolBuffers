@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+ 
+message UserProfile {
+
+	// GUID unique identifier of the user profile instance
+    string id = 1;
+
+	// nullable language code for the user profile
+	google.protobuf.StringValue languageCode = 2;
+
+	// nullable Id of current location that the user profile belongs to
+    google.protobuf.StringValue currentLocationId = 3;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message UserProfiles
+{
+    repeated UserProfile items = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+ 
+enum EnumDataSource {
+    DATASOURCE_UNKNOWN = 0;
+    DATASOURCE_COMPUTATION = 2;             // Data related to Common.Computation
+    DATASOURCE_SPREADSHEET = 3;             // Data related to Common.Spreadsheet
+    DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Instrument.Measurement
+    DATASOURCE_IMPORT = 5;                  // Data related to imports
+    DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Common.Spreadsheet.Definition
+    DATASOURCE_MOBILE_CONNECT = 7;        // Data related to Mobile Connect
+}

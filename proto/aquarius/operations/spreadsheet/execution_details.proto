@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "enum_time_unit.proto";
+import "enum_output_placement.proto";
+import "enum_wims_week_definition.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message ExecutionDetails {
+
+   // indicates where the output should be placed within the interval
+   EnumOutputPlacement outputPlacement = 1;
+
+   // number of times execution should occur within the time period
+   uint32 numberOfExecutions = 2;
+
+   // execution timePeriod
+   EnumTimeUnit timePeriod = 3;
+
+   // The number of minutes offset to the start of day for daily computations
+   uint32 timeWindowOffset = 4;
+   
+   // week definition to use for weekly computations
+   EnumWimsWeekDefinition wimsWeekDefinition = 5;   
+}

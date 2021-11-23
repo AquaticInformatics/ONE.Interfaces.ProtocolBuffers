@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "cell.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message Cells {
+    map<uint32, Cell> items = 1;
+}

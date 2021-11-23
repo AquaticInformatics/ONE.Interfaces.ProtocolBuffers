@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+message ApiError {
+    // HttpStatusCode typically associated with this category of error
+    // Example: 400 for a bad request
+    uint32 statusCode = 1;
+
+    // Custom error code
+    // Example: ERR-100
+    string code = 2;
+
+    // detailed message describing the error
+    // Example: This object didn't validate properly
+    string detail = 3;    
+}

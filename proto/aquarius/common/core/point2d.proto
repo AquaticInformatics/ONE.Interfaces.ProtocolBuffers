@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// type: Point
+// coordinates: [x, y] 
+message Point2D {
+  float x = 1;
+  float y = 2;
+}

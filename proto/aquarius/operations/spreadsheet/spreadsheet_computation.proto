@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "computation_binding.proto";
+import "computation.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message SpreadsheetComputation {
+   ComputationBinding binding = 1;
+   Computation computation = 2;
+}
+
+message SpreadsheetComputations {
+    repeated SpreadsheetComputation items = 1;
+}

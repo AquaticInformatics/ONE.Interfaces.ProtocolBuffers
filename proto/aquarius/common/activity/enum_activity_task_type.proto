@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Activity.Protobuf.Models";
+
+enum EnumActivityTaskType {
+    TASK_TYPE_UNKNOWN = 0;
+    TASK_TYPE_INSTRUMENT_MAINTENANCE = 1; 
+    TASK_TYPE_INSTRUMENT_ERROR_RESOLUTION = 2; 
+    TASK_TYPE_SAMPLE_COLLECTION = 3; 
+}

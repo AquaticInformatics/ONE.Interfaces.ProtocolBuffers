@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+import "jsonTicksDateTime.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Operations.Coagulation.Protobuf.Models";
+
+message CoagMeasurement
+{
+    // GUID ID of this measurement
+    string id = 1;
+
+    // Date Time of this measurement
+    JsonTicksDateTime measurementDateTime = 2;
+
+    // Nullable OperationTwinRefId
+    google.protobuf.StringValue operationTwinRefId = 3;
+
+    // Nullable TelemetryTwinRefId
+    google.protobuf.StringValue telemetryTwinRefId = 4;
+
+    // Value of this measurement
+    google.protobuf.DoubleValue value = 5;
+
+    // Audit information for the Measurement
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message CoagMeasurements {
+    repeated CoagMeasurement items = 1;
+}

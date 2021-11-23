@@ -1,0 +1,12 @@
+syntax = "proto3";
+  
+import "enum_datasource.proto";
+import "enum_sampling_statistic.proto";
+   
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+  
+message DataSourceBinding {
+    string bindingId = 1;
+    EnumDataSource dataSource = 2;
+    EnumSamplingStatistic enumSamplingStatistic = 3;
+}

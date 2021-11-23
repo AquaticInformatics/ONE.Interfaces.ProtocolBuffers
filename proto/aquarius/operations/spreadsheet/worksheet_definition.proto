@@ -1,0 +1,23 @@
+syntax = "proto3";
+ 
+import "column.proto";
+import "auditevent.proto";
+import "enum_worksheet.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+message WorksheetDefinition {
+
+	EnumWorksheet enumWorksheet = 1;
+
+    repeated Column columns = 2;
+
+	string twinId = 3;
+
+	// Audit Record of who created the worksheet definition
+    repeated AuditEvent auditEvent = 99;
+}
+
+message WorksheetDefinitions {
+    repeated WorksheetDefinition items = 1;
+}

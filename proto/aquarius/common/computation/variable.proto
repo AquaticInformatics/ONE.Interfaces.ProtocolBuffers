@@ -1,0 +1,33 @@
+syntax = "proto3";
+  
+import "google/protobuf/wrappers.proto";
+
+import "enum_variable_type.proto";
+  
+option csharp_namespace = "Common.Computation.Protobuf.Models";
+  
+message Variable
+{
+	// Use for translations of a global computation
+    string i18nKey = 1;
+
+	// Tenant entered name
+    string name = 2;
+
+	// Tenant entered description
+    string description = 3;
+
+	// used for web client to suggest likely parameters
+    google.protobuf.UInt32Value suggestedParameterId = 4;
+
+	// used as the set of values for the variable when the computation is executed
+    repeated double values = 5;
+
+    // type of variable (Value vs Array)
+    EnumVariableType variableType = 6;
+}
+
+message Variables
+{
+    repeated Variable items = 1;
+}

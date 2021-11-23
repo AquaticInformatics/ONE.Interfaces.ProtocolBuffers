@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Configuration.Protobuf.Models";
+
+enum EnumEntity {
+    ENTITY_UNKNOWN = 0;
+    ENTITY_FORMTEMPLATE = 1;
+    ENTITY_APPLICATION = 2;
+    ENTITY_DASHBOARD = 3;
+	ENTITY_GRAPH = 4;
+	ENTITY_WORKSHEETVIEW = 5;
+};

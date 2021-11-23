@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "enum_valid_value_restriction.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+ 
+message ValidValue {
+
+	// SortOrder
+	int32 sortOrder = 1;
+
+	// Valid string value
+	string value = 2;
+	
+	// DateTime when value was made inactive
+	JsonTicksDateTime inactiveOn = 3;
+}
+
+message ValidValues
+{
+	repeated ValidValue items = 1;
+
+	// Level of validation requested
+	EnumValidValueRestriction restriction = 2;
+
+	// DateTime indicating when to start validating using the restriction
+	JsonTicksDateTime restrictionStartTime = 3;
+}

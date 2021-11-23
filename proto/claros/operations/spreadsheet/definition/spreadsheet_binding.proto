@@ -1,8 +1,0 @@
-syntax = "proto3";
-package claros.operations.spreadsheet;
-
-option csharp_namespace ="Claros.Operations.Spreadsheet";
-
-message SpreadsheetBinding {
-   string userId = 1;
-}

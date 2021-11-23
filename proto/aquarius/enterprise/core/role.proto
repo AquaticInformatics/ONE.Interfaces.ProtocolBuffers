@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+import "feature.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+ 
+message Role {
+
+	// GUID unique identifier of the role instance
+    string id = 1;
+
+	// I18NKey name of the role
+	string i18NKeyName = 2;
+
+	// Nullable I18NKey description of the role
+	google.protobuf.StringValue description = 3;
+
+	// Typically set to a GUID to enforce uniqueness so that they I18NKeyName doesn't have to be unique. 
+	// This was put in place when we were allowing Tenants to define their own Roles.
+	string name = 4;
+
+	// Collection of features associated with the role
+	repeated Feature features = 5;
+
+	google.protobuf.FieldMask updateMask = 98;
+
+	// Audit information for the feature
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+
+message Roles
+{
+    repeated Role items = 1;
+}

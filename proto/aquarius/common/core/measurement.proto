@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// Minimal representation of a measurement.
+// Used as a poperty of an instrument measurement
+// Will be returned to populate spreadsheet cells, graphs
+message Measurement {
+    // When the measurement was taken (UTC)
+    JsonTicksDateTime timestamp = 1;       
+
+    // The parameter related to the measurement as an integer
+    int32 parameterId = 2;              
+
+    // The parameter related to the measurement as a GUID
+    string parameterGuid = 3;           
+
+    // The unit related to the measurement as an integer
+    uint32 unitId = 4;                   
+
+    // The unit related to the measurement as a GUID
+    string unitGuid = 5;                
+
+    // the value of the measurement
+    double value = 6;     
+	
+    // DEPRECATED: Adding a new field decimalPrecision
+	// significant digit precision of the value
+    uint32 precision = 7 [deprecated=true];
+
+    // The value represented as a string
+    string stringValue = 8;
+	
+	// The value represents the number of measurements taken into consideration for calculating the aggregated value
+	uint32 aggregatedMeasurementCount = 9;
+
+    // significant digit precision of the value
+    google.protobuf.UInt32Value decimalPrecision = 10; 
+}
+
+message Measurements {
+    repeated Measurement items = 1;
+}

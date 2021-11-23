@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+import "enum_notification_platform.proto";
+import "enum_notification_message_type.proto";
+import "enum_notification_delivery_method.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+//This will support a broad cast message to all subscribers.
+message  NotificationDirectPreference {
+    //The id will be the unique identifier
+    string id = 1;
+ 
+    //The tenantId will be tenant's id(guid).
+    string tenantId = 2;
+
+    //The userId will be user's guid from usertable.
+    string userId = 3;
+ 
+    //DeliveryMethod enum
+    EnumNotificationDeliveryMethod deliveryMethod = 4;
+
+    //Messagetype enum error or warning 
+    EnumNotificationMessageType messageType = 5;
+
+    //The deviceToken will be a string token coming from the device itself 
+    string deviceToken = 6;
+
+    //The registrationId will be used in the Azure Notification Hub 
+    string registrationId = 7;
+
+    //This is the platform of the device ios or andorid
+    EnumNotificationPlatform platform = 8;
+
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message NotificationDirectPreferences{
+    repeated NotificationDirectPreference items = 1;
+}

@@ -1,0 +1,63 @@
+syntax = "proto3";
+ 
+import "data_source_binding.proto";
+import "limit.proto";
+import "reportable_qualifier_definition.proto";
+import "valid_value.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+// This is the definition of the column with a worksheet
+message Column
+{
+    // The number of the column
+    uint32 columnNumber = 1;                                        
+
+    // The name of the column
+    string name = 2;                
+
+    // The description of the column
+    string description = 3;                   
+
+    // The parameter associated with the column
+    uint32 parameterId = 4;                                         
+    
+    // The default unit to display the column
+    uint32 displayUnitId = 5;                                       
+    
+    // DEPRECATED: The location associated to the data in the column
+    string locationId = 6 [deprecated=true];                                          
+
+    // Soft Delete of the column
+    bool isActive = 7;                                              
+
+    // Collection of limits related to the column
+    repeated Limit limits = 8;
+    
+    // The expected binding
+    DataSourceBinding dataSourceBinding = 9;
+
+    // This determines how qualifers are interpreted for this column
+    repeated ReportableQualifierDefinition reportableQualifierDefinitions = 10;
+
+    // The id of the digital twin associated with the column
+    int64 twinId = 11;
+
+    // List of values which are valid for this column
+    ValidValues ValidValues = 12;
+
+    // Identifies the plant that the column belongs to
+    string plantId = 13;  
+
+    // Indicates whether the data associated with this column is numeric or not
+    bool isNumeric = 14;  
+
+    // GUID to uniquely identify this column
+    string columnId = 15;
+
+    // The last row number for this column with data.  NOTE:  cellData for the cell could be empty.
+    uint32 lastRowNumberWithData = 16;
+
+    //Guids of the parameter agency codes used to create the column taken from the plant wizards subtypes twindata
+    repeated string parameterAgencyCodeIds = 17; 
+}

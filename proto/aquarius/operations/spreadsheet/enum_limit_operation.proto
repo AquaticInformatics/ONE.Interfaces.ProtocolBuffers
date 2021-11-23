@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+enum EnumLimitOperation {
+    LIMITOPERATION_UNKNOWN = 0;
+    LIMITOPERATION_GREATERTHAN = 1;
+    LIMITOPERATION_GREATERTHANOREQUAL = 2;
+    LIMITOPERATION_LESSTHAN = 3;
+    LIMITOPERATION_LESSTHANOREQUAL = 4;
+}

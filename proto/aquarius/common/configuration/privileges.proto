@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "rights.proto";
+
+option csharp_namespace = "Common.Configuration.Protobuf.Models";
+
+message Privileges {
+    map<string, Rights> items = 1;
+}

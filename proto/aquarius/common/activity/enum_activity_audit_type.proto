@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Activity.Protobuf.Models";
+
+enum EnumActivityAuditType {
+    ACTIVITY_AUDIT_TYPE_UNKNOWN = 0;
+    ACTIVITY_AUDIT_TYPE_CREATED = 1; 
+    ACTIVITY_AUDIT_TYPE_UPDATED = 2; 
+    ACTIVITY_AUDIT_TYPE_DELETED = 3; 
+}

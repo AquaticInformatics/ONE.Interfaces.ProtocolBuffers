@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Common.Library.Protobuf.Models";
+
+// Used to describe a unit
+message Unit {
+    // GUID for the Unit
+    string Id = 1;
+    
+    // Integer equivalent that uniquely describes the unit
+    uint32 IntId = 2;
+    
+    // Localization key for the unit
+    string i18nKey = 3;
+    
+    // The untranslated unit name
+    string unitName = 4;
+    
+    // The quantity type related to the unit
+    string quantityTypeId = 5;
+    
+    // Optional description of the Unit
+    string description = 6;
+
+    // Localization key for Abbreviation for the unit
+    string i18nKeyAbbreviation = 7;
+
+    // Unit Type Group Id
+    string unitTypeGroupId =8 [deprecated = true];
+
+    // The sprint number unit was added
+    uint32 sprintNumber = 9;
+
+    // Audit information for the Unit
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Units {
+    repeated Unit items = 1;
+}

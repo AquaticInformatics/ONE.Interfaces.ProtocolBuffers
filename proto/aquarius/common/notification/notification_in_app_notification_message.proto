@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="Common.Notification.Protobuf.Models";
+
+message InAppNotificationMessage{
+    //GUID identifier of In App Message
+    string id = 1;
+
+    //GUID identifier of message type(notification topic id) for In App Message. Ex: Limit Voilation Notification Topic.
+    string messageTypeId = 2;
+
+    //GUID identifier of sender who sent the In App Message notification. ex: Notifications feature id.
+    string senderId = 3;
+
+    //GUID identifier of User id to who the In App Message is sent to.
+    string userId = 4;
+
+    //Subject of the template for a Notification Topic for the In App Message.
+    string subject = 5;
+
+    //Body of the template for a Notification Topic for the In App Message.
+    string body = 6;
+
+    //boolean identifier which indicates the message read or not for In App Message.
+    bool isRead = 7;
+
+    //boolean identifier which indicates the message moved totrash or not.
+    bool isTrash = 8;
+
+    //Indicates the datetime of the In App message recieved.
+    JsonTicksDateTime dateReceived = 9;
+
+    //Indicates the datetime of the In App message when read.
+    JsonTicksDateTime dateRead = 10;
+
+    //Indicates the datetime of the In App message sent.
+    JsonTicksDateTime dateTimeSent = 11;
+
+    //boolean identifier which indicates that the user flaged the message as important.
+    bool isMarkedImportant = 12;
+    
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InAppNotificationMessages{
+    repeated InAppNotificationMessage items = 1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "content.proto";
+import "apierror.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+
+// Common response object for all HTTP requests
+message ApiResponse {
+
+	uint32 statusCode = 3;
+
+	Content content = 2;
+
+    repeated ApiError errors = 1;
+}

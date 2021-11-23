@@ -1,0 +1,23 @@
+syntax = "proto3";
+ 
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Common.Core.Protobuf.Models";
+ 
+message Note {
+    // Unique GUID that identifies the note
+    string id = 1;                      
+    
+    // The UTC time when the note was taken
+    JsonTicksDateTime timeStamp = 4;       
+    
+    // The GUID of the user who entered the note
+    string userId = 5;                  
+    
+    // The content of the note
+    string text = 6;                
+}
+
+message Notes {
+    repeated Note items = 1;
+}

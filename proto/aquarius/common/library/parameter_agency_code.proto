@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "record_auditinfo.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="Common.Library.Protobuf.Models";
+
+message ParameterAgencyCode {
+    // The GUID for the parameter agency code
+    string Id = 1;
+    
+    // The GUID of the parameter
+    string parameterId = 2;
+    
+    // GUID of parameter agency code type
+    string parameterAgencyCodeTypeId = 3;
+  
+    // GUID unit type identifier
+    string unitTypeId = 4;
+
+    // the name of the parameter agency code
+    string name = 5;
+    
+    // the code that is used for parameter agency code
+    string code = 6;
+    
+    // decimal places defined for the parameter agency code
+    uint32 decimalPlaces = 7;
+
+    // the date that parameter agency code becomes deprecated
+    JsonTicksDateTime deprecationDate = 8;
+
+    // Digital twin subtype id
+    google.protobuf.StringValue digitalTwinSubTypeId = 9;
+
+    // Audit information for the parameter agency code
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ParameterAgencyCodes {
+    repeated ParameterAgencyCode items = 1;
+}

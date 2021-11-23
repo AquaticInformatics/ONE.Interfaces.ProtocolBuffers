@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "enum_worksheet.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+message WorksheetView {
+    EnumWorksheet enumWorksheet = 1;
+    map<uint32, string> columnMasks = 2;
+    string layout = 3;
+}

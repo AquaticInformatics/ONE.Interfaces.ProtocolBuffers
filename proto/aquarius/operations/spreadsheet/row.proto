@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "cell.proto";
+
+option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+
+// This is the container for information about the row.
+message Row {
+    // Row number - Based on 01-01-1900 WIMS local
+    uint32 rowNumber = 1;
+
+    // Cells that are stored within the row.
+    repeated Cell cells = 3;
+}
+
+message Rows {
+	map<uint32, Row> items = 1;
+}
