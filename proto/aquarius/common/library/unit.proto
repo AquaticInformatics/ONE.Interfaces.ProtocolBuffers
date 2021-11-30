@@ -27,9 +27,6 @@ message Unit {
     // Localization key for Abbreviation for the unit
     string i18nKeyAbbreviation = 7;
 
-    // Unit Type Group Id
-    string unitTypeGroupId =8 [deprecated = true];
-
     // The sprint number unit was added
     uint32 sprintNumber = 9;
 

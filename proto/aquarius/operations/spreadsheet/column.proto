@@ -25,8 +25,8 @@ message Column
     // The default unit to display the column
     uint32 displayUnitId = 5;                                       
     
-    // DEPRECATED: The location associated to the data in the column
-    string locationId = 6 [deprecated=true];                                          
+    // The location associated to the data in the column
+    string locationId = 6;
 
     // Soft Delete of the column
     bool isActive = 7;                                              

@@ -3,6 +3,7 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/field_mask.proto";
 
+import "feature_state_type.proto";
 import "record_auditinfo.proto";
 
 option csharp_namespace ="Enterprise.Core.Protobuf.Models";
@@ -14,6 +15,9 @@ message Feature {
 
 	// I18NKey name of the feature
 	string i18NKeyName = 2;
+
+	// FeatureStateType
+	FeatureStateType featureStateType = 3;
 
 	// Nullable description of the feature
 	google.protobuf.StringValue description = 4;
