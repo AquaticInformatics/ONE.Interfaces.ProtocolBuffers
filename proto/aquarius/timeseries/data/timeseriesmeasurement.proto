@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+import "jsonTicksDateTime.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="TimeSeries.Data.Protobuf.Models";
+
+message TimeSeriesMeasurement
+{
+	// uniqueIdentifier for the measurement
+	string id = 1;
+
+	// Date Time of the measurement
+	JsonTicksDateTime DateTimeUTC = 2;
+
+	// TwinRefId of the telemetry twin associated to the measurement
+	google.protobuf.StringValue telemetryTwinRefId = 3;
+
+	// Numeric value of the measurement
+	google.protobuf.DoubleValue value = 4;
+
+	// Non-numeric value of the measurement
+	google.protobuf.StringValue stringValue = 5;
+
+	// Property bag used to hold metadata related to the measurement
+	google.protobuf.StringValue propertyBag = 6;
+
+	// Audit information for the Measurement
+	RecordAuditInfo recordAuditInfo = 99;
+}
+
+message TimeSeriesMeasurements {
+	repeated TimeSeriesMeasurement items = 1;
+}
