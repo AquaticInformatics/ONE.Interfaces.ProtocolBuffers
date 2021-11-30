@@ -6,7 +6,7 @@ import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="TimeSeries.Data.Protobuf.Models";
 
-message TimeSeriesMeasurement
+message TimeSeriesData
 {
 	// uniqueIdentifier for the measurement
 	string id = 1;
@@ -30,6 +30,6 @@ message TimeSeriesMeasurement
 	RecordAuditInfo recordAuditInfo = 99;
 }
 
-message TimeSeriesMeasurements {
-	repeated TimeSeriesMeasurement items = 1;
+message TimeSeriesDatas {
+	repeated TimeSeriesData items = 1;
 }

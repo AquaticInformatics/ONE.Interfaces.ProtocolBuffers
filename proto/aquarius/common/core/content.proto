@@ -58,7 +58,7 @@ import "report_definition_tags.proto";
 import "key_value.proto";
 import "quantity_type.proto";
 import "coagmeasurement.proto";
-import "timeseriesmeasurement.proto"; 
+import "timeseriesdata.proto"; 
 
 option csharp_namespace ="Common.Core.Protobuf.Models";
 
@@ -159,6 +159,6 @@ message Content {
         // timeseries
 
         // data
-        TimeSeriesMeasurements timeSeriesMeasurements = 86;
+        TimeSeriesDatas timeSeriesDatas = 86;
     }
 }
