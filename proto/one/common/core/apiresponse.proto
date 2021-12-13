@@ -8,7 +8,7 @@ option csharp_namespace ="Common.Core.Protobuf.Models";
 // Common response object for all HTTP requests
 message ApiResponse {
 
-	uint32 statusCode = 3;
+	int32 statusCode = 3;
 
 	Content content = 2;
 

@@ -5,7 +5,7 @@ option csharp_namespace ="Common.Core.Protobuf.Models";
 message ApiError {
     // HttpStatusCode typically associated with this category of error
     // Example: 400 for a bad request
-    uint32 statusCode = 1;
+    int32 statusCode = 1;
 
     // Custom error code
     // Example: ERR-100
