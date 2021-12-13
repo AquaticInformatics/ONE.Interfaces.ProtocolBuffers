@@ -41,6 +41,7 @@ import "product_offering.proto";
 import "role.proto";
 import "service_tech_tenant_request.proto";
 import "tenant.proto";
+import "tenant_product_offering.proto";
 import "user.proto";
 import "user_preference.proto";
 import "user_profile.proto";
@@ -93,7 +94,7 @@ message ClarosContent {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 86
+    // NEXT AVAILABLE ID: 88
     oneof content {
         // common.core
 		claros.common.core.LimitConfigurations limitConfigurations = 1;
@@ -175,6 +176,7 @@ message ClarosContent {
         claros.enterprise.core.Roles roles = 35;
         claros.enterprise.core.ServiceTechTenantRequests serviceTechTenantRequests = 36;
         claros.enterprise.core.Tenants tenants = 37;
+        TenantProductOfferings tenantProductOfferings = 87;
         claros.enterprise.core.Users users = 38;
         claros.enterprise.core.UserPreferences userPreferences = 39;
         claros.enterprise.core.UserProfiles userProfiles = 40;

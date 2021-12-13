@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Enterprise.Core";
+ 
+message TenantProductOffering {
+
+	// GUID identifier of the Tenant
+    string tenantId = 1;
+
+	// GUID identifier of the Product Offering
+	string productOfferingId = 2;
+
+	// Optional property bag for the Tenant-ProductOffering relationship
+	google.protobuf.StringValue propertyBag = 3;
+}
+
+message TenantProductOfferings
+{
+    repeated TenantProductOffering items = 1;
+}
