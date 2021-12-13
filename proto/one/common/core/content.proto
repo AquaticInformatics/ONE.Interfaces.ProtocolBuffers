@@ -27,6 +27,7 @@ import "product_offering.proto";
 import "role.proto";
 import "service_tech_tenant_request.proto";
 import "tenant.proto";
+import "tenant_product_offering.proto";
 import "user.proto";
 import "user_preference.proto";
 import "user_profile.proto";
@@ -66,7 +67,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 87
+    // NEXT AVAILABLE ID: 88
     oneof content {
         // common
         
@@ -118,6 +119,7 @@ message Content {
         Roles roles = 35;
         ServiceTechTenantRequests serviceTechTenantRequests = 36;
         Tenants tenants = 37;
+        TenantProductOfferings tenantProductOfferings = 87;
         Users users = 38;
         UserPreferences userPreferences = 39;
         UserProfiles userProfiles = 40;
