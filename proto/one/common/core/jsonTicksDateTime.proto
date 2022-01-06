@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // Allow the setting of datetime via either json or ticks
 message JsonTicksDateTime

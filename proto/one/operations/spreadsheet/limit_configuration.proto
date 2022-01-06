@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "enum_time_unit.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // A rule that determines violations that occur a number of times over a specified duration
 message LimitConfiguration

@@ -61,7 +61,7 @@ import "quantity_type.proto";
 import "coagmeasurement.proto";
 import "timeseriesdata.proto"; 
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Content {
 

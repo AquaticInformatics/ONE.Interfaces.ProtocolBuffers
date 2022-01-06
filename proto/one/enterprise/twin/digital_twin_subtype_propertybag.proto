@@ -4,7 +4,7 @@ import "digital_twin.proto";
 import "i18nkey_text_reference.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 enum EnumElements {
     ELEMENTS_UNKNOWN = 0;

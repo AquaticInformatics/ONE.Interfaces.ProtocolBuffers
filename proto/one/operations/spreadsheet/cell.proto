@@ -4,7 +4,7 @@ import "data_source_binding.proto";
 import "note.proto";
 import "celldata.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 // A Cell is the traditional intersection between a column and a row in a worksheet
 message Cell {

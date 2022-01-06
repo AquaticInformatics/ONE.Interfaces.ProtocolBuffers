@@ -5,7 +5,7 @@ import "google/protobuf/wrappers.proto";
 import "enum_activity_audit_type.proto";
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace = "Common.Activity.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ActivityAudit{
     

@@ -8,7 +8,7 @@ import "record_auditinfo.proto";
 import "product_offering.proto";
 import "service_tech_tenant_request.proto";
 
-option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message Tenant {
 

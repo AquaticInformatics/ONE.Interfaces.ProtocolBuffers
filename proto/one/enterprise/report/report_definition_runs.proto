@@ -4,7 +4,7 @@ import "google/protobuf/wrappers.proto";
 
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace = "Enterprise.Report.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ReportDefinitionRun {
   string id = 1;

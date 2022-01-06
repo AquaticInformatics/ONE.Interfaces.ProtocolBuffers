@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "enum_worksheet.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message WorksheetView {
     EnumWorksheet enumWorksheet = 1;

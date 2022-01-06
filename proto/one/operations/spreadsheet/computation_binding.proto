@@ -4,7 +4,7 @@ import "computation_variable_binding.proto";
 import "record_auditinfo.proto";
 import "execution_details.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ComputationBinding {
 

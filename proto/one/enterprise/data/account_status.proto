@@ -3,7 +3,7 @@ syntax = "proto3";
 import "digital_twin.proto"; 
 import "pagination.proto";
 
-option csharp_namespace ="Enterprise.Data.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message AccountStatus { 
 

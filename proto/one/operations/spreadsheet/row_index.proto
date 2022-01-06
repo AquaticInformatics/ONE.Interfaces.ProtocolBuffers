@@ -2,7 +2,7 @@ syntax = "proto3";
  
 import "timewindow.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 // This is a record that is used as a "FAT" table within the Worksheet Manager service
 message RowIndex {

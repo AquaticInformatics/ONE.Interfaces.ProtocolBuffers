@@ -5,7 +5,7 @@ import "enum_notification_category.proto";
 import "notification_topic_variable.proto";
 import "i18nkey_text_reference.proto";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message NotificationTopic {
     string id = 1;

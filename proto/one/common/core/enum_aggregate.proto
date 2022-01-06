@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 enum EnumAggregate {
     AGGREGATE_UNKNOWN = 0;

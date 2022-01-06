@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_timezone.proto";
 import "auditevent.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 // This describes the overall definition of a spreadsheet.  
 // Worksheet definitions are separate from this.

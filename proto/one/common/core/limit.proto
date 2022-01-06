@@ -7,7 +7,7 @@ import "enum_time_unit.proto";
 import "enum_limit_operation.proto";
 import "timewindow.proto";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Limit {
     // Customer defined name of limit

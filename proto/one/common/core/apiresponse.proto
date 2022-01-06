@@ -3,7 +3,7 @@ syntax = "proto3";
 import "content.proto";
 import "apierror.proto";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // Common response object for all HTTP requests
 message ApiResponse {

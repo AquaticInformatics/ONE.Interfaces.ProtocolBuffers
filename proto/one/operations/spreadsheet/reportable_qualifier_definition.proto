@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_reportable_qualifier.proto";
 import "enum_reportable_qualifier_definition.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 // The reportable qualifier definition determines how reportable qualifier is interpreted for the defined parameter
 message ReportableQualifierDefinition

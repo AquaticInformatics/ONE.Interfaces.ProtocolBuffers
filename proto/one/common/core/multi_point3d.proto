@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "point3d.proto"; 
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // type: MultiPoint
 // coordinates: [[x, y, z], [x, y, z]]

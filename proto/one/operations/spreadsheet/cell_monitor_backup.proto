@@ -2,7 +2,7 @@ syntax = "proto3";
  
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message CellMonitorBackup {
     // the collection of output cells being backup up

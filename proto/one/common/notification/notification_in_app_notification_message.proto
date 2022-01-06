@@ -3,7 +3,7 @@ syntax = "proto3";
 import "jsonTicksDateTime.proto";
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message InAppNotificationMessage{
     //GUID identifier of In App Message

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message SpreadsheetBinding {
    string userId = 1;

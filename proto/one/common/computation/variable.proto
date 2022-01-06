@@ -4,7 +4,7 @@ import "google/protobuf/wrappers.proto";
 
 import "enum_variable_type.proto";
   
-option csharp_namespace = "Common.Computation.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
   
 message Variable
 {

@@ -3,7 +3,7 @@ syntax = "proto3";
 import "record_auditinfo.proto";
 import "i18nkey_text_reference.proto";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message NotificationTopicVariable {
     string id = 1;

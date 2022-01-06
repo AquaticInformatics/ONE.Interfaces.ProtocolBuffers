@@ -7,7 +7,7 @@ import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 import "enum_rendering_engine.proto";
 
-option csharp_namespace = "Enterprise.Report.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ReportDefinition{
     

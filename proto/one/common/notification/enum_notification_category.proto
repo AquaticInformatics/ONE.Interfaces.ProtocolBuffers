@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 enum EnumNotificationCategory {
     NOTIFICATION_CATEGORY_UNKNOWN = 0;

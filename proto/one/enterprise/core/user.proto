@@ -11,7 +11,7 @@ import "tenant.proto";
 import "user_preference.proto";
 import "user_profile.proto";
 
-option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message User {
 

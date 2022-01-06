@@ -3,7 +3,7 @@ syntax = "proto3";
 import "computation_binding.proto";
 import "spreadsheet_binding.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 // This message describes how the data was received into a cell and stored into cellData
 message CellDataBinding {

@@ -3,7 +3,7 @@ syntax = "proto3";
 import "column.proto"; 
 import "measurement.proto"; 
 
-option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ColumnTelemetryPropertyBag {
 

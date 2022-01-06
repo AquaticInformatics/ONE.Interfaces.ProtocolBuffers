@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "enum_reportable_qualifier.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // The reportable qualifier is a qualification on a measurement value.  This takes into account detectable ranges of instruments
 message ReportableQualifier{

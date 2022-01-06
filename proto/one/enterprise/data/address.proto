@@ -7,7 +7,7 @@ import "gis.proto";
 import "record_auditinfo.proto";
 import "tenant.proto";
 
-option csharp_namespace ="Enterprise.Data.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message Address {
 

@@ -5,7 +5,7 @@ import "google/protobuf/field_mask.proto";
 
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message Scope {
 

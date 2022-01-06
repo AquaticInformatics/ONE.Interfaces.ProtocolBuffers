@@ -3,7 +3,7 @@ syntax = "proto3";
 import "record_auditinfo.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace = "Enterprise.Report.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ReportDefinitionTag {
   string id = 1;

@@ -5,7 +5,7 @@ import "google/protobuf/field_mask.proto";
 import "enum_digital_twin_user_right.proto";
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message DigitalTwinUserRight{
     

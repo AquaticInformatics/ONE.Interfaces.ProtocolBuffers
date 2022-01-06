@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 //This will support a broad cast message to all subscribers.
 //Mainly used to test the Notification Hub setup.  This will not need to be stored in a db or other data store.

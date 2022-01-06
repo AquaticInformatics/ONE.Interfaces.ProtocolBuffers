@@ -1,6 +1,6 @@
 syntax = "proto3";
  
-option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 enum EnumDigitalTwinRestriction{
     DIGITAL_TWIN_RESTRICTION_NONE = 0;

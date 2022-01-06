@@ -5,7 +5,7 @@ import "reportable_qualifier.proto";
 import "auditevent.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message CellData {
    // The value that was entered by the user as a number

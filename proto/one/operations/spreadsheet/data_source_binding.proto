@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_datasource.proto";
 import "enum_sampling_statistic.proto";
    
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
   
 message DataSourceBinding {
     string bindingId = 1;

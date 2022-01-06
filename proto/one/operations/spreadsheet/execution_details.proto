@@ -4,7 +4,7 @@ import "enum_time_unit.proto";
 import "enum_output_placement.proto";
 import "enum_wims_week_definition.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ExecutionDetails {
 

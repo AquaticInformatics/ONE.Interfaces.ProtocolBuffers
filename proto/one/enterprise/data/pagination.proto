@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Enterprise.Data.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Pagination { 
 	// Specifies the page number of the result set

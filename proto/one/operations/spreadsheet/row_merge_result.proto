@@ -3,7 +3,7 @@ syntax = "proto3";
 import "row.proto";
 import "cell.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message RowMergeResult {
     Row row = 1;

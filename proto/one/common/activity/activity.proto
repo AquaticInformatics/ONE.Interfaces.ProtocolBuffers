@@ -10,7 +10,7 @@ import "enum_activity_priority.proto";
 import "enum_activity_status.proto";
 import "activity_audit.proto";
 
-option csharp_namespace = "Common.Activity.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Activity{
     

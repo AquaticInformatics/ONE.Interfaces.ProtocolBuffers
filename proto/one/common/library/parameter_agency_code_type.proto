@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "record_auditinfo.proto";
 
-option csharp_namespace ="Common.Library.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message ParameterAgencyCodeType {
     // The GUID for the parameter agency code type

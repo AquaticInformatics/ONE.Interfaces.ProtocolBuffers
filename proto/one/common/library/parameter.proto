@@ -5,7 +5,7 @@ import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace ="Common.Library.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Parameter {
     // The GUID for the parameter

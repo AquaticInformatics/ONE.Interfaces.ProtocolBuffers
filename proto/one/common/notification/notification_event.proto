@@ -4,7 +4,7 @@ import "notification_topic.proto";
 import "record_auditinfo.proto";
 import "enum_notification_category.proto";
 
-option csharp_namespace ="Common.Notification.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // Each Notification Event will have it's own data
 message NotificationEvent {

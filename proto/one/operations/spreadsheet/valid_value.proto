@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_valid_value_restriction.proto";
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message ValidValue {
 

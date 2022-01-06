@@ -5,7 +5,7 @@ import "record_auditinfo.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/field_mask.proto";
 
-option csharp_namespace ="Enterprise.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
  
 message UserProfile {
 

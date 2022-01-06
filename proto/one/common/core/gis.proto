@@ -5,7 +5,7 @@ import "point3d.proto";
 import "multi_point2d.proto";
 import "multi_point3d.proto";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // https://pypi.org/project/protobuf-gis/
 message GIS {

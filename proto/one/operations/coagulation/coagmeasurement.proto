@@ -4,7 +4,7 @@ import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Operations.Coagulation.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message CoagMeasurement
 {

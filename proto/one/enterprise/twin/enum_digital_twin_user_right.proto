@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="Enterprise.Twin.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 enum EnumDigitalTwinUserRight {
 	DIGITAL_TWIN_USER_RIGHT_UNKNOWN = 0;

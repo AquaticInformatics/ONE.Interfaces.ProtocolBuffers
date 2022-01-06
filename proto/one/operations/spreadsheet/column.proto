@@ -5,7 +5,7 @@ import "limit.proto";
 import "reportable_qualifier_definition.proto";
 import "valid_value.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // This is the definition of the column with a worksheet
 message Column

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "cell.proto";
 
-option csharp_namespace ="Operations.Spreadsheet.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // This is the container for information about the row.
 message Row {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace ="Common.Core.Protobuf.Models";
+option csharp_namespace ="ONE.Models.CSharp";
 
 // Often there is a need for a Time Span that includes a begin and end time
 message TimeWindow {
