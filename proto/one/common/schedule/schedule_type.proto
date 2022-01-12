@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ScheduleType {
+    string id = 1;
+
+    string i18NKeyName = 2;
+
+    google.protobuf.StringValue propertyBag = 3;
+
+    google.protobuf.StringValue jsonSchema = 4;
+
+    google.protobuf.StringValue uiDefinition = 5;
+
+    int32 sprintNumber = 6;
+
+    // record audit information
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ScheduleTypes {
+    repeated ScheduleType items = 1;
+}

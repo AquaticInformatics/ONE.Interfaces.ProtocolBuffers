@@ -59,7 +59,9 @@ import "report_definition_tags.proto";
 import "key_value.proto";
 import "quantity_type.proto";
 import "coagmeasurement.proto";
-import "timeseriesdata.proto"; 
+import "timeseriesdata.proto";
+import "schedule_type.proto";
+import "schedule.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -67,10 +69,10 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 88
+    // NEXT AVAILABLE ID: 90
     oneof content {
         // common
-        
+
         // activity
         ActivityTasks activityTasks = 64;
 
@@ -85,7 +87,7 @@ message Content {
         LimitConfigurations limitConfigurations = 1;
         Measurements measurements = 2;
         Timezones timezones = 3;
-        Addresses addresses = 4;        
+        Addresses addresses = 4;
         GaugeDataPoint gaugeDataPoint = 59;
         Series series = 60;
         ReportParameterSets reportParameterSets = 66;
@@ -94,7 +96,7 @@ message Content {
 		// library
         Parameters parameters = 12;
         Units units = 13;
-        Agencies agencies = 71;        
+        Agencies agencies = 71;
         ParameterAgencyCodes parameterAgencyCodes = 74;
         ParameterAgencyCodeTypes parameterAgencyCodeTypes = 75;
         UnitAgencyCodes unitAgencyCodes = 76;
@@ -110,6 +112,10 @@ message Content {
         UserNotificationPreferences userNotificationPreferences = 30;
         InAppNotificationMessages inAppNotificationMessages = 50;
         NotificationDirectPreferences notificationDirectPreferences = 63;
+
+        // schedule
+        ScheduleTypes scheduleTypes = 88;
+        schedules schedules = 89;
 
         // enterprise
 
@@ -139,11 +145,11 @@ message Content {
         // data
         PlantStatuses plantStatuses = 49;
         AccountStatuses accountStatuses = 43;
-                
+
         // report
         ReportDefinitions ReportDefinitions = 72;
         ReportDefinitionRuns ReportDefinitionRuns = 78;
-        ReportDefinitionTags ReportDefinitionTags = 79;        
+        ReportDefinitionTags ReportDefinitionTags = 79;
 
         // operations
 
