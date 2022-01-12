@@ -115,7 +115,7 @@ message Content {
 
         // schedule
         ScheduleTypes scheduleTypes = 88;
-        schedules schedules = 89;
+        Schedules schedules = 89;
 
         // enterprise
 
