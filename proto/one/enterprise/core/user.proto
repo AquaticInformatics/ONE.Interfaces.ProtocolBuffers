@@ -68,6 +68,12 @@ message User {
 	// Is user active?
 	bool isActive = 17;
 
+	// Is accepted TCs?
+	bool isAcceptedTcs = 18;
+
+	// Is accepted TCs datetime
+	JsonTicksDateTime  lastAcceptedTCsDate = 19;
+	
 	// Collection of preferences for the user
 	repeated UserPreference userPreferences = 20;
 
