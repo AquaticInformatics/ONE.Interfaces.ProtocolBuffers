@@ -24,7 +24,11 @@ message NotificationTemplate {
 
     //delivery method email and push
     EnumNotificationDeliveryMethod enumNotificationDeliveryMethod = 6;
-    
+
+    string i18NKeySubject = 7;
+
+    string i18NKeyBody = 8;
+
     RecordAuditInfo recordAuditInfo = 99;
 }
 
