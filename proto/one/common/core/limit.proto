@@ -37,6 +37,9 @@ message Limit {
     oneof Rules {
         ThresholdRule thresholdRule = 9;
     }
+
+    // If true, notify when limit exceeded
+    bool notificationFlag = 10;
 }
 
 // A rule that determines violations that occur a number of times over a specified duration
