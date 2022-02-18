@@ -16,9 +16,9 @@ message Configuration {
     string modifiedById = 4;
     JsonTicksDateTime modifiedOn = 5;
     string configurationData = 6;
-    EnumEntity enumEntity = 7;
-    string filterById = 8;
-    string tenantId = 9;
+    EnumEntity enumEntity = 7; // Replaced by configurationType
+    string filterById = 8; // Replaced by context
+    string tenantId = 9; // Replaced by authTwinRefId
     string ownerId = 10;
     google.protobuf.BoolValue isPublic = 11;
     uint32 version = 12;
@@ -26,6 +26,13 @@ message Configuration {
 
     // allow for comparing configurations on the name property without having to parse the configurationData object
     string name = 14;
+
+    // Guid identifier of the configurationType maps to an enumEntity in the case of existing data
+    google.protobuf.StringValue configurationType = 15;
+    // Json string to allow open ended searching/filtering of configurations
+    google.protobuf.StringValue context = 16;
+    // TwinRefId of the twin used to secure access to the configuration
+    google.protobuf.StringValue authTwinRefId = 17;
 }
 
 message Configurations {
