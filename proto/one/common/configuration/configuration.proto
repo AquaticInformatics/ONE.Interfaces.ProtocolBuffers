@@ -1,36 +1,68 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-
 import "jsonTicksDateTime.proto";
 import "enum_entity.proto";
 import "rights.proto";
 
-
 option csharp_namespace ="ONE.Models.CSharp";
  
 message Configuration {
+
+    // Unique identifier
     string id = 1;
+
+    // Audit info
     string createdById = 2;
+
+    // Audit info
     JsonTicksDateTime createdOn = 3;
+
+    // Audit info
     string modifiedById = 4;
+
+    // Audit info
     JsonTicksDateTime modifiedOn = 5;
+
+    // Json of the configuration
     string configurationData = 6;
-    EnumEntity enumEntity = 7; // Replaced by configurationType
-    string filterById = 8; // Replaced by context
-    string tenantId = 9; // Replaced by authTwinRefId
+
+    // Used by V1 Configurations
+    // Replaced by configurationType
+    EnumEntity enumEntity = 7;
+
+    // Used by V1 Configurations
+    // Replaced by context
+    string filterById = 8;
+
+    // Used by V1 Configurations
+    // Replaced by authTwinRefId
+    string tenantId = 9;
+
+    // Who owns the configuration
     string ownerId = 10;
+
+    // Makes configuration visible to all within the organization
     google.protobuf.BoolValue isPublic = 11;
+
+    // Configurations are versioned
     uint32 version = 12;
+
+    // Controls explicit user permissions on this config
     map<string, Rights> privileges = 13;
 
     // allow for comparing configurations on the name property without having to parse the configurationData object
     string name = 14;
 
+    // Used by V2 Configurations
     // Guid identifier of the configurationType maps to an enumEntity in the case of existing data
     google.protobuf.StringValue configurationType = 15;
+
+    // Used by V2 Configurations
     // Json string to allow open ended searching/filtering of configurations
     google.protobuf.StringValue context = 16;
+
+    // Used by V2 Configurations
     // TwinRefId of the twin used to secure access to the configuration
     google.protobuf.StringValue authTwinRefId = 17;
 }
