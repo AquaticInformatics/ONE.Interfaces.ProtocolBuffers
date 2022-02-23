@@ -28,15 +28,15 @@ message Configuration {
     string configurationData = 6;
 
     // Used by V1 Configurations
-    // Replaced by configurationType
+    // Replaced by configurationTypeId in V2
     EnumEntity enumEntity = 7;
 
     // Used by V1 Configurations
-    // Replaced by context
+    // Replaced by context in V2
     string filterById = 8;
 
     // Used by V1 Configurations
-    // Replaced by authTwinRefId
+    // Replaced by authTwinRefId in V2
     string tenantId = 9;
 
     // Who owns the configuration
@@ -56,7 +56,7 @@ message Configuration {
 
     // Used by V2 Configurations
     // Guid identifier of the configurationType maps to an enumEntity in the case of existing data
-    google.protobuf.StringValue configurationType = 15;
+    google.protobuf.StringValue configurationTypeId = 15;
 
     // Used by V2 Configurations
     // Json string to allow open ended searching/filtering of configurations
