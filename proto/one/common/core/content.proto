@@ -62,6 +62,7 @@ import "coagmeasurement.proto";
 import "timeseriesdata.proto";
 import "schedule_type.proto";
 import "schedule.proto";
+import "historian_data.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -69,7 +70,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 90
+    // NEXT AVAILABLE ID: 91
     oneof content {
         // common
 
@@ -168,5 +169,9 @@ message Content {
 
         // data
         TimeSeriesDatas timeSeriesDatas = 86;
+
+        // historian
+        // data
+        HistorianDatas historianDatas = 90;
     }
 }
