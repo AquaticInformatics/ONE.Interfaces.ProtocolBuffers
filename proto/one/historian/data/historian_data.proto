@@ -12,7 +12,7 @@ message HistorianData
     string id = 1;
  
     // Date Time of the measurement
-    JsonTicksDateTime DateTimeUTC = 2;
+    JsonTicksDateTime dateTimeUTC = 2;
  
     // Numeric value of the measurement
     google.protobuf.DoubleValue value = 3;
