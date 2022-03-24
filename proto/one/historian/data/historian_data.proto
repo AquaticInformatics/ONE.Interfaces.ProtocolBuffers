@@ -8,24 +8,21 @@ option csharp_namespace ="ONE.Models.CSharp";
  
 message HistorianData
 {
-    // uniqueIdentifier for the measurement
-    string id = 1;
+     // Date Time of the measurement
+     JsonTicksDateTime dateTimeUTC = 1;
  
-    // Date Time of the measurement
-    JsonTicksDateTime dateTimeUTC = 2;
- 
-    // Numeric value of the measurement
-    google.protobuf.DoubleValue value = 3;
- 
-    // Non-numeric value of the measurement
-    google.protobuf.StringValue stringValue = 4;
- 
-    // Property bag used to hold metadata related to the measurement
-    google.protobuf.StringValue propertyBag = 5;
- 
-    // Audit information for the Measurement
-    RecordAuditInfo recordAuditInfo = 99;
-}
+     // Numeric value of the measurement
+     google.protobuf.DoubleValue value = 2;
+  
+     // Non-numeric value of the measurement
+     google.protobuf.StringValue stringValue = 3;
+  
+     // Property bag used to hold metadata related to the measurement
+     google.protobuf.StringValue propertyBag = 4;
+  
+     // Audit information for the Measurement
+     RecordAuditInfo recordAuditInfo = 99;
+ }
  
 message HistorianDatas {
     repeated HistorianData items = 1;
