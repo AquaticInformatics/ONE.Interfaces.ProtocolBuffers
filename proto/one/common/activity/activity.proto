@@ -9,56 +9,53 @@ import "enum_activity_status.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message Activity{
+message Activity {
     // unique identifier of the activity
     string id = 1;
 
     // used to check twin authorization
     google.protobuf.StringValue authTwinRefId = 2;
 
-    // similar concept as ParentTwinNode
-    google.protobuf.StringValue activityParentHierarchyId = 3;
-
-    // similar concept as in TwinNode
-    string activityHierarchyId = 4;
+    // reference to parent guid id
+    google.protobuf.StringValue parentId = 3;
 
     // unique identifier of the user that is assigned to the activity
-    google.protobuf.StringValue owningUserId = 5;
+    google.protobuf.StringValue owningUserId = 4;
 
     // priority of the activity
-    EnumActivityPriority priorityCode = 6;
+    EnumActivityPriority priorityCode = 5;
 
     // defines the type of activity
-    string activityTypeId = 7;
+    string activityTypeId = 6;
 
     // refers to the associated schedule, if present
-    google.protobuf.StringValue scheduleId = 8;
+    google.protobuf.StringValue scheduleId = 7;
     
     // scheduled start time of this activity
-    JsonTicksDateTime scheduleStart = 9;
+    JsonTicksDateTime scheduleStart = 8;
 
     // scheduled end time of this activity
-    JsonTicksDateTime scheduleEnd = 10;
+    JsonTicksDateTime scheduleEnd = 9;
 
     // subject associated with this activity
-    google.protobuf.StringValue subject = 11;
+    google.protobuf.StringValue subject = 10;
 
     // description associated with this activity
-    google.protobuf.StringValue description = 12;
+    google.protobuf.StringValue description = 11;
 
     // schema of what is stored in the property bag
-    google.protobuf.StringValue jsonSchema = 13;
+    google.protobuf.StringValue jsonSchema = 12;
 
     // additional information stored as json
-    google.protobuf.StringValue propertyBag = 14;
+    google.protobuf.StringValue propertyBag = 13;
 
     // status of this activity
-    EnumActivityStatus statusCode = 15;
+    EnumActivityStatus statusCode = 14;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
 
-message Activities{
+message Activities {
 	repeated Activity items = 1;
 }
