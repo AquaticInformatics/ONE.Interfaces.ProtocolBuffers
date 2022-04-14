@@ -14,7 +14,7 @@ message Activity {
     string id = 1;
 
     // used to check twin authorization
-    google.protobuf.StringValue authTwinRefId = 2;
+    string authTwinRefId = 2;
 
     // reference to parent guid id
     google.protobuf.StringValue parentId = 3;
@@ -43,14 +43,11 @@ message Activity {
     // description associated with this activity
     google.protobuf.StringValue description = 11;
 
-    // schema of what is stored in the property bag
-    google.protobuf.StringValue jsonSchema = 12;
-
     // additional information stored as json
-    google.protobuf.StringValue propertyBag = 13;
+    google.protobuf.StringValue propertyBag = 12;
 
     // status of this activity
-    EnumActivityStatus statusCode = 14;
+    EnumActivityStatus statusCode = 13;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
