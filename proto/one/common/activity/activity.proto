@@ -32,10 +32,10 @@ message Activity {
     google.protobuf.StringValue scheduleId = 7;
     
     // scheduled start time of this activity
-    JsonTicksDateTime scheduleStart = 8;
+    JsonTicksDateTime scheduledStart = 8;
 
     // scheduled end time of this activity
-    JsonTicksDateTime scheduleEnd = 9;
+    JsonTicksDateTime scheduledEnd = 9;
 
     // subject associated with this activity
     google.protobuf.StringValue subject = 10;
