@@ -75,7 +75,7 @@ message Content {
         // common
 
         // activity
-        ActivityTasks activityTasks = 64;
+        Activities activities = 64;
 
 		// computation
 		Computations computations = 8;

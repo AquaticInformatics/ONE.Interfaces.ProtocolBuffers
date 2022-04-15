@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "record_auditinfo.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ActivityType {
+    // unique identifier of the activityType
+    string id = 1;
+
+    // translation key for the name of the activityType
+    string i18NKeyName = 2;
+
+    // schema of what is stored in the propertyBag
+    google.protobuf.StringValue jsonSchema = 3;
+
+    // definitions for custom UI attributes
+    google.protobuf.StringValue uiDefinition = 4;
+
+    // additional information stored as json
+    google.protobuf.StringValue propertyBag = 5;
+
+    // audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ActivityTypes {
+	repeated ActivityType items = 1;
+}
