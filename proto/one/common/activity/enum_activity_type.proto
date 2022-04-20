@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option csharp_namespace ="ONE.Models.CSharp";
-
-enum EnumActivityType {
-    ACTIVITY_TYPE_UNKNOWN = 0;
-    ACTIVITY_TYPE_TASK = 1; 
-}

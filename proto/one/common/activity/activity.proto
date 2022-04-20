@@ -1,63 +1,58 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "google/protobuf/field_mask.proto";
 
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
-import "enum_activity_type.proto";
 import "enum_activity_priority.proto";
 import "enum_activity_status.proto";
-import "activity_audit.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message Activity{
-    
-    string id = 1; 
-    
-    // plant id for task implementation.  Could reference other twins for future activity types
-    google.protobuf.StringValue twinRefId = 2;
-    
-    // assigned user
-    google.protobuf.StringValue assignedUserId = 3;
+message Activity {
+    // unique identifier of the activity
+    string id = 1;
 
-    // activity type
-    EnumActivityType activityType = 4;
+    // used to check twin authorization
+    string authTwinRefId = 2;
 
-    // priority code
+    // reference to parent guid id
+    google.protobuf.StringValue parentId = 3;
+
+    // unique identifier of the user that is assigned to the activity
+    google.protobuf.StringValue owningUserId = 4;
+
+    // priority of the activity
     EnumActivityPriority priorityCode = 5;
 
-    // scheduled start
-    JsonTicksDateTime scheduledStart = 6;
+    // defines the type of activity
+    string activityTypeId = 6;
 
-    // scheduled end
-    JsonTicksDateTime scheduledEnd = 7;
+    // refers to the associated schedule, if present
+    google.protobuf.StringValue scheduleId = 7;
+    
+    // scheduled start time of this activity
+    JsonTicksDateTime scheduledStart = 8;
 
-    // subject
-    google.protobuf.StringValue subject = 8;
+    // scheduled end time of this activity
+    JsonTicksDateTime scheduledEnd = 9;
 
-    // description
-    google.protobuf.StringValue description = 9;
+    // subject associated with this activity
+    google.protobuf.StringValue subject = 10;
 
-    // json schema - description of what is stored in activityAdditionalParams
-    google.protobuf.StringValue jsonSchema = 10;
+    // description associated with this activity
+    google.protobuf.StringValue description = 11;
 
-    // additional parameters as json - similar usage as twinData
-    google.protobuf.StringValue activityAdditionalParams = 11;
+    // additional information stored as json
+    google.protobuf.StringValue propertyBag = 12;
 
-    // status code
-    EnumActivityStatus statusCode = 12;
+    // status of this activity
+    EnumActivityStatus statusCode = 13;
 
-    // activity audits
-    repeated ActivityAudit activityAudits = 13;
-
-    google.protobuf.FieldMask updateMask = 98;
-
-    // record_auditinfo
+    // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
 
-message Activities{
+message Activities {
 	repeated Activity items = 1;
 }
