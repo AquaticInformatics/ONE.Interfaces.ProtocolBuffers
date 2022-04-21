@@ -4,8 +4,6 @@ import "google/protobuf/wrappers.proto";
 
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
-import "enum_activity_priority.proto";
-import "enum_activity_status.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -23,7 +21,7 @@ message Activity {
     google.protobuf.StringValue owningUserId = 4;
 
     // priority of the activity
-    EnumActivityPriority priorityCode = 5;
+    int32 priorityCode = 5;
 
     // defines the type of activity
     string activityTypeId = 6;
@@ -47,7 +45,7 @@ message Activity {
     google.protobuf.StringValue propertyBag = 12;
 
     // status of this activity
-    EnumActivityStatus statusCode = 13;
+    int32 statusCode = 13;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
