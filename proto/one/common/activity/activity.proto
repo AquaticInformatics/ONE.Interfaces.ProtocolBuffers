@@ -20,7 +20,7 @@ message Activity {
     // unique identifier of the user that is assigned to the activity
     google.protobuf.StringValue owningUserId = 4;
 
-    // priority of the activity
+    // 0 = default, 1-500 = standard priorityCodes, 501+ = custom priorityCodes per activityType
     int32 priorityCode = 5;
 
     // defines the type of activity
@@ -44,7 +44,7 @@ message Activity {
     // additional information stored as json
     google.protobuf.StringValue propertyBag = 12;
 
-    // status of this activity
+    // 0 = default, 1-500 = standard statusCodes, 501+ = custom statusCodes per activityType
     int32 statusCode = 13;
 
     // audit info
