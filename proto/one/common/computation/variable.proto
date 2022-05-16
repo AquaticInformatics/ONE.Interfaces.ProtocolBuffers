@@ -23,8 +23,11 @@ message Variable
 	// used as the set of values for the variable when the computation is executed
     repeated double values = 5;
 
-    // type of variable (Value vs Array)
+    // type of variable (Value, Array, Nullable)
     EnumVariableType variableType = 6;
+
+    // Used to return error message if computation execution was unsuccessful
+    google.protobuf.StringValue errorMessage = 8;
 }
 
 message Variables
