@@ -16,8 +16,6 @@ message ScheduleType {
 
     google.protobuf.StringValue uiDefinition = 5;
 
-    int32 sprintNumber = 6;
-
     // record audit information
     RecordAuditInfo recordAuditInfo = 99;
 }

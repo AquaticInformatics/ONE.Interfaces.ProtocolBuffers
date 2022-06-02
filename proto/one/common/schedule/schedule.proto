@@ -11,17 +11,19 @@ message Schedule {
 
     string name = 2;
 
-    google.protobuf.StringValue twinRefId = 3;
+    google.protobuf.StringValue Description = 3;
 
-    JsonTicksDateTime startDate = 4;
+    google.protobuf.StringValue AuthTwinRefId = 4;
 
-    JsonTicksDateTime endDate = 5;
+    JsonTicksDateTime startDate = 5;
 
-    google.protobuf.StringValue recurrencePattern = 6;
+    JsonTicksDateTime endDate = 6;
 
-    string scheduleTypeId = 7;
+    google.protobuf.StringValue recurrencePattern = 7;
 
-    google.protobuf.StringValue propertyBag = 8;
+    string scheduleTypeId = 8;
+
+    google.protobuf.StringValue propertyBag = 9;
 
     RecordAuditInfo recordAuditInfo = 99;
 }
