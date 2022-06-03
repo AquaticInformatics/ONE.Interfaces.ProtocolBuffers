@@ -15,10 +15,10 @@ message Schedule {
     string name = 2;
 
     //schedule description
-    google.protobuf.StringValue Description = 3;
+    google.protobuf.StringValue description = 3;
 
     // used to check twin authorization
-    google.protobuf.StringValue AuthTwinRefId = 4;
+    google.protobuf.StringValue authTwinRefId = 4;
 
     // start date of the schedule
     JsonTicksDateTime startDate = 5;

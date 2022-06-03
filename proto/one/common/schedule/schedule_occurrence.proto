@@ -2,15 +2,15 @@ syntax = "proto3";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message ScheduleOccurence {
+message ScheduleOccurrence {
     
     // the respective schedule id
     string scheduleId = 1;
 
-    // the list of occurences 
-    repeated string occurences = 2;
+    // the list of occurrences 
+    repeated string occurrences = 2;
 }
 
-message ScheduleOccurences {
-    repeated ScheduleOccurence items = 1;
+message ScheduleOccurrences {
+    repeated ScheduleOccurrence items = 1;
 }
