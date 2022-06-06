@@ -7,22 +7,35 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 message Schedule {
+    
+    // unique identifier of the schedule
     string id = 1;
 
+    // schedule name
     string name = 2;
 
-    google.protobuf.StringValue twinRefId = 3;
+    //schedule description
+    google.protobuf.StringValue description = 3;
 
-    JsonTicksDateTime startDate = 4;
+    // used to check twin authorization
+    google.protobuf.StringValue authTwinRefId = 4;
 
-    JsonTicksDateTime endDate = 5;
+    // start date of the schedule
+    JsonTicksDateTime startDate = 5;
 
-    google.protobuf.StringValue recurrencePattern = 6;
+    // end date of the schedule
+    JsonTicksDateTime endDate = 6;
 
-    string scheduleTypeId = 7;
+    // schedule recurrence patern (weekly, monthly, quarterly ...)
+    google.protobuf.StringValue recurrencePattern = 7;
 
-    google.protobuf.StringValue propertyBag = 8;
+    // defines the schedule type 
+    string scheduleTypeId = 8;
 
+    // additional information stored as json
+    google.protobuf.StringValue propertyBag = 9;
+
+    // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
 

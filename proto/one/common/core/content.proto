@@ -63,6 +63,7 @@ import "timeseriesdata.proto";
 import "schedule_type.proto";
 import "schedule.proto";
 import "historian_data.proto";
+import "schedule_occurrence.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -70,7 +71,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 91
+    // NEXT AVAILABLE ID: 92
     oneof content {
         // common
 
@@ -117,6 +118,7 @@ message Content {
         // schedule
         ScheduleTypes scheduleTypes = 88;
         Schedules schedules = 89;
+        ScheduleOccurrences scheduleOccurrences = 91;
 
         // enterprise
 

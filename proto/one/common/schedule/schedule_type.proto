@@ -6,17 +6,21 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 message ScheduleType {
+    
+    // unique identifier of the scheduleType
     string id = 1;
 
+    // translation key for the name of the scheduleType
     string i18NKeyName = 2;
-
+    
+    // additional information stored as json
     google.protobuf.StringValue propertyBag = 3;
 
+    // schema of what is stored in the propertyBag
     google.protobuf.StringValue jsonSchema = 4;
 
+    // definitions for custom UI attributes
     google.protobuf.StringValue uiDefinition = 5;
-
-    int32 sprintNumber = 6;
 
     // record audit information
     RecordAuditInfo recordAuditInfo = 99;
