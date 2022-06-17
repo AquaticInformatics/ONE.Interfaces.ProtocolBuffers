@@ -64,7 +64,7 @@ import "schedule_type.proto";
 import "schedule.proto";
 import "historian_data.proto";
 import "schedule_occurrence.proto";
-import "operation_note.proto";
+import "configuration_note.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -85,6 +85,7 @@ message Content {
 
 		// configuration
 		Configurations configurations = 10;
+        ConfigurationNotes configurationNotes = 92;
 
         // core
         LimitConfigurations limitConfigurations = 1;
@@ -164,7 +165,6 @@ message Content {
         SpreadsheetDefinitions spreadsheetDefinitions = 17;
         WorksheetDefinitions worksheetDefinitions = 18;
         SpreadsheetComputations spreadsheetComputations = 19;
-        OperationNotes operationNotes = 92;
 
         // coagulation
         CoagMeasurements coagulationMeasurements = 85;
