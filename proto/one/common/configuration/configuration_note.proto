@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+import "jsonTicksDateTime.proto";
+import "configuration_tag.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ConfigurationNote {
+    // guid identifier of the note
+    string id = 1;
+
+    // guid identifier of the configuration associated with the note
+    string configurationId = 2;
+
+    // time associated with the note
+    JsonTicksDateTime noteTime = 3;
+
+    // text of the note
+    string note = 4;
+    
+    // tags associated with this note
+    repeated ConfigurationTag tags = 5;
+
+    // audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message ConfigurationNotes {
+	repeated ConfigurationNote items = 1;
+}
