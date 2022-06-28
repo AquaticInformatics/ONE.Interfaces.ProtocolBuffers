@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ConfigurationTag {
+    // guid identifier of this tag
+    string id = 1;
+
+    // guid identifier of the configuration
+    string configurationId = 2;
+
+    // guid identifier of the note
+    string noteId = 3;
+
+    // text of this tag
+    string tag = 4;
+}
+
+message ConfigurationTags {
+	repeated ConfigurationTag items = 1;
+}

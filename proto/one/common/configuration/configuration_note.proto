@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
+import "configuration_tag.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -19,7 +20,7 @@ message ConfigurationNote {
     string note = 4;
     
     // tags associated with this note
-    repeated string tags = 5;
+    repeated ConfigurationTag tags = 5;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;

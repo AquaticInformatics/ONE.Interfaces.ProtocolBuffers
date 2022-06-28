@@ -65,6 +65,7 @@ import "schedule.proto";
 import "historian_data.proto";
 import "schedule_occurrence.proto";
 import "configuration_note.proto";
+import "configuration_tag.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -72,7 +73,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 93
+    // NEXT AVAILABLE ID: 94
     oneof content {
         // common
 
@@ -86,6 +87,7 @@ message Content {
 		// configuration
 		Configurations configurations = 10;
         ConfigurationNotes configurationNotes = 92;
+        ConfigurationTags configurationTags = 93;
 
         // core
         LimitConfigurations limitConfigurations = 1;
