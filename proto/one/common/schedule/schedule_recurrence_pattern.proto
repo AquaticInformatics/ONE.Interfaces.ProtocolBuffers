@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ScheduleRecurrencePattern {
+    string type = 1;
+    uint32 interval = 2;
+    repeated string daysOfWeek = 3;
+	string firstDayOfWeek = 4;
+    string index = 5;
+    uint32 dayOfMonth = 6;
+    uint32 month = 7;
+}
+
