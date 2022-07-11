@@ -1,0 +1,27 @@
+syntax = "proto3";
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ScheduleRecurrencePattern {
+    
+    // Type of pattern: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly
+    string type = 1;
+    
+    // Specifies the number of weeks, months or years (depending on the type) between each set of occurrences. 
+    uint32 interval = 2;
+    
+    // Specifies on which day(s) of the week the event can occur.
+    repeated string daysOfWeek = 3;
+    
+    // Specifies which day is considered the first day of the week. Default value: Sunday
+    string firstDayOfWeek = 4;
+    
+    // Specifies on which instance of the allowed days specified in daysOfsWeek the event occurs.
+    string index = 5;
+    
+    // Specifies on which day of the month the event occurs.
+    uint32 dayOfMonth = 6;
+    
+    // Specifies in which month the event occurs.
+    uint32 month = 7;
+}
+
