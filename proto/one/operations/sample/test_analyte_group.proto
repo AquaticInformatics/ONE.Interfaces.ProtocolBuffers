@@ -1,4 +1,5 @@
 syntax = "proto3";
+import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -22,10 +23,10 @@ message TestAnalyteGroup
     google.protobuf.StringValue uiDefinition = 5;
 
     // Additional notes for test analyte group
-    google.protobuf.StringValue notes = 5;
+    google.protobuf.StringValue notes = 6;
 
     // Soft Delete of the test analyte group
-    bool isActive = 6;   
+    bool isActive = 7;   
 
     // Audit info
     RecordAuditInfo recordAuditInfo = 99;
