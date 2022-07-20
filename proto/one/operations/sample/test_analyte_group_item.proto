@@ -3,8 +3,7 @@ import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
-message TestAnalyteGroupItem
-{
+message TestAnalyteGroupItem {
    // Unique identifier of the test analyte group item
    string id = 1;
     
@@ -18,7 +17,6 @@ message TestAnalyteGroupItem
     RecordAuditInfo recordAuditInfo = 99;
 }
 
-message TestAnalyteGroupItems 
-{
+message TestAnalyteGroupItems {
     repeated TestAnalyteGroupItem items = 1;
 }

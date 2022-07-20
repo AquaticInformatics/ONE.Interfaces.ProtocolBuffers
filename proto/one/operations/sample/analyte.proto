@@ -3,8 +3,7 @@ import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
-message Analyte
-{
+message Analyte {
 
     // Unique identifier of the analyte
     string id = 1;
@@ -31,7 +30,6 @@ message Analyte
     RecordAuditInfo recordAuditInfo = 99;
 }
 
-message Analytes 
-{
+message Analytes {
     repeated Analyte items = 1;
 }

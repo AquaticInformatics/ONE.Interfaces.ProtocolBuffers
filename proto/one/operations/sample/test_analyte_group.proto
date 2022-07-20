@@ -4,8 +4,7 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 
-message TestAnalyteGroup
-{
+message TestAnalyteGroup {
 
     // Unique identifier of the test analyte group
     string id = 1;
