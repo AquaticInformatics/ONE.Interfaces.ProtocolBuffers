@@ -1,0 +1,36 @@
+syntax = "proto3";
+import "record_auditinfo.proto";
+option csharp_namespace ="ONE.Models.CSharp";
+
+message Analyte
+{
+
+    // Unique identifier of the analyte
+    string id = 1;
+    
+    // Used to check twin authorization
+    google.protobuf.StringValue authTwinRefId = 2;
+
+    // Parameter Id
+    google.protobuf.StringValue parameterId = 3;
+
+    // Unit type 
+    google.protobuf.StringValue unitTypeId = 4;
+    
+    // Analyte's name
+    google.protobuf.StringValue name = 5;
+
+    // Soft Delete of the analyte
+    bool isActive = 6;   
+
+    // Additional information stored as json
+    google.protobuf.StringValue propertyBag = 7;
+
+    // Audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message Analytes 
+{
+    repeated Analyte items = 1;
+}
