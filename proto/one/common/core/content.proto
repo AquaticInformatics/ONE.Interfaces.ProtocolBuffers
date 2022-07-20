@@ -66,6 +66,9 @@ import "historian_data.proto";
 import "schedule_occurrence.proto";
 import "configuration_note.proto";
 import "configuration_tag.proto";
+import "analyte.proto";
+import "test_analyte_group_item.proto";
+import "test_analyte_group.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -73,7 +76,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 94
+    // NEXT AVAILABLE ID: 97
     oneof content {
         // common
 
@@ -159,7 +162,7 @@ message Content {
         ReportDefinitionTags ReportDefinitionTags = 79;
 
         // operations
-
+      
         // spreadsheet
         Rows rows = 14;
         Cells cells = 15;
@@ -170,6 +173,11 @@ message Content {
 
         // coagulation
         CoagMeasurements coagulationMeasurements = 85;
+        
+        // sample
+        Analytes Analytes = 94;
+        TestAnalyteGroups TestAnalyteGroups = 95;
+        TestAnalyteGroupItems TestAnalyteGroupItems = 96;
 
         // timeseries
 
