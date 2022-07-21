@@ -10,10 +10,10 @@ message TestAnalyteGroup {
     string id = 1;
    
     // Analyte's name
-    google.protobuf.StringValue name = 2;
+    string name = 2;
 
     // Used to check twin authorization
-    google.protobuf.StringValue authTwinRefId = 3;
+    string authTwinRefId = 3;
 
     // Additional information stored as json
     google.protobuf.StringValue propertyBag = 4;

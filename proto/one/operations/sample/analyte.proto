@@ -9,13 +9,13 @@ message Analyte {
     string id = 1;
     
     // Used to check twin authorization
-    google.protobuf.StringValue authTwinRefId = 2;
+    string authTwinRefId = 2;
 
     // Parameter Id
-    google.protobuf.StringValue parameterId = 3;
+    string parameterId = 3;
 
     // Unit type 
-    google.protobuf.StringValue unitTypeId = 4;
+    string unitTypeId = 4;
     
     // Analyte's name
     google.protobuf.StringValue name = 5;

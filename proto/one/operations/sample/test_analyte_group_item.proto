@@ -1,5 +1,4 @@
 syntax = "proto3";
-import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -8,10 +7,10 @@ message TestAnalyteGroupItem {
    string id = 1;
     
    // The id of the test analyte group of the item
-   google.protobuf.StringValue testAnalyteGroupId = 2;
+   string testAnalyteGroupId = 2;
 
    // the id of the analyte of the test analyte group item
-   google.protobuf.StringValue analyteId = 3;
+   string analyteId = 3;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
