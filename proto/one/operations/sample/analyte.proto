@@ -1,6 +1,8 @@
 syntax = "proto3";
+
 import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
+
 option csharp_namespace ="ONE.Models.CSharp";
 
 message Analyte {
@@ -8,20 +10,20 @@ message Analyte {
     // Unique identifier of the analyte
     string id = 1;
     
-    // Used to check twin authorization
-    string authTwinRefId = 2;
-
     // Parameter Id
-    string parameterId = 3;
+    string parameterId = 2;
 
     // Unit type 
-    string unitTypeId = 4;
+    string unitTypeId = 3;
     
-    // Analyte's name
-    google.protobuf.StringValue name = 5;
+    // Name of the analyte
+    google.protobuf.StringValue name = 4;
 
     // Soft Delete of the analyte
-    bool isActive = 6;   
+    bool isActive = 5;
+
+    // Reading type of the analyte, typically lab or field
+    string readingType = 6;
 
     // Additional information stored as json
     google.protobuf.StringValue propertyBag = 7;

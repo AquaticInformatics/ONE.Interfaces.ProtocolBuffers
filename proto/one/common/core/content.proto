@@ -67,8 +67,7 @@ import "schedule_occurrence.proto";
 import "configuration_note.proto";
 import "configuration_tag.proto";
 import "analyte.proto";
-import "test_analyte_group_item.proto";
-import "test_analyte_group.proto";
+import "test_group.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -76,7 +75,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 97
+    // NEXT AVAILABLE ID: 96
     oneof content {
         // common
 
@@ -176,8 +175,7 @@ message Content {
         
         // sample
         Analytes Analytes = 94;
-        TestAnalyteGroups TestAnalyteGroups = 95;
-        TestAnalyteGroupItems TestAnalyteGroupItems = 96;
+        TestGroups TestGroups = 95;        
 
         // timeseries
 

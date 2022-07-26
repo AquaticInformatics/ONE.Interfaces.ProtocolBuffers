@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "analyte.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+
+message TestGroup {
+
+    // Unique identifier of the testGroup
+    string id = 1;
+   
+    // Name of the testGroup
+    string name = 2;
+
+    // Additional notes for testGroup
+    google.protobuf.StringValue notes = 3;
+
+    // Soft Delete of the testGroup
+    bool isActive = 4;
+
+    // Analytes making up the testGroup
+    repeated Analyte analytes = 5;
+
+    // Audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message TestGroups {
+    repeated TestGroup items = 1;
+}
