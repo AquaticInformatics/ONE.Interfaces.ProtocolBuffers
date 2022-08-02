@@ -1,6 +1,7 @@
 syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
+import "analyte.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 
@@ -8,7 +9,7 @@ message TestAnalyteGroup {
 
     // Unique identifier of the test analyte group
     string id = 1;
-   
+
     // Analyte's name
     string name = 2;
 
@@ -25,7 +26,10 @@ message TestAnalyteGroup {
     google.protobuf.StringValue notes = 6;
 
     // Soft Delete of the test analyte group
-    bool isActive = 7;   
+    bool isActive = 7;
+
+    // Collection of analytes in the test analyte group
+    repeated Analyte Analytes = 8;
 
     // Audit info
     RecordAuditInfo recordAuditInfo = 99;
