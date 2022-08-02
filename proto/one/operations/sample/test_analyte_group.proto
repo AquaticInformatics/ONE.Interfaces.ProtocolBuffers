@@ -29,7 +29,7 @@ message TestAnalyteGroup {
     bool isActive = 7;
 
     // Collection of analytes in the test analyte group
-    repeated Analyte Analytes = 8;
+    repeated Analyte analytes = 8;
 
     // Audit info
     RecordAuditInfo recordAuditInfo = 99;
