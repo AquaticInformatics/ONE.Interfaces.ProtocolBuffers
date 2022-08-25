@@ -28,8 +28,8 @@ message TestAnalyteGroup {
     // Soft Delete of the test analyte group
     bool isActive = 7;
 
-    // Collection of analytes in the test analyte group
-    repeated Analyte analytes = 8;
+    // Collection of identifiers of each Analyte in this Test Group
+    repeated string AnalyteIds = 8;
 
     // Audit info
     RecordAuditInfo recordAuditInfo = 99;
