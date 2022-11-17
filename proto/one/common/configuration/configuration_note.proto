@@ -3,6 +3,7 @@ syntax = "proto3";
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 import "configuration_tag.proto";
+import "gis.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -21,6 +22,9 @@ message ConfigurationNote {
     
     // tags associated with this note
     repeated ConfigurationTag tags = 5;
+
+    // location data
+    GIS geography = 6;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
