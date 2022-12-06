@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDataSourceDefinition {
+    // DataSoruce name
+    string name = 1;
+
+    // Optional: A list of key value configuration options for the datasource data retrieval
+    map<string, google.protobuf.StringValue> options = 2;
+}
+
+message EnterpriseDataTableQueryParameter {
+    // Name of the datatable query parameter
+    string name = 1;
+
+    // Type of the datatable query parameter
+    string type = 2;
+
+    // Value of the datatable query parameter
+    string value = 3;
+}
+
+message EnterpriseDataTableQuery {
+    // Name of DataTable referenced DataSource
+    string dataSourceName = 1;
+
+    // Datatable query parameters
+    repeated EnterpriseDataTableQueryParameter queryParameters = 2;
+}
+
+message EnterpriseDataTableField {
+    // DataTable field name. E.g. StartDate
+    string name = 1;
+    // DataTable field type. E.g. System.String, Guid, System.Double
+    string typeName = 2;
+    // DataTable reference telementry twinRefId
+    string telemetryId = 3;
+    // DataTable refernced DataSource field name
+    string field = 4;
+}
+
+message EnterpriseDataTableDefinition {
+    //Name of the datatable
+    string name = 1;
+ 
+    // Defines DataTable query
+    EnterpriseDataTableQuery Query = 2;
+    
+    // Datatable fields
+    repeated EnterpriseDataTableField fields = 3;    
+}
+
+message EnterpriseDataSetDefinition {
+
+    //Name of dataset
+    string name = 1;
+
+    //Title for the Report
+    string description = 2;
+
+    //Version of dataset
+    string version = 3;
+
+    //list of DataSources required by the dataTables
+    repeated EnterpriseDataSourceDefinition datasources = 4;
+
+    //one or more DataTables composed the DataSet
+    repeated EnterpriseDataTableDefinition DataTables = 5;
+}
