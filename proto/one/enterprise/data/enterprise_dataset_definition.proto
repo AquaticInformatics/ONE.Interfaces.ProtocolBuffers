@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "enterprise_data_source_definition.proto";
+import "enterprise_data_table_definition.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDatasetDefinition {
+
+    // Name of dataset
+    string name = 1;
+
+    // Title for the Report
+    string description = 2;
+
+    // Version of dataset
+    string version = 3;
+
+    // List of DataSources required by the dataTables
+    repeated EnterpriseDataSourceDefinition dataSources = 4;
+
+    // One or more DataTables that composes the Dataset
+    repeated EnterpriseDataTableDefinition dataTables = 5;
+}

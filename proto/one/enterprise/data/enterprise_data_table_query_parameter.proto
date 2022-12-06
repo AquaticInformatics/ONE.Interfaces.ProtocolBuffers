@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDataTableQueryParameter {
+    // Name of the datatable query parameter
+    string name = 1;
+
+    // Value of the datatable query parameter
+    string value = 2;
+}

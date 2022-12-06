@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "enterprise_data_table_query.proto";
+import "enterprise_data_table_field.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDataTableDefinition {
+    // Name of the datatable
+    string name = 1;
+ 
+    // Defines DataTable query
+    EnterpriseDataTableQuery query = 2;
+    
+    // Datatable fields
+    repeated EnterpriseDataTableField fields = 3;    
+}
+

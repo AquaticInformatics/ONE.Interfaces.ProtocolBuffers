@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "enterprise_data_table_query_parameter.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDataTableQuery {
+    // Name of DataSource which referneced by the DataTable
+    string dataSourceName = 1;
+
+    // Datatable query parameters
+    repeated EnterpriseDataTableQueryParameter queryParameters = 2;
+}
