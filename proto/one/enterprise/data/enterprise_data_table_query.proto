@@ -8,6 +8,6 @@ message EnterpriseDataTableQuery {
     // Name of DataSource which referenced by the DataTable
     string dataSourceName = 1;
 
-    // Datatable query parameters
+    // DataTable query parameters
     repeated EnterpriseDataTableQueryParameter queryParameters = 2;
 }

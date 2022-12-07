@@ -3,9 +3,9 @@ syntax = "proto3";
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
 message EnterpriseDataSourceDefinition {
-    // DataSoruce name
+    // DataSource name
     string name = 1;
 
-    // Optional: A list of key value configuration options for the datasource data retrieval
+    // Optional: A list of key value configuration options for the DataSource data retrieval
     map<string, string> options = 2;
 }
