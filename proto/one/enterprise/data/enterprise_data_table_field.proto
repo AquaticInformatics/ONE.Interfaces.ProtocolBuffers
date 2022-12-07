@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message EnterpriseDataTableField {
+    // DataTable field name. E.g. StartDate
+    string name = 1;
+
+    // DataTable field type. E.g. System.String, Guid, System.Double
+    string typeName = 2;
+
+    // DataTable reference telemetry twinRefId
+    string telemetryId = 3;
+    
+    // DataTable referenced DataSource field name
+    string field = 4;
+}
