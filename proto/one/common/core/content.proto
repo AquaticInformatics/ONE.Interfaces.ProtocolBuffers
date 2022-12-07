@@ -68,6 +68,7 @@ import "configuration_note.proto";
 import "configuration_tag.proto";
 import "analyte.proto";
 import "test_analyte_group.proto";
+import "enterprise_dataset_definitions.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -75,7 +76,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 97
+    // NEXT AVAILABLE ID: 98
     oneof content {
         // common
 
@@ -154,6 +155,7 @@ message Content {
         // data
         PlantStatuses plantStatuses = 49;
         AccountStatuses accountStatuses = 43;
+        EnterpriseDatasetDefinitions enterpriseDatasetDefinitions = 97;
 
         // report
         ReportDefinitions ReportDefinitions = 72;
