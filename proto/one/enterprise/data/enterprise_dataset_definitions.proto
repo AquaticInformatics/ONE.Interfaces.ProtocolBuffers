@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-import "enterprise_dataset_definition.proto";
-
-option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
-
-message EnterpriseDatasetDefinitions {
-    repeated EnterpriseDatasetDefinition items = 1;
-}

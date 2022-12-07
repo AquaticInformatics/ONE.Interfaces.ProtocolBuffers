@@ -22,3 +22,7 @@ message EnterpriseDatasetDefinition {
     // One or more DataTables that composes the Dataset
     repeated EnterpriseDataTableDefinition dataTables = 5;
 }
+
+message EnterpriseDatasetDefinitions {
+    repeated EnterpriseDatasetDefinition items = 1;
+}
