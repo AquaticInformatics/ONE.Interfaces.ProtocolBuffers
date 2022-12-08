@@ -16,11 +16,14 @@ message EnterpriseDatasetDefinition {
     // Version of dataset
     string version = 3;
 
+    // Dataset belonging tenant twin id
+    string TenantId = 4;
+
     // List of DataSources required by the dataTables
-    repeated EnterpriseDataSourceDefinition dataSources = 4;
+    repeated EnterpriseDataSourceDefinition dataSources = 5;
 
     // One or more DataTables that composes the Dataset
-    repeated EnterpriseDataTableDefinition dataTables = 5;
+    repeated EnterpriseDataTableDefinition dataTables = 6;
 }
 
 message EnterpriseDatasetDefinitions {
