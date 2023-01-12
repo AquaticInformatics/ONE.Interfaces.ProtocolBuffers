@@ -20,4 +20,7 @@ message ComputationVariableBinding {
 
    // Name of function associated to variable
    string functionName = 7;
+
+   // used to determine relative cell range for grouping functions
+   string grouping = 8;
 }
