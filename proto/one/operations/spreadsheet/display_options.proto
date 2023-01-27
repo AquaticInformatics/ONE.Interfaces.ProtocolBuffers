@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DisplayOptions {
+
+   // optional - number of decimal places to display 
+   google.protobuf.Int32Value decimalPlaces = 1;  
+}
