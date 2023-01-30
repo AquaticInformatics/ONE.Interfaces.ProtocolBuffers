@@ -4,6 +4,7 @@ import "data_source_binding.proto";
 import "limit.proto";
 import "reportable_qualifier_definition.proto";
 import "valid_value.proto";
+import "display_options.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -60,4 +61,7 @@ message Column
 
     //Guids of the parameter agency codes used to create the column taken from the plant wizards subtypes twindata
     repeated string parameterAgencyCodeIds = 17; 
+
+    // Optional display preferences for this column
+    DisplayOptions displayOptions = 18;
 }
