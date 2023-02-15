@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option csharp_namespace ="ONE.Models.CSharp";
- 
+
 enum EnumDataSource {
     DATASOURCE_UNKNOWN = 0;
     DATASOURCE_FORM = 1;                    // Data related to Mobile App
@@ -11,4 +11,5 @@ enum EnumDataSource {
     DATASOURCE_IMPORT = 5;                  // Data related to imports
     DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Common.Spreadsheet.Definition
     DATASOURCE_CONNECT = 7;                 // Data related to Mobile Connect
+    DATASOURCE_SAMPLE_MANAGER = 8;          // Data related to Sample Manager
 }
