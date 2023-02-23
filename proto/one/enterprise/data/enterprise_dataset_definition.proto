@@ -25,7 +25,7 @@ message EnterpriseDatasetDefinition {
     // One or more DataTables that composes the Dataset
     repeated EnterpriseDataTableDefinition dataTables = 6;
     
-    // DataSource query parameters
+    // Global query parameters that will be cascaded to the DataTables query parameters
     repeated EnterpriseDataTableQueryParameter queryParameters = 7;
 }
 
