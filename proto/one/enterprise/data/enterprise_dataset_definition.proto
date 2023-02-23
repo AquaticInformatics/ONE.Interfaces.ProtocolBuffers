@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "enterprise_data_source_definition.proto";
 import "enterprise_data_table_definition.proto";
+import "enterprise_data_table_query_parameter.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
@@ -24,6 +25,9 @@ message EnterpriseDatasetDefinition {
 
     // One or more DataTables that composes the Dataset
     repeated EnterpriseDataTableDefinition dataTables = 6;
+    
+    // Global query parameters that will be cascaded to the DataTables query parameters
+    repeated EnterpriseDataTableQueryParameter queryParameters = 7;
 }
 
 message EnterpriseDatasetDefinitions {
