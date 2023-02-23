@@ -9,3 +9,8 @@ message EnterpriseDataTableQueryParameter {
     // Value of the DataTable query parameter
     string value = 2;
 }
+
+message EnterpriseDataTableQueryParameters
+{
+    repeated EnterpriseDataTableQueryParameter items = 1;
+}
