@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "enterprise_data_source_definition.proto";
 import "enterprise_data_table_definition.proto";
+import "enterprise_data_table_query_parameter.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
