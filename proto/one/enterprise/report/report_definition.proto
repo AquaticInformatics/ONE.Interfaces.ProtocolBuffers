@@ -37,10 +37,17 @@ message ReportDefinition{
     // When it was last run
     JsonTicksDateTime lastRunOn = 9;
 
+    // Version
+    int32 version = 10;
+
+    // The Report Definition owned plant belonging Tenant Id
+    google.protobuf.StringValue tenantId = 11;
+
     google.protobuf.FieldMask updateMask = 98;
 
     // record_auditinfo
     RecordAuditInfo recordAuditInfo = 99;
+
 
 }
 
