@@ -27,6 +27,8 @@ message ReportDefinitionRun {
   string createdById = 7;
 
   JsonTicksDateTime createdOn = 8;
+
+  JsonTicksDateTime reportRendered = 9;
 }
 
 message ReportDefinitionRuns {
