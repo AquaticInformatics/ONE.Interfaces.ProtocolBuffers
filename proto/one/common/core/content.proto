@@ -69,6 +69,7 @@ import "configuration_tag.proto";
 import "analyte.proto";
 import "test_analyte_group.proto";
 import "enterprise_dataset_definition.proto";
+import "report_run.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
