@@ -161,6 +161,7 @@ message Content {
         ReportDefinitions ReportDefinitions = 72;
         ReportDefinitionRuns ReportDefinitionRuns = 78;
         ReportDefinitionTags ReportDefinitionTags = 79;
+        ReportRuns ReportRuns = 99;
 
         // operations
 
