@@ -1,19 +1,23 @@
 syntax = "proto3";
-  
+
 import "enum_reportable_qualifier.proto";
 import "enum_reportable_qualifier_definition.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
- 
+
 // The reportable qualifier definition determines how reportable qualifier is interpreted for the defined parameter
 message ReportableQualifierDefinition
 {
     // The type of reportable qualifer
-    EnumReportableQualifier enumReportableQualifier = 1;                            
-    
+    EnumReportableQualifier enumReportableQualifier = 1;
+
     // How to interpret the qualifer
-    EnumReportableQualifierDefinition enumReportableQualifierDefinition = 2;        
-    
+    EnumReportableQualifierDefinition enumReportableQualifierDefinition = 2;
+
     // The value if the interpretation is a constant
-    double constantValue = 3;                                                   
+    double constantValue = 3;
+}
+
+message ReportableQualifierDefinitions {
+    repeated ReportableQualifierDefinition items = 1;
 }
