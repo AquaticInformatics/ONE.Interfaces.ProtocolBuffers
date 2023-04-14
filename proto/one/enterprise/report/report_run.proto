@@ -41,13 +41,10 @@ message ReportRun{
     JsonTicksDateTime createdOn = 11;
     
     // Shows when the report is completed
-    JsonTicksDateTime renderCompleted = 12;
-
-    google.protobuf.FieldMask updateMask = 98;
+    JsonTicksDateTime reportRendered = 12;
 
     // record_auditinfo
     RecordAuditInfo recordAuditInfo = 99;
-
 }
 
 message ReportRuns{
