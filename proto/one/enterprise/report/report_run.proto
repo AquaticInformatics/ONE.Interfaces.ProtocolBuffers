@@ -42,9 +42,6 @@ message ReportRun{
     
     // Shows when the report is completed
     JsonTicksDateTime reportRendered = 12;
-
-    // record_auditinfo
-    RecordAuditInfo recordAuditInfo = 99;
 }
 
 message ReportRuns{
