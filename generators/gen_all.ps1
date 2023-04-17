@@ -25,9 +25,9 @@ $logName =  (Get-Date -DisplayHint Time).ToString().Replace(":","_").Replace("/"
 $commandPath = Split-Path $MyInvocation.MyCommand.Path -Parent
 
 # Start-Transcript $logName
-foreach($file in $files)
+foreach($fileName in $files.Name)
 {
-    $Command = "$commandPath\protoc\tool\protoc $flags $file"
+    $Command = "$commandPath\protoc\tool\protoc $flags $fileName"
     echo `n$Command
 
     Invoke-Expression -Command $Command
