@@ -10,7 +10,7 @@ option csharp_namespace ="ONE.Models.CSharp";
 message ReportRun{
     
     // Id of the ReportDefinition
-    string reportDefinitionid = 1; 
+    string reportDefinitionId = 1; 
     
     // Name of Report Definition
     google.protobuf.StringValue name = 2;
