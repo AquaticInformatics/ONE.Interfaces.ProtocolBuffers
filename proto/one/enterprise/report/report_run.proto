@@ -1,0 +1,47 @@
+syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+import "enum_rendering_engine.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ReportRun{
+    
+    // Id of the ReportDefinition
+    string reportDefinitionId = 1; 
+    
+    // Name of Report Definition
+    google.protobuf.StringValue name = 2;
+    
+    // Report Definition owner
+    google.protobuf.StringValue ownerDigitalTwinRefId = 3;
+
+    //  Rendering Engine used 0:unknown 1:excel
+    EnumRenderingEngine renderingEngine = 4;
+    
+    // Id of the ReportDefinitionRun
+    string reportDefinitionRunId = 5;
+
+    // The name of the report template file
+    google.protobuf.StringValue sourceTemplateName = 6;
+    
+    // The name of the report output file
+    google.protobuf.StringValue reportOutputName = 7;
+    
+    // Start time of the report
+    JsonTicksDateTime startDate = 8;
+    
+    // End time of the report
+    JsonTicksDateTime endDate = 9;
+    
+    string createdById = 10;
+    
+    JsonTicksDateTime createdOn = 11;
+    
+    // Shows when the report is completed
+    JsonTicksDateTime reportRendered = 12;
+}
+
+message ReportRuns{
+	repeated ReportRun items = 1;
+}
