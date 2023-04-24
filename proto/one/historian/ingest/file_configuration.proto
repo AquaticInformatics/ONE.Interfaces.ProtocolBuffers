@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message FileConfiguration
+{
+     /// Where to monitor for new files
+     string MonitorPath = 1;
+
+     // Where to monitor for new files
+     google.protobuf.StringValue MonitorFileFilter = 2;
+
+     // Where to put files that have errors
+     string ErrorPath = 3;
+
+     // Where to put files that have been processed.
+     string SuccessPath = 4;
+
+     // How long to keep files after processing
+     uint32 FileRetentionTime = 5;
+
+     // Should we actively monitor the directory for changes rather than checking per CycleFrequency
+     bool WatchForChanges = 6;
+ }
+
+message FileConfigurations {
+    repeated FileConfiguration items = 1;
+}

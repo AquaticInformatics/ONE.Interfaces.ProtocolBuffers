@@ -70,6 +70,7 @@ import "analyte.proto";
 import "test_analyte_group.proto";
 import "enterprise_dataset_definition.proto";
 import "report_run.proto";
+import "ingest_client.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -77,7 +78,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 99
+    // NEXT AVAILABLE ID: 100
     oneof content {
         // common
 
@@ -189,5 +190,7 @@ message Content {
         // historian
         // data
         HistorianDatas historianDatas = 90;
+        // ingest
+        IngestClient ingestClient = 99;
     }
 }
