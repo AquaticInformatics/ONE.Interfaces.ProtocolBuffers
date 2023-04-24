@@ -191,6 +191,6 @@ message Content {
         // data
         HistorianDatas historianDatas = 90;
         // ingest
-        IngestClient ingestClient = 99;
+        IngestClients ingestClients = 99;
     }
 }
