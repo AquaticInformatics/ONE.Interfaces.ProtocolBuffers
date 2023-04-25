@@ -5,8 +5,7 @@ import "file_configuration.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message IngestClient
-{
+message IngestClient {
      // Client name
      string name = 1;
 

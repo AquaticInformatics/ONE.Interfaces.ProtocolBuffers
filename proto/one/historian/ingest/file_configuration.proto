@@ -4,9 +4,8 @@ import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message FileConfiguration
-{
-     /// Where to monitor for new files
+message FileConfiguration {
+     // Where to monitor for new files
      string monitorPath = 1;
 
      // Where to monitor for new files
