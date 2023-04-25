@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "enum_log_level.proto";
+import "file_configuration.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message IngestClient {
+     // Client name
+     string name = 1;
+
+     // Client SubType Guid
+     string subTypeId = 2;
+
+     // Whether the client is enabled
+     bool enabled = 3;
+
+     // Log Level for the Client
+     EnumLogLevel logLevel = 4;
+
+     // Frequency in seconds the client should check for configuration updates
+     uint32 configCheckFrequencySeconds = 5;
+
+     // Frequency in seconds the client should run data source drivers
+     uint32 cycleFrequencySeconds = 6;
+
+     // These are the Paths for the client to monitor for files
+     repeated FileConfiguration filesToMonitor = 7;
+ }
+
+message IngestClients {
+    repeated IngestClient items = 1;
+}
