@@ -1,0 +1,13 @@
+syntax = "proto3";
+import "signalr_one_hub_dataset_event.proto";
+import "signalr_one_hub_event_content_map.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SignalROneHubEventContent {
+    oneof content {
+        SignalROneHubEventContentMap default = 1;
+        SignalROneHubDatasetEvent datasetEvent = 2;
+    }
+     
+}

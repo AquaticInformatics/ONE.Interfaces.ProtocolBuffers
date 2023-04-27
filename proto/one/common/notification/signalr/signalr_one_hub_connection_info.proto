@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SignalROneHubConnectionInfo {
+    string appId = 1;
+    string connectionId = 2;
+    string tenantId = 3;
+    string userId = 4;
+
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "signalr_one_hub_event.proto";
+import "signalr_one_hub_connection_info.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SignalROneHubMessage {
+    SignalROneHubConnectionInfo recipient = 1;
+    SignalROneHubConnectionInfo sender = 2;
+    SignalROneHubEvent eventInfo = 3;
+
+}

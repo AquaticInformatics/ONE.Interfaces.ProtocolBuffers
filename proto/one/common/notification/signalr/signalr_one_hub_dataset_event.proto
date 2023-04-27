@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SignalROneHubDatasetEvent {
+    string datasetTwinRefId = 1;
+}
