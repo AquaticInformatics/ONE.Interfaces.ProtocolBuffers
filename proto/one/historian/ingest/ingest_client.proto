@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "enum_log_level.proto";
+import "enum_one_log_level.proto";
 import "file_configuration.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
@@ -16,7 +16,7 @@ message IngestClient {
      bool enabled = 3;
 
      // Log Level for the Client
-     EnumLogLevel logLevel = 4;
+     EnumOneLogLevel logLevel = 4;
 
      // Frequency in seconds the client should check for configuration updates
      uint32 configCheckFrequencySeconds = 5;
