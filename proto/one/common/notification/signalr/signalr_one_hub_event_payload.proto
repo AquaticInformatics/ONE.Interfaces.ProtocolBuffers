@@ -1,13 +1,11 @@
 syntax = "proto3";
 import "signalr_one_hub_dataset_event.proto";
-import "signalr_one_hub_event_content_map.proto";
-
+import "key_value.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
-message SignalROneHubEventContent {
+message SignalROneHubEventPayload {
     oneof content {
-        SignalROneHubEventContentMap default = 1;
+        KeyValues keyValues = 1;
         SignalROneHubDatasetEvent datasetEvent = 2;
     }
-     
 }

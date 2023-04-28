@@ -1,5 +1,5 @@
 syntax = "proto3";
-import "signalr_one_hub_event_content.proto";
+import "signalr_one_hub_event_payload.proto";
 import "jsonTicksDateTime.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
@@ -7,6 +7,6 @@ option csharp_namespace ="ONE.Models.CSharp";
 message SignalROneHubEvent {
     string area = 1;
     string name = 2;
-    JsonTicksDateTime time = 3;
-    SignalROneHubEventContent content = 4;
+    JsonTicksDateTime dateTimeUTC = 3;
+    SignalROneHubEventPayload payload = 4;
 }

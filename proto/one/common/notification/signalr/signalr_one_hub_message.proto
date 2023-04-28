@@ -8,5 +8,4 @@ message SignalROneHubMessage {
     SignalROneHubConnectionInfo recipient = 1;
     SignalROneHubConnectionInfo sender = 2;
     SignalROneHubEvent eventInfo = 3;
-
 }

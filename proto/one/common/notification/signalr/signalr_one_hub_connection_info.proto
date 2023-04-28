@@ -7,5 +7,4 @@ message SignalROneHubConnectionInfo {
     string connectionId = 2;
     string tenantId = 3;
     string userId = 4;
-
 }
