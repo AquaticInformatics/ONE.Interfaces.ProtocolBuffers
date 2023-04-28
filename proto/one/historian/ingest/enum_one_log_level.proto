@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumOneLogLevel {
+    ONE_LOG_LEVEL_UNKNOWN = 0;
+    ONE_LOG_LEVEL_FATAL = 1;
+    ONE_LOG_LEVEL_ERROR = 2;
+    ONE_LOG_LEVEL_WARN = 3;
+    ONE_LOG_LEVEL_INFO = 4;
+    ONE_LOG_LEVEL_DEBUG = 5;
+    ONE_LOG_LEVEL_TRACE = 6;
+}
