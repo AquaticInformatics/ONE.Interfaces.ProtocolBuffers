@@ -1,10 +1,11 @@
 syntax = "proto3";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
 message SignalROneHubConnectionInfo {
-    string appId = 1;
-    string connectionId = 2;
-    string tenantId = 3;
-    string userId = 4;
+    google.protobuf.StringValue appId = 1;
+    google.protobuf.StringValue connectionId = 2;
+    google.protobuf.StringValue tenantId = 3;
+    google.protobuf.StringValue userId = 4;
 }
