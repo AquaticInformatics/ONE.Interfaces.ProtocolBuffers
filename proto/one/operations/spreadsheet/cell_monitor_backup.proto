@@ -1,6 +1,8 @@
 syntax = "proto3";
  
 import "google/protobuf/wrappers.proto";
+import "cellvalue_backup.proto";
+import "outputcell_backup.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -10,32 +12,4 @@ message CellMonitorBackup {
 
     // the collection of cell values being backed up
     repeated CellValueBackup cellValues = 2;
-}
-
-message OutputCellBackup {
-    // the row number for this cell
-    uint32 rowNumber = 1;
-
-    // the column number for this cell
-    uint32 columnNumber = 2;
-
-    // the computation binding ID
-    string bindingId = 3;
-
-    // the associations between this output cell and computation input cells
-    map<string, string> inputCellKeyMaps = 4;
-}
-
-message CellValueBackup {
-    // the row number for this cell
-    uint32 rowNumber = 1;
-
-    // the column number for this cell
-    uint32 columnNumber = 2;
-
-    // the latest numeric cell for this cell
-    google.protobuf.DoubleValue value = 3;
-
-    // the associated output cell keys
-    repeated string outputCellKeys = 4;
 }

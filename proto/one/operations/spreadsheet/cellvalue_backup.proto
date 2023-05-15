@@ -1,0 +1,32 @@
+syntax = "proto3";
+ 
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message CellValueBackup {
+    // the row number for this cell
+    uint32 rowNumber = 1;
+
+    // the column number for this cell
+    uint32 columnNumber = 2;
+
+    // the latest numeric value for this cell
+    google.protobuf.DoubleValue value = 3;
+
+    // the associated output cell keys
+    repeated string outputCellKeys = 4;
+
+    // the stringValue in the cell
+    google.protobuf.StringValue stringValue = 5;
+
+    // ISO-8601 formatted string that is the timestamp of the most recent value in the cell
+    google.protobuf.StringValue timestamp = 6;
+
+    // rowNumber/columnNumber combination that gives this cell a unique address within the worksheet
+    string cellKey = 7;
+}
+
+message CellValueBackups {
+    repeated CellValueBackup items = 1;
+}
