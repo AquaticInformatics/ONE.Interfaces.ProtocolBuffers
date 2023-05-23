@@ -1,0 +1,32 @@
+syntax = "proto3";
+ 
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message OutputCellBackup {
+    // the row number for this cell
+    uint32 rowNumber = 1;
+
+    // the column number for this cell
+    uint32 columnNumber = 2;
+
+    // the computation binding ID
+    string bindingId = 3;
+
+    // the associations between this output cell and computation input cells
+    map<string, string> inputCellKeyMaps = 4;
+
+    // the last requestId associated with this cell
+    string requestId = 5;
+
+    // The number of times the associated requestId has caused an execution of this cell
+    int32 numberOfExecutions = 6;
+
+    // rowNumber/columnNumber combination that gives this cell a unique address within the worksheet
+    string cellKey = 7;
+}
+
+message OutputCellBackups {
+    repeated OutputCellBackup items = 1;
+}
