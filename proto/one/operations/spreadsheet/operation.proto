@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "worksheet_definition.proto";
+import "spreadsheet_definition.proto";
+import "spreadsheet_computation.proto";
+import "configuration.proto";
+import "digital_twin.proto";
+import "user.proto";
+import "report_run.proto";
+import "report_definition.proto";
+
+option csharp_namespace = "One.Models.CSharp";
+
+message Operation {
+	// The spreadsheet definition tied to the operation.
+	SpreadsheetDefinition spreadsheetDefinition = 1;
+
+	// The worksheet definitions for all 4 types.
+	repeated WorksheetDefinition worksheetDefinition = 2;
+
+	// All computations tied to the spreadsheet.
+	repeated SpreadsheetComputation spreadsheetComputations = 3;
+
+	// All dashboards tied to the operation.
+	repeated Configuration dashboards = 4;
+
+	// All graphs tied to the operation.
+	repeated Configuration graphs = 5;
+
+	// All views tied to the associated worksheets.
+	repeated Configuration worksheetViews = 6;
+
+	// All logbooks tied to the operation.
+	repeated Configuration logbooks = 7;
+
+	// A list of digital twins and their children
+	repeated DigitalTwin digitalTwins = 8;
+
+	// A list of users relevant to the operation.
+	repeated User users = 9;
+
+	// All operation report runs.
+	repeated ReportRun reportRuns = 10;
+
+	// All operation report definitions.
+	repeated ReportDefinition reportDefinitions = 11;
+}
