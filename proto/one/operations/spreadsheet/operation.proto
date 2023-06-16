@@ -45,3 +45,7 @@ message Operation {
 	// All operation report definitions.
 	repeated ReportDefinition reportDefinitions = 11;
 }
+
+message Operations {
+	repeated Operation items = 1;
+}
