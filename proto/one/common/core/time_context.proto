@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "enum_time_context.proto";
+import "enum_timezone.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message TimeContext
+{
+    // type of this TimeContext
+    EnumTimeContext contextType = 1;
+
+    // timezone associated with this TimeContext
+    EnumTimeZone timezone = 2;
+}
