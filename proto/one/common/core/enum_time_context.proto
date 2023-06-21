@@ -1,0 +1,15 @@
+syntax = "proto3";
+ 
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumTimeContext 
+{
+    TIMECONTEXT_UNKNOWN = 0;
+    TIMECONTEXT_UTC = 1;
+    TIMECONTEXT_RIO = 2;
+    TIMECONTEXT_USER = 3;
+    TIMECONTEXT_OPERATION = 4;
+    TIMECONTEXT_TENANT = 5;
+    TIMECONTEXT_DIGITALTWIN = 6;
+    TIMECONTEXT_CLIENT = 7;
+}
