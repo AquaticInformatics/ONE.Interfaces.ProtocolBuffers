@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "enum_time_context.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
@@ -20,4 +21,10 @@ message JsonTicksDateTime
         // Instruments will only set the ticks value
         google.protobuf.UInt64Value ticks = 2;                   
     }
+
+    // type of the TimeContext for this dateTime
+    EnumTimeContext contextType = 3;
+
+    // optional digitalTwin asociated to this dateTime
+    google.protobuf.StringValue twinRefId = 4;
 }
