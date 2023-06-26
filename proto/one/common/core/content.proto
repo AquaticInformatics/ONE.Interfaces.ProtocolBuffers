@@ -169,7 +169,7 @@ message Content {
         ReportRuns ReportRuns = 98;
 
         // operations
-        Operations operations = 102;
+        OperationExport operationExport = 102;
 
         // spreadsheet
         Rows rows = 14;
