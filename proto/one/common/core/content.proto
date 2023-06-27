@@ -73,6 +73,7 @@ import "report_run.proto";
 import "ingest_client.proto";
 import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
+import "operation.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -80,7 +81,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 102
+    // NEXT AVAILABLE ID: 103
     oneof content {
         // common
 
@@ -168,6 +169,7 @@ message Content {
         ReportRuns ReportRuns = 98;
 
         // operations
+        OperationExports operationExports = 102;
 
         // spreadsheet
         Rows rows = 14;
