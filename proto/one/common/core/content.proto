@@ -73,7 +73,7 @@ import "report_run.proto";
 import "ingest_client.proto";
 import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
-import "operation.proto";
+import "operation_export.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
