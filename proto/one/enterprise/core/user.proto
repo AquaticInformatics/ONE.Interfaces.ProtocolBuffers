@@ -98,6 +98,9 @@ message User {
 	// Is User only used for non-interactive use?
 	bool IsHeadlessUser = 27;
 
+	// Last login datetime in UTC
+	JsonTicksDateTime  LastLoginDateUtc = 28;
+
 	google.protobuf.FieldMask updateMask = 98;
 
 	// Audit information for the feature
