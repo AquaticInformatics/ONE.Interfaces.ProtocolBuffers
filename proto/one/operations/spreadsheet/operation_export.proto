@@ -10,7 +10,7 @@ import "report_run.proto";
 import "report_definition.proto";
 import "tenant.proto";
 
-option csharp_namespace = "One.Models.CSharp";
+option csharp_namespace = "ONE.Models.CSharp";
 
 message OperationExport {
 	// The parent tenant used to scaffold users consistently.
