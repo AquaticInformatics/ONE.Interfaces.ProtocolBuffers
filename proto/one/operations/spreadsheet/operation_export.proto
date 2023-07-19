@@ -5,49 +5,34 @@ import "spreadsheet_definition.proto";
 import "spreadsheet_computation.proto";
 import "configuration.proto";
 import "digital_twin.proto";
-import "user.proto";
-import "report_run.proto";
 import "report_definition.proto";
-import "tenant.proto";
 
 option csharp_namespace = "ONE.Models.CSharp";
 
 message OperationExport {
-	// The parent tenant used to scaffold users consistently.
-	Tenant tenant = 1;
-
 	// The spreadsheet definition tied to the operation.
-	SpreadsheetDefinition spreadsheetDefinition = 2;
+	SpreadsheetDefinition spreadsheetDefinition = 1;
 
 	// The worksheet definitions for all 4 types.
-	repeated WorksheetDefinition worksheetDefinition = 3;
+	repeated WorksheetDefinition worksheetDefinitions = 2;
 
 	// All computations tied to the spreadsheet.
-	repeated SpreadsheetComputation spreadsheetComputations = 4;
-
-	// All dashboards tied to the operation.
-	repeated Configuration dashboards = 5;
+	repeated SpreadsheetComputation spreadsheetComputations = 3;
 
 	// All graphs tied to the operation.
-	repeated Configuration graphs = 6;
+	repeated Configuration graphs = 4;
 
 	// All views tied to the associated worksheets.
-	repeated Configuration worksheetViews = 7;
+	repeated Configuration worksheetViews = 5;
 
 	// All logbooks tied to the operation.
-	repeated Configuration logbooks = 8;
+	repeated Configuration logbooks = 6;
 
 	// A list of digital twins and their children
-	repeated DigitalTwin digitalTwins = 9;
-
-	// A list of users relevant to the operation.
-	repeated User users = 10;
-
-	// All operation report runs.
-	repeated ReportRun reportRuns = 11;
+	repeated DigitalTwin digitalTwins = 7;
 
 	// All operation report definitions.
-	repeated ReportDefinition reportDefinitions = 12;
+	repeated ReportDefinition reportDefinitions = 8;
 }
 
 message OperationExports {
