@@ -5,10 +5,7 @@ import "spreadsheet_definition.proto";
 import "spreadsheet_computation.proto";
 import "configuration.proto";
 import "digital_twin.proto";
-import "user.proto";
-import "report_run.proto";
 import "report_definition.proto";
-import "tenant.proto";
 
 option csharp_namespace = "ONE.Models.CSharp";
 
@@ -34,11 +31,8 @@ message OperationExport {
 	// A list of digital twins and their children
 	repeated DigitalTwin digitalTwins = 7;
 
-	// A list of users relevant to the operation.
-	repeated User users = 8;
-
 	// All operation report definitions.
-	repeated ReportDefinition reportDefinitions = 9;
+	repeated ReportDefinition reportDefinitions = 8;
 }
 
 message OperationExports {
