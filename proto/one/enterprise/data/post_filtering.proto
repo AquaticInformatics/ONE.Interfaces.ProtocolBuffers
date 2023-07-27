@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "post_filtering_column_definition.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message PostFilteringTable {
+
+    // Table name.
+    string name = 1;
+
+    // Column definitions.
+    repeated PostFilteringColumnDefinition columnDefs = 2;
+}
+
+message PostFiltering {
+
+    google.protobuf.BoolValue removeEmptyRows = 1;
+
+    repeated PostFilteringTable tables = 2;
+}
