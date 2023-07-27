@@ -17,7 +17,7 @@ message ReportDefinitionJsonV2 {
 
     EnterpriseDataTableQueryParameters queryParameters = 2;
 
-    EnterpriseDataTableQueryParameters additionalContent = 3;
+    repeated EnterpriseDataTableQueryParameter additionalContent = 3;
 
     PostFiltering postFiltering = 4;
 }
