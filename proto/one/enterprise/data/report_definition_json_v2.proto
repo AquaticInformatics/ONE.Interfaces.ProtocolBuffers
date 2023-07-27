@@ -15,7 +15,7 @@ message ReportDefinitionJsonV2 {
 
     ReportDefinitionCategory category = 1;
 
-    EnterpriseDataTableQueryParameters queryParameters = 2;
+    repeated EnterpriseDataTableQueryParameter queryParameters = 2;
 
     repeated EnterpriseDataTableQueryParameter additionalContent = 3;
 
