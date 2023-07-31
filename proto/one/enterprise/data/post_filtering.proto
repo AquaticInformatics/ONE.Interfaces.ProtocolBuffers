@@ -12,6 +12,9 @@ message PostFilteringTable {
 
     // Column definitions.
     repeated PostFilteringColumnDefinition columnDefs = 2;
+
+    // ag-Grid filters JSON
+    google.protobuf.StringValue filters = 3;
 }
 
 message PostFiltering {
