@@ -5,7 +5,7 @@ import "post_filtering.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
-enum ReportDefinitionCategory {
+enum EnumReportDefinitionCategory {
     REPORT_DEFINITION_CATEGORY_UNDEFINED = 0;
     REPORT_DEFINITION_CATEGORY_SPREADSHEET = 1;
     REPORT_DEFINITION_CATEGORY_SAMPLE_MANAGER = 2;
@@ -13,7 +13,7 @@ enum ReportDefinitionCategory {
 
 message ReportDefinitionJsonV2 {
 
-    ReportDefinitionCategory category = 1;
+    EnumReportDefinitionCategory category = 1;
 
     repeated EnterpriseDataTableQueryParameter queryParameters = 2;
 
