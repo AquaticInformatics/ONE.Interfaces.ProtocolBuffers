@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
+
+message PostFilteringColumnDefinition {
+
+    // Name of field.
+    string field = 1;
+
+    // Optional displayWidth.
+    google.protobuf.Int32Value displayWidth = 2;
+
+    // Hidden flag.
+    google.protobuf.BoolValue hidden = 3;
+
+    // Sort type.
+    google.protobuf.StringValue sort = 4;
+}

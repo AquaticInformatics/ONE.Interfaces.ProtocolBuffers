@@ -30,7 +30,7 @@ message DigitalTwin{
 
     google.protobuf.StringValue propertyBag = 9;
 
-    google.protobuf.StringValue addressId = 10;
+    google.protobuf.StringValue addressId = 10 [deprecated=true];
 
     GIS geography = 11;
     
