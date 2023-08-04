@@ -16,11 +16,7 @@ message ReportDefinitionJsonV2 {
 
     EnumReportDefinitionCategory category = 1;
 
-    google.protobuf.StringValue startTime = 2;
+    repeated EnterpriseDataTableQueryParameter additionalContent = 2;
 
-    google.protobuf.StringValue endTime = 3;
-
-    repeated EnterpriseDataTableQueryParameter additionalContent = 4;
-
-    PostFiltering postFiltering = 5;
+    PostFiltering postFiltering = 3;
 }
