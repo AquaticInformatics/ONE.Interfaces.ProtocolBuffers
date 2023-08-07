@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "enterprise_data_table_query_parameter.proto";
 import "post_filtering.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
@@ -15,9 +16,7 @@ message ReportDefinitionJsonV2 {
 
     EnumReportDefinitionCategory category = 1;
 
-    repeated EnterpriseDataTableQueryParameter queryParameters = 2;
+    repeated EnterpriseDataTableQueryParameter additionalContent = 2;
 
-    repeated EnterpriseDataTableQueryParameter additionalContent = 3;
-
-    PostFiltering postFiltering = 4;
+    PostFiltering postFiltering = 3;
 }
