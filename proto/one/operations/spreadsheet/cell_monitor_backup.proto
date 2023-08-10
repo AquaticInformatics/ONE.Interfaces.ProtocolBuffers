@@ -1,6 +1,5 @@
 syntax = "proto3";
  
-import "google/protobuf/wrappers.proto";
 import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
 
