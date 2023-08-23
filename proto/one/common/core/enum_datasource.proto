@@ -12,4 +12,5 @@ enum EnumDataSource {
     DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Common.Spreadsheet.Definition
     DATASOURCE_CONNECT = 7;                 // Data related to Mobile Connect
     DATASOURCE_SAMPLE_MANAGER = 8;          // Data related to Sample Manager
+    DATASOURCE_WIMS_SYNC = 9;               // Data related to WIMS Sync
 }

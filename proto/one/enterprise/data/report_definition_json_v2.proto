@@ -2,7 +2,6 @@ syntax = "proto3";
 
 import "enterprise_data_table_query_parameter.proto";
 import "post_filtering.proto";
-import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
 
