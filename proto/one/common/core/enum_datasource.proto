@@ -13,4 +13,5 @@ enum EnumDataSource {
     DATASOURCE_CONNECT = 7;                 // Data related to Mobile Connect
     DATASOURCE_SAMPLE_MANAGER = 8;          // Data related to Sample Manager
     DATASOURCE_WIMS_SYNC = 9;               // Data related to WIMS Sync
+    DATASOURCE_WIMS_COMPUTATION = 10;       // Data related to WIMS Computations
 }
