@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-import "google/protobuf/wrappers.proto";
-
 import "enum_datasource.proto";
 import "enum_sampling_statistic.proto";
 
@@ -11,8 +9,4 @@ message DataSourceBinding {
     string bindingId = 1;
     EnumDataSource dataSource = 2;
     EnumSamplingStatistic enumSamplingStatistic = 3;
-
-    // Delay seconds addition to calculate latest statistic value. 
-    // E.g. 300 indicates midnight plus 5 minutes to calculate latest daily value.
-    google.protobuf.UInt32Value delaySecondsOnCalcLatestStats = 4; 
 }
