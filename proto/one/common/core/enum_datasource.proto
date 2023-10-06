@@ -14,4 +14,5 @@ enum EnumDataSource {
     DATASOURCE_SAMPLE_MANAGER = 8;          // Data related to Sample Manager
     DATASOURCE_WIMS_SYNC = 9;               // Data related to WIMS Sync
     DATASOURCE_WIMS_COMPUTATION = 10;       // Data related to WIMS Computations
+    DATASOURCE_SPREADSHEET_HISTORIAN = 11;  // Data related to One.Historian.Data (Twin type is HISTORIAN_DATA and subtype is TELEMETRY_INGEST_DATA)
 }
