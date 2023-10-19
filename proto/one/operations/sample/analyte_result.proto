@@ -1,0 +1,60 @@
+syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+import "enum_import_status.proto";
+option csharp_namespace ="ONE.Models.CSharp";
+
+message AnalyteResult {
+
+    // AuthTwinRefId
+    google.protobuf.StringValue authTwinRefId = 1;
+    
+    // The Sample Number (letter and numbers) that describe the sample
+    string sampleNumber = 2;
+    
+    // The name of the analyte.  (The subject of the activity)
+    string analyteName = 3;
+
+    // Analysis Result.  May include qualifier
+    string result = 4;
+
+    // Excuse Qualifier:  See:  https://aquaticinformatics.atlassian.net/wiki/spaces/AOS/pages/33395971/Glossary+Excuse+Qualifiers
+    google.protobuf.StringValue excuseQualifer = 5;
+    
+    // Lab Qualifier: See: https://aquaticinformatics.atlassian.net/wiki/spaces/AOS/pages/33392022/Glossary+Reportable+Qualifiers
+    google.protobuf.StringValue labQualifier = 6;
+
+    // Method Detection Limit
+    google.protobuf.DoubleValue methodDetectionLimit = 7;   
+
+    // Reporting Limit
+    google.protobuf.DoubleValue reportingLimit = 8;
+
+    // Analysis Start
+    JsonTicksDateTime analysisStart = 9;
+    
+    // Analysis End
+    JsonTicksDateTime analysisEnd = 10;
+    
+    // Name of person that performed the analysis
+    google.protobuf.StringValue analyzedBy = 11;
+    
+    // Comment for the analysis
+    google.protobuf.StringValue comment = 12;
+    
+    // ReceivedInLab
+    JsonTicksDateTime receivedInLab = 13;
+    
+    // CollectionDate
+    JsonTicksDateTime collectionDate = 14;
+    
+    // Import File Id
+    google.protobuf.StringValue importFileId = 15;
+    
+    // Import Status Enum
+    EnumImportStatus importStatus = 16;
+}
+
+message AnalyteResults {
+    repeated AnalyteResult items = 1;
+}

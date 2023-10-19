@@ -74,6 +74,7 @@ import "ingest_client.proto";
 import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
 import "operation_export.proto";
+import "analyte_result.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -81,7 +82,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 103
+    // NEXT AVAILABLE ID: 104
     oneof content {
         // common
 
@@ -187,6 +188,7 @@ message Content {
         // sample
         Analytes Analytes = 94;
         TestAnalyteGroups TestAnalyteGroups = 95;
+        AnalyteResults AnalyteResults = 103;
 
         // timeseries
 
