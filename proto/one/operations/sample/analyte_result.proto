@@ -19,7 +19,7 @@ message AnalyteResult {
     string result = 4;
 
     // Excuse Qualifier:  See:  https://aquaticinformatics.atlassian.net/wiki/spaces/AOS/pages/33395971/Glossary+Excuse+Qualifiers
-    google.protobuf.StringValue excuseQualifer = 5;
+    google.protobuf.StringValue excuseQualifier = 5;
     
     // Lab Qualifier: See: https://aquaticinformatics.atlassian.net/wiki/spaces/AOS/pages/33392022/Glossary+Reportable+Qualifiers
     google.protobuf.StringValue labQualifier = 6;
@@ -29,30 +29,33 @@ message AnalyteResult {
 
     // Reporting Limit
     google.protobuf.DoubleValue reportingLimit = 8;
-
-    // Analysis Start
-    JsonTicksDateTime analysisStart = 9;
-    
-    // Analysis End
-    JsonTicksDateTime analysisEnd = 10;
-    
-    // Name of person that performed the analysis
-    google.protobuf.StringValue analyzedBy = 11;
-    
-    // Comment for the analysis
-    google.protobuf.StringValue comment = 12;
     
     // ReceivedInLab
-    JsonTicksDateTime receivedInLab = 13;
+    JsonTicksDateTime receivedInLab = 9;
     
     // CollectionDate
-    JsonTicksDateTime collectionDate = 14;
+    JsonTicksDateTime collectionDate = 10;
+
+    // Analysis Start
+    JsonTicksDateTime analysisStart = 11;
+    
+    // Analysis End
+    JsonTicksDateTime analysisEnd = 12;
+    
+    // Name of person that performed the analysis
+    google.protobuf.StringValue analyzedBy = 13;
+    
+    // Comment for the analysis
+    google.protobuf.StringValue comment = 14;
     
     // Import File Id
     google.protobuf.StringValue importFileId = 15;
     
     // Import Status Enum
     EnumImportStatus importStatus = 16;
+
+    // The string details of the import error(s).
+    google.protobuf.StringValue errorDetails = 17;
 }
 
 message AnalyteResults {
