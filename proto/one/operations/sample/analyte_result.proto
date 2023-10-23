@@ -55,7 +55,7 @@ message AnalyteResult {
     EnumImportStatus importStatus = 16;
 
     // The string details of the import error(s).
-    google.protobuf.StringValue errorDetails = 17;
+    repeated google.protobuf.StringValue errorDetails = 17;
 }
 
 message AnalyteResults {
