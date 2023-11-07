@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message AnalyteResultsImportTelemetry {
+
+    // Name of the result.
+    string name = 1;
+
+    // The column number that contains the value, zero based.
+    int32 valueColumnNumber = 2;
+
+    // Optional properties below, only used for narrow format csv files.
+    // These files usually contain 1 record per file.
+
+    // The filter name of the result to search for in the file.
+    // Needed because this may differ from name above.
+    google.protobuf.StringValue filter = 3;
+
+    // The column number that contains the filter name.
+    google.protobuf.Int32Value filterByColumnNumber = 4;
+}
+
+message AnalyteResultsImportTelemetries {
+    repeated AnalyteResultsImportTelemetry items = 1;
+}
