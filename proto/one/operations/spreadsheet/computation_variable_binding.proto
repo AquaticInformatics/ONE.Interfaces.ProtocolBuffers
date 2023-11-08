@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "enum_cell_range_action.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -23,4 +24,7 @@ message ComputationVariableBinding {
 
    // used to determine relative cell range for grouping functions
    string grouping = 8;
+
+   // The columnNumber of the reference column if different from columnNum
+   google.protobuf.UInt32Value referenceColumnNum = 9;
 }
