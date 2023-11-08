@@ -15,6 +15,7 @@ message AnalyteResultsImportFile {
     // Field delimiter (",").
     string delimiter = 3;
 
+    // Ignore blank lines or not.
     bool ignoreBlankLines = 4;
 
     // Indicates if the file has header row(s).
