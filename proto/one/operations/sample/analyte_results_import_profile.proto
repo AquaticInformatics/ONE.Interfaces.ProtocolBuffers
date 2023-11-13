@@ -1,10 +1,10 @@
 syntax = "proto3";
-
+import "google/protobuf/wrappers.proto";
 import "analyte_results_import_file.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message AnalyteResultsImportProfile {
+message AnalyteResultsImportProfile {    
 
     // Determines if the import profile will be run.
     bool enabled = 1;
@@ -15,7 +15,10 @@ message AnalyteResultsImportProfile {
     // Run frequency (hh:mm:ss). For example, 15 minutes: "00:15:00".
     string runFrequency = 3;
 
-    AnalyteResultsImportFiles files = 4;
+    // Operation Id.
+    google.protobuf.StringValue operationId = 4
+
+    AnalyteResultsImportFiles files = 5;
 }
 
 message AnalyteResultsImportProfiles {
