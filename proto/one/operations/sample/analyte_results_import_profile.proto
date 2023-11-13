@@ -9,16 +9,13 @@ message AnalyteResultsImportProfile {
     // Determines if the import profile will be run.
     bool enabled = 1;
 
-    // Name of the import profile.
-    string name = 2;
-
     // Logging level.
-    int32 logLevel = 3;
+    int32 logLevel = 2;
 
     // Run frequency (hh:mm:ss). For example, 15 minutes: "00:15:00".
-    string runFrequency = 4;
+    string runFrequency = 3;
 
-    AnalyteResultsImportFiles files = 5;
+    AnalyteResultsImportFiles files = 4;
 }
 
 message AnalyteResultsImportProfiles {
