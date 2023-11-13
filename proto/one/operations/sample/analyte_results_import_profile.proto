@@ -16,7 +16,7 @@ message AnalyteResultsImportProfile {
     string runFrequency = 3;
 
     // Operation Id.
-    google.protobuf.StringValue operationId = 4
+    google.protobuf.StringValue operationId = 4;
 
     AnalyteResultsImportFiles files = 5;
 }
