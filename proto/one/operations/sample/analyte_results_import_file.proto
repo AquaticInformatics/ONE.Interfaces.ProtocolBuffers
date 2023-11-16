@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "analyte_results_import_telemetry.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message AnalyteResultsImportFile {
+    
+    // Path to look for files ("/sample-data").
+    string path = 1;
+
+    // File name pattern ("*.csv").
+    string fileName = 2;
+
+    // Field delimiter (",").
+    string delimiter = 3;
+
+    // Ignore blank lines or not.
+    bool ignoreBlankLines = 4;
+
+    // Indicates if the file has header row(s).
+    bool hasHeaderRow = 5;
+
+    // Number of rows to skip at the start of the file to account for the header.
+    int32 rowsToSkip = 6;
+
+    // Specifies the format of DateTime data ("yyyy-MM-ddTHH:mm:ss").
+    string dateTimeColumnFormat = 7;
+
+    AnalyteResultsImportTelemetries telemetries = 8;
+}
+
+message AnalyteResultsImportFiles {
+    repeated AnalyteResultsImportFile items = 1;
+}
