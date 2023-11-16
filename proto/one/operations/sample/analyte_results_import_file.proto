@@ -27,7 +27,7 @@ message AnalyteResultsImportFile {
     // Specifies the format of DateTime data ("yyyy-MM-ddTHH:mm:ss").
     string dateTimeColumnFormat = 7;
 
-    AnalyteResultsImportTelemetries telemetry = 8;
+    AnalyteResultsImportTelemetries telemetries = 8;
 }
 
 message AnalyteResultsImportFiles {
