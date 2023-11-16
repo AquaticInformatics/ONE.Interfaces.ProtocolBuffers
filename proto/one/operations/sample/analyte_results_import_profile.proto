@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "analyte_results_import_file.proto";
+import "csv_configuration_file.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -15,7 +15,10 @@ message AnalyteResultsImportProfile {
     // Run frequency (hh:mm:ss). For example, 15 minutes: "00:15:00".
     string runFrequency = 3;
 
-    AnalyteResultsImportFiles files = 4;
+    // CSV files for the profile.
+    CsvConfigurationFiles csvFiles = 4;
+
+    // XML files and others can be added here in the future.
 }
 
 message AnalyteResultsImportProfiles {
