@@ -29,6 +29,9 @@ message CsvConfigurationFile {
 
     // Telemetries for the profile.
     AnalyteResultsImportTelemetries telemetries = 8;
+
+    // CSV narrow (true) or wide format (false).
+    bool isNarrow = 9;
 }
 
 message CsvConfigurationFiles {
