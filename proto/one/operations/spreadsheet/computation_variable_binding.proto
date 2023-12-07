@@ -27,4 +27,7 @@ message ComputationVariableBinding {
 
    // The columnNumber of the reference column if different from columnNum
    google.protobuf.UInt32Value referenceColumnNum = 9;
+
+   // Used to indicate that the variable associated with this binding has a metadata property that needs to be populated
+   bool HasMetadata = 10;
 }

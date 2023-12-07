@@ -28,6 +28,12 @@ message Variable
 
     // Used to return error message if computation execution was unsuccessful
     google.protobuf.StringValue errorMessage = 8;
+
+    // Used to provide extra metadata regarding the variable
+    oneof metadata{
+        // Used for average function calculations the calculation result is divided by this value
+        google.protobuf.Int32Value rowCount = 9;
+    }
 }
 
 message Variables
