@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "enum_datasource.proto";
 import "enum_sampling_statistic.proto";
+import "historian_binding.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -9,4 +10,9 @@ message DataSourceBinding {
     string bindingId = 1;
     EnumDataSource dataSource = 2;
     EnumSamplingStatistic enumSamplingStatistic = 3;
+    // Optional properties below.
+    oneof bindingType {
+      HistorianBinding historianBinding = 4;
+      // For other bindings, e.g. TimeseriesBinding = 5;
+    };
 }
