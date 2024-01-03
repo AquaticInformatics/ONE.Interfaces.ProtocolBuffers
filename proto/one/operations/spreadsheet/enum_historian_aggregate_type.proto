@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option csharp_namespace ="ONE.Models.CSharp";
-
-enum EnumHistorianAggregateType {
-    LAST = 0;
-    AVG = 1;
-    FIRST = 2;
-}
