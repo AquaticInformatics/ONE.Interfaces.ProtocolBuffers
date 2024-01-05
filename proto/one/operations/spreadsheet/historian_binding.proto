@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message HistorianBinding {
+    int32 startTime = 2;   // Inclusive, base on operation timezone and time unit is in minutes.
+    int32 stopTime = 3;    // Exclusive, base on operation timezone and time unit is in minutes.
+}
+
