@@ -12,4 +12,5 @@ enum EnumCellRangeAction {
     ACTION_TAKE_ANY = 7; // Take any available value
     ACTION_TAKE_SPECIAL = 8; // Special cases handled by examining the variableBinding
     ACTION_TAKE_CURRENT_AND_NEXT = 9; // Take current value and next value
+    ACTION_TAKE_SPECIAL_WITH_METADATA = 10; // Special cases with metadata variables
 }
