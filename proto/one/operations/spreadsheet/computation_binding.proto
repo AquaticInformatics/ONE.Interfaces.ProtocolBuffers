@@ -29,6 +29,9 @@ message ComputationBinding {
    // details on when to execute computation and where to put the output defaults to every row
    ExecutionDetails executionDetails = 7;
 
+   // expression text of the computation
+   string expression = 8;
+
    // audit information
    RecordAuditInfo recordAuditInfo = 99;
 }
