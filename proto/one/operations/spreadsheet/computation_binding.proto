@@ -3,6 +3,7 @@ syntax = "proto3";
 import "computation_variable_binding.proto";
 import "record_auditinfo.proto";
 import "execution_details.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -28,6 +29,9 @@ message ComputationBinding {
 
    // details on when to execute computation and where to put the output defaults to every row
    ExecutionDetails executionDetails = 7;
+
+   // expression text of the computation
+   google.protobuf.StringValue expression = 8;
 
    // audit information
    RecordAuditInfo recordAuditInfo = 99;
