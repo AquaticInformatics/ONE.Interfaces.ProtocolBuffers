@@ -3,6 +3,7 @@ syntax = "proto3";
 import "computation_variable_binding.proto";
 import "record_auditinfo.proto";
 import "execution_details.proto";
+import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
