@@ -30,7 +30,7 @@ message ComputationBinding {
    ExecutionDetails executionDetails = 7;
 
    // expression text of the computation
-   string expression = 8;
+   google.protobuf.StringValue expression = 8;
 
    // audit information
    RecordAuditInfo recordAuditInfo = 99;
