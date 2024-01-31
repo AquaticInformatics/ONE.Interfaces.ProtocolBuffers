@@ -10,6 +10,7 @@ import "role.proto";
 import "tenant.proto";
 import "user_preference.proto";
 import "user_profile.proto";
+import "enum_identity_provider.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
  
