@@ -10,6 +10,7 @@ import "role.proto";
 import "tenant.proto";
 import "user_preference.proto";
 import "user_profile.proto";
+import "enum_identity_provider.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
  
@@ -100,6 +101,9 @@ message User {
 
 	// Last login datetime in UTC
 	JsonTicksDateTime  LastLoginDateUtc = 28;
+
+	// The identity provider for the user
+	EnumIdentityProvider IdentityProviderType = 29;
 
 	google.protobuf.FieldMask updateMask = 98;
 
