@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "enum_one_log_level.proto";
+import "file_configuration.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DataSourceconfiguration {
+
+    // DataSource Id
+    string id = 1;
+
+    // Client name
+    string name = 2;
+
+    // Client SubType Guid
+    string subTypeId = 3;
+
+    // Interval that data should be collected from the dataSourceDriver
+    string cycleFrequency = 4;
+
+    // Interval that data should be uploaded to Historian
+    string uploadFrequency = 5;
+
+    // Whether the dataSource is enabled
+    bool enabled = 6;
+
+    // Historian log level for the dataSource
+    EnumOneLogLevel logLevel = 7;
+
+    // Configuration of where to look for files related to this dataSource
+    FileConfiguration fileConfiguration = 8;
+
+    // Configuration for the related datSourceDriver
+    string driverConfiguration = 9;
+ }
+
+message DataSourceConfigurations {
+    repeated IngestClient items = 1;
+}
