@@ -36,5 +36,5 @@ message DataSourceconfiguration {
  }
 
 message DataSourceConfigurations {
-    repeated IngestClient items = 1;
+    repeated DataSourceconfiguration items = 1;
 }
