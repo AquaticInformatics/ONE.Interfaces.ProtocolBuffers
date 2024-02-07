@@ -5,15 +5,15 @@ import "file_configuration.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message DataSourceconfiguration {
+message DataSourceConfiguration {
 
     // DataSource Id
     string id = 1;
 
-    // Client name
+    // DataSource name
     string name = 2;
 
-    // Client SubType Guid
+    // DataSource SubType Guid
     string subTypeId = 3;
 
     // Interval that data should be collected from the dataSourceDriver
@@ -36,5 +36,5 @@ message DataSourceconfiguration {
  }
 
 message DataSourceConfigurations {
-    repeated DataSourceconfiguration items = 1;
+    repeated DataSourceConfiguration items = 1;
 }
