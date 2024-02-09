@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "key_value.proto";
+import "limit.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ModelParameter {
+    //AQI identifier tag
+    google.protobuf.StringValue aqiTag = 1;
+    // AQI Unit
+    google.protobuf.StringValue aqiUnit = 2;
+    // Id of telemetry twin
+    google.protobuf.StringValue telemetryId = 3;
+    // Model identifier tag
+    google.protobuf.StringValue modelTag = 4;
+    // Model Unit
+    google.protobuf.StringValue modelUnit = 5;
+    // Description of input
+    google.protobuf.StringValue description = 6;
+    // Upper limit threshold
+    google.protobuf.DoubleValue upperLimit = 7;
+    // Lower limit threshold
+    google.protobuf.DoubleValue lowerLimit = 8;
+    // Comment
+    google.protobuf.StringValue comment = 9; 
+    // Values is a dictionary of datetime strings as keys and doubles as values
+    map<string, google.protobuf.DoubleValue> values = 10;
+}
+
+message ModelParameters {
+    repeated ModelParameter items = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "model_data.proto";
+
+message State{
+    //List of model inputs
+    ModelData inputs = 1;
+    //List of model outputs
+    ModelData outputs = 2;
+    }

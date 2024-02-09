@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "model_state.proto";
+import "model_parameter.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ModelInput {
+
+    google.protobuf.StringValue model = 1;
+    //Comment
+    google.protobuf.StringValue comment = 2;
+    //Length of forecast
+    google.protobuf.StringValue forecastDuration = 3;    
+    //Model state contains inputs and outputs that are each a colleciton of model parameters
+    ModelState state = 4;
+    //Current inputs to the model
+    ModelParameters inputs = 5;
+    //Current outputs for the model
+    ModelParameters outputs = 6;    
+}
+
+message ModelInputs{
+repeated ModelInput items = 1;
+}
