@@ -6,7 +6,7 @@ import "model_parameter.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
-message ModelInput {
+message ModelExecute {
     //Model 
     google.protobuf.StringValue model = 1;
     //Comment
@@ -21,6 +21,6 @@ message ModelInput {
     ModelParameters outputs = 6;    
 }
 
-message ModelInputs{
+message ModelExecutions{
     repeated ModelInput items = 1;
 }
