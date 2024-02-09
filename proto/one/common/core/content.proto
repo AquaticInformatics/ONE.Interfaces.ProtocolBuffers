@@ -120,7 +120,7 @@ message Content {
         QuantityTypes quantityTypes = 81;
 
         // model
-        ModelInputs modelInputs = 104;
+        ModelExecutions modelExecutions = 104;
 
         // notification
         NotificationTemplates notificationTemplates = 25;
