@@ -22,5 +22,5 @@ message ModelExecute {
 }
 
 message ModelExecutions{
-    repeated ModelInput items = 1;
+    repeated ModelExecute items = 1;
 }
