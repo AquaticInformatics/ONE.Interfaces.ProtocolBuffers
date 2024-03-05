@@ -75,7 +75,7 @@ import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
 import "operation_export.proto";
 import "analyte_result.proto";
-import "model_execute.proto";
+import "model_execution.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 

@@ -10,9 +10,9 @@ message ModelParameter {
     // AQI Unit
     google.protobuf.StringValue aqiUnit = 2;
     // Id of telemetry twin
-    google.protobuf.StringValue telemetryId = 3;
+    string telemetryId = 3;
     // Model identifier tag
-    google.protobuf.StringValue modelTag = 4;
+    string modelTag = 4;
     // Model Unit
     google.protobuf.StringValue modelUnit = 5;
     // Description of input
@@ -27,6 +27,3 @@ message ModelParameter {
     map<string, google.protobuf.DoubleValue> values = 10;
 }
 
-message ModelParameters {
-    repeated ModelParameter items = 1;
-}

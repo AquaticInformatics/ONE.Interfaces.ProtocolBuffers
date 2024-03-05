@@ -1,0 +1,36 @@
+syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "model_state.proto";
+import "model_parameter.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ModelExecution {
+    // Schema
+    string schema = 1;
+    // Version
+    string version = 2;
+    // Twin reference id associated with location or operation being modeled
+    string twinRefId = 3;
+    //Model id
+    string externalModelId = 4;    
+    //Length of forecast in hours
+    double forecastDurationHours = 5;        
+    //Name of the datasource driver used to get the input values
+    google.protobuf.StringValue inputDataSourceDriver = 6;
+    //Id of the dataset containing the input values
+    google.protobuf.StringValue inputDataSetId = 7;
+     //Name of the datasource driver used to get the output values
+    google.protobuf.StringValue outputDataSourceDriver = 8;
+     //Id of the dataset containing the output values
+    google.protobuf.StringValue outputDataSetId = 9;
+    //Current inputs to the model
+    repeated ModelParameter inputs = 10;
+    //Current outputs for the model
+    repeated ModelParameter outputs = 11; 
+    //Comment
+    google.protobuf.StringValue comment = 12;        
+}
+message ModelExecutions{
+    repeated ModelExecution items = 1;
+}
