@@ -1,6 +1,5 @@
 syntax = "proto3";
 import "google/protobuf/wrappers.proto";
-import "model_state.proto";
 import "model_parameter.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";

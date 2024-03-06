@@ -26,4 +26,3 @@ message ModelParameter {
     // Values is a dictionary of datetime strings as keys and doubles as values
     map<string, google.protobuf.DoubleValue> values = 10;
 }
-
