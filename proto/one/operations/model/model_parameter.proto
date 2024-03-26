@@ -11,18 +11,20 @@ message ModelParameter {
     google.protobuf.StringValue aqiUnit = 2;
     // Id of telemetry twin
     string telemetryId = 3;
+    // location the parameter is associated to
+    google.protobuf.StringValue location = 4;
     // Model identifier tag
-    string modelTag = 4;
+    string modelTag = 5;
     // Model Unit
-    google.protobuf.StringValue modelUnit = 5;
+    google.protobuf.StringValue modelUnit = 6;
     // Description of input
-    google.protobuf.StringValue description = 6;
+    google.protobuf.StringValue description = 7;
     // Upper limit threshold
-    google.protobuf.DoubleValue upperLimit = 7;
+    google.protobuf.DoubleValue upperLimit = 8;
     // Lower limit threshold
-    google.protobuf.DoubleValue lowerLimit = 8;
+    google.protobuf.DoubleValue lowerLimit = 9;
     // Comment
-    google.protobuf.StringValue comment = 9; 
+    google.protobuf.StringValue comment = 10; 
     // Values is a dictionary of datetime strings as keys and doubles as values
-    map<string, google.protobuf.DoubleValue> values = 10;
+    map<string, google.protobuf.DoubleValue> values = 11;
 }
