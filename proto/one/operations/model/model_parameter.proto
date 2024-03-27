@@ -10,11 +10,11 @@ message ModelParameter {
     // AQI Unit
     google.protobuf.StringValue aqiUnit = 2;
     // Id of telemetry twin
-    string telemetryId = 3;
+    google.protobuf.StringValue telemetryId = 3;
     // location the parameter is associated to
     google.protobuf.StringValue location = 4;
     // Model identifier tag
-    string modelTag = 5;
+    google.protobuf.StringValue modelTag = 5;
     // Model Unit
     google.protobuf.StringValue modelUnit = 6;
     // Description of input
