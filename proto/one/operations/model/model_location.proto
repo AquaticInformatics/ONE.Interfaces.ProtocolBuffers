@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ModelLocation {
+    // location id
+    string id = 1;
+    // Name of the location
+    string name = 2;
+    // subType of the location
+    string subType = 3;
+    // Id of the parent location
+    google.protobuf.StringValue parentId = 4;
+}
