@@ -75,6 +75,7 @@ import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
 import "operation_export.proto";
 import "analyte_result.proto";
+import "model_execution.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -82,7 +83,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 104
+    // NEXT AVAILABLE ID: 105
     oneof content {
         // common
 
@@ -117,6 +118,9 @@ message Content {
         UnitAgencyCodes unitAgencyCodes = 76;
         UnitAgencyCodeTypes unitAgencyCodeTypes = 77;
         QuantityTypes quantityTypes = 81;
+
+        // model
+        ModelExecutions modelExecutions = 104;
 
         // notification
         NotificationTemplates notificationTemplates = 25;
