@@ -9,12 +9,10 @@ message ExecutionParameter {
     string modelTag = 1;
     // Model Unit
     string modelUnit = 2;
-    // Description of input
-    google.protobuf.StringValue description = 3;
     // Upper limit threshold
-    google.protobuf.DoubleValue upperLimit = 4;
+    google.protobuf.DoubleValue upperLimit = 3;
     // Lower limit threshold
-    google.protobuf.DoubleValue lowerLimit = 5;
+    google.protobuf.DoubleValue lowerLimit = 4;
     // Values is a dictionary of datetime strings as keys and doubles as values
-    map<string, google.protobuf.DoubleValue> values = 6;
+    map<string, google.protobuf.DoubleValue> values = 5;
 }
