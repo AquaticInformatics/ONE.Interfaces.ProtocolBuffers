@@ -6,9 +6,9 @@ option csharp_namespace ="ONE.Models.CSharp";
 
 message TemplateParameter {
     // AQI Parameter
-    google.protobuf.Uint32Value aqiParameter = 1;    
+    uint32 parameterId = 1;    
     // AQI Unit
-    google.protobuf.Uint32Value aqiUnit = 2;
+    uint32 oneUnitId = 2;
     // Id of telemetry twin
     google.protobuf.StringValue telemetryId = 3;
     // location the parameter is associated to
