@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message TemplateParameter {
+    // AQI Parameter
+    uint32 parameterId = 1;    
+    // AQI Unit
+    uint32 oneUnitId = 2;
+    // Id of telemetry twin
+    google.protobuf.StringValue telemetryId = 3;
+    // location the parameter is associated to
+    string location = 4;
+    // Model identifier tag
+    string modelTag = 5;
+    // Model Unit
+    string modelUnit = 6;
+    // Parameter name
+    string name = 7;
+    // Description of parameter
+    google.protobuf.StringValue description = 8;
+    // Upper limit threshold
+    google.protobuf.DoubleValue upperLimit = 9;
+    // Lower limit threshold
+    google.protobuf.DoubleValue lowerLimit = 10;
+}
