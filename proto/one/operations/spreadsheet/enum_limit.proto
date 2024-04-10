@@ -11,4 +11,5 @@ enum EnumLimit {
     LIMIT_REGULATORY = 5;
     LIMIT_WARNING = 6;
     LIMIT_GOAL = 7;
+    LIMIT_LEVEL_THRESHOLD = 8;
 }
