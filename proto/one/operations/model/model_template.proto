@@ -35,6 +35,8 @@ message ModelTemplate {
     repeated TemplateParameter outputs = 13;
     //Comment
     google.protobuf.StringValue comment = 14;
+    // Specifies if model is enabled (defaults to false)
+    bool enabled = 15;
 }
 
 message ModelTemplates{
