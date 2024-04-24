@@ -14,5 +14,9 @@ message ExecutionParameter {
     // Lower limit threshold
     google.protobuf.DoubleValue lowerLimit = 4;
     // Values is a dictionary of datetime strings as keys and doubles as values
-    map<string, google.protobuf.DoubleValue> values = 5;
+    map<string, ParameterValue> values = 5;
+}
+
+message ParameterValue{
+    google.protobuf.DoubleValue value = 1;
 }

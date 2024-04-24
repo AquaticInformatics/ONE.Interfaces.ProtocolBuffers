@@ -19,6 +19,8 @@ message ModelExecution {
     repeated ExecutionParameter inputs = 6;
     //Current outputs for the model
     repeated ExecutionParameter outputs = 7;
+    // Timestamps
+    repeated string timestamps = 8;
 }
 
 message ModelExecutions{
