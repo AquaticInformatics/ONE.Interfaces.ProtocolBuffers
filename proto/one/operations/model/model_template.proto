@@ -21,11 +21,11 @@ message ModelTemplate {
     double forecastDurationHours = 6;        
     // Name of the datasource driver used to get the input values
     string inputDataSourceDriver = 7;
-    // Id of the dataset containing the input values
+    // Id of the dataSet containing the input values
     google.protobuf.StringValue inputDataSetId = 8;
     // Name of the datasource driver used to get the output values
     string outputDataSourceDriver = 9;
-    // Id of the dataset containing the output values
+    // Id of the dataSet containing the output values
     google.protobuf.StringValue outputDataSetId = 10;
     // Locations that house the parameters
     repeated ModelLocation locations = 11;
