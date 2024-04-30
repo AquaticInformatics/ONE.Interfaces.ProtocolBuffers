@@ -5,7 +5,10 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 message ParameterValue{
+    // The timestamp associated with the value
     string timestamp = 1;
+    // The actual value of the data at the timestamp
     google.protobuf.DoubleValue value = 2;
+    // The string representation of the value
     google.protobuf.StringValue stringValue = 3;
 }

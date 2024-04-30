@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "parameter_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -26,6 +25,6 @@ message TemplateParameter {
     google.protobuf.DoubleValue upperLimit = 9;
     // Lower limit threshold
     google.protobuf.DoubleValue lowerLimit = 10;
-    // Default parameterValue to use if a value is null/missing
-    ParameterValue defaultValue = 11;
+    // Default value to use if a value is out of range or null/missing
+    google.protobuf.DoubleValue defaultValue = 11;
 }

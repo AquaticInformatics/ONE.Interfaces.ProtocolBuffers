@@ -16,6 +16,6 @@ message ExecutionParameter {
     google.protobuf.DoubleValue lowerLimit = 4;
     // Values is a dictionary of datetime strings as keys and doubles as values
     repeated ParameterValue values = 5;
-    // Default parameterValue to use if a value is null/missing
-    ParameterValue defaultValue = 6;
+    // Default value to use if a value is out of range or null/missing
+    google.protobuf.DoubleValue defaultValue = 6;
 }
