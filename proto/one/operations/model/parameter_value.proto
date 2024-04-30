@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ParameterValue{
+    string timestamp = 1;
+    google.protobuf.DoubleValue value = 2;
+    goodle.protobuf.StringValue stringValue = 3;
+}

@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "execution_parameter.proto";
+import "key_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -11,16 +12,22 @@ message ModelExecution {
     string version = 2;
     // Twin reference id associated with location or operation being modeled
     string twinRefId = 3;
-    //Model id
+    // Model id
     string externalModelId = 4;
-    //Length of forecast in hours
-    double forecastDurationHours = 5;
-    //Current inputs to the model
-    repeated ExecutionParameter inputs = 6;
-    //Current outputs for the model
-    repeated ExecutionParameter outputs = 7;
-    // Timestamps
+    // Tenant id
+    string tenantId = 5;
+    // Length of forecast in hours
+    double forecastDurationHours = 6;
+    // Any errors encountered during execution
+    repeated string errors = 7;
+    // Timestamps of the provided input data
     repeated string timestamps = 8;
+    // Current inputs to the model
+    repeated ExecutionParameter inputs = 9;
+    // Current outputs for the model
+    repeated ExecutionParameter outputs = 10;
+    // Other data associated with or required by the model
+    KeyValues modelData = 11;
 }
 
 message ModelExecutions{

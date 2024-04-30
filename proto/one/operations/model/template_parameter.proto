@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
+import "parameter_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -11,7 +12,7 @@ message TemplateParameter {
     uint32 oneUnitId = 2;
     // Id of telemetry twin
     google.protobuf.StringValue telemetryId = 3;
-    // location the parameter is associated to
+    // Location the parameter is associated to
     string location = 4;
     // Model identifier tag
     string modelTag = 5;
@@ -25,4 +26,6 @@ message TemplateParameter {
     google.protobuf.DoubleValue upperLimit = 9;
     // Lower limit threshold
     google.protobuf.DoubleValue lowerLimit = 10;
+    // Default parameterValue to use if a value is null/missing
+    ParameterValue defaultValue = 11;
 }
