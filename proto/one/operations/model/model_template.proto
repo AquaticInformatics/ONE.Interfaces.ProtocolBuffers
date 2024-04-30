@@ -3,7 +3,6 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "template_parameter.proto";
 import "model_location.proto";
-import "key_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -38,8 +37,6 @@ message ModelTemplate {
     google.protobuf.StringValue comment = 14;
     // Specifies if model is enabled (defaults to false)
     bool enabled = 15;
-    // Other data associated with or required by the model
-    KeyValues modelData = 16;
 }
 
 message ModelTemplates{

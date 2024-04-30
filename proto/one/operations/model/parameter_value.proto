@@ -7,5 +7,5 @@ option csharp_namespace ="ONE.Models.CSharp";
 message ParameterValue{
     string timestamp = 1;
     google.protobuf.DoubleValue value = 2;
-    goodle.protobuf.StringValue stringValue = 3;
+    google.protobuf.StringValue stringValue = 3;
 }
