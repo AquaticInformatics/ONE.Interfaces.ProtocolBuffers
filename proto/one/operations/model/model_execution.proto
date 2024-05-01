@@ -11,14 +11,18 @@ message ModelExecution {
     string version = 2;
     // Twin reference id associated with location or operation being modeled
     string twinRefId = 3;
-    //Model id
+    // Model id
     string externalModelId = 4;
-    //Length of forecast in hours
-    double forecastDurationHours = 5;
-    //Current inputs to the model
-    repeated ExecutionParameter inputs = 6;
-    //Current outputs for the model
-    repeated ExecutionParameter outputs = 7;
+    // Tenant id
+    string tenantId = 5;
+    // Length of forecast in hours
+    double forecastDurationHours = 6;
+    // Timestamps of the provided input data
+    repeated string timestamps = 7;
+    // Current inputs to the model
+    repeated ExecutionParameter inputs = 8;
+    // Current outputs for the model
+    repeated ExecutionParameter outputs = 9;
 }
 
 message ModelExecutions{
