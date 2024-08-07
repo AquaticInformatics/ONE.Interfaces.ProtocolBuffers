@@ -4,7 +4,7 @@ import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 import "configuration_tag.proto";
 import "gis.proto";
-
+import "google/protobuf/wrappers.proto
 option csharp_namespace ="ONE.Models.CSharp";
 
 message ConfigurationNote {
