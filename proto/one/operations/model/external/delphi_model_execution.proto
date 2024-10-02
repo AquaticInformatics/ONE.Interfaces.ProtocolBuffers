@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-import "execution_parameter.proto";
+import "enum_delphi_model_mode.proto";
+import "delphi_execution_parameter.proto";
+import "delphi_configuration_execution.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.External";
 
-message ModelExecution {
+message DelphiModelExecution {
     // Schema
     string schema = 1;
     // Version
@@ -20,11 +22,15 @@ message ModelExecution {
     // Timestamps of the provided input data
     repeated string timestamps = 7;
     // Current inputs to the model
-    repeated ExecutionParameter inputs = 8;
+    repeated DelphiExecutionParameter inputs = 8;
     // Current outputs for the model
-    repeated ExecutionParameter outputs = 9;
+    repeated DelphiExecutionParameter outputs = 9;
+
+    repeated EnumDelphiModelMode modelModes =10;
+
+    repeated DelphiConfigurationExecution configurationExecutions = 11;
 }
 
-message ModelExecutions{
-    repeated ModelExecution items = 1;
+message DelphiModelExecutions{
+    repeated DelphiModelExecution items = 1;
 }
