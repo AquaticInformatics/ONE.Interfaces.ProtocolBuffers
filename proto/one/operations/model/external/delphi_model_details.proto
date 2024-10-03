@@ -10,40 +10,23 @@ import "delphi_configuration_execution.proto";
 option csharp_namespace ="ONE.Models.CSharp.External";
 
 message DelphiModelDetail  {
-    // Schema
-    string schema = 1;
-    // Version
-    string version = 2;
-    // Twin reference id associated with location or operation being modeled
-    string twinRefId = 3;
     // Model id
-    string externalModelId = 4;
-    // Timespan indicating how often to run the model
-    string simulationInterval = 5;
+    string externalModelId = 1;
     // Length of forecast in hours
-    double forecastDurationHours = 6;        
-    // Name of the datasource driver used to get the input values
-    string inputDataSourceDriver = 7;
+    double forecastDurationHours = 2;
     // Id of the dataSet containing the input values
-    google.protobuf.StringValue inputDataSetId = 8;
-    // Name of the datasource driver used to get the output values
-    string outputDataSourceDriver = 9;
-    // Id of the dataSet containing the output values
-    google.protobuf.StringValue outputDataSetId = 10;
     // Locations that house the parameters
-    repeated ModelLocation locations = 11;
+    repeated ModelLocation locations = 3;
     // Current input parameters of the model
-    repeated DelphiDetailsParameter inputs = 12;
+    repeated DelphiDetailsParameter inputs = 4;
     // Current output parameters of the model
-    repeated DelphiDetailsParameter outputs = 13;
+    repeated DelphiDetailsParameter outputs = 5;
     // Comment
-    google.protobuf.StringValue comment = 14;
-    // Specifies if model is enabled (defaults to false)
-    bool enabled = 15;
+    google.protobuf.StringValue comment = 6;
+   
+    repeated EnumDelphiModelMode modelModes =7;
 
-    repeated EnumDelphiModelMode modelModes =16;
-
-    repeated DelphiConfigurationExecution configurationExecutions = 17;
+    repeated DelphiConfigurationExecution configurationExecutions = 8;
 }
 
 message DelphiModelDetails {
