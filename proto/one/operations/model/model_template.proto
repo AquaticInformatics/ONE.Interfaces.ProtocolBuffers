@@ -1,8 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "model_location.proto";
-import "../model/delphi_model_details.proto";
+import "delphi_model_details.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -26,8 +25,8 @@ message ModelTemplate {
     // Specifies if model is enabled (defaults to false)
     bool enabled = 15;
 
-    oneof model_details {
-        repeated DelphiModelDetail items = 2;
+    oneof modelDetails {
+        DelphiModelDetail modelDetail = 16;
     }
 }
 

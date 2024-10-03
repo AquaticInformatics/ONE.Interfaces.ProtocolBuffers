@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "../model/model_location.proto";
+import "model_location.proto";
 import "enum_delphi_model_mode.proto";
 import "delphi_details_parameter.proto";
 import "delphi_configuration_execution.proto";

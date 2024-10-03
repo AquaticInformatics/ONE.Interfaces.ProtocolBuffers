@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "enum_delphi_model_mode.proto";
-import "../model/parameter_value.proto";
+import "parameter_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.External";
 
