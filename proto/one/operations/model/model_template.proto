@@ -25,7 +25,7 @@ message ModelTemplate {
     // Specifies if model is enabled (defaults to false)
     bool enabled = 15;
 
-    oneof modelDetails {
+    oneof delphiModelDetails {
         DelphiModelDetail modelDetail = 16;
     }
 }

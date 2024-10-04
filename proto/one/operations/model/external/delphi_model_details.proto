@@ -14,7 +14,6 @@ message DelphiModelDetail  {
     string externalModelId = 1;
     // Length of forecast in hours
     double forecastDurationHours = 2;
-    // Id of the dataSet containing the input values
     // Locations that house the parameters
     repeated ModelLocation locations = 3;
     // Current input parameters of the model
