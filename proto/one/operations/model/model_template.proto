@@ -24,7 +24,7 @@ message ModelTemplate {
     google.protobuf.StringValue outputDataSetId = 10;
     // Specifies if model is enabled (defaults to false)
     bool enabled = 15;
-
+    // oneof of model details, it can consist of several model details like delphi and others
     oneof modelDetails  {
         DelphiModelDetail delphiModelDetails = 16;
     }

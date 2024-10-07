@@ -22,9 +22,9 @@ message DelphiModelDetail  {
     repeated DelphiDetailsParameter outputs = 5;
     // Comment
     google.protobuf.StringValue comment = 6;
-   
+    //list of supported Delphi model modes
     repeated EnumDelphiModelMode modelModes =7;
-
+    //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 8;
 }
 

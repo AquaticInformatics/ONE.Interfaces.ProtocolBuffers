@@ -11,7 +11,7 @@ message DelphiConfigurationExecution {
 
     // ModelTag is a string
     string modelTag = 2;
-
+    //oneof for value, either numeric or boolean.
     oneof value {
         google.protobuf.DoubleValue numericValue = 3;  // Nullable double value
         google.protobuf.BoolValue boolValue = 4;       // Nullable boolean value
