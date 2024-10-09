@@ -26,6 +26,7 @@ message ModelTemplate {
     bool enabled = 9;
     // oneof of model details, it can consist of several model details like delphi and others
     oneof modelDetails  {
+        //DelphiModelDetail property
         DelphiModelDetail delphiModelDetails = 10;
     }
 }
