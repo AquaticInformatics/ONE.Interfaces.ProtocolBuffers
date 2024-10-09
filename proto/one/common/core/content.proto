@@ -75,7 +75,7 @@ import "cellvalue_backup.proto";
 import "outputcell_backup.proto";
 import "operation_export.proto";
 import "analyte_result.proto";
-import "model_execution.proto";
+import "delphi_model_execution.proto";
 import "model_template.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
@@ -121,7 +121,7 @@ message Content {
         QuantityTypes quantityTypes = 81;
 
         // model
-        ModelExecutions modelExecutions = 104;
+        DelphiModelExecutions delphiModelExecutions = 104;
         ModelTemplates modelTemplates = 105;
 
         // notification
