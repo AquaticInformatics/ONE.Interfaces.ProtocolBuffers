@@ -7,7 +7,7 @@ option csharp_namespace = "ONE.Models.CSharp.External";
 
 message DelphiConfigurationExecution {
     // Supported Delphi model modes
-    repeated EnumDelphiModelMode modelModes = 1;
+    repeated EnumDelphiModelMode modelModesEnabled = 1;
     // ModelTag is a string
     string modelTag = 2;
     //oneof for value, either numeric or boolean.

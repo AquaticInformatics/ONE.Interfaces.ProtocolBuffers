@@ -26,7 +26,7 @@ message DelphiModelExecution {
     // Current outputs for the model
     repeated DelphiExecutionParameter outputs = 9;
     //list of supported Delphi model modes
-    repeated EnumDelphiModelMode modelModes = 10;
+    repeated EnumDelphiModelMode modelModesEnabled = 10;
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 11;
 }
