@@ -20,5 +20,5 @@ message DelphiExecutionParameter {
     // Default value to use if a value is out of range or null/missing
     google.protobuf.DoubleValue defaultValue = 6;
     //list of supported Delphi model modes
-    repeated EnumDelphiModelMode modelModesEnabled =7;
+    repeated EnumDelphiModelMode modelModes =7;
 }
