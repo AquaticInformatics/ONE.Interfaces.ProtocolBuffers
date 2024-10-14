@@ -26,7 +26,3 @@ message DelphiModelDetail  {
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 8;
 }
-
-message DelphiModelDetails {
-    repeated DelphiModelDetail items = 1;
-}
