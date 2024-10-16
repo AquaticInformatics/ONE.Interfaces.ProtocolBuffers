@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "delphi_model_details.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ModelDetail {
+    // oneof of model details, it can consist of several model details like delphi and others
+    oneof modelDetail  {
+        //DelphiModelDetail property
+        DelphiModelDetail delphiModelDetails = 1;
+    }
+}

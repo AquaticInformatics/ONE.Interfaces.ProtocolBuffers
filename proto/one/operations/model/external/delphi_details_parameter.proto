@@ -1,10 +1,11 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
+import "enum_delphi_model_mode.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.External";
 
-message TemplateParameter {
+message DelphiDetailsParameter {
     // AQI Parameter
     uint32 parameterId = 1;    
     // AQI Unit
@@ -27,4 +28,6 @@ message TemplateParameter {
     google.protobuf.DoubleValue lowerLimit = 10;
     // Default value to use if a value is out of range or null/missing
     google.protobuf.DoubleValue defaultValue = 11;
+    //list of supported Delphi model modes
+    repeated EnumDelphiModelMode modelModes = 12;
 }

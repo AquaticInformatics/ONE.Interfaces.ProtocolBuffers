@@ -1,8 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "template_parameter.proto";
-import "model_location.proto";
+import "model_detail.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -13,34 +12,24 @@ message ModelTemplate {
     string version = 2;
     // Twin reference id associated with location or operation being modeled
     string twinRefId = 3;
-    // Model id
-    string externalModelId = 4;
     // Timespan indicating how often to run the model
-    string simulationInterval = 5;
-    // Length of forecast in hours
-    double forecastDurationHours = 6;        
+    string simulationInterval = 4;
     // Name of the datasource driver used to get the input values
-    string inputDataSourceDriver = 7;
+    string inputDataSourceDriver = 5;
     // Id of the dataSet containing the input values
-    google.protobuf.StringValue inputDataSetId = 8;
+    google.protobuf.StringValue inputDataSetId = 6;
     // Name of the datasource driver used to get the output values
-    string outputDataSourceDriver = 9;
+    string outputDataSourceDriver = 7;
     // Id of the dataSet containing the output values
-    google.protobuf.StringValue outputDataSetId = 10;
-    // Locations that house the parameters
-    repeated ModelLocation locations = 11;
-    // Current input parameters of the model
-    repeated TemplateParameter inputs = 12;
-    // Current output parameters of the model
-    repeated TemplateParameter outputs = 13;
-    // Comment
-    google.protobuf.StringValue comment = 14;
+    google.protobuf.StringValue outputDataSetId = 8;
     // Specifies if model is enabled (defaults to false)
-    bool enabled = 15;
-	// Setpoints
-    repeated TemplateParameter optimizationInputs = 16;
-}
+    bool enabled = 9;
+    // oneof of model details, it can consist of several model details like delphi and others
+    ModelDetail modelDetails = 10;
 
+
+
+}
 message ModelTemplates{
     repeated ModelTemplate items = 1;
 }
