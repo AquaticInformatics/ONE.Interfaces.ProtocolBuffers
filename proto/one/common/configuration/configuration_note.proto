@@ -30,6 +30,8 @@ message ConfigurationNote {
     // external source id (nullable)
     google.protobuf.StringValue externalSourceId = 7;
 
+    google.protobuf.StringValue externalUsername = 8;
+
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
