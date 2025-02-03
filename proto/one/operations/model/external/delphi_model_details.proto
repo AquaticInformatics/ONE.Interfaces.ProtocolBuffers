@@ -25,4 +25,6 @@ message DelphiModelDetail  {
     repeated EnumDelphiModelMode modelModesEnabled = 7;
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 8;
+    //timezone of the Twin
+    EnumTimezone timezone = 9;
 }

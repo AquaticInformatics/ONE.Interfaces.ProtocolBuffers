@@ -29,6 +29,8 @@ message DelphiModelExecution {
     repeated EnumDelphiModelMode modelModesEnabled = 10;
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 11;
+    //timezone offset in fraction hours of the Twin 
+    double timezoneOffsetHours = 12;
 }
 
 message DelphiModelExecutions{
