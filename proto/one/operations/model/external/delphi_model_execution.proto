@@ -3,6 +3,8 @@ syntax = "proto3";
 import "enum_delphi_model_mode.proto";
 import "delphi_execution_parameter.proto";
 import "delphi_configuration_execution.proto";
+import "google/protobuf/wrappers.proto";
+import "historian_data.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.External";
 
@@ -29,6 +31,10 @@ message DelphiModelExecution {
     repeated EnumDelphiModelMode modelModesEnabled = 10;
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 11;
+    //timezone offset in fraction hours of the Twin 
+    google.protobuf.DoubleValue timezoneOffsetHours = 12;
+    //application Log messages
+    HistorianDatas applicationLogs = 13;
 }
 
 message DelphiModelExecutions{
