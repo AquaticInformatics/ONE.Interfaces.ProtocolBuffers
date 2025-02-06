@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumOneCascadeRule {
+    DISPLAY_NO_QUALIFIERS = 0; // Display no data qualifiers in result
+    DISPLAY_IF_ONE_VALUE_HAS_QUALIFIER = 1; // Display the most frequent data qualifier if one of the values contains the qualifier
+    DISPLAY_IF_HALF_CONTAIN_QUALIFIER = 2; // Display the most frequent data qualifier if over half the values contains the qualifier
+    DISPLAY_IF_ALL_CONTAIN_QUALIFIER = 3; // Display the most frequent data qualifier if all of the values contains the qualifier
+    DISPLAY_ALL_QUALIFIERS = 4; // Cascade all data qualifiers
+}

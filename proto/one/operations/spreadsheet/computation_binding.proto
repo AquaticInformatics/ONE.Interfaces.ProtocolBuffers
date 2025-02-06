@@ -4,6 +4,7 @@ import "computation_variable_binding.proto";
 import "record_auditinfo.proto";
 import "execution_details.proto";
 import "google/protobuf/wrappers.proto";
+import "enum_one_cascade_rule.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -32,6 +33,8 @@ message ComputationBinding {
 
    // expression text of the computation
    google.protobuf.StringValue expression = 8;
+
+   EnumOneCascadeRule cascadeRule = 9;
 
    // audit information
    RecordAuditInfo recordAuditInfo = 99;
