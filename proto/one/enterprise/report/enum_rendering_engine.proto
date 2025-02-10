@@ -5,4 +5,5 @@ option csharp_namespace ="ONE.Models.CSharp";
 enum EnumRenderingEngine {
     RENDERING_ENGINE_UNKNOWN = 0; 
     RENDERING_ENGINE_EXCEL = 1; 
+    RENDERING_ENGINE_CUSTOM = 2; 
 }

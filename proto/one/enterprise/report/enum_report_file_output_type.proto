@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumReportFileOutputType {
+    OUTPUT_TYPE_UNKNOWN = 0; 
+    OUTPUT_TYPE_XLSX = 1; 
+    OUTPUT_TYPE_PDF = 2; 
+    OUTPUT_TYPE_SJS = 3;
+}
