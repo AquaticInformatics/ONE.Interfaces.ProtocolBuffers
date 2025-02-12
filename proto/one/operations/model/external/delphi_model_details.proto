@@ -28,4 +28,6 @@ message DelphiModelDetail  {
     repeated DelphiConfigurationExecution configurationExecutions = 8;
     //timezone of the Twin
     EnumTimeZone enumTimeZone = 9;
+    // Historian Twin reference id to store the model application logs 
+    google.protobuf.StringValue applicationLogsTwinRefId = 10;
 }
