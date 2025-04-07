@@ -14,19 +14,22 @@ message Equipment {
     string equipmentId = 2;
 
     // equipment description
-    google.protobuf.StringValue description = 4;
+    google.protobuf.StringValue description = 3;
 
     // used to check twin authorization
-    string authTwinRefId = 5;
+    string authTwinRefId = 4;
 
     // equipment active flag
-    bool active = 6;
+    bool active = 5;
 
     // equipment priority
-    google.protobuf.Int32Value priority = 7;
+    google.protobuf.Int32Value priority = 6;
 
     // additional information stored as json
-    google.protobuf.StringValue propertyBag = 8;
+    google.protobuf.StringValue propertyBag = 7;
+
+    // equipment type (holds the equipment digital twin subtype)
+    string equipmentType = 8;
 
     // updateMask to support partial updates
     google.protobuf.FieldMask updateMask = 98;
