@@ -4,8 +4,10 @@ option csharp_namespace = "ONE.Models.CSharp.External";
 
 // Enum definition for different model modes
 enum EnumDelphiModelMode {
-    Unknown = 0;        // Default value, represents an undefined mode
-    Nowcast = 1;        // Formerly Simulation, represents the Nowcast mode
-    Forecast = 2;       // Represents the Forecast mode
-    Optimization = 3;   // Represents the Optimization mode
+    Unknown = 0;                // Default value, represents an undefined mode
+    Nowcast = 1;                // Formerly Simulation, represents the Nowcast mode
+    Forecast = 2;               // Represents the Forecast mode
+    Optimization = 3;           // Represents the Optimization mode
+    ForecastScenario = 4;       // Represents the Forecast mode for Scenario analysis
+    OptimizationScenario = 5;   // Represents the Optimization mode for Scenario analysis
 }
