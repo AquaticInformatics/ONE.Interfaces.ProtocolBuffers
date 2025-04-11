@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message Equipment {
+    // unique identifier of the equipment record
+    string id = 1;
+
+    // equipment identifier
+    string equipmentId = 2;
+
+    // equipment description
+    google.protobuf.StringValue description = 3;
+
+    // used to check twin authorization
+    string authTwinRefId = 4;
+
+    // equipment active flag
+    bool active = 5;
+
+    // equipment priority
+    google.protobuf.Int32Value priority = 6;
+
+    // additional information stored as json
+    google.protobuf.StringValue propertyBag = 7;
+
+    // equipment type (holds the equipment digital twin subtype)
+    string equipmentType = 8;
+
+    // updateMask to support partial updates
+    google.protobuf.FieldMask updateMask = 98;
+
+    // audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message EquipmentList {
+	repeated Equipment items = 1;
+}

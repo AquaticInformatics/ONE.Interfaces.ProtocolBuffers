@@ -77,7 +77,7 @@ import "operation_export.proto";
 import "analyte_result.proto";
 import "delphi_model_execution.proto";
 import "model_template.proto";
-import "equipment_definition.proto";
+import "equipment.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -198,7 +198,7 @@ message Content {
         AnalyteResults AnalyteResults = 103;
 
         // work manager
-        EquipmentDefinitions EquipmentDefinitions = 106;
+        EquipmentList EquipmentList = 106;
 
         // timeseries
 
