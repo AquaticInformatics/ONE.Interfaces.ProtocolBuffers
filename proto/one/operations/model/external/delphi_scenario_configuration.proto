@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "enum_delphi_model_mode.proto";
+import "delphi_configuration_execution.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.External";
+
+message DelphiScenarioConfiguration {
+    // Scenario identifier
+    string scenarioId = 1;
+    //Delphi model mode for Scenario
+    EnumDelphiModelMode modelMode = 2;
+    //list of delphi configurationExecutions
+    repeated DelphiConfigurationExecution configurationExecutions = 3;
+}
+
+message DelphiScenarioConfigurations{
+    repeated DelphiScenarioConfiguration items = 1;
+}
