@@ -20,7 +20,7 @@ message InstrumentTwin {
     // used to both check enterprise twin authorization and represent the parent twin
     string authEnterpriseTwinRefId = 4;
 
-    // category
+    // category : instrument or telemetry
     int32 categoryId = 5;
     
     // instrument name
