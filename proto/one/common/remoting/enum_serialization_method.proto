@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumSerializationMethod {
+    UNKNOWN = 0;
+    PROTOBUF = 1;
+    JSON = 2;
+    NULL = 3;
+    STRING = 4;
+    BYTES = 5;
+    GUID = 6;
+    GUID_COLLECTION = 7;
+    BOOL = 8;
+    UINT = 9;
+    UINT_COLLECTION = 10;
+    INT = 11;
+    INT_COLLECTION = 12;
+    LONG = 13;
+    LONG_COLLECTION = 14;
+    ONE_REMOTING_BODY = 15;
+} 
