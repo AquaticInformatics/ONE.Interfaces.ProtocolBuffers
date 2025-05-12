@@ -19,3 +19,8 @@ message SerializedRemotingMessage
         google.protobuf.BytesValue contentBytes = 3;                   
     }
 }
+
+message SerializedRemotingMessages
+{
+    map<string, SerializedRemotingMessage> items = 1;
+}

@@ -19,5 +19,4 @@ enum EnumSerializationMethod {
     INT_LIST = 13;
     LONG = 14;
     LONG_LIST = 15;
-    ONE_REMOTING_BODY = 16;
 } 
