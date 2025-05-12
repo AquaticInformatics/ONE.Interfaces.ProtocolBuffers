@@ -1,0 +1,21 @@
+syntax = "proto3";
+ 
+import "google/protobuf/wrappers.proto";
+import "instrument.proto";
+ 
+option csharp_namespace = "ONE.Instrument.Core";
+ 
+message InstrumentDetailSummary {
+  // Represents a registry entry for an instrument
+  Instrument instrument = 1;
+ 
+  // Unique identifier of an parent twin - TwinRefId of a Enterprise DigitalTwin
+  google.protobuf.StringValue parentId = 2;
+  
+  // Enterprise twin - TwinRef name
+  google.protobuf.StringValue parentName = 3;
+}
+ 
+message InstrumentDetailSummaries {
+  repeated InstrumentDetailSummary items = 1;
+}

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+import "instrument_reference.proto";
+import "enum_connection_status.proto";
+import "enum_instrument_registry_status.proto";
+
+option csharp_namespace ="ONE.Instrument.Twin";
+
+// Represents a registry entry for an instrument
+message Instrument {
+
+    // Specifies the reference details for an instrument
+    InstrumentReference instrumentReference = 1;
+
+    // Specifies the tenant the instrument is assigned to
+    google.protobuf.StringValue tenantId = 2;
+
+    // Specifies the reference details of edge instrument which this instrument is connected to
+    InstrumentReference edgeInstrumentReference = 3;
+
+    // Specifies the connection status of the instrument
+    EnumConnectionStatus connectionStatus = 4;
+
+    // Specifies the registry status of the instrument
+    EnumInstrumentRegistryStatus registryStatus = 5;
+
+    // Record audit information
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+// Represents a list of instruments
+message Instruments {
+
+    // Specifies the list of instruments
+    repeated Instrument items = 1;
+
+}
