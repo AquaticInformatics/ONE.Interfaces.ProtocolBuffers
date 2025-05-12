@@ -8,12 +8,12 @@ option csharp_namespace ="ONE.Instrument.Twin";
 message InstrumentIdentifier {
     // Fusion Id that is composed of manufacturer-code, instrument-code and serial-number.
     // For an instrument, the Fusion Id does not change throughout its entire lifetime.
-    google.protobuf.StringValue fusionId = 1;
+    google.protobuf.StringValue fusionId = 1 [json_name = "fid"];
 
     // Unique identifier of an instrument.
     // Guid of an instrument stays same for the span of a single registration period.
     // For example: 
     // - An instrument gets provisioned to a tenant and it gets assigned with a Guid.
     // - Then, the instrument gets removed and provisioned again to same or a different tenant and it gets assigned with a different Guid.
-    google.protobuf.StringValue guid = 2;
+    google.protobuf.StringValue guid = 2 [json_name = "g"];
 }
