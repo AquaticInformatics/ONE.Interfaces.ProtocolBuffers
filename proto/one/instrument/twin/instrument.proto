@@ -10,7 +10,6 @@ option csharp_namespace ="ONE.Instrument.Twin";
 
 // Represents a registry entry for an instrument
 message Instrument {
-
     // Specifies the reference details for an instrument
     InstrumentReference instrumentReference = 1;
 
@@ -32,8 +31,6 @@ message Instrument {
 
 // Represents a list of instruments
 message Instruments {
-
     // Specifies the list of instruments
     repeated Instrument items = 1;
-
 }

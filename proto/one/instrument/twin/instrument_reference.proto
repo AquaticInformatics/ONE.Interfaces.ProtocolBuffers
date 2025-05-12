@@ -7,7 +7,6 @@ option csharp_namespace ="ONE.Instrument.Twin";
 
 // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
 message InstrumentReference {
-    
     // Unique identifier of the instrument
     InstrumentIdentifier instrumentIdentifier = 1  [json_name = "iid"];
 
