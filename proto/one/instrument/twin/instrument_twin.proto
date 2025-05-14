@@ -4,7 +4,7 @@ import "google/protobuf/wrappers.proto";
 
 import "record_auditinfo.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwin {
 
