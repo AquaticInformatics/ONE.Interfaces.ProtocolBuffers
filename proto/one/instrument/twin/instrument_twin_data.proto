@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "instrument.proto";
+
+option csharp_namespace ="ONE.Instrument.Twin";
+
+message InstrumentTwinData {
+
+    // Stores Instrument registry data eg: ConnectionStatus, SerialNumber, Parent Controller etc
+    Instrument instrument = 1;
+}
+
+message InstrumentTwinDatas {
+	repeated InstrumentTwinData items = 1;
+}
