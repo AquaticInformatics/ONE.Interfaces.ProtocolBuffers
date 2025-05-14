@@ -4,8 +4,7 @@ import "instrument.proto";
 
 option csharp_namespace ="ONE.Instrument.Twin";
 
-message InstrumentTwinData {
-
+message InstrumentTwinData {    
     // Stores Instrument registry data eg: ConnectionStatus, SerialNumber, Parent Controller etc
     Instrument instrument = 1;
 }
