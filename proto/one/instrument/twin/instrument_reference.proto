@@ -3,7 +3,7 @@ syntax = "proto3";
 import "instrument_identifier.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Instrument.Twin";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
 message InstrumentReference {

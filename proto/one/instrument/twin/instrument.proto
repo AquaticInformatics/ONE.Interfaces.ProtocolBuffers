@@ -6,7 +6,7 @@ import "instrument_reference.proto";
 import "enum_connection_status.proto";
 import "enum_instrument_registry_status.proto";
 
-option csharp_namespace ="ONE.Instrument.Twin";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Represents a registry entry for an instrument
 message Instrument {

@@ -3,7 +3,7 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "instrument.proto";
  
-option csharp_namespace = "ONE.Instrument.Core";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
 message InstrumentDetailSummary {
   // Represents a registry entry for an instrument

@@ -2,7 +2,7 @@ syntax = "proto3";
  
 import "instrument_detail_summary.proto";
  
-option csharp_namespace = "ONE.Instrument.Core";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
 message InstrumentSummary {
   // Represents the detailed summary of an Instrument.

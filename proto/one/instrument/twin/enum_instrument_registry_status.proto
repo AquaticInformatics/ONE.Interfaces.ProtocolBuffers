@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="ONE.Instrument.Twin";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Represents the registry status of an instrument
 enum EnumInstrumentRegistryStatus {
