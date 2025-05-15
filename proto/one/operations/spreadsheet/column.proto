@@ -38,7 +38,7 @@ message Column
     // The expected binding
     DataSourceBinding dataSourceBinding = 9;
 
-    // This determines how qualifers are interpreted for this column
+    // This determines how qualifiers are interpreted for this column
     repeated ReportableQualifierDefinition reportableQualifierDefinitions = 10;
 
     // The id of the digital twin associated with the column
@@ -64,4 +64,9 @@ message Column
 
     // Optional display preferences for this column
     DisplayOptions displayOptions = 18;
+}
+
+message Columns
+{
+    repeated Column items = 1;
 }

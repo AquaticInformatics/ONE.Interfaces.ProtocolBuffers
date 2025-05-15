@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "enum_serialization_method.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SerializedRemotingMessage
+{
+    // Method of serialization used to set the content
+    EnumSerializationMethod serializationMethod = 1;
+
+    oneof content
+    {
+        // Content of the message as a string
+        google.protobuf.StringValue contentString = 2;           
+        
+        // Content of the message as a byte array
+        google.protobuf.BytesValue contentBytes = 3;                   
+    }
+}
+
+message SerializedRemotingMessages
+{
+    map<string, SerializedRemotingMessage> items = 1;
+}

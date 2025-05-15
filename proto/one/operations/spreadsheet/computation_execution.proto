@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "computation_binding.proto";
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+import "variable.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ComputationExecution
+{
+    // inputVariables is the set of variables that are used to execute the computation
+    Variables inputVariables = 1;
+
+    // the rowNumber where the output should be saved
+    uint32 outputRowNumber = 2;
+
+    // computationBinding associated with this execution
+    ComputationBinding binding = 3;
+    
+    // any errorConditions that were encountered setting up the execution
+    google.protobuf.StringValue errorCondition = 4;
+
+    // timestamp corresponding to initial request that triggered the computation
+    JsonTicksDateTime initiatedTimestamp = 5;
+
+    // timestamp corresponding to the time the input data was pulled from state
+    JsonTicksDateTime stateVersionTimestamp = 6;
+
+    // stringValues of the inputs to allow for cascading qualifiers
+    repeated string inputStrings = 7;
+}
+
+message ComputationExecutions
+{
+    map<string, ComputationExecution> items = 1;
+}

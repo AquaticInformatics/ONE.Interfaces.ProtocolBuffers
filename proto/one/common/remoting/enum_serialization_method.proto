@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumSerializationMethod {
+    UNKNOWN = 0;
+    PROTOBUF = 1;
+    JSON = 2;
+    NULL = 3;
+    STRING = 4;
+    BYTES = 5;
+    GUID = 6;
+    GUID_LIST = 7;
+    GUID_ARRAY = 8;
+    BOOL = 9;
+    UINT = 10;
+    UINT_LIST = 11;
+    INT = 12;
+    INT_LIST = 13;
+    LONG = 14;
+    LONG_LIST = 15;
+} 
