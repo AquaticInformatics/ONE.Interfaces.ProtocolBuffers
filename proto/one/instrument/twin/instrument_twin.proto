@@ -29,6 +29,9 @@ message InstrumentTwin {
     // additional information stored as json
     google.protobuf.StringValue twinData = 7;
 
+    // updateMask to support partial updates
+    google.protobuf.FieldMask updateMask = 98;
+
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
