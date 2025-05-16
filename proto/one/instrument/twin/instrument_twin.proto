@@ -1,13 +1,11 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-
 import "record_auditinfo.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwin {
-
     // unique identifier of the instrument
     string id = 1;
       
@@ -37,5 +35,5 @@ message InstrumentTwin {
 }
 
 message InstrumentTwins {
-	repeated InstrumentTwin items = 1;
+ repeated InstrumentTwin items = 1;
 }
