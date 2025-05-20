@@ -19,14 +19,11 @@ message InstrumentDetailSummary {
   // Serial number of the instrument
   google.protobuf.StringValue serialNumber = 3;
  
-  // Unique identifier of an parent twin - TwinRefId of a Instrument DigitalTwin
-  google.protobuf.StringValue parentId = 4;
+  // Unique identifier of parent twin - TwinRefId of a Enterprise DigitalTwin
+  google.protobuf.StringValue enterpriseTwinId = 4;
   
-  // Parent instrument twin name
-  google.protobuf.StringValue parentName = 5;
-
-  // Guid of instrument type
-  google.protobuf.StringValue instrumentTypeId = 6;
+  // Enterprise DigitalTwin name
+  google.protobuf.StringValue enterpriseTwinName = 5;
 }
  
 message InstrumentDetailSummaries {
