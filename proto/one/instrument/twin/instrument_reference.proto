@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "instrument_identifier.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Specifies the instrument reference, which contains no-change identifier properties for an instrument once its life-time begins.
+message InstrumentReference {
+    // Unique identifier of the instrument
+    InstrumentIdentifier instrumentIdentifier = 1  [json_name = "iid"];
+
+    // Serial number of the instrument
+    google.protobuf.StringValue serialNumber = 2 [json_name = "sn"];
+
+    // Guid of instrument type
+    google.protobuf.StringValue instrumentTypeGuid = 3 [json_name = "itg"];
+
+    // Guid of instrument group
+    google.protobuf.StringValue instrumentGroupGuid = 4 [json_name = "igg"];
+
+    // Firmware manifest version string of the instrument
+    google.protobuf.StringValue instrumentManifestVersionString = 5 [json_name = "imvs"];
+
+    // Specifies the instrument firmware platform identifier
+    google.protobuf.UInt32Value platformNumber = 6 [json_name = "pn"];
+}
+
+message InstrumentReferences {
+    repeated InstrumentReference items = 1 [json_name = "i"];
+}

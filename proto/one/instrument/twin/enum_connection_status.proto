@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+enum EnumConnectionStatus {
+    CONNECTION_STATUS_UNKNOWN = 0;
+    CONNECTION_STATUS_NOT_CONNECTED = 1;
+    CONNECTION_STATUS_CONNECTED = 2;
+}
