@@ -78,6 +78,9 @@ import "analyte_result.proto";
 import "delphi_model_execution.proto";
 import "model_template.proto";
 import "equipment.proto";
+import "instrument.proto";
+import "instrument_twin.proto";
+import "instrument_summary.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -85,7 +88,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 107
+    // NEXT AVAILABLE ID: 110
     oneof content {
         // common
 
@@ -178,6 +181,11 @@ message Content {
 
         // operations
         OperationExports operationExports = 102;
+
+        // instrument health
+        Instruments instruments = 107
+        InstrumentTwins instrumentTwins = 108
+        InstrumentSummaries instrumentSummaries = 109
 
         // spreadsheet
         Rows rows = 14;

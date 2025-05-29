@@ -28,6 +28,9 @@ message InstrumentTwin {
     // additional information stored as json
     google.protobuf.StringValue twinData = 7;
 
+    // instrument DigitalTwin subtype id 
+    string instrumentDigitalTwinSubTypeId = 8;
+
     // updateMask to support partial updates
     google.protobuf.FieldMask updateMask = 98;
 
