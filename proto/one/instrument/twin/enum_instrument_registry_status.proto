@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents the registry status of an instrument
+enum EnumInstrumentRegistryStatus {
+    INSTRUMENT_REGISTRY_STATUS_UNKNOWN = 0;
+    INSTRUMENT_REGISTRY_STATUS_ASSIGNED = 1;
+    INSTRUMENT_REGISTRY_STATUS_UNASSIGNED = 2;
+}
