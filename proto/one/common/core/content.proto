@@ -183,9 +183,9 @@ message Content {
         OperationExports operationExports = 102;
 
         // instrument health
-        Instruments instruments = 107
-        InstrumentTwins instrumentTwins = 108
-        InstrumentSummaries instrumentSummaries = 109
+        Instruments instruments = 107;
+        InstrumentTwins instrumentTwins = 108;
+        InstrumentSummaries instrumentSummaries = 109;
 
         // spreadsheet
         Rows rows = 14;
