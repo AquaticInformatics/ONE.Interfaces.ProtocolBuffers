@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentTwinSubType {
+    // unique identifier of the instrument type and instrument telemetry
+    string id = 1;
+      
+    // i18n key text reference for instrument type
+    google.protobuf.StringValue i18NKeyName = 2;
+
+    // Unique identifier of a digitalTwinType
+    string digitalTwinTypeId = 3;
+   
+    // PropertyBag will be used to persist JSON instance of DigitalTwinSubType
+    google.protobuf.StringValue PropertyBag = 4;
+
+    // audit info
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InstrumentTwinSubTypes {
+	repeated InstrumentTwinSubType items = 1;
+}
