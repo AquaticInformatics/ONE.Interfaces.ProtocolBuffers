@@ -81,7 +81,8 @@ import "equipment.proto";
 import "instrument.proto";
 import "instrument_twin.proto";
 import "instrument_summary.proto";
-import "instrument_digital_twin_sub_types.proto";
+import "instrument_twin_type.proto";
+import "instrument_twin_sub_type.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -89,7 +90,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 111
+    // NEXT AVAILABLE ID: 112
     oneof content {
         // common
 
@@ -187,7 +188,8 @@ message Content {
         Instruments instruments = 107;
         InstrumentTwins instrumentTwins = 108;
         InstrumentSummaries instrumentSummaries = 109;
-        InstrumentTwinSubType instrumentTwinSubType = 110;
+        InstrumentTwinTypes instrumentTwinTypes = 110;
+        InstrumentTwinSubTypes instrumentTwinSubTypes = 111;
 
         // spreadsheet
         Rows rows = 14;
