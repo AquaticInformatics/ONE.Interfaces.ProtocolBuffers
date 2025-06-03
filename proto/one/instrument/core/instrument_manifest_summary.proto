@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
+
+// This file defines the InstrumentManifestSummary message which provides a summary of an instrument type.
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+ 
+message InstrumentManifestSummary { 
+  // Id of an Instrument Type
+  google.protobuf.StringValue instrumentTypeId = 1;
+  // I18N key of Instrument Type
+  I18NKeyTextReference instrumentTypeI18N = 2;
+  // Small image url of the Instrument Type
+  google.protobuf.StringValue pictureSmallUrl = 3;
+  // Large image url of the Instrument Type
+  google.protobuf.StringValue pictureLargeUrl = 4;
+  // Unique identifier of the Instrument Group to which this instrument type belongs to.
+  google.protobuf.StringValue instrumentGroupId = 5;
+  // I18N key of Instrument Group
+  I18NKeyTextReference instrumentGroupI18N = 6;
+}
+message InstrumentManifestSummaries {
+  repeated InstrumentManifestSummary items = 1;
+}
