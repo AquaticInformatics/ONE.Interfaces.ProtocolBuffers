@@ -90,7 +90,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 112
+    // NEXT AVAILABLE ID: 111
     oneof content {
         // common
 
@@ -185,11 +185,10 @@ message Content {
         OperationExports operationExports = 102;
 
         // instrument health
-        Instruments instruments = 107;
-        InstrumentTwins instrumentTwins = 108;
-        InstrumentSummaries instrumentSummaries = 109;
-        InstrumentTwinTypes instrumentTwinTypes = 110;
-        InstrumentTwinSubTypes instrumentTwinSubTypes = 111;
+        InstrumentTwins instrumentTwins = 107;
+        InstrumentSummaries instrumentSummaries = 108;
+        InstrumentTwinTypes instrumentTwinTypes = 109;
+        InstrumentTwinSubTypes instrumentTwinSubTypes = 110;
 
         // spreadsheet
         Rows rows = 14;

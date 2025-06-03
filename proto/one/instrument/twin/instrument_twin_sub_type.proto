@@ -16,7 +16,7 @@ message InstrumentTwinSubType {
     string digitalTwinTypeId = 3;
    
     // PropertyBag will be used to persist JSON instance of DigitalTwinSubType
-    google.protobuf.StringValue PropertyBag = 4;
+    google.protobuf.StringValue propertyBag = 4;
 
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
