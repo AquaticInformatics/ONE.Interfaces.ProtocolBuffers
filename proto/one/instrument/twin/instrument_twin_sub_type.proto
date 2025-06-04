@@ -6,22 +6,22 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwinSubType {
-    // unique identifier of the instrument type and instrument telemetry
-    string id = 1;
-      
-    // i18n key text reference for instrument type
-    google.protobuf.StringValue i18NKeyName = 2;
+  // unique identifier of the instrument twin sub type
+  string id = 1;
+    
+  // i18n key text reference for instrument twin sub type
+  google.protobuf.StringValue i18NKeyName = 2;
 
-    // Unique identifier of a digitalTwinType
-    string digitalTwinTypeId = 3;
-   
-    // PropertyBag will be used to persist JSON instance of DigitalTwinSubType
-    google.protobuf.StringValue propertyBag = 4;
+  // Unique identifier of an instrument twin type
+    string instrumentTwinTypeId = 3;
+  
+  // PropertyBag will be used to persist JSON instance of InstrumentTwinSubType
+  google.protobuf.StringValue propertyBag = 4;
 
-    // audit info
-    RecordAuditInfo recordAuditInfo = 99;
+  // audit info
+  RecordAuditInfo recordAuditInfo = 99;
 }
 
 message InstrumentTwinSubTypes {
-	repeated InstrumentTwinSubType items = 1;
+  repeated InstrumentTwinSubType items = 1;
 }

@@ -6,16 +6,16 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwinType {
-    // unique identifier of the instrument type and instrument telemetry
-    string id = 1;
-      
-    // i18n key text reference for instrument group
-    google.protobuf.StringValue i18NKeyName = 2;
+  // unique identifier of the instrument type
+  string id = 1;
+    
+  // i18n key text reference for instrument twin type
+  google.protobuf.StringValue i18NKeyName = 2;
 
-    // audit info
-    RecordAuditInfo recordAuditInfo = 99;
+  // audit info
+  RecordAuditInfo recordAuditInfo = 99;
 }
 
 message InstrumentTwinTypes {
-	repeated InstrumentTwinType items = 1;
+  repeated InstrumentTwinType items = 1;
 }
