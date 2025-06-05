@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "i18nkey_text_reference.proto";
+import "translation.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message Localization {
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    I18NKeyTextReference i18nKeyTextReference = 1;
+    // Translations in various languages
+    Translations translations = 2;  
+}
+message Localizations {
+    repeated Localization items = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+ 
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message Translation {
+    // Language code for which the translation is provided
+    google.protobuf.StringValue localeId = 1;
+    // Translation value for the provided i18nkey
+    google.protobuf.StringValue value = 2;
+}
+message Translations {
+    repeated Translation items = 1;
+}

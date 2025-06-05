@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_parameter_definition.proto";
+
+ 
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents measurement capabilities and related meta-data for an instrument type.
+message InstrumentMeasurementCapability {
+
+    // Specifies whether the instrument is capable of providing measurements.
+    google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the measurement definitions - a list of supported measurements - that the instrument can provide.
+    InstrumentParameterDefinitions definitions = 2;
+
+}
