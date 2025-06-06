@@ -13,10 +13,13 @@ message InstrumentTwinSubType {
   google.protobuf.StringValue i18NKeyName = 2;
 
   // Unique identifier of an instrument twin type
-    string instrumentTwinTypeId = 3;
+  string instrumentTwinTypeId = 3;
   
   // PropertyBag will be used to persist JSON instance of InstrumentTwinSubType
   google.protobuf.StringValue propertyBag = 4;
+
+  // updateMask to support partial updates
+  google.protobuf.FieldMask updateMask = 98;
 
   // audit info
   RecordAuditInfo recordAuditInfo = 99;

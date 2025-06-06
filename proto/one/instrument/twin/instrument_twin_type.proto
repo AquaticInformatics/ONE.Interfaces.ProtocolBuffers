@@ -12,6 +12,9 @@ message InstrumentTwinType {
   // i18n key text reference for instrument twin type
   google.protobuf.StringValue i18NKeyName = 2;
 
+  // updateMask to support partial updates
+  google.protobuf.FieldMask updateMask = 98;
+
   // audit info
   RecordAuditInfo recordAuditInfo = 99;
 }
