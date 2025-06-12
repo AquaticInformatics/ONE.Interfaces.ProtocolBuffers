@@ -7,34 +7,40 @@ import "record_auditinfo.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwin {
-    // unique identifier of the instrument
-    string id = 1;
-      
-    // parent instrument id for case where instrument is connected to another
-    google.protobuf.StringValue instrumentParentId = 2;
+  // unique identifier of the instrument
+  string id = 1;
 
-    // enterprise twin ref id of the tenant this instrument belongs to
-    string tenantId = 3;
+  // parent instrument id for case where instrument is connected to another
+  google.protobuf.StringValue instrumentParentId = 2;
 
-    // used to both check enterprise twin authorization and represent the parent twin
-    string authEnterpriseTwinRefId = 4;
+  // enterprise twin ref id of the tenant this instrument belongs to
+  string tenantId = 3;
 
-    // category : instrument or telemetry
-    int32 categoryId = 5;
-    
-    // instrument name
-    google.protobuf.StringValue name = 6;
-   
-    // additional information stored as json
-    google.protobuf.StringValue twinData = 7;
+  // used to both check enterprise twin authorization and represent the parent twin
+  string authEnterpriseTwinRefId = 4;
 
-    // updateMask to support partial updates
-    google.protobuf.FieldMask updateMask = 98;
+  // category : instrument or telemetry
+  int32 categoryId = 5;
 
-    // audit info
-    RecordAuditInfo recordAuditInfo = 99;
+  // instrument name
+  google.protobuf.StringValue name = 6;
+
+  // additional information stored as json
+  google.protobuf.StringValue twinData = 7;
+
+  // instrument Twin type id 
+  string instrumentTwinTypeId = 8;
+
+  // instrument Twin subtype id 
+  string instrumentTwinSubTypeId = 9;
+
+  // updateMask to support partial updates
+  google.protobuf.FieldMask updateMask = 98;
+
+  // audit info
+  RecordAuditInfo recordAuditInfo = 99;
 }
 
 message InstrumentTwins {
- repeated InstrumentTwin items = 1;
+  repeated InstrumentTwin items = 1;
 }
