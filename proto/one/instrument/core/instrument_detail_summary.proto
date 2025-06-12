@@ -1,6 +1,7 @@
 syntax = "proto3";
  
 import "google/protobuf/wrappers.proto";
+import "instrument_manifest_summary.proto";
  
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
@@ -24,6 +25,10 @@ message InstrumentDetailSummary {
   
   // Enterprise DigitalTwin name
   google.protobuf.StringValue enterpriseTwinName = 5;
+
+  // InstrumentManifestSummary 
+  InstrumentManifestSummary instrumentManifestSummary = 6;
+
 }
  
 message InstrumentDetailSummaries {

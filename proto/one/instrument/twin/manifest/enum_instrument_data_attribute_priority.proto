@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents priority for an instrument data attribute (a.k.a. "ImportanceToUser")
+enum EnumInstrumentDataAttributePriority {
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_UNKNOWN = 0;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_PRIMARY = 1;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_SECONDARY = 2;
+    INSTRUMENT_DATA_ATTRIBUTE_PRIORITY_RESERVED = 99;
+}
