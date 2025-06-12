@@ -7,6 +7,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message Translation {
     // Language code for which the translation is provided
     google.protobuf.StringValue localeId = 1;
+    
     // Translation value for the provided i18nkey
     google.protobuf.StringValue value = 2;
 }
