@@ -50,19 +50,14 @@ message InstrumentTypeIdentifier {
 // Combining all flags here, to be deprecated once we move into Plug and Play
 message InstrumentTypeAttributes {
 
-    bool canHaveChildren = 1;
-
-    bool mustHaveParent = 2;
-
-    bool rootListVisible = 3 [deprecated = true];
+    // Keeping the numbering consistent with the Claros InstrumentTypeAttributes
+    // TODO: Will revisit this once IDT4 is moveed to Plug and Play 
 
     bool emitsMeasurements = 4;
 
     google.protobuf.StringValue pictureSmallUrl = 5;
 
     google.protobuf.StringValue pictureLargeUrl = 6;
-
-    bool guidedWorkflowSupport = 7 [deprecated = true];
 
     google.protobuf.Int32Value transmissionInterval = 8;
 
