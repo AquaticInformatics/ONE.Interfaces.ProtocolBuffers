@@ -1,0 +1,70 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+import "i18nkey_text_reference.proto";
+import "enum_library_status.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+ 
+// Represents the type of an instrument.
+message InstrumentType {
+    
+    // Identifier property of an instrument type.
+    InstrumentTypeIdentifier identifier = 1;
+ 
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    I18NKeyTextReference i18nKeyTextReference = 2;
+
+    //Contains all the flags for an instrument type
+    InstrumentTypeAttributes attributes = 3;
+
+    // Unique identifier of the instrument group to which this instrument type belongs to.
+    google.protobuf.StringValue instrumentGroupId = 4;
+
+    // Specifies the product name to be used for display purposes.
+    google.protobuf.StringValue name = 5;
+    
+    // Indicates Publish Status (LibraryStatus)
+    EnumLibraryStatus libraryStatus = 6;
+
+    // Audit information for the Instrument Type
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+// Represents the identifier properties for a instrument type
+message InstrumentTypeIdentifier {
+    
+    // Unique identifier of an instrument type.
+    google.protobuf.StringValue id = 1;
+    
+    // Manufacturer code for the instrument type.
+    google.protobuf.StringValue manufacturerCode = 2;
+
+    // Instrument code for the instrument type
+    google.protobuf.StringValue instrumentCode = 3;
+
+}
+
+// Combining all flags here, to be deprecated once we move into Plug and Play
+message InstrumentTypeAttributes {
+
+    // Keeping the numbering consistent with the Claros InstrumentTypeAttributes
+    // TODO: Will revisit this once IDT4 is moveed to Plug and Play 
+
+    bool emitsMeasurements = 4;
+
+    google.protobuf.StringValue pictureSmallUrl = 5;
+
+    google.protobuf.StringValue pictureLargeUrl = 6;
+
+    google.protobuf.Int32Value transmissionInterval = 8;
+
+    bool localAccessSupport = 9;
+}
+
+// Represents a list of instrument types
+message InstrumentTypes {
+    repeated InstrumentType items = 1;
+}

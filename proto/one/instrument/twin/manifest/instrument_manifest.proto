@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+import "instrument_group.proto";
+import "instrument_type.proto";
+import "instrument_measurement_capability.proto";
+import "localization.proto";
+
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentManifest {
+    // Specifies the version of instrument manifest.
+    google.protobuf.StringValue version = 1;
+
+    // Specifies the group of an instrument.
+    InstrumentGroup instrumentGroup = 2;
+    
+    // Specifies the type of an instrument.
+    InstrumentType instrumentType = 3;
+    
+    // Unique identifier of instrument manifest.
+    google.protobuf.StringValue id = 4;
+    
+    // Specifies the measurement capabilities and related meta-data for an instrument type.
+    InstrumentMeasurementCapability instrumentMeasurementCapability = 10;
+
+    // TODO: In Future add all the capabilities of an instrument type.
+    // Represents the capabilities of an instrument type.
+    // This is a placeholder for future capabilities that may be added.
+    
+    // Represents a database of translated strings with a given database name.
+    Localizations localizations = 14;
+    
+    RecordAuditInfo recordAuditInfo = 99;
+}
