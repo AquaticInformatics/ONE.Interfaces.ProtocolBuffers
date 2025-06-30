@@ -14,14 +14,11 @@ message UpdateInstrumentTwin {
   // used to both check enterprise twin authorization and represent the parent twin
   string authEnterpriseTwinRefId = 3;
 
-  // category : instrument or telemetry
-  int32 categoryId = 4;
-
   // instrument name
-  google.protobuf.StringValue name = 5;
+  google.protobuf.StringValue name = 4;
 
   // additional information stored as json
-  google.protobuf.StringValue twinData = 6;
+  google.protobuf.StringValue twinData = 5;
 }
 
 message UpdateInstrumentTwins {
