@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message UpdateInstrumentTwin {
+  // parent instrument id for case where instrument is connected to another
+  google.protobuf.StringValue instrumentParentId = 1;
+
+  // enterprise twin ref id of the tenant this instrument belongs to
+  string tenantId = 2;
+
+  // used to both check enterprise twin authorization and represent the parent twin
+  string authEnterpriseTwinRefId = 3;
+
+  // category : instrument or telemetry
+  int32 categoryId = 4;
+
+  // instrument name
+  google.protobuf.StringValue name = 5;
+
+  // additional information stored as json
+  google.protobuf.StringValue twinData = 6;
+}
+
+message UpdateInstrumentTwins {
+  repeated UpdateInstrumentTwin items = 1;
+}
