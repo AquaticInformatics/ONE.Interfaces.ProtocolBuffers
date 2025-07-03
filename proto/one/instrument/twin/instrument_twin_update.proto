@@ -4,7 +4,7 @@ import "google/protobuf/wrappers.proto";
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
-message UpdateInstrumentTwin {
+message InstrumentTwinUpdate {
   // parent instrument id for case where instrument is connected to another
   google.protobuf.StringValue instrumentParentId = 1;
 
@@ -21,6 +21,6 @@ message UpdateInstrumentTwin {
   google.protobuf.StringValue twinData = 5;
 }
 
-message UpdateInstrumentTwins {
-  repeated UpdateInstrumentTwin items = 1;
+message InstrumentTwinUpdates {
+  repeated InstrumentTwinUpdate items = 1;
 }
