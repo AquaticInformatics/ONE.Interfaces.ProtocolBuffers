@@ -8,17 +8,14 @@ message InstrumentTwinUpdate {
   // parent instrument id for case where instrument is connected to another
   google.protobuf.StringValue instrumentParentId = 1;
 
-  // enterprise twin ref id of the tenant this instrument belongs to
-  string tenantId = 2;
-
   // used to both check enterprise twin authorization and represent the parent twin
-  string authEnterpriseTwinRefId = 3;
+  google.protobuf.StringValue authEnterpriseTwinRefId = 2;
 
   // instrument name
-  google.protobuf.StringValue name = 4;
+  google.protobuf.StringValue name = 3;
 
   // additional information stored as json
-  google.protobuf.StringValue twinData = 5;
+  google.protobuf.StringValue twinData = 4;
 }
 
 message InstrumentTwinUpdates {
