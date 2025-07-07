@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
@@ -16,6 +17,9 @@ message InstrumentTwinUpdate {
 
   // additional information stored as json
   google.protobuf.StringValue twinData = 4;
+
+  // updateMask to support partial updates
+  google.protobuf.FieldMask updateMask = 98;
 }
 
 message InstrumentTwinUpdates {
