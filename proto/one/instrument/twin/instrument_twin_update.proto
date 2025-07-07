@@ -9,7 +9,7 @@ message InstrumentTwinUpdate {
   // parent instrument id for case where instrument is connected to another
   google.protobuf.StringValue instrumentParentId = 1;
 
-  // used to both check enterprise twin authorization and represent the parent twin
+  // used to represent a enterprise twin and to move a instrument twin to another enterprise twin
   google.protobuf.StringValue authEnterpriseTwinRefId = 2;
 
   // instrument name
