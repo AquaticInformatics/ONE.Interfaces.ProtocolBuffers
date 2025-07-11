@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/field_mask.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message InstrumentTwinUpdate {
+  // parent instrument id for case where instrument is connected to another
+  google.protobuf.StringValue instrumentParentId = 1;
+
+  // used to represent a enterprise twin and to move a instrument twin to another enterprise twin
+  google.protobuf.StringValue authEnterpriseTwinRefId = 2;
+
+  // instrument name
+  google.protobuf.StringValue name = 3;
+
+  // additional information stored as json
+  google.protobuf.StringValue twinData = 4;
+
+  // updateMask to support partial updates
+  google.protobuf.FieldMask updateMask = 98;
+}
+
+message InstrumentTwinUpdates {
+  repeated InstrumentTwinUpdate items = 1;
+}
