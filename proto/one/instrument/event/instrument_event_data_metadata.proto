@@ -7,14 +7,9 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // This is a generic implementation of the data that is collected with any type of Event coming from an instrument
 message InstrumentEventDataMetadata {
-
     I18NKeyTextReference description = 1 [json_name = "d"];
 
-	// ????? - Dan Dickout had a concept of a status on an event
-    google.protobuf.UInt32Value status = 2 [json_name = "s"];
-    
     google.protobuf.StringValue value = 3 [json_name = "v"];
 
     google.protobuf.StringValue unit = 4 [json_name = "u"];
-
 }

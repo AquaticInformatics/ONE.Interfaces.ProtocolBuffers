@@ -9,35 +9,29 @@ option csharp_namespace ="ONE.Models.CSharp";
 // Minimal representation of a measurement.
 // Used as a poperty of an instrument measurement
 // Will be returned to populate spreadsheet cells, graphs
-message Measurement {
+message InstrumentMeasurement {
     // When the measurement was taken (UTC)
-    JsonTicksDateTime timestamp = 1;       
-
-    // The parameter related to the measurement as an integer
-    int32 parameterId = 2;              
+    JsonTicksDateTime timestamp = 1 [json_name = "ts"];       
 
     // The parameter related to the measurement as a GUID
-    string parameterGuid = 3;           
-
-    // The unit related to the measurement as an integer
-    uint32 unitId = 4;                   
+    string parameterGuid = 3 [json_name = "pg"];           
 
     // The unit related to the measurement as a GUID
-    string unitGuid = 5;                
+    string unitGuid = 5 [json_name = "ug"];                
 
     // the value of the measurement
-    double value = 6;     
-	
-    // The value represented as a string
-    string stringValue = 8;
-	
+    double value = 6 [json_name = "v"];     
+
 	// The value represents the number of measurements taken into consideration for calculating the aggregated value
-	uint32 aggregatedMeasurementCount = 9;
+	uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
 
     // significant digit precision of the value
-    google.protobuf.UInt32Value decimalPrecision = 10; 
+    google.protobuf.UInt32Value decimalPrecision = 10 [json_name = "dp"]; 
+	
+	//channel no
+	google.protobuf.UInt32Value channelNumber = 11 [json_name = "cn"];
 }
 
-message Measurements {
-    repeated Measurement items = 1;
+message InstrumentMeasurements {
+    repeated InstrumentMeasurement items = 1 [json_name = "i"];
 }

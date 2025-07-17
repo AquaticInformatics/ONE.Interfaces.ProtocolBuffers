@@ -1,10 +1,8 @@
 syntax = "proto3";
 
-import "measurement.proto";
-import "instrument_event_data.proto";
+import "instrument_measurement.proto";
 import "instrument_tag_identifier.proto";
 import "key_value.proto";
-import "gis.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
@@ -17,26 +15,8 @@ message InstrumentMeasurementData {
     InstrumentTagIdentifier tagIdentifier = 2 [json_name = "tid"];
  
     // The common definition of a measurement
-    Measurement measurement = 3 [json_name = "m"];
+    InstrumentMeasurement measurement = 3 [json_name = "m"];
  
-    // The seconday measurements related to the processing of calculating the
-    // value of the primary measurement
-    // This data could be valuable for future instrument improvements
-    repeated InstrumentMeasurementData secondaryMeasurementDatas = 4 [json_name = "smd"]; 
- 
-    // Geolocation from portable instruments or any device that provides geo location.            
-    GIS geolocation = 5 [json_name = "gl"];
- 
-    // Bucket for any undefined data related to this instrument measurement
-    string measurementDataExtended = 6 [json_name = "mde"];
- 
-    // Byte array used for sending the raw measurement data
-    bytes rawMeasurementData = 7 [json_name = "rmd"];
-
-    // Events related to the process of taking this measurement from handheld instruments
-    // This data could be valuable for future instrument improvements
-    repeated InstrumentEventData instrumentEventDatas = 8;
-
     // Bucket for any undefined data related to this instrument measurement
     KeyValues attributes = 9 [json_name = "a"];
 }
