@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "i18nkey_text_reference.proto";
+import "instrument_tag_identifier.proto";
+import "instrument_diagnostic_value.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentDiagnostic {
+    InstrumentTagIdentifier tagIdentifier = 1 [json_name = "tid"];
+
+    I18NKeyTextReference name = 2 [json_name = "n"];   
+
+    google.protobuf.StringValue parameterGuid = 3 [json_name = "pg"];
+
+    google.protobuf.StringValue unitGuid = 4 [json_name = "ug"];
+
+    repeated InstrumentDiagnosticValue values = 5 [json_name = "vs"];
+}
+
+message InstrumentDiagnostics {
+    repeated InstrumentDiagnostic items = 1 [json_name = "i"];
+}

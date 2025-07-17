@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "instrument_status_metadata.proto";
+import "instrument_status_prognosys.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentStatus {
+	// Collection of Errors (sc errors, ..)
+    StatusMetadatas errors = 1 [json_name = "e"];
+  
+    // Collection of limit violations coming from an instrument
+    StatusMetadatas limits = 2 [json_name = "l"];
+  
+    // Collection of maintenance reminders coming from an instrument (sc reminders, ..)
+    StatusMetadatas reminders = 3 [json_name = "r"];
+  
+    // Collection of warnings coming from an instrument (sc warnings, ..)
+    StatusMetadatas warnings = 4 [json_name = "w"];
+  
+    // Collection of process events or operational status (calibrating, warming up, restarting)
+    StatusMetadatas operations = 5 [json_name = "o"];
+     
+    // Collection of prognosys (tm) events coming from prognosys enabled instruments
+    StatusPrognosys prognosys = 6 [json_name = "p"];
+ 
+    // The time of the observation snapshot
+    JsonTicksDateTime statusDateTime = 7 [json_name = "sdt"];
+}
+
+message InstrumentStatuses {
+    repeated InstrumentStatus items = 1 [json_name = "i"];
+}

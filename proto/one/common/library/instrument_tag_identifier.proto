@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "enum_instrument_tag_definition_type.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+// Identifier of an instrument tag.
+// Used as a property of an instrument measurement data
+// Used as a property of instrument tag definition
+message InstrumentTagIdentifier
+{
+    // The instrument identifier of the register
+    google.protobuf.UInt32Value id = 1;
+     
+    // The Foundation Library GUID of a tag id
+    google.protobuf.StringValue guid = 2 [json_name = "g"];
+
+    // Specifies the type of the tag (a.k.a. "TagType")
+    EnumInstrumentTagDefinitionType type = 3 [json_name = "t"];
+}

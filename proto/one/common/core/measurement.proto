@@ -11,33 +11,40 @@ option csharp_namespace ="ONE.Models.CSharp";
 // Will be returned to populate spreadsheet cells, graphs
 message Measurement {
     // When the measurement was taken (UTC)
-    JsonTicksDateTime timestamp = 1;       
+    JsonTicksDateTime timestamp = 1 [json_name = "ts"];       
 
     // The parameter related to the measurement as an integer
-    int32 parameterId = 2;              
+    int32 parameterId = 2 [json_name = "pid"];              
 
     // The parameter related to the measurement as a GUID
-    string parameterGuid = 3;           
+    string parameterGuid = 3 [json_name = "pg"];           
 
     // The unit related to the measurement as an integer
-    uint32 unitId = 4;                   
+    uint32 unitId = 4 [json_name = "uid"];
 
     // The unit related to the measurement as a GUID
-    string unitGuid = 5;                
+    string unitGuid = 5 [json_name = "ug"];                
 
     // the value of the measurement
-    double value = 6;     
-	
+    double value = 6 [json_name = "v"];     
+
     // The value represented as a string
-    string stringValue = 8;
+    string stringValue = 8 [json_name = "sv"];
 	
 	// The value represents the number of measurements taken into consideration for calculating the aggregated value
-	uint32 aggregatedMeasurementCount = 9;
+	uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
 
     // significant digit precision of the value
-    google.protobuf.UInt32Value decimalPrecision = 10; 
+    google.protobuf.UInt32Value decimalPrecision = 10 [json_name = "dp"]; 
+	
+	//channel no
+	google.protobuf.UInt32Value channelNumber = 11 [json_name = "cn"];
+	
+	//channel name
+    google.protobuf.StringValue channelName = 12 [json_name = "cname"];
+		
 }
 
 message Measurements {
-    repeated Measurement items = 1;
+    repeated Measurement items = 1 [json_name = "i"];
 }

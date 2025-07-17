@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-import "google/protobuf/wrappers.proto";
 import "instrument_twin.proto";
 import "instrument_summary.proto";
 import "instrument_twin_type.proto";

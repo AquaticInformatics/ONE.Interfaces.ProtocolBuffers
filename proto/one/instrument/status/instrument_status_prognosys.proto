@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "prognosys_identifier.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="Claros.Instrument.Status";
+ 
+// This is the standard message type for Prognosys (tm) data
+message StatusPrognosys {
+ 
+    // Instrument level 'overall' prognosys status (summary)
+    StatusPrognosysSummary summary = 1 [json_name = "s"];
+ 
+    // List of prognosys status for each hitlist-id
+    repeated StatusPrognosysItem items = 2 [json_name = "i"];
+}
+ 
+message StatusPrognosysItem {
+     
+    // Hitlist-Id (unique identifier of a prognosys item per instrument type)
+    PrognosysIdentifier identifier = 1 [json_name = "id"];
+ 
+    // Measurement indicator, specifying the health of a measurement
+    google.protobuf.UInt32Value percent = 2 [json_name = "p"];
+ 
+    // Service indicator, specifying the "due in days" required maintenance (predictive maintenance)
+    google.protobuf.Int32Value days = 3 [json_name = "d"];
+}
+
+message StatusPrognosysSummary {
+     
+	// Measurement indicator, specifying the overall health of a measurement
+	google.protobuf.UInt32Value percent = 1 [json_name = "p"];
+ 
+	// Service indicator, specifying the overall "due in days" required maintenance (predictive maintenance)
+	google.protobuf.Int32Value days = 2 [json_name = "d"];
+}

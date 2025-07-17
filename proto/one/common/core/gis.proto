@@ -9,8 +9,8 @@ option csharp_namespace ="ONE.Models.CSharp";
 
 // https://pypi.org/project/protobuf-gis/
 message GIS {
-  Point2D point2d = 1;
-  Point3D point3d = 2;
-  MultiPoint2D multi_point2d = 3;
-  MultiPoint3D multi_point3d = 4;
+  Point2D point2d = 1 [json_name = "p2d"];
+  Point3D point3d = 2 [json_name = "p3d"];
+  MultiPoint2D multi_point2d = 3 [json_name = "mp2d"];
+  MultiPoint3D multi_point3d = 4 [json_name = "mp3d"];
 }
