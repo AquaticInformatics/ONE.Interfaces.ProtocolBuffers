@@ -22,14 +22,14 @@ message InstrumentMeasurement {
     // the value of the measurement
     double value = 6 [json_name = "v"];     
 
-	// The value represents the number of measurements taken into consideration for calculating the aggregated value
-	uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
+    // The value represents the number of measurements taken into consideration for calculating the aggregated value
+    uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
 
     // significant digit precision of the value
     google.protobuf.UInt32Value decimalPrecision = 10 [json_name = "dp"]; 
 	
-	//channel no
-	google.protobuf.UInt32Value channelNumber = 11 [json_name = "cn"];
+    //channel no
+    google.protobuf.UInt32Value channelNumber = 11 [json_name = "cn"];
 }
 
 message InstrumentMeasurements {
