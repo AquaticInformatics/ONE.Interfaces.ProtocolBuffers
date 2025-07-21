@@ -10,9 +10,6 @@ option csharp_namespace ="ONE.Models.CSharp";
 // Used as a property of instrument tag definition
 message InstrumentTagIdentifier
 {
-    // The instrument identifier of the register
-    google.protobuf.UInt32Value id = 1;
-     
     // The Foundation Library GUID of a tag id
     google.protobuf.StringValue guid = 2 [json_name = "g"];
 

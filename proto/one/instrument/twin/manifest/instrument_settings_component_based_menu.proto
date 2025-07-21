@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+/*
+ * Placeholder for Web-Component based menu details to support HEC/LEC Platform architecture.
+ */
+message InstrumentSettingsComponentBasedMenu {
+
+}

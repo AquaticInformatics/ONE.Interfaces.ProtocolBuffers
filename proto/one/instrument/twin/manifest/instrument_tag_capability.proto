@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_tag_definition.proto";
+
+// Represents tag and I/O configuration capabilities and related meta-data for an instrument type.
+message InstrumentTagCapability {
+
+    // Specifies wheter the instrument is capable of providing tags.
+    google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the tag definitions - a list of supported tags - that the instrument can provide.
+    InstrumentTagDefinitions definitions = 2;
+
+}

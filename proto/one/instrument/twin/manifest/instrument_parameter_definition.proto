@@ -1,32 +1,17 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "record_auditinfo.proto";
-import "enum_library_status.proto";
 import "enum_instrument_data_attribute_priority.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Represents an instrument parameter definition.
 message InstrumentParameterDefinition {
-
-    // Unique identifier of an instrument parameter definition.
-    google.protobuf.StringValue id = 1;
-
-    // Unique identifier of the instrument type to which this definition belongs to.
-    google.protobuf.StringValue instrumentTypeId = 2;
-
     // Unique identifier of the parameter for which this definition specifies the preferences.
     google.protobuf.StringValue parameterId = 3;
 
     // Set of attributes specifying the preferences for the instrument type-parameter pair.
     InstrumentParameterDefinitionAttributes attributes = 4;
-
-    // Indicates Publish Status (LibraryStatus)
-    EnumLibraryStatus libraryStatus  = 5;
-
-    // Audit information for the Instrument Tag Definition
-    RecordAuditInfo recordAuditInfo = 99;
 }
 
 // Represents a set of attributes specifying the preferences for the instrument type-parameter pair.
