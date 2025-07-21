@@ -12,6 +12,8 @@ import "instrument_diagnostic.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentData {
+    // unique identifier of the instrument
+    google.protobuf.StringValue id = 1 [json_name = "id"];
     
     // Header Information. Unique id of an instrument
     string fusionId = 2 [json_name = "fid"];

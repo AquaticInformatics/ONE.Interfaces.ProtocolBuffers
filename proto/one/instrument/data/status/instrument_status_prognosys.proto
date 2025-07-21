@@ -3,7 +3,7 @@ syntax = "proto3";
 import "prognosys_identifier.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="Claros.Instrument.Status";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
 // This is the standard message type for Prognosys (tm) data
 message StatusPrognosys {

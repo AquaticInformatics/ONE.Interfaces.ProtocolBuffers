@@ -17,7 +17,6 @@ message StatusMetadata {
 
     // Additional property to store the any specific metadata as a key value pair.
     KeyValues data = 4 [json_name = "dt"];
-
 }
 
 message StatusMetadatas {

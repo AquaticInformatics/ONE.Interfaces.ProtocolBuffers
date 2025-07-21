@@ -2,7 +2,8 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
 
 // Identifier of a prognosys definition.
 // Used as a property of prognosys definition

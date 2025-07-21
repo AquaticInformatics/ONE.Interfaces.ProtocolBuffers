@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_instrument_tag_definition_type.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Identifier of an instrument tag.
 // Used as a property of an instrument measurement data

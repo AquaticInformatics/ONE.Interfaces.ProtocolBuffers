@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Represents tag type for an instrument data identifier (a.k.a. "TagType")
 enum EnumInstrumentTagDefinitionType {

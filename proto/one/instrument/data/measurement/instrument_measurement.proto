@@ -4,7 +4,7 @@ import "google/protobuf/wrappers.proto";
 
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // Minimal representation of a measurement.
 // Used as a poperty of an instrument measurement
