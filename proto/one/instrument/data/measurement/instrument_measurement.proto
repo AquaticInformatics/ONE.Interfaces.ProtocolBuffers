@@ -27,9 +27,6 @@ message InstrumentMeasurement {
 
     // significant digit precision of the value
     google.protobuf.UInt32Value decimalPrecision = 10 [json_name = "dp"]; 
-	
-    //channel no
-    google.protobuf.UInt32Value channelNumber = 11 [json_name = "cn"];
 }
 
 message InstrumentMeasurements {
