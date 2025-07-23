@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
  
-option csharp_namespace ="ONE.Models.CSharp.Instrument";
+option csharp_namespace ="ONE.Models.CSharp";
 
 message Translation {
     // Language code for which the translation is provided
