@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option csharp_namespace = "ONE.Models.CSharp.External"; 
+
+// Enum definition for AQI model tags used in scenario configuration
+enum EnumDelphiModelTagScenario {
+    // Default unknown tag
+    TAG_UNKNOWN = 0;
+    
+    // Scenario Configuration Model Tags
+    AQI_scenario_id = 1;                        // Scenario ID identifier
+    
+    // Influent Flow Tags
+    AQI_Influent_Forecast_Flow = 2;             // Influent Flow Forecast Type (0 = Current Forecast, 1 = Average Forecast)
+    AQI_Influent_Storm_Flow = 3;                // Influent Flow Storm Generator Enable (false = don't use storm generator, true = use storm generator)
+    AQI_Influent_Storm_Start_Flow = 4;          // Influent Flow Storm Start Time (DoubleValue in hours)
+    AQI_Influent_Storm_End_Flow = 5;            // Influent Flow Storm End Time (DoubleValue in hours)
+    AQI_Influent_Storm_Value_Flow = 6;          // Influent Flow Storm Peak Flow (DoubleValue for peak flow)
+    
+    // Influent Loading Tags - TCOD (Total Chemical Oxygen Demand)
+    AQI_Influent_Load_TCOD = 7;                 // TCOD Loading Type (0 = Current Loading, 1 = Custom Loading)
+    AQI_Influent_Load_Amount_TCOD = 8;          // TCOD Custom Loading Amount (DoubleValue for Custom Loading amount)
+    AQI_Influent_Load_Peak_TCOD = 9;            // TCOD Peak Generator Enable (false = don't use peak generator, true = use peak generator)
+    AQI_Influent_Load_Peak_Start_TCOD = 10;     // TCOD Peak Start Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_End_TCOD = 11;       // TCOD Peak End Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_Value_TCOD = 12;     // TCOD Peak Value (DoubleValue for peak loading)
+    
+    // Influent Loading Tags - TKN (Total Kjeldahl Nitrogen)
+    AQI_Influent_Load_TKN = 13;                 // TKN Loading Type (0 = Current Loading, 1 = Custom Loading)
+    AQI_Influent_Load_Amount_TKN = 14;          // TKN Custom Loading Amount (DoubleValue for Custom Loading amount)
+    AQI_Influent_Load_Peak_TKN = 15;            // TKN Peak Generator Enable (false = don't use peak generator, true = use peak generator)
+    AQI_Influent_Load_Peak_Start_TKN = 16;      // TKN Peak Start Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_End_TKN = 17;        // TKN Peak End Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_Value_TKN = 18;      // TKN Peak Value (DoubleValue for peak loading)
+    
+    // Influent Loading Tags - TP (Total Phosphorus)
+    AQI_Influent_Load_TP = 19;                  // TP Loading Type (0 = Current Loading, 1 = Custom Loading)
+    AQI_Influent_Load_Amount_TP = 20;           // TP Custom Loading Amount (DoubleValue for Custom Loading amount)
+    AQI_Influent_Load_Peak_TP = 21;             // TP Peak Generator Enable (false = don't use peak generator, true = use peak generator)
+    AQI_Influent_Load_Peak_Start_TP = 22;       // TP Peak Start Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_End_TP = 23;         // TP Peak End Time (DoubleValue in hours)
+    AQI_Influent_Load_Peak_Value_TP = 24;       // TP Peak Value (DoubleValue for peak loading)
+}
