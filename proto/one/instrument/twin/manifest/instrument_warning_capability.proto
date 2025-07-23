@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_status_definition.proto";
+
+// Represents warning capabilities and related meta-data for an instrument type.
+message InstrumentWarningCapability {
+
+    // Specifies whether the instrument is capable of providing warnings.
+     google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the warning definitions - a list of supported warning - that the instrument can provide.
+    InstrumentStatusDefinitions definitions = 2;
+}

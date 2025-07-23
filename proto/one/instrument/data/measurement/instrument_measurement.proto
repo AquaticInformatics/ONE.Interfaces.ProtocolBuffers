@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+import "jsonTicksDateTime_claros.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Minimal representation of a measurement.
+// Used as a poperty of an instrument measurement
+// Will be returned to populate spreadsheet cells, graphs
+message InstrumentMeasurement {
+    // When the measurement was taken (UTC)
+    JsonTicksDateTimeClaros timestampUtc = 1 [json_name = "ts"];       
+
+    // The parameter related to the measurement as a GUID
+    string parameterId = 3 [json_name = "pg"];           
+
+    // The unit related to the measurement as a GUID
+    string unitId = 5 [json_name = "ug"];                
+
+    // the value of the measurement
+    double value = 6 [json_name = "v"];     
+
+    // The value represents the number of measurements taken into consideration for calculating the aggregated value
+    uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
+
+    // significant digit precision of the value
+    google.protobuf.UInt32Value decimalPrecision = 10 [json_name = "dp"]; 
+}
+
+message InstrumentMeasurements {
+    repeated InstrumentMeasurement items = 1 [json_name = "i"];
+}

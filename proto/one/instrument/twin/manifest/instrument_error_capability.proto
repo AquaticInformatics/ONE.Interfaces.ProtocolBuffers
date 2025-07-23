@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_status_definition.proto";
+
+// Represents error capabilities and related meta-data for an instrument type.
+message InstrumentErrorCapability {
+
+    // Specifies whether the instrument is capable of providing errors.
+     google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the error definitions - a list of supported errors - that the instrument can provide. 
+    InstrumentStatusDefinitions definitions = 2;
+}

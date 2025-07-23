@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime_claros.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Wrapping the "map" into a named type
+// so that in code (C#) we don't pass around a Dictionary<string,string>
+// but a named type which explicitly states that it is about "instrument performance"
+message InstrumentPerformance {
+ 
+	// The time of the observation snapshot
+	JsonTicksDateTimeClaros performanceDateTimeUtc = 1;
+
+	map<string,string> items = 2;
+}

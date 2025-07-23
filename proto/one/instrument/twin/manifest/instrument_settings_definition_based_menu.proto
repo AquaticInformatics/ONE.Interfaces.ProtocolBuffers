@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+
+// Represents the details of a definition-based settings menu capability for the instrument.
+message InstrumentSettingsDefinitionBasedMenu {
+
+    // Specifies the menu-reference for entering the menu.
+    google.protobuf.UInt32Value reference = 1;
+
+}

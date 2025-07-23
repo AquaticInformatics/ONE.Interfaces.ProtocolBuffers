@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_file_transfer_definition.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents File Transfer capabilities and related meta-data for an instrument type.
+message InstrumentFileTransferCapability {
+
+    // Specifies whether the the capability is enabled or not.
+     google.protobuf.BoolValue enabled = 1;
+
+    // Represents the File-Transfer definitions - a list of supported File-Transfers - that the instrument can provide.
+    InstrumentFileTransferDefinitions definitions = 2;
+}

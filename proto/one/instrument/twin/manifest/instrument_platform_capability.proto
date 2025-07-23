@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "enum_registry_type.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents instrument platform capabilities and related meta-data for an instrument type.
+message InstrumentPlatformCapability {
+
+    // Specifies whether the instrument is capable of connecting to cloud or not.
+    google.protobuf.BoolValue enabled = 1;
+
+    // Specifies how the instrument gets connected and registered.
+    EnumRegistryType registryType = 2;
+
+    // Specifies whether the instrument provides access to its settings and data locally or on-premise.
+    google.protobuf.BoolValue localAccessEnabled = 3;
+}
