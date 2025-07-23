@@ -12,9 +12,9 @@ message InstrumentDiagnostic {
 
     I18NKeyTextReference name = 2 [json_name = "n"];   
 
-    google.protobuf.StringValue parameterGuid = 3 [json_name = "pg"];
+    google.protobuf.StringValue parameterId = 3 [json_name = "pg"];
 
-    google.protobuf.StringValue unitGuid = 4 [json_name = "ug"];
+    google.protobuf.StringValue unitId = 4 [json_name = "ug"];
 
     repeated InstrumentDiagnosticValue values = 5 [json_name = "vs"];
 }

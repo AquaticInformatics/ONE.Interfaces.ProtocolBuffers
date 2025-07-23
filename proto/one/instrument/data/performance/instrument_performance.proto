@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "jsonTicksDateTime.proto";
+import "jsonTicksDateTime_claros.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -10,7 +10,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentPerformance {
  
 	// The time of the observation snapshot
-	JsonTicksDateTime performanceDateTime = 1;
+	JsonTicksDateTimeClaros performanceDateTimeUtc = 1;
 
 	map<string,string> items = 2;
 }

@@ -2,12 +2,12 @@ syntax = "proto3";
 
 import "instrument_status_metadata.proto";
 import "instrument_status_prognosys.proto";
-import "jsonTicksDateTime.proto";
+import "jsonTicksDateTime_claros.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentStatus {
-	// Collection of Errors (sc errors, ..)
+    // Collection of Errors (sc errors, ..)
     StatusMetadatas errors = 1 [json_name = "e"];
   
     // Collection of limit violations coming from an instrument
@@ -26,7 +26,7 @@ message InstrumentStatus {
     StatusPrognosys prognosys = 6 [json_name = "p"];
  
     // The time of the observation snapshot
-    JsonTicksDateTime statusDateTime = 7 [json_name = "sdt"];
+    JsonTicksDateTimeClaros statusDateTimeUtc = 7 [json_name = "sdt"];
 }
 
 message InstrumentStatuses {

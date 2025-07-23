@@ -6,7 +6,7 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 // This is a generic implementation of the data that is collected with any type of Event coming from an instrument
-message InstrumentEventDataMetadata {
+message InstrumentEventMetadata {
     I18NKeyTextReference description = 1 [json_name = "d"];
 
     google.protobuf.StringValue value = 3 [json_name = "v"];
