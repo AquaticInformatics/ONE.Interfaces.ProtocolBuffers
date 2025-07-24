@@ -1,0 +1,41 @@
+syntax = "proto3";
+ 
+import "enum_instrument_data_attribute_priority.proto";
+import "digital_twin_instrument_telemetry_propertybag.proto";
+import "google/protobuf/wrappers.proto";
+import "instrument_measurement_definition_summary.proto";
+import "jsonTicksDateTime.proto";
+ 
+option csharp_namespace = "One.Instrument.Core";
+ 
+message InstrumentMeasurementSummary {
+
+  // Specifies whether the instrument is capable of providing measurements.
+  google.protobuf.BoolValue enabled = 1;
+    
+  // Unique identifier of an instrument measurement - TwinRefId of a Telemetry DigitalTwin
+  google.protobuf.StringValue telemetryId = 2; //TwinId
+ 
+  // Represents the PropertyBag which contain - Instrument measurement definitions and most recent instrument measurements reported.
+  InstrumentMeasurementDefinitionSummary instrumentMeasurementDefinitionSummary = 3; //TwinData
+
+  double latestValue = 4; //InstrumentData
+
+  JsonTicksDateTime latestTimestamp = 5; //InstrumentData
+
+  EnumInstrumentDataAttributePriority displayPriority = 6; //Manifest
+
+  google.protobuf.UInt32Value displaySortOrder = 7; //Manifest
+
+  google.protobuf.UInt32Value displayDecimalPoints = 8; //Manifest
+ 
+  // Represents a key-value pair of historical measurement data along with its reported timestamp (in UTC).
+  map<string, double> historicalData = 9; //InstrumentData
+
+  // The value represents the number of measurements taken into consideration for calculating the aggregated value
+  uint32 aggregatedMeasurementCount = 10;
+}
+ 
+message InstrumentMeasurementSummaries {
+  repeated InstrumentMeasurementSummary items = 1;
+}
