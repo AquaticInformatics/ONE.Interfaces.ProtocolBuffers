@@ -13,7 +13,7 @@ message InstrumentSummary {
   InstrumentDetailSummary edgeInstrumentDetailSummary = 2;
 
   // Represents the Telemetry data for the instrument
-  InstrumentMeasurementSummaries instrumentMeasurementSummaris = 3;
+  InstrumentMeasurementSummaries instrumentMeasurementSummaries = 3;
 }
  
 message InstrumentSummaries {

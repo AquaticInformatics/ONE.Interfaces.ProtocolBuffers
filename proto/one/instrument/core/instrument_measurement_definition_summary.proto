@@ -24,6 +24,6 @@ message InstrumentMeasurementDefinitionSummary {
 
 // Represents a list of instruments
 message InstrumentMeasurementDefinitionSummaries {
-    // Specifies the list of instrument defintions
+    // Specifies the list of instrument definitions
     repeated InstrumentMeasurementDefinitionSummary items = 1; 
 }
