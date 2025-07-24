@@ -5,6 +5,13 @@ import "record_auditinfo.proto";
 import "instrument_group.proto";
 import "instrument_type.proto";
 import "instrument_measurement_capability.proto";
+import "instrument_prognosys_capability.proto";
+import "instrument_tag_capability.proto";
+import "instrument_settings_capability.proto";
+import "instrument_platform_capability.proto";
+import "instrument_file_transfer_capability.proto";
+import "instrument_error_capability.proto";
+import "instrument_warning_capability.proto";
 import "localization.proto";
 
 
@@ -26,12 +33,30 @@ message InstrumentManifest {
     // Specifies the measurement capabilities and related meta-data for an instrument type.
     InstrumentMeasurementCapability instrumentMeasurementCapability = 10;
 
-    // TODO: In Future add all the capabilities of an instrument type.
-    // Represents the capabilities of an instrument type.
-    // This is a placeholder for future capabilities that may be added.
+    // Specifies the prognosys capabilities and related meta-data for an instrument type.
+    InstrumentPrognosysCapability instrumentPrognosysCapability = 11;
+
+    // Specifies the tag and I/O configuration capabilities and related meta-data for an instrument type.
+    InstrumentTagCapability instrumentTagCapability = 12;
+
+    // Specifies the settings capabilities and related meta-data for an instrument type.
+    InstrumentSettingsCapability instrumentSettingsCapability = 13;
     
     // Represents a database of translated strings with a given database name.
     Localizations localizations = 14;
+
+    // Specifies the platform capabilities and related meta-data for an instrument type.
+    InstrumentPlatformCapability instrumentPlatformCapability = 15;
+
+    // Specifies the file transfer capabilities and related meta-data for an instrument type.
+    InstrumentFileTransferCapability instrumentFileTransferCapability = 16;
+	
+    // Specifies the error capabilities and related meta-data for an instrument type. 
+    InstrumentErrorCapability instrumentErrorCapability = 17;
+
+    // Specifies the warning capabilities and related meta-data for an instrument-type.
+    InstrumentWarningCapability instrumentWarningCapability = 18;
+
     
     RecordAuditInfo recordAuditInfo = 99;
 }
