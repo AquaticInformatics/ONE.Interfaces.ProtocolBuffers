@@ -1,7 +1,6 @@
 syntax = "proto3";
  
 import "enum_instrument_data_attribute_priority.proto";
-import "digital_twin_instrument_telemetry_propertybag.proto";
 import "google/protobuf/wrappers.proto";
 import "instrument_measurement_definition_summary.proto";
 import "jsonTicksDateTime.proto";
