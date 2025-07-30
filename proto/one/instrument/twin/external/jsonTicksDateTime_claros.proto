@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.External";
 
 // TODO: This file is a copy of common/core/jsonTicksDateTime.proto not exactly the same.
 // It is used to avoid serialization issues while receiving the data from Claros, later at some point
