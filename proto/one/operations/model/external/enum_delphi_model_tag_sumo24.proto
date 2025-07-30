@@ -4,7 +4,7 @@ option csharp_namespace = "ONE.Models.CSharp.External";
 
 // Enum definition for AQI model tags used in model configuration
 enum EnumDelphiModelTagSumo24 {
-    TAG_UNKNOWN = 0;
+    TAG_UNKNOWN_SUMO24 = 0;
     Influent__reference = 1;
     Sumo__Plant__INF_1__param__Q = 2;
     Sumo__Plant__INF_1__param__TCOD = 3;
