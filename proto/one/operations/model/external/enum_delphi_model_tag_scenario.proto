@@ -5,7 +5,7 @@ option csharp_namespace = "ONE.Models.CSharp.External";
 // Enum definition for AQI model tags used in scenario configuration
 enum EnumDelphiModelTagScenario {
     // Default unknown tag
-    TAG_UNKNOWN = 0;
+    TAG_UNKNOWN_SCENARIO = 0;
     
     // Scenario Configuration Model Tags
     AQI_scenario_id = 1;                        // Scenario ID identifier
