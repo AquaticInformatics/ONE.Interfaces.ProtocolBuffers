@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "prognosys_identifier.proto";
+import "i18nkey_text_reference.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Representation of a prognosys definition.
+message PrognosysDefinition {
+    // The identifier of the prognosys
+    PrognosysIdentifier identifier = 1;
+
+    // Guid of instrument type
+    google.protobuf.StringValue instrumentTypeGuid = 2;
+    
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    I18NKeyTextReference i18nKeyTextReference = 3;
+}
+
+message PrognosysDefinitions {
+    repeated PrognosysDefinition items = 1;
+}

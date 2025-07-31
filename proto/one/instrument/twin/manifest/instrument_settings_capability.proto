@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_settings_definition.proto";
+
+// Represents settings capabilities and related meta-data for an instrument type.
+message InstrumentSettingsCapability {
+
+    // Specifies whether the instrument is capable of providing settings.
+    google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the settings definitions - a list of supported settings - that the instrument can provide.
+    InstrumentSettingsDefinitions definitions = 2;
+
+}
