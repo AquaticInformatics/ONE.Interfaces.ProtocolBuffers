@@ -10,7 +10,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentMeasurementData {
 
     // the unique identifier for combination of parameter, unit, channelNumber and tag    
-    string id = 1;
+    string id = 4;
 
     // Hardware physical connector identifier
     google.protobuf.UInt32Value channelNumber = 1 [json_name = "cn"];
