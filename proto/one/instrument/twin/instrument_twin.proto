@@ -8,7 +8,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentTwin {
   // unique identifier of the instrument
-  string id = 9;
+  string id = 1;
 
   // parent instrument id for case where instrument is connected to another
   google.protobuf.StringValue instrumentParentId = 2;
