@@ -13,5 +13,5 @@ message KeyValue {
 
 message KeyValues {
 
-    repeated KeyValue items = 1;
+    repeated KeyValue items = 1 [json_name = "i"];
 }

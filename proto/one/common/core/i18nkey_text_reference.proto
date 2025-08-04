@@ -8,11 +8,11 @@ option csharp_namespace ="ONE.Models.CSharp";
 message I18NKeyTextReference {
      
     // To be specified by the instrument. For example: "common", "param", "unit", "sensor"
-    google.protobuf.StringValue i18nDatabaseName = 1;
+    google.protobuf.StringValue i18nDatabaseName = 1 [json_name = "i18ndbn"];
  
     // To be mapped by cloud backend. For example: "CommonStandard", "HL001_00119"
-    google.protobuf.StringValue i18nModule = 2;
+    google.protobuf.StringValue i18nModule = 2 [json_name = "i18nm"];
  
     // The key identifying the text.
-    google.protobuf.StringValue i18nKey = 3;
+    google.protobuf.StringValue i18nKey = 3 [json_name = "i18nk"];
 }
