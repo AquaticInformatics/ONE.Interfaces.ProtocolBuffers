@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "i18nkey_text_reference.proto";
+import "instrument_settings_definition_based_menu.proto";
+import "instrument_settings_component_based_menu.proto";
+
+// Represents a settings definition that the instrument can provide.
+message InstrumentSettingsDefinition {
+    
+    // Specifies the type of settings provided by the instrument.
+    oneof type {
+
+        // Specifies the details of definition-based settings menu.
+        InstrumentSettingsDefinitionBasedMenu definitionBasedMenu = 1;
+
+        // Specifies the details of component-based settings menu.
+        InstrumentSettingsComponentBasedMenu componentBasedMenu = 2;
+
+    }
+
+    // Specifies the translated text reference for the entry point of settings management that will be used for display in the language of the end-user.
+    I18NKeyTextReference i18nKeyTextReference = 3;
+
+}
+
+// Represents the settings definitions - a list of supported settings - that the instrument can provide.
+message InstrumentSettingsDefinitions {
+    repeated InstrumentSettingsDefinition items = 1;
+}
