@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/any.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ONE.Models.CSharp";
+
+message CloudEvent {
+
+  // Unique identifier for the event
+  string id = 1;
+
+  // Logical URI that identifies the source of the event
+  string source = 2;
+
+  // Version of the CloudEvents specification
+  string specversion = 3;
+
+  // Type of the event, application-defined
+  string type = 4;
+
+  // Content type of the data field (e.g., "application/json")
+  string datacontenttype = 5;
+
+  // The subject of the event in the context of the event producer
+  string subject = 6;
+
+  // Timestamp indicating when the event occurred
+  google.protobuf.Timestamp time = 7;
+
+  // Event payload as a JSON-serialized string of a Protocol Buffers(Instrument or Manifest) message
+  google.protobuf.StringValue data = 8;
+}
+
+message CloudEvents {
+  repeated CloudEvent items = 1;
+}
