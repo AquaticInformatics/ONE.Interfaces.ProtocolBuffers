@@ -10,4 +10,5 @@ enum EnumDelphiModelTagSumo24 {
     Sumo__Plant__INF_1__param__TCOD = 3;
     Sumo__Plant__INF_1__param__TKN = 4;
     Sumo__Plant__INF_1__param__TP = 5;
+    AQI_Precipitation = 6;
 }
