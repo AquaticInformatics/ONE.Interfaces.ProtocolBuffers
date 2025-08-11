@@ -5,13 +5,13 @@ option csharp_namespace ="ONE.Models.CSharp";
 message KeyValue {
 
   // Key
-	string key = 1;
+	string key = 1 [json_name = "k"];
 
   // Value
-  string value = 2;
+  string value = 2 [json_name = "v"];
 }
 
 message KeyValues {
 
-    repeated KeyValue items = 1;
+    repeated KeyValue items = 1 [json_name = "i"];
 }
