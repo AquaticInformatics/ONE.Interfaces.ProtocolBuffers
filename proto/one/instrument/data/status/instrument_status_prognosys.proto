@@ -17,7 +17,7 @@ message StatusPrognosys {
  
 message StatusPrognosysItem {
      
-    // Hitlist-Id (unique identifier of a prognosys item per instrument type)
+    // Hitlist-Id (unique identifier of a prognosys (tm) item per instrument type)
     PrognosysIdentifier identifier = 1 [json_name = "id"];
  
     // Measurement indicator, specifying the health of a measurement
