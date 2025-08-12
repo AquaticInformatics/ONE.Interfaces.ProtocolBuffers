@@ -8,10 +8,7 @@ import "jsonTicksDateTime.proto";
 option csharp_namespace = "One.Instrument.Core";
  
 message InstrumentMeasurementSummary {
-
-  // Specifies whether the instrument is capable of providing measurements.
-  google.protobuf.BoolValue enabled = 1;
-    
+      
   // Unique identifier of an instrument measurement - TwinRefId of a Telemetry DigitalTwin
   google.protobuf.StringValue telemetryId = 2; //TwinId
  
@@ -36,5 +33,9 @@ message InstrumentMeasurementSummary {
 }
  
 message InstrumentMeasurementSummaries {
+
+  // Specifies whether the instrument is capable of providing measurements.
+  google.protobuf.BoolValue enabled = 1;
+
   repeated InstrumentMeasurementSummary items = 1;
 }
