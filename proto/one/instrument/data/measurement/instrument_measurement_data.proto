@@ -8,17 +8,21 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentMeasurementData {
+    
+    // unique identifier of the InstrumentMeasurementData
+    google.protobuf.StringValue id = 1 [json_name = "id"];
+
     // Hardware physical connector identifier
-    google.protobuf.UInt32Value channelNumber = 1 [json_name = "cn"];
+    google.protobuf.UInt32Value channelNumber = 2 [json_name = "cn"];
  
     // For SC instruments, this is the identifier of the register (instrument tag)
-    InstrumentTagIdentifier tagIdentifier = 2 [json_name = "tid"];
+    InstrumentTagIdentifier tagIdentifier = 3 [json_name = "tid"];
  
     // The common definition of a measurement
-    InstrumentMeasurement measurement = 3 [json_name = "m"];
+    InstrumentMeasurement measurement = 4 [json_name = "m"];
  
     // Bucket for any undefined data related to this instrument measurement
-    KeyValues attributes = 9 [json_name = "a"];
+    KeyValues attributes = 5 [json_name = "a"];
 }
 
 message InstrumentMeasurementDatas

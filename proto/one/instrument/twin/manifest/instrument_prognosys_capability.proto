@@ -5,13 +5,13 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 import "google/protobuf/wrappers.proto";
 import "prognosys_definition.proto";
 
-// Represents prognosys capabilities and related meta-data for an instrument type.
+// Represents prognosys (tm) capabilities and related meta-data for an instrument type.
 message InstrumentPrognosysCapability {
 
     // Specifies whether the instrument is capable of providing prognosys.
     google.protobuf.BoolValue enabled = 1;
 
-    // Specifies the prognosys definitions - a list of supported prognosys information - that the instrument can provide.
+    // Specifies the prognosys (tm) definitions - a list of supported prognosys information - that the instrument can provide.
     PrognosysDefinitions definitions = 2;
 
 }

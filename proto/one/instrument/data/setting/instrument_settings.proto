@@ -13,5 +13,6 @@ message InstrumentSettings {
 	map<string,string> settings = 1;
 
 	// The time of the observation snapshot
-	JsonTicksDateTimeClaros settingsDateTimeUtc = 2;
+	// TODO: update with shorten name in Claros and in this proto
+	JsonTicksDateTimeClaros settingsDateTimeUtc = 2 [json_name = "settingsDateTime"];
 }
