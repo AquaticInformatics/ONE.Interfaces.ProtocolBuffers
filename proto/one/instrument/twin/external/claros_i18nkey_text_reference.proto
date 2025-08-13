@@ -5,7 +5,7 @@ import "google/protobuf/wrappers.proto";
 option csharp_namespace ="ONE.Models.CSharp.External";
 
 // Defines the properties that make up an i18nKey
-message I18NKeyTextReferenceClaros {
+message ClarosI18NKeyTextReference {
      
     // To be specified by the instrument. For example: "common", "param", "unit", "sensor"
     google.protobuf.StringValue i18nDatabaseName = 1 [json_name = "i18ndbn"];

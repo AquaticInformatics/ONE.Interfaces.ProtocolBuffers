@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "instrument_status_metadata.proto";
 import "instrument_status_prognosys.proto";
-import "jsonTicksDateTime_claros.proto";
+import "claros_jsonTicksDateTime.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -26,7 +26,7 @@ message InstrumentStatus {
     StatusPrognosys prognosys = 6 [json_name = "p"];
  
     // The time of the observation snapshot
-    JsonTicksDateTimeClaros statusDateTimeUtc = 7 [json_name = "sdt"];
+    ClarosJsonTicksDateTime statusDateTimeUtc = 7 [json_name = "sdt"];
 }
 
 message InstrumentStatuses {
