@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-import "jsonTicksDateTime_claros.proto";
+import "claros_jsonTicksDateTime.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -11,16 +11,16 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 // Will be returned to populate spreadsheet cells, graphs
 message InstrumentMeasurement {
     // When the measurement was taken (UTC)
-    JsonTicksDateTimeClaros timestampUtc = 1 [json_name = "ts"];       
+    ClarosJsonTicksDateTime timestampUtc = 1 [json_name = "ts"];       
 
     // The parameter related to the measurement as a GUID
-    string parameterId = 3 [json_name = "pg"];           
+    string parameterId = 2 [json_name = "pg"];           
 
     // The unit related to the measurement as a GUID
-    string unitId = 5 [json_name = "ug"];                
+    string unitId = 3 [json_name = "ug"];                
 
     // the value of the measurement
-    double value = 6 [json_name = "v"];     
+    double value = 4 [json_name = "v"];     
 
     // The value represents the number of measurements taken into consideration for calculating the aggregated value
     uint32 aggregatedMeasurementCount = 9 [json_name = "amc"];
