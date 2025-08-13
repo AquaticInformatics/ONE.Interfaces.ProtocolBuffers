@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "i18nkey_text_reference.proto";
+import "claros_i18nkey_text_reference.proto";
 import "instrument_tag_identifier.proto";
 import "instrument_diagnostic_value.proto";
 
@@ -10,7 +10,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentDiagnostic {
     InstrumentTagIdentifier tagIdentifier = 1 [json_name = "tid"];
 
-    I18NKeyTextReference name = 2 [json_name = "n"];   
+    ClarosI18NKeyTextReference name = 2 [json_name = "n"];   
 
     google.protobuf.StringValue parameterId = 3 [json_name = "pg"];
 
