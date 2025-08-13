@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "instrument_measurement.proto";
 import "instrument_tag_identifier.proto";
-import "key_value.proto";
+import "key_value_claros.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
@@ -10,7 +10,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentMeasurementData {
 
     // the unique identifier for combination of parameter, unit, channelNumber and tag    
-    string id = 4;
+    google.protobuf.StringValue id = 4 [json_name = "id"];
 
     // Hardware physical connector identifier
     google.protobuf.UInt32Value channelNumber = 1 [json_name = "cn"];
@@ -22,7 +22,7 @@ message InstrumentMeasurementData {
     InstrumentMeasurement measurement = 3 [json_name = "m"];
  
     // Bucket for any undefined data related to this instrument measurement
-    KeyValues attributes = 9 [json_name = "a"];
+    KeyValuesClaros attributes = 4 [json_name = "a"];
 }
 
 message InstrumentMeasurementDatas
