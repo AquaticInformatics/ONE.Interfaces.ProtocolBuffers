@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "claros_i18nkey_text_reference.proto";
+
+message InstrumentStatusDefinition {
+    
+    // Specifies the unique identifier for the status that the instrument can report.
+    google.protobuf.UInt32Value id = 1;
+
+    // Specifies the translated text reference for status description that will be used for display in the language of the end-user.
+    ClarosI18NKeyTextReference i18nKeyTextReference = 2;
+}
+
+// Represents the instrument status definitions - a list of supported instrument status - that the instrument can provide. 
+message InstrumentStatusDefinitions {
+    repeated InstrumentStatusDefinition items = 1;
+}

@@ -1,12 +1,15 @@
 syntax = "proto3";
 
-import "enum_time_context.proto";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.External";
+
+// TODO: This file is a copy of common/core/jsonTicksDateTime.proto not exactly the same.
+// It is used to avoid serialization issues while receiving the data from Claros, later at some point
+// we should remove this file and use the same JsonTicksDateTime everywhere.
 
 // Allow the setting of datetime via either json or ticks
-message JsonTicksDateTime
+message ClarosJsonTicksDateTime
 {
     oneof jsonTicksDateTime {
         
@@ -14,17 +17,11 @@ message JsonTicksDateTime
         // JavaScript string representation of a datetime
         // "2012-04-23T18:25:43.511Z"              JavaScript built-in JSON object
         // "2012-04-21T18:25:43-05:00"             ISO 8601
-        google.protobuf.StringValue jsonDateTime = 1;
+        google.protobuf.StringValue jsonDateTime = 1 [json_name = "jdt"];
         
         // milliseconds since the beginning of Epoch time
         // does not contain timezone information
         // Instruments will only set the ticks value
-        google.protobuf.UInt64Value ticks = 2;
+        google.protobuf.UInt64Value ticks = 2 [json_name = "t"];  
     }
-
-    // type of the TimeContext for this dateTime
-    EnumTimeContext contextType = 3;
-
-    // optional digitalTwin asociated to this dateTime
-    google.protobuf.StringValue twinRefId = 4;
 }

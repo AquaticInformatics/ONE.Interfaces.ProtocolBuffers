@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "instrument_measurement.proto";
+import "instrument_tag_identifier.proto";
+import "claros_key_value.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentMeasurementData {
+
+    // the unique identifier for combination of parameter, unit, channelNumber and tag    
+    google.protobuf.StringValue id = 5 [json_name = "id"];
+
+    // Hardware physical connector identifier
+    google.protobuf.UInt32Value channelNumber = 1 [json_name = "cn"];
+ 
+    // For SC instruments, this is the identifier of the register (instrument tag)
+    InstrumentTagIdentifier tagIdentifier = 2 [json_name = "tid"];
+ 
+    // The common definition of a measurement
+    InstrumentMeasurement measurement = 3 [json_name = "m"];
+ 
+    // Bucket for any undefined data related to this instrument measurement
+    KeyValuesClaros attributes = 4 [json_name = "a"];
+}
+
+message InstrumentMeasurementDatas
+{
+    repeated InstrumentMeasurementData items = 1 [json_name = "i"];
+}

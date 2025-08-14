@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+import "instrument_tag_identifier.proto";
+import "claros_i18nkey_text_reference.proto";
+import "enum_instrument_data_attribute_priority.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Representation of an instrument tag definition.
+message InstrumentTagDefinition {
+
+    // The identifier of the instrument tag definition
+    InstrumentTagIdentifier identifier = 1;
+
+    // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
+    ClarosI18NKeyTextReference i18nKeyTextReference = 2;
+
+    // Unique identifier of the parameter for which this definition specifies the preferences.
+    google.protobuf.StringValue parameterId = 4;
+    
+    // Unique identifier of the unit for which this definition specifies the preferences.
+    google.protobuf.StringValue unitTypeId = 5;
+    
+    // Set of attributes specifying the preferences for the instrument type-tag pair.
+    InstrumentTagDefinitionAttributes attributes = 7;
+}
+
+// Represents a set of attributes specifying the preferences for the instrument type-tag pair.
+message InstrumentTagDefinitionAttributes {
+
+    // Indicates whether the parameter should be visible to user or not (a.k.a. "VisibleToUser").
+    bool visible = 1;
+
+    // Specifies the priority of the tag (a.k.a. "ImportanceToUser") when diplayed to users.
+    EnumInstrumentDataAttributePriority displayPriority = 2;
+
+    // Specifies the order of the tag (a.k.a. "SortOrder") when displayed to users.
+    google.protobuf.UInt32Value displaySortOrder = 3;
+
+    // Specifies the number of decimal points to be displayed (a.k.a. "DisplayDecimalPoints") when data related to this tag is displayed to users.
+    google.protobuf.UInt32Value displayDecimalPoints = 4;
+}
+
+// Represents a list of instrument tag definitions.
+message InstrumentTagDefinitions {
+    repeated InstrumentTagDefinition items = 1;
+}

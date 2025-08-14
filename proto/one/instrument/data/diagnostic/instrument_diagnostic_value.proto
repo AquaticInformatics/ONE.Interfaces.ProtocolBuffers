@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "claros_jsonTicksDateTime.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentDiagnosticValue{
+    ClarosJsonTicksDateTime timestampUtc = 1 [json_name = "ts"];
+
+    google.protobuf.StringValue value = 2 [json_name = "v"];
+}

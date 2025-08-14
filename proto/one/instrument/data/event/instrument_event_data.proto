@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "claros_jsonTicksDateTime.proto";
+import "instrument_event_metadata.proto";
+import "claros_i18nkey_text_reference.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+ 
+message InstrumentEventData {
+ 
+    // Collection of "Information" (info level event logs) about an Instrument
+    repeated InstrumentEventMetadata info = 1 [json_name = "i"];
+     
+    // The time of the event
+    ClarosJsonTicksDateTime eventDateTimeUtc = 2 [json_name = "edt"];
+
+    // Event Description
+    ClarosI18NKeyTextReference description = 3 [json_name = "d"];
+}
+
+message InstrumentEventDatas {
+    repeated InstrumentEventData items = 1 [json_name = "i"];
+}

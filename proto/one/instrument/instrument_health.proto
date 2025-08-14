@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "google/protobuf/wrappers.proto";
 import "instrument_twin.proto";
 import "instrument_summary.proto";
 import "instrument_twin_type.proto";
 import "instrument_twin_sub_type.proto";
+import "instrument_data.proto";
 
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
@@ -14,4 +14,5 @@ message InstrumentHealth {
     InstrumentSummaries instrumentSummaries = 2;
     InstrumentTwinTypes instrumentTwinTypes = 3;
     InstrumentTwinSubTypes instrumentTwinSubTypes = 4;
+    InstrumentDatas instrumentDatas = 5;
 }

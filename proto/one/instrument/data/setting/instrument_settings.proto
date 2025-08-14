@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "claros_jsonTicksDateTime.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Wrapping the "map" into a named type
+// so that in code (C#) we don't pass around a Dictionary<string,string>
+// but a named type which explicitly states that it is about "instrument settings"
+message InstrumentSettings {
+ 
+	// a concern about using map: does not compile with nanopb (a library which is also used in DR300)
+	map<string,string> settings = 1;
+
+	// The time of the observation snapshot
+	// TODO: update with shorten name in Claros and in this proto
+	ClarosJsonTicksDateTime settingsDateTimeUtc = 2 [json_name = "settingsDateTime"];
+}

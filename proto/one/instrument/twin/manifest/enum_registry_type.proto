@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+// Represents the registryType of an instrument type.
+enum EnumRegistryType {
+    REGISTRY_TYPE_UNKNOWN = 0;
+    REGISTRY_TYPE_PARENT = 1;
+    REGISTRY_TYPE_CHILD = 2;
+    REGISTRY_TYPE_EMBEDDED = 3; 
+    REGISTRY_TYPE_EMBEDDED_VIRTUAL = 4; 
+    REGISTRY_TYPE_STANDALONE = 5;
+    REGISTRY_TYPE_STANDALONE_OR_CHILD = 6;
+}
