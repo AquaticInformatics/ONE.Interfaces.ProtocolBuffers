@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "i18nkey_text_reference.proto";
+import "claros_i18nkey_text_reference.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -13,7 +13,7 @@ message InstrumentType {
     InstrumentTypeIdentifier identifier = 1;
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    I18NKeyTextReference i18nKeyTextReference = 2;
+    ClarosI18NKeyTextReference i18nKeyTextReference = 2;
 
     //Contains all the flags for an instrument type
     InstrumentTypeAttributes attributes = 3;
