@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "jsonTicksDateTime_claros.proto";
+import "claros_jsonTicksDateTime.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -14,5 +14,5 @@ message InstrumentSettings {
 
 	// The time of the observation snapshot
 	// TODO: update with shorten name in Claros and in this proto
-	JsonTicksDateTimeClaros settingsDateTimeUtc = 2 [json_name = "settingsDateTime"];
+	ClarosJsonTicksDateTime settingsDateTimeUtc = 2 [json_name = "settingsDateTime"];
 }

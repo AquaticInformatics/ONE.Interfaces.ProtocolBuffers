@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "instrument_measurement.proto";
 import "instrument_tag_identifier.proto";
-import "key_value_claros.proto";
+import "claros_key_value.proto";
 import "google/protobuf/wrappers.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
