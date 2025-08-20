@@ -2,6 +2,7 @@ syntax = "proto3";
  
 import "instrument_detail_summary.proto";
 import "instrument_measurement_summary.proto";
+import "instrument_status_summary.proto";
  
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
@@ -14,6 +15,8 @@ message InstrumentSummary {
 
   // Represents the Telemetry data for the instrument
   InstrumentMeasurementSummaries instrumentMeasurementSummaries = 3;
+
+  InstrumentStatusSummaries instrumentStatusSummaries = 4;
 }
  
 message InstrumentSummaries {

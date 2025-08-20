@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_status_definition_summary.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message InstrumentStatusSummary {
+  // Represents the detailed summary of all the Errors  - a list of all errors reported by an Instrument.
+  InstrumentStatusDefinitionSummaries instrumentStatusDefinitionSummaries = 1;
+}
+
+message InstrumentStatusSummaries {
+  // Specifies whether the instrument is capable of Errors.
+  google.protobuf.BoolValue enabled = 1;
+  
+  repeated InstrumentStatusSummary items = 2;
+}
