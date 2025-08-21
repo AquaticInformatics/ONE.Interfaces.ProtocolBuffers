@@ -1,13 +1,36 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "instrument_status_definition_summary.proto";
+import "i18nkey_text_reference.proto";
+import "jsonTicksDateTime.proto";
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
+// Specifies the status of Error or Warning
+enum EnumInstrumentStatusDefinitionSummaryStatus {
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_STATUS_UNKNOWN = 0;
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_STATUS_RESOLVED = 1;      // Status for resolved
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_STATUS_ONGOING = 2;       // Status for ongoing
+}
+
+// Specifies the type of Error or Warning
+enum EnumInstrumentStatusDefinitionSummaryType {
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_UNKNOWN = 0;
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_ERROR = 1;         // Type for error
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_WARNING = 2;       // Type for warning
+}
+
 message InstrumentStatusSummary {
-  // Represents the detailed summary of all the Errors  - a list of all errors reported by an Instrument.
-  InstrumentStatusDefinitionSummaries instrumentStatusDefinitionSummaries = 1;
+  JsonTicksDateTime startTimeUtc = 1;
+
+    JsonTicksDateTime endTimeUtc = 2;
+
+    EnumInstrumentStatusDefinitionSummaryType instrumentStatusDefinitionSummaryType = 3;
+
+    EnumInstrumentStatusDefinitionSummaryStatus instrumentStatusDefinitionSummaryStatus = 4;
+
+    // Represents the i18nKey for instrument description
+    I18NKeyTextReference description = 5;
 }
 
 message InstrumentStatusSummaries {
