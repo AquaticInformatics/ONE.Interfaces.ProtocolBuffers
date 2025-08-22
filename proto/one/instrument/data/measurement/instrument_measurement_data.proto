@@ -22,7 +22,7 @@ message InstrumentMeasurementData {
     InstrumentMeasurement measurement = 3 [json_name = "m"];
  
     // Bucket for any undefined data related to this instrument measurement
-    KeyValuesClaros attributes = 4 [json_name = "a"];
+    ClarosKeyValues attributes = 4 [json_name = "a"];
 }
 
 message InstrumentMeasurementDatas

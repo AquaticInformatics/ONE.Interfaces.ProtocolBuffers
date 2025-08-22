@@ -37,5 +37,5 @@ message InstrumentMeasurementSummaries {
   // Specifies whether the instrument is capable of providing measurements.
   google.protobuf.BoolValue enabled = 1;
 
-  repeated InstrumentMeasurementSummary items = 1;
+  repeated InstrumentMeasurementSummary items = 2;
 }
