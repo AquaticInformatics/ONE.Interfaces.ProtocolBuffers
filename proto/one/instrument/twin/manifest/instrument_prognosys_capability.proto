@@ -11,7 +11,7 @@ message InstrumentPrognosysCapability {
     // Specifies whether the instrument is capable of providing prognosys.
     google.protobuf.BoolValue enabled = 1;
 
-    // Specifies the prognosys (tm) definitions - a list of supported prognosys information - that the instrument can provide.
+    // Specifies the prognosys (tm) definitions - a list of supported prognosys (tm) information - that the instrument can provide.
     PrognosysDefinitions definitions = 2;
 
 }
