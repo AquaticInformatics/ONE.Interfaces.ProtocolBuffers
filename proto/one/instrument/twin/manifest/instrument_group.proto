@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
-import "claros_i18nkey_text_reference.proto";
+import "i18nkey_text_reference.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
  
@@ -13,7 +13,7 @@ message InstrumentGroup {
     google.protobuf.StringValue id = 1;
  
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    ClarosI18NKeyTextReference i18nKeyTextReference = 2;
+    I18NKeyTextReference i18nKeyTextReference = 2;
 
     // Audit information for the instrument group.
     RecordAuditInfo recordAuditInfo = 99;

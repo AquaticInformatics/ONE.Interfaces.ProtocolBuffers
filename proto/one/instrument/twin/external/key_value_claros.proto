@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace ="ONE.Models.CSharp.External";
 
-message ClarosKeyValue {
+message KeyValueClaros {
 
   // Key
 	string key = 1 [json_name = "k"];
@@ -11,7 +11,7 @@ message ClarosKeyValue {
   string value = 2 [json_name = "v"];
 }
 
-message ClarosKeyValues {
+message KeyValuesClaros  {
 
-    repeated ClarosKeyValue items = 1 [json_name = "i"];
+    repeated KeyValueClaros items = 1 [json_name = "i"];
 }

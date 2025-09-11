@@ -1,22 +1,22 @@
 syntax = "proto3";
 
-import "claros_jsonTicksDateTime.proto";
+import "JsonTicksDateTime_Claros.proto";
 
-import "claros_i18nkey_text_reference.proto";
+import "i18nkey_text_reference.proto";
 import "google/protobuf/wrappers.proto";
-import "claros_key_value.proto";
+import "key_value.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message StatusMetadata {
     google.protobuf.UInt32Value id = 1;
 
-    ClarosI18NKeyTextReference description = 2 [json_name = "d"];
+    I18NKeyTextReference description = 2 [json_name = "d"];
 
-    ClarosJsonTicksDateTime createdOnUtc = 3 [json_name = "co"];
+    JsonTicksDateTimeClaros createdOnUtc = 3 [json_name = "co"];
 
     // Additional property to store the any specific metadata as a key value pair.
-    ClarosKeyValues data = 4 [json_name = "dt"];
+    KeyValues data = 4 [json_name = "dt"];
 }
 
 message StatusMetadatas {

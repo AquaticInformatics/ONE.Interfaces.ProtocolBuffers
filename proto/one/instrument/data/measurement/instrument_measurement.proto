@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-import "claros_jsonTicksDateTime.proto";
+import "JsonTicksDateTime_Claros.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -11,7 +11,7 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 // Will be returned to populate spreadsheet cells, graphs
 message InstrumentMeasurement {
     // When the measurement was taken (UTC)
-    ClarosJsonTicksDateTime timestampUtc = 1 [json_name = "ts"];       
+    JsonTicksDateTimeClaros timestampUtc = 1 [json_name = "ts"];       
 
     // The parameter related to the measurement as a GUID
     string parameterId = 2 [json_name = "pg"];           

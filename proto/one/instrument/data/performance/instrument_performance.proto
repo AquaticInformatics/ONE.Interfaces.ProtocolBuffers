@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "jsonTicksDateTime_claros.proto";
+import "JsonTicksDateTime_Claros.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 

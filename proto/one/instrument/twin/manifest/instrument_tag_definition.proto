@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "instrument_tag_identifier.proto";
-import "claros_i18nkey_text_reference.proto";
+import "i18nkey_text_reference.proto";
 import "enum_instrument_data_attribute_priority.proto";
 import "google/protobuf/wrappers.proto";
 
@@ -14,7 +14,7 @@ message InstrumentTagDefinition {
     InstrumentTagIdentifier identifier = 1;
 
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
-    ClarosI18NKeyTextReference i18nKeyTextReference = 2;
+    I18NKeyTextReference i18nKeyTextReference = 2;
 
     // Unique identifier of the parameter for which this definition specifies the preferences.
     google.protobuf.StringValue parameterId = 4;

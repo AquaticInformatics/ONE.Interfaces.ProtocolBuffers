@@ -9,9 +9,9 @@ option csharp_namespace ="ONE.Models.CSharp.External";
 // we should remove this file and use the same JsonTicksDateTime everywhere.
 
 // Allow the setting of datetime via either json or ticks
-message ClarosJsonTicksDateTime
+message JsonTicksDateTimeClaros
 {
-    oneof jsonTicksDateTime {
+    oneof JsonTicksDateTimeClaros {
         
         // https://stackoverflow.com/questions/10286204/the-right-json-date-format
         // JavaScript string representation of a datetime
