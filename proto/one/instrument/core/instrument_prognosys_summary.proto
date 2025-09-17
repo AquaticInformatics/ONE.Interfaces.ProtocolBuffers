@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "i18nkey_text_reference.proto";
+import "instrument_status_summary.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "One.Instrument.Core";
+ 
+message InstrumentPrognosysSummary {
+  // Specifies the prognosys is Error or Warning
+  EnumInstrumentStatusDefinitionSummaryType instrumentStatusDefinitionSummaryType = 1; 
+
+  // Represents the i18nKey for prognosys description 
+  I18NKeyTextReference description = 2;
+
+  // Service indicator, specifying the "due in days" required maintenance (predictive maintenance)
+  google.protobuf.Int32Value days = 3 [json_name = "d"];
+}
+ 
+message InstrumentPrognosysSummaries {
+ // Specifies whether the instrument is capable of Prognosys.
+  google.protobuf.BoolValue enabled = 1;
+
+  repeated InstrumentPrognosysSummary items = 2;
+}
