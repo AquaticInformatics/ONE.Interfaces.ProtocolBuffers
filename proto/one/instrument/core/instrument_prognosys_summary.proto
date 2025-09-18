@@ -18,7 +18,7 @@ message InstrumentPrognosysSummary {
 }
  
 message InstrumentPrognosysSummaries {
- // Specifies whether the instrument is capable of Prognosys.
+  // Specifies whether the instrument is capable of Prognosys.
   google.protobuf.BoolValue enabled = 1;
 
   repeated InstrumentPrognosysSummary items = 2;

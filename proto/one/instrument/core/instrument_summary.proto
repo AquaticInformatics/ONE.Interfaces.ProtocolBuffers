@@ -24,7 +24,7 @@ message InstrumentSummary {
   InstrumentStatusSummaries instrumentWarningSummaries = 5;
 
   //Represents the instrument prognosys data 
-  InstrumentPrognosysSummaries InstrumentPrognosysSummaries =6;
+  InstrumentPrognosysSummaries InstrumentPrognosysSummaries = 6;
 }
 
 message InstrumentSummaries {
