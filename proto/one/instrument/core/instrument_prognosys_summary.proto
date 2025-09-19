@@ -14,7 +14,7 @@ message InstrumentPrognosysSummary {
   I18NKeyTextReference description = 2;
 
   // Service indicator, specifying the "due in days" required maintenance (predictive maintenance)
-  google.protobuf.Int32Value days = 3 [json_name = "d"];
+  google.protobuf.Int32Value days = 3;
 }
  
 message InstrumentPrognosysSummaries {
