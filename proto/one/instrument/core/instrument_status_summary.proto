@@ -18,6 +18,7 @@ enum EnumInstrumentStatusDefinitionSummaryType {
     INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_UNKNOWN = 0;
     INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_ERROR = 1;         // Type for error
     INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_WARNING = 2;       // Type for warning
+    INSTRUMENT_STATUS_DEFINITION_SUMMARY_TYPE_NORMAL = 3;        // Type for normal
 }
 
 message InstrumentStatusSummary {
