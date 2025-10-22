@@ -30,4 +30,9 @@ message DelphiModelDetail  {
     EnumTimeZone enumTimeZone = 9;
     // Historian Twin reference id to store the model application logs 
     google.protobuf.StringValue applicationLogsTwinRefId = 10;
+    // Unit to be used for Flow values in scenario builder
+    uint32 scenarioFlowUnit = 11;
+    // Unit to be used for Loading values in scenario builder
+    uint32 scenarioLoadingUnit = 12;
+
 }
