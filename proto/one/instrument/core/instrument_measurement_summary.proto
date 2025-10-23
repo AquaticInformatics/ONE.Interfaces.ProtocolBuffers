@@ -6,6 +6,13 @@ import "instrument_measurement_definition_summary.proto";
 import "jsonTicksDateTime.proto";
  
 option csharp_namespace = "One.Instrument.Core";
+
+// Specifies the overflow status
+enum EnumInstrumentMeasurementOverflowStatus {
+    INSTRUMENT_MEASUREMENT_OVERFLOW_STATUS_NO = 0; // No Overflow
+    INSTRUMENT_MEASUREMENT_OVERFLOW_STATUS_POSITIVE = 1; // Overflow positive
+    INSTRUMENT_MEASUREMENT_OVERFLOW_STATUS_NEGATIVE = 2; // Overflow negative
+}
  
 message InstrumentMeasurementSummary {
       
@@ -30,6 +37,9 @@ message InstrumentMeasurementSummary {
 
   // The value represents the number of measurements taken into consideration for calculating the aggregated value
   uint32 aggregatedMeasurementCount = 10;
+
+  // Determines if the measurement value is overflowed
+  EnumInstrumentMeasurementOverflowStatus overflow = 11;
 }
  
 message InstrumentMeasurementSummaries {
