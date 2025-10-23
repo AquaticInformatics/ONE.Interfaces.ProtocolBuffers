@@ -26,7 +26,7 @@ message InstrumentManifestSummary {
   I18NKeyTextReference instrumentGroupI18N = 6;
 
   // Firmware manifest version string of the instrument
-  google.protobuf.StringValue instrumentManifestVersionString = 7;
+  google.protobuf.StringValue version = 7;
 }
 message InstrumentManifestSummaries {
   repeated InstrumentManifestSummary items = 1;
