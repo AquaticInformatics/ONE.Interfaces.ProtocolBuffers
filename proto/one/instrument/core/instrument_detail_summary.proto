@@ -1,11 +1,11 @@
 syntax = "proto3";
- 
+
 import "google/protobuf/wrappers.proto";
 import "instrument_manifest_summary.proto";
 import "enum_connection_status.proto";
- 
-option csharp_namespace ="ONE.Models.CSharp.Instrument";
- 
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
 message InstrumentDetailSummary {
   // Fusion Id that is composed of manufacturer-code, instrument-code and serial-number.
   // For an instrument, the Fusion Id does not change throughout its entire lifetime.
@@ -20,10 +20,10 @@ message InstrumentDetailSummary {
 
   // Serial number of the instrument
   google.protobuf.StringValue serialNumber = 3;
- 
+
   // Unique identifier of parent twin - TwinRefId of a Enterprise DigitalTwin
   google.protobuf.StringValue enterpriseTwinId = 4;
-  
+
   // Enterprise DigitalTwin name
   google.protobuf.StringValue enterpriseTwinName = 5;
 
@@ -32,8 +32,11 @@ message InstrumentDetailSummary {
 
   //Indicates the instrument's connection status
   EnumConnectionStatus connectionStatus = 7;
+
+  // Instrument name
+  google.protobuf.StringValue instrumentName = 8;
 }
- 
+
 message InstrumentDetailSummaries {
   repeated InstrumentDetailSummary items = 1;
 }
