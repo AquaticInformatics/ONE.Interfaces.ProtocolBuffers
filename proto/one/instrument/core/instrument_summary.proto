@@ -1,30 +1,18 @@
 syntax = "proto3";
 
-import "instrument_detail_summary.proto";
-import "instrument_measurement_summary.proto";
-import "instrument_status_summary.proto";
-import "instrument_prognosys_summary.proto";
+import "instrument_data_summary.proto";
+import "instrument_details_summary.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentSummary {
+
   // Represents the detailed summary of an Instrument.
-  InstrumentDetailSummary instrumentDetailSummary = 1;
+  InstrumentDetailsSummaries instrumentDetailsSummaries = 1;
 
-  // Represents the detailed summary of an edge Instrument.
-  InstrumentDetailSummary edgeInstrumentDetailSummary = 2;
+  // Represents the instrument Data Summaries.
+  InstrumentDataSummaries instrumentDataSummaries = 2;
 
-  // Represents the Telemetry data for the instrument
-  InstrumentMeasurementSummaries instrumentMeasurementSummaries = 3;
-
-  // Represents the Instrument Status data for the instrument Errors
-  InstrumentStatusSummaries instrumentErrorSummaries = 4;
-
-  // Represents the Instrument Status data for the instrument Warnings
-  InstrumentStatusSummaries instrumentWarningSummaries = 5;
-
-  //Represents the instrument prognosys data 
-  InstrumentPrognosysSummaries InstrumentPrognosysSummaries = 6;
 }
 
 message InstrumentSummaries {
