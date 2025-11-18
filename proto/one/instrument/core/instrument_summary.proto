@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 import "instrument_data_summary.proto";
-import "instrument_details_summary.proto";
+import "instrument_detail_group_summary.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 message InstrumentSummary {
 
-  // Represents the detailed summary of an Instrument.
-  InstrumentDetailsSummaries instrumentDetailsSummaries = 1;
+  // Represents the detailed summary of an instrument.
+  InstrumentDetailGroupSummary instrumentDetailGroupSummary = 1;
 
-  // Represents the instrument Data Summaries.
-  InstrumentDataSummaries instrumentDataSummaries = 2;
+  // Represents the instrument Data summary.
+  InstrumentDataSummary instrumentDataSummary = 2;
 
 }
 

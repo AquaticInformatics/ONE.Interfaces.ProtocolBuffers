@@ -4,7 +4,7 @@ import "instrument_detail_summary.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
-message InstrumentDetailsSummary {
+message InstrumentDetailGroupSummary  {
   // Represents the detailed summary of an Instrument.
   InstrumentDetailSummary instrumentDetailSummary = 1;
 
@@ -12,6 +12,6 @@ message InstrumentDetailsSummary {
   InstrumentDetailSummary edgeInstrumentDetailSummary = 2;
 }
 
-message InstrumentDetailsSummaries {
-  repeated InstrumentDetailsSummary items = 1;
+message InstrumentDetailGroupSummaries {
+  repeated InstrumentDetailGroupSummary items = 1;
 }
