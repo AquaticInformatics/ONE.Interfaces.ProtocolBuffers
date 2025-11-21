@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "instrument_measurement_summary.proto";
+import "instrument_status_summary.proto";
+import "instrument_prognosys_summary.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentDataSummary {
+ 
+  // Represents the measurement data for the instrument
+  InstrumentMeasurementSummaries instrumentMeasurementSummaries = 1;
+
+  // Represents the Instrument Status data for the instrument Errors
+  InstrumentStatusSummaries instrumentErrorSummaries = 2;
+
+  // Represents the Instrument Status data for the instrument Warnings
+  InstrumentStatusSummaries instrumentWarningSummaries = 3;
+
+  //Represents the instrument prognosys data 
+  InstrumentPrognosysSummaries InstrumentPrognosysSummaries = 4; 
+}
+
+message InstrumentDataSummaries {
+  repeated InstrumentDataSummary items = 1;
+}

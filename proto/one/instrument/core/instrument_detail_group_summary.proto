@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "instrument_detail_summary.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message InstrumentDetailGroupSummary  {
+  // Represents the detailed summary of an Instrument.
+  InstrumentDetailSummary instrumentDetailSummary = 1;
+
+  // Represents the detailed summary of an edge Instrument.
+  InstrumentDetailSummary edgeInstrumentDetailSummary = 2;
+}
+
+message InstrumentDetailGroupSummaries {
+  repeated InstrumentDetailGroupSummary items = 1;
+}
