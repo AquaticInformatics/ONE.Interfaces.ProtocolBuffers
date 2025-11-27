@@ -13,6 +13,8 @@ message DelphiScenarioConfiguration {
     EnumDelphiModelMode modelMode = 2;
     //list of delphi configurationExecutions
     repeated DelphiConfigurationExecution configurationExecutions = 3;
+    //list of TelemetryIds of selected output parameters
+    repeated google.protobuf.StringValue selectedOutputTelemetryIds = 4;
 }
 
 message DelphiScenarioConfigurations{
