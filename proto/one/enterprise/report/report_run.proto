@@ -2,6 +2,7 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "jsonTicksDateTime.proto";
 import "enum_rendering_engine.proto";
+import "enum_report_run_status.proto";
 
 option csharp_namespace ="ONE.Models.CSharp";
 
@@ -40,6 +41,9 @@ message ReportRun{
     
     // Shows when the report is completed
     JsonTicksDateTime reportRendered = 12;
+
+    //Status of report rendering
+    EnumReportRunStatus status = 13;
 }
 
 message ReportRuns{
