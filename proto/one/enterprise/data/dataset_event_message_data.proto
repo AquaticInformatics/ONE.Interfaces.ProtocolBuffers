@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "jsonTicksDateTime.proto";
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DatasetEventMessageData{
+
+    string datasetTwinRefId = 1; 
+
+    JsonTicksDateTime datasetFillTime = 2;
+
+    string message = 3;
+}
