@@ -32,8 +32,7 @@ message InstrumentMeasurementSummary {
 
   google.protobuf.UInt32Value displayDecimalPoints = 8; //Manifest
  
-  // Represents a key-value pair of historical measurement data along with its reported timestamp (in UTC).
-  map<string, double> historicalData = 9; //InstrumentData
+  InstrumentHistoricalDataSummaries instrumentHistoricalDataSummaries = 9;
 
   // The value represents the number of measurements taken into consideration for calculating the aggregated value
   uint32 aggregatedMeasurementCount = 10;

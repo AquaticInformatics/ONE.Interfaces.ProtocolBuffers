@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message InstrumentHistoricalDataSummary {
+    // Average Aggregate Value
+    double avg = 1;
+    // Point Aggregate Value
+    double point = 2;
+    // minimum Aggregate Value
+    double min = 3;
+    // maximum Aggregate Value
+    double max = 4;
+    // Raw Aggregate Value will be available only in case of 1 minute range
+    double value = 5;
+    // Timestamp of the measurement
+    JsonTicksDateTime timeStamp = 6;
+}
+
+// Represents a list of instruments
+message InstrumentHistoricalDataSummaries {
+    // Specifies the list of historicalDatalogs
+    repeated InstrumentHistoricalDataSummary items = 1; 
+}
