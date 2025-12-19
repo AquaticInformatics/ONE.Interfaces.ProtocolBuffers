@@ -6,18 +6,22 @@ import "jsonTicksDateTime.proto";
 option csharp_namespace ="ONE.Models.CSharp";
 
 message InstrumentHistoricalDataSummary {
-    // Average Aggregate Value
-    double avg = 1;
-    // Point Aggregate Value
-    double point = 2;
-    // minimum Aggregate Value
-    double min = 3;
-    // maximum Aggregate Value
-    double max = 4;
-    // Raw Aggregate Value will be available only in case of 1 minute range
-    double value = 5;
     // Timestamp of the measurement
     JsonTicksDateTime timeStamp = 6;
+
+    // Either raw Value OR aggregated fields
+    oneof measurement {
+        double value = 5;  // Raw Aggregate Value (only one-minute range)
+        AggregatedValues aggregated = 7;
+    }
+}
+
+// Nested message for aggregated values
+message AggregatedValues {
+    double avg = 1;
+    double point = 2;
+    double min = 3;
+    double max = 4;
 }
 
 // Represents a list of instruments historial data sumaries
