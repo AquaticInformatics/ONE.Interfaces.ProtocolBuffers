@@ -3,11 +3,11 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "jsonTicksDateTime.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace = "ONE.Models.CSharp";
 
 message InstrumentHistoricalDataSummary {
     // Timestamp of the measurement
-    JsonTicksDateTime timeStamp = 6;
+    JsonTicksDateTime timestamp = 6;
 
     // Either raw Value OR aggregated fields
     oneof measurement {
