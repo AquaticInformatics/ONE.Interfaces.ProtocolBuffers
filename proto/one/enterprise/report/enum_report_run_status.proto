@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumReportRunStatus {
+    // Report in progress 
+    REPORT_RUN_STATUS_UNKNOWN = 0; 
+    
+    // Dataset fill could not be started
+    REPORT_RUN_STATUS_DATASET_FILL_NOT_STARTED = 1;
+
+    // Dataset fill failed
+    REPORT_RUN_STATUS_DATASET_FILL_FAILED = 2;
+
+    // Dataset fill succeeded but the report render could not start
+    REPORT_RUN_STATUS_RENDER_NOT_STARTED = 3; 
+
+    // Report render from dataset failed
+    REPORT_RUN_STATUS_RENDER_FAILED = 4; 
+
+    // Failed to save to data lake
+    REPORT_RUN_STATUS_DATA_LAKE_SAVE_FAILED = 5; 
+
+    // Full report render process completed
+    REPORT_RUN_STATUS_COMPLETE = 6; 
+}
