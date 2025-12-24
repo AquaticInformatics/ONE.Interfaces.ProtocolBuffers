@@ -7,17 +7,17 @@ option csharp_namespace = "ONE.Models.CSharp";
 
 message InstrumentHistoricalDataSummary {
     // Timestamp of the measurement
-    JsonTicksDateTime timestamp = 6;
+    JsonTicksDateTime timestamp = 1;
 
     // Either raw Value OR aggregated fields
     oneof measurement {
-        double value = 5;  // Raw Aggregate Value (only one-minute range)
-        AggregatedValues aggregated = 7;
+        double value = 2;  // Raw Aggregate Value (only one-minute range)
+        AggregatedValue aggregated = 3;
     }
 }
 
-// Nested message for aggregated values
-message AggregatedValues {
+// Nested message for aggregated value
+message AggregatedValue {
     double avg = 1;
     double point = 2;
     double min = 3;
