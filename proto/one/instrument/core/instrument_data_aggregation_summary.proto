@@ -11,11 +11,11 @@ message InstrumentDataAggregationSummary {
   JsonTicksDateTime timestamp = 1;
 
   // Aggregated values
-  repeated SamplingStatisticValue values = 2;
+  repeated MeasurementStatistic values = 2;
 }
 
 // Represents a single sampling statistic and its calculated value
-message SamplingStatisticValue {
+message MeasurementStatistic {
 
   // Type of aggregation (RAW, AVERAGE, MIN, MAX, etc.)
   EnumSamplingStatistic statistic = 1;
@@ -26,7 +26,7 @@ message SamplingStatisticValue {
 
 // Represents a list of instruments historial data summaries
 message InstrumentDataAggregationSummaries {
-    
+
   // Specifies the list of historicalDatalogs
   repeated InstrumentDataAggregationSummary items = 1; 
 }
