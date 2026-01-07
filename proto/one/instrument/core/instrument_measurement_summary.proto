@@ -3,7 +3,7 @@ syntax = "proto3";
 import "enum_instrument_data_attribute_priority.proto";
 import "google/protobuf/wrappers.proto";
 import "instrument_measurement_definition_summary.proto";
-import "instrument_historical_data_summary.proto";
+import "instrument_data_aggregation_summary.proto";
 import "jsonTicksDateTime.proto";
  
 option csharp_namespace = "One.Instrument.Core";
@@ -42,7 +42,7 @@ message InstrumentMeasurementSummary {
   // Determines if the measurement value is overflowed
   EnumInstrumentMeasurementOverflowStatus overflow = 11;
 
-  InstrumentHistoricalDataSummaries instrumentHistoricalDataSummaries = 12;
+  InstrumentDataAggregationSummaries instrumentDataAggregationSummaries = 12;
 
 }
  
