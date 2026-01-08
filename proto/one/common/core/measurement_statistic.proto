@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "enum_sampling_statistic.proto";
+
+option csharp_namespace = "ONE.Models.CSharp";
+
+// Represents a single sampling statistic and its calculated value
+message MeasurementStatistic {
+
+  // Type of aggregation (RAW, AVERAGE, MIN, MAX, etc.)
+  EnumSamplingStatistic statistic = 1;
+
+  // Calculated value for the given statistic
+  double value = 2;
+}

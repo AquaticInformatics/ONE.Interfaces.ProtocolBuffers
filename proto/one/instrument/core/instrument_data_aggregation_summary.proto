@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "jsonTicksDateTime.proto";
-import "enum_sampling_statistic.proto";
+import "measurement_statistic.proto";
 
 option csharp_namespace = "ONE.Models.CSharp";
 
@@ -11,17 +11,7 @@ message InstrumentDataAggregationSummary {
   JsonTicksDateTime timestamp = 1;
 
   // Aggregated values
-  repeated MeasurementStatistic values = 2;
-}
-
-// Represents a single sampling statistic and its calculated value
-message MeasurementStatistic {
-
-  // Type of aggregation (RAW, AVERAGE, MIN, MAX, etc.)
-  EnumSamplingStatistic statistic = 1;
-
-  // Calculated value for the given statistic
-  double value = 2;
+  repeated MeasurementStatistic measurementStatistics = 2;
 }
 
 // Represents a list of instruments historial data summaries
