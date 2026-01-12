@@ -1,9 +1,9 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import instrument_event_definition.proto";
+import "instrument_event_definition.proto";
 
-option csharp_namespace ="ONE.Models.CSharp.Instrument";
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 // Represents event capabilities and related meta-data for an instrument type.
 message InstrumentEventCapability {
