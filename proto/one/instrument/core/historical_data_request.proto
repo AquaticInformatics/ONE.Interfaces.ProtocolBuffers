@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+message HistoricalDataRequest {
+
+   // The start date of the request
+   JsonTicksDateTime startDate = 1;
+
+   // The end date of the request
+   JsonTicksDateTime endDate = 2;
+
+   // the instrument id of the request
+   string instrumentId = 3;
+
+   // the tenant id 
+   string tenantId = 4;
+
+   // operationId
+   string operationId = 5;
+   
+   // The culture code that the request was made for
+   string cultureCode = 6;
+
+   // The interval in which the device is request to get data
+   google.protobuf.UInt32Value dataIntervalEnumerationId = 7;
+   
+   // the log type, which is a comma separated string of values
+   repeated string logTypes = 8;
+
+   // The offset to use for the local date time conversion. 
+   google.protobuf.UInt32Value dateTimeoffset = 9;
+}
+
