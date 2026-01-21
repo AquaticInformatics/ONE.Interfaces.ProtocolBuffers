@@ -1,19 +1,10 @@
 syntax = "proto3";
 
 import "enterprise_data_table_query_parameter.proto";
+import "enum_report_definition_category.proto";
 import "post_filtering.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Enterprise.Data";
-
-enum EnumReportDefinitionCategory {
-    REPORT_DEFINITION_CATEGORY_UNDEFINED = 0;
-    REPORT_DEFINITION_CATEGORY_SPREADSHEET = 1;
-    REPORT_DEFINITION_CATEGORY_SAMPLE_MANAGER = 2;
-    REPORT_DEFINITION_CATEGORY_TENANT = 3;
-    REPORT_DEFINITION_CATEGORY_AQTS_LICENSE = 4;
-    REPORT_DEFINITION_CATEGORY_HISTORIAN = 5;
-    REPORT_DEFINITION_CATEGORY_CUSTOM = 6;
-}
 
 message ReportDefinitionJsonV2 {
 
