@@ -3,6 +3,7 @@ syntax = "proto3";
 import "enum_instrument_data_attribute_priority.proto";
 import "google/protobuf/wrappers.proto";
 import "instrument_measurement_definition_summary.proto";
+import "instrument_data_aggregation_summary.proto";
 import "jsonTicksDateTime.proto";
  
 option csharp_namespace = "One.Instrument.Core";
@@ -31,7 +32,7 @@ message InstrumentMeasurementSummary {
   google.protobuf.UInt32Value displaySortOrder = 7; //Manifest
 
   google.protobuf.UInt32Value displayDecimalPoints = 8; //Manifest
- 
+
   // Represents a key-value pair of historical measurement data along with its reported timestamp (in UTC).
   map<string, double> historicalData = 9; //InstrumentData
 
@@ -40,6 +41,9 @@ message InstrumentMeasurementSummary {
 
   // Determines if the measurement value is overflowed
   EnumInstrumentMeasurementOverflowStatus overflow = 11;
+
+  InstrumentDataAggregationSummaries instrumentDataAggregationSummaries = 12;
+
 }
  
 message InstrumentMeasurementSummaries {

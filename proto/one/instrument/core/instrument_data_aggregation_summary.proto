@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+import "measurement_statistic.proto";
+
+option csharp_namespace = "ONE.Models.CSharp";
+
+message InstrumentDataAggregationSummary {
+  
+  JsonTicksDateTime timestamp = 1;
+
+  // Aggregated values
+  repeated MeasurementStatistic measurementStatistics = 2;
+}
+
+// Represents a list of instruments historial data summaries
+message InstrumentDataAggregationSummaries {
+
+  // Specifies the list of historicalDatalogs
+  repeated InstrumentDataAggregationSummary items = 1; 
+}
