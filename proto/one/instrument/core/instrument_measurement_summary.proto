@@ -33,7 +33,7 @@ message InstrumentMeasurementSummary {
 
   google.protobuf.UInt32Value displayDecimalPoints = 8; //Manifest
 
-  InstrumentDataAggregationSummaries instrumentDataAggregationSummaries = 9; //InstrumentData
+  InstrumentDataAggregationSummaries instrumentDataAggregationSummaries = 9;
 
   // The value represents the number of measurements taken into consideration for calculating the aggregated value
   uint32 aggregatedMeasurementCount = 10;
