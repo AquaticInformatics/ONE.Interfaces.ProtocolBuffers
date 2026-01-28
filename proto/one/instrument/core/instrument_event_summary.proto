@@ -26,4 +26,7 @@ message InstrumentEventSummaries {
 
   // List of event summaries.
   repeated InstrumentEventSummary items = 2;
+
+  // Unique identifier of an instrument.
+  google.protobuf.StringValue instrumentId = 3;
 }

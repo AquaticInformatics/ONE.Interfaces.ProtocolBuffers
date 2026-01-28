@@ -52,4 +52,7 @@ message InstrumentMeasurementSummaries {
   google.protobuf.BoolValue enabled = 1;
 
   repeated InstrumentMeasurementSummary items = 2;
+
+  // Unique identifier of an instrument.
+  google.protobuf.StringValue instrumentId = 3;
 }
