@@ -16,4 +16,5 @@ enum EnumDataSource {
     DATASOURCE_WIMS_COMPUTATION = 10;       // Data related to WIMS Computations
     DATASOURCE_SPREADSHEET_HISTORIAN = 11;  // Data related to One.Historian.Data (Twin type is HISTORIAN_DATA and subtype is TELEMETRY_INGEST_DATA)
     DATASOURCE_PROCESS_MODEL = 12;          // Data related to Process Modeling
+    DATASOURCE_CUSTOM_DATA_ENTRY_FORM = 13; // Data related to Custom Data Entry Forms
 }
