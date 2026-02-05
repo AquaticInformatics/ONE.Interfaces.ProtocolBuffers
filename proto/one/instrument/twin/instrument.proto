@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "record_auditinfo.proto";
+import "claros_record_auditinfo.proto";
 import "instrument_reference.proto";
 import "enum_connection_status.proto";
 import "enum_instrument_registry_status.proto";
@@ -26,7 +26,7 @@ message Instrument {
     EnumInstrumentRegistryStatus registryStatus = 5;
 
     // Record audit information
-    RecordAuditInfo recordAuditInfo = 99;
+    ClarosRecordAuditInfo recordAuditInfo = 99;
 }
 
 // Represents a list of instruments
