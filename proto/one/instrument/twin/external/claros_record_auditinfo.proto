@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "claros_jsonTicksDateTime.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message ClarosRecordAuditInfo {
+    string createdById = 1 [json_name = "cbid"];
+    ClarosJsonTicksDateTime createdOn = 2 [json_name = "co"];
+    string modifiedById = 3 [json_name = "mbid"];
+    ClarosJsonTicksDateTime modifiedOn = 4 [json_name = "mo"];
+}
