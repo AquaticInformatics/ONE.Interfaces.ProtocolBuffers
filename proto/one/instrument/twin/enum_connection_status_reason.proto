@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "enum_connection_status_reason.proto";
+import "clarosdatetime.proto";
+
+
+option csharp_namespace ="ONE.Models.CSharp.Instrument";
+
+enum EnumConnectionStatusReason {
+    CONNECTION_STATUS_REASON_UNKNOWN = 0;
+    CONNECTION_STATUS_REASON_REPORTED = 1;
+    CONNECTION_STATUS_REASON_HEARTBEAT = 2;
+    CONNECTION_STATUS_REASON_PARENT_DISCONNECTED = 3;
+    CONNECTION_STATUS_REASON_PARENT_INITIALIZE = 4;
+}
