@@ -1,9 +1,5 @@
 syntax = "proto3";
 
-import "enum_connection_status_reason.proto";
-import "clarosdatetime.proto";
-
-
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
 enum EnumConnectionStatusReason {
