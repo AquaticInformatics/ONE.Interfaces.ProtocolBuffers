@@ -3,6 +3,7 @@ syntax = "proto3";
 import "instrument_measurement_summary.proto";
 import "instrument_status_summary.proto";
 import "instrument_prognosys_summary.proto";
+import "instrument_event_summary.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -19,6 +20,9 @@ message InstrumentDataSummary {
 
   //Represents the instrument prognosys data 
   InstrumentPrognosysSummaries InstrumentPrognosysSummaries = 4; 
+
+  // Represents the Instrument Events data
+  InstrumentEventSummaries instrumentEventSummaries = 5;
 }
 
 message InstrumentDataSummaries {

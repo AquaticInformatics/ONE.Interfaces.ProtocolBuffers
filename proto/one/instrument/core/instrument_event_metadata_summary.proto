@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "i18nkey_text_reference.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+// Specifies the type of Event
+message InstrumentEventMetadataSummary {
+    
+    // Represents the i18nKey for event information description
+    I18NKeyTextReference metadata = 1;
+
+    // Value of the event
+    google.protobuf.StringValue value = 2;
+
+    // Unit identifier for the metadata value.
+    google.protobuf.StringValue unitId = 3;
+
+    // I18NKey of unit
+    google.protobuf.StringValue unitI18NKey = 4;
+}
+
+message InstrumentEventMetadataSummaries {    
+    repeated InstrumentEventMetadataSummary items = 1;
+}

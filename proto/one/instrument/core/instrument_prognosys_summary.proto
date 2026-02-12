@@ -22,4 +22,7 @@ message InstrumentPrognosysSummaries {
   google.protobuf.BoolValue enabled = 1;
 
   repeated InstrumentPrognosysSummary items = 2;
+
+  // Unique identifier of an instrument.
+  google.protobuf.StringValue instrumentId = 3;
 }
