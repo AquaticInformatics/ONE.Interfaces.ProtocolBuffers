@@ -2,28 +2,31 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace = "ONE.Models.CSharp";
 
 // Represents a registry entry for an instrument
 message InstrumentMeasurementDefinitionSummary {
-    // GUID id of parameter
-    string parameterId = 1;
-    
-    // I18NKey of parameter
-    google.protobuf.StringValue parameterI18NKey = 2;
-    
-    // GUID id of display unit
-    string unitId = 3;
-    
-    // I18NKey of unit
-    google.protobuf.StringValue unitI18NKey = 4;
-    
-    // Instrument source of this specific parameter
-    google.protobuf.UInt32Value channelNumber = 5;
+  // GUID id of parameter
+  string parameterId = 1;
+
+  // I18NKey of parameter
+  google.protobuf.StringValue parameterI18NKey = 2;
+
+  // GUID id of display unit
+  string unitId = 3;
+
+  // I18NKey of unit
+  google.protobuf.StringValue unitI18NKey = 4;
+
+  // Instrument source of this specific parameter
+  google.protobuf.UInt32Value channelNumber = 5;
+
+  // Represents tag number of this specific parameter
+  google.protobuf.UInt32Value tagNumber = 6;
 }
 
 // Represents a list of instruments
 message InstrumentMeasurementDefinitionSummaries {
-    // Specifies the list of instrument definitions
-    repeated InstrumentMeasurementDefinitionSummary items = 1; 
+  // Specifies the list of instrument definitions
+  repeated InstrumentMeasurementDefinitionSummary items = 1;
 }
