@@ -2,7 +2,6 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
-import "instrument_group.proto";
 import "instrument_type.proto";
 import "instrument_measurement_capability.proto";
 import "instrument_prognosys_capability.proto";
@@ -20,15 +19,12 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentManifest {
     // Specifies the version of instrument manifest.
     google.protobuf.StringValue version = 1;
-
-    // Specifies the group of an instrument.
-    InstrumentGroup instrumentGroup = 2;
     
     // Specifies the type of an instrument.
-    InstrumentType instrumentType = 3;
+    InstrumentType instrumentType = 2;
     
     // Unique identifier of instrument manifest.
-    google.protobuf.StringValue id = 4;
+    google.protobuf.StringValue id = 3;
     
     // Specifies the measurement capabilities and related meta-data for an instrument type.
     InstrumentMeasurementCapability instrumentMeasurementCapability = 10;
