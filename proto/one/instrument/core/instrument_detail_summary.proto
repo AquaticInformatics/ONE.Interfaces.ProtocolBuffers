@@ -3,6 +3,8 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "instrument_manifest_summary.proto";
 import "enum_connection_status.proto";
+import "claros_jsonTicksDateTime.proto";
+import "enum_connection_status_reason.proto";
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
@@ -35,6 +37,12 @@ message InstrumentDetailSummary {
 
   // Instrument name
   google.protobuf.StringValue instrumentName = 8;
+
+  // Specifies the reason for the connection status change
+  EnumConnectionStatusReason connectionStatusReason = 9;
+
+  // Specifies the time when the connection status was last changed
+  ClarosJsonTicksDateTime connectionStatusChangedOn = 10;
 }
 
 message InstrumentDetailSummaries {
