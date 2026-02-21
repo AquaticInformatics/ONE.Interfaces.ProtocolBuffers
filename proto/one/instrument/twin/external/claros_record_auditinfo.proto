@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "claros_jsonTicksDateTime.proto";
 
-option csharp_namespace ="ONE.Models.CSharp";
+option csharp_namespace ="ONE.Models.CSharp.External";
 
 message ClarosRecordAuditInfo {
     string createdById = 1 [json_name = "cbid"];
