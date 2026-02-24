@@ -21,10 +21,10 @@ message InstrumentManifest {
     google.protobuf.StringValue version = 1;
     
     // Specifies the type of an instrument.
-    InstrumentType instrumentType = 2;
+    InstrumentType instrumentType = 3;
     
     // Unique identifier of instrument manifest.
-    google.protobuf.StringValue id = 3;
+    google.protobuf.StringValue id = 4;
     
     // Specifies the measurement capabilities and related meta-data for an instrument type.
     InstrumentMeasurementCapability instrumentMeasurementCapability = 10;
