@@ -15,14 +15,14 @@ message InstrumentType {
     // Reference to localized i18n key. i18nKeyTextReference.i18nKey refers to i18NKeyName column in db.
     ClarosI18NKeyTextReference i18nKeyTextReference = 2;
 
-    //Contains all the flags for an instrument type
-    InstrumentTypeAttributes attributes = 3;
-
     // Unique identifier of the instrument group to which this instrument type belongs to.
     google.protobuf.StringValue instrumentGroupId = 4;
 
     // Specifies the product name to be used for display purposes.
     google.protobuf.StringValue name = 5;
+
+    // Large image url of InstrumentType
+    google.protobuf.StringValue imageUrl = 7;
 }
 
 // Represents the identifier properties for a instrument type
@@ -37,18 +37,6 @@ message InstrumentTypeIdentifier {
     // Instrument code for the instrument type
     google.protobuf.StringValue instrumentCode = 3;
 
-}
-
-// Combining all flags here, to be deprecated once we move into Plug and Play
-message InstrumentTypeAttributes {
-
-    google.protobuf.StringValue pictureSmallUrl = 5;
-
-    google.protobuf.StringValue pictureLargeUrl = 6;
-
-    google.protobuf.Int32Value transmissionInterval = 8;
-
-    bool localAccessSupport = 9;
 }
 
 // Represents a list of instrument types

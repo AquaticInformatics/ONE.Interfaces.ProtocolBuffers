@@ -20,9 +20,6 @@ option csharp_namespace ="ONE.Models.CSharp.Instrument";
 message InstrumentManifest {
     // Specifies the version of instrument manifest.
     google.protobuf.StringValue version = 1;
-
-    // Specifies the group of an instrument.
-    InstrumentGroup instrumentGroup = 2;
     
     // Specifies the type of an instrument.
     InstrumentType instrumentType = 3;
