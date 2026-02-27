@@ -20,9 +20,6 @@ message InstrumentMeasurementDefinitionSummary {
 
   // Instrument source of this specific parameter
   google.protobuf.UInt32Value channelNumber = 5;
-
-  // Represents tag number of this specific parameter
-  google.protobuf.UInt32Value tagNumber = 6;
 }
 
 // Represents a list of instruments

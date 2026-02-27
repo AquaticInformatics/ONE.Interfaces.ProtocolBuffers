@@ -1,10 +1,12 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "record_auditinfo.proto";
+import "claros_record_auditinfo.proto";
 import "instrument_reference.proto";
 import "enum_connection_status.proto";
 import "enum_instrument_registry_status.proto";
+import "claros_jsonTicksDateTime.proto";
+import "enum_connection_status_reason.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -25,8 +27,14 @@ message Instrument {
     // Specifies the registry status of the instrument
     EnumInstrumentRegistryStatus registryStatus = 5;
 
+    // Specifies the reason for the connection status change
+    EnumConnectionStatusReason connectionStatusReason = 6;
+
+    // Specifies the time when the connection status was last changed
+    ClarosJsonTicksDateTime connectionStatusChangedOn = 7;
+
     // Record audit information
-    RecordAuditInfo recordAuditInfo = 99;
+    ClarosRecordAuditInfo recordAuditInfo = 99;
 }
 
 // Represents a list of instruments
