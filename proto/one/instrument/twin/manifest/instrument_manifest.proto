@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
-import "record_auditinfo.proto";
+import "claros_record_auditinfo.proto";
 import "instrument_type.proto";
 import "instrument_measurement_capability.proto";
 import "instrument_prognosys_capability.proto";
@@ -53,6 +53,5 @@ message InstrumentManifest {
     // Specifies the warning capabilities and related meta-data for an instrument-type.
     InstrumentWarningCapability instrumentWarningCapability = 18;
 
-    
-    RecordAuditInfo recordAuditInfo = 99;
+    ClarosRecordAuditInfo recordAuditInfo = 99;
 }
