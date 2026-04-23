@@ -26,8 +26,8 @@ message ModelTemplate {
     bool enabled = 9;
     // oneof of model details, it can consist of several model details like delphi and others
     ModelDetail modelDetails = 10;
-
-
+    // Time Slot Offset in minutes
+    uint32 timeSlotOffsetInMinutes = 11;
 
 }
 message ModelTemplates{
