@@ -34,5 +34,7 @@ message DelphiModelDetail  {
     uint32 scenarioFlowUnit = 11;
     // Unit to be used for Loading values in scenario builder
     uint32 scenarioLoadingUnit = 12;
+    // Model Engine
+    string modelEngine = 13;
 
 }
