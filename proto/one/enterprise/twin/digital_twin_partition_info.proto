@@ -6,7 +6,9 @@ message DigitalTwinPartitionInfo{
     
     int64 partitionId = 1;
 
-    repeated int64 twinIds = 2;
+    string partitionRefId = 2;
+
+    repeated int64 twinIds = 3;
 }
 
 message DigitalTwinPartitionInfos{
