@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DigitalTwinPartitionInfo{
+    
+    int64 partitionId = 1;
+
+    repeated int64 twinIds = 2;
+}
+
+message DigitalTwinPartitionInfos{
+
+	repeated DigitalTwinPartitionInfo items = 1;
+}

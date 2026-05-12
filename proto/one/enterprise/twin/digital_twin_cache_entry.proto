@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DigitalTwinCacheEntry{
+    
+    int64 twinId = 1; 
+    
+    bytes protoBytes = 2;
+
+    bool partitionChanged = 3;
+}
+
+message DigitalTwinCacheEntries{
+
+	repeated DigitalTwinCacheEntry items = 1;
+}
