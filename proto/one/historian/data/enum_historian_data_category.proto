@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+enum EnumHistorianDataCategory {
+    HISTORIAN_DATA_CATEGORY_UNKNOWN = 0;
+    HISTORIAN_DATA_CATEGORY_MEASUREMENT_DATA = 1;
+    HISTORIAN_DATA_CATEGORY_LOG_MESSAGE = 2;
+}
