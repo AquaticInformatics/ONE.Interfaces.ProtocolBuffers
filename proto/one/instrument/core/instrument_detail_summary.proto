@@ -43,6 +43,9 @@ message InstrumentDetailSummary {
 
   // Specifies the time when the connection status was last changed
   JsonTicksDateTime connectionStatusChangedOn = 10;
+
+  // Firmware manifest version string of the instrument
+    google.protobuf.StringValue firmwareVersion = 11;
 }
 
 message InstrumentDetailSummaries {
