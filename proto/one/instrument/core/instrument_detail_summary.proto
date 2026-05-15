@@ -45,7 +45,7 @@ message InstrumentDetailSummary {
   JsonTicksDateTime connectionStatusChangedOn = 10;
 
   // Firmware manifest version string of the instrument
-    google.protobuf.StringValue firmwareVersion = 11;
+  google.protobuf.StringValue firmwareVersion = 11;
 }
 
 message InstrumentDetailSummaries {
