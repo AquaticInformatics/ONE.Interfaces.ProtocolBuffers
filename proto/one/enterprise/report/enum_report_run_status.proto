@@ -23,4 +23,7 @@ enum EnumReportRunStatus {
 
     // Full report render process completed
     REPORT_RUN_STATUS_COMPLETE = 6; 
+	
+	// Form submitted
+    REPORT_RUN_STATUS_FORM_SUBMITTED = 7; 
 }
