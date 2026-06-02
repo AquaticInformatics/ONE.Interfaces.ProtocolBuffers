@@ -20,6 +20,9 @@ message InstrumentMeasurementDefinitionSummary {
 
   // Instrument source of this specific parameter
   google.protobuf.UInt32Value channelNumber = 5;
+
+  // channel name of this specific parameter
+  google.protobuf.StringValue channelName = 6;
 }
 
 // Represents a list of instruments
