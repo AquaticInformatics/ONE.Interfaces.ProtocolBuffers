@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "samples.proto";
+import "pagination_information.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message SampleTelemetries {
+    // Map of telemetry ID to samples collection
+    map<string, Samples> items = 1;
+
+    // Pagination metadata for the result set
+    PaginationInformation paginationInformation = 2;
+}

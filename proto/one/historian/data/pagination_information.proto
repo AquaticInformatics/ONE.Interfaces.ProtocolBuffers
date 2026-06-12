@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message PaginationInformation {
+    // Name of the result set
+    string resultName = 1;
+
+    // Page number of the result set
+    google.protobuf.Int32Value page = 2;
+
+    // Number of items per page
+    google.protobuf.Int32Value pageSize = 3;
+
+    // Total number of items across all pages
+    google.protobuf.Int32Value totalCount = 4;
+}

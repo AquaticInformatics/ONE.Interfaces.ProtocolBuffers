@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "historian_data.proto";
+import "pagination_information.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message DataTelemetries {
+    // Map of telemetry ID to historian data collection
+    map<string, HistorianDatas> items = 1;
+
+    // Pagination metadata for the result set
+    PaginationInformation paginationInformation = 2;
+}
