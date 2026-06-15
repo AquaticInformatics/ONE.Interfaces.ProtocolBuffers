@@ -24,6 +24,9 @@ message HistorianData
      // Category of the historian data source
      EnumHistorianDataCategory dataCategory = 5;
 
+     // Telemetry twin identifier
+     google.protobuf.StringValue telemetryId = 6;
+
      // Audit information for the Measurement
      RecordAuditInfo recordAuditInfo = 99;
  }
