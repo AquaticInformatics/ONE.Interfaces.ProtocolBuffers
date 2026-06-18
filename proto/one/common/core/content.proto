@@ -63,6 +63,9 @@ import "timeseriesdata.proto";
 import "schedule_type.proto";
 import "schedule.proto";
 import "historian_data.proto";
+import "data_telemetries.proto";
+import "sample_telemetries.proto";
+import "samples.proto";
 import "schedule_occurrence.proto";
 import "configuration_note.proto";
 import "configuration_tag.proto";
@@ -87,7 +90,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 108
+    // NEXT AVAILABLE ID: 111
     oneof content {
         // common
 
@@ -213,6 +216,9 @@ message Content {
         // historian
         // data
         HistorianDatas historianDatas = 90;
+        DataTelemetries dataTelemetries = 108;
+        SampleTelemetries sampleTelemetries = 109;
+        Samples samples = 110;
         // ingest
         IngestClients ingestClients = 99;
     }
