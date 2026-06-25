@@ -14,6 +14,12 @@ message WorksheetDefinition {
 
 	string twinId = 3;
 
+	// Minutes after end of time slot to wait before fetching historian aggregates
+	uint32 historianDelayMinutes = 4;
+
+	// Number of rows to refresh each historian reminder cycle
+	uint32 historianLookbackPeriod = 5;
+
 	// Audit Record of who created the worksheet definition
     repeated AuditEvent auditEvent = 99;
 }

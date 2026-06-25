@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+// DTO for GET/PUT /{plantId}/worksheet/{worksheetType}/historian/settings.
+// The values are persisted on WorksheetDefinition; this message is used only
+// as a focused request/response body for the historian settings endpoint.
+message WorksheetHistorianSettings {
+    uint32 historianDelayMinutes   = 1;
+    uint32 historianLookbackPeriod = 2;
+}
