@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "pagination_information.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message AggregateValue {
+    // Time slot of the aggregate
+     string timeSlotUTC = 1;
+
+     // Telemetry twin identifier
+     string telemetryId = 2;
+ 
+     // Numeric value of the aggregate
+     google.protobuf.DoubleValue value = 3;
+
+     // Non-numeric value of the aggregate
+     google.protobuf.StringValue stringValue = 4;
+}
+
+message AggregateValues {
+    repeated AggregateValue items = 1;
+
+    // Pagination metadata for the result set
+    PaginationInformation paginationInformation = 2;
+}
