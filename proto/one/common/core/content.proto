@@ -81,6 +81,7 @@ import "analyte_result.proto";
 import "delphi_model_execution.proto";
 import "model_template.proto";
 import "equipment.proto";
+import "worksheet_historian_settings.proto";
 import "instrument_health.proto";
 
 
@@ -90,7 +91,7 @@ message Content {
 
     // Provides the ability to return a wide variety of protocol buffers
 	// Data should never be stored via this type. This message type is for transport only.
-    // NEXT AVAILABLE ID: 111
+    // NEXT AVAILABLE ID: 112
     oneof content {
         // common
 
@@ -196,6 +197,7 @@ message Content {
         SpreadsheetComputations spreadsheetComputations = 19;
         CellValueBackups cellValues = 100;
         OutputCellBackups outputCells = 101;
+        WorksheetHistorianSettings worksheetHistorianSettings = 111;
 
         // coagulation
         CoagMeasurements coagulationMeasurements = 85;
