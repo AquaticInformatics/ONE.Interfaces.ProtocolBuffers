@@ -13,13 +13,19 @@ message InstrumentDiagnosticSummary {
 
     google.protobuf.StringValue parameterGuid = 2;
 
-    google.protobuf.StringValue unitGuid = 3;
+    // I18NKey of parameter
+    google.protobuf.StringValue parameterI18NKey = 3;
 
-    I18NKeyTextReference name = 4;
+    google.protobuf.StringValue unitGuid = 4;
 
-    JsonTicksDateTime timestamp = 5;
+    // I18NKey of unit
+    google.protobuf.StringValue unitI18NKey = 5;
 
-    google.protobuf.StringValue value = 6;
+    I18NKeyTextReference name = 6;
+
+    JsonTicksDateTime timestamp = 7;
+
+    google.protobuf.StringValue value = 8;
 }
 
 message InstrumentDiagnosticSummaries {
