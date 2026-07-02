@@ -11,9 +11,6 @@ message PaginationInformation {
     // Page number of the result set
     google.protobuf.Int32Value page = 2;
 
-    // Number of items per page
-    google.protobuf.Int32Value pageSize = 3;
-
-    // Total number of items across all pages
-    google.protobuf.Int32Value totalCount = 4;
+    // Total number of pages
+    google.protobuf.Int32Value pageCount = 3;
 }

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "enum_sampling_statistic.proto";
+import "pagination_information.proto";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+message TelemetryRequest {
+    // Pagination metadata for the result set if required
+    PaginationInformation paginationInformation = 1;
+
+    // Map of telemetry id to sampling statistic
+    map<string, EnumSamplingStatistic> telemetries = 2;
+}

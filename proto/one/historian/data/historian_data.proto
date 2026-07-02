@@ -4,6 +4,7 @@ import "enum_historian_data_category.proto";
 import "record_auditinfo.proto";
 import "jsonTicksDateTime.proto";
 import "google/protobuf/wrappers.proto";
+import "pagination_information.proto";
  
 option csharp_namespace ="ONE.Models.CSharp";
  
@@ -33,4 +34,7 @@ message HistorianData
  
 message HistorianDatas {
     repeated HistorianData items = 1;
+
+    // Pagination metadata for the result set if required
+    PaginationInformation paginationInformation = 2;
 }
