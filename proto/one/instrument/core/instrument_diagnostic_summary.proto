@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "jsonTicksDateTime.proto";
+import "i18nkey_text_reference.proto";
+import "instrument_tag_identifier.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message InstrumentDiagnosticSummary {
+  
+    InstrumentTagIdentifier tagIdentifier = 1;
+
+    google.protobuf.StringValue parameterGuid = 2;
+
+    // I18NKey of parameter
+    google.protobuf.StringValue parameterI18NKey = 3;
+
+    google.protobuf.StringValue unitGuid = 4;
+
+    // I18NKey of unit
+    google.protobuf.StringValue unitI18NKey = 5;
+
+    I18NKeyTextReference name = 6;
+
+    JsonTicksDateTime timestamp = 7;
+
+    google.protobuf.StringValue value = 8;
+}
+
+message InstrumentDiagnosticSummaries {
+
+  // Specifies whether the instrument is capable of diagnostic events.
+  google.protobuf.BoolValue enabled = 1;
+
+  // List of diagnostic event summaries.
+  repeated InstrumentDiagnosticSummary items = 2;
+
+  // Unique identifier of an instrument.
+  google.protobuf.StringValue instrumentId = 3;
+}
