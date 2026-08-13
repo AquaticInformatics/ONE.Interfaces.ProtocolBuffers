@@ -55,7 +55,7 @@ message InstrumentManifest {
     // Specifies the warning capabilities and related meta-data for an instrument-type.
     InstrumentWarningCapability instrumentWarningCapability = 18;
 
-    //  Specifies the event capabilities and related meta-data for an instrument-type.
+    // Specifies the event capabilities and related meta-data for an instrument-type.
     InstrumentEventCapability instrumentEventCapability = 19;
 
     // Specifies the diagnostic capabilities and related meta-data for an instrument-type.
