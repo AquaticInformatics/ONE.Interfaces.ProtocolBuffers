@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_diagnostic_definition.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+// Represents diagnostic capabilities and related meta-data for an instrument type.
+message InstrumentDiagnosticCapability {
+
+    // Specifies whether the instrument is capable of providing diagnostics.
+    google.protobuf.BoolValue enabled = 1;
+
+    // Specifies the diagnostic definitions - a list of supported diagnostics - that the instrument can provide. 
+    InstrumentDiagnosticDefinitions definitions = 2;
+}

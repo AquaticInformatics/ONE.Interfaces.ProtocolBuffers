@@ -11,6 +11,8 @@ import "instrument_platform_capability.proto";
 import "instrument_file_transfer_capability.proto";
 import "instrument_error_capability.proto";
 import "instrument_warning_capability.proto";
+import "instrument_event_capability.proto";
+import "instrument_diagnostic_capability.proto";
 import "localization.proto";
 
 
@@ -52,6 +54,12 @@ message InstrumentManifest {
 
     // Specifies the warning capabilities and related meta-data for an instrument-type.
     InstrumentWarningCapability instrumentWarningCapability = 18;
+
+    // Specifies the event capabilities and related meta-data for an instrument-type.
+    InstrumentEventCapability instrumentEventCapability = 19;
+
+    // Specifies the diagnostic capabilities and related meta-data for an instrument-type.
+    InstrumentDiagnosticCapability instrumentDiagnosticCapability = 20;
 
     ClarosRecordAuditInfo recordAuditInfo = 99;
 }

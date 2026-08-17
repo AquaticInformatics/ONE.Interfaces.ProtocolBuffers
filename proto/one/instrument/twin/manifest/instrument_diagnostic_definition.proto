@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_tag_identifier.proto";
+import "claros_i18nkey_text_reference.proto";
+
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message InstrumentDiagnosticDefinition {
+
+    InstrumentTagIdentifier tagIdentifier = 1;
+
+    google.protobuf.StringValue parameterGuid = 2;
+
+    google.protobuf.StringValue parameterI18NKey = 3;
+
+    google.protobuf.StringValue unitGuid = 4;
+
+    google.protobuf.StringValue unitI18NKey = 5;
+
+    ClarosI18NKeyTextReference name = 6;
+}
+
+message InstrumentDiagnosticDefinitions {
+    repeated InstrumentDiagnosticDefinition items = 1;
+}
