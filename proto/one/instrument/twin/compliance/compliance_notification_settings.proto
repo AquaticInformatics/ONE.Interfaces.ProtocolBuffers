@@ -5,7 +5,7 @@ import "enum_compliance_settings_category.proto";
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
-message InstrumentComplianceNotificationSettings
+message InstrumentComplianceNotificationSetting
 {
   // Identifies the tenant, operation, or location to which
   // the compliance settings belong.
@@ -30,4 +30,9 @@ message InstrumentComplianceNotificationSettings
 
   // Record audit information
   RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InstrumentComplianceNotificationSettings
+{
+  repeated InstrumentComplianceNotificationSetting items = 1;
 }
