@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package one.instrument.twin;
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+enum ComplianceSettingsCategory
+{
+    COMPLIANCE_SETTINGS_CATEGORY_UNSPECIFIED = 0;
+
+    // auth_enterprise_twin_ref_id represents a Tenant.
+    TENANT = 1;
+
+    // auth_enterprise_twin_ref_id represents an Operation.
+    OPERATION = 2;
+
+    // auth_enterprise_twin_ref_id represents a Location.
+    LOCATION = 3;
+}
