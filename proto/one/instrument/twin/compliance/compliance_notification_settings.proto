@@ -24,11 +24,11 @@ message InstrumentComplianceNotificationSettings
   // remain active before the initial notification is generated.
   // Required when enabled = true.
   // Valid range: 1-60 minutes.
-  optional int32 notificationdelayminutes = 4;
+  int32 notificationdelayminutes = 4;
 
   // Duration in minutes between reminder notifications.
   // Null/unset means reminders are disabled.
-  optional int32 reminderintervalminutes = 5;
+  int32 reminderintervalminutes = 5;
 
   // Record audit information
   RecordAuditInfo recordAuditInfo = 99;
