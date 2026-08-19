@@ -9,10 +9,10 @@ message InstrumentComplianceNotificationSetting
 {
   // Identifies the tenant, operation, or location to which
   // the compliance settings belong.
-  string authenterprisetwinrefid = 1;
+  string authEnterpriseTwinRefId = 1;
 
-  // Defines the scope represented by auth_enterprise_twin_ref_id.
-  ComplianceSettingsCategory categoryid = 2;
+  // Defines the scope represented by authEnterpriseTwinRefId.
+  ComplianceSettingsCategory categoryId = 2;
 
   // Indicates whether compliance notifications are enabled
   // for the configured scope.
@@ -22,11 +22,11 @@ message InstrumentComplianceNotificationSetting
   // remain active before the initial notification is generated.
   // Required when enabled = true.
   // Valid range: 1-60 minutes.
-  int32 notificationdelayminutes = 4;
+  int32 notificationDelayMinutes = 4;
 
   // Duration in minutes between reminder notifications.
   // Null/unset means reminders are disabled.
-  int32 reminderintervalminutes = 5;
+  int32 reminderIntervalMinutes = 5;
 
   // Record audit information
   RecordAuditInfo recordAuditInfo = 99;
