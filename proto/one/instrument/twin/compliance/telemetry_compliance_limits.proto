@@ -8,23 +8,19 @@ import "record_auditinfo.proto";
 
 message InstrumentTelemetryComplianceLimit {
     // Telemetry identifier from InstrumentDigitalTwins.
-    google.protobuf.StringValue telemetryId = 2;
-
-    // Indicates whether compliance monitoring is enabled
-    // for this telemetry.
-    google.protobuf.BoolValue enabled = 3;
+    google.protobuf.StringValue telemetryId = 1;
 
     // Upper alarm threshold.
-    google.protobuf.StringValue highAlarm = 4;
+    google.protobuf.StringValue highAlarm = 2;
 
     // Upper warning threshold.
-    google.protobuf.StringValue highWarning = 5;
+    google.protobuf.StringValue highWarning = 3;
 
     // Lower warning threshold.
-    google.protobuf.StringValue lowWarning = 6;
+    google.protobuf.StringValue lowWarning = 4;
 
     // Lower alarm threshold.
-    google.protobuf.StringValue lowAlarm = 7;
+    google.protobuf.StringValue lowAlarm = 5;
 
     // Record audit information.
     RecordAuditInfo recordAuditInfo = 99;
