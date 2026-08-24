@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+import "record_auditinfo.proto";
+import "enum_compliance_settings_category.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+message InstrumentComplianceNotificationSetting
+{
+  // Identifies the tenant, operation, or location to which
+  // the compliance settings belong.
+  string authEnterpriseTwinRefId = 1;
+
+  // Defines the scope represented by authEnterpriseTwinRefId.
+  ComplianceSettingsCategory categoryId = 2;
+
+  // Indicates whether compliance notifications are enabled
+  // for the configured scope.
+  bool enabled = 3;
+
+  // Duration in minutes that a compliance condition must
+  // remain active before the initial notification is generated.
+  // Required when enabled = true.
+  // Valid range: 1-60 minutes.
+  int32 notificationDelayMinutes = 4;
+
+  // Duration in minutes between reminder notifications.
+  // Null/unset means reminders are disabled.
+  int32 reminderIntervalMinutes = 5;
+
+  // Record audit information
+  RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InstrumentComplianceNotificationSettings
+{
+  repeated InstrumentComplianceNotificationSetting items = 1;
+}
