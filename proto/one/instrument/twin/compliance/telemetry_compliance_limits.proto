@@ -7,20 +7,24 @@ import "google/protobuf/wrappers.proto";
 import "record_auditinfo.proto";
 
 message InstrumentTelemetryComplianceLimit {
+
+    // Unique identifier of the compliance notification setting.
+    string id =1;
+
     // Telemetry identifier from InstrumentDigitalTwins.
-    google.protobuf.StringValue telemetryId = 1;
+    google.protobuf.StringValue telemetryId = 2;
 
     // Upper alarm threshold.
-    google.protobuf.StringValue highAlarm = 2;
+    google.protobuf.StringValue highAlarm = 3;
 
     // Upper warning threshold.
-    google.protobuf.StringValue highWarning = 3;
+    google.protobuf.StringValue highWarning = 4;
 
     // Lower warning threshold.
-    google.protobuf.StringValue lowWarning = 4;
+    google.protobuf.StringValue lowWarning = 5;
 
     // Lower alarm threshold.
-    google.protobuf.StringValue lowAlarm = 5;
+    google.protobuf.StringValue lowAlarm = 6;
 
     // Record audit information.
     RecordAuditInfo recordAuditInfo = 99;
