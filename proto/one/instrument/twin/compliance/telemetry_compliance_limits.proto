@@ -8,8 +8,8 @@ import "record_auditinfo.proto";
 
 message InstrumentTelemetryComplianceLimit {
 
-    // Unique identifier of the compliance notification setting.
-    string id =1;
+    // Unique identifier of the instrument telemetry compliance.
+    string id = 1;
 
     // Telemetry identifier from InstrumentDigitalTwins.
     google.protobuf.StringValue telemetryId = 2;
