@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package one.instrument.twin;
+option csharp_namespace = "ONE.Instrument.Twin";
+
+import "google/protobuf/wrappers.proto";
+import "record_auditinfo.proto";
+
+message InstrumentTelemetryComplianceLimit {
+
+    // Unique identifier of the instrument telemetry compliance.
+    string id = 1;
+
+    // Telemetry identifier from InstrumentDigitalTwins.
+    google.protobuf.StringValue telemetryId = 2;
+
+    // Upper alarm threshold.
+    google.protobuf.StringValue highAlarm = 3;
+
+    // Upper warning threshold.
+    google.protobuf.StringValue highWarning = 4;
+
+    // Lower warning threshold.
+    google.protobuf.StringValue lowWarning = 5;
+
+    // Lower alarm threshold.
+    google.protobuf.StringValue lowAlarm = 6;
+
+    // Record audit information.
+    RecordAuditInfo recordAuditInfo = 99;
+}
+
+message InstrumentTelemetryComplianceLimits {
+    repeated InstrumentTelemetryComplianceLimit items = 1;
+}
+
+message InstrumentTelemetryComplianceLimitGroup {
+    google.protobuf.StringValue instrumentId = 1;
+    InstrumentTelemetryComplianceLimits instrumentTelemetryComplianceLimits = 2;
+}
+
+message InstrumentTelemetryComplianceLimitGroups {
+    repeated InstrumentTelemetryComplianceLimitGroup items = 1;
+}
