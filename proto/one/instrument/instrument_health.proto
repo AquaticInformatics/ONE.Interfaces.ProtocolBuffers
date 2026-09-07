@@ -5,6 +5,8 @@ import "instrument_summary.proto";
 import "instrument_twin_type.proto";
 import "instrument_twin_sub_type.proto";
 import "instrument_data.proto";
+import "compliance_notification_settings.proto";
+import "telemetry_compliance_limits.proto";
 
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
@@ -15,4 +17,7 @@ message InstrumentHealth {
     InstrumentTwinTypes instrumentTwinTypes = 3;
     InstrumentTwinSubTypes instrumentTwinSubTypes = 4;
     InstrumentDatas instrumentDatas = 5;
+    InstrumentComplianceNotificationSettings instrumentComplianceNotificationSettings = 6;
+    InstrumentTelemetryComplianceLimits instrumentTelemetryComplianceLimits = 7;
+    InstrumentTelemetryComplianceLimitGroups instrumentTelemetryComplianceLimitGroups = 8;
 }
