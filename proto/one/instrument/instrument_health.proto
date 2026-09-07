@@ -17,7 +17,8 @@ message InstrumentHealth {
     InstrumentTwinTypes instrumentTwinTypes = 3;
     InstrumentTwinSubTypes instrumentTwinSubTypes = 4;
     InstrumentDatas instrumentDatas = 5;
-    InstrumentComplianceNotificationSettings instrumentComplianceNotificationSettings = 6;
-    InstrumentTelemetryComplianceLimits instrumentTelemetryComplianceLimits = 7;
-    InstrumentTelemetryComplianceLimitGroups instrumentTelemetryComplianceLimitGroups = 8;
+    InstrumentComplianceNotificationSetting instrumentComplianceNotificationSetting = 6;
+    InstrumentComplianceNotificationSettings instrumentComplianceNotificationSettings = 7;
+    InstrumentTelemetryComplianceLimits instrumentTelemetryComplianceLimits = 8;
+    InstrumentTelemetryComplianceLimitGroups instrumentTelemetryComplianceLimitGroups = 9;
 }
