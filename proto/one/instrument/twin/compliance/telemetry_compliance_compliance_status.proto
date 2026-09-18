@@ -39,10 +39,12 @@ message InstrumentTelemetryComplianceStatus
 message InstrumentTelemetryComplianceStatuses {
   repeated InstrumentTelemetryComplianceStatus items = 1;
 }
+
 message InstrumentTelemetryComplianceStatusGroup {
     string instrumentId = 1;
     InstrumentTelemetryComplianceStatuses instrumentTelemetryComplianceStatuses = 2;
 }
+
 message InstrumentTelemetryComplianceStatusGroups {    
     repeated InstrumentTelemetryComplianceStatusGroup items = 1;
 }
