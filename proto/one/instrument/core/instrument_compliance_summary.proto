@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/wrappers.proto";
+import "instrument_measurement_definition_summary.proto";
+import "enum_compliance_state.proto";
+import "telemetry_compliance_limits.proto";
+
+message InstrumentComplianceSummary
+{
+    string instrumentId = 1;
+  
+    // Unique identifier of parent twin - TwinRefId of an Enterprise DigitalTwin.
+    google.protobuf.StringValue enterpriseTwinId = 2;
+
+    InstrumentComplianceTelemetrySummaries telemetries = 3;
+}
+
+message InstrumentComplianceSummaries {   
+
+    // Tenant-level compliance notification configuration.
+    InstrumentComplianceNotificationSettingsSummary notificationSettings = 1; 
+
+    repeated InstrumentComplianceSummary items = 2;
+}
+
+message InstrumentComplianceTelemetrySummary
+{
+    string telemetryId = 1;    
+
+    InstrumentMeasurementDefinitionSummary instrumentMeasurementDefinitionSummary = 3;
+
+    // Compliance configuration and latest evaluated state.
+    InstrumentComplianceTelemetryLimitsSummary compliance = 4;
+}
+
+message InstrumentComplianceTelemetrySummaries {    
+    repeated InstrumentComplianceTelemetrySummary items = 1;
+}
+
+message InstrumentComplianceTelemetryLimitsSummary
+{
+    // Configured compliance limit.
+    InstrumentTelemetryComplianceLimit limit = 1;   
+
+    // Latest compliance state evaluated by the Compliance service.
+    ComplianceState complianceState = 2;
+}
+
+message InstrumentComplianceTelemetryLimitsSummaries {
+  repeated InstrumentComplianceTelemetryLimitsSummary items = 1;
+}
+
+// Tenant-level configuration controlling compliance notifications.
+message InstrumentComplianceNotificationSettingsSummary
+{
+    // Indicates whether compliance notifications are enabled for the tenant.
+    google.protobuf.BoolValue enabled = 1;
+    // Time a measurement must remain outside the configured limit
+    // before the initial notification is generated.
+    google.protobuf.Int32Value notificationDelayMinutes = 2;
+    // Minimum interval between reminder notifications.
+    // Not set means reminders are disabled.
+    google.protobuf.Int32Value reminderIntervalMinutes = 3;
+}

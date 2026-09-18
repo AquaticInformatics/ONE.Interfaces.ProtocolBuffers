@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+enum ComplianceState
+{
+    COMPLIANCE_STATE_UNSPECIFIED = 0;
+
+    NORMAL = 1;
+
+    HIGH_WARNING = 2;
+
+    HIGH_ALARM = 3;
+
+    LOW_WARNING = 4;
+
+    LOW_ALARM = 5;
+}

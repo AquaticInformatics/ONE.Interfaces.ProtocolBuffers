@@ -2,9 +2,10 @@ syntax = "proto3";
 
 package one.instrument.twin;
 
-option csharp_namespace = "ONE.Instrument.Twin";
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 import "google/protobuf/timestamp.proto";
+import "enum_compliance_state.proto";
 
 message InstrumentTelemetryComplianceStatus
 {
@@ -33,21 +34,6 @@ message InstrumentTelemetryComplianceStatus
     // UTC timestamp when the most recent notification was sent
     // for the current compliance condition.
     google.protobuf.Timestamp lastNotificationTimestamp = 8;
-}
-
-enum ComplianceState
-{
-    COMPLIANCE_STATE_UNSPECIFIED = 0;
-
-    NORMAL = 1;
-
-    HIGH_WARNING = 2;
-
-    HIGH_ALARM = 3;
-
-    LOW_WARNING = 4;
-
-    LOW_ALARM = 5;
 }
 
 message InstrumentTelemetryComplianceStatuses {
