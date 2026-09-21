@@ -19,4 +19,5 @@ message InstrumentHealth {
     InstrumentDatas instrumentDatas = 5;
     InstrumentComplianceNotificationSettings instrumentComplianceNotificationSettings = 6;
     InstrumentTelemetryComplianceLimitGroups instrumentTelemetryComplianceLimitGroups = 7;
+    InstrumentTelemetryComplianceLimitGroups InstrumentTelemetryComplianceStatusGroups = 8;
 }
