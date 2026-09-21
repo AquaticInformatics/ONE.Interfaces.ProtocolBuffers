@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "activity.proto";
+import "jsonTicksDateTime.proto";
+
+option csharp_namespace = "ONE.Models.CSharp";
+
+message ScheduledActivity {
+    // The next UTC time at which the activity may execute.
+    JsonTicksDateTime executionTimeUtc = 1;
+
+    // The complete activity record to execute.
+    Activity activity = 2;
+}
+
+message ScheduledActivities {
+    repeated ScheduledActivity items = 1;
+}
