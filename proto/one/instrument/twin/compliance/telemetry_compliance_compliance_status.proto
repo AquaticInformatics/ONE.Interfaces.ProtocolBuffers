@@ -10,7 +10,7 @@ import "enum_compliance_state.proto";
 message InstrumentTelemetryComplianceStatus
 {
     // Instrument Digital Twin identifier.
-    string instrumentId = 1;
+    string id = 1;
 
     // Telemetry identifier.
     string telemetryId = 2;
