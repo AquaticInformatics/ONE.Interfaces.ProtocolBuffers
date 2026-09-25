@@ -15,6 +15,10 @@ message DelphiScenarioConfiguration {
     repeated DelphiConfigurationExecution configurationExecutions = 3;
     //list of TelemetryIds of selected output parameters
     repeated google.protobuf.StringValue selectedOutputTelemetryIds = 4;
+    //true for a long horizon run
+    google.protobuf.BoolValue isLongHorizonScenario = 5;
+    //list of static inputs
+    repeated DelphiConfigurationExecution staticInputs = 6;
 }
 
 message DelphiScenarioConfigurations{
