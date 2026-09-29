@@ -40,4 +40,7 @@ enum EnumDelphiModelTagScenario {
     AQI_Influent_Load_Peak_Start_TP = 22;       // TP Peak Start Time (DoubleValue in hours)
     AQI_Influent_Load_Peak_End_TP = 23;         // TP Peak End Time (DoubleValue in hours)
     AQI_Influent_Load_Peak_Value_TP = 24;       // TP Peak Value (DoubleValue for peak loading)
+
+    // Long Horizon Scenario Tags
+    AQI_scenario_horizon_time_minutes = 25;     // simulation horizon in minutes (1440-40320)
 }
