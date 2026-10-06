@@ -31,6 +31,9 @@ foreach($fileName in $files.Name)
     echo `n$Command
 
     Invoke-Expression -Command $Command
+    if ($LASTEXITCODE -ne 0) {
+        exit $LASTEXITCODE
+    }
 }
 # Stop-Transcript
 cd ..\..\generators
