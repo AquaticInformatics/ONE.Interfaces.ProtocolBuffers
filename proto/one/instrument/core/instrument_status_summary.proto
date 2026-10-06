@@ -24,14 +24,16 @@ enum EnumInstrumentStatusDefinitionSummaryType {
 message InstrumentStatusSummary {
   JsonTicksDateTime startTimeUtc = 1;
 
-   JsonTicksDateTime endTimeUtc = 2;
+  JsonTicksDateTime endTimeUtc = 2;
 
-    EnumInstrumentStatusDefinitionSummaryType instrumentStatusDefinitionSummaryType = 3;
+  EnumInstrumentStatusDefinitionSummaryType instrumentStatusDefinitionSummaryType = 3;
 
-    EnumInstrumentStatusDefinitionSummaryStatus instrumentStatusDefinitionSummaryStatus = 4;
+  EnumInstrumentStatusDefinitionSummaryStatus instrumentStatusDefinitionSummaryStatus = 4;
 
-    // Represents the i18nKey for instrument description
-    I18NKeyTextReference description = 5;
+  // Represents the i18nKey for instrument description
+  I18NKeyTextReference description = 5;
+
+  JsonTicksDateTime reportedTimeUtc = 6;
 }
 
 message InstrumentStatusSummaries {
@@ -42,6 +44,4 @@ message InstrumentStatusSummaries {
 
   // Unique identifier of an instrument.
   google.protobuf.StringValue instrumentId = 3;
-
-  JsonTicksDateTime reportedTimeUtc = 4;
 }
