@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package one.instrument.twin;
-
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 import "google/protobuf/timestamp.proto";
@@ -10,7 +8,7 @@ import "enum_compliance_state.proto";
 message InstrumentTelemetryComplianceStatus
 {
     // Instrument Digital Twin identifier.
-    string instrumentId = 1;
+    string id = 1;
 
     // Telemetry identifier.
     string telemetryId = 2;
@@ -39,10 +37,12 @@ message InstrumentTelemetryComplianceStatus
 message InstrumentTelemetryComplianceStatuses {
   repeated InstrumentTelemetryComplianceStatus items = 1;
 }
+
 message InstrumentTelemetryComplianceStatusGroup {
     string instrumentId = 1;
     InstrumentTelemetryComplianceStatuses instrumentTelemetryComplianceStatuses = 2;
 }
+
 message InstrumentTelemetryComplianceStatusGroups {    
     repeated InstrumentTelemetryComplianceStatusGroup items = 1;
 }
