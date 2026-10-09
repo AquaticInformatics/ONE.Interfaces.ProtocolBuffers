@@ -32,6 +32,8 @@ message ReportDefinitionRun {
   JsonTicksDateTime reportRendered = 9;
 
   EnumReportRunStatus status = 10;
+
+  google.protobuf.StringValue propertyBag = 11;
 }
 
 message ReportDefinitionRuns {
