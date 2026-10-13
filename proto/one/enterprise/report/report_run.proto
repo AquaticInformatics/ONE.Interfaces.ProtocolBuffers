@@ -44,6 +44,8 @@ message ReportRun{
 
     //Status of report rendering
     EnumReportRunStatus status = 13;
+
+    google.protobuf.StringValue propertyBag = 14;
 }
 
 message ReportRuns{
