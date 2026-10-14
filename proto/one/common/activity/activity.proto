@@ -47,6 +47,12 @@ message Activity {
     // 0 = default, 1-500 = standard statusCodes, 501+ = custom statusCodes per activityType
     int32 statusCode = 13;
 
+    // indicates whether this activity is a scheduled task
+    google.protobuf.BoolValue isScheduledTask = 14;
+
+    // optional state of the activity
+    google.protobuf.Int32Value state = 15;
+
     // audit info
     RecordAuditInfo recordAuditInfo = 99;
 }
