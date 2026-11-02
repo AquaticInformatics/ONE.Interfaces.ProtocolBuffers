@@ -7,4 +7,5 @@ enum EnumReportFileOutputType {
     OUTPUT_TYPE_XLSX = 1; 
     OUTPUT_TYPE_PDF = 2; 
     OUTPUT_TYPE_SJS = 3;
+    OUTPUT_TYPE_E_REPORT = 4;
 }
