@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace ="ONE.Models.CSharp";
+
+// The kind of E-Report that a report produces. NONE means the report is not an E-Report.
+enum EnumEReportType {
+    E_REPORT_TYPE_NONE = 0;
+    E_REPORT_TYPE_NET_DMR = 1;
+}
