@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package one.instrument.twin;
 
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 import "google/protobuf/timestamp.proto";
+import "instrument_status_metadata.proto";
 
 message InstrumentErrorNotificationStatus
 {
@@ -23,8 +23,8 @@ message ErrorNotificationState
     // Error status metadata.
     StatusMetadata error = 1;
 
-    // Timestamp when notifaction was sent.
-    optional google.protobuf.Timestamp notifiedAtUtc = 2;
+    // Timestamp when notification was sent.
+    google.protobuf.Timestamp notifiedAtUtc = 2;
 }
 
 message ErrorNotificationStates{
@@ -34,5 +34,5 @@ message ErrorNotificationStates{
 message InstrumentErrorNotificationStatuses {
   repeated InstrumentErrorNotificationStatus items = 1;
     // UTC timestamp when this error was last included in a summary notification.
-    optional google.protobuf.Timestamp lastSummarySentAtUtc = 2;
+    google.protobuf.Timestamp lastSummarySentAtUtc = 2;
 }
