@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package one.instrument.twin;
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/timestamp.proto";
+
+message InstrumentErrorNotificationStatus
+{
+    // Instrument Digital Twin identifier.
+    string instrumentId = 1;
+
+    // location Id
+    string authEnterpriseTwinRefId = 2;
+
+    // Collection of active errors with their notification state.
+    repeated ErrorNotificationStates errors = 3;
+}
+
+message ErrorNotificationState
+{
+    // Error status metadata.
+    StatusMetadata error = 1;
+
+    // Timestamp when notifaction was sent.
+    optional google.protobuf.Timestamp notifiedAtUtc = 2;
+}
+
+message ErrorNotificationStates{
+  repeated ErrorNotificationState items = 1;
+}
+
+message InstrumentErrorNotificationStatuses {
+  repeated InstrumentErrorNotificationStatus items = 1;
+    // UTC timestamp when this error was last included in a summary notification.
+    optional google.protobuf.Timestamp lastSummarySentAtUtc = 2;
+}
