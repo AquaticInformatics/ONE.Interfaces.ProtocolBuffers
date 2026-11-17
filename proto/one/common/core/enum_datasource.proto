@@ -7,7 +7,7 @@ enum EnumDataSource {
     DATASOURCE_FORM = 1;                    // Data related to Mobile App
     DATASOURCE_COMPUTATION = 2;             // Data related to Common.Computation
     DATASOURCE_SPREADSHEET = 3;             // Data related to Common.Spreadsheet
-    DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Instrument.Measurement
+    DATASOURCE_INSTRUMENTMEASUREMENT = 4;   // Data related to Instrument Measurement
     DATASOURCE_IMPORT = 5;                  // Data related to imports
     DATASOURCE_SPREADSHEET_DEFINITION = 6;  // Data related to Common.Spreadsheet.Definition
     DATASOURCE_CONNECT = 7;                 // Data related to Mobile Connect
@@ -17,4 +17,5 @@ enum EnumDataSource {
     DATASOURCE_SPREADSHEET_HISTORIAN = 11;  // Data related to One.Historian.Data (Twin type is HISTORIAN_DATA and subtype is TELEMETRY_INGEST_DATA)
     DATASOURCE_PROCESS_MODEL = 12;          // Data related to Process Modeling
     DATASOURCE_CUSTOM_DATA_ENTRY_FORM = 13; // Data related to Custom Data Entry Forms
+    DATASOURCE_INSTRUMENT_STATUS = 14;      // Data related to Instrument Status 
 }
