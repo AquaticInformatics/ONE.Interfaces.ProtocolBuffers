@@ -5,7 +5,6 @@ option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 import "google/protobuf/timestamp.proto";
 import "instrument_status_metadata.proto";
-import "claros_jsonTicksDateTime.proto";
 
 message InstrumentErrorNotificationStatus
 {
@@ -18,8 +17,8 @@ message InstrumentErrorNotificationStatus
     // Collection of active errors with their notification state.
     repeated ErrorNotificationStates errors = 3;
 
-    // Time of the instrument status snapshot the errors were reported in (InstrumentStatus.statusDateTimeUtc).
-    ClarosJsonTicksDateTime statusDateTimeUtc = 4;
+    // Time when error was reported.
+    google.protobuf.Timestamp reportedTimeUtc = 4;
 }
 
 message ErrorNotificationState
