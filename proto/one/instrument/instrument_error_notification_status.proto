@@ -13,24 +13,14 @@ message InstrumentErrorNotificationStatus
     // location Id
     string authEnterpriseTwinRefId = 2;
 
-    // Collection of active errors with their notification state.
-    ErrorNotificationStates errors = 3;
+    // Collection of active errors
+    StatusMetadatas errors = 3;
 
     // Time when error was reported.
     google.protobuf.Timestamp reportedTimeUtc = 4;
 
     // Timestamp when notification was sent.
     google.protobuf.Timestamp notifiedAtUtc = 5;
-}
-
-message ErrorNotificationState
-{
-    // Error status metadata.
-    StatusMetadata error = 1;
-}
-
-message ErrorNotificationStates{
-  repeated ErrorNotificationState items = 1;
 }
 
 message InstrumentErrorNotificationStatuses {
