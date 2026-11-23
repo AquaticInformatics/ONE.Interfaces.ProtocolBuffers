@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-
 option csharp_namespace = "ONE.Models.CSharp.Instrument";
 
 import "google/protobuf/timestamp.proto";
@@ -15,19 +14,19 @@ message InstrumentErrorNotificationStatus
     string authEnterpriseTwinRefId = 2;
 
     // Collection of active errors with their notification state.
-    repeated ErrorNotificationStates errors = 3;
+    ErrorNotificationStates errors = 3;
 
     // Time when error was reported.
     google.protobuf.Timestamp reportedTimeUtc = 4;
+
+    // Timestamp when notification was sent.
+    google.protobuf.Timestamp notifiedAtUtc = 5;
 }
 
 message ErrorNotificationState
 {
     // Error status metadata.
     StatusMetadata error = 1;
-
-    // Timestamp when notification was sent.
-    google.protobuf.Timestamp notifiedAtUtc = 2;
 }
 
 message ErrorNotificationStates{
