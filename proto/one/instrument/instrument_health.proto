@@ -9,6 +9,7 @@ import "compliance_notification_settings.proto";
 import "telemetry_compliance_limits.proto";
 import "telemetry_compliance_status.proto";
 import "instrument_compliance_summary.proto";
+import "instrument_error_manual.proto";
 
 option csharp_namespace ="ONE.Models.CSharp.Instrument";
 
@@ -22,4 +23,5 @@ message InstrumentHealth {
     InstrumentTelemetryComplianceLimitGroups instrumentTelemetryComplianceLimitGroups = 7;
     InstrumentTelemetryComplianceStatusGroups instrumentTelemetryComplianceStatusGroups = 8;
     InstrumentComplianceSummaries instrumentComplianceSummaries =9;
+    InstrumentErrorManuals instrumentErrorManuals = 10;
 }
