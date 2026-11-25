@@ -11,6 +11,8 @@ message ScheduledActivity {
 
     // The complete activity record to execute.
     Activity activity = 2;
+
+    bool pendingPersistence = 3;
 }
 
 message ScheduledActivities {
