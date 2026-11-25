@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package one.instrument.twin;
+
+option csharp_namespace = "ONE.Models.CSharp.Instrument";
+
+import "google/protobuf/timestamp.proto";
+
+message InstrumentErrorManual
+{
+    // Unique identifier of the manual record.
+    string id = 1;
+
+    // Instrument type this manual belongs to.
+    string instrumentTypeId = 2;
+
+    // I18N database name for the error.
+    string i18nDatabaseName = 3;
+
+    // I18N module name for the error.
+    string i18nModule = 4;
+
+    // I18N key for the error.
+    string i18nKey = 5;
+
+    // Device manual link
+    string deviceManualLink = 6;
+
+    // Support article link
+    string supportArticleLink = 7;
+
+    // Culture code (e.g. en-US).
+    string culture = 8;
+
+    // Identifier of the user who created the record.
+    string createdById = 9;
+
+    // UTC timestamp when the record was created.
+    google.protobuf.Timestamp createdOn = 10;
+
+    // Identifier of the user who last modified the record.
+    string modifiedById = 11;
+
+    // UTC timestamp when the record was last modified.
+    optional google.protobuf.Timestamp modifiedOn = 12;
+}
+
+message InstrumentErrorManuals
+{
+    repeated InstrumentErrorManual items = 1;
+}
