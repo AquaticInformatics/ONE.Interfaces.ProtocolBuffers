@@ -42,7 +42,7 @@ message InstrumentErrorManual
     string modifiedById = 11;
 
     // UTC timestamp when the record was last modified.
-    optional google.protobuf.Timestamp modifiedOn = 12;
+    google.protobuf.Timestamp modifiedOn = 12;
 }
 
 message InstrumentErrorManuals
