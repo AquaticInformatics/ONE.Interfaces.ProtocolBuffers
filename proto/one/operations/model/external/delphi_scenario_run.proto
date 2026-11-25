@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "delphi_scenario_configuration.proto";
+
+option csharp_namespace = "ONE.Models.CSharp.External";
+
+enum EnumDelphiScenarioRunStatus {
+    DELPHI_SCENARIO_RUN_STATUS_UNKNOWN = 0;
+    DELPHI_SCENARIO_RUN_STATUS_COMPLETED = 1;
+    DELPHI_SCENARIO_RUN_STATUS_PARTIALLY_COMPLETED = 2;
+}
+
+// Stored as ConfigurationData of a Common Configuration record; the record id identifies the run
+message DelphiScenarioRun {
+
+    // TwinRefId of the process the scenarios were run for
+    string processTwinRefId = 1;
+
+    // Tenant identifier
+    string tenantId = 2;
+
+    // true for a long horizon run
+    google.protobuf.BoolValue isLongHorizonScenario = 3;
+
+    // Id of the user who started the run
+    string createdById = 4;
+
+    // UTC time the run was saved
+    string createdUtc = 5;
+
+    // Run status
+    EnumDelphiScenarioRunStatus status = 6;
+
+    // List of ScenarioIds that produced no results
+    repeated string failedScenarioIds = 7;
+
+    // TwinRefId of the dataset that holds the run results
+    string dataSetTwinRefId = 8;
+
+    // Full UTC timestamp of the results file in the dataset
+    string dataSetTimestamp = 9;
+
+    // Submitted configuration, values as entered
+    DelphiScenarioConfigurations configuration = 10;
+
+    // Model scenario flow unit at run time
+    string scenarioFlowUnitId = 11;
+
+    // Model scenario loading unit at run time
+    string scenarioLoadingUnitId = 12;
+}
